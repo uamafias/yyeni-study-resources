@@ -1,0 +1,405 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yyeni.example/schemas/subject_profile.schema.json",
+  "title": "YYeni Subject Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_id",
+    "version",
+    "subject_name",
+    "language_variant",
+    "purpose",
+    "foundational_concepts",
+    "objective_types",
+    "assessment_skill_model",
+    "application_model",
+    "analysis_model",
+    "evaluation_model",
+    "depth_model",
+    "quantitative_model",
+    "learning_item_model",
+    "prohibited_patterns",
+    "semantic_review_questions"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "approved",
+        "superseded"
+      ]
+    },
+    "subject_name": {
+      "type": "string"
+    },
+    "language_variant": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "foundational_concepts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "objective_types": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type_id",
+          "label",
+          "description",
+          "required_components",
+          "recommended_item_types"
+        ],
+        "properties": {
+          "type_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "required_components": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommended_item_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "assessment_skill_model": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "skill_id",
+          "label",
+          "definition",
+          "authoring_requirements"
+        ],
+        "properties": {
+          "skill_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "definition": {
+            "type": "string"
+          },
+          "authoring_requirements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "application_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "core_rule",
+        "context_dimensions",
+        "worked_application_policy",
+        "pseudo_application_patterns"
+      ],
+      "properties": {
+        "core_rule": {
+          "type": "string"
+        },
+        "context_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "worked_application_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "minimum_per_major_objective",
+            "contrast_required_for_decisions",
+            "coverage_dimensions"
+          ],
+          "properties": {
+            "minimum_per_major_objective": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "contrast_required_for_decisions": {
+              "type": "boolean"
+            },
+            "coverage_dimensions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "pseudo_application_patterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "analysis_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "chain_template",
+        "rules"
+      ],
+      "properties": {
+        "chain_template": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evaluation_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "judgement_template",
+        "decision_dimensions",
+        "rules"
+      ],
+      "properties": {
+        "judgement_template": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "decision_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "depth_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allocation_factors",
+        "tiers"
+      ],
+      "properties": {
+        "allocation_factors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "tiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "tier",
+              "label",
+              "typical_use",
+              "indicative_word_range",
+              "indicative_item_range"
+            ],
+            "properties": {
+              "tier": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "label": {
+                "type": "string"
+              },
+              "typical_use": {
+                "type": "string"
+              },
+              "indicative_word_range": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "min",
+                  "max"
+                ],
+                "properties": {
+                  "min": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "max": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              },
+              "indicative_item_range": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "min",
+                  "max"
+                ],
+                "properties": {
+                  "min": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "max": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "quantitative_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_components",
+        "interpretation_rules"
+      ],
+      "properties": {
+        "required_components": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "interpretation_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "legal_and_jurisdiction_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "core_rule": {
+          "type": "string"
+        },
+        "high_risk_topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "learning_item_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "item_types",
+        "flashcard_subtypes",
+        "rules"
+      ],
+      "properties": {
+        "item_types": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "flashcard_subtypes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "terminology_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prohibited_patterns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "semantic_review_questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

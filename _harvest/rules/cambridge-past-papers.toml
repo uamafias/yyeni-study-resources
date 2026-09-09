@@ -1,0 +1,44 @@
+name        = "cambridge-past-papers"
+description = "PROJECT OVERRIDE: Cambridge papers, AS scope only (RS-02 scope lock)"
+
+# Identical to the toolkit rule, plus the scope lock this project requires:
+# papers 3 and 4 are A Level and must not enter the AS assessment corpus.
+# Overriding here rather than in the toolkit keeps the shared rule general.
+source = "filename"
+
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>qp|ms|in|er|sf|sm|gt|ci|sy|ru)_?(?P<paper>\d)?(?P<variant>\d)?'''
+folder   = "sources/cambridge/{level}/{code}-{slug}/assessment/{yyyy}/{series}{yy}/{kind}"
+filename = "{code}_{series}{yy}_{kind}_{paper}{variant}.pdf"
+
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_specimen_(?P<kind>sp|sm|si|sf|gt)_(?P<paper>\d)_(?P<edition>\d{4}-\d{4})'''
+folder   = "sources/cambridge/{level}/{code}-{slug}/assessment/specimen/{edition}/{kind}"
+filename = "{code}_specimen_{kind}_{paper}_{edition}.pdf"
+
+unresolved = "operations/acquisition/inbox/_unresolved"
+
+[derive]
+yyyy = "20{yy}"
+
+[lookup.slug]
+from = "code"
+file = "shared/subject-slugs.csv"
+key = "code"
+value = "slug"
+default = "unknown-subject"
+
+[lookup.level]
+from = "code"
+file = "shared/subject-slugs.csv"
+key = "code"
+value = "level"
+default = "as-a-level"
+
+[map.series_name]
+from = "series"
+values = { s = "May-June", w = "Oct-Nov", m = "March" }
+
+# RS-02: paper digit 3 or 4 = A Level. Out of scope for the AS corpus.
+[filter]
+exclude = { paper = "[34]" }

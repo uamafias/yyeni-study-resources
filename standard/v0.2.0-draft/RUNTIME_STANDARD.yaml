@@ -1,0 +1,235 @@
+standard_id: yyeni-study-resource-runtime-standard
+version: 0.2.0-draft
+status: draft
+purpose: Generate syllabus-complete, assessment-aligned and evidence-controlled study resources from official curricula and
+  supporting materials.
+rules:
+- rule_id: RS-01
+  category: scope
+  requirement: Parse the entire official syllabus before drafting an individual topic; create a global objective registry,
+    level boundaries, route map, recurring-concept registry and dependency graph.
+  blocking: true
+- rule_id: RS-02
+  category: scope
+  requirement: Record the board, qualification, subject, syllabus code, examination years, syllabus version, learner route,
+    selected level, included and excluded topics, papers and language before authoring.
+  blocking: true
+- rule_id: RS-03
+  category: profiles
+  requirement: Load an approved qualification profile and subject profile; do not hard-code board- or subject-specific rules
+    into the universal engine.
+  blocking: true
+- rule_id: RS-04
+  category: sources
+  requirement: Inventory, hash, deduplicate, classify and test the readability of every supplied source before extraction.
+  blocking: true
+- rule_id: RS-05
+  category: assessment
+  requirement: Mine relevant official assessment materials when available and map questions, marks, command words, contexts,
+    credit-worthy reasoning and examiner findings to objective IDs.
+  blocking: true
+- rule_id: RS-06
+  category: curriculum
+  requirement: Decompose every syllabus bullet into atomic, assessable knowledge and skill objectives while preserving exact
+    syllabus wording internally.
+  blocking: true
+- rule_id: RS-07
+  category: traceability
+  requirement: Map every mandatory objective to approved content and at least one suitable learning item; map every substantial
+    content block and item back to an objective, prerequisite or separated enrichment objective. A mapping counts only where
+    the content or item actually teaches or practises the objective (see RS-40).
+  blocking: true
+- rule_id: RS-08
+  category: sequencing
+  requirement: Sequence objectives using the dependency graph and maintain canonical definitions through a global glossary.
+  blocking: true
+- rule_id: RS-09
+  category: depth
+  requirement: Assign proportionate depth using complexity, marks, assessment evidence, misconception risk, prerequisites,
+    cross-topic reuse and procedural or quantitative demand.
+  blocking: true
+- rule_id: RS-10
+  category: adequacy
+  requirement: Assess source adequacy; the presence of content does not prove satisfactory coverage.
+  blocking: true
+- rule_id: RS-11
+  category: authoring_action
+  requirement: 'Record one action for every objective: retain, refine, synthesise, correct, regenerate, generate-gap or exclude.'
+  blocking: true
+- rule_id: RS-12
+  category: evidence
+  requirement: Do not publish factual claims based only on model memory; require evidence, approved external verification
+    or transparent derivation from verified premises.
+  blocking: true
+- rule_id: RS-13
+  category: generated_content
+  requirement: Track provenance and verification for generated-gap and generated-quality claims; require human approval for
+    unresolved high-risk claims.
+  blocking: true
+- rule_id: RS-14
+  category: conflicts
+  requirement: Classify and resolve source conflicts using the appropriate authority hierarchy and preserve an audit trail.
+  blocking: true
+- rule_id: RS-15
+  category: scope
+  requirement: Keep optional enrichment separate from the examinable core and do not automatically generate core items from
+    enrichment.
+  blocking: true
+- rule_id: RS-16
+  category: canonical_source
+  requirement: Author canonical claims and structured content units before publishing notes, cards, quizzes or lessons; derive
+    all outputs from the same approved source.
+  blocking: true
+- rule_id: RS-17
+  category: objective_types
+  requirement: Classify objectives by type and use content and learning-item templates appropriate to that type.
+  blocking: true
+- rule_id: RS-18
+  category: understanding
+  requirement: Establish meaning, mechanism, purpose, boundaries, relationships and misconceptions before retrieval-item generation.
+  blocking: true
+- rule_id: RS-19
+  category: assessment
+  requirement: Follow the loaded subject and qualification profiles for application, analysis, evaluation, calculation and
+    other assessed skills.
+  blocking: true
+- rule_id: RS-20
+  category: application
+  requirement: Use contextual facts that materially change or sharpen reasoning; an industry or company name alone is not
+    application.
+  blocking: true
+- rule_id: RS-21
+  category: analysis
+  requirement: Use accurate conditional causal language and defensible mechanisms; do not jump automatically from an action
+    to profit. Express what an independent third party will do as likelihood with a reason, never as certainty.
+  blocking: true
+- rule_id: RS-22
+  category: quantitative
+  requirement: For every required measure include formula, variables, units, calculation, interpretation, comparison, limitations
+    and common errors.
+  blocking: true
+- rule_id: RS-23
+  category: jurisdiction
+  requirement: Do not present one jurisdiction legal rule as universal in an international qualification.
+  blocking: true
+- rule_id: RS-24
+  category: learning_items
+  requirement: Use the learning-item type appropriate to the objective; do not force every skill into a flashcard.
+  blocking: true
+- rule_id: RS-25
+  category: flashcards
+  requirement: Make flashcards atomic, self-contained, unambiguous, claim-backed and non-duplicative, with complete canonical
+    answers.
+  blocking: true
+- rule_id: RS-26
+  category: architecture
+  requirement: Use one consistent item architecture per topic; treat base, mastery and extension as metadata or views.
+  blocking: true
+- rule_id: RS-27
+  category: deterministic_qa
+  requirement: Run code checks for schema validity, IDs, coverage, references, evidence, scope, duplicates, metrics and release
+    consistency.
+  blocking: true
+- rule_id: RS-28
+  category: semantic_qa
+  requirement: Use an independent fresh-context reviewer for curriculum, accuracy, pedagogy, assessment alignment and subject
+    quality.
+  blocking: true
+- rule_id: RS-29
+  category: critic_packet
+  requirement: Give reviewers the original maps, inventories, evidence and QA results, not only the final notes.
+  blocking: true
+- rule_id: RS-30
+  category: critic_evidence
+  requirement: Require every critic issue to identify affected IDs, evidence, severity, consequence and repair; verify mechanical
+    claims by code.
+  blocking: true
+- rule_id: RS-31
+  category: release
+  requirement: Block publication while any mandatory objective, critical factual or scope defect, unsupported publishable
+    claim, reviewer rejection or deterministic blocker remains.
+  blocking: true
+- rule_id: RS-32
+  category: reproducibility
+  requirement: Register every release with standard and profile versions, syllabus version, source hashes, objective-map version,
+    agent versions, calculated metrics, QA results and output hashes.
+  blocking: true
+- rule_id: RS-33
+  category: generality
+  requirement: Do not assert exclusivity or universality unless the proposition is definitional, legal or arithmetic; record
+    which, on the claim, when it is.
+  blocking: true
+- rule_id: RS-34
+  category: coherence
+  requirement: Any summary, family, taxonomy or mnemonic must hold for every member it covers and must declare the member
+    objective IDs it claims to be true of.
+  blocking: true
+- rule_id: RS-35
+  category: variants
+  requirement: Name the materially different forms of any instrument or practice whose variation changes a learner-relevant
+    consequence, and condition every benefit and limitation on the form; consequential variants are listed in the subject
+    profile variant_register.
+  blocking: true
+- rule_id: RS-36
+  category: assessment
+  requirement: Any claim about what examiners reward, what carries most marks or what a paper contains must cite mapped assessment
+    evidence; where evidence status is partial for that objective the claim must not appear at all.
+  blocking: true
+- rule_id: RS-37
+  category: assessment
+  requirement: Every objective must carry at least one item whose prompt instructs with one of that objective's own command
+    words, at that command word's tariff and answer shape.
+  blocking: true
+- rule_id: RS-38
+  category: learning_items
+  requirement: Where a profile declares the required parts of an answer for a subtype, every item of that subtype must model
+    all parts and name each in its marking guidance, or be reclassified.
+  blocking: true
+- rule_id: RS-39
+  category: coherence
+  requirement: Every canonical answer must be derivable from the topic's content units; any mechanism an answer relies on
+    must appear in a claim a content-unit block also cites.
+  blocking: true
+- rule_id: RS-40
+  category: traceability
+  requirement: Limit objective_ids to objectives actually taught or practised; grant coverage credit only where a cited claim
+    also serves that objective.
+  blocking: true
+- rule_id: RS-41
+  category: coherence
+  requirement: Bump a claim revision whenever its text changes; every block and item citing it is stale until re-authored
+    against the new text with claims_seen updated. A stale derivative blocks release. A claims_seen stamp must carry an authored_hash
+    of the artefact text it was made against; advancing the stamp without the artefact changing is a bulk stamp and blocks
+    release.
+  blocking: true
+- rule_id: RS-42
+  category: release
+  requirement: A topic is releasable with no critical and no high issue open; medium and low issues are logged and cleared
+    in a later maintenance pass but do not block release. Issues that ship open must stay open in the qa report.
+  blocking: true
+required_artifacts:
+- qualification profile
+- subject profile
+- source inventory
+- global objective registry and dependency graph
+- assessment evidence map
+- source adequacy and repair plan
+- canonical claim ledger
+- content units
+- learning-item dataset
+- deterministic QA report
+- semantic critic reports
+- build manifest
+- publication artifacts
+release_blockers:
+- wrong syllabus version, route or level
+- missing mandatory objective
+- out-of-level content presented as core
+- unresolved higher-authority conflict
+- unsupported factual claim marked publishable
+- formula, unit or worked-answer error
+- invalid item-to-claim or item-to-objective reference
+- unresolved duplicate learning item
+- required reviewer rejection
+- final artifact not derived from approved structured content
+- missing release metrics or output hashes

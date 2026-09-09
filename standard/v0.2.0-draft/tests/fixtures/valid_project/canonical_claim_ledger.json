@@ -1,0 +1,146 @@
+{
+  "ledger_id": "CLAIMS-DEMO-2.1.2",
+  "claims": [
+    {
+      "claim_id": "CLAIM-WP-DEF",
+      "objective_ids": [
+        "BUS-9609-AS-2.1.2-A"
+      ],
+      "text": "Workforce planning is the process of forecasting the number and skills of employees a business will require to achieve its future objectives.",
+      "claim_type": "definition",
+      "provenance": "source_synthesised",
+      "evidence": [
+        {
+          "source_id": "SRC-SYLLABUS-9609-V2",
+          "locator": "Section 2.1.2",
+          "support_type": "direct"
+        },
+        {
+          "source_id": "SRC-HRP-NOTES",
+          "locator": "Page 1",
+          "support_type": "paraphrase"
+        }
+      ],
+      "derived_from_claim_ids": [],
+      "verification": {
+        "status": "verified",
+        "method": "Cross-checked against syllabus and supporting note.",
+        "reviewer_id": "DEMO-REVIEWER",
+        "reviewed_at": "2026-08-31T00:00:00Z",
+        "confidence": 0.99
+      },
+      "publishable": true,
+      "notes": []
+    },
+    {
+      "claim_id": "CLAIM-LT-DEF",
+      "objective_ids": [
+        "BUS-9609-AS-2.1.2-B"
+      ],
+      "text": "Labour turnover is the rate at which employees leave a business during a stated period.",
+      "claim_type": "definition",
+      "provenance": "source_derived",
+      "evidence": [
+        {
+          "source_id": "SRC-SYLLABUS-9609-V2",
+          "locator": "Section 2.1.2",
+          "support_type": "direct"
+        }
+      ],
+      "derived_from_claim_ids": [],
+      "verification": {
+        "status": "verified",
+        "method": "Curricular and conceptual review.",
+        "reviewer_id": "DEMO-REVIEWER",
+        "reviewed_at": "2026-08-31T00:00:00Z",
+        "confidence": 0.99
+      },
+      "publishable": true,
+      "notes": []
+    },
+    {
+      "claim_id": "CLAIM-HIGH-LT-COST",
+      "objective_ids": [
+        "BUS-9609-AS-2.1.2-B"
+      ],
+      "text": "High labour turnover can increase recruitment, induction and training costs and may temporarily reduce productivity while replacement employees learn their roles.",
+      "claim_type": "causal",
+      "provenance": "generated_quality",
+      "evidence": [
+        {
+          "source_id": "SRC-HRP-NOTES",
+          "locator": "Page 1, employee departures and replacement recruitment",
+          "support_type": "derivation"
+        },
+        {
+          "source_id": "SRC-APPROVED-BUSINESS-REFERENCE",
+          "locator": "Labour turnover consequences",
+          "support_type": "corroboration"
+        }
+      ],
+      "derived_from_claim_ids": [
+        "CLAIM-LT-DEF"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "Verified against approved conceptual reference.",
+        "reviewer_id": "DEMO-REVIEWER",
+        "reviewed_at": "2026-08-31T00:00:00Z",
+        "confidence": 0.96
+      },
+      "publishable": true,
+      "notes": []
+    },
+    {
+      "claim_id": "CLAIM-LOW-LT-BENEFIT",
+      "objective_ids": [
+        "BUS-9609-AS-2.1.2-B"
+      ],
+      "text": "Low labour turnover can reduce replacement costs and help a business retain experience, customer knowledge and stable working relationships.",
+      "claim_type": "causal",
+      "provenance": "generated_gap",
+      "evidence": [
+        {
+          "source_id": "SRC-APPROVED-BUSINESS-REFERENCE",
+          "locator": "Low labour turnover consequences",
+          "support_type": "direct"
+        }
+      ],
+      "derived_from_claim_ids": [
+        "CLAIM-LT-DEF"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "Verified against approved conceptual reference.",
+        "reviewer_id": "DEMO-REVIEWER",
+        "reviewed_at": "2026-08-31T00:00:00Z",
+        "confidence": 0.96
+      },
+      "publishable": true,
+      "notes": []
+    },
+    {
+      "claim_id": "CLAIM-LT-EVAL",
+      "objective_ids": [
+        "BUS-9609-AS-2.1.2-B"
+      ],
+      "text": "The significance of a labour-turnover rate depends on which employees leave, why they leave, the cost and time required to replace them, and the business objectives.",
+      "claim_type": "evaluative",
+      "provenance": "reasoned_extension",
+      "evidence": [],
+      "derived_from_claim_ids": [
+        "CLAIM-HIGH-LT-COST",
+        "CLAIM-LOW-LT-BENEFIT"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "Reasoned synthesis reviewed against Business evaluation rules.",
+        "reviewer_id": "DEMO-REVIEWER",
+        "reviewed_at": "2026-08-31T00:00:00Z",
+        "confidence": 0.94
+      },
+      "publishable": true,
+      "notes": []
+    }
+  ]
+}

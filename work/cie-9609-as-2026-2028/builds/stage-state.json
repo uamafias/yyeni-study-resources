@@ -1,0 +1,72 @@
+{
+  "qualification": "cie-9609-as-2026-2028",
+  "pipeline_state": "AUTHORED (topic 5.2 only)",
+  "standard_version": "0.1.0-draft",
+  "updated_at": "2026-09-08T11:24:56Z",
+  "completed_pipeline_stages": [
+    "Stage 2 - source ingestion and triage (378 sources inventoried)",
+    "Stage 3 - global curriculum map (295 registry entries: 258 assessable objectives after decomposing 18 compound bullets into 95 members, plus dependency graph, glossary, assessment framework, item budget)",
+    "Stage 4 - assessment-material mining (988 question parts from 84 AS papers; 228 evidence records; granularity probe complete; 766 examiner statements first pass)",
+    "Stage 5 - topic contracts drafted for all 19 topics (source permissions pending)",
+    "Source permissions granted 2026-09-08; all 19 contracts moved from draft to active",
+    "Stage 10 - canonical claim authoring, topic 5.2 (63 claims)",
+    "Stage 11 - learner content construction, topic 5.2 (4 content units, 4,357 words)",
+    "Stage 13 - learning-item generation, topic 5.2 (68 items, exactly the budgeted allocation)"
+  ],
+  "next_pipeline_stage": "Stage 15 independent semantic review of topic 5.2 (needs reviewers - Q-7), then the remaining 18 topics through Stages 10-13",
+  "blocked_pipeline_stages": {
+    "Stage 15 - independent semantic review": "reviewers not assigned (open question Q-7)"
+  },
+  "artifacts": {
+    "objective_registry": "curriculum/objective_registry.json",
+    "dependency_graph": "curriculum/dependency_graph.json",
+    "glossary": "curriculum/glossary.json",
+    "assessment_framework": "curriculum/assessment-framework.json",
+    "source_inventory": "inventory/source_inventory.json",
+    "assessment_evidence": "assessment-evidence/assessment_evidence.json",
+    "item_budget": "curriculum/item-budget.json",
+    "decomposition_decisions": "curriculum/decomposition-decisions.json",
+    "stage_4_granularity_probe": "curriculum/STAGE-4-GRANULARITY-PROBE.md",
+    "granularity_probe": "assessment-evidence/granularity-probe.json",
+    "examiner_findings": "assessment-evidence/examiner-findings-firstpass.json",
+    "exam_exposure": "curriculum/exam-exposure.json",
+    "topic_contracts": "topics/<topic>/contract.json (19)",
+    "block_calendar": "curriculum/block-calendar.json",
+    "topic_5_2_claims": "topics/5.2/claims/canonical_claim_ledger.json",
+    "topic_5_2_content": "topics/5.2/content-units/ (4 units)",
+    "topic_5_2_notes": "topics/5.2/notes-5.2-sources-of-finance.md",
+    "topic_5_2_items": "topics/5.2/learning-items/topic_5.2_items.json"
+  },
+  "build_manifest": "not yet creatable - see builds/NO-MANIFEST-YET.md",
+  "publication": "BLOCKED under RS-31 (no assessment evidence, no claims, no content, no semantic review)",
+  "open_decisions": {
+    "semantic_reviewers": "Q-7 still open. 63 claims sit unverified; nothing in 5.2 can publish until independent review runs.",
+    "remaining_stage_4_work": "mark-scheme mining for credit-worthy points and bullet-level exposure; mapping the 766 examiner statements"
+  },
+  "item_budget": "LOCKED at 889 items",
+  "learner_profile": "Taught the full AS course. Revision mode, not first teaching. Two delivery schedules recorded in curriculum/item-budget.json.",
+  "topic_progress": {
+    "qualification_wide_complete": [
+      "Stage 2 source ingestion (378 sources)",
+      "Stage 3 curriculum map (all 19 topics)",
+      "Stage 4 assessment mining (partial - member-level; mark-scheme mining outstanding)",
+      "Stage 5 topic contracts (all 19)",
+      "Stage 7 depth allocation (tiers and the 889-item budget)"
+    ],
+    "topic_5_2_only": [
+      "Stage 10 claims (63)",
+      "Stage 11 content units (4, 4,357 words)",
+      "Stage 12 assessment layer (inside the content units)",
+      "Stage 13 learning items (68)"
+    ],
+    "not_started_anywhere": [
+      "Stage 6 per-topic objective refinement",
+      "Stage 8 source adequacy audit",
+      "Stage 9 gap and repair plan",
+      "Stage 14 deterministic validation of a full build",
+      "Stage 15 independent semantic review",
+      "Stages 16-18 adjudication, publication, release QA"
+    ],
+    "eighteen_topics_status": "contract only - no claims, no content, no items"
+  }
+}

@@ -1,0 +1,312 @@
+# 5.2 Sources of finance
+
+*cie-9609-as-2026-2028. Offline study notes, rendered from the approved content units on 2026-09-08. Everything here is also what the flashcards are built from.*
+
+**What this topic asks of you**
+
+- Explain how the form of business ownership a firm has chosen affects which sources of finance are open to it, and why.
+- Identify and explain the internal sources of finance available to a business, and evaluate the benefits and limitations of each.
+- Identify and explain the external sources of finance available to a business, and evaluate the benefits and limitations of each.
+- Explain the factors that influence the choice of a source of finance in a given situation, and evaluate which source is most appropriate for a specific business, giving the reasons for that choice.
+
+---
+
+## How ownership affects access to finance
+
+### Source of finance
+
+A source of finance is any means by which a business obtains the money it needs to start up, operate or grow.
+
+### Why ownership decides what is available
+
+Two businesses of the same size, in the same industry, with the same idea, can face different sets of options for raising money. What separates them is often their legal form.
+
+Ownership matters in two ways, and they are not the same kind of thing.
+
+**The first is legal, and it is absolute.** Some sources simply do not exist for some forms. A sole trader has no shares, so selling shares is not an option however attractive it might be. A private limited company has shares but is not permitted to offer them to the general public. Only a public limited company may do that. These are rules, and you can state them flatly.
+
+**The second is about how a provider sees the risk, and it is a tendency, not a rule.** Here is where candidates most often get the mechanism backwards, so read it slowly.
+
+Incorporation makes the company a separate legal person. The company borrows in its own name, and it is the company's assets, cash flow and trading record the lender assesses.
+
+Limited liability limits what the *owners* can lose to what they put in. It does nothing to reduce what the *lender* stands to lose. In fact it takes the owners' houses and savings out of the lender's reach, which is why a lender dealing with a small company often asks for security over the company's assets, or for personal guarantees from the directors that put those personal assets back within reach. Limited liability protects the owner; it does not reassure the lender.
+
+What can reassure a lender is information. Where a company has to file accounts, there is a verified public record of how it is trading, and a risk that can be measured is a risk a lender can price. But which companies must file, what must be audited, and what becomes public differ by company type and by country - so this is a reason finance may be easier for some incorporated businesses, not a rule that incorporation brings cheaper money.
+
+Hold both halves. A sole trader who has traded profitably for twenty years, owns premises outright and has banked with the same branch throughout may well borrow more easily than a limited company incorporated last month.
+
+### What each form can and cannot use
+
+Ask three separate questions about each source, because they have different answers. *Is it legally possible for this form?* *Would a provider be willing?* *Does this business qualify under the scheme's rules?* Only the first has a fixed answer.
+
+**Sole trader.** No shares can be issued - an unincorporated business has none. Capital comes from the owner's own savings, profit kept in the business, borrowing, trade credit, leasing, hire purchase and micro-finance, and a sole trader may also win a grant or run a crowd-funding campaign where the scheme or platform allows it. Because liability is unlimited, a lender will usually look at the owner's personal position as well as the business, and may ask for the owner's home as security.
+
+**Partnership.** Capital from the existing partners, from admitting a new partner, from retained profit and from borrowing. No shares. Admitting a partner is the distinctive route: money without interest, at the price of a share of profit and control.
+
+**Private limited company.** Shares can be issued, but only privately, to people the company invites. Retained earnings, bank loans, leasing and hire purchase are all available. Venture capital becomes possible. Debentures are possible in principle, though uncommon at this size.
+
+**Public limited company.** Everything above, plus the legal ability to offer shares to the general public. That permission is the single largest difference in the topic, because it opens a pool of investors no other form can reach.
+
+**Franchise.** A franchisee borrows in the ordinary way, but may find it easier, because the franchisor's established trading record and proven format reduce the risk the lender perceives.
+
+**Co-operative.** Capital comes mainly from members and from borrowing. Selling equity to outside investors is not normally possible without changing what the co-operative is.
+
+**Social enterprise.** This is not a legal form. A social enterprise is a business whose objectives include a social or environmental return, and it trades as a sole trader, partnership, company or co-operative - so its legal options are whichever form it has adopted. What its purpose can add is eligibility: grants, donations and impact investment are often aimed at exactly that kind of activity. It is the funder's criteria that decide, though, not the label. A profit-seeking business doing work a scheme wants to encourage can win the same grant.
+
+### Two bakeries, two sets of options
+
+Two bakeries in Windhoek each need N$400 000 to buy a second oven and a delivery vehicle.
+
+Maria trades as a sole trader. Her realistic options are her own savings, the profit she has kept in the business, a bank loan secured on her house, and hire purchase on the vehicle. The bank will assess her personally, and if the bakery fails she can lose her home. She cannot bring in an investor without changing her legal form.
+
+Kalunga Bakeries is a private limited company with four shareholders. It can do everything Maria can, and it can also issue new shares to a fifth investor. If the bank refuses, that route stays open. The shareholders would have to accept a smaller share of future profits and a new voice in decisions.
+
+The two businesses are the same size and want the same equipment. The difference in what they can do comes entirely from the form each chose.
+
+### A common error
+
+Candidates frequently write that a private limited company "can sell shares on the stock exchange". It cannot. Selling shares to the general public through a stock exchange is what distinguishes a public limited company from a private one. A private limited company issues shares privately, to named people it chooses.
+
+A second error is more subtle and costs AO3 marks. Candidates write that limited liability makes lending safer, so companies borrow more cheaply. It does not. Limited liability protects the owners, not the lender - it is the reason a lender may ask a small company's directors for personal guarantees. What can make borrowing easier is a trading record, security, and verified accounts a lender can read.
+
+### Where this connects
+
+Ownership types are set out in topic 1.2.2. This section adds the financial consequence of those types. The reasons a business needs finance at all are in 5.1.1, and the factors that decide between the available sources are in 5.2.3.
+
+---
+
+## Internal sources of finance
+
+### Internal source of finance
+
+An internal source of finance is money raised from within the business or from its owners, without borrowing from or selling ownership to an outside party.
+
+The line between internal and external is simply whether a party outside the business supplies the money. Internal finance comes from the business's own trading, its assets or its existing owners. External finance comes from a lender, a new owner, a supplier granting credit, or a grant-giver.
+
+### What the internal sources do and do not share
+
+Two things are true of all five internal sources, and it is worth knowing which two, because the tempting third is false.
+
+**They charge no interest**, because nothing is borrowed. **They dilute no ownership**, because nothing is sold to a new owner. Those two hold for every source in this section.
+
+**They are limited by what the business or its owners already have.** Internal sources do not scale up on demand. A business needing more than it holds must go outside, whatever it would prefer.
+
+What is *not* true of all five - and what a careless summary gets wrong - is that internal finance is free and involves nobody else. Sale and leaseback needs a buyer to agree and leaves the business paying rent on an asset it used to own. Selling an asset gives up whatever that asset would have earned. Cash released from working capital has to come out of inventory, out of customers' credit terms, or out of suppliers' patience. No interest is not the same as no cost.
+
+### The five internal sources
+
+**Owner's investment** is money the owner puts in from personal wealth. It costs no interest and dilutes no control, which is why it is the usual first source for a start-up. It is limited by how much the owner actually has, and it moves the owner's personal savings into a business that may fail.
+
+**Retained earnings** are profits kept in the business after tax and after any dividends. This is the most important internal source for an established business: no interest, no dilution, and no application to make. Three limitations matter. A business must already have been profitable to have retained earnings at all, which is why a start-up cannot use them. The figure is an accounting total, not a cash balance - the profit may already be sitting in equipment or stock, so it can be available on paper and not in the bank. And profit retained is profit not distributed, so shareholders receive smaller dividends and may object.
+
+**Sale of unwanted assets** turns non-current assets the business no longer needs into cash. It raises money without debt and without dilution, and it removes the cost of holding an idle asset. But it works only once, only if such assets exist, and an asset sold quickly often fetches less than its book value.
+
+**Sale and leaseback** means selling an asset the business does use, usually to a finance company, and immediately leasing it back so operations continue unchanged. A retailer might sell its store building and continue trading in it as a tenant. This releases a large sum at once while the business keeps using the asset. The price is real: ownership is gone, any future rise in the property's value belongs to someone else, and the lease payment becomes a fixed cost that must be met in poor years as well as good ones.
+
+**Working capital** can act as a source of finance when cash is released from within the operating cycle: holding less inventory, collecting from customers sooner, or taking longer to pay suppliers. The money comes from inside the business rather than from a lender or a new owner - that is what makes it internal - but two of the three levers need someone outside to go along with it. A customer has to agree to pay sooner; a supplier has to tolerate being paid later. Each lever has a cost, too. Cutting inventory too far causes stock-outs and lost sales. Pressing customers to pay early strains relationships. Paying suppliers late damages the business's standing and may cost it credit terms later.
+
+### Why retained earnings are not free
+
+Retained earnings are often described as free finance. They are not, and it is worth being precise about what the cost is.
+
+Profit retained is profit not paid out. The shareholders - in a small company, often the owners themselves - receive less cash this year than they otherwise would, and they could have used that money elsewhere. That forgone alternative is the cost, and it is real even though no interest is charged and nothing appears in the accounts as an expense.
+
+Whether shareholders mind depends on what the money is for. If they can see the retained profit funding something that will raise future earnings, most will accept a smaller dividend now. If they cannot, they may press for the dividend instead, and in a company where the shareholders are family that argument can be the real constraint on what the business is able to do.
+
+### A lodge with cash tied up
+
+A safari lodge near Etosha is profitable over the year but short of cash in the low season. It needs N$150 000 for repairs before the next peak.
+
+Retained earnings exist on paper but are tied up in inventory and in amounts owed by tour operators on 60-day terms. Rather than borrow, the lodge negotiates 30-day terms with two operators and reduces its stock of imported beverages, releasing roughly N$90 000 within six weeks. The remaining N$60 000 comes from selling a vehicle taken out of service last year.
+
+Both are internal sources, both avoid interest, and both suit a business whose problem is timing rather than profitability. Neither would work if the lodge needed the money next week, or if it needed N$1.5 million.
+
+### A common error
+
+Retained earnings are often described as "money sitting in the bank". They are not the same thing. Retained earnings are an accumulated accounting figure showing profit that has not been distributed. That profit may already have been spent on equipment, inventory or repaying a loan. A business can show large retained earnings and still have no cash available.
+
+---
+
+## External sources of finance
+
+### External source of finance
+
+An external source of finance is money obtained from outside the business, either by borrowing it, by selling part-ownership, or by receiving it from another party.
+
+### Four ways money arrives, not fourteen items
+
+The syllabus lists fourteen external sources. Learning them as fourteen separate items is the slow way. But group them by the wrong question and you will write things that are not true, so group them by what the business actually gives up.
+
+**Sells part of itself.** Share capital, a new partner, venture capital, equity crowd funding. Nothing is repaid and no interest is charged. What is given up is a permanent share of ownership, of profit and of control.
+
+**Borrows.** Bank loans, mortgages, debentures, overdrafts, micro-finance, loan-based crowd funding. A sum is received and must be repaid with interest on dates that do not move when trading is poor. Ownership is untouched.
+
+**Gets the use of something, or gets paid earlier.** Leasing and hire purchase pay for the use of an asset over time. Trade credit is the supplier waiting. Debt factoring sells the right to be paid. These are often lumped in with borrowing and they are not the same: under a lease nothing is borrowed and the asset stays the lessor’s; under factoring the business sells an asset it already has, and nothing is repaid. Trade credit usually carries no interest at all, though a discount forgone is a real cost.
+
+**Receives.** Government grants, and donation or reward crowd funding. No repayment and no ownership given up. What is hard is qualifying, meeting the conditions, and waiting.
+
+Sorting a source into its group tells you what the argument has to be about. An owner who will not lose control rules out the first group. A business with volatile cash flow is wary of the second. A business with time and a qualifying purpose should check the fourth. But the group is a starting point, not the answer: two sources in the same group can suit a business very differently, which is what 5.2.3 is about.
+
+### Equity sources
+
+**Share capital** is money raised by selling shares, which gives the buyer part-ownership. It is permanent: there is no obligation to repay it and no interest, so it puts no burden on cash flow. A dividend is not an obligation either - it is decided by the company each year, so in a poor year it can pay nothing and keep the cash. That is the sharpest practical difference from borrowing, where the payment falls due whatever the year has been. In exchange, ownership and control are diluted, shareholders expect dividends, and issuing shares carries legal and administrative cost. For a private limited company the shares must be placed privately; only a public limited company can offer them to the general public.
+
+**New partners** bring capital into a partnership, and often skills and contacts too. The capital carries no interest and need not be repaid. The cost is a share of future profits and a share of control, and every existing partner must accept both.
+
+**Venture capital** is equity investment by a specialist firm in a business judged to have high growth potential and high risk. It supplies equity to businesses a bank is often unwilling to lend to, because the risk is high and there may be little to secure a loan against, and it usually brings expertise, governance and contacts with it. In exchange the investor takes a substantial stake, expects influence over decisions, and expects to sell that stake at a profit within a few years. That exit expectation shapes what strategy the business can pursue: an investor who needs a sale in five years will not support a plan that pays off in fifteen.
+
+### Debt sources — long-term
+
+**Bank loans** provide a fixed sum for a fixed period, repaid in scheduled instalments with interest. The known sum and known schedule make planning straightforward and ownership is untouched. But interest is payable whether or not trading goes well, and the lender may attach conditions to how the business operates.
+
+Borrowing is **secured** or **unsecured**, and the difference matters more than students expect. Secured borrowing names an asset the lender can take if the business does not repay - the packhouse, the vehicle, the building. Because the lender's loss is smaller if things go wrong, secured borrowing is usually easier to obtain and carries a lower rate. Unsecured borrowing names no such asset, so it is generally harder to get and costs more. A business with nothing to pledge is not shut out of finance, but it is pushed towards the sources that do not need security: asset finance secured on the thing being bought, equity, factoring against its invoices, micro-finance.
+
+**Mortgages** are long-term loans secured on property. Because the security is strong, a mortgage can be very large, run for many years, and carry a lower interest rate than unsecured borrowing. The property can be taken by the lender if repayments are not met. The legal detail of what a lender may do, and how quickly, is set by national law and differs between countries.
+
+**Debentures** are long-term loan certificates issued by a company, usually at a fixed rate of interest with a fixed redemption date. They raise large sums without diluting ownership and the cost is predictable. But the interest must be paid whether or not the company profits, the sum must be repaid on the redemption date, and more fixed-interest debt leaves the business more exposed if trading weakens.
+
+**Leasing** is paying a regular charge to use an asset that stays owned by the lessor. It avoids a large initial outlay, spreads cost evenly, often includes maintenance, and makes replacing obsolete equipment easy. Over a full lease the total paid is usually more than the purchase price, and the business never owns the asset. The reason is worth knowing: the lessor buys the asset and has its own money tied up in it for the whole term, and it is the lessor that carries the risk of the asset being worth less than expected at the end. The payments have to cover the price, the cost of that tied-up money, and a return for carrying that risk.
+
+What a lease actually provides depends on the agreement, so read the case rather than assuming. Whether maintenance is included, whether the business may return the asset early or swap it for a newer model, how long the term runs, and who bears the loss if the asset is worth less than expected at the end are all things a particular lease may or may not offer.
+
+**Hire purchase** is paying for an asset in instalments, with ownership passing once the final instalment is paid. It spreads the cost of an asset the business will eventually own. The total cost is higher than paying cash, and the asset can normally be repossessed if instalments are missed. Working the difference out is a standard Paper 2 calculation: add the deposit to every instalment to get the total paid, then subtract the cash price. What is left is the price of spreading the payments, and it is worth expressing as a percentage of the cash price so it can be compared with other finance.
+
+### Debt sources — short-term
+
+**Bank overdrafts** allow a business to withdraw more from its current account than it holds, up to an agreed limit. An overdraft is flexible and quick, and interest is charged only on the amount actually used, which suits short-term gaps. But the interest rate is high, the bank can usually demand repayment at short notice, and it is the wrong instrument for funding a non-current asset.
+
+**Trade credit** is receiving goods or services now and paying at an agreed later date, commonly 30 or 60 days. It is interest-free short-term finance and eases cash flow at no direct cost if payment is made on time. Early-settlement discounts are lost, paying late damages supplier relationships and the business's credit standing, and a new business with no trading record may not be offered credit at all.
+
+**Debt factoring** is selling trade receivables to a specialist company, the factor, which pays most of their value immediately and collects the debts itself. It turns money owed into cash at once and passes the work of collection to the factor, which suits a business with a long cash cycle.
+
+Whether it also passes the *risk* depends on the agreement, and this is the part candidates get wrong. Under **non-recourse** factoring the factor bears the loss if a customer does not pay, and charges more for carrying it. Under **recourse** factoring the business stays responsible for that loss. So "factoring removes bad-debt risk" is only true of one kind, and an answer that claims the benefit without naming the kind has claimed something the agreement may not provide.
+
+Either way the factor keeps a percentage of each invoice, so the business receives less than it is owed, and customers who find themselves dealing with a factor may read it as a sign of difficulty.
+
+**Micro-finance** is the provision of small loans and related services to individuals and very small businesses that cannot obtain finance from mainstream banks. It reaches borrowers with no collateral and no credit history, which makes enterprise possible where it otherwise would not be. The sums are small, interest rates are often higher than mainstream lending, and it cannot fund substantial growth. Two things push the rate up: lending without security means the lender recovers nothing when a loan is not repaid and must cover those losses out of what everyone else pays, and the work of assessing and collecting a very small loan is large relative to the sum lent. How micro-finance is regulated, and what it costs, varies considerably between countries.
+
+### Sources given rather than borrowed
+
+**Government grants** are sums provided by government, normally not repayable, to encourage activity the government wishes to see: employment in a particular region, exporting, training, or investment in a target industry. A grant supplies finance with no repayment, no interest and no dilution. That is not the same as being free: applying takes management time that could have been spent on the business, and the conditions attached can push a business into doing something it would not otherwise have chosen. But grants are competitive, carry conditions on how the money is used and often on location or hiring, take time to apply for, and rarely cover the full cost of a project. What is available depends entirely on the government of the day and the country concerned.
+
+**Crowd funding** raises a large number of small contributions through an online platform. It comes in four broad forms and they are not interchangeable:
+
+- **Donation** - the backer gives and receives nothing back.
+- **Reward** - the backer receives the product, or early access, or a named benefit.
+- **Equity** - the backer receives a share of the business.
+- **Loan-based** - the money is lent and repaid with interest.
+
+The form decides the cost. Donation and reward campaigns repay nothing and give up no ownership, though the business is committed to delivering whatever it promised, which can be expensive if the campaign over-succeeds. Equity crowd funding dilutes ownership exactly as any other share issue does. Loan-based crowd funding must be repaid with interest exactly as any other borrowing must. Saying "crowd funding avoids repayment and dilution" without naming the form is wrong for two of the four.
+
+What the forms share: the campaign must be persuasive, many fail to reach their target, platforms charge fees, and the idea becomes public before the business is ready to sell.
+
+### Why an overdraft is the wrong way to buy a machine
+
+A business uses its overdraft to buy a machine costing the equivalent of six months' revenue.
+
+The overdraft is repayable on demand. The machine will take four years to generate enough additional profit to cover its cost. Nine months in, the bank reviews the facility and reduces the limit. The business must find the money immediately, but the cash is in a machine that cannot be sold quickly at anything near what was paid for it. It borrows elsewhere at a worse rate, or sells the machine at a loss, or fails.
+
+Nothing here depends on the business being badly run. The failure comes from matching a long-lived use to a short-lived source. That is the matching principle, set out in 5.2.3, and it is a chain worth having ready - though it is one factor among five, and the case in front of you decides which one is decisive.
+
+### The same amount, three businesses
+
+Each of these businesses needs N$2 million.
+
+A three-year-old logistics firm needs it for four delivery trucks. Hire purchase or leasing fits: the finance is secured on the trucks themselves and the term matches their working life, so the firm may not need to pledge other property - though a provider looking at only three years of trading could still ask for more.
+
+A software start-up with no revenue and no assets needs it to reach launch. Ordinary bank lending is unlikely to be offered: there is nothing to secure a loan against and no trading record to assess, so the lender would be carrying the whole risk at a lending rate. Venture capital is the route that fits, because a venture investor is paid for risk in equity rather than interest - and the founders should expect to give up a substantial stake and a board seat for it.
+
+An established manufacturer needs it because customers on 90-day terms have left it short of cash while orders are strong. This is a working-capital problem, not an investment one. Debt factoring or an increased overdraft fits the timescale; a five-year loan would leave the business paying interest for years on a problem lasting months. If it factors, it should check whether the agreement is recourse or non-recourse, because that decides who carries the loss if one of those customers never pays.
+
+The amount is identical in all three. The right source is different in each, because what the money is for is different in each.
+
+### Three common errors
+
+**Leasing and hire purchase are not the same.** Under hire purchase the business owns the asset at the end. Under a lease it does not. Candidates lose marks by treating them as interchangeable.
+
+**A share issue is not a loan.** Shareholders are not repaid and cannot demand their money back from the company; they recover their investment by selling the share to someone else. Writing that a company must "pay back" its shareholders is wrong.
+
+**Debt factoring is not a loan either.** The business sells an asset it owns — the right to be paid by its customers — at a discount. Nothing is borrowed and nothing is repaid.
+
+### What questions on this section look like
+
+Across the whole syllabus, AS questions use six command words, and each has a fixed tariff:
+
+| Command word | Marks | What earns the marks |
+|---|---|---|
+| Identify | 1 | Name or select. Nothing beyond naming is credited. |
+| Define | 2 | One precise sentence. No example needed, no evaluation. |
+| Explain | 3 | The point, the reason or mechanism, and the link made to the case. |
+| Calculate | 3 | Formula, substitution, answer with units, one sentence of interpretation. |
+| Analyse | 5 or 8 | A chain: condition, mechanism, consequence, effect on an objective or stakeholder. |
+| Evaluate | 12 | Judgement, this business's facts, decisive criterion, strongest counterargument, condition. |
+
+Not all six appear on every section - a calculation needs figures to work from, so it belongs where a question supplies them.
+
+Watch the difference between a *question* total and a *part* tariff. A Paper 1 Section B essay is worth 20 marks in total and comes in two parts: Analyse for 8, then Evaluate for 12. A Paper 2 question is worth 30 marks across six parts. There is no such thing as a 20-mark Evaluate.
+
+Twelve-mark questions name the source and the business - whether *this* business should accept venture capital, whether a bank loan is right for *that* business's growth. A general answer about sources of finance does not answer the question asked.
+
+---
+
+## Choosing and evaluating a source of finance
+
+### The five factors the syllabus names
+
+**Cost.** Not only the interest rate. Cost includes interest or expected dividends, arrangement fees, issue costs, and discounts given up — a business taking 60 days to pay a supplier who offers 2% for settlement in 10 days is paying for that credit, even though no interest appears anywhere.
+
+**Flexibility.** How easily the amount can be varied and how quickly the arrangement can end. An overdraft is highly flexible: draw what you need, repay when you can, pay interest only on what is used. A debenture is the opposite: a fixed sum, a fixed rate, a fixed date. Flexibility is worth most when future needs are uncertain.
+
+**The need to retain control.** Any source that gives an outside party a share of ownership reduces the existing owners' control. Owners who place a high value on control may prefer borrowing to issuing shares even where borrowing costs more. That is not irrational - it is a preference the business is entitled to price - but it is a preference, so look for what the case says about it rather than assuming it.
+
+**The use to which it is put.** Long-term finance for non-current assets, short-term finance for working capital. This is the matching principle. It is useful because it turns a vague question - is this source suitable? - into a comparison you can make from the case: how long will the thing being bought last, and how long does this source last?
+
+**The level of existing debt.** A business already carrying a lot of debt is likely to face higher interest on further borrowing, more difficulty obtaining it at all, and more danger if sales fall - because interest must be paid whatever the trading position. At AS you are expected to reason about the level of debt and its consequences, not to calculate ratios.
+
+### Factors the syllabus does not list but a good answer uses
+
+The five named factors are the ones you must know. A strong answer usually reaches for a few more, drawn from the situation rather than from a list: how much is needed, how quickly, what security the business can offer, how long it has been trading, and what its legal form permits. These are not additions to the syllabus — they are the specifics through which the five factors actually operate in a given case.
+
+### How to reach a judgement worth twelve marks
+
+There is no best source of finance. A source that suits one business suits another badly, and may suit the same business badly a year later. That is why the question is always framed around a particular business in a particular situation.
+
+A complete judgement has five parts.
+
+State the judgement plainly. Not "it depends" — say what the business should do.
+
+Ground it in this business. Name the facts from the case that made the difference: the trading record, the security available, the season, the owner's stated priority.
+
+Give the decisive criterion and say why it decides. Among the five factors, one usually dominates. Say which, and why it outweighs the others here.
+
+Address the strongest argument against. Not a token mention of a weak alternative — the genuinely best case for the option you rejected.
+
+State the condition under which your answer would change. This is what separates a judgement from an opinion. "A bank loan is right for FF, but if the order book weakens before the first repayment falls due, the fixed schedule becomes the greatest risk rather than the greatest advantage."
+
+The commonest way to lose these marks is to set out both sides carefully and stop, leaving the reader to decide. The five parts above exist to prevent exactly that.
+
+### A worked judgement
+
+*Kavango Fresh, a private limited company, has supplied vegetables to supermarkets for six years. It owns its packhouse. Sales have grown steadily. It needs N$3 million for a cold store, which will let it hold produce longer and sell into the dry season when prices are highest. The three shareholders are family and have said they will not bring in outside owners. Should Kavango Fresh use a bank loan or issue shares to a new investor?*
+
+**Judgement.** A bank loan, secured on the packhouse.
+
+**Grounded in this business.** Six years of trading gives the record a lender needs. The packhouse gives security. The cold store is a non-current asset with a long life, and the cash it generates is predictable because dry-season prices are consistently higher.
+
+**Decisive criterion.** The shareholders have ruled out new owners. That closes the equity route regardless of its merits, so the question becomes which debt instrument fits — and the matching principle points to long-term borrowing for a long-lived asset.
+
+**Strongest argument against.** Equity would carry no repayment obligation. Agriculture is exposed to drought, and in a bad year a loan repayment still falls due while revenue does not arrive. An investor would share that risk; a bank will not.
+
+**Condition.** The loan is right provided the repayment schedule is set against dry-season revenue rather than spread evenly through the year, and provided the business holds enough working capital to survive one failed season. If the bank will not structure repayments seasonally, the balance shifts, and the shareholders should reconsider their objection to outside equity.
+
+### A common error
+
+Candidates often list advantages and disadvantages of two sources and stop, expecting the marks for balance. Balance is not evaluation. Listing both sides shows you know the material; deciding between them, and saying what made the decision, is what earns AO4. An answer that ends "so it depends on the situation" without naming what it depends on has not reached a judgement.
+
+### The topic in six lines
+
+Ownership sets what is legally possible, and a provider's view of the risk sets what is realistically available. Internal sources charge no interest and dilute no ownership, but they are limited to what the business already has, and no interest is not the same as no cost. External sources differ by what the business gives up: a share of itself, an obligation to repay, the use of an asset it will not own, or nothing at all where the money is given. The five factors - cost, flexibility, control, use, existing debt - decide between them, and the case decides which factor is decisive. The matching principle is the most portable of the five, because it can be applied from facts any question supplies. And no source is best in general, which is why a twelve-mark question names a business.
+
+### Where this connects
+
+Why a business needs finance and the difference between cash and profit are in 5.1.1. Working capital is in 5.1.2. Cash flow forecasting, which shows when finance is needed, is in 5.3. Business growth, the most common reason for needing large sums, is in 1.3.3. Ownership types are in 1.2.2.

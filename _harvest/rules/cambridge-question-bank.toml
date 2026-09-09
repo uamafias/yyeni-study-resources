@@ -1,0 +1,55 @@
+name        = "cambridge-question-bank"
+description = "Question Banks library, level-first: Subject (code)/AS Level|A Level/YYYY/Series (Variant n)/"
+
+# Cambridge paper numbers carry the qualification level:
+#   papers 1 and 2 -> AS Level      papers 3 and 4 -> A Level
+# Examiner reports and grade thresholds cover a whole series, both levels, so
+# they get their own branch rather than being forced under one level.
+source = "filename"
+
+# --- Papers: question paper, mark scheme, insert, source files ---------------
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>qp|ms|in|sf)_(?P<paper>\d)(?P<variant>\d)'''
+folder   = "Question Banks/Cambridge Curricula/Cambridge AS and A Level/{folder_name}/{level}/{yyyy}/{series_name} (Variant {variant})"
+filename = "{code}_{series}{yy}_{kind}_{paper}{variant}.pdf"
+
+# --- Examiner reports -------------------------------------------------------
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>er)'''
+folder   = "Question Banks/Cambridge Curricula/Cambridge AS and A Level/{folder_name}/Examiner Reports/{yyyy}"
+filename = "{code}_{series}{yy}_er.pdf"
+
+# --- Grade thresholds -------------------------------------------------------
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>gt)'''
+folder   = "Question Banks/Cambridge Curricula/Cambridge AS and A Level/{folder_name}/Grade Thresholds/{yyyy}"
+filename = "{code}_{series}{yy}_gt.pdf"
+
+unresolved = "Question Banks/_unresolved"
+
+[derive]
+yyyy = "20{yy}"
+
+# Paper number -> qualification level. This is the label the whole tree hangs on.
+[map.level]
+from    = "paper"
+values  = { 1 = "AS Level", 2 = "AS Level", 3 = "A Level", 4 = "A Level" }
+default = "AS Level"
+
+[map.series_name]
+from   = "series"
+values = { s = "May-June", w = "Oct-Nov", m = "March" }
+
+# Subject folder name taken from the folders that already exist.
+[lookup.folder_name]
+from    = "code"
+file    = "_harvest/lookups/cambridge-subject-folders.csv"
+key     = "code"
+value   = "folder_name"
+default = "_unknown-subject"
+
+# Subject lock. The aggregator's business-9609/2020-march index actually serves
+# Chemistry (9701) files; without this, a Business Studies harvest would quietly
+# file another subject's papers.
+[filter]
+include = { code = "9609" }

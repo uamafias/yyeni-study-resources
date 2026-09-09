@@ -1,0 +1,74 @@
+# Subject-agnostic language patterns used by the deterministic check suite.
+# Patterns are case-insensitive Python regexes applied to claim text, content-unit
+# prose and canonical answers. They are DETECTORS, not verdicts: every hit is
+# reported with its surrounding text so a human or reviewer can adjudicate.
+register_id: yyeni-language-patterns
+version: 1
+notes:
+  - RS-33 hits are cleared by setting `generality: definitional | legal | arithmetic` on the claim.
+  - RS-21 hits are cleared by rewriting to likelihood-with-reason, not by adding a hedge word alone.
+  - RS-36 hits are cleared only by citing a mapped assessment-evidence record.
+
+unqualified_universals:          # RS-33
+  - '\bcan (?:raise|access|obtain|use|borrow)\s+(?:finance\s+)?only\b'
+  - '\bonly (?:from|by|through|available to|open to)\b'
+  - '\bthan any other\b'
+  - '\bno other (?:source|option|form|method|way of|business|lender|provider)\b'
+  - '\bany business can\b'
+  - '\b(?:will|can|would|does|do|is|are|must) always\b'
+  - '\balways (?:available|possible|the|a |better|worse|cheaper|more|less)\b'
+  - '\b(?:will|can|would|does|do|is|are|must) never\b'
+  - '\bnever (?:available|possible|suitable|works|acceptable|an option)\b'
+  - '\bin every case\b'
+  - '\bwithout exception\b'
+  - '\bis impossible\b'
+  - '\b(?:guarantees|guaranteed) (?:that|to|a |an |the )'
+  - '\bis guaranteed\b'
+  - '\bcannot ever\b'
+  - '\b(?:all|every) (?:internal|external|such) \w+ (?:are|is|have|has|cost|carry|need)\b'
+  - '\bclosed to\b'
+  - '\busually cannot\b'
+
+third_party_certainty:           # RS-21 (amended)
+  - '\bno (?:lender|bank|investor|buyer|supplier|employer|regulator) will\b'
+  - '\b(?:the |a |any )?(?:lender|bank|investor|buyer|supplier|employer|factor|landlord)s? will (?:refuse|reject|lend|offer|accept|demand|require|insist|charge|approve|decline)\b'
+  - '\bwill (?:not )?(?:be )?(?:refused|approved|granted|accepted|rejected) by\b'
+  - "\\bwill touch it\\b"
+  - '\bis unwilling to\b'
+  - '\bwill therefore accept\b'
+  - '\bwill choose\b'
+  - '\bwill prefer\b'
+  - '\bwill be offered\b'
+
+assessment_priority:             # RS-36
+  - '\bexaminers?\b'
+  - '\bmark scheme\b'
+  - '\bmost marks\b'
+  - '\bmore marks than\b'
+  - '\bmarks than any other\b'
+  - '\bmost (?:reliable|common|frequent)(?:ly)? (?:asked|examined|tested|analysis|chain|answer)\b'
+  - '\breward(?:s|ed)? most\b'
+  - '\bmost commonly (?:asked|examined|tested)\b'
+  - '\bevery (?:twelve|eight|three|two)-mark question\b'
+  - '\breach every command word\b'
+  - '\bwhat the examiner (?:asks|wants|rewards)\b'
+
+# Words that make a statement a tendency rather than a universal. Presence of one of
+# these inside the matched span suppresses an unqualified_universals or
+# third_party_certainty hit for that span.
+hedges:   # 'can be' was removed: it suppressed genuine exclusivity claims
+            # such as "can be obtained only from" without weakening them.
+  - 'may'
+  - 'might'
+  - 'could'
+  - 'likely'
+  - 'unlikely'
+  - 'often'
+  - 'usually'
+  - 'typically'
+  - 'generally'
+  - 'tends? to'
+  - 'in most'
+  - 'depending on'
+  - 'subject to'
+  - 'where'

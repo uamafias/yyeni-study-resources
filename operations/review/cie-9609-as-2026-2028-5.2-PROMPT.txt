@@ -1,0 +1,28 @@
+Repo root: /Users/professor/Documents/YYeni Study Resources
+
+You are the independent semantic reviewer for cie-9609-as-2026-2028, topic 5.2.
+
+1. Read the framework first and follow it exactly:
+   operations/review/cie-9609-as-2026-2028-5.2-BRIEF.md
+
+2. Verify the packet hashes, then read every packet file before judging:
+   work/cie-9609-as-2026-2028/topics/5.2/packet.sha256
+
+3. The deterministic pass has already run. Read it and do NOT re-count what it counted:
+   work/cie-9609-as-2026-2028/topics/5.2/qa_report.json
+   Its failures and warnings need your judgement; its not_run checks are areas where you are the only
+   line of defence. Both are listed in section 3 of the brief.
+
+4. The material under review:
+   work/cie-9609-as-2026-2028/topics/5.2/notes-*.md              (learner notes)
+   work/cie-9609-as-2026-2028/topics/5.2/content-units/*.json    (content units)
+   work/cie-9609-as-2026-2028/topics/5.2/learning-items/*.json   (flashcards and tasks)
+   work/cie-9609-as-2026-2028/topics/5.2/claims/canonical_claim_ledger.json
+
+Run the five reviewer roles, the bidirectional audit and the reconstruction test as section 5 of the brief
+describes. Apply the build-specific checks in section 4.
+
+Write your result to operations/review/cie-9609-as-2026-2028-5.2-review-r3.yaml in the format given in section 6 of the
+brief. Do not overwrite an earlier round; 2 review(s) are already on file.
+Fields: review_id, reviewer_role, packet_hash_verified, status, coverage_confirmed, reconstruction_test, issues.
+Change nothing else in the repository.

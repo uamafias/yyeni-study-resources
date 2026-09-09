@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yyeni.example/schemas/assessment_evidence.schema.json",
+  "title": "YYeni Assessment Evidence Map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "map_id",
+    "status",
+    "records"
+  ],
+  "properties": {
+    "map_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "partial",
+        "complete",
+        "unavailable"
+      ]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id",
+          "source_id",
+          "evidence_type",
+          "objective_ids",
+          "source_locator"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "type": "string",
+            "enum": [
+              "specimen_question",
+              "past_paper",
+              "mark_scheme",
+              "candidate_response",
+              "examiner_report",
+              "teacher_guidance"
+            ]
+          },
+          "exam_series": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 2000
+          },
+          "paper_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "variant": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "question_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "mark_tariff": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "objective_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "command_word": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ao_focus": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "context_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "context_summary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "creditworthy_points": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "examiner_findings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "common_errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "strong_response_features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_locator": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

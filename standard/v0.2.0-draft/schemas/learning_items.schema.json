@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yyeni.example/schemas/learning_items.schema.json",
+  "title": "YYeni Learning Item Dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "dataset_id",
+    "topic_id",
+    "items"
+  ],
+  "properties": {
+    "dataset_id": {
+      "type": "string"
+    },
+    "topic_id": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item_id",
+          "objective_ids",
+          "claim_ids",
+          "item_type",
+          "subtype",
+          "assessment_objectives",
+          "difficulty",
+          "prompt",
+          "canonical_answer",
+          "marking_guidance",
+          "context",
+          "prerequisite_item_ids",
+          "core_status",
+          "intentional_duplicate_group",
+          "provenance",
+          "qa_status"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "string"
+          },
+          "objective_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "item_type": {
+            "type": "string",
+            "enum": [
+              "flashcard",
+              "short_answer",
+              "calculation",
+              "worked_example",
+              "data_response",
+              "essay_plan",
+              "essay_question",
+              "case_analysis",
+              "practical_task",
+              "source_analysis",
+              "speaking_prompt",
+              "writing_task",
+              "listening_task"
+            ]
+          },
+          "subtype": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "DEF",
+              "FEATURE",
+              "DIST",
+              "PROC",
+              "WHY",
+              "MECH",
+              "BEN",
+              "LIM",
+              "APP",
+              "CHAIN",
+              "EVAL",
+              "CALC",
+              "INTERP",
+              "MISCON",
+              "SYNTH",
+              null
+            ]
+          },
+          "assessment_objectives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_answer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "marking_guidance": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "context": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sector",
+              "business_size",
+              "ownership",
+              "situation",
+              "facts"
+            ],
+            "properties": {
+              "sector": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "business_size": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ownership": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "situation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "facts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "prerequisite_item_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "core_status": {
+            "type": "string",
+            "enum": [
+              "core",
+              "prerequisite",
+              "enrichment"
+            ]
+          },
+          "intentional_duplicate_group": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provenance": {
+            "type": "string"
+          },
+          "qa_status": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "review_required",
+              "approved",
+              "rejected"
+            ]
+          },
+          "claims_seen": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "description": "RS-41. claim_id -> the claim revision this item was authored against."
+          },
+          "authored_hash": {
+            "type": "string",
+            "description": "RS-41. SHA-256 of the item text this claims_seen stamp was made against."
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "item_type": {
+                  "const": "flashcard"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "canonical_answer": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "subtype": {
+                  "type": "string",
+                  "enum": [
+                    "DEF",
+                    "FEATURE",
+                    "DIST",
+                    "PROC",
+                    "WHY",
+                    "MECH",
+                    "BEN",
+                    "LIM",
+                    "APP",
+                    "CHAIN",
+                    "EVAL",
+                    "CALC",
+                    "INTERP",
+                    "MISCON",
+                    "SYNTH"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

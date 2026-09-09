@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yyeni.example/schemas/build_manifest.schema.json",
+  "title": "YYeni Build Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "build_id",
+    "standard_version",
+    "title",
+    "status",
+    "generated_at",
+    "project_root",
+    "qualification_profile",
+    "subject_profile",
+    "source_inventory",
+    "objective_registry",
+    "assessment_evidence",
+    "claim_ledger",
+    "content_units",
+    "learning_items",
+    "qa_report",
+    "scope",
+    "agent_versions",
+    "metrics",
+    "outputs"
+  ],
+  "properties": {
+    "build_id": {
+      "type": "string"
+    },
+    "standard_version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "published",
+        "superseded"
+      ]
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "project_root": {
+      "type": "string"
+    },
+    "qualification_profile": {
+      "type": "string"
+    },
+    "subject_profile": {
+      "type": "string"
+    },
+    "source_inventory": {
+      "type": "string"
+    },
+    "objective_registry": {
+      "type": "string"
+    },
+    "assessment_evidence": {
+      "type": "string"
+    },
+    "claim_ledger": {
+      "type": "string"
+    },
+    "content_units": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "learning_items": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "qa_report": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selected_level",
+        "included_objective_ids",
+        "excluded_objective_ids"
+      ],
+      "properties": {
+        "selected_level": {
+          "type": "string"
+        },
+        "included_objective_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "excluded_objective_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "agent_versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "agent",
+          "version"
+        ],
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "agent": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "objective_count",
+        "claim_count",
+        "content_unit_count",
+        "learning_item_count",
+        "word_count"
+      ],
+      "properties": {
+        "objective_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "claim_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "content_unit_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "learning_item_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "word_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "format",
+          "sha256",
+          "status"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-fA-F0-9]{64}$"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "generated",
+              "verified",
+              "published"
+            ]
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

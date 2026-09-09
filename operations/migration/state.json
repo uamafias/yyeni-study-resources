@@ -1,0 +1,141 @@
+{
+  "migration_plan": "operations/inventory/2026-08-31/07_staged_migration_plan.md",
+  "standard_version": "0.2.0-draft",
+  "scope_decision": {
+    "architecture": "repository-wide",
+    "in_scope_routes": [
+      "cambridge",
+      "namibia",
+      "gcse-uk"
+    ],
+    "archived_routes": [
+      "botswana-bgcse"
+    ],
+    "approved_by": "Vitalis",
+    "approved_on": "2026-08-31"
+  },
+  "stages": {
+    "stage_0_freeze_and_baseline": "complete",
+    "stage_1_target_skeleton": "complete",
+    "stage_2_pilot_copy_forward": "complete",
+    "stage_3_quarantine_archive_duplicates": "not_authorised",
+    "stage_4_cambridge_sources": "not_authorised",
+    "stage_5_namibian_and_gcse_sources": "not_authorised",
+    "stage_6_revision_notes": "not_authorised",
+    "stage_7_decommission_legacy_tree": "not_authorised",
+    "stage_8_freeze_and_instrument": "not_authorised",
+    "stage_2b_9609_assessment_corpus": "complete",
+    "pipeline_stage_3_curriculum_map": "complete",
+    "pipeline_stage_4_assessment_mining": "complete_pending_granularity_verdict",
+    "exam_exposure_flag_applied": "complete",
+    "source_permissions": "granted 2026-09-08",
+    "pipeline_stage_10_11_topic_5_2": "complete - awaiting review",
+    "pipeline_stage_13_topic_5_2": "complete - awaiting review"
+  },
+  "legacy_tree_status": "intact - no existing file moved, renamed, modified or deleted",
+  "open_blockers_before_stage_3": [
+    "off-machine backup not yet verified",
+    "delete permission needed for 6 files (5 .DS_Store, 1 Word lock file)",
+    "Q-1 source approval",
+    "Q-2 assessment-material policy",
+    "Q-6 pilot subject choice"
+  ],
+  "stage_0_2_report": "operations/migration/STAGE-0-2-COMPLETION-REPORT.md",
+  "legacy_tree_verification": "operations/migration/stage2-legacy-tree-verification.txt (3235 files, 0 missing, 0 added, 0 modified)",
+  "baseline_history": [
+    {
+      "manifest": "operations/backups/pre-migration-2026-08-31/manifest.sha256",
+      "manifest_sha256": "8eb958b24f9772859bdad047d6f6d889c0b219e1c0f026a053ebd4e4f40db1f6",
+      "file_count": 3235,
+      "total_bytes": 4260697886,
+      "hash_algorithm": "sha256",
+      "scope": "pre-migration legacy tree; excludes migration output zones and .DS_Store"
+    }
+  ],
+  "baseline": {
+    "manifest": "operations/backups/post-acquisition-2026-08-31/manifest.sha256",
+    "manifest_sha256": "77a91e5fa64feec569b70edaf09602f806d1259415c0da813ca137b77cfaabc7",
+    "file_count": 3598,
+    "total_bytes": 4499623324,
+    "hash_algorithm": "sha256",
+    "scope": "legacy tree after the 9609 acquisition of 2026-08-31",
+    "note": "supersedes the pre-migration baseline; 363 files added and 5 relocated by the 9609 harvest. Verified against the earlier baseline: 0 files lost, 0 modified in place."
+  },
+  "events": [
+    {
+      "date": "2026-08-31",
+      "event": "9609 acquisition by YYeni Web Harvester (external to this session)",
+      "files_added": 363,
+      "files_relocated": 5,
+      "files_lost": 0,
+      "files_modified": 0,
+      "verification": "operations/migration/9609-acquisition-verification.md"
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Stage 2b - R6 applied to the 363-file 9609 corpus; source inventory rebuilt 20 -> 378 sources",
+      "copied": 346,
+      "already_identical": 17,
+      "conflicts": 0,
+      "report": "operations/migration/STAGE-2B-9609-CORPUS-REPORT.md"
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Pipeline Stage 3 - objective registry for all 19 AS topics (200 objectives), dependency graph, glossary, assessment framework",
+      "report": "operations/migration/STAGE-3-CURRICULUM-MAP-REPORT.md",
+      "change_request": "operations/standard-change-requests/CR-001-ao-and-command-word-mappings.md"
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Pipeline Stage 4 - assessment mining and granularity probe",
+      "report": "operations/migration/STAGE-4-ASSESSMENT-MINING-REPORT.md"
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Exam-exposure flag applied to 95 member objectives; coverage floor and rarely-examined review set defined",
+      "artifact": "work/cie-9609-as-2026-2028/curriculum/exam-exposure.json",
+      "change_request": "operations/standard-change-requests/CR-002-exam-exposure-field.md",
+      "open": "item budget over by 189 - decision needed"
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Source permissions granted; topic 5.2 authored originally - 63 claims, 4 content units, 4,357 words",
+      "note": "All claims unverified and unpublishable pending RS-28 independent semantic review."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Stage 13 - 68 learning items for topic 5.2",
+      "note": "All items qa_status review_required. Schema-valid, zero duplicate or near-duplicate prompts, full objective coverage, all exposure required-subtypes satisfied."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Deterministic QA pass on topic 5.2 and Codex review framework issued",
+      "note": "qa_report.json QA-9609-AS-5.2-r1 written and schema-valid: 25 checks, 22 pass, 1 fail (D-12, two prompts instruct with Justify - retired at AS), 2 warn (D-17 missing APP flashcard on OBJ-9609-5.2.4-01; D-19 'cost of capital' in learner prose). release_decision hold. Critic packet manifest at operations/review/packet-9609-5.2.sha256 (22 files). Review brief at operations/review/CODEX-REVIEW-BRIEF-9609-5.2.md. Build remains AUTHORED; RS-28 review outstanding."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "RS-28 independent semantic review (Codex) returned REJECT on topic 5.2",
+      "note": "15 open issues: 3 critical, 10 high, 2 medium. Packet hashes verified. Merged into qa_report.json as QA-9609-AS-5.2-r2; release_decision now reject. Review at operations/review/codex-review-9609-5.2.yaml. Spot-verified against the ledger and item set: findings confirmed verbatim. Build stays AUTHORED; topic 5.2 requires repair and re-review before any other topic is authored."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "CR-003 delivered: standard v0.2.0-draft with 8 new rules and a 28-check subject-agnostic suite",
+      "note": "RS-33 to RS-40 added; RS-07 and RS-21 amended; 6 new hard release blockers. New checks/ suite plus make_review_packet.py, which generates the reviewer brief and prompt from the build. Proof run against the UNREPAIRED pilot: 16 pass, 11 fail, 1 warn, decision reject - independently rediscovering 13 of the 15 Codex issues. Two (an inverted causal mechanism, and whether a learner could build an answer from the notes) were found to be irreducibly semantic; one candidate check was written and withdrawn for firing on 47 of 68 items. 33 tests pass. New human inputs: subject-profile variant_register and answer_structures, contract excluded_constructs. OPERATOR_RUNBOOK.md written for multi-subject teams."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Topic 5.2 repaired under CR-003; all 29 deterministic checks now pass",
+      "note": "All 15 Codex issues addressed and marked resolved with the repair recorded in each issue's evidence. Claims 63->67 (CLM-007 split into 007/011/012 to correct the inverted lender-risk mechanism; 084 secured/unsecured; 085 internal/external boundary). Items 68->77: nine command-word-shaped items added for RS-37, ITEM-057 converted to a short-answer task and ITEM-065 rewritten as a contextual Evaluate. CLM-020/021/039 narrowed to their container objectives so RS-40 mappings are real. The offline notes are now RENDERED from the content units by standard/v0.2.0-draft/build/render_notes.py, ending notes-to-card drift by construction. qa_report is r4, release_decision hold: the repair is not re-reviewed, so the first review still stands as reject. 33 tests pass."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Review packet regenerated for the repaired topic 5.2",
+      "note": "Brief now carries a section 3a listing what the first review found and what was done, so the re-review checks the repairs. make_review_packet.py gained --display-root after the first regeneration wrote the container mount path into the prompt; it now warns when the root looks like a mount. Runbook updated."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Second review round: reject with 14 issues; RS-41 propagation gate added; topic 5.2 repaired again",
+      "note": "Root cause of most findings: the first repair corrected claims without propagating to the items and blocks citing them. RS-41 + check C-29 make that mechanical - claim revisions leave citing artefacts stale until re-authored. Bootstrapped from repair history, C-29 found 22 stale artefacts and named every propagation defect the reviewer had found. Also fixed: C-28's self-referential manifest, the delivery schedule shedding the rarely-examined set against RS-05, a Calculate demand the registry omitted though the evidence map recorded it, and the leasing variant gap. Items 77->79, claims 67->68. 30 checks pass, 33 tests pass, decision hold pending re-review."
+    }
+  ]
+}

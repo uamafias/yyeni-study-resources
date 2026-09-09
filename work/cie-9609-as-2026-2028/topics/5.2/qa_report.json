@@ -1,0 +1,935 @@
+{
+  "qa_report_id": "QA-cie-9609-as-2026-2028-5.2",
+  "build_id": "cie-9609-as-2026-2028/topic-5.2",
+  "generated_at": "2026-09-08T20:15:11Z",
+  "deterministic_checks": [
+    {
+      "check_id": "C-00",
+      "status": "fail",
+      "message": "[RS-27 Schema validity] 3 schema violations: topic_5.2_items.json ['items', 1]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 2]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 11]: Additional properties are not allowed ('notes' was unexpected)",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-01",
+      "status": "pass",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 4 content units, 79 items and 68 claims resolves in the registry (25 nodes in this topic branch, 24 assessable).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-02",
+      "status": "pass",
+      "message": "[RS-07 Claim referential integrity] Every claim_id cited by a content-unit block or learning item exists in the topic ledger.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-03",
+      "status": "pass",
+      "message": "[RS-07 Claim orphans] All 68 ledger claims are cited by at least one block or item.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-04",
+      "status": "pass",
+      "message": "[RS-40 Meaningful objective mapping] Every (item, objective) mapping is backed by a cited claim that serves that objective.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-05",
+      "status": "pass",
+      "message": "[RS-05 Coverage floor - items (meaningful mappings only)] All 24 assessable objectives are practised by at least one item under RS-40.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-06",
+      "status": "pass",
+      "message": "[RS-05 Coverage floor - content units] All 24 assessable objectives are taught by at least one content unit.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-07",
+      "status": "pass",
+      "message": "[RS-39 Offline reconstructibility] Every claim cited by a learning item is also taught in a content-unit block.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-30",
+      "status": "warn",
+      "message": "[RS-41 No bulk stamp] 112 artefacts carry no authored_hash, so their claims_seen stamps cannot be audited. 0 are auditable and clean.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-29",
+      "status": "fail",
+      "message": "[RS-41 No stale derivative] 12 citations are stale: the claim was rewritten and the block or item citing it was not. 8 artefacts affected. Correcting a claim is not a repair; propagating it is. First: ITEM-9609-5.2-014-APP<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-015-CHAIN<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-024-EVAL<-CLM-9609-5.2-059(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-064(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-065(r2 vs seen r1), ITEM-9609-5.2-055-CHAIN<-CLM-9609-5.2-020(r2 vs seen r1)",
+      "affected_ids": [
+        "ITEM-9609-5.2-014-APP",
+        "ITEM-9609-5.2-015-CHAIN",
+        "ITEM-9609-5.2-024-EVAL",
+        "ITEM-9609-5.2-032-EVAL",
+        "ITEM-9609-5.2-055-CHAIN",
+        "ITEM-9609-5.2-060-DIST",
+        "ITEM-9609-5.2-065-DATA",
+        "ITEM-9609-5.2-066-ESSA"
+      ]
+    },
+    {
+      "check_id": "C-08",
+      "status": "pass",
+      "message": "[RS-33 Unqualified universals] No unqualified universal or exclusivity statement found in claims, learner prose or answers.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-09",
+      "status": "pass",
+      "message": "[RS-21 Third-party certainty] No statement asserts a third party's decision as certain.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-10",
+      "status": "pass",
+      "message": "[RS-36 Assessment-priority claims need assessment evidence] No learner-facing claim about examiner behaviour, mark priority or question frequency.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-11",
+      "status": "pass",
+      "message": "[RS-15 Scope discipline - excluded constructs] None of the 12 constructs the contract excludes appears in learner-facing material.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-12",
+      "status": "pass",
+      "message": "[RS-35 Variant completeness] Every variant-register term used in this topic names its consequential forms.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-13",
+      "status": "pass",
+      "message": "[RS-34 Generalisations declare their scope] Every grouping or across-the-board statement declares the members it claims to hold for.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-14",
+      "status": "pass",
+      "message": "[RS-19 Command-word discipline] No item prompt instructs with a command word absent from this level (Assess, Justify, Advise).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-15",
+      "status": "pass",
+      "message": "[RS-37 Command-word-shaped practice] Every objective with a command word carries an item that instructs with one of them.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-16",
+      "status": "pass",
+      "message": "[RS-38 Declared answer structures] Every item names all declared parts of its subtype answer structure.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-17",
+      "status": "pass",
+      "message": "[RS-19 Subtype to AO consistency] Every item's assessment objectives are permitted by its subtype.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-18",
+      "status": "pass",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 36, 'AO2': 26, 'AO3': 24, 'AO4': 15} against target {'AO1': 30, 'AO2': 30, 'AO3': 20, 'AO4': 20}; largest deviation 6 points.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-19",
+      "status": "pass",
+      "message": "[RS-25 Flashcard integrity] All 73 flashcards carry a non-null canonical answer and a declared subtype.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-20",
+      "status": "pass",
+      "message": "[RS-25 One target per flashcard] No flashcard asks for several separate answers in one card.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-21",
+      "status": "pass",
+      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 79 items.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-22",
+      "status": "pass",
+      "message": "[RS-30 Marking guidance present] All 79 items carry marking guidance.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-23",
+      "status": "pass",
+      "message": "[RS-12 Items cite a claim] Every item cites at least one ledger claim.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-24",
+      "status": "pass",
+      "message": "[RS-13 Publication gate] Gate holds: 0 of 68 claims are publishable or verified. 65 are generated_gap and need documented human approval (RS-13).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-25",
+      "status": "pass",
+      "message": "[RS-31 QA status consistency] Every content unit and item carries a recognised qa_status.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-26",
+      "status": "pass",
+      "message": "[RS-09 Word budget] All 4 content units sit inside their declared word budget (6139 words total).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-27",
+      "status": "pass",
+      "message": "[RS-05 Exposure required subtypes] Exposure required-subtype floor honoured for all 22 mapped objectives; exposure changes item type, never item presence (RS-05).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-28",
+      "status": "pass",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 18 files to topics/5.2/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (960b52df64e44328) so the whole packet is verifiable.",
+      "affected_ids": []
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "review_id": "SR-9609-5.2-CODEX",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.2-CODEX-001",
+          "severity": "critical",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.2.1-01",
+            "CLM-9609-5.2-007",
+            "CU-9609-5.2.1",
+            "ITEM-9609-5.2-060-DIST"
+          ],
+          "finding": "The resource says incorporation generally brings a requirement to publish audited accounts and treats limited liability plus publication as reducing lender risk, so incorporated businesses usually borrow more and more cheaply. Limited liability limits owners' exposure; it does not itself reduce the lender's risk and may lead a lender to seek security or guarantees. Disclosure duties also differ by company type and jurisdiction, so the statement is not valid as an international rule or as a flat Namibian rule.",
+          "evidence": [
+            "CLM-9609-5.2-007: 'Limited liability and the requirement to publish audited accounts reduce the risk a lender or investor faces'.",
+            "CU-9609-5.2.1 block 5.2.1-b3 and notes line 23 apply 'the requirement to publish audited accounts' to incorporation generally.",
+            "ITEM-9609-5.2-060-DIST rewards the same claim as a reason public-company borrowing is easier and cheaper.",
+            "Namibia Companies Act 2004 section 306(5) specifically requires a public company to lodge annual financial statements with the Registrar; it does not establish the learner text's general publication rule for every incorporated business (https://namiblii.org/akn/na/act/2004/28/eng@2023-07-21).",
+            "REPAIRED 2026-09-08 under CR-003: CLM-007 rewritten and split into CLM-011/012; CU-5.2.1 b3 and b6 rewritten so the mechanism runs the right way round."
+          ],
+          "educational_consequence": "A learner may explain ownership and finance with a legally false distinction and an inverted risk mechanism, losing AO1 and AO3 credit and applying a country-specific disclosure assumption in an international paper.",
+          "recommended_repair": "Separate legal availability from lender willingness. State that a company is a separate borrower and that disclosure, audit and filing rules depend on company type and jurisdiction; explain that limited liability may cause lenders to assess company cash flow and assets and sometimes request security or personal guarantees. Remove any automatic claim that incorporation lowers borrowing cost.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-002",
+          "severity": "critical",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.2.1-01",
+            "CLM-9609-5.2-003",
+            "CLM-9609-5.2-006",
+            "CLM-9609-5.2-008",
+            "CU-9609-5.2.1"
+          ],
+          "finding": "The ownership section turns tendencies into exclusive availability rules: it limits a sole trader to a closed list that omits grants and crowd funding, says a public limited company can reach sums beyond any other ownership form, and says grants, donations and impact investment are open to a social enterprise but closed to an ordinary business. A social enterprise describes purpose and can use several legal forms; grant and investment eligibility depends on the provider and scheme, not merely on that label.",
+          "evidence": [
+            "CLM-9609-5.2-003 begins 'A sole trader can raise finance only' and omits sources that may be open to a sole trader.",
+            "CLM-9609-5.2-006 says a public limited company has access to more capital than 'any other form of ownership'.",
+            "CLM-9609-5.2-008 and CU-9609-5.2.1 block 5.2.1-b4 say grants, donations and impact investment are closed to an ordinary business.",
+            "Notes line 41 conflicts with notes line 165, which correctly presents government grants as conditional on the activity and scheme rather than on social-enterprise status.",
+            "Official guidance illustrates that a social enterprise must still choose a legal structure such as sole trader, partnership, company or co-operative (https://www.gov.uk/set-up-a-social-enterprise).",
+            "REPAIRED 2026-09-08 under CR-003: CLM-003/006/008 rewritten, with generality: legal recorded on the parts that genuinely are legal; CU-5.2.1 b4 rebuilt as three questions asked of each source."
+          ],
+          "educational_consequence": "The learner cannot form an accurate ownership-to-finance availability map and may rule valid sources in or out solely from a business-purpose label, directly undermining the compulsory relationship objective.",
+          "recommended_repair": "Rebuild the section as a qualified matrix: identify sources that are legally impossible for a form, sources that may be available subject to provider criteria, and sources whose availability varies by jurisdiction. Treat social enterprise as an objective/purpose layered onto a legal form, and remove all categorical 'open/closed', 'only' and 'beyond any other form' wording unless legally necessary.",
+          "confidence": 0.98,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-003",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01",
+            "OBJ-9609-5.2.2-01-02",
+            "CLM-9609-5.2-021",
+            "CLM-9609-5.2-025",
+            "CU-9609-5.2.2-INT"
+          ],
+          "finding": "The internal-source summary says every internal source needs no outsider's agreement, is available quickly and costs nothing, while the same material shows that sale and leaseback needs an outside buyer/lessor and creates lease payments, and that retained earnings may already be tied up and unavailable as cash. CLM-9609-5.2-025 itself calls retained earnings immediately available, contradicting the later misconception correction.",
+          "evidence": [
+            "CU-9609-5.2.2-INT block 5.2.2i-b3 and notes lines 73-77: 'no outsider has to agree' and 'available quickly'.",
+            "CU-9609-5.2.2-INT block 5.2.2i-b4 and notes line 87 require a finance company and continuing lease payments for sale and leaseback.",
+            "CLM-9609-5.2-025 and notes line 83 call retained earnings 'immediately available'.",
+            "CU-9609-5.2.2-INT block 5.2.2i-b7 and notes line 109 say retained earnings may already have been spent and that a business can have no cash available.",
+            "CU-9609-5.2.3-4 block 5.2.34-b7 and notes line 263 incorrectly summarise all internal sources as costing nothing.",
+            "REPAIRED 2026-09-08 under CR-003: CLM-021 and CLM-025 rewritten; CU-INT b3 rewritten and given generalisation_scope; the retained-earnings paragraph no longer says immediately available."
+          ],
+          "educational_consequence": "A learner receives mutually incompatible rules and may equate accounting reserves with cash or ignore the real cash and opportunity costs of internal finance when explaining suitability.",
+          "recommended_repair": "Delete the universal shared trade-off. Distinguish absence of contractual interest from absence of economic cost, and distinguish accounting availability from liquid cash. Give each source its actual speed, counterparty requirement and cost; make the retained-earnings definition and every card agree with the cash caveat.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-004",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02",
+            "CLM-9609-5.2-039",
+            "CLM-9609-5.2-058",
+            "CU-9609-5.2.2-EXT"
+          ],
+          "finding": "The three-family shortcut defines debt as borrowing and repaying with interest but places leasing, hire purchase, debt factoring and trade credit in that family. The same unit later correctly says debt factoring is not a loan and nothing is borrowed or repaid. The shortcut therefore teaches a classification that its own detailed explanation contradicts.",
+          "evidence": [
+            "CU-9609-5.2.2-EXT block 5.2.2e-b3 and notes line 127 define the listed 'Debt' family as borrowing and repaying with interest.",
+            "CU-9609-5.2.2-EXT block 5.2.2e-b10, CLM-9609-5.2-058 and notes line 195 say factoring is a sale of receivables, not a loan, with nothing borrowed or repaid.",
+            "Trade credit may have no explicit interest, while leasing pays for use of an asset owned by a lessor; neither fits the stated family rule.",
+            "REPAIRED 2026-09-08 under CR-003: CU-EXT b3 regrouped by what the business gives up; leasing, factoring and trade credit are no longer filed under borrow-and-repay-with-interest; generalisation_scope declared."
+          ],
+          "educational_consequence": "The mnemonic encourages category errors in Identify, Define and comparison answers and causes learners to infer interest, repayment and legal-debt features that do not apply to every included source.",
+          "recommended_repair": "Remove the rigid three-family mnemonic or replace it with accurate dimensions such as ownership dilution, repayment obligation, asset ownership, counterparty and term. If grouping is retained, use separate and qualified groups for equity, borrowing, asset finance, supplier/receivables finance, grants and type-dependent crowd funding.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-005",
+          "severity": "high",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-10",
+            "CLM-9609-5.2-059",
+            "CU-9609-5.2.2-EXT"
+          ],
+          "finding": "Debt factoring is said to pass both collection work and non-payment risk to the factor. Collection is normally transferred in factoring, but bad-debt risk transfers only under non-recourse factoring; with recourse, the business remains responsible if the customer does not pay.",
+          "evidence": [
+            "CLM-9609-5.2-059: factoring 'passes the work and risk of collection to the factor'.",
+            "CU-9609-5.2.2-EXT block 5.2.2e-b6 and notes line 159 repeat the unqualified risk-transfer claim.",
+            "ACCA's factoring guidance distinguishes recourse, where the seller bears customer non-payment risk, from non-recourse, where the factor bears it (https://www.accaglobal.com/gb/en/business-finance/types-finance/cashflow-invoice.html).",
+            "REPAIRED 2026-09-08 under CR-003: CLM-059 and CU-EXT b6 now carry the recourse / non-recourse distinction, and factoring is in the subject variant_register."
+          ],
+          "educational_consequence": "The learner may claim a benefit that a particular factoring agreement does not provide and choose factoring on a false risk premise in an application or evaluation answer.",
+          "recommended_repair": "Add the recourse/non-recourse distinction at the point where risk is discussed. State that administration and collection are normally transferred, while bad-debt protection is conditional and generally costs more; align the claim, notes and relevant evaluation guidance.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-006",
+          "severity": "high",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-13",
+            "CLM-9609-5.2-064",
+            "CLM-9609-5.2-065",
+            "CU-9609-5.2.2-EXT",
+            "ITEM-9609-5.2-029-DEF",
+            "ITEM-9609-5.2-032-EVAL"
+          ],
+          "finding": "Crowd funding is taught almost entirely as donation/reward funding and is then described generically as finance obtained without an investor. Equity-based and loan-based crowd funding are omitted, although they change repayment, interest, ownership and control. The same passage introduces the explicitly excluded A Level term 'cost of capital' to deny a cost, which is both unnecessary at AS and false for the omitted models.",
+          "evidence": [
+            "CU-9609-5.2.2-EXT block 5.2.2e-b3 and notes line 129 place donation/reward crowd funding in a 'Given' family and say 'No cost of capital at all'.",
+            "CLM-9609-5.2-065, block 5.2.2e-b7 and notes line 167 say crowd funding gives access without a bank or investor, without restricting the statement to donation/reward campaigns.",
+            "ITEM-9609-5.2-029-DEF gives no model distinction, and ITEM-9609-5.2-032-EVAL evaluates only a consumer reward campaign while mapping the whole objective.",
+            "The FCA identifies loan-based, investment-based, donation-based and reward/pre-payment crowd funding, each with different obligations (https://www.fca.org.uk/firms/authorisation/consumer-investments).",
+            "REPAIRED 2026-09-08 under CR-003: CLM-064/065 and CU-EXT b7 teach four crowd-funding models and condition every benefit on the model; cost of capital removed and added to the contract exclusion list."
+          ],
+          "educational_consequence": "The mandatory source is under-taught and a learner may state that all crowd funding avoids investors, repayment, interest and dilution. The A Level term also creates avoidable scope confusion.",
+          "recommended_repair": "Teach the four broad models briefly and condition every benefit and limitation on the model. Rewrite the definition and evaluation item so the prompt identifies the model or the answer compares them. Remove 'cost of capital' and use AS language such as repayment, interest, rewards, fees and ownership dilution.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-007",
+          "severity": "critical",
+          "category": "application",
+          "affected_ids": [
+            "OBJ-9609-5.2.1-01",
+            "OBJ-9609-5.2.2-02-04",
+            "OBJ-9609-5.2.2-02-06",
+            "OBJ-9609-5.2.2-02-12",
+            "CLM-9609-5.2-047",
+            "ITEM-9609-5.2-002-APP",
+            "ITEM-9609-5.2-026-APP"
+          ],
+          "finding": "Provider decisions and product availability that vary by lender and jurisdiction are repeatedly presented as certain. The resource states that sale and leaseback will release far more than a bank would lend, that no lender will finance a start-up with no assets, that venture capital is then the realistic route, that asset finance needs no security over other property, and that a bank will refuse a micro-business while a micro-finance provider will use named alternative methods. These conclusions are not entailed by the supplied facts.",
+          "evidence": [
+            "ITEM-9609-5.2-002-APP asserts sale and leaseback releases 'far more than a bank would lend' although no valuation, loan-to-value policy or bank offer is given.",
+            "CU-9609-5.2.2-EXT block 5.2.2e-b9 and notes lines 181-183 say no other security is needed, 'No lender will touch it' and venture capital is the realistic route.",
+            "CLM-9609-5.2-047 says venture capital supplies capital that banks would refuse rather than capital banks may be unwilling to supply.",
+            "ITEM-9609-5.2-026-APP says the commercial bank 'will refuse' and prescribes group guarantees or character assessment, details absent from its claims and dependent on the provider.",
+            "The notes themselves acknowledge at line 161 that micro-finance regulation and cost vary considerably between countries, but the cards do not carry that qualification.",
+            "REPAIRED 2026-09-08 under CR-003: CLM-047 rewritten; ITEM-026 and ITEM-027 rewritten; CU-EXT b9 no longer says no lender will touch it."
+          ],
+          "educational_consequence": "Learners are trained to invent lender outcomes from thin context and to present local product assumptions as universal, a critical RS-23 error in a Cambridge International answer.",
+          "recommended_repair": "Replace certainty with evidence-led conditional language: a lender may be less willing without collateral or a record, and a provider may request other security, guarantees or proof of cash flow. State that venture-capital, asset-finance and micro-finance availability and terms vary by market and provider. Remove any method not verified for the named context or explicitly frame it as an example that may be used.",
+          "confidence": 0.98,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-008",
+          "severity": "high",
+          "category": "analysis",
+          "affected_ids": [
+            "CLM-9609-5.2-073",
+            "CLM-9609-5.2-076",
+            "ITEM-9609-5.2-015-CHAIN",
+            "ITEM-9609-5.2-031-CHAIN",
+            "ITEM-9609-5.2-058-CHAIN",
+            "ITEM-9609-5.2-062-APP",
+            "CU-9609-5.2.2-EXT",
+            "CU-9609-5.2.3-4"
+          ],
+          "finding": "Conditional causal language is not applied consistently. Several chains and applications turn a risk or preference into an automatic outcome: all lease payments are said to exceed outright purchase, a failed crowd-funding campaign is treated as evidence of weak demand whatever changes, debt is said to make a business fail while equity makes it survive, founders who value control are said to accept worse debt terms, and owners who value control are said to choose borrowing even when it costs more.",
+          "evidence": [
+            "ITEM-9609-5.2-058-CHAIN concludes that a highly indebted business 'fails in a downturn' while an equity-financed one 'survives', with no conditions about reserves, debt size or revenue resilience.",
+            "ITEM-9609-5.2-031-CHAIN says a failed campaign 'is read' as failed demand and makes the next attempt harder 'whatever it does differently'.",
+            "ITEM-9609-5.2-015-CHAIN and notes line 149 make total lease cost exceeding outright purchase universal, ignoring lease term, services and residual value.",
+            "CLM-9609-5.2-073 and notes line 215 say control-conscious owners 'will' choose borrowing; ITEM-9609-5.2-062-APP says they 'will therefore accept debt' on worse terms.",
+            "CU-9609-5.2.2-EXT block 5.2.2e-b3 says a debt obligation is 'exactly the obligation that destroys businesses in a bad year'.",
+            "REPAIRED 2026-09-08 under CR-003: CLM-051/073/076 and ITEM-014/015/031/058/062 rewritten to conditional language with a stated mechanism."
+          ],
+          "educational_consequence": "These models train unsupported causal jumps, so learners may lose AO3 credit even when they reproduce the resource accurately.",
+          "recommended_repair": "Audit every CHAIN, APP and EVAL answer for may/can/could/likely plus an explicit moderating condition. For each cited example, add the missing condition or counter-effect and remove guaranteed failure, survival, lender, investor and cost outcomes.",
+          "confidence": 0.98,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-009",
+          "severity": "high",
+          "category": "learning-item",
+          "affected_ids": [
+            "ITEM-9609-5.2-057-APP",
+            "ITEM-9609-5.2-065-DATA"
+          ],
+          "finding": "D-12 is substantive: both prompts instruct with the retired AS command word 'Justify'. ITEM-9609-5.2-065-DATA also asks for one recommendation but its model answer recommends 'hire purchase or a lease', so changing the command word alone would still leave the model without a single clear judgement.",
+          "evidence": [
+            "ITEM-9609-5.2-057-APP: 'Match ... and justify the matching'.",
+            "ITEM-9609-5.2-065-DATA: 'Recommend ... and justify your recommendation'.",
+            "ITEM-9609-5.2-065-DATA canonical answer opens 'Hire purchase or a lease', while its own marking guidance says 'Must recommend, not survey'.",
+            "assessment-framework.json marks Justify used_at_as false and records zero uses from 2023 onward.",
+            "REPAIRED 2026-09-08 under CR-003: ITEM-057 converted to a short-answer Explain task; ITEM-065 rewritten as a contextual Evaluate recommending one source."
+          ],
+          "educational_consequence": "The cards rehearse an obsolete response instruction, and the data-response model would not satisfy its own decision requirement after a superficial wording fix.",
+          "recommended_repair": "Change ITEM-9609-5.2-057-APP to 'Explain why each source is appropriate' and retain its answer only after the asset-security wording is qualified. Rewrite ITEM-9609-5.2-065-DATA as a 12-mark Evaluate prompt about one named candidate source, or as a 3-mark Explain prompt with a shorter answer. If Evaluate is chosen, make the model select one source, apply the five-part structure and retain the strongest alternative as the counterargument.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-010",
+          "severity": "high",
+          "category": "application",
+          "affected_ids": [
+            "OBJ-9609-5.2.1-01",
+            "OBJ-9609-5.2.3-01",
+            "ITEM-9609-5.2-060-DIST",
+            "ITEM-9609-5.2-061-DEF",
+            "ITEM-9609-5.2-062-APP",
+            "ITEM-9609-5.2-063-CHAIN"
+          ],
+          "finding": "Two objectives have links but not adequate command-aligned practice. The ownership relationship objective predicts a 3-mark Explain, yet its only item is a context-free Distinguish card. The choice-factor objective predicts Analyse, yet its three items respectively list the factors, apply control alone and explain the matching principle; none asks the learner to analyse two relevant factors in a supplied unfamiliar situation at the 5- or 8-mark shape.",
+          "evidence": [
+            "objective_registry.json assigns Explain to OBJ-9609-5.2.1-01; its only mapped practice is ITEM-9609-5.2-060-DIST, whose context facts are empty.",
+            "objective_registry.json assigns Analyse to OBJ-9609-5.2.3-01.",
+            "ITEM-9609-5.2-061-DEF is recall, ITEM-9609-5.2-062-APP tests only retention of control, and ITEM-9609-5.2-063-CHAIN is a generic explanation of one factor.",
+            "CU-9609-5.2.2-EXT block 5.2.2e-b11 says learners face an eight-mark analysis of two factors, but the bank supplies no such mapped task.",
+            "REPAIRED 2026-09-08 under CR-003: Nine command-word-shaped items added (ITEM-069 to ITEM-077), including a contextual Explain for OBJ-5.2.1-01 and an eight-mark Analyse for OBJ-5.2.3-01."
+          ],
+          "educational_consequence": "Learners can recall the material but are not required to produce the contextual mechanism and developed chains the two command words demand, so nominal coverage overstates exam readiness.",
+          "recommended_repair": "Within the fixed bank, replace or retarget generic shared items: create one 3-mark Explain using ownership facts that change availability or lender willingness, and one 8-mark Analyse asking for two factors in an unfamiliar case. Supply marking guidance for two conditional chains rather than a list or one matching-principle statement.",
+          "confidence": 0.98,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-011",
+          "severity": "high",
+          "category": "evaluation",
+          "affected_ids": [
+            "ITEM-9609-5.2-008-EVAL",
+            "ITEM-9609-5.2-059-EVAL",
+            "ITEM-9609-5.2-068-EVAL"
+          ],
+          "finding": "Three of the twelve EVAL cards do not model all five required parts. Item -008 starts with 'It depends' and never states plainly whether the founders should accept the offer; item -059 has no specific business context to ground the judgement; item -068 is a Why question whose answer explains a principle but supplies no specific context, selected option, strongest counterargument or condition for success/change.",
+          "evidence": [
+            "ITEM-9609-5.2-008-EVAL canonical answer begins 'It depends decisively' despite marking guidance requiring a clear judgement.",
+            "ITEM-9609-5.2-059-EVAL has an empty context object and asks about 'a business' in general.",
+            "ITEM-9609-5.2-068-EVAL asks 'Why is there no single best source of finance?' and its marking guidance tests only the source-situation relationship.",
+            "subject-profile.yaml and the review brief require judgement, specific context, decisive criterion with reason, strongest counterargument and a condition for success/change in every EVAL item.",
+            "REPAIRED 2026-09-08 under CR-003: ITEM-008, -059 and -068 rewritten with all five declared parts, -068 now contextual; every item names each declared part in its marking guidance."
+          ],
+          "educational_consequence": "Learners are shown that an explanatory or abstract answer can count as evaluation, weakening AO4 performance and contradicting the otherwise strong five-part scaffold.",
+          "recommended_repair": "Give item -008 an explicit conditional recommendation; add concrete case facts to item -059; and either reclassify item -068 as WHY/MECH with AO3 or rewrite it as a contextual Evaluate prompt and provide all five parts. Update marking guidance to name every required part.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-012",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "ITEM-9609-5.2-015-CHAIN",
+            "ITEM-9609-5.2-026-APP",
+            "ITEM-9609-5.2-027-CHAIN",
+            "ITEM-9609-5.2-028-EVAL",
+            "ITEM-9609-5.2-031-CHAIN",
+            "ITEM-9609-5.2-047-DIST",
+            "ITEM-9609-5.2-049-DIST",
+            "ITEM-9609-5.2-058-CHAIN"
+          ],
+          "finding": "Multiple canonical answers cannot be reconstructed from the standalone notes. They introduce new mechanisms or evidence rather than applying what the offline learner was taught: lessor financing cost and profit margin; group guarantees and character assessment; per-loan administration as the reason for micro-finance rates; training and market access as the strongest evidence of benefit; reputational effects of a failed campaign; tradability of debentures; variation of bank-loan terms; and shareholders having no legal remedy when no dividend is paid.",
+          "evidence": [
+            "Notes line 149 only asserts that leasing costs more; ITEM-9609-5.2-015-CHAIN supplies the lessor-cost/residual mechanism without a note or claim teaching it.",
+            "Notes line 161 does not teach group guarantees, character assessment or the administrative-cost mechanism used by ITEM-9609-5.2-026-APP and ITEM-9609-5.2-027-CHAIN.",
+            "ITEM-9609-5.2-028-EVAL's claim about evidence being strongest when training and market access are paired with micro-finance appears nowhere in the notes or ledger.",
+            "Notes lines 147 and 211-219 do not teach the debenture tradability and bank-term distinctions required by ITEM-9609-5.2-047-DIST and ITEM-9609-5.2-049-DIST.",
+            "Notes lines 125 and 135 do not teach the discretionary-dividend/no-legal-remedy proposition on which ITEM-9609-5.2-058-CHAIN depends.",
+            "REPAIRED 2026-09-08 under CR-003: ITEM-015/026/027/028/031/047/049/058 rewritten to use only what the notes teach, and the notes are now RENDERED from the content units so drift cannot recur."
+          ],
+          "educational_consequence": "An offline learner cannot derive the expected answers and must memorise unexplained card text, breaking the promised notes-to-card coherence and making transfer to a new case unreliable.",
+          "recommended_repair": "For each affected item, either add a concise, verified and in-scope mechanism to the canonical claim and notes, or remove the unsupported detail and assess only what the notes teach. Re-run the notes-to-card reconstruction check semantically after repair.",
+          "confidence": 0.97,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-013",
+          "severity": "medium",
+          "category": "learning-item",
+          "affected_ids": [
+            "ITEM-9609-5.2-057-APP",
+            "ITEM-9609-5.2-058-CHAIN",
+            "ITEM-9609-5.2-059-EVAL"
+          ],
+          "finding": "The three shared external-source flashcards cite the container and all fourteen member objectives even though their answers do not meaningfully practise all fourteen. Item -057 uses only mortgage, hire purchase/leasing, overdraft/trade credit; item -058 contrasts share capital/equity with a bank loan/debt; item -059 discusses general choice factors. Item -057 also asks for three separate matches in one flashcard rather than one main target.",
+          "evidence": [
+            "ITEM-9609-5.2-057-APP objective_ids list all fourteen members, while its canonical answer names only five source types.",
+            "ITEM-9609-5.2-058-CHAIN objective_ids list all fourteen members, while its claim_ids and answer concern share capital and bank loans.",
+            "ITEM-9609-5.2-059-EVAL objective_ids list all fourteen members, while its claim_ids are the general choice-factor and appropriateness claims.",
+            "subject-profile.yaml requires each flashcard to test one main target and RS-07 requires links to be meaningful, not merely present.",
+            "REPAIRED 2026-09-08 under CR-003: CLM-020/021/039 narrowed to their container objectives; every item objective_id recomputed so a mapping exists only where a cited claim serves it."
+          ],
+          "educational_consequence": "The semantic coverage record overstates applied practice for several members, especially the rarely examined share-capital, debenture, new-partner and mortgage objectives, and the compound card is harder to retrieve and diagnose.",
+          "recommended_repair": "Narrow objective_ids to the sources each item actually tests. Map general items to the external container and choice/appropriateness objectives only. Split or simplify item -057 to one decision target, or convert it to a non-flashcard matching task with source-specific mappings.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-014",
+          "severity": "high",
+          "category": "evidence",
+          "affected_ids": [
+            "OBJ-9609-5.2.3-01",
+            "CLM-9609-5.2-074",
+            "CU-9609-5.2.2-EXT",
+            "CU-9609-5.2.3-4"
+          ],
+          "finding": "Learner prose converts an unsupported assessment impression into priority: the matching principle is called the single most reliable analysis chain, the factor examiners reward most consistently, and the idea that carries more marks than any other in the topic. The packet's assessment evidence has no mapped creditworthy points and is explicitly partial, so it cannot support those claims; the statements also conflict with the rule that exposure is evidence, never priority.",
+          "evidence": [
+            "CU-9609-5.2.2-EXT block 5.2.2e-b8 and notes line 175 call matching the 'single most reliable analysis chain'.",
+            "CU-9609-5.2.3-4 block 5.2.34-b2 and notes line 217 say it is the factor examiners reward most consistently.",
+            "CU-9609-5.2.3-4 block 5.2.34-b7 and notes line 263 say it carries more marks than any other single idea.",
+            "assessment-evidence/assessment_evidence.json has status 'partial'; its topic records contain empty creditworthy_points and say mark-scheme mining is not yet done.",
+            "REPAIRED 2026-09-08 under CR-003: Every examiner-reward and mark-priority statement removed from learner-facing prose."
+          ],
+          "educational_consequence": "Learners may force the matching principle into answers where cost, control, flexibility or existing debt is decisive, producing pseudo-application rather than responding to the case.",
+          "recommended_repair": "Remove all mark-priority and examiner-reward claims. Present matching as one useful application of the syllabus factor 'use to which finance is put', and require the decisive factor to come from the case. Add assessment claims only after mapped mark-scheme or examiner-report evidence supports them.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-015",
+          "severity": "medium",
+          "category": "evaluation",
+          "affected_ids": [
+            "CU-9609-5.2.2-EXT"
+          ],
+          "finding": "The learner-facing exam guidance says questions on external sources reach every command word, then gives only Define 2, Explain 3, Analyse 8 and Evaluate 12. It omits Identify 1 and Calculate 3 and omits the valid 5-mark Analyse form, despite claiming completeness.",
+          "evidence": [
+            "CU-9609-5.2.2-EXT block 5.2.2e-b11 and notes lines 197-201: 'Questions on this section reach every command word' followed by only four command words and tariffs.",
+            "assessment-framework.json gives the six AS command words and exact tariffs: Identify 1, Define 2, Explain 3, Calculate 3, Analyse 5 or 8, Evaluate 12.",
+            "assessment-evidence includes a 3-mark Calculate item on hire purchase, EV-9609-W24-23-1b-0084, so Calculate is not merely irrelevant to this source list.",
+            "REPAIRED 2026-09-08 under CR-003: CU-EXT b11 rewritten with all six AS command words, their exact tariffs, and the part-versus-question distinction."
+          ],
+          "educational_consequence": "A learner relying on the offline notes receives an incomplete tariff map and may not prepare the concise Identify response, the interpreted Calculate response or the shorter Analyse form.",
+          "recommended_repair": "Replace the paragraph with the exact six-word tariff table from the framework and explain where the 5- and 8-mark Analyse forms occur. Keep the 20- and 30-mark whole-question totals clearly separate from part tariffs.",
+          "confidence": 1.0,
+          "status": "resolved"
+        }
+      ]
+    },
+    {
+      "review_id": "SR-9609-5.2-CODEX-R2",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-001",
+          "severity": "high",
+          "category": "publishing",
+          "affected_ids": [
+            "work/cie-9609-as-2026-2028/topics/5.2/packet.sha256",
+            "QA-cie-9609-as-2026-2028-5.2"
+          ],
+          "finding": "The packet hash cannot be verified as supplied. All eighteen non-manifest entries match, but the manifest includes itself with expected SHA-256 3b07a521839a3eeeb5c4f6851408401a37229df25f475988235221ebea789a61 while the supplied file hashes to 6ed33113102ddfeec43a1c9385b9b1a3cbbbb39eb44559ea421fa58f361227d0. C-28 nevertheless reports a pass.",
+          "evidence": [
+            "packet.sha256 line 4 records 3b07a521839a3eeeb5c4f6851408401a37229df25f475988235221ebea789a61 for topics/5.2/packet.sha256.",
+            "A direct SHA-256 verification returns 6ed33113102ddfeec43a1c9385b9b1a3cbbbb39eb44559ea421fa58f361227d0 for the supplied manifest and reports that one entry failed.",
+            "qa_report.json C-28 says the 19-file critic-packet manifest passed, so the deterministic result does not describe the file presented to this reviewer.",
+            "REPAIRED 2026-09-08 (second round): C-28 rewritten: the manifest no longer contains its own hash (unverifiable by construction) and its SHA-256 is detached in packet.sha256.hash."
+          ],
+          "educational_consequence": "The reviewer cannot attest that the named packet, as a whole, is the immutable packet the build intended to submit; later reviewers also cannot reproduce a successful full-manifest check.",
+          "recommended_repair": "Remove the self-entry and store a detached manifest hash outside the manifest, or define and implement an explicit canonical self-hash procedure. Regenerate C-28 from the final manifest and require a new independent review against the new packet hash.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-002",
+          "severity": "critical",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.2.1-01",
+            "CLM-9609-5.2-002",
+            "CLM-9609-5.2-007",
+            "CLM-9609-5.2-011",
+            "CLM-9609-5.2-012",
+            "ITEM-9609-5.2-060-DIST"
+          ],
+          "finding": "The ownership repair was not propagated to ITEM-9609-5.2-060-DIST. Its canonical answer again says that a public limited company can reach sums beyond any sole trader, and that limited liability plus published audited accounts make borrowing usually easier and cheaper. This reinstates the inverted lender-risk mechanism and the unqualified disclosure rule that the current claims and notes explicitly correct. It also gives a closed sole-trader list that again omits grants and crowd funding.",
+          "evidence": [
+            "ITEM-9609-5.2-060-DIST canonical answer: public-company finance puts 'sums beyond any sole trader's reach' within reach and 'limited liability and published audited accounts' make borrowing 'usually easier and cheaper'.",
+            "The same item's marking guidance rewards limited liability or published accounts as affecting lender willingness.",
+            "CLM-9609-5.2-011 and CU-9609-5.2.1 blocks 5.2.1-b3/b6 state the opposite mechanism: limited liability protects owners and may cause a lender to request security or guarantees.",
+            "CLM-9609-5.2-012 says audit, filing and public-disclosure duties vary by company type and country.",
+            "qa_report.json marks prior critical issues SR-9609-5.2-CODEX-001 and -002 resolved, but this canonical answer still contains both defects.",
+            "REPAIRED 2026-09-08 (second round): ITEM-060-DIST rewritten from the repaired claims. Limited liability is no longer credited with reducing lender risk, the disclosure rule is conditional, and grants and crowd funding are in the sole-trader list."
+          ],
+          "educational_consequence": "A learner who masters the item can lose AO1 and AO3 credit by presenting a legally unsafe international generalisation and by explaining lender risk backwards, even after reading the correct notes.",
+          "recommended_repair": "Regenerate the item from CLM-9609-5.2-003, -006, -007, -011 and -012. Keep only the legal share-issue distinction as absolute; make lender willingness conditional on record, cash flow, security and information, and include grants and crowd funding among sources a sole trader may access subject to provider criteria.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-003",
+          "severity": "critical",
+          "category": "application",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01-04",
+            "OBJ-9609-5.2.2-02-04",
+            "OBJ-9609-5.2.2-02-08",
+            "OBJ-9609-5.2.2-02-09",
+            "OBJ-9609-5.2.2-02-12",
+            "OBJ-9609-5.2.4-01",
+            "CLM-9609-5.2-047",
+            "CLM-9609-5.2-057",
+            "CLM-9609-5.2-063",
+            "ITEM-9609-5.2-002-APP",
+            "ITEM-9609-5.2-026-APP",
+            "ITEM-9609-5.2-053-DIST",
+            "ITEM-9609-5.2-065-DATA",
+            "ITEM-9609-5.2-068-EVAL",
+            "ITEM-9609-5.2-074-WHY"
+          ],
+          "finding": "Provider decisions and jurisdiction-dependent enforcement are still presented as facts. The resource guarantees that sale and leaseback raises more than a bank loan, reverts from 'a bank is often unwilling' to venture capital supplying money 'a bank would refuse', treats micro-finance as collateral-free and sometimes the only realistic source, says an ordinary bank loan requires both security and a record, and tells learners that a mortgage lender can take property and recover most or all of the debt without carrying the notes' jurisdiction qualification into the items.",
+          "evidence": [
+            "ITEM-9609-5.2-002-APP says sale and leaseback releases 'far more than a bank would lend' and that a loan 'would provide less', although no valuation or offer is supplied.",
+            "CU-9609-5.2.2-EXT block 5.2.2e-b4 and notes line 156 say venture capital supplies capital 'that a bank would refuse', contradicting the repaired conditional wording in CLM-9609-5.2-047.",
+            "ITEM-9609-5.2-026-APP says micro-finance lends without collateral and may be the only realistic source; ITEM-9609-5.2-068-EVAL says a bank loan requires security and a record and otherwise may be offered on terms 'that would sink' a start-up.",
+            "ITEM-9609-5.2-053-DIST and -074-WHY state the lender's ability to take property and recover most or all of the debt flatly, although CLM-9609-5.2-057 is jurisdiction-flagged and the notes say enforcement detail depends on national law.",
+            "Official SBA guidance states that lender and programme requirements vary and that some business loans require no collateral: https://www.sba.gov/loans/.",
+            "World Bank/CGAP guidance documents unsecured microcredit, group guarantees and other lending methods, so 'micro-finance lends without requiring collateral' is not a universal product rule: https://documents1.worldbank.org/curated/en/998591468339564503/pdf/342650rev0ENGLISH0Guideline1RegSup.pdf.",
+            "REPAIRED 2026-09-08 (second round): CU-EXT b4 no longer says a bank would refuse; ITEM-002, -006, -026, -053, -068 and -074 rewritten; the jurisdiction qualification is now carried in the mortgage items, not only in the claim."
+          ],
+          "educational_consequence": "Learners are trained to invent a lender's decision from thin case facts and to state one legal enforcement model as international law. That directly weakens AO2/AO3 and triggers the brief's critical RS-23 rule.",
+          "recommended_repair": "Audit every provider-facing sentence in the notes and APP, CHAIN and EVAL answers. Express availability and price as likelihoods supported by the named facts; preserve unsecured and guaranteed alternatives; and carry the jurisdiction qualification into every mortgage or enforcement answer rather than leaving it only in a note or claim annotation.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-004",
+          "severity": "critical",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01-01",
+            "OBJ-9609-5.2.2-01-03",
+            "OBJ-9609-5.2.2-01-05",
+            "OBJ-9609-5.2.2-02-01",
+            "OBJ-9609-5.2.2-02-02",
+            "OBJ-9609-5.2.2-02-03",
+            "OBJ-9609-5.2.2-02-09"
+          ],
+          "finding": "The delivery policy uses exposure as a priority ranking despite the packet's explicit rule that exposure is evidence only. The distributed schedule says the rarely-examined set is the first material shed under pressure, while the exposure artefact labels that set for lower drill volume. The seven named mandatory objectives are therefore deliberately made the first candidates for removal because they were not recently observed.",
+          "evidence": [
+            "curriculum/exam-exposure.json principle: exposure is metadata, never a priority ranking, and every mandatory objective must remain covered.",
+            "curriculum/exam-exposure.json review_set_rarely_examined learner_framing specifies 'lower drill volume'.",
+            "curriculum/item-budget.json delivery_schedules.distributed_20_weeks.under_pressure: 'The rarely-examined review set is the first thing this schedule sheds'.",
+            "The review brief states that an objective taught thinly because it has never been examined is a critical finding.",
+            "REPAIRED 2026-09-08 (second round): The distributed schedule no longer sheds the rarely-examined set, and the exposure artifact no longer prescribes lower drill volume. Reduction under pressure now keys off demonstrated mastery and redundant items."
+          ],
+          "educational_consequence": "A learner following the normal distributed schedule under time pressure can receive no rehearsal of seven compulsory sources precisely because past papers did not name them, even though the first examinations under syllabus v2 are in 2026.",
+          "recommended_repair": "Remove exposure-based shedding and the lower-volume learner framing. Preserve the same minimum teaching and retrieval floor for every mandatory objective in every schedule; if workload must be reduced, use diagnosed learner mastery or task redundancy rather than past-paper silence.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-005",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01",
+            "OBJ-9609-5.2.2-01-02",
+            "OBJ-9609-5.2.2-01-05",
+            "CU-9609-5.2.2-INT",
+            "ITEM-9609-5.2-056-EVAL"
+          ],
+          "finding": "The repaired internal-source generalisation still contradicts later learner material. The working-capital paragraph says no external party is involved at all while its mechanisms require customers and suppliers to change or tolerate payment timing. ITEM-9609-5.2-056-EVAL then states that internal sources are slow to release as a class, although owner's investment and retained cash may be available immediately and the notes' repaired summary deliberately avoids a common speed rule.",
+          "evidence": [
+            "CU-9609-5.2.2-INT block 5.2.2i-b4 and notes line 106: collecting from customers sooner and taking longer to pay suppliers are followed by 'No external party is involved at all'.",
+            "CU-9609-5.2.2-INT block 5.2.2i-b3 correctly says the category is not free of outsiders and that no one speed/cost rule covers all five sources.",
+            "ITEM-9609-5.2-056-EVAL canonical answer gives 'internal sources are slow to release' as the decisive criterion for the whole category.",
+            "REPAIRED 2026-09-08 (second round): CU-INT b4 rewritten: internal means where the money originates, and two of the three working-capital levers need a customer or supplier to agree. ITEM-056 no longer applies a class-wide speed rule."
+          ],
+          "educational_consequence": "Learners may confuse the source of the cash with the absence of counterparties and may reject immediately available internal cash by applying a false class-wide speed rule.",
+          "recommended_repair": "Define 'internal' only by where the finance originates. State that changing receivable and payable timing requires customer or supplier participation, and evaluate the speed of owner's investment, retained cash, asset sales, sale and leaseback and working-capital release separately.",
+          "confidence": 0.98,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-006",
+          "severity": "high",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-13",
+            "CLM-9609-5.2-064",
+            "CLM-9609-5.2-065",
+            "ITEM-9609-5.2-030-APP",
+            "ITEM-9609-5.2-032-EVAL"
+          ],
+          "finding": "Crowd-funding variants are named in the notes but their consequences are not conditioned in the application and evaluation items. Both prompts say only 'crowd funding', while their answers assume a reward or pre-purchase campaign in which backers are customers, success directly tests product demand, and money arrives only if a target is reached. Those claims do not hold in the same way for donation, equity or loan-based models.",
+          "evidence": [
+            "ITEM-9609-5.2-030-APP says backers become the first customers and that reaching the target is direct evidence of demand, without naming reward/pre-payment crowd funding.",
+            "ITEM-9609-5.2-032-EVAL says generic crowd funding raises money and tests demand at the same time, again without selecting a form.",
+            "CLM-9609-5.2-064/-065 and CU-9609-5.2.2-EXT block 5.2.2e-b7 correctly distinguish donation, reward, equity and loan forms, so the items are narrower than their prompts.",
+            "The FCA distinguishes loan, investment, donation and reward/pre-payment models with different returns and obligations: https://www.fca.org.uk/investsmart/understanding-crowdfunding.",
+            "REPAIRED 2026-09-08 (second round): ITEM-029, -030 and -032 now name the crowd-funding form in the prompt and condition every consequence on it."
+          ],
+          "educational_consequence": "A learner may claim customer-demand evidence and no repayment or dilution for any crowd-funding arrangement, losing credit when the case concerns equity or loan-based finance.",
+          "recommended_repair": "Name reward/pre-payment crowd funding in both prompts and answers, or rewrite the tasks to compare the four forms and condition each benefit, limitation and success mechanism on the selected form.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-007",
+          "severity": "high",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-14",
+            "CU-9609-5.2.2-EXT",
+            "ITEM-9609-5.2-035-CHAIN",
+            "ITEM-9609-5.2-036-EVAL"
+          ],
+          "finding": "The grant material turns the absence of repayment, interest and dilution into the false conclusion that a grant is the cheapest source a business can obtain. ITEM-9609-5.2-035-CHAIN says every other source incurs at least one of those three costs, although owner's investment, retained earnings and sale of unwanted assets incur none of them. ITEM-9609-5.2-036-EVAL then says a matching grant application should always be made and is close to costless, contradicting its own case fact that the application consumes scarce owner time.",
+          "evidence": [
+            "CU-9609-5.2.2-EXT block 5.2.2e-b7 and notes line 188 call a grant 'the cheapest money a business can obtain'.",
+            "ITEM-9609-5.2-035-CHAIN: 'Every other source costs at least one of those three'.",
+            "CLM-9609-5.2-021 and the internal-source notes show sources with no repayment, interest or dilution but with opportunity costs, directly disproving the comparison.",
+            "ITEM-9609-5.2-036-EVAL ends that a matching application 'should always be made' even though its prompt says the process is lengthy and the owner is the main salesperson.",
+            "REPAIRED 2026-09-08 (second round): CU-EXT b7 and ITEM-035 and -036 no longer call a grant the cheapest money obtainable; the comparison is bounded to external sources and the management-time and conditions costs are stated."
+          ],
+          "educational_consequence": "Learners may equate no explicit financing charge with no cost, ignore application and compliance costs, and reproduce an invalid comparison or automatic recommendation in AO3/AO4 work.",
+          "recommended_repair": "Describe grants as having no repayment, interest or dilution, not as universally cheapest. Compare total economic and administrative cost, and make the application judgement depend on expected grant value, probability of success, conditions and the opportunity cost of management time.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-008",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01-04",
+            "OBJ-9609-5.2.2-02-01",
+            "OBJ-9609-5.2.2-02-02",
+            "OBJ-9609-5.2.2-02-06",
+            "OBJ-9609-5.2.2-02-08",
+            "OBJ-9609-5.2.2-02-12",
+            "ITEM-9609-5.2-003-CHAIN",
+            "ITEM-9609-5.2-015-CHAIN",
+            "ITEM-9609-5.2-027-CHAIN",
+            "ITEM-9609-5.2-049-DIST",
+            "ITEM-9609-5.2-058-CHAIN"
+          ],
+          "finding": "The repaired build still fails semantic offline reconstruction. Several canonical answers require mechanisms or distinctions not taught by their cited claims or the rendered notes: break-even effects for sale and leaseback; the lessor's tied-up funds and transfer of residual-value risk; per-loan administration as a reason for micro-finance rates; many debenture holders on published terms versus one negotiated bank lender; and the discretionary nature of dividends in a poor year.",
+          "evidence": [
+            "ITEM-9609-5.2-003-CHAIN reaches a higher break-even point, but CLM-9609-5.2-030 and the notes teach only the fixed lease payment.",
+            "ITEM-9609-5.2-015-CHAIN explains lease cost through the lessor's financing and residual-value risk; CLM-9609-5.2-051 and notes line 166 only assert that total payment is usually higher.",
+            "ITEM-9609-5.2-027-CHAIN adds a high administration cost per unit lent, absent from CLM-9609-5.2-063 and the micro-finance notes.",
+            "ITEM-9609-5.2-049-DIST uses 'many holders on fixed published terms' as its boundary; neither CLM-9609-5.2-042 nor the notes teach that structure.",
+            "ITEM-9609-5.2-058-CHAIN depends on a company being able to pay no dividend in a poor year; the cited share-capital claim and notes say only that shareholders expect dividends.",
+            "qa_report.json marks prior high issue SR-9609-5.2-CODEX-012 resolved and says these answers were rewritten to use only the notes, but items -015, -027 and -058 still contain the cited unsupported mechanisms.",
+            "REPAIRED 2026-09-08 (second round): The mechanisms are now taught where they are used: the lessor-cost mechanism and the discretionary dividend in CU-EXT b4 and b5, per-loan administration in b6. ITEM-003 and -049 rewritten to use only what the notes teach."
+          ],
+          "educational_consequence": "An offline learner cannot derive the expected answers from the promised source of record and must memorise unexplained card text or supply outside knowledge, preventing reliable transfer to an unfamiliar case.",
+          "recommended_repair": "For each item, either add a concise, verified and in-scope mechanism to a canonical claim and the rendered notes, or remove the unsupported mechanism and assess only what the notes teach. Re-run the reconstruction test on answer meaning, not claim-ID overlap.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-009",
+          "severity": "high",
+          "category": "evaluation",
+          "affected_ids": [
+            "OBJ-9609-5.2.4-01",
+            "ITEM-9609-5.2-065-DATA",
+            "ITEM-9609-5.2-066-ESSA",
+            "ITEM-9609-5.2-067-CASE"
+          ],
+          "finding": "C-16 finds labels, but three extended tasks do not semantically complete the declared five-part structure. The essay-plan prompt supplies no specific business facts even though its guidance requires an answer anchored in a named business. The hire-purchase task treats equity as the strongest counterargument after the case has ruled out new owners and assumes away the feasible unsecured-loan comparison. The seasonal case recommends equity because it assumes loan instalments fall evenly, although the prompt specifies only a fixed interest rate and gives no repayment timing, profitability, cash reserve or cost comparison from which to decide.",
+          "evidence": [
+            "ITEM-9609-5.2-066-ESSA asks only about 'a small business planning to expand'; its context and facts are empty, while its guidance demands the named business and a decisive factor.",
+            "ITEM-9609-5.2-065-DATA's counterargument is a new equity investor even though the prompt says all four family shareholders want full ownership; the answer also declares that hire purchase removes the security obstacle although it later acknowledges an unsecured loan.",
+            "ITEM-9609-5.2-067-CASE infers evenly timed instalments from a five-year fixed-rate loan and selects equity without the cash-flow and total-cost evidence needed to make that judgement.",
+            "The subject profile and review brief require specific context, a decisive criterion, the genuinely strongest counterargument and a defensible condition in data_response, essay_plan and case_analysis items.",
+            "REPAIRED 2026-09-08 (second round): ITEM-066 now carries a full case; ITEM-067 supplies seasonality, reserves and repayment timing; ITEM-065 argues the strongest VIABLE alternative (an unsecured loan) rather than the ruled-out equity."
+          ],
+          "educational_consequence": "Learners are shown that naming the five headings is enough even when the context cannot determine the answer or the counterargument is not a feasible alternative, weakening AO4 judgement.",
+          "recommended_repair": "Add decision-relevant facts to the essay plan. For the two cases, compare feasible alternatives and provide repayment timing, available cash, price and owner-priority facts before selecting a source; then make the counterargument the best viable rejected option.",
+          "confidence": 0.97,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-010",
+          "severity": "medium",
+          "category": "learning-item",
+          "affected_ids": [
+            "CU-9609-5.2.3-4",
+            "ITEM-9609-5.2-054-APP"
+          ],
+          "finding": "Retired and mixed command-word instruction remains after the prompt repair. The learner objective and section title instruct the learner to justify a choice, and ITEM-9609-5.2-054-APP starts with the one-mark command 'Identify' but then requires a comparison and explanation; its guidance explicitly says the choice must be justified.",
+          "evidence": [
+            "CU-9609-5.2.3-4 title and block 5.2.34-b1, reproduced in notes lines 10 and 250, use 'justifying' as an instructional outcome.",
+            "ITEM-9609-5.2-054-APP prompt: 'Identify which internal source will actually produce cash fastest, and say why'.",
+            "The same item's marking guidance says 'Must justify the choice against the other two options'.",
+            "The assessment framework assigns Identify exactly one mark for naming only and records Justify as retired at AS.",
+            "REPAIRED 2026-09-08 (second round): The 5.2.3-4 title and learner objective no longer instruct with \"justifying\"; ITEM-054 is now an Explain prompt with matching guidance."
+          ],
+          "educational_consequence": "Learners can be trained to over-answer Identify and to treat Justify as a current AS response command despite the resource's own six-command tariff table.",
+          "recommended_repair": "Use ordinary non-command wording in headings, such as 'choosing and evaluating'. Rewrite ITEM-9609-5.2-054-APP as a three-mark Explain item about one source, or label it clearly as a multi-part practice task whose first part is Identify and whose explanation is separate; remove Justify from learner-facing instructions and guidance.",
+          "confidence": 0.94,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-011",
+          "severity": "medium",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-07",
+            "EV-9609-W24-23-1b-0084",
+            "ITEM-9609-5.2-038-DEF",
+            "ITEM-9609-5.2-057-APP",
+            "ITEM-9609-5.2-073-WHY"
+          ],
+          "finding": "The objective and item design omit an observed three-mark Calculate demand on hire purchase. The evidence map records a 2024 item calculating total hire-purchase cost, but the objective registry assigns only Explain and Identify, the exposure allocation requires only DEF, and the topic bank supplies definition, application and explanation without any figures, calculation, units or interpretation.",
+          "evidence": [
+            "assessment-evidence/assessment_evidence.json EV-9609-W24-23-1b-0084 records a three-mark Calculate item on total hire-purchase cost.",
+            "objective_registry.json OBJ-9609-5.2.2-02-07 lists only Explain and Identify.",
+            "exam-exposure.json records Calculate for the objective but sets the required subtype to DEF only.",
+            "The three mapped hire-purchase tasks, ITEM-9609-5.2-038-DEF, -057-APP and -073-WHY, contain no numerical data or CALC structure.",
+            "REPAIRED 2026-09-08 (second round): Calculate added to OBJ-9609-5.2.2-02-07 in the registry and to its exposure required subtypes; CLM-086 added; ITEM-078-CALC and ITEM-079-INTERP added with figures, working, units and interpretation (RS-22)."
+          ],
+          "educational_consequence": "A learner can master every topic item without practising the exact formula/substitution/units/interpretation shape already observed for this source in Paper 2.",
+          "recommended_repair": "Record Calculate on the objective or an explicit quantitative sub-demand, then add a three-mark hire-purchase total-cost item with figures, working, currency units and a one-sentence interpretation. Adjust the budget rather than treating the observed demand as covered by a definition.",
+          "confidence": 0.95,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-012",
+          "severity": "medium",
+          "category": "publishing",
+          "affected_ids": [
+            "CONTRACT-9609-AS-5.2"
+          ],
+          "finding": "The topic contract is internally stale about its required outputs. It records the repaired item budget as 77, but required_outputs still demands 68 learning items and 22 content units, while the submitted packet and brief contain 77 items and four content units.",
+          "evidence": [
+            "contract.json depth_constraints.item_budget is 77 and item_budget_note says the budget was raised from 68 to 77 under CR-003.",
+            "contract.json required_outputs still says content_units: 22 and learning_items: 68.",
+            "qa_report.json metrics and the review brief report four content units and 77 learning items.",
+            "REPAIRED 2026-09-08 (second round): contract.required_outputs corrected to 4 content units and 79 learning items."
+          ],
+          "educational_consequence": "A later build or reviewer cannot tell which output count is authoritative, and a deterministic validator can pass a packet that contradicts its own active contract.",
+          "recommended_repair": "Update the active contract to four content units and 77 learning items, or explicitly define 22 as an objective allocation rather than an output count. Add a deterministic equality check between contract requirements, submitted artefacts and QA metrics.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-013",
+          "severity": "medium",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-06",
+            "CLM-9609-5.2-051",
+            "CU-9609-5.2.2-EXT",
+            "ITEM-9609-5.2-014-APP",
+            "ITEM-9609-5.2-015-CHAIN",
+            "ITEM-9609-5.2-016-EVAL"
+          ],
+          "finding": "Leasing is an unregistered consequential variant. The resource treats maintenance, easy replacement, residual-value risk and five-year cost superiority as properties of leasing in general, although those consequences depend on the lease's service, term, return and risk-allocation provisions. The variant register contains no lease entry, so C-12 cannot detect the over-generalisation.",
+          "evidence": [
+            "CLM-9609-5.2-051 and CU-9609-5.2.2-EXT block 5.2.2e-b5 say leasing often includes maintenance and makes replacement easier.",
+            "ITEM-9609-5.2-014-APP assumes the machine can be handed back and exchanged at the end; ITEM-9609-5.2-015-CHAIN assumes the lessor bears loss-of-value risk; ITEM-9609-5.2-016-EVAL treats ownership as cheaper over five years.",
+            "subject-profile.yaml variant_register lists factoring, crowd funding and loans only, while its note says an unlisted consequential variant is a gap rather than a pass.",
+            "IFRS for SMEs Module 20 distinguishes operating and finance leases by the transfer of risks and rewards and treats maintenance as a separable service component: https://www.ifrs.org/content/dam/ifrs/supporting-implementation/smes/module-20.pdf.",
+            "REPAIRED 2026-09-08 (second round): Leasing added to the subject variant_register; CU-EXT b5 now conditions maintenance, early return and end-of-term loss on the agreement; ITEM-016 updated."
+          ],
+          "educational_consequence": "Learners may award benefits or limitations that a case's lease agreement does not provide, producing weak application and invalid evaluation.",
+          "recommended_repair": "Add lease to the variant register at the minimum depth needed for business consequences, or avoid accounting labels and condition each benefit on the agreement: whether maintenance is included, whether early return or replacement is permitted, how long the term runs and who bears residual-value risk.",
+          "confidence": 0.91,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R2-014",
+          "severity": "medium",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01-02",
+            "CLM-9609-5.2-025",
+            "CU-9609-5.2.2-INT"
+          ],
+          "finding": "The retained-earnings analysis block expands into share-price pressure, future issue pricing and takeover vulnerability without an objective, prerequisite or enrichment label that justifies those mechanisms. CLM-9609-5.2-025 supports the dividend trade-off but not the added capital-market and takeover chain.",
+          "evidence": [
+            "CU-9609-5.2.2-INT block 5.2.2i-b5 and notes lines 110-116 run from lower dividends to selling pressure, a lower share price, less money per future share and a cheaper takeover target.",
+            "The unit maps only the internal-source container and five source members; the active contract lists no prerequisite for capital-market or takeover analysis.",
+            "The subject profile prohibits optional enrichment mixed into core examinable content.",
+            "REPAIRED 2026-09-08 (second round): CU-INT b5 trimmed to the in-scope opportunity cost and shareholder reaction; the share-price, future-issue and takeover chain is gone."
+          ],
+          "educational_consequence": "The learner receives a cognitively expensive, unassessed capital-market chain while more central source-choice reasoning remains inconsistent, and may mistake it for required AS treatment of retained earnings.",
+          "recommended_repair": "Trim the block to the in-scope opportunity cost and possible shareholder dissatisfaction, or label and map the capital-market chain as enrichment with the prerequisite knowledge needed to understand it.",
+          "confidence": 0.94,
+          "status": "resolved"
+        }
+      ]
+    }
+  ],
+  "blockers": [
+    "RS-28 - every issue from the last review is marked resolved by the author, which is a claim rather than a verdict. The repaired build has not been re-reviewed.",
+    "C-00 [RS-27 Schema validity] 3 schema violations: topic_5.2_items.json ['items', 1]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 2]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 11]: Additional properties are not allowed ('notes' was unexpected)",
+    "C-29 [RS-41 No stale derivative] 12 citations are stale: the claim was rewritten and the block or item citing it was not. 8 artefacts affected. Correcting a claim is not a repair; propagating it is. First: ITEM-9609-5.2-014-APP<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-015-CHAIN<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-024-EVAL<-CLM-9609-5.2-059(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-064(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-065(r2 vs seen r1), ITEM-9609-5.2-055-CHAIN<-CLM-9609-5.2-020(r2 vs seen r1)"
+  ],
+  "metrics": {
+    "objective_count": 24,
+    "claim_count": 68,
+    "content_unit_count": 4,
+    "learning_item_count": 79,
+    "word_count": 6139
+  },
+  "release_decision": "reject",
+  "notes": [
+    "Standard v0.2.0-draft check suite. 31 checks: 28 pass, 2 fail, 1 warn, 0 not_run.",
+    "A not_run check means an input the check needs is absent. It is never a pass.",
+    "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
+  ]
+}

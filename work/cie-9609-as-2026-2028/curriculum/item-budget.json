@@ -1,0 +1,138 @@
+{
+  "budget_id": "ITEM-BUDGET-CIE-9609-AS-2026-2028",
+  "generated_at": "2026-09-01T13:48:49Z",
+  "approved_total_items": 889,
+  "approved_by": "Vitalis, 2026-08-31",
+  "allocated": 701,
+  "basis": "About 50 hours of retrieval across a 30-week course, at roughly 10 reviews per card and 35 seconds a review. The binding constraint on an AS resource is learner review time, not word count. The tier model's own minimum was 1,171 items, so the budget overrides the tier ranges rather than deriving from them.",
+  "allocation_rule": {
+    "unsplit_objectives": "tier weight - T1 1, T2 3, T3 5, T4 7; quantitative objectives floor at 2 so RS-22 gets both a CALC and an INTERP item",
+    "decomposed_containers": "4 shared items each (APP, CHAIN, EVAL, DIST) whose objective_ids cite several members at once",
+    "members": "no private allocation; covered by the container's shared items plus one pooled recall item per three members",
+    "why_members_share": "95 tier-1 members each taking a private definition card would push the bank towards 38% AO1 against a 30% target. An item may cite several objective_ids, so shared comparative and applied items satisfy RS-07 coverage without inflating AO1."
+  },
+  "allocation": {
+    "unsplit_bullets": 597,
+    "decomposed_containers": 72,
+    "member_recall_pool": 32,
+    "total": 701
+  },
+  "ao4_correction": {
+    "problem": "A tier-weighted allocation projects roughly 34/31/23/11 across AO1-AO4 by item count, against the qualification's 30/30/20/20 mark weights. AO4 lands at about half its share.",
+    "diagnosis": "Matching item COUNT to MARK weight is the wrong mapping. One 20-mark essay-plan item carries as much AO4 as ten definition cards carry AO1. The earlier item_mix_target in assessment-framework.json applied the mark weights to item counts; that was too naive and is corrected here.",
+    "rule": "AO1, AO2 and AO3 shares govern the flashcard and short-answer bank. AO4 is carried by a smaller number of high-value performance items - essay plans, data-response tasks, case analyses. The deterministic check becomes: every objective carrying AO4 has at least one evaluation item, AND AO4 practice time is at least 20% of total practice time - not 20% of item count.",
+    "objectives_carrying_ao4": 76
+  },
+  "revisit": "After Stage 4. The granularity probe decides whether members earn private allocations; if they do, the total rises and something else gives.",
+  "updated_at": "2026-09-01T15:30:28Z",
+  "status": "LOCKED at 889",
+  "exposure_revision": {
+    "what_changed": "Exposure flags applied to the 95 member objectives. Allocation is now evidence-led for those, tier-led for the rest.",
+    "member_allocation": {
+      "probed_high (37)": "4 items - DEF, APP, CHAIN, EVAL",
+      "probed_low (26)": "1 item - DEF",
+      "unprobed_2020_2025 (21)": "2 items - DEF, DIST (coverage floor)",
+      "unmeasured_homonym_risk (11)": "2 items - same floor"
+    },
+    "arithmetic": {
+      "unsplit_bullets_tier_led": 597,
+      "decomposed_containers": 54,
+      "members_evidence_led": 238,
+      "total": 889,
+      "approved": 700,
+      "over_by": 189
+    },
+    "diagnosis": "The 700 budget was set against 258 objectives before exposure was known. Exposure is now measured for 95 of them and justifies 238 items. The other 163 are taking 597 items on tier weights alone - a pre-evidence guess. Squeezing the measured set to protect the guess would be the wrong way round.",
+    "options": {
+      "A_finish_the_measurement": "Mark-scheme mining gives bullet-level exposure for the 163 unmeasured objectives, then allocate the whole 700 on evidence. Recommended. Precondition for locking the budget.",
+      "B_trim_tier_weights_now": "T1 1, T2 2, T3 4, T4 6 gives 741; T1 1, T2 2, T3 3, T4 5 gives 676. Workable if authoring must start before the measurement is finished, but it trims measured and unmeasured objectives with equal blindness.",
+      "C_raise_the_budget": "889 items needs about 86 hours of review - 35 minutes a day, five days a week, for thirty weeks, on one subject. Defensible for a committed candidate, too much for a typical one."
+    },
+    "recommendation": "A, with B as the interim if Stage 5 cannot wait."
+  },
+  "study_load_model": {
+    "added": "2026-09-01T15:38:23Z",
+    "status": "analysis, not a decision",
+    "why_it_matters": "The 700 budget assumed 35 seconds per attempt. That figure suited a definition-heavy deck. The bank we have actually designed is 60% application, analysis and evaluation by item count, and those items cost far more per attempt. Re-modelled, the mean attempt is about 63 seconds, so the original budget arithmetic was roughly twice as optimistic as it looked.",
+    "modelled_composition_of_889_items": {
+      "recall (DEF, DIST, FEATURE, PROC, MISCON)": {
+        "items": 355,
+        "share": "40%",
+        "seconds_per_attempt": 20
+      },
+      "apply (APP, CALC)": {
+        "items": 207,
+        "share": "23%",
+        "seconds_per_attempt": 60
+      },
+      "chain (MECH, CHAIN)": {
+        "items": 203,
+        "share": "23%",
+        "seconds_per_attempt": 90
+      },
+      "evaluate (EVAL, SYNTH)": {
+        "items": 124,
+        "share": "14%",
+        "seconds_per_attempt": 150
+      }
+    },
+    "cost_of_the_full_bank": {
+      "one_pass_hours": 15.7,
+      "two_attempts_hours": 31.3,
+      "three_attempts_hours": 47.0,
+      "mean_seconds_per_attempt": 63
+    },
+    "single_4_week_block": {
+      "verdict": "does not fit",
+      "at_2h_per_week": "8 h buys 0.5 attempts per card across 889 - half a pass",
+      "at_3h_per_week": "12 h buys 0.8 attempts",
+      "sixty_cards_a_day_x3_attempts": "180 attempts x 63 s = 190 minutes a day, 19 h a week - about six times the stated 2-3 h",
+      "note": "The card arithmetic in the proposal is sound - 180 attempts a day clears the whole bank at 3 attempts in 15 days. Only the time estimate is out."
+    },
+    "five_topic_blocks": {
+      "verdict": "fits, and closely matches the intent",
+      "structure": "One 4-week block per AS topic, 178 items each, across a 20-week course",
+      "per_block": "2 h/week card review x 4 weeks = 8 h -> 2.6 attempts per card",
+      "written_test": "1 h/week x 20 weeks = 20 h of closed-book writing, about 60 twelve-mark evaluation questions across the course",
+      "why_it_works": "The bank size was never the problem. Compressing five topics into one 4-week window was."
+    },
+    "spacing_requirement": "Three attempts must be spread across the block - roughly day 1, day 6, day 16 - not massed into one sitting. Massed repetition produces good same-day performance and poor retention months later, which is the wrong trade for an exam. A Monday-to-Saturday schedule supports this naturally if the scheduler is driven by exposure intervals rather than by the calendar.",
+    "maintenance": "Three spaced attempts in a 4-week block hold for roughly two to three months. For an exam six or more months out, each completed topic needs a light maintenance pass. The optional Sunday is the natural home for it.",
+    "sensitivity": "The per-subtype seconds are modelled, not measured. If real attempts average 45 seconds rather than 63, every figure above improves by about 30%. Measure it on the pilot cohort and replace these numbers."
+  },
+  "locked_at": "2026-09-01T23:03:59Z",
+  "lock_decision": {
+    "decided_by": "Vitalis, 2026-08-31",
+    "resolution": "The 700 figure came from an assumed 3-5 h/week learner. The actual pilot learner is in the YYeni office 08:30-21:00 and spends most of that on Business Studies. Time is not the constraint, so the bank is not trimmed.",
+    "supersedes": "The earlier three options A/B/C in this file. Option C - raise the budget - is what the learner data supports."
+  },
+  "delivery_schedules": {
+    "principle": "One item bank, two schedules. The bank is identical; only pacing and the order of what gets dropped under pressure differ.",
+    "intensive_revision_4_weeks": {
+      "target": "YYeni office learner, taught course, revision block",
+      "learner_profile": "Already taught the full AS course. Business Studies is the main subject; one other AS subject (English) takes little time.",
+      "card_practice": "3 h/day x 6 days = 18 h/week; 72 h over 4 weeks",
+      "attempts_available": "4.6 per card across all 889 - three attempts complete in 2.6 weeks",
+      "written_testing": "2 h/day x 6 days = 12 h/week; 48 h over 4 weeks, including two closed-book recall tests",
+      "spacing": "Three scheduled attempts at roughly day 1, day 6 and day 16, driven by exposure intervals not the calendar. Surplus capacity goes to further spaced attempts and to written practice, not to a larger bank.",
+      "sunday": "Optional. Maintenance passes on topics whose block has closed."
+    },
+    "distributed_20_weeks": {
+      "target": "School rollout - a learner with 3 h/week",
+      "structure": "Five 4-week blocks, one per AS topic, across a 20-week course",
+      "card_practice": "2 h/week -> 8 h per block -> about 2.6 attempts per card",
+      "written_testing": "1 h/week -> 20 h across the course, roughly 60 twelve-mark evaluation questions",
+      "under_pressure": "Nothing is shed on the basis of exposure. RS-05 makes exposure evidence about the past, never a priority ranking, so a mandatory objective keeps the same teaching and retrieval floor in every schedule. Where the week genuinely cannot be completed, reduce repetition on items the learner has already demonstrated mastery of, or drop redundant items that test the same claim twice - never a whole objective, and never because past papers did not name it."
+    },
+    "exposure_and_shedding_note": "Corrected 2026-09-08 after review issue SR-9609-5.2-CODEX-R2-004. The previous wording made the rarely-examined review set the first material dropped under pressure, which is the exact inversion of the position this build argues: silence in six years of papers is weak evidence, and syllabus v2 is first examined in 2026."
+  },
+  "surplus_capacity_rule": "Where a schedule has capacity beyond three spaced attempts, spend it on written evaluation practice rather than on more cards. Going from three to five attempts has real but diminishing value; more closed-book 12-mark writing is where marks move, and it is the skill flashcards structurally cannot build.",
+  "block_calendar_caveat": "178 items per block is 889/5. Real topics are uneven - topics 1 and 5 have five sub-topics each, topics 2, 3 and 4 have three. Compute exact per-topic counts before publishing a calendar.",
+  "note_depth_decision": {
+    "decided_by": "Vitalis, 2026-09-07",
+    "choice": "full teaching depth, not condensed revision depth",
+    "reasoning": "The notes serve three purposes at once: they are the source of record from which flashcards are generated, the offline study text when the YYeni platform is unavailable, and a standalone text a learner reads to learn. Condensing to revision depth would weaken all three. Word count is therefore not a constraint.",
+    "consequence": "Word budget stays at 82,600-177,600 across the AS course. Self-containment becomes a hard authoring requirement: an offline learner cannot ask a follow-up question, so every mechanism, formula and worked example is written out in full.",
+    "note": "The item budget is unaffected. 889 items stands."
+  }
+}

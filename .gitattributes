@@ -1,0 +1,17 @@
+# Large binary study material is stored in Git LFS.
+# Colleagues MUST run `git lfs install` before cloning, or these files
+# arrive as small text pointers instead of real documents.
+*.pdf  filter=lfs diff=lfs merge=lfs -text
+*.PDF  filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+
+# Keep text data as text so diffs stay reviewable.
+*.md   text
+*.csv  text
+*.tsv  text
+*.json text
+*.yaml text
+*.toml text
+*.py   text
