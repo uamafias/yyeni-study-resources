@@ -72,3 +72,11 @@ Decision needed: define when comprehension checks, learner feedback, item diffic
 ## 10. Folder architecture and migration
 
 Do not finalise a project-wide folder system until Claude Co-work or another agent has inventoried the actual YYeni Study Resources folder. The migration plan should preserve source files, existing notes, and version history before reorganising them.
+
+## 11. Namibian-context localisation for prose and worked examples
+
+Current draft only has generic-international context vocabulary (sector, business size, ownership) for worked examples. RS-20 requires context that changes the reasoning, and a Namibian learner relates faster to Namibian-plausible scenarios (informal trade, communal farming, tourism/lodges, mining, fishing, parastatals) than to an unplaced "medium or large private business."
+
+Decision needed: whether to add a maintained locale/context profile (same shape as `variant_register`, RS-35) supplying Namibian-relatable context facts, who maintains it, whether it's shared cross-subject or per-subject, and whether every core item needs a localised variant or only context-bearing items (case_analysis / worked_application-derived).
+
+See `operations/standard-change-requests/CR-004-namibian-context-localisation.md` for the full writeup.
