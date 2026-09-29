@@ -70,6 +70,7 @@
               "essay_question",
               "case_analysis",
               "practical_task",
+              "multiple_choice_set",
               "source_analysis",
               "speaking_prompt",
               "writing_task",
@@ -167,6 +168,38 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "chart": {
+                "type": "object",
+                "additionalProperties": false,
+                "description": "RS-22. Declared parameters of a graphical stimulus so its coordinates can be verified.",
+                "required": [
+                  "price",
+                  "variable_cost",
+                  "fixed_costs",
+                  "asks"
+                ],
+                "properties": {
+                  "price": {
+                    "type": "number"
+                  },
+                  "variable_cost": {
+                    "type": "number"
+                  },
+                  "fixed_costs": {
+                    "type": "number"
+                  },
+                  "current_output": {
+                    "type": "number"
+                  },
+                  "asks": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text_id": {
+                "type": "string",
+                "description": "CR-004. The practice text this item is answered from: topics/<T>/texts/<text_id>.md. An original text written for the purpose, never a reproduced one."
               }
             }
           },
@@ -214,6 +247,57 @@
           "authored_hash": {
             "type": "string",
             "description": "RS-41. SHA-256 of the item text this claims_seen stamp was made against."
+          },
+          "prior_hash": {
+            "type": "string",
+            "description": "RS-41. authored_hash before the current stamp."
+          },
+          "reviewed_unchanged": {
+            "type": "string",
+            "description": "RS-41. Recorded when a re-read against a revised claim genuinely found nothing to change."
+          },
+          "repair_note": {
+            "type": "string",
+            "description": "A written record of what this repair changed and why, the mirror of reviewed_unchanged. RS-41: a repair leaves a trail either way - what changed, or why re-reading found nothing to change."
+          },
+          "blooms_level": {
+            "type": "string",
+            "enum": [
+              "Remember",
+              "Understand",
+              "Apply",
+              "Analyse",
+              "Evaluate",
+              "Create"
+            ],
+            "description": "CR-004. What the learner is asked to do (revised Bloom's taxonomy). A different axis from assessment_objectives; the work order decides it per slot."
+          },
+          "blooms_level_basis": {
+            "type": "string",
+            "description": "CR-004. How blooms_level was decided, when it was derived rather than authored (e.g. by subtype rule)."
+          },
+          "command_word": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "CR-004. The command word or task form the item models, from the work-order slot. Null for a technique card that models no paper question."
+          },
+          "mark_tariff": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "description": "CR-004. Marks of the paper question or task part this item models, from the work-order slot. Null when it models none."
+          },
+          "sub_objectives": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            },
+            "description": "CR-004. The syllabus's own finer assessed grain beneath assessment_objectives, where it prints one (0500: R1-R5, W1-W5). Absent where the syllabus prints none."
           }
         },
         "allOf": [

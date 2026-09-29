@@ -6,9 +6,12 @@ RS-16: published outputs are derived from the same approved structured source.
 RS-39: rendering rather than hand-writing the notes makes notes-to-card drift
 structurally impossible - the notes ARE the content units.
 
-    python3 render_notes.py <workspace> <topic-id> [--out notes-<slug>.md]
+    python3 render_notes.py <workspace> <topic-id>
+
+The output filename is derived from the contract's topic_title (see build/naming.py),
+so every topic in every subject is named the same way and a human can read the folder.
 """
-import os, json, glob, argparse, datetime
+import os, sys, json, glob, argparse, datetime
 
 SKIP = {'learner_objective'}
 LABEL = {
@@ -71,14 +74,33 @@ def render(workspace, topic):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('workspace'); ap.add_argument('topic'); ap.add_argument('--out', default=None)
+    ap.add_argument('workspace'); ap.add_argument('topic')
+    ap.add_argument('--out', default=None,
+                    help='override the derived filename. Do not: the name is derived from the '
+                         'contract title so that every subject names its files the same way.')
     a = ap.parse_args()
     td = os.path.join(a.workspace, 'topics', a.topic)
-    existing = sorted(glob.glob(os.path.join(td, 'notes-*.md')))
-    out = a.out or (existing[0] if existing else os.path.join(td, 'notes-%s.md' % a.topic))
+    # The filename is DERIVED from the topic title in the contract, never chosen by the author.
+    # A file called notes-4.3.md tells a human nothing; 4.3-capacity-utilisation-and-outsourcing.md
+    # tells them everything without opening it.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from naming import notes_filename
+    title = json.load(open(os.path.join(td, 'contract.json'))).get('topic_title', '')
+    out = a.out or os.path.join(td, notes_filename(a.topic, title))
+    stale = [p for p in sorted(set(glob.glob(os.path.join(td, 'notes-*.md')) +
+                                   glob.glob(os.path.join(td, '*.md'))))
+             if os.path.basename(p) != os.path.basename(out) and
+             (os.path.basename(p).startswith('notes-') or os.path.basename(p)[0].isdigit())]
     text = render(a.workspace, a.topic)
     open(out, 'w').write(text)
     print('notes -> %s  (%d words)' % (out, len(text.split())))
+    for p in stale:
+        try:
+            os.remove(p)
+            print('       removed superseded %s' % os.path.basename(p))
+        except OSError:
+            print('       NOTE: %s is a superseded notes file under the old naming and could not be '
+                  'removed here. Delete it by hand so the topic has one notes file.' % p)
 
 
 if __name__ == '__main__':

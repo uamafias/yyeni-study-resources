@@ -1,0 +1,304 @@
+{
+ "dataset_id": "ITEMS-9618-10.3",
+ "topic_id": "10.3",
+ "items": [
+  {
+   "item_id": "ITEM-9618-10.3-EX1-DEF",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 1,
+   "prompt": "State why a program that records sales needs to store them in a file rather than only in an array.",
+   "canonical_answer": "An array is held in memory and is lost when the program ends; a file keeps the sales in secondary storage so they can be read again later.",
+   "marking_guidance": [
+    "1 mark: the meaning of storing in a file - the data is kept after the program ends because it is in secondary storage.",
+    "An answer that says only \"to save it\" does not say why the array is not enough."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1
+   },
+   "authored_hash": "a5a317a6994511be5949d225568d3172c18469967e2a8d35464a12c401b17d49"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-EX2-PROC",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A module is given a string NewOrder. Write pseudocode statements to add NewOrder as a new line at the end of the existing file \"Orders.txt\", keeping the orders already in it.",
+   "canonical_answer": "OPENFILE \"Orders.txt\" FOR APPEND\nWRITEFILE \"Orders.txt\", NewOrder\nCLOSEFILE \"Orders.txt\"",
+   "marking_guidance": [
+    "Order: open first, then write, then close - one mark point for each step in sequence.",
+    "Input: start from the given string NewOrder and the file name \"Orders.txt\" in quotation marks.",
+    "Each statement is a mark point: OPENFILE with mode APPEND (not WRITE, which would start the file again); WRITEFILE with the file name and NewOrder; CLOSEFILE with the file name.",
+    "Result: the file ends with the new order as its last line and every earlier line kept - 4 marks for the three statements and the correct mode."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "468aca7e199ca9cbf229d3ce214272a386afe36a434d52035a5a46d02a5f8b6a"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-EX3-INTERP",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The file \"Orders.txt\" holds four lines: \"Rice\", \"\" (empty), \"Beans\" and \"Salt\". Complete the value of Count after each pass of the loop in this pseudocode:\n\n```pseudocode\nDECLARE Line : STRING\nDECLARE Count : INTEGER\nCount ← 0\nOPENFILE \"Orders.txt\" FOR READ\nWHILE NOT EOF(\"Orders.txt\")\n   READFILE \"Orders.txt\", Line\n   IF Line <> \"\" THEN\n      Count ← Count + 1\n   ENDIF\nENDWHILE\nCLOSEFILE \"Orders.txt\"\n```",
+   "canonical_answer": "Pass 1 reads \"Rice\", so Count becomes 1. Pass 2 reads the empty string, so Count stays 1. Pass 3 reads \"Beans\", so Count becomes 2. Pass 4 reads \"Salt\", so Count becomes 3. EOF is then TRUE and the loop ends with Count = 3.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value of Count in each row - 1, 1, 2, 3.",
+    "Meaning: the final value 3 means the loop counted the lines that are not empty, because the IF skips the empty line."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "c917e7e0df4879241312970a2648883a5fe1fe1beec78a94de21c9fe9a002f98"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-EX4-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A procedure has the parameter FileName, which holds the name of a text file. A learner writes OPENFILE \"FileName\" FOR READ. Explain the error.",
+   "canonical_answer": "The quotation marks make \"FileName\" a literal string, so the program tries to open a file actually called FileName instead of the file whose name the parameter holds. Because FileName is an identifier, the statement is OPENFILE FileName FOR READ, without quotation marks.",
+   "marking_guidance": [
+    "1 mark: the error named - the identifier has been written as a literal string, so the wrong file is opened (a confusion between an identifier and a literal).",
+    "1 mark: the correction - no quotation marks round an identifier; quotation marks only round a literal file name."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-004": 1
+   },
+   "authored_hash": "08d6687a6bfdf142c27a30ff5dfc02ebf21e4071f010e4ff8291f7d485791e6d"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-EX5-APP",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A school keeps each learner’s name on its own line in \"Class.txt\". The file is to be replaced with an empty list at the start of each year. Write the pseudocode statements that open the file so that its old contents are removed, and then close it.",
+   "canonical_answer": "OPENFILE \"Class.txt\" FOR WRITE\nCLOSEFILE \"Class.txt\"",
+   "marking_guidance": [
+    "Context: the school wants the old list gone, so the mode must be WRITE, which creates the file afresh - 1 mark for the mode.",
+    "Reason: APPEND would keep last year’s names; READ would not change the file. 1 mark for OPENFILE with the file name in quotation marks, 1 mark for CLOSEFILE with the same file name."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1
+   },
+   "authored_hash": "2d78915aafca238388b2f578ccd88e4470f62e2ccf50a02a55a899dcca00265a"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-EX-P01",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-005"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A clinic stores one appointment per line in the text file \"Visits.txt\". Each line begins with a four-digit patient number, for example \"0042 Monday 09:30\". Write pseudocode for a function CountVisits() that takes a patient number as a string parameter PatientID and returns the number of lines in the file that begin with that patient number.",
+   "canonical_answer": "FUNCTION CountVisits(PatientID : STRING) RETURNS INTEGER\n   DECLARE Line : STRING\n   DECLARE Total : INTEGER\n   Total ← 0\n   OPENFILE \"Visits.txt\" FOR READ\n   WHILE NOT EOF(\"Visits.txt\")\n      READFILE \"Visits.txt\", Line\n      IF LEFT(Line, 4) = PatientID THEN\n         Total ← Total + 1\n      ENDIF\n   ENDWHILE\n   CLOSEFILE \"Visits.txt\"\n   RETURN Total\nENDFUNCTION",
+   "marking_guidance": [
+    "Mark point 1: function heading with the parameter PatientID : STRING and RETURNS INTEGER, and ENDFUNCTION.",
+    "Mark point 2: declaration of the line and counter variables, and the counter initialised to 0 before the loop.",
+    "Mark point 3: OPENFILE with the file name in quotation marks and mode READ.",
+    "Mark point 4: a conditional loop WHILE NOT EOF(\"Visits.txt\"), closed with ENDWHILE.",
+    "Mark point 5: READFILE inside the loop. Mark point 6: selection inside the loop comparing LEFT(Line, 4) with PatientID.",
+    "Mark point 7: counter incremented only when the test is true. Mark point 8: CLOSEFILE after the loop and RETURN Total - the result is returned, not output."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "90d99cd093e19d5cf35c2b59a80ade1fb1d59adcb14ad27de7fd67c9da169971"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-EX-P02",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02",
+    "OBJ-9618-10.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-001"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "The clinic’s program adds a new appointment to \"Visits.txt\" each time one is booked. Explain which file mode the program should use to add the appointment, and why the other two modes are unsuitable here.",
+   "canonical_answer": "It should use APPEND, because APPEND adds the new line to the end of the file and keeps every appointment already booked. WRITE would create the file afresh and lose the existing appointments. READ only reads lines and cannot add one.",
+   "marking_guidance": [
+    "Point: state the mode, APPEND - 1 mark.",
+    "Reason: because it adds to the end and keeps the existing lines - 1 mark.",
+    "Context: why WRITE and READ fail for the clinic - WRITE would lose the booked appointments, READ cannot add - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 structural exemplar from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-001": 1
+   },
+   "authored_hash": "048386db54c789507dc4cf12b27d04c967e7111c36967d97218414fcc4cacb6a"
+  }
+ ]
+}

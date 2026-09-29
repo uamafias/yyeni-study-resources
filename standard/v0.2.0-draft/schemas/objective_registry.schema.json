@@ -161,9 +161,61 @@
               "published",
               "deferred"
             ]
+          },
+          "sub_topic": {
+            "type": "string",
+            "description": "CR-004. The syllabus sub-topic number the objective sits under."
+          },
+          "sub_topic_heading": {
+            "type": "string",
+            "description": "CR-004. The syllabus's heading for that sub-topic."
+          },
+          "syllabus_page": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "CR-004. Page of the syllabus PDF that states syllabus_text."
+          },
+          "sub_objectives": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            },
+            "description": "CR-004. The syllabus's finer assessed grain this objective is tested under (0500: R1-R5, W1-W5)."
+          },
+          "task": {
+            "type": "string",
+            "description": "CR-004. The paper task the objective is assessed in, where the syllabus assesses by task rather than by topic."
+          },
+          "syllabus_guidance": {
+            "type": "string",
+            "description": "CR-004. Guidance the syllabus prints beside the objective (e.g. 0455's notes column), transcribed."
+          },
+          "papers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "CR-006. The papers that assess this objective, where the syllabus assigns content to papers (9618: sections 1-8 Paper 1, 9-12 Paper 2). Read by make_work_order.py to re-express slot AOs for a paper that does not assess an AO."
           }
         }
       }
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "CR-004. When the registry was generated."
+    },
+    "authority": {
+      "type": "string",
+      "description": "CR-004. The document the objectives are transcribed from."
+    },
+    "granularity_note": {
+      "type": "string",
+      "description": "CR-004. What one objective corresponds to in the syllabus."
+    },
+    "papers_note": {
+      "type": "string",
+      "description": "CR-006. How the syllabus assigns content to papers, where it does."
     }
   }
 }

@@ -507,7 +507,108 @@ answer_structures:
   - point|state
   - reason|mechanism|because|why
   - context|facts|the business|each
+  PROC:
+    - "steps|stages|order|sequence|first|begin"
+    - "input|given|start from|what you need|data"
+    - "each step|state|plot|calculate|draw|carry out"
+    - "result|output|finish|complete|end with|what you have"
   WHY:
   - reason|purpose|why|because
 variant_register_note: Human-maintained and deliberately incomplete. RS-35 is checked only against what is listed
   here, so an unlisted consequential variant is a gap in this register, not a pass.
+
+# RS-43. A mechanism whose conclusion holds only under stated conditions is registered here once, and
+# C-37 then requires every claim, block and item that asserts it to carry those conditions. The register
+# exists because review SR-9609-5.4-CODEX-R3 found a condition repaired into one claim and absent from
+# four parallel cards teaching the same mechanism.
+conditioned_mechanisms:
+  - mechanism_id: CM-9609-DROP-EFFECT
+    name: Dropping a product leaves its share of the overhead behind
+    rationale: >-
+      The accounting effect of dropping a product - its contribution goes, its allocated overhead does not -
+      holds only for the overhead that is actually unavoidable over the decision horizon. An artefact that
+      traces the effect must say what makes those costs unavoidable, or it teaches that allocated overhead is
+      necessarily unchanged.
+    asserted_when: &drop_trigger
+      - '\b(?:drop|drops|dropped|dropping|stops? making(?! (?:a )?(?:profit|loss|money))|stopped making(?! (?:a )?(?:profit|loss|money))|discontinu|stops? the line|if (?:it|the line|the product) (?:goes|stops))\b'
+      - '\b(?:overhead|overheads|fixed cost|fixed costs|shared cost|shared costs)\b'
+      - '\b(?:stay|stays|stayed|remain|remains|unchanged|does not fall|do not fall|not gone anywhere|have not gone|does not go|still sit|now sit|land on|lands on|fall on the products|falls on the products|left behind|carried by)\b'
+    required_conditions: &avoidability
+      - name: which of those costs would actually be avoided over the decision horizon
+        any_of:
+          - '\bavoidab'
+          - '\bunavoidab'
+          - '\bwould (?:genuinely )?disappear\b'
+          - '\bincurred anyway\b'
+          - '\bpaid anyway\b'
+          - '\bdoes go\b'
+          - '\blease\b'
+          - '\blay off\b'
+          - '\bgive up\b'
+          - '\bcould be cut\b'
+          - '\bover the (?:relevant )?(?:decision )?horizon\b'
+  - mechanism_id: CM-9609-DROP-DECISION
+    name: Concluding that a product is worth keeping or the business worse off without it
+    rationale: >-
+      Positive contribution proves what is lost by dropping a product without replacing it. It does not prove
+      that keeping it is the best available decision. An artefact that reaches a keep-or-drop verdict, or says
+      the business ends up worse off, must carry both conditions - what cost actually disappears, and whether
+      the capacity it frees could earn more doing something else.
+    asserted_when:
+      - '\b(?:drop|drops|dropped|dropping|stops? making(?! (?:a )?(?:profit|loss|money))|stopped making(?! (?:a )?(?:profit|loss|money))|discontinu|stops? the line|if (?:it|the line|the product) (?:goes|stops))\b'
+      - '\b(?:overhead|overheads|fixed cost|fixed costs|shared cost|shared costs)\b'
+      - '\b(?:worse off|better off|worth keeping|worth continuing|should (?:keep|stop|continue|drop)|is worth|the obvious move|decide whether to stop)\b'
+    required_conditions:
+      - name: which of those costs would actually be avoided over the decision horizon
+        any_of:
+          - '\bavoidab'
+          - '\bunavoidab'
+          - '\bwould (?:genuinely )?disappear\b'
+          - '\bincurred anyway\b'
+          - '\bpaid anyway\b'
+          - '\bdoes go\b'
+          - '\blease\b'
+          - '\blay off\b'
+          - '\bgive up\b'
+          - '\bcould be cut\b'
+          - '\bover the (?:relevant )?(?:decision )?horizon\b'
+      - name: whether the capacity it frees has a better use
+        any_of:
+          - '\bopportunity cost\b'
+          - '\bfreed(?:-| )?up capacity\b'
+          - '\bfreed capacity\b'
+          - '\bbetter use\b'
+          - '\bearn(?:s|ed)? more elsewhere\b'
+          - '\bearn more\b'
+          - '\balternative use\b'
+          - '\bput something else\b'
+          - '\breplace (?:it|the line|the product)\b'
+          - '\bwhat the (?:space|capacity|time) would earn\b'
+          - '\bearn (?:a )?(?:larger|bigger|greater|higher)\b'
+          - '\bdoing something else\b'
+          - '\bnothing better to do\b'
+          - '\bbest use of\b'
+          - '\bcontributing more\b'
+  - mechanism_id: CM-9609-COST-BY-LABEL
+    name: Classifying a named expense as fixed or variable
+    rationale: >-
+      The topic teaches that classification turns on how a cost behaves as output changes, not on the name of
+      the expense. Bank charges, accountancy fees and utilities all have fixed and variable forms, so any
+      artefact that classifies one must say which behaviour it means.
+    asserted_when:
+      - '\b(?:bank charges|accountancy fees|accountancy|professional fees|utilities|telephone|electricity bill)\b'
+      - '\bfixed costs?\b'
+    required_conditions:
+      - name: the behaviour test that decides the classification
+        any_of:
+          - '\bdoes not change with (?:output|activity|how much)\b'
+          - '\bdoes not vary with\b'
+          - '\bregardless of (?:output|activity|how much|how many)\b'
+          - '\bwhatever the output\b'
+          - '\bmonthly [a-z -]{0,24}fee\b'
+          - '\bretainer\b'
+          - '\bhow (?:each|the) (?:charge|cost|amount) behaves\b'
+          - '\bthe fixed (?:part|component|element|portion)\b'
+          - '\bvaries with\b'
+          - '\bbehaviour\b'
+          - '\bper (?:transaction|hour|unit)\b'

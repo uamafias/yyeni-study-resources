@@ -1,0 +1,115 @@
+profile_id: yyeni-subject-business-igcse-v0.1.0
+version: 0.1.0-draft
+status: draft
+subject_name: Business Studies (Cambridge IGCSE 0450)
+language_variant: British English
+purpose: >-
+  The teaching model for IGCSE Business Studies. Adapted from the AS 9609 profile, with the
+  differences that matter recorded rather than inherited silently: 0450 is far more AO1-weighted
+  (40 against 30), far less AO2 (20 against 30), and its command words are different - there is no
+  "Analyse" and no "Evaluate" at IGCSE. Evaluation is asked with "Consider" at 12 marks and with
+  "Do you think...? Justify your answer" at 6.
+
+depth_model:
+  note_mode: full teaching depth
+  rationale: >-
+    Notes are the source for flashcards AND the offline study text, so they are written at teaching
+    depth. The syllabus assumes no prior study of Business Studies, so a term is introduced before
+    it is used - unlike the AS notes, which could assume the IGCSE course.
+  words_per_objective: 220-300
+
+terminology_rules:
+  - Use the syllabus wording for every technical term; where a textbook differs, the syllabus wins.
+  - Introduce a term before using it. The learner may never have met it.
+  - Namibian dollars (N$) and businesses a Namibian learner would recognise. Invented businesses only.
+
+answer_structures:
+  DEF: ["meaning|precise|definition"]
+  FEATURE: ["features|elements|parts|what it includes"]
+  DIST: ["boundary|difference|distinction|distinguish|whereas|contrast|both sides"]
+  PROC: ["stages|order|sequence|first|begin", "input|given|start from", "each stage|state|carry out",
+         "result|output|end with|completed"]
+  WHY: ["reason|purpose|why|because"]
+  MECH: ["mechanism|how|because"]
+  BEN: ["developed|because|so that|leads to"]
+  LIM: ["developed|because|so that|leads to"]
+  APP: ["context|facts|the business|this|named|here", "reasoning|reason|because|why|link",
+        "conclusion|therefore|conclude|choice"]
+  CHAIN: ["condition|if |where |given|starting point", "mechanism|because|why|how",
+          "consequence|effect|result|leads to", "objective|stakeholder|profit|cash|survival|the business"]
+  EVAL: ["judgement|judgment|recommend|decide|verdict", "context|facts|the business|this case|named",
+         "criterion|decisive|what decides", "counterargument|argument against|other side|alternative",
+         "condition|if |unless|depends|changes"]
+  CALC: ["formula", "substitution|substitute|working", "units|currency|percentage",
+         "interpretation|means|interpret"]
+  INTERP: ["comparison|compare|against", "meaning|means|interpret"]
+  MISCON: ["error|mistake|confus|wrongly|in fact"]
+  SYNTH: ["links|both|together|combined"]
+  short_answer: ["point|state", "reason|because|why", "context|the business|each"]
+  data_response: ["judgement|recommend|decide", "context|facts|the business", "criterion|decisive",
+                  "counterargument|against|alternative", "condition|depends|unless"]
+  case_analysis: ["judgement|recommend|decide", "context|facts|the business", "criterion|decisive",
+                  "counterargument|against|alternative", "condition|depends|unless"]
+  essay_plan: ["judgement|recommend|decide", "context|facts|the business", "criterion|decisive",
+               "counterargument|against|alternative", "condition|depends|unless"]
+
+variant_register:
+  - term: business growth
+    variants: [internal, external]
+    consequence: Whether the business expands with its own resources or by joining with another.
+    teach_as: Name both forms wherever growth is discussed; condition every benefit and problem on the form.
+  - term: recruitment
+    variants: [internal, external]
+    consequence: Whether the candidate already works for the business, which changes cost, speed and fresh ideas.
+    teach_as: A single distinction, carried wherever recruitment benefits are claimed.
+  - term: economies of scale
+    variants: [internal, external]
+    consequence: Whether the saving comes from the firm growing or from the industry growing around it.
+    teach_as: Name both; do not let "economies of scale" stand unqualified.
+  - term: limited company
+    variants: [private, public]
+    consequence: Whether shares may be sold to the general public, which changes how capital is raised and who controls the business.
+    teach_as: Never write "limited company" where the distinction changes the answer.
+
+conditioned_mechanisms:
+  - mechanism_id: CM-0450-GROWTH-BENEFIT
+    name: Growth brings lower unit costs
+    rationale: >-
+      Growth lowers unit cost only while economies of scale outweigh the diseconomies that come with
+      size. An artefact that asserts the benefit without the condition teaches that bigger is always
+      cheaper, which the syllabus explicitly asks learners to question.
+    asserted_when:
+      - '\b(grow|growth|expand|expansion|larger|bigger)\b'
+      - '\b(unit cost|cost per unit|average cost|economies of scale)\b'
+      - '\b(lower|fall|falls|reduce|reduced|cheaper|decrease)\b'
+    required_conditions:
+      - name: the point at which diseconomies begin to outweigh the savings
+        any_of: ['\bdiseconom', '\btoo large\b', '\bcoordinat', '\bcommunication (problems|becomes)',
+                 '\bup to a point\b', '\bbeyond (a|that) (point|size)\b', '\bmotivation falls\b']
+  - mechanism_id: CM-0450-PROFIT-CASH
+    name: Profit and cash are the same thing
+    rationale: >-
+      The commonest IGCSE confusion. A profitable business can run out of cash, and a business can
+      have cash while making a loss. Anywhere one is used to argue about the other, the distinction
+      has to be present.
+    asserted_when:
+      - '\bprofit'
+      - '\bcash\b'
+      - '\b(so|therefore|means|which means)\b'
+    required_conditions:
+      - name: the distinction between profit and cash
+        any_of: ['\bnot the same\b', '\bdiffer', '\btiming\b', '\bcredit\b', '\bliquidity\b',
+                 '\bprofitable .{0,30}(still|but) .{0,20}cash', '\bcash-?flow\b']
+
+prohibited_patterns:
+  - Do not teach AS-level or A-level constructs. This is IGCSE.
+  - Do not state a law or legal requirement as universal; company law and employment law differ by country.
+  - Do not claim what examiners reward or what a paper contains.
+
+glossary_homonyms:
+  - term: capital
+    senses: [money invested in the business, capital employed in a ratio, capital goods as a factor of production]
+    rule: Say which sense is meant the first time it appears in any block.
+  - term: market
+    senses: [the customers for a product, a physical marketplace, market share and market size]
+    rule: Never leave "the market" ambiguous in a sentence a learner will memorise.

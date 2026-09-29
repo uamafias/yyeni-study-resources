@@ -1,0 +1,1 @@
+See the project doc of the same name. Batches: work/cie-9609-as-2026-2028/curriculum/repair-batches/ (batch-01 to batch-10d). Logs: curriculum/command-word-repair-log.json, curriculum/command-word-derived-log.json. Applier: standard/v0.2.0-draft/mine/repair_9609.py. Pre-repair topics backup: device VM $HOME/topics9609_backup (not in this folder).

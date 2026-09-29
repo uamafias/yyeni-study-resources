@@ -1,0 +1,93 @@
+review_id: SR-9609-5.4-CODEX-R5
+reviewer_role: combined
+packet_hash_verified: true
+status: reject
+coverage_confirmed: >-
+  I verified all 18 packet entries and the detached manifest hash, read every packet artifact after first reading the complete topic 5.4 objective branch, and audited all 21 assessable objectives in both directions. OBJ-9609-5.4.1-01 is taught in CU-9609-5.4.1 blocks 5.4.1-b2/b3 and practised by ITEM-9609-5.4-001 to -004. The cost-types container OBJ-9609-5.4.1-02 is taught in b4/b8 and practised through -005 to -018; member -02-01 is developed in b4/b5/b7/b8 and -006 to -012/-093/-094, while member -02-02 is developed in b4/b6/b8 and -013 to -018. OBJ-9609-5.4.2-01 is taught in CU-9609-5.4.2 b2/b3 and practised by -019 to -022; -02 in b2/b6/b7/b9 and -019/-023 to -026/-085; -03 in b2/b4 and -020/-027 to -030; -04 in b5/b7/b9 and -031 to -034; -05 in b6/b9 and -035 to -037/-085/-095; and -06 in b7/b8 and -038 to -040/-085/-096. OBJ-9609-5.4.3-01 is taught in CU-9609-5.4.3 b2/b3/b7 and practised by -041 to -044/-088/-097/-098; -02 in b4/b7 and -045 to -047/-086/-099/-100; -03 in b5/b7 and -048 to -051/-101; and -04 in b6 and -052 to -055/-086/-102. OBJ-9609-5.4.4-01 is taught in CU-9609-5.4.4 b2/b3 and practised by -056 to -059/-103. The numeric-and-graphic container OBJ-9609-5.4.4-02 is taught in b2/b4-b9/b11, with contribution support in CU-9609-5.4.2 b4, and practised by -027/-028, -057, -060 to -079, -084 and -089 to -092. Member -02-01 is taught in b2/b4-b8/b11 and practised by -057/-060 to -067/-084/-089/-092; -02-02 is taught in CU-9609-5.4.2 b4 and CU-9609-5.4.4 b4-b7/b11 and practised by -027/-028/-068 to -071; -02-03 is taught in b4-b6/b11 and practised by -072 to -075/-084/-090/-104; and the rarely examined -02-04 is taught at full depth in b4-b6/b9 and practised by -076 to -079/-084/-091. OBJ-9609-5.4.4-03 is taught in b10 and practised by -080 to -083/-087/-105. In the reverse audit, CU-9609-5.4.1 b2-b8 serves 5.4.1-01/-02 and its members; CU-9609-5.4.2 b2-b9 serves 5.4.2-01 to -06 plus the contribution prerequisite for 5.4.4-02-02; CU-9609-5.4.3 b2-b7 serves 5.4.3-01 to -04; and CU-9609-5.4.4 b2-b11 serves 5.4.4-01, the 5.4.4-02 family and 5.4.4-03. Each b1 is a learner-objective signpost and the final cross-link block in each unit is legitimate prerequisite or onward-learning navigation. No substantial block is unexplained scope creep, and none of the listed exclusions is taught as core. Exposure has not been treated as priority, all ten rarely examined objectives retain full depth, the costing sense of contribution is disambiguated, the AS command words and tariffs are respected, the five-part evaluation model is present, and no unqualified jurisdictional rule or consequential variant is introduced. C-30 is a bounded historical audit warning: the 13 old advanced stamps lack prior text, but their current content was independently reread in this verified packet. The repaired charts, PROC structure, exposure remaps, cost boundaries, special-order conditions and prior count defects now hold. Coverage is confirmed, but release is rejected because ITEM-9609-5.4-088-EVAL teaches a materially invalid near-capacity decision criterion.
+reconstruction_test: >-
+  Using only the generated resource, I reconstructed an Identify/Define response for contribution; 3-mark explanations of why cost accuracy matters, fixed versus variable and direct versus indirect costs, full versus contribution costing, average versus marginal cost, and break-even uses and limitations; 3-mark calculations of total, average and marginal cost, contribution, break-even output, margin of safety and profit with working and units; an Analyse chain for an unfamiliar mobile-repair business considering a discounted fleet booking; and a 12-mark Evaluate response on break-even analysis for a new bicycle-repair business using the required judgement, context, criterion, counterargument and condition. I also transferred the material to a subscription-based language app not mentioned in the resource by separating platform fixed cost from per-subscriber processing cost and using contribution to derive and interpret break-even. Every assessable objective contains enough taught knowledge and practice to support a strong answer, and the regenerated graphical tasks can now be reconstructed from their displayed charts. Reconstruction nevertheless exposes one consequential conflict: ITEM-9609-5.4-088-EVAL tells the learner that average cost becomes the true decision cost near capacity, whereas the notes, claims and other special-order items correctly require the contribution displaced by the occupied capacity. The introductory bank-statement sentence can also reproduce a cash-versus-cost misconception, and two application cards repeat the same contribution-to-fixed-cost reasoning. The test therefore supports coverage but not release. The 59 generated-gap claims still require the separate documented human approval specified by RS-13.
+issues:
+  - issue_id: SR-9609-5.4-CODEX-R5-001
+    severity: high
+    category: evaluation
+    affected_ids:
+      - OBJ-9609-5.4.3-01
+      - OBJ-9609-5.4.3-04
+      - ITEM-9609-5.4-088-EVAL
+    finding: >-
+      ITEM-088 gives a materially wrong decisive criterion for work considered near capacity. Its final judgement says the below-average-cost refusal policy should stay firm because average cost is then "much closer to the true cost" of taking the work. Capacity scarcity does not make allocated average cost the relevant decision cost. It creates an opportunity cost: the contribution from work displaced by the new order must be added to every incremental cost the order causes. The answer's stated test of whether fixed costs inside the average change is therefore also insufficient; fixed costs may stay unchanged while accepting the order still reduces profit by displacing higher-contribution work.
+    evidence:
+      - >-
+        topic_5.4_items.json lines 3651-3656: ITEM-9609-5.4-088-EVAL ends with the claim that average cost is closer to the true cost near capacity, while its marking guidance requires fixed-cost change as the decisive test.
+      - >-
+        CU-9609-5.4.3 block 5.4.3-b4 and CLM-9609-5.4-056 give the correct two-part one-off-order test: cover every cost caused by the order and ask whether the capacity would otherwise have earned more.
+      - >-
+        CU-9609-5.4.3 block 5.4.3-b6 and ITEM-9609-5.4-055-EVAL explicitly compare the offered contribution with the full-price contribution forgone when capacity ceases to be idle. Average cost is not used as a proxy.
+    educational_consequence: >-
+      In a 12-mark evaluation, a learner can make the right broad recommendation for a capacity-constrained business but justify it with the wrong mechanism. That can lose analysis and evaluation credit and can produce wrong real decisions whenever allocated average cost differs from the contribution sacrificed.
+    recommended_repair: >-
+      Replace the final criterion and marking guidance. State that near capacity the manager must compare the contribution earned by the offered work with the contribution displaced, after deducting every order-specific incremental cost. Retain average cost only as a long-run cost-coverage check, not as the true short-run cost or a substitute for opportunity cost.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R5-002
+    severity: medium
+    category: accuracy
+    affected_ids:
+      - OBJ-9609-5.4.1-01
+      - CU-9609-5.4.1/5.4.1-b2
+    finding: >-
+      The opening explanation of cost information says that a business already knows what it spent in total because "the bank statement says so" and presents cost information as that bank-statement total taken apart. A bank statement records cash movements, not total cost for a period: it omits accrued and non-cash costs and includes cash movements that need not be operating costs. This turns an otherwise sound definition into a cash-equals-cost misconception.
+    evidence:
+      - >-
+        CU-9609-5.4.1 block 5.4.1-b2 and notes-5.4-costs.md line 20 repeat the bank-statement sentence verbatim immediately after defining cost information.
+      - >-
+        CU-9609-5.4.4 block 5.4.4-b12 and notes line 417 correctly distinguish the profit question answered by break-even from the cash question answered by a cash-flow forecast, so the opening shortcut is internally discordant.
+    educational_consequence: >-
+      A learner may treat cash paid as the complete cost measure, overlook costs such as depreciation or unpaid expenses, or include non-cost cash movements when explaining why businesses need accurate cost information.
+    recommended_repair: >-
+      Remove the bank-statement claim. Say that accounting records can show an aggregate cost total but managers need it classified and attached to products, departments or activities; if a bank statement is mentioned, explicitly state that it shows cash movements and is not a complete record of cost.
+    confidence: 0.99
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R5-003
+    severity: medium
+    category: learning-item
+    affected_ids:
+      - ITEM-9609-5.4-030-APP
+      - ITEM-9609-5.4-069-APP
+    finding: >-
+      ITEM-030 and ITEM-069 are semantic duplicates with no declared intentional-duplicate relationship. Both give a selling price, unit variable cost and monthly fixed cost, ask what unit contribution tells the owner, calculate unit contribution, divide fixed cost by contribution to obtain the exact monthly break-even target, and conclude that contribution converts a fixed monthly bill into an operating target. Changing a car wash to a gym and changing the numbers does not change the reasoning task.
+    evidence:
+      - >-
+        topic_5.4_items.json lines 1181-1182: ITEM-9609-5.4-030-APP calculates N$95 contribution and 400 washes, then says the figure turns a monthly bill into a daily target.
+      - >-
+        topic_5.4_items.json lines 2800-2801: ITEM-9609-5.4-069-APP calculates N$380 contribution and 300 members, then says the figure converts the fixed bill into a membership target.
+      - >-
+        Both records have intentional_duplicate_group set to null and use the same contribution-accumulates-against-fixed-cost marking mechanism.
+    educational_consequence: >-
+      One of the 105 cards consumes retrieval and practice time without adding a new distinction, mechanism or transfer demand, reducing the bank's effective breadth.
+    recommended_repair: >-
+      Keep one card and rewrite the other around a genuinely different application, such as interpreting a change in contribution, choosing between capacity uses, or extracting contribution and break-even from a chart. If deliberate spaced repetition is intended, declare the relationship and differentiate the cognitive demand.
+    confidence: 0.98
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R5-004
+    severity: low
+    category: publishing
+    affected_ids:
+      - CONTRACT-9609-AS-5.4
+      - EV-9609-S22-22-1b-0021
+      - EV-9609-S23-13-5b-0144
+    finding: >-
+      The contract's observed_in_this_topic.question_parts_mapped value is stale and has become semantically ambiguous after the evidence remaps. It says 47, while the current topic evidence contains 46 distinct question-part records and 48 objective links because two question parts now map to two objectives each. The value is therefore neither the question-part count nor the objective-link count.
+    evidence:
+      - >-
+        contract.json line 87 records question_parts_mapped as 47.
+      - >-
+        The current assessment_evidence.json has 46 records with a topic 5.4 objective; EV-9609-S22-22-1b-0021 maps to OBJ-9609-5.4.1-02-02 and OBJ-9609-5.4.2-02, while EV-9609-S23-13-5b-0144 maps to OBJ-9609-5.4.4-01 and OBJ-9609-5.4.4-03, producing 48 objective links.
+      - >-
+        The R4 exposure repair recalculated the exposure classes but did not update or define this observed assessment count.
+    educational_consequence: >-
+      Learner content is unaffected, but later evidence summaries, workload reports or rebuilds can quote an incorrect assessment-evidence total or silently interpret links as question parts.
+    recommended_repair: >-
+      Replace the field with separately named derived values for unique_question_parts (46) and objective_links (48), and validate both against the live evidence map whenever remapping changes an objective_ids list.
+    confidence: 1.0
+    status: open

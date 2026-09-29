@@ -1,0 +1,92 @@
+{
+ "unit_id": "CU-9618-1.1.1",
+ "title": "Number systems and binary arithmetic",
+ "objective_ids": [
+  "OBJ-9618-1.1.1-02",
+  "OBJ-9618-1.1.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_calculation",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 185,
+  "target": 205,
+  "max": 605
+ },
+ "blocks": [
+  {
+   "block_id": "1.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Two’s complement, BCD and binary addition, with the working shown.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "8f476a24c3091db6b5abe3f324f78ccf8f662563993b486e0a9fa1002568e675"
+  },
+  {
+   "block_id": "1.1.1-b2",
+   "block_type": "definition",
+   "heading": "Two’s complement and BCD",
+   "text": "In an 8-bit two’s complement integer the most significant bit has the place value -128 and the other seven bits have their usual positive place values, 64 down to 1. So 1111 0110 is -128 + 64 + 32 + 16 + 4 + 2, which is -10. Binary Coded Decimal is different: it stores each denary digit as its own 4-bit group, so denary 47 in BCD is 0100 0111.",
+   "claim_ids": [
+    "CLM-9618-1.1-001",
+    "CLM-9618-1.1-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-001": 1,
+    "CLM-9618-1.1-002": 1
+   },
+   "authored_hash": "4a56c21ea828497bd7b8640416f1cb6bed378bb7b0bd864f3438f2e0233d6860"
+  },
+  {
+   "block_id": "1.1.1-b3",
+   "block_type": "process",
+   "heading": "Adding in binary",
+   "text": "Binary addition works column by column from the right. Zero and zero give 0; zero and one give 1; one and one give 0 with 1 carried to the next column; one, one and a carry give 1 with 1 carried. Overflow occurs when the result needs more bits than the register holds.",
+   "claim_ids": [
+    "CLM-9618-1.1-003",
+    "CLM-9618-1.1-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-003": 1,
+    "CLM-9618-1.1-004": 1
+   },
+   "authored_hash": "1f120f192c7ce3f5a5e89f7e3097af0fa8f6ab8f9e3b4de60dc1bffaa5b60e8b"
+  },
+  {
+   "block_id": "1.1.1-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example",
+   "text": "Add the unsigned 8-bit values 0010 1101 (45) and 0001 0111 (23). Working from the right, the columns give 0100 0100, with carries in five columns along the way. Check in denary: 45 + 23 = 68, and 0100 0100 is 64 + 4, which is 68. The result fits in 8 bits, so there is no overflow.",
+   "claim_ids": [
+    "CLM-9618-1.1-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-003": 1
+   },
+   "authored_hash": "caa051a296c24ad663634e0bde740058e3ac97071c798475fc0a7c80aa20361c"
+  }
+ ],
+ "word_count": 205,
+ "qa_status": "review_required",
+ "notes": [
+  "Structural exemplar. Take its shape, not its length: your word budget is in the work order."
+ ]
+}

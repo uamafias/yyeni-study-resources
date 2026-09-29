@@ -1,12 +1,12 @@
 {
   "qa_report_id": "QA-cie-9609-as-2026-2028-5.2",
   "build_id": "cie-9609-as-2026-2028/topic-5.2",
-  "generated_at": "2026-09-08T20:15:11Z",
+  "generated_at": "2026-09-29T08:59:55Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
-      "status": "fail",
-      "message": "[RS-27 Schema validity] 3 schema violations: topic_5.2_items.json ['items', 1]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 2]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 11]: Additional properties are not allowed ('notes' was unexpected)",
+      "status": "pass",
+      "message": "[RS-27 Schema validity] All 7 structured artifacts validate against the v0.2.0 schemas.",
       "affected_ids": []
     },
     {
@@ -54,23 +54,84 @@
     {
       "check_id": "C-30",
       "status": "warn",
-      "message": "[RS-41 No bulk stamp] 112 artefacts carry no authored_hash, so their claims_seen stamps cannot be audited. 0 are auditable and clean.",
-      "affected_ids": []
+      "message": "[RS-41 No bulk stamp] 33 advanced stamps carry no prior_hash, so they predate the audit trail and cannot be verified. 79 stamps are auditable and clean. Every stamp made from now on records the text it replaced.",
+      "affected_ids": [
+        "CU-9609-5.2.1/5.2.1-b3",
+        "CU-9609-5.2.1/5.2.1-b4",
+        "CU-9609-5.2.1/5.2.1-b5",
+        "CU-9609-5.2.1/5.2.1-b6",
+        "CU-9609-5.2.2-EXT/5.2.2e-b2",
+        "CU-9609-5.2.2-EXT/5.2.2e-b3",
+        "CU-9609-5.2.2-EXT/5.2.2e-b4",
+        "CU-9609-5.2.2-EXT/5.2.2e-b5",
+        "CU-9609-5.2.2-EXT/5.2.2e-b6",
+        "CU-9609-5.2.2-EXT/5.2.2e-b7",
+        "CU-9609-5.2.2-EXT/5.2.2e-b9",
+        "CU-9609-5.2.2-INT/5.2.2i-b2",
+        "CU-9609-5.2.2-INT/5.2.2i-b3",
+        "CU-9609-5.2.2-INT/5.2.2i-b4",
+        "CU-9609-5.2.2-INT/5.2.2i-b5",
+        "CU-9609-5.2.3-4/5.2.34-b2",
+        "CU-9609-5.2.3-4/5.2.34-b5",
+        "CU-9609-5.2.3-4/5.2.34-b7",
+        "ITEM-9609-5.2-006-APP",
+        "ITEM-9609-5.2-007-CHAIN",
+        "ITEM-9609-5.2-008-EVAL",
+        "ITEM-9609-5.2-016-EVAL",
+        "ITEM-9609-5.2-022-APP",
+        "ITEM-9609-5.2-023-CHAIN",
+        "ITEM-9609-5.2-029-DEF",
+        "ITEM-9609-5.2-030-APP",
+        "ITEM-9609-5.2-031-CHAIN",
+        "ITEM-9609-5.2-056-EVAL",
+        "ITEM-9609-5.2-062-APP",
+        "ITEM-9609-5.2-069-WHY",
+        "ITEM-9609-5.2-070-DIST",
+        "ITEM-9609-5.2-074-WHY",
+        "ITEM-9609-5.2-076-CHAIN"
+      ]
     },
     {
       "check_id": "C-29",
-      "status": "fail",
-      "message": "[RS-41 No stale derivative] 12 citations are stale: the claim was rewritten and the block or item citing it was not. 8 artefacts affected. Correcting a claim is not a repair; propagating it is. First: ITEM-9609-5.2-014-APP<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-015-CHAIN<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-024-EVAL<-CLM-9609-5.2-059(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-064(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-065(r2 vs seen r1), ITEM-9609-5.2-055-CHAIN<-CLM-9609-5.2-020(r2 vs seen r1)",
-      "affected_ids": [
-        "ITEM-9609-5.2-014-APP",
-        "ITEM-9609-5.2-015-CHAIN",
-        "ITEM-9609-5.2-024-EVAL",
-        "ITEM-9609-5.2-032-EVAL",
-        "ITEM-9609-5.2-055-CHAIN",
-        "ITEM-9609-5.2-060-DIST",
-        "ITEM-9609-5.2-065-DATA",
-        "ITEM-9609-5.2-066-ESSA"
-      ]
+      "status": "pass",
+      "message": "[RS-41 No stale derivative] No stale derivative: every block and item was authored against the current revision of every claim it cites.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-31",
+      "status": "pass",
+      "message": "[RS-17 Syllabus modality coverage] Every objective whose syllabus wording names a chart, graph or diagram is practised in that form.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-32",
+      "status": "pass",
+      "message": "[RS-22 Stated arithmetic is correct] All 3 stated calculations in canonical answers evaluate correctly.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-33",
+      "status": "pass",
+      "message": "[RS-25 Flashcards are self-contained] No flashcard depends on facts held only in another card.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-34",
+      "status": "pass",
+      "message": "[RS-22 Interpretation is interpretation, not a second check] No quantitative item passes off an arithmetic check as interpretation.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-35",
+      "status": "not_run",
+      "message": "[RS-22 Graphical stimulus is consistent and necessary] No graphical task in this topic, so nothing to verify.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-36",
+      "status": "pass",
+      "message": "[RS-22 Magnitude claims carry their figure] Every magnitude claim in a quantitative answer is backed by a stated figure.",
+      "affected_ids": []
     },
     {
       "check_id": "C-08",
@@ -135,7 +196,7 @@
     {
       "check_id": "C-18",
       "status": "pass",
-      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 36, 'AO2': 26, 'AO3': 24, 'AO4': 15} against target {'AO1': 30, 'AO2': 30, 'AO3': 20, 'AO4': 20}; largest deviation 6 points.",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 36, 'AO2': 26, 'AO3': 24, 'AO4': 15} against target {'AO1': 30, 'AO2': 30, 'AO3': 20, 'AO4': 20}; largest deviation across AO1-AO3 is 6 points. AO4 is reported, not tested by count: 15 items carry it, of which 6 are performance tasks (case_analysis, data_response, essay_plan, short_answer). RS-19 measures the AO4 share in practice time.",
       "affected_ids": []
     },
     {
@@ -146,9 +207,11 @@
     },
     {
       "check_id": "C-20",
-      "status": "pass",
-      "message": "[RS-25 One target per flashcard] No flashcard asks for several separate answers in one card.",
-      "affected_ids": []
+      "status": "warn",
+      "message": "[RS-25 One target per flashcard] 1 flashcards ask for several separate answers in one card, which is hard to retrieve and hard to diagnose; consider a performance item instead.",
+      "affected_ids": [
+        "ITEM-9609-5.2-060-DIST"
+      ]
     },
     {
       "check_id": "C-21",
@@ -189,13 +252,55 @@
     {
       "check_id": "C-27",
       "status": "pass",
-      "message": "[RS-05 Exposure required subtypes] Exposure required-subtype floor honoured for all 22 mapped objectives; exposure changes item type, never item presence (RS-05).",
+      "message": "[RS-05 Exposure required subtypes] Every exposure-required subtype is present or waived in writing.",
       "affected_ids": []
     },
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 18 files to topics/5.2/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (960b52df64e44328) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 21 files to topics/5.2/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (78235d7f19f887f6) so the whole packet is verifiable.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-37",
+      "status": "pass",
+      "message": "[RS-43 Conditioned mechanisms carry their conditions] No artefact asserts any of the 3 registered conditioned mechanisms in this topic.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-38",
+      "status": "pass",
+      "message": "[RS-44 Answers do not supply their own facts] No answer in this topic asserts a completeness fact.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-39",
+      "status": "pass",
+      "message": "[RS-45 Derived exposure metadata recomputes] All 18 computed exposure entries for this topic recompute from the evidence map, satisfy the file's own class definitions, and keep no superseded figures.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-40",
+      "status": "pass",
+      "message": "[RS-46 Quantities are named in their own units] No quantity is named in units it is not measured in.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-41",
+      "status": "not_run",
+      "message": "[RS-47 Depictions are generated, not authored] No item in this topic shows a generated depiction.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-42",
+      "status": "pass",
+      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 79 learning items, 4 content units.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-43",
+      "status": "not_run",
+      "message": "[RS-48 Practice texts are declared, original and the stated length] No item in this topic is answered from a practice text.",
       "affected_ids": []
     }
   ],
@@ -912,12 +1017,180 @@
           "status": "resolved"
         }
       ]
+    },
+    {
+      "review_id": "SR-9609-5.2-CODEX-R3",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "packet_hash_verified": true,
+      "coverage_confirmed": "I traced all 24 assessable objectives from the registry in both directions after verifying all 18 packet entries and the detached manifest hash. OBJ-9609-5.2.1-01 is taught in CU-9609-5.2.1 blocks 5.2.1-b2 to b6 and practised by ITEM-9609-5.2-060-DIST and -069-WHY. The internal container OBJ-9609-5.2.2-01 is taught in CU-9609-5.2.2-INT blocks 5.2.2i-b2 to b3 and practised by items -055, -056 and -070; its five members are taught in blocks b4 to b7 and practised respectively by -040/-041/-077, -037/-054/-056, -042/-043/-054, -001 to -004, and -044/-045/-054. The external container OBJ-9609-5.2.2-02 is taught in CU-9609-5.2.2-EXT blocks 5.2.2e-b2 to b3, reinforced by the category distinction in CU-9609-5.2.2-INT b2 and the topic summary, and practised by item -070. Its fourteen members are taught and practised as follows: share capital in b3/b4/b10 and -046/-047/-058; debentures in b5 and -048/-049/-071; new partners in b4 and -050/-051/-072; venture capital in b4/b9 and -005 to -008; overdrafts in b6/b8/b9 and -009 to -012/-057; leasing in b3/b5/b9/b10 and -013 to -016/-057; hire purchase in b5/b9/b10 and -038/-057/-073/-078/-079; bank loans in b3/b5 and -017 to -020/-058; mortgages in b5 and -052/-053/-057/-074; factoring in b3/b6/b9/b10 and -021 to -024; trade credit in b3/b6 and -039/-057/-075; micro-finance in b6 and -025 to -028; crowd funding in b3/b7 and -029 to -032; and grants in b3/b7 and -033 to -036. OBJ-9609-5.2.3-01 is taught in CU-9609-5.2.3-4 b2/b5/b7 and the applied matching examples in CU-EXT b8/b9, and practised by -059/-061 to -063/-076. OBJ-9609-5.2.4-01 is taught in CU-9609-5.2.3-4 b3 to b7 and practised by -059/-064 to -068. The reverse pass found a curricular purpose for every substantive content-unit block; CU-EXT b11 is justified by the assessment framework and the cross-link blocks are signposts rather than new teaching. However, semantic adequacy cannot be confirmed for the objectives named in the issues below: several cards contradict the blocks that nominally cover them, one card crosses into working-capital management without a valid boundary, and the prerequisite graph omits the external-source knowledge needed by the choice objectives. The seven rarely examined objectives retain full teaching depth and are not reduced by the delivery schedule, but their defective cards still require repair.",
+      "reconstruction_test": "Using only the packet, I reconstructed a 1-mark source identification, a 2-mark definition of venture capital, 3-mark explanations on retained earnings, mortgages, factoring and trade credit, the hire-purchase calculation, an 8-mark analysis for an unfamiliar aquaculture co-operative financing cold storage, a 12-mark loan-versus-equity evaluation for a seasonal exporter, and an application to a mobile-repair business not used in the notes. The core definitions, the five choice factors, the matching principle, the recourse distinction and the five-part evaluation scaffold supported transfer. Reliable answers could not be reconstructed for OBJ-9609-5.2.1-01 because filing is equated with verification and the canonical claim makes provider willingness a determination of legal form; for OBJ-9609-5.2.2-01 and members -01, -03 and -05 because cards reintroduce no-cost/no-counterparty absolutes and an invented boundary with working-capital management; for OBJ-9609-5.2.2-01-04 because ITEM-002 requires an untaught sale-value-versus-loan-to-value mechanism; for OBJ-9609-5.2.2-02-02 because ITEM-049 requires untaught published-term, holder-number and renegotiability distinctions; for OBJ-9609-5.2.2-02-06 because generic lease prompts assume maintenance, return and residual-value terms that the notes say vary by agreement; for OBJ-9609-5.2.2-02-13 because ITEM-032 assigns equity crowd funding a reliability and scale advantage contradicted by the shared campaign mechanism; and for OBJ-9609-5.2.2-02-14 because ITEM-036 ends in the same unconditional grant recommendation the notes reject. OBJ-9609-5.2.4-01 is also unreliable because several model judgements manufacture finance terms absent from their cases. The hire-purchase arithmetic itself reconstructs correctly from ITEM-078, but the standalone notes do not contain the promised numerical worked example and ITEM-079 compares a three-year total uplift with an unspecified borrowing rate.",
+      "source": "operations/review/cie-9609-as-2026-2028-5.2-review-r3.yaml",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-001",
+          "severity": "high",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.2.1-01",
+            "CLM-9609-5.2-002",
+            "CLM-9609-5.2-012",
+            "CU-9609-5.2.1",
+            "ITEM-9609-5.2-060-DIST"
+          ],
+          "finding": "The ownership repair still conflates filing with verification and leaves a flat causal claim about providers. CLM-9609-5.2-002 says legal form determines how willing providers are, although the notes correctly call willingness a tendency. CLM-9609-5.2-012 then says filed accounts give a lender \"verified information\"; filing creates a record, but does not make unaudited accounts independently verified. The same wording appears in the learner notes and ITEM-9609-5.2-060-DIST, so the repaired distinction between filing and audit is undone at the point where the lender mechanism is taught.",
+          "educational_consequence": "A learner may state that legal form determines a lender's decision and that filing itself verifies accounts, weakening AO1 and reversing the intended evidence-and-risk reasoning in an international answer.",
+          "recommended_repair": "Change CLM-002 from \"determines\" to \"influences\" for provider willingness. In CLM-012, CU-5.2.1 and ITEM-060 distinguish information that is available because accounts are filed from information that is independently verified only where an audit or other assurance applies; keep every effect on availability or price conditional on lender, company type and jurisdiction.",
+          "confidence": 0.99,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-002",
+          "severity": "high",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-06",
+            "CLM-9609-5.2-051",
+            "CU-9609-5.2.2-EXT",
+            "ITEM-9609-5.2-014-APP",
+            "ITEM-9609-5.2-015-CHAIN",
+            "ITEM-9609-5.2-057-APP"
+          ],
+          "finding": "The leasing-variant repair is not propagated into the canonical claim or the applied and analysis cards. CLM-9609-5.2-051 still presents maintenance and easy replacement as generic benefits. CU-EXT b5 first says the lessor carries residual-value risk, then says two paragraphs later that the agreement decides who carries it. ITEM-014 assumes a generic lease lets the business hand back and exchange the machine, ITEM-015 assumes the lessor bears residual-value risk, and ITEM-057 describes both leasing and hire purchase as finance secured on the asset. None of those prompts supplies the contractual term on which the rewarded consequence depends.",
+          "educational_consequence": "Learners are trained to award a lease benefits that the case agreement may not provide and to treat ownership by the lessor as proof that every residual-value risk has transferred, producing invalid AO2 and AO3 chains.",
+          "recommended_repair": "Rewrite CLM-051 so only the lower initial outlay and lessor ownership are generic. Condition maintenance, replacement, early return and end-value exposure on named terms. Add those terms to ITEM-014 and ITEM-015 prompts or remove the dependent benefits, and describe leasing as lessor ownership rather than secured finance in ITEM-057.",
+          "confidence": 0.99,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-003",
+          "severity": "high",
+          "category": "evaluation",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-14",
+            "ITEM-9609-5.2-035-CHAIN",
+            "ITEM-9609-5.2-036-EVAL"
+          ],
+          "finding": "The grant repair leaves its decisive false absolute in place. ITEM-9609-5.2-036-EVAL correctly identifies scarce owner time and uncertain success, then concludes that a matching application is \"close to costless and should always be made\". Matching the activity removes one opportunity cost but not the lengthy application, success probability, compliance burden or alternative uses of the owner's time. Its guidance also calls grants \"uniquely cheap\", while ITEM-035's own answer acknowledges internal alternatives and the notes teach donation and reward crowd funding that can also avoid repayment, interest and dilution.",
+          "educational_consequence": "A learner may equate absence of an explicit financing charge with absence of economic cost and give an unconditional AO4 recommendation that contradicts the case facts.",
+          "recommended_repair": "Make the recommendation depend on the expected grant amount, probability of success, application and compliance time, conditions, and the value of the displaced selling activity. Remove \"always\" and \"uniquely cheap\"; compare grants with every feasible external alternative, including the relevant crowd-funding form.",
+          "confidence": 1.0,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-004",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01",
+            "OBJ-9609-5.2.2-01-01",
+            "OBJ-9609-5.2.2-01-05",
+            "CLM-9609-5.2-021",
+            "ITEM-9609-5.2-012-EVAL",
+            "ITEM-9609-5.2-024-EVAL",
+            "ITEM-9609-5.2-055-CHAIN",
+            "ITEM-9609-5.2-077-WHY"
+          ],
+          "finding": "Four cards reintroduce the no-cost, no-counterparty and fixed-ceiling rules that the internal-source repair explicitly removed. ITEM-012 calls late supplier payment interest-free and says it requires nobody's permission; ITEM-024 calls negotiated longer supplier terms costless. ITEM-055 says internal finance cannot meet a large need however well the business is run and that good management does not raise its ceiling, although good management can build profit, cash and saleable assets and the relevant comparison is the need against what is currently available. ITEM-077 says owner's savings \"cost nothing to use\", ignoring their opportunity cost while its own answer recognises risk.",
+          "educational_consequence": "Learners receive mutually incompatible rules about permission, speed, scale and economic cost, and may reproduce categorical claims that lose AO3/AO4 credit even when they have mastered the repaired notes.",
+          "recommended_repair": "Regenerate the four answers from the repaired internal-source claims. Separate no contractual interest from opportunity, relationship and transaction costs; state when supplier agreement is needed; and make scale relative to the present financing need and present internal resources rather than to an absolute idea of a \"large\" need.",
+          "confidence": 0.99,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-005",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01-04",
+            "OBJ-9609-5.2.2-01-05",
+            "OBJ-9609-5.2.2-02-02",
+            "OBJ-9609-5.2.2-02-13",
+            "ITEM-9609-5.2-002-APP",
+            "ITEM-9609-5.2-003-CHAIN",
+            "ITEM-9609-5.2-032-EVAL",
+            "ITEM-9609-5.2-045-DIST",
+            "ITEM-9609-5.2-049-DIST"
+          ],
+          "finding": "Semantic offline reconstruction still fails in several places despite the second-round repair. ITEM-002 requires a buyer-full-value versus lender-loan-to-value mechanism absent from its claims and notes. ITEM-003's guidance requires a higher break-even point that neither its answer nor the notes teach. ITEM-032 assigns equity crowd funding reliability and scale because it supposedly does not require many people to be persuaded quickly, although equity crowd funding is also a target-based public campaign. ITEM-045 invents a clean distinction between using and managing working capital even though releasing cash through inventory, receivables and payables is itself working-capital management. ITEM-049 still requires many holders on published terms and claims bank-loan terms can be revisited, none of which is taught by the cited claims.",
+          "educational_consequence": "An offline learner cannot derive the rewarded answers from the promised source of record and must either invent outside knowledge or memorise card-only propositions, several of which are not generally true.",
+          "recommended_repair": "For each card, either add a verified, in-scope mechanism to a canonical claim and the rendered notes or remove it from the answer and guidance. Delete the false crowd-funding and working-capital boundaries, and reduce the debenture distinction to ownership, lender identity, repayment structure and fixed-interest consequences that are actually taught.",
+          "confidence": 0.99,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-006",
+          "severity": "high",
+          "category": "application",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-01-02",
+            "OBJ-9609-5.2.2-01-03",
+            "OBJ-9609-5.2.2-01-05",
+            "OBJ-9609-5.2.4-01",
+            "ITEM-9609-5.2-054-APP",
+            "ITEM-9609-5.2-065-DATA",
+            "ITEM-9609-5.2-066-ESSA",
+            "ITEM-9609-5.2-067-CASE"
+          ],
+          "finding": "Several applied and extended answers manufacture decisive facts rather than reason from the case. ITEM-054 declares sale of idle machinery the fastest source although no buyer, sale time, cash balance or early-payment response is supplied. ITEM-065 invents a hire-purchase term matching the processing line's life and says asset backing removes the security obstacle, although no agreement or provider terms are given. ITEM-066 says a secured loan should price better than hire purchase with no offers or total costs. ITEM-067 recommends giving up 25% equity without a loan rate, expected profit, business value or total-cost comparison; monthly repayment timing establishes a cash-flow risk but not by itself which price is acceptable.",
+          "educational_consequence": "The model teaches learners that contextual application means filling gaps with convenient assumptions. This weakens AO2 evidence use and produces AO4 judgements that sound decisive but cannot be defended from the stimulus.",
+          "recommended_repair": "Add the missing marketability, timing, repayment-term, quoted-cost, cash-flow and equity-valuation facts, or change each answer to a conditional comparison that explicitly identifies the missing fact. A clear judgement must follow from the supplied case rather than from an invented provider offer.",
+          "confidence": 0.98,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-007",
+          "severity": "medium",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02-07",
+            "CLM-9609-5.2-086",
+            "CU-9609-5.2.2-EXT",
+            "ITEM-9609-5.2-078-CALC",
+            "ITEM-9609-5.2-079-INTERP"
+          ],
+          "finding": "The added hire-purchase calculation is arithmetically correct, but the standalone teaching and interpretation remain incomplete. The notes give only the prose instruction \"add the deposit to every instalment\" and no numerical worked calculation, although the contract promises every formula, unit and worked example in the offline notes. ITEM-079 then treats a 20.8% total uplift over three years as comparable with an unspecified alternative borrowing \"rate\" and concludes that the higher-rate alternative makes hire purchase cheaper overall; rate alone cannot establish that without the amount outstanding, timing, fees and total borrowing cost on a common basis.",
+          "educational_consequence": "A learner using the notes offline does not see the promised numerical method and may compare an overall three-year percentage with a borrowing rate on a different basis, leading to a wrong finance decision despite correct arithmetic.",
+          "recommended_repair": "Put the explicit formula deposit + number of instalments x instalment amount, units and a numerical worked example into the notes. In ITEM-079 compare total currency costs over the same period, or supply enough data to calculate comparable effective costs; do not infer \"cheaper overall\" from a rate label alone.",
+          "confidence": 0.97,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-008",
+          "severity": "medium",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.2.2-02",
+            "OBJ-9609-5.2.3-01",
+            "OBJ-9609-5.2.4-01"
+          ],
+          "finding": "The prerequisite chain for choosing and evaluating finance omits the external-source container. Both objective_registry.json and dependency_graph.json make only the internal-source container OBJ-9609-5.2.2-01 a prerequisite of OBJ-9609-5.2.3-01, even though the factors and appropriateness objectives require comparison across internal and external sources. The rendered notes happen to teach external sources first, but the formal graph permits a scheduler or reconstructor to reach source choice without them.",
+          "educational_consequence": "A dependency-driven learning path can present the choice framework before the learner knows most of the alternatives being evaluated, making later practice nominally reachable but not reconstructible.",
+          "recommended_repair": "Add OBJ-9609-5.2.2-02 as a prerequisite of OBJ-9609-5.2.3-01 in both the registry and dependency graph; retain OBJ-9609-5.2.3-01 as the immediate prerequisite of appropriateness.",
+          "confidence": 0.99,
+          "status": "open"
+        },
+        {
+          "issue_id": "SR-9609-5.2-CODEX-R3-009",
+          "severity": "medium",
+          "category": "publishing",
+          "affected_ids": [
+            "CONTRACT-9609-AS-5.2",
+            "OBJ-9609-5.2.2-02-07"
+          ],
+          "finding": "The quantitative repair leaves stale allocation metadata. The contract's live item_budget and required_outputs both say 79, but item_budget_note still says the budget was raised from 68 to 77 and explains only the nine command-shaped additions. In exam-exposure.json the hire-purchase objective still has item_allocation 1 while the same record requires CALC, DEF and INTERP and the submitted bank contains five mapped items. These values cannot all describe the current allocation.",
+          "educational_consequence": "A later build or delivery schedule can regenerate from the stale allocation and discard the calculation repair, while a reviewer cannot tell whether the declared allocation or the current bank is authoritative.",
+          "recommended_repair": "Update the contract note to 79 and explain the two quantitative additions. Recompute the hire-purchase allocation field from its required subtypes and current item policy, then add a deterministic consistency check between allocation metadata, required subtype count and the live item bank.",
+          "confidence": 1.0,
+          "status": "open"
+        }
+      ]
     }
   ],
   "blockers": [
-    "RS-28 - every issue from the last review is marked resolved by the author, which is a claim rather than a verdict. The repaired build has not been re-reviewed.",
-    "C-00 [RS-27 Schema validity] 3 schema violations: topic_5.2_items.json ['items', 1]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 2]: Additional properties are not allowed ('notes' was unexpected) | topic_5.2_items.json ['items', 11]: Additional properties are not allowed ('notes' was unexpected)",
-    "C-29 [RS-41 No stale derivative] 12 citations are stale: the claim was rewritten and the block or item citing it was not. 8 artefacts affected. Correcting a claim is not a repair; propagating it is. First: ITEM-9609-5.2-014-APP<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-015-CHAIN<-CLM-9609-5.2-051(r2 vs seen r1), ITEM-9609-5.2-024-EVAL<-CLM-9609-5.2-059(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-064(r2 vs seen r1), ITEM-9609-5.2-032-EVAL<-CLM-9609-5.2-065(r2 vs seen r1), ITEM-9609-5.2-055-CHAIN<-CLM-9609-5.2-020(r2 vs seen r1)"
+    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
+    "RS-42 - 6 unresolved review issues ride with this release (0 critical, 6 high). They are debt, not a block: fix them in the maintenance pass and keep them open here until they are fixed.",
+    "RS-42 - 3 medium/low review issues carried open."
   ],
   "metrics": {
     "objective_count": 24,
@@ -926,9 +1199,9 @@
     "learning_item_count": 79,
     "word_count": 6139
   },
-  "release_decision": "reject",
+  "release_decision": "publish",
   "notes": [
-    "Standard v0.2.0-draft check suite. 31 checks: 28 pass, 2 fail, 1 warn, 0 not_run.",
+    "Standard v0.2.0-draft check suite. 44 checks: 39 pass, 0 fail, 2 warn, 3 not_run.",
     "A not_run check means an input the check needs is absent. It is never a pass.",
     "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
   ]

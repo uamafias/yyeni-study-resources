@@ -1,0 +1,228 @@
+profile_id: yyeni-subject-computer-science-as-v0.1.0
+version: 0.1.0-draft
+status: draft
+subject_name: Computer Science (Cambridge International AS Level 9618)
+language_variant: British English
+purpose: >-
+  The teaching model for AS Computer Science. Two papers that are almost two subjects: Paper 1 (sections 1-8)
+  is knowledge applied to a scenario and assesses AO1 and AO2 only; Paper 2 (sections 9-12) is design and
+  programming in Cambridge pseudocode and assesses AO2 and AO3 only. Everything below follows from the corpus
+  analysis, operations/analysis/9618-as-computer-science-corpus-analysis.md.
+
+depth_model:
+  note_mode: full teaching depth
+  rationale: >-
+    The notes are the source the flashcards are cut from and the learner's offline text. Every technique
+    (a conversion, a trace, a truth table, a pseudocode construct) is shown working on a small original example.
+  words_per_objective: 200-320
+
+terminology_rules:
+  - Use the syllabus wording for every technical term, and curriculum/glossary.json for every sense.
+  - Introduce a term before using it.
+  - All code is Cambridge pseudocode as the Paper 2 insert defines it - keywords in capitals, the assignment arrow, & to join strings, the insert's functions only. Never a programming language.
+  - No brand names for hardware or software; the papers do not credit them.
+  - Namibian and southern African scenarios where a scenario is used; invented organisations only.
+
+answer_structures:
+  DEF: ["meaning|means|definition|precise|defined"]
+  FEATURE: ["feature|features|characteristic|characteristics|point|points"]
+  DIST: ["difference|differences|whereas|contrast|boundary|both|while"]
+  PROC: ["order|sequence|first|then|step|steps", "input|inputs|given|start|parameter|begin", "each step|statement|statements|mark point|line|stage|stages", "result|output|return|returns|end"]
+  WHY: ["reason|purpose|why|because|so that|need"]
+  MECH: ["how|because|so that|which|then"]
+  BEN: ["benefit|benefits|advantage|advantages", "because|so that|which means|so the"]
+  LIM: ["drawback|drawbacks|limitation|limitations|disadvantage|disadvantages", "because|so that|which means|so the"]
+  APP: ["context|scenario|given|this|the program|the system|the school|the company", "reason|because|so that|each|mark|marks"]
+  CHAIN: ["change|if|when|increase|increases|decrease|decreases|more|fewer", "because|so|which means|therefore", "effect|result|consequence|so the|takes"]
+  EVAL: ["suitable|better|choose|chosen|justify|justified|justification|recommend", "because|so that|reason", "context|scenario|given|this"]
+  CALC: ["working|method|step|steps", "answer|result|final", "unit|units|bits|bytes|denary|binary|hexadecimal|BCD|marks"]
+  INTERP: ["trace|value|values|row|rows|output|read|column", "meaning|means|shows|result|so"]
+  MISCON: ["error|mistake|confusion|confused|wrongly|in fact|not the same|instead"]
+  SYNTH: ["links|both|together|combined"]
+  short_answer: ["point|state|identify", "reason|because|why|so that", "context|scenario|the system|given"]
+  data_response: ["read|given|table|diagram|extract|trace|circuit", "answer|result|value|output", "reason|because|shows"]
+  worked_example: ["heading|header|ending|parameter", "declaration|declare|declared|initialised|initialise|initialisation", "loop|selection|IF|WHILE|FOR|REPEAT", "return|returned|output|result", "mark point"]
+
+variant_register:
+  - term: shift
+    variants: [logical, arithmetic, cyclic]
+    consequence: What happens to the bits that fall off and what enters; an arithmetic shift keeps the sign bit.
+    teach_as: Never write "shift" without saying which kind and which direction.
+  - term: compression
+    variants: [lossy, lossless]
+    consequence: Whether the original can be rebuilt exactly.
+    teach_as: Never leave "compression" unqualified where the answer depends on it.
+  - term: cloud
+    variants: [public, private]
+    consequence: Who the service is provided for and shares the infrastructure, not who can read the data.
+    teach_as: Name the kind of cloud and say what that means.
+  - term: maintenance
+    variants: [corrective, adaptive, perfective]
+    consequence: Why the program is being changed.
+    teach_as: Name the kind of maintenance from the reason for the change.
+
+depictions:
+  chart_model: none
+  code_fence_languages: [pseudocode, sql]
+  rule: >-
+    This subject has no chart renderer. Code goes in fences labelled with its language (```pseudocode, ```sql);
+    data goes in markdown tables; circuits and diagrams are described in words or tables. C-41 fails any other fence.
+
+conditioned_mechanisms:
+  - mechanism_id: CM-9618-COMPRESSION-TIME
+    name: Compression makes transmission faster
+    rationale: >-
+      A smaller file takes less time to transmit; the transmission speed (bit rate) is set by the connection,
+      not by the file. Examiner reports name this exact slip. Anywhere compression is linked to transmission,
+      the answer must be about time.
+    asserted_when:
+      - '\bcompress'
+      - '\b(faster|speed|quicker)\b'
+      - '\b(transmi|download|upload|send|stream)'
+    required_conditions:
+      - name: the saving is in transmission time, not speed
+        any_of: ['\b(less|shorter|reduced?) (transmission |download |upload )?time\b', '\btakes? less time\b',
+                 '\btime (taken|to transmit|to download|to send)\b', '\bspeed (of the connection|is set|does not change)\b']
+  - mechanism_id: CM-9618-VALIDATION-CORRECT
+    name: Validation or verification makes data correct
+    rationale: >-
+      Validation checks that data is reasonable and follows rules; verification checks it was copied accurately.
+      Neither can show that the data is true. Examiner reports record this in eight of ten series.
+    asserted_when:
+      - '\b(validation|verification|validat|verif)'
+      - '\b(ensures?|makes? sure|guarantees?|prove)\b'
+      - '\b(correct|accurate|true|right)\b'
+    required_conditions:
+      - name: the limit of the check
+        any_of: ['\bnot (necessarily )?(correct|true|accurate)\b', '\bcannot (prove|show|guarantee)\b', '\bstill (be )?(wrong|incorrect)\b',
+                 '\breasonable\b', '\bsensible\b', '\bfollows? (the )?rules\b', '\bcopied accurately\b', '\bdoes not (prove|guarantee|mean)\b']
+
+prohibited_patterns:
+  - Do not write program code in a programming language (Python, Java, Visual Basic). Paper 2 is answered in Cambridge pseudocode.
+  - Do not teach A Level content (syllabus sections 13-20). curriculum/scope-scan.json lists the constructs C-11 scans for.
+  - Do not use brand names for hardware or software.
+  - Do not claim what examiners reward or what a paper contains; the words "examiner" and "mark scheme" do not appear in learner-facing text.
+
+glossary_homonyms:
+  - term: memory
+    senses: [primary memory (RAM, ROM), secondary storage (disk)]
+    rule: Memory means primary memory. Secondary storage is always called storage.
+  - term: pointer
+    senses: [a variable holding an array index in an ADT, a pointer data type at A Level]
+    rule: At AS a pointer is always an index into an array.
+  - term: record
+    senses: [a row in a database table, a user-defined data structure in pseudocode]
+    rule: Say "record in the table" or "record structure" the first time in any block.
+
+slot_plan:
+  note: >-
+    CR-006. The slot plan for this subject, read by build/make_work_order.py. Sections 1-8 are examined on
+    Paper 1 only, sections 9-12 on Paper 2 only, and the two papers split the AOs differently (page 13), so a
+    topic is balanced against its own paper's split and the subject total answers to 30/40/30. The two papers
+    carry equal weight but Paper 2's 54 objectives are fewer than Paper 1's 90, and AO3 lives only on Paper 2, so
+    Paper 2 topics carry more practice per objective: two pseudocode cards per programming objective, two
+    design cards per construct objective, and three worked modules per topic. Paper 2 is a skill, and a skill
+    is learned by doing it.
+  subtypes_by_objective_type:
+    cs_concept: [DEF, WHY]
+    cs_terminology: [DEF, FEATURE]
+    cs_features: [DEF, FEATURE]
+    cs_purpose: [DEF, WHY]
+    cs_process: [PROC, MECH]
+    cs_comparison: [DEF, DIST]
+    cs_cause_effect: [DEF, CHAIN]
+    cs_calculation: [DEF, CALC, CALC, CALC, INTERP]
+    cs_construct: [APP, APP, INTERP, INTERP]
+    cs_programming: [PROC, PROC, APP, INTERP]
+    cs_debug: [INTERP, APP, APP]
+    cs_justify: [BEN, LIM, EVAL]
+    cs_ethics: [DEF, APP]
+  subtypes_by_tier: {1: [], 2: [APP], 3: [APP], 4: [APP]}
+  high_tariff: {threshold: 6, adds: [APP]}
+  command_words_by_subtype:
+    DEF: [State, Describe, Define, Give]
+    FEATURE: [Describe, Identify, State, Give]
+    DIST: [Describe, Explain, State]
+    PROC: [Write, Describe, Complete]
+    WHY: [Explain, State, Describe]
+    MECH: [Explain, Describe]
+    BEN: [Explain, State, Give, Describe]
+    LIM: [Explain, State, Give, Describe]
+    APP: [Write, Draw, Complete, Explain, Describe, Identify]
+    CHAIN: [Explain, Describe]
+    EVAL: [Explain, Describe, Give]
+    CALC: [Convert, Calculate, Show, Perform, Complete]
+    INTERP: [Complete, Trace, Identify, State, Explain]
+    MISCON: [Explain, State]
+    SYNTH: [Write, Explain]
+  tariff_overrides:
+    'PROC:Write': 4
+    'APP:Write': 3
+    'EVAL:Explain': 3
+  tariff_override_reasons:
+    Write: >-
+      Write is bimodal in the corpus: 1-4 marks for a statement, a query or an instruction, 6-8 for a whole
+      module (modal 7). A flashcard models the short form; the worked_example performance task models the module.
+    'EVAL:Explain': >-
+      A justification ("Explain why X is more suitable here") is modelled at 3 marks: the choice, the reason and
+      its development in the scenario. Explain runs 2-5 in the corpus (modal 2).
+  ao_by_objective_type:
+    '*': {DEF: [AO1], FEATURE: [AO1], DIST: [AO1], PROC: [AO1], WHY: [AO1], MECH: [AO1], BEN: [AO2], LIM: [AO2],
+          APP: [AO2], CHAIN: [AO2], EVAL: [AO2], CALC: [AO2], INTERP: [AO2], MISCON: [AO1], SYNTH: [AO3]}
+    cs_programming: {PROC: [AO3], APP: [AO3], INTERP: [AO2], EVAL: [AO3]}
+    cs_construct: {APP: [AO3], PROC: [AO3]}
+    cs_debug: {APP: [AO3]}
+    cs_justify: {EVAL: [AO3]}
+  ao_by_paper_subtype:
+    '2': {APP: [AO3], EVAL: [AO3], SYNTH: [AO3], PROC: [AO3]}
+  ao_by_paper_subtype_reason: >-
+    On Paper 2 every scenario card asks the learner to design or program a solution, and every stage or choice card
+    asks for a design decision: that is AO3 as the syllabus defines it (design, program and evaluate).
+  ao_by_paper:
+    '1': {AO3: AO2}
+    '2': {AO1: AO2}
+  topic_targets_by_paper:
+    '1': {AO1: 60, AO2: 40, AO3: 0}
+    '2': {AO1: 0, AO2: 40, AO3: 60}
+  misconception_slots: one_per_entry
+  top_up: [[AO3, APP], [AO3, PROC], [AO2, APP], [AO2, CHAIN], [AO1, DEF], [AO1, FEATURE], [AO1, WHY], [AO1, DIST]]
+  performance_tasks:
+    - item_type: short_answer
+      papers: ['1']
+      brief: >-
+        A Paper 1 style scenario question: three or four linked parts that identify, describe and explain, every
+        answer applied to the scenario, about 8 marks in all.
+      ao_split: {AO1: 4, AO2: 4}
+    - item_type: data_response
+      papers: ['1']
+      brief: >-
+        A given table, diagram, circuit, register trace or SQL task to read and complete, with the reason for each
+        entry; about 6 marks.
+      ao_split: {AO1: 2, AO2: 4}
+    - item_type: worked_example
+      papers: ['2']
+      brief: >-
+        Write a complete module in pseudocode to a stated specification (8 marks), marked by mark points: heading
+        and ending with parameters and return type, declarations, initialisation, the loop, the selection, and the
+        value returned or output produced.
+      ao_split: {AO2: 2, AO3: 6}
+    - item_type: worked_example
+      papers: ['2']
+      brief: >-
+        Write a complete module in pseudocode to a stated specification (8 marks), marked by mark points: heading
+        and ending with parameters and return type, declarations, initialisation, the loop, the selection, and the
+        value returned or output produced.
+      ao_split: {AO2: 2, AO3: 6}
+    - item_type: worked_example
+      papers: ['2']
+      brief: >-
+        Write a complete module in pseudocode to a stated specification (8 marks), marked by mark points: heading
+        and ending with parameters and return type, declarations, initialisation, the loop, the selection, and the
+        value returned or output produced.
+      ao_split: {AO2: 2, AO3: 6}
+    - item_type: short_answer
+      papers: ['2']
+      brief: >-
+        A Paper 2 style scenario question: an identifier table, a trace table or test data, and an explanation of a
+        design choice; about 6 marks.
+      ao_split: {AO2: 3, AO3: 3}

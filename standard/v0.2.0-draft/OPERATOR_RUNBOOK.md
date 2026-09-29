@@ -133,3 +133,102 @@ Two defect classes on the pilot could not be mechanised and will reach you throu
 - **Whether a learner could actually build an answer from the notes.** A check for this was written and withdrawn: it fired on 47 of 68 items because ordinary English variation swamps the signal. The mechanical floor is that every claim an item cites is also taught in a content-unit block; the rest is the reviewer's reconstruction test.
 
 Do not try to solve these with more regexes. Both are why the reviewer exists.
+
+---
+
+## Authoring a subject at scale (added 2026-09-12)
+
+`AUTHORING_BRIEF.md` in this folder is the single instruction set for building one topic. Hand it
+to an author — a person or a model — together with the workspace path, the topic id, and the name
+of one finished topic to use as the exemplar. It is subject-agnostic: it reads the command words,
+tariffs, AO targets and answer structures out of the subject's own profile files, so the same brief
+serves every syllabus.
+
+**Topics are independent, so author them in parallel.** Seventeen topics of 9609 AS were built
+concurrently in one evening by one author per topic. This is the part that scales; running topics
+one at a time behind a review gate is what did not.
+
+```bash
+# per topic, by the author
+python3 standard/v0.2.0-draft/build/render_notes.py <workspace> <TOPIC>
+python3 standard/v0.2.0-draft/checks/run_checks.py   <workspace> <TOPIC>
+
+# once, when the subject is clean
+python3 standard/v0.2.0-draft/build/publish_subject.py <workspace>
+```
+
+### Naming is generated, never typed
+
+`build/naming.py` is the single source of every published filename, derived from `topic_title` in
+the contract: `4.3` + *Capacity utilisation and outsourcing* gives
+`4.3-capacity-utilisation-and-outsourcing.md` and
+`4.3-capacity-utilisation-and-outsourcing-flashcards.json`.
+
+This exists because the first run of 9609 left each author to name their own notes file, and the
+subject shipped `notes-1.1.md` beside `notes-1.2-business-structure.md`. Nobody can manage a folder
+they have to decode. `render_notes.py` now derives the name and removes a superseded one; if it
+cannot delete, it prints the path for you to remove by hand.
+
+`publish_subject.py` writes `publish/<qualification>/` containing `notes/`, `flashcards/`,
+`INDEX.md` (every topic by name, grouped by syllabus unit, with counts and open issues) and
+`MANIFEST.json`. Each flashcard file carries `topic_number`, `topic_title` and — on every card —
+`objective_titles` beside `objective_ids`, so a reviewer sees what a card teaches without looking
+up a code. Only topics whose checks pass are published; the rest are reported and the run
+continues, so one broken topic cannot hold up a subject.
+
+---
+
+## Running the pipeline on open-weights models (added 2026-09-13)
+
+The division of labour: **frontier models mine and plan, open models author, checks verify,
+frontier reviews after publication.** Vitalis set this on 2026-09-12.
+
+### The routing layer
+
+`AGENTS.md` at the repository root is what every agent reads first, whatever tool it runs in —
+OpenCode, Hermes Agent, Claude Code. It states the three rules that apply to everyone and routes to
+exactly one role brief in `standard/v0.2.0-draft/roles/`:
+
+| Role | Brief | Model |
+|---|---|---|
+| Author — one topic's notes and cards | `roles/AUTHOR.md` | open weights |
+| Planner — set a subject up | `roles/PLANNER.md` | frontier |
+| Miner — papers, mark schemes, examiner reports | `roles/MINER.md` | frontier |
+| Reviewer — fixed question set, one round | `roles/REVIEWER.md` | frontier |
+
+Starting an author needs three things and nothing else: the workspace path, one topic id, and the
+name of a finished topic to use as the exemplar.
+
+### Why authors get a work order, not a brief alone
+
+```bash
+python3 standard/v0.2.0-draft/build/make_work_order.py <workspace> --all
+```
+
+Seventeen frontier authors followed one brief on the first subject and made seventeen different
+judgement calls — how many content units, how to tag AOs on flexible subtypes, whether to invent
+excluded constructs, how to treat a decomposed container. A cheaper model writes prose about as
+well and judges considerably worse, so the judgement is computed instead.
+
+`work_order.json` fixes every slot before anyone writes: the content-unit split (one per sub-topic),
+each card's objective, subtype, assessment objectives, command word, tariff, difficulty and the
+parts its marking guidance must name, plus the AO balance and the word budgets. Validated against
+the first subject, it reproduces the unit split 18 topics out of 19.
+
+It derives subtypes from `objective_type` and `depth_tier` in the registry, so **the registry is now
+load-bearing**: a wrong `objective_type` produces a wrong slot. That is a feature — the work order
+shows its reasoning in the `reason` column, so a bad type is visible rather than silent.
+
+The one thing it cannot compute is `excluded_constructs`. It prints `** excluded_constructs
+MISSING **` for any contract lacking them, and that is the Planner's job.
+
+### The fix loop
+
+```bash
+python3 standard/v0.2.0-draft/checks/what_to_fix.py <workspace> <topic>
+```
+
+`run_checks.py` prints 43 lines, mostly passes. This prints only failures, ordered structure-first,
+each with its affected ids and the single action that clears it, and exits 0 when the topic is
+clean. An author loops on it. This is what lets a smaller model converge where one shot would not:
+it never has to understand the standard, only to clear the next named thing.

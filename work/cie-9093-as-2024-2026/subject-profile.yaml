@@ -1,0 +1,159 @@
+profile_id: yyeni-subject-english-language-as-v0.1.0
+version: 0.1.0-draft
+status: draft
+subject_name: English Language (Cambridge International AS Level 9093)
+language_variant: British English
+purpose: 'The teaching model for AS Level English Language. 9093 at AS is examined by task: six tasks on two papers,
+  each on an unseen text or a brief and each marked against a level table. Forty of the hundred marks are for analysing
+  how form, structure and language make meaning for an audience; forty-five are for writing to a brief; fifteen
+  are for reading the unseen text accurately. The resource therefore teaches the analytical vocabulary and the moves
+  each task rewards, practises them on short original extracts in flashcards, and rehearses every task on original
+  practice texts and briefs.'
+depth_model:
+  note_mode: full teaching depth
+  rationale: Notes teach each term and move a task rewards, demonstrate it on a short original extract, and name
+    the errors that cost marks as discriminations. They are the source for the flashcards and a standalone study
+    text.
+  words_per_objective: 300-450
+terminology_rules:
+- Use the syllabus wording for the tasks, the three categories of Section B and the linguistic elements listed on
+  page 12.
+- 'Use the glossary senses exactly: curriculum/glossary.json.'
+- British spelling throughout.
+answer_structures:
+  DEF:
+  - meaning|means|definition|defined|refers
+  FEATURE:
+  - feature|features|convention|conventions|includes|contains|expected
+  PROC:
+  - step|steps|first|then|order|sequence
+  WHY:
+  - reason|because|why|purpose
+  DIST:
+  - difference|distinguish|whereas|contrast|boundary|test
+  MISCON:
+  - error|mistake|confuse|confused|confusion|wrongly|instead
+  APP:
+  - text|sentence|extract|passage|words
+  - because|suggests|shows|so
+  MECH:
+  - effect|creates|suggests|reader|audience
+  - word|words|phrase|quotation|sentence
+  INTERP:
+  - detail|word|phrase|evidence|feature
+  - suggests|implies|shows|signals
+  EVAL:
+  - judgement|judge|convincing|stronger|better
+  - evidence|reason|support
+  - however|but|counter|weakness
+  short_answer:
+  - evidence|quotation|words
+  - effect|purpose|audience
+  source_analysis:
+  - form|structure|language
+  - audience|purpose|meaning
+  - level|levels|mark|marks
+  essay_plan:
+  - structure|section|sections|paragraph|paragraphs
+  - purpose|audience|effect
+  - words|word
+  writing_task:
+  - level|levels|band
+  - audience|purpose|form
+  - organised|organisation|structure|structured|sequence
+  - accuracy|accurate|vocabulary|language
+variant_register:
+- term: imaginative/descriptive
+  variants:
+  - narrative
+  - descriptive
+  consequence: 'The two ask for different content: a story with a conflict and a change, or a picture built from
+    detail with no plot.'
+  teach_as: Wherever the category is taught or set, say which variant is meant and what that variant needs.
+- term: discursive/argumentative
+  variants:
+  - discursive
+  - argumentative
+  consequence: A discursive piece explores more than one side before reaching a view; an argumentative piece argues
+    one position and answers the other side.
+  teach_as: Wherever the category is taught or set, say which variant the task wording signals.
+conditioned_mechanisms:
+- mechanism_id: CM-9093-SHORT-SENTENCE
+  name: Short sentences create tension or emphasis
+  rationale: A short sentence creates emphasis or tension by contrast with the sentences around it. Taught as a
+    rule on its own, it produces analyses that say every short sentence builds tension.
+  asserted_when:
+  - \bshort sentences?\b
+  - \b(tension|suspense|emphasis|impact|drama)\b
+  - \b(creates?|builds?|adds?|gives?)\b
+  required_conditions:
+  - name: the contrast with the surrounding sentences
+    any_of:
+    - \bcontrast
+    - \blonger\b
+    - \blong sentences?\b
+    - \bvar(y|ied|iety|ying)\b
+    - \bafter\b
+    - \bamong\b
+    - \bsurround
+- mechanism_id: CM-9093-FORMAL-REGISTER
+  name: A formal register is the correct one
+  rationale: Register is right or wrong only for an audience and a purpose. A blog or a speech to classmates written
+    formally is as mismatched as a report to officials written casually.
+  asserted_when:
+  - \bformal\b
+  - \bregister\b
+  - \b(should|must|always|correct|appropriate|right)\b
+  required_conditions:
+  - name: the audience or purpose that decides it
+    any_of:
+    - \baudience\b
+    - \bpurpose\b
+    - \breader
+    - \blistener
+    - \bwho\b
+    - \bsituation\b
+- mechanism_id: CM-9093-RHETORICAL-QUESTION
+  name: Rhetorical questions engage the reader
+  rationale: A rhetorical question works by making its audience supply an answer the writer wants. Stated without
+    what answer it invites, the claim fits every question and analyses none.
+  asserted_when:
+  - \brhetorical questions?\b
+  - \b(engages?|involves?|hooks?|draws? in|makes? the reader think)\b
+  required_conditions:
+  - name: the answer the question invites, or the view it steers towards
+    any_of:
+    - \banswer
+    - \bassum
+    - \bagree
+    - \bview\b
+    - \bconclu
+    - \bsteer
+    - \bimpl
+prohibited_patterns:
+- Do not reproduce any Cambridge text, question, task, title, mark-scheme or examiner-report wording.
+- Do not claim what examiners reward, report or want; teach the technique and why it works.
+- 'Do not use the command word Discuss in any prompt: the AS papers never use it.'
+- Do not teach Papers 3 and 4 or their content; this route sits Papers 1 and 2 only.
+- Do not state a fixed deduction for word counts; the schemes judge length as part of the task.
+glossary_homonyms:
+- term: voice
+  senses:
+  - 'grammatical voice: active or passive'
+  - 'a writer’s voice: the sense of a particular person speaking'
+  rule: Say which sense the first time it appears in a block; the glossary files them as two entries.
+- term: structure
+  senses:
+  - the organisation of a whole text
+  - sentence structure, a feature of language
+  rule: “Structure” alone means the whole text; say “sentence structure” for the other.
+- term: form
+  senses:
+  - the kind of text (article, speech, review)
+  - the grammatical shape of a word
+  rule: In this subject it means the kind of text unless a block says otherwise.
+- term: context
+  senses:
+  - the situation a text is produced and read in
+  - the words around a quotation
+  rule: Say which sense the first time it appears in a block.

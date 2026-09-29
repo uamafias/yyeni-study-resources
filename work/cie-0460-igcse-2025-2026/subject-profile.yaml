@@ -1,0 +1,284 @@
+profile_id: yyeni-subject-geography-igcse-v0.1.0
+version: 0.1.0-draft
+status: draft
+subject_name: Geography (Cambridge IGCSE 0460)
+language_variant: British English
+purpose: >-
+  The teaching model for IGCSE Geography, Alternative to Coursework route. Topics 1.1-3.7 are the three themes,
+  examined on Paper 1 (45%) through resources and required case studies; topic 4 is the geographical skills of
+  Paper 2 (27.5%); topic 5 is the fieldwork enquiry of Paper 4 (27.5%). Everything below follows from the corpus
+  analysis, operations/analysis/0460-igcse-geography-corpus-analysis.md.
+
+depth_model:
+  note_mode: full teaching depth
+  rationale: >-
+    The notes are the source the cards are cut from and the learner's offline text. Every process is explained
+    step by step, every landform is described and then its formation explained, and every required case study is
+    written out with a named place and place-specific detail.
+  words_per_objective: 200-320
+
+terminology_rules:
+  - Use the syllabus wording for every term, and curriculum/glossary.json for every sense.
+  - Introduce a term before using it.
+  - Units as the syllabus uses them (page 12): metres and kilometres for height and distance, hectares and square kilometres for area, tonnes for weight, degrees Celsius for temperature.
+  - Case studies are real places at the scale the syllabus asks for (a named area of coastline, not a whole country). Every figure in a case study carries its year and is rounded; the learner is told it is approximate.
+  - Resources the learner would see in the papers are given in words or as markdown tables (a map extract as a grid of squares, a graph as its data, a photograph as a described scene).
+
+answer_structures:
+  DEF: ["meaning|means|definition|defined|term"]
+  FEATURE: ["feature|features|characteristic|characteristics|point|points|fact|facts"]
+  DIST: ["difference|differences|whereas|contrast|both|while|unlike"]
+  PROC: ["order|sequence|first|then|step|steps|stage|stages", "process|processes|erosion|deposition|method|measure|measured", "result|forms|formed|so|final"]
+  WHY: ["reason|reasons|why|because|so that|purpose"]
+  MECH: ["how|because|so|which|causes|cause"]
+  BEN: ["benefit|benefits|advantage|advantages|opportunity|opportunities", "because|so|which means"]
+  LIM: ["problem|problems|disadvantage|disadvantages|hazard|hazards|limitation|limitations", "because|so|which means"]
+  APP: ["resource|figure|table|photograph|map|given|this|here|example", "because|so|therefore|suggests"]
+  CHAIN: ["cause|causes|leads|leading|results|because", "so|therefore|which means", "effect|effects|impact|impacts|consequence"]
+  EVAL: ["judgement|judge|successful|decision|better|best|justify|justified|evaluate|extent", "because|so|since|therefore", "evidence|example|data|figure|figures"]
+  CALC: ["working|method|step|steps|calculation", "answer|result|final", "unit|units|km|metres|per cent|kilometres|degrees"]
+  INTERP: ["read|shows|shown|table|graph|map|resource|figure|pattern|trend", "value|values|figure|figures|so|means"]
+  MISCON: ["error|mistake|confusion|confused|wrongly|in fact|not the same|instead"]
+  SYNTH: ["links|both|together|combined"]
+  case_analysis: ["level|levels", "named|place-specific|place specific|example", "developed|develop|development|linked"]
+  data_response: ["resource|table|graph|map|photograph|data", "mark|marks", "figure|figures|evidence|value|values"]
+  short_answer: ["mark|marks", "point|points|idea|ideas", "developed|develop|development|reason|because"]
+  practical_task: ["hypothesis|hypotheses", "method|equipment|sample|sampling|survey|measure", "conclusion|evaluate|evaluation|reliable|improve|improvement"]
+
+variant_register:
+  - term: plate boundary
+    variants: [constructive, destructive, conservative]
+    consequence: Each boundary produces different hazards; conservative boundaries have earthquakes but no volcanoes.
+    teach_as: Name the kind of boundary wherever a boundary explains a hazard.
+  - term: sampling
+    variants: [random, systematic, stratified]
+    consequence: How the sample is chosen decides whether it is representative.
+    teach_as: Never write "sampling" without saying which kind.
+
+depictions:
+  chart_model: none
+  code_fence_languages: []
+  rule: >-
+    This subject has no chart renderer and no code. A map extract is a markdown table of grid squares with their
+    features and heights; a graph is its data table, for the learner to plot on their own paper; a photograph or a
+    field sketch is a described scene. C-41 fails any code fence.
+
+conditioned_mechanisms:
+  - mechanism_id: CM-0460-RENEWABLE-CHEAPER
+    name: Renewable energy is cheaper
+    rationale: >-
+      Renewable energy has low running costs because it needs no fuel, but it is often expensive to build.
+      Examiner reports record the unqualified claim that it is cheaper. Anywhere renewables are called cheaper,
+      the answer says which cost.
+    asserted_when:
+      - '\brenewable'
+      - '\bcheap'
+    required_conditions:
+      - name: which cost is lower
+        any_of: ['\brunning costs?\b', '\bonce (it is |they are )?built\b', '\bno fuel\b', '\b(expensive|costly) to (build|install|set up)\b', '\bbuilding costs?\b', '\binstallation costs?\b']
+
+prohibited_patterns:
+  - Do not teach content outside the syllabus's closed lists (page 12) or physical geography the themes leave out. curriculum/scope-scan.json lists the constructs C-11 scans for.
+  - Do not invent facts about real places. A case-study figure is one the author is confident of, rounded, with its year; where unsure, describe the pattern without the figure.
+  - Do not name brands, except the transnational corporation the 3.1 case study is about.
+  - Do not use code fences or drawings; resources are described or tabulated.
+  - Do not claim what examiners reward or what a paper contains; the words "examiner" and "mark scheme" do not appear in learner-facing text.
+
+glossary_homonyms:
+  - term: relief
+    senses: [the height and shape of the land, relief rainfall, aid given after a disaster]
+    rule: Relief alone means the land surface; write "relief rainfall" and "emergency aid" in full.
+  - term: structure
+    senses: [population structure (age and sex), employment structure (sectors)]
+    rule: Always say which structure.
+  - term: discharge
+    senses: [the volume of river flow per second, waste released into a river]
+    rule: Discharge alone means river flow; waste is "released" or "dumped".
+  - term: range
+    senses: [a temperature range, the range of a good or service]
+    rule: Say "temperature range" or "range of a good" the first time in any block.
+
+slot_plan:
+  note: >-
+    CR-006. The slot plan for this subject, read by build/make_work_order.py. The themes (topics 1.1-3.7) are
+    examined on Paper 1, the skills (topic 4) on Paper 2 and the enquiry (topic 5) on Paper 4. Every paper assesses
+    all three AOs in its own proportions (syllabus page 11), so each topic is balanced against its own paper's split
+    and the subject total answers to 30/52/18. Every case study earns cards of its own and a 7-mark levels-marked
+    task, because the case study is the top of every Paper 1 question.
+  subtypes_by_objective_type:
+    geo_concept: [DEF, MECH]
+    geo_classify: [DEF, FEATURE]
+    geo_process: [DEF, MECH, INTERP, APP]
+    geo_distribution: [FEATURE, MECH, INTERP]
+    geo_data: [INTERP, CALC]
+    geo_impacts: [BEN, LIM, CHAIN, INTERP]
+    geo_management: [APP, EVAL, INTERP]
+    geo_evaluate: [BEN, LIM, EVAL]
+    geo_case_study: [FEATURE, APP]
+    skill_map: [CALC, CALC, INTERP, INTERP]
+    skill_graph: [INTERP, INTERP, APP, CALC]
+    skill_photo: [INTERP, INTERP, APP]
+    skill_math: [CALC, CALC, CALC]
+    enq_hypothesis: [DEF, APP, APP]
+    enq_method: [PROC, PROC, WHY, LIM]
+    enq_present: [APP, INTERP, INTERP]
+    enq_analysis: [INTERP, INTERP, APP]
+    enq_conclusion: [EVAL, EVAL, LIM]
+  subtypes_by_tier: {1: [], 2: [], 3: [APP], 4: []}
+  high_tariff: {threshold: 99, adds: []}
+  command_words_by_subtype:
+    DEF: [State, Define, Give]
+    FEATURE: [Describe, Identify, State, Give, Name]
+    DIST: [Describe, Explain, State]
+    PROC: [Describe, Explain]
+    WHY: [Explain, Suggest]
+    MECH: [Explain, Describe]
+    BEN: [Describe, Explain, Suggest]
+    LIM: [Describe, Suggest, Explain]
+    APP: [Suggest, Explain, Describe, Compare]
+    CHAIN: [Explain, Describe]
+    EVAL: [Suggest, Explain, Justify, Describe]
+    CALC: [Calculate, Give, Estimate, Identify]
+    INTERP: [Describe, Identify, Compare, Complete, Give]
+    MISCON: [Explain, State]
+    SYNTH: [Explain]
+  tariff_overrides:
+    'MISCON:Explain': 2
+    'WHY:Explain': 2
+    'MECH:Explain': 3
+    'FEATURE:Describe': 2
+    'CHAIN:Explain': 3
+    'EVAL:Explain': 4
+    'PROC:Describe': 4
+    'BEN:Describe': 2
+    'LIM:Describe': 2
+    'APP:Suggest': 3
+    'EVAL:Suggest': 3
+  tariff_override_reasons:
+    'APP:Suggest': >-
+      Suggest runs 1-5 in the corpus (modal 2, then 3); a resource card models the 3-mark form, three reasons
+      suggested from the evidence.
+    'PROC:Describe': >-
+      Describing how a landform forms, or how a method is carried out, is modelled at 4 marks: the sequence of steps,
+      each a mark.
+    'MISCON:Explain': A discrimination is modelled at 2 marks, the error and the correct idea.
+  ao_by_objective_type:
+    '*': {DEF: [AO1], FEATURE: [AO1], DIST: [AO1], PROC: [AO1], WHY: [AO1], MECH: [AO1], BEN: [AO3], LIM: [AO3],
+          APP: [AO2], CHAIN: [AO1], EVAL: [AO3], CALC: [AO2], INTERP: [AO2], MISCON: [AO1], SYNTH: [AO3]}
+    geo_case_study: {FEATURE: [AO1], APP: [AO1]}
+    enq_method: {PROC: [AO2], WHY: [AO2]}
+    enq_present: {APP: [AO2]}
+    skill_map: {INTERP: [AO2]}
+  topic_targets_by_paper:
+    '1': {AO1: 48, AO2: 30, AO3: 22}
+    '2': {AO1: 11, AO2: 80, AO3: 9}
+    '4': {AO1: 20, AO2: 60, AO3: 20}
+  misconception_slots: one_per_entry
+  top_up: [[AO3, EVAL], [AO2, INTERP], [AO2, APP], [AO1, DEF], [AO1, FEATURE], [AO1, MECH]]
+  performance_tasks:
+    - item_type: case_analysis
+      papers: ['1']
+      brief: >-
+        A 7-mark case-study answer in the style of the last part of a Paper 1 question: one precise question on the
+        topic's case study, answered with a named place at the right scale, developed and linked points, and
+        place-specific detail. The guidance gives the three levels (simple statements; developed statements with a
+        named example, capped at 5 without one; comprehensive statements with place-specific detail). Where the
+        question asks how far a strategy succeeded, the judgement carries part of the marks.
+      ao_split: {AO1: 4, AO3: 3}
+    - item_type: data_response
+      papers: ['1']
+      brief: >-
+        A resource-based question in the style of the opening parts of a Paper 1 question (about 8 marks): a table of
+        data, a map extract described as a grid, or a described photograph, with parts of 1, 2, 3 and 2 marks that
+        identify, describe from the resource, and suggest reasons.
+      ao_split: {AO1: 2, AO2: 4, AO3: 2}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A mapwork task (10 marks): a map extract given as a markdown grid of squares with their features, heights and
+        a scale, and 1-mark parts on the key, a six-figure grid reference, a compass direction and a bearing, a
+        distance along a route, a height difference, relief and drainage.
+      ao_split: {AO2: 10}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A second mapwork task (10 marks) on a different landscape (upland and river if the first was coastal or
+        urban), with a cross-section described point by point and settlement pattern and communications.
+      ao_split: {AO2: 9, AO3: 1}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A graph and table task (8 marks): data from one theme to plot on the learner's own paper, a trend to describe
+        with figures, a calculation, and a reason to suggest.
+      ao_split: {AO1: 1, AO2: 6, AO3: 1}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A photograph and diagram task (6 marks): a described photograph or field sketch of a landscape to describe,
+        with features to identify and a reason to suggest.
+      ao_split: {AO1: 1, AO2: 4, AO3: 1}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A third mapwork task (10 marks) on an urban or coastal extract: land use, urban morphology, services and
+        functions of settlements, communications, with grid references and bearings.
+      ao_split: {AO2: 9, AO3: 1}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A second graph and table task (8 marks) on a different graph type (a population pyramid, a climate graph, a
+        triangular or scatter graph): read values, describe the pattern, calculate a range or percentage, suggest a reason.
+      ao_split: {AO1: 1, AO2: 6, AO3: 1}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A third graph and table task (8 marks) on a map-based resource (a choropleth map, a flow diagram or a
+        dispersion graph): extract information, describe the distribution, suggest a suitable graph for data given.
+      ao_split: {AO1: 1, AO2: 6, AO3: 1}
+    - item_type: data_response
+      papers: ['2']
+      brief: >-
+        A fourth mapwork task (10 marks) on a rural extract: drainage density and stream patterns, relief described
+        with suitable terms, a route distance, a bearing, and inferences about land use from the map evidence.
+      ao_split: {AO2: 9, AO3: 1}
+    - item_type: practical_task
+      papers: ['4']
+      brief: >-
+        A Paper 4 style enquiry on physical geography (30 marks), such as a river or a beach study: two hypotheses,
+        the equipment and method with siting and sampling, a table of the students' results, a graph to complete, a
+        conclusion on each hypothesis with paired data, and an evaluation with specific improvements.
+      ao_split: {AO1: 6, AO2: 18, AO3: 6}
+    - item_type: practical_task
+      papers: ['4']
+      brief: >-
+        A Paper 4 style enquiry on human geography (30 marks), such as a pedestrian count, a land-use survey or a
+        questionnaire: two hypotheses, the questionnaire or recording sheet and its sampling, a pilot survey, a table
+        of results, a graph to complete, a conclusion with paired data, and an evaluation with specific improvements.
+      ao_split: {AO1: 6, AO2: 18, AO3: 6}
+    - item_type: practical_task
+      papers: ['4']
+      brief: >-
+        A second physical enquiry (30 marks) in a different setting (weather or a coastline if the first was a river):
+        hypotheses, instruments and their siting, results, a graph to complete, conclusions with paired data, evaluation.
+      ao_split: {AO1: 6, AO2: 18, AO3: 6}
+    - item_type: practical_task
+      papers: ['4']
+      brief: >-
+        A second human enquiry (30 marks) in a different setting (tourism, an environmental quality survey or
+        traffic): hypotheses, the sampling method, a recording sheet, results, a graph to complete, conclusions with
+        paired data, evaluation and an extension.
+      ao_split: {AO1: 6, AO2: 18, AO3: 6}
+    - item_type: practical_task
+      papers: ['4']
+      brief: >-
+        A third physical enquiry (30 marks), set where the first two were not (a river, a beach, weather, soils or
+        vegetation): hypotheses, the method with its equipment and sampling, results, a graph to complete,
+        conclusions with paired data, evaluation.
+      ao_split: {AO1: 6, AO2: 18, AO3: 6}
+    - item_type: practical_task
+      papers: ['4']
+      brief: >-
+        A third human enquiry (30 marks), set where the first two were not (a CBD, a village's services, a sphere
+        of influence, housing quality): hypotheses, a questionnaire and its design, results, a graph to complete,
+        conclusions with paired data, evaluation and an extension.
+      ao_split: {AO1: 6, AO2: 18, AO3: 6}

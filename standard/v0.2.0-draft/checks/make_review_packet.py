@@ -65,7 +65,8 @@ def md(d):
     cls = Counter(EX[o['objective_id']]['exam_exposure'] for o in assessable if o['objective_id'] in EX)
     rare = [o['objective_id'] for o in assessable
             if 'rarely-examined' in (EX.get(o['objective_id'], {}).get('review_sets') or [])]
-    excl = (C.get('depth_constraints') or {}).get('excluded_constructs') or []
+    excl = [x.get('construct') if isinstance(x, dict) else x
+            for x in (C.get('depth_constraints') or {}).get('excluded_constructs') or []]
     homs = [x['term'] for x in d['glossary'].get('terms', []) if (x.get('disambiguation') or '').strip()]
     variants = d['profile'].get('variant_register') or []
     structs = d['profile'].get('answer_structures') or {}
@@ -338,7 +339,7 @@ def prompt(d):
         '   Its failures and warnings need your judgement; its not_run checks are areas where you are the only',
         '   line of defence. Both are listed in section 3 of the brief.', '',
         '4. The material under review:',
-        '   %s/topics/%s/notes-*.md              (learner notes)' % (w, t),
+        '   %s/topics/%s/*.md              (learner notes)' % (w, t),
         '   %s/topics/%s/content-units/*.json    (content units)' % (w, t),
         '   %s/topics/%s/learning-items/*.json   (flashcards and tasks)' % (w, t),
         '   %s/topics/%s/claims/canonical_claim_ledger.json' % (w, t), '',

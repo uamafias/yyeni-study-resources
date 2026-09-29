@@ -1,0 +1,5 @@
+# 9702 structural exemplar
+
+Two small, complete slices that pass the full check suite: 9.3 Resistance and resistivity (a content topic, Papers 1 and 2: a definition, calculations with the equation, the substitution and the unit, a misconception, a three-question multiple-choice set, a calculation task) and 12.3 Analysis (the practical topic, Paper 3: an uncertainty estimate, a gradient and an intercept, a Question 1 style practical task with a markdown table of our readings). Copy their **shape**: the field set of every claim, block and item; equations as plain text with Unicode symbols; working carried to three significant figures, with each product or quotient written as "a × b = c" so C-32 can recompute it; data in markdown tables, never in code fences; `claims_seen` and `authored_hash`. Do not copy their volume (the work orders set that) or their content (write your own; do not reuse these situations in topics 9 or 12).
+
+Proof: the planner installed both slices in a scratch copy of the workspace and ran the full suite; both passed. You do not need to re-run it.

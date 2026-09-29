@@ -1,0 +1,125 @@
+profile_id: yyeni-subject-first-language-english-igcse-v0.1.0
+version: 0.1.0-draft
+status: draft
+subject_name: First Language English (Cambridge IGCSE 0500)
+language_variant: British English
+purpose: 'The teaching model for IGCSE First Language English. Unlike a content subject, 0500 is examined by task
+  and skill: five reading skills (R1-R5) and five writing skills (W1-W5), each tested in named tasks on unseen texts.
+  The resource therefore teaches techniques, practises them on short original extracts in flashcards, and rehearses
+  the full tasks on original practice texts written to the lengths the syllabus sets.'
+depth_model:
+  note_mode: full teaching depth
+  rationale: Notes teach each move a task rewards, demonstrate it step by step on a short original extract, and
+    name the errors that cost marks as discriminations. They are the source for the flashcards and a standalone
+    study text.
+  words_per_objective: 300-450
+terminology_rules:
+- Use the syllabus wording for the tasks, the skills (R1-R5, W1-W5) and the six text types.
+- 'Use the glossary senses exactly: curriculum/glossary.json.'
+- British spelling throughout.
+answer_structures:
+  DEF:
+  - meaning|means|definition|defined
+  FEATURE:
+  - feature|features|convention|conventions|includes|expected
+  PROC:
+  - step|steps|first|then|order|sequence
+  WHY:
+  - reason|because|why|purpose
+  DIST:
+  - difference|distinguish|whereas|contrast|boundary|test
+  MISCON:
+  - error|mistake|confuse|confused|confusion|wrongly|instead
+  MECH:
+  - effect|creates|suggests|reader
+  APP:
+  - text|sentence|extract|passage|words
+  - because|suggests|shows|so
+  INTERP:
+  - detail|word|phrase|evidence
+  - suggests|implies|shows
+  EVAL:
+  - judgement|judge|convincing|persuasive
+  - evidence|reason|support
+  - however|but|counter|other view|weakness
+  short_answer:
+  - mark|marks
+  - text|paragraph|line|lines|passage|sentence
+  source_analysis:
+  - meaning
+  - effect
+  - level|mark|marks
+  essay_plan:
+  - evaluate|evaluation|judgement|judge
+  - both texts|each text|text a|text b
+  - own words
+  writing_task:
+  - level|levels|band
+  - organised|organisation|organise|structure|structured|sequence|sequenced
+  - vocabulary|language|style|register
+variant_register:
+- term: composition
+  variants:
+  - descriptive
+  - narrative
+  consequence: 'The two kinds of title ask for different content: a picture built from detail, or a story with a
+    shape.'
+  teach_as: Wherever composition is taught, say which kind is meant and what that kind needs.
+conditioned_mechanisms:
+- mechanism_id: CM-0500-SHORT-SENTENCE
+  name: Short sentences create tension or emphasis
+  rationale: A short sentence creates emphasis or tension by contrast with the sentences around it. Taught as a
+    rule on its own, it produces answers that say every short sentence builds tension.
+  asserted_when:
+  - \bshort sentences?\b
+  - \b(tension|suspense|emphasis|impact|drama)\b
+  - \b(creates?|builds?|adds?|gives?)\b
+  required_conditions:
+  - name: the contrast with the surrounding sentences
+    any_of:
+    - \bcontrast
+    - \blonger\b
+    - \blong sentences?\b
+    - \bvar(y|ied|iety|ying)\b
+    - \bafter\b
+    - \bamong\b
+    - \bsurround
+- mechanism_id: CM-0500-FORMAL-REGISTER
+  name: A formal register is the correct one
+  rationale: Register is right or wrong only for an audience and a purpose. A journal entry or a speech to classmates
+    written formally is as mismatched as a complaint to a council written casually.
+  asserted_when:
+  - \bformal\b
+  - \bregister\b
+  - \b(should|must|always|correct|appropriate|right)\b
+  required_conditions:
+  - name: the audience or purpose that decides it
+    any_of:
+    - \baudience\b
+    - \bpurpose\b
+    - \breader
+    - \blistener
+    - \bwho\b
+    - \bsituation\b
+prohibited_patterns:
+- Do not reproduce any Cambridge text, question, task, title, mark-scheme or examiner-report wording.
+- Do not claim what examiners reward, report or want; teach the technique and why it works.
+- Do not say that spelling, punctuation and grammar are marked in Paper 1; the syllabus removed W5 from Paper 1
+  from 2024.
+- Do not teach the coursework or the speaking and listening components; this route sits Papers 1 and 2 only.
+glossary_homonyms:
+- term: summary
+  senses:
+  - the Paper 1 selective summary on a stated focus
+  - a general retelling of a text
+  rule: In this subject it always means the selective sense unless a block says otherwise.
+- term: evaluate
+  senses:
+  - judge how convincing an idea is (directed writing)
+  - the everyday sense of assessing
+  rule: Use the directed-writing sense and say what the judgement rests on.
+- term: context
+  senses:
+  - the words around a word (Question 2)
+  - the situation a piece of writing is for (register)
+  rule: Say which sense the first time it appears in a block.

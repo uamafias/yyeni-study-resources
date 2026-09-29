@@ -48,12 +48,12 @@
       "objective_ids": [
         "OBJ-9609-5.4.1-01"
       ],
-      "text": "Where cost information is inaccurate, every decision resting on it is wrong in the same direction: a product that appears profitable may be losing money, and one that appears unprofitable may be dropped when it was in fact helping to cover the firm's fixed costs.",
+      "text": "Inaccurate cost information can mislead any decision that materially depends on the figure, and the direction of the error follows the direction of the distortion. A product charged with too little cost looks more profitable than it is, so it may be priced too low or pushed too hard; a product charged with too much looks like a failure, so it may be dropped although it was helping to cover costs that would be incurred anyway. Because a shared total divided between products is a fixed sum, understating one product's share normally overstates another's, so two products can be distorted in opposite directions at the same time. Whether a particular decision goes wrong depends on whether the error is large enough to change it.",
       "claim_type": "causal",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -62,7 +62,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-12 after review SR-9609-5.4-CODEX-R3 (R3-001). The original said every decision resting on an inaccurate figure is wrong in the same direction. Neither half holds: an error need not be material to every dependent decision, and allocating a fixed shared total is zero-sum, so understating one product's share overstates another's - opposite directions, not a common one."
+      ],
+      "revised_at": "2026-09-12"
     },
     {
       "claim_id": "CLM-9609-5.4-004",
@@ -326,12 +329,12 @@
         "OBJ-9609-5.4.2-01",
         "OBJ-9609-5.4.2-02"
       ],
-      "text": "Full costing charges every cost to the products: the direct costs of each product plus a share of the indirect costs of running the business.",
+      "text": "Full costing assigns every cost to the products: the direct costs of each product plus a share of the costs the business incurs as a whole, fixed overheads included.",
       "claim_type": "definition",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -340,7 +343,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. Aligned with the corrected boundary in CLM-032."
+      ],
+      "revised_at": "2026-09-10"
     },
     {
       "claim_id": "CLM-9609-5.4-031",
@@ -348,12 +354,12 @@
         "OBJ-9609-5.4.2-01",
         "OBJ-9609-5.4.2-03"
       ],
-      "text": "Contribution costing charges only the variable costs to the products and treats fixed costs as a cost of the period as a whole, to be covered out of the combined contribution of everything the business sells.",
+      "text": "Contribution costing assigns only the variable costs to products and treats fixed costs as a cost of the period, to be covered out of the combined contribution of everything the business sells. A variable cost shared between products still has to be divided before it can be charged to one of them, so the method reduces allocation rather than removing it.",
       "claim_type": "definition",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -362,19 +368,22 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. The original implied contribution costing never allocates anything, which is untrue of shared variable costs."
+      ],
+      "revised_at": "2026-09-10"
     },
     {
       "claim_id": "CLM-9609-5.4-032",
       "objective_ids": [
         "OBJ-9609-5.4.2-01"
       ],
-      "text": "The difference between the two methods is what happens to fixed and indirect costs. Full costing shares them out among products; contribution costing holds them back and covers them from total contribution. The direct and variable costs are treated the same way by both.",
+      "text": "The difference between the two methods is what each does with fixed costs. Full costing assigns all of a business's costs to its products - the direct costs of each product plus a share of everything else, including fixed overheads. Contribution costing assigns only the variable costs to products and treats fixed costs as a cost of the period. So a cost that is direct but fixed, such as a supervisor employed on one line only, is inside the full cost of that line and outside its contribution cost; and a variable cost that is shared, such as power used by several products, is in both, though it still has to be divided before either method can charge it to one product.",
       "claim_type": "comparison",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -383,7 +392,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. The original said the methods differ over 'fixed and indirect' costs as though those were one category, and that direct and variable costs are treated alike. That contradicted this topic's own teaching that a cost can be direct and fixed. The boundary is fixed versus variable, not direct versus indirect."
+      ],
+      "revised_at": "2026-09-10"
     },
     {
       "claim_id": "CLM-9609-5.4-033",
@@ -411,12 +423,12 @@
       "objective_ids": [
         "OBJ-9609-5.4.2-02"
       ],
-      "text": "The limitation of full costing is the share-out. The basis is chosen rather than measured, a different basis changes each product's cost, and a product can appear to make a loss only because of the size of the overhead share it was given. A business that then stops making it still has the same overheads, now spread over fewer products.",
+      "text": "The limitation of full costing is the share-out. The basis is chosen rather than measured, a different basis changes each product's cost, and a product can appear to make a loss purely because of the size of the overhead share it was given. Where those overheads are unavoidable - a lease that runs on, staff the business keeps - stopping the product removes its contribution and leaves the costs to be carried by fewer products. Where some of them would genuinely disappear with the product, that part belongs in the decision and the recorded loss may be real.",
       "claim_type": "evaluative",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -425,7 +437,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. The original stated overhead continuation as certain. Only unavoidable common overhead remains."
+      ],
+      "revised_at": "2026-09-10"
     },
     {
       "claim_id": "CLM-9609-5.4-035",
@@ -543,12 +558,12 @@
         "OBJ-9609-5.4.2-04",
         "OBJ-9609-5.4.2-06"
       ],
-      "text": "A product whose selling price is above its variable cost makes a positive contribution, and is worth continuing where the fixed costs would be incurred anyway - even if full costing shows it making a loss after its share of overheads.",
+      "text": "A product whose selling price is above its variable cost makes a positive contribution. Dropping it without putting anything in its place loses that contribution while any fixed cost that would have been incurred anyway remains, so the business ends up worse off by the contribution lost less whatever cost genuinely disappears with the product. That is what positive contribution proves. It does not prove that keeping the product is the best available decision: that also depends on whether the capacity it uses could earn a larger contribution doing something else.",
       "claim_type": "causal",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -557,7 +572,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-12 after review SR-9609-5.4-CODEX-R3 (R3-002). The original concluded that a positive-contribution product is worth continuing where the fixed costs would be incurred anyway. Positive contribution establishes the loss from dropping WITHOUT replacement; it says nothing about whether the capacity could earn more in another use, which is the second condition of the keep decision."
+      ],
+      "revised_at": "2026-09-12"
     },
     {
       "claim_id": "CLM-9609-5.4-041",
@@ -774,12 +792,12 @@
       "objective_ids": [
         "OBJ-9609-5.4.3-02"
       ],
-      "text": "Which cost is used changes the floor. A price above full cost per unit covers everything and adds to profit. A price above variable cost but below full cost still adds to profit where the fixed costs are already being covered by other sales, which is why contribution matters in pricing.",
+      "text": "Which cost a price is compared with depends on the question being asked. For a one-off order, the test is whether the price exceeds every cost the order itself causes - its variable cost plus any extra fixed cost it creates - and whether the capacity it uses would otherwise have earned more. Where it does, the order improves profit or reduces a loss, whatever the rest of the order book is doing. For the long run, the test is different: total contribution across everything sold has to cover the fixed costs at a volume the business can realistically achieve, so a price set above full cost per unit is only as good as the output figure that full cost was calculated at.",
       "claim_type": "causal",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -788,7 +806,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. The original made prior coverage of fixed costs a necessary condition for an order to add to profit, which is false - positive incremental contribution reduces a loss as readily as it adds to a profit. It also treated a price above full cost as guaranteeing profit, which holds only at the assumed volume."
+      ],
+      "revised_at": "2026-09-10"
     },
     {
       "claim_id": "CLM-9609-5.4-056",
@@ -900,12 +921,12 @@
       "objective_ids": [
         "OBJ-9609-5.4.3-04"
       ],
-      "text": "Where a special order is priced above the variable cost per unit and the business has spare capacity, accepting it adds its contribution to profit, because the fixed costs are being paid whether or not the order is taken.",
+      "text": "A special order is worth taking when the revenue it brings in exceeds every cost it actually causes - its variable cost, plus any setup, extra labour, delivery or other fixed cost incurred only because of this order - and when the capacity it uses would not otherwise have earned more. Where both hold, the order improves profit or reduces a loss. The fixed costs the business would pay anyway are not part of that comparison, but the ones the order creates are.",
       "claim_type": "causal",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -914,7 +935,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-12 after review SR-9609-5.4-CODEX-R2. The original reduced the test to price above variable cost plus spare capacity, which omits order-specific incremental costs and the opportunity cost of the capacity."
+      ],
+      "revised_at": "2026-09-12"
     },
     {
       "claim_id": "CLM-9609-5.4-062",
@@ -1242,12 +1266,12 @@
       "objective_ids": [
         "OBJ-9609-5.4.4-03"
       ],
-      "text": "The limitations do not make break-even analysis useless; they set the weight it can bear. It is strong for comparing one option with another under the same assumptions, and weaker as a prediction of what will actually happen.",
+      "text": "The limitations set the weight break-even analysis can bear. It is at its most useful for isolating the arithmetic effect of changing one stated input while the others are held where they are, which is what makes it a sensitivity test. It is weakest as a prediction, because then the assumptions are the answer. Isolating an effect is not the same as proving an option better: the inputs held constant may themselves respond to the change - a price rise can move volume, a cheaper input can move quality - so the comparison has to be finished by asking which held-constant figures would not in fact hold.",
       "claim_type": "evaluative",
       "provenance": "generated_gap",
       "evidence": [],
       "derived_from_claim_ids": [],
-      "revision": 1,
+      "revision": 2,
       "verification": {
         "status": "unverified",
         "method": "Authored originally against the 9609 v2 syllabus scope under standard v0.2.0-draft. Requires independent semantic review (RS-28) before publication.",
@@ -1256,7 +1280,10 @@
         "confidence": 0.95
       },
       "publishable": false,
-      "notes": []
+      "notes": [
+        "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. The original said the assumptions 'largely cancel out' when two options are compared. They do not: an assumption can be wrong in different directions under each option, which is exactly what this topic's own price-rise evaluation says."
+      ],
+      "revised_at": "2026-09-10"
     }
   ]
 }

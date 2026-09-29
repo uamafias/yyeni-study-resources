@@ -1,0 +1,113 @@
+{
+ "unit_id": "CU-9618-10.3.1",
+ "title": "Text files in pseudocode",
+ "objective_ids": [
+  "OBJ-9618-10.3.1-01",
+  "OBJ-9618-10.3.1-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_programming",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 380,
+  "target": 400,
+  "max": 800
+ },
+ "blocks": [
+  {
+   "block_id": "10.3.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Why programs use files, and how to read from and write to a text file in pseudocode.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "678bee3f530b9f4bb29aad442b62044aba29724f186ec58fd9ccf92b0a63c8cb"
+  },
+  {
+   "block_id": "10.3.1-b2",
+   "block_type": "definition",
+   "heading": "Why files are needed",
+   "text": "Variables and arrays live in memory, and memory is cleared when a program ends. A file stores data in secondary storage, so the data is kept after the program ends and can be read again later, by the same program or by another one. A shop that records each order in a file can total the day’s orders tomorrow; a shop that keeps them only in an array cannot.",
+   "claim_ids": [
+    "CLM-9618-10.3-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1
+   },
+   "authored_hash": "8fa2b8bd0642b41552a648f8b2aaccb92c793fe215539e08105e5a6d754ce899"
+  },
+  {
+   "block_id": "10.3.1-b3",
+   "block_type": "process",
+   "heading": "Opening, reading and closing",
+   "text": "A text file is opened with OPENFILE and a mode. READ reads lines from the start of the file. WRITE creates the file afresh, so anything already in it is lost. APPEND adds new lines to the end of an existing file. EOF(<file>) returns TRUE when there are no more lines to read, so a loop that reads a whole file tests NOT EOF(<file>) before each READFILE. Every file that is opened is closed with CLOSEFILE and the same file name before the module ends.",
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "d1cedd887fd9026bbba8f2d6959b42e325833fda8f67897402740b74e6da1e69"
+  },
+  {
+   "block_id": "10.3.1-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example: counting the lines that are not blank",
+   "text": "The file Orders.txt holds one order per line, with some blank lines between days. To count the orders, declare a line variable and a counter, set the counter to 0, and open the file for READ. Then use a pre-condition loop, WHILE NOT EOF(\"Orders.txt\"), because the number of lines is not known in advance: read one line, and add 1 to the counter only if the line is not the empty string. After the loop, close the file. The counter now holds the number of orders. Each part does one job: the mode says what the program will do with the file, the EOF test stops the loop at the last line, and the IF inside the loop skips the blank lines.",
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "6f7b5a350d2fc770f300468d5726216c8c51a88128466fd20400a4aa51fceaf3"
+  },
+  {
+   "block_id": "10.3.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "A literal file name is a string, so it is written in quotation marks: OPENFILE \"Orders.txt\" FOR READ. An identifier that holds a file name is written without them: if a parameter FileName holds \"Orders.txt\", the statement is OPENFILE FileName FOR READ. Putting quotation marks round FileName would make the program look for a file called FileName. Opening a file in WRITE mode to add to it is the other common slip, because WRITE starts the file again and the old lines are lost.",
+   "claim_ids": [
+    "CLM-9618-10.3-004",
+    "CLM-9618-10.3-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-004": 1,
+    "CLM-9618-10.3-002": 1
+   },
+   "authored_hash": "22abecc71aa2614eed5a2453be006dc7ad5d26386629abb3e0998aa0cd23bbc9"
+  }
+ ],
+ "word_count": 400,
+ "qa_status": "review_required",
+ "notes": [
+  "Structural exemplar. Take its shape, not its length: your word budget is in the work order."
+ ]
+}

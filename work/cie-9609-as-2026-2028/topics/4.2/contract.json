@@ -89,13 +89,23 @@
       "min": 4100,
       "max": 7900
     },
-    "item_budget": 31,
+    "item_budget": 40,
     "tier_distribution": {
       "2": 2,
       "3": 5
     },
     "exposure_classes": {},
-    "rarely_examined_objective_ids": []
+    "rarely_examined_objective_ids": [],
+    "item_budget_note": "Set to 40 on 2026-09-12 from the live bank, not from a planning estimate: five items per assessable objective across thirty-six flashcards, plus four performance tasks that carry the AO4 practice time. The Stage 3 figure of 31 predated authoring. C-42 fails the build if this number and the bank ever disagree.",
+    "excluded_constructs": [
+      "economic order quantity",
+      "EOQ",
+      "ABC inventory analysis",
+      "materials requirements planning",
+      "critical path analysis",
+      "network diagram"
+    ],
+    "excluded_constructs_reason": "Beyond AS 4.2, or belonging to A Level project management. Syllabus 4.2 names buffer inventory, re-order level, lead time, simple inventory control charts, supply chain management, JIT and JIC, and stops there; order-quantity optimisation and inventory classification schemes are not required and would crowd out the depth the named content needs. Recorded before authoring so the deterministic suite can enforce scope from the first draft."
   },
   "source_and_research_permissions": {
     "status": "GRANTED",
@@ -140,8 +150,8 @@
     ]
   },
   "required_outputs": {
-    "content_units": 7,
-    "learning_items": 31,
+    "content_units": 2,
+    "learning_items": 40,
     "canonical_claim_ledger": "topics/4.2/claims/canonical_claim_ledger.json",
     "qa_report": "topics/4.2/qa_report.json",
     "reviews": [
@@ -150,7 +160,8 @@
       "pedagogy",
       "assessment",
       "items"
-    ]
+    ],
+    "note": "Set 2026-09-12 at authoring. The Stage 3 value of 7 for content_units was an objective count, not a content-unit count - the same defect found in the 5.2 and 5.4 contracts. Topic 4.2 has two sub-topics, 4.2.1 and 4.2.2, so it has two content units."
   },
   "authoring_position": {
     "source_coverage_actions": {
@@ -163,5 +174,10 @@
     "RS-15 core notes carry only syllabus-required content; enrichment is separately labelled",
     "RS-22 every quantitative objective has formula, units, worked calculation, interpretation and limitations",
     "RS-31 publication blocked while any mandatory objective is uncovered or any required review is missing"
+  ],
+  "checked_under_standard_version": "0.2.0-draft",
+  "notes": [
+    "Every objective in this topic is classed unmeasured_bullet_level in curriculum/exam-exposure.json: the Stage 4 probe measured member-level naming only, so no exposure class and no required subtypes apply here and no subtype waiver is needed. The item bank is built to the framework hard rules instead.",
+    "The inventory control chart required by OBJ-9609-4.2.1-04 is presented as a generated table of plotted points. build/render_chart.py renders break-even charts only, and RS-47 forbids hand-drawn depictions, so the coordinates are computed and tabulated rather than drawn."
   ]
 }

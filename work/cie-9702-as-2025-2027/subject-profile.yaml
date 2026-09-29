@@ -1,0 +1,233 @@
+profile_id: yyeni-subject-physics-as-v0.1.0
+version: 0.1.0-draft
+status: draft
+subject_name: Physics (Cambridge International AS Level 9702)
+language_variant: British English
+purpose: >-
+  The teaching model for AS Physics. Topics 1-11 are the content, examined twice: by forty one-mark multiple-choice
+  questions (Paper 1, 31%) and by structured questions of mostly 1-3 marks (Paper 2, 46%), both AO1 and AO2 equally.
+  Topic 12 is the practical skills, examined in the laboratory (Paper 3, 23%, AO3 only). Everything below follows
+  from the corpus analysis, operations/analysis/9702-as-physics-corpus-analysis.md.
+
+depth_model:
+  note_mode: full teaching depth
+  rationale: >-
+    The notes are the source the cards are cut from and the learner's offline text. Every equation is stated in
+    symbols with the meaning and unit of each symbol, then used on a small original example with its working.
+  words_per_objective: 200-320
+
+terminology_rules:
+  - Use the syllabus wording for every quantity, law and definition, and curriculum/glossary.json for every sense.
+  - Introduce a term before using it.
+  - Every quantity carries its unit; every unit uses the SI symbol (m s⁻², not m/s/s). Write powers of ten as × 10⁻³.
+  - Write equations in plain text with Unicode symbols (Ek = ½mv², I = I0 cos²θ). No code fences, no LaTeX.
+  - Working is carried to at least three significant figures; only the final answer is rounded, and it says to how many.
+  - Namibian and southern African situations where a situation is used; invented names and places only for people.
+
+answer_structures:
+  DEF: ["definition|defined|means|meaning|law|equation|symbol|symbols|unit|units"]
+  FEATURE: ["feature|features|property|properties|point|points|characteristic|characteristics"]
+  DIST: ["difference|differences|whereas|contrast|distinction|both|while|unlike"]
+  PROC: ["order|sequence|first|then|step|steps|start", "equation|definition|definitions|measure|measured|reading|readings", "result|answer|gives|final|so"]
+  WHY: ["reason|purpose|why|because|so that|need|needed"]
+  MECH: ["how|because|so that|which|then|causes|cause"]
+  BEN: ["benefit|advantage|advantages", "because|so that|so"]
+  LIM: ["limitation|limitations|uncertainty|uncertainties|difficult|difficulty|error|errors", "because|so|which|effect|affects"]
+  APP: ["situation|given|this|here|case", "because|so|therefore|since"]
+  CHAIN: ["change|changes|if|when|increase|increases|decrease|decreases|doubles|halves|double", "because|so|therefore|since", "effect|result|factor|so the"]
+  EVAL: ["criterion|criteria|support|supports|consistent|justify|justified|judgement", "because|so|since|therefore", "value|values|data|percentage|uncertainty"]
+  CALC: ["equation|formula|working|substitution|substitute|step", "answer|result|final", "unit|units|significant figures"]
+  INTERP: ["gradient|area|intercept|value|values|reading|read|graph|trace|table", "means|shows|gives|so|represents"]
+  MISCON: ["error|mistake|confusion|confused|wrongly|in fact|not the same|instead"]
+  SYNTH: ["links|both|together|combined"]
+  multiple_choice_set: ["key|correct option|correct answer", "distractor|distractors|wrong option|wrong options|error"]
+  short_answer: ["mark|marks|point|points", "unit|units|equation|reason|because"]
+  calculation: ["equation|formula", "substitution|substitute|working", "answer|unit|units|significant figures"]
+  practical_task: ["table|heading|headings|column|columns", "graph|gradient|intercept|uncertainty|uncertainties", "limitation|limitations|improvement|improvements|criterion|conclusion"]
+
+variant_register:
+  - term: collision
+    variants: [elastic, inelastic]
+    consequence: Momentum is conserved in both; kinetic energy only in an elastic collision.
+    teach_as: Say which kind of collision whenever kinetic energy is part of the answer.
+  - term: deformation
+    variants: [elastic, plastic]
+    consequence: Whether the object returns to its original shape when the load is removed.
+    teach_as: Never leave "deformation" unqualified where the answer depends on it.
+
+depictions:
+  chart_model: none
+  code_fence_languages: []
+  rule: >-
+    This subject has no chart renderer and no code. Data goes in markdown tables; a graph is described by its axes,
+    its shape and its key values, or given as a table of points for the learner to plot on their own graph paper;
+    a circuit or a force diagram is described in words or a table. C-41 fails any code fence.
+
+conditioned_mechanisms:
+  - mechanism_id: CM-9702-TERMINAL-VELOCITY
+    name: No force acts at terminal velocity
+    rationale: >-
+      At terminal velocity the forces on the object balance; they have not disappeared. Examiner reports record
+      candidates saying no force acts, or that drag rises as the object slows. Anywhere terminal velocity is
+      reached, the answer says that the resultant force is zero because the forces balance.
+    asserted_when:
+      - '\bterminal (velocity|speed)\b'
+      - '\b(reach|reaches|reached|constant)\b'
+    required_conditions:
+      - name: the forces balance, so the resultant is zero
+        any_of: ['\bresultant (force )?(is |becomes |of )?(zero|0)\b', '\bbalanc', '\bequal (in size )?(and|but) opposite\b', '\bno resultant\b', '\bzero resultant\b']
+  - mechanism_id: CM-9702-REPEATS-AND-ERROR
+    name: Repeating readings improves accuracy
+    rationale: >-
+      Repeating and averaging reduces the effect of random error only; a systematic error moves every reading the
+      same way and survives any number of repeats. Anywhere repeats are credited with better results, the answer
+      says which kind of error they reduce.
+    asserted_when:
+      - '\brepeat'
+      - '\b(averag|mean)\b'
+      - '\b(accura|error|reliab|better)'
+    required_conditions:
+      - name: the kind of error repeating reduces
+        any_of: ['\brandom\b', '\bsystematic\b', '\bscatter\b', '\bspread\b']
+
+prohibited_patterns:
+  - Do not teach A Level content (topics 12-25 of the syllabus). curriculum/scope-scan.json lists the constructs C-11 scans for.
+  - Do not go past a limit the syllabus states inside an AS outcome (the syllabus_guidance field of the objective).
+  - Do not use code fences or LaTeX; equations are plain text with Unicode symbols.
+  - Do not present invented readings as real measurements from any published source; practical data is ours and says so.
+  - Do not claim what examiners reward or what a paper contains; the words "examiner" and "mark scheme" do not appear in learner-facing text.
+
+glossary_homonyms:
+  - term: displacement
+    senses: [distance moved in a stated direction (kinematics), distance of a point from its rest position (waves)]
+    rule: In topics 7 and 8 displacement always means the wave sense; say so the first time in each unit.
+  - term: resistance
+    senses: [electrical resistance V/I, air resistance (a drag force)]
+    rule: Resistance alone means electrical resistance. The force is always "air resistance" or "drag".
+  - term: moment
+    senses: [turning effect of a force, an instant of time]
+    rule: Use "instant" for time, so moment only ever means a turning effect, and never write it for momentum.
+  - term: power
+    senses: [rate of doing work, a power of ten]
+    rule: Say "power of ten" in full; power alone is the rate of doing work.
+
+slot_plan:
+  note: >-
+    CR-006. The slot plan for this subject, read by build/make_work_order.py. Topics 1-11 are examined on Papers 1
+    and 2, which both assess AO1 and AO2 equally and no AO3; topic 12 is examined on Paper 3, which assesses AO3
+    only (syllabus page 14). So a content topic is balanced against 50/50/0, the practical topic against 0/0/100,
+    and the subject total answers to 40/40/20. Paper 2 is a calculation paper (Calculate, Determine and Show carry
+    most of its marks), so every "recall and use" objective has three calculation cards; Paper 1 is modelled by a
+    multiple-choice set in every content topic.
+  subtypes_by_objective_type:
+    phys_definition: [DEF, CALC]
+    phys_description: [DEF, FEATURE]
+    phys_concept: [DEF, MECH]
+    phys_quantitative: [DEF, CALC, CALC, CALC]
+    phys_comparison: [DEF, DIST]
+    phys_explanation: [DEF, MECH]
+    phys_graph: [INTERP, INTERP, CALC]
+    phys_experiment: [PROC, LIM]
+    phys_derivation: [PROC, CALC]
+    prac_mmo: [PROC, WHY]
+    prac_presentation: [APP, INTERP]
+    prac_analysis: [CALC, INTERP, EVAL]
+  subtypes_by_tier: {1: [], 2: [], 3: [APP], 4: [APP]}
+  high_tariff: {threshold: 99, adds: []}
+  command_words_by_subtype:
+    DEF: [Define, State]
+    FEATURE: [State, Describe]
+    DIST: [State, Explain, Compare]
+    PROC: [Describe, Show, Explain]
+    WHY: [Explain, State]
+    MECH: [Explain, Describe]
+    BEN: [Explain, State]
+    LIM: [Describe, Explain, Suggest]
+    APP: [Explain, Determine, Suggest, Justify]
+    CHAIN: [Explain, State]
+    EVAL: [Explain, Justify, Describe]
+    CALC: [Calculate, Determine, Show, Estimate]
+    INTERP: [Determine, Sketch, State, Explain]
+    MISCON: [Explain, State]
+    SYNTH: [Explain, Calculate]
+  tariff_overrides:
+    'Describe': 2
+    'MECH:Explain': 2
+    'CHAIN:Explain': 2
+    'EVAL:Explain': 2
+    'LIM:Describe': 2
+    'PROC:Describe': 3
+  tariff_override_reasons:
+    Describe: >-
+      Describe is bimodal: 1-2 marks on Paper 2, 4 marks on Paper 3, where it asks for four limitations or four
+      improvements. A card models the 2-mark form; the Question 2 practical task models the 4-mark lists.
+    'PROC:Describe': >-
+      Describing an experiment or a derivation is modelled at 3 marks: what is measured, how, and what is calculated
+      from it.
+    'MECH:Explain': >-
+      An explanation card is modelled at 2 marks, the cause and its effect; Explain runs 1-3 in the corpus (modal 1),
+      and a 1-mark Explain is a statement.
+  ao_by_objective_type:
+    '*': {DEF: [AO1], FEATURE: [AO1], DIST: [AO1], PROC: [AO1], WHY: [AO1], MECH: [AO2], BEN: [AO2], LIM: [AO2],
+          APP: [AO2], CHAIN: [AO2], EVAL: [AO2], CALC: [AO2], INTERP: [AO2], MISCON: [AO1], SYNTH: [AO2]}
+    phys_derivation: {PROC: [AO2]}
+  ao_by_paper:
+    '1+2': {AO3: AO2}
+    '3': {AO1: AO3, AO2: AO3}
+  topic_targets_by_paper:
+    '1+2': {AO1: 50, AO2: 50, AO3: 0}
+    '3': {AO1: 0, AO2: 0, AO3: 100}
+  misconception_slots: one_per_entry
+  top_up: [[AO2, CALC], [AO2, APP], [AO2, CHAIN], [AO1, DEF], [AO1, FEATURE], [AO1, DIST], [AO1, WHY]]
+  performance_tasks:
+    - item_type: multiple_choice_set
+      papers: ['1']
+      brief: >-
+        A set of {n} four-option multiple-choice questions on this topic in the style of Paper 1, one mark each:
+        about half recall and half application or calculation, every distractor built from a known error (the
+        misconception register first), the key and the reason each distractor is wrong on the back.
+    - item_type: short_answer
+      papers: ['2']
+      brief: >-
+        A Paper 2 style structured question: four or five linked parts around one situation (define or state,
+        calculate, explain), about 8 marks, each part with its own mark allocation.
+      ao_split: {AO1: 4, AO2: 4}
+    - item_type: calculation
+      papers: ['2']
+      brief: >-
+        A multi-step calculation set in a practical or everyday situation (about 5 marks): the equation in symbols,
+        the substitution, each intermediate value to three significant figures, the answer with its unit and a
+        justified number of significant figures.
+      ao_split: {AO1: 1, AO2: 4}
+    - item_type: practical_task
+      papers: ['3']
+      brief: >-
+        A Paper 3 Question 1 style task (20 marks): an experiment described in words, with a set of our readings of
+        the independent and dependent variables. The learner says how each reading would be taken and repeated,
+        draws up the table (quantity / unit headings, a calculated column, consistent raw data, justified significant
+        figures), plots the graph on their own graph paper against the stated conditions, finds the gradient and the
+        intercept, and uses them to find the constants of a given equation, with units.
+      ao_split: {AO3: 20}
+    - item_type: practical_task
+      papers: ['3']
+      brief: >-
+        A Paper 3 Question 2 style task (20 marks): an experiment described in words whose method is deliberately
+        inaccurate, with two sets of our readings. The learner estimates an absolute uncertainty from repeats and
+        turns it into a percentage uncertainty, calculates a constant twice and tests a suggested relationship
+        against a criterion they state first, then gives four limitations and four improvements, each tied to the
+        measurement it affects.
+      ao_split: {AO3: 20}
+    - item_type: practical_task
+      papers: ['3']
+      brief: >-
+        A second Paper 3 Question 1 style task (20 marks), set in a different area of physics from the first (if the
+        first is mechanical, this one is electrical, optical or thermal): the same table, graph, gradient, intercept
+        and constants, from a different experiment described in words with our readings.
+      ao_split: {AO3: 20}
+    - item_type: practical_task
+      papers: ['3']
+      brief: >-
+        A second Paper 3 Question 2 style task (20 marks), in a different area of physics from the first: an
+        inaccurate method with two sets of our readings, a percentage uncertainty, a test of a suggested relationship
+        against a stated criterion, and four limitations with four matching improvements.
+      ao_split: {AO3: 20}

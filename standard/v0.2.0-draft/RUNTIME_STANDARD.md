@@ -127,6 +127,40 @@ deliberate choice, recorded by Vitalis on 2026-09-08: a bar of "zero open issues
 does not converge, and a pipeline that cannot converge cannot run at scale. Every issue that ships open MUST remain
 open in the qa report — released is not the same as resolved, and a released topic carries its debt visibly.
 
+**RS-43 - Conditioned mechanisms carry their conditions.** Where a subject registers a mechanism whose
+conclusion holds only under stated conditions, every claim, content block and learning item that asserts that
+mechanism MUST carry every registered condition. Repairing a condition into one artefact while parallel
+artefacts teach the mechanism unconditioned leaves the defect in place. The register lives in the subject
+profile under `conditioned_mechanisms`; C-37 enforces it.
+
+**RS-44 - An answer may not supply its own facts.** A canonical answer or its marking guidance MUST NOT assert
+a completeness fact - that a figure is the only, total or complete cost, or that no other factor applies -
+unless the learner-visible prompt establishes it, or the answer makes its recommendation explicitly conditional
+on checking it. An answer that invents its decisive fact rewards a learner for doing the same.
+
+**RS-45 - Derived metadata is recomputed, never edited.** Every count, series total, maximum tariff, command
+mix and exposure class in derived curriculum metadata MUST be reproducible from the evidence records it derives
+from, and MUST satisfy the definitions the file itself states. A superseded figure MUST be removed, not
+retained beside the new one: two figures in one file is two sources of truth, and the wrong one will be read.
+
+**RS-46 - Quantities are named in their own units.** A currency amount MUST NOT be expressed in physical units,
+nor a count in currency, and a figure that cannot be derived from the stated data MUST NOT be asserted. A
+margin of safety is a number of units; a profit is an amount of money; break-even is a level of business
+output and says nothing about what an owner personally receives.
+
+**RS-47 - Depictions are generated, not authored.** A learner-visible depiction of declared data - a chart,
+graph, diagram or plotted figure - MUST be generated from that data by the build, never drawn by hand beside it.
+The generator is the single source of the picture, and the published depiction must be byte-identical to what
+regenerating it produces. A check that verifies a figure's declared parameters against the arithmetic stated
+about them has not looked at the picture: the parameters and the prose can both be right while the drawing shows
+lines that never meet.
+
+**RS-48 - Practice texts are original and declared.** A task answered from a text - a comprehension passage, a
+summary source, a pair of texts for directed writing - names that text by id. The text is held in the topic, is
+written for the purpose, declares itself original, and sits inside the length the modelled task specifies. An
+official assessment text, or any published text, is never reproduced as practice material: mine the demand,
+write the text yourself.
+
 **RS-31 — Hard release gates.** A draft MUST NOT be published while any mandatory objective is missing, any critical factual or scope defect is unresolved, any publishable claim lacks required verification, any required reviewer has rejected the build, or any deterministic blocker remains.
 
 **RS-32 — Reproducible release.** Every release MUST have a build manifest recording standard version, profile versions, syllabus version, source hashes, objective-map version, model or agent identifiers where available, counts calculated from the final artifact, QA results, output hashes, and release status.
@@ -169,7 +203,13 @@ Publication is blocked by any of the following:
 - an objective with no command-word-shaped practice (RS-37);
 - a canonical answer that cannot be reconstructed from the topic's content units (RS-39);
 - coverage satisfied only by mappings that fail RS-40;
-- any block or item left stale by a claim revision (RS-41).
+- any block or item left stale by a claim revision (RS-41);
+- a registered conditioned mechanism asserted without its conditions (RS-43);
+- a canonical answer resting on a completeness fact its prompt does not supply (RS-44);
+- derived exposure metadata that does not recompute from its evidence (RS-45);
+- a quantity named in units it is not measured in (RS-46);
+- a depiction that is not byte-identical to what its declared data renders to (RS-47);
+- a practice text that is missing, undeclared, not original or outside its task's length (RS-48).
 
 ## 6. Runtime completion statement
 

@@ -1,0 +1,111 @@
+{
+  "unit_id": "CU-9609-3.2.3",
+  "title": "Sampling: why it is necessary and where it goes wrong",
+  "objective_ids": [
+    "OBJ-9609-3.2.3-01"
+  ],
+  "level": "AS Level",
+  "core_status": "core",
+  "objective_type": "business_relationship_impact",
+  "depth_tier": 2,
+  "word_budget": {
+    "min": 450,
+    "target": 750,
+    "max": 1200
+  },
+  "qa_status": "review_required",
+  "notes": [
+    "Authored 2026-09-12 at Stage 11 under standard v0.2.0-draft.",
+    "All claims are generated_gap and unverified; publication blocked pending RS-28 review and RS-13 approval.",
+    "RS-22: the quantitative content here carries its formula, the meaning of each term, a worked calculation in N$ and units, an interpretation and its limitations. The margin-of-error rule is stated as the approximation it is; the underlying statistics are beyond AS and are not taught.",
+    "Scope call: random and quota selection are named because the limitation the syllabus asks for - that a sample may not represent the population - cannot be explained without saying what reduces the risk. Sampling technique is not taught beyond that."
+  ],
+  "blocks": [
+    {
+      "block_id": "3.2.3-b1",
+      "block_type": "learner_objective",
+      "heading": "What this section covers",
+      "text": "Explain why market research is carried out on a sample rather than on a whole population, and analyse the limitations that follow from working with a sample.",
+      "claim_ids": [],
+      "context_tags": [],
+      "assessment_objectives": [
+        "AO1"
+      ],
+      "claims_seen": {},
+      "authored_hash": "73239becc6ccab3b6ba7d7800218602f3d832db0cbbec0eca6485c084b83b49c"
+    },
+    {
+      "block_id": "3.2.3-b2",
+      "block_type": "definition",
+      "heading": "Population, sample, and what one says about the other",
+      "text": "The **target population** is everyone the findings are meant to describe - all households in a town, all buyers of a product, all visitors to a park. The **sample** is the part of that population actually researched, and **sampling** is the process of selecting it.\n\nThe whole method rests on one step: a result measured on the sample is used as an estimate of the result that would have been obtained from the whole population. Everything that can go wrong with sampling goes wrong at that step.",
+      "claim_ids": [
+        "CLM-9609-3.2-021"
+      ],
+      "context_tags": [],
+      "assessment_objectives": [
+        "AO1"
+      ],
+      "claims_seen": {
+        "CLM-9609-3.2-021": 1
+      },
+      "authored_hash": "779bb609b221cf4fb161e2a0f54d81c9386eef3f7b8db2bb861f7f3141a6b3f4"
+    },
+    {
+      "block_id": "3.2.3-b3",
+      "block_type": "components",
+      "heading": "Why a sample is necessary",
+      "text": "Researching an entire population is rarely practical. Populations are large: a bank asking every one of its 180 000 account holders would be running a national exercise, not a piece of market research. Contacting all of them costs more money and takes more time than the decision can justify - and the decision usually has a date by which it has to be made. And in many markets no complete list of the population exists to work from: there is no register of everyone who buys bread.\n\nSo the choice is not between a sample and a complete count. It is between a sample and no evidence at all.",
+      "claim_ids": [
+        "CLM-9609-3.2-022"
+      ],
+      "context_tags": [],
+      "assessment_objectives": [
+        "AO1",
+        "AO3"
+      ],
+      "claims_seen": {
+        "CLM-9609-3.2-022": 1
+      },
+      "authored_hash": "6a0f7030abcd1722804923a149f1f01d686803b21eab3038d1d0cb2e7945d33a"
+    },
+    {
+      "block_id": "3.2.3-b4",
+      "block_type": "worked_calculation",
+      "heading": "How far a sample result can sit from the truth",
+      "text": "A sample result differs from the population figure by **sampling error**. It tends to fall as the sample grows, but not in proportion to the sample.\n\nAs an approximate guide for a percentage result, the margin of error is about **1 divided by the square root of the sample size**.\n\nWork it through. A retailer in Ondangwa surveys 400 of the 62 000 households in its catchment about a new product at N$25. Of the 400, 148 say they would buy it.\n\nProportion saying yes = 148 / 400 = 0.37, that is **37%**.\n\nScaled to the catchment: 0.37 x 62 000 = **22 940 households**.\n\nNow the margin. The square root of 400 is 20, and 1 / 20 = 0.05 - about **5 percentage points either way**. So the true proportion is likely to sit somewhere between 32% and 42%, which is between 0.32 x 62 000 = 19 840 and 0.42 x 62 000 = 26 040 households.\n\nAt N$25 each, that is revenue of anywhere between 19 840 x 25 = N$496 000 and 26 040 x 25 = N$651 000 - a spread of N$155 000 on a single survey result. The point of the arithmetic is that the estimate is a range, and a business that plans for the midpoint is planning for a figure the research did not establish.\n\nNarrowing the range costs. To halve the margin to about 2.5 points the sample has to reach about 1 600, because the square root of 1 600 is 40 and 1 / 40 = 0.025. Four times the fieldwork, four times the cost, for half the margin. That diminishing return is why most commercial samples stop in the hundreds.",
+      "claim_ids": [
+        "CLM-9609-3.2-023",
+        "CLM-9609-3.2-021"
+      ],
+      "context_tags": [],
+      "assessment_objectives": [
+        "AO2",
+        "AO3"
+      ],
+      "claims_seen": {
+        "CLM-9609-3.2-023": 1,
+        "CLM-9609-3.2-021": 1
+      },
+      "authored_hash": "806b965bfbfafbef3f0aaa2aba685900f594e8cff14395973ba3aea7510da529"
+    },
+    {
+      "block_id": "3.2.3-b5",
+      "block_type": "limitation",
+      "heading": "The limitation that size does not fix",
+      "text": "Sampling error is the manageable problem. The serious one is **bias**: the people in the sample differing systematically from the population.\n\nSuppose those 400 households were approached at a shopping centre on two Saturday mornings. Everyone in the sample was at a shopping centre, on a weekend, and willing to stop and answer questions. Households without transport, households working weekends and people who walk past surveys are all under-represented. Raising the sample to 1 600 at the same shopping centre does not correct any of that: it reproduces the same bias more precisely, and the narrower margin of error makes the result look more trustworthy than it is.\n\nTwo ways of selecting reduce the risk. Choosing respondents **at random** from the whole population gives every member a known chance of selection, so no group is systematically left out - though it needs a list of the population to draw from, which is often what is missing. Setting **quotas** that match proportions already known about the population - by age, by area, by income band - forces the sample to resemble the population on those characteristics, though it can still be unrepresentative on a characteristic nobody set a quota for.\n\nNeither removes **non-response**. People who decline to answer are not a random subset of those approached, and the research cannot measure how they differ, because they did not answer. That is why a response rate is reported alongside a finding: it is the reader's only signal of how much of the population the finding is silent about.",
+      "claim_ids": [
+        "CLM-9609-3.2-024"
+      ],
+      "context_tags": [],
+      "assessment_objectives": [
+        "AO3"
+      ],
+      "claims_seen": {
+        "CLM-9609-3.2-024": 1
+      },
+      "authored_hash": "a98ffc9645360648e51f5860b83b01540ea505ecf9bd21b3c8df93b59b95bcf0"
+    }
+  ],
+  "word_count": 799
+}

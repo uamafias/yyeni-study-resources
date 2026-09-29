@@ -88,13 +88,31 @@
       "min": 3400,
       "max": 6600
     },
-    "item_budget": 26,
+    "item_budget": 41,
     "tier_distribution": {
       "2": 2,
       "3": 4
     },
     "exposure_classes": {},
-    "rarely_examined_objective_ids": []
+    "rarely_examined_objective_ids": [],
+    "item_budget_note": "41 items: 37 flashcards and 4 performance tasks, about six per assessable objective. Planned at 26 in Stage 5; raised during authoring because every objective in this topic carries Analyse or Calculate and several carry Evaluate, so each needs practice in its own command-word shape as well as recall. C-42 fails the build if this number and the live bank disagree.",
+    "excluded_constructs": [
+      "standard cost",
+      "standard costing",
+      "material price variance",
+      "material usage variance",
+      "labour rate variance",
+      "labour efficiency variance",
+      "sales volume variance",
+      "sales mix variance",
+      "absorption costing",
+      "activity-based costing",
+      "investment appraisal",
+      "net present value",
+      "discounted cash flow",
+      "payback period"
+    ],
+    "excluded_constructs_reason": "Beyond AS or belonging to another topic. AS 5.5.2 requires variances computed from budgeted against actual figures - revenue, individual costs and profit - and their interpretation. The named sub-variances of standard costing are an A Level technique and are not taught here. Recorded before authoring so the deterministic suite can enforce scope from the first draft."
   },
   "source_and_research_permissions": {
     "status": "GRANTED",
@@ -139,8 +157,8 @@
     ]
   },
   "required_outputs": {
-    "content_units": 6,
-    "learning_items": 26,
+    "content_units": 2,
+    "learning_items": 41,
     "canonical_claim_ledger": "topics/5.5/claims/canonical_claim_ledger.json",
     "qa_report": "topics/5.5/qa_report.json",
     "reviews": [
@@ -149,7 +167,8 @@
       "pedagogy",
       "assessment",
       "items"
-    ]
+    ],
+    "note": "Set 2026-09-12 at Stage 11. The Stage 5 value of 6 for content_units was an objective count, not a content-unit count - the same defect corrected in the 5.2 and 5.4 contracts. This topic has two sub-topics, 5.5.1 and 5.5.2, and therefore two content units."
   },
   "authoring_position": {
     "source_coverage_actions": {
@@ -162,5 +181,8 @@
     "RS-15 core notes carry only syllabus-required content; enrichment is separately labelled",
     "RS-22 every quantitative objective has formula, units, worked calculation, interpretation and limitations",
     "RS-31 publication blocked while any mandatory objective is uncovered or any required review is missing"
-  ]
+  ],
+  "subtype_waivers": [],
+  "exposure_classes_basis": "Every objective in this topic is classed unmeasured_bullet_level in exam-exposure.json, which sets no required_subtypes, so C-27 has no floor to enforce and no waiver is needed. Coverage was planned from the registry command words and the framework's hard rules instead.",
+  "checked_under_standard_version": "0.2.0-draft"
 }

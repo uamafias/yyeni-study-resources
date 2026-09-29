@@ -1,0 +1,68 @@
+name        = "cambridge-igcse-question-bank"
+description = "Question Banks library, IGCSE: Subject (code)/YYYY/Series (Variant n)/"
+
+# Why this exists separately from cambridge-question-bank:
+#
+#   1. IGCSE has no AS/A Level split, so there is no {level} segment. The AS rule's
+#      folder template would file every IGCSE paper under "Cambridge AS and A Level",
+#      which is the wrong tree.
+#   2. The AS rule carries [filter] include = { code = "9609" }, so it would reject
+#      0450 and 0455 outright.
+#   3. IGCSE paper numbers do NOT encode a qualification level. Paper 1 and Paper 2 are
+#      both compulsory in 0450; in the sciences papers run 1-6 by tier and by practical.
+#      Mapping paper -> level, as the AS rule does, would be meaningless here.
+#
+# Subject safety. There is no [filter] lock. Instead the folder name is looked up from an
+# IGCSE-ONLY table: a file whose code is not an IGCSE code we hold cannot resolve a folder
+# name and lands in "_unknown-subject", where it is visible. This matters because the
+# aggregators mis-serve files - the 9609 harvest found the business-9609/2020-march index
+# actually serving Chemistry 9701 papers. Check `harvest tree` before every run.
+
+source = "filename"
+
+# --- Papers: question paper, mark scheme, insert (in, and i2 = second insert, 0460), source files ---
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>qp|ms|in|i2|sf|ci)_(?P<paper>\d)(?P<variant>\d)'''
+folder   = "Question Banks/Cambridge Curricula/IGCSE/{folder_name}/{yyyy}/{series_name} (Variant {variant})"
+filename = "{code}_{series}{yy}_{kind}_{paper}{variant}.pdf"
+
+# --- Papers with no variant digit (older series, and single-variant subjects) -
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>qp|ms|in|i2|sf|ci)_(?P<paper>\d)$'''
+folder   = "Question Banks/Cambridge Curricula/IGCSE/{folder_name}/{yyyy}/{series_name} (Variant 1)"
+filename = "{code}_{series}{yy}_{kind}_{paper}.pdf"
+
+# --- Examiner reports: one per series, covering every paper -------------------
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>er)'''
+folder   = "Question Banks/Cambridge Curricula/IGCSE/{folder_name}/Examiner Reports/{yyyy}"
+filename = "{code}_{series}{yy}_er.pdf"
+
+# --- Grade thresholds ---------------------------------------------------------
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>gt)'''
+folder   = "Question Banks/Cambridge Curricula/IGCSE/{folder_name}/Grade Thresholds/{yyyy}"
+filename = "{code}_{series}{yy}_gt.pdf"
+
+# --- Specimen material for a syllabus edition ---------------------------------
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_specimen_(?P<kind>sp|sm|si|sf|gt)_(?P<paper>\d)_(?P<edition>\d{4}-\d{4})'''
+folder   = "Question Banks/Cambridge Curricula/IGCSE/{folder_name}/Specimen/{edition}"
+filename = "{code}_specimen_{kind}_{paper}_{edition}.pdf"
+
+unresolved = "Question Banks/_unresolved"
+
+[derive]
+yyyy = "20{yy}"
+
+[map.series_name]
+from   = "series"
+values = { s = "May-June", w = "Oct-Nov", m = "March" }
+
+# IGCSE-only table. An AS/A Level code reaching this rule cannot resolve and is quarantined.
+[lookup.folder_name]
+from    = "code"
+file    = "_harvest/lookups/cambridge-igcse-subject-folders.csv"
+key     = "code"
+value   = "folder_name"
+default = "_unknown-subject"

@@ -136,6 +136,21 @@
       "date": "2026-09-08",
       "event": "Second review round: reject with 14 issues; RS-41 propagation gate added; topic 5.2 repaired again",
       "note": "Root cause of most findings: the first repair corrected claims without propagating to the items and blocks citing them. RS-41 + check C-29 make that mechanical - claim revisions leave citing artefacts stale until re-authored. Bootstrapped from repair history, C-29 found 22 stale artefacts and named every propagation defect the reviewer had found. Also fixed: C-28's self-referential manifest, the delivery schedule shedding the rarely-examined set against RS-05, a Calculate demand the registry omitted though the evidence map recorded it, and the leasing variant gap. Items 77->79, claims 67->68. 30 checks pass, 33 tests pass, decision hold pending re-review."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Topic 5.4 Costs authored from scratch under standard v0.2.0-draft - all 31 checks pass first time",
+      "note": "The first topic written under the rules rather than repaired into them. 59 claims, 4 content units (5,340 words), 88 learning items (84 flashcards + 4 performance tasks), 5,422-word rendered notes. Every artefact carries claims_seen and authored_hash from creation, so RS-41 is satisfied by construction. Three lessons from the 5.2 reviews were applied BEFORE authoring: the contract's required_outputs corrected from an objective count to a content-unit count, twelve excluded constructs recorded so the suite could enforce scope from the first draft, and the registry's command words reconciled against observed paper demand (six objectives gained a command word the evidence already showed). RS-08: 'contribution' finally has a canonical definition and a documented contextual variation. C-18 was corrected during the build - it was testing AO4 by item count, which the framework's own rule forbids."
+    },
+    {
+      "date": "2026-09-10",
+      "event": "Topic 5.4 review round 1 returned reject (2 critical, 6 high, 5 medium); repaired; 33 of 35 checks pass",
+      "note": "The measurement: authoring under v0.2.0 gave 8 blocking issues against 5.2's 13, a 38% reduction. Every defect class the rules target was absent; what remained was subject-matter accuracy - a collapsed cost classification, owner's drawings as a fixed cost, an invalid 'assumptions cancel' claim, a wrong indifference volume. Conclusion recorded: review is a permanent per-topic cost, not a gate the framework outgrows. Four checks built from the findings (C-31 modality coverage, C-32 arithmetic verification, C-33 self-containment, C-34 interpretation vs check), each verified to reproduce its finding before repair. C-30 rebuilt - its first design could never fire. 15 evidence records re-mapped after the homonym false positives; the rest of the corpus is now flagged as token-matched and unvalidated. Items 88->91."
+    },
+    {
+      "date": "2026-09-12",
+      "event": "Topic 5.4 review round 2: 1 critical, 1 high, 3 medium, 2 low; repaired; 34 of 36 checks pass",
+      "note": "Blocking issues fell 8 -> 2 between rounds and both round-1 criticals are confirmed dead. The round-2 critical was a defect in my round-1 REPAIR: the graphical items stated the values they asked the learner to read and one chart was algebraically impossible (break-even at 4 000 units, labelled 2 400). C-31 had passed it because it matched chart vocabulary rather than verifying the chart. Two checks added: C-35 verifies a chart from declared parameters in context.chart and fails a give-away stem; C-36 fails a magnitude claim with no figure. Exposure for 5.4 fully rebuilt from semantically re-mapped evidence; the other eighteen topics remain token-matched and are flagged as unvalidated."
     }
   ]
 }

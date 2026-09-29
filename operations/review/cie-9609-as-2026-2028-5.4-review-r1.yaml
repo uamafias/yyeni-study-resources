@@ -1,0 +1,330 @@
+review_id: SR-9609-5.4-CODEX-R1
+reviewer_role: combined
+packet_hash_verified: true
+status: reject
+coverage_confirmed: >-
+  I traced all 21 assessable objectives from the registry in both directions after verifying all 18 packet entries and the detached manifest hash. OBJ-9609-5.4.1-01 is taught in CU-9609-5.4.1 blocks 5.4.1-b2 to b3 and practised by ITEM-9609-5.4-001-DEF to -004-APP. The decomposed cost-types container OBJ-9609-5.4.1-02 is taught in b4/b8 and practised by -005-DIST, -006/-007-DEF and -013/-014-DEF; member -02-01 is taught in b4/b5/b7/b8 and practised by -006 to -012, while member -02-02 is taught in b4/b6/b8 and practised by -013 to -018. OBJ-9609-5.4.2-01 is taught in CU-9609-5.4.2 b2/b3 and practised by -019 to -022; semantic adequacy is not confirmed because b3, CLM-9609-5.4-032 and items -021/-022 contradict the earlier cost classification. OBJ-9609-5.4.2-02 is taught in b2/b6/b7/b9 and practised by -019/-023 to -026/-085; -03 is taught in b2/b4 and reinforced in later contribution blocks, and practised by -020/-027 to -030; -04 is taught in b5/b7/b9 and practised by -031 to -034; -05 is taught in b6/b9 and practised by -035 to -037/-085; and -06 is taught in b7/b8 and practised by -038 to -040/-085. OBJ-9609-5.4.3-01 is taught in CU-9609-5.4.3 b2/b3/b7 and practised by -041 to -044/-088; -02 is taught in b4/b7 and practised by -045 to -047/-086; -03 is taught in b5/b7 and practised by -048 to -051; and -04 is taught in b6 and practised by -052 to -055/-086. OBJ-9609-5.4.4-01 is taught in CU-9609-5.4.4 b2/b3 and practised by -056 to -059. The decomposed calculation-and-interpretation container OBJ-9609-5.4.4-02 is taught in b2/b4 to b9/b11 and practised numerically by -027/-028, -057, -060/-061, -063 to -079 and -084; member -02-01 is taught in b2/b4 to b8/b11 and practised by -057/-060 to -067/-084; -02 is taught in b4/b5/b7/b11 and CU-9609-5.4.2 b4, and practised by -027/-028/-068 to -071; -03 is taught in b4/b5/b11 and practised by -072 to -075/-084; and the rarely examined -04 is taught in b4/b5/b9 and practised numerically by -076 to -079/-084. However, adequacy is not confirmed for the graphical part of the container or its four members: the notes contain only prose about a chart, no chart is rendered, and no item supplies, draws or asks the learner to interpret one. OBJ-9609-5.4.4-03 is taught in b10 and practised by -080 to -083/-087, although the comparison mechanism in CLM-9609-5.4-085 and items -082/-083 is invalid. The reverse pass found an in-scope objective, prerequisite or assessment purpose for every substantive content-unit block and no excluded construct presented as core. The costing homonym is disambiguated in learner teaching, no consequential registered finance variant is invoked, and no unqualified jurisdiction-specific rule is taught; the assessment-evidence map itself nevertheless mishandles the contribution homonym. Nominal coverage therefore exists for every objective, but semantic coverage is not confirmed for OBJ-9609-5.4.2-01 or for the compulsory graphical dimension of OBJ-9609-5.4.4-02 and its members.
+reconstruction_test: >-
+  Using only the generated resource, I reconstructed a recall definition of margin of safety, 3-mark explanations on accurate cost information, direct versus indirect costs, cost monitoring and one break-even limitation, a calculation of contribution, break-even output and profit with units and meaning, an 8-mark analysis for an unfamiliar co-working business considering a discounted booking, a 12-mark evaluation of break-even analysis for a new bicycle-hire business, and an application to a context not used by the notes. The formula set, worked numbers, conditional special-order mechanism, contribution/profit boundary and five-part evaluation scaffold support those answers. Reliable reconstruction fails for OBJ-9609-5.4.2-01 because the resource first proves that a cost can be direct and fixed, then says full and contribution costing treat all direct costs alike and differ over both fixed and indirect costs. The numerical treatment of the rarely examined OBJ-9609-5.4.4-02-04 is full enough to reconstruct profit and loss at, below and above break-even, but neither it nor the other members of OBJ-9609-5.4.4-02 can be reconstructed as an actual graph-reading or graph-drawing performance because the packet contains no graph or graphical task. Particular canonical tasks also fail from the resource alone: ITEM-9609-5.4-042-CALC and -053-APP omit facts held only in preceding cards; -055-EVAL recommends acceptance without a variable cost; -084-DATA gives a wrong demand-loss threshold; and -087-SHOR requires the learner to treat owner's drawings as a fixed cost. The remaining objectives contain enough accurate material to construct strong answers, but the high and critical item-level defects below would still train non-credit-worthy reasoning if learned as written.
+issues:
+  - issue_id: SR-9609-5.4-CODEX-R1-001
+    severity: critical
+    category: accuracy
+    affected_ids:
+      - OBJ-9609-5.4.2-01
+      - CLM-9609-5.4-032
+      - CU-9609-5.4.2
+      - ITEM-9609-5.4-021-DIST
+      - ITEM-9609-5.4-022-APP
+    finding: >-
+      The central comparison of full and contribution costing collapses two independent cost classifications. It says the methods treat direct and variable costs alike and differ over fixed and indirect costs. Full costing includes all attributable and apportioned costs, while contribution costing includes variable costs: a direct fixed cost is therefore included in full cost but excluded from contribution cost, and a variable indirect cost is included in both even though it may still require allocation. The packet itself has already taught a dedicated supervisor's salary as direct and fixed, so the comparison is also internally contradictory.
+    evidence:
+      - >-
+        CLM-9609-5.4-032 says full costing shares out "fixed and indirect costs", contribution costing holds both back, and "direct and variable costs are treated the same way by both".
+      - >-
+        CU-9609-5.4.2 block 5.4.2-b3 and notes lines 98-102 repeat the claim; block 5.4.2-b6 also says contribution costing avoids allocation entirely.
+      - >-
+        CLM-9609-5.4-022, CU-9609-5.4.1 block 5.4.1-b4 and notes lines 40-46 explicitly use a supervisor dedicated to one line as a direct fixed cost, disproving the later rule.
+      - >-
+        ITEM-9609-5.4-021-DIST rewards the false grouping and ITEM-9609-5.4-022-APP identifies the N$7 gap between full and variable cost as a share of "fixed and indirect costs".
+      - >-
+        ICAEW's accounting guidance explicitly distinguishes variable production overheads from fixed production overheads: https://www.icaew.com/technical/corporate-reporting/corporate-reporting-resources/by-all-accounts/q-and-a/corporate-reporting-qa-april-2026
+    educational_consequence: >-
+      A learner can master the supplied distinction and still misclassify direct fixed and variable indirect costs, producing a wrong AO1 comparison and applying the wrong cost figure in AO2 decisions.
+    recommended_repair: >-
+      Rewrite CLM-032, block b3 and items -021/-022 around the single valid boundary: full costing assigns all costs to products, whereas contribution costing assigns variable costs to products and treats fixed costs as period costs. Use one direct-fixed and one variable-indirect example to preserve the two-axis classification, and remove the claim that contribution costing never allocates anything.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-002
+    severity: critical
+    category: accuracy
+    affected_ids:
+      - OBJ-9609-5.4.4-03
+      - ITEM-9609-5.4-087-SHOR
+    finding: >-
+      The lender checklist treats owner's drawings as a fixed cost whose omission lowers the profit break-even point. Drawings are a distribution or withdrawal by the owner, not a business expense, so they do not enter total cost or accounting-profit break-even. They may matter to a cash budget, but the notes explicitly distinguish break-even as a profit technique from cash flow.
+    evidence:
+      - >-
+        ITEM-9609-5.4-087-SHOR asks whether all fixed costs are included and names "Owner's drawings, insurance and bank charges" as omissions that each lower break-even.
+      - >-
+        CU-9609-5.4.4 block 5.4.4-b12 and notes line 363 say break-even is about profit and that a business can be above break-even yet run out of cash.
+      - >-
+        The IFRS Conceptual Framework states that distributions to holders of equity claims are not expenses: https://www.ifrs.org/content/dam/ifrs/publications/pdf-standards/english/2021/issued/part-a/conceptual-framework-for-financial-reporting.pdf
+    educational_consequence: >-
+      A learner following the canonical answer will overstate fixed cost, calculate the wrong break-even output and blur the examined distinction between profit and cash.
+    recommended_repair: >-
+      Remove owner's drawings from the fixed-cost checklist. If owner withdrawals are retained as a planning consideration, label them as a cash requirement outside accounting-profit break-even and direct the learner to a cash-flow forecast; keep insurance or other genuine period costs as the omission examples.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-003
+    severity: high
+    category: curriculum
+    affected_ids:
+      - OBJ-9609-5.4.4-02
+      - OBJ-9609-5.4.4-02-01
+      - OBJ-9609-5.4.4-02-02
+      - OBJ-9609-5.4.4-02-03
+      - OBJ-9609-5.4.4-02-04
+      - CU-9609-5.4.4
+    finding: >-
+      The compulsory graphical form is only described, not actually taught and practised as a visual representation. The notes promise calculation and interpretation "in numbers and on a chart" and the unit metadata says charts are drawn and read, but the packet renders no chart and no learning item supplies a graph, asks the learner to plot one, or requires a value to be read from one. Numeric mappings therefore make the parent and all four members look covered while leaving the graphical demand untested.
+    evidence:
+      - >-
+        OBJ-9609-5.4.4-02 requires calculation and interpretation of break-even output, contribution, margin of safety and level of profit "in numeric and graphic form".
+      - >-
+        CU-9609-5.4.4 block 5.4.4-b6 and notes lines 290-300 contain only prose descriptions and coordinates; there is no rendered chart to inspect.
+      - >-
+        The 88-item bank contains no prompt using chart, graph or draw and no graphical stimulus; all items mapped to the container and members are verbal or numerical.
+      - >-
+        CU-9609-5.4.4's own notes field says "break-even charts are drawn and read at AS", which the learner-facing artifact does not implement.
+    educational_consequence: >-
+      A learner may calculate every formula yet be unable to draw the three lines, identify profit or loss as a vertical gap, or extract break-even, margin of safety and profit from an unfamiliar exam graph. The rarely examined profit-level member is numerically deep but still lacks its required graphical transfer.
+    recommended_repair: >-
+      Add a fully labelled worked break-even chart tied to the Kaoko data, show how each line is plotted from values, and add at least one self-contained graphical task using an unseen chart that requires reading and interpreting break-even output, margin of safety and profit and relating contribution to the displayed values.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-004
+    severity: high
+    category: evaluation
+    affected_ids:
+      - OBJ-9609-5.4.3-04
+      - ITEM-9609-5.4-055-EVAL
+    finding: >-
+      The special-order evaluation recommends acceptance from a percentage of the usual price without supplying either the usual price or the variable cost. Seventy per cent of a price is not necessarily above variable cost, yet the canonical answer calls it "comfortably above" flour and packaging and makes that invented margin the decisive reason to accept.
+    evidence:
+      - >-
+        ITEM-9609-5.4-055-EVAL supplies only idle capacity for three mornings and an offer at 70% of usual price; it gives no cost or absolute price.
+      - >-
+        Its answer says "any price above the flour and packaging adds to profit, and 70% of the usual price is comfortably above that" even though the required comparison cannot be made from the case.
+      - >-
+        CLM-9609-5.4-061 makes price above variable cost a condition of the special-order mechanism; the item provides no evidence that this condition is met.
+    educational_consequence: >-
+      The model teaches the learner to manufacture a decisive case fact and to recommend an order that could have negative contribution, undermining AO2 evidence use and AO4 judgement.
+    recommended_repair: >-
+      Supply the normal price and all incremental costs so the 70% offer can be compared with variable cost, or make the recommendation explicitly conditional on that missing comparison. Do not state accept until positive incremental contribution is established.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-005
+    severity: high
+    category: quantitative
+    affected_ids:
+      - OBJ-9609-5.4.4-02
+      - OBJ-9609-5.4.4-02-01
+      - OBJ-9609-5.4.4-02-03
+      - OBJ-9609-5.4.4-02-04
+      - ITEM-9609-5.4-084-DATA
+    finding: >-
+      The data-response evaluation gives the wrong demand-loss threshold for the proposed price rise. With the packaging increase, holding price at N$34 gives N$10 contribution and N$5 900 profit at 14 500 litres. Raising price to N$36 gives N$12 contribution; its profit falls back to N$5 900 only at about 12 083 litres, a loss of about 2 417 litres, not 1 500. The erroneous figure is required by the marking guidance as the point at which the gain disappears.
+    evidence:
+      - >-
+        ITEM-9609-5.4-084-DATA correctly calculates N$5 900 profit without the price rise and N$34 900 with it at 14 500 litres, then says losing more than about 1 500 litres "wipes out the gain".
+      - >-
+        At 13 000 litres after a 1 500-litre loss, profit would still be (13 000 x N$12) - N$139 100 = N$16 900, which remains N$11 000 above the no-rise option.
+      - >-
+        Solving (N$12 x output) - N$139 100 = N$5 900 gives 12 083.33 litres, so the indifference loss from 14 500 is 2 416.67 litres.
+      - >-
+        The item's guidance explicitly requires "the figure at which the gain disappears", making this more than incidental commentary.
+    educational_consequence: >-
+      A learner who copies the model will misstate the price rise's demand tolerance by roughly 917 litres and may reverse an otherwise quantitative AO4 judgement.
+    recommended_repair: >-
+      Replace 1 500 with the correctly defined threshold of about 2 417 litres when comparing profit with the no-price-rise option, show the indifference calculation, and state which comparator is being used. Recheck the recommendation against that corrected sensitivity.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-006
+    severity: high
+    category: analysis
+    affected_ids:
+      - OBJ-9609-5.4.4-03
+      - CLM-9609-5.4-085
+      - CU-9609-5.4.4
+      - ITEM-9609-5.4-082-CHAIN
+      - ITEM-9609-5.4-083-EVAL
+    finding: >-
+      The resource says break-even assumptions largely cancel when two options are compared. Applying the same assumption does not make its error equal under both options: price, volume, product mix and variable cost can respond differently to the change being tested. The packet's own price-rise evaluation correctly says the unchanged-volume assumption is precisely what prevents the arithmetic from deciding between the options, contradicting the claimed cancellation mechanism.
+    evidence:
+      - >-
+        CLM-9609-5.4-085 and CU-9609-5.4.4 block 5.4.4-b10 say break-even is strong for option comparison because the assumptions "cancel out".
+      - >-
+        ITEM-9609-5.4-082-CHAIN requires the learner to argue that common errors cancel; ITEM-9609-5.4-083-EVAL says assumptions apply equally on either side of a proposed price or supplier change.
+      - >-
+        ITEM-9609-5.4-066-EVAL instead explains that a price rise changes the likely volume, so holding volume constant is not a common error and cannot establish whether the changed option is better.
+      - >-
+        The same non-cancellation applies to a product-mix or variable-cost response that differs between alternatives, both of which block b10 names as material limitations.
+    educational_consequence: >-
+      A learner may write a fluent but invalid AO3 chain and overstate the reliability of break-even comparisons exactly where sensitivity to different behavioural responses should qualify an AO4 conclusion.
+    recommended_repair: >-
+      Replace "cancel" with a narrower claim: break-even can isolate the arithmetic effect of changing one stated input while other inputs are held constant, which is useful for sensitivity testing but not proof that the option is better. Require evaluation of whether the held-constant inputs would respond differently under each option.
+    confidence: 0.99
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-007
+    severity: high
+    category: analysis
+    affected_ids:
+      - OBJ-9609-5.4.2-05
+      - OBJ-9609-5.4.3-01
+      - OBJ-9609-5.4.3-02
+      - CLM-9609-5.4-055
+      - CU-9609-5.4.3
+      - ITEM-9609-5.4-023-BEN
+      - ITEM-9609-5.4-037-EVAL
+      - ITEM-9609-5.4-044-CHAIN
+      - ITEM-9609-5.4-046-CALC
+    finding: >-
+      The pricing logic confuses an order's marginal effect with whether the business is profitable overall. Positive contribution improves profit or reduces loss whenever incremental revenue exceeds all incremental costs and no better use of capacity is displaced; the fixed costs do not first have to be covered by other sales. Conversely, a price above a full cost per unit calculated at current or budgeted output does not guarantee total profit unless the assumed sales volume and cost basis are achieved. The notes call the first false condition "not optional" and several model answers use it as the decisive test.
+    evidence:
+      - >-
+        CLM-9609-5.4-055 says a below-full-cost price adds to profit only where fixed costs are already covered by other sales, while also saying a price above full cost necessarily covers everything and adds to profit.
+      - >-
+        CU-9609-5.4.3 block 5.4.3-b4 and notes lines 194-201 repeat both propositions and call prior fixed-cost coverage an indispensable condition.
+      - >-
+        ITEM-9609-5.4-037-EVAL makes whether the rest of the order book covers fixed costs the decisive criterion; ITEM-9609-5.4-044-CHAIN and -046-CALC import the same unsupported condition.
+      - >-
+        ITEM-9609-5.4-045-CALC supplies the missing qualification correctly: the intended mark-up becomes profit only if the cost is complete and the product sells at that price.
+      - >-
+        ACCA guidance separates short-run positive incremental contribution from long-run recovery of all costs and says incremental fixed costs must also be included: https://www.accaglobal.com/content/dam/acca/global/PDF-students/2012s/sa_aug09_ironsv2.pdf
+    educational_consequence: >-
+      Learners may reject an order that would improve profit merely because other work has not yet covered fixed costs, or claim that a full-cost price guarantees profit without considering demand and the output basis. Both weaken special-order and pricing analysis.
+    recommended_repair: >-
+      Teach two separate tests. For a short-run order, compare incremental revenue with variable and any other incremental costs, then account for opportunity cost and qualitative effects; describe the result as increasing profit or reducing loss. For long-run viability, require total contribution to cover fixed costs at a realistic sales volume, and condition every full-cost price claim on that volume and cost estimate.
+    confidence: 0.99
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-008
+    severity: high
+    category: coherence
+    affected_ids:
+      - OBJ-9609-5.4.2-02
+      - OBJ-9609-5.4.2-06
+      - CLM-9609-5.4-034
+      - CU-9609-5.4.2
+      - ITEM-9609-5.4-024-LIM
+      - ITEM-9609-5.4-026-CHAIN
+    finding: >-
+      The full-costing limitation and its analysis card make continued overhead certain when a product is dropped, although only unavoidable common overhead remains. The next content block correctly says the conclusion changes if a warehouse, dedicated supervisor or other fixed cost disappears, but the canonical claim and standalone cards omit that decisive condition.
+    evidence:
+      - >-
+        CLM-9609-5.4-034 says a business that stops the product "still has the same overheads" without limiting the claim to unavoidable common costs.
+      - >-
+        CU-9609-5.4.2 block 5.4.2-b6 and notes line 134 repeat the certainty; ITEM-9609-5.4-024-LIM says the business "finds the overheads unchanged".
+      - >-
+        ITEM-9609-5.4-026-CHAIN gives no case fact about avoidability, yet its answer and guidance require the overheads to stay and be redistributed.
+      - >-
+        CU-9609-5.4.2 block 5.4.2-b7, notes line 146 and ITEM-9609-5.4-025-EVAL correctly identify avoidable fixed costs as the condition, creating an internal contradiction.
+    educational_consequence: >-
+      A learner can be trained to keep a product even where dedicated fixed costs exceed its contribution, and to write an unconditional causal chain that loses AO3/AO4 credit.
+    recommended_repair: >-
+      Add "if the allocated overheads are unavoidable and remain after discontinuation" to CLM-034, block b6 and ITEM-024. Supply that fact in ITEM-026 or make its required chain branch explicitly between unavoidable common overhead and avoidable product-specific fixed cost.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-009
+    severity: medium
+    category: evidence
+    affected_ids:
+      - OBJ-9609-5.4.4-01
+      - OBJ-9609-5.4.4-02-01
+      - OBJ-9609-5.4.4-02-02
+      - OBJ-9609-5.4.4-03
+      - EV-9609-M22-12-1b-0002
+      - EV-9609-W24-13-6b-0097
+      - EV-9609-S24-12-5a-0103
+    finding: >-
+      The exposure evidence has semantic false positives and wrong-granularity mappings. An evaluation of managers' contribution is mapped to the costing quantity contribution; a question on limitations of contribution costing is mapped to contribution inside the break-even container rather than to the contribution-costing limitation objective; and multiple uses, benefits and limitations of break-even analysis are mapped to break-even level of output rather than the meaning/importance or uses/limitations objectives. The resulting probed-high labels do not represent the objectives named.
+    evidence:
+      - >-
+        EV-9609-W24-13-6b-0097 contains "the contribution of the managers in a new hospital" but maps to OBJ-9609-5.4.4-02-02 despite the glossary's explicit ordinary-English homonym warning.
+      - >-
+        EV-9609-S24-12-5a-0103 asks for limitations of contribution costing but maps to OBJ-9609-5.4.4-02-02 instead of OBJ-9609-5.4.2-05.
+      - >-
+        EV-9609-M22-12-1b-0002 asks for uses of break-even analysis but maps to OBJ-9609-5.4.4-02-01; the same pattern appears in the benefits and limitations records used to build that member's 26-part count.
+      - >-
+        curriculum/exam-exposure.json consequently classifies contribution and break-even level of output as probed_high using records that belong to different objectives or senses.
+    educational_consequence: >-
+      The current resource did not thin any objective because of exposure, but future subtype allocation, review-set membership and claims about assessment demand can be calibrated from semantically invalid evidence.
+    recommended_repair: >-
+      Re-map the records by meaning rather than token match, apply the glossary homonym rule before counting, assign uses and limitations to their actual objectives, then regenerate exam-exposure.json and any explanatory exposure metadata. Add a semantic exclusion for ordinary-English "contribution of" constructions.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-010
+    severity: medium
+    category: learning-item
+    affected_ids:
+      - ITEM-9609-5.4-042-CALC
+      - ITEM-9609-5.4-053-APP
+    finding: >-
+      Two flashcards are not self-contained and declare no prerequisite. Each begins "The same ..." and requires numerical or situational facts that appear only in a preceding card, although the item architecture permits independent scheduling.
+    evidence:
+      - >-
+        ITEM-9609-5.4-042-CALC asks for the marginal cost of "The same print shop" but does not supply the N$15 variable cost or N$25 average cost used by its answer; prerequisite_item_ids is empty.
+      - >-
+        ITEM-9609-5.4-053-APP asks about "The same bottler" but does not supply the N$110 variable cost or the spare-capacity fact on which its answer depends; prerequisite_item_ids is empty.
+      - >-
+        The subject profile requires every flashcard to be self-contained and warns against an architecture that depends on hidden sequencing.
+    educational_consequence: >-
+      When either card is retrieved or scheduled alone, the learner cannot calculate or justify the canonical answer from the prompt and may be marked wrong for information they were never given.
+    recommended_repair: >-
+      Restate every required figure and condition in each prompt. If deliberate paired delivery is intended instead, record the preceding item as a prerequisite and ensure the scheduler always presents the stimulus with the dependent card.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-011
+    severity: medium
+    category: learning-item
+    affected_ids:
+      - ITEM-9609-5.4-027-DEF
+      - ITEM-9609-5.4-068-DEF
+    finding: >-
+      The bank contains an unmarked semantic duplicate. Both cards ask for the costing definition of contribution and give the same formula, fixed-cost function and profit boundary; adding "as it is used in break-even analysis" does not create a different recall direction because the glossary says the same costing sense applies throughout topic 5.4.
+    evidence:
+      - >-
+        ITEM-9609-5.4-027-DEF asks "Define contribution" and answers selling price per unit minus variable cost per unit, towards fixed costs and then profit.
+      - >-
+        ITEM-9609-5.4-068-DEF asks "Define contribution as it is used in break-even analysis" and gives substantively the same answer.
+      - >-
+        Both cards have intentional_duplicate_group: null, so the duplication is neither documented nor available for controlled scheduling.
+    educational_consequence: >-
+      Review time is spent retrieving the same proposition twice while graphical practice is absent, weakening the bank's balance without adding transfer.
+    recommended_repair: >-
+      Keep one definition card mapped to both objective contexts and replace the other with a genuinely different task, preferably graphical interpretation of contribution or a boundary case involving a variable indirect cost.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-012
+    severity: medium
+    category: quantitative
+    affected_ids:
+      - ITEM-9609-5.4-048-CALC
+      - ITEM-9609-5.4-078-CALC
+    finding: >-
+      Two CALC cards name an interpretation component but do not perform it. Recalculating profit by a second route and observing that the routes agree are arithmetic checks; they do not explain what the resulting profit means for the business, compare it with a benchmark, or connect it to a decision.
+    evidence:
+      - >-
+        ITEM-9609-5.4-048-CALC ends by deriving N$25 200 through contribution, and its guidance calls that duplicate derivation the interpretation.
+      - >-
+        ITEM-9609-5.4-078-CALC ends by saying agreement between two N$48 000 calculations catches an exam slip, and its guidance again labels that check as interpretation.
+      - >-
+        Section 4 of the brief says C-16 checks only that a part is named and requires the reviewer to judge whether it is done; the declared CALC structure requires formula, substitution, units and interpretation.
+    educational_consequence: >-
+      Learners may mistake verification of arithmetic for interpretation and leave quantitative AO2 answers without the business meaning that the resource itself requires.
+    recommended_repair: >-
+      Retain the second route as a check, then add a separate sentence interpreting the profit in context, such as its relation to revenue, target, previous period, fixed-cost exposure or the decision being considered. Make the guidance distinguish checking from interpretation.
+    confidence: 1.0
+    status: open
+  - issue_id: SR-9609-5.4-CODEX-R1-013
+    severity: medium
+    category: analysis
+    affected_ids:
+      - OBJ-9609-5.4.4-02-02
+      - CU-9609-5.4.4
+      - ITEM-9609-5.4-070-CHAIN
+    finding: >-
+      The comparison between high and low contribution per unit omits the controls needed for its conclusion. A higher contribution makes profit move more for the same absolute number of units, all else equal. It does not by itself make the same percentage sales change produce a larger absolute swing across differently sized businesses, nor does it show that the high-contribution business will fall into loss sooner; that also depends on output, fixed costs and distance from break-even.
+    evidence:
+      - >-
+        ITEM-9609-5.4-070-CHAIN compares N$380 per member with N$40 per unit and then jumps to "The same percentage change in volume" without specifying equal starting volumes.
+      - >-
+        The answer concludes that high-contribution businesses "fall into loss quickly" although its guidance controls only for trading above break-even and unchanged fixed costs, not for margin of safety or scale.
+      - >-
+        CU-9609-5.4.4 block 5.4.4-b9 and notes line 330 link risk to high fixed costs and high contribution but do not establish a common output, fixed-cost proportion or margin of safety for the comparison.
+    educational_consequence: >-
+      A learner may treat high contribution per unit as a general risk indicator and write a cross-business causal comparison that the supplied data cannot support.
+    recommended_repair: >-
+      Limit the mechanism to the same absolute unit change with all other quantities held equal, or supply equal starting volumes before using a percentage change. Explain risk through fixed-cost exposure and margin of safety, and do not infer proximity to loss from contribution per unit alone.
+    confidence: 0.98
+    status: open

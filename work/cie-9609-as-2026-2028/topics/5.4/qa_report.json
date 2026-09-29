@@ -1,0 +1,1061 @@
+{
+  "qa_report_id": "QA-cie-9609-as-2026-2028-5.4",
+  "build_id": "cie-9609-as-2026-2028/topic-5.4",
+  "generated_at": "2026-09-29T08:59:55Z",
+  "deterministic_checks": [
+    {
+      "check_id": "C-00",
+      "status": "pass",
+      "message": "[RS-27 Schema validity] All 7 structured artifacts validate against the v0.2.0 schemas.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-01",
+      "status": "pass",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 4 content units, 105 items and 59 claims resolves in the registry (22 nodes in this topic branch, 21 assessable).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-02",
+      "status": "pass",
+      "message": "[RS-07 Claim referential integrity] Every claim_id cited by a content-unit block or learning item exists in the topic ledger.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-03",
+      "status": "pass",
+      "message": "[RS-07 Claim orphans] All 59 ledger claims are cited by at least one block or item.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-04",
+      "status": "pass",
+      "message": "[RS-40 Meaningful objective mapping] Every (item, objective) mapping is backed by a cited claim that serves that objective.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-05",
+      "status": "pass",
+      "message": "[RS-05 Coverage floor - items (meaningful mappings only)] All 21 assessable objectives are practised by at least one item under RS-40.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-06",
+      "status": "pass",
+      "message": "[RS-05 Coverage floor - content units] All 21 assessable objectives are taught by at least one content unit.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-07",
+      "status": "pass",
+      "message": "[RS-39 Offline reconstructibility] Every claim cited by a learning item is also taught in a content-unit block.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-30",
+      "status": "warn",
+      "message": "[RS-41 No bulk stamp] 13 advanced stamps carry no prior_hash, so they predate the audit trail and cannot be verified. 131 stamps are auditable and clean. Every stamp made from now on records the text it replaced.",
+      "affected_ids": [
+        "CU-9609-5.4.2/5.4.2-b2",
+        "CU-9609-5.4.2/5.4.2-b3",
+        "CU-9609-5.4.2/5.4.2-b6",
+        "CU-9609-5.4.3/5.4.3-b4",
+        "CU-9609-5.4.3/5.4.3-b7",
+        "CU-9609-5.4.4/5.4.4-b10",
+        "ITEM-9609-5.4-019-DEF",
+        "ITEM-9609-5.4-020-DEF",
+        "ITEM-9609-5.4-021-DIST",
+        "ITEM-9609-5.4-022-APP",
+        "ITEM-9609-5.4-024-LIM",
+        "ITEM-9609-5.4-082-CHAIN",
+        "ITEM-9609-5.4-083-EVAL"
+      ]
+    },
+    {
+      "check_id": "C-29",
+      "status": "pass",
+      "message": "[RS-41 No stale derivative] No stale derivative: every block and item was authored against the current revision of every claim it cites.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-31",
+      "status": "pass",
+      "message": "[RS-17 Syllabus modality coverage] Every objective whose syllabus wording names a chart, graph or diagram is practised in that form.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-32",
+      "status": "pass",
+      "message": "[RS-22 Stated arithmetic is correct] All 53 stated calculations in canonical answers evaluate correctly.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-33",
+      "status": "pass",
+      "message": "[RS-25 Flashcards are self-contained] No flashcard depends on facts held only in another card.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-34",
+      "status": "pass",
+      "message": "[RS-22 Interpretation is interpretation, not a second check] No quantitative item passes off an arithmetic check as interpretation.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-35",
+      "status": "pass",
+      "message": "[RS-22 Graphical stimulus is consistent and necessary] All 5 graphical tasks declare their chart, every labelled coordinate recomputes correctly, and none states the value it asks the learner to read.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-36",
+      "status": "pass",
+      "message": "[RS-22 Magnitude claims carry their figure] Every magnitude claim in a quantitative answer is backed by a stated figure.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-08",
+      "status": "pass",
+      "message": "[RS-33 Unqualified universals] No unqualified universal or exclusivity statement found in claims, learner prose or answers.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-09",
+      "status": "pass",
+      "message": "[RS-21 Third-party certainty] No statement asserts a third party's decision as certain.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-10",
+      "status": "pass",
+      "message": "[RS-36 Assessment-priority claims need assessment evidence] No learner-facing claim about examiner behaviour, mark priority or question frequency.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-11",
+      "status": "pass",
+      "message": "[RS-15 Scope discipline - excluded constructs] None of the 12 constructs the contract excludes appears in learner-facing material.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-12",
+      "status": "pass",
+      "message": "[RS-35 Variant completeness] Every variant-register term used in this topic names its consequential forms.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-13",
+      "status": "pass",
+      "message": "[RS-34 Generalisations declare their scope] Every grouping or across-the-board statement declares the members it claims to hold for.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-14",
+      "status": "pass",
+      "message": "[RS-19 Command-word discipline] No item prompt instructs with a command word absent from this level (Assess, Justify, Advise).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-15",
+      "status": "pass",
+      "message": "[RS-37 Command-word-shaped practice] Every objective with a command word carries an item that instructs with one of them.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-16",
+      "status": "pass",
+      "message": "[RS-38 Declared answer structures] Every item names all declared parts of its subtype answer structure.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-17",
+      "status": "pass",
+      "message": "[RS-19 Subtype to AO consistency] Every item's assessment objectives are permitted by its subtype.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-18",
+      "status": "warn",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 31, 'AO2': 37, 'AO3': 22, 'AO4': 10} against target {'AO1': 30, 'AO2': 30, 'AO3': 20, 'AO4': 20}; largest deviation across AO1-AO3 is 7 points. AO4 is reported, not tested by count: 13 items carry it, of which 4 are performance tasks (case_analysis, data_response, essay_plan, short_answer). RS-19 measures the AO4 share in practice time.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-19",
+      "status": "pass",
+      "message": "[RS-25 Flashcard integrity] All 101 flashcards carry a non-null canonical answer and a declared subtype.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-20",
+      "status": "pass",
+      "message": "[RS-25 One target per flashcard] No flashcard asks for several separate answers in one card.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-21",
+      "status": "pass",
+      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 105 items.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-22",
+      "status": "pass",
+      "message": "[RS-30 Marking guidance present] All 105 items carry marking guidance.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-23",
+      "status": "pass",
+      "message": "[RS-12 Items cite a claim] Every item cites at least one ledger claim.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-24",
+      "status": "pass",
+      "message": "[RS-13 Publication gate] Gate holds: 0 of 59 claims are publishable or verified. 59 are generated_gap and need documented human approval (RS-13).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-25",
+      "status": "pass",
+      "message": "[RS-31 QA status consistency] Every content unit and item carries a recognised qa_status.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-26",
+      "status": "pass",
+      "message": "[RS-09 Word budget] All 4 content units sit inside their declared word budget (6212 words total).",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-27",
+      "status": "pass",
+      "message": "[RS-05 Exposure required subtypes] Every exposure-required subtype is present or waived in writing. 12 waived: OBJ-9609-5.4.1-01:DIST, OBJ-9609-5.4.1-02-01:EVAL, OBJ-9609-5.4.1-02-02:EVAL, OBJ-9609-5.4.2-02:DIST, OBJ-9609-5.4.2-03:DIST, OBJ-9609-5.4.2-04:DEF, OBJ-9609-5.4.2-05:DEF, OBJ-9609-5.4.2-06:DEF, OBJ-9609-5.4.3-03:DIST, OBJ-9609-5.4.3-04:DIST, OBJ-9609-5.4.4-02-03:EVAL, OBJ-9609-5.4.4-03:DEF.",
+      "affected_ids": [
+        "OBJ-9609-5.4.1-01",
+        "OBJ-9609-5.4.1-02-01",
+        "OBJ-9609-5.4.1-02-02",
+        "OBJ-9609-5.4.2-02",
+        "OBJ-9609-5.4.2-03",
+        "OBJ-9609-5.4.2-04",
+        "OBJ-9609-5.4.2-05",
+        "OBJ-9609-5.4.2-06",
+        "OBJ-9609-5.4.3-03",
+        "OBJ-9609-5.4.3-04",
+        "OBJ-9609-5.4.4-02-03",
+        "OBJ-9609-5.4.4-03"
+      ]
+    },
+    {
+      "check_id": "C-28",
+      "status": "pass",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 21 files to topics/5.4/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (102c881b03385b1c) so the whole packet is verifiable.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-37",
+      "status": "pass",
+      "message": "[RS-43 Conditioned mechanisms carry their conditions] All 16 assertions of a registered conditioned mechanism carry every condition the register requires.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-38",
+      "status": "pass",
+      "message": "[RS-44 Answers do not supply their own facts] All 2 completeness assertions are either established by the prompt or made conditional in the answer.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-39",
+      "status": "pass",
+      "message": "[RS-45 Derived exposure metadata recomputes] All 19 computed exposure entries for this topic recompute from the evidence map, satisfy the file's own class definitions, and keep no superseded figures.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-40",
+      "status": "pass",
+      "message": "[RS-46 Quantities are named in their own units] No quantity is named in units it is not measured in.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-41",
+      "status": "pass",
+      "message": "[RS-47 Depictions are generated, not authored] All 5 depicted charts are byte-identical to what their declared parameters render to.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-42",
+      "status": "pass",
+      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 105 learning items, 4 content units.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-43",
+      "status": "not_run",
+      "message": "[RS-48 Practice texts are declared, original and the stated length] No item in this topic is answered from a practice text.",
+      "affected_ids": []
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "review_id": "SR-9609-5.4-CODEX-R1",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-001",
+          "severity": "critical",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.4.2-01",
+            "CLM-9609-5.4-032",
+            "CU-9609-5.4.2",
+            "ITEM-9609-5.4-021-DIST",
+            "ITEM-9609-5.4-022-APP"
+          ],
+          "finding": "The central comparison of full and contribution costing collapses two independent cost classifications. It says the methods treat direct and variable costs alike and differ over fixed and indirect costs. Full costing includes all attributable and apportioned costs, while contribution costing includes variable costs: a direct fixed cost is therefore included in full cost but excluded from contribution cost, and a variable indirect cost is included in both even though it may still require allocation. The packet itself has already taught a dedicated supervisor's salary as direct and fixed, so the comparison is also internally contradictory.",
+          "evidence": [
+            "CLM-9609-5.4-032 says full costing shares out \"fixed and indirect costs\", contribution costing holds both back, and \"direct and variable costs are treated the same way by both\".",
+            "CU-9609-5.4.2 block 5.4.2-b3 and notes lines 98-102 repeat the claim; block 5.4.2-b6 also says contribution costing avoids allocation entirely.",
+            "CLM-9609-5.4-022, CU-9609-5.4.1 block 5.4.1-b4 and notes lines 40-46 explicitly use a supervisor dedicated to one line as a direct fixed cost, disproving the later rule.",
+            "ITEM-9609-5.4-021-DIST rewards the false grouping and ITEM-9609-5.4-022-APP identifies the N$7 gap between full and variable cost as a share of \"fixed and indirect costs\".",
+            "ICAEW's accounting guidance explicitly distinguishes variable production overheads from fixed production overheads: https://www.icaew.com/technical/corporate-reporting/corporate-reporting-resources/by-all-accounts/q-and-a/corporate-reporting-qa-april-2026",
+            "REPAIRED 2026-09-10: CLM-030/031/032 rewritten and CU-5.4.2 b2/b3 rebuilt around the one valid boundary - fixed against variable. A direct-fixed and a variable-indirect example are now taught explicitly, and the claim that contribution costing never allocates anything is gone. ITEM-019/020/021/022 re-authored."
+          ],
+          "educational_consequence": "A learner can master the supplied distinction and still misclassify direct fixed and variable indirect costs, producing a wrong AO1 comparison and applying the wrong cost figure in AO2 decisions.",
+          "recommended_repair": "Rewrite CLM-032, block b3 and items -021/-022 around the single valid boundary: full costing assigns all costs to products, whereas contribution costing assigns variable costs to products and treats fixed costs as period costs. Use one direct-fixed and one variable-indirect example to preserve the two-axis classification, and remove the claim that contribution costing never allocates anything.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-002",
+          "severity": "critical",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-03",
+            "ITEM-9609-5.4-087-SHOR"
+          ],
+          "finding": "The lender checklist treats owner's drawings as a fixed cost whose omission lowers the profit break-even point. Drawings are a distribution or withdrawal by the owner, not a business expense, so they do not enter total cost or accounting-profit break-even. They may matter to a cash budget, but the notes explicitly distinguish break-even as a profit technique from cash flow.",
+          "evidence": [
+            "ITEM-9609-5.4-087-SHOR asks whether all fixed costs are included and names \"Owner's drawings, insurance and bank charges\" as omissions that each lower break-even.",
+            "CU-9609-5.4.4 block 5.4.4-b12 and notes line 363 say break-even is about profit and that a business can be above break-even yet run out of cash.",
+            "The IFRS Conceptual Framework states that distributions to holders of equity claims are not expenses: https://www.ifrs.org/content/dam/ifrs/publications/pdf-standards/english/2021/issued/part-a/conceptual-framework-for-financial-reporting.pdf",
+            "REPAIRED 2026-09-10: Owner's drawings removed from the fixed-cost checklist in ITEM-087; the answer now states they are a withdrawal of profit belonging to the cash-flow forecast, not to break-even."
+          ],
+          "educational_consequence": "A learner following the canonical answer will overstate fixed cost, calculate the wrong break-even output and blur the examined distinction between profit and cash.",
+          "recommended_repair": "Remove owner's drawings from the fixed-cost checklist. If owner withdrawals are retained as a planning consideration, label them as a cash requirement outside accounting-profit break-even and direct the learner to a cash-flow forecast; keep insurance or other genuine period costs as the omission examples.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-003",
+          "severity": "high",
+          "category": "curriculum",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-02",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-02",
+            "OBJ-9609-5.4.4-02-03",
+            "OBJ-9609-5.4.4-02-04",
+            "CU-9609-5.4.4"
+          ],
+          "finding": "The compulsory graphical form is only described, not actually taught and practised as a visual representation. The notes promise calculation and interpretation \"in numbers and on a chart\" and the unit metadata says charts are drawn and read, but the packet renders no chart and no learning item supplies a graph, asks the learner to plot one, or requires a value to be read from one. Numeric mappings therefore make the parent and all four members look covered while leaving the graphical demand untested.",
+          "evidence": [
+            "OBJ-9609-5.4.4-02 requires calculation and interpretation of break-even output, contribution, margin of safety and level of profit \"in numeric and graphic form\".",
+            "CU-9609-5.4.4 block 5.4.4-b6 and notes lines 290-300 contain only prose descriptions and coordinates; there is no rendered chart to inspect.",
+            "The 88-item bank contains no prompt using chart, graph or draw and no graphical stimulus; all items mapped to the container and members are verbal or numerical.",
+            "CU-9609-5.4.4's own notes field says \"break-even charts are drawn and read at AS\", which the learner-facing artifact does not implement.",
+            "REPAIRED 2026-09-10: CU-5.4.4 b6 now contains a coordinate table, a labelled plotted chart and instructions for drawing one, and three new graphical items (089-INTERP, 090-APP, 091-APP) require reading break-even output, margin of safety and profit from a chart. New check C-31 enforces syllabus modality coverage."
+          ],
+          "educational_consequence": "A learner may calculate every formula yet be unable to draw the three lines, identify profit or loss as a vertical gap, or extract break-even, margin of safety and profit from an unfamiliar exam graph. The rarely examined profit-level member is numerically deep but still lacks its required graphical transfer.",
+          "recommended_repair": "Add a fully labelled worked break-even chart tied to the Kaoko data, show how each line is plotted from values, and add at least one self-contained graphical task using an unseen chart that requires reading and interpreting break-even output, margin of safety and profit and relating contribution to the displayed values.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-004",
+          "severity": "high",
+          "category": "evaluation",
+          "affected_ids": [
+            "OBJ-9609-5.4.3-04",
+            "ITEM-9609-5.4-055-EVAL"
+          ],
+          "finding": "The special-order evaluation recommends acceptance from a percentage of the usual price without supplying either the usual price or the variable cost. Seventy per cent of a price is not necessarily above variable cost, yet the canonical answer calls it \"comfortably above\" flour and packaging and makes that invented margin the decisive reason to accept.",
+          "evidence": [
+            "ITEM-9609-5.4-055-EVAL supplies only idle capacity for three mornings and an offer at 70% of usual price; it gives no cost or absolute price.",
+            "Its answer says \"any price above the flour and packaging adds to profit, and 70% of the usual price is comfortably above that\" even though the required comparison cannot be made from the case.",
+            "CLM-9609-5.4-061 makes price above variable cost a condition of the special-order mechanism; the item provides no evidence that this condition is met.",
+            "REPAIRED 2026-09-10: ITEM-055 rewritten with the normal price, the variable cost and the offer stated, so the contribution can be calculated rather than assumed."
+          ],
+          "educational_consequence": "The model teaches the learner to manufacture a decisive case fact and to recommend an order that could have negative contribution, undermining AO2 evidence use and AO4 judgement.",
+          "recommended_repair": "Supply the normal price and all incremental costs so the 70% offer can be compared with variable cost, or make the recommendation explicitly conditional on that missing comparison. Do not state accept until positive incremental contribution is established.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-005",
+          "severity": "high",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-02",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-03",
+            "OBJ-9609-5.4.4-02-04",
+            "ITEM-9609-5.4-084-DATA"
+          ],
+          "finding": "The data-response evaluation gives the wrong demand-loss threshold for the proposed price rise. With the packaging increase, holding price at N$34 gives N$10 contribution and N$5 900 profit at 14 500 litres. Raising price to N$36 gives N$12 contribution; its profit falls back to N$5 900 only at about 12 083 litres, a loss of about 2 417 litres, not 1 500. The erroneous figure is required by the marking guidance as the point at which the gain disappears.",
+          "evidence": [
+            "ITEM-9609-5.4-084-DATA correctly calculates N$5 900 profit without the price rise and N$34 900 with it at 14 500 litres, then says losing more than about 1 500 litres \"wipes out the gain\".",
+            "At 13 000 litres after a 1 500-litre loss, profit would still be (13 000 x N$12) - N$139 100 = N$16 900, which remains N$11 000 above the no-rise option.",
+            "Solving (N$12 x output) - N$139 100 = N$5 900 gives 12 083.33 litres, so the indifference loss from 14 500 is 2 416.67 litres.",
+            "The item's guidance explicitly requires \"the figure at which the gain disappears\", making this more than incidental commentary.",
+            "REPAIRED 2026-09-10: ITEM-084 now calculates the indifference volume: 12x - 139 100 = 5 900 gives 12 083 litres, a loss of about 2 417 litres. New check C-32 recomputes every stated calculation."
+          ],
+          "educational_consequence": "A learner who copies the model will misstate the price rise's demand tolerance by roughly 917 litres and may reverse an otherwise quantitative AO4 judgement.",
+          "recommended_repair": "Replace 1 500 with the correctly defined threshold of about 2 417 litres when comparing profit with the no-price-rise option, show the indifference calculation, and state which comparator is being used. Recheck the recommendation against that corrected sensitivity.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-006",
+          "severity": "high",
+          "category": "analysis",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-03",
+            "CLM-9609-5.4-085",
+            "CU-9609-5.4.4",
+            "ITEM-9609-5.4-082-CHAIN",
+            "ITEM-9609-5.4-083-EVAL"
+          ],
+          "finding": "The resource says break-even assumptions largely cancel when two options are compared. Applying the same assumption does not make its error equal under both options: price, volume, product mix and variable cost can respond differently to the change being tested. The packet's own price-rise evaluation correctly says the unchanged-volume assumption is precisely what prevents the arithmetic from deciding between the options, contradicting the claimed cancellation mechanism.",
+          "evidence": [
+            "CLM-9609-5.4-085 and CU-9609-5.4.4 block 5.4.4-b10 say break-even is strong for option comparison because the assumptions \"cancel out\".",
+            "ITEM-9609-5.4-082-CHAIN requires the learner to argue that common errors cancel; ITEM-9609-5.4-083-EVAL says assumptions apply equally on either side of a proposed price or supplier change.",
+            "ITEM-9609-5.4-066-EVAL instead explains that a price rise changes the likely volume, so holding volume constant is not a common error and cannot establish whether the changed option is better.",
+            "The same non-cancellation applies to a product-mix or variable-cost response that differs between alternatives, both of which block b10 names as material limitations.",
+            "REPAIRED 2026-09-10: CLM-085, CU-5.4.4 b10 and ITEM-082/083 rewritten: break-even isolates the arithmetic effect of one changed input, which is a sensitivity test, not proof that an option is better. The claim that assumptions cancel is gone."
+          ],
+          "educational_consequence": "A learner may write a fluent but invalid AO3 chain and overstate the reliability of break-even comparisons exactly where sensitivity to different behavioural responses should qualify an AO4 conclusion.",
+          "recommended_repair": "Replace \"cancel\" with a narrower claim: break-even can isolate the arithmetic effect of changing one stated input while other inputs are held constant, which is useful for sensitivity testing but not proof that the option is better. Require evaluation of whether the held-constant inputs would respond differently under each option.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-007",
+          "severity": "high",
+          "category": "analysis",
+          "affected_ids": [
+            "OBJ-9609-5.4.2-05",
+            "OBJ-9609-5.4.3-01",
+            "OBJ-9609-5.4.3-02",
+            "CLM-9609-5.4-055",
+            "CU-9609-5.4.3",
+            "ITEM-9609-5.4-023-BEN",
+            "ITEM-9609-5.4-037-EVAL",
+            "ITEM-9609-5.4-044-CHAIN",
+            "ITEM-9609-5.4-046-CALC"
+          ],
+          "finding": "The pricing logic confuses an order's marginal effect with whether the business is profitable overall. Positive contribution improves profit or reduces loss whenever incremental revenue exceeds all incremental costs and no better use of capacity is displaced; the fixed costs do not first have to be covered by other sales. Conversely, a price above a full cost per unit calculated at current or budgeted output does not guarantee total profit unless the assumed sales volume and cost basis are achieved. The notes call the first false condition \"not optional\" and several model answers use it as the decisive test.",
+          "evidence": [
+            "CLM-9609-5.4-055 says a below-full-cost price adds to profit only where fixed costs are already covered by other sales, while also saying a price above full cost necessarily covers everything and adds to profit.",
+            "CU-9609-5.4.3 block 5.4.3-b4 and notes lines 194-201 repeat both propositions and call prior fixed-cost coverage an indispensable condition.",
+            "ITEM-9609-5.4-037-EVAL makes whether the rest of the order book covers fixed costs the decisive criterion; ITEM-9609-5.4-044-CHAIN and -046-CALC import the same unsupported condition.",
+            "ITEM-9609-5.4-045-CALC supplies the missing qualification correctly: the intended mark-up becomes profit only if the cost is complete and the product sells at that price.",
+            "ACCA guidance separates short-run positive incremental contribution from long-run recovery of all costs and says incremental fixed costs must also be included: https://www.accaglobal.com/content/dam/acca/global/PDF-students/2012s/sa_aug09_ironsv2.pdf",
+            "REPAIRED 2026-09-10: CLM-055 and CU-5.4.3 b4 rewritten as two separate tests - incremental cost for a one-off order, total contribution at a realistic volume for the long run. Positive incremental contribution improves profit or reduces a loss regardless of what other work is doing. ITEM-023/037/044/046 re-authored."
+          ],
+          "educational_consequence": "Learners may reject an order that would improve profit merely because other work has not yet covered fixed costs, or claim that a full-cost price guarantees profit without considering demand and the output basis. Both weaken special-order and pricing analysis.",
+          "recommended_repair": "Teach two separate tests. For a short-run order, compare incremental revenue with variable and any other incremental costs, then account for opportunity cost and qualitative effects; describe the result as increasing profit or reducing loss. For long-run viability, require total contribution to cover fixed costs at a realistic sales volume, and condition every full-cost price claim on that volume and cost estimate.",
+          "confidence": 0.99,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-008",
+          "severity": "high",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.4.2-02",
+            "OBJ-9609-5.4.2-06",
+            "CLM-9609-5.4-034",
+            "CU-9609-5.4.2",
+            "ITEM-9609-5.4-024-LIM",
+            "ITEM-9609-5.4-026-CHAIN"
+          ],
+          "finding": "The full-costing limitation and its analysis card make continued overhead certain when a product is dropped, although only unavoidable common overhead remains. The next content block correctly says the conclusion changes if a warehouse, dedicated supervisor or other fixed cost disappears, but the canonical claim and standalone cards omit that decisive condition.",
+          "evidence": [
+            "CLM-9609-5.4-034 says a business that stops the product \"still has the same overheads\" without limiting the claim to unavoidable common costs.",
+            "CU-9609-5.4.2 block 5.4.2-b6 and notes line 134 repeat the certainty; ITEM-9609-5.4-024-LIM says the business \"finds the overheads unchanged\".",
+            "ITEM-9609-5.4-026-CHAIN gives no case fact about avoidability, yet its answer and guidance require the overheads to stay and be redistributed.",
+            "CU-9609-5.4.2 block 5.4.2-b7, notes line 146 and ITEM-9609-5.4-025-EVAL correctly identify avoidable fixed costs as the condition, creating an internal contradiction.",
+            "REPAIRED 2026-09-10: CLM-034, CU-5.4.2 b6 and ITEM-024 now condition overhead continuation on the cost being unavoidable; ITEM-026 supplies the case fact and rewards recognition that dedicated costs would change the answer."
+          ],
+          "educational_consequence": "A learner can be trained to keep a product even where dedicated fixed costs exceed its contribution, and to write an unconditional causal chain that loses AO3/AO4 credit.",
+          "recommended_repair": "Add \"if the allocated overheads are unavoidable and remain after discontinuation\" to CLM-034, block b6 and ITEM-024. Supply that fact in ITEM-026 or make its required chain branch explicitly between unavoidable common overhead and avoidable product-specific fixed cost.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-009",
+          "severity": "medium",
+          "category": "evidence",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-01",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-02",
+            "OBJ-9609-5.4.4-03",
+            "EV-9609-M22-12-1b-0002",
+            "EV-9609-W24-13-6b-0097",
+            "EV-9609-S24-12-5a-0103"
+          ],
+          "finding": "The exposure evidence has semantic false positives and wrong-granularity mappings. An evaluation of managers' contribution is mapped to the costing quantity contribution; a question on limitations of contribution costing is mapped to contribution inside the break-even container rather than to the contribution-costing limitation objective; and multiple uses, benefits and limitations of break-even analysis are mapped to break-even level of output rather than the meaning/importance or uses/limitations objectives. The resulting probed-high labels do not represent the objectives named.",
+          "evidence": [
+            "EV-9609-W24-13-6b-0097 contains \"the contribution of the managers in a new hospital\" but maps to OBJ-9609-5.4.4-02-02 despite the glossary's explicit ordinary-English homonym warning.",
+            "EV-9609-S24-12-5a-0103 asks for limitations of contribution costing but maps to OBJ-9609-5.4.4-02-02 instead of OBJ-9609-5.4.2-05.",
+            "EV-9609-M22-12-1b-0002 asks for uses of break-even analysis but maps to OBJ-9609-5.4.4-02-01; the same pattern appears in the benefits and limitations records used to build that member's 26-part count.",
+            "curriculum/exam-exposure.json consequently classifies contribution and break-even level of output as probed_high using records that belong to different objectives or senses.",
+            "REPAIRED 2026-09-10: 15 evidence records re-mapped: ordinary-English \"contribution of <person>\" excluded by the glossary homonym rule, limitations of contribution costing moved to 5.4.2-05, uses and limitations of break-even moved to 5.4.4-03. Exposure counts for 5.4 recomputed; the rest of the corpus is recorded as token-matched and not yet validated."
+          ],
+          "educational_consequence": "The current resource did not thin any objective because of exposure, but future subtype allocation, review-set membership and claims about assessment demand can be calibrated from semantically invalid evidence.",
+          "recommended_repair": "Re-map the records by meaning rather than token match, apply the glossary homonym rule before counting, assign uses and limitations to their actual objectives, then regenerate exam-exposure.json and any explanatory exposure metadata. Add a semantic exclusion for ordinary-English \"contribution of\" constructions.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-010",
+          "severity": "medium",
+          "category": "learning-item",
+          "affected_ids": [
+            "ITEM-9609-5.4-042-CALC",
+            "ITEM-9609-5.4-053-APP"
+          ],
+          "finding": "Two flashcards are not self-contained and declare no prerequisite. Each begins \"The same ...\" and requires numerical or situational facts that appear only in a preceding card, although the item architecture permits independent scheduling.",
+          "evidence": [
+            "ITEM-9609-5.4-042-CALC asks for the marginal cost of \"The same print shop\" but does not supply the N$15 variable cost or N$25 average cost used by its answer; prerequisite_item_ids is empty.",
+            "ITEM-9609-5.4-053-APP asks about \"The same bottler\" but does not supply the N$110 variable cost or the spare-capacity fact on which its answer depends; prerequisite_item_ids is empty.",
+            "The subject profile requires every flashcard to be self-contained and warns against an architecture that depends on hidden sequencing.",
+            "REPAIRED 2026-09-10: ITEM-042 and ITEM-053 now restate every figure their answers use. New check C-33 fails any flashcard opening with a back-reference and no recorded prerequisite."
+          ],
+          "educational_consequence": "When either card is retrieved or scheduled alone, the learner cannot calculate or justify the canonical answer from the prompt and may be marked wrong for information they were never given.",
+          "recommended_repair": "Restate every required figure and condition in each prompt. If deliberate paired delivery is intended instead, record the preceding item as a prerequisite and ensure the scheduler always presents the stimulus with the dependent card.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-011",
+          "severity": "medium",
+          "category": "learning-item",
+          "affected_ids": [
+            "ITEM-9609-5.4-027-DEF",
+            "ITEM-9609-5.4-068-DEF"
+          ],
+          "finding": "The bank contains an unmarked semantic duplicate. Both cards ask for the costing definition of contribution and give the same formula, fixed-cost function and profit boundary; adding \"as it is used in break-even analysis\" does not create a different recall direction because the glossary says the same costing sense applies throughout topic 5.4.",
+          "evidence": [
+            "ITEM-9609-5.4-027-DEF asks \"Define contribution\" and answers selling price per unit minus variable cost per unit, towards fixed costs and then profit.",
+            "ITEM-9609-5.4-068-DEF asks \"Define contribution as it is used in break-even analysis\" and gives substantively the same answer.",
+            "Both cards have intentional_duplicate_group: null, so the duplication is neither documented nor available for controlled scheduling.",
+            "REPAIRED 2026-09-10: ITEM-068 converted from a duplicate definition to a graphical interpretation of the two slopes as contribution per unit."
+          ],
+          "educational_consequence": "Review time is spent retrieving the same proposition twice while graphical practice is absent, weakening the bank's balance without adding transfer.",
+          "recommended_repair": "Keep one definition card mapped to both objective contexts and replace the other with a genuinely different task, preferably graphical interpretation of contribution or a boundary case involving a variable indirect cost.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-012",
+          "severity": "medium",
+          "category": "quantitative",
+          "affected_ids": [
+            "ITEM-9609-5.4-048-CALC",
+            "ITEM-9609-5.4-078-CALC"
+          ],
+          "finding": "Two CALC cards name an interpretation component but do not perform it. Recalculating profit by a second route and observing that the routes agree are arithmetic checks; they do not explain what the resulting profit means for the business, compare it with a benchmark, or connect it to a decision.",
+          "evidence": [
+            "ITEM-9609-5.4-048-CALC ends by deriving N$25 200 through contribution, and its guidance calls that duplicate derivation the interpretation.",
+            "ITEM-9609-5.4-078-CALC ends by saying agreement between two N$48 000 calculations catches an exam slip, and its guidance again labels that check as interpretation.",
+            "Section 4 of the brief says C-16 checks only that a part is named and requires the reviewer to judge whether it is done; the declared CALC structure requires formula, substitution, units and interpretation.",
+            "REPAIRED 2026-09-10: ITEM-048 and ITEM-078 now interpret the figure - its size against revenue or contribution, and its sensitivity - and label the second-route agreement as a check. New check C-34 fails an arithmetic check presented as interpretation."
+          ],
+          "educational_consequence": "Learners may mistake verification of arithmetic for interpretation and leave quantitative AO2 answers without the business meaning that the resource itself requires.",
+          "recommended_repair": "Retain the second route as a check, then add a separate sentence interpreting the profit in context, such as its relation to revenue, target, previous period, fixed-cost exposure or the decision being considered. Make the guidance distinguish checking from interpretation.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R1-013",
+          "severity": "medium",
+          "category": "analysis",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-02-02",
+            "CU-9609-5.4.4",
+            "ITEM-9609-5.4-070-CHAIN"
+          ],
+          "finding": "The comparison between high and low contribution per unit omits the controls needed for its conclusion. A higher contribution makes profit move more for the same absolute number of units, all else equal. It does not by itself make the same percentage sales change produce a larger absolute swing across differently sized businesses, nor does it show that the high-contribution business will fall into loss sooner; that also depends on output, fixed costs and distance from break-even.",
+          "evidence": [
+            "ITEM-9609-5.4-070-CHAIN compares N$380 per member with N$40 per unit and then jumps to \"The same percentage change in volume\" without specifying equal starting volumes.",
+            "The answer concludes that high-contribution businesses \"fall into loss quickly\" although its guidance controls only for trading above break-even and unchanged fixed costs, not for margin of safety or scale.",
+            "CU-9609-5.4.4 block 5.4.4-b9 and notes line 330 link risk to high fixed costs and high contribution but do not establish a common output, fixed-cost proportion or margin of safety for the comparison.",
+            "REPAIRED 2026-09-10: ITEM-070 now fixes both businesses at the same volume, uses an absolute unit change, and states that proximity to loss depends on margin of safety and fixed costs rather than on contribution per unit."
+          ],
+          "educational_consequence": "A learner may treat high contribution per unit as a general risk indicator and write a cross-business causal comparison that the supplied data cannot support.",
+          "recommended_repair": "Limit the mechanism to the same absolute unit change with all other quantities held equal, or supply equal starting volumes before using a percentage change. Explain risk through fixed-cost exposure and margin of safety, and do not infer proximity to loss from contribution per unit alone.",
+          "confidence": 0.98,
+          "status": "resolved"
+        }
+      ]
+    },
+    {
+      "review_id": "SR-9609-5.4-CODEX-R2",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-001",
+          "severity": "critical",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-02",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-02",
+            "OBJ-9609-5.4.4-02-03",
+            "OBJ-9609-5.4.4-02-04",
+            "ITEM-9609-5.4-068-DEF",
+            "ITEM-9609-5.4-089-INTERP",
+            "ITEM-9609-5.4-090-APP",
+            "ITEM-9609-5.4-091-APP"
+          ],
+          "finding": "The repair for the compulsory graphical form does not provide valid graph-reading practice. The three new chart tasks state the values the learner is supposedly meant to read, so the chart can be removed without changing the task. More seriously, ITEM-091's shared chart is mathematically impossible: fixed costs of N$160 000, revenue of N$480 000 and total cost of N$400 000 at 6 000 units imply straight-line slopes of N$80 and N$40 and therefore a crossing at 4 000 units and N$320 000, not at the stated 2 400 units. ITEM-068 describes slopes verbally but supplies no graph. The pattern-based C-31 pass therefore does not establish semantic modality coverage.",
+          "evidence": [
+            "ITEM-9609-5.4-089-INTERP says in its stem that the lines cross at 2 400 units and N$240 000, then asks the learner to read the break-even output; the requested value is already given.",
+            "ITEM-9609-5.4-090-APP states both the 2 400-unit crossing and current output of 6 000 before asking for margin of safety, so its N$3 600 answer is subtraction from prose rather than a chart reading.",
+            "ITEM-9609-5.4-091-APP supplies N$480 000 revenue and N$400 000 total cost at 6 000 units before asking for profit, while the displayed chart also fixes the intercept at N$160 000 and labels the crossing at 2 400. From those 6 000-unit readings, 80q = 160 000 + 40q gives q = 4 000, so the stimulus contradicts its own crossing point.",
+            "OBJ-9609-5.4.4-02 expressly requires calculation and interpretation in numeric and graphic form; -02-04 is the rarely examined profit member and its only graphical item is the inconsistent ITEM-091.",
+            "REPAIRED 2026-09-12: The three graphical items were rebuilt on one algebraically verified chart (price N$80, variable N$40, fixed N$160 000, break-even 4 000 units at N$320 000) and their stems no longer state the value they ask the learner to read. ITEM-068 gained the chart it described only in prose, and a drawing task (ITEM-092-PROC) was added. New check C-35 verifies a chart from declared parameters and fails a stem that gives away its own answer."
+          ],
+          "educational_consequence": "A learner can complete every new item without extracting a value from a graph, and one who tries to reconcile the plotted lines will derive a different break-even point and margin of safety from the canonical answers. This leaves a compulsory modality, including the protected rarely examined profit member, unreliable despite the mechanical coverage pass.",
+          "recommended_repair": "Build one internally consistent unseen chart from a declared price, variable cost and fixed-cost total; verify every coordinate and crossing algebraically. Remove the target readings from the stems and require the learner to read break-even output, margin of safety and profit from the visual, and to infer contribution from the difference in line slopes. Add a drawing task whose answer specifies correctly placed points and labels, then rerun C-31 with a check that the chart is necessary to answer.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-002",
+          "severity": "high",
+          "category": "evaluation",
+          "affected_ids": [
+            "OBJ-9609-5.4.2-05",
+            "OBJ-9609-5.4.3-04",
+            "CLM-9609-5.4-061",
+            "ITEM-9609-5.4-037-EVAL",
+            "ITEM-9609-5.4-052-CALC",
+            "ITEM-9609-5.4-053-APP",
+            "ITEM-9609-5.4-055-EVAL",
+            "ITEM-9609-5.4-086-CASE"
+          ],
+          "finding": "The special-order repair leaves a systematic conflict between the correct incremental-cost test and the rules rewarded by the items. A one-off order improves the result only when its revenue exceeds every incremental cost, including any order-specific fixed, labour, delivery or setup cost, and when it does not displace a better use of capacity. CLM-061 reduces that to price above variable cost plus spare capacity; several answers then invent unchanged costs or sufficient capacity from prompts that do not establish either. ITEM-037's marking guidance separately retains the rejected R1 rule that other work must first cover fixed costs.",
+          "evidence": [
+            "CLM-9609-5.4-055 and CU-9609-5.4.3 block 5.4.3-b4 correctly require the offer to beat every cost the order causes and any opportunity cost. CLM-9609-5.4-061 instead says price above variable cost and spare capacity are sufficient because fixed costs are paid anyway, without conditioning the claim on there being no additional fixed or other incremental cost.",
+            "ITEM-9609-5.4-037-EVAL's answer correctly says the discounted work improves profit or reduces loss while capacity is idle, but its required criterion still says \"whether fixed costs are covered by other work\", the false condition R1-007 was meant to remove.",
+            "ITEM-9609-5.4-055-EVAL supplies only flour, yeast and packaging of N$5 and an idle oven. It does not state total variable cost, whether the baker's time is already paid, or the cost of the promised delivery, yet its answer treats N$5 as the complete incremental cost, asserts the baker is paid anyway and recommends acceptance.",
+            "ITEM-9609-5.4-052-CALC and -053-APP likewise infer that fixed costs do not change and that the stated variable cost is the only cost caused by the order, although their prompts establish only spare capacity. ITEM-9609-5.4-086-CASE treats 60% utilisation as proof that an order for 400 signs fits, without giving capacity in signs or any order-specific cost.",
+            "REPAIRED 2026-09-12: CLM-061 rewritten around incremental revenue against every cost the order causes plus opportunity cost. ITEM-037 guidance no longer carries the rejected \"other work must cover fixed costs\" rule. ITEM-052, -053, -055, -086 and CU-5.4.3 b6 now state total incremental cost, whether fixed costs change and capacity in units; ITEM-054 rewritten to lead on the incremental-cost risk."
+          ],
+          "educational_consequence": "Learners are trained to manufacture decisive case facts, to ignore relevant incremental costs, and in ITEM-037 to reject profitable work because unrelated sales have not covered fixed costs. These errors directly undermine AO2 application and the decisive criterion in a 12-mark AO4 answer.",
+          "recommended_repair": "Rewrite CLM-061 around incremental revenue minus all incremental costs and opportunity cost. In every special-order prompt, state total per-unit incremental cost, any setup, labour or delivery cost, whether fixed costs change, and spare capacity in units; otherwise require a conditional conclusion. Replace ITEM-037's stale guidance with the criterion used in its answer: what the capacity would otherwise earn and what costs the discounted work itself causes.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-003",
+          "severity": "medium",
+          "category": "evidence",
+          "affected_ids": [
+            "EXPOSURE-CIE-9609-AS-2026-2028",
+            "OBJ-9609-5.4.4-01",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-02",
+            "OBJ-9609-5.4.4-03",
+            "EV-9609-W22-23-1b-0027",
+            "EV-9609-W25-12-3a-0074",
+            "EV-9609-M24-22-1b-0078",
+            "EV-9609-S23-13-5b-0144",
+            "EV-9609-W21-13-7a-0187"
+          ],
+          "finding": "The semantic exposure repair is incomplete and exam-exposure.json still mixes pre-remap metrics with post-remap counts. Several records about the definition, usefulness or importance of break-even analysis remain mapped to the break-even-output calculation. The exposure entries then retain the old question-part counts, command-word mix, maximum tariff and probed_high class even though a separate field records far fewer parts after remapping.",
+          "evidence": [
+            "EV-9609-W25-12-3a-0074 asks to define break-even analysis but maps to OBJ-9609-5.4.4-02-01 rather than the meaning objective OBJ-9609-5.4.4-01.",
+            "EV-9609-W22-23-1b-0027 and EV-9609-M24-22-1b-0078 ask for a use of break-even data or analysis; EV-9609-S23-13-5b-0144 evaluates its importance; and EV-9609-W21-13-7a-0187 analyses how it helps a start-up. All remain on -02-01 instead of the meaning/importance or uses/limitations objectives.",
+            "The -02-01 exposure entry retains question_parts_naming_it 26, a 12-mark maximum and a probed_high class while observed_parts_after_remap_2026_09_10 is 14. The -02-02 entry retains four parts, Analyse/Evaluate exposure and probed_high while its post-remap field is one part.",
+            "exam-exposure.json nevertheless says the 5.4 counts were recomputed, and assessment_evidence.json explicitly records token matching as a known weakness rather than a validated semantic map.",
+            "REPAIRED 2026-09-12: Four further records re-mapped by meaning (definitions of break-even to 5.4.4-01; uses, importance and limitations to 5.4.4-03). Every 5.4 exposure field - part counts, command words, maximum tariff, distinct series and class - is now rebuilt from the corrected map with no pre-remap figure retained beside it. 5.4.4-03 moves to probed_high with 15 parts; 5.4.4-02-04 is correctly unprobed."
+          ],
+          "educational_consequence": "No current objective was thinned because of exposure, so the learner-facing harm is bounded. However, future item-type allocation, review-set membership and assessment-demand claims can still be driven by false objective granularity and by command words belonging to removed records.",
+          "recommended_repair": "Semantically remap every topic 5.4 record, including synonymous formulations of meaning, help, use and importance. Rebuild question_parts_naming_it, distinct series, maximum tariff, command-word counts and exposure class from the repaired mappings instead of retaining the old fields beside a new count, then make the remap note describe the resulting state accurately.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-004",
+          "severity": "medium",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.4.3-03",
+            "OBJ-9609-5.4.4-02-04",
+            "ITEM-9609-5.4-048-CALC",
+            "ITEM-9609-5.4-078-CALC"
+          ],
+          "finding": "The repaired CALC cards now add interpretation, but both overstate the sensitivity shown by their own figures. The arithmetic checks are separated correctly; the new business meanings are not quantitatively supported.",
+          "evidence": [
+            "ITEM-9609-5.4-048-CALC says a 10% fall in volume would remove most of N$25 200 profit. Contribution is N$43 per unit; at 2 160 units profit is N$14 880, so the fall removes N$10 320, or 41%, and 59% remains.",
+            "ITEM-9609-5.4-078-CALC says output 20% below the 12 000-unit plan would leave Kaoko with \"almost nothing\". At 9 600 bottles, profit is (9 600 x N$12) - N$96 000 = N$19 200, which is 40% of the stated N$48 000 profit.",
+            "Both marking guides require sensitivity interpretation, so these are rewarded conclusions rather than incidental wording.",
+            "REPAIRED 2026-09-12: ITEM-048 and ITEM-078 now state the retained and lost percentages: 41% lost and 59% retained on a 10% volume fall; 60% of profit lost on a 20% fall. New check C-36 fails a magnitude claim with no figure behind it."
+          ],
+          "educational_consequence": "A learner may calculate correctly and then lose interpretation credit by describing a minority reduction as \"most\" or 40% of the original profit as almost nothing, weakening quantitative AO2 reasoning.",
+          "recommended_repair": "State the exact retained and lost percentages, or change the hypothetical volume falls to thresholds that support the intended language. Keep the second calculation route as a check and use neutral, evidence-matched interpretation.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-005",
+          "severity": "medium",
+          "category": "analysis",
+          "affected_ids": [
+            "OBJ-9609-5.4.2-04",
+            "ITEM-9609-5.4-034-APP"
+          ],
+          "finding": "ITEM-034 correctly derives a N$7 000 loss from contribution of N$74 000 and fixed costs of N$81 000, then makes a diagnosis the figures cannot support: that pricing is not the problem and insufficient event volume is. The same shortfall could be addressed or caused by price, variable cost, fixed cost or volume; positive aggregate contribution does not select among them.",
+          "evidence": [
+            "The prompt supplies only total contribution and fixed costs. It gives no price, contribution per event, event count, capacity, demand or comparator.",
+            "The canonical conclusion says \"The problem is not her pricing on each event; it is that she did not do enough events\", and the guidance requires a conclusion about volume rather than pricing.",
+            "CU-9609-5.4.3 block 5.4.3-b5 correctly teaches that a cost result raises a question but cannot identify its cause without further evidence, making the item internally inconsistent with the notes.",
+            "REPAIRED 2026-09-12: ITEM-034 now reaches the N$7 000 loss and stops there, and asks what further evidence would separate low volume, a thin margin and excessive fixed costs. Its guidance forbids choosing between them from these two figures."
+          ],
+          "educational_consequence": "Learners can be rewarded for treating an accounting result as causal evidence and for excluding valid remedies without case support, an AO3 inference error.",
+          "recommended_repair": "Limit the answer to the supported conclusion: the business made a N$7 000 loss because contribution did not cover fixed costs. Ask what additional information would distinguish low volume, a thin contribution margin and excessive fixed cost, or supply that evidence before requiring a diagnosis.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-006",
+          "severity": "low",
+          "category": "publishing",
+          "affected_ids": [
+            "CU-9609-5.4.2/5.4.2-b2",
+            "CU-9609-5.4.2/5.4.2-b3",
+            "CU-9609-5.4.2/5.4.2-b6",
+            "CU-9609-5.4.3/5.4.3-b4",
+            "CU-9609-5.4.3/5.4.3-b7",
+            "CU-9609-5.4.4/5.4.4-b10",
+            "ITEM-9609-5.4-019-DEF",
+            "ITEM-9609-5.4-020-DEF",
+            "ITEM-9609-5.4-021-DIST",
+            "ITEM-9609-5.4-022-APP",
+            "ITEM-9609-5.4-024-LIM",
+            "ITEM-9609-5.4-026-CHAIN",
+            "ITEM-9609-5.4-046-CALC",
+            "ITEM-9609-5.4-082-CHAIN",
+            "ITEM-9609-5.4-083-EVAL",
+            "ITEM-9609-5.4-087-SHOR"
+          ],
+          "finding": "C-30 is a real but bounded historical audit gap: these advanced claim-revision stamps lack prior_hash, so the record cannot prove what text was replaced or distinguish a genuine reread from a bulk stamp. I independently reread the current artifacts and the packet hash fixes their present content, so the warning is not itself evidence that a stale derivative remains.",
+          "evidence": [
+            "qa_report.json C-30 names these 16 pre-audit-trail stamps as unverifiable while reporting later stamps auditable and clean.",
+            "C-29 confirms that every current block and item records the current revision of every cited claim; this addresses present revision alignment but cannot reconstruct the missing historical hashes.",
+            "REPAIRED 2026-09-12: Accepted as the reviewer recommended: no historical hashes fabricated. C-30 reports the 16 pre-audit-trail stamps as unauditable rather than as a proven bulk stamp, every stamp made since records prior_hash, and this round anchors the artefacts to a hash-verified review."
+          ],
+          "educational_consequence": "There is no demonstrated learner-facing error from the missing history, but a later maintainer cannot rely on these stamps as evidence that the affected derivatives were actually reread when the claims advanced.",
+          "recommended_repair": "Do not fabricate historical hashes. Preserve the exception explicitly, anchor the current artifacts to this independently hash-verified R2 review, and require prior_hash for every future advanced stamp.",
+          "confidence": 1.0,
+          "status": "resolved"
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R2-007",
+          "severity": "low",
+          "category": "learning-item",
+          "affected_ids": [
+            "CONTRACT-9609-AS-5.4",
+            "ITEMS-9609-AS-5.4",
+            "ITEM-9609-5.4-068-DEF"
+          ],
+          "finding": "Repair bookkeeping is not internally current. The contract still fixes the topic item budget and required learning-item output at 86 while the reviewed dataset and QA report contain 91 items, and the card converted from a duplicate definition retains a -DEF identifier although its declared subtype and task are INTERP.",
+          "evidence": [
+            "contract.json records depth_constraints.item_budget 86 and required_outputs.learning_items 86; qa_report.json and the item dataset record 91 after the graphical additions.",
+            "ITEM-9609-5.4-068-DEF declares subtype INTERP and asks for interpretation of chart slopes, while the rest of the flashcard identifiers use their subtype as the final suffix.",
+            "REPAIRED 2026-09-12: Contract item budget and required_outputs reconciled to the live bank with the full 86 -> 88 -> 91 -> 92 history recorded. ITEM-068 renamed to ITEM-9609-5.4-068-INTERP to match its declared subtype."
+          ],
+          "educational_consequence": "The learner content remains readable, but scheduling, subtype analytics and future contract checks can classify the repaired card or the intended bank size inconsistently.",
+          "recommended_repair": "Reconcile the approved topic budget with the 91-item bank and record the decision in the contract. Rename ITEM-068 consistently or document its identifier as a stable legacy ID while ensuring every consumer uses the declared subtype rather than the suffix, then regenerate references and packet hashes.",
+          "confidence": 1.0,
+          "status": "resolved"
+        }
+      ]
+    },
+    {
+      "review_id": "SR-9609-5.4-CODEX-R3",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "packet_hash_verified": true,
+      "coverage_confirmed": "I verified all 18 packet entries and the detached manifest hash, read the full topic objective branch and every packet artifact, and traced all 21 assessable objectives in both directions. OBJ-9609-5.4.1-01 is taught in CU-9609-5.4.1 blocks 5.4.1-b2/b3 and practised by ITEM-9609-5.4-001-DEF to -004-APP. The decomposed cost-types container OBJ-9609-5.4.1-02 is taught in b4/b8 and practised by -005-DIST, -006/-007-DEF and -013/-014-DEF; member -02-01 is taught in b4/b5/b7/b8 and practised by -006 to -012, while member -02-02 is taught in b4/b6/b8 and practised by -013 to -018. OBJ-9609-5.4.2-01 is taught in CU-9609-5.4.2 b2/b3 and practised by -019 to -022; -02 is taught in b2/b6/b7/b9 and practised by -019/-023 to -026/-085; -03 is taught in b2/b4 and reinforced in later contribution blocks, and practised by -020/-027 to -030; -04 is taught in b5/b7/b9 and practised by -031 to -034; -05 is taught in b6/b9 and practised by -035 to -037/-085; and -06 is taught in b7/b8 and practised by -038 to -040/-085. OBJ-9609-5.4.3-01 is taught in CU-9609-5.4.3 b2/b3/b7 and practised by -041 to -044/-088; -02 is taught in b4/b7 and practised by -045 to -047/-086; -03 is taught in b5/b7 and practised by -048 to -051; and -04 is taught in b6 and practised by -052 to -055/-086. OBJ-9609-5.4.4-01 is taught in CU-9609-5.4.4 b2/b3 and practised by -056 to -059. The decomposed numeric-and-graphic container OBJ-9609-5.4.4-02 is taught in b2/b4-b9/b11, with supporting contribution teaching in CU-9609-5.4.2 b4 and the special-order application in CU-9609-5.4.3 b6, and is practised by -027/-028, -057, -060 to -079, -084 and -089 to -092. Member -02-01 is taught in CU-9609-5.4.4 b2/b4-b8/b11 and practised by -057/-060 to -067/-084/-089/-092; -02 is taught in CU-9609-5.4.2 b4 and CU-9609-5.4.4 b4/b5/b7/b11 and practised by -027/-028/-068 to -071; -03 is taught in CU-9609-5.4.4 b4/b5/b11 and practised by -072 to -075/-084/-090; and the rarely examined -04 is taught at full depth in b4/b5/b9 and practised by -076 to -079/-084/-091. OBJ-9609-5.4.4-03 is taught in b10 and practised by -080 to -083/-087. The rebuilt charts are algebraically coherent, require readings the stems do not disclose, and now include drawing practice; the full/contribution boundary, special-order governing claim, numerical sensitivity, diagnosis, item count and renamed ITEM-068 repairs also hold. The reverse pass found an objective, prerequisite or approved assessment purpose for every substantial block and no excluded construct presented as core. The costing sense of contribution is explicitly disambiguated, no consequential registered finance variant is invoked, and no unqualified legal rule is taught. C-18 does not establish an AO4 deficit: nine sustained five-part EVAL cards and four extended performance tasks make a credible practice-time share above the count share. C-30 is a genuine but disclosed historical audit limitation; the 16 old stamps cannot be reconstructed, but the present artifacts were reread here and are anchored to this verified packet, so the warning is not itself a current learner defect. Objective presence and depth are confirmed throughout, but the high-severity causal and special-order defects below prevent semantic approval.",
+      "reconstruction_test": "Using only the generated resource, I reconstructed a precise recall definition of direct cost; 3-mark explanations on fixed and variable cost, cost monitoring, contribution versus profit and a break-even limitation; calculations of total, average and marginal cost, contribution, break-even output, margin of safety and profit with working, units and interpretation; an 8-mark analysis for an unfamiliar mobile-services business considering a discounted booking; a 12-mark evaluation of break-even analysis for a new bicycle-repair business; and transfer to a context not named in the notes. The repaired fixed/variable boundary, formula set, worked Kaoko example, actual chart-reading and chart-drawing tasks, conditional sensitivity discussion and five-part evaluation scaffold support those answers, including the rarely examined profit objective. No objective is absent or too thin to reconstruct. However, mastery of the canonical material as written would also reproduce non-credit-worthy reasoning: OBJ-9609-5.4.1-01 says all decisions based on an inaccurate figure fail together and in the same direction; several keep-or-drop chains make unavoidable overhead and the absence of a better capacity use implicit; ITEM-055-EVAL recommends acceptance without establishing that N$5 is the complete incremental cost; ITEM-064-APP calls a 60-unit margin of safety profit and equates break-even with the owner's personal earnings; ITEM-046-CALC has no determinate lowest positive-contribution price; and ITEM-087-SHOR classifies unspecified bank charges as fixed. Those failures do not erase coverage, but they would train invalid analysis, evaluation and quantitative interpretation, so the reconstruction test does not support release.",
+      "source": "operations/review/cie-9609-as-2026-2028-5.4-review-r3.yaml",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-001",
+          "severity": "high",
+          "category": "analysis",
+          "affected_ids": [
+            "OBJ-9609-5.4.1-01",
+            "CLM-9609-5.4-003",
+            "CU-9609-5.4.1/5.4.1-b3",
+            "ITEM-9609-5.4-002-WHY"
+          ],
+          "finding": "The foundational explanation of why accurate cost information matters makes an invalid universal causal claim: if a cost figure is wrong, all four decisions resting on it supposedly go wrong together and in the same direction. An error need not be material to every decision, and under-allocating a fixed total to one product normally over-allocates it to another, making the two products look wrong in opposite directions. The valid conclusion is that inaccurate information can mislead any dependent decision, with the direction determined by whether the relevant cost is under- or overstated.",
+          "educational_consequence": "A learner can reproduce the supplied answer in an Explain or Analyse response and write an unsupported absolute instead of a conditional mechanism. The model also obscures the central insight that under- and overstatement cause different pricing, continuation and performance errors.",
+          "recommended_repair": "Rewrite CLM-003, block b3 and ITEM-002 to say that inaccurate cost information can mislead each decision that materially depends on it. Develop separate under-costing and over-costing pathways, and require one correctly conditioned pathway rather than the claim that all decisions fail together.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "CLM-9609-5.4-003 revised to revision 2: inaccurate cost information can mislead any decision that materially depends on the figure, with the direction following the distortion. Block 5.4.1-b3 rewritten with separate under-costing and over-costing pathways and the zero-sum point that understating one product's share overstates another's. ITEM-002-WHY answer and guidance rewritten to require a conditioned pathway rather than a common direction. Check C-08 already covers the universal form; the substantive error was the causal model, not the wording."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-002",
+          "severity": "high",
+          "category": "analysis",
+          "affected_ids": [
+            "OBJ-9609-5.4.1-02-02",
+            "OBJ-9609-5.4.2-02",
+            "OBJ-9609-5.4.2-06",
+            "CLM-9609-5.4-040",
+            "CU-9609-5.4.1/5.4.1-b6",
+            "CU-9609-5.4.2/5.4.2-b7",
+            "ITEM-9609-5.4-003-CHAIN",
+            "ITEM-9609-5.4-017-CHAIN",
+            "ITEM-9609-5.4-025-EVAL"
+          ],
+          "finding": "The earlier full-costing repair correctly conditions the targeted claim and cards on overhead being unavoidable, but parallel learner-facing chains still assert that dropping a positive-contribution product leaves the overhead unchanged and makes the business worse off without establishing either that the cost is unavoidable over the decision horizon or that the freed capacity has no better use. Positive contribution proves the loss from dropping without replacement, not that keeping the product is the best available decision.",
+          "educational_consequence": "Learners are trained to treat allocated overhead as necessarily unchanged and positive contribution as a sufficient keep decision. In an unfamiliar case they may recommend retaining a line even when its fixed costs can be avoided or its resources can earn a larger contribution elsewhere, invalidating AO3 chains and the decisive AO4 criterion.",
+          "recommended_repair": "Carry both conditions through every version of the mechanism: identify which costs would actually disappear over the relevant horizon, then compare the product's contribution with the best alternative use of its capacity. Revise the two early chain cards and ITEM-025's guidance, and replace \"not in cash\" with the accurate point that an allocated accounting loss is not by itself the incremental effect of stopping.",
+          "confidence": 0.99,
+          "status": "resolved",
+          "resolution": "New rule RS-43 and check C-37 built: the subject profile now registers conditioned mechanisms and the check fails any claim, block or item that asserts one without carrying its conditions. Registered CM-9609-DROP-EFFECT (avoidability) and CM-9609-DROP-DECISION (avoidability plus the alternative use of the freed capacity). CLM-040 revised to revision 2, blocks 5.4.1-b6 and 5.4.2-b7 rewritten with both conditions developed numerically, and ITEM-003-CHAIN, ITEM-017-CHAIN and ITEM-025-EVAL re-authored. ITEM-026-CHAIN, ITEM-040-EVAL and ITEM-085-ESSA re-read and left unchanged with written reasons."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-003",
+          "severity": "high",
+          "category": "evaluation",
+          "affected_ids": [
+            "OBJ-9609-5.4.3-04",
+            "CLM-9609-5.4-061",
+            "ITEM-9609-5.4-055-EVAL"
+          ],
+          "finding": "The special-order repair is complete in CLM-061 and most practice, but ITEM-055 still does not establish the decisive cost fact it rewards. Its learner-visible stem says only that flour, yeast and packaging cost N$5 a roll; it does not say that N$5 is the total variable or incremental cost, or that oven energy and every other order-caused cost are included or unchanged. The canonical answer nevertheless asserts that N$5 is the only cost caused by the order and recommends acceptance from that invented completeness.",
+          "educational_consequence": "A learner is rewarded for manufacturing a decisive case fact and may recommend a standing discounted order without counting all incremental costs. That directly weakens AO2 use of evidence and the five-part AO4 judgement in the topic's main special-order evaluation.",
+          "recommended_repair": "State that N$5 is the complete per-roll variable cost including energy and every other output-related input, and state that the order creates no setup or other fixed cost; alternatively, keep those facts unknown and make the recommendation conditional on checking them. Make the learner-visible prompt, answer and guidance use the same total-incremental-cost language.",
+          "confidence": 0.99,
+          "status": "resolved",
+          "resolution": "New rule RS-44 and check C-38 built: an answer may not assert a completeness fact its prompt does not establish. ITEM-055-EVAL's stem now states that N$5 is the total variable cost including oven energy and that the order creates no setup, overtime or other extra fixed cost; the answer and marking guidance use the same total-incremental-cost language. The check also caught ITEM-046-CALC, which the review did not name for this defect, and cleared ITEM-053-APP once the pattern distinguished naming a cost category from enumerating named inputs."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-004",
+          "severity": "medium",
+          "category": "evidence",
+          "affected_ids": [
+            "ASSESS-CIE-9609-AS-2026-2028",
+            "EXPOSURE-CIE-9609-AS-2026-2028",
+            "OBJ-9609-5.4.4-01",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-02",
+            "OBJ-9609-5.4.4-02-03",
+            "OBJ-9609-5.4.4-03",
+            "EV-9609-S23-13-5b-0144",
+            "CU-9609-5.4.4",
+            "CONTRACT-9609-AS-5.4"
+          ],
+          "finding": "The exposure repair remains internally inconsistent. One previously identified importance question is still mapped to the break-even-output calculation, old pre-remap metrics remain nested beside newer totals, several exposure classes contradict the file's own tariff definition, and downstream topic metadata still reports the old figures. The remap note's claim that every 5.4 field was rebuilt with no old figure retained is therefore false.",
+          "educational_consequence": "Current learner depth was not reduced and all objectives remain covered, so the immediate teaching harm is bounded. Future item allocation, review-set membership and statements about observed assessment demand can nevertheless be driven by the wrong objective, tariff or class.",
+          "recommended_repair": "Semantically move EV-9609-S23-13-5b-0144 to the chosen meaning/importance or uses/limitations objective, then rebuild every nested and top-level count, series total, command-word mix, maximum tariff, exposure class and required subtype from one source. Update the CU and contract summaries from that same result and remove, rather than preserve, stale pre-remap metrics.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "New rule RS-45 and check C-39 built: every exposure figure must recompute from the evidence records and satisfy the file's own class definitions. EV-9609-S23-13-5b-0144 remapped by meaning to OBJ-9609-5.4.4-01 and -03. Every 5.4 entry rebuilt by script into the nested evidence object the rest of the file uses, with the duplicate top-level metrics removed rather than retained. The class definitions were amended to include frequency alongside tariff, which is what they always meant; recomputing the whole file against them moved exactly one objective. CU-9609-5.4.4 prose and contract.json exposure split recomputed from the same result."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-005",
+          "severity": "medium",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-03",
+            "OBJ-9609-5.4.4-02-04",
+            "ITEM-9609-5.4-064-APP"
+          ],
+          "finding": "ITEM-064 confuses three different quantities. From break-even output of 240 haircuts and expected output of 300, the learner can derive a 60-haircut margin of safety, not \"60 haircuts of profit\"; profit is a currency amount and cannot be calculated without contribution per haircut. The answer also says the first 240 haircuts earn the owner nothing personally, although break-even establishes zero business profit, not whether an owner receives wages, salary or drawings.",
+          "educational_consequence": "Learners may label a margin of safety as profit, attach units to a currency result, and conflate business profit with the owner's personal remuneration. These are precisely the distinctions needed for quantitative interpretation marks.",
+          "recommended_repair": "State that 240 haircuts cover total cost and give zero business profit, and that 300 implies a 60-haircut margin of safety. Add contribution per haircut if a monetary profit is required; otherwise say its amount cannot be calculated. Remove the claim about what the owner personally earns.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "New rule RS-46 and check C-40 built: a currency amount may not be named in physical units. ITEM-064-APP rewritten to say that 240 haircuts gives zero business profit, that 300 implies a margin of safety of 60 haircuts, and that the profit those 60 represent cannot be calculated without contribution per haircut. The claim about what the owner personally earns is removed."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-006",
+          "severity": "medium",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.4.3-02",
+            "ITEM-9609-5.4-046-CALC"
+          ],
+          "finding": "ITEM-046 asks for \"the lowest price that still adds to profit\" when variable cost is N$310, but no such single price is determined by the data. A price of exactly N$310 gives zero contribution and adds nothing; every price above N$310 adds something, with the minimum depending on the allowed currency increment. The canonical answer calls N$310 the floor and then introduces N$360, which was not in the prompt and is not the requested lowest price.",
+          "educational_consequence": "A learner can give the canonical N$310 as a price that adds to profit even though its contribution is zero, or copy the unexplained N$360. The item therefore does not have one derivable answer to its own calculation request.",
+          "recommended_repair": "Ask for the break-even or no-loss price and accept N$310, or ask for the condition and answer \"any price above N$310\". If an exact lowest positive-contribution price is required, specify pricing to the nearest cent and use N$310.01; remove the invented N$360 unless it is placed in the stem.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "ITEM-046-CALC rewritten so every question it asks has one derivable answer. The N$360 offer now sits in the stem rather than appearing in the answer, and the item asks for the price that covers all costs, the price at which the order neither adds to profit nor reduces it, and what the offer adds per chair. The answer states explicitly that at N$310 contribution is nil, so the floor is not a price to charge."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R3-007",
+          "severity": "medium",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.4.1-02-01",
+            "OBJ-9609-5.4.4-03",
+            "ITEM-9609-5.4-087-SHOR"
+          ],
+          "finding": "The repaired lender checklist correctly removes owner's drawings, but it now treats unspecified bank charges and accountancy fees as fixed costs whose omission necessarily understates break-even. Those labels do not determine cost behaviour: a monthly account fee or retainer may be fixed, while transaction charges, borrowing charges or work billed by activity can vary. The answer contradicts the topic's own rule that classification depends on how the amount changes with output or activity.",
+          "educational_consequence": "Learners may add all bank and accountancy charges to fixed costs by label, calculate the wrong break-even output and contradict the classification principle they were taught earlier.",
+          "recommended_repair": "Use unambiguous examples such as a fixed monthly bank-account fee and a fixed annual accountancy retainer, or ask how each charge behaves before classifying it. Remove the unsupported \"most often left out\" claim and state that only the fixed component belongs in the fixed-cost total.",
+          "confidence": 0.98,
+          "status": "resolved",
+          "resolution": "ITEM-087-SHOR rewritten to classify by behaviour rather than by label: an insurance premium and an annual accountancy retainer do not change with output and belong in the fixed total, while bank charges are a mixture where a monthly account fee is fixed and per-transaction charges vary with activity, so only the fixed part enters the numerator. The unevidenced 'most often left out' claim is removed. Registered mechanism CM-9609-COST-BY-LABEL now makes this class of defect mechanically detectable."
+        }
+      ]
+    },
+    {
+      "review_id": "SR-9609-5.4-CODEX-R4",
+      "reviewer_role": "combined",
+      "status": "reject",
+      "packet_hash_verified": true,
+      "coverage_confirmed": "I verified all 18 packet entries and the detached manifest hash, read every packet artifact after first reading the full 5.4 objective branch, and audited all 21 assessable objectives in both directions. OBJ-9609-5.4.1-01 is taught in CU-9609-5.4.1 blocks 5.4.1-b2/b3 and practised by ITEM-9609-5.4-001 to -004. The cost-types container OBJ-9609-5.4.1-02 is taught in b4/b8 and practised through -005 to -018; member -02-01 is developed in b4/b5/b7/b8 and -006 to -012/-093/-094, while member -02-02 is developed in b4/b6/b8 and -013 to -018. OBJ-9609-5.4.2-01 is taught in CU-9609-5.4.2 b2/b3 and practised by -019 to -022; -02 in b2/b6/b7/b9 and -019/-023 to -026/-085; -03 in b2/b4 and -020/-027 to -030; -04 in b5/b7/b9 and -031 to -034; -05 in b6/b9 and -035 to -037/-085/-095; and -06 in b7/b8 and -038 to -040/-085/-096. OBJ-9609-5.4.3-01 is taught in CU-9609-5.4.3 b2/b3/b7 and practised by -041 to -044/-088/-097/-098; -02 in b4/b7 and -045 to -047/-086/-099/-100; -03 in b5/b7 and -048 to -051/-101; and -04 in b6 and -052 to -055/-086/-102. OBJ-9609-5.4.4-01 is taught in CU-9609-5.4.4 b2/b3 and practised by -056 to -059/-103. The numeric-and-graphic container OBJ-9609-5.4.4-02 is taught in b2/b4-b9/b11, with contribution support in CU-9609-5.4.2 b4, and practised by -027/-028, -057, -060 to -079, -084 and -089 to -092. Member -02-01 is taught in b2/b4-b8/b11 and practised by -057/-060 to -067/-084/-089/-092; -02-02 is taught in CU-9609-5.4.2 b4 and CU-9609-5.4.4 b4-b7/b11 and practised by -027/-028/-068 to -071; -02-03 is taught in b4-b6/b11 and practised by -072 to -075/-084/-090/-104; and the rarely examined -02-04 is taught at full depth in b4-b6/b9 and practised by -076 to -079/-084/-091. OBJ-9609-5.4.4-03 is taught in b10 and practised by -080 to -083/-087/-105. The reverse audit gives every substantial block an objective, prerequisite or legitimate assessment purpose, with no excluded construct presented as core. Exposure has not reduced any objective's depth; the costing sense of contribution is explicitly disambiguated; the allowed AS command words, tariffs and five-part evaluation model are respected in the substantive responses; causal language is generally conditional; and no unqualified jurisdictional rule or consequential finance variant is introduced. All seven R3 learner-content repairs hold in their named passages. C-30 is a bounded historical audit gap: the 13 old stamps cannot prove their prior text, but the current artifacts were independently reread and are anchored to this verified packet. Coverage is nevertheless not confirmed for release because the compulsory graphical modality is materially misrepresented in the repeated chart identified below.",
+      "reconstruction_test": "Using only the generated resource, I reconstructed a precise recall definition of contribution; short explanations on cost accuracy, fixed versus variable costs, full-costing allocation, cost monitoring and break-even limitations; calculations of total, average and marginal cost, contribution, break-even output, margin of safety and profit with working, units and interpretation; an analysis for an unfamiliar mobile-repair business considering a discounted fleet booking; a five-part evaluation of break-even analysis for a new bicycle-repair business; and transfer to a context not named in the notes. The corrected cost-classification boundary, special-order incremental test, keep-or-drop conditions, formula set and evaluation scaffolds support credit-worthy answers across the tariff range, and no objective is otherwise absent or nominal. The graphical reconstruction fails: the chart repeated in ITEM-9609-5.4-068 and -089 to -091 does not draw the lines represented by its declared data and therefore does not display the break-even intersection learners are told to read. ITEM-089 also teaches the false claim that the revenue line never meets the fixed-cost line. A learner can repeat the supplied numerical answers or the drawing steps in ITEM-092, but cannot obtain the required readings from the displayed stimulus. The new temporal distinction in ITEM-098 would also reproduce a misleading AO1 boundary. The reconstruction test therefore does not support release.",
+      "source": "operations/review/cie-9609-as-2026-2028-5.4-review-r4.yaml",
+      "issues": [
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R4-001",
+          "severity": "critical",
+          "category": "quantitative",
+          "affected_ids": [
+            "OBJ-9609-5.4.4-02",
+            "OBJ-9609-5.4.4-02-01",
+            "OBJ-9609-5.4.4-02-02",
+            "OBJ-9609-5.4.4-02-03",
+            "OBJ-9609-5.4.4-02-04",
+            "ITEM-9609-5.4-068-INTERP",
+            "ITEM-9609-5.4-089-INTERP",
+            "ITEM-9609-5.4-090-APP",
+            "ITEM-9609-5.4-091-APP"
+          ],
+          "finding": "The repaired graphical practice is still not a valid break-even chart. Its metadata describes price N$80, variable cost N$40 and fixed costs N$160 000, but the learner-visible ASCII plot draws the dotted revenue trace above and approximately parallel to the total-cost trace instead of from the origin through their N$320 000 intersection at 4 000 units. No crossing is displayed, so the break-even output and margin of safety cannot be read from the chart as the prompts require. The main interpretation answer also contains a separate false graphical statement: the horizontal fixed-cost line does meet the revenue line, at 2 000 units and N$160 000; that crossing is merely not the break-even point because total cost is higher there.",
+          "educational_consequence": "The syllabus expressly requires break-even output, contribution, margin of safety and profit in graphical as well as numerical form. Learners cannot practise locating the intersection or reading the two gaps from this stimulus and may instead memorise values supplied by the canonical answers; they may also learn the false rule that revenue cannot cross a fixed-cost line.",
+          "recommended_repair": "Replace the ASCII stimulus with a correctly scaled rendered chart, or regenerate the characters from verified coordinates, so TR runs through (0, 0), TC through (0, N$160 000), and both meet at (4 000, N$320 000). Visually inspect the rendered learner artifact, not only its metadata. Correct ITEM-089 to say that the revenue/fixed-cost crossing at 2 000 units is not break-even because break-even is the revenue/total-cost crossing, then re-run every graphical item against the displayed chart.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "New rule RS-47, a chart renderer and check C-41. The depiction is no longer authored: build/render_chart.py generates the ASCII plot from the declared parameters, and C-41 re-renders every declared chart and fails any prompt whose plot is not byte-identical to the result. The four items were regenerated, and so was the teaching chart in CU-9609-5.4.4 block 5.4.4-b6, which had the same defect in the offline notes and which the review did not reach. ITEM-089's false claim was replaced: the revenue line does cross the fixed-cost line, at 2 000 units, and the answer now explains that this is not break-even because total cost is N$240 000 there. C-35 was narrowed so it accepts the revenue/fixed-cost crossing as a real point on the chart rather than a mislabelled break-even."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R4-002",
+          "severity": "medium",
+          "category": "evidence",
+          "affected_ids": [
+            "ASSESS-CIE-9609-AS-2026-2028",
+            "EXPOSURE-CIE-9609-AS-2026-2028",
+            "CONTRACT-9609-AS-5.4",
+            "EV-9609-S22-22-1b-0021",
+            "OBJ-9609-5.4.1-02-01",
+            "OBJ-9609-5.4.1-02-02",
+            "OBJ-9609-5.4.2-02"
+          ],
+          "finding": "The R3 exposure repair is not semantically complete. EV-9609-S22-22-1b-0021 asks about the problem of allocating fixed costs to different box sizes, but remains mapped only to fixed-versus-variable classification. The operative concept is allocating a shared cost between products, which belongs to direct/indirect allocation and/or the limitation of full costing. The contract also retains the superseded exposure split 3/2/1 inside depth_constraints while separately reporting the recomputed 11/6/2 split, despite the repair claim that downstream metadata was rebuilt from one result.",
+          "educational_consequence": "Present learner depth remains adequate, so the immediate harm is bounded. The wrong semantic hit and two live-looking class summaries can still assign future subtype floors, rare-review membership and assessment emphasis to the wrong objectives.",
+          "recommended_repair": "Remap EV-9609-S22-22-1b-0021 by the decision it tests, rebuild the affected exposure records from the evidence map, and keep one authoritative current exposure split in the contract. If the 3/2/1 values must remain for history, move them into an explicitly historical revision record that no build stage can consume.",
+          "confidence": 0.99,
+          "status": "resolved",
+          "resolution": "EV-9609-S22-22-1b-0021 remapped by the decision it tests to OBJ-9609-5.4.1-02-02 and OBJ-9609-5.4.2-02, and every affected exposure entry rebuilt from the evidence map by the same script. Two objectives changed class as a result. The superseded 3/2/1 split was removed from contract depth_constraints rather than kept as history beside the current one; the remap history stays in exam-exposure.json's remap_note, which no build stage reads as a count."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R4-003",
+          "severity": "medium",
+          "category": "accuracy",
+          "affected_ids": [
+            "OBJ-9609-5.4.3-01",
+            "ITEM-9609-5.4-098-DIST"
+          ],
+          "finding": "ITEM-098 turns a valid average-versus-marginal distinction into a false temporal boundary. Average cost is not inherently backward-looking: it can be calculated from actual past costs or from forecast total cost at a planned future output. Marginal cost is the cost of one additional unit, not necessarily a different time orientation. The mathematical boundary is total cost per unit versus the incremental cost of one more unit.",
+          "educational_consequence": "A learner may reproduce \"past versus future\" as the defining distinction in an AO1 answer even though both measures can be estimated prospectively, weakening an otherwise correct comparison.",
+          "recommended_repair": "Remove the backward-looking/forward-looking requirement. Define average cost as the share of total cost at a stated output and marginal cost as the extra cost of one more unit, then retain the useful decision contrast between long-run price coverage and an incremental output decision.",
+          "confidence": 0.98,
+          "status": "resolved",
+          "resolution": "ITEM-098's temporal framing removed. Average cost is now defined as total cost spread across units at a stated output and marginal cost as the extra cost of one more unit, with the guidance explicitly refusing a past-versus-future distinction because either measure can be calculated from planned figures. The useful contrast between long-run price coverage and an incremental output decision is kept."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R4-004",
+          "severity": "medium",
+          "category": "publishing",
+          "affected_ids": [
+            "CONTRACT-9609-AS-5.4",
+            "ITEM-9609-5.4-093-APP",
+            "ITEM-9609-5.4-105-APP"
+          ],
+          "finding": "The topic contract still authorises and describes a 92-item output although the reviewed bank, current brief and QA report contain 105 items. Its item_budget, required_outputs.learning_items and item-budget history all stop at 92, so the 13 post-R3 cards have no reconciled contract total.",
+          "educational_consequence": "A later rebuild, pacing calculation or publication gate can treat thirteen valid cards as surplus, omit them, or report a workload that does not match the resource the learner receives.",
+          "recommended_repair": "Reconcile every current item-count field to 105 and extend the history to explain the 92-to-105 change and its authority. Make the contract total a derived value or add a deterministic comparison against the live bank so another repair cannot silently outgrow it.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "Contract item_budget and required_outputs.learning_items reconciled to 105, with the history extended to explain the 92-to-105 change and name its authority. New check C-42 under RS-45 compares the contract's authorised counts against the live bank on every run, so a repair cannot silently outgrow the contract again."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R4-005",
+          "severity": "medium",
+          "category": "coherence",
+          "affected_ids": [
+            "OBJ-9609-5.4.3-04",
+            "CLM-9609-5.4-060",
+            "ITEM-9609-5.4-055-EVAL",
+            "ITEM-9609-5.4-102-DEF"
+          ],
+          "finding": "The main evaluation mapped to special-order decisions contradicts the resource's own boundary for a special order. CLM-060, the notes and ITEM-102 require it to be one-off, but ITEM-055 supplies a standing weekly order of unspecified duration. Its answer then recommends acceptance \"as a fixed-term arrangement\" even though no term is in the stem. That changes the decision horizon from the defined short-run case towards recurring pricing, where continued capacity and whole-business cost coverage need explicit treatment.",
+          "educational_consequence": "A learner may classify an open recurring discount as a one-off special order and apply the short-run incremental test without first establishing the duration over which capacity and fixed costs remain unchanged.",
+          "recommended_repair": "Make ITEM-055 one delivery or a contract with a stated short fixed term and unchanged costs throughout. Alternatively, keep the standing order and ask explicitly when it ceases to be a special-order decision, requiring a recommendation conditional on duration, future full-price demand and long-run total contribution.",
+          "confidence": 0.96,
+          "status": "resolved",
+          "resolution": "ITEM-055's stem now gives a fixed three-month term over which the bakery's costs and capacity are unchanged, which is the horizon the incremental test needs, and the answer no longer invents a term the case did not supply. The recommendation is to accept the stated term and decide again before extending, and the condition clause says a renewal beyond it is a fresh decision rather than the same incremental test."
+        },
+        {
+          "issue_id": "SR-9609-5.4-CODEX-R4-006",
+          "severity": "low",
+          "category": "publishing",
+          "affected_ids": [
+            "ITEM-9609-5.4-092-PROC",
+            "yyeni-subject-business-v0.1.0"
+          ],
+          "finding": "PROC is a valid flashcard subtype and is used by ITEM-092, but it has no entry in the subject profile's answer_structures register and is consequently absent from the generated brief's declared structures. C-16 can therefore report that every declared part is named without having any declared PROC parts to test.",
+          "educational_consequence": "The present card remains usable, but future procedural cards can pass the structure check without an ordered-stage, input, output or completion requirement, weakening the claimed architecture.",
+          "recommended_repair": "Add a PROC answer structure appropriate to an ordered procedure and make C-16 fail when a PROC card does not name and perform those parts; regenerate the brief from the profile.",
+          "confidence": 1.0,
+          "status": "resolved",
+          "resolution": "A PROC answer structure was added to the subject profile - ordered steps, declared inputs, an action at each step, and a stated result - and ITEM-092's marking guidance was rewritten to name all four parts. C-16 now has declared parts to test PROC cards against instead of passing them vacuously."
+        }
+      ]
+    }
+  ],
+  "blockers": [
+    "No deterministic opinion on 1 checks (C-43) - on these a human or model reviewer is the only line of defence."
+  ],
+  "metrics": {
+    "objective_count": 21,
+    "claim_count": 59,
+    "content_unit_count": 4,
+    "learning_item_count": 105,
+    "word_count": 6212
+  },
+  "release_decision": "publish",
+  "notes": [
+    "Standard v0.2.0-draft check suite. 44 checks: 41 pass, 0 fail, 2 warn, 1 not_run.",
+    "A not_run check means an input the check needs is absent. It is never a pass.",
+    "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+ "scope_scan_id": "SCOPE-SCAN-CIE-0450",
+ "rule": "RS-15. Each entry is one limit the syllabus states, with the pattern C-11 scans learner-facing text for. The sentence is the syllabus’s; the pattern is our judgement of what teaching past the limit would look like. Every contract in the subject carries every entry.",
+ "entries": [
+  {
+   "construct": "the PED formula or a PED calculation",
+   "pattern": "\\b(?:PED|price elasticity(?: of demand)?)\\s*(?:=|equals\\b|is calculated\\b|formula\\b)|\\bformula (?:for|of) (?:PED|price elasticity)|(?:percentage|%) change in (?:the )?quantity demanded\\s*(?:÷|/|divided by|over)\\b|\\bcalculat\\w*\\s+(?:of\\s+)?(?:the |its |a )?(?:PED|price elasticity)",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "PED = % change in quantity demanded ÷ % change in price",
+     "Calculate the PED for the product.",
+     "The formula for price elasticity is simple.",
+     "percentage change in quantity demanded divided by percentage change in price"
+    ],
+    "must_allow": [
+     "Price elastic demand means customers respond strongly to a price change.",
+     "When demand is price inelastic, a price rise increases revenue."
+    ]
+   },
+   "source": "syllabus, page 18, topic 3.3",
+   "syllabus_sentence": "Knowledge of the formula and calculations of PED will not be assessed.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "constructing an income statement",
+   "pattern": "\\b(?:construct\\w*|draw(?:s|ing)? up|drew up)\\s+(?:an?\\s+|the\\s+|this\\s+|your own\\s+|its\\s+)?(?:simple\\s+)?income statements?\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Construct an income statement for Kalahari Crafts.",
+     "Draw up the income statement for the year."
+    ],
+    "must_allow": [
+     "The income statement shows revenue, cost of sales and gross profit.",
+     "Accountants prepare the income statement at the end of the year.",
+     "Calculate the gross profit from the income statement."
+    ]
+   },
+   "source": "syllabus, page 22, topic 5.3",
+   "syllabus_sentence": "Constructing income statements will not be assessed.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "constructing a statement of financial position",
+   "pattern": "\\b(?:construct\\w*|draw(?:s|ing)? up|drew up)\\s+(?:an?\\s+|the\\s+|this\\s+|your own\\s+|its\\s+)?(?:simple\\s+)?(?:statements? of financial position|balance sheets?)\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Draw up a statement of financial position for the shop.",
+     "Construct the balance sheet."
+    ],
+    "must_allow": [
+     "Use the statement of financial position to decide how the business is financed."
+    ]
+   },
+   "source": "syllabus, page 22, topic 5.4",
+   "syllabus_sentence": "Constructing statements of financial position will not be assessed.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "an exchange-rate calculation",
+   "pattern": "\\bexchange[- ]rate calculations?\\b|\\bcalculat\\w*\\b[^.]{0,40}\\bexchange rate\\b|\\bexchange rate\\b[^.]{0,40}\\bcalculat\\w*|\\bconvert\\w*\\b[^.]{0,60}\\b(?:at|using)\\s+(?:an?\\s+|the\\s+)?(?:exchange\\s+)?rate of\\b|\\bat an exchange rate of\\b|(?:N\\$|US\\$|€|£)\\s?\\d+(?:\\.\\d+)?\\s*=\\s*(?:N\\$|US\\$|€|£|R)\\s?\\d",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "At an exchange rate of N$18 = US$1, the price rises.",
+     "Convert US$200 into Namibian dollars at a rate of 18 to 1.",
+     "Calculate the new price after the exchange rate changes."
+    ],
+    "must_allow": [
+     "A weaker Namibian dollar makes Namibian exports cheaper abroad.",
+     "The exchange rate fell, so imported fuel became more expensive.",
+     "Mr Nangolo imports car parts."
+    ]
+   },
+   "source": "syllabus, page 24, topic 6.3",
+   "syllabus_sentence": "Exchange rate calculations will not be assessed.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  }
+ ],
+ "plan_corrections": [
+  {
+   "objective_id": "OBJ-0450-3.3.2-03",
+   "learner_objective": "syllabus aside on an excluded construct removed; syllabus_text unchanged"
+  },
+  {
+   "objective_id": "OBJ-0450-3.3.2-03",
+   "objective_type": "business_comparison",
+   "removed_command_word": "Calculate",
+   "why": "syllabus p18: knowledge of the formula and calculations of PED will not be assessed; the objective is the elastic/inelastic distinction and its use in pricing"
+  },
+  {
+   "objective_id": "OBJ-0450-5.3.2-02",
+   "learner_objective": "syllabus aside on an excluded construct removed; syllabus_text unchanged"
+  },
+  {
+   "objective_id": "OBJ-0450-5.4.2",
+   "learner_objective": "syllabus aside on an excluded construct removed; syllabus_text unchanged"
+  },
+  {
+   "objective_id": "OBJ-0450-6.3.3-01",
+   "objective_type": "business_comparison",
+   "removed_command_word": "Calculate",
+   "why": "syllabus p24: exchange rate calculations will not be assessed; the objective is the difference between depreciation and appreciation"
+  },
+  {
+   "objective_id": "OBJ-0450-6.3.3-02",
+   "learner_objective": "syllabus aside on an excluded construct removed; syllabus_text unchanged"
+  }
+ ]
+}

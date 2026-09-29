@@ -7,9 +7,19 @@ description = "Question Banks library, level-first: Subject (code)/AS Level|A Le
 # they get their own branch rather than being forced under one level.
 source = "filename"
 
-# --- Papers: question paper, mark scheme, insert, source files ---------------
+# --- Practical source files keep their real extension -------------------------
+# 9618 Paper 4 source files are .zip archives. The general pattern below renames every file
+# to .pdf, which would store a zip under a .pdf name. First match wins, so this comes first.
 [[patterns]]
-pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>qp|ms|in|sf)_(?P<paper>\d)(?P<variant>\d)'''
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>sf)_(?P<paper>\d)(?P<variant>\d)\.(?P<ext>zip|txt|py|java|vb|csv)$'''
+folder   = "Question Banks/Cambridge Curricula/Cambridge AS and A Level/{folder_name}/{level}/{yyyy}/{series_name} (Variant {variant})"
+filename = "{code}_{series}{yy}_{kind}_{paper}{variant}.{ext}"
+
+# --- Papers: question paper, mark scheme, insert, source files, confidential instructions ---
+# `ci` is the practical set-up sheet (9702 Paper 3). Without it here the ci files route to
+# _unresolved and are dropped from the manifest - silently losing the practical materials.
+[[patterns]]
+pattern  = '''(?P<code>\d{4})_(?P<series>[wsm])(?P<yy>\d{2})_(?P<kind>qp|ms|in|sf|ci)_(?P<paper>\d)(?P<variant>\d)'''
 folder   = "Question Banks/Cambridge Curricula/Cambridge AS and A Level/{folder_name}/{level}/{yyyy}/{series_name} (Variant {variant})"
 filename = "{code}_{series}{yy}_{kind}_{paper}{variant}.pdf"
 
@@ -27,14 +37,30 @@ filename = "{code}_{series}{yy}_gt.pdf"
 
 unresolved = "Question Banks/_unresolved"
 
+# Paper number -> level, PER SUBJECT. Read from the syllabuses, not assumed.
+#
+# The old form here was a flat map { 1 = "AS Level", 2 = "AS Level", 3 = "A Level", 4 = "A Level" }.
+# That is right for 9609, 9093 and 9618 and wrong for the two subjects a learner sits this series:
+#
+#   9702 Physics  - Paper 3 "Advanced Practical Skills" is an AS paper. The syllabus route table
+#                   has the AS-only route taking Papers 1, 2 AND 3. The flat map filed it A Level.
+#   9709 Maths    - the papers are OPTION UNITS, not levels. Paper 1 appears in every AS and every
+#                   A Level route; Paper 5 appears in an AS route and in an A Level route. There is
+#                   no paper-to-level answer, so the table gives the UNIT NAME instead, which is
+#                   what a learner and an author actually need to find.
+#
+# The table is _harvest/lookups/cambridge-paper-levels.csv, keyed on code-paper, with the syllabus
+# sentence that justifies each row. Add a subject by adding its rows, not by editing this rule.
 [derive]
-yyyy = "20{yy}"
+yyyy      = "20{yy}"
+codepaper = "{code}-{paper}"
 
-# Paper number -> qualification level. This is the label the whole tree hangs on.
-[map.level]
-from    = "paper"
-values  = { 1 = "AS Level", 2 = "AS Level", 3 = "A Level", 4 = "A Level" }
-default = "AS Level"
+[lookup.level]
+from    = "codepaper"
+file    = "_harvest/lookups/cambridge-paper-levels.csv"
+key     = "codepaper"
+value   = "level"
+default = "_unmapped-paper"
 
 [map.series_name]
 from   = "series"
@@ -48,8 +74,16 @@ key     = "code"
 value   = "folder_name"
 default = "_unknown-subject"
 
-# Subject lock. The aggregator's business-9609/2020-march index actually serves
-# Chemistry (9701) files; without this, a Business Studies harvest would quietly
-# file another subject's papers.
-[filter]
-include = { code = "9609" }
+# Subject safety WITHOUT a single-subject lock.
+#
+# This used to read `[filter] include = { code = "9609" }`, which was right when one subject was
+# being acquired and wrong the moment a second was. It silently rejected every other code.
+#
+# The protection it gave is still needed: the aggregator's business-9609/2020-march index actually
+# serves Chemistry (9701) files, so a harvest can quietly file another subject's papers. That
+# protection now comes from the lookup instead - a code with no row in
+# _harvest/lookups/cambridge-subject-folders.csv cannot resolve a folder name and lands in
+# "_unknown-subject", where it is visible and reported rather than misfiled.
+#
+# So: run `harvest tree` before every fetch, and check the codes in the routed manifest are the
+# ones you asked for. Do not re-add a single-code filter; add the code to the lookup instead.

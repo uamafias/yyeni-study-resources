@@ -23,7 +23,8 @@
     "Authored 2026-09-08 at Stage 11 under standard v0.2.0-draft.",
     "All claims are generated_gap and unverified; publication blocked pending RS-28 review and RS-13 approval.",
     "RS-08: 'contribution' is a documented homonym. This unit uses the costing sense throughout - selling price per unit minus variable cost per unit - and the glossary records the ordinary-English sense used in 2.3 and 4.1.",
-    "Scope: absorption rates, activity-based costing and variance analysis are beyond AS and are absent."
+    "Scope: absorption rates, activity-based costing and variance analysis are beyond AS and are absent.",
+    "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. b2/b3 rewritten: the comparison had collapsed the fixed/variable and direct/indirect classifications into one and contradicted 5.4.1 (issue 001). b6: overhead continuation is now conditional on the cost being unavoidable (issue 008)."
   ],
   "blocks": [
     {
@@ -43,7 +44,7 @@
       "block_id": "5.4.2-b2",
       "block_type": "definition",
       "heading": "The two methods",
-      "text": "**Full costing** charges every cost to the products: the direct costs of each product plus a share of the indirect costs of running the business.\n\n**Contribution costing** charges only the variable costs to the products, and treats fixed costs as a cost of the period as a whole, to be covered out of the combined contribution of everything the business sells.",
+      "text": "**Full costing** assigns every cost to the products: the direct costs of each product plus a share of the costs the business incurs as a whole, fixed overheads included.\n\n**Contribution costing** assigns only the variable costs to products, and treats fixed costs as a cost of the period, to be covered out of the combined contribution of everything the business sells.",
       "claim_ids": [
         "CLM-9609-5.4-030",
         "CLM-9609-5.4-031"
@@ -53,16 +54,16 @@
         "AO1"
       ],
       "claims_seen": {
-        "CLM-9609-5.4-030": 1,
-        "CLM-9609-5.4-031": 1
+        "CLM-9609-5.4-030": 2,
+        "CLM-9609-5.4-031": 2
       },
-      "authored_hash": "69ad972df57c19a1a379ecd6bbdcfd95555079ab1f98622aea5254df4fa08471"
+      "authored_hash": "eb99f486db75b39e57396750bae9b17ae1c122d8cc1c82bb09208482ed495e46"
     },
     {
       "block_id": "5.4.2-b3",
       "block_type": "plain_explanation",
-      "heading": "One difference, and it is the whole difference",
-      "text": "Both methods charge a product with the materials and the labour that went into it. They agree completely about direct and variable costs.\n\nWhere they part company is the rent, the insurance, the head-office salaries - the costs that belong to the business rather than to any one product. Full costing shares them out among the products. Contribution costing refuses to, and holds them back as a cost of the period.\n\nThat single choice is what produces every consequence in this section. Once you can say which method puts fixed costs where, the rest follows.",
+      "heading": "One boundary, and it is fixed against variable",
+      "text": "Both methods charge a product with the materials and the labour that went into making it. They agree about everything that varies with output.\n\nWhere they part company is the **fixed** costs - the rent, the insurance, the salaries that are the same whether the business makes one unit or a thousand. Full costing shares them among the products. Contribution costing refuses to, and holds them back as a cost of the period.\n\nBe careful here, because it is easy to say 'fixed and indirect' as though those were one thing. Section 5.4.1 showed they are two separate questions, and the two boundaries do not line up:\n\n- A **supervisor employed on one line only** is direct *and* fixed. Full costing puts her salary inside that line's cost. Contribution costing leaves it out, because it is fixed - even though it belongs to that line and nothing has to be divided to know so.\n- **Power used by several products** is indirect *and* variable. Both methods charge it to the products, because it varies with output - but it still has to be divided between them first, so contribution costing has not escaped apportionment either.\n\nThe line between the methods is fixed against variable. The line between direct and indirect is a different line, and it decides how much dividing up has to be done, not which method includes what.",
       "claim_ids": [
         "CLM-9609-5.4-032"
       ],
@@ -72,9 +73,9 @@
         "AO2"
       ],
       "claims_seen": {
-        "CLM-9609-5.4-032": 1
+        "CLM-9609-5.4-032": 2
       },
-      "authored_hash": "d60eb95478b7287f19a2746f6c72446fdc64a781adff9871d6bec42b750c9b35"
+      "authored_hash": "915118bde30613ce330f7153b5133ade9232f2646696d187d48703309002d29c"
     },
     {
       "block_id": "5.4.2-b4",
@@ -122,7 +123,7 @@
       "block_id": "5.4.2-b6",
       "block_type": "components",
       "heading": "What each method is good for, and where it fails",
-      "text": "**Full costing** produces a cost per unit that covers everything the business spends, which makes it a sound basis for a long-run price - a price above full cost covers the whole business, not just the product. Where a business makes one product it is also the simpler method, because there is nothing to share out.\n\nIts limitation is the share-out itself. The basis is chosen rather than measured, a different basis changes each product's cost, and a product can appear to make a loss purely because of the size of the overhead share it was given. A business that then stops making it still has the same overheads - now spread across fewer products.\n\n**Contribution costing** avoids that problem entirely by not sharing anything out. It gives a clean figure for what each product adds, and it is the right tool for a decision in which the fixed costs will not change.\n\nIt has three limitations of its own. It leaves fixed costs out of the product figure, so a business pricing on contribution alone can cover its variable costs on every sale and still not cover its fixed costs overall. It assumes variable cost per unit is the same at every level of output, which bulk buying and overtime both disturb. And repeatedly taking work priced above variable cost but below full cost can make it harder to charge the full price elsewhere, once customers learn a lower price exists.",
+      "text": "**Full costing** produces a cost per unit that covers everything the business spends, which makes it a sound basis for a long-run price - a price above full cost covers the whole business, not just the product. Where a business makes one product it is also the simpler method, because there is nothing to share out.\n\nIts limitation is the share-out itself. The basis is chosen rather than measured, a different basis changes each product's cost, and a product can appear to make a loss purely because of the size of the overhead share it was given. Where those overheads are unavoidable - a lease with years to run, staff the business keeps - a business that stops making the product still has them, now spread across fewer products. Where part of the overhead would genuinely go with the product, that part belongs in the decision.\n\n**Contribution costing** avoids most of that problem by keeping fixed costs out of the product figure altogether. It gives a clean figure for what each product adds, and it is the right tool for a decision in which the fixed costs will not change. It does not escape apportionment entirely: a variable cost shared between products still has to be divided before it can be charged to one.\n\nIt has three limitations of its own. It leaves fixed costs out of the product figure, so a business pricing on contribution alone can cover its variable costs on every sale and still not cover its fixed costs overall. It assumes variable cost per unit is the same at every level of output, which bulk buying and overtime both disturb. And repeatedly taking work priced above variable cost but below full cost can make it harder to charge the full price elsewhere, once customers learn a lower price exists.",
       "claim_ids": [
         "CLM-9609-5.4-033",
         "CLM-9609-5.4-034",
@@ -137,12 +138,12 @@
       ],
       "claims_seen": {
         "CLM-9609-5.4-033": 1,
-        "CLM-9609-5.4-034": 1,
+        "CLM-9609-5.4-034": 2,
         "CLM-9609-5.4-041": 1,
         "CLM-9609-5.4-042": 1,
         "CLM-9609-5.4-043": 1
       },
-      "authored_hash": "ae55e1db8b6ccb1a10ab835f81323473d7a2fb8811cef4205ccb92f525761270",
+      "authored_hash": "2b6cf1371b23f73e0c3dd38b53e5a458f4ab220e632cfc670bd72c9e4235d0a4",
       "generalisation_scope": [
         "OBJ-9609-5.4.2-02",
         "OBJ-9609-5.4.2-05"
@@ -152,7 +153,7 @@
       "block_id": "5.4.2-b7",
       "block_type": "analysis_chain",
       "heading": "Why a loss-making product may be worth keeping",
-      "text": "A business makes three products. Under full costing, product C shows a loss of N$20 000 after taking its share of overheads. The obvious move is to stop making it.\n\nWork through what actually happens. Product C sells for more than its variable cost, so it earns a positive contribution - say N$60 000 a year. Its share of the overheads was N$80 000, which is where the reported loss comes from. Stop making it, and the N$60 000 of contribution disappears. The N$80 000 of overheads does not: the rent and the salaries are unchanged, and are now carried by A and B alone. The business is N$60 000 worse off than before, and A and B each look less profitable than they did.\n\nThe condition is what makes this an argument rather than a rule. It holds while the fixed costs really would be incurred anyway. If dropping C would let the business give up a warehouse, or lay off a supervisor who works only on C, then part of that N$80 000 does go, and the calculation has to be done again with only the costs that would genuinely disappear.",
+      "text": "A business makes three products. Under full costing, product C shows a loss of N$20 000 after taking its share of overheads. The obvious move is to stop making it.\n\nWork through what actually happens. Product C sells for more than its variable cost, so it earns a positive contribution - say N$60 000 a year. Its share of the overheads was N$80 000, which is where the reported loss comes from. Stop making it, and the N$60 000 of contribution disappears. The N$80 000 of overheads does not: the rent and the salaries are unchanged, and are now carried by A and B alone. The business is N$60 000 worse off than before, and A and B each look less profitable than they did.\n\nTwo conditions are what make this an argument rather than a rule, and an answer that leaves either out is incomplete.\n\nThe first is avoidability. The reasoning holds while the fixed costs really would be incurred anyway. If dropping C would let the business give up a warehouse, or lay off a supervisor who works only on C, then part of that N$80 000 does go, and the calculation has to be done again with only the costs that would genuinely disappear. If N$50 000 of it is avoidable, the business loses N$60 000 of contribution and saves N$50 000 of cost, so it is only N$10 000 worse off - and if more than N$60 000 is avoidable, dropping C improves profit.\n\nThe second is what the capacity would otherwise do. Positive contribution shows what is lost by dropping C and putting nothing in its place. It does not show that keeping C is the best use of the factory. If the line, the floor space and the labour C occupies could make a product contributing N$90 000, the comparison is not N$60 000 against nothing but N$60 000 against N$90 000, and C should go. Keeping a product because it contributes something is only right when there is nothing better to do with what it uses.",
       "claim_ids": [
         "CLM-9609-5.4-040",
         "CLM-9609-5.4-034"
@@ -162,10 +163,11 @@
         "AO3"
       ],
       "claims_seen": {
-        "CLM-9609-5.4-040": 1,
-        "CLM-9609-5.4-034": 1
+        "CLM-9609-5.4-040": 2,
+        "CLM-9609-5.4-034": 2
       },
-      "authored_hash": "87996985c38cf60831a54fa6a4f3ffa1d749c43f616be3241b5a598b01661110"
+      "authored_hash": "eb2314a3b281c4e21836d697965dc9d72605d64b045304e522ce8b6e1a68d2c2",
+      "prior_hash": "87996985c38cf60831a54fa6a4f3ffa1d749c43f616be3241b5a598b01661110"
     },
     {
       "block_id": "5.4.2-b8",
@@ -205,10 +207,12 @@
       ],
       "claims_seen": {
         "CLM-9609-5.4-039": 1,
-        "CLM-9609-5.4-034": 1,
+        "CLM-9609-5.4-034": 2,
         "CLM-9609-5.4-043": 1
       },
-      "authored_hash": "bff802bb1afe2efc610145d6146af4a83ae769b708a105e893de7add49a5eb89"
+      "authored_hash": "bff802bb1afe2efc610145d6146af4a83ae769b708a105e893de7add49a5eb89",
+      "prior_hash": "bff802bb1afe2efc610145d6146af4a83ae769b708a105e893de7add49a5eb89",
+      "reviewed_unchanged": "Re-read 2026-09-10 against the revised CLM-034/043: the misconceptions listed are unaffected."
     },
     {
       "block_id": "5.4.2-b10",
@@ -224,5 +228,5 @@
       "authored_hash": "d3ee491fef017fa67c2b141cf4fe99b46365974d7e7b8b6adf25e11603069360"
     }
   ],
-  "word_count": 1247
+  "word_count": 1443
 }

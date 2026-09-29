@@ -164,6 +164,39 @@
           "authored_hash": {
             "type": "string",
             "description": "RS-41. SHA-256 of the block text this claims_seen stamp was made against."
+          },
+          "prior_hash": {
+            "type": "string",
+            "description": "RS-41. authored_hash before the current stamp."
+          },
+          "reviewed_unchanged": {
+            "type": "string",
+            "description": "RS-41. Recorded when a re-read against a revised claim genuinely found nothing to change."
+          },
+          "repair_note": {
+            "type": "string",
+            "description": "A written record of what this repair changed and why, the mirror of reviewed_unchanged. RS-41: a repair leaves a trail either way - what changed, or why re-reading found nothing to change."
+          },
+          "chart": {
+            "type": "object",
+            "description": "Declared parameters of a depiction this block shows. RS-47: the plot in the text is generated from these by build/render_chart.py and C-41 fails the build if the two ever differ.",
+            "properties": {
+              "price": {
+                "type": "number"
+              },
+              "variable_cost": {
+                "type": "number"
+              },
+              "fixed_costs": {
+                "type": "number"
+              },
+              "current_output": {
+                "type": "number"
+              },
+              "asks": {
+                "type": "string"
+              }
+            }
           }
         }
       }

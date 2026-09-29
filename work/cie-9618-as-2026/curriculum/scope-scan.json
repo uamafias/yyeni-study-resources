@@ -1,0 +1,325 @@
+{
+ "scope_scan_id": "SCOPE-SCAN-CIE-9618-AS",
+ "generated_at": "2026-09-29T09:56:36Z",
+ "rule": "RS-15. Each entry is one limit the syllabus states, or one A Level section the AS route excludes, with the pattern C-11 scans learner-facing text for. The sentence is the syllabus’s; the pattern is our judgement of what teaching past the limit would look like. Every contract in the subject carries every entry.",
+ "entries": [
+  {
+   "construct": "memorising particular character codes",
+   "pattern": "\\b(?:memoris\\w*|learn (?:off )?by heart|remember)\\b[^.]{0,40}\\b(?:ASCII|Unicode)\\b[^.]{0,20}\\b(?:codes?|values?)\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Memorise the ASCII codes for the capital letters.",
+     "You should remember the ASCII code values for A to Z."
+    ],
+    "must_allow": [
+     "Given that the ASCII code for A is 65, the code for C is 67.",
+     "ASCII uses 7 bits per character."
+    ]
+   },
+   "source": "syllabus, page 14, topic 1.1",
+   "syllabus_sentence": "Students will not be expected to memorise any particular character codes.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "a logic gate with more than two inputs",
+   "pattern": "\\b(?:three|four|3|4)[- ]input (?:AND|OR|NAND|NOR|XOR) gates?\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Draw a three-input AND gate.",
+     "a 3-input NOR gate"
+    ],
+    "must_allow": [
+     "The circuit has three inputs, A, B and C.",
+     "Each AND gate has two inputs."
+    ]
+   },
+   "source": "syllabus, page 18, topic 3.2",
+   "syllabus_sentence": "All gates except the NOT gate will have two inputs only.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "more than one general purpose register",
+   "pattern": "\\b(?:second|another|two|several|multiple) general[- ]purpose registers?\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Load the value into a second general purpose register.",
+     "two general-purpose registers"
+    ],
+    "must_allow": [
+     "The accumulator is the only general purpose register.",
+     "The index register (IX) is a special purpose register."
+    ]
+   },
+   "source": "syllabus, pages 21-22, topics 4.2 and 4.3",
+   "syllabus_sentence": "All questions will assume there is only one general purpose register available (Accumulator)",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "writing pseudocode to implement a stack, queue or linked list",
+   "pattern": "\\bwrite (?:the )?pseudocode (?:for|to implement|that implements) (?:a |the )?(?:stack|queue|linked list)\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Write pseudocode to implement a stack using an array.",
+     "Write the pseudocode for a queue."
+    ],
+    "must_allow": [
+     "Complete the pseudocode for the function Push().",
+     "Describe how a stack can be implemented using an array."
+    ]
+   },
+   "source": "syllabus, page 29, topic 10.4",
+   "syllabus_sentence": "Candidates will not be required to write pseudocode for these structures, but they should be able to add, edit and delete data from these structures",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "program code in a programming language on Paper 2",
+   "pattern": "(?-i:\\bdef \\w+\\(|\\bprint\\(|\\belif\\b|System\\.out\\.|Console\\.Write|\\bDim \\w+ As\\b|\\bpublic static void\\b)",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "def total(a, b):",
+     "print(\"Hello\")",
+     "Dim Count As Integer",
+     "System.out.println(x);"
+    ],
+    "must_allow": [
+     "OUTPUT \"Hello\"",
+     "DECLARE Count : INTEGER",
+     "FUNCTION Total(A : INTEGER, B : INTEGER) RETURNS INTEGER"
+    ]
+   },
+   "source": "syllabus, page 40, Paper 2",
+   "syllabus_sentence": "Candidates will not be required to write programming code.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "floating-point representation (A Level 13.3)",
+   "pattern": "\\bfloating[- ]point\\b|\\bmantissa\\b|\\bnormalis\\w+ (?:the )?(?:mantissa|floating)",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "a floating-point number",
+     "the mantissa and exponent"
+    ],
+    "must_allow": [
+     "REAL is a data type for numbers with a fractional part."
+    ]
+   },
+   "source": "syllabus, page 32, A Level content",
+   "syllabus_sentence": "A Level content: 13.3 Floating-point numbers, representation and manipulation.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "file organisation and access methods (A Level 13.2)",
+   "pattern": "\\b(?:random|direct)[- ]access files?\\b|\\bhashing algorithm\\b|\\bsequential file organisation\\b|\\bserial file organisation\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "a random access file",
+     "a hashing algorithm finds the record"
+    ],
+    "must_allow": [
+     "A text file is read one line at a time from the start."
+    ]
+   },
+   "source": "syllabus, page 32, A Level content",
+   "syllabus_sentence": "A Level content: 13.2 File organisation and access.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "user-defined types beyond records (A Level 13.1)",
+   "pattern": "\\benumerated (?:data )?types?\\b|\\bpointer (?:data )?types?\\b|\\bset (?:data )?type\\b|\\bcomposite data types?\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "an enumerated type",
+     "a pointer data type"
+    ],
+    "must_allow": [
+     "The start pointer holds the index of the first node.",
+     "A record is a user-defined structure."
+    ]
+   },
+   "source": "syllabus, page 32, A Level content",
+   "syllabus_sentence": "A Level content: 13.1 User-defined data types.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "protocols and switching (A Level 14)",
+   "pattern": "\\b(?:packet|circuit) switching\\b|\\bTCP/IP (?:protocol )?(?:suite|stack|layers?)\\b|\\bprotocol stack\\b|(?-i:\\b(?:SMTP|POP3|IMAP|BitTorrent)\\b)",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "packet switching selects a route",
+     "the TCP/IP protocol suite"
+    ],
+    "must_allow": [
+     "Data is sent across the internet in packets.",
+     "A router forwards packets."
+    ]
+   },
+   "source": "syllabus, page 33, A Level content",
+   "syllabus_sentence": "A Level content: 14.1 Protocols; 14.2 Circuit switching, packet switching.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "processor design, parallel processing and virtual machines (A Level 15.1)",
+   "pattern": "(?-i:\\b(?:RISC|CISC)\\b)|\\bpipelining\\b|\\bvirtual machines?\\b|\\bmassively parallel\\b|\\bSIMD\\b|\\bMIMD\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "RISC processors",
+     "pipelining",
+     "a virtual machine"
+    ],
+    "must_allow": [
+     "A virtual reality headset has two displays.",
+     "The processor has four cores."
+    ]
+   },
+   "source": "syllabus, page 33, A Level content",
+   "syllabus_sentence": "A Level content: 15.1 Processors, Parallel Processing and Virtual Machines.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "Boolean algebra, De Morgan and Karnaugh maps (A Level 15.2)",
+   "pattern": "\\bDe ?Morgan\\b|\\bKarnaugh\\b|\\bK-maps?\\b|\\bflip[- ]flops?\\b|\\b(?:half|full)[- ]adders?\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "De Morgan's law",
+     "a Karnaugh map",
+     "a half adder"
+    ],
+    "must_allow": [
+     "Construct the truth table for the logic expression."
+    ]
+   },
+   "source": "syllabus, page 33, A Level content",
+   "syllabus_sentence": "A Level content: 15.2 Boolean Algebra and Logic Circuits.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "encryption protocols and digital certificates (A Level 17)",
+   "pattern": "\\bdigital certificates?\\b|\\bpublic[- ]key (?:encryption|infrastructure|cryptography)\\b|\\bquantum cryptography\\b|(?-i:\\b(?:SSL|TLS)\\b)",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "a digital certificate",
+     "public key encryption",
+     "SSL"
+    ],
+    "must_allow": [
+     "Encryption makes intercepted data impossible to understand without the key.",
+     "A digital signature authenticates the sender."
+    ]
+   },
+   "source": "syllabus, page 34, A Level content",
+   "syllabus_sentence": "A Level content: 17.1 Encryption, Encryption Protocols and Digital Certificates.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "graph and machine-learning algorithms (A Level 18)",
+   "pattern": "\\bDijkstra\\b|\\bA\\* (?:algorithm|search)\\b|\\bback[- ]?propagation\\b|\\breinforcement learning\\b|\\bdeep learning\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "Dijkstra's algorithm",
+     "back propagation"
+    ],
+    "must_allow": [
+     "AI can be used to answer customer questions."
+    ]
+   },
+   "source": "syllabus, page 35, A Level content",
+   "syllabus_sentence": "A Level content: 18.1 Artificial Intelligence (AI).",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "algorithms and recursion beyond AS (A Level 19)",
+   "pattern": "\\bbinary search\\b|\\binsertion sort\\b|\\bbinary trees?\\b|\\bBig O\\b|\\brecursi(?:on|ve)\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "a binary search",
+     "an insertion sort",
+     "a recursive function"
+    ],
+    "must_allow": [
+     "A linear search checks each element in turn.",
+     "A bubble sort compares adjacent elements."
+    ]
+   },
+   "source": "syllabus, page 35, A Level content",
+   "syllabus_sentence": "A Level content: 19.1 Algorithms; 19.2 Recursion.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  },
+  {
+   "construct": "programming paradigms and exception handling (A Level 20)",
+   "pattern": "\\bobject[- ]oriented\\b|\\binheritance\\b|\\bpolymorphism\\b|\\bencapsulation\\b|\\bexception handling\\b|\\bdeclarative programming\\b",
+   "applies_to": "subject",
+   "controls": {
+    "must_catch": [
+     "object-oriented programming",
+     "inheritance",
+     "exception handling"
+    ],
+    "must_allow": [
+     "A procedure is called as a statement."
+    ]
+   },
+   "source": "syllabus, page 36, A Level content",
+   "syllabus_sentence": "A Level content: 20.1 Programming Paradigms; 20.2 File Processing and Exception Handling.",
+   "provenance": {
+    "sentence": "syllabus",
+    "pattern": "judgement"
+   }
+  }
+ ]
+}

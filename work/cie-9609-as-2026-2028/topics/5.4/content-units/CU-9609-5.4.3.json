@@ -20,7 +20,8 @@
   "notes": [
     "Authored 2026-09-08 at Stage 11 under standard v0.2.0-draft.",
     "All claims are generated_gap and unverified; publication blocked pending RS-28 review and RS-13 approval.",
-    "RS-22: every quantitative measure here carries its formula, what each term means, units, a worked figure and an interpretation. Scope: cost curves, economies of scale as a cost theory and investment appraisal are elsewhere or beyond AS."
+    "RS-22: every quantitative measure here carries its formula, what each term means, units, a worked figure and an interpretation. Scope: cost curves, economies of scale as a cost theory and investment appraisal are elsewhere or beyond AS.",
+    "Repaired 2026-09-10 after review SR-9609-5.4-CODEX-R1. b4 rewritten: the original made prior coverage of fixed costs a necessary condition for an order to add to profit, and treated a full-cost price as a guarantee. Both are wrong (issue 007)."
   ],
   "blocks": [
     {
@@ -82,7 +83,7 @@
       "block_id": "5.4.3-b4",
       "block_type": "components",
       "heading": "Using cost to set a price",
-      "text": "**Cost-plus pricing** takes the cost per unit and adds a mark-up: **price = cost per unit + (cost per unit x mark-up percentage)**. A product costing N$25 with a 40% mark-up is priced at N$25 + N$10 = N$35.\n\nWhich cost goes into that formula sets the floor the business is working from.\n\n- A price above **full cost per unit** covers everything the business spends, so it works as a long-run price.\n- A price above **variable cost** but below full cost still adds to profit *where the fixed costs are already being covered by other sales*. That condition is not optional; without it the business is filling its order book and still losing money.\n\nThe limitation of pricing from cost at all is that the calculation never looks outside the business. It does not ask what customers are willing to pay, or what a competitor charges. A product people value highly can be underpriced by a cost-plus rule, and a product in a crowded market can be priced above what anyone will pay.",
+      "text": "**Cost-plus pricing** takes the cost per unit and adds a mark-up: **price = cost per unit + (cost per unit x mark-up percentage)**. A product costing N$25 with a 40% mark-up is priced at N$25 + N$10 = N$35.\n\nWhich cost goes into that formula depends on the question being asked, and there are two different questions.\n\n**For a one-off order**, the test is whether the price beats every cost the order itself causes - its variable cost, plus any extra fixed cost it creates, such as a weekend shift - and whether the capacity it uses would otherwise have earned more. Where it does, the order leaves the business better off than refusing it: it improves profit if the business is profitable, and reduces the loss if it is not. A business already losing money is not a reason to turn down work that covers its own costs and contributes something.\n\n**For the long run**, the test is different. Total contribution across everything the business sells has to cover the fixed costs, at a volume it can realistically achieve. That is why a long-run price is set above full cost per unit - but notice that full cost per unit was itself calculated at an assumed level of output. Sell fewer units than assumed and the fixed cost per unit rises, so a price that looked safe no longer covers everything.\n\nThe limitation of pricing from cost at all is that the calculation never looks outside the business. It does not ask what customers are willing to pay, or what a competitor charges.",
       "claim_ids": [
         "CLM-9609-5.4-054",
         "CLM-9609-5.4-055",
@@ -95,10 +96,10 @@
       ],
       "claims_seen": {
         "CLM-9609-5.4-054": 1,
-        "CLM-9609-5.4-055": 1,
+        "CLM-9609-5.4-055": 2,
         "CLM-9609-5.4-056": 1
       },
-      "authored_hash": "3ff84b95830e8568fbc0b42d85954704faecadc36bc59ea11e2bdf1257d44259"
+      "authored_hash": "1c82ac0fbe39cbece116d4bffdd90dd0e735fc55e0e26d01c016e41205a08c85"
     },
     {
       "block_id": "5.4.3-b5",
@@ -127,7 +128,7 @@
       "block_id": "5.4.3-b6",
       "block_type": "worked_application",
       "heading": "A special order",
-      "text": "A special order is a one-off request to supply at a price below the normal one.\n\nA bottler in Walvis Bay sells crates at N$180. Variable cost is N$110 a crate; fixed costs are N$420 000 a month and it is currently selling 8 000 crates against a capacity of 10 000. A hotel group offers N$135 a crate for 1 500 crates, one delivery only.\n\nContribution per crate on the offer = N$135 - N$110 = **N$25**. Total contribution = 1 500 x N$25 = **N$37 500**. There is spare capacity, so no full-price sale is displaced, and the fixed costs are unchanged. On the numbers, the order adds N$37 500 to profit.\n\nThe numbers are not the whole decision. Three things sit outside them. Existing customers paying N$180 may learn what the hotel group paid. The hotel group will expect N$135 next time. And if demand rises above 8 500 crates in the month, the capacity used by the order is capacity that would have earned N$70 a crate rather than N$25.\n\nSo the answer is a conditional one: worth taking while the capacity is genuinely spare and the price can be kept separate from the standard price list.",
+      "text": "A special order is a one-off request to supply at a price below the normal one.\n\nA bottler in Walvis Bay sells crates at N$180. Variable cost is N$110 a crate; fixed costs are N$420 000 a month and it is currently selling 8 000 crates against a capacity of 10 000. A hotel group offers N$135 a crate for 1 500 crates, one delivery only.\n\nContribution per crate on the offer = N$135 - N$110 = **N$25**. Total contribution = 1 500 x N$25 = **N$37 500**.\n\nBefore treating that as the gain, check what else the order causes. If it needs a setup, an extra shift or a delivery the bottler does not normally make, those costs are caused by this order and come off the N$37 500 - they are incremental, even though they are fixed. Here there are none: the run fits the existing shift and the hotel group collects. And the 1 500 crates fit inside the 2 000 of idle monthly capacity, so no full-price sale is displaced. On those conditions the order adds N$37 500 to profit.\n\nThe numbers are not the whole decision. Three things sit outside them. Existing customers paying N$180 may learn what the hotel group paid. The hotel group will expect N$135 next time. And if demand rises above 8 500 crates in the month, the capacity used by the order is capacity that would have earned N$70 a crate rather than N$25.\n\nSo the answer is a conditional one: worth taking while the capacity is genuinely spare, the order causes no cost beyond the N$110 a crate, and the price can be kept separate from the standard price list.",
       "claim_ids": [
         "CLM-9609-5.4-060",
         "CLM-9609-5.4-061",
@@ -142,17 +143,18 @@
       ],
       "claims_seen": {
         "CLM-9609-5.4-060": 1,
-        "CLM-9609-5.4-061": 1,
+        "CLM-9609-5.4-061": 2,
         "CLM-9609-5.4-062": 1,
         "CLM-9609-5.4-035": 1
       },
-      "authored_hash": "c12dcb7919cbe50b6377ba8d7a0b8ac46fff7c048da0c61b0b96d86651f5ea4f"
+      "authored_hash": "6c1df60fb5d70a1bdd67cdde13b665b0cbfd9de792d590f9e2091f631a21e701",
+      "prior_hash": "c12dcb7919cbe50b6377ba8d7a0b8ac46fff7c048da0c61b0b96d86651f5ea4f"
     },
     {
       "block_id": "5.4.3-b7",
       "block_type": "misconception",
       "heading": "Common errors",
-      "text": "**\"Never sell below average cost.\"** With spare capacity and unchanged fixed costs, any price above variable cost adds to profit. The rule is a good habit and a bad absolute.\n\n**\"Marginal cost is average cost.\"** They are equal only if there are no fixed costs, which is almost never.\n\n**\"A rising cost per unit means costs are out of control.\"** It can mean output fell. Check which before recommending anything.",
+      "text": "**\"Never sell below average cost.\"** With spare capacity and unchanged fixed costs, a price above the costs the order actually causes leaves the business better off than refusing it - and that holds whether the business is currently profitable or losing money. The rule is a good habit and a bad absolute.\n\n**\"Marginal cost is average cost.\"** They are equal only if there are no fixed costs, which is almost never.\n\n**\"A rising cost per unit means costs are out of control.\"** It can mean output fell. Check which before recommending anything.",
       "claim_ids": [
         "CLM-9609-5.4-053",
         "CLM-9609-5.4-059",
@@ -166,9 +168,9 @@
       "claims_seen": {
         "CLM-9609-5.4-053": 1,
         "CLM-9609-5.4-059": 1,
-        "CLM-9609-5.4-055": 1
+        "CLM-9609-5.4-055": 2
       },
-      "authored_hash": "2c35ee139f34f2c7501e7e152c11b8f4d4a0fa124457c479aab118bd6ce53c0d"
+      "authored_hash": "4863387f8d776a64e1cdfb8868d38a860056133cd3258458e2e2af4eff74123c"
     },
     {
       "block_id": "5.4.3-b8",
@@ -184,5 +186,5 @@
       "authored_hash": "c6a6a21a52473334e75f15f26c93928d8594a84533966c3bc79295a1982fbfed"
     }
   ],
-  "word_count": 973
+  "word_count": 1164
 }
