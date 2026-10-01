@@ -1,0 +1,286 @@
+{
+ "unit_id": "CU-9702-10.2",
+ "title": "Kirchhoff's laws and combined resistance",
+ "objective_ids": [
+  "OBJ-9702-10.2-01",
+  "OBJ-9702-10.2-02",
+  "OBJ-9702-10.2-03",
+  "OBJ-9702-10.2-04",
+  "OBJ-9702-10.2-05",
+  "OBJ-9702-10.2-06",
+  "OBJ-9702-10.2-07"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "phys_concept",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 1973,
+  "target": 2404,
+  "max": 2835
+ },
+ "blocks": [
+  {
+   "block_id": "10.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Kirchhoff's two laws and the conservation principles behind them, the derivations of the series and parallel resistance formulae from the laws, the use of those formulae, and how to solve whole circuit problems step by step.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "c8e7f518173c945844905ebf54f60929d5c5e9b8bf888f1ae1e9f259ad93331e"
+  },
+  {
+   "block_id": "10.2-b2",
+   "block_type": "definition",
+   "heading": "Kirchhoff's first law",
+   "text": "The sum of the currents entering a junction equals the sum of the currents leaving it. A junction is a point where three or more conductors meet, marked with a dot in a circuit diagram. If 0.30 A and 0.45 A flow into a junction along two wires, then 0.75 A in total must flow out of it along the other wires: 0.30 + 0.45 = 0.75. The law is a statement about currents at a junction, and about nothing else. It says nothing about a single current somewhere else in the loop, and nothing about energy; a claim that the first law is about e.m.f.s round a loop has swapped it for the second law.",
+   "claim_ids": [
+    "CLM-9702-10-018",
+    "CLM-9702-10-019"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-018": 1,
+    "CLM-9702-10-019": 1
+   },
+   "authored_hash": "6323d4902e360f81efb63de3ca2db1e102b63fe300b9b67dc11f5b22dffcde59"
+  },
+  {
+   "block_id": "10.2-b3",
+   "block_type": "plain_explanation",
+   "heading": "Why the first law is conservation of charge",
+   "text": "Charge is conserved: it can be neither created nor destroyed. At a junction, charge flows in along some wires and out along others, and there is nowhere in the junction for it to accumulate and no way for it to vanish. In any second, then, the charge entering the junction equals the charge leaving it. Current is charge flowing per second, so the total current entering equals the total current leaving, and the balance holds at every instant whatever the rest of the circuit is doing. That is the whole content of the first law: it is conservation of charge, read at a single point.",
+   "claim_ids": [
+    "CLM-9702-10-018"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-018": 1
+   },
+   "authored_hash": "3d02f26ae78aac4cc05ab87dbf317176c30d95ff23dc10444d94a31e94f18ac0"
+  },
+  {
+   "block_id": "10.2-b4",
+   "block_type": "definition",
+   "heading": "Kirchhoff's second law",
+   "text": "Round any closed loop in a circuit, the sum of the e.m.f.s equals the sum of the potential differences across the components of the loop. A closed loop is a path that starts at a point, runs through components and returns to the same point. The law is a statement about a closed loop, as the first law is a statement about a junction, and the test that keeps them apart is to ask: a junction or a loop? A junction means the first law and currents; a loop means the second law and energies. Writing the second law for the single loop of a series circuit, the source's e.m.f. equals the sum of the p.d.s across the components of that loop, one equation for the whole chain.",
+   "claim_ids": [
+    "CLM-9702-10-020",
+    "CLM-9702-10-021",
+    "CLM-9702-10-022"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-020": 1,
+    "CLM-9702-10-021": 1,
+    "CLM-9702-10-022": 1
+   },
+   "authored_hash": "be4105b7809ab70b791fed51bc005e2836272fdc7e488e60fc4cc94fd746ef7f"
+  },
+  {
+   "block_id": "10.2-b5",
+   "block_type": "plain_explanation",
+   "heading": "Why the second law is conservation of energy",
+   "text": "A charge driven round a closed loop finishes where it started, so the electrical energy it carries on arrival is the energy it carried on departure. Along the way it passed through sources, which gave it energy, and through components, which took energy from it. Conservation of energy requires the two accounts to balance: the energy gained per coulomb from the sources, which is the sum of the e.m.f.s, equals the energy given up per coulomb in the components, which is the sum of the p.d.s. If the two totals differed, a charge could return to its starting point with more or less energy than it left with, and energy would have been created or destroyed round the loop, which conservation forbids.",
+   "claim_ids": [
+    "CLM-9702-10-020"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-020": 1
+   },
+   "authored_hash": "4be1af739e6b6b7821d8b7d644e0b8e1820e58ab39a4cfd734b9c1c9764438d4"
+  },
+  {
+   "block_id": "10.2-b6",
+   "block_type": "analysis_chain",
+   "heading": "Deriving the series formula",
+   "text": "Take two resistors R1 and R2 in series, in one unbranched chain across a supply. Step one, the current: there is no junction between the two resistors, so by Kirchhoff's first law the same current I passes through each; the current leaving one is the current entering the next, because charge is conserved all along the wire. Step two, the p.d.s: by Kirchhoff's second law, round the single closed loop, the supply p.d. V equals V1 + V2, the p.d.s across the two resistors. Step three, substitute the definition of resistance for each: V1 = IR1 and V2 = IR2, so V = IR1 + IR2 = I(R1 + R2). Step four, compare with V = IR, which defines the combined resistance R of the chain: R = R1 + R2. The same steps extend to any number of resistors in series, and the resistances simply keep adding. Because they add, the combined resistance of a series chain is greater than any one resistance in it: the current has every resistor to push through, one after another, which is why chains of resistors make poor heater elements and good proof that resistances add.",
+   "claim_ids": [
+    "CLM-9702-10-023",
+    "CLM-9702-10-024",
+    "CLM-9702-10-025"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-023": 1,
+    "CLM-9702-10-024": 1,
+    "CLM-9702-10-025": 1
+   },
+   "authored_hash": "754d71e18be506f3706fcd7cbf23943eecebf1449195953edceb512c0e62cf73"
+  },
+  {
+   "block_id": "10.2-b7",
+   "block_type": "worked_calculation",
+   "heading": "Worked example: a series chain and its p.d. shares",
+   "text": "A control panel for a borehole pump contains three resistors in series: 4.5 \u03a9, 8.6 \u03a9 and 12.9 \u03a9. The combined resistance is R = 4.5 + 8.6 + 12.9. Working one step at a time: 4.5 + 8.6 = 13.1, and 13.1 + 12.9 = 26.0, so R = 26.0 \u03a9. Now the shares: put the chain of a 20 \u03a9 and a 30 \u03a9 resistor across a 10 V supply of negligible internal resistance. The chain is R = 20 + 30 = 50 \u03a9, so the current is I = 10 \u00f7 50 = 0.20 A, and the p.d. across the 30 \u03a9 resistor is V = 0.20 \u00d7 30 = 6.0 V. The 30 \u03a9 resistor, the larger, takes 6.0 V of the 10 V, and the 20 \u03a9 resistor takes the other 4.0 V: the shares are in proportion to the resistances, and they add to the supply p.d. exactly as the second law says.",
+   "claim_ids": [
+    "CLM-9702-10-026",
+    "CLM-9702-10-027"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-026": 1,
+    "CLM-9702-10-027": 1
+   },
+   "authored_hash": "1e26ca14efd371cbb3369ad6eefa5d93d7f31dda2199b715caa2a020a56b139d"
+  },
+  {
+   "block_id": "10.2-b8",
+   "block_type": "analysis_chain",
+   "heading": "Deriving the parallel formula",
+   "text": "Take two resistors R1 and R2 in parallel: two separate branches running between the same two junctions. Step one, the p.d.: go round the loop that runs out along one branch and back along the other. There is no source in that loop, so by Kirchhoff's second law the p.d.s round it must balance, and the p.d. across R1 equals the p.d. across R2; call the shared value V. Step two, the currents: by Kirchhoff's first law at either junction, the supply current I splits as I = I1 + I2. Step three, substitute the definition of resistance for each branch: I1 = V/R1 and I2 = V/R2, so I = V/R1 + V/R2. Step four, divide both sides by V: I/V = 1/R1 + 1/R2. The combined resistance R of the pair is defined by I = V/R, so 1/R = 1/R1 + 1/R2. For any number of branches the reciprocals keep adding. The last step of a parallel calculation takes the reciprocal again: adding reciprocals gives 1/R, and the resistance itself is 1 \u00f7 that total, a step often forgotten.",
+   "claim_ids": [
+    "CLM-9702-10-028",
+    "CLM-9702-10-029"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-028": 1,
+    "CLM-9702-10-029": 1
+   },
+   "authored_hash": "409dd95c8c5e1d01e8f2512f1f9cf66f004a8693da330645fd4c3261471041f7"
+  },
+  {
+   "block_id": "10.2-b9",
+   "block_type": "worked_calculation",
+   "heading": "Worked example: resistors in parallel",
+   "text": "Two interior lamps of a minibus taxi have resistances of 40 \u03a9 and 60 \u03a9 and are connected in parallel when both are switched on. The combined resistance: 1/R = 1/40 + 1/60 = 0.0417 to three significant figures, so R = 1 \u00f7 0.0417 = 24.0 \u03a9. The pair behaves as a single 24.0 \u03a9 resistance, smaller than either lamp on its own, exactly as a parallel combination must be, because the supply current has two routes instead of one. A second example, with a twist: three resistors of 2.0 \u03a9, 3.0 \u03a9 and 6.0 \u03a9 in parallel give 1/R = 1/2.0 + 1/3.0 + 1/6.0 = 1.00, so R = 1 \u00f7 1.00 = 1.0 \u03a9, one sixth of the largest resistor in the group. The reciprocals add; the resistances themselves do not.",
+   "claim_ids": [
+    "CLM-9702-10-030",
+    "CLM-9702-10-031",
+    "CLM-9702-10-032"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-030": 1,
+    "CLM-9702-10-031": 1,
+    "CLM-9702-10-032": 1
+   },
+   "authored_hash": "573e57db0bff15492901b686b90fb11b70b8cd622c8eea95789f6d44fb996e46"
+  },
+  {
+   "block_id": "10.2-b10",
+   "block_type": "plain_explanation",
+   "heading": "Solving circuit problems with the laws",
+   "text": "A circuit problem is solved in a fixed order. First mark the current in each branch, with a chosen direction for each. Second, apply Kirchhoff's first law at the junctions: currents in equal currents out, which relates the branch currents to one another. Third, apply Kirchhoff's second law round the closed loops: e.m.f.s in the loop equal p.d.s across its components. Where a circuit has a single source and resistors combined in series and parallel steps, the same job can be done by combining: reduce the network stepwise to one total resistance, find the supply current from I = E/Rtotal, then split the p.d. and the currents back down through the combinations in reverse order. Worked through: a 12 V battery of negligible internal resistance feeds a 4.0 \u03a9 resistor in series with a parallel pair of 6.0 \u03a9 and 3.0 \u03a9. The parallel pair: 1/R = 1/6.0 + 1/3.0 = 0.500, so the pair is 2.0 \u03a9. The total is 4.0 + 2.0 = 6.0 \u03a9, so the supply current is I = 12 \u00f7 6.0 = 2.0 A. The p.d. across the pair is then 2.0 \u00d7 2.0 = 4.0 V, and the branch currents follow: the 3.0 \u03a9 branch carries 4.0 \u00f7 3.0 = 1.3 A and the 6.0 \u03a9 branch carries 4.0 \u00f7 6.0 = 0.67 A, which recombine to 2.0 A at the far junction, as the first law requires. Notice how the smaller branch resistance took the larger current: between the same two junctions, the branch currents divide in inverse proportion to the branch resistances.",
+   "claim_ids": [
+    "CLM-9702-10-033",
+    "CLM-9702-10-034",
+    "CLM-9702-10-035"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-033": 1,
+    "CLM-9702-10-034": 1,
+    "CLM-9702-10-035": 1
+   },
+   "authored_hash": "661d4e29bf070fe5b2764529b6c853f571eee2eb314b31199a2ce8e8bd668927"
+  },
+  {
+   "block_id": "10.2-b11",
+   "block_type": "worked_calculation",
+   "heading": "Worked example: currents at a junction",
+   "text": "At a junction in a lighting circuit, currents of 0.30 A and 0.45 A enter along two wires, and a current of 0.12 A leaves along one of the outgoing branches. The first law fixes the other outgoing branch: total in equals total out. Total in: 0.30 + 0.45 = 0.75 A. Total out must equal 0.75 A, and one outgoing branch already carries 0.12 A, so the other carries 0.75 \u2212 0.12 = 0.63 A. The two outgoing currents, 0.12 A and 0.63 A, add back to the incoming 0.75 A, and the balance is a direct use of the law, with no need to know anything else about the circuit.",
+   "claim_ids": [
+    "CLM-9702-10-018",
+    "CLM-9702-10-033"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-018": 1,
+    "CLM-9702-10-033": 1
+   },
+   "authored_hash": "9b6137a78a8e51d268bf186a9215862e27ab726e2194dd02f1e7d161124f394c"
+  },
+  {
+   "block_id": "10.2-b12",
+   "block_type": "worked_calculation",
+   "heading": "Worked example: two loops through one junction",
+   "text": "A 6.0 V source of negligible internal resistance feeds a parallel pair: a 2.4 \u03a9 resistor on one branch and a 4.8 \u03a9 resistor on the other, the branches meeting at two junctions. Step one, the shared p.d.: round the loop that runs out along one branch and back along the other there is no source, so by the second law the p.d. across the 2.4 \u03a9 resistor equals the p.d. across the 4.8 \u03a9 resistor, and both equal the 6.0 V between the junctions. Step two, the branch currents, each from V = IR: 6.0 \u00f7 2.4 = 2.5 A on the smaller resistance, and 6.0 \u00f7 4.8 = 1.25 A on the larger. Step three, the junction, by the first law: the source must supply the sum, 2.5 + 1.25 = 3.75 A. Step four, the check by combining: the pair has 1/R = 1/2.4 + 1/4.8 = 0.625, so R = 1 \u00f7 0.625 = 1.6 \u03a9, and 6.0 \u00f7 1.6 = 3.75 A, the same supply current. Notice the branch currents: equal p.d.s across unequal resistances force the currents into inverse proportion, 2 : 1 here, and the smaller resistance carries the larger current.",
+   "claim_ids": [
+    "CLM-9702-10-020",
+    "CLM-9702-10-035",
+    "CLM-9702-10-033"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-020": 1,
+    "CLM-9702-10-035": 1,
+    "CLM-9702-10-033": 1
+   },
+   "authored_hash": "b9f4b546d86774c16a4606c950a197abacc02cbb2151e3a73606439d387367e4"
+  },
+  {
+   "block_id": "10.2-b13",
+   "block_type": "misconception",
+   "heading": "Common errors: laws swapped, and parallel totals that rise",
+   "text": "Two errors recur in this sub-topic. The first is swapping the laws: writing the first law about e.m.f.s round a loop, or the second about currents at a junction. The first law is currents at a junction, a consequence of conservation of charge; the second is e.m.f.s against p.d.s round a closed loop, a consequence of conservation of energy. The test is to ask, a junction or a loop, and to let the answer name the law. The second error is expecting an extra parallel branch to raise the total resistance, on the grounds that the circuit now contains more resisting material. The new branch gives the current another route: more current flows for the same p.d., so the combined resistance falls, to a value smaller than the smallest branch resistance. In the parallel formula the reciprocals add, and adding reciprocals of positive resistances can only make the total resistance smaller.",
+   "claim_ids": [
+    "CLM-9702-10-021",
+    "CLM-9702-10-031"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-021": 1,
+    "CLM-9702-10-031": 1
+   },
+   "authored_hash": "47f89c8299bf32ccc96293c78b4fbc20b377cb9b326f1d98963033f1858f7729"
+  },
+  {
+   "block_id": "10.2-b13",
+   "block_type": "cross_link",
+   "heading": "Connections",
+   "text": "Topic 9 gave V = IR, the ohm and the behaviour of ohmic and non-ohmic conductors; every derivation here divides or multiplies by V or I at some step. Topic 5 stated conservation of energy, which stands behind the second law, and conservation of charge behind the first is the same principle met there and in electrostatics. Topic 12 sets these circuit problems at the bench, where a real ammeter, a real voltmeter and a real cell all carry the resistances this section has accounted for.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "7947b362548819d041a700ebeefdb69a95c95fc8bc509c9f0eae09a300062b98"
+  }
+ ],
+ "qa_status": "review_required",
+ "word_count": 2062
+}

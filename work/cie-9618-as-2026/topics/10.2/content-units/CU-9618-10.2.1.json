@@ -1,0 +1,156 @@
+{
+ "unit_id": "CU-9618-10.2.1",
+ "title": "Arrays: terms, choice, writing and processing",
+ "objective_ids": [
+  "OBJ-9618-10.2.1-01",
+  "OBJ-9618-10.2.1-02",
+  "OBJ-9618-10.2.1-03",
+  "OBJ-9618-10.2.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_terminology",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1160,
+  "target": 1410,
+  "max": 1660
+ },
+ "blocks": [
+  {
+   "block_id": "10.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The technical terms of arrays; choosing a 1D or 2D array for a task; writing pseudocode for arrays; and processing array data, including a linear search and a bubble sort.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "04c66bcbab4127dafeea379451acc2a4c1ac02fe5ee153cb805a7ed803f90847"
+  },
+  {
+   "block_id": "10.2.1-b2",
+   "block_type": "definition",
+   "heading": "The terms: index, element, bounds",
+   "text": "An array holds a fixed number of elements of one data type under one name, and its terms are worth keeping exactly. The index is the position of an element within the array, and the element is the value stored at that position: in Prices[4], the 4 is the index and Prices[4] is the element - the fourth price - so the index says where and the element says what, and reading Data[i] always names the element at index i. The bounds state the range of valid indices: an array declared ARRAY[1:30] has lower bound 1 and upper bound 30, so its elements are reached by the indices 1 to 30, thirty of them, and no other index names anything. Two consequences follow from the bounds being in the declaration. The size is known before anything is stored, because the count is upper bound minus lower bound plus 1, read from the bounds - which is why LENGTH() has no business here: LENGTH() works on strings, and the array's count is in its declaration, not in a function call. And the structure is fixed for the program's life, because the bounds are stated once and do not move, so an array suits data whose size is known before the run - a week of temperatures, a register of 25 names - and a list that grows during the day needs either a declared size with room to spare or the structures of later topics.",
+   "claim_ids": [
+    "CLM-9618-10.2-001",
+    "CLM-9618-10.2-002",
+    "CLM-9618-10.2-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.2-001": 1,
+    "CLM-9618-10.2-002": 1,
+    "CLM-9618-10.2-003": 1
+   },
+   "authored_hash": "b05ca587a0651ece32a0744f8d1e1b754ac7b4402b757655a21fe95d81748026"
+  },
+  {
+   "block_id": "10.2.1-b3",
+   "block_type": "definition",
+   "heading": "Choosing 1D or 2D",
+   "text": "The choice of structure follows the shape of the data, and the test is how many positions name a value. A shop's twenty product prices are each named by one position - the product's number - so one bound pair suits them: DECLARE Prices : ARRAY[1:20] OF REAL. A class's test marks are each named by two positions - the learner and the test - so two bound pairs suit them: DECLARE Marks : ARRAY[1:25, 1:3] OF INTEGER, where the first index chooses the learner's row and the second the test's column, and Marks[7, 2] is one value: the seventh learner's second test. The shape is the justification, and the wrong shape shows in the addressing: storing the class's marks as three separate 1D arrays means a learner's row is three indexings in three names, and each job crosses arrays; one 2D array makes the row one first index and the column one second, so both jobs - totalling a learner, averaging a test - address the structure the data actually has. The 2D form is the 1D form with a second bound pair, and the addressing is the same habit twice: Marks[7, 2] names the element at row 7 and column 2, just as Prices[4] names the element at index 4.",
+   "claim_ids": [
+    "CLM-9618-10.2-004",
+    "CLM-9618-10.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.2-004": 1,
+    "CLM-9618-10.2-005": 1
+   },
+   "authored_hash": "302175023bb09f74556073649330133d5d0ef1252f231f5fe5b85b2803e0a355"
+  },
+  {
+   "block_id": "10.2.1-b4",
+   "block_type": "definition",
+   "heading": "Writing array pseudocode",
+   "text": "The declaration states the name, the bounds and the type, and everything else follows. A week of temperatures:\n\n```pseudocode\nDECLARE Temperatures : ARRAY[1:7] OF INTEGER\n```\n\nA grid of rainfall readings, four sites by six days:\n\n```pseudocode\nDECLARE Rainfall : ARRAY[1:4, 1:6] OF REAL\n```\n\nAn element is reached by putting the index where the bounds were, one index per bound pair: Rainfall[2, 3] names the element in row 2 and column 3, and it is set like any variable - Rainfall[2, 3] <- 12.5. Setting every element of a fresh array is the first processing job most programs do, and it is a loop over the bounds:\n\n```pseudocode\nDECLARE StockCount : ARRAY[1:50] OF INTEGER\nDECLARE Index : INTEGER\nFOR Index <- 1 TO 50\n   StockCount[Index] <- 0\nNEXT Index\n```\n\nOne loop, fifty elements, one statement: the loop's bounds match the array's bounds, and the body's StockCount[Index] names each element in turn - which is the whole trick of array processing, the loop variable travelling the indices while the array name stays still.",
+   "claim_ids": [
+    "CLM-9618-10.2-006",
+    "CLM-9618-10.2-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.2-006": 1,
+    "CLM-9618-10.2-007": 1
+   },
+   "authored_hash": "bd386714147151a1fbaf70c344ce0862b9b3c7fb4eef8294e134908db015adb5"
+  },
+  {
+   "block_id": "10.2.1-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: three processes on one array",
+   "text": "Take a spaza shop's daily takings, DECLARE Takings : ARRAY[1:10] OF REAL, and run the three standard jobs on it. Total the week's takings:\n\n```pseudocode\nDECLARE Day : INTEGER\nDECLARE Total : REAL\nTotal <- 0\nFOR Day <- 1 TO 10\n   Total <- Total + Takings[Day]\nNEXT Day\n```\n\nCount the days over 100:\n\n```pseudocode\nBigDays <- 0\nFOR Day <- 1 TO 10\n   IF Takings[Day] > 100 THEN\n      BigDays <- BigDays + 1\n   ENDIF\nNEXT Day\n```\n\nFind the busiest day:\n\n```pseudocode\nBest <- Takings[1]\nBestDay <- 1\nFOR Day <- 2 TO 10\n   IF Takings[Day] > Best THEN\n      Best <- Takings[Day]\n      BestDay <- Day\n   ENDIF\nNEXT Day\n```\n\nThe three share one skeleton: a loop over the bounds, work done on Takings[Day] inside, a result carried in a variable. What changes is the work - add, count, remember - and that skeleton is what every array process in this course is built from. The two named algorithms are the same habit with a target. A linear search looks for a value when nothing is known about where it sits: examine elements in turn until the element equals the target or the upper bound is passed - the search that assumes nothing about order. A bubble sort puts an array in order by comparing neighbours and swapping those out of order, pass after pass, so the largest values bubble to the end and a pass with no swap shows the work is done. Two habits keep the writing honest in any process: the loop’s bounds should match the array’s bounds, because a loop one short misses an element and one long reads past the end; and the loop variable should be named for what it counts - Day, Hour, Member - because the index is a position in the world the array describes, not a number for its own sake. The three worked examples that follow run the skeleton three ways on real data, and every one can be read aloud against the array it processes: the loop visits each element, the work uses the element, and the result survives the loop - which is the whole grammar of array processing, small enough to check line by line.",
+   "claim_ids": [
+    "CLM-9618-10.2-007",
+    "CLM-9618-10.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.2-007": 1,
+    "CLM-9618-10.2-008": 1
+   },
+   "authored_hash": "bab4b385cb333c6a22a01cce3d83ee7510b0539ea7631820e70e29222a0c06a7"
+  },
+  {
+   "block_id": "10.2.1-b6",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur. Comparing the index when the element was meant: Index = 7 asks whether the loop is at position 7, whereas Scores[Index] = 7 asks whether the value stored there is 7 - the test is to write Data[i] and read i as the index and Data[i] as the element. And calling LENGTH() on an array: the size comes from the declared bounds, because LENGTH() works on strings - the test is whether it is a string; only then does LENGTH() apply.",
+   "claim_ids": [
+    "CLM-9618-10.2-002",
+    "CLM-9618-10.2-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.2-002": 1,
+    "CLM-9618-10.2-003": 1
+   },
+   "authored_hash": "fddea011c67cf8893dba0b9becff1b4bf614b64337e9b893e8e5bd7fe5fcd700"
+  },
+  {
+   "block_id": "10.2.1-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The elements these arrays hold are the data 9.2's identifiers name and 10.1's types choose; the records of 10.1 are what an array can hold a list of, and the files of 10.3 are where arrays are kept between runs. The linear search and the bubble sort here are the standard algorithms 9.2's constructs build, and the trace tables of 12.3 test them.",
+   "claim_ids": [
+    "CLM-9618-10.2-007",
+    "CLM-9618-10.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.2-007": 1,
+    "CLM-9618-10.2-008": 1
+   },
+   "authored_hash": "47c1adb6fef709ec5d5b5239c0b3ccf15703c1d4e114bd096df06a9929c6bcf9"
+  }
+ ],
+ "word_count": 1205,
+ "qa_status": "review_required",
+ "notes": []
+}

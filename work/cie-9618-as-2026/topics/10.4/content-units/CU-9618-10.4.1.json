@@ -1,0 +1,187 @@
+{
+ "unit_id": "CU-9618-10.4.1",
+ "title": "Abstract data types: stack, queue and linked list",
+ "objective_ids": [
+  "OBJ-9618-10.4.1-01",
+  "OBJ-9618-10.4.1-02",
+  "OBJ-9618-10.4.1-03",
+  "OBJ-9618-10.4.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 1150,
+  "target": 1400,
+  "max": 1650
+ },
+ "blocks": [
+  {
+   "block_id": "10.4.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "What an abstract data type is; the stack, the queue and the linked list as ADTs; using them to store data; and implementing them with arrays and pointers.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "bbe981792d6f623c175bf4e5ef70404e6f74ef67640b736db4621a7f260889ca"
+  },
+  {
+   "block_id": "10.4.1-b2",
+   "block_type": "definition",
+   "heading": "What an abstract data type is",
+   "text": "An abstract data type is a collection of data together with a set of operations on those data, and the abstraction is in the description: the ADT says what the operations do and says nothing about how the data are stored. A stack is described as 'push adds to the top, pop removes the top, the newest leaves first' - whether the items sit in an array, a file or a chain of nodes is not the ADT's business. That separation is the point. The program using the ADT works against the operations and stays correct when the storage underneath changes; the implementer changes the storage without touching any user. The stack, the queue and the linked list are the three standard examples, and each is a household object first: the stack is the pile of plates in a kitchen - the last plate washed is the first one taken; the queue is the line at the clinic's dispensary window - the first to arrive is the first served; the linked list is the scavenger hunt, each clue holding the next clue's place.",
+   "claim_ids": [
+    "CLM-9618-10.4-001",
+    "CLM-9618-10.4-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-001": 1,
+    "CLM-9618-10.4-002": 1
+   },
+   "authored_hash": "ec49e5d2213574bcc109c6d3abe3a4b4f23cc3af4151632bcf72738c0c44958a"
+  },
+  {
+   "block_id": "10.4.1-b3",
+   "block_type": "definition",
+   "heading": "The three ADTs: key features and uses",
+   "text": "Each ADT is data plus its own operations, and the operations are the definition. A stack is last in, first out: push adds an item to the top of the stack and pop removes the most recently pushed item, so items leave in the reverse of their arrival order. Its use is wherever the most recent thing is the next thing wanted: the undo list of an editor, the browser's back trail, the held calls of a switchboard. A queue is first in, first out: enqueue adds an item at the rear of the queue and dequeue removes the item at the front, so items leave in their arrival order. Its use is wherever fairness by arrival is the rule: the dispensary line, a printer's job list, a keyboard's buffer of typed keys. A linked list is a chain of nodes, each holding a data value and a pointer to the next node, reached by following the chain from the start pointer. Its use is wherever items are inserted or removed from the middle without moving everything else: a waiting list reordered when a patient jumps, an address book edited in place. Justifying one for a situation is matching the structure's leave-order or its editing behaviour to the situation's rule, and the household object is usually answer enough.",
+   "claim_ids": [
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-005": 1
+   },
+   "authored_hash": "a6918a67394d4384b38b6dc109fbdd21d661d89e4f3f67f75a416243e0bb5a8f"
+  },
+  {
+   "block_id": "10.4.1-b4",
+   "block_type": "definition",
+   "heading": "Using the structures: add, edit, delete",
+   "text": "Adding, editing and deleting in these structures use the structure's own operations and their order rules, and the syllabus is explicit that no pseudocode is required for this - what is required is the working of the moves. On a stack, everything happens at the top: adding is a push onto the top, deleting is a pop from the top, and editing the top is a pop, a change and a push back. On a queue, adding is an enqueue at the rear and deleting is a dequeue from the front - the two ends do the two jobs, which is what first-in-first-out means in practice. On a linked list, editing is a change to a node's data value, and inserting or deleting is a redirecting of pointers: to insert after a node, the new node's pointer takes that node's old next and the node's pointer takes the new node; to delete a node, the previous node's pointer is given the deleted node's next, and the chain simply skips it. A worked trace: the list holds Kudu, Oryx, Zebra; insert Springbok after Oryx by giving Springbok's pointer Zebra and Oryx's pointer Springbok; delete Oryx by giving Kudu's pointer Springbok - and the chain reads Kudu, Springbok, Zebra, with nothing moved.",
+   "claim_ids": [
+    "CLM-9618-10.4-006",
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-006": 1,
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-005": 1
+   },
+   "authored_hash": "0fb80b13899fd55ea2b503888678f1bbda256d3582dc505114ad311c09da60f5"
+  },
+  {
+   "block_id": "10.4.1-b5",
+   "block_type": "definition",
+   "heading": "Implementing with arrays and pointers",
+   "text": "The abstract structure is implemented on the concrete one, and the bridge is the pointer. At AS, a pointer is an index into an array, so an implementation's pointers hold index positions rather than data values. A stack is one array plus one pointer: DECLARE Plates : ARRAY[1:50] OF STRING and DECLARE Top : INTEGER - Top holds the index of the stack's top element, initialised to 0 for an empty stack, and push and pop move Top up and down by one. A queue is one array plus two pointers: DECLARE Jobs : ARRAY[1:50] OF STRING with DECLARE Front, Rear : INTEGER - Front holds the index of the queue's front element and Rear the index of its rear element - and enqueue advances Rear, dequeue advances Front, with the queue living between them. A linked list is one array of nodes and one start pointer, where a node is a pair of elements: DECLARE NodeData : ARRAY[1:50] OF STRING for the values and DECLARE NextNode : ARRAY[1:50] OF INTEGER for the pointers, with DECLARE Start : INTEGER holding the index of the first node, and each NextNode[i] holding the index of the node after node i - a data array and a pointer array side by side, with the pointer array stitching the chain. The syllabus's warning and its test: writing pseudocode that builds one of these structures from nothing is not required, and an answer about behaviour when the implementation was asked for is not an implementation - the test is whether the answer declares anything, because an implementation names arrays, data types, pointer variables and their initial values.",
+   "claim_ids": [
+    "CLM-9618-10.4-007",
+    "CLM-9618-10.4-008",
+    "CLM-9618-10.4-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-007": 1,
+    "CLM-9618-10.4-008": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "0d1b1f3bb7b659e44aac4947b87b0bcdbed3ff6194d9a246f7c896a7a0bb52a8"
+  },
+  {
+   "block_id": "10.4.1-b6",
+   "block_type": "worked_application",
+   "heading": "Worked example: a dispensary queue, implemented",
+   "text": "A clinic's dispensary runs a queue, and its implementation is written out with every declared thing. The array: DECLARE Waiting : ARRAY[1:20] OF STRING, holding up to twenty patient names. The pointers: DECLARE Front, Rear : INTEGER, and the empty queue is declared by initialising Front <- 1 and Rear <- 0 - nothing between the pointers, so the queue is empty by its pointers. A patient joins: Rear is advanced by one and the name is stored at Waiting[Rear], so each arrival takes the next free position at the rear. A patient is served: the name at Waiting[Front] is taken and Front is advanced by one, so service always takes the oldest arrival. The behaviour trace with three arrivals - Anna, Ben, Clara: Rear runs 1, 2, 3 and the array holds them in order; Anna is served first because her position is Front's, Ben second, Clara third - first in, first out, produced by two integers moving. The same array with one pointer named Top and a push-and-pop rule would be a stack instead, and the two implementations differ only in their pointers and their rules - which is the whole lesson of the ADT: the behaviour is decided by the operations, and the array underneath holds either.",
+   "claim_ids": [
+    "CLM-9618-10.4-008",
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-008": 1,
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "296578dddf0eb8210f27cd685ff446b46608d0c98927b3111492f4ab7737b7f8"
+  },
+  {
+   "block_id": "10.4.1-b7",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur. Pointers holding data values: in an array implementation a pointer holds an index position, so the test is whether the pointer could be used as an array index. Stack operations given to a queue: a stack is last in, first out with push and pop, a queue is first in, first out with enqueue at the rear and dequeue from the front - the test is which item leaves first, the newest or the oldest. And behaviour written where an implementation was asked for: an implementation names the arrays, their data types, the pointer variables and their initial values - the test is whether the answer declares anything.",
+   "claim_ids": [
+    "CLM-9618-10.4-007",
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-007": 1,
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "2a1d7a1f99a9a4f48b38d1931f0c3795e2578a6c529e435ddb962d2b78bbd285"
+  },
+  {
+   "block_id": "10.4.1-b8",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The arrays underneath are 10.2's arrays, and the stack and queue are how 10.3's files are often read and written in order. The pointer-as-index idea is 4.2's indexed addressing inside a data structure, and the testing of these structures is 12.3's dry-run tables at their busiest.",
+   "claim_ids": [
+    "CLM-9618-10.4-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.4-007": 1
+   },
+   "authored_hash": "5f483b58c47fa51c9aae8a1845c6f4467364a5406cf0ce05de30eb49554ca15a"
+  }
+ ],
+ "word_count": 1317,
+ "qa_status": "review_required",
+ "notes": []
+}

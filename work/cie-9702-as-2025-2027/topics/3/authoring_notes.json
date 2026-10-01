@@ -1,0 +1,15 @@
+{
+ "topic_id": "3",
+ "deviations": [
+  {
+   "from": "The work order's eleven MISCON slots declare a misconception_entry field (e.g. misconception_entry: MC-9702-3-01) to be carried onto the item.",
+   "to": "The misconception entry id is recorded in the item's provenance string instead, and each MISCON card's prompt, canonical answer and marking guidance name the error and its test from curriculum/misconceptions.json.",
+   "why": "The learning_items schema (standard v0.2.0-draft) sets additionalProperties: false and has no misconception_entry field, so the entry id cannot live on the item itself without failing C-00."
+  },
+  {
+   "from": "The P01 brief asks for 2-4 objectives that the task genuinely exercises.",
+   "to": "Four objectives are listed (OBJ-9702-3.1-03, OBJ-9702-3.1-04, OBJ-9702-3.2-03, OBJ-9702-3.3-02) as the spine of the twelve-question set; the remaining questions exercise further objectives of the topic, as a Paper 1 section does.",
+   "why": "The twelve questions span the topic's objectives; listing all nine they touch would break the brief's own 2-4 limit, so the four the set leans on hardest are named and the rest are covered by their own flashcards."
+  }
+ ]
+}

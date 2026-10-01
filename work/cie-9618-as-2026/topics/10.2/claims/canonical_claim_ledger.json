@@ -1,0 +1,175 @@
+{
+ "ledger_id": "CLM-LEDGER-9618-10.2",
+ "claims": [
+  {
+   "claim_id": "CLM-9618-10.2-001",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-01"
+   ],
+   "text": "An array is a data structure holding a fixed number of elements of one data type under one name, with each element reached by an index between the array's lower and upper bound.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-002",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-01",
+    "OBJ-9618-10.2.1-04"
+   ],
+   "text": "The index is the position of an element within the array; the element is the value stored at that position, so Data[i] names the element at index i.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-003",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-01",
+    "OBJ-9618-10.2.1-04"
+   ],
+   "text": "An array's size comes from its declared bounds, not from a function, because LENGTH() works on strings, so the number of elements is read from the lower and upper bound.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-004",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-02"
+   ],
+   "text": "A 1D array suits a list of values with one position each, such as a week of temperatures, whereas a 2D array suits a grid where each value belongs to a row and a column, such as a seating plan.",
+   "claim_type": "comparison",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-005",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-02"
+   ],
+   "text": "Choosing 1D or 2D follows the shape of the problem's data: values addressed by one position need one bound pair, and values addressed by a row and a column need two, because the structure should mirror how the data is addressed.",
+   "claim_type": "evaluative",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-006",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-03"
+   ],
+   "text": "A 1D array is declared DECLARE <name> : ARRAY[<lower>:<upper>] OF <type>, and a 2D array with two bound pairs as ARRAY[<row low>:<row high>, <col low>:<col high>] OF <type>.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-007",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-04"
+   ],
+   "text": "Processing an array means visiting elements by index, in a loop from the lower to the upper bound, doing the work on each element - totalling, counting, finding the largest, updating.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.2-008",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-04"
+   ],
+   "text": "A linear search examines each element in turn until the target is found or the bounds are passed, and a bubble sort repeatedly compares neighbours and swaps those out of order, so the largest values bubble to the end.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  }
+ ]
+}

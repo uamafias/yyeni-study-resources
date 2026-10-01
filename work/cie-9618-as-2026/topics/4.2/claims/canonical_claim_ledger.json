@@ -1,0 +1,299 @@
+{
+ "ledger_id": "CLM-LEDGER-9618-4.2",
+ "claims": [
+  {
+   "claim_id": "CLM-9618-4.2-001",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "text": "Machine code is binary patterns that a person cannot conveniently read or write, so assembly language writes the same instructions with mnemonics and symbolic addresses, and an assembler translates it into machine code, one mnemonic at a time.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-002",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "text": "Each assembly instruction corresponds to one machine instruction, whereas one statement of a high-level language compiled typically becomes many machine instructions.",
+   "claim_type": "comparison",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-003",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "text": "A jump written to a label defined later in the program is a forward reference whose address is not yet known on first reading, which is why the assembler needs two passes.",
+   "claim_type": "causal",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-004",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "text": "In the first pass the assembler reads the program line by line, computing each instruction's address from the lengths of the instructions before it, and builds the symbol table of every label with its address; no machine code is generated.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-005",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "text": "In the second pass the assembler translates each instruction into machine code, replacing each label with the address the symbol table holds, and reports a label with no entry as an error.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-006",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "text": "A trace table records the registers' values after each executed instruction: one row per instruction executed, with columns for the accumulator, memory locations used, the flags and any output.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-007",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "text": "A jump instruction changes the program counter to the target address, so the next instruction fetched is the one at that address; a conditional jump is taken only when the flags from the last comparison say so.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-008",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-01"
+   ],
+   "text": "The instruction set is grouped: data movement (LDM, LDD, LDI, LDX, STO), input and output (IN, OUT), arithmetic (INC, DEC), compare (CMP, CMI) and jumps (JMP, JPE, JPN), with END halting the program.",
+   "claim_type": "factual",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-009",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-01"
+   ],
+   "text": "CMP compares the accumulator's contents with the operand and sets the status flags from the result, which a later conditional jump JPE or JPN can act on.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-010",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "text": "Immediate addressing, written #n, uses the number n itself as the operand, so no memory lookup happens.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-011",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "text": "Direct addressing uses the contents of the given memory location as the operand, so the address names where to look.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-012",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "text": "Indirect addressing uses the contents of the location whose address is stored at the given address: the given address holds an address, and the operand is at that second address.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-013",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "text": "Indexed addressing adds the contents of the index register to the address given, then uses the contents of that calculated address as the operand.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-4.2-014",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "text": "Relative addressing calculates the operand's address relative to the address of the current instruction (the program counter), so the same program runs wherever it is loaded.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  }
+ ]
+}

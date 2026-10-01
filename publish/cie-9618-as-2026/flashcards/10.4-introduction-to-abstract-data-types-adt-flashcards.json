@@ -1,0 +1,932 @@
+{
+ "topic_number": "10.4",
+ "topic_title": "Introduction to Abstract Data Types (ADT)",
+ "topic": "10.4 Introduction to Abstract Data Types (ADT)",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 20,
+ "items": [
+  {
+   "item_id": "ITEM-9618-10.4-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by an abstract data type.",
+   "canonical_answer": "An abstract data type is a collection of data together with a set of operations on those data, described by what the operations do rather than how the data are stored.",
+   "marking_guidance": [
+    "1 mark: the meaning - data plus the operations on it, described by what the operations do, not by the storage."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-001": 1
+   },
+   "authored_hash": "38a163e345d73469e15fca7468f2185d636a93e58a5458439b5e2b1a624e1810",
+   "objective_titles": [
+    "Show understanding that an ADT is a collection of data and a set of operations on those data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-01",
+    "OBJ-9618-10.4.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-001",
+    "CLM-9618-10.4-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why an ADT is described by its operations rather than by its storage.",
+   "canonical_answer": "The operations are the deal between the ADT and its user: a program that uses push and pop works against what the operations do, so the storage underneath can change without the program changing. Describing the storage instead would tie every user to one implementation, which is what the abstraction exists to prevent, because what the operations do is the only promise the user needs.",
+   "marking_guidance": [
+    "Reason: the operations are the promise the user works against - 1 mark.",
+    "Purpose: so the storage can change beneath without touching any user, because the description binds the two sides only by behaviour - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-001": 1,
+    "CLM-9618-10.4-002": 1
+   },
+   "authored_hash": "1651d0d01588ae36729681f4567ba35cfd007f2c22aead1577dd97d38627cfdd",
+   "objective_titles": [
+    "Show understanding that an ADT is a collection of data and a set of operations on those data",
+    "Show understanding that a stack, queue and linked list are examples of ADTs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-003-APP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-01",
+    "OBJ-9618-10.4.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-001",
+    "CLM-9618-10.4-002",
+    "CLM-9618-10.4-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "An editor's undo list keeps each change and undoes the most recent one first. Explain which ADT this is and why its description fits the situation.",
+   "canonical_answer": "The undo list is a stack: the changes are the data, and the operations are the push of each change and the pop of the most recent one to undo it. The stack’s rule - last in, first out, the newest leaves first - is exactly the undo rule, because the most recent change is the next one undone, so the situation matches the ADT by its leave-order.",
+   "marking_guidance": [
+    "Context: this given undo list and its most-recent-first rule - 1 mark for the stack named.",
+    "Reason: because a stack’s pop takes the newest item first, which is the undo rule exactly, the situation fits the stack’s description - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-001": 1,
+    "CLM-9618-10.4-002": 1,
+    "CLM-9618-10.4-003": 1
+   },
+   "authored_hash": "5ab28e1149f04aacfeef0d041c8e42643aeac3171797fe9dc58fbf468915e13f",
+   "objective_titles": [
+    "Show understanding that an ADT is a collection of data and a set of operations on those data",
+    "Show understanding that a stack, queue and linked list are examples of ADTs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-004-DEF",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State the rule by which a stack’s items leave it.",
+   "canonical_answer": "Last in, first out: pop removes the most recently pushed item, so the newest item leaves first.",
+   "marking_guidance": [
+    "1 mark: the meaning - last in, first out, with pop taking the most recent item."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1
+   },
+   "authored_hash": "663ba2cd35a97aa4698d193a165ac4741be7ca763a857fbcc2743b1e309afc53",
+   "objective_titles": [
+    "Show understanding that a stack, queue and linked list are examples of ADTs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-005-WHY",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a keyboard buffer is designed as a queue rather than a stack.",
+   "canonical_answer": "Keys typed must reach the program in the order they were struck, so the oldest key has to leave first - and a queue is exactly that rule, with enqueue at the rear and dequeue from the front. A stack would hand the program the newest key first, so the letters of a word would arrive backwards, which is why the buffer is the first-in-first-out structure.",
+   "marking_guidance": [
+    "Reason: keys must be delivered in striking order, so the oldest leaves first - 1 mark.",
+    "Purpose: so the word arrives letter by letter as typed, because the queue’s rule matches the situation’s rule, whereas the stack’s would not - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-004": 1
+   },
+   "authored_hash": "aea84ac289c24e875c08719689a0f4d5f3acf6dfb8b85704b5266989a6665587",
+   "objective_titles": [
+    "Show understanding that a stack, queue and linked list are examples of ADTs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-006-APP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-02",
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A clinic keeps a waiting list that patients join at the end and that is frequently reordered as urgent cases jump in. Explain why the list is held as a linked list rather than an array.",
+   "canonical_answer": "The reordering is done by redirecting pointers: an urgent patient is inserted after the right node by taking over one pointer and handing one on, so nothing else in the list moves. In an array, inserting a patient in the middle means shifting every later patient one position along, so each reorder walks the whole list - the linked list edits the middle in place, which is why it suits the jumping list.",
+   "marking_guidance": [
+    "Context: this given waiting list and its urgent insertions - 1 mark.",
+    "Reason: because inserting is a pointer redirect rather than a shift of later items, the frequent reordering is cheap in the chain, so the structure matches the editing - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-005": 1
+   },
+   "authored_hash": "06191650f2e2e9f86b79334bfa6f47d341580ec01bde0beafbb6df47191915ea",
+   "objective_titles": [
+    "Show understanding that a stack, queue and linked list are examples of ADTs",
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-015-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that a queue’s items are removed with pop from the front. Explain the error.",
+   "canonical_answer": "Pop is a stack’s operation, and a stack’s pop removes the most recently pushed item - the newest - whereas a queue removes its oldest item from the front, and the queue’s operation is dequeue. The test: which item leaves first, the newest or the oldest? The newest is the stack; the oldest is the queue, so the queue is enqueue at the rear and dequeue from the front, with pop belonging to the stack alone.",
+   "marking_guidance": [
+    "1 mark: the error named - the stack’s operation and its newest-first rule have been given to the queue, a confusion of the two ADTs.",
+    "1 mark: the correction with the test - a queue is first in, first out, so its oldest item leaves first by dequeue, because the leave-order is what separates the two."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-004": 1
+   },
+   "authored_hash": "b15b8d85ba9eecddec8ffafb7954fa39ab51dc6f3125be1355ab3a87b700e901",
+   "misconception_entry": "MC-9618-10.4-02",
+   "objective_titles": [
+    "Show understanding that a stack, queue and linked list are examples of ADTs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-007-APP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw the stack of plates after these moves, showing the top: push \"Kalahari\", push \"Kavango\", push \"Caprivi\", pop, push \"Erongo\". Show your working by naming each move and the top after it.",
+   "canonical_answer": "Push \"Kalahari\" - the stack holds Kalahari, top Kalahari. Push \"Kavango\" - Kalahari, Kavango, top Kavango. Push \"Caprivi\" - Kalahari, Kavango, Caprivi, top Caprivi. Pop - Caprivi leaves, top Kavango. Push \"Erongo\" - Kalahari, Kavango, Erongo, top Erongo. Final stack, top to bottom: Erongo, Kavango, Kalahari.",
+   "marking_guidance": [
+    "Context: this given sequence of moves on the plate stack - 1 mark for the moves named with the top after each.",
+    "Reason: because push adds at the top and pop removes the newest, the top after each move is the last one pushed that remains, so the trace carries 1 mark - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-006": 1
+   },
+   "authored_hash": "a3fde22c5ca8daecf9227f2c7bbc3a1980c6213b410c7e96d03292b63ad161bc",
+   "objective_titles": [
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-008-APP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw the dispensary queue after these moves, marking the front and the rear: enqueue \"Anna\", enqueue \"Ben\", enqueue \"Clara\", dequeue, enqueue \"Dawid\". Show your working by naming each move and who is at each end.",
+   "canonical_answer": "Enqueue \"Anna\" - queue Anna, front Anna, rear Anna. Enqueue \"Ben\" - Anna, Ben, rear Ben. Enqueue \"Clara\" - Anna, Ben, Clara, rear Clara. Dequeue - Anna leaves, front Ben. Enqueue \"Dawid\" - Ben, Clara, Dawid, rear Dawid. Final queue, front to rear: Ben, Clara, Dawid.",
+   "marking_guidance": [
+    "Context: this given sequence of moves on the dispensary queue - 1 mark for the moves named with front and rear after each.",
+    "Reason: because enqueue adds at the rear and dequeue removes from the front, the oldest always leaves first, so the two ends carry 1 mark - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-006": 1
+   },
+   "authored_hash": "51b5bc64987f344098ce18abe49770e2c4f763b4adf17823f93dfc8fa2b64d5b",
+   "objective_titles": [
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-009-INTERP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-005",
+    "CLM-9618-10.4-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The linked list holds Oryx then Zebra, with Start pointing at Oryx and Oryx’s pointer at Zebra. The moves are: insert \"Springbok\" after Oryx, then delete \"Oryx\". The trace below has four missing entries. Complete them.\n\n| Move | Action | Pointer changed |\n|---|---|---|\n| Insert Springbok | (a) takes Zebra’s position; Oryx’s pointer takes (b) | Springbok’s pointer; Oryx’s pointer |\n| Delete Oryx | the node before Oryx hands its pointer on | (c) is given (d) |",
+   "canonical_answer": "(a) Springbok’s pointer. (b) Springbok’s position. (c) Start. (d) Springbok’s position. The list finally reads Springbok, Zebra: the insert redirected two pointers and the delete redirected one, and no node moved.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) Springbok’s pointer, (b) Springbok’s position, (c) Start, (d) Springbok’s position.",
+    "Meaning: the completed trace shows editing done by redirecting pointers alone, so the result is a list reordered without any node moving, because the chain is stitched by its pointers."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-005": 1,
+    "CLM-9618-10.4-006": 1
+   },
+   "authored_hash": "bbc194b9b8691259cf7a054a33d83ab10fdbebc1b29dd44733a4292f793bfc05",
+   "objective_titles": [
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-010-INTERP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A held-calls stack starts empty. The moves run: push \"CallA\", push \"CallB\", push \"CallC\", pop, pop, push \"CallD\". The trace below has four missing entries. Complete them.\n\n| Move | Leaves the stack? | Top after |\n|---|---|---|\n| push \"CallA\" | nothing | CallA |\n| push \"CallB\" | nothing | CallB |\n| push \"CallC\" | nothing | (a) |\n| pop | (b) | CallB |\n| pop | (c) | (d) |\n| push \"CallD\" | nothing | CallD |",
+   "canonical_answer": "(a) CallC. (b) CallC - the newest item, the last pushed, leaves first. (c) CallB. (d) CallA. Final stack, top to bottom: CallD, CallA.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) CallC, (b) CallC, (c) CallB, (d) CallA.",
+    "Meaning: the completed trace shows the newest item leaving at each pop, so the result is the last-in-first-out rule working through the moves, because the top is always the last one pushed that remains."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-006": 1
+   },
+   "authored_hash": "bddbc069ab589f4564f51fee6f90b86ef2a0e620f907607306934dbc909ac30a",
+   "objective_titles": [
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-011-PROC",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-008",
+    "CLM-9618-10.4-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode declarations that implement a stack of up to 30 patient names, with the pointer and its initial value for an empty stack.",
+   "canonical_answer": "```pseudocode\nDECLARE Patients : ARRAY[1:30] OF STRING\nDECLARE Top : INTEGER\nTop <- 0\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the array first, then the pointer, then its initial value - each statement is a mark point.",
+    "Input: the implementation starts from the given size and the given item type.",
+    "Each statement is a mark point: the array with its bounds and STRING type - 2 marks; the pointer Top as INTEGER - 1 mark; the initial value 0 declaring the empty stack - 1 mark.",
+    "Result: the end product is an implementation that declares things, which behaviour alone never does."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-008": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "5e49b8982ea7e7ef9083b77091bdea6137c259f2c78291e4cb1daef059ea8992",
+   "objective_titles": [
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-012-MECH",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MECH",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain how the two pointers of a queue’s array implementation produce the first-in-first-out behaviour.",
+   "canonical_answer": "Rear holds the index of the queue’s rear element and Front the index of its front element, so enqueue advances Rear and stores the newcomer there - the newest position, where arrivals go - while dequeue takes the element at Front and advances it - the oldest position, because Front was left behind by every earlier arrival. The two pointers walk forward one arrival at a time, so what entered first sits at Front when service comes, which is how first in, first out is produced by two integers.",
+   "marking_guidance": [
+    "How the pointers work: Rear marks where arrivals go and Front where service takes from - 1 mark.",
+    "Because Front is left behind by earlier arrivals, the oldest item is always at Front, so the arrival order becomes the leaving order - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-008": 1
+   },
+   "authored_hash": "97ae9136aaa7f3c7710bdeb99139b53a5951c3904445bb5d7e4c7a8a17ba77a3",
+   "objective_titles": [
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-013-APP",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-007",
+    "CLM-9618-10.4-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode declarations that implement a linked list of up to 20 song titles, with the data array, the pointer array, the start pointer, and the start pointer’s initial value for an empty list.",
+   "canonical_answer": "```pseudocode\nDECLARE SongTitle : ARRAY[1:20] OF STRING\nDECLARE NextNode : ARRAY[1:20] OF INTEGER\nDECLARE Start : INTEGER\nStart <- 0\n```",
+   "marking_guidance": [
+    "Context: this given list of song titles and its given size - 1 mark for the data array with its STRING type.",
+    "Reason: because a node is a data value plus a pointer to the next node, the pointer array of INTEGER indices is the second half, and Start at 0 declares the empty chain - 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-007": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "d3e67bc652f0cc5b5321b2a1635f3bc5341a80403ba7c207ea38859186b1f931",
+   "objective_titles": [
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-014-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes a linked list’s pointer as holding the node’s data value. Explain the error.",
+   "canonical_answer": "In an array implementation a pointer holds the index of the next node, not the value stored there, so the pointer says where to look, not what is found. The test: could the pointer be used as an array index? It must be, and a data value could not - the value is what the chain carries, and the index is how the chain finds it.",
+   "marking_guidance": [
+    "1 mark: the error named - the pointer has been given the node’s data value, which it does not hold.",
+    "1 mark: the correction with the test - the pointer holds the next node’s index position, because it must work as an array index."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-007": 1
+   },
+   "authored_hash": "185cf7550dde6e0f38fef6f53abd829a97ab2b26f0db01405821d626f31a081b",
+   "misconception_entry": "MC-9618-10.4-01",
+   "objective_titles": [
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-016-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Asked how a queue is implemented using arrays, a learner writes: 'items join at the back and leave from the front'. Explain the error.",
+   "canonical_answer": "That is the queue’s behaviour, not an implementation. An implementation names the array, its data type, the pointer variables and their initial values - DECLARE Waiting : ARRAY[1:20] OF STRING, DECLARE Front, Rear : INTEGER, initialised - because the implementation is the concrete things the behaviour runs on. The test: does the answer declare anything? An implementation must, and the behaviour sentence declares nothing.",
+   "marking_guidance": [
+    "1 mark: the error named - the structure’s behaviour has been given where its implementation was asked for, a confusion of the two levels.",
+    "1 mark: the correction with the test - an implementation names the array, its type, the pointers and their initial values, because declaring things is what an implementation does."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "b4d3e2bc2b133035b6dcdc56276177593fa7d652eb59f5093baa735a79ec78c2",
+   "misconception_entry": "MC-9618-10.4-03",
+   "objective_titles": [
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-P01",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A printer holds its jobs in a queue of up to 40 jobs, each a document name. The office wants a module that works with the queue’s rules. Write pseudocode for a procedure ReportJobs that takes the array JobNames, of up to 40 strings, and the two integers Front and Rear holding the queue’s end indices, and outputs every job’s name from Front to Rear in order - the order the jobs will print.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ReportJobs(JobNames : ARRAY[1:40] OF STRING, Front : INTEGER, Rear : INTEGER)\n   DECLARE Position : INTEGER\n   FOR Position <- Front TO Rear\n      OUTPUT JobNames[Position]\n   NEXT Position\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with all three parameters and their types, and ENDPROCEDURE.",
+    "Mark point 2: the declaration of the loop variable Position, because the module declares what it uses.",
+    "Mark point 3: the count-controlled loop FOR Position <- Front TO Rear, whose bounds are the queue’s two ends - the front job first, which is the queue’s rule.",
+    "Mark point 4: the array element written by index, JobNames[Position], inside the loop. Mark point 5: the loop closed with NEXT Position.",
+    "Mark point 6: the output produced inside the loop, one job per pass, in the order they will print. Mark point 7: the module closed with ENDPROCEDURE, with no returned value.",
+    "Mark point 8: the queue’s behaviour kept - the front job is output first because Front is the loop’s start, so the report reads in first-in-first-out order, which is the whole result."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A printer job queue reported in printing order.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-006": 1
+   },
+   "authored_hash": "94671755885c840c0b60743d1b282e61b7463de1ab9bf8eb6a00ab36a6494978",
+   "objective_titles": [
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-P02",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A switchboard holds its held calls as a stack of up to 30 caller names. Write pseudocode for a procedure UndoHolds that takes the array HeldCalls, of up to 30 strings, the integer Top holding the stack’s top index, and the integer NumToUndo, and outputs the names of the NumToUndo most recent held calls, one per line, by popping the stack’s rule - newest first.",
+   "canonical_answer": "```pseudocode\nPROCEDURE UndoHolds(HeldCalls : ARRAY[1:30] OF STRING, Top : INTEGER, NumToUndo : INTEGER)\n   DECLARE Count : INTEGER\n   DECLARE Current : INTEGER\n   Current <- Top\n   FOR Count <- 1 TO NumToUndo\n      IF Current >= 1 THEN\n         OUTPUT HeldCalls[Current]\n         Current <- Current - 1\n      ENDIF\n   NEXT Count\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with all three parameters and their types, and ENDPROCEDURE. Mark point 2: the declarations of Count and Current.",
+    "Mark point 3: the initialisation of Current to Top before the loop, so the walking starts at the stack’s top.",
+    "Mark point 4: the count-controlled loop FOR Count <- 1 TO NumToUndo, closed with NEXT Count. Mark point 5: the selection guarding each output, so a request for more holds than exist stops at the bottom.",
+    "Mark point 6: the array element output by index, HeldCalls[Current], newest first because Current starts at Top. Mark point 7: Current decremented inside the selection, so the walk descends the stack one held call per pass.",
+    "Mark point 8: the stack’s behaviour kept - the newest held call is output first, because the top index is where the walk starts - the module is complete and closed with no returned value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A switchboard’s held calls released newest first.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-006": 1
+   },
+   "authored_hash": "39b285ff3634a4817c3f1ebbf5a1f393a06983da9aab8a60715eceba15125e69",
+   "objective_titles": [
+    "Use a stack, queue and linked list to store data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-P03",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-007",
+    "CLM-9618-10.4-008"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A tour company keeps its bookings as a linked list held in two arrays: BookingName of up to 25 strings and NextNode of 25 integers, with Start holding the index of the first booking. Write pseudocode for a procedure ShowChain that takes BookingName, NextNode and Start, and outputs every booking’s name by following the chain from Start until the chain ends, one name per line.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ShowChain(BookingName : ARRAY[1:25] OF STRING, NextNode : ARRAY[1:25] OF INTEGER, Start : INTEGER)\n   DECLARE Current : INTEGER\n   Current <- Start\n   WHILE Current <> 0\n      OUTPUT BookingName[Current]\n      Current <- NextNode[Current]\n   ENDWHILE\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with all three parameters and their types, and ENDPROCEDURE. Mark point 2: the declaration of Current, the walking pointer.",
+    "Mark point 3: the initialisation of Current to Start, so the chain is entered at its first node. Mark point 4: the conditional loop WHILE Current <> 0, closed with ENDWHILE - the end-of-chain value 0 stops the walk.",
+    "Mark point 5: the data array read by index, BookingName[Current], output inside the loop. Mark point 6: the pointer array read by index, NextNode[Current], moving the walk to the next node.",
+    "Mark point 7: both reads use the same index on the two side-by-side arrays, which is the implementation’s whole trick. Mark point 8: the walk ends when the pointer is 0, so the names are output in chain order with no returned value, and the module is complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A booking chain walked from its start pointer.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-007": 1,
+    "CLM-9618-10.4-008": 1
+   },
+   "authored_hash": "06aa673648ca4cfc74763cbbbdf00d49d9fb56d9effb6f2374a2e9b8e7b57ded",
+   "objective_titles": [
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-10.4-P04",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-01",
+    "OBJ-9618-10.4.1-02",
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-001",
+    "CLM-9618-10.4-003",
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-009"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A lodge keeps its room-cleaning jobs in a structure.\n(a) The jobs must be done in the order they were reported. State which ADT suits the jobs, and state its rule in one line. [2]\n(b) Write the pseudocode declarations that implement this structure for up to 25 job names, with the pointer variables and their initial values for an empty structure. [2]\n(c) Explain why the declarations in (b) are an implementation while the sentence in (a) is not. [2]",
+   "canonical_answer": "(a) A queue, because the first job reported must be the first done; its rule is first in, first out - items join at the rear and leave from the front.\n(b)\n```pseudocode\nDECLARE Jobs : ARRAY[1:25] OF STRING\nDECLARE Front, Rear : INTEGER\nFront <- 1\nRear <- 0\n```\n(c) The sentence in (a) states behaviour only - it says what the operations do. The declarations in (b) name the array, its data type, the pointer variables and their initial values, which is what an implementation must do, because an implementation is the concrete things the behaviour runs on.",
+   "marking_guidance": [
+    "Part (a): the state of the ADT with its rule - 2 marks, 1 per point: the queue named, the first-in-first-out rule given.",
+    "Part (b): the given declarations written - 2 marks, 1 per point: the array with its bounds and type, the two pointers initialised for the empty structure.",
+    "Part (c): the reason the two differ - 2 marks, 1 per point: the sentence declares nothing, the declarations name the concrete things, because declaring is what an implementation does."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge’s cleaning jobs kept in first-reported order.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-001": 1,
+    "CLM-9618-10.4-003": 1,
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "cf0b8eaf0d6acf1da6ff0f17d6414273e119c00a86856d1ae3b4fdf9435076ec",
+   "objective_titles": [
+    "Show understanding that an ADT is a collection of data and a set of operations on those data",
+    "Show understanding that a stack, queue and linked list are examples of ADTs",
+    "Describe how a queue, stack and linked list can be implemented using arrays"
+   ]
+  }
+ ]
+}

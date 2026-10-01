@@ -1,0 +1,210 @@
+{
+ "unit_id": "CU-9618-2.1.2",
+ "title": "Topologies, the cloud, media and LAN hardware",
+ "objective_ids": [
+  "OBJ-9618-2.1.2-01",
+  "OBJ-9618-2.1.2-02",
+  "OBJ-9618-2.1.2-03",
+  "OBJ-9618-2.1.2-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1136,
+  "target": 1382,
+  "max": 1629
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-2.1.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Bus, star, mesh and hybrid topologies; cloud computing, public and private; wired and wireless media; and the hardware that supports a LAN.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "d2a89368d1aa469ee736360d055488207b7e67e2158735f2843453c27ad896bc"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b2",
+   "block_type": "definition",
+   "heading": "The four topologies",
+   "text": "A network's topology is the arrangement in which its devices and links are connected, and four arrangements cover the field. In a bus topology, every device taps into one shared backbone cable; whatever is placed on the cable is seen by every device, and each takes what is addressed to it. In a star topology, every device connects by its own cable to one central device, usually a switch, and data reaches its destination by passing through that central device. In a mesh topology, each device is connected to several of the others, so data can travel by more than one route, and a full mesh goes further and connects every device to every other device. A hybrid topology combines the others - stars whose central devices sit on a shared backbone, or a mesh of core links with stars hanging off it. Drawing one is naming the boxes and the lines: a star is drawn as a hub with spokes, a bus as one line with devices hanging from it, a mesh as a web of lines. The packet's eye view matters as much as the picture: in a star a packet goes through the central device and out to its destination; in a bus it travels the backbone where every device sees it; in a mesh it may travel by several routes.",
+   "claim_ids": [
+    "CLM-9618-2.1-011",
+    "CLM-9618-2.1-012",
+    "CLM-9618-2.1-013",
+    "CLM-9618-2.1-014",
+    "CLM-9618-2.1-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-011": 1,
+    "CLM-9618-2.1-012": 1,
+    "CLM-9618-2.1-013": 1,
+    "CLM-9618-2.1-014": 1,
+    "CLM-9618-2.1-015": 1
+   },
+   "authored_hash": "3e06e099594499fb180c35d20ad1f750029e28d46ffa934f0b3a04622d63c47d"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b3",
+   "block_type": "analysis_chain",
+   "heading": "How a topology behaves when things fail",
+   "text": "Topology decides what fails when something fails. In a star, one broken cable strands exactly one device, and the rest keep working; the central device is the single point of failure, and its death stops the whole network. In a bus, one break in the backbone can stop every device, because the shared cable is the whole network. In a mesh, a broken link merely removes one route, and traffic moves to the remaining routes, which is why demanding networks use meshes despite the cost, a cost that grows quickly because each new device needs links to several others. The test that separates star from mesh: remove the central device - in a star every link fails, because every link ends there; in a mesh the others still connect. That test is also the justification: choose the topology whose failures the situation can afford, because the failure behaviour, not the drawing, is what the organisation lives with.",
+   "claim_ids": [
+    "CLM-9618-2.1-016"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-016": 1
+   },
+   "authored_hash": "3a49c4066a649f2676ef3b572a5a407b439c631293f06f8071c7fe3340c76ae6"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b4",
+   "block_type": "definition",
+   "heading": "Cloud computing, public and private",
+   "text": "Cloud computing provides storage, software and processing as services over the internet, so an organisation uses a provider's infrastructure instead of buying and running its own. The immediate effect is on cost: the organisation stops buying servers and paying a room to keep them in, and starts paying for what it uses, month by month. The second effect is on reach: files and applications live on the internet, so work happens anywhere with an internet connection. The cloud comes in public and private forms, and the words say who the service is for, not who can read a user's data. A public cloud is provided for anyone to buy and use, and its infrastructure is shared among many customers, which is where its cheapness comes from. A private cloud is provided for one organisation alone, and its infrastructure is not shared with other customers, which is where its control comes from. Who can read particular data is a question of accounts and permissions, which both kinds still need. The drawbacks sit beside the benefits: a cloud user depends on the connection and on the provider, and the data lives on infrastructure the organisation does not own, so decisions about records with duties attached - patient records, for instance - weigh the private kind.",
+   "claim_ids": [
+    "CLM-9618-2.1-017",
+    "CLM-9618-2.1-018",
+    "CLM-9618-2.1-019"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-017": 1,
+    "CLM-9618-2.1-018": 1,
+    "CLM-9618-2.1-019": 1
+   },
+   "authored_hash": "9f377e00c899b4f13a8dd8cc6b95952baa8547f66298a0f5d959fbbefa28a2f9"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b5",
+   "block_type": "definition",
+   "heading": "Wired and wireless media",
+   "text": "The links themselves are media, and each carries data its own way. Copper cable carries electrical signals: it is cheap and everywhere, but it picks up electrical interference, and its signals weaken over distance, so runs are kept short. Fibre-optic cable carries pulses of light along glass: light resists electrical interference, carries data further without repeating, and runs faster than copper, at a higher price and with more care in laying. Radio - including wi-fi - carries data through the air, so devices move freely and no cables are laid, but the signal weakens with distance, is affected by walls, and can be received by anyone within range. Microwave links carry data in straight line-of-sight beams between dish antennas, joining buildings or towns where no cable is laid. Satellites relay data between ground stations over very large areas, which serves remote places at the price of the long distance the signal travels. The choice between wired and wireless is a choice of what the situation values: wired connections are generally faster and more stable but need cable laid to each device; wireless connections are convenient and mobile, but their performance varies with distance, walls and interference.",
+   "claim_ids": [
+    "CLM-9618-2.1-020",
+    "CLM-9618-2.1-021",
+    "CLM-9618-2.1-022",
+    "CLM-9618-2.1-023"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-020": 1,
+    "CLM-9618-2.1-021": 1,
+    "CLM-9618-2.1-022": 1,
+    "CLM-9618-2.1-023": 1
+   },
+   "authored_hash": "7fd0e380d38d7190a6d62627c3de10430156393c3b066e6eaffb5f0a85bc9614"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b6",
+   "block_type": "definition",
+   "heading": "The hardware that supports a LAN",
+   "text": "A LAN's parts each do one job. The switch connects wired devices and sends each arriving packet only to the port of the device it is addressed to, so two machines talking do not slow the others. A server provides the shared services - file storage, printing, logon - that a client-server network runs on. A network interface card (NIC) is the circuit a device uses to join a wired network, and it carries the device's unique MAC address, which is fixed in the hardware; a wireless NIC (WNIC) does the same job by radio. One caution on addresses: the NIC carries the MAC address, and the device's IP address is assigned by the network it joins, not built into the card. A wireless access point (WAP) lets wireless devices join the LAN by radio. A bridge joins two network segments so they behave as one network. A repeater takes a weakening signal and re-transmits it stronger, so a LAN reaches beyond one cable's length. Cables are hardware too: the copper or fibre the wired parts hang from.",
+   "claim_ids": [
+    "CLM-9618-2.1-024",
+    "CLM-9618-2.1-025",
+    "CLM-9618-2.1-026",
+    "CLM-9618-2.1-027"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-024": 1,
+    "CLM-9618-2.1-025": 1,
+    "CLM-9618-2.1-026": 1,
+    "CLM-9618-2.1-027": 1
+   },
+   "authored_hash": "776fd8f72b7276f33a462a2e9e849ce35e1f83e5f78d2f3dd372921d14104712"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b7",
+   "block_type": "worked_application",
+   "heading": "Worked example: a packet crosses a star",
+   "text": "In a youth centre's star LAN, the reception computer sends a form to the office computer. The reception machine's NIC places the form's packets on its cable to the switch. The switch reads each packet's destination address and sends it out of the office computer's port only - the other twenty devices never see it. The office machine's NIC takes the packets and the office software reassembles the form. If the link to the switch from the games room breaks, exactly one thing fails: the games room. If the switch itself fails, everything stops, which is the star's bargain: simple, one device per cable, one fatal point. A mesh among all the centre's machines would keep the games room connected after a break, but the centre would run dozens of links for twenty machines, which is why centres buy stars.",
+   "claim_ids": [
+    "CLM-9618-2.1-013",
+    "CLM-9618-2.1-024",
+    "CLM-9618-2.1-016"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-013": 1,
+    "CLM-9618-2.1-024": 1,
+    "CLM-9618-2.1-016": 1
+   },
+   "authored_hash": "658f4c904e059b8b058af3443be6dbd0a2ef5885f62bbfb394913a7da1f3ad4c"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b8",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur here. Drawing a mesh and calling it a star: a star connects every device to one central device, a mesh connects each device to several others, and the test is to remove the central device - a star loses every link, a mesh keeps its others. Believing the kind of cloud says who can read the data: public and private describe who the service is provided for and who shares the infrastructure, not access to files. Believing the NIC gives the device its IP address: the card carries the MAC address, fixed in the hardware, while the IP address is assigned by the network - which address is built into the card is the test.",
+   "claim_ids": [
+    "CLM-9618-2.1-013",
+    "CLM-9618-2.1-014",
+    "CLM-9618-2.1-018",
+    "CLM-9618-2.1-026"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-013": 1,
+    "CLM-9618-2.1-014": 1,
+    "CLM-9618-2.1-018": 1,
+    "CLM-9618-2.1-026": 1
+   },
+   "authored_hash": "54cf1eb97091fbeeb12c6e83be3bd2dd6efe7f07bbbeb4530861e1d722e7f146"
+  },
+  {
+   "block_id": "CU-9618-2.1.2-b9",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The media of this unit carry the bit streams of 2.1.3, whose routers move packets between the networks joined by 2.1.4's internet hardware. 6.1 Data Security attaches directly to wireless links: radio that anyone in range can receive is where care with what travels earns its keep.",
+   "claim_ids": [
+    "CLM-9618-2.1-021"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-021": 1
+   },
+   "authored_hash": "bd43512fd8e5a415f9064ebffd4b8af15d214e3dc62fadedbf28bcbd6401a7d5"
+  }
+ ],
+ "word_count": 1336,
+ "qa_status": "review_required",
+ "notes": []
+}

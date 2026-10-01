@@ -1,0 +1,154 @@
+{
+ "unit_id": "CU-9618-2.1.4",
+ "title": "The internet's hardware, IP addresses and URLs",
+ "objective_ids": [
+  "OBJ-9618-2.1.4-01",
+  "OBJ-9618-2.1.4-02",
+  "OBJ-9618-2.1.4-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_features",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 852,
+  "target": 1037,
+  "max": 1222
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-2.1.4-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The hardware that supports the internet; IP addresses in IPv4 and IPv6, public and private, with subnetting; and how a URL locates a resource on the web.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "8a3b264eb532792df4ab33c9cd3ce4453795e5c5a6f5b40ea1def6847c040375"
+  },
+  {
+   "block_id": "CU-9618-2.1.4-b2",
+   "block_type": "definition",
+   "heading": "Hardware that supports the internet",
+   "text": "A household or a small organisation does not own the internet's cables; it rents a way in. A modem converts between the digital signals a computer network uses and the form the link carries, so a household can reach the internet over a telephone line or a cellular connection. The PSTN - the public switched telephone network, the ordinary telephone system - can carry data as well as voice, over lines built for voice, which makes it slow but almost everywhere available. A dedicated line is a permanent link reserved for data between two points: a business pays for a line that stays up around the clock, carries no other traffic, and needs no call to be set up. A cell phone network connects devices by radio through masts, giving access wherever the provider's coverage reaches - the way in for much of rural Namibia, where fixed lines do not go. Between the household's way in and the internet's core sit the providers' networks and the routers of 2.1.3; the whole is the network of networks the earlier units described.",
+   "claim_ids": [
+    "CLM-9618-2.1-036",
+    "CLM-9618-2.1-037"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-036": 1,
+    "CLM-9618-2.1-037": 1
+   },
+   "authored_hash": "08051c923d99110942479c91b7fed5aa659a6c7f7df3c68d604578e116efcd39"
+  },
+  {
+   "block_id": "CU-9618-2.1.4-b3",
+   "block_type": "definition",
+   "heading": "IP addresses: IPv4, IPv6, public and private",
+   "text": "Every device on a network carries an IP address that identifies it there, so packets can be delivered to it - the address is the postal address of the networked world. IPv4 writes the address as four denary numbers separated by full stops, each 0 to 255: 192.168.1.20. Its 32 bits give about 4.3 thousand million combinations, and the world's connected devices outnumbered them, which is why IPv6 was introduced: its 128 bits write the address as eight groups of four hexadecimal digits separated by colons, and its range is vastly larger. Addresses come in public and private forms, and they are different things. A public IP address is unique across the internet, assigned by a provider, and any device can send to it from anywhere. A private IP address is used inside a local network, where it identifies the device to its own LAN; it is not unique on the internet, and a device on the far side of the world cannot reach it directly. A LAN's router holds the public address and speaks for the LAN outside. Subnetting rounds out the set of ideas: one network's address range is split into smaller networks, each with its own range, which keeps traffic local and makes large networks manageable.",
+   "claim_ids": [
+    "CLM-9618-2.1-038",
+    "CLM-9618-2.1-039",
+    "CLM-9618-2.1-040"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-038": 1,
+    "CLM-9618-2.1-039": 1,
+    "CLM-9618-2.1-040": 1
+   },
+   "authored_hash": "345bc8e84e3e651e7f9ac812e0eb703d5fe36cfea5bf397e962058f9e792ae62"
+  },
+  {
+   "block_id": "CU-9618-2.1.4-b4",
+   "block_type": "process",
+   "heading": "How a URL locates a resource",
+   "text": "A URL - Uniform Resource Locator - names one resource on the web, and its parts each do one job. Take http://www.omatele.co.na/fees.htm apart. The scheme, http, names how the resource is fetched. The domain name, www.omatele.co.na, names the server that holds it - the machine the request must reach. The file path, /fees.htm, names the file on that server - the resource itself. Reading the URL in order answers three questions in order: how to ask, whom to ask, and for what. A browser put to work on one reads it exactly that way: it takes the domain name, finds that server's IP address, sends a request for the file at the path using the scheme's way of asking, and displays what returns. The URL is the web's address on paper; the fetch is the machinery that turns it into packets.",
+   "claim_ids": [
+    "CLM-9618-2.1-041",
+    "CLM-9618-2.1-042"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-041": 1,
+    "CLM-9618-2.1-042": 1
+   },
+   "authored_hash": "214535ec3d054c3e4e06eff209ccbaa74194301f95a3cac945fbd83d7f61a7ec"
+  },
+  {
+   "block_id": "CU-9618-2.1.4-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: one fetch, step by step",
+   "text": "A learner types http://www.dune-college.edu.na/subjects/science.htm into a browser. First the browser reads the scheme, http, so it knows how it will ask. Second it reads the domain name, www.dune-college.edu.na, and finds the college server's IP address. Third it sends a request for the file at the path /subjects/science.htm to that address. The college's server receives the request, finds the file, and sends the page back; the browser reads what returns and shows the subject page. Every web visit runs this loop: scheme for the how, domain for the where, path for the what - and the infrastructure of the last three units carries each request and each page as packets across the internet.",
+   "claim_ids": [
+    "CLM-9618-2.1-041",
+    "CLM-9618-2.1-042"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-041": 1,
+    "CLM-9618-2.1-042": 1
+   },
+   "authored_hash": "ed07c16aaea197e5155fa863e3bfb8aeab77233e8a9cb5b261164c124d06987f"
+  },
+  {
+   "block_id": "CU-9618-2.1.4-b6",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur. Treating public and private IP addresses as one kind: a private address works inside its own LAN and is not unique on the internet, whereas a public address is unique across the internet and reachable from anywhere - the test is whether a device on the other side of the world can reach the address directly. Miswriting IPv6: eight groups of four hexadecimal digits, separated by colons, with a double colon standing in for a run of zero groups - count the groups and check the separator. And calling the NIC or WAP the giver of IP addresses: the card carries the MAC address fixed in the hardware; the IP address is assigned by the network the device joins.",
+   "claim_ids": [
+    "CLM-9618-2.1-039",
+    "CLM-9618-2.1-038",
+    "CLM-9618-2.1-026"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-039": 1,
+    "CLM-9618-2.1-038": 1,
+    "CLM-9618-2.1-026": 1
+   },
+   "authored_hash": "362dec084ab9564476761d0aab19f3c09e4db399de9c2fc46ed6b41996de1bc7"
+  },
+  {
+   "block_id": "CU-9618-2.1.4-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The IP addresses here are what the routers of 2.1.3 steer packets by. The infrastructure they travel on is 6.1 Data Security's concern, and the ethics of 7.1 begin where the internet's reach into people's lives begins.",
+   "claim_ids": [
+    "CLM-9618-2.1-038"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-038": 1
+   },
+   "authored_hash": "1afd3ecc018990f1e6bee81f92dc72c72e48e22624edf41f62bad51143979eb5"
+  }
+ ],
+ "word_count": 862,
+ "qa_status": "review_required",
+ "notes": []
+}

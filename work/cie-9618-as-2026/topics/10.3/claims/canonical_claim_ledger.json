@@ -1,0 +1,132 @@
+{
+ "ledger_id": "CLM-LEDGER-9618-10.3",
+ "claims": [
+  {
+   "claim_id": "CLM-9618-10.3-001",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01",
+    "OBJ-9618-10.3.1-02"
+   ],
+   "text": "Variables and arrays live in memory, which is cleared when the program ends, so a file stores data in secondary storage where it is kept after the program ends and can be read again later, by the same program or another one.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.3-002",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "text": "A text file is opened with OPENFILE and a mode: READ reads lines from the start, WRITE creates the file afresh so anything already in it is lost, and APPEND adds new lines to the end of an existing file.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.3-003",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "text": "EOF(<file>) returns TRUE when there are no more lines to read, so a loop that reads a whole file tests NOT EOF(<file>) before each READFILE, and every file that is opened is closed with CLOSEFILE and the same file name.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.3-004",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "text": "A literal file name is a string and takes quotation marks, whereas an identifier holding a file name takes none, because quotation marks make the value a literal string.",
+   "claim_type": "misconception_correction",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.3-005",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "text": "A text file is read line by line from the start, so reaching line 10 means reading lines 1 to 9 first.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-10.3-006",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01"
+   ],
+   "text": "Files are also how data passes between programs and between computers, because a file on storage is what one program writes and another reads, and what travels across a network as an attachment.",
+   "claim_type": "factual",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  }
+ ]
+}

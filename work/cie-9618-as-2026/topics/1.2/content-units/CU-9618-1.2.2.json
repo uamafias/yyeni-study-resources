@@ -1,0 +1,130 @@
+{
+ "unit_id": "CU-9618-1.2.2",
+ "title": "Sound: sampling and its settings",
+ "objective_ids": [
+  "OBJ-9618-1.2.2-01",
+  "OBJ-9618-1.2.2-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_process",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 628,
+  "target": 762,
+  "max": 897
+ },
+ "blocks": [
+  {
+   "block_id": "1.2.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "How sound, an analogue quantity, is sampled and stored digitally, and what changing the sampling rate and the sampling resolution does.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "0ef34cb6e3c3a46e2cb4f5f83dec61263cae9e099e626f9be3474bf06d15ef8f"
+  },
+  {
+   "block_id": "1.2.2-b2",
+   "block_type": "definition",
+   "heading": "How sound is represented",
+   "text": "Sound is analogue: the air pressure rises and falls in a continuous wave, taking any value in between. A computer's memory cannot hold a continuum, so sound is stored by sampling it. A microphone turns the pressure into a continuously varying voltage; an analogue-to-digital converter measures the wave's amplitude at regular intervals, and each measurement is stored as a binary value. The recording is then a sequence of samples, each one a binary number. Two settings shape the result. The sampling rate is the number of samples taken per second, measured in hertz, and it says how often the wave is measured. The sampling resolution is the number of bits stored per sample, and it says how precisely each measurement is kept: more bits distinguish more amplitude levels, so the stored value sits closer to the wave's true height at that moment. Together they set what the recording can hold: a rate of 8,000 samples per second with 8 bits per sample keeps 8,000 measurements a second, each one of 256 possible levels, and the recording's character is fixed at the moment those settings are chosen.",
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "29edbfabf5470c9946a84653fe8328bda2cc990a9eb87449ced2f3c34e4a782c"
+  },
+  {
+   "block_id": "1.2.2-b3",
+   "block_type": "worked_application",
+   "heading": "Worked example: a voice recording's size",
+   "text": "A community station records a 10-second voice track at 8,000 samples per second with a sampling resolution of 8 bits. Samples taken: 8,000 x 10 = 80,000. Bits stored: 80,000 x 8 = 640,000. Bytes: 640,000 / 8 = 80,000, so the recording is 80,000 bytes, about 80 KB. Re-recorded at 16,000 samples per second with 16 bits per sample, the same ten seconds take twice the samples, each twice as wide: 16,000 x 10 = 160,000 samples, at 16 bits each, which is 2,560,000 bits and 320,000 bytes, four times the data. Doubling one setting doubles the data; doubling both settings at once multiplies it by four.",
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-015",
+    "CLM-9618-1.2-016",
+    "CLM-9618-1.2-017"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-015": 1,
+    "CLM-9618-1.2-016": 1,
+    "CLM-9618-1.2-017": 1
+   },
+   "authored_hash": "3f8b885d48560ab96c0457d22abb17698b5307e414e0eb1b267c3d0d5d641bf5"
+  },
+  {
+   "block_id": "1.2.2-b4",
+   "block_type": "analysis_chain",
+   "heading": "What changing the sampling does",
+   "text": "The two settings can be raised, and each purchase is paid for in file size. Raise the sampling rate, and the wave is measured more often, so more of its rises and falls are captured and the rebuilt sound is truer; the file grows because each second contributes more samples. Raise the sampling resolution, and each measurement is kept more precisely, so quiet passages and loud ones alike are recorded closer to the wave's true amplitude; the file grows because each sample takes more bits. Halve either, and the size halves in step. Neither setting can be recovered later: a recording made at 8,000 samples per second stays that coarse however finely it is played back, because the missing measurements were never taken. With too low a rate, movement between samples is lost, and the replay can differ from what was played. With too low a resolution, the wave's height is rounded to the nearest of the few levels available, so the rebuilt wave steps instead of sweeping, and the sound that comes back is a rough copy of what went in.",
+   "claim_ids": [
+    "CLM-9618-1.2-016",
+    "CLM-9618-1.2-017"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-016": 1,
+    "CLM-9618-1.2-017": 1
+   },
+   "authored_hash": "5f3de0677badbd7f8190bf4ae8180219a1a2ced3c8ec11b1590bf1b8a3329600"
+  },
+  {
+   "block_id": "1.2.2-b5",
+   "block_type": "misconception",
+   "heading": "Common errors with sound",
+   "text": "The recurring confusion is between the two sound terms and the picture term. Sampling rate is how often, measured in hertz; sampling resolution is how precisely, measured in bits per sample; image resolution counts pixels in a picture, a different thing with a near-identical name. The test: whatever is quoted in hertz is a count per second, and whatever is quoted in bits is a width, so hertz does not measure a resolution and bits do not measure a rate.",
+   "claim_ids": [
+    "CLM-9618-1.2-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "f5fa63099bedb8b573d50680669ad5fb49a7ac4ffda88e3a06089b9e7f626430"
+  },
+  {
+   "block_id": "1.2.2-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "Sound file sizes lean on the 1.1 prefixes and the bits-to-bytes division. Topic 1.3 covers making audio and image files smaller, with and without losing part of the data. In 2.1 Networks, the size of a sound or image file sets the time it takes to stream it across a link.",
+   "claim_ids": [
+    "CLM-9618-1.2-014"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1
+   },
+   "authored_hash": "1eca51b326296630d120291ed35f3e9a15fdff7b8992913a34cfce3385e82a21"
+  }
+ ],
+ "word_count": 654,
+ "qa_status": "review_required",
+ "notes": []
+}

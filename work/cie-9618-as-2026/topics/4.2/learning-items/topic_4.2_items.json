@@ -1,0 +1,1217 @@
+{
+ "dataset_id": "ITEMS-9618-4.2",
+ "topic_id": "4.2",
+ "items": [
+  {
+   "item_id": "ITEM-9618-4.2-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what an assembler does.",
+   "canonical_answer": "An assembler translates a program written in assembly language mnemonics into machine code, one mnemonic at a time, with each assembly instruction becoming one machine instruction.",
+   "marking_guidance": [
+    "1 mark: the meaning - it translates mnemonics into machine code, one assembly instruction to one machine instruction."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-001": 1
+   },
+   "authored_hash": "d75efa6ad41b58e9a5eb7221acd24154bc7a7aa281b5786cd614f3bae7ed3d11"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why assembly language rather than machine code is written by people.",
+   "canonical_answer": "Machine code is binary patterns, and writing and reading those patterns by hand is slow and error-prone. Assembly language writes the same instructions with mnemonics and symbolic addresses, so a person writes what the processor will be told in readable form, and the assembler turns it into the binary the processor needs, which is why assembly is the human-facing form of machine code.",
+   "marking_guidance": [
+    "Reason: machine code is binary patterns that a person cannot conveniently work in - 1 mark.",
+    "Purpose: so people write mnemonics and labels and the assembler produces the binary, because the readable form carries the same instructions - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-001": 1
+   },
+   "authored_hash": "9946fd6e27ea5b37281ba2a38b02b97eddf2d0babd64524060338353a5a4a7cc"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-003-APP",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-001",
+    "CLM-9618-4.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A programmer is writing a small piece of code that must switch a port on and off at exact intervals. Explain why hand-written assembly language may be chosen for this task.",
+   "canonical_answer": "Each assembly instruction corresponds to one machine instruction, so the programmer sees and controls exactly what the processor will execute, instruction by instruction. Timing-critical port switching can be written with no instruction between the needed ones, because what is written is what executes, which is what hand-written assembly offers: exact control of the instruction stream.",
+   "marking_guidance": [
+    "Context: this timing-critical port program - 1 mark.",
+    "Reason: because each mnemonic is one machine instruction, the programmer controls the exact instruction stream, so the timing comes from the code with nothing added - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-001": 1,
+    "CLM-9618-4.2-002": 1
+   },
+   "authored_hash": "861bba5a1d0a8f0dc32c484b563461e484c2c8376fc7b63cd6dcad0e850025de"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-020-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two features of assembly language.",
+   "canonical_answer": "It writes each instruction as a mnemonic, one per machine instruction, so each line of assembly corresponds to exactly one machine instruction. It uses symbolic addresses - labels - for memory locations and jump targets, so the programmer writes LOOP rather than a numeric address, and the assembler replaces each label with its computed address.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the one-mnemonic-per-instruction correspondence, and the symbolic labels the assembler replaces with addresses."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-001": 1
+   },
+   "authored_hash": "e67049b5c3e1f209575cec6e960560600df090647e43d6cf2d60854fcb53a014"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-026-DIST",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between an assembler and a compiler.",
+   "canonical_answer": "An assembler translates assembly language into machine code one instruction at a time, with each assembly instruction producing one machine instruction, whereas a compiler translates a high-level language program as a whole, and one high-level statement typically becomes many machine instructions. The assembler works instruction by instruction because its input already is one instruction per line, while the compiler works on statements that are not.",
+   "marking_guidance": [
+    "Difference: one-to-one translation against whole-program translation with one-to-many expansion - 1 mark per side, whereas both produce machine code, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-002": 1
+   },
+   "authored_hash": "aa6ac810205ef014e387a8edfd3b262d9ae103232c4e261b6844928f41d0e6e8"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-004-PROC",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe the first pass of a two-pass assembler.",
+   "canonical_answer": "The assembler reads the program line by line without generating machine code. Because each instruction’s length is known, it computes the address each instruction will occupy, and it enters every label with its computed address into the symbol table. The result of the pass is the symbol table - the program’s address book - which is what lets the second pass resolve forward references.",
+   "marking_guidance": [
+    "Order: the steps in sequence - read, compute addresses, record labels - each statement a mark point, up to 2 from a longer list.",
+    "Input: the pass starts from the given program as written, labels included.",
+    "Result: the pass ends with the symbol table complete and no code generated."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-004": 1
+   },
+   "authored_hash": "0b89d4f6b7647f6bec168b10d644a14806da634db5d332282c8963f8c1e9e771"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-005-MECH",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-005",
+    "CLM-9618-4.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MECH",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain how the second pass of an assembler uses the symbol table built in the first pass.",
+   "canonical_answer": "Pass two translates each instruction into machine code: the mnemonic becomes its opcode, and each label in the operand is replaced by the address the symbol table holds for it. A label with no entry in the table is reported as an error, because pass two has no address to write, so the table built in pass one is what lets every forward reference be resolved here.",
+   "marking_guidance": [
+    "How the pass works: each label is looked up and replaced by its table address - 1 mark.",
+    "Because the table already holds every label’s address, the jumps to later labels can be filled in, which is what the second pass needs the table for - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-005": 1,
+    "CLM-9618-4.2-004": 1
+   },
+   "authored_hash": "e96d18cb23074c34ce7eccdc353e7f599ba855277391fd9c3901eda297b30122"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-006-APP",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-004",
+    "CLM-9618-4.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "The table describes a two-pass assembler at work. Complete the four missing entries.\n\n| Pass | What it does | What it produces |\n|---|---|---|\n| First | (a) | (b) |\n| Second | (c) | (d) |",
+   "canonical_answer": "(a) Reads the program line by line, computing each instruction’s address from the instruction lengths. (b) The symbol table, holding every label with its computed address. (c) Translates each instruction into machine code, replacing each label with the address from the symbol table. (d) The machine code program, with any unresolved label reported as an error.",
+   "marking_guidance": [
+    "Context: this assembler’s two passes as given - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry names one pass’s work and product, because the first pass maps and the second generates, so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-004": 1,
+    "CLM-9618-4.2-005": 1
+   },
+   "authored_hash": "c5987abd6b473a61c0383119325348d654a0f019bf84f85f027fda04e1ab5cf6"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-019-DEF",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 3,
+   "prompt": "State what the symbol table of an assembler holds.",
+   "canonical_answer": "Every label used in the program, with the address the first pass computed for it.",
+   "marking_guidance": [
+    "1 mark: the meaning - each label with its computed address, the program’s address book."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-004": 1
+   },
+   "authored_hash": "7e63d1aade98ffb48ae1e87dbc926d3912e831293374be9dab635be1908ba36f"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-021-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-004",
+    "CLM-9618-4.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two things that happen in the first pass of a two-pass assembler.",
+   "canonical_answer": "Each instruction’s address is computed from the lengths of the instructions before it, so every location the program will occupy is known. Every label is entered into the symbol table with its computed address, so a jump written to a label defined later in the program can be resolved in the second pass, which is the forward-reference problem the first pass exists to solve.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the address computation from instruction lengths, and the symbol-table entry for every label."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-004": 1,
+    "CLM-9618-4.2-003": 1
+   },
+   "authored_hash": "efeb70060da630138ab0396868ad246abada9dbafd88f66d8fb61b7ac9d04a4f"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-025-WHY",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a single-pass assembler would fail on a program that jumps to a label defined further down.",
+   "canonical_answer": "Translating the jump needs the label’s address, and on a single pass that label has not yet been reached, so its address is unknown when the jump is translated - a forward reference. The two-pass assembler solves it: the first pass computes every label’s address into the symbol table, so by the second pass the jump’s operand can be filled in from the table, which is why the second pass exists.",
+   "marking_guidance": [
+    "Reason: the label’s address is not known when the jump is reached - the forward reference - 1 mark.",
+    "Purpose: so the first pass builds the table and the second fills the operand in, because a single pass cannot do both - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-003": 1
+   },
+   "authored_hash": "2b1e535b58b159093829172516fd08c90d5d5d1974d15957a9b6177de4e8ee81"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-027-DIST",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-004",
+    "CLM-9618-4.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between the two passes of a two-pass assembler.",
+   "canonical_answer": "The first pass reads and computes: it works through the program finding each instruction’s address and building the symbol table, generating no machine code, whereas the second pass generates: it translates each mnemonic into its opcode and fills in every label’s address from the table, producing the machine code. One pass maps the program and the other writes it, whereas both read the same lines.",
+   "marking_guidance": [
+    "Difference: computing the map against generating the code - 1 mark per side, and both sides are needed with what each produces."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-004": 1,
+    "CLM-9618-4.2-005": 1
+   },
+   "authored_hash": "14a8f4419a780298255fd2a622ce49284c133ca1919b8293f8ed3190a44d5354"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-007-APP",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw the trace table for this program, showing the accumulator and the memory location COUNT after each executed instruction:\n\n        LDM  #0\n        STO  COUNT\n        INC  COUNT\n        INC  COUNT\n        END",
+   "canonical_answer": "| Instruction | ACC after | COUNT after |\n|---|---|---|\n| LDM #0 | 0 | - |\n| STO COUNT | 0 | 0 |\n| INC COUNT | 0 | 1 |\n| INC COUNT | 0 | 2 |\n| END | 0 | 2 |",
+   "marking_guidance": [
+    "Context: this program with the given instructions - 1 mark for the accumulator column (0 throughout, because INC acts on memory), 1 mark for the COUNT column ending at 2.",
+    "Reason: each row is one executed instruction, because INC changes the location it names and not the accumulator, so the two columns separate the two changes - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "c2b042b0962acc2782c1c11189c9090ef6d0396882c05f0861cb13ed7feba3c9"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-008-APP",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-007",
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw, as a table with one row per executed instruction, the trace of this counting loop:\n\n        LDM  #0\n        STO  NUM\nBACK:   INC  NUM\n        LDD  NUM\n        CMP  #2\n        JPN  BACK\n        END",
+   "canonical_answer": "| Instruction | ACC | NUM | Flags after | Next |\n|---|---|---|---|---|\n| LDM #0 | 0 | - | - | STO |\n| STO NUM | 0 | 0 | - | INC |\n| INC NUM | 0 | 1 | - | LDD |\n| LDD NUM | 1 | 1 | - | CMP |\n| CMP #2 | 1 | 1 | negative | JPN |\n| JPN BACK | 1 | 1 | taken | INC |\n| INC NUM | 0 | 2 | - | LDD |\n| LDD NUM | 2 | 2 | - | CMP |\n| CMP #2 | 2 | 2 | not negative | JPN |\n| JPN BACK | 2 | 2 | not taken | END |\n| END | 2 | 2 | halt | - |",
+   "marking_guidance": [
+    "Context: this loop with the given compare target - 1 mark for the register columns through both loop passes, 1 mark for the jump decisions (taken, then not taken).",
+    "Reason: each row is one executed instruction, because the flags decide the jump and the jump decides the next row, so the two decisions carry the marks - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-007": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "277bd35fcc78d25009c4b465b4e5592eb9969e775dee506bd811cb66481431e6"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-009-INTERP",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "The trace table for this program is partly filled. Complete the four missing cells.\n\n        LDM  #6\n        STO  A\n        LDM  #9\n        STO  B\n        INC  A\n        DEC  B\n        END\n\n| Instruction | ACC | A | B |\n|---|---|---|---|\n| LDM #6 | 6 | - | - |\n| STO A | 6 | 6 | - |\n| LDM #9 | 9 | 6 | - |\n| STO B | 9 | 6 | 9 |\n| INC A | (a) | (b) | 9 |\n| DEC B | (c) | 7 | (d) |\n| END | 9 | 7 | 8 |",
+   "canonical_answer": "(a) 9. (b) 7. (c) 9. (d) 8. INC and DEC change the memory location they name, so A becomes 7 while the accumulator stays at 9, and B becomes 8.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) 9, (b) 7, (c) 9, (d) 8.",
+    "Meaning: the completed table shows INC and DEC acting on memory rather than the accumulator, so the result is locations changed and ACC unchanged."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "131410a4a3da9d1a0ea526c205184b55589cfcd8589a9032cd0478357839d6a9"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-010-INTERP",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-007",
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The program counts STEPS up to a target. The table shows one row per pass of its loop, at the moment of the CMP. Complete the four missing entries.\n\n        LDM  #0\n        STO  STEPS\nBACK:   INC  STEPS\n        LDD  STEPS\n        CMP  #4\n        JPN  BACK\n        END\n\n| Pass | ACC at CMP | STEPS | Jump taken? |\n|---|---|---|---|\n| 1 | 1 | 1 | (a) |\n| 2 | (b) | 2 | yes |\n| 3 | 3 | (c) | yes |\n| 4 | 4 | 4 | (d) |",
+   "canonical_answer": "(a) Yes: 1 - 4 is negative, so the jump is taken. (b) 2. (c) 3. (d) No: 4 - 4 is zero, not negative, so the jump is not taken and the next instruction is END, leaving STEPS = 4.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) yes, (b) 2, (c) 3, (d) no.",
+    "Meaning: the completed table shows the loop’s exit: the compare result decides each row, so STEPS finishes at the target 4 because the negative flag is what the jump reads."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-007": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "5a426a3545ee004ad99c2fabaca597f217612a9d7bf42779ce12481f171f3c03"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-024-WHY",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain why a trace table is the safe way to follow a program with a conditional jump.",
+   "canonical_answer": "A conditional jump makes the next instruction depend on the flags from the last comparison, and whether the compare came out negative is not something to hold in mind reliably over a loop. The trace table records the registers and flags after each executed instruction, so the next instruction is read from the row, not guessed, and the loop’s decisions appear as a column of taken and not-taken, which is what the table is for.",
+   "marking_guidance": [
+    "Reason: the flags decide the next instruction, and they are easy to lose track of - 1 mark.",
+    "Purpose: so each decision is read from the row that recorded it, because the table holds the flags where the mind may not - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-007": 1
+   },
+   "authored_hash": "ea0fa5af4519fcd5418a85c609a61cb12d2c4de36c2009650d77eae76dbb15b0"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-011-DEF",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what the instruction CMP <address> does.",
+   "canonical_answer": "CMP compares the accumulator’s contents with the contents of the given address, setting the status flags from the result, which a later conditional jump can act on.",
+   "marking_guidance": [
+    "1 mark: the meaning - a compare that sets flags from the accumulator and the operand, leaving the value for a jump to read."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "758f7158866bea7474af57ed86fcf2e3b634ce4dd5c7b46ae793b78466c0ba8e"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-012-WHY",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why INC does not change the accumulator.",
+   "canonical_answer": "INC takes an address as its operand and adds 1 to the value stored at that address in memory, so the change lands in memory, not in the accumulator. The accumulator is changed by the instructions whose result goes to it, such as LDM and LDD, and INC is not one of them, so INC is in the arithmetic group with its target at the location, which is why a trace table needs a memory column.",
+   "marking_guidance": [
+    "Reason: INC’s operand is an address, and the increment lands at that location - 1 mark.",
+    "Purpose: so the accumulator keeps its value, because only instructions that load or compute into the accumulator change it - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-008": 1
+   },
+   "authored_hash": "fdabf4a8553a15c34e10b80e4c19fbfd10f9f8a268ec0f90a837625c6c29c08a"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-013-APP",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-008",
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A program uses LDM, STO, IN, OUT, INC, CMP, JPN and END. Explain what the instruction groups in this program let it do.",
+   "canonical_answer": "LDM and STO are data movement, moving values between the accumulator and memory; IN and OUT are input and output, reading a character in and presenting one out; INC is arithmetic, adding 1 to a location’s contents; CMP is a compare instruction, setting flags from the accumulator and the operand; JPN is a conditional jump acting on CMP’s flags; and END halts. With these, the program can read a value in, count with it, test it, act on the test and stop, which is what the groups together provide.",
+   "marking_guidance": [
+    "Context: this program’s given instructions - 1 mark for the groups named.",
+    "Reason: because each group does one kind of job, the set covers reading, counting, deciding and halting, so the program’s abilities come from the groups it uses - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-008": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "90fe661cc43126bf1a610fcdd63085a02bc2b93f52b6e6364acd2036b0d3e56c"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-022-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-008",
+    "CLM-9618-4.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two instruction groups, with an instruction from each.",
+   "canonical_answer": "Data movement: LDD loads the contents of the given address into the accumulator and STO stores the accumulator’s contents at the given address, so values move between the accumulator and memory. Compare instructions: CMP <address> compares the accumulator’s contents with the contents of the given address and sets the status flags, so a following JPE or JPN can act on the result.",
+   "marking_guidance": [
+    "Features: two groups as two points, 1 mark each - a group named with an instruction and its effect."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-008": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "ede6dbea25608c914bf6d6fb287725796f34606a0959e27504e2dff68ef11951"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-014-DEF",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what the # in LDM #5 means.",
+   "canonical_answer": "The # marks immediate addressing: the operand is the number 5 itself, not the contents of a location, so the accumulator is loaded with 5 and no memory lookup happens.",
+   "marking_guidance": [
+    "1 mark: the meaning - immediate addressing: the number itself is the operand, with no memory lookup."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1
+   },
+   "authored_hash": "1075f9ead938960d65564de4155171e22abd8cba2e7a55e7dc46e63988374e0a"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-015-WHY",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why the instruction set needs two load instructions, LDM and LDD.",
+   "canonical_answer": "The two instructions exist because there are two different things to load: LDM #n loads the number n itself, which is immediate addressing, while LDD <address> loads the contents of the memory location, which is direct addressing. The notation carries the meaning: the # marks the number and the bare address names the location to look up, so the two instructions keep the two intentions apart.",
+   "marking_guidance": [
+    "Reason: there are two different things to load - a number itself, and the contents of a location - 1 mark.",
+    "Purpose: so the # and the bare address mark which is meant, because the notation names the mode, which is why the two instructions exist - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1
+   },
+   "authored_hash": "94a5a17eccac04f6a2e40944c217be43dce108e8291d20735eb6a3397d678f0d"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-016-APP",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011",
+    "CLM-9618-4.2-012",
+    "CLM-9618-4.2-013"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "Memory location 200 holds 42, location 42 holds 7, location 300 holds 9, and the index register holds 100. A program runs four loads. Complete the four missing entries.\n\n| Instruction | Addressing mode | ACC after |\n|---|---|---|\n| LDM #200 | Immediate | (a) |\n| LDD 200 | (b) | 42 |\n| LDI 200 | Indirect | (c) |\n| LDX 200, IX | Indexed | (d) |",
+   "canonical_answer": "(a) 200, the number itself. (b) Direct. (c) 7: location 200 holds 42, and the contents of 42 are 7. (d) 9: the address used is 200 + 100 = 300, and the contents of 300 are 9.",
+   "marking_guidance": [
+    "Context: this memory map and the given loads - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry follows from its mode, because the number, the location, the pointer and the calculated address are four different sources for the operand, so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1,
+    "CLM-9618-4.2-012": 1,
+    "CLM-9618-4.2-013": 1
+   },
+   "authored_hash": "95a4f8fb8b763ad1e6c243da3668f265ab953ce6e3279ed4a47cb6b8ad717e35"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-017-MISCON",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner reads LDD 200 as loading the number 200 into the accumulator. Explain the error.",
+   "canonical_answer": "The bare address 200 names a location, so LDD 200 loads the contents of location 200, not the number 200. To load the number 200 itself, the program would write LDM #200, because the # marks immediate addressing. The test: is there a # in front? Then use the number. No #? Look up the memory location.",
+   "marking_guidance": [
+    "1 mark: the error named - the address has been treated as the number itself, a confusion of direct with immediate addressing.",
+    "1 mark: the correction with the test - LDD 200 loads the contents of 200, while LDM #200 loads the number, and the # is what tells them apart."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1
+   },
+   "authored_hash": "61c9fc6c0a4517156d05a626a3db74b23548c9ef96d55df0dc49bd89cbb9397d",
+   "misconception_entry": "MC-9618-4.2-01"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-018-MISCON",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-013"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner says indexed addressing adds the index register to the value stored at the given address. Explain the error.",
+   "canonical_answer": "Indexed addressing adds the contents of the index register to the address given, and then uses the contents of that calculated address: LDX 200, IX with IX holding 100 looks up location 300. The learner has looked up the location first and added IX to what was found there, which is the value, not the address. The test: add first, look up second.",
+   "marking_guidance": [
+    "1 mark: the error named - IX has been added to the value at the location, when it is added to the address itself.",
+    "1 mark: the correction with the test - add IX to the given address first, then look up the calculated address, because the sum is an address."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-013": 1
+   },
+   "authored_hash": "ff014a4d60fc4da7c5d4bf0b5bc63d19d9877a781683f5ab035525f3a3e50d1c",
+   "misconception_entry": "MC-9618-4.2-02"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-023-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-011",
+    "CLM-9618-4.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two differences between direct and indirect addressing.",
+   "canonical_answer": "Direct uses one lookup: LDD 200 loads the contents of location 200, so the address names where the data is. Indirect uses two: LDI 200 takes the contents of location 200 as an address and loads the contents of that second location, so the given location holds a pointer to the data. Indirect also lets one instruction fetch different locations as the stored pointer changes, whereas direct always fetches the one location named.",
+   "marking_guidance": [
+    "Features: two differences as two points, 1 mark each - one lookup against two, and a fixed location against a changeable pointer."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-011": 1,
+    "CLM-9618-4.2-012": 1
+   },
+   "authored_hash": "4a18824da7671e188c3850e63bb9a23150e4db8b1196ec875db6c15332fea2ae"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-P01",
+   "objective_ids": [
+    "OBJ-9618-4.2.1-03",
+    "OBJ-9618-4.2.2-02",
+    "OBJ-9618-4.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-007",
+    "CLM-9618-4.2-009",
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 8,
+   "difficulty": 3,
+   "prompt": "A tuck shop counts its morning sales on a small controller. The program runs:\n\n        LDM  #0\n        STO  SALES\nNEXT:   INC  SALES\n        LDD  SALES\n        CMP  #3\n        JPN  NEXT\n        END\n\n(a) Identify the addressing mode of LDM #0 and of LDD SALES. [2]\n(b) Trace the program: state what SALES holds at END and how many times the loop body executes. [3]\n(c) The shop wants the program to count to 5 instead. State the one instruction to change and its new operand, and explain why this change is enough. [3]",
+   "canonical_answer": "(a) LDM #0 is immediate addressing - the number 0 itself is loaded; LDD SALES is direct addressing - the contents of the location SALES are loaded.\n(b) SALES starts at 0; each pass of the loop increments it, loads it, and compares with 3: at 1 and 2 the compare is negative and the jump is taken, at 3 the compare is zero, the jump is not taken, and END runs with SALES = 3. The loop body executes three times.\n(c) Change CMP #3 to CMP #5. The compare target sets the point at which the negative flag clears and the loop exits, because the loop runs while SALES - target is negative, so moving the target from 3 to 5 moves the exit to SALES = 5 with no other change.",
+   "marking_guidance": [
+    "Part (a): identify the two modes - immediate for the # operand, direct for the bare label - 2 points.",
+    "Part (b): the reason the trace ends at 3 - the loop’s compares and jumps - 3 points: the negative compares at 1 and 2, the zero compare at 3, the exit and final SALES = 3 with three passes.",
+    "Part (c): the context of this given loop - change CMP to #5, because the target sets the exit point the flags read - 3 points: the instruction, the operand, the reason."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A tuck shop controller counts sales with an assembly loop.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-007": 1,
+    "CLM-9618-4.2-009": 1,
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1
+   },
+   "authored_hash": "0f78c6c8c705859a02341f4133b4a947dac2933b1e09de53d5587df482c3e04b"
+  },
+  {
+   "item_id": "ITEM-9618-4.2-P02",
+   "objective_ids": [
+    "OBJ-9618-4.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011",
+    "CLM-9618-4.2-012",
+    "CLM-9618-4.2-013"
+   ],
+   "item_type": "data_response",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "Memory location 100 holds 42, location 42 holds 7, location 300 holds 9, and the index register holds 100. The table shows four load instructions and their results. Read the table and complete the four missing entries, then answer the question.\n\n| Instruction | Addressing mode | ACC after |\n|---|---|---|\n| LDM #42 | Immediate | (a) |\n| LDD 100 | (b) | 42 |\n| LDI 100 | Indirect | (c) |\n| LDX 200, IX | Indexed | (d) |\n\n(e) State, with a reason, which instruction would load the accumulator with the number 100 itself. [2]",
+   "canonical_answer": "(a) 42, the number itself. (b) Direct. (c) 7: location 100 holds 42, and the contents of 42 are 7. (d) 9: the address used is 200 + 100 = 300, and the contents of 300 are 9.\n(e) LDM #100: the # marks immediate addressing, so the operand is the number 100 itself, with no memory lookup.",
+   "marking_guidance": [
+    "Read the given table: (a) to (d) - 4 marks, 1 per correct value in each row, with each value following its mode.",
+    "Answer and value: (e) LDM #100 - 1 mark - because the # means the number itself is loaded, with no lookup - 1 mark.",
+    "The completed table shows each mode finding a different operand from the same memory, because the mode decides where the operand comes from."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A memory map and four loads in different addressing modes.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 4.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1,
+    "CLM-9618-4.2-012": 1,
+    "CLM-9618-4.2-013": 1
+   },
+   "authored_hash": "368efd3037e3389afaa108f5c411a3eb0b332bf92d491691196f755414cc1d37"
+  }
+ ]
+}

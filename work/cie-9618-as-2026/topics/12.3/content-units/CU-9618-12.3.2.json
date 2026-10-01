@@ -1,0 +1,153 @@
+{
+ "unit_id": "CU-9618-12.3.2",
+ "title": "Test strategy and plan, test data, maintenance, amendments",
+ "objective_ids": [
+  "OBJ-9618-12.3.2-01",
+  "OBJ-9618-12.3.2-02",
+  "OBJ-9618-12.3.2-03",
+  "OBJ-9618-12.3.2-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_debug",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 1165,
+  "target": 1415,
+  "max": 1665
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-12.3.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The test strategy and test plan and their contents; choosing appropriate test data - normal, abnormal, extreme, boundary; the need for continuing maintenance and its three forms; and amending an existing program to enhance its functionality.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "c17dc05897d0ad444c8c5755d13fa8038196a5f4f49d038a4fc61155691521ee"
+  },
+  {
+   "block_id": "CU-9618-12.3.2-b2",
+   "block_type": "definition",
+   "heading": "Test strategy and test plan",
+   "text": "Testing at scale is managed in two documents. The test strategy states what will be tested and how: which methods the project will use - black-box against the specification, white-box on the modules that compute money, integration at the interfaces, acceptance with the customer - and what the testing must achieve before the program is released. The test plan is the strategy written down as work: a concrete schedule listing the tests, one by one, each with the data it will use, the expected result from the specification, and a column for the actual result - so a test plan is a document a tester can work through and check off, and the expected-against-actual columns are what turn testing into evidence. The two differ in altitude, not in kind: the strategy says 'money computations are tested white-box and the interfaces are tested by integration', the plan says 'test M7: SaleTotal with prices 0 and 0.01, expected ...', and the plan's each-test-a-row shape is why the plan is the document an auditor reads. Both exist because unmanaged testing finds whatever it happens to find - the strategy and the plan are what make the finding deliberate.",
+   "claim_ids": [
+    "CLM-9618-12.3-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-007": 1
+   },
+   "authored_hash": "c74d72f6b4d0495be3a1febe6df48c77314e2de6125b759794d839a3a62146ef"
+  },
+  {
+   "block_id": "CU-9618-12.3.2-b3",
+   "block_type": "definition",
+   "heading": "Choosing test data",
+   "text": "Test data is chosen by kind, and the kinds are the specification's categories. Normal data is valid data in the ordinary range - a booking for 2 nights, an age of 30 - because the program must first be shown to work where it will live. Abnormal data is invalid data the program should reject - a negative age, thirteen nights where the maximum is twelve - because a program's behaviour on the invalid is a behaviour worth testing: the rejection is required, so the test checks the program refuses. Extreme data is valid data at the limits of the acceptable range - twelve nights where twelve is the maximum - because the last valid value is where a careless bound goes wrong. Boundary data tests either side of a limit - eleven, twelve, thirteen - because errors sit at the edges of ranges: a loop that ends one early works for the middle of the range and fails only at the top, so a boundary pair is the data that catches it. The choice among kinds follows the test's purpose: to show working, choose normal; to show rejecting, choose abnormal; to show the range is exactly right, choose extreme and boundary - and a plan whose data is all middle-of-range has tested only the easy half of the specification.",
+   "claim_ids": [
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-009": 1
+   },
+   "authored_hash": "fe690f2f211462e034513393525d54c332f53a0734a9f40556a189f5f350032d"
+  },
+  {
+   "block_id": "CU-9618-12.3.2-b4",
+   "block_type": "definition",
+   "heading": "Continuing maintenance and its three forms",
+   "text": "Delivery is not the end, and continuing maintenance is the stage that owns the rest of the program's life. The need comes from three directions, and they name the three forms. Errors surface in use, in combinations the testing never met - a leap year, a customer with two middle names - and fixing them is corrective maintenance. The environment around a program changes - the levy rate changes in law, the operating system is replaced, the bank's account format grows a digit - and adjusting the working program to the changed world is adaptive maintenance. The users, working with a program that meets every requirement, see how it could serve them better - the monthly summary, the one-keystroke repeat - and improving the working program is perfective maintenance. The three are told apart by one question: is something broken, has something changed around it, or is it merely improvable? That question is the whole discrimination, because the forms share no situations - a fault is corrected, a change is adapted to, an improvement is perfected. And the need for maintenance does not close, because the world does not stop changing around a working program: the program left unchanged while the world around it moves is the program quietly becoming unusable, which is why the maintenance stage continues as long as the program is in use.",
+   "claim_ids": [
+    "CLM-9618-12.3-010",
+    "CLM-9618-12.3-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-010": 1,
+    "CLM-9618-12.3-011": 1
+   },
+   "authored_hash": "d606ab4854b828a8d115505fc65e7da36d6dd421e7a0f93bbc3a6e719f020aaa"
+  },
+  {
+   "block_id": "CU-9618-12.3.2-b5",
+   "block_type": "process",
+   "heading": "Amending a program to enhance functionality",
+   "text": "Amending an existing program is a skill of its own, because the program is not yours and its behaviour is not what you think it is. Four moves. Read with a trace first: run a dry run or a walkthrough on the existing code, recording the variables' values, until you can say what each module does and where each value is set - the amendment is placed in what the program does, never in what you assumed it does. Place the change at the owner: find the statement that owns the affected value - the total the new fee must join, the record the new field extends - and place the amendment there, because a value has one owner and the change belongs with it. Follow the existing style: the new statements use the identifiers, the modules and the naming of the code they join, so the program reads as one program after the change - and where the new functionality is more than a statement or two, it goes in a new module called where the change was needed. Re-test the whole program: the new functionality is tested with new data, and the old program is re-tested with the old test plan, because a change to one value travels to every use of it - the amendment that 'only adds a line' has broken more programs than the bug it fixed. The discipline in one line: read before you write, place the change at the owner, follow the style, and re-run everything. A worked miniature of the whole move: a delivered program totals a stall’s takings, and the stall now sells gift vouchers that should join the takings. The amendment reads the existing loop with a trace until the total’s owner is named - the loop that adds each sale - places the voucher’s addition inside that loop with the sale’s own identifier style, writes nothing new outside it, and re-tests with the old plan’s rows plus new rows for vouchers. The change is one statement inside the owner’s loop, the program reads as one program, and the re-run certifies both the old behaviour and the new - which is what amending means: the program grows without becoming a stranger.",
+   "claim_ids": [
+    "CLM-9618-12.3-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-012": 1
+   },
+   "authored_hash": "1fb2a9e478c15e26fb7e86d3cc2f7d374d6ee6f1f5bbb7431aff4ed9cfdc5b1b"
+  },
+  {
+   "block_id": "CU-9618-12.3.2-b6",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur. Boundary data confused with abnormal data, or a range given where a value was asked for: boundary data tests either side of a limit with valid values - eleven, twelve, thirteen - whereas abnormal data is invalid data the program should reject. The test asks two questions: should the program accept it? Is it on the edge? And the maintenance forms named for the wrong situation: corrective fixes errors, adaptive responds to a change around the program, perfective improves a working program - the test asks: is something broken, has something changed around it, or is it merely improvable?",
+   "claim_ids": [
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-010": 1
+   },
+   "authored_hash": "ac9b38edb70051882fa9ea0e6eb302eba91bfab0f9974b66b752f4e57d001ec8"
+  },
+  {
+   "block_id": "CU-9618-12.3.2-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The test plan's data kinds are the validation checks of 6.2 at the program's own edge, the three maintenance forms are 12.1's maintenance stage opened out, and the amendments here are 12.1's perfective maintenance in practice. The traces are 9.2's toolkits and the whole topic is 12.1's testing stage in depth.",
+   "claim_ids": [
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-010",
+    "CLM-9618-12.3-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-010": 1,
+    "CLM-9618-12.3-012": 1
+   },
+   "authored_hash": "b01639011248b45143c13463ba84eddc0aa896276fca58e4780ee2ff2b817c15"
+  }
+ ],
+ "word_count": 1230,
+ "qa_status": "review_required",
+ "notes": []
+}

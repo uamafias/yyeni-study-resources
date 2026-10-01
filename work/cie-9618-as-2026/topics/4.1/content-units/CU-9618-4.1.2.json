@@ -1,0 +1,186 @@
+{
+ "unit_id": "CU-9618-4.1.2",
+ "title": "Performance, ports, the F-E cycle and interrupts",
+ "objective_ids": [
+  "OBJ-9618-4.1.2-01",
+  "OBJ-9618-4.1.2-02",
+  "OBJ-9618-4.1.2-03",
+  "OBJ-9618-4.1.2-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_cause_effect",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1230,
+  "target": 1495,
+  "max": 1760
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-4.1.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The factors that contribute to a system’s performance; ports for peripherals; the stages of the Fetch-Execute cycle with register transfer notation; and interrupts and their service routines.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "d05fbfa63de3ed885f2f216f8d4f3ae909bda4ee88d9c56992f79e453dc7ea3f"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b2",
+   "block_type": "analysis_chain",
+   "heading": "What makes a computer fast",
+   "text": "A system's performance is the sum of several factors, and each works its own way. The processor type sets what one core can do per tick. The clock speed sets the ticks: more pulses per second means more instruction stages complete per second. The number of cores sets how much runs at once: two cores can execute instructions from two programs simultaneously, so a computer running several programs progresses on them together - though a single program does not speed up unless it is written to split its work across the cores, which is why more cores do not multiply one program's speed. The bus widths set the traffic: a wider data bus moves more bits per transfer and a wider address bus reaches more memory. Cache memory sets the waiting: it holds a copy of the instructions and data the processor is most likely to need next, and a cache hit is reached far faster than a main-memory fetch, so the more of the work that is already in cache, the fewer the slow fetches that interrupt it. When a buyer is offered a faster clock or more cache for the same money, the trade is exactly this list: ticks, width, copies held close. And the honest caveat that answers any performance claim: the factors work together, so a fast clock starved by a narrow bus, or a big cache fed by a slow disk, delivers less than its best number suggests, because the system runs at the pace of its slowest contributor. A performance answer that names one factor and its effect is half an answer; a full one says what the factor changes and what could still hold it back.",
+   "claim_ids": [
+    "CLM-9618-4.1-013",
+    "CLM-9618-4.1-014",
+    "CLM-9618-4.1-015",
+    "CLM-9618-4.1-010",
+    "CLM-9618-4.1-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-013": 1,
+    "CLM-9618-4.1-014": 1,
+    "CLM-9618-4.1-015": 1,
+    "CLM-9618-4.1-010": 1,
+    "CLM-9618-4.1-012": 1
+   },
+   "authored_hash": "20c77ae9c14b12d0ae576a27a1cabad437c9ba4edf7d76c578f65b572078c378"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b3",
+   "block_type": "definition",
+   "heading": "Ports and peripherals",
+   "text": "Peripherals attach through ports, and a port is a physical connection with a standard that says what it carries. USB connects a wide range of peripherals - a keyboard, a storage device, a printer, a camera - and devices can be attached and detached while the computer runs, which is why USB is the everyday connection for peripherals of every kind. HDMI carries digital video and audio to a display on one cable: the picture arrives as sent, and the sound arrives with it. VGA, the older standard, carries analogue video signals only: the computer's digital picture must be turned into analogue before the cable and back to digital inside the display, and any sound needs a separate connection. Choosing between them is choosing what the display can take: a digital display with an HDMI port takes HDMI, because the two conversions are avoided and the sound rides along. In practice a room of mixed equipment answers the choice question on its own: a new projector with an HDMI socket takes the laptop's HDMI cable, while the school hall's older projector with its blue VGA socket takes the analogue cable and a separate audio lead, because the port on the display is what the connection must fit.",
+   "claim_ids": [
+    "CLM-9618-4.1-016",
+    "CLM-9618-4.1-017"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-016": 1,
+    "CLM-9618-4.1-017": 1
+   },
+   "authored_hash": "024259f7ee21438cc4144c959e2ea185f772f41c4142a36fb11ebc1a94a845e3"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b4",
+   "block_type": "process",
+   "heading": "The Fetch-Execute cycle",
+   "text": "The processor's whole life is one cycle, repeated: fetch an instruction, decode it, execute it. Fetch first, in register transfers, each written as the notation says - square brackets mean 'contents of', and two pairs mean 'contents of the address held in':\n[MAR] ← [PC]  the address of the next instruction is copied to the MAR\n[PC] ← [PC] + 1  the counter moves on to the following instruction\n[MDR] ← [[MAR]]  the instruction at the addressed location is read into the MDR\n[CIR] ← [MDR]  the instruction is copied to the CIR, ready to be decoded\nDecode second: the control unit interprets the instruction now in the CIR and sends control signals to prepare what it needs - operands fetched, registers opened, memory ready. Execute third: the instruction is carried out - the ALU performs an arithmetic or logic operation and places the result in the accumulator, or a value moves between registers or memory. During the fetch of every instruction the processor checks for interrupts, and an enabled interrupt is serviced before the next instruction is fetched, which is where the cycle meets the last part of this unit.",
+   "claim_ids": [
+    "CLM-9618-4.1-018",
+    "CLM-9618-4.1-019",
+    "CLM-9618-4.1-020"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-018": 1,
+    "CLM-9618-4.1-019": 1,
+    "CLM-9618-4.1-020": 1
+   },
+   "authored_hash": "683e775cee01e9ced1aa776e22ff321bb8ab48ea19997aabe12b50cef1624f50"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: one instruction through the cycle",
+   "text": "Take the instruction ADD: add the value at a memory location to the accumulator. Fetch: [MAR] ← [PC] puts the instruction's address in the MAR; [PC] ← [PC] + 1 moves the counter on; [MDR] ← [[MAR]] reads the ADD instruction itself into the MDR; [CIR] ← [MDR] copies it to the CIR. Decode: the control unit reads the CIR, sees an ADD and the address of its operand, and sends signals that fetch the operand's value from memory into the MDR. Execute: the ALU adds the MDR's value to the accumulator's, places the total back in the accumulator, and sets the status flags - zero if the total is zero, negative if it carries the sign bit. Then the cycle starts again on the instruction the PC now points to. Every instruction the processor has ever obeyed, from a payroll run to a game, went round this loop one line at a time.",
+   "claim_ids": [
+    "CLM-9618-4.1-018",
+    "CLM-9618-4.1-019",
+    "CLM-9618-4.1-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-018": 1,
+    "CLM-9618-4.1-019": 1,
+    "CLM-9618-4.1-008": 1
+   },
+   "authored_hash": "4f70258c36aa067345d2a16e5f698a3246bbb00ccda1c9becca870229d86daeb"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b6",
+   "block_type": "definition",
+   "heading": "Interrupts",
+   "text": "The processor would waste its life waiting if input had to be asked for. An interrupt is a signal that makes the processor pause its current program, run an interrupt service routine (ISR) for that interrupt's cause, and then resume the interrupted program exactly where it left off. The causes are many and each has its own routine: input arriving, such as a key press that needs the key read; a timer expiring, such as a two-minute reminder to save a document; a hardware fault, such as a printer out of paper; and a program error or a program's own request for service. When an interrupt arrives, the processor checks its priority before servicing it, because some events must be answered at once and others can wait their turn. The check happens during the fetch of every instruction, so the response follows closely behind any event, and the interrupted program resumes with its registers intact - the pause is invisible to it, which is what makes interrupts the everyday mechanism for responsiveness. Applications follow from the mechanism: a document that saves itself every few minutes is a timer interrupt at work; a keyboard that never drops a letter is a key-press interrupt serviced before the next instruction; a printer that reports its own paper outage is a fault interrupt - each a cause, a routine, and a return to the interrupted work.",
+   "claim_ids": [
+    "CLM-9618-4.1-021",
+    "CLM-9618-4.1-022",
+    "CLM-9618-4.1-020"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-021": 1,
+    "CLM-9618-4.1-022": 1,
+    "CLM-9618-4.1-020": 1
+   },
+   "authored_hash": "7a74e8c185562597bf67fe6fd6dae2ebe55dcf423a46c214cde359c5476294cf"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b7",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur in cycle and interrupt questions. Writing [MDR] ← [MAR] for the fetch's read: that copies the address itself into the MDR, while the fetch needs the value stored at that address, written [MDR] ← [[MAR]] - the test is that two pairs of brackets mean 'contents of the address held in'. And giving one routine every interrupt: each cause of interrupt carries its own service routine, and the processor checks the priority before servicing - the test is to ask whether a printer out of paper and a key press need the same code, which they do not.",
+   "claim_ids": [
+    "CLM-9618-4.1-020",
+    "CLM-9618-4.1-022",
+    "CLM-9618-4.1-018"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-020": 1,
+    "CLM-9618-4.1-022": 1,
+    "CLM-9618-4.1-018": 1
+   },
+   "authored_hash": "e4c1350c7e135165abec386d2b7c3bce5b42ae78ec04c44ce033d74941a27972"
+  },
+  {
+   "block_id": "CU-9618-4.1.2-b8",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The cycle this unit describes is what the assembly language of 4.2 drives instruction by instruction, and the bit operations of 4.3 are what the ALU performs in the execute stage. The operating system of 5.1 is the program that decides which program's instructions the cycle fetches next, and the interrupt mechanism is one of its tools.",
+   "claim_ids": [
+    "CLM-9618-4.1-018"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.1-018": 1
+   },
+   "authored_hash": "9eddf06dc25401f0fcef8ac98097df9571ce36fe16911089093e03e2402bd308"
+  }
+ ],
+ "word_count": 1280,
+ "qa_status": "review_required",
+ "notes": []
+}

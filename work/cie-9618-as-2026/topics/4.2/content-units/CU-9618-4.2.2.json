@@ -1,0 +1,119 @@
+{
+ "unit_id": "CU-9618-4.2.2",
+ "title": "Instruction groups and addressing modes",
+ "objective_ids": [
+  "OBJ-9618-4.2.2-01",
+  "OBJ-9618-4.2.2-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 584,
+  "target": 710,
+  "max": 836
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-4.2.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "How the instruction set is grouped, and the addressing modes: immediate, direct, indirect, indexed and relative.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "e71afa659b0e371bfded9dc8592b13d13802e752d627f0039d40b58b578295eb"
+  },
+  {
+   "block_id": "CU-9618-4.2.2-b2",
+   "block_type": "definition",
+   "heading": "The instruction groups",
+   "text": "The instruction set is grouped by what the instructions do, and the groups are the syllabus's own. Data movement moves values between the accumulator and memory: LDM #n loads the number n itself into the accumulator, LDD <address> loads the contents of the given address, LDI <address> loads indirectly, LDX <address>, IX loads with indexed addressing, and STO <address> stores the accumulator's contents at the given address. Input and output: IN <address> reads a character in and stores its code at the given address, and OUT <address> outputs the character whose code is stored at the given address. Arithmetic: INC <address> adds 1 to the contents of the given address and DEC <address> subtracts 1 - both act on memory, not the accumulator. Compare: CMP <address> compares the accumulator's contents with the contents of the given address, and CMI #n compares them with the number n itself, setting the status flags either way. Jumps: JMP <address> jumps unconditionally, JPE <address> jumps if the even flag is set, JPN <address> jumps if the negative flag is set - the two conditional jumps read the flags a compare left behind, which is how a program makes a decision. END halts the program.",
+   "claim_ids": [
+    "CLM-9618-4.2-008",
+    "CLM-9618-4.2-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-008": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "f296c78772b4e90a5b4fbe9b72d67fb7ca04b531ed5e2780100443baee08cb65"
+  },
+  {
+   "block_id": "CU-9618-4.2.2-b3",
+   "block_type": "definition",
+   "heading": "The addressing modes",
+   "text": "An addressing mode says how an instruction's operand is found. Immediate (#n): the operand is the number n itself - LDM #5 loads 5, and no memory lookup happens. Direct: the operand is the contents of the given location - LDD 200 loads whatever is stored at 200. Indirect: the given location holds an address, and the operand is at that second location - LDI 200 takes the contents of 200 as an address and loads from there, so the location holds a pointer. Indexed: the address used is the address given plus the contents of the index register - LDX 200, IX with IX holding 100 reads location 300. Relative: the address is calculated relative to the address of the current instruction, the program counter, so the program runs wherever it is loaded. A worked contrast, with memory holding: location 200 holds 42, location 42 holds 7, location 300 holds 9, IX holds 100.\nLDM #200 loads the number 200 itself.\nLDD 200 loads 42, the contents of 200.\nLDI 200 takes 42 from 200 as an address, and loads 7, the contents of 42.\nLDX 200, IX calculates 200 + 100 = 300, and loads 9, the contents of 300.\nFour loads, four different results, one lesson: the mode decides where the operand comes from, and the notation - #, bare address, or IX - names the mode.",
+   "claim_ids": [
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011",
+    "CLM-9618-4.2-012",
+    "CLM-9618-4.2-013",
+    "CLM-9618-4.2-014"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1,
+    "CLM-9618-4.2-012": 1,
+    "CLM-9618-4.2-013": 1,
+    "CLM-9618-4.2-014": 1
+   },
+   "authored_hash": "7c655bec7bc9a81390ae0f0b204adce9d2f1926e8cfba47b762444aaf50f17ec"
+  },
+  {
+   "block_id": "CU-9618-4.2.2-b4",
+   "block_type": "misconception",
+   "heading": "Common errors with modes",
+   "text": "Two slips recur. Reading a bare address as a number: LDD 200 loads the contents of location 200, and only LDM #200 loads the number 200 itself - the test is whether a # stands in front, because the # means use the number and no # means look up the location. And adding IX to the value instead of the address: indexed addressing adds the index register to the address given, then uses the contents of that calculated address - the test is add first, look up second.",
+   "claim_ids": [
+    "CLM-9618-4.2-010",
+    "CLM-9618-4.2-011",
+    "CLM-9618-4.2-013"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-010": 1,
+    "CLM-9618-4.2-011": 1,
+    "CLM-9618-4.2-013": 1
+   },
+   "authored_hash": "2d7f49de415e40b7b2bb497f3007810bb8ffd1012d2559bc1a94927439b150a4"
+  },
+  {
+   "block_id": "CU-9618-4.2.2-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The registers these modes use - the accumulator, the index register - come from 4.1, and the traces of the last unit are where the modes show their effect instruction by instruction.",
+   "claim_ids": [
+    "CLM-9618-4.2-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-011": 1
+   },
+   "authored_hash": "3531741af954fff38c3e5c2087d8554db7119859c70e09c8097de28548bfe2a2"
+  }
+ ],
+ "word_count": 584,
+ "qa_status": "review_required",
+ "notes": []
+}

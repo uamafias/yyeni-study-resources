@@ -1,0 +1,203 @@
+{
+ "unit_id": "CU-9618-1.1.1",
+ "title": "Number systems, prefixes and binary arithmetic",
+ "objective_ids": [
+  "OBJ-9618-1.1.1-01",
+  "OBJ-9618-1.1.1-02",
+  "OBJ-9618-1.1.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_calculation",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 924,
+  "target": 1122,
+  "max": 1320
+ },
+ "blocks": [
+  {
+   "block_id": "1.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Binary magnitudes and the two prefix families; the binary, denary, hexadecimal, BCD and two's complement representations; binary addition and subtraction, and how overflow occurs.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "2f87ba5b96c52611acaaf789c4a7cc00d1008298bbd36d4f1b25eacb4e0e4a04"
+  },
+  {
+   "block_id": "1.1.1-b2",
+   "block_type": "definition",
+   "heading": "Binary magnitudes and the two prefix families",
+   "text": "Computers measure storage in bytes, and prefixes say how many. Decimal prefixes step by one thousand: one kilobyte (KB) is 1000 bytes, one megabyte is 1000 kilobytes, one gigabyte is 1000 megabytes, one terabyte is 1000 gigabytes. Binary prefixes step by 1024, which is two to the power of ten: one kibibyte (KiB) is 1024 bytes, one mebibyte (MiB) is 1024 kibibytes, one gibibyte is 1024 mebibytes, one tebibyte is 1024 gibibytes. The tell-tale is in the names: a prefix that contains the letters \"bi\" is a binary prefix, and its symbol carries a lower-case i (KiB against KB). These families count the same bytes differently, so a file reported as 2.0 MiB on one system can appear as about 2.1 MB on another, because a mebibyte holds more bytes than a megabyte: 1,048,576 against 1,000,000.",
+   "claim_ids": [
+    "CLM-9618-1.1-001",
+    "CLM-9618-1.1-002",
+    "CLM-9618-1.1-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-001": 1,
+    "CLM-9618-1.1-002": 1,
+    "CLM-9618-1.1-003": 1
+   },
+   "authored_hash": "f3846c277e80260da98d3f7eb48be79d48cd76b6c3b33ac894f9657c3dcb14cb"
+  },
+  {
+   "block_id": "1.1.1-b3",
+   "block_type": "definition",
+   "heading": "Number systems and their place values",
+   "text": "A number system's base sets its place values. Denary is base ten: from the right, its columns are worth 1, 10, 100 and so on. Binary is base two: each column is worth twice the one to its right, so an 8-bit pattern has columns worth 128, 64, 32, 16, 8, 4, 2, 1. Hexadecimal is base sixteen: columns are worth 1, 16, 256, and its sixteen digit values are written 0 to 9 then A to F, where A is 10 and F is 15. One hexadecimal digit corresponds to exactly four bits, which is what makes hexadecimal useful as a shorthand for binary. To convert denary to binary, take the largest place value that fits, subtract it and repeat. To convert binary to hexadecimal, split the bits into groups of four from the right and write each group as one hexadecimal digit. To convert hexadecimal to denary, multiply each digit by its place value and add: 3E is three sixteens and fourteen units, and 3 sixteens is 48, which with 14 more comes to 62.",
+   "claim_ids": [
+    "CLM-9618-1.1-004",
+    "CLM-9618-1.1-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-004": 1,
+    "CLM-9618-1.1-005": 1
+   },
+   "authored_hash": "e8e5e51ce7445a96b0fc6af9714e660a55678ed120c38e5d604fe81a98d2ba8d"
+  },
+  {
+   "block_id": "1.1.1-b4",
+   "block_type": "definition",
+   "heading": "Binary Coded Decimal and two's complement",
+   "text": "Two further representations handle particular jobs. Binary Coded Decimal (BCD) keeps the denary structure: each denary digit is stored as its own 4-bit group, so 46 is stored as 0100 0110, one group for the 4 and one for the 6, while pure binary stores the whole value as 0010 1110. No BCD group holds a value above 1001, because a denary digit runs from 0 to 9. Two's complement stores signed integers. The most significant bit carries a negative place value: in 8 bits it is worth -128 while the other bits keep their positive values, so a pattern beginning with 1 is negative and 8-bit two's complement runs from -128 to +127. One's complement, the stepping stone to it, flips every bit; two's complement flips every bit and adds 1. That is how -45 is found: 45 is 0010 1101, flipping gives 1101 0010, and adding 1 gives 1101 0011.",
+   "claim_ids": [
+    "CLM-9618-1.1-006",
+    "CLM-9618-1.1-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-006": 1,
+    "CLM-9618-1.1-007": 1
+   },
+   "authored_hash": "521d344bd120446ac552ccfa405fb9d7fbfd960ba24c9f513b88a91d7577cdac"
+  },
+  {
+   "block_id": "1.1.1-b5",
+   "block_type": "process",
+   "heading": "Adding and subtracting in binary",
+   "text": "Binary addition works column by column from the right. Zero and zero give 0; zero and one give 1; one and one give 0 with 1 carried into the next column; one and one with a carry give 1 with 1 carried. Subtraction avoids borrowing altogether: to subtract, add the two's complement of the number being taken away. Form it by flipping that number's bits and adding 1, then add, and discard any carry into a ninth bit. Overflow is the danger to watch. A register holds a fixed number of bits, and overflow occurs when a result needs more bits than the register holds. Two unsigned 8-bit values can sum past 255, or two positive two's complement values past 127; the register then keeps only the low eight bits and the stored value is wrong, so a system that adds must be able to notice the overflow.",
+   "claim_ids": [
+    "CLM-9618-1.1-008",
+    "CLM-9618-1.1-009",
+    "CLM-9618-1.1-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-008": 1,
+    "CLM-9618-1.1-009": 1,
+    "CLM-9618-1.1-010": 1
+   },
+   "authored_hash": "413297d3e975b1fc1fa6d597f8e6794d41a836962427c9346fff6c24acd969ca"
+  },
+  {
+   "block_id": "1.1.1-b6",
+   "block_type": "worked_application",
+   "heading": "Worked example: one number, three forms",
+   "text": "Take the denary number 202 and store it three ways. As an 8-bit unsigned binary integer: 202 takes a 128, leaving 74; a 64 leaves 10; an 8 leaves 2; a 2 finishes it, so the bits set are those columns and the pattern is 1100 1010. As hexadecimal, split the bits into fours from the right: 1100 is 12, written C, and 1010 is 10, written A, so 202 is CA in hexadecimal. Reading it back, C and A are 12 and 10; 12 sixteens is 192, and 192 with 10 more comes to 202. In BCD, each denary digit gets its own 4-bit group: 2 is 0010, 0 is 0000, 2 is 0010, so the BCD form is 0010 0000 0010, twelve bits for three digits. The same number, three different answers: the right form to use depends on the job at hand.",
+   "claim_ids": [
+    "CLM-9618-1.1-004",
+    "CLM-9618-1.1-005",
+    "CLM-9618-1.1-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-004": 1,
+    "CLM-9618-1.1-005": 1,
+    "CLM-9618-1.1-006": 1
+   },
+   "authored_hash": "da0a2b7c491e336812262b6fa849ca0aec09b74490e300dbd734e51fc0b5a9ef"
+  },
+  {
+   "block_id": "1.1.1-b7",
+   "block_type": "worked_application",
+   "heading": "Worked example: subtraction and overflow",
+   "text": "Subtract 0010 0101 (37) from 0110 1100 (108) inside an 8-bit register. Flip the bits of 0010 0101 to get 1101 1010, add 1 to get 1101 1011, which is the two's complement form of -37. Now add: 0110 1100 + 1101 1011 = 1 0100 0111. The carry into a ninth bit is discarded, and the register holds 0100 0111, which is 71, the right answer, since 108 take away 37 is 71. Overflow shows up when two large values meet instead. Add the unsigned values 1100 0100 (196) and 0110 1101 (109): the true total is 305, which needs the nine bits 1 0011 0001, so an 8-bit register keeps 0011 0001 and reports 49. Before trusting an addition, ask whether the result still fits: a warehouse that received 305 bags would be told it holds 49.",
+   "claim_ids": [
+    "CLM-9618-1.1-008",
+    "CLM-9618-1.1-009",
+    "CLM-9618-1.1-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-008": 1,
+    "CLM-9618-1.1-009": 1,
+    "CLM-9618-1.1-010": 1
+   },
+   "authored_hash": "deeb4169d720d1d924bbef9c5436950ade1ef32e2496b635cfbcd6b410f2126a"
+  },
+  {
+   "block_id": "1.1.1-b8",
+   "block_type": "misconception",
+   "heading": "Common errors with prefixes and forms",
+   "text": "Four slips recur. Mixing the prefix families: writing that a tebibyte is 1024 gigabytes joins a binary prefix to a decimal unit, when the binary chain runs tebibyte, gibibyte, mebibyte, kibibyte, each 1024 of the next below, so a tebibyte is 1024 gibibytes. Converting the whole number when BCD is asked for: 46 in BCD is 0100 0110, not the pure binary 0010 1110; count the digits and check that no group passes 1001. Reading two's complement as unsigned: 1001 1101 is -128 with 16, 8, 4 and 1, which comes to -99, not the +157 an unsigned reading gives; if the leftmost bit is 1, the value must come out negative. Writing hexadecimal digit values side by side: 7E is not \"7 then 14\" but seven sixteens and fourteen units; 7 sixteens is 112, which with 14 more is 126.",
+   "claim_ids": [
+    "CLM-9618-1.1-002",
+    "CLM-9618-1.1-005",
+    "CLM-9618-1.1-006",
+    "CLM-9618-1.1-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-002": 1,
+    "CLM-9618-1.1-005": 1,
+    "CLM-9618-1.1-006": 1,
+    "CLM-9618-1.1-007": 1
+   },
+   "authored_hash": "ab129ed71e426cbeeae1f7932bdf57b6bbe897f31f3b2475abb4d5362a06396f"
+  },
+  {
+   "block_id": "1.1.1-b9",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "These conversions and prefixes are used again across the subject. File sizes in kibibytes and megabytes return in 1.2 Multimedia, where image and sound file sizes are computed, and in topic 1.3, where making a file smaller shortens the time it takes to send it. Hexadecimal returns in 4.2 Assembly Language, where instructions and addresses are written in it, and the idea of a negative place value returns in 4.3 Bit manipulation. Character codes, met in the next section, come back in 6.2 Data Integrity, where checks protect stored and transmitted data.",
+   "claim_ids": [
+    "CLM-9618-1.1-004",
+    "CLM-9618-1.1-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-004": 1,
+    "CLM-9618-1.1-005": 1
+   },
+   "authored_hash": "ba08b6065836a820e7f7b7e44cb16babb649a75a639193209e7753ed9db55e32"
+  }
+ ],
+ "word_count": 1202,
+ "qa_status": "review_required",
+ "notes": []
+}

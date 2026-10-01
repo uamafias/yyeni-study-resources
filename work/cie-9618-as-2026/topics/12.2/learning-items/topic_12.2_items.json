@@ -1,0 +1,518 @@
+{
+ "dataset_id": "ITEMS-9618-12.2",
+ "topic_id": "12.2",
+ "items": [
+  {
+   "item_id": "ITEM-9618-12.2-001-APP",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw, as a described structure chart, the design of a tuck-shop sale program: the top module MakeSale calls TakeOrder (food choice passed down, price returned up), AddToTotal (price passed down, running total returned up), and GiveChange (amount paid and total passed down, change returned up). Describe each box, each line and each circle.",
+   "canonical_answer": "The top box MakeSale sits above three boxes. A line down to TakeOrder with one hollow circle down (the food choice) and one hollow circle up (the price). A line down to AddToTotal with one hollow circle down (the price) and one hollow circle up (the running total). A line down to GiveChange with two hollow circles down (the amount paid and the total) and one hollow circle up (the change). Every circle is hollow, because every parameter is data and none is a flag.",
+   "marking_guidance": [
+    "Context: this given tuck-shop design with its three sub-tasks - 1 mark for the boxes and lines in calling order.",
+    "Reason: because each parameter is data, every circle is hollow and each up-circle is a returned value, so the chart with its circles carries 1 mark - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-002": 1
+   },
+   "authored_hash": "bb5600a993a65d7e2779b08c1f3c2475b7c4463fb6768fbe417f5a97789a3c75"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-002-APP",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw, as a described structure chart, a clinic visit module: the top module HandleVisit calls RecordVitals (patient number passed down, recorded flag returned up as a signal) and SavePatient (patient record passed down by reference so the changed record comes back up). Describe each box, line and circle, using the right circle for the flag and the both-ways drawing for the by-reference parameter.",
+   "canonical_answer": "The top box HandleVisit sits above two boxes. A line down to RecordVitals with one hollow circle down (the patient number) and one filled circle up (the recorded flag, a Boolean signal). A line down to SavePatient with one hollow circle drawn both ways on the same line (the patient record, passed by reference: down into the module and back up changed, because the module updates the record). The filled circle is the flag; the both-ways data circle is the BYREF parameter.",
+   "marking_guidance": [
+    "Context: this given clinic design with its flag and its by-reference parameter - 1 mark for the boxes, lines and the filled flag circle.",
+    "Reason: because the flag is a Boolean signal it takes the filled circle, and the BYREF record takes the both-ways data circle, so the two special circles carry 1 mark - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-004": 1
+   },
+   "authored_hash": "2e4fb2f198b5fad98c1e1f971074d55d087126ae2e967a6436a43ee1190a6100"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-003-INTERP",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A structure chart for a library loan is described below with four gaps. Complete the four missing entries.\n\n- Top box: IssueLoan\n- Line down to FindBook: one hollow circle down (the title), one (a) up (the book number, a value)\n- Line down to MarkLoaned: one hollow circle down (the book number), one (b) up (the loaned flag)\n- Line down to UpdateBorrower: one hollow circle drawn (c) (the borrower record, which the module changes and passes back changed)\n- Each box becomes a module, and each line beneath the top box becomes a (d) with the circles as its parameters",
+   "canonical_answer": "(a) hollow circle. (b) filled circle. (c) both ways. (d) call.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) hollow, (b) filled, (c) both ways, (d) call.",
+    "Meaning: the completed chart shows data as hollow circles, the flag as a filled circle and the by-reference record as both-ways data, so the result is a design whose circles name every parameter’s kind."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-003": 1
+   },
+   "authored_hash": "248ac6745d126d4573bc2c1ebe25f04d403053e4ea2863b8f5a54ed13b51a3fb"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-004-INTERP",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-003",
+    "CLM-9618-12.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A structure chart for a till sale is described, and its pseudocode is derived from it with four gaps. Complete the four missing entries.\n\nChart: top box MakeSale; line down to TakeOrder with one hollow circle down (item name) and one hollow circle up (price); line down to PrintReceipt with one hollow circle down (price).\n\n```pseudocode\nFUNCTION (a)(ItemName : STRING) RETURNS (b)\n   DECLARE Price : REAL\n   ... price found ...\n   (c) Price\nENDFUNCTION\n\nPROCEDURE PrintReceipt((d) : REAL)\n   ... receipt printed ...\nENDPROCEDURE\n```",
+   "canonical_answer": "(a) TakeOrder. (b) REAL. (c) RETURN. (d) Price.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) TakeOrder, (b) REAL, (c) RETURN, (d) Price.",
+    "Meaning: the completed derivation shows the up-circle as the function’s return type with RETURN, and the down-circle as the called module’s parameter, so the result is a chart turned into code box by box."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-003": 1,
+    "CLM-9618-12.2-001": 1
+   },
+   "authored_hash": "843d1208024da37053aeef8a6955a1359c2034ef70119017060396b6d53e1af1"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-008-MISCON",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner draws a recorded flag on a structure chart as a hollow circle, and a BYREF total as a single one-way down arrow. Explain both errors.",
+   "canonical_answer": "The flag is a Boolean signal, so it takes the filled circle - the hollow circle is for data, and a flag is a signal the caller reads rather than a value it works on. The BYREF total is data going both ways: the value travels down into the module and the changed value travels back up, so a single down arrow loses the way back, and the caller would not see the updated total. The tests: is the parameter a flag? Fill the circle. Is it by reference? Draw the data both ways.",
+   "marking_guidance": [
+    "1 mark: each error named - the flag drawn as data and the reference drawn one-way, so the chart misstates both parameters.",
+    "1 mark: the correction with the tests - the filled circle for the Boolean flag and both-ways data for BYREF, because the circle’s shape and the arrow’s directions are what the chart states."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-004": 1
+   },
+   "authored_hash": "54b16c0b7e48c584a86767cbb63f4c20cf0a40f8ee6109b9e36bd51cc0f49771",
+   "misconception_entry": "MC-9618-12.2-01"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-005-DEF",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a state-transition diagram shows.",
+   "canonical_answer": "The states a system can be in and the transitions between them: each state is one situation the system can be in, and each transition is the event that moves the system from one state to the next.",
+   "marking_guidance": [
+    "1 mark: the meaning - states and the events that move the system between them."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-005": 1
+   },
+   "authored_hash": "0e30c560c73224880a76b8e6501901039c37dbb310d1e1a7a7258c7a34d40c75"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-006-WHY",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a state-transition diagram suits a gate controller better than a structure chart.",
+   "canonical_answer": "The gate’s behaviour depends on its history: what a push does depends on whether the gate is Locked or Unlocked, so the behaviour is a set of situations and events rather than a set of jobs. A state-transition diagram puts every state against every event in one picture - Locked swallows a push, Unlocked opens - so the reader can check the behaviour for gaps, whereas a structure chart shows what the program is made of, not how it behaves, because the chart suits a decomposition and the controller is a state machine.",
+   "marking_guidance": [
+    "Reason: the gate’s behaviour depends on which state it is in, so situations are the shape of the problem - 1 mark.",
+    "Purpose: so the diagram puts every state against every event in one picture, because behaviour that depends on history is what the state diagram documents - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-006": 1
+   },
+   "authored_hash": "2c64bd07c89d26556701c437d377a969112f0745e69e9609c58be0b2688cf73e"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-007-APP",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-005",
+    "CLM-9618-12.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "A drinks machine has three states: Waiting, Dispensing and OutOfOrder. The events are: coin (from Waiting to Dispensing), collect (from Dispensing to Waiting) and jam (from Dispensing to OutOfOrder), and reset (from OutOfOrder to Waiting). The state-transition diagram is described with four gaps. Complete the four missing entries.\n\n| From state | Event | To state |\n|---|---|---|\n| Waiting | (a) | Dispensing |\n| Dispensing | collect | (b) |\n| (c) | jam | OutOfOrder |\n| OutOfOrder | (d) | Waiting |",
+   "canonical_answer": "(a) coin. (b) Waiting. (c) Dispensing. (d) reset.",
+   "marking_guidance": [
+    "Context: this given drinks machine with its three states and four events - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry follows the machine’s behaviour, because each event moves the system from one state to the state the event names, so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-005": 1,
+    "CLM-9618-12.2-006": 1
+   },
+   "authored_hash": "8312c406fa2a0199070f67f61e62b549f9042e21a762436be49d8278e7f7a4d6"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-P01",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-003"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A structure chart is described: the top box HandleSale calls TakePayment (amount due passed down, paid flag returned up as a signal), PrintReceipt (amount paid passed down), and UpdateStock (item code passed down, stock count passed down by reference and passed back up changed). Derive the pseudocode: write the function TakePayment, the procedure PrintReceipt, the procedure UpdateStock with its by-reference parameter, and the three calls from HandleSale in chart order.",
+   "canonical_answer": "```pseudocode\nFUNCTION TakePayment(AmountDue : REAL) RETURNS BOOLEAN\n   DECLARE Paid : BOOLEAN\n   ... payment taken ...\n   RETURN Paid\nENDFUNCTION\n\nPROCEDURE PrintReceipt(AmountPaid : REAL)\n   ... receipt printed ...\nENDPROCEDURE\n\nPROCEDURE UpdateStock(ItemCode : STRING, StockCount : INTEGER) [StockCount BY REFERENCE]\n   ... stock updated ...\nENDPROCEDURE\n\nPROCEDURE HandleSale\n   DECLARE AmountDue, AmountPaid : REAL\n   DECLARE Paid : BOOLEAN\n   DECLARE ItemCode : STRING\n   DECLARE StockCount : INTEGER\n   IF TakePayment(AmountDue) = TRUE THEN\n      CALL PrintReceipt(AmountPaid)\n      CALL UpdateStock(ItemCode, StockCount)\n   ENDIF\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the parameter and RETURNS BOOLEAN, and ENDFUNCTION. Mark point 2: the RETURN of the flag at the end, returned and not output.",
+    "Mark point 3: the procedure headings with their parameters and their types, and ENDPROCEDURE - the variables declared inside the top module before any call. Mark point 4: StockCount marked as the by-reference parameter, because the chart drew its circle both ways.",
+    "Mark point 5: the declarations in HandleSale before the calls, and no loop - the three calls are three events, not a repetition - with the calls in the chart’s order: the flag tested, then the two procedures called. Mark point 6: the function used in the condition, never after CALL, because the up-circle became a returned value.",
+    "Mark point 7: the two procedures CALLed as statements, because boxes with no up-circle became procedures. Mark point 8: the derivation complete - every box a module, every circle a parameter, and every call in the chart’s order."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A structure chart derived into pseudocode module by module.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-003": 1
+   },
+   "authored_hash": "10176c46b8bbe8b9c927a43ddbc1b572ffb1810abf1fabcb98bd3a23e39bb3bd"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-P02",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-002"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A library’s loan program is designed as a structure chart: the top box HandleLoan calls FindBook (title passed down, book code returned up), CheckBorrower (borrower name passed down, allowed flag returned up as a signal), and MarkLoaned (book code and borrower name passed down). Write pseudocode for the function CheckBorrower that takes the string BorrowerName and returns TRUE when the borrower is allowed to borrow, FALSE otherwise - the library’s rule is that a borrower is allowed only when they hold fewer than 5 books, tracked by the array Loans held by name of up to 40 integers, index 1 to 40, with the count NumBorrowers; the borrower’s position in the array is their index.",
+   "canonical_answer": "```pseudocode\nFUNCTION CheckBorrower(BorrowerName : STRING, Loans : ARRAY[1:40] OF INTEGER, NumBorrowers : INTEGER, BorrowerIndex : INTEGER) RETURNS BOOLEAN\n   IF BorrowerIndex >= 1 AND BorrowerIndex <= NumBorrowers THEN\n      IF Loans[BorrowerIndex] < 5 THEN\n         RETURN TRUE\n      ELSE\n         RETURN FALSE\n      ENDIF\n   ELSE\n      RETURN FALSE\n   ENDIF\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the parameters and RETURNS BOOLEAN, and ENDFUNCTION. Mark point 2: the array parameter declared with its bounds and type.",
+    "Mark point 3: the outer selection guarding the index against the count. Mark point 4: the condition with a complete comparison on each side of the AND.",
+    "Mark point 5: the inner selection testing the borrower’s held books against the limit. Mark point 6: TRUE RETURNed in the allowed branch.",
+    "Mark point 7: FALSE RETURNed in both refusing branches, so the flag is set either way. Mark point 8: the value RETURNed, not output, because the chart’s filled up-circle became the function’s returned Boolean."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A library borrower check returning the chart’s flag.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-002": 1
+   },
+   "authored_hash": "09682d8a11c411a3260e64889afc00a6533dadfeda6d7d3d269803ef0faa8bdb"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-P03",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-005",
+    "CLM-9618-12.2-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A water pump controller is documented as a state-transition diagram: three states - Idle, Pumping and Faulted; events - start (Idle to Pumping), stop (Pumping to Idle), sensorFail (Pumping to Faulted), and reset (Faulted to Idle). Write pseudocode for a procedure PumpEvent that takes the string Event and the string State (the current state), and outputs the new state the event moves the controller to, according to the diagram - an event with no transition from the current state leaves the state unchanged.",
+   "canonical_answer": "```pseudocode\nPROCEDURE PumpEvent(Event : STRING, State : STRING)\n   IF State = \"Idle\" THEN\n      IF Event = \"start\" THEN\n         OUTPUT \"Pumping\"\n      ELSE\n         OUTPUT \"Idle\"\n      ENDIF\n   ELSE\n      IF State = \"Pumping\" THEN\n         IF Event = \"stop\" THEN\n            OUTPUT \"Idle\"\n         ELSE\n            IF Event = \"sensorFail\" THEN\n               OUTPUT \"Faulted\"\n            ELSE\n               OUTPUT \"Pumping\"\n            ENDIF\n         ENDIF\n      ELSE\n         IF Event = \"reset\" THEN\n            OUTPUT \"Idle\"\n         ELSE\n            OUTPUT \"Faulted\"\n         ENDIF\n      ENDIF\n   ENDIF\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: the outer selection reading the current state, because what an event does depends on which state the controller is in.",
+    "Mark point 3: the nested selections reading the event within each state. Mark point 4: every transition from the diagram present - start, stop, sensorFail and reset.",
+    "Mark point 5: the diagram’s history rule shown - the state selects the event’s effect, because Idle’s start and Faulted’s reset are different moves. Mark point 6: an unmatched event leaving the state unchanged, each state’s else naming its own state.",
+    "Mark point 7: every condition written as a complete comparison with the equals sign. Mark point 8: the procedure complete and closed - no declaration and no returned value, its result the OUTPUT of the new state - with the diagram’s every state and every event, because a state diagram derives into nested selections."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A pump controller’s states turned into nested selections.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-005": 1,
+    "CLM-9618-12.2-006": 1
+   },
+   "authored_hash": "2c4a405d2bf11e7f55e1370d4d3206cd5ee0b34af1195f1e7e59c4eba7c958b8"
+  },
+  {
+   "item_id": "ITEM-9618-12.2-P04",
+   "objective_ids": [
+    "OBJ-9618-12.2.1-01",
+    "OBJ-9618-12.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-005",
+    "CLM-9618-12.2-006"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A club is designing its membership system. The work splits into jobs - record a joining, print a card, total the fees - and the club’s turnstile also needs documenting: it has states Locked and Open, with events swipe (Locked to Open) and timeout (Open to Locked).\n(a) Explain which design tool suits the membership work and which suits the turnstile, with the reason for each. [2]\n(b) The turnstile’s swipe is described: \"output Open\". State, with a reason, what happens when a swipe occurs while the system is already Open, and what the diagram shows about it. [2]\n(c) The membership job PrintCard takes the member code passed down and returns a printed flag up. State the circle for each parameter on the chart line. [2]",
+   "canonical_answer": "(a) The membership work is a decomposition into jobs, so a structure chart suits it: boxes for record, print and total, with the calling order and parameters drawn. The turnstile is behaviour that depends on its state, so a state-transition diagram suits it: the states and the events that move between them, because what a swipe does depends on whether the turnstile is Locked or Open.\n(b) A swipe while already Open leaves the state Open - the diagram has no swipe transition from Open, so the event is ignored and the state stands; the diagram shows this by the absence of a swipe line from Open, because only the drawn transitions happen.\n(c) The member code is data, so a hollow circle; the printed flag is a Boolean signal, so a filled circle.",
+   "marking_guidance": [
+    "Part (a): the context of the club’s two problems - 2 marks, 1 per point: the chart for the decomposition of jobs, the state diagram for history-dependent behaviour.",
+    "Part (b): the reason from the diagram - 2 marks, 1 per point: no swipe transition from Open, so the state stands, because only drawn transitions happen.",
+    "Part (c): the two circles stated - 2 marks, 1 per point: hollow for the data, filled for the flag."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A club’s membership jobs and its turnstile, each on its own design tool.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-005": 1,
+    "CLM-9618-12.2-006": 1
+   },
+   "authored_hash": "0fbb653e85818f6c175444ad0625bbe827258a39680a82042132e5775e769f57"
+  }
+ ]
+}

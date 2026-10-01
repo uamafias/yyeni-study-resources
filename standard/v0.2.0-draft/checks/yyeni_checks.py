@@ -450,38 +450,75 @@ def c32(b):
             return None
     # A percentage result is the same equation scaled by 100; a chained expression (a = b = c) is matched by
     # its final step elsewhere in the string, so only take matches whose left operand starts the expression.
-    # CR-006: the multiplication and division signs (x, *, /, and the typeset \u00d7 and \u00f7 a physics answer uses)
-    pat = re.compile(r'(?<![\)\d])(?<![x*+/\-\u00d7\u00f7] )(?<!\d )(?:N\$)?(' + NUM + r')\s*([x*+\-/\u00d7\u00f7])\s*(?:N\$)?(' + NUM + r')\s*=\s*(?:N\$)?(' + NUM + r')\s*(%?)')
+    # CR-006: the multiplication and division signs (x, *, /, and the typeset × and ÷ a physics answer uses)
+    # CR-007: a left side of any length (1000 x 9.81 x 0.20 = 1962) is evaluated whole, multiplication and
+    # division first, and no operand may start inside another number (the 81 of 9.81)
+    OP = r'[x*+\-/×÷]'
+    pat = re.compile(r'(?<![\)\d.])(?<!' + OP + r' )(?<!' + OP + r')(?<!\d )(?:N\$)?' + NUM + r'(?:\s*' + OP +
+                     r'\s*(?:N\$)?' + NUM + r')+\s*=\s*(?:N\$)?(' + NUM + r')\s*(%?)')
+    tok = re.compile(r'\s*(?:N\$)?(' + NUM + r')\s*(' + OP + r')?')
+
+    def terms(left):
+        nums, ops, pos = [], [], 0
+        while pos < len(left):
+            m_ = tok.match(left, pos)
+            if not m_ or m_.end() == pos:
+                return None, None
+            nums.append(m_.group(1))
+            if m_.group(2):
+                ops.append(m_.group(2))
+            pos = m_.end()
+        return (nums, ops) if len(ops) == len(nums) - 1 else (None, None)
+
+    def evaluate(vals, ops):
+        acc, pending = [vals[0]], []
+        for op, x in zip(ops, vals[1:]):
+            if op in 'x*×':
+                acc[-1] *= x
+            elif op in '/÷':
+                if not x:
+                    return None
+                acc[-1] /= x
+            else:
+                pending.append(op)
+                acc.append(x)
+        out = acc[0]
+        for op, x in zip(pending, acc[1:]):
+            out = out + x if op == '+' else out - x
+        return out
+
     bad, checked = [], 0
     for i in b.items:
         txt = (i.get('canonical_answer') or '')
         for m in pat.finditer(txt):
-            a, op, c, r = val(m.group(1)), m.group(2), val(m.group(3)), val(m.group(4))
-            if m.group(5) == '%' and r is not None:
+            whole = m.group(0)
+            left = whole[:whole.rindex('=')]
+            nums, ops = terms(left.rstrip())
+            if not nums:
+                continue
+            vals, r = [val(x) for x in nums], val(m.group(1))
+            if m.group(2) == '%' and r is not None:
                 r = r / 100.0
-            if a is None or c is None or r is None:
+            if r is None or any(v is None for v in vals):
                 continue
             # CR-006: binary arithmetic (0011 0110 + 0001 1011 = 0101 0001) is checked in base 2, and a result
             # written in a fixed width is checked modulo that width, which is how a register holds it
-            raw = [re.sub(r'[ ,]', '', m.group(k)).lstrip('+').rstrip('.') for k in (1, 3, 4)]
-            if all(re.fullmatch(r'[01]+', x) for x in raw) and any(len(x) >= 4 for x in raw) and op in '+-':
+            raw = [re.sub(r'[ ,]', '', x).lstrip('+').rstrip('.') for x in nums + [m.group(1)]]
+            if len(nums) == 2 and all(re.fullmatch(r'[01]+', x) for x in raw) and any(len(x) >= 4 for x in raw) \
+                    and ops[0] in '+-':
                 checked += 1
                 ba, bc, br = (int(x, 2) for x in raw)
-                want = ba + bc if op == '+' else ba - bc
+                want = ba + bc if ops[0] == '+' else ba - bc
                 if want != br and want % (2 ** len(raw[2])) != br:
-                    bad.append('%s: "%s" gives %s in binary' % (i['item_id'], ' '.join(m.group(0).split()),
+                    bad.append('%s: "%s" gives %s in binary' % (i['item_id'], ' '.join(whole.split()),
                                                               bin(want)[2:] if want >= 0 else '-' + bin(-want)[2:]))
                 continue
-            try:
-                want = {'x': a * c, '*': a * c, '\u00d7': a * c, '+': a + c, '-': a - c, '/': (a / c if c else None),
-                        '\u00f7': (a / c if c else None)}[op]
-            except ZeroDivisionError:
-                continue
+            want = evaluate(vals, ops)
             if want is None:
                 continue
             checked += 1
             if abs(want - r) > max(0.02, abs(want) * 0.006):
-                bad.append('%s: "%s" gives %s' % (i['item_id'], ' '.join(m.group(0).split()), round(want, 2)))
+                bad.append('%s: "%s" gives %s' % (i['item_id'], ' '.join(whole.split()), round(want, 2)))
     if bad:
         return 'fail', '%d stated calculations do not evaluate as written: %s' % (len(bad), '; '.join(bad[:5])), \
                sorted({x.split(':')[0] for x in bad})

@@ -1,0 +1,137 @@
+{
+ "unit_id": "CU-9618-12.3.1",
+ "title": "Errors: exposing, locating, correcting",
+ "objective_ids": [
+  "OBJ-9618-12.3.1-01",
+  "OBJ-9618-12.3.1-02",
+  "OBJ-9618-12.3.1-03",
+  "OBJ-9618-12.3.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_debug",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 1165,
+  "target": 1415,
+  "max": 1665
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-12.3.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Exposing and avoiding faults; locating and identifying the types of errors - syntax, logic, run-time; correcting them; and the testing methods, from dry runs to acceptance.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "ae4c6820df3d7ac655389ff55ec48b20159e9dcb890a4801d4028a379700b54d"
+  },
+  {
+   "block_id": "CU-9618-12.3.1-b2",
+   "block_type": "definition",
+   "heading": "Exposing faults: dry runs and walkthroughs",
+   "text": "A fault is a mistake in the program, and the first tools for exposing one are used at the desk, before any run. A dry run traces the code by hand: the tester takes a sheet, a set of variable columns, and the program, and executes it statement by statement on paper, recording each variable's new value in a trace table after each statement. A walkthrough is the same trace done in company: the author leads others through the code, the questions come from fresh eyes, and the author explains what each statement is supposed to do - which is when a statement that does something else is heard for the first time. What the trace table buys is honesty: the table records what the program actually does, not what the author meant, so a logic error is found by comparing the traced values with the values the problem required. And the three error types are told apart by a three-question test. Did it translate? No - a syntax error, a break in the language's rules, caught at translation with a rule named. Did it run? No - a run-time error, the program stopping mid-run on an operation it cannot complete: reading a file that does not exist, dividing by zero, reading past an array's upper bound. Did it give the right answer? No - a logic error, the program running happily and delivering the wrong result: a total that misses the last item, a condition that tests the wrong variable. The worst of the three is the logic error, exactly because it runs - the program looks healthy and quietly misleads, which is why the trace table, which records what actually happened, is the tool for it. A worked miniature sets the whole method in motion. The till program’s trace begins Total 0, and the first sale of 60 takes the row Total 0, Sale 60, after the statement Total 180 - and the required value at that point is 120, so the row is the first departure and the loop’s bound is the suspect; changing the bound and re-tracing gives the right total, and the second trace’s matching rows are the correction’s evidence. Every logic-error question in this topic is that miniature wearing different clothes, and the method never changes: trace, find the first departing row, change that statement, re-trace, and show the rows now matching.",
+   "claim_ids": [
+    "CLM-9618-12.3-001",
+    "CLM-9618-12.3-002",
+    "CLM-9618-12.3-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-001": 1,
+    "CLM-9618-12.3-002": 1,
+    "CLM-9618-12.3-003": 1
+   },
+   "authored_hash": "b10219e7e248661261d931e493fcb91462025840b52ee64fbd68cc939adee02a"
+  },
+  {
+   "block_id": "CU-9618-12.3.1-b3",
+   "block_type": "definition",
+   "heading": "Correcting identified errors",
+   "text": "Correction begins where identification ended: at the statement that produced the traced wrong value. The discipline is to change that statement and only that statement, because the trace established where the program's behaviour first departed from the required - a change one statement early or late fixes a symptom and leaves the cause, and a change somewhere the trace did not look adds a second fault to the first. Three worked corrections show the discipline. A total that misses the last item traces to a loop whose end is one short: the trace table's last row shows the loop finishing before the last element, so the correction moves the loop's bound by one. A condition that tests the wrong variable traces to a selection whose test uses a variable that was never set for this purpose: the row before the selection shows the intended variable sitting ready and unused, so the correction changes the condition, not the computation. A run-time failure past an array's end traces to an index that grew beyond the upper bound: the trace shows the index's growth past the declared limit, so the correction is the guard that stops the access or the loop that ends at the bound. After any correction, the test that exposed the error runs again, and so does the whole program - because a correction is a change, and a change can break something else, which is what the next block's test strategy is for.",
+   "claim_ids": [
+    "CLM-9618-12.3-004",
+    "CLM-9618-12.3-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-004": 1,
+    "CLM-9618-12.3-002": 1
+   },
+   "authored_hash": "4b484640367c2617ba24ee169bae2648ec9676929044ef7d00c6b9bcf1b2973c"
+  },
+  {
+   "block_id": "CU-9618-12.3.1-b4",
+   "block_type": "definition",
+   "heading": "The testing methods",
+   "text": "The methods of testing form a series, each answering a different question. Before the code runs: the dry run and the walkthrough, at the desk. With the code's structure known - white-box testing: the tester reads the code and chooses test data to exercise it - every path through a selection, the loop run once and not at all - so the data is drawn from the code, and the test asks 'does this code do what its structure allows?'. With the code unseen - black-box testing: the tester uses only the specification, choosing data from the requirements and checking outputs against them, so the test asks 'does this program meet its requirements?' - and never looks inside. As the modules meet: integration testing, which checks that separately tested modules work together, because modules that each pass alone can still fail together at their interfaces - the caller's arguments in the wrong order, the flag never set. Before the real modules exist: stubs, simple stand-in modules with the interface but a fixed return, so the calling module can be tested while the called ones are still being written. As the system nears its users: alpha testing, in-house, the development team's own users running the whole system; beta testing, the system released to selected real users outside the team, whose findings arrive from real use; and acceptance testing, the customer checking the delivered system against the requirements and accepting or rejecting it. The series runs from the desk to the customer, each method asking a question the earlier one could not. A note on scale keeps the series honest: each method exists because the one before it leaves a question open, and the whole series is a program’s defence in depth - the walkthrough catches what one reader misses, the white-box round exercises the paths the structure allows, the black-box round checks the requirements from outside, the integration round joins what passed alone, the stubs let the joining be tested early, and the alpha, beta and acceptance rounds move the checking closer and closer to the user who will live with the result. No single round certifies a program; the series does, which is why a test plan lists rounds of more than one kind.",
+   "claim_ids": [
+    "CLM-9618-12.3-005",
+    "CLM-9618-12.3-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-005": 1,
+    "CLM-9618-12.3-006": 1
+   },
+   "authored_hash": "750da73133ae692f318f2a379f749c36d46643afba2a68eee32ec3e1f07212bb"
+  },
+  {
+   "block_id": "CU-9618-12.3.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "The recurring slip is mixing the three error types. A syntax error breaks the rules of the language and is found at translation; a logic error runs but gives the wrong result; a run-time error stops the program while it runs. The test asks three questions in order: did it translate? did it run? did it give the right answer? And the testing slip: integration testing checks that separately tested modules work together - the test is on modules combined, not on one module, because single-module tests were done before.",
+   "claim_ids": [
+    "CLM-9618-12.3-002",
+    "CLM-9618-12.3-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1,
+    "CLM-9618-12.3-006": 1
+   },
+   "authored_hash": "6222052b88dfc75f9998e07a86dafb9700a48f04af24b9b7caa8e7964844124c"
+  },
+  {
+   "block_id": "CU-9618-12.3.1-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The trace table here is 9.2's structured English and flowchart work in the service of finding faults, the modules integrated here are 11.3's, and the dry run is the assembler's two-pass discipline in small. 12.1's testing stage is fed by everything here, and 12.1's maintenance stage is the next unit's subject.",
+   "claim_ids": [
+    "CLM-9618-12.3-003",
+    "CLM-9618-12.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.3-003": 1,
+    "CLM-9618-12.3-005": 1
+   },
+   "authored_hash": "1e7c82268ae4c1014f7bcf8014f4d3deb0eca667aec28d03c3d1975068ce8dc3"
+  }
+ ],
+ "word_count": 1204,
+ "qa_status": "review_required",
+ "notes": []
+}

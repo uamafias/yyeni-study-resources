@@ -1,0 +1,174 @@
+{
+ "unit_id": "CU-9618-3.1.2",
+ "title": "Memory types and control systems",
+ "objective_ids": [
+  "OBJ-9618-3.1.2-01",
+  "OBJ-9618-3.1.2-02",
+  "OBJ-9618-3.1.2-03",
+  "OBJ-9618-3.1.2-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_comparison",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1180,
+  "target": 1435,
+  "max": 1690
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-3.1.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "RAM against ROM; SRAM against DRAM; PROM, EPROM and EEPROM; and monitoring and control systems with sensors, actuators and feedback.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "076b2e39275978008a4054c54557d0dcd9e67611beaf10c321d28447bedddb26"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b2",
+   "block_type": "definition",
+   "heading": "RAM and ROM",
+   "text": "Both are primary memory, and the difference is one line: RAM is the working memory, ROM is the permanent memory. RAM is read/write memory that holds the running program and its data, and its contents are lost the moment power is removed - which is why unsaved work dies with a power cut. ROM keeps its contents permanently, in normal use it is read rather than written, and it holds the start-up instructions, the code that must be there the instant power arrives, before anything can be loaded from storage. The uses follow the properties. RAM goes wherever contents change constantly: the program being run, its variables, the document being typed. ROM goes wherever contents must survive switch-on: the start-up code of a personal computer, the fixed program of a cash register, the controller of an embedded system. A device that updates its program overnight still keeps its start-up code in ROM, because the update can only arrive once the system has started - ROM is what makes starting possible. A range of devices leans on the same split: a game console keeps its boot code in ROM and its games in RAM when they run; a medical pump keeps its safety routines in ROM and the day's settings in RAM, so losing power costs the settings but never the code that keeps the pump safe.",
+   "claim_ids": [
+    "CLM-9618-3.1-012",
+    "CLM-9618-3.1-013"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-012": 1,
+    "CLM-9618-3.1-013": 1
+   },
+   "authored_hash": "318c660f9a0cd9bb9633d6b1d6f90fc0d3dc773e3214b1a8e90925e143b70b5c"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b3",
+   "block_type": "definition",
+   "heading": "SRAM and DRAM",
+   "text": "RAM itself comes in static and dynamic forms, and the difference is how each bit is kept. Static RAM (SRAM) holds each bit in a small holding circuit that keeps its value until it is rewritten; no refreshing is needed, so reads and writes complete fast, but each bit takes several transistors, so a chip holds fewer bits and each bit costs more. Dynamic RAM (DRAM) holds each bit as charge on a capacitor; the charge leaks away, so the chip continually refreshes every cell, which slows access, but each cell is one capacitor and one transistor, so capacity is cheap and dense. The choice between them is settled by what the part is for. Cache memory - the small, close store the processor reads first - uses SRAM, because speed matters more than capacity there. Main memory uses DRAM, because a running system wants capacity, and a small delay is the cheaper price. The device's use decides the RAM, which is the sentence that answers any SRAM-or-DRAM question.",
+   "claim_ids": [
+    "CLM-9618-3.1-014",
+    "CLM-9618-3.1-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-014": 1,
+    "CLM-9618-3.1-015": 1
+   },
+   "authored_hash": "c75aee52be50444e9408836dd55241ce3da73457757b3e48ad058b2802049b38"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b4",
+   "block_type": "definition",
+   "heading": "PROM, EPROM and EEPROM",
+   "text": "Programmable ROM comes in PROM, EPROM and EEPROM, differing in how they can be rewritten. A PROM - programmable ROM - can be written once, after manufacture, and not erased: the program goes in once and stays for the device's life. An EPROM - erasable programmable ROM - can be erased by ultraviolet light shone through a quartz window on the chip, then rewritten; the chip must come out of the circuit to be erased, so the update is a bench job. An EEPROM - electrically erasable programmable ROM - is erased and rewritten electrically while still in place in the system, so a service laptop can update a device's program in the field without removing anything. Each step up the list costs more and updates more easily: the PROM is cheapest and never changes, the EPROM changes at the bench, the EEPROM changes in place - and modern devices largely take the EEPROM's convenience as standard.",
+   "claim_ids": [
+    "CLM-9618-3.1-016"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-016": 1
+   },
+   "authored_hash": "88699d146727ad96680a24397c756ee70f76d044322386c819ed80adad7d64f8"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b5",
+   "block_type": "definition",
+   "heading": "Monitoring and control systems",
+   "text": "A monitoring system measures and reports; a control system measures, decides and acts. In a monitoring system, sensors read the environment - temperature, pressure, infra-red radiation, sound - and the values are displayed or recorded; nothing is changed by the system itself, so a weather station that logs temperatures is monitoring. The same hardware can serve both: a greenhouse's temperature sensor feeds the logger that graphs it, and the same wire feeds the control unit that opens the vents - what separates monitoring from control is not the sensor but what the system does with the reading. In a control system, the sensor values go to a microprocessor (the control unit), which compares them with the target and decides; the decision drives actuators, devices that produce physical movement or action from a signal - a motor opening a vent, a valve letting water through, a heater switching on. The parts must not be given each other's roles: the microprocessor decides, the actuator acts, and the sensor measures. The word that makes control accurate is feedback: the system's own output affecting its next input. The heater warms the room; the temperature sensor measures the warmed room; the next decision starts from the measured value, not a guess. Without feedback, a control system drives blindly and overshoots; with it, the system holds the value steady, which is why feedback is the mechanism control runs on. The sensors named in the objective each measure one quantity: a temperature sensor reads heat, a pressure sensor reads force per area, an infra-red sensor reads the radiation a warm body gives off, and a sound sensor - a microphone - reads pressure waves in the air; choosing the sensor is choosing what the system can see.",
+   "claim_ids": [
+    "CLM-9618-3.1-017",
+    "CLM-9618-3.1-018",
+    "CLM-9618-3.1-019"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-017": 1,
+    "CLM-9618-3.1-018": 1,
+    "CLM-9618-3.1-019": 1
+   },
+   "authored_hash": "7d357f8ca9cc78a6af20e19437a40cd6e0431dac68999e21c3a6a1b6f644a98e"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b6",
+   "block_type": "worked_application",
+   "heading": "Worked example: a borehole keeps its tank full",
+   "text": "A village borehole system keeps a water tank full. Its parts: a water-level sensor in the tank; a control unit; a pump; and the pipes that carry the pumped water. Run one cycle. The sensor measures the tank's water level and sends the value to the control unit. The control unit compares the level with the set point - 'tank above three-quarters full'. The level is below, so the control unit decides to pump, and drives the pump, the actuator, which moves something physical: water. The tank fills. Now feedback: the rising water level is the system's own output, the sensor measures it, and the next comparison is made against the new level. When the level passes the set point, the control unit stops the pump. Two labels to place carefully: the pump is the actuator, and it acts - the decision to run it belongs to the control unit. And the system is a control system, not a monitoring one, because it changes its environment; the same sensor and control unit with a graph on a screen and no pump would be a monitoring system, measuring and recording without acting.",
+   "claim_ids": [
+    "CLM-9618-3.1-017",
+    "CLM-9618-3.1-018",
+    "CLM-9618-3.1-019"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-017": 1,
+    "CLM-9618-3.1-018": 1,
+    "CLM-9618-3.1-019": 1
+   },
+   "authored_hash": "9671120830c82a90c141a4221e00278bb40c69046db072d47efb18e700aa6c4c"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b7",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur in control questions. Giving the microprocessor and the actuator each other's roles: the microprocessor decides, the actuator acts - the test is to ask which part moves something physical, because that part is the actuator. And reading feedback as user opinion: feedback is the system's own output affecting its next input - the test is to ask where the feedback comes from, because it comes from the system's own output through its sensors, not from any user's views.",
+   "claim_ids": [
+    "CLM-9618-3.1-018",
+    "CLM-9618-3.1-019"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-018": 1,
+    "CLM-9618-3.1-019": 1
+   },
+   "authored_hash": "e509600dc263007e297e79618367932e90d20253735f3d548c4e3638f3fb2029"
+  },
+  {
+   "block_id": "CU-9618-3.1.2-b8",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The memory types here are the parts the CPU architecture of 4.1 is built around, and the operating system of 5.1 manages them. Embedded and control systems reappear in 7.1 Ethics and Ownership, where devices that sense and act on the world raise the questions of privacy and responsibility that follow from them.",
+   "claim_ids": [
+    "CLM-9618-3.1-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-012": 1
+   },
+   "authored_hash": "998e40d14e3e4af3e0e87488cc4eb8fe294565dea2ebb1b31a6e275c96359604"
+  }
+ ],
+ "word_count": 1218,
+ "qa_status": "review_required",
+ "notes": []
+}

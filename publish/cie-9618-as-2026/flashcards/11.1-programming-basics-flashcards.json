@@ -1,0 +1,983 @@
+{
+ "topic_number": "11.1",
+ "topic_title": "Programming Basics",
+ "topic": "11.1 Programming Basics",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 21,
+ "items": [
+  {
+   "item_id": "ITEM-9618-11.1-001-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This structured English design is given: \"Ask for a number of tickets. Set the running total to 0. Repeat the next two steps for each of the number of tickets: ask for a ticket price, then add it to the running total. Then tell the customer the total.\" Write the pseudocode from this design.",
+   "canonical_answer": "```pseudocode\nDECLARE Count : INTEGER\nDECLARE Tickets : INTEGER\nDECLARE Price : REAL\nDECLARE Total : REAL\nTotal <- 0\nINPUT Tickets\nFOR Count <- 1 TO Tickets\n   INPUT Price\n   Total <- Total + Price\nNEXT Count\nOUTPUT Total\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - initialisation, input, loop, output - each statement is a mark point, taken in the design’s own order.",
+    "Input: the translation starts from the given design, statement by statement, in the same order with the same arithmetic.",
+    "Each statement is a mark point: the declarations and the initialisation of Total - 1 mark; the INPUT and the loop - 2 marks; the adding and the output - 1 mark.",
+    "Result: the end product is a program whose decisions and paths match the design’s, because nothing was added or dropped."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1
+   },
+   "authored_hash": "30ce2c4e00eeb8ddc6cf1b0996b77dd06d3014fdc80a6e2cc78da1a5f81a071d",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-002-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This flowchart is described box by box: START; INPUT Password; diamond \"Password = \"spring2026\"?\" - Yes to OUTPUT \"Welcome\", No to OUTPUT \"Refused\"; both arrows to END. Write the pseudocode from this flowchart.",
+   "canonical_answer": "```pseudocode\nINPUT Password\nIF Password = \"spring2026\" THEN\n   OUTPUT \"Welcome\"\nELSE\n   OUTPUT \"Refused\"\nENDIF\n```",
+   "marking_guidance": [
+    "Order: the statements in the boxes’ order - input, then the decision’s two branches - each statement is a mark point.",
+    "Input: the translation starts from the given boxes, one construct per box, in the arrows’ order.",
+    "Each statement is a mark point: the INPUT - 1 mark; the IF with the diamond’s condition, tested with = - 2 marks; the two branches with ENDIF - 1 mark.",
+    "Result: the end product is a program with one decision and two paths, matching the flowchart’s, because the comparison kept the equals sign."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1
+   },
+   "authored_hash": "149d7379c4f6b355bd08450776589622c2fbcfbd6153075be8804b6e3f7b544c",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-003-APP",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "This structured English design is given: \"Ask for a word. If the word’s first letter is \"A\", say it is on the first shelf; otherwise say it is elsewhere.\" Write the pseudocode from this design, using a built-in function for the first letter.",
+   "canonical_answer": "```pseudocode\nINPUT Word\nIF LEFT(Word, 1) = \"A\" THEN\n   OUTPUT \"First shelf\"\nELSE\n   OUTPUT \"Elsewhere\"\nENDIF\n```",
+   "marking_guidance": [
+    "Context: this given design with its one condition - 1 mark for the INPUT and the IF with the function.",
+    "Reason: because the first letter comes from LEFT(Word, 1) and the comparison uses =, the two branches and ENDIF complete the translation, so the statements carry 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1
+   },
+   "authored_hash": "3a4d235ef3bae859bb3b4369c85d0a67273fbd8a171d6e1b5215e7d5e54480c0",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-004-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This design is given: \"Ask for a price. If the price is more than 100, take 10 percent off. Tell the customer the price.\" The pseudocode is written with four gaps. Complete the four missing entries.\n\n```pseudocode\nINPUT Price\nIF Price (a) 100 THEN\n   Price <- (b)\n(c)\nOUTPUT (d)\n```",
+   "canonical_answer": "(a) >. (b) Price * 0.9. (c) ENDIF. (d) Price.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) >, (b) Price * 0.9, (c) ENDIF, (d) Price.",
+    "Meaning: the completed program shows the design’s condition, change and report in order, so the result is a faithful translation, because each design step became one construct."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1
+   },
+   "authored_hash": "50e47de0ef68e84f7f41f93f9714490cf5e6ca39d7d62b53cfaee6c8bf90ab01",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-017-CHAIN",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-001",
+    "CLM-9618-11.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "CHAIN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A design is written with the decision \"if the member has paid, the fee is 0; otherwise the fee is 40\". A learner translates it as Fee = 0 inside the branch. Explain what happens to the program’s behaviour if the arrow is written as an equals sign.",
+   "canonical_answer": "The equals sign does not store, so the fee never becomes 0 - = compares two values, and Fee = 0 as a statement tests the fee rather than changing it. The branch runs, the fee stays 40, so every member pays full price whether they have paid or not, because the storing arrow was the one symbol the translation needed - a value being set takes the arrow.",
+   "marking_guidance": [
+    "Change: the arrow written as = - 1 mark - so the effect is that nothing is stored, because = compares rather than assigns.",
+    "Consequence: the fee keeps its old value through the branch, so the program’s result contradicts the design, which is what one wrong symbol costs - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1,
+    "CLM-9618-11.1-003": 1
+   },
+   "authored_hash": "7ed03866b1986b8a1f99fd66b4c16938f979ff255113777e782a1c22716a554b",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-005-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A shop’s VAT rate is fixed at 0.15 for the whole run. Write the pseudocode statements that declare the constant VatRate with its value, declare the variable SalesToday as a REAL, initialise SalesToday to 0, and store 125.50 into it.",
+   "canonical_answer": "```pseudocode\nCONSTANT VatRate = 0.15\nDECLARE SalesToday : REAL\nSalesToday <- 0\nSalesToday <- 125.50\n```",
+   "marking_guidance": [
+    "Order: the statements in sequence - the constant first, then the declaration, then the two stores - each statement is a mark point.",
+    "Input: the statements start from the given rate, type and values.",
+    "Each statement is a mark point: the CONSTANT declaration with its value - 1 mark; the DECLARE with its type - 1 mark; the initialisation with the arrow - 1 mark; the store of 125.50 with the arrow - 1 mark.",
+    "Result: the end product is a constant fixed for the run and a variable holding its first working value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1
+   },
+   "authored_hash": "7b5f5831cee4c4ba50cdf95bce49b6ec41fac916af9c32a88abf9a3101b5c0d4",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-006-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A clinic registers patients one at a time. Write the pseudocode statements that declare the variables a registration loop needs - a count of patients and a running total of their ages - with both initialised to 0.",
+   "canonical_answer": "```pseudocode\nDECLARE PatientCount : INTEGER\nDECLARE AgeTotal : INTEGER\nPatientCount <- 0\nAgeTotal <- 0\n```",
+   "marking_guidance": [
+    "Order: the statements in sequence - declarations first, then both initialisations - each statement is a mark point.",
+    "Input: the statements start from the given two accumulators.",
+    "Each statement is a mark point: the two DECLARE statements with INTEGER types - 2 marks; the two initialisations to 0 with the arrow - 2 marks.",
+    "Result: the end product is both accumulators at 0 before the loop, so neither resets itself each pass."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-004": 1
+   },
+   "authored_hash": "9be028c4f61b4e06614d94cafce28b00d1408371a8d5fc651c657e98b96c2c3b",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-007-APP",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A program runs over the array Fees of 12 REAL values, index 1 to 12. The program needs a count of the fees that are 0 and a running total of all the fees. Write the declarations and initialisations for the two variables, with suitable identifiers.",
+   "canonical_answer": "```pseudocode\nDECLARE ZeroCount : INTEGER\nDECLARE FeeTotal : REAL\nZeroCount <- 0\nFeeTotal <- 0\n```",
+   "marking_guidance": [
+    "Context: this given array and its two accumulators - 1 mark for the two identifiers named for their data.",
+    "Reason: because a count adds 1 and a total adds a value, the count is INTEGER and the total REAL, both at 0 before the loop, so the declarations and initialisations carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-004": 1
+   },
+   "authored_hash": "fec6e33421521c64114da020bfea18f9c05454eb2fe40249615c59b79cd836ea",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-008-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-003",
+    "CLM-9618-11.1-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This program counts the parcels that weigh more than 5 kilograms and totals all the parcel weights. It is written with four gaps. Complete the four missing entries.\n\n```pseudocode\nDECLARE Count : INTEGER\nDECLARE Total : REAL\n(a) <- 0\nTotal <- (b)\nFOR Count <- 1 TO NumParcels\n   IF Parcels[Count] > 5 THEN\n      HeavyCount <- (c)\n   ENDIF\n   Total <- Total + (d)\nNEXT Count\n```",
+   "canonical_answer": "(a) HeavyCount. (b) 0. (c) HeavyCount + 1. (d) Parcels[Count].",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) HeavyCount, (b) 0, (c) HeavyCount + 1, (d) Parcels[Count].",
+    "Meaning: the completed program shows the count adding 1 inside the test and the total adding the value outside it, so the result is both accumulators doing their own jobs."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-003": 1,
+    "CLM-9618-11.1-004": 1
+   },
+   "authored_hash": "1ffe4e0cbac290e1269422bb5756ea72ea1bdacd8f6f15f9264d53c3127bce77",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-015-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes Total = Total + Item to update a running total. Explain the error.",
+   "canonical_answer": "The equals sign compares two values, so the statement tests Total against Total + Item instead of storing anything - the result of the comparison is thrown away and the total never grows. The storing symbol is the assignment arrow: Total <- Total + Item, because a value being stored takes the arrow, and a value being tested takes the equals sign.",
+   "marking_guidance": [
+    "1 mark: the error named - the comparison symbol has been used for an assignment, so nothing is stored.",
+    "1 mark: the correction with the test - the assignment arrow <- stores the new total, because storing and testing are different jobs with different symbols."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-003": 1
+   },
+   "authored_hash": "c59da28049073091cccae7071bdc2b793a332e32c67d4dfd82bdc60d7c7e684f",
+   "misconception_entry": "MC-9618-11.1-03",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-016-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner updates a \"total of days\" by writing DaysTotal <- DaysTotal + 1 for each day that qualifies. Explain the error.",
+   "canonical_answer": "A total adds the item’s value, and what is added here is 1 - so the variable is a count of qualifying days, not a total of anything. If the program wants the number of qualifying days, the identifier should say Count; if it wants a total of the days’ values, what is added should be the value. The test: what is added each time - 1, or the value?",
+   "marking_guidance": [
+    "1 mark: the error named - the total has been updated with a count’s 1, so the variable counts rather than totals.",
+    "1 mark: the correction with the test - a count adds 1 per qualifying item and a total adds the item’s value, because what is added each time names the accumulator."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-004": 1
+   },
+   "authored_hash": "c89945f47988100c6ba562f0d5c7f32a2ec9883659478ff682f376068c11e733",
+   "misconception_entry": "MC-9618-11.1-04",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-009-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A program must build the message \"Fee: 49.50\" from the string \"Fee: \" and the REAL variable Fee, and output it. Write the pseudocode statements, converting what needs converting.",
+   "canonical_answer": "```pseudocode\nDECLARE Message : STRING\nMessage <- \"Fee: \" & NUM_TO_STR(Fee)\nOUTPUT Message\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - convert and join first, then output - each statement is a mark point.",
+    "Input: the statements start from the given string and the given number.",
+    "Each statement is a mark point: the conversion with NUM_TO_STR(Fee) - 2 marks; the joining with & - 1 mark; the OUTPUT - 1 mark.",
+    "Result: the end product is the message joined from two strings, because a number joins only after conversion."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-006": 1
+   },
+   "authored_hash": "f814749df0ee53efcf3576fe3444e185583de776b4661a838220f0f5af41f423",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-010-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-006",
+    "CLM-9618-11.1-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A program must output the first three characters, the last two characters and the fifth character of the string Word, one per line. Write the pseudocode statements using the built-in functions.",
+   "canonical_answer": "```pseudocode\nOUTPUT LEFT(Word, 3)\nOUTPUT RIGHT(Word, 2)\nOUTPUT MID(Word, 5, 1)\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - one function per line, in the order asked - each statement is a mark point.",
+    "Input: the statements start from the given string and the given positions.",
+    "Each statement is a mark point: LEFT with its count - 1 mark; RIGHT with its count - 1 mark; MID with start and length 1 for a single character - 2 marks.",
+    "Result: the end product is three outputs, each a function of the string, because a character comes out by MID with length 1."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-006": 1,
+    "CLM-9618-11.1-007": 1
+   },
+   "authored_hash": "de9c548fe0539feed1e8f4d77d116e2cc77735e03c3b0e81df8abd2712bbc749",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-011-APP",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A learner’s name is stored as two strings, FirstName and LastName. The program must build and output the string Surname = LastName then a space then FirstName, all joined with &. Write the pseudocode statements.",
+   "canonical_answer": "```pseudocode\nDECLARE Surname : STRING\nSurname <- LastName & \" \" & FirstName\nOUTPUT Surname\n```",
+   "marking_guidance": [
+    "Context: this given two names and the given joining symbol - 1 mark for the & joins in the right order.",
+    "Reason: because all three parts are strings - two variables and one literal space - no conversion is needed, so the join with the space literal carries 1 mark and the OUTPUT completes 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-006": 1
+   },
+   "authored_hash": "d273fa352bfedb1fc64a9d5344d65436815b5d65580152115d9845696427099a",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-012-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-006",
+    "CLM-9618-11.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The string Code holds \"T049\". This program reports its length, its first two characters and the digit after the letter, then builds a label. Complete the four missing entries.\n\n```pseudocode\nOUTPUT (a)(Code)\nOUTPUT LEFT(Code, 2)\nOUTPUT (b)(Code, 2, 1)\nOUTPUT \"Item \" & (c)((d)(Code, 3, 2))\n```",
+   "canonical_answer": "(a) LENGTH. (b) MID. (c) NUM_TO_STR. (d) MID.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) LENGTH, (b) MID, (c) NUM_TO_STR, (d) MID.",
+    "Meaning: the completed program shows each function used for its own job - counting, slicing from an end, one character, and converting before joining - so the result is a label built from strings only."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-006": 1,
+    "CLM-9618-11.1-005": 1
+   },
+   "authored_hash": "aaa16e8a6a25b5f0755c86760eb2e00181cec8de7cc564f08042ae8c4516152f",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-013-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes Message <- \"Fee: \" + NUM_TO_STR(Fee). Explain the error.",
+   "canonical_answer": "Strings are joined with &, not with + - the plus sign is not the joining symbol in pseudocode, so the statement is wrong even though the conversion was right. The correct statement is Message <- \"Fee: \" & NUM_TO_STR(Fee), because & joins strings, and the number has already been converted to one.",
+   "marking_guidance": [
+    "1 mark: the error named - + has been used as the joining symbol, which & is.",
+    "1 mark: the correction with the test - & joins the two strings, because both sides are strings after the conversion."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1
+   },
+   "authored_hash": "1d7e57f9c078d6898cc2e1ddbec8b889e66b94a557dfb7235bc68370de57471a",
+   "misconception_entry": "MC-9618-11.1-01",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-014-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes ThirdChar <- Word[3] to get the third character of the string Word. Explain the error.",
+   "canonical_answer": "A string is not an array, so Word[3] does not name a character - the bracket-and-index form belongs to arrays, which are declared as ARRAY. A character is extracted with MID: ThirdChar <- MID(Word, 3, 1), which returns one character starting from the third position, because a string’s characters are reached by the function, not by an index.",
+   "marking_guidance": [
+    "1 mark: the error named - the string has been indexed as if it were an array, which it is not.",
+    "1 mark: the correction with the test - a character comes out with MID(<string>, <start>, 1), because only arrays are declared as ARRAY and indexed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-007": 1
+   },
+   "authored_hash": "1fcfb52b94c7fb0386a45b6325b1fe59828d397f8adf160653c36dcd549f39ad",
+   "misconception_entry": "MC-9618-11.1-02",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-P01",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01",
+    "OBJ-9618-11.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-001",
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-004"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A park’s gate program is designed in structured English: \"Ask for the number of adults and the number of children. The price is 30 dollars per adult and 15 dollars per child. If the total price is 120 dollars or more, the family saves 10 percent. Tell the customer the price.\" Write a complete pseudocode program from this design, with declarations and initialisation.",
+   "canonical_answer": "```pseudocode\nCONSTANT AdultPrice = 30\nCONSTANT ChildPrice = 15\nDECLARE Adults : INTEGER\nDECLARE Children : INTEGER\nDECLARE Total : REAL\nINPUT Adults\nINPUT Children\nTotal <- Adults * AdultPrice + Children * ChildPrice\nIF Total >= 120 THEN\n   Total <- Total * 0.9\nENDIF\nOUTPUT Total\n```",
+   "marking_guidance": [
+    "Mark point 1: the heading of the program - the constants declared and initialised with CONSTANT, holding the fixed prices for the whole run - and the program’s closing end statements at the finish. Mark point 2: the variables declared with their types, and the inputs brought in before use.",
+    "Mark point 3: the total computed from the design’s arithmetic, the multiplications before the addition. Mark point 4: the selection IF ... THEN ... ENDIF with the design’s condition Total >= 120 - the program’s one decision, with no loop needed because the design has none.",
+    "Mark point 5: the discount applied inside the selection only, so totals below 120 pay full price. Mark point 6: the comparison inside the IF written with = as a test, not an assignment.",
+    "Mark point 7: the output presenting the final price after the discount decision. Mark point 8: a complete program - every identifier declared, the same decisions and paths as the design, because the translation changed the clothing and not the content."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A park gate price totalled from a structured English design.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1,
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-004": 1
+   },
+   "authored_hash": "22cee0a2f6c01bd2ab34114d88a47d1266c3f41967d1da1bb3aefe4e9b6ef1a9",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English",
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-P02",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02",
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-004",
+    "CLM-9618-11.1-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A library fines overdue books: the fine is 2 dollars per overdue day per book. Write a function Fine Due... Write pseudocode for a function FineDue that takes the array OverdueDays, of up to 30 INTEGER values indexed 1 to 30, and the count NumBooks, and returns the total fine: 2 dollars for each overdue day of each overdue book, with books that are not overdue (0 or negative days) contributing nothing.",
+   "canonical_answer": "```pseudocode\nFUNCTION FineDue(OverdueDays : ARRAY[1:30] OF INTEGER, NumBooks : INTEGER) RETURNS INTEGER\n   DECLARE Book : INTEGER\n   DECLARE FineTotal : INTEGER\n   FineTotal <- 0\n   FOR Book <- 1 TO NumBooks\n      IF OverdueDays[Book] > 0 THEN\n         FineTotal <- FineTotal + OverdueDays[Book] * 2\n      ENDIF\n   NEXT Book\n   RETURN FineTotal\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with both parameters and their types, RETURNS INTEGER, and ENDFUNCTION.",
+    "Mark point 2: the declarations of Book and FineTotal, and the initialisation of FineTotal to 0 before the loop.",
+    "Mark point 3: the count-controlled loop FOR Book <- 1 TO NumBooks, closed with NEXT Book.",
+    "Mark point 4: the selection IF ... THEN ... ENDIF with the condition OverdueDays[Book] > 0, so only overdue books contribute.",
+    "Mark point 5: the array element read by index, OverdueDays[Book]. Mark point 6: the total updated with the item’s value - the days times 2 - not with 1, so the accumulator is a total.",
+    "Mark point 7: the update inside the selection only, so non-overdue books add nothing. Mark point 8: the value RETURNed at the end - returned, not output - so the function is complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A library fine totalled book by book.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-004": 1,
+    "CLM-9618-11.1-006": 1
+   },
+   "authored_hash": "c35a1ad5d56bb64440caaa3e4dbf21fe3a6d80be29d52b0a8ca860d80eedca5e",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console",
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-P03",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-006",
+    "CLM-9618-11.1-008"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A school’s program must report each learner’s initial and full name. Write pseudocode for a procedure ReportLearner that takes the strings FirstName and LastName, and outputs one line with the first initial, a full stop, a space, then the full surname - for example \"K. Shipanga\" - and a second line with the number of characters in the surname.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ReportLearner(FirstName : STRING, LastName : STRING)\n   DECLARE Line1 : STRING\n   Line1 <- LEFT(FirstName, 1) & \". \" & LastName\n   OUTPUT Line1\n   OUTPUT LENGTH(LastName)\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: the declaration of Line1, the variable the join is built in.",
+    "Mark point 3: the initial extracted with LEFT(FirstName, 1), one character from the start. Mark point 4: the parts joined with & - the letter, the literal \". \" and the surname - in the stated order.",
+    "Mark point 5: every joined part a string, so no conversion is needed, because both parameters are strings already. Mark point 6: the first OUTPUT presenting the joined line.",
+    "Mark point 7: the second OUTPUT reporting LENGTH(LastName), the character count. Mark point 8: the procedure complete and closed - values through parameters, results through OUTPUT, with no returned value and no loop needed, because the two-line report runs once on its parameters."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A school report line built from a name.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-006": 1,
+    "CLM-9618-11.1-008": 1
+   },
+   "authored_hash": "da22b9e4a5f81a6752a14310488ff5dd1b2931f3082b9d9c8417d61f7943e297",
+   "objective_titles": [
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-P04",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-02",
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-003",
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-008"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A clinic’s program holds a fixed consultation price of 250 dollars, a running total of the day’s takings, and the day’s count of patients.\n(a) Write the pseudocode declarations and initialisations for the price, the total and the count, choosing the right form for each. [2]\n(b) The program builds the message \"Patients: \" with the count joined on. Explain why the count needs converting first, and name the conversion. [2]\n(c) A library routine CalculateVat(Total) is available to the program. Explain what a library routine is and why the program uses it rather than writing its own. [2]",
+   "canonical_answer": "(a)\n```pseudocode\nCONSTANT ConsultPrice = 250\nDECLARE DayTotal : REAL\nDECLARE PatientCount : INTEGER\nDayTotal <- 0\nPatientCount <- 0\n```\nThe price is fixed for the whole run, so it is a constant declared and initialised in one statement; the total and the count change, so they are variables declared with types and initialised to 0 before the loop.\n(b) The count is an INTEGER and & joins strings, so joining the count without conversion joins a number to a string, which & cannot do; the conversion is NUM_TO_STR(PatientCount), which returns the count as a string, so both sides of the & are strings.\n(c) A library routine is a pre-written, tested module kept in a program library, used by calling its name with the right parameters - CalculateVat(DayTotal) with the day’s total. The program uses it because the routine is already tested in many programs, so the clinic’s program inherits tested code rather than writing and debugging its own.",
+   "marking_guidance": [
+    "Part (a): the given declarations written - 2 marks, 1 per point: the constant with its value, the two variables with types and initialisation.",
+    "Part (b): the reason the conversion is needed - 2 marks, 1 per point: & joins strings and the count is a number, and NUM_TO_STR named as the conversion.",
+    "Part (c): the context of the given routine - 2 marks, 1 per point: what a library routine is, and why tested code is used rather than rewritten."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A clinic day’s price, total and count in one program.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-003": 1,
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-008": 1
+   },
+   "authored_hash": "c4b13447f12307218a0d0f3a48106cdf2ea2ae9a8d9c2fe32aa14a9c76c6a3c3",
+   "objective_titles": [
+    "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console",
+    "Use built-in functions and library routines"
+   ]
+  }
+ ]
+}

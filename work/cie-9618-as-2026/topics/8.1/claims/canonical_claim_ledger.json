@@ -1,0 +1,369 @@
+{
+ "ledger_id": "CLM-LEDGER-9618-8.1",
+ "claims": [
+  {
+   "claim_id": "CLM-9618-8.1-001",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01"
+   ],
+   "text": "A file-based approach stores each application's data in its own files, separate from every other application's, with no shared store between them.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-002",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01",
+    "OBJ-9618-8.1.1-02"
+   ],
+   "text": "Data duplication in a file-based approach wastes storage and lets copies disagree: a value changed in one file leaves the other files' copies stale, because the same data is held in several places.",
+   "claim_type": "causal",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-003",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01",
+    "OBJ-9618-8.1.1-02"
+   ],
+   "text": "Program-data dependency means a change to a file's structure forces changes to every program that uses the file, because each program reads the file by its layout.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-004",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "text": "A relational database stores data in tables that applications share, with each value held once, so duplication and disagreeing copies are removed at their source.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-005",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "text": "The DBMS sits between the applications and the data, so programs ask for data by table and attribute rather than by file layout, and a change to the storage is absorbed without changes to every program.",
+   "claim_type": "causal",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-006",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "text": "An entity is what a table stores data about; a table holds one entity's data; a record in the table (a tuple) is one row; an attribute (a field) is one column.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-007",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "text": "A primary key is the attribute or attributes whose value identifies each record uniquely; a candidate key is any attribute that could serve as the primary key; a secondary key is an attribute used to search a table that does not identify a record uniquely.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-008",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "text": "A foreign key is an attribute in one table that is the primary key of another table, and it links the two.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-009",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "text": "A one-to-many relationship links one record of the first table to many of the second; a one-to-one links one to one; a many-to-many links many to many in both directions and is implemented as two one-to-many relationships through a link table.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-010",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "text": "Referential integrity means a foreign key's value must match a primary key value in the referenced table, so a record cannot point at a record that does not exist.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-011",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "text": "An index is a structure the DBMS keeps over a table's search attribute that lets records be found without reading the whole table.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-012",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-04",
+    "OBJ-9618-8.1.2-03"
+   ],
+   "text": "An entity-relationship (E-R) diagram documents a database design: a box for each entity and a labelled line for each relationship, with the relationship's kind (one-to-one, one-to-many, many-to-many) marked on the line.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-013",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "text": "First Normal Form (1NF) means a table has no repeating groups: each field holds a single value and a primary key identifies each record.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-014",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "text": "Second Normal Form (2NF) means 1NF and no non-key attribute depends on only part of a composite primary key.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-015",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02",
+    "OBJ-9618-8.1.2-03"
+   ],
+   "text": "Third Normal Form (3NF) means 2NF and no non-key attribute depends on another non-key attribute: every non-key attribute depends on the key, the whole key and nothing but the key.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-016",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-02"
+   ],
+   "text": "Testing for 3NF runs the definitions in order - repeating groups for 1NF, part-key dependencies for 2NF, then non-key-to-non-key dependencies for 3NF - and the first failure names the form the table is stuck at.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-8.1-017",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-03"
+   ],
+   "text": "Producing a normalised design works table by table: identify the entity, give it a primary key, move each repeating group into its own table with a foreign key back, and move attributes that depend on something other than the key into the table of the thing they depend on.",
+   "claim_type": "procedural",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  }
+ ]
+}

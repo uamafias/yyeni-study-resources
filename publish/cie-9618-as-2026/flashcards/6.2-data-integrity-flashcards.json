@@ -1,0 +1,647 @@
+{
+ "topic_number": "6.2",
+ "topic_title": "Data Integrity",
+ "topic": "6.2 Data Integrity",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 14,
+ "items": [
+  {
+   "item_id": "ITEM-9618-6.2-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by data validation.",
+   "canonical_answer": "Validation is an automatic check that entered data is reasonable and follows the stated rules; it does not prove that the data is true or correct.",
+   "marking_guidance": [
+    "1 mark: the meaning - an automatic check for reasonableness and rule-following, which does not prove truth."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1
+   },
+   "authored_hash": "aaf8c473d14e45334b994ad84875d6761e073d9105a0a413bd84b576b5ad4ec6",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-001",
+    "CLM-9618-6.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why validation and verification are both needed to protect data integrity.",
+   "canonical_answer": "Integrity is data being accurate, complete and consistent, and the two checks catch different failures. Validation catches unreasonable entries, such as a birth date in the future, at the moment of entry, and verification catches inaccurate copies, such as a mistyped digit or a corrupted byte, by comparing or checking. A wrong but reasonable value typed accurately passes both, so neither proves the data is true; together they narrow what can go wrong, which is why both are needed.",
+   "marking_guidance": [
+    "Reason: the two checks catch different failures - unreasonable entries and inaccurate copies - 1 mark.",
+    "Purpose: so each failure is caught at its own moment, because neither check alone sees both kinds, and truth is what neither sees - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1,
+    "CLM-9618-6.2-002": 1
+   },
+   "authored_hash": "c174ed1fc46e81fd778d48a63b99033a9ab04249302278a17efe2ad266bf0b34",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-003-APP",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-001",
+    "CLM-9618-6.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A clinic's patient form rejects a date of birth in the future as invalid, but accepts a wrongly typed past date. Explain what validation has and has not done here.",
+   "canonical_answer": "Validation has done its job: a future date fails the range check, so an unreasonable entry was refused. Validation cannot check truth: a past date that was never the patient’s birthday follows the rules and is accepted, so the wrong-but-reasonable value passes. The check is on reasonableness, not accuracy of meaning, which is why a visual check against the source document is added to catch mistypes.",
+   "marking_guidance": [
+    "Context: this clinic's form with its given dates - 1 mark.",
+    "Reason: because validation tests rules and not truth, the rejected future date is validation’s work and the accepted wrong date is its limit, so the two outcomes name the check’s reach - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1,
+    "CLM-9618-6.2-002": 1
+   },
+   "authored_hash": "2438ebebc86ae59b5bc913de917ef9b6fb9db2a7be02b1a0e0fd22639b0ac8db",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-010-MISCON",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-001",
+    "CLM-9618-6.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that validation and verification together make sure the data is correct. Explain the error.",
+   "canonical_answer": "Neither makes sure of correctness, and together they still do not. Validation checks that data is reasonable and follows rules; verification checks that data was copied accurately; neither proves the data is true. The test: could a wrong date of birth pass both? Yes - if it is a real date, typed accurately - so a wrong value can be reasonable and accurately copied, which is what the checks cannot see.",
+   "marking_guidance": [
+    "1 mark: the error named - the two checks have been given the power to make data correct, which neither holds.",
+    "1 mark: the correction with the test - validation tests reasonableness and verification tests copying, and a real date typed wrongly-in-meaning passes both, so correctness is not proven."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1,
+    "CLM-9618-6.2-002": 1
+   },
+   "authored_hash": "f11169e6fc0babd582e23a326dacd1435bd8d375b4962c3d82bc1c18eafc5746",
+   "misconception_entry": "MC-9618-6.2-01",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-011-MISCON",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-006",
+    "CLM-9618-6.2-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner treats a check digit and a parity check as the same check. Explain the error.",
+   "canonical_answer": "They work in different places. A check digit is calculated from the other digits of a code and validated when the code is entered, so it guards data entry. A parity bit is added to a byte before transmission and counted on arrival, so it guards data transfer. The test: is the check on a typed code, or on bits sent over a link? The first is a check digit’s place, the second a parity bit’s.",
+   "marking_guidance": [
+    "1 mark: the error named - an entry check and a transmission check have been treated as one, a confusion of where each works.",
+    "1 mark: the correction with the test - the check digit validates a keyed code, while the parity bit checks bits in transit."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-006": 1,
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "bce2afe8b92dd3f43ab3f2fb13ab54ce588815f5f509c94856745200e757af70",
+   "misconception_entry": "MC-9618-6.2-02",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-012-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01",
+    "OBJ-9618-6.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-004",
+    "CLM-9618-6.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two validation checks a booking form could apply to a phone-number field.",
+   "canonical_answer": "A length check: the number must hold the set number of digits the network uses, so a short mistype fails. A format check: the field’s pattern - digits only, or the stated prefix in its place - must match, so letters or a wrong prefix fail. Each check refuses what it tests, so together they narrow the wrong entries that pass.",
+   "marking_guidance": [
+    "Features: two checks as two points, 1 mark each - a named check with what it tests on this field."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-004": 1,
+    "CLM-9618-6.2-006": 1
+   },
+   "authored_hash": "d5ceefb1e03589babf76aeda481d2eb05447ba267cc1b183fba53f592013aae2",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data",
+    "Describe and use methods of data validation"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-004-DEF",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a presence check tests.",
+   "canonical_answer": "A presence check tests that a field has not been left empty: the entry must exist before the record is accepted.",
+   "marking_guidance": [
+    "1 mark: the meaning - the field must hold an entry, and an empty field fails."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-005": 1
+   },
+   "authored_hash": "06e6339be749d501ed15e89147c30111646cded5f43ba581ced00e5c3e23aef2",
+   "objective_titles": [
+    "Describe and use methods of data validation"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-005-WHY",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a form's date field needs a format check rather than a length check alone.",
+   "canonical_answer": "A length check passes anything with the right number of characters, so 31/21/1999 passes as a date-length entry with an impossible month. A format check tests the pattern - day, month and year in their places, separators where stated - so the impossible month fails. The length check counts characters and the format check reads them, which is why the date field needs the pattern test.",
+   "marking_guidance": [
+    "Reason: a length check counts characters and misses a wrong pattern - 1 mark.",
+    "Purpose: so the format check reads the places, because day, month and year have places a count cannot see - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-004": 1
+   },
+   "authored_hash": "2d748747960f8e4e9bce9c77305773479325e79c549e3b577036468247f2f28a",
+   "objective_titles": [
+    "Describe and use methods of data validation"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-006-APP",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A school's sports-day form records a learner's age in years. Explain which validation check the age field should use, and give a sensible limit for this school.",
+   "canonical_answer": "A range check: the ages of the school’s learners sit in a known band, so the field accepts values between set limits - for instance 11 to 19 - and a value outside the band is refused, because the school has no learner of 47. The check tests reasonableness rather than truth, so a wrong age inside the band still passes, which is the check’s known limit.",
+   "marking_guidance": [
+    "Context: this school's age field with its known band of learners - 1 mark for the range check with limits.",
+    "Reason: because the ages sit in a band the school knows, values outside are unreasonable, so the range check is the named check for the field - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-003": 1
+   },
+   "authored_hash": "01e3f836b2170d2dde4b4b018259942c10ab749f346a7722f83086bbbe877588",
+   "objective_titles": [
+    "Describe and use methods of data validation"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-007-DEF",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what double entry verifies.",
+   "canonical_answer": "Double entry verifies that data was keyed correctly: the same data is entered twice and the two entries are compared, so a disagreement shows a mistype for correction.",
+   "marking_guidance": [
+    "1 mark: the meaning - two entries compared, so the keyed copy is checked for accuracy."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-007": 1
+   },
+   "authored_hash": "f03fb449d1d04aed079df96eccaa7290e9bbf50a87442a2f6bf3793835746520",
+   "objective_titles": [
+    "Describe and use methods of data verification during data entry and data transfer"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-008-WHY",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a byte parity check can detect a transmitted error but cannot correct it.",
+   "canonical_answer": "The sender adds a parity bit so the byte holds an even (or odd) count of 1s, and the receiver counts: an odd count where even was agreed means a bit changed in transit, so the error is detected. The count names no position - any single flipped bit gives the same wrong count - so the receiver cannot tell which bit to repair, which is why the byte is asked for again rather than mended.",
+   "marking_guidance": [
+    "Reason: the agreed count fails on arrival, so the change is detected - 1 mark.",
+    "Purpose: so the receiver asks for the byte again, because the wrong count points at no single bit to repair - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "3cd28a7740b2bd0ea93e559fa18648d76d4640dac279e7502649f0b3853c9d35",
+   "objective_titles": [
+    "Describe and use methods of data verification during data entry and data transfer"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-009-APP",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-03",
+    "OBJ-9618-6.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-006",
+    "CLM-9618-6.2-008",
+    "CLM-9618-6.2-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "The table shows checks with where they work and what they test. Complete the four missing entries.\n\n| Check | Where it works | What it tests |\n|---|---|---|\n| Check digit | (a) | (b) |\n| Parity bit | Data transfer | (c) |\n| Double entry | (d) | Two entries of the same data are compared |",
+   "canonical_answer": "(a) Data entry. (b) The extra digit calculated from the code’s other digits, so a mistyped code fails the arithmetic. (c) The count of 1 bits in each byte against the agreed parity, so a corrupted byte is detected on arrival. (d) Data entry.",
+   "marking_guidance": [
+    "Context: this table of checks with their given places - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry matches a check to where it works, because a check guards the moment it is designed for - entry or transfer - so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-006": 1,
+    "CLM-9618-6.2-008": 1,
+    "CLM-9618-6.2-007": 1
+   },
+   "authored_hash": "88c5fc098ce92f1f7a2d8a1b959b45e3b6b0d9e7cf6c8d0a3ba60bf2cc5c865a",
+   "objective_titles": [
+    "Describe and use methods of data verification during data entry and data transfer",
+    "Describe how data validation and data verification help protect the integrity of data"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-P01",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-01",
+    "OBJ-9618-6.2.1-02",
+    "OBJ-9618-6.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-001",
+    "CLM-9618-6.2-003",
+    "CLM-9618-6.2-004",
+    "CLM-9618-6.2-005",
+    "CLM-9618-6.2-006",
+    "CLM-9618-6.2-007",
+    "CLM-9618-6.2-008"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 8,
+   "difficulty": 3,
+   "prompt": "A savings club registers members at a desk. Each member fills a paper form; the clerk keys the details into the club's system. The form carries: a member code ending in a check digit; a date of birth; and a phone number. The clerk keys each form twice. At night the register is sent to head office, each byte with a parity bit.\n(a) Identify one validation check for each of: the member code, the date of birth, and the phone number. [3]\n(b) Explain what double entry does for the keyed forms, and what it does not do. [3]\n(c) Explain what the parity bit does for the night's transmission. [2]",
+   "canonical_answer": "(a) Member code: the check digit, calculated from the other digits, so a mistype fails the arithmetic. Date of birth: a format check on the pattern, or a range check refusing a future date. Phone number: a length check on the set number of digits.\n(b) Double entry keys each form twice and compares the two entries, so a disagreement shows a mistyped value, which is then corrected - the keyed copy is checked for accuracy. It does not check the truth of the form, and it does not catch a value mistyped the same way twice, because the comparison tests the typing, not the meaning.\n(c) The sender adds a parity bit so each byte holds the agreed count of 1s; the receiver counts on arrival, and a wrong count means a bit changed in transit, so the corrupted byte is detected and asked for again.",
+   "marking_guidance": [
+    "Part (a): identify one check per field - 3 points, one per field with its check named.",
+    "Part (b): the reason double entry helps - 3 points: the two entries compared, the mistype caught, the limit that identical double mistakes and untrue forms pass.",
+    "Part (c): the context of the given night’s sending - 2 points: the agreed count added by the sender, the wrong count on arrival detecting the corrupted byte."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A savings club keys member forms and sends its register nightly.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1,
+    "CLM-9618-6.2-003": 1,
+    "CLM-9618-6.2-004": 1,
+    "CLM-9618-6.2-005": 1,
+    "CLM-9618-6.2-006": 1,
+    "CLM-9618-6.2-007": 1,
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "987c90b6c1fb3eac3ade00ca75031f50d435371f7bbb7cdb3f41676e8b08018f",
+   "objective_titles": [
+    "Describe how data validation and data verification help protect the integrity of data",
+    "Describe and use methods of data validation",
+    "Describe and use methods of data verification during data entry and data transfer"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-6.2-P02",
+   "objective_ids": [
+    "OBJ-9618-6.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-6.2-008"
+   ],
+   "item_type": "data_response",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "The sender and receiver agree even parity. The table shows two bytes as sent and as received. Read the table and complete the four missing entries, then answer the question.\n\n| Byte | Sent | Received | Count of 1s received | Parity verdict |\n|---|---|---|---|---|\n| 1 | 1011 0100 | 1011 0100 | (a) | (b) |\n| 2 | 0110 1001 | 0110 0001 | (c) | (d) |\n\n(e) State, with a reason, whether the parity check can tell which bit of byte 2 changed. [2]",
+   "canonical_answer": "(a) 4. (b) No error detected: the count of 1s is even, so the parity holds. (c) 3. (d) Error detected: the count is odd where even was agreed, so the byte is asked for again.\n(e) It cannot: any single flipped bit gives the same wrong count, so the count names no position, and the receiver requests the byte again rather than mending it.",
+   "marking_guidance": [
+    "Read the given table: (a) to (d) - 4 marks, 1 per correct value in each row, with the verdicts following from the counts.",
+    "Answer and value: (e) it cannot tell which bit - 1 mark - because the wrong count is the same whatever single bit flipped - 1 mark.",
+    "The completed table shows even parity holding in one byte and failing in the other, because the count of 1s is what the receiver actually checks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "Two bytes sent with even parity, one arriving corrupted.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 6.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "32cba7c524c3322681ec9ce110619b85c5d6799b1f1fce355f2505a0a7524eba",
+   "objective_titles": [
+    "Describe and use methods of data verification during data entry and data transfer"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "unit_id": "CU-9618-3.1.1",
+ "title": "Components and devices",
+ "objective_ids": [
+  "OBJ-9618-3.1.1-01",
+  "OBJ-9618-3.1.1-02",
+  "OBJ-9618-3.1.1-03",
+  "OBJ-9618-3.1.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_purpose",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1180,
+  "target": 1435,
+  "max": 1690
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-3.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Why a computer system needs input, output, memory and storage; embedded systems; the principal operations of hardware devices; and buffers.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "665060be6d129ce72fa8dc31dd70459e383e057c92ba36a187cb3192604e79a1"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b2",
+   "block_type": "definition",
+   "heading": "Input, output, memory and storage",
+   "text": "A computer system needs parts that answer four different needs. Input devices feed data in: the keyboard, the microphone, the touchscreen's sensing layer. Output devices present results: the screen, the speakers, the printer. Primary memory holds the running program and the data it is working on, because the processor reads memory directly while it executes. Secondary storage keeps files between sessions: the disk, the solid state drive, the memory card, all of which hold their contents when the power is off. The distinction to hold on to is memory against storage, because the words are used loosely everywhere else. Memory is primary (RAM and ROM) and is read directly by the processor while the program runs; storage is secondary and keeps files between sessions. A learner's photos are kept in storage, not in memory; a running program lives in memory, and is lost when the power goes. The test for which is which: does the processor read it directly while running? Memory. Do the files survive switch-off? Storage.",
+   "claim_ids": [
+    "CLM-9618-3.1-001",
+    "CLM-9618-3.1-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-001": 1,
+    "CLM-9618-3.1-002": 1
+   },
+   "authored_hash": "7511a383f9d684d878a1d75f394f8faa1400d5cf69e584b8471ecba33ba18128"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b3",
+   "block_type": "definition",
+   "heading": "Embedded systems",
+   "text": "An embedded system is a computer system built into a larger device to perform a dedicated task, with its program fixed for that task: the controller in a washing machine, the timer in a microwave oven, the engine unit in a car. What makes it embedded is being part of the device and dedicated to it, not what it does - some embedded systems control things, others play music or keep time. The benefits follow from the dedication: the program is written for one job, so it runs the same way every time; the parts are few, so it is typically cheap, small, reliable and light on power. The drawbacks follow too: the fixed program is hard to change, and the system usually does its one job only - a washing machine's controller will not balance a spreadsheet, and was never meant to. A general-purpose computer is the opposite trade: expensive flexibility, one machine doing any job its software brings. Between the two sits the phone in a pocket: mostly general-purpose, but the baseband unit that talks to the cell network is an embedded system dedicated to that one job, which is why it keeps working whatever else the phone is busy with.",
+   "claim_ids": [
+    "CLM-9618-3.1-003",
+    "CLM-9618-3.1-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-003": 1,
+    "CLM-9618-3.1-004": 1
+   },
+   "authored_hash": "6a4355b3b3008d6fe70d0e3b949cc51345c284fd0f031f59fbcfa33dbdab00aa"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b4",
+   "block_type": "definition",
+   "heading": "The principal operations of devices",
+   "text": "Hardware devices each do one principal thing, and naming the operation is the skill this objective asks for. Storage devices first. A magnetic hard disk records data as magnetised regions on spinning platters, and a read head detects the magnetisation as the platter passes - no laser, no pits, that is the optical disc's world. An optical disc reader works with a laser: it reads the pattern of pits and flat lands on the disc's surface, and a writer burns that pattern onto a writable disc. Solid state (flash) memory stores data as charge in electronic cells, with no moving parts, so it is silent, quick and indifferent to knocks. Output devices: a laser printer forms the page image with a laser, transfers toner to the paper and fuses it; a 3D printer builds a solid object layer by layer from a design; speakers convert electrical signals into sound. Input devices: a microphone converts sound into electrical signals - the speakers' exact opposite. And two devices that do both: a touchscreen combines display and input by sensing where it is touched, and a virtual reality headset presents an image to each eye while its sensors track the head's movement. Naming a device's operation is a two-step habit: ask what goes in or comes out, then ask what change the device makes - a pattern to apply to any device the table throws up, from a barcode reader to a projector, because every device has one principal operation and the marks go to the one that is named.",
+   "claim_ids": [
+    "CLM-9618-3.1-005",
+    "CLM-9618-3.1-006",
+    "CLM-9618-3.1-007",
+    "CLM-9618-3.1-008",
+    "CLM-9618-3.1-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-005": 1,
+    "CLM-9618-3.1-006": 1,
+    "CLM-9618-3.1-007": 1,
+    "CLM-9618-3.1-008": 1,
+    "CLM-9618-3.1-009": 1
+   },
+   "authored_hash": "6dba8e4819732fc2addddfdb98e1ccb16dc955c5a93c168cd42474cb54f6d97c"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b5",
+   "block_type": "definition",
+   "heading": "Buffers",
+   "text": "Devices work at different speeds, and something has to stand between them. A buffer is an area of memory that holds data temporarily while it is moved between devices or processes working at different speeds. The word to be careful with is what the buffer does: nothing. It is an area of memory, and the processor is what moves data into it and out of it - a buffer cannot act. What the buffer buys is independence of speeds. The producer fills it and carries on with other work; the consumer drains it at its own pace. Printing is the everyday case: the processor prepares a whole document far faster than any printer prints it, so the document's data is placed in a buffer and the processor is free at once, while the printer takes the pages from the buffer at its own speed. Streaming is the same arrangement with different parts: arriving bits are held in a buffer and fed to the player at the player's pace, so the network's bursts and pauses do not stop the picture.",
+   "claim_ids": [
+    "CLM-9618-3.1-010",
+    "CLM-9618-3.1-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-010": 1,
+    "CLM-9618-3.1-011": 1
+   },
+   "authored_hash": "98710e207377b0d850343c5aae6659d986324c1307b797b2e908b5793821fa26"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b6",
+   "block_type": "worked_application",
+   "heading": "Worked example: a document goes to print",
+   "text": "A teacher presses Print on a 60-page workbook, then starts marking emails on the same computer. What the buffer arrangement does, step by step. The processor writes the workbook's pages into the print buffer - an area of memory - and returns to the teacher at once; the emails open while the printer has not printed page one. The printer drains the buffer page by page at its own speed, and the processor tops the buffer up between keystrokes whenever the printer falls behind. Both speeds are respected: the processor is not throttled to the printer's pace, and the printer is not starved by the processor's distractions. If the buffer is small, the printer pauses when it empties and waits for a top-up; the larger the buffer, the more the two work independently. Nothing is sent by the buffer itself - every movement of data is the processor's work into and out of that area of memory.",
+   "claim_ids": [
+    "CLM-9618-3.1-010",
+    "CLM-9618-3.1-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-010": 1,
+    "CLM-9618-3.1-011": 1
+   },
+   "authored_hash": "e0789700bdb48636dab6c640ec9325758cc591be5318a0d3a1f89da8a16ad46b"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b7",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Four slips recur here. Using memory and storage as one word: memory is primary and read directly by the running processor; storage is secondary and keeps files when power is off - the test is whether the processor reads it while running, or the files survive switch-off. Calling a device embedded because it controls something: embedded means built into a larger device for a dedicated task, and control is only one such task. Writing lasers and pits for a magnetic hard disk: a magnetic disk uses magnetised regions and a head; laser and pits belong to the optical disc - the test is whether the data is magnetic or optical. And giving the buffer the credit for sending: a buffer is an area of memory that holds data; the processor moves the data, because a buffer cannot act.",
+   "claim_ids": [
+    "CLM-9618-3.1-002",
+    "CLM-9618-3.1-003",
+    "CLM-9618-3.1-005",
+    "CLM-9618-3.1-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-002": 1,
+    "CLM-9618-3.1-003": 1,
+    "CLM-9618-3.1-005": 1,
+    "CLM-9618-3.1-010": 1
+   },
+   "authored_hash": "0d6082e284b56ab5cc19adc90712d64be49600184ab8668f1693809147ac70ca"
+  },
+  {
+   "block_id": "CU-9618-3.1.1-b8",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The memory this unit introduces is what the processor of 4.1 fetches from and writes to, cycle by cycle, and what the operating system of 5.1 allocates and manages. The stored files travel the networks of 2.1, and their safety in storage and transit is 6.1 Data Security's subject.",
+   "claim_ids": [
+    "CLM-9618-3.1-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.1-001": 1
+   },
+   "authored_hash": "037c7ed6c2baa8b9ae4336138f009c6702b4d678168c1aaf81f1571450f50031"
+  }
+ ],
+ "word_count": 1200,
+ "qa_status": "review_required",
+ "notes": []
+}

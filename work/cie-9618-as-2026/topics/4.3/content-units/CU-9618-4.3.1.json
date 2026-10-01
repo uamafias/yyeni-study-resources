@@ -1,0 +1,145 @@
+{
+ "unit_id": "CU-9618-4.3.1",
+ "title": "Binary shifts and bit manipulation",
+ "objective_ids": [
+  "OBJ-9618-4.3.1-01",
+  "OBJ-9618-4.3.1-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_calculation",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 630,
+  "target": 765,
+  "max": 900
+ },
+ "blocks": [
+  {
+   "block_id": "4.3.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Logical, arithmetic and cyclic binary shifts, left and right, and how bit manipulation with masks is used to monitor and control devices.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "cf59f322d0ecbe270387317dff54159168a8f231383f11908d1437fd80b0630e"
+  },
+  {
+   "block_id": "4.3.1-b2",
+   "block_type": "definition",
+   "heading": "Binary shifts: logical, arithmetic and cyclic",
+   "text": "A shift moves a register's bits sideways, and what happens at the ends decides which kind it is. A logical shift moves every bit the stated number of places: the bits that fall off the end are lost, and zeros enter at the other end. Left and right do arithmetic: a logical left shift by one place doubles an unsigned value, and a logical right shift by one place halves it, discarding the remainder - which is why shifts are the cheap way to scale by powers of two. A cyclic shift bends the register into a ring: the bits that fall off one end re-enter at the other, so no bits are lost and nothing new enters. An arithmetic shift is a logical shift that keeps the sign bit: on a right shift, the sign bit is copied into the vacated positions, so a negative value stays negative and halving a negative gives a negative. Three names to keep straight, and the ends are what tell them apart: bits lost with zeros entering (logical), bits travelling round (cyclic), the sign copied in (arithmetic, right).",
+   "claim_ids": [
+    "CLM-9618-4.3-001",
+    "CLM-9618-4.3-002",
+    "CLM-9618-4.3-003",
+    "CLM-9618-4.3-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.3-001": 1,
+    "CLM-9618-4.3-002": 1,
+    "CLM-9618-4.3-003": 1,
+    "CLM-9618-4.3-004": 1
+   },
+   "authored_hash": "24152f103238c9649cb17caef8bb9ad3acb89608e353eb39e930baf694f04240"
+  },
+  {
+   "block_id": "4.3.1-b3",
+   "block_type": "worked_application",
+   "heading": "Worked example: one byte, four shifts",
+   "text": "Take the register 1011 0110, unsigned value 182, through the shifts. Logical left by one: every bit moves left, the leading 1 falls off and is lost, and a 0 enters at the right: 0110 1100, value 108 - the doubling went past the register's width (182 doubled would be 364), so the lost leading 1 is the overflow and the register keeps the low eight bits of the doubled value. Logical right by one: every bit moves right, the trailing 0 falls off, a 0 enters at the left: 0101 1011, value 91, which is 182 halved. Arithmetic right by one, read as two's complement: the value is -128 + 64 + 16 + 4 + 2 = -42, and the shift copies the sign bit 1 into the vacated left place: 1110 1011, which is -128 + 64 + 32 + 8 + 2 + 1 = -21, so the negative value has halved and stayed negative. Cyclic left by one: the leading 1 falls off the left end and re-enters at the right: 0110 1101 - the same eight bits, rearranged, nothing lost.",
+   "claim_ids": [
+    "CLM-9618-4.3-001",
+    "CLM-9618-4.3-002",
+    "CLM-9618-4.3-003",
+    "CLM-9618-4.3-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.3-001": 1,
+    "CLM-9618-4.3-002": 1,
+    "CLM-9618-4.3-003": 1,
+    "CLM-9618-4.3-004": 1
+   },
+   "authored_hash": "f09b2afec5aa735ac2c172d7822fb095a52412438cf3231acd6d75a60f911640"
+  },
+  {
+   "block_id": "4.3.1-b4",
+   "block_type": "definition",
+   "heading": "Masks for monitoring and control",
+   "text": "A device's port packs several lines into one byte, and bit manipulation is how a program reads and drives one line at a time. A bit mask is a pattern of bits with 1s in the positions of interest and 0s elsewhere. To test a line, AND the port byte with a mask holding a single 1: AND gives 1 only where both operands have 1, so the chosen bit passes through and every other bit becomes 0 - a result of zero says the line was 0, a nonzero result says it was 1. To set a line, OR the command byte with a mask holding a 1 in that line's position: OR forces the masked bit to 1 whatever it held and leaves every other bit unchanged, so the device's line switches on with the rest of the port untouched. Masks are written as values: the mask 0000 1000 that tests bit 3 is denary 8, and a mask of eight 1s, 1111 1111, is denary 255 - a mask written from its binary pattern must be converted before it goes into an immediate operand.",
+   "claim_ids": [
+    "CLM-9618-4.3-005",
+    "CLM-9618-4.3-006",
+    "CLM-9618-4.3-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.3-005": 1,
+    "CLM-9618-4.3-006": 1,
+    "CLM-9618-4.3-007": 1
+   },
+   "authored_hash": "f0a6b54bce2381bdf34cec318662c900fa16b57758383b28f3dcba070c8becbd"
+  },
+  {
+   "block_id": "4.3.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur. Giving a cyclic shift for a logical one: a logical shift discards the bits that fall off and fills with zeros, and the test is that bits reappear at the other end only in a cyclic shift. Forgetting the sign on an arithmetic right shift: the sign bit is copied into the vacated positions, and the test is that an arithmetic result for a negative value must stay negative. And writing a mask of eight 1s as #1: eight 1s make denary 255, so the immediate operand is #255 - the test is to convert the mask before writing it with #.",
+   "claim_ids": [
+    "CLM-9618-4.3-001",
+    "CLM-9618-4.3-003",
+    "CLM-9618-4.3-004",
+    "CLM-9618-4.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.3-001": 1,
+    "CLM-9618-4.3-003": 1,
+    "CLM-9618-4.3-004": 1,
+    "CLM-9618-4.3-005": 1
+   },
+   "authored_hash": "58c77949f779e6287c77ab3983e4deb6b85507bad4d8c0ae2a91fb8fe77e360c"
+  },
+  {
+   "block_id": "4.3.1-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The register shifted here is a register of 4.1, the mask's AND and OR are the gates of 3.2 at work on bytes, and the monitoring-and-control uses of these operations feed the systems of 3.1's second unit.",
+   "claim_ids": [
+    "CLM-9618-4.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.3-005": 1
+   },
+   "authored_hash": "81f68af4cb39a3fb742c568a1ec8476e58037c6e38c5c18099afd52906072eca"
+  }
+ ],
+ "word_count": 748,
+ "qa_status": "review_required",
+ "notes": []
+}

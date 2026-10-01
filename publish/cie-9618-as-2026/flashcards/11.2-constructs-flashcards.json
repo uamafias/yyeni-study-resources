@@ -1,0 +1,662 @@
+{
+ "topic_number": "11.2",
+ "topic_title": "Constructs",
+ "topic": "11.2 Constructs",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 14,
+ "items": [
+  {
+   "item_id": "ITEM-9618-11.2-001-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A vet charges 400 dollars for a dog, 300 for a cat, and 250 for any other animal. Write the pseudocode that inputs the animal type into the variable PetType and outputs the fee, using an IF statement with nested IF statements.",
+   "canonical_answer": "```pseudocode\nINPUT PetType\nIF PetType = \"dog\" THEN\n   OUTPUT 400\nELSE\n   IF PetType = \"cat\" THEN\n      OUTPUT 300\n   ELSE\n      OUTPUT 250\n   ENDIF\nENDIF\n```",
+   "marking_guidance": [
+    "Order: the statements in sequence - the outer IF first, then the nested IF inside a branch - each statement is a mark point.",
+    "Input: the translation starts from the given animal types and fees.",
+    "Each statement is a mark point: the outer IF with its condition - 1 mark; the nested IF inside the ELSE branch with its condition - 2 marks; both ENDIFs closing in the right order, inner then outer - 1 mark.",
+    "Result: the end product is three paths from one input, because the nesting tested the second condition only after the first."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-001": 1
+   },
+   "authored_hash": "4c0c4f840ae4404ae43690ddda5f18fac062e40d96ee74450755ec739fe16e66",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-002-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-001",
+    "CLM-9618-11.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A clinic admits a patient immediately if the case is urgent OR the patient is a child under six; otherwise the patient joins the waiting list. The case is in the variable Urgent as BOOLEAN and the age in the variable Age as INTEGER. Write the pseudocode that outputs \"Now\" or \"Waiting\", using an IF statement whose condition is joined with OR.",
+   "canonical_answer": "```pseudocode\nIF Urgent = TRUE OR Age < 6 THEN\n   OUTPUT \"Now\"\nELSE\n   OUTPUT \"Waiting\"\nENDIF\n```",
+   "marking_guidance": [
+    "Order: the statements in sequence - the IF with its joined condition, then the two branches - each statement is a mark point.",
+    "Input: the translation starts from the given two conditions and the given outcomes.",
+    "Each statement is a mark point: the OR with both sides written as complete comparisons - 2 marks; the THEN branch and ELSE branch with their outputs - 1 mark; ENDIF closing - 1 mark.",
+    "Result: the end product is two paths from one joined condition, because each side of the OR stood alone as a comparison."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-001": 1,
+    "CLM-9618-11.2-002": 1
+   },
+   "authored_hash": "6cc62124c8288d460563a1832fd6d585b26e0d15f2787840c947a3b3d7cb3c4b",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-003-APP",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-001",
+    "CLM-9618-11.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A lodge’s winter rate applies when the month is \"June\" OR the month is \"July\". The month is in the string variable Month. Write the pseudocode IF statement that outputs \"Winter rate\" or \"Standard rate\", with each side of the OR written as a complete comparison.",
+   "canonical_answer": "```pseudocode\nIF Month = \"June\" OR Month = \"July\" THEN\n   OUTPUT \"Winter rate\"\nELSE\n   OUTPUT \"Standard rate\"\nENDIF\n```",
+   "marking_guidance": [
+    "Context: this given lodge rule and its two winter months - 1 mark for the IF with both comparisons in full.",
+    "Reason: because each side of the OR must stand alone as a condition, Month is compared twice rather than listed once, so the two branches with ENDIF complete 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-001": 1,
+    "CLM-9618-11.2-002": 1
+   },
+   "authored_hash": "041e5df5622738025d05a4b71533c586f753dea9ecdd843e04e6f3119b0e3e54",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-004-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-001",
+    "CLM-9618-11.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This program grades a dive: 8 or more is \"Gold\", 6 or more (but under 8) is \"Silver\", otherwise \"Bronze\". It is written with four gaps. Complete the four missing entries.\n\n```pseudocode\nINPUT Score\nIF (a) >= 8 THEN\n   OUTPUT \"Gold\"\nELSE\n   IF Score (b) 6 THEN\n      OUTPUT (c)\n   ELSE\n      OUTPUT \"Bronze\"\n   (d)\nENDIF\n```",
+   "canonical_answer": "(a) Score. (b) >=. (c) \"Silver\". (d) ENDIF.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) Score, (b) >=, (c) \"Silver\", (d) ENDIF.",
+    "Meaning: the completed program shows the nested IF testing the second condition only on the outer ELSE side, so the result is three grades from one input, because the nesting puts each range on its own path."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-001": 1,
+    "CLM-9618-11.2-002": 1
+   },
+   "authored_hash": "8846dbaad6d20b4f6d911c5688a616a4684f24f1ed1edfeab5c49b2154af0c82",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-009-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes IF Drink = \"tea\" OR \"coffee\" THEN. Explain the error.",
+   "canonical_answer": "The OR joins two conditions, and the second side here is not one: \"coffee\" standing alone is a string, not a comparison, so the condition does not test anything for coffee. Each side of AND or OR is a complete comparison, so the statement is IF Drink = \"tea\" OR Drink = \"coffee\" THEN, with the comparison written in full on both sides. The test: read each side of the OR alone - \"coffee\" is not a condition.",
+   "marking_guidance": [
+    "1 mark: the error named - the second side of the OR is a bare string rather than a comparison, so the condition is not a condition.",
+    "1 mark: the correction with the test - both sides are written as complete comparisons, because each side must stand alone as a condition."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-002": 1
+   },
+   "authored_hash": "6db9bd1e3ffc3b371fd5dc52eb82092a12aba3fa3bac58dc20cc9be23ba248ed",
+   "misconception_entry": "MC-9618-11.2-01",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-005-BEN",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "BEN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain one benefit of using a FOR loop for a program that must process the 30 names in a class register.",
+   "canonical_answer": "The count is known before the loop starts - thirty - so the FOR loop states its own bounds and runs exactly thirty times, no more and no fewer. The bounds carry the count in the loop’s own line, so the loop cannot run one time too many or too few, because the count is not held in a variable the body could spoil - which is the benefit of the loop whose limit is built in.",
+   "marking_guidance": [
+    "Benefit: the loop runs exactly the known count, stating its own bounds - 1 mark.",
+    "Because the bounds are in the loop’s own line, the register is processed once per name with nothing to drift, so the built-in limit is what earns the choice - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-003": 1
+   },
+   "authored_hash": "e7e88c937a38ccce7f5a52f17bdaa84a9ed6b317ef90e875f6c4e3f6365ce23c",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-006-LIM",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-003",
+    "CLM-9618-11.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "LIM",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain one drawback of using a FOR loop for a program that must read rainfall readings until a negative reading arrives.",
+   "canonical_answer": "The number of readings cannot be said before the loop starts - the negative one may be the first or the hundredth - so a FOR loop has no honest count to state, and a guessed count either stops early or runs past the negative reading. The repetition ends on a condition, which is the conditional loop’s job, so the FOR is the wrong tool by its own definition, because its bounds must be known in advance.",
+   "marking_guidance": [
+    "Drawback: the count cannot be stated in advance, so the FOR has no honest bounds - 1 mark.",
+    "Because a guessed count stops early or runs past the end, the repetition belongs to a conditional loop, so the FOR’s fixed bounds are the wrong shape - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-003": 1,
+    "CLM-9618-11.2-006": 1
+   },
+   "authored_hash": "cdbd9b8c1c02f557da9fbf4be677f130ae865a8747a6ae1377072821692cfb89",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-007-EVAL",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-003",
+    "CLM-9618-11.2-004",
+    "CLM-9618-11.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "EVAL",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Evaluate",
+   "command_word": "Explain",
+   "mark_tariff": 3,
+   "difficulty": 4,
+   "prompt": "A program must (i) total the 7 days’ takings of a market stall, (ii) read queue arrivals until the queue empties - it may be empty already at the day’s start, and (iii) show a menu and act on the user’s choice until the choice is the quit code. Explain which loop suits each job, and why.",
+   "canonical_answer": "(i) The count is known - seven - so a FOR loop suits it, because the count is fixed in the loop’s own line. (ii) No count can be said in advance, and the body may need to run zero times on an empty queue, so a WHILE loop suits it, tested before the body, because zero iterations must be possible. (iii) The menu must be shown before any choice exists, so the body runs at least once - a REPEAT ... UNTIL loop suits it, because its after-test matches the must-run-first shape. Each choice follows the same two questions: can the count be said in advance, and must the body run at least once.",
+   "marking_guidance": [
+    "Suitable choices named for all three jobs - 1 mark for the FOR on (i), because the count of days is known.",
+    "Reason for (ii): the WHILE, because the body may run zero times on an already-empty queue - 1 mark.",
+    "Context for (iii): the REPEAT, because the menu must be shown before the choice can be tested, so the body runs at least once - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-003": 1,
+    "CLM-9618-11.2-004": 1,
+    "CLM-9618-11.2-005": 1
+   },
+   "authored_hash": "bf636db8c4e7501147aa42696f94401f2993e87d2a2d6a555cd18d7d3bc79cce",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-008-APP",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-004",
+    "CLM-9618-11.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes a menu program as a WHILE loop: WHILE Choice <> 0 ... show the menu ... read the choice ... ENDWHILE. The program starts with Choice holding 0 from the previous day. Explain the fault and the better loop here.",
+   "canonical_answer": "The WHILE tests before the body, so with Choice already 0 the menu is not shown even once - the program ends with the user holding no menu to answer. The better loop is REPEAT ... UNTIL Choice = 0, which runs the body first and tests after, so the menu is shown before the test, because a menu program must run at least once. The fault is the mismatch of shape, not the condition, which is what the two conditional loops differ in.",
+   "marking_guidance": [
+    "Context: this given menu program and its carried-over Choice - 1 mark for the fault: the WHILE never shows the menu.",
+    "Reason: because the body must run at least once, the after-testing REPEAT matches the shape, so the loop is chosen by the must-run-first question - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-004": 1,
+    "CLM-9618-11.2-005": 1
+   },
+   "authored_hash": "ce48ac89836a2467e97095e66d817bcee65f964feb2d32eddd28e3e4547016b1",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-010-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner totals an unknown number of donations with FOR Gift <- 1 TO 1000, saying the count of donations never reaches 1000. Explain the error.",
+   "canonical_answer": "The loop’s count is not the number of donations - it is a guessed upper limit, so the loop runs a thousand times whether the donations number five or a thousand, adding from empty slots or reading past the last gift. The number of donations cannot be said before the loop starts, so no FOR belongs there: the repetition ends on a condition, and the loop is a WHILE or REPEAT ending on the end-of-donations condition. The test: can the number of iterations be said before the loop starts? If not, use a conditional loop.",
+   "marking_guidance": [
+    "1 mark: the error named - a guessed upper limit has been used as the count, so the FOR runs a fixed thousand regardless of the donations.",
+    "1 mark: the correction with the test - the count cannot be said in advance, so the loop ends on a condition, because a FOR is only for a count known before it starts."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-003": 1
+   },
+   "authored_hash": "a1324cf1fde48e263077a1cdbb8904f710936712bbdcc544d9f4037ea69df09b",
+   "misconception_entry": "MC-9618-11.2-02",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-P01",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-001",
+    "CLM-9618-11.2-002"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A safari lodge grades its game drives: a drive with 5 or more sightings is \"Excellent\", 3 or more (but under 5) is \"Good\", and anything less is \"Quiet\" - and only morning drives are graded at all, evening drives being reported as \"Evening\". Write a complete program that inputs the string Shift (\"morning\" or \"evening\") and the integer Sightings, and outputs the grade, using an IF statement with nested IF statements.",
+   "canonical_answer": "```pseudocode\nDECLARE Shift : STRING\nDECLARE Sightings : INTEGER\nINPUT Shift\nINPUT Sightings\nIF Shift = \"evening\" THEN\n   OUTPUT \"Evening\"\nELSE\n   IF Sightings >= 5 THEN\n      OUTPUT \"Excellent\"\n   ELSE\n      IF Sightings >= 3 THEN\n         OUTPUT \"Good\"\n      ELSE\n         OUTPUT \"Quiet\"\n      ENDIF\n   ENDIF\nENDIF\n```",
+   "marking_guidance": [
+    "Mark point 1: the program’s heading - the declarations with their types - and both inputs brought in before use. Mark point 2: the outer IF with its complete comparison Shift = \"evening\", and its ELSE for the morning side.",
+    "Mark point 3: the first nested IF inside the ELSE, testing Sightings >= 5, with its own ENDIF. Mark point 4: the second nested IF inside that ELSE, testing Sightings >= 3.",
+    "Mark point 5: every condition written in full, with complete comparisons on each side - no bare strings beside an OR or AND. Mark point 6: the three innermost paths - \"Excellent\", \"Good\", \"Quiet\" - each on its own branch.",
+    "Mark point 7: all four ENDIFs present, closed inner first then outwards. Mark point 8: the program complete and closed - four paths from two inputs, with no loop needed because the design has none and no returned value because the program outputs, and every declaration made - because the nesting tested each condition only where it applies."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A safari drive graded by shift and sightings.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-001": 1,
+    "CLM-9618-11.2-002": 1
+   },
+   "authored_hash": "313f1bbaf8571d87008e82936fc86318b413c906ed1f302c148a5a0fd6b44d51",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-P02",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-003",
+    "CLM-9618-11.2-004",
+    "CLM-9618-11.2-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A clinic’s dispensary records the day’s patients in the array Patients of up to 20 names, index 1 to 20, with the used count held in the integer NumPatients. Write a function QueueLength that takes Patients and NumPatients and returns how many of the day’s patients still remain unserved, by reading the serving record: the function inputs nothing, uses the integer Served reporting how many have already been served (a value the caller supplies as a parameter), and returns NumPatients minus Served if that is positive, or 0 if every patient has been served.",
+   "canonical_answer": "```pseudocode\nFUNCTION QueueLength(Patients : ARRAY[1:20] OF STRING, NumPatients : INTEGER, Served : INTEGER) RETURNS INTEGER\n   DECLARE Remaining : INTEGER\n   Remaining <- NumPatients - Served\n   IF Remaining > 0 THEN\n      RETURN Remaining\n   ELSE\n      RETURN 0\n   ENDIF\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with all three parameters and their types, RETURNS INTEGER, and ENDFUNCTION.",
+    "Mark point 2: the declaration of Remaining, and the initialisation of Remaining to the computed difference before any decision.",
+    "Mark point 3: the selection IF ... THEN ... ELSE ... ENDIF, with no loop needed because the answer is one subtraction - the count is known before any repetition.",
+    "Mark point 4: the condition Remaining > 0, testing with the equals-family comparison rather than assigning. Mark point 5: the positive value RETURNed in the THEN branch.",
+    "Mark point 6: 0 RETURNed in the ELSE branch, so a fully served day returns 0 rather than a negative count. Mark point 7: both RETURNs inside the function, returned and not output.",
+    "Mark point 8: the function complete and closed - values through parameters, the answer through RETURN, and the array parameter declared with its bounds."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A dispensary queue length worked out from two counts.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-003": 1,
+    "CLM-9618-11.2-004": 1,
+    "CLM-9618-11.2-006": 1
+   },
+   "authored_hash": "5b6234d2dd8d6fcef9317487901ba500fcd7f3fa16c6f3a5466e66c35621fcb8",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-P03",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-004",
+    "CLM-9618-11.2-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A door-panel program must let a user try a code until it is right: the program must show the prompt \"Enter code:\" and read the attempt, and repeat that until the attempt equals \"open2026\". The panel must show the prompt at least once. Write a complete program that outputs \"Unlocked\" after the correct code is entered.",
+   "canonical_answer": "```pseudocode\nDECLARE Attempt : STRING\nREPEAT\n   OUTPUT \"Enter code:\"\n   INPUT Attempt\nUNTIL Attempt = \"open2026\"\nOUTPUT \"Unlocked\"\n```",
+   "marking_guidance": [
+    "Mark point 1: the heading of the program - the declaration of Attempt with its type, before the loop that reads into it - and the program’s closing output at the end. Mark point 2: the REPEAT loop opened, with its body showing the prompt and reading the attempt.",
+    "Mark point 3: the loop closed with UNTIL and the condition Attempt = \"open2026\", tested with the equals sign as a comparison.",
+    "Mark point 4: the after-testing form chosen - REPEAT rather than WHILE - because the body must run at least once, so the panel always shows its prompt. Mark point 5: the prompt OUTPUT inside the body, before the INPUT that answers it.",
+    "Mark point 6: the INPUT inside the body, so each pass reads a fresh attempt. Mark point 7: the body moving the condition towards its end - each read is a new attempt, so the correct code eventually ends the loop.",
+    "Mark point 8: the program complete and closed - \"Unlocked\" output after the loop, because the UNTIL condition is what ends the repetition."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A door panel tried until the code is right.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-004": 1,
+    "CLM-9618-11.2-006": 1
+   },
+   "authored_hash": "4097812809bf43d88fdc7ba43fa69c740d951c230e6a623149e919b00b201f86",
+   "objective_titles": [
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.2-P04",
+   "objective_ids": [
+    "OBJ-9618-11.2.1-01",
+    "OBJ-9618-11.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.2-002",
+    "CLM-9618-11.2-003",
+    "CLM-9618-11.2-004",
+    "CLM-9618-11.2-005"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A water utility’s meter program needs a grade rule and three loops.\n(a) The rule: a household is \"High\" if usage is over 400 OR the household has more than 8 members; otherwise \"Normal\". Write the IF line that grades a household, with Usage and Members as the variables. [2]\n(b) The program must check the 30 meters’ readings. State which loop suits this and the one reason that decides it. [2]\n(c) The program must read reports until one arrives marked \"END\" - and a report marked \"END\" may already be waiting when the program starts, so the read may happen zero times. Explain which loop suits this and why the other conditional loop does not. [2]",
+   "canonical_answer": "(a)\n```pseudocode\nIF Usage > 400 OR Members > 8 THEN\n   OUTPUT \"High\"\nELSE\n   OUTPUT \"Normal\"\nENDIF\n```\nwith both sides of the OR written as complete comparisons, because each side must stand alone as a condition.\n(b) A FOR loop: the count - thirty - can be said before the loop starts, which is the one reason that decides it, because a FOR is the loop whose count is fixed in its own line.\n(c) A WHILE loop, tested before the body: the read may need to happen zero times, and a WHILE’s before-test allows zero iterations. A REPEAT loop would read once before its first test, so it would consume the waiting \"END\" report as if it were a reading - the must-run-once shape is exactly what this job must avoid.",
+   "marking_guidance": [
+    "Part (a): the condition written - 2 marks, 1 per point: both sides of the OR as complete comparisons, the two branches closed with ENDIF.",
+    "Part (b): the state of the loop - 2 marks, 1 per point: the FOR named, the known count as the reason.",
+    "Part (c): the context of the given waiting report - 2 marks, 1 per point: the WHILE for zero possible iterations, the REPEAT rejected because its body runs first."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A water utility’s grade rule and three loops judged.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.2-002": 1,
+    "CLM-9618-11.2-003": 1,
+    "CLM-9618-11.2-004": 1,
+    "CLM-9618-11.2-005": 1
+   },
+   "authored_hash": "1c38c3fe0311720ed1d3994cc38321e1d890d9c288d191140876d59462371e42",
+   "objective_titles": [
+    "Use pseudocode to write: • an ‘IF’ statement including the ‘ELSE’ clause and nested IF statements • a ‘CASE’ structure • a ‘count-controlled’ loop: • a ‘post-condition’ loop • a ‘pre-condition’ loop",
+    "Justify why one loop structure may be better suited to solve a problem than the others"
+   ]
+  }
+ ]
+}

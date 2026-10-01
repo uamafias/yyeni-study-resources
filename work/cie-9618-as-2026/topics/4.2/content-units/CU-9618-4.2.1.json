@@ -1,0 +1,156 @@
+{
+ "unit_id": "CU-9618-4.2.1",
+ "title": "Assembly language, the assembler and tracing",
+ "objective_ids": [
+  "OBJ-9618-4.2.1-01",
+  "OBJ-9618-4.2.1-02",
+  "OBJ-9618-4.2.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 876,
+  "target": 1065,
+  "max": 1254
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-4.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "How assembly language relates to machine code; the two passes of an assembler; and tracing a simple assembly language program.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "ca09380d5aabb9a5594325b3c3992946c0421a984ba3d49732e7f07d3dd4f5da"
+  },
+  {
+   "block_id": "CU-9618-4.2.1-b2",
+   "block_type": "definition",
+   "heading": "Assembly language and machine code",
+   "text": "What the processor executes is binary: machine code is patterns of bits, one pattern per instruction, with an opcode and an operand. Writing and reading those patterns by hand is slow and error-prone, so assembly language writes the same instructions in a form a person can work with. Each instruction is written as a mnemonic - LDM for load, STO for store, CMP for compare - with symbolic addresses (labels) standing in for numeric locations. The correspondence is exact: each assembly instruction corresponds to one machine instruction, so assembly is machine code in readable clothing, and translating it is mechanical. That is the assembler's job: it translates the mnemonics into their binary opcodes and the labels into their computed addresses, producing the machine code the processor runs. The contrast with a compiler matters: a compiler translates a high-level language program as a whole, and one high-level statement typically becomes many machine instructions, whereas the assembler works instruction by instruction because its input already is one instruction per line. Hand-written assembly earns its keep where exact control of the instruction stream matters - a timing-critical port switch, for instance - because what you write is what executes, with nothing added.",
+   "claim_ids": [
+    "CLM-9618-4.2-001",
+    "CLM-9618-4.2-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-001": 1,
+    "CLM-9618-4.2-002": 1
+   },
+   "authored_hash": "835386152509df6b8a3011e1006f8251054a3bf004a4e98279c711da6f1e259a"
+  },
+  {
+   "block_id": "CU-9618-4.2.1-b3",
+   "block_type": "process",
+   "heading": "The two-pass assembler",
+   "text": "Why two passes? Because of forward references. A jump may be written to a label defined further down the program, and when the assembler first reaches the jump, the label's address is not yet known - no single pass over the program can both compute it and use it. So the work is split. First pass: the assembler reads the program line by line without generating machine code; because each instruction's length is known, it computes the address each instruction will occupy, and it enters every label with its computed address into the symbol table - the program's address book. Second pass: the assembler reads the program again, this time generating machine code - each mnemonic becomes its opcode, and each label in an operand is replaced by the address the symbol table holds for it. A label with no entry in the table is reported as an error, because pass two has no address to write. One pass maps the program, the other writes it, and both read the same lines, which is why the assembler is called two-pass.",
+   "claim_ids": [
+    "CLM-9618-4.2-003",
+    "CLM-9618-4.2-004",
+    "CLM-9618-4.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-003": 1,
+    "CLM-9618-4.2-004": 1,
+    "CLM-9618-4.2-005": 1
+   },
+   "authored_hash": "4ae5cda12ed31d02eb36837287f2bbfdf9afa10add06527d605e8ae9c6e9682a"
+  },
+  {
+   "block_id": "CU-9618-4.2.1-b4",
+   "block_type": "definition",
+   "heading": "Tracing a program",
+   "text": "A trace table follows a program through the processor one executed instruction at a time. One row per instruction executed; one column per thing that changes - the accumulator, the memory locations the program uses, the flags a compare sets, any output produced. The discipline that makes a trace reliable: fill the row as the instruction finishes, take the next instruction from the program order unless the row you just wrote says a jump was taken, and record flags the moment a compare sets them, because the next conditional jump reads exactly those flags. That is the safe way through a loop: a conditional jump makes the next instruction depend on flags no one can hold in mind reliably, and the table records what the flags were, so the decision is read from the row, not guessed.",
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-007": 1
+   },
+   "authored_hash": "de591425ce69a671744c9e11ad6f6a88b4fd9d0d7e4f8065df91f81e47a79226"
+  },
+  {
+   "block_id": "CU-9618-4.2.1-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: tracing a counting loop",
+   "text": "Trace this program, with TOTAL a memory location:\n        LDM  #0\n        STO  TOTAL\nLOOP:   INC  TOTAL\n        LDD  TOTAL\n        CMP  #3\n        JPN  LOOP\n        END\nRow by row. LDM #0 puts 0 in the accumulator (immediate: the number itself). STO TOTAL stores it: TOTAL = 0. INC TOTAL adds 1 to the contents of TOTAL, in memory: TOTAL = 1, and note the accumulator has not changed. LDD TOTAL loads 1 into the accumulator. CMP #3 compares 1 with 3: 1 - 3 = -2, so the negative flag is set. JPN LOOP is taken, so the next instruction is INC TOTAL again, not END. Round the loop: TOTAL becomes 2, accumulator 2, compare gives -1, jump taken. Round again: TOTAL becomes 3, accumulator 3, compare gives 0, the negative flag is clear, so JPN is not taken and the next instruction is END. Final state: TOTAL = 3, accumulator = 3, and the loop body executed three times. The trace in table form, one row per executed instruction: \n\n| Instruction | ACC | TOTAL | Flags after | Next |\n|---|---|---|---|---|\n| LDM #0 | 0 | - | - | STO |\n| STO TOTAL | 0 | 0 | - | INC |\n| INC TOTAL | 0 | 1 | - | LDD |\n| LDD TOTAL | 1 | 1 | - | CMP |\n| CMP #3 | 1 | 1 | negative | JPN |\n| JPN LOOP | 1 | 1 | taken | INC |\n| INC TOTAL | 0 | 2 | - | LDD |\n| LDD TOTAL | 2 | 2 | - | CMP |\n| CMP #3 | 2 | 2 | negative | JPN |\n| JPN LOOP | 2 | 2 | taken | INC |\n| INC TOTAL | 0 | 3 | - | LDD |\n| LDD TOTAL | 3 | 3 | - | CMP |\n| CMP #3 | 3 | 3 | not negative | JPN |\n| JPN LOOP | 3 | 3 | not taken | END |\n| END | 3 | 3 | halt | - |",
+   "claim_ids": [
+    "CLM-9618-4.2-006",
+    "CLM-9618-4.2-007",
+    "CLM-9618-4.2-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-006": 1,
+    "CLM-9618-4.2-007": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "95d4b9eca0b178b8940eee36b2a9551e324e0cdb9fbfe9afca36e06c6ccf3a77"
+  },
+  {
+   "block_id": "CU-9618-4.2.1-b6",
+   "block_type": "misconception",
+   "heading": "Common errors in traces",
+   "text": "Three slips recur in trace questions. Forgetting that INC and DEC change memory, not the accumulator: their operand is an address, and the change lands at that location, so the trace needs a memory column. Forgetting that CMP changes flags, not the accumulator: the compared value stays as it was, and only the flags move. And forgetting that a taken jump changes the next instruction: the row after a taken JPN is the jump's target, not the following line, because the program counter has been rewritten.",
+   "claim_ids": [
+    "CLM-9618-4.2-007",
+    "CLM-9618-4.2-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-007": 1,
+    "CLM-9618-4.2-009": 1
+   },
+   "authored_hash": "7d13c0e96d9b7dee7645ecc4d812d28937365819c33207a1e965c35395cccff2"
+  },
+  {
+   "block_id": "CU-9618-4.2.1-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The registers these instructions move values between are the registers of 4.1, and the indexed mode of the next unit is driven by the Index Register met there. The machine code the assembler produces is executed by the Fetch-Execute cycle, and the mnemonics appear again in 4.3 Bit manipulation, where the bitwise operations join them.",
+   "claim_ids": [
+    "CLM-9618-4.2-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-4.2-001": 1
+   },
+   "authored_hash": "1e83ae5441763fd70a596e010824930c1748047ffe2db7b746c5af54624fa6c7"
+  }
+ ],
+ "word_count": 1065,
+ "qa_status": "review_required",
+ "notes": []
+}

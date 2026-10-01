@@ -1,0 +1,241 @@
+{
+ "unit_id": "CU-9618-1.2.1",
+ "title": "Images: bitmaps, file sizes and vector graphics",
+ "objective_ids": [
+  "OBJ-9618-1.2.1-01",
+  "OBJ-9618-1.2.1-02",
+  "OBJ-9618-1.2.1-03",
+  "OBJ-9618-1.2.1-04",
+  "OBJ-9618-1.2.1-05"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_process",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1571,
+  "target": 1906,
+  "max": 2242
+ },
+ "blocks": [
+  {
+   "block_id": "1.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "How bitmapped images are encoded; estimating their file sizes; the effects of changing resolution and colour depth; how vector graphics are encoded; and justifying the choice between the two.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "7620b106b5204fe5573d630d734d5ec0c8ac3eef049b7b356244b935fec36643"
+  },
+  {
+   "block_id": "1.2.1-b2",
+   "block_type": "definition",
+   "heading": "How a bitmapped image is stored",
+   "text": "A bitmapped image is divided into a grid of pixels, and the file stores one binary colour code for the colour of each pixel, row by row. For a black-and-white line image one bit per pixel is enough, a 0 for white and a 1 for black; a colour photo needs many more bits per pixel so that each can name its own colour. The pixel data on its own is unusable: software needs to be told the grid's size and how many bits each pixel takes. That is the file header's job. A bitmap header carries the data needed to read the image, such as the image resolution, the colour depth, the file size and where the pixel data starts, so any software that knows the format can reconstruct the picture without being told anything else. The codes themselves say nothing about meaning: the same pattern read with a different colour depth would show as different colours.",
+   "claim_ids": [
+    "CLM-9618-1.2-001",
+    "CLM-9618-1.2-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-001": 1,
+    "CLM-9618-1.2-002": 1
+   },
+   "authored_hash": "8e784a869375da7f5a8e577c1ddcf3c61b81f5756e79ed2bd8cde97d21dfaa49"
+  },
+  {
+   "block_id": "1.2.1-b3",
+   "block_type": "definition",
+   "heading": "Image resolution, screen resolution and colour depth",
+   "text": "Image resolution is the number of pixels in the stored image, given as width by height: a 1200 x 800 image holds 1,200 pixels along each of 800 rows. Screen resolution is a different thing: the number of pixels the display itself can show, such as 1920 x 1080. The image's resolution is stored in the file; the screen's is a property of the monitor, and opening the same file on a different screen changes neither the file nor its pixels. The two meet in one place: when a 1200 x 800 image is shown full-screen on a 1920 x 1080 display, the software stretches the stored pixels to fill the screen, so the picture appears larger but its pixel count has not grown by one. Colour depth, also called bit depth, is the number of bits stored for the colour of each pixel. Raise it and more colour codes become available, because the count of codes is two to the power of the depth: 8 bits give 256 colours, 16 bits give 65,536, and 24 bits give more than 16 million.",
+   "claim_ids": [
+    "CLM-9618-1.2-003",
+    "CLM-9618-1.2-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-003": 1,
+    "CLM-9618-1.2-006": 1
+   },
+   "authored_hash": "afbaceb202d7b94fa5a582b4451558ac8ddcea156f2e083034c97d4f7ba7cad6"
+  },
+  {
+   "block_id": "1.2.1-b4",
+   "block_type": "formula",
+   "heading": "Estimating a bitmap's file size",
+   "text": "The pixel data size follows from two numbers: how many pixels there are, and how many bits each one takes. The estimate is the number of pixels multiplied by the colour depth in bits per pixel, plus the small header, which is usually left out of the estimate. Three steps finish it: count the pixels (width x height); multiply by the colour depth to get bits; divide by 8 to get bytes. A prefix is applied to the bytes, never to the bits, which is where the 1.1 prefixes return. For example, a 640 x 480 image at 16 bits per pixel holds 307,200 pixels, so its pixel data is 307,200 x 16 = 4,915,200 bits, which is 614,400 bytes, about 614 KB.",
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "008699d797a24c7675f0dd839970120e974f2804516a19ba68e645b6fc2baf42"
+  },
+  {
+   "block_id": "1.2.1-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: one photo, three estimates",
+   "text": "A wildlife photographer's shot is stored as a 1600 x 1200 bitmap. At 8-bit colour, the pixel count is 1600 x 1200 = 1,920,000, the pixel data is 1,920,000 x 8 = 15,360,000 bits, and in bytes that is 15,360,000 / 8 = 1,920,000 bytes. At 16-bit colour the same shot doubles to 3,840,000 bytes; at 24-bit colour it becomes 5,760,000 bytes, which is 5.76 MB at a million bytes per megabyte. The colour depth changes nothing about the grid: the same 1,920,000 pixels each store more bits. If instead the photographer doubles the resolution to 3200 x 2400, the pixel count quadruples to 7,680,000, because both the width and the height doubled, so the 8-bit version grows to 7,680,000 bytes. Doubling one dimension doubles the pixels; doubling both quadruples them.",
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005",
+    "CLM-9618-1.2-006",
+    "CLM-9618-1.2-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1,
+    "CLM-9618-1.2-006": 1,
+    "CLM-9618-1.2-007": 1
+   },
+   "authored_hash": "3d202efb56dad11b3e718d4c8afce4d0e3866d6ff8211e802c357060f5f475d2"
+  },
+  {
+   "block_id": "1.2.1-b6",
+   "block_type": "analysis_chain",
+   "heading": "What changes, and what it costs",
+   "text": "Changing the elements of a bitmap moves quality and size together. Raise the colour depth: more colour codes become available, so tones come closer to the original, and each pixel takes more bits, so the file grows in step, with double the depth costing double the data. Raise the image resolution: more pixels describe the same scene, so the picture stays sharp at larger display and print sizes, and the file grows with the pixel count. Change the screen resolution: nothing in the file changes at all, because the file stores the image's own pixels and the screen merely decides how large they appear. That distinction answers a question that costs marks when blurred: a file does not get bigger by being opened on a better monitor, because the monitor is not part of the file. Watch the direction of each change as well. Halving the colour depth halves the pixel data but throws away colour codes the picture may have needed, so a photo of a sunset comes out banded where it was smooth. Halving the image resolution halves the pixel count but the picture loses its fine edges, so text in the image frays. One change leaves both alone: moving the file to another computer keeps every pixel and every bit of depth, because the file carries its own description wherever it goes.",
+   "claim_ids": [
+    "CLM-9618-1.2-006",
+    "CLM-9618-1.2-007",
+    "CLM-9618-1.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-006": 1,
+    "CLM-9618-1.2-007": 1,
+    "CLM-9618-1.2-008": 1
+   },
+   "authored_hash": "7cd8d99c18e022f4fff402a05d4f88717676b5bbdbe4234c785ec2f52f503c00"
+  },
+  {
+   "block_id": "1.2.1-b7",
+   "block_type": "definition",
+   "heading": "How a vector graphic is stored",
+   "text": "A vector graphic takes the opposite approach: instead of storing how the picture looks, it stores how to draw it. The file holds a drawing list, and the list's entries are drawing objects, one per shape in the picture. Each drawing object is a command with its properties: for a circle, the centre's coordinates, the radius, the line thickness and colour, and the fill colour if the shape is filled. To display the image, the software reads the list and executes each command in turn, using its properties, and the picture is produced at the end. Because the file states what to draw rather than what each pixel looks like, the picture can be drawn at any size: the properties are numbers, and the software scales them as it draws. One caution about the term: the drawing list is the set of objects that make up this image, not a library of every shape the software could ever draw.",
+   "claim_ids": [
+    "CLM-9618-1.2-009",
+    "CLM-9618-1.2-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1,
+    "CLM-9618-1.2-010": 1
+   },
+   "authored_hash": "f911340ca37cdad58eacf1495c448b018dc2a70222114e25a40516845ac1b193"
+  },
+  {
+   "block_id": "1.2.1-b8",
+   "block_type": "worked_application",
+   "heading": "Worked example: a badge from its drawing list",
+   "text": "A cycling club's badge is one circle inside one square, and its drawing list holds two objects. RECTANGLE, with properties left corner (40, 40), width 120, height 120, line black, fill none. CIRCLE, with properties centre (100, 100), radius 45, line none, fill black. Drawn in list order, the square appears first and the circle lands inside it, centred on the square's own centre. When the club wants the circle twice as wide, one object changes: the CIRCLE's radius property from 45 to 90, and the RECTANGLE is untouched. That is the everyday power of the form: an edit touches the one object named, and the redraw produces the badge again at whatever size is asked. Had the badge been a bitmap, enlarging the circle would mean regenerating pixels, and a large print would show the limits of the grid.",
+   "claim_ids": [
+    "CLM-9618-1.2-009",
+    "CLM-9618-1.2-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1,
+    "CLM-9618-1.2-010": 1
+   },
+   "authored_hash": "3ef4f5ea31c3dd6d0275524a90cb73cd3091c089f74467b744528e802425daa4"
+  },
+  {
+   "block_id": "1.2.1-b9",
+   "block_type": "evaluation",
+   "heading": "Choosing between bitmap and vector",
+   "text": "Which representation suits a task follows from what the image is. A photograph is continuous and irregular, with tones shifting across every region of the scene, and a bitmap stores a colour code for each pixel, so it matches the subject: each pixel holds its own colour, which is why photographs are stored as bitmaps. A logo, a diagram or a line drawing is made of a few clean shapes, and a vector graphic stores exactly those, as objects with properties, so the file stays small and the picture redraws at any size, sharp on a business card and on a billboard. The costs sit on both sides. A bitmap's grid is fixed: enlarge it far past its resolution and each pixel covers more space, so the picture goes blocky, and the file carries a code for every pixel however plain the picture. A vector file cannot sensibly describe each pixel of a photo, so it is the wrong tool for one. When a page needs both, both forms are used, each for the job it does: a wildlife poster might keep the animal shot as a bitmap and the reserve's boundary map as a vector, because the poster needs the photo's tones and the map's clean lines at every size.",
+   "claim_ids": [
+    "CLM-9618-1.2-011",
+    "CLM-9618-1.2-012",
+    "CLM-9618-1.2-013"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-011": 1,
+    "CLM-9618-1.2-012": 1,
+    "CLM-9618-1.2-013": 1
+   },
+   "authored_hash": "2bc325e683edab921dd0e7eb86e1bf956ef3d5e64e203331c4c9e83f81e042b4"
+  },
+  {
+   "block_id": "1.2.1-b10",
+   "block_type": "misconception",
+   "heading": "Common errors with images",
+   "text": "The recurring slips, and the tests that catch them. Taking colour depth for image resolution: resolution counts pixels, width by height, while colour depth counts bits per pixel; the test is to add colours and keep the pixels the same, because what then changed is the colour depth. Believing a different monitor changes the file: the file stores the image resolution, and the screen's own resolution is a property of the display, so opening the file elsewhere changes how large the picture appears, not what is in it. Reading the drawing list as a library of shapes: the list holds the objects of this image only, so it redraws this image and nothing else. Leaving a file size in bits: colour depth is in bits, and bytes come from dividing by 8 before any prefix is applied.",
+   "claim_ids": [
+    "CLM-9618-1.2-003",
+    "CLM-9618-1.2-008",
+    "CLM-9618-1.2-009",
+    "CLM-9618-1.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-003": 1,
+    "CLM-9618-1.2-008": 1,
+    "CLM-9618-1.2-009": 1,
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "c43baefbc94395201b0b71ba02c2f05153626c1e03cca398d2c1754c10c015ab"
+  },
+  {
+   "block_id": "1.2.1-b11",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The arithmetic here leans on 1.1: file sizes carry the prefixes, and bits divide by 8 to become bytes. Topic 1.3 takes the resulting sizes and shortens the time a file takes to send, by making the file smaller. In 2.1 Networks, a file's size sets how long it takes to move across a link, and in 3.1 Computers and their components, the storage devices that keep these files are described.",
+   "claim_ids": [
+    "CLM-9618-1.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1
+   },
+   "authored_hash": "5bd4f328612d7c17ab42e84c0314ba9eb3472440847271c782e3b44f03573157"
+  }
+ ],
+ "word_count": 1626,
+ "qa_status": "review_required",
+ "notes": []
+}

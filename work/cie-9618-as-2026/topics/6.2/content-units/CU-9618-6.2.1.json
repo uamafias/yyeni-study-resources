@@ -1,0 +1,166 @@
+{
+ "unit_id": "CU-9618-6.2.1",
+ "title": "Validation and verification",
+ "objective_ids": [
+  "OBJ-9618-6.2.1-01",
+  "OBJ-9618-6.2.1-02",
+  "OBJ-9618-6.2.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 930,
+  "target": 1130,
+  "max": 1330
+ },
+ "blocks": [
+  {
+   "block_id": "6.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "How validation and verification protect data integrity; the validation checks; and verification during data entry and data transfer.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "df1beac962c3d6521e59d9ea90c4fef59fb31619e75caeddfddf306591255872"
+  },
+  {
+   "block_id": "6.2.1-b2",
+   "block_type": "definition",
+   "heading": "Validation and verification",
+   "text": "Two checks, two different jobs, and one shared limit. Validation is an automatic check that entered data is reasonable and follows the stated rules: the month is at most 12, the age is inside the school's band, the field is not empty. Verification is a check that data was copied or transferred accurately: what was keyed matches what was on the form, what arrived matches what was sent. The shared limit is the one to hold: neither proves the data is true. A wrong date of birth that is a real date, keyed accurately, passes every validation check and every verification check, because the checks test reasonableness and accuracy of copying, not truth of meaning. What the two do protect is data integrity - accuracy, completeness and consistency - by catching the failures that happen at the moments they happen: unreasonable entries at entry, inaccurate copies at copying, corrupted bytes in transit. The checks are applied at those moments precisely because a fault found later costs a correction in a system that believed it.",
+   "claim_ids": [
+    "CLM-9618-6.2-001",
+    "CLM-9618-6.2-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1,
+    "CLM-9618-6.2-002": 1
+   },
+   "authored_hash": "be5cedd29311e04b672d0105f847f8d4533fe4160542d81b7a87b0a5d5b45a7c"
+  },
+  {
+   "block_id": "6.2.1-b3",
+   "block_type": "definition",
+   "heading": "The validation checks",
+   "text": "Validation checks are named by what they test, and the names travel well. A range check tests that a value lies between a lower and an upper limit: an age of 14 passes a 11-to-19 band, an age of 47 does not. A limit check tests one boundary alone - at most, or at least - so a field may be checked to hold at most 50 characters. A length check tests the number of characters: a phone number must be the set number of digits. A format check tests the pattern: day, month and year in their places with separators where stated, so 31/21/1999 fails on the month's place. A presence check tests that a field is not empty: the entry must exist before the record is accepted. An existence check tests that a value appears in the file of permitted values: the course code must be one the school runs. A check digit is the arithmetic member: an extra digit calculated from the others in a code, checked when the code is entered, so a mistyped digit usually upsets the calculation. Choosing a check is matching it to the failure: a number that must sit in a band wants a range check, a code that must exist wants an existence check, an optional-looking field that is actually needed wants a presence check - because a check answers the failure it is named for, and no other.",
+   "claim_ids": [
+    "CLM-9618-6.2-003",
+    "CLM-9618-6.2-004",
+    "CLM-9618-6.2-005",
+    "CLM-9618-6.2-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-6.2-003": 1,
+    "CLM-9618-6.2-004": 1,
+    "CLM-9618-6.2-005": 1,
+    "CLM-9618-6.2-006": 1
+   },
+   "authored_hash": "f10a1685f88209005d009cd25e2457f329b0037a82a1d6acea8acfa15b5fae57"
+  },
+  {
+   "block_id": "6.2.1-b4",
+   "block_type": "definition",
+   "heading": "Verification during entry and transfer",
+   "text": "Verification has two homes. During data entry, the check is on the copying. A visual check shows the entered data on the screen for the user to compare with the source: the clerk looks, and a mistyped name is caught by the eye that can read both. Double entry goes further: the same data is keyed twice and the two entries compared by the system, so a disagreement shows a mistype - though two identical mistakes pass, because the comparison tests the typing, not the truth. During data transfer, the check is on the bytes. A parity check agrees a parity first: even parity means the sender adds a bit so each byte holds an even count of 1s. On arrival the receiver counts: a byte sent as 1011 0100 arrives with its four 1s intact, and the even count holds; a byte sent as 0110 1001 that arrives as 0110 0001 holds three 1s, an odd count, so a bit changed in transit and the error is detected. The count names no position - any single flipped bit gives the same wrong count - so the byte is asked for again rather than mended. A block parity check adds parity for rows and columns of a block of bytes, and a single wrong bit sits at the crossing of a failing row and a failing column, so a single-bit error is both detected and located. A checksum takes the whole block's view: a value calculated from the block travels with it, is recalculated on arrival, and a mismatch signals corruption somewhere in the block, which is re-sent.",
+   "claim_ids": [
+    "CLM-9618-6.2-007",
+    "CLM-9618-6.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-6.2-007": 1,
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "7c1372388562042cb21aad98a2731626d97bf43c59baf370f68d52b27b32781c"
+  },
+  {
+   "block_id": "6.2.1-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: one membership form, end to end",
+   "text": "A library registers a member from a paper form. Entry first, with validation. The membership code, M0427, ends in a check digit calculated from M042's digits, and the keyed code 40427 fails the arithmetic, so the clerk re-keys it. The date of birth passes its format check but a birth date in 2031 fails the range check, so a future-dated entry is refused. The phone number's length check rejects eight digits where ten are required. The address field's presence check rejects the empty street line. Then verification, still at the desk: the whole form is double-entered, and the second pass disagrees on the phone number's last digit - a mistype is caught and corrected. At night, the register travels to head office, each byte with a parity bit and the whole file with a checksum; one byte arrives odd where even was agreed, so it is detected and the block is re-sent. Nothing in all of this proves the member's address is where they live - that is the shared limit of both checks - but every failure the form could carry at entry, in keying and in transit has been caught at its own moment.",
+   "claim_ids": [
+    "CLM-9618-6.2-006",
+    "CLM-9618-6.2-003",
+    "CLM-9618-6.2-004",
+    "CLM-9618-6.2-005",
+    "CLM-9618-6.2-007",
+    "CLM-9618-6.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-6.2-006": 1,
+    "CLM-9618-6.2-003": 1,
+    "CLM-9618-6.2-004": 1,
+    "CLM-9618-6.2-005": 1,
+    "CLM-9618-6.2-007": 1,
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "0cde357a0205a655eb146d2d32dabefa435776d23b72c955f68fb6f16873e58c"
+  },
+  {
+   "block_id": "6.2.1-b6",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur. Writing that validation or verification makes sure data is correct: validation checks that data is reasonable and follows rules, verification checks that it was copied accurately, and neither proves the data true - the test is whether a wrong date of birth could pass both, which it can if it is a real date typed accurately. And treating a check digit and a parity check as one check: a check digit is calculated from a code's digits and validates entry, while a parity bit checks transmitted bytes - the test is whether the check is on a typed code or on bits sent over a link.",
+   "claim_ids": [
+    "CLM-9618-6.2-001",
+    "CLM-9618-6.2-006",
+    "CLM-9618-6.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1,
+    "CLM-9618-6.2-006": 1,
+    "CLM-9618-6.2-008": 1
+   },
+   "authored_hash": "d727de5947edb1aa9b390fe4db8a471cc0113a3b41ae6664ec07ad1d8e6382f5"
+  },
+  {
+   "block_id": "6.2.1-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The integrity these checks protect is the property 6.1 separated from security and privacy. The parity bit rides the transmission of 2.1, the check digit guards the codes of 8.1's keys, and the validation rules arrive again in 10.1 and 11.1 as the checks a program runs on what a user types.",
+   "claim_ids": [
+    "CLM-9618-6.2-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-6.2-001": 1
+   },
+   "authored_hash": "e2ebdb9f01649e64f20c7a543b42d4a3a93e4de09bb97516acffab807c27cb0b"
+  }
+ ],
+ "word_count": 1083,
+ "qa_status": "review_required",
+ "notes": []
+}

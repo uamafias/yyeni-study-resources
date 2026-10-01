@@ -1,0 +1,2222 @@
+{
+ "topic_number": "1.2",
+ "topic_title": "Multimedia",
+ "topic": "1.2 Multimedia",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 50,
+ "items": [
+  {
+   "item_id": "ITEM-9618-1.2-001-PROC",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-001",
+    "CLM-9618-1.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe how a bitmapped image is stored in a file.",
+   "canonical_answer": "The image is divided into a grid of pixels, and the file stores a binary colour code for each pixel, row by row. The file begins with a header that holds the data needed to read the image, such as the image resolution and the colour depth, so the software knows how large the grid is and how many bits each pixel takes.",
+   "marking_guidance": [
+    "Order: the stages in sequence - the header first, then the pixel codes; each statement is a mark point, 1 mark per point from a longer list, to the maximum of 2.",
+    "Input: the storage starts from the given image as a grid of pixels.",
+    "Result: the file ends up holding the header and one code per pixel, which is what makes the picture reconstructable."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-001": 1,
+    "CLM-9618-1.2-002": 1
+   },
+   "authored_hash": "73bb925255c58cc8acbee9c1665a2cf377f61d174b177cbf5989ad7ed2395679",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-002-MECH",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MECH",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain how a bitmap file header makes it possible for software to display the image.",
+   "canonical_answer": "The header stores the data needed to interpret the rest of the file: the image resolution, so the software knows how many pixels wide and high the grid is, and the colour depth, so it knows how many bits to read for each pixel. Without the header, the software could not tell where one pixel's code ended and the next began, so the codes could not be turned back into the picture.",
+   "marking_guidance": [
+    "How the header works: it names the image resolution and the colour depth - 1 mark.",
+    "Because the software then knows how to split the pixel codes, the codes can be rebuilt into the picture, which is what the header is for - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-002": 1
+   },
+   "authored_hash": "605ba7f74adf79b43814c43adb4de20dacb8021ab5396c93995e6f2585b91059",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-003-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-001",
+    "CLM-9618-1.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "A shop prints price labels carrying a small logo. The label software stores the logo as a 64 x 48 pixel bitmap with a colour depth of 8 bits. Complete: (a) the number of pixels in the image, (b) the number of bits the pixel data uses, (c) the number of bytes of pixel data, (d) the part of the file that stores the image resolution and the colour depth.",
+   "canonical_answer": "(a) 64 x 48 = 3,072 pixels. (b) At 8 bits per pixel, the pixel data is 3,072 x 8 = 24,576 bits. (c) In bytes, 24,576 / 8 = 3,072 bytes. (d) The file header.",
+   "marking_guidance": [
+    "Context: this label software's logo bitmap - 1 mark per completed entry, (a) 3,072, (b) 24,576 bits, (c) 3,072 bytes, (d) the header.",
+    "Reason: each entry follows from the given resolution and depth, because the pixel count sets the codes and the header is where the reading data is stored; the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-001": 1,
+    "CLM-9618-1.2-002": 1
+   },
+   "authored_hash": "dd80d4e8eabcc1c070de6e65b04963fbabffcb88b6216649ac030be1af025f9e",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-026-MISCON",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that a bitmap's image resolution is the number of bits stored per pixel. Explain the error and give the correct meaning of each term.",
+   "canonical_answer": "The learner has given the meaning of colour depth (bit depth) as image resolution. Image resolution is the number of pixels in the image, width by height, whereas colour depth is the number of bits stored for the colour of each pixel. The test: add colours and keep the pixels the same; what changed is the colour depth, so the two terms are not the same thing.",
+   "marking_guidance": [
+    "1 mark: the error named - the meaning of colour depth has been given for image resolution, a confusion of the two terms.",
+    "1 mark: the correction with the test - resolution counts pixels (width by height), depth counts bits per pixel, and adding colours without adding pixels changes the depth only."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-003": 1
+   },
+   "authored_hash": "53bd15df1701b15481f15ff628f8e495e6c9b051ea82c0bec8bbfd2e9fbf633b",
+   "misconception_entry": "MC-9618-1.2-01",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-032-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by a pixel.",
+   "canonical_answer": "A pixel is one cell of the grid into which a bitmapped image is divided; the file stores one binary colour code for each pixel, and it is the smallest picture element the image is made of.",
+   "marking_guidance": [
+    "1 mark: the meaning - one cell of the image's pixel grid, the smallest element a colour code is stored for."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-001": 1
+   },
+   "authored_hash": "d99f71d94e60c93d866aaff432a8bc0ecb251485636bf240480bd5109c89b978",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-038-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-001",
+    "CLM-9618-1.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two features of a bitmapped image file.",
+   "canonical_answer": "The pixel data holds a binary colour code for every pixel in a fixed grid, so each pixel is stored whether or not it differs from its neighbours. The file carries a header stating the image resolution and the colour depth, so software can read the pixel codes without being told anything else about the picture.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the per-pixel colour codes in a fixed grid, and the header holding the data needed to read them."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-001": 1,
+    "CLM-9618-1.2-002": 1
+   },
+   "authored_hash": "f63ac2acf2af52b4aaf4912e28ad71b31ca5c8a7a22dc78c443bb3bc3614b313",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-044-WHY",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a bitmap file needs a header.",
+   "canonical_answer": "The header holds the image resolution and the colour depth, so the software knows how many bits belong to each pixel and how the grid is laid out. The pixel codes are one long binary pattern, so without the header a reader could not tell where one pixel’s code ended and the next began, which is why the file needs it.",
+   "marking_guidance": [
+    "Reason: the header states the image resolution and the colour depth - 1 mark.",
+    "Purpose: so the pixel codes can be split correctly, because the codes alone do not say where each pixel starts - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-002": 1
+   },
+   "authored_hash": "4a46143cc9abd5d72b72e5b938a76747b57db9488c912f26bfb22e55ea533292",
+   "objective_titles": [
+    "Show understanding of how data for a bitmapped image are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-004-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Give",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Give the two properties of a bitmap that its pixel data size depends on.",
+   "canonical_answer": "The image resolution, which gives the number of pixels, and the colour depth, which gives the bits stored per pixel. The size estimate multiplies them, then divides by 8 for bytes.",
+   "marking_guidance": [
+    "The meaning of the size estimate: it is built from the image resolution (the pixel count) and the colour depth (the bits per pixel) - 1 mark per property, two creditable points from the longer list of inputs."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1
+   },
+   "authored_hash": "c3b628f6e127adaa7675240e88edf6044b1c847e88a8765e6c1bc42a19b381f5",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-005-CALC",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "CALC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Calculate",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A bitmap is 800 x 600 pixels with a colour depth of 8 bits per pixel. Calculate the size of the pixel data, in bytes.",
+   "canonical_answer": "The pixel count is 800 x 600 = 480,000 pixels. At 8 bits each, the data is 480,000 x 8 = 3,840,000 bits. In bytes, 3,840,000 / 8 = 480,000, so the pixel data is 480,000 bytes.",
+   "marking_guidance": [
+    "Working: the method shown - pixels counted from the resolution, multiplied by the colour depth in bits, then divided by 8 - 1 mark.",
+    "Answer: 480,000 bytes, the final result.",
+    "Units: the result is in bytes; a result left in bits does not carry the unit asked for."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "35759c58d50913d3a9d8c7b1461a7a0c1371c8983f29859daa490a0f364da400",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-006-CALC",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "CALC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Calculate",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A photograph is stored as a 1600 x 1200 bitmap with a colour depth of 24 bits. Calculate the file size of the pixel data, in megabytes (1 MB = 1,000,000 bytes).",
+   "canonical_answer": "Pixels: 1600 x 1200 = 1,920,000. Bits: 1,920,000 x 24 = 46,080,000. Bytes: 46,080,000 / 8 = 5,760,000. Megabytes: 5,760,000 / 1,000,000 = 5.76, so the pixel data is 5.76 MB.",
+   "marking_guidance": [
+    "Working: the steps shown - pixels, then bits, then bytes, then megabytes - 1 mark.",
+    "Answer: 5.76 MB, the final result.",
+    "Units: the result is in megabytes of bytes, not bits."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "6fb4c6c591129f99a97ac2a2fa2257543e3eb169f1cb79f2959ab0267f911793",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-007-CALC",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "CALC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Calculate",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A bitmap holds 655,360 pixels and its pixel data is 1,310,720 bytes. Calculate the colour depth, in bits per pixel.",
+   "canonical_answer": "Bytes to bits: 1,310,720 x 8 = 10,485,760 bits. Bits per pixel: 10,485,760 / 655,360 = 16, so the colour depth is 16 bits per pixel.",
+   "marking_guidance": [
+    "Working: the method shown - the byte size converted to bits, then divided by the pixel count - 1 mark.",
+    "Answer: 16 bits per pixel, the final result.",
+    "Units: the result is a colour depth in bits per pixel."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "96f0e670b96b64a2a61bb6a483dd6253572d8702bb1e19394fdcbf35dfd951cb",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-008-INTERP",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "The table shows four bitmaps. Complete the four empty cells.\n\n| Image resolution | Colour depth (bits) | Pixel data (bytes) |\n|---|---|---|\n| 400 x 300 | 8 | (a) |\n| 400 x 300 | (b) | 240,000 |\n| 800 x 600 | 8 | (c) |\n| 1024 x 768 | (d) | 393,216 |",
+   "canonical_answer": "(a) 400 x 300 gives 120,000 pixels; at 8 bits each the data is 960,000 bits, so (a) is 120,000 bytes. (b) 240,000 bytes from 120,000 pixels means 16 bits per pixel. (c) 800 x 600 gives 480,000 pixels; at 8 bits each that is 480,000 bytes. (d) 1024 x 768 gives 786,432 pixels, and 393,216 bytes is 3,145,728 bits, so the depth is 4 bits.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) 120,000, (b) 16, (c) 480,000, (d) 4.",
+    "Meaning: the completed table shows how the data size tracks both the pixel count and the depth, so a row that changes one of them changes the bytes in step."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "cd2899e7a61c87468b54df3efc04d5faa0d006b7e5e146a547d699651256b305",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-009-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005",
+    "CLM-9618-1.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "A school's ID card system stores each learner's photo as a 320 x 240 bitmap with a colour depth of 16 bits, and the office wants a cheaper version too. Complete: (a) the number of pixels in each photo, (b) the pixel data size in bytes at 16 bits, (c) the pixel data size in bytes if the depth is reduced to 8 bits, (d) the colour depth the office should choose to halve the storage.",
+   "canonical_answer": "(a) 320 x 240 = 76,800 pixels. (b) At 16 bits: 76,800 x 16 = 1,228,800 bits, and 1,228,800 / 8 = 153,600 bytes. (c) At 8 bits: 76,800 x 8 = 614,400 bits, and 614,400 / 8 = 76,800 bytes. (d) The office should choose 8 bits, which halves the bytes.",
+   "marking_guidance": [
+    "Context: this ID system's photos at the given resolution - 1 mark per completed entry, (a) 76,800, (b) 153,600 bytes, (c) 76,800 bytes, (d) 8 bits.",
+    "Reason: each entry follows the size arithmetic, and the office's choice works because halving the bits per pixel halves the stored bytes; the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1,
+    "CLM-9618-1.2-006": 1
+   },
+   "authored_hash": "5a5af39009bc1e5e74725ac610e69992d6077febd029288627d0b5ebfd016ca0",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-030-MISCON",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Asked for the file size of a 400 x 300, 8-bit bitmap's pixel data in bytes, a learner answers 960,000. Explain the error and give the correct answer.",
+   "canonical_answer": "The learner has left the size in bits: 400 x 300 gives 120,000 pixels, and at 8 bits each the pixel data is 960,000 bits, but the question asks for bytes. A byte is 8 bits, so the size in bytes is 960,000 / 8 = 120,000 bytes. The test: check the unit asked for, and remember the colour depth counts bits, so a size in bytes has a division by 8 in it.",
+   "marking_guidance": [
+    "1 mark: the error named - the answer was left in bits instead of being converted, so the figure is eight times too large for the unit asked.",
+    "1 mark: the correction with the test - 120,000 bytes, because bits divide by 8 before any prefix is applied."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-005": 1
+   },
+   "authored_hash": "89e8e5bfdf5fd33ba6eee606a33059ea9acc19ec862707506f61858a773c6c72",
+   "misconception_entry": "MC-9618-1.2-05",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-010-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by the colour depth of a bitmapped image.",
+   "canonical_answer": "The colour depth, also called bit depth, is the number of bits stored for the colour of each pixel.",
+   "marking_guidance": [
+    "1 mark: the meaning - the number of bits per pixel used to store its colour."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-003": 1
+   },
+   "authored_hash": "4bb146122076e63b7ccacb85e926d010275b4486941c25149bc9fbecd599040f",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-011-CHAIN",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "CHAIN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain the effect on file size and on available colours of increasing a bitmap's colour depth.",
+   "canonical_answer": "Each pixel then stores more bits, so the file size grows in step with the depth, and doubling the bits per pixel doubles the pixel data. The number of available colours grows too, because the count of colour codes is two to the power of the depth: 8 bits offer 256 colours and 16 bits offer 65,536.",
+   "marking_guidance": [
+    "Change: increasing the depth means more bits per pixel - 1 mark - so the effect on file size is growth in step, because every pixel carries the extra bits.",
+    "The consequence for quality: more colour codes become available (two to the power of the depth), so the image can use more colours, which results in smoother tones - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-006": 1
+   },
+   "authored_hash": "74f70a9361ebc987280b8abaa63139557975e503a55239a1301fe5eba43c10f1",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-012-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-006",
+    "CLM-9618-1.2-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A news website shows a photographer's picture at 400 x 300 with 8-bit colour, then republishes the same picture at 400 x 300 with 16-bit colour. Explain what this change does to the file and to the picture.",
+   "canonical_answer": "The resolution is unchanged, so the pixel count stays at 120,000 and the picture’s sharpness does not change. Each pixel now stores 16 bits instead of 8, so the pixel data doubles from 120,000 bytes to 240,000 bytes, which means the page takes longer to load, while the picture can use 65,536 colours rather than 256, so tones can come out smoother.",
+   "marking_guidance": [
+    "Context: this republished picture - the change is in the given depth, not the resolution - 1 mark for the size consequence.",
+    "Reason: because each pixel takes twice the bits, the file doubles and more colours become available, so the load grows with the file while the tones can improve - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-006": 1,
+    "CLM-9618-1.2-007": 1
+   },
+   "authored_hash": "1f88801dba05e25279db35471778c228cf57c80c06527c307cdbb03af1eb706f",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-027-MISCON",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner says that opening a stored photo on a monitor with a higher screen resolution makes the image file bigger. Explain the error.",
+   "canonical_answer": "The image file stores the image resolution, which is the number of pixels in the picture itself; the screen resolution is a property of the display. Opening the same file on a different monitor does not change one bit of the file, so the file size stays as it was. The test: if the file did not change, what changed was a property of the display, not the stored image.",
+   "marking_guidance": [
+    "1 mark: the error named - the screen resolution, a property of the display, has been treated as something stored in the image file.",
+    "1 mark: the correction with the test - the file stores the image resolution only, so opening it elsewhere changes how large the picture appears, not what is in the file."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-008": 1
+   },
+   "authored_hash": "83b869a5d4517226f31e1882a95ecb8ca56b0db436be36a5f6ea6156541790c8",
+   "misconception_entry": "MC-9618-1.2-02",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-036-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two effects of increasing a bitmap's image resolution.",
+   "canonical_answer": "The file stores more pixels, so its pixel data grows in step with the pixel count: at the same colour depth, doubling both the width and the height quadruples the number of pixels, and with them the bytes. The picture also carries finer detail, so it stays sharp when it is shown or printed larger, because more pixels describe the same scene.",
+   "marking_guidance": [
+    "Features: two effects as two points, 1 mark each - the larger file that follows the pixel count, and the finer detail at larger sizes."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-007": 1
+   },
+   "authored_hash": "ceb46ca6393f92343a32c3c0b4b660379203fa8469f70e8ef9d4ed920115b98f",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-042-WHY",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a bitmap that must be printed large needs a high image resolution.",
+   "canonical_answer": "A bitmap holds a fixed grid of pixels, and when the picture is printed larger, each pixel covers more of the paper, so the edges go blocky once the pixels become visible. A higher image resolution packs more pixels into the same scene, so each pixel covers less paper and the edges stay sharp at the larger size. The file grows with the pixel count, which is the price paid, so the print size is what creates the need.",
+   "marking_guidance": [
+    "Reason: each pixel covers more paper when the print is enlarged - 1 mark.",
+    "Purpose: more pixels per scene keep the edges sharp, so the high resolution is needed because the print is large, even though the file grows - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-007": 1
+   },
+   "authored_hash": "9623190a7fa90ce07107b5cdb89fb805913a91e9e9868899682e0a4a6d69d0b5",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-048-DIST",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between image resolution and screen resolution.",
+   "canonical_answer": "Image resolution is a property of the stored picture: the number of pixels it holds, width by height. Screen resolution is a property of the display: the number of pixels the screen can show. A 1200 x 800 image keeps its pixels on whatever screen it is opened, whereas the screen’s resolution decides how large the picture appears and how much of the screen it fills.",
+   "marking_guidance": [
+    "Difference: a property of the stored file (the pixel count of the picture) against a property of the display (the pixels it can show) - 1 mark per side, whereas each belongs to a different thing, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-003": 1
+   },
+   "authored_hash": "7992a825230e025dcc7af8ac061275e5c0129be3386a093cc3bf6c28133b1991",
+   "objective_titles": [
+    "Show understanding of the effects of changing elements of a bitmap image on the image quality and file size"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-013-PROC",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-009",
+    "CLM-9618-1.2-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe how a vector graphic is stored in a file.",
+   "canonical_answer": "The graphic is stored as a drawing list: a list of drawing objects, one per shape in the picture, and each object is a command with its properties, such as a circle with its centre, radius and line or fill colour. To display the image, the software reads the list and draws each object in turn from its properties.",
+   "marking_guidance": [
+    "Order: the stages in sequence - the list of objects with properties, then the redraw - each statement a mark point, up to 2 from a longer list.",
+    "Input: the storage starts from the shapes the picture is made of, given as commands with properties.",
+    "Result: the picture is produced at the end by drawing every object on the list."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1,
+    "CLM-9618-1.2-010": 1
+   },
+   "authored_hash": "388cb6dd2ec7f108789d41a09df74adf71891364de05e258b2622169af49570b",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-014-MECH",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MECH",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain how the properties of a drawing object are used when a vector graphic is displayed.",
+   "canonical_answer": "Each drawing object's properties say how that object is to be drawn: its shape and size, where it sits, and the line or fill colour to apply. The software works down the drawing list, reads each object’s properties and executes its command, drawing that shape to the stated size and position, and the picture that appears is the result of every command having been executed with its properties.",
+   "marking_guidance": [
+    "How the properties work: each one names a detail the drawing command needs - 1 mark.",
+    "Because the software executes each command with its properties in turn, the list redraws the whole picture, which is why editing one object’s properties changes only that object - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-010": 1
+   },
+   "authored_hash": "dd344510cac1da3a137abbcf87fcfc84514d5514a7c96eaa3576f326fcb46fe4",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-015-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-009",
+    "CLM-9618-1.2-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A cycling club's badge is drawn as a vector graphic: a square stored as RECTANGLE with properties left corner (40, 40), width 120, height 120, fill none, and a circle stored as CIRCLE with properties centre (100, 100), radius 45, fill black. The club asks for the circle to be made twice as wide. Complete: (a) the property that must change, (b) its new value, (c) the drawing object that holds it, (d) how many objects in the drawing list change.",
+   "canonical_answer": "(a) The radius property must change. (b) Its new value is 90. (c) The CIRCLE object holds it. (d) One object changes: the RECTANGLE is untouched, because each drawing object is stored separately with its own properties.",
+   "marking_guidance": [
+    "Context: this badge's drawing list as given - 1 mark per completed entry, (a) the radius, (b) 90, (c) the CIRCLE, (d) one.",
+    "Reason: the change lands on the one object named, because the list stores each shape separately, so the redraw produces the badge with the wider circle; the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1,
+    "CLM-9618-1.2-010": 1
+   },
+   "authored_hash": "f6018d5aec912128994d7ccbc472fe133e74ea87f5c6f77b4f4de053d2bcf280",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-028-MISCON",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that a vector file's drawing list contains every shape the software could draw. Explain the error.",
+   "canonical_answer": "The drawing list contains the drawing objects that make up this particular image, each with its properties. It is not a library of every possible shape: the software’s shape commands exist whether or not they are used, and the list records only the ones this picture needs. The test: the list redraws this image and nothing else, which a library of every shape would not do.",
+   "marking_guidance": [
+    "1 mark: the error named - the drawing list has been taken for a library of all possible shapes, instead of the objects of this image.",
+    "1 mark: the correction with the test - the list holds this image’s objects only, so redrawing it reproduces this image and nothing else."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1
+   },
+   "authored_hash": "5f8ec923aa9906443ce6c8c29ae936cc3694711cb7e799be7a5ae8d127a06508",
+   "misconception_entry": "MC-9618-1.2-03",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-033-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by a drawing object.",
+   "canonical_answer": "A drawing object is one entry in a vector graphic's drawing list: a command to draw one shape, stored with the properties that say how that shape is drawn.",
+   "marking_guidance": [
+    "1 mark: the meaning - one shape of the image, stored as a command with its properties in the drawing list."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1
+   },
+   "authored_hash": "e9784eae1120202adf9990e2c455c107d81deb0fab5862c26b7701fb0fe1c080",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-039-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-009",
+    "CLM-9618-1.2-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two features of a vector graphic's storage.",
+   "canonical_answer": "Each drawing object is stored as a command with properties rather than as a grid of colour codes, so the file records what to draw, not how each pixel looks. The image is redrawn from the drawing list each time it is displayed, so it appears sharp at whatever size the software draws it, because the shapes are computed afresh at that size.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the command-with-properties storage, and the redraw at any size with fresh computation."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-009": 1,
+    "CLM-9618-1.2-010": 1
+   },
+   "authored_hash": "713f586eea860356e322d278a7e968b42add8947d03549a109a256f22a184fb4",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-045-WHY",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-010",
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a vector graphic stays sharp when it is displayed much larger.",
+   "canonical_answer": "The graphic is not stored as pixels; it is stored as a drawing list of objects with properties. When it is displayed at a larger size, the software redraws every object using the same properties at the larger scale, computing the lines afresh, so the edges do not break into blocks. A bitmap holds a fixed grid of pixels instead, and enlarging it far past its resolution makes each pixel cover more space, which is why the bitmap goes blocky where the vector does not.",
+   "marking_guidance": [
+    "Reason: the picture is redrawn from the drawing list at the new scale - 1 mark.",
+    "Because the software computes the shapes afresh, the edges stay clean, so the fixed pixel grid of a bitmap never comes into play - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-010": 1,
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "6899990be4f1e356ae801387576e0963005c7d8f37f29c4f577bb8388c473a00",
+   "objective_titles": [
+    "Show understanding of how data for a vector graphic are encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-016-BEN",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "BEN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain one benefit of storing a photograph as a bitmap.",
+   "canonical_answer": "A photograph has continuous, uneven changes of colour and tone across every part of the scene, and a bitmap stores a colour code for each pixel, so each pixel can hold its own colour, however irregular the picture. That match between the storage and the subject is the benefit: the bitmap can represent the photograph’s gradations directly.",
+   "marking_guidance": [
+    "Benefit: a colour code per pixel suits a photo's continuous tones - 1 mark.",
+    "Because each pixel stores its own colour, the irregular gradations of a real photograph are captured, so the picture looks right - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-011": 1
+   },
+   "authored_hash": "5d59f02e6a348c2054a06c36ef5cae514ac54f6c79d54246852a1e3130f4d8f3",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-017-LIM",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "LIM",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain one drawback of using a bitmap for a club logo that will be printed at many different sizes.",
+   "canonical_answer": "A bitmap's grid of pixels is fixed, so when the logo is printed much larger, each pixel covers more of the paper and the edges go blocky. The file also stores a code for every pixel, so a high-resolution version that prints cleanly is a large file to keep and send, which makes the multi-size use expensive in storage as well as rough at the edges.",
+   "marking_guidance": [
+    "Drawback: the fixed pixel grid loses sharpness when the logo is enlarged far - 1 mark.",
+    "Because each pixel then covers more paper, the printed edge goes blocky, so the logo looks poor at large sizes, and the large file is a second cost - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "3ac741dd205c14e8cb4d9dc4f6a8903c1c6be02a033b0c97fbddc3345fd2c124",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-018-EVAL",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-011",
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "EVAL",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Evaluate",
+   "command_word": "Explain",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A wildlife guide app shows a photograph of a pangolin and a line-drawn map icon that must scale from a phone screen to a projector. Explain which representation should be used for each, and why.",
+   "canonical_answer": "The pangolin photograph should be a bitmap: a photo's tones change continuously and irregularly, and a bitmap stores a colour code for each pixel, so it captures the shading, which a drawing list of objects cannot sensibly do pixel by pixel. The map icon should be a vector graphic: it is made of clean lines and simple shapes, and a vector is redrawn from its drawing list at whatever size is asked, so the icon stays sharp on the phone and on the projector, whereas a bitmap would go blocky at the projector's size. Each choice in this scenario follows from what the image is and how it must be shown.",
+   "marking_guidance": [
+    "Suitable choices named for both images - 1 mark for the photo as a bitmap, because per-pixel codes suit continuous tones.",
+    "Reason for the icon: a vector graphic redraws sharp at any scale, so the projector display is safe - 1 mark.",
+    "Context: the justification is developed in the given scenario - the photo’s tones and the icon’s scaling need are what decide it - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-011": 1,
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "2f828ff46fffd87e798374d43cabff6a6d3f0cbeb181d3dafbe957e8fc3d8a96",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-019-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-007",
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A sign-maker in Ongwediva prints a client's shop sign 2 metres wide from a stored 600 x 400 bitmap. Explain why the printed sign may look poor, and which property of the file would improve it.",
+   "canonical_answer": "Printed 2 metres wide, the 600 pixels across spread to about 300 pixels per metre, so each pixel covers roughly 3 millimetres of vinyl, which is visible at reading distance, and the edges go blocky. The property to raise is the image resolution: more pixels across the same sign means each covers less vinyl, so the edges sharpen, which is why a vector original would have been the better source for this job.",
+   "marking_guidance": [
+    "Context: this sign job, printed 2 m wide from the given 600 x 400 file - 1 mark.",
+    "Reason: because the fixed pixels spread out, each one covers millimetres of vinyl, so the print goes blocky, and the image resolution is the property to raise - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-007": 1,
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "a9bbdc2f586b0966a58b42041b360fcb299d73cbb6a783d228b3a378dc4ec0b1",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-031-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State the kind of image a bitmap suits best.",
+   "canonical_answer": "A bitmap suits images with continuous, irregular colour and tone, such as a photograph, because each pixel can store its own colour code.",
+   "marking_guidance": [
+    "1 mark: the meaning of the choice - photographs and continuously toned images go to bitmaps, because per-pixel codes match them."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-011": 1
+   },
+   "authored_hash": "eda2b398ef00cad7fd31ecd059830ec7f6acfadd3bef63dfc90d05a1aa28c40b",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-035-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two features of a vector graphic that make it suitable for a company logo.",
+   "canonical_answer": "The logo is redrawn from its drawing list at whatever size is asked, so it stays sharp on a business card and on a billboard alike. Its file stores a few objects with properties rather than a code for every pixel, so a simple logo’s file stays small and quick to send.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the any-size redraw that keeps it sharp, and the small file that follows from storing what to draw."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "4a8cc236844f55b692823d468f10ec2bd79c2de74a0adcfced9a450a1df2ba0c",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-041-WHY",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-013"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a vector graphic is often the smaller file for a simple company logo.",
+   "canonical_answer": "A logo made of a few shapes stores a handful of drawing objects, each a command with a few properties. A bitmap must store a colour code for every pixel in its grid, and at print quality that is thousands of codes, so the vector file is the smaller of the two for the same picture, which keeps it light to store and send.",
+   "marking_guidance": [
+    "Reason: the list stores a few commands with properties - 1 mark.",
+    "Because a bitmap must store a code for every pixel, its file is typically larger for a simple logo, so the vector version is the smaller file - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-013": 1
+   },
+   "authored_hash": "463df94005aa5d5cb14c12c15c85e080c7124f452babb8079d2ec4f57345931f",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-047-DIST",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-011",
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between how a bitmap and a vector graphic are stored.",
+   "canonical_answer": "A bitmap stores a colour code for each pixel in a fixed grid, so what is stored is how the picture looks at that resolution. A vector stores a drawing list of objects with properties, so what is stored is what to draw, and the pixels are produced only when the image is displayed.",
+   "marking_guidance": [
+    "Difference: per-pixel codes in a fixed grid against a list of commands with properties - 1 mark per side, whereas each serves a different job, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-011": 1,
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "d76ea288968e2656db16dfeeedb98832852474ada07931fe291d3f08d08bf48e",
+   "objective_titles": [
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-020-PROC",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe how sound is converted into a form a computer can store.",
+   "canonical_answer": "Sound is analogue, so a microphone first turns its varying pressure into a continuously varying voltage. An analogue-to-digital converter then samples the wave, measuring its amplitude at regular intervals, and each measurement is stored as a binary value. The result is a sequence of binary samples, which is the digital form the computer stores.",
+   "marking_guidance": [
+    "Order: the stages in sequence - microphone, sampling, binary coding - each statement a mark point, up to 2 from a longer list.",
+    "Input: the process starts from the analogue wave as given.",
+    "Result: the end product is a sequence of binary amplitude samples."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "5bc6c927c4a0206a5894cf662b5921e7d6005fcdfeb9146918f0f99fbbf348fe",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-021-MECH",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-016"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MECH",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain how stored samples are used when a digital recording is played back.",
+   "canonical_answer": "The stored samples are a sequence of binary amplitude values taken at regular intervals. To play the sound back, each sample's value is turned into an electrical level, and the levels are smoothed into a continuously varying wave, which drives the speaker. How close the rebuilt wave is to the original depends on how often the samples were taken and how precisely each was stored, which is why both settings matter at recording time.",
+   "marking_guidance": [
+    "How playback works: the sample values become levels, then a smoothed wave - 1 mark.",
+    "Because the wave is rebuilt from stored values alone, its closeness to the original depends on the sampling rate and resolution, so the settings decide the quality - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-016": 1
+   },
+   "authored_hash": "317685b3728c0b1a241728a9bc3b9b204770a290de3b119c451aa8797040e06b",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-022-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "A community radio station records a 10-second voice advert at 8,000 samples per second with a sampling resolution of 8 bits. Complete: (a) the total number of samples taken, (b) the number of bits the recording uses, (c) the size in bytes, (d) the term for the 8,000 samples per second.",
+   "canonical_answer": "(a) 8,000 x 10 = 80,000 samples. (b) At 8 bits each, the recording uses 80,000 x 8 = 640,000 bits. (c) In bytes, 640,000 / 8 = 80,000 bytes. (d) The sampling rate.",
+   "marking_guidance": [
+    "Context: this station's advert recording at the given settings - 1 mark per completed entry, (a) 80,000, (b) 640,000 bits, (c) 80,000 bytes, (d) the sampling rate.",
+    "Reason: each entry follows from the settings, because the rate sets the sample count and the resolution sets the bits per sample; the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "af3745604801cf51cc49bbaf10a0cb52834d986573142148e668a3a4bf03358e",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-029-MISCON",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that a recording's sampling resolution is measured in hertz. Explain the error.",
+   "canonical_answer": "That is the sampling rate: hertz counts per second, and the sampling rate is the number of samples taken per second. The sampling resolution is how many bits each stored sample takes, so it is measured in bits per sample. The test: rate is how often (hertz), resolution is how precisely (bits), and the image resolution of a picture is a third thing, counting pixels.",
+   "marking_guidance": [
+    "1 mark: the error named - the sampling rate has been given as the sampling resolution, a confusion of how often with how precisely.",
+    "1 mark: the correction with the test - the rate is in hertz (samples per second), while the resolution is in bits per sample."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "62a46eea3da954de34eb1194f4703ac143c67c93c56e25a7b0685c4a37d211fc",
+   "misconception_entry": "MC-9618-1.2-04",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-034-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by sampling.",
+   "canonical_answer": "Sampling is measuring the amplitude of an analogue signal at regular intervals, so that each measurement can be stored as a binary value.",
+   "marking_guidance": [
+    "1 mark: the meaning - taking amplitude measurements at regular intervals, each stored as a binary value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1
+   },
+   "authored_hash": "e6fe6b922abfceebfcf39b70ac231a05f1375a857d15fd8411b501916de23ce3",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-040-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two features of a digital sound recording.",
+   "canonical_answer": "The recording is a sequence of stored samples, each a binary value taken at a regular interval, so the computer can store, copy and process it like any other data. The recording's shape is set by two settings, the sampling rate in hertz and the sampling resolution in bits, so its quality and size are fixed at recording time.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the stored sequence of binary samples, and the two settings (rate and resolution) that shape it."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "78c8daff1954418e2499295f0e2e37bcb1cc961db7f6bd9ca925350cade4042a",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-046-WHY",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why sound must be converted before a computer can store it.",
+   "canonical_answer": "A computer's memory holds binary values, while sound is analogue: its pressure varies continuously, with endlessly many possible levels between any two. Sampling measures the wave at intervals and stores each measurement as a binary number, which turns the continuous signal into a finite sequence of values the computer can hold, so the conversion is needed because of what memory can store.",
+   "marking_guidance": [
+    "Reason: memory holds binary values while sound varies continuously - 1 mark.",
+    "Purpose: so the wave becomes a finite sequence of stored numbers, because the continuum itself cannot be held - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1
+   },
+   "authored_hash": "1baee86bb7b2912177a1dde32b7bacae52fd1552ad41644b42af700526e93133",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-023-DEF",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by the sampling rate of a recording.",
+   "canonical_answer": "The sampling rate is the number of samples taken per second, measured in hertz.",
+   "marking_guidance": [
+    "1 mark: the meaning - the count of samples per second, in hertz."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-015": 1
+   },
+   "authored_hash": "e9f7ae089c23ebff5310b6502c347b1db2ce436ff63330cea3a6964b7522887b",
+   "objective_titles": [
+    "Show understanding of the impact of changing the sampling rate and resolution"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-024-CHAIN",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-016"
+   ],
+   "item_type": "flashcard",
+   "subtype": "CHAIN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain the effect on the stored sound and its file size of increasing the sampling rate.",
+   "canonical_answer": "More samples are taken each second, so the wave's changes are followed more closely and the rebuilt sound is truer to the original. The file grows in step, because each extra sample is another stored binary value: doubling the rate doubles the samples and so doubles the stored data.",
+   "marking_guidance": [
+    "Change: a higher rate takes more samples per second - 1 mark - so the effect on accuracy is a truer capture, because more of the wave's movement is recorded.",
+    "The consequence for size: each sample is stored, so the file grows with the sample count - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-016": 1
+   },
+   "authored_hash": "cec9b3ae41f8511fb4fd9d0bed5a9e5c70d72aeb6a01f2efd2c440de4b33bfe2",
+   "objective_titles": [
+    "Show understanding of the impact of changing the sampling rate and resolution"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-025-APP",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-016",
+    "CLM-9618-1.2-017"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A choir's song is recorded at 22,050 samples per second with 16-bit resolution, then re-recorded at 44,100 samples per second, still with 16 bits per sample. Explain the effect on the file size and on the recorded sound.",
+   "canonical_answer": "The rate doubles, so twice as many samples are stored each second, and the recording’s data doubles in size for the same seconds of song. Each sample still takes 16 bits, so the precision per measurement is unchanged, but the wave is measured twice as often, so more of its movement is captured and the rebuilt sound is closer to the singing.",
+   "marking_guidance": [
+    "Context: this re-recorded choir track with the given rates - 1 mark.",
+    "Reason: because the sample count per second doubles while each sample keeps its 16 bits, the data doubles in size and the capture of the wave improves - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-016": 1,
+    "CLM-9618-1.2-017": 1
+   },
+   "authored_hash": "94a2851b57050a3c3439e518f9030e3a8d11d5b102d76aa96d63b53b9bb656d6",
+   "objective_titles": [
+    "Show understanding of the impact of changing the sampling rate and resolution"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-037-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-017"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two effects of increasing the sampling resolution of a recording.",
+   "canonical_answer": "Each sample is stored in more bits, so more amplitude levels can be distinguished, and quiet passages and loud ones alike are measured more precisely, which makes the rebuilt sound truer. The file grows in step, because every stored sample now takes more bits: doubling the resolution doubles the data for the same recording.",
+   "marking_guidance": [
+    "Features: two effects as two points, 1 mark each - the finer precision of each measurement, and the larger file that follows from wider samples."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-017": 1
+   },
+   "authored_hash": "7321c330c4eae46e8ce2df7138f6e047fb6f50ae18ecdf9799ce9b1bf9cd3813",
+   "objective_titles": [
+    "Show understanding of the impact of changing the sampling rate and resolution"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-043-WHY",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-016"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a recording made with too low a sampling rate can misrepresent what was played.",
+   "canonical_answer": "Between two samples, the wave may rise and fall again without any sample seeing it, so the rebuilt wave can differ from what was played. The rate sets how often the wave is measured, so a low rate leaves gaps in the capture, which is why the replayed sound can differ from the original.",
+   "marking_guidance": [
+    "Reason: a low rate leaves gaps between the measurements - 1 mark.",
+    "Because the rebuilt wave is drawn from those samples alone, what happens between them is lost, so the replay can differ from what was played - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-016": 1
+   },
+   "authored_hash": "80df5c5325d6698a683a6cf861e70985681b32b626793c6c50cee99ed363d859",
+   "objective_titles": [
+    "Show understanding of the impact of changing the sampling rate and resolution"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-P01",
+   "objective_ids": [
+    "OBJ-9618-1.2.1-02",
+    "OBJ-9618-1.2.1-04",
+    "OBJ-9618-1.2.1-05"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-004",
+    "CLM-9618-1.2-005",
+    "CLM-9618-1.2-010",
+    "CLM-9618-1.2-012"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 8,
+   "difficulty": 3,
+   "prompt": "The Swakopmund tourist office is building a website. It will show photographs of the dunes and a line-drawn map icon, and the icon must appear sharp on any screen from a phone to a hall projector.\n(a) Identify the representation the office should use for the map icon, and the representation for the dune photographs. [2]\n(b) One photograph is stored as a 2048 x 1536 bitmap with a colour depth of 24 bits. Calculate the file size of the pixel data, in megabytes (1 MB = 1,000,000 bytes). [3]\n(c) Explain why the icon, stored your way, stays sharp when it is shown large on the projector screen. [3]",
+   "canonical_answer": "(a) The map icon should be a vector graphic; the dune photographs should be bitmaps.\n(b) Pixels: 2048 x 1536 = 3,145,728. Bits: 3,145,728 x 24 = 75,497,472. Bytes: 75,497,472 / 8 = 9,437,184. Megabytes: 9,437,184 / 1,000,000 = 9.44, so the pixel data is about 9.44 MB.\n(c) The icon is stored as a drawing list of objects with properties, not as pixels. When the projector screen shows it large, the software redraws every object from the list at the larger scale, computing the lines afresh, so the edges stay clean. A bitmap, by contrast, holds a fixed grid of pixels, and enlarging it far past its resolution makes each pixel cover more of the screen, so the icon would go blocky.",
+   "marking_guidance": [
+    "Part (a): identify the icon as a vector graphic and the photographs as bitmaps - 2 points, 1 per identification.",
+    "Part (b): the reason the answer is what it is - 3 points: the pixel count, the bits, the bytes-then-megabytes conversion, one per correct step of the working.",
+    "Part (c): the context of this scenario - the icon is drawn from the list afresh at the projector’s scale - 3 points: the drawing-list storage, the redraw at any scale, and why the bitmap would fail here."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A tourist office website carries dune photographs and a scalable map icon.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-004": 1,
+    "CLM-9618-1.2-005": 1,
+    "CLM-9618-1.2-010": 1,
+    "CLM-9618-1.2-012": 1
+   },
+   "authored_hash": "8261b87a539dcc8537e7b321dbea783ffcd1ec9e92c1298857ef9c7a84b1c870",
+   "objective_titles": [
+    "Perform calculations to estimate the file size for a bitmap image",
+    "Show understanding of how data for a vector graphic are encoded",
+    "Justify the use of a bitmap image or a vector graphic for a given task"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-1.2-P02",
+   "objective_ids": [
+    "OBJ-9618-1.2.2-01",
+    "OBJ-9618-1.2.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-1.2-014",
+    "CLM-9618-1.2-015",
+    "CLM-9618-1.2-016",
+    "CLM-9618-1.2-017"
+   ],
+   "item_type": "data_response",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A studio recorded four tracks. The table shows the settings and the data sizes. Read the table and answer the questions.\n\n| Track | Rate (Hz) | Resolution (bits) | Length (s) | Data (bytes) |\n|---|---|---|---|---|\n| Interview | 8,000 | 8 | 60 | (a) |\n| Jingle | 16,000 | 8 | 15 | 240,000 |\n| Song demo | 44,100 | 16 | 20 | (b) |\n| Jingle (re-record) | 16,000 | (c) | 15 | 480,000 |\n\n(d) State which track captures the wave most often per second, and which captures each measurement most precisely. [2]",
+   "canonical_answer": "(a) The interview takes 8,000 x 60 = 480,000 samples, and at 8 bits each that is 3,840,000 bits, which is 480,000 bytes.\n(b) The song demo takes 44,100 x 20 = 882,000 samples, and at 16 bits each that is 14,112,000 bits, which is 1,764,000 bytes.\n(c) The re-recorded jingle stores 480,000 bytes at the same rate and length, so its resolution is 16 bits: 16 bits hold twice the data of 8 bits for each sample.\n(d) The song demo captures most often, at 44,100 samples per second, and the song demo and the re-recorded jingle tie for precision, at 16 bits per sample.",
+   "marking_guidance": [
+    "Read the given table and complete the values: (a) 480,000 bytes and (b) 1,764,000 bytes - 1 mark each, and each completed row shows the sample count times the bits per sample converted to bytes.",
+    "Answer and value: (c) 16 bits, because doubling the bits per sample at the same rate doubles the bytes, so the result shows the resolution from the data - 1 mark.",
+    "Reason: (d) the rate column gives the answer for \"most often\" (44,100 Hz) and the resolution column for \"most precisely\" (16 bits), because the table shows each track’s settings - 2 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A studio table of recordings with settings and data sizes.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 1.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-1.2-014": 1,
+    "CLM-9618-1.2-015": 1,
+    "CLM-9618-1.2-016": 1,
+    "CLM-9618-1.2-017": 1
+   },
+   "authored_hash": "e3515ddf7ad3bdf305e132570d18a586c9ebb48e62bd06612a92e49dcdcb7e62",
+   "objective_titles": [
+    "Show understanding of how sound is represented and encoded",
+    "Show understanding of the impact of changing the sampling rate and resolution"
+   ]
+  }
+ ]
+}

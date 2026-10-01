@@ -1,0 +1,139 @@
+{
+ "unit_id": "CU-9618-10.3.1",
+ "title": "Files: keeping data after the program ends",
+ "objective_ids": [
+  "OBJ-9618-10.3.1-01",
+  "OBJ-9618-10.3.1-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_purpose",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 560,
+  "target": 680,
+  "max": 800
+ },
+ "blocks": [
+  {
+   "block_id": "10.3.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Why programs need files; and handling text files of one or more lines in pseudocode: opening with a mode, reading to the end, appending, closing.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "6c2811340ff6decb150e628a9955d878a0243aa6eb55cf3bf62b34f0b5076756"
+  },
+  {
+   "block_id": "10.3.1-b2",
+   "block_type": "definition",
+   "heading": "Why files are needed",
+   "text": "Everything met so far - variables, arrays, records - lives in memory, and memory is cleared the moment the program ends: the shop's day of sales vanishes with the closing statement. A file stores data in secondary storage, where it is kept after the program ends, with the power off, and can be read again tomorrow by the same program or a different one. That permanence is the first need; the second is sharing, because a file on storage is what one program writes and another reads - the day's orders written by the till and read by the bookkeeper's program - and what travels as an attachment across a network. Both needs are one idea: the file is data that outlives the program, so programs that end or never meet can still exchange it.",
+   "claim_ids": [
+    "CLM-9618-10.3-001",
+    "CLM-9618-10.3-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1,
+    "CLM-9618-10.3-006": 1
+   },
+   "authored_hash": "c622fd24d81cc19ee125d94c8b337f4d5af13af09221f991c7897e6422fe2116"
+  },
+  {
+   "block_id": "10.3.1-b3",
+   "block_type": "process",
+   "heading": "Handling text files in pseudocode",
+   "text": "A text file is handled in four moves, in a fixed order. Open it: OPENFILE with the file name and a mode. READ reads lines from the start of the file. WRITE creates the file afresh, so anything already in it is lost. APPEND adds new lines to the end of an existing file and keeps what is there. Read or write lines: READFILE <file>, <string> reads the next line into the string, and WRITEFILE <file>, <string> writes the line. Test the end: EOF(<file>) returns TRUE when there are no more lines to read, so a loop that reads a whole file tests NOT EOF(<file>) before each READFILE. Close it: CLOSEFILE with the same file name. One quotation-mark rule runs through all of it: a literal file name is a string, so OPENFILE \"Orders.txt\" FOR READ has quotation marks, whereas an identifier holding a file name has none, so OPENFILE FileName FOR READ opens the file whose name the identifier holds - and quoting the identifier would look for a file actually called FileName. And one geometry rule: a text file is read line by line from the start, so reaching line 10 means reading lines 1 to 9 first; there is no jump to a line.",
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-004",
+    "CLM-9618-10.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-004": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "7cfe43b9951628444fd8c39fdba56f9e3c444b6edc967d3ac81d7fb9b437176e"
+  },
+  {
+   "block_id": "10.3.1-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example: one day of orders",
+   "text": "A kiosk writes the day's orders to \"Orders.txt\" and the next morning's program totals them. Writing, with APPEND because yesterday's orders are already there:\n\n```pseudocode\nDECLARE Order : STRING\nDECLARE Order : STRING\nFOR Count <- 1 TO NumberOfOrders\n   INPUT Order\n   WRITEFILE \"Orders.txt\", Order\nNEXT Count\n```\n\nReading the whole file, with the EOF test guarding each read:\n\n```pseudocode\nDECLARE Line : STRING\nDECLARE TotalOrders : INTEGER\nTotalOrders <- 0\nOPENFILE \"Orders.txt\" FOR READ\nWHILE NOT EOF(\"Orders.txt\")\n   READFILE \"Orders.txt\", Line\n   TotalOrders <- TotalOrders + 1\nENDWHILE\nCLOSEFILE \"Orders.txt\"\n```\n\nThe reading loop shows the two tests C-16's structure names: the WHILE tests NOT EOF before each READFILE, so the loop never reads past the last line, and the body reads one line and counts it, so the count grows exactly with the lines read. Close the file with the same name it was opened with, or the next open may find it still locked - the discipline is open, work, close, always in that order, and the same name in all three places.",
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "35cfe59ca9b6083fcdabbfb2ef549e3e9226548d2c88ac3ac50e10654293c9c5"
+  },
+  {
+   "block_id": "10.3.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur. Quotation marks on the wrong side: the literal name \"Log.txt\" takes them, the identifier LogFile does not - the test is whether it is the name itself or a variable holding the name. The wrong mode for keeping data: WRITE starts the file again, so old lines are lost, whereas APPEND keeps them and adds to the end - the test is whether the old contents should survive. And misusing the file's shape: a text file is read from the start, line by line, so reaching line 10 means reading 1 to 9 first, and EOF(<file>) carries the file's name - the test is whether the jump skips lines, because a text file offers no jump.",
+   "claim_ids": [
+    "CLM-9618-10.3-004",
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-005",
+    "CLM-9618-10.3-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-004": 1,
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-005": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "5d41b94a080334f921341d9b9152a7f4e32f35788829b710b47931b559e2cadd"
+  },
+  {
+   "block_id": "10.3.1-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The records of 10.1 are what a file's lines can hold, and the arrays of 10.2 are what a program fills from a file's lines. The databases of 8 are the grown-up answer to the same need, and the testing of 12.3 treats these files as the program's lasting data, whose corruption and loss 6.1's backups guard.",
+   "claim_ids": [
+    "CLM-9618-10.3-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1
+   },
+   "authored_hash": "159699e60a86cb9850c4a2d1a12468361fa6e81f27680f2b076cc56a26cf21a5"
+  }
+ ],
+ "word_count": 740,
+ "qa_status": "review_required",
+ "notes": []
+}

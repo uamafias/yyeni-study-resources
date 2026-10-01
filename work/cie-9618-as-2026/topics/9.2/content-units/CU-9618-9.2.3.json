@@ -1,0 +1,128 @@
+{
+ "unit_id": "CU-9618-9.2.3",
+ "title": "Flowcharts, refinement and logic statements",
+ "objective_ids": [
+  "OBJ-9618-9.2.3-01",
+  "OBJ-9618-9.2.3-02",
+  "OBJ-9618-9.2.3-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_construct",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 836,
+  "target": 1018,
+  "max": 1200
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-9.2.3-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Drawing a flowchart from a structured English description or pseudocode; stepwise refinement; and logic statements to define parts of an algorithm solution.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "0801cbdd2bc1b10342e4d110bb83923bafb7ff5ce66d31e74b518961584af52e"
+  },
+  {
+   "block_id": "CU-9618-9.2.3-b2",
+   "block_type": "process",
+   "heading": "Drawing flowcharts",
+   "text": "A flowchart is drawn from pseudocode or English construct by construct, because each construct has a box shape waiting for it. Each sequence statement becomes a rectangle with the statement inside and an arrow to the next box. Each input or output becomes a parallelogram. Each selection becomes a diamond with the condition as its question, a Yes arrow to the THEN branch's boxes and a No arrow to the ELSE branch's boxes, the two branches' arrows meeting again after. Each iteration becomes a diamond or a loop of arrows: a WHILE's condition is a diamond before its body, with the No exit leaving the loop and the Yes exit running the body's boxes and an arrow back to the diamond; a FOR's known count becomes the same loop with the counter's question as the diamond. Worked from the previous unit's loop:\n\n```pseudocode\nTotal <- 0\nWHILE Mark >= 0\n   Total <- Total + Mark\n   INPUT Mark\nENDWHILE\nOUTPUT Total\n```\n\nBox by box: a rounded START; a rectangle Total <- 0; a parallelogram INPUT Mark; a diamond 'Mark >= 0?' with its No exit to a parallelogram OUTPUT Total and a rounded END, and its Yes exit to a rectangle Total <- Total + Mark, a parallelogram INPUT Mark, and an arrow back to the diamond. The back arrow is the flowchart's whole word for repetition: no new shape is invented, because the arrow that returns is what says 'again'.",
+   "claim_ids": [
+    "CLM-9618-9.2-011",
+    "CLM-9618-9.2-009",
+    "CLM-9618-9.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-011": 1,
+    "CLM-9618-9.2-009": 1,
+    "CLM-9618-9.2-008": 1
+   },
+   "authored_hash": "2826cf8a512bfea1e214a38e2291bb068bd89c2c064e3b4a4a2c9922201b5d45"
+  },
+  {
+   "block_id": "CU-9618-9.2.3-b3",
+   "block_type": "process",
+   "heading": "Stepwise refinement",
+   "text": "Stepwise refinement is how an English description is produced, and it works from the top down. The problem is written as one statement: 'Produce the shop's day-end report.' That statement is broken into the parts it hides: '1. Read every sale. 2. Compute the day's total. 3. Print the report.' Each of those is broken again - '2. Compute the day's total' into '2.1 Set the day's total to 0. 2.2 For each sale, add its amount to the day's total' - and the breaking continues until every statement is the size of one or two pseudocode statements, which is the level of detail needed to write. The levels are the value: each level can be checked against the problem before the next is broken, so an error found at level 2 costs one line, and the same error found at the end costs a program. Each refinement of a statement is decomposition of that statement - the whole method is 9.1's decomposition applied one break at a time, checked as it goes - and the parts at the bottom level are the modules and statements the program is written from, which is the whole route from a problem in words to a program in pseudocode.",
+   "claim_ids": [
+    "CLM-9618-9.2-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-012": 1
+   },
+   "authored_hash": "a4de8ccef3a52a1e53942ba561e8bcead9cf8a640477704c319c1f7d2efc5b2b"
+  },
+  {
+   "block_id": "CU-9618-9.2.3-b4",
+   "block_type": "definition",
+   "heading": "Logic statements",
+   "text": "The conditions that steer a solution are written as logic statements, built with AND, OR and NOT. AND holds when both its sides hold: 'Age >= 13 AND Age <= 19' is true inside the band and false outside, because both bounds must be met. OR holds when at least one side holds: 'Member = TRUE OR Today = \"Tuesday\"' gives the discount when either reason is present. NOT holds when its statement fails: 'NOT Paid' is true exactly when Paid is FALSE. The three join into the conditions of selections and loops, and each says when its part of the solution acts: the late fee acts 'when the visit is after 17:00 or on a public holiday, and the patient is not exempt' becomes IF (Hour > 17 OR Holiday = TRUE) AND NOT Exempt THEN. The parts of an algorithm solution are defined by these statements - the selection's paths, the loop's end, the module's guard - because a part that acts 'when X and not Y' is defined by exactly that sentence, and the reader who knows the sentence knows the part. A caution that saves marks: the three operators bind differently, so a condition mixing AND with OR needs brackets to say which joins which, because the unbracketed AND grabs its two neighbours and leaves the OR joining the remainder. Write the sentence in English first, then bracket the pseudocode until it says the same thing.",
+   "claim_ids": [
+    "CLM-9618-9.2-013"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-013": 1
+   },
+   "authored_hash": "7eaf09971daa12a14839577820ffba6ecb63efc8b075b287d2f8528e41a56ac2"
+  },
+  {
+   "block_id": "CU-9618-9.2.3-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "The recurring slip is drawing a decision without its shape or its labels. A decision is a diamond, and its two exits are labelled Yes and No, because the follower must know which way each answer goes; a rectangle with two unlabelled arrows leaves the path to guesswork, which a flowchart exists to prevent. The test: count the exits and read their labels - a decision is a diamond with two labelled exits, and anything else in its place is not a decision.",
+   "claim_ids": [
+    "CLM-9618-9.2-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-009": 1
+   },
+   "authored_hash": "14c5d4c9e507b93c033c886dfab59e27552bb3127d54a5b482e15d8a1246e7e3"
+  },
+  {
+   "block_id": "CU-9618-9.2.3-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The flowcharts here document the constructs of 9.2.2, the refinement is 9.1's decomposition in slow motion, and the logic statements' AND, OR and NOT are the gates of 3.2 doing a day's work in a condition. The descriptions refined here become the structured English of 12.2's design step.",
+   "claim_ids": [
+    "CLM-9618-9.2-012",
+    "CLM-9618-9.2-013"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-012": 1,
+    "CLM-9618-9.2-013": 1
+   },
+   "authored_hash": "719426f0d266a3f73eb667f267c6f60ff353cfd9b0ee8a0ac4247c6f34c1db0b"
+  }
+ ],
+ "word_count": 855,
+ "qa_status": "review_required",
+ "notes": []
+}

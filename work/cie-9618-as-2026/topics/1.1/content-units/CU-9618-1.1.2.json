@@ -1,0 +1,148 @@
+{
+ "unit_id": "CU-9618-1.1.2",
+ "title": "BCD and hexadecimal in use, and character sets",
+ "objective_ids": [
+  "OBJ-9618-1.1.2-01",
+  "OBJ-9618-1.1.2-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 616,
+  "target": 748,
+  "max": 880
+ },
+ "blocks": [
+  {
+   "block_id": "1.1.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Where BCD and hexadecimal are used in practice, and how character data is stored in its internal binary form through a character set.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "9fc2b49692bf6de3cdd259b09eb7cd6f9809e60f5951574248d50ce5132714a8"
+  },
+  {
+   "block_id": "1.1.2-b2",
+   "block_type": "definition",
+   "heading": "Where BCD is used",
+   "text": "BCD earns its place wherever a device must show denary digits one at a time. A digital clock face, an electricity meter display and a calculator readout each show a number as separate digits, and because BCD stores each denary digit as its own 4-bit group, each display digit can be driven straight from its own group. A counter kept in pure binary has to be converted back into separate denary digits before it can be displayed, which takes extra logic. The cost of the convenience is storage: three denary digits take twelve bits in BCD, and the largest value they hold, 999, fits in ten pure binary bits.",
+   "claim_ids": [
+    "CLM-9618-1.1-006",
+    "CLM-9618-1.1-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-006": 1,
+    "CLM-9618-1.1-011": 1
+   },
+   "authored_hash": "dd16c17ea532c9bf3141f70ff852ba06cbed6641ef8c38107f2465ba83e0484b"
+  },
+  {
+   "block_id": "1.1.2-b3",
+   "block_type": "definition",
+   "heading": "Where hexadecimal is used",
+   "text": "Hexadecimal is the working shorthand for bit patterns. One hexadecimal digit stands for exactly four bits, so a long binary pattern becomes a quarter as many characters: the 16-bit pattern 1010 1111 0011 0110 is written AF36, and a mis-read digit is easier to spot in four characters than in sixteen. Memory addresses and error codes in a system's log are written in hexadecimal, machine code listings show each instruction's bytes in it, and colour codes on web pages give a colour's red, green and blue values as hexadecimal digit pairs. The hardware address of a network interface is written as six pairs of hexadecimal digits. The reason is the same each time: people who maintain systems read bit patterns, and hexadecimal lets them do it compactly with an exact mapping to the bits.",
+   "claim_ids": [
+    "CLM-9618-1.1-012",
+    "CLM-9618-1.1-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-012": 1,
+    "CLM-9618-1.1-005": 1
+   },
+   "authored_hash": "855e498369608e48a54d95b622f74e30ff977ba6d4d1a2256ac89bb5ca983107"
+  },
+  {
+   "block_id": "1.1.2-b4",
+   "block_type": "definition",
+   "heading": "Character sets: ASCII, extended ASCII and Unicode",
+   "text": "Text is stored as numbers. A character set gives each character its own integer code, and the bits stored for a character are the binary form of that code. ASCII, the American Standard Code for Information Interchange, allocates 7 bits per character, so it defines 128 codes: enough for English letters in two cases, the digits 0 to 9, punctuation and some control characters. Extended ASCII uses all 8 bits of a byte, giving 256 codes and room for accented letters and drawing characters. Unicode is the character set built to cover the world's writing systems: because it allocates more bits per character, it can represent many more characters than ASCII's 128. The count of characters a set can represent is two to the power of its bits per character, so 7 bits give 128 codes and 8 bits give 256. Which set was used matters, because the same stored bits can decode to different characters under different sets, so a system reading character data needs to know the set that was used to write it.",
+   "claim_ids": [
+    "CLM-9618-1.1-013",
+    "CLM-9618-1.1-014",
+    "CLM-9618-1.1-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-013": 1,
+    "CLM-9618-1.1-014": 1,
+    "CLM-9618-1.1-015": 1
+   },
+   "authored_hash": "14d95b8293ba5c052db8b51a2c6e830f076609b1393b15103d4701e92bb3e425"
+  },
+  {
+   "block_id": "1.1.2-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: storing a word in extended ASCII",
+   "text": "When a form stores the word \"HI\" using extended ASCII, each character is stored as the 8-bit binary form of its code. H has the code 72 and I has the code 73. Finding the bits is a place-value job: 72 takes a 64 leaving 8, so H is 0100 1000; 73 takes the 64, the 8 and one more, so I is 0100 1001. The word is stored as the two bytes 0100 1000 0100 1001, and in hexadecimal the same two bytes are 48 49, which is how the codes appear in a system listing. Reading back reverses the route: the system splits the bits into bytes, reads each byte's value, 72 and 73, and looks up those codes in the set to show H then I. Nothing in the stored bits names the set: a reader that assumed a different set would show different characters for the same bytes.",
+   "claim_ids": [
+    "CLM-9618-1.1-013",
+    "CLM-9618-1.1-014"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-013": 1,
+    "CLM-9618-1.1-014": 1
+   },
+   "authored_hash": "23833038f55b1da38531ad9d0df14d59722ef133f9caaec18e8f23c8b51af7c6"
+  },
+  {
+   "block_id": "1.1.2-b6",
+   "block_type": "misconception",
+   "heading": "Common errors with character sets",
+   "text": "The recurring error with character counts is taking the highest code for the number of characters. Extended ASCII's codes run from 0 to 255, which is 256 codes: the highest code is one less than the count, so \"255 characters\" is one short. The same arithmetic catches the bits-and-bytes slip: ASCII uses 7 bits per character, not 7 bytes, and 7 bytes would be 56 bits, eight times what a character needs. When a figure is quoted, divide by eight to see whether bytes are being described where bits are meant.",
+   "claim_ids": [
+    "CLM-9618-1.1-014"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-014": 1
+   },
+   "authored_hash": "94dc6d1012f5c8f81d37727b6801e447c863c6fd307132ca3073290425582967"
+  },
+  {
+   "block_id": "1.1.2-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "Character codes carry this section's arithmetic into later topics. Check digits and verification methods in 6.2 Data Integrity work on stored character data; 8.1 Database Concepts stores text fields as character codes; 2.1 Networks sends those bits in packets across the internet; and 9.2 Algorithms processes strings of characters in pseudocode.",
+   "claim_ids": [
+    "CLM-9618-1.1-013"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-1.1-013": 1
+   },
+   "authored_hash": "6ea2c9be3ad68fd2a5d31082d180cf01ce35eda4f32adaeed63d29c72a51605f"
+  }
+ ],
+ "word_count": 771,
+ "qa_status": "review_required",
+ "notes": []
+}

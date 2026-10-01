@@ -1,0 +1,187 @@
+{
+ "unit_id": "CU-9618-5.1.1",
+ "title": "Operating systems, utilities and program libraries",
+ "objective_ids": [
+  "OBJ-9618-5.1.1-01",
+  "OBJ-9618-5.1.1-02",
+  "OBJ-9618-5.1.1-03",
+  "OBJ-9618-5.1.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_purpose",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1220,
+  "target": 1480,
+  "max": 1740
+ },
+ "blocks": [
+  {
+   "block_id": "5.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Why a computer system requires an operating system; its key management tasks; the utility software supplied with it; and program libraries and DLL files.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "338797d31d6d3628f93dad6c9669d89803c1b7e72a004c2ec882150febe4d0d8"
+  },
+  {
+   "block_id": "5.1.1-b2",
+   "block_type": "definition",
+   "heading": "Why a computer requires an operating system",
+   "text": "An operating system is the software that manages a computer's hardware and software resources and provides the interface through which users and programs use the machine. The need it answers is sharing. One machine - its processor, its RAM, its storage, its devices - is used by many programs and many users at once, and something must decide who gets what, keep them from colliding, and provide a common way in. The OS does this once, for all programs. Without it, every application would have to drive the hardware itself: allocate its own memory, command each device, handle its own files and errors, and each program would duplicate the same work badly. The OS also runs from the first moment: it starts up the hardware, loads and runs the programs, and fielded the errors that arise, so no other software can run without it, which is the plainest statement of the requirement. Its own security role sits here too: user accounts, access rights and passwords - who may log on, and what they may use - are managed by the OS itself, not by anti-virus software or a firewall, which are separate programs that run on it.",
+   "claim_ids": [
+    "CLM-9618-5.1-001",
+    "CLM-9618-5.1-002",
+    "CLM-9618-5.1-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-001": 1,
+    "CLM-9618-5.1-002": 1,
+    "CLM-9618-5.1-007": 1
+   },
+   "authored_hash": "692d2c1fdadb2c8389c6c6be817702fd5ed82158f643da4e5a35106826f43d67"
+  },
+  {
+   "block_id": "5.1.1-b3",
+   "block_type": "definition",
+   "heading": "The key management tasks",
+   "text": "The OS's management tasks divide into five, and each has its own subject. Memory management is about RAM while programs run: it allocates each process an area of memory and protects one process's area from another, so programs run side by side without overwriting each other - the boundary to hold is RAM at run time, not files on a disk. File management is about storage: it keeps the disk's directories and files, records where each file's parts sit, and controls who may access what. Security management is about people: user accounts, access rights and passwords, deciding who may log on and what they may use. Hardware management is about devices: input, output and peripherals - the keyboard read, the printer driven, the disk positioned - each a device the OS commands for whichever program needs it. Process management is about time: the OS decides which process runs when, so several programs share the one processor, each proceeding as though it had the machine to itself. A question naming one task is answered by naming its subject - memory, files, users, devices, processor - because the subjects, not the words, are what separate the tasks.",
+   "claim_ids": [
+    "CLM-9618-5.1-003",
+    "CLM-9618-5.1-004",
+    "CLM-9618-5.1-005",
+    "CLM-9618-5.1-006",
+    "CLM-9618-5.1-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-003": 1,
+    "CLM-9618-5.1-004": 1,
+    "CLM-9618-5.1-005": 1,
+    "CLM-9618-5.1-006": 1,
+    "CLM-9618-5.1-007": 1
+   },
+   "authored_hash": "81a92531f767dfe436b1e607d2289433c1ea040bc092020b6c8165cc27bafc8e"
+  },
+  {
+   "block_id": "5.1.1-b4",
+   "block_type": "definition",
+   "heading": "Utility software supplied with the OS",
+   "text": "Around the OS's management sit the utilities, supplied with it to maintain the computer. A disk formatter prepares a new disk for use, writing the structure the file system needs. A virus checker scans storage and files for malware, quarantining what it finds. Defragmentation software rearranges the parts of files on the disk so each file sits contiguously: as files are saved, changed and deleted, one file's parts end up scattered, and the disk head travels far to read one file; defragmentation moves the parts together so the head travels less and the file reads faster - and the file's size is unchanged, because data is moved, not removed. Disk analysis and repair software checks the disk's contents and mends what it can. File compression software makes files smaller, and the making-smaller is 1.3's whole subject, with its lossy and lossless methods. Back-up software copies files to a second place for safety, which is the plainest protection a user can buy with a click. The utilities arrive with the OS because they maintain the machine the OS manages, and they are written to work with its file systems.",
+   "claim_ids": [
+    "CLM-9618-5.1-008",
+    "CLM-9618-5.1-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-008": 1,
+    "CLM-9618-5.1-009": 1
+   },
+   "authored_hash": "2593fa6e05d8937e3f78c657bbfe16e95f686e8e6621c92e39945e6a1fb74ae5"
+  },
+  {
+   "block_id": "5.1.1-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: a learner double-clicks a document",
+   "text": "A learner double-clicks a saved document, and the OS goes to work through its tasks. Process management creates a process for the word processor and gives it a turn on the processor. Memory management allocates the process an area of RAM and protects every other program's area from it. File management reads the directory to find where the document's parts sit on the disk, and reads them into the process's memory. Hardware management drives the disk, the screen and the keyboard for the process while it runs. Security management checks, at each step, that this learner's account may open this document - a shared computer keeps its marks where only the teacher's account reaches. And when the learner closes the document and clicks Save, the same tasks run in reverse: the process ends and its memory is released, the file's parts are written back to storage, and the disk is driven again. One click, five management tasks, and none of them visible to the learner - which is the point: the OS exists so that no program and no user has to do any of it. Run the same click on the office's shared computer and the security step shows its teeth: the learner's account opens the document, a colleague's account is refused, and no program had to ask - the OS asked, because access is its question to put.",
+   "claim_ids": [
+    "CLM-9618-5.1-003",
+    "CLM-9618-5.1-004",
+    "CLM-9618-5.1-005",
+    "CLM-9618-5.1-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-003": 1,
+    "CLM-9618-5.1-004": 1,
+    "CLM-9618-5.1-005": 1,
+    "CLM-9618-5.1-006": 1
+   },
+   "authored_hash": "80e12b367f564404fb76aed5f0391e408362a816e5d303b1f764af9ecb5356b1"
+  },
+  {
+   "block_id": "5.1.1-b6",
+   "block_type": "definition",
+   "heading": "Program libraries and DLL files",
+   "text": "Software under development is often constructed from existing code, and program libraries are where that code lives: a collection of pre-written, tested routines that a program can use. Sorting a list, handling a date, drawing a chart - these are solved problems, and a library hands the developer the solved routine instead of the blank file. The benefits are direct: the routine is already written, so development is faster; it is tested in many programs before yours, so it is reliable; and when it is mended, every program using the library gains the mend. A Dynamic Link Library (DLL) file carries the sharing further: the library is linked when the program runs, not built into the program file, so several programs share one copy of the routine instead of each carrying its own - which keeps each program file smaller, and lets one updated DLL serve every program that uses it. The same coin has its other face: a program is only as available as the library it links, so a missing or incompatible DLL stops the program from starting, which is the cost the sharing carries.",
+   "claim_ids": [
+    "CLM-9618-5.1-010",
+    "CLM-9618-5.1-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-010": 1,
+    "CLM-9618-5.1-011": 1
+   },
+   "authored_hash": "680ef8d09828061b2590ead096f56479a7bf55e203fd61baa0de0a7678ca814c"
+  },
+  {
+   "block_id": "5.1.1-b7",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur here. Describing file management for memory management: memory management is about RAM while programs run, and the test is whether the answer is about RAM at run time or files on a disk. Believing defragmentation reduces file size: it moves the parts of each file together so they read faster, and the test is whether the amount of data changes - it does not, only where it sits. And giving the OS a security job that belongs to separate programs: anti-virus software and a firewall run on the OS, while the OS's own security management covers user accounts, access rights and passwords - the test is whether the feature is part of the operating system or a program that runs on it.",
+   "claim_ids": [
+    "CLM-9618-5.1-004",
+    "CLM-9618-5.1-009",
+    "CLM-9618-5.1-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-004": 1,
+    "CLM-9618-5.1-009": 1,
+    "CLM-9618-5.1-007": 1
+   },
+   "authored_hash": "89bdb4078929a970e5f95347980541e13955262aa58a62ca2e75d800cf997810"
+  },
+  {
+   "block_id": "5.1.1-b8",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The memory this unit allocates is the memory of 3.1 and 4.1; the files it manages travel the networks of 2.1, and their safety is 6.1's subject. The utilities lean on 1.3 for making files smaller, and the libraries return in 9.2 and 11, where ready-made thinking and tested routines are what the developer builds on.",
+   "claim_ids": [
+    "CLM-9618-5.1-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-5.1-006": 1
+   },
+   "authored_hash": "49c165ee1b31226ab1541bd117899f10c0c0f4244892dad32cdaddff4400215f"
+  }
+ ],
+ "word_count": 1240,
+ "qa_status": "review_required",
+ "notes": []
+}

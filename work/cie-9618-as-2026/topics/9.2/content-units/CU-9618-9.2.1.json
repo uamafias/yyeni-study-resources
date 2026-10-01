@@ -1,0 +1,113 @@
+{
+ "unit_id": "CU-9618-9.2.1",
+ "title": "Algorithms, identifiers and input-process-output",
+ "objective_ids": [
+  "OBJ-9618-9.2.1-01",
+  "OBJ-9618-9.2.1-02",
+  "OBJ-9618-9.2.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 836,
+  "target": 1018,
+  "max": 1200
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-9.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "What an algorithm is; suitable identifier names for the data a problem uses; and pseudocode that contains input, process and output.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "cad450421d2c6b2edc17d74bf0d24e0ea97d41599bee4b67458ef472064feb50"
+  },
+  {
+   "block_id": "CU-9618-9.2.1-b2",
+   "block_type": "definition",
+   "heading": "What an algorithm is",
+   "text": "An algorithm is a solution to a problem expressed as a sequence of defined steps. Defined means unambiguous: a follower always knows exactly what the step asks, so 'simmer for 45 minutes' is a step and 'cook until it looks right' is not, because the second depends on the cook's judgement and two followers would stop at different moments. Ordered means the sequence carries the work forward: each step needs what the steps before it produced, so a defined set of steps out of order is as unusable as a vague one in order. Complete means nothing is missing: every case the input can present has a next step waiting for it. Together the three properties make the algorithm transferable: the same input passes through the same steps to the same result, whether the follower is the designer, a stranger, or a processor - which is the whole point, because a solution that only its designer can follow is a solution held in one head, not an algorithm. The everyday test is worth running on any set of steps: hand the steps to someone who has never seen the problem, and watch where they hesitate. Where they ask 'how long?' or 'which one?' or 'what if none arrive?', the step that provoked the question is not yet defined, because a defined step answers its follower's questions in advance. Each such question marks a place where the algorithm still hides its designer's judgement, which is the gap the defined form exists to close.",
+   "claim_ids": [
+    "CLM-9618-9.2-001",
+    "CLM-9618-9.2-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-001": 1,
+    "CLM-9618-9.2-002": 1
+   },
+   "authored_hash": "0c76092ed1e60cdcf541ee53ece62b3d132aef2d041b72caf19c2d3e3a6f4bb3"
+  },
+  {
+   "block_id": "CU-9618-9.2.1-b3",
+   "block_type": "definition",
+   "heading": "Identifier names",
+   "text": "The data a problem uses is represented by named constants and variables, and the names are chosen, not stumbled into. A suitable identifier states what the data it holds represents: TotalPrice for a total of money, LoavesSold for a running count, MaxSeats for a capacity that never changes during a run. The name is read by two audiences - the checker confirming the algorithm against the problem, and the next programmer changing it - and both read the name as a claim: TotalPrice had better hold a total of money, because if it holds a count the algorithm's names have lied. The rules of thumb: full words over abbreviations (Quantity beats Qty, because the abbreviation leaves the reader guessing); the kind of thing in the name (Count, Total, Price, Name); and the fixedness in the form - a constant's value is fixed for the whole run, so MaxSeats is written once as a constant and never changed, whereas LoavesSold is a variable that grows as loaves sell. What a name may never do is borrow a keyword or a data type's name: an identifier is a name for data, and DECLARE or INTEGER as a name would collide with the language itself. A habit worth keeping through this whole course: write the identifier first, then write the sentence it claims to hold, and check the two against each other. LoavesSold <- LoavesSold + 1 reads as 'the loaves sold grows by one', and the sentence is true; TotalPrice <- TotalPrice + 1 reads as 'the total price grows by one', and the sentence is only true if a loaf costs exactly one dollar, so the mismatch the reading finds is a real fault caught before the program runs.",
+   "claim_ids": [
+    "CLM-9618-9.2-003",
+    "CLM-9618-9.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-003": 1,
+    "CLM-9618-9.2-004": 1
+   },
+   "authored_hash": "a091db1efca492c84dac44a0670f3b18e4667840cad6ab5511f7cc601c536ec9"
+  },
+  {
+   "block_id": "CU-9618-9.2.1-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example: input, process, output",
+   "text": "Every algorithm has the same three parts, and a small program shows them cleanly. A vet's program works out a dose from an animal's mass: input, the animal's mass in kilograms and the dose rate per kilogram; process, multiply the mass by the rate to get the dose; output, the dose. In pseudocode, with the identifiers chosen for their meaning:\n\n```pseudocode\nINPUT BodyMass\nINPUT DoseRate\nDose <- BodyMass * DoseRate\nOUTPUT \"Dose: \", Dose\n```\n\nRead the three parts where they sit: the INPUT statements bring the values in, the process step works on them, the OUTPUT statement presents the result. A second example adds one decision to the process - the vet's scale has a maximum:\n\n```pseudocode\nINPUT BodyMass\nINPUT DoseRate\nDose <- BodyMass * DoseRate\nIF Dose > 15 THEN\n   Dose <- 15\nENDIF\nOUTPUT \"Dose: \", Dose\n```\n\nStill three parts: the input is unchanged, the process has grown a step, the output is unchanged. Input-process-output is the frame every algorithm in this course hangs on, and the process is where the constructs of the next unit live. A third example adds a repeat to the process, because most real inputs are many: the vet's morning holds a queue of animals, so the input-process-output frame runs once per animal, and the process's steps repeat inside it - which is the loop, the third construct of the next unit, arriving exactly when the input stops being one value and becomes many.",
+   "claim_ids": [
+    "CLM-9618-9.2-005",
+    "CLM-9618-9.2-004",
+    "CLM-9618-9.2-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-005": 1,
+    "CLM-9618-9.2-004": 1,
+    "CLM-9618-9.2-003": 1
+   },
+   "authored_hash": "0d79cc53542a3c9b52706be489d668384393092b93d4ac7424205a74e11296b5"
+  },
+  {
+   "block_id": "CU-9618-9.2.1-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The modules these steps fill are the modules 9.1's decomposition produced, and the constructs the process uses are 9.2.2's three. The data the identifiers name becomes the variables, constants and arrays of 10, and the conditions in the process are the logic statements of 9.2.3.",
+   "claim_ids": [
+    "CLM-9618-9.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-005": 1
+   },
+   "authored_hash": "8e45baad5570fd60e20ed302bfc8c2dabc9461bab2e4ea657ac78ff5bdb30af0"
+  }
+ ],
+ "word_count": 867,
+ "qa_status": "review_required",
+ "notes": []
+}

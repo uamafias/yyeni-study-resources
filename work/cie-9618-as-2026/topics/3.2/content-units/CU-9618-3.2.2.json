@@ -1,0 +1,158 @@
+{
+ "unit_id": "CU-9618-3.2.2",
+ "title": "Circuits, truth tables and expressions",
+ "objective_ids": [
+  "OBJ-9618-3.2.2-01",
+  "OBJ-9618-3.2.2-02",
+  "OBJ-9618-3.2.2-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_construct",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 790,
+  "target": 960,
+  "max": 1130
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-3.2.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Constructing a logic circuit, a truth table and a logic expression from each of the others, and from a problem statement.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "9d8fe04c08154b1ed849d7af7c6d3e2872dc4e961e6ebceed628091676d283b8"
+  },
+  {
+   "block_id": "CU-9618-3.2.2-b2",
+   "block_type": "process",
+   "heading": "Building a circuit from an expression",
+   "text": "A logic circuit is gates whose outputs feed other gates' inputs, and its final output is the value of its logic expression. Building one from an expression is bracket-driven work: the innermost bracket names the gate that comes first, because its inputs exist already, and each later gate takes as inputs the outputs of gates that already exist. Take X = (A AND (NOT B)) OR (NOT (A AND B)). The innermost operations are NOT B and A AND B - a NOT gate on B and an AND gate on A and B. The next bracket out needs A AND (NOT B): an AND gate taking A and the NOT gate's output. Then NOT (A AND B): another NOT gate on the first AND's output. The last operation is the OR, taking the second AND's output and the second NOT's output - its output is X. The rule that keeps it straight: build outwards from the innermost bracket, one gate per operation, and never merge two operations into one gate - (NOT A) AND (NOT B) is two NOT gates and an AND gate, not a single NAND, because the two expressions disagree when exactly one input is 1.",
+   "claim_ids": [
+    "CLM-9618-3.2-007",
+    "CLM-9618-3.2-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.2-007": 1,
+    "CLM-9618-3.2-008": 1
+   },
+   "authored_hash": "9630090c9ccc55c68bf826c08d70b99e7e436d78e73f8f1681344ed8a9c1142c"
+  },
+  {
+   "block_id": "CU-9618-3.2.2-b3",
+   "block_type": "process",
+   "heading": "Building the truth table for a circuit",
+   "text": "A circuit's truth table is built the same way its circuit is: outwards from the innermost bracket, one column per sub-expression. Take Y = NOT (A AND (NOT B)). Columns in order: the inputs A and B; NOT B; A AND (NOT B), computed from the A and NOT B columns; then the final NOT, which is Y. The rows in order:\n\n| A | B | NOT B | A AND (NOT B) | Y |\n|---|---|---|---|---|\n| 0 | 0 | 1 | 0 | 1 |\n| 0 | 1 | 0 | 0 | 1 |\n| 1 | 0 | 1 | 1 | 0 |\n| 1 | 1 | 0 | 0 | 1 |\n\nRow three is the one to check by hand: A = 1, B = 0, so NOT B is 1, so A AND (NOT B) is 1, and the outer NOT turns it to 0. Two habits prevent the recurring errors. Add a column for each bracket before the output column, because an output that is the exact opposite of the right one has usually lost the final NOT. And keep the rows in the fixed order 00, 01, 10, 11 - a two-input table has four rows, and a third input doubles the count to eight.",
+   "claim_ids": [
+    "CLM-9618-3.2-009",
+    "CLM-9618-3.2-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.2-009": 1,
+    "CLM-9618-3.2-010": 1
+   },
+   "authored_hash": "a63cadb6bce49d7ce9c5fb7080746ee39059cb828959f17afc41638608a84a47"
+  },
+  {
+   "block_id": "CU-9618-3.2.2-b4",
+   "block_type": "process",
+   "heading": "Writing an expression from a circuit or a problem",
+   "text": "A circuit becomes an expression by naming each gate's operation in the order signals flow: an AND gate's output is written (X AND Y), an OR gate's (X OR Y), and a signal that passes through a NOT gate carries NOT. Work backwards from the output: the last gate's operation is the outermost bracket, its inputs are the expressions of the gates before it, and the expression assembles itself gate by gate. A problem statement becomes an expression the same way, by translation. Each condition is named a variable with a 0/1 value; 'and' in the statement means both must hold, which is AND; 'or' means either may hold, which is OR; and 'not', 'never' or 'unless' marks a NOT. 'The fan runs when the temperature is high or the humidity is high, but never during servicing' becomes F = (T OR H) AND (NOT S): the 'or' is the OR, the 'never during' is an inverted variable that blocks the rest through an AND.",
+   "claim_ids": [
+    "CLM-9618-3.2-011",
+    "CLM-9618-3.2-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.2-011": 1,
+    "CLM-9618-3.2-012": 1
+   },
+   "authored_hash": "080381d55c93d648d54b1d5bb8f34e7678e531baffb976b30b82ffe642826a81"
+  },
+  {
+   "block_id": "CU-9618-3.2.2-b5",
+   "block_type": "worked_application",
+   "heading": "Worked example: one problem, end to end",
+   "text": "A shop's night alarm A must sound when the door switch D is 0 (the door is open) and the motion sensor M is 1. Translation first: 'door open' is D = 0, so the condition that must hold is NOT D; 'motion' is M = 1; 'and' joins them. The expression is A = (NOT D) AND M. Circuit second, from the innermost bracket out: a NOT gate takes D and outputs NOT D; an AND gate takes NOT D and M and outputs A - two gates. Truth table third, a column per sub-expression:\n\n| D | M | NOT D | A |\n|---|---|---|---|\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 0 |\n| 1 | 1 | 0 | 0 |\n\nThe table says what the statement said: the alarm sounds only when the door is open and something moves - the second row - and any other night is silent. Each representation carries the same information, which is the point of the three constructions: expression, circuit and table are one design in three languages.",
+   "claim_ids": [
+    "CLM-9618-3.2-007",
+    "CLM-9618-3.2-008",
+    "CLM-9618-3.2-009",
+    "CLM-9618-3.2-012"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.2-007": 1,
+    "CLM-9618-3.2-008": 1,
+    "CLM-9618-3.2-009": 1,
+    "CLM-9618-3.2-012": 1
+   },
+   "authored_hash": "ae0159fbbd291d58372ede7e68393dfa0d1bc19bc5a9da14fbeed9c40e8cf819"
+  },
+  {
+   "block_id": "CU-9618-3.2.2-b6",
+   "block_type": "misconception",
+   "heading": "Common errors with circuits and tables",
+   "text": "Two slips recur. Replacing (NOT A) AND (NOT B) with one NAND gate: the two are different functions - (NOT A) AND (NOT B) gives 1 only when both inputs are 0, while NAND gives 1 whenever at least one input is 0 - and the test is to complete a truth table for both, because they disagree when exactly one input is 1. And losing the final NOT: an output column that is the exact opposite of the right one has almost always dropped the outermost inversion, and the test is to add a column for each bracket before the output column, working outwards from the innermost.",
+   "claim_ids": [
+    "CLM-9618-3.2-008",
+    "CLM-9618-3.2-009",
+    "CLM-9618-3.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.2-008": 1,
+    "CLM-9618-3.2-009": 1,
+    "CLM-9618-3.2-004": 1
+   },
+   "authored_hash": "e279760d21a23e20bb2a9d6e7e082131dfca2ffde33b323a2d4b21f7d86f3909"
+  },
+  {
+   "block_id": "CU-9618-3.2.2-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The gates come from 3.2.1, and the translation skill - a statement into variables and operators - returns in 9.1 Computational Thinking as abstraction, and in 11.2 Constructs as the conditions that steer a program.",
+   "claim_ids": [
+    "CLM-9618-3.2-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-3.2-011": 1
+   },
+   "authored_hash": "ce6c7ef5a1b5c9d8bd2cf22266c59444320396eb42c5c89c0e552a7327bb41f1"
+  }
+ ],
+ "word_count": 987,
+ "qa_status": "review_required",
+ "notes": []
+}

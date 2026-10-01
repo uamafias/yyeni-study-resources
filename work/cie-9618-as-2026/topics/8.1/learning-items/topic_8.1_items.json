@@ -1,0 +1,1785 @@
+{
+ "dataset_id": "ITEMS-9618-8.1",
+ "topic_id": "8.1",
+ "items": [
+  {
+   "item_id": "ITEM-9618-8.1-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what is meant by a file-based approach.",
+   "canonical_answer": "A file-based approach stores each application's data in its own files, separate from every other application's, with no shared store between them.",
+   "marking_guidance": [
+    "1 mark: the meaning - each application keeps its own files, with no shared store."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-001": 1
+   },
+   "authored_hash": "39d1cd64e87702206cca52e175bab5421f49db8d97f1b46b0fd03704754fb1bb"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-001",
+    "CLM-9618-8.1-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why the file-based approach leads to data duplication.",
+   "canonical_answer": "Each application keeps its own files, so data one application needs that another already holds is entered again into a second file, because no shared store exists to hold it once. The customer's address is in the billing file and again in the delivery file, so the same data lives in several places, which is the duplication the approach forces.",
+   "marking_guidance": [
+    "Reason: no shared store exists, so the second application copies what it needs - 1 mark.",
+    "Purpose: so the same value lives in several files, because each file must hold its own copy to work at all - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-001": 1,
+    "CLM-9618-8.1-002": 1
+   },
+   "authored_hash": "e7326a506bbd1c961bea732731b4da5fb7d90107be101916e8af7f90d2596efc"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-003-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01",
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-001",
+    "CLM-9618-8.1-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A clinic's billing system and appointment system each keep their own patient files. A patient moves house and tells reception. Explain the problem that follows.",
+   "canonical_answer": "The new address is entered in the appointment system's file, but the billing system's own file still holds the old one, because no single store links them. The bill goes to the old address until someone also updates the second file, so the copies disagree - the duplication the separate files forced, which is what the patient experiences as a lost bill.",
+   "marking_guidance": [
+    "Context: this clinic's two separate patient files and the given move - 1 mark.",
+    "Reason: because the address is held in two files and only one is updated, the copies disagree, so the billing copy sends the bill to the old address - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-001": 1,
+    "CLM-9618-8.1-002": 1
+   },
+   "authored_hash": "3110f0e12b12b76d0799d864faf2b3ffccf6800b939fd937ebe1c668ed4c9ed0"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-026-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that program-data dependency means the data depends on the program. Explain the error.",
+   "canonical_answer": "It is the programs that depend on the data: program-data dependency means a change to the file’s structure forces changes to every program that uses the file, because each program reads the file by its layout. The test: name what depends on what - the programs depend on the structure of the data, not the reverse.",
+   "marking_guidance": [
+    "1 mark: the error named - the dependency has been read backwards, as data depending on programs.",
+    "1 mark: the correction with the test - the programs depend on the file structure, so a structural change forces changes to every program that uses it."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-003": 1
+   },
+   "authored_hash": "50282d5bbdf56dad2b8661d1ce07afd01ed710ea5a0bd5404491f25afba258b8",
+   "misconception_entry": "MC-9618-8.1-03"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-028-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-002",
+    "CLM-9618-8.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two limitations of a file-based approach.",
+   "canonical_answer": "Data duplication: the same data is copied into each application’s files, wasting storage and letting copies disagree when one is updated and another is not. Program-data dependency: each program is written to its files’ layouts, so a change to a file’s structure forces changes to every program that uses it, which is why file-based systems resist change.",
+   "marking_guidance": [
+    "Features: two limitations as two points, 1 mark each - the duplication with its drifting copies, and the dependency with the change-forcing it carries."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-002": 1,
+    "CLM-9618-8.1-003": 1
+   },
+   "authored_hash": "e8989a10c3c42d53400f1fb48bc09cbc9ee0c24102dd710f84d10927761d8fbd"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-036-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-002",
+    "CLM-9618-8.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between data duplication and program-data dependency.",
+   "canonical_answer": "Data duplication is about the stored data: one value is held in several files, so copies drift apart, whereas program-data dependency is about the programs: each program’s code is bound to the layout of its files, so a structural change ripples into every program. One is a storage fault and the other a change-forcing trap, whereas both are limitations of the file-based approach.",
+   "marking_guidance": [
+    "Difference: a storage fault against a change-forcing trap - 1 mark per side, and both sides are needed with what each does."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-002": 1,
+    "CLM-9618-8.1-003": 1
+   },
+   "authored_hash": "812bac519ca42776d39b78e078b410ed43fe972dfcea5f629698ea91cc63f633"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-004-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-004",
+    "CLM-9618-8.1-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State how a relational database holds its data.",
+   "canonical_answer": "In tables: one table per entity, each record in the table (each tuple) one row, each attribute one column, with keys linking the tables.",
+   "marking_guidance": [
+    "1 mark: the meaning - data held in linked tables, one per entity, rows as records and columns as attributes."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-004": 1,
+    "CLM-9618-8.1-006": 1
+   },
+   "authored_hash": "b36784465cec3a7794af3708a242be85f25176b34a004367463992c843565139"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-005-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-004",
+    "CLM-9618-8.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe two features of a relational database that address the file-based limitations.",
+   "canonical_answer": "Held once: each value is stored in one table and every application uses the same table, so duplication disappears and copies cannot disagree, because there are no copies. Data independence: the DBMS sits between programs and data, so programs ask by table and attribute names rather than file layouts, and a change to how data is stored does not force changes to every program.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the single store that ends duplication, and the DBMS between the programs and the storage."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-004": 1,
+    "CLM-9618-8.1-005": 1
+   },
+   "authored_hash": "17b69a660636a52fa7251c196a6c782b2efc1edd502802ac20e1944206a46604"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-006-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-004",
+    "CLM-9618-8.1-005",
+    "CLM-9618-8.1-002",
+    "CLM-9618-8.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A pharmacy replaces separate billing and stock files with one relational database. Explain how the move fixes its duplicate-address problem and its long change-overs.",
+   "canonical_answer": "The supplier’s address is held once, in one table, so an update is made in one place and both the billing screens and the stock orders see the new value at once, because there are no second copies to disagree. And the DBMS answers the programs’ requests by table and attribute names, so a change to how data is stored is absorbed behind the DBMS and no program is rewritten, which is why the move fixes both problems.",
+   "marking_guidance": [
+    "Context: this pharmacy’s move to the given single database - 1 mark for the duplication fix.",
+    "Reason: because the one table holds the address once and the DBMS answers programs by name, the disagreeing copies and the program rewrites both disappear, so the two limitations are answered - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-004": 1,
+    "CLM-9618-8.1-005": 1,
+    "CLM-9618-8.1-002": 1,
+    "CLM-9618-8.1-003": 1
+   },
+   "authored_hash": "66e67d748a65ab6b67f75cd5df871bed5c67bb19fa0a52beaf306a7bbb8c1c57"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-033-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-005",
+    "CLM-9618-8.1-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a relational database removes program-data dependency.",
+   "canonical_answer": "The programs no longer touch the stored data directly: they ask the DBMS, and the DBMS finds the data wherever it lies. A change to the storage - a new table, a moved attribute, a renamed file - is absorbed by the DBMS, so the programs that ask by name are unaffected, because it is the DBMS that depends on the layout now, not every program.",
+   "marking_guidance": [
+    "Reason: programs ask the DBMS by name instead of reading file layouts - 1 mark.",
+    "Purpose: so a storage change is absorbed once behind the DBMS, because the asking programs never depended on the layout - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-005": 1,
+    "CLM-9618-8.1-003": 1
+   },
+   "authored_hash": "66d0e7e82e377307071aac657f604f8df3a98209848eb0ed1d6db3f698bc06b8"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-037-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-001",
+    "CLM-9618-8.1-004",
+    "CLM-9618-8.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between a file-based approach and a relational database.",
+   "canonical_answer": "A file-based approach gives each application its own files, so data is duplicated across applications and each program is bound to its files’ layouts, whereas a relational database holds each entity once in a shared table that every application reaches through the DBMS, so values exist once and programs ask by name, not layout. The database centralises what the files scatter, which is the difference the two features carry.",
+   "marking_guidance": [
+    "Difference: scattered per-application files against one shared set of tables behind a DBMS - 1 mark per side, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-001": 1,
+    "CLM-9618-8.1-004": 1,
+    "CLM-9618-8.1-005": 1
+   },
+   "authored_hash": "4ea743eaac9e745611a853ee0ef17ff1d497eba92c93fb6601fdfd12079569fe"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-007-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 1,
+   "prompt": "State what is meant by an entity.",
+   "canonical_answer": "An entity is what a table stores data about: the patient, the product, the order - one kind of thing, one table.",
+   "marking_guidance": [
+    "1 mark: the meaning - the thing a table holds data about, one entity per table."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-006": 1
+   },
+   "authored_hash": "e102a64ef97174130e975c3b1f9b96f89fe99fc83f8cb0dbcbe7b615f9e60f59"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-008-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 1,
+   "prompt": "Describe two features of a primary key.",
+   "canonical_answer": "Its value identifies each record in the table uniquely: no two records share it, so any record can be named and found by it. It may be one attribute or several together as a composite key, and it is chosen from the table’s candidate keys, so the designer picks the identifying attribute among those that qualify.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the unique identification, and the single-or-composite key chosen from the candidates."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-007": 1
+   },
+   "authored_hash": "8a3c4b3c26c351b4a805e87417e0d2cd44d0df33d8ad8eb4cc2c1e369c952179"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-009-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-006",
+    "CLM-9618-8.1-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 1,
+   "prompt": "The table shows terms and their meanings. Complete the four missing entries.\n\n| Term | Meaning |\n|---|---|\n| (a) | One row of one table |\n| Attribute | (b) |\n| (c) | An attribute in one table that is the primary key of another table, linking the two |\n| Entity | (d) |",
+   "canonical_answer": "(a) A record (a tuple). (b) One column of a table, one field of a record. (c) A foreign key. (d) What a table stores data about.",
+   "marking_guidance": [
+    "Context: this table of terms with the given meanings - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry matches a term to its own meaning, because the terms are the model’s parts and each part has one role, so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-006": 1,
+    "CLM-9618-8.1-008": 1
+   },
+   "authored_hash": "2962ae12de76189887801f5b98d0fe3fc93fa1325b2a4de146e9ec08ecec1579"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-024-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-006",
+    "CLM-9618-8.1-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A learner writes that a database and a table are the same thing. Explain the error.",
+   "canonical_answer": "A database is made up of tables: the database is the whole collection, and a table is one entity’s part of it, so a database contains several tables. A tuple, likewise, is one row of one table, not a row of the database. The test: can a database contain several of it? Then it is a table, because the database holds tables and a table holds records.",
+   "marking_guidance": [
+    "1 mark: the error named - the collection has been called one of its parts, a confusion of database with table.",
+    "1 mark: the correction with the test - a database contains several tables, and a tuple is one row of one table, because containment is what separates the three levels."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-006": 1,
+    "CLM-9618-8.1-004": 1
+   },
+   "authored_hash": "5e1f438eeebb76679f05b979b70b1beeac5f659fedbd88e0f89695c0b2803cf6",
+   "misconception_entry": "MC-9618-8.1-01"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-025-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-008",
+    "CLM-9618-8.1-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Asked for foreign keys, a learner lists the tables’ primary keys. Explain the error.",
+   "canonical_answer": "The two keys do different work. A primary key identifies each record in its own table, whereas a foreign key is an attribute in one table that is the primary key of another table, and it links the two. The test: does it point at another table? Foreign key, because the linking is what a foreign key is for.",
+   "marking_guidance": [
+    "1 mark: the error named - the identifying key has been given where the linking key was asked for, a confusion of the two roles.",
+    "1 mark: the correction with the test - a foreign key points at another table’s primary key, because linking is its job and identifying its own table is the primary key’s."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-008": 1,
+    "CLM-9618-8.1-007": 1
+   },
+   "authored_hash": "75566cfb333a4d3531fbff14da38003a101b9d4629eccda1fcdefb9e4e508af4",
+   "misconception_entry": "MC-9618-8.1-02"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-035-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-008",
+    "CLM-9618-8.1-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a foreign key is needed in a one-to-many relationship.",
+   "canonical_answer": "One record of the first table matches many of the second, so the second table needs a way to name which first-table record each of its rows belongs to: the foreign key holds the first table’s primary key value in each row of the second. The many rows each point at their one record, which is what the relationship is made of in stored data.",
+   "marking_guidance": [
+    "Reason: each many-side row must name the one record it belongs to - 1 mark.",
+    "Purpose: so the link is stored where the many rows are, because the one record cannot hold a list of its many - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-008": 1,
+    "CLM-9618-8.1-009": 1
+   },
+   "authored_hash": "5b284dcc4553a37ed375534011b750ae4cfffb232ff911e5f3d0e0d9eda1f1d1"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-040-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe the difference between a candidate key and a secondary key.",
+   "canonical_answer": "A candidate key is an attribute that could identify each record uniquely, and one of the candidates is chosen as the primary key, whereas a secondary key is an attribute used to search a table that does not identify a record uniquely: it narrows the search, and several records may share it. The candidate key names a record; the secondary key finds groups, so one identifies and the other sorts.",
+   "marking_guidance": [
+    "Difference: unique identification against non-unique searching - 1 mark per side, whereas both are attributes of the same table, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-007": 1
+   },
+   "authored_hash": "d3a5f893cb528f411d6fba9ac40bf6ac439c250ec4c3eaaf38b7b4b6d745a882"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-010-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-012",
+    "CLM-9618-8.1-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw an E-R diagram for this design, describing each box and each relationship line: a pharmacy keeps PATIENT, PRESCRIPTION and MEDICINE; a patient has many prescriptions, and a medicine appears on many prescriptions.",
+   "canonical_answer": "Three entity boxes: PATIENT, PRESCRIPTION and MEDICINE. One line from PATIENT to PRESCRIPTION, labelled with the relationship and marked one-to-many: one patient, many prescriptions, the many at the prescription end. One line from PRESCRIPTION to MEDICINE, labelled and marked many-to-many in both directions: a prescription holds many medicines and a medicine appears on many prescriptions, so the design resolves that line with a link table between the two when the database is built.",
+   "marking_guidance": [
+    "Context: this pharmacy’s three given entities - 1 mark for the boxes and the one-to-many line with its marking.",
+    "Reason: because each line’s kind comes from how the two entities match, the prescription-to-medicine line is marked many-to-many in both directions, so the marking carries the second mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-012": 1,
+    "CLM-9618-8.1-009": 1
+   },
+   "authored_hash": "699cedcc3be53610a617ee70542da71faeff5852bec24e4bec76b1319a820a61"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-011-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-012",
+    "CLM-9618-8.1-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw, as a described E-R diagram, a school’s design with TEACHER, CLASS and ROOM: each teacher teaches one class, and a room hosts many classes.",
+   "canonical_answer": "Three entity boxes: TEACHER, CLASS and ROOM. One line from TEACHER to CLASS, labelled with the teaching relationship and marked one-to-one in both directions: one teacher, one class. One line from ROOM to CLASS, labelled with the hosting relationship and marked one-to-many: one room, many classes, the many at the class end, because a room hosts many classes and each class meets in one room.",
+   "marking_guidance": [
+    "Context: this school’s three given entities - 1 mark for the boxes and the one-to-one teaching line.",
+    "Reason: because a room hosts many classes while a class meets in one room, that line is marked one-to-many with the many at the class end, so the marking carries the second mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-012": 1,
+    "CLM-9618-8.1-009": 1
+   },
+   "authored_hash": "2fd523a4429ddd58352bee96c738d9abf8a9f8c752e91fb24e52fc2f9fac7ee9"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-012-INTERP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-012",
+    "CLM-9618-8.1-009",
+    "CLM-9618-8.1-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The E-R diagram for a sports club is described below with four gaps. Complete the four missing entries.\n\n- Entity boxes: CLUB, MEMBER, TEAM\n- A line from CLUB to MEMBER, labelled JOINED, marked (a)\n- A line from MEMBER to TEAM, labelled PLAYS FOR, marked (b): many members, one team\n- A line from CLUB to TEAM, labelled FIELDS, marked one-to-many: one club, many teams\n- (c) is the entity whose table holds a foreign key for the PLAYS FOR line\n- That foreign key holds (d)",
+   "canonical_answer": "(a) One-to-many: one club, many members. (b) Many-to-one from the member’s side. (c) MEMBER. (d) TEAM’s primary key value, naming the team each member plays for.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a), (b), (c), (d).",
+    "Meaning: the completed list shows the many side holding the link, so the result is that MEMBER’s table carries the foreign key, because the linking attribute is stored where the many rows are."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-012": 1,
+    "CLM-9618-8.1-009": 1,
+    "CLM-9618-8.1-008": 1
+   },
+   "authored_hash": "bb0c534dde25beaec15ee711fdb4187d44aef32ee0d3e0f622b8def867a47d0c"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-013-INTERP",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-012",
+    "CLM-9618-8.1-008",
+    "CLM-9618-8.1-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A library’s E-R diagram is described below with four gaps. Complete the four missing entries.\n\n- Entity boxes: MEMBER, LOAN, BOOK\n- A line from MEMBER to LOAN, labelled TAKES OUT, marked one-to-many\n- A line from BOOK to LOAN, labelled BORROWED AS, marked (a): one book, many loans over the years\n- (b) is the entity whose table holds a foreign key for both lines\n- The LOAN table’s foreign keys point at (c) and (d)",
+   "canonical_answer": "(a) One-to-many. (b) LOAN. (c) MEMBER. (d) BOOK.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a), (b), (c), (d).",
+    "Meaning: the completed list shows LOAN as the many side of both one-to-many lines, so the result is that the loan table carries both foreign keys, because each loan names one member and one book."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-012": 1,
+    "CLM-9618-8.1-008": 1,
+    "CLM-9618-8.1-009": 1
+   },
+   "authored_hash": "5d779c1f8bfd1230b0394f2f69973bfccf74ae4f18a7d5b870d48b3ca24b8daa"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-031-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain why an E-R diagram is drawn before the tables are built.",
+   "canonical_answer": "The diagram states the design in a form everyone can check: the entities the database will hold and the relationships between them, before any attribute or key is chosen. Checking a diagram is cheap - a line moved, a box renamed - and building is expensive, so the errors that re-reading a diagram finds are found before they are built into tables, which is why the diagram comes first.",
+   "marking_guidance": [
+    "Reason: the diagram shows the whole design at a glance, before building commits it - 1 mark.",
+    "Purpose: so design errors are caught at the drawing stage, because moving a line is cheaper than rebuilding a table - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-012": 1
+   },
+   "authored_hash": "d67c556f31fcecb8150ab0347d4cbc8422632dfdf96f55bc2352a22726cf3e95"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-014-PROC",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-017"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe the process of moving a table from unnormalised to First Normal Form.",
+   "canonical_answer": "The repeating groups are taken out: each attribute that repeats within a record is given its own row, with the record’s key value repeated in each row, so every field holds a single value. A primary key is identified for the resulting table - often the original key together with the repeating group’s identifier - so each record is unique, which is what 1NF requires.",
+   "marking_guidance": [
+    "Order: the steps in sequence - the repeating group flattened first, then the key identified - each statement a mark point, up to 2 from a longer list.",
+    "Input: the process starts from the given unnormalised record with its repeated group.",
+    "Result: the end product is a table with single-valued fields and unique records, which is 1NF."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-017": 1
+   },
+   "authored_hash": "0cb268519151a643fa40958b275d0749aa7b7645a33dc08a4a3912b65970584a"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-015-MECH",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MECH",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain how 2NF removes a partial dependency.",
+   "canonical_answer": "A partial dependency exists when a non-key attribute depends on only part of a composite primary key, so its value is fixed by that part alone and repeats whenever the part appears. 2NF removes it by moving the dependent attribute into its own table, keyed by just that part, with the original table keeping the part as a link, so each value is stored once and the dependency now runs to a whole key.",
+   "marking_guidance": [
+    "How the dependency is found: the attribute’s value is fixed by part of the key alone - 1 mark.",
+    "Because the attribute moves to a table keyed by that part, the value is stored once and depends on a whole key, so the repetition goes with it - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-014": 1
+   },
+   "authored_hash": "349a1cb4e93d54858d3dae6411b92d9b01bc84f97eed2f2377c8b177c130d26c"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-016-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 2,
+   "prompt": "The table shows the three normal forms. Complete the four missing entries.\n\n| Form | Requires |\n|---|---|\n| (a) | No repeating groups; each field holds a single value; a primary key identifies each record |\n| 2NF | (b) |\n| 3NF | (c) |\n| (d) | Every non-key attribute depends on the key, the whole key and nothing but the key |",
+   "canonical_answer": "(a) 1NF (First Normal Form). (b) 1NF, plus no non-key attribute depends on only part of a composite primary key. (c) 2NF, plus no non-key attribute depends on another non-key attribute. (d) 3NF, whose requirements together make the sentence.",
+   "marking_guidance": [
+    "Context: this table of the given forms - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry stacks on the one above, because the forms are stages of one journey, so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "395b9654772db0defb8a2b60e61bae1449f3aef58850e90aba329cf5e8a91f78"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-027-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 3,
+   "prompt": "State what Third Normal Form requires.",
+   "canonical_answer": "3NF requires 2NF and that no non-key attribute depends on another non-key attribute: every non-key attribute depends on the key, the whole key and nothing but the key.",
+   "marking_guidance": [
+    "1 mark: the meaning - 2NF plus no non-key attribute depending on another non-key attribute."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "5de9ebef4d017cd85201e948f8ddf9144f628fd023a71505c7c2ad95f6dc5740"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-029-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-015",
+    "CLM-9618-8.1-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two problems a 3NF design avoids.",
+   "canonical_answer": "Update anomalies: a value stored many times, because it depends on the wrong thing, must be changed in many rows, and a missed row leaves copies disagreeing - 3NF stores each value once, in the table its key owns. Deletion anomalies: removing the last record of a thing can delete the thing’s own data with it - the last appointment’s row carrying the dentist’s name - whereas 3NF keeps the thing’s data in its own table, so deleting appointments never deletes dentists.",
+   "marking_guidance": [
+    "Features: two avoided problems as two points, 1 mark each - the update anomaly with its disagreeing copies, and the deletion anomaly with the data it would take."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-015": 1,
+    "CLM-9618-8.1-014": 1
+   },
+   "authored_hash": "1a6223b1dffddfbfcc0b5ef07bfc0137f0252b41701c47ac318f2f9b3447693e"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-034-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-015",
+    "CLM-9618-8.1-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain why a table in 2NF may still be a poor design.",
+   "canonical_answer": "2NF has removed the part-key dependencies, but a non-key attribute may still depend on another non-key attribute: the dentist’s name depends on the dentist’s number, and both are non-key in the appointment table. The name is stored again in every appointment row, so a change must be made row by row and deleting the last appointment deletes the dentist - the anomalies 3NF exists to remove, which is why 2NF is a step and not a destination.",
+   "marking_guidance": [
+    "Reason: a non-key attribute can still depend on another non-key attribute after 2NF - 1 mark.",
+    "Purpose: so the stored repetition and the deletion risk remain until 3NF, because the anomalies live in the non-key dependency - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-015": 1,
+    "CLM-9618-8.1-014": 1
+   },
+   "authored_hash": "5d8381507f2cf6bc69517a79f0e572e8ca04a2c4d9f3e01650ec68a61b9e5abc"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-038-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-01",
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between 2NF and 3NF.",
+   "canonical_answer": "2NF removes dependencies on part of the primary key, so every non-key attribute depends on the whole key, whereas 3NF also removes dependencies between non-key attributes, so every non-key attribute depends on the key alone. The check that separates them: after 2NF, take a non-key attribute and ask what fixes its value - if the answer is another non-key attribute, the table is 2NF but not 3NF.",
+   "marking_guidance": [
+    "Difference: part-key dependencies removed against non-key-to-non-key dependencies also removed - 1 mark per side, and both sides are needed with the separating check."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "e2e67ddb3bc29064c1eec51703b387b49dc02b9c89ab6c79267d4ead9c9983e6"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-017-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what makes a table fail 2NF.",
+   "canonical_answer": "A non-key attribute depends on only part of a composite primary key, so the table is 1NF but not 2NF.",
+   "marking_guidance": [
+    "1 mark: the meaning - a part-key dependency: a non-key attribute fixed by part of the composite key."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-014": 1
+   },
+   "authored_hash": "a8e5040ce1d47fa433ed69eade10665ae2247cbdc6698b243d8cfebecbdb3d2b"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-018-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a table with a single-attribute primary key cannot fail 2NF.",
+   "canonical_answer": "2NF’s test is about dependencies on part of a composite key, and a single-attribute key has no parts, so every dependency on the key is a dependency on the whole key. A single-key table that is 1NF is therefore 2NF as well, which is why 2NF failures only appear with composite keys.",
+   "marking_guidance": [
+    "Reason: the single-attribute key has no parts, so no dependency can be on part of it - 1 mark.",
+    "Purpose: so the 2NF test is passed by 1NF alone, because part-key dependencies cannot exist without parts - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-014": 1
+   },
+   "authored_hash": "5fcf3b38c06c1c99579f33aee9c69a181db8feb2b82e75bae979e84d15ac6d9a"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-019-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015",
+    "CLM-9618-8.1-016"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "An appointment table has the composite key (PatientNo, Date, Time) and holds PatientName, DentistNo and DentistName, with each field holding one value. Explain which normal form it fails first and why.",
+   "canonical_answer": "It is 1NF, because each field holds a single value and the key identifies each record. PatientName depends on PatientNo alone - part of the composite key - so the table fails 2NF before anything else: the part-key dependency is the first failure in the order of the forms. DentistName’s dependency on DentistNo is a non-key-to-non-key dependency, a 3NF failure, but it is reached only after 2NF has been passed.",
+   "marking_guidance": [
+    "Context: this appointment table with the given key and fields - 1 mark for the 2NF failure with its reason.",
+    "Reason: because PatientName is fixed by part of the key alone, the part-key check fails first, so the order of the forms is what the answer follows - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1,
+    "CLM-9618-8.1-016": 1
+   },
+   "authored_hash": "b5a8951575891583165dc580444878af3282c7c4744bb4825706fd8422e206c1"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-030-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-016",
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two checks made when testing whether a table is in 3NF.",
+   "canonical_answer": "Part-key dependency: a non-key attribute depending on only part of the composite key breaks 2NF, which must be passed on the way to 3NF. Non-key dependency: an attribute whose value is fixed by another non-key attribute breaks 3NF, because the key must be the only thing every non-key attribute depends on.",
+   "marking_guidance": [
+    "Features: two checks as two points, 1 mark each - the part-key check for 2NF, and the non-key-to-non-key check for 3NF."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-016": 1,
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "8b44243e7724ec7306918dfc212041ece39db983676bcdd8e4b98a158d2e0ec9"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-039-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-014"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between a table that is 1NF and a table that is 2NF.",
+   "canonical_answer": "Both have single-valued fields and unique records, whereas the 2NF table also has no non-key attribute that depends on only part of its composite primary key: the part-key dependencies the 1NF table still carries, the 2NF table has moved into their own tables. The difference sits in the dependencies, not in the shape of the rows.",
+   "marking_guidance": [
+    "Difference: the same single-valued rows against the added absence of part-key dependencies - 1 mark per side, and both sides are needed with where the difference sits."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-014": 1
+   },
+   "authored_hash": "5cb7792b698ef3eeaa5d31e578a0d71c482733d62b00507cf8104baeec49bf7c"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-020-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-017",
+    "CLM-9618-8.1-009",
+    "CLM-9618-8.1-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw the normalised design for a wedding-photography booking service: one CLIENT books many BOOKINGs, and each BOOKING chooses one PACKAGE. Describe each table with its primary key and the foreign keys that link them.",
+   "canonical_answer": "Three tables. CLIENT(ClientID, Name, Phone), with ClientID the primary key. PACKAGE(PackageID, Name, Price), with PackageID the primary key. BOOKING(BookingID, ClientID, PackageID, Date), with BookingID the primary key, ClientID a foreign key to CLIENT and PackageID a foreign key to PACKAGE, because the many side holds the links.",
+   "marking_guidance": [
+    "Context: this service’s given entities and relationships - 1 mark for the three tables with their primary keys.",
+    "Reason: because the booking is the many side of both one-to-many relationships, its table carries both foreign keys, so the links carry the second mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-017": 1,
+    "CLM-9618-8.1-009": 1,
+    "CLM-9618-8.1-008": 1
+   },
+   "authored_hash": "e0c4a5ecb4489f05b3fa3d37def93e5b8b5104f949aff97ee88db674617a10f8"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-021-APP",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-017",
+    "CLM-9618-8.1-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Draw",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Draw, as a described design of tables with keys, the normalised form of a vets’ register: each OWNER has many PETS, each PET belongs to one OWNER, and each PET has many VISIT records.",
+   "canonical_answer": "Three tables. OWNER(OwnerID, Name, Phone), with OwnerID the primary key. PET(PetID, OwnerID, Name, Species), with PetID the primary key and OwnerID a foreign key to OWNER, because the many side (pets) holds the link. VISIT(VisitID, PetID, Date, Fee), with VisitID the primary key and PetID a foreign key to PET, again on the many side.",
+   "marking_guidance": [
+    "Context: this register’s given entities - 1 mark for the three tables with their primary keys.",
+    "Reason: because pets are the many side of owner-to-pet and visits the many side of pet-to-visit, the foreign keys sit in PET and VISIT, so the links carry the second mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-017": 1,
+    "CLM-9618-8.1-008": 1
+   },
+   "authored_hash": "5d9f505be6c49fb045e548263a135e28a0206ec5784c855dd92124d86b72f0b8"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-022-INTERP",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015",
+    "CLM-9618-8.1-017"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A school’s sports data is being normalised. The unnormalised record is PUPIL(PupilNo, PupilName, and for each of the pupil’s teams: TeamName, TeamCoach) - each pupil belongs to one team. The normalised design is listed with four gaps. Complete the four missing entries.\n\n- PUPIL(PupilNo, PupilName, (a)), with PupilNo the primary key\n- TEAM(TeamName, TeamCoach), with (b) the primary key\n- In the PUPIL table, (a) holds TeamName as a (c)\n- TeamCoach moved out of PUPIL because it depends on (d), not on PupilNo",
+   "canonical_answer": "(a) TeamName. (b) TeamName. (c) Foreign key. (d) TeamName, the team’s own key, because the coach belongs to the team, not to the pupil.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a), (b), (c), (d).",
+    "Meaning: the completed list shows the coach’s data moved to where its key lives, so the result is two tables linked by the pupil’s foreign key, because each fact is stored where the thing it depends on is stored."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1,
+    "CLM-9618-8.1-017": 1
+   },
+   "authored_hash": "26325a8a1fe3f509c2a0a76edda960ae633d29bc138be6e2ba1fee66d5e23b0f"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-023-INTERP",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015",
+    "CLM-9618-8.1-017"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "An appointment list is being normalised. The unnormalised table is APPOINTMENT(PatientNo, PatientName, PatientTel, DentistNo, DentistName, Date, Time, Treatment), with the composite key (PatientNo, Date, Time) and single-valued fields. The normalised design is listed with four gaps. Complete the four missing entries.\n\n- PATIENT((a), PatientName, PatientTel), with PatientNo the primary key\n- DENTIST(DentistNo, (b)), with DentistNo the primary key\n- APPOINTMENT(PatientNo, (c), Treatment), with (PatientNo, Date, Time) the primary key and PatientNo and DentistNo as (d) keys\n- PatientName moved out because it depends on PatientNo alone, part of the key; DentistName moved out because it depends on DentistNo, a non-key attribute there",
+   "canonical_answer": "(a) PatientNo. (b) DentistName. (c) DentistNo, Date, Time. (d) Foreign keys.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a), (b), (c), (d).",
+    "Meaning: the completed list shows the two moves made for the two failures - part-key for 2NF and non-key for 3NF - so the result is three tables with every fact stored once."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1,
+    "CLM-9618-8.1-017": 1
+   },
+   "authored_hash": "23ac17bcd2d64829fcdc36e48dd244fbe5e3a6817136520c8f3e0ddeeefe05f1"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-032-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.1.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-008",
+    "CLM-9618-8.1-009",
+    "CLM-9618-8.1-017"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain why the many side of a one-to-many relationship holds the foreign key.",
+   "canonical_answer": "Each record on the many side must name the one record it belongs to, so the many-side table holds the one-side’s primary key value in a foreign key attribute. The one side cannot hold a growing list of its many records in one record, so the linking is stored where the many rows are, which is why the foreign key sits on the many side.",
+   "marking_guidance": [
+    "Reason: each many-side row must name its one record, and only a stored key does that - 1 mark.",
+    "Purpose: so the link is kept in the many-side rows, because the one record cannot hold its unbounded list of many - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-008": 1,
+    "CLM-9618-8.1-009": 1,
+    "CLM-9618-8.1-017": 1
+   },
+   "authored_hash": "ea3d605489e21c129e63c0e141d2fd0a8a1fa09b315188f808cde8b3bfac4c7e"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-P01",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-01",
+    "OBJ-9618-8.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-001",
+    "CLM-9618-8.1-002",
+    "CLM-9618-8.1-003",
+    "CLM-9618-8.1-004",
+    "CLM-9618-8.1-005"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 8,
+   "difficulty": 3,
+   "prompt": "A hardware store in Katima Mulilo keeps its stock records in a spreadsheet file maintained by the store’s buyer, and its billing in a separate program with its own customer files. Customer addresses exist in both, and adding a customer’s credit rating would mean changing both programs’ file layouts.\n(a) Identify two file-based limitations the store suffers, naming the evidence for each from the scenario. [4]\n(b) The store moves to one relational database. Explain how the move addresses each limitation you named. [4]",
+   "canonical_answer": "(a) Data duplication: the customer’s address exists in the spreadsheet’s customer records and again in the billing program’s own customer files, so an address updated in one leaves the other stale and the copies disagree. Program-data dependency: adding a credit rating changes the file layout, and every program that reads those files - both the buyer’s stock program and the billing program - must be changed to the new layout, because each reads its files by structure.\n(b) The database holds the customer’s address once, in one customer table, so both the stock and billing parts of the system read the same value and an update is made in one place, with no second copy to disagree. The credit rating becomes one new attribute of the customer table behind the DBMS: programs that need it ask the DBMS for it by name, and programs that do not are untouched, because the DBMS answers requests by table and attribute rather than by file layout, so the change ripples into no program that does not ask.",
+   "marking_guidance": [
+    "Part (a): identify the two limitations - 4 marks, 1 per point: the duplication named with the two files, and the dependency named with the two programs to change.",
+    "Part (b): the context of this store’s move - 4 marks, 1 per point: the one customer table ending the disagreeing copies, the single update in one place, the rating added behind the DBMS, the programs untouched because they ask by name."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A hardware store runs separate stock and billing systems on their own files.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-001": 1,
+    "CLM-9618-8.1-002": 1,
+    "CLM-9618-8.1-003": 1,
+    "CLM-9618-8.1-004": 1,
+    "CLM-9618-8.1-005": 1
+   },
+   "authored_hash": "9fdff5f2d7b6e1446dd9547029f444f0e818a39fe649aedb6cdfc8494903f918"
+  },
+  {
+   "item_id": "ITEM-9618-8.1-P02",
+   "objective_ids": [
+    "OBJ-9618-8.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.1-006",
+    "CLM-9618-8.1-007",
+    "CLM-9618-8.1-008",
+    "CLM-9618-8.1-010"
+   ],
+   "item_type": "data_response",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "The table shows relational database terms and their meanings. Read the table and complete the four missing entries, then answer the question.\n\n| Term | Meaning |\n|---|---|\n| Tuple | (a) |\n| (b) | An attribute in one table that is the primary key of another table, linking the two |\n| Candidate key | (c) |\n| Referential integrity | (d) |\n\n(e) State, with a reason, which term in the table names the attribute a many-side table holds to link to its one-side table. [2]",
+   "canonical_answer": "(a) One record, one row of one table. (b) A foreign key. (c) An attribute that could identify each record uniquely, from which one is chosen as the primary key. (d) The rule that a foreign key’s value must match a primary key value in the referenced table, so a record cannot point at a record that does not exist.\n(e) A foreign key: the many-side table holds the one-side’s primary key value in it, because each many-side record must name the one it belongs to.",
+   "marking_guidance": [
+    "Read the given table: (a) to (d) - 4 marks, 1 per correct value in each row, with each term matched to its own meaning.",
+    "Answer and value: (e) a foreign key - 1 mark - because the many-side record must name its one record, and the foreign key is what holds that name - 1 mark.",
+    "The completed table shows the terms of one model kept apart by their meanings, because the model’s parts each have one role."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A table of relational database terms with four meanings to complete.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.1-006": 1,
+    "CLM-9618-8.1-007": 1,
+    "CLM-9618-8.1-008": 1,
+    "CLM-9618-8.1-010": 1
+   },
+   "authored_hash": "7ec27df654922ba62100e925f5fe20c9fae3881a57046a98ae962fbdc9f023b2"
+  }
+ ]
+}

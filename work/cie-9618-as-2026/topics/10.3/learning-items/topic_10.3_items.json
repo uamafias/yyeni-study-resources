@@ -1,0 +1,614 @@
+{
+ "dataset_id": "ITEMS-9618-10.3",
+ "topic_id": "10.3",
+ "items": [
+  {
+   "item_id": "ITEM-9618-10.3-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State why a program that records daily sales needs to store them in a file rather than only in an array.",
+   "canonical_answer": "An array is held in memory and is lost when the program ends; a file keeps the sales in secondary storage so they can be read again later, by the same program or another one.",
+   "marking_guidance": [
+    "1 mark: the meaning - the data is kept after the program ends because it is in secondary storage."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1
+   },
+   "authored_hash": "7ebe94c624058a17e1780d783cb69f2eb33082829167db1ea9a2871c458e6c3f"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-001",
+    "CLM-9618-10.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why files are needed for two programs that never run at the same time to share data.",
+   "canonical_answer": "A file is stored in secondary storage and outlives both programs, so the first program writes its data to the file and ends, and the second program, running later, opens the same file and reads it. Neither program holds the data while the other runs, because the file holds it between them, which is what storage between running programs is for.",
+   "marking_guidance": [
+    "Reason: the file outlives both programs, holding the data while neither runs - 1 mark.",
+    "Purpose: so the later program reads what the earlier one wrote, because the file kept it in secondary storage between the two runs - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1,
+    "CLM-9618-10.3-006": 1
+   },
+   "authored_hash": "e3fa9a691ae5017d4f81ae64b7d8f645c1fabe51f2dc85e0e6af4b2513f82321"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-003-APP",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-001",
+    "CLM-9618-10.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A vet's program ends each evening. The next morning's program must start from the same list of appointments. Explain why the appointments must be in a file, and what the file gives the two programs.",
+   "canonical_answer": "The list of appointments is held in memory while today's program runs, and memory is cleared when the program ends, so without a file tomorrow's program starts with nothing. The file keeps the appointments in secondary storage through the night, so tomorrow's program reads them from where today's program wrote them - the file gives the two programs a shared place that outlives both.",
+   "marking_guidance": [
+    "Context: this vet’s two programs and the given night between them - 1 mark.",
+    "Reason: because memory is cleared at the end of each run, the file in secondary storage carries the appointments across, so tomorrow starts from today’s list - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1,
+    "CLM-9618-10.3-006": 1
+   },
+   "authored_hash": "5bdb672cfed2039d480bcf9f1b955295261f482e1b5e122f5fa39bf03b02c87d"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-004-PROC",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write pseudocode statements to add the string NewOrder as a new line at the end of the existing file \"Orders.txt\", keeping the orders already in it.",
+   "canonical_answer": "```pseudocode\nOPENFILE \"Orders.txt\" FOR APPEND\nWRITEFILE \"Orders.txt\", NewOrder\nCLOSEFILE \"Orders.txt\"\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - open first, then write, then close - each statement is a mark point.",
+    "Input: the statements start from the given string NewOrder and the given file.",
+    "Each statement is a mark point: OPENFILE with mode APPEND, not WRITE - 2 marks, because WRITE would start the file again; WRITEFILE with the file name and NewOrder - 1 mark; CLOSEFILE with the same name - 1 mark.",
+    "Result: the end product is the file with the new order as its last line and every earlier line kept."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "ffb027c662822076e270256076b22bbf4f144e1c63d2a0d11f1276d2518f79a5"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-005-PROC",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write pseudocode statements that read every line of the file \"Names.txt\" into the string Line, one line at a time, stopping when there are no more lines to read.",
+   "canonical_answer": "```pseudocode\nOPENFILE \"Names.txt\" FOR READ\nWHILE NOT EOF(\"Names.txt\")\n   READFILE \"Names.txt\", Line\nENDWHILE\nCLOSEFILE \"Names.txt\"\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - open, then the guarded loop, then close - each statement is a mark point.",
+    "Input: the statements start from the given file and the given string.",
+    "Each statement is a mark point: OPENFILE with mode READ - 1 mark; WHILE NOT EOF with the file name in the test - 2 marks, because the test comes before each read; READFILE with the file name and Line - 1 mark.",
+    "Result: the end product is every line read in order, with no read past the last line."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "a215f01a211a64cd6c1511212f386137ea973a800f2b0a92ed6ec992084f8346"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-006-APP",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A parameter FileName holds the name of a text file to be emptied at the start of a year. Write the pseudocode statements that open the file so that its old contents are removed, and then close it.",
+   "canonical_answer": "```pseudocode\nOPENFILE FileName FOR WRITE\nCLOSEFILE FileName\n```",
+   "marking_guidance": [
+    "Context: this given identifier FileName and its given job - 1 mark for the mode WRITE, which creates the file afresh.",
+    "Reason: because FileName is an identifier it takes no quotation marks - 1 mark - and the close carries the same identifier so the file is closed by its name - 1 mark - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-004": 1
+   },
+   "authored_hash": "53c8c3afa4c74109d400199a862137feae91b083498d921d9375b477a462beda"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-007-INTERP",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The file \"Sales.txt\" holds four lines: \"Rice\", \"\" (empty), \"Beans\" and \"Salt\". This program counts the lines that are not blank. Complete the four missing entries.\n\n```pseudocode\nDECLARE Line : STRING\nDECLARE Count : INTEGER\nCount <- (a)\nOPENFILE \"Sales.txt\" FOR READ\nWHILE NOT (b)\n   READFILE (c)\n   IF Line <> \"\" THEN\n      Count <- Count + (d)\n   ENDIF\nENDWHILE\nCLOSEFILE \"Sales.txt\"\n```",
+   "canonical_answer": "(a) 0. (b) EOF(\"Sales.txt\"). (c) \"Sales.txt\", Line. (d) 1.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) 0, (b) EOF(\"Sales.txt\") with the file name, (c) \"Sales.txt\", Line, (d) 1.",
+    "Meaning: the completed program shows the counter starting at 0, the file guarded line by line, and the count growing only on a non-blank line, so the result is that the trace ends with Count = 3 because the empty line is skipped."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "8e2c061e3d0335db78c5661c89309cf8f8e5a0561f88daea00375d5649b6a5b3"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-008-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A procedure has the parameter FileName, which holds the name of a text file. A learner writes OPENFILE \"FileName\" FOR READ. Explain the error.",
+   "canonical_answer": "The quotation marks make \"FileName\" a literal string, so the program tries to open a file actually called FileName instead of the file whose name the parameter holds. Because FileName is an identifier, the statement is OPENFILE FileName FOR READ, without quotation marks. The test: is it the name itself (\"Log.txt\") or a variable holding the name (LogFile)? The literal takes quotation marks; the identifier does not.",
+   "marking_guidance": [
+    "1 mark: the error named - the identifier has been written as a literal string, so the wrong file is opened, a confusion of an identifier with a literal.",
+    "1 mark: the correction with the test - no quotation marks round an identifier, because quotation marks only round a literal file name."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-004": 1
+   },
+   "authored_hash": "bdbe4d44afc3a5cb17b8b9992e6c36736fcdd75937059142dd4eb35bdf648b44",
+   "misconception_entry": "MC-9618-10.3-01"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-009-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A program must add a new appointment to the existing file \"Visits.txt\". A learner opens it with FOR WRITE. Explain the error.",
+   "canonical_answer": "WRITE creates the file afresh, so everything already booked is lost - the new appointment replaces the list instead of joining it. Adding to an existing file is APPEND’s job, because APPEND adds the new line to the end and keeps every line already there. The test: should the old contents survive? Then APPEND.",
+   "marking_guidance": [
+    "1 mark: the error named - WRITE would recreate the file and lose the existing appointments, a confusion of the two modes.",
+    "1 mark: the correction with the test - APPEND adds to the end and keeps the old lines, because keeping what is there is what adding means."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1
+   },
+   "authored_hash": "fce8a24f965f15a32357c7e4584bced11c841ba29ec8d0f59e0372e42619c646",
+   "misconception_entry": "MC-9618-10.3-02"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-010-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A learner writes a program that jumps straight to the tenth line of a text file, and tests EOF without a file name. Explain both errors.",
+   "canonical_answer": "A text file is read line by line from the start, so reaching line 10 means reading lines 1 to 9 first - a text file offers no jump, because the lines are a stream, not an indexed array. And EOF needs the file name - EOF(\"Orders.txt\") - because the test asks whether that file has lines left, and without the name the test asks about nothing. The tests: to reach line 10, read 1 to 9; EOF carries the file it tests.",
+   "marking_guidance": [
+    "1 mark: the error named for each slip - a jump to a line is impossible in a stream read from the start, and EOF() without the file name tests nothing.",
+    "1 mark: the correction with the tests - read the lines in order from the first, because that is the only route to the tenth, and write EOF(<file>) with the name, because the end belongs to a named file."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "2df0c8a1348aa0f8d61abd16b52ffda0ffc3b193087d7e2516de0f122c409ec7",
+   "misconception_entry": "MC-9618-10.3-03"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-P01",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A tuck shop records each sale in the text file \"Sales.txt\", one line per sale. Write pseudocode for a function CountSales that returns the number of lines in the file, reading every line from the start and counting each one.",
+   "canonical_answer": "```pseudocode\nFUNCTION CountSales() RETURNS INTEGER\n   DECLARE Line : STRING\n   DECLARE Total : INTEGER\n   Total <- 0\n   OPENFILE \"Sales.txt\" FOR READ\n   WHILE NOT EOF(\"Sales.txt\")\n      READFILE \"Sales.txt\", Line\n      Total <- Total + 1\n   ENDWHILE\n   CLOSEFILE \"Sales.txt\"\n   RETURN Total\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading, with no parameters because none are needed, RETURNS INTEGER, and ENDFUNCTION.",
+    "Mark point 2: the declarations of Line and Total, and the initialisation of Total to 0 before the loop.",
+    "Mark point 3: OPENFILE with the file name in quotation marks and mode READ. Mark point 4: the conditional loop WHILE NOT EOF(\"Sales.txt\"), closed with ENDWHILE.",
+    "Mark point 5: READFILE inside the loop, with the file name and the string Line. Mark point 6: the counter incremented on every line read, inside the loop.",
+    "Mark point 7: CLOSEFILE with the same file name after the loop, before the return. Mark point 8: the value RETURNed at the end - returned, not output - so the function is complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A tuck shop sales file counted line by line.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "4dcf3350a3d7c63e109e3b8bf5e14807715f9c14922802efe380563685ca4795"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-P02",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A lodge keeps one booking per line in \"Bookings.txt\", each line beginning with a guest name followed by a space and a room number. Write pseudocode for a procedure SaveBooking that takes the string NewBooking and adds it as a new line at the end of the existing file, keeping every booking already made.",
+   "canonical_answer": "```pseudocode\nPROCEDURE SaveBooking(NewBooking : STRING)\n   OPENFILE \"Bookings.txt\" FOR APPEND\n   WRITEFILE \"Bookings.txt\", NewBooking\n   CLOSEFILE \"Bookings.txt\"\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with the parameter NewBooking : STRING, and ENDPROCEDURE.",
+    "Mark point 2: no declaration is needed and no loop runs here, because the procedure works on its single parameter alone - values arrive as parameters, never by INPUT inside a module.",
+    "Mark point 3: OPENFILE with the file name in quotation marks. Mark point 4: the mode APPEND, because the existing bookings must survive - WRITE would start the file again.",
+    "Mark point 5: WRITEFILE inside the procedure, with the file name and the string. Mark point 6: the parameter used as the written value, not a new INPUT.",
+    "Mark point 7: CLOSEFILE with the same file name before the ending. Mark point 8: the procedure complete and closed - its result is the file’s new last line, with no returned value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge booking file that grows one line at a time.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "acf9ce7f0c3c3c8c6deecd35ef6d3baca663c99cff2bc0948ff982e729e7ceb8"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-P03",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A school keeps its class register in \"Register.txt\", one learner name per line. Write pseudocode for a procedure RewriteRegister that takes the array Names, of up to 30 strings, and the count NumLearners, and writes the register afresh with exactly those learners as its lines - the old file contents are to be replaced.",
+   "canonical_answer": "```pseudocode\nPROCEDURE RewriteRegister(Names : ARRAY[1:30] OF STRING, NumLearners : INTEGER)\n   DECLARE Index : INTEGER\n   OPENFILE \"Register.txt\" FOR WRITE\n   FOR Index <- 1 TO NumLearners\n      WRITEFILE \"Register.txt\", Names[Index]\n   NEXT Index\n   CLOSEFILE \"Register.txt\"\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: the declaration of the loop variable Index.",
+    "Mark point 3: OPENFILE with the file name in quotation marks. Mark point 4: the mode WRITE, because the old contents are to be replaced - the one job WRITE is for.",
+    "Mark point 5: the count-controlled loop FOR Index <- 1 TO NumLearners, closed with NEXT Index. Mark point 6: the array element written by index, Names[Index].",
+    "Mark point 7: WRITEFILE inside the loop with the file name and the element, one line per pass. Mark point 8: CLOSEFILE with the same file name after the loop, and ENDPROCEDURE - the procedure complete, with no returned value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A class register replaced from an array of names.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1
+   },
+   "authored_hash": "bb2e771e8d5516931cdb4c371c1d069667a5b4e25bcc6411684592f6c3be3f14"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-P04",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-01",
+    "OBJ-9618-10.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-001",
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-004"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A clinic records each visit in \"Visits.txt\". The recording program ends each evening; the reporting program runs the next morning.\n(a) Explain why the visits must be stored in a file rather than kept in the recording program’s array. [2]\n(b) The reporting program must read every line of \"Visits.txt\" into the string Line. Explain the role of EOF in the loop that reads it, naming the test it appears in. [2]\n(c) The clinic’s program has a parameter VisitFile holding the file name. Explain how the OPENFILE statement differs from the literal-name form, and why. [2]",
+   "canonical_answer": "(a) The array lives in memory, which is cleared when the recording program ends, so the visits would vanish with the evening; the file keeps them in secondary storage through the night, so the reporting program reads them the next morning - the file outlives the program that wrote it.\n(b) EOF(\"Visits.txt\") returns TRUE when there are no more lines to read, so the loop is written WHILE NOT EOF(\"Visits.txt\") - the test comes before each READFILE, so the loop reads every line and stops at the last, because the end of the file is what the loop’s condition watches for.\n(c) The literal form is OPENFILE \"Visits.txt\" FOR READ with quotation marks round the name; with the parameter, the statement is OPENFILE VisitFile FOR READ without quotation marks, because VisitFile is an identifier holding the name, and quotation marks would make the program look for a file actually called VisitFile.",
+   "marking_guidance": [
+    "Part (a): the reason the file is needed - 2 marks, 1 per point: memory is cleared at the end, the file keeps the visits in storage for the morning program.",
+    "Part (b): the role of EOF named - 2 marks, 1 per point: TRUE when no lines remain, guarding each read inside WHILE NOT EOF(<file>).",
+    "Part (c): the context of this given parameter - 2 marks, 1 per point: the identifier form without quotation marks, because quoting makes a literal."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A clinic evening’s visits carried to the morning program by a file.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-001": 1,
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-004": 1
+   },
+   "authored_hash": "a294ff760b8053bd81e2c7fa1e5d9dc892ca3160aec0229687e035abdf58d7ef"
+  }
+ ]
+}

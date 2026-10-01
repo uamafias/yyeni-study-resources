@@ -1,0 +1,122 @@
+{
+ "unit_id": "CU-9618-8.3.2",
+ "title": "Writing DDL and DML in SQL",
+ "objective_ids": [
+  "OBJ-9618-8.3.2-01",
+  "OBJ-9618-8.3.2-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_programming",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 548,
+  "target": 666,
+  "max": 784
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-8.3.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Writing simple SQL DDL statements - CREATE DATABASE, CREATE TABLE with data types and keys, ALTER TABLE - and SQL DML scripts that query and modify data in at most two tables.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "cc54bbd42cc4673ba4b3eceff87fa96a50e4e8a0a2c53073ca1fe8fe884c1b7c"
+  },
+  {
+   "block_id": "CU-9618-8.3.2-b2",
+   "block_type": "process",
+   "heading": "Writing DDL",
+   "text": "Defining a database runs in a fixed order: create the database, then each table with its attributes, types and keys. The data types state what each attribute may hold: CHARACTER one character, VARCHAR(n) a string of up to n characters, BOOLEAN true or false, INTEGER a whole number, REAL a decimal number, DATE a date, TIME a time. A clinic's structure, written out:\n\n```sql\nCREATE DATABASE MEDICAL;\nCREATE TABLE PATIENT (\n   PatientID INTEGER,\n   Surname VARCHAR(30),\n   Telephone VARCHAR(15),\n   PRIMARY KEY (PatientID)\n);\nCREATE TABLE BOOKING (\n   BookingID INTEGER,\n   PatientID INTEGER,\n   BookingDate DATE,\n   BookingTime TIME,\n   PRIMARY KEY (BookingID),\n   FOREIGN KEY (PatientID) REFERENCES PATIENT(PatientID)\n);\nALTER TABLE PATIENT\nADD COLUMN MobilePhone VARCHAR(15);\n```\n\nFour DDL jobs in one script: the database created; a table defined with its key; a second table defined with both its own primary key and a foreign key pointing at the first - FOREIGN KEY (PatientID) REFERENCES PATIENT(PatientID) is the whole phrase that links 8.1's one-to-many; and an existing table changed with ALTER TABLE, adding an attribute without rebuilding anything. The key rules travel with the tables: PRIMARY KEY in the definition means the DBMS refuses duplicate keys from the first record, because the rule is declared with the structure, not remembered by whoever enters the data.",
+   "claim_ids": [
+    "CLM-9618-8.3-007",
+    "CLM-9618-8.3-008",
+    "CLM-9618-8.3-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-007": 1,
+    "CLM-9618-8.3-008": 1,
+    "CLM-9618-8.3-002": 1
+   },
+   "authored_hash": "437d06513a0ea9cfa44776399c353cca77c1649a216ae721e2c4206b366b24d7"
+  },
+  {
+   "block_id": "CU-9618-8.3.2-b3",
+   "block_type": "process",
+   "heading": "Writing DML",
+   "text": "Querying and modifying run in the same clause order. SELECT names the fields; FROM names the table; WHERE filters the rows; ORDER BY sorts the result; GROUP BY groups rows for totals. On the newsagent's SALE table:\n\n```sql\nSELECT Town, PapersSold\nFROM SALE\nWHERE PapersSold > 100\nORDER BY PapersSold DESC;\n\nSELECT NewsagentID, SUM(PapersSold)\nFROM SALE\nGROUP BY NewsagentID;\n```\n\nThe first lists the busy days' towns and totals, sorted largest first; the second gives each newsagent's total, grouped by newsagent, because SUM totals each group the GROUP BY makes. The aggregate functions are three answers: COUNT counts the rows that meet the condition, SUM adds up a field's values, AVG gives their average - count the customers or total their bills, because the number of records and the total of the values are different questions. Modifying is three statements: INSERT INTO with the fields and VALUES with the record; UPDATE ... SET ... WHERE, where the WHERE names the records to change; DELETE FROM ... WHERE, likewise. Two tables come together with INNER JOIN, which matches the two tables' shared attribute:\n\n```sql\nSELECT PATIENT.Surname, BOOKING.BookingDate\nFROM PATIENT\nINNER JOIN BOOKING ON PATIENT.PatientID = BOOKING.PatientID;\n```\n\nThe name lives in one table and the date in the other, and the join pairs each booking with the one patient its foreign key names. One writing rule to finish: string literals take quotation marks - 'Otjiwarongo', a date written as a string - whereas numbers and Boolean values are written bare, because quoting is a string's property and the field's type is checked in the table definition first.",
+   "claim_ids": [
+    "CLM-9618-8.3-004",
+    "CLM-9618-8.3-009",
+    "CLM-9618-8.3-010",
+    "CLM-9618-8.3-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1,
+    "CLM-9618-8.3-009": 1,
+    "CLM-9618-8.3-010": 1,
+    "CLM-9618-8.3-011": 1
+   },
+   "authored_hash": "d18bcd62c39a86fa1037ace6e53f99602cb0ffb78aefa69206f54fe7b1887a27"
+  },
+  {
+   "block_id": "CU-9618-8.3.2-b4",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur. SUM where COUNT is needed, or the reverse: COUNT gives how many rows meet the condition, SUM adds up the values in a field - the test is whether the answer is a number of records or a total of amounts. DDL and DML words swapped: a new attribute needs ALTER TABLE, because UPDATE changes data and CREATE TABLE would build a second table - the test is structure or data. And quotation marks on the wrong literals: strings take them, numbers and Boolean values do not - the test is the field's data type in the table definition.",
+   "claim_ids": [
+    "CLM-9618-8.3-009",
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-009": 1,
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-011": 1
+   },
+   "authored_hash": "7f69e964b480d9247771165c117a7cf445e08bd7550ed5f7e7cefddf6d3629e8"
+  },
+  {
+   "block_id": "CU-9618-8.3.2-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The tables these statements build and fill are 8.1's normalised designs, the keys they declare are 8.1's primary and foreign keys, and the DBMS that runs them is 8.2's whole subject. The data the queries return becomes the records programs read in 10.3's files.",
+   "claim_ids": [
+    "CLM-9618-8.3-008",
+    "CLM-9618-8.3-010"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-008": 1,
+    "CLM-9618-8.3-010": 1
+   },
+   "authored_hash": "9763984b5811a4eb31de3c116e885ab42a5ab81d9fabf94c61de3cb9868e0c6c"
+  }
+ ],
+ "word_count": 665,
+ "qa_status": "review_required",
+ "notes": []
+}

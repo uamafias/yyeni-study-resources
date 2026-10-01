@@ -1,0 +1,1533 @@
+{
+ "topic_number": "12.3",
+ "topic_title": "Program Testing and Maintenance",
+ "topic": "12.3 Program Testing and Maintenance",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 34,
+ "items": [
+  {
+   "item_id": "ITEM-9618-12.3-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a dry run is.",
+   "canonical_answer": "A dry run traces the code by hand on paper: the tester executes it statement by statement without running it, recording each variable’s new value after each statement in a trace table.",
+   "marking_guidance": [
+    "1 mark: the meaning - the program traced by hand, statement by statement, with the values recorded."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-001": 1
+   },
+   "authored_hash": "b7717da855ab24c6af8ec08bb044f634a43ee9769faca1f4af68872c0c655d44",
+   "objective_titles": [
+    "Show understanding of ways of exposing and avoiding faults in programs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-001",
+    "CLM-9618-12.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a trace table exposes a logic error that a program’s running does not.",
+   "canonical_answer": "A logic error runs happily and delivers the wrong result, so running the program shows a healthy program - the fault is invisible from the outside. The trace table records what the program actually does, variable by variable and statement by statement, so the traced values can be compared with the values the problem required, and the first row where they differ is the statement that causes the error - which is what running alone never shows.",
+   "marking_guidance": [
+    "Reason: a logic error runs and looks healthy, so running hides it - 1 mark.",
+    "Purpose: so the traced values are compared with the required values, because the first differing row names the causing statement - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-001": 1,
+    "CLM-9618-12.3-003": 1
+   },
+   "authored_hash": "2fe455f0ab69e6ed719e91e7cbe1a203b02cc36c04b346ce6276fb1ce4c7fe73",
+   "objective_titles": [
+    "Show understanding of ways of exposing and avoiding faults in programs"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-003-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-01",
+    "OBJ-9618-12.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-003",
+    "CLM-9618-12.3-004",
+    "CLM-9618-12.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A till program totals six sales but the printed total is one sale short. Explain how a dry run locates the error.",
+   "canonical_answer": "The tester dry runs the program with the six sales, recording Total and the loop index after each statement. The trace table’s rows show the loop finishing after five sales, with the sixth sale read but never added - the first row where the trace departs from the required behaviour is the loop’s end, so the error is located at the loop bound that stops one short, which the trace table shows and the running program did not.",
+   "marking_guidance": [
+    "Context: this given till program with its short total - 1 mark for the dry run tracing the loop.",
+    "Reason: because the trace records the loop finishing after five sales, the first differing row locates the error at the loop’s bound, so the trace table names the statement - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-003": 1,
+    "CLM-9618-12.3-004": 1,
+    "CLM-9618-12.3-001": 1
+   },
+   "authored_hash": "57dfa15b72dedf82cc8baf30fcf9c78459828511c17f5531563d6b9ed9699b3d",
+   "objective_titles": [
+    "Show understanding of ways of exposing and avoiding faults in programs",
+    "Correct identified errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-004-INTERP",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The table shows four faults found in a bookings program. Complete the four missing entries.\n\n| Fault | Found when | Error type |\n|---|---|---|\n| NEXT is missing after a FOR loop | (a) | Syntax |\n| The loop ends one day short, so a 7-day booking totals 6 | The program runs | (b) |\n| (c) | The program stops mid-run | Run-time |\n| The discount is applied when it should not be | The program runs and prints the wrong total | (d) |",
+   "canonical_answer": "(a) The program fails to translate. (b) Logic. (c) A file that does not exist is read (or a value past an array’s end is used). (d) Logic.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) at translation, (b) logic, (c) a mid-run stop such as a missing file, (d) logic.",
+    "Meaning: the completed table shows each error type told apart by when it is found - translation, mid-run, wrong result - so the result is the three-question test in a column."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1
+   },
+   "authored_hash": "6b18e5fc00a6058cfdb6685ba6e3d19979fa36c6e08b447265deece9f70e0b61",
+   "objective_titles": [
+    "Locate and identify the different types of errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-005-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-002",
+    "CLM-9618-12.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "This loop should print the numbers 1 to 5 but prints 1 to 4. Write the corrected line, and state the error type and how the trace showed it.\n\n```pseudocode\nFOR Count <- 1 TO 4\n   OUTPUT Count\nNEXT Count\n```",
+   "canonical_answer": "The corrected line is FOR Count <- 1 TO 5. The error is a logic error: the program runs and delivers the wrong result - one number short. The trace shows the loop finishing after 4 with 5 never reached, because the trace table records the loop bound that ends one short of the required five.",
+   "marking_guidance": [
+    "Context: this given loop and its short print - 1 mark for the corrected bound, FOR Count <- 1 TO 5.",
+    "Reason: because the program runs and gives the wrong result, the error is logic, and the trace’s last row shows the bound ending early, so the error type and its evidence carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1,
+    "CLM-9618-12.3-003": 1
+   },
+   "authored_hash": "e5ec6f05c856c72f626f9e8b24847cd9b4b1ca1b8ef07db0036db0bbbaccee3f",
+   "objective_titles": [
+    "Locate and identify the different types of errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-006-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-002",
+    "CLM-9618-12.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "This program stops mid-run when it reads the tenth booking from an array declared with indices 1 to 9. Write the corrected declaration, state the error type, and state what the trace would show.\n\n```pseudocode\nDECLARE Bookings : ARRAY[1:9] OF STRING\n```",
+   "canonical_answer": "The corrected declaration is DECLARE Bookings : ARRAY[1:10] OF STRING. The error is a run-time error: the program stops while it runs, on an access past the array’s upper bound. The trace would show the index reaching 10 with no element to hold it, because the trace table records the index growing past the declared bound.",
+   "marking_guidance": [
+    "Context: this given array and its mid-run stop - 1 mark for the corrected bound, ARRAY[1:10].",
+    "Reason: because the program stops mid-run past the upper bound, the error is run-time, and the trace shows the index at 10, so the error type and its evidence carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1,
+    "CLM-9618-12.3-003": 1
+   },
+   "authored_hash": "2cc85a9958c7eecffbbf0af0d0067eca9b5fefc63aee1cf1f7e412647bd06eef",
+   "objective_titles": [
+    "Locate and identify the different types of errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-026-MISCON",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that a program with a missing ENDIF has a run-time error, and that a program printing the wrong total has a syntax error. Explain both errors.",
+   "canonical_answer": "Both are named backwards. The missing ENDIF breaks the rules of the language, so the program fails to translate - a syntax error, found before any run. The wrong total comes from a program that runs and delivers the wrong result - a logic error, which no translation catches because the rules are all kept. The test asks three questions in order: did it translate? did it run? did it give the right answer?",
+   "marking_guidance": [
+    "1 mark: the errors named - the translation failure is the syntax error and the wrong result is the logic error, each given the other’s name.",
+    "1 mark: the correction with the test - translate, run, right answer, because the three questions in order name the three types."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1
+   },
+   "authored_hash": "b7ce8744345accf223f6731f2ebef5015373207e0e16a1268412d8745d013c4e",
+   "misconception_entry": "MC-9618-12.3-01",
+   "objective_titles": [
+    "Locate and identify the different types of errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-007-DEF",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what correcting an identified error begins from.",
+   "canonical_answer": "The statement that produced the traced wrong value: the trace established where the program’s behaviour first departed from the required, so the correction changes that statement - and only that statement.",
+   "marking_guidance": [
+    "1 mark: the meaning - the correction begins at the statement the trace named, and changes only it."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-004": 1
+   },
+   "authored_hash": "af710237271171302df02f5daf5ea499cceb1e56c838e1907198285f28047711",
+   "objective_titles": [
+    "Correct identified errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-008-WHY",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a correction should change only the statement the trace named.",
+   "canonical_answer": "The trace established where the program’s behaviour first departed from the required, so the named statement is the cause - a change one statement early or late fixes a symptom and leaves the cause, and a change somewhere the trace did not look adds a second fault to the first. Because the trace is the evidence, the correction follows it exactly, which is what keeps a fix from becoming a new bug.",
+   "marking_guidance": [
+    "Reason: the trace named the cause, so the correction changes the cause - 1 mark.",
+    "Purpose: so a fix does not become a new fault, because changes outside the trace are changes without evidence - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-004": 1
+   },
+   "authored_hash": "69e594b9c8e66ebaed34e255151ad536624e840b7d3d82202002c4b4a0d61ee4",
+   "objective_titles": [
+    "Correct identified errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-009-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-03",
+    "OBJ-9618-12.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-004",
+    "CLM-9618-12.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A program’s average comes out too high by exactly the first reading’s share, every time it is run. The trace shows the total initialised to the first reading instead of 0, so the loop adds all six readings to it. Explain the correction.",
+   "canonical_answer": "The traced first row shows the total holding the first reading before the loop begins, so every later reading is added to a total that was already too high by that first reading - the correction is the initialisation statement: Total <- 0 before the loop. The statement that produced the first traced wrong value is the initialisation, so the correction changes it and it alone, and the test that exposed the error runs again afterwards, because a correction is a change and a change is re-checked.",
+   "marking_guidance": [
+    "Context: this given program with its high average and traced first row - 1 mark for the correction, Total <- 0 before the loop.",
+    "Reason: because the trace named the initialisation as the first wrong value, only it changes, and the test re-runs - so the discipline carries 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-004": 1,
+    "CLM-9618-12.3-003": 1
+   },
+   "authored_hash": "8f838a4632e1bd4e7ce4610b47a3ee1b32c79f02f956d1efa146353b9cbdceb6",
+   "objective_titles": [
+    "Correct identified errors",
+    "Locate and identify the different types of errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-010-DEF",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-005",
+    "CLM-9618-12.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what integration testing checks.",
+   "canonical_answer": "That separately tested modules work together, because modules that each pass alone can still fail together at their interfaces.",
+   "marking_guidance": [
+    "1 mark: the meaning - modules tested together after passing alone, because the interfaces are what single-module tests never touch."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-005": 1,
+    "CLM-9618-12.3-006": 1
+   },
+   "authored_hash": "24efd525e941f64a3981c7e56c8f03df3394a39176f75b041c417dd4ca4c65b5",
+   "objective_titles": [
+    "Show understanding of the methods of testing available and select appropriate data for a given method"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-011-WHY",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why alpha testing precedes beta testing.",
+   "canonical_answer": "Alpha testing is in-house: the development team’s own users run the whole system, so the faults they find are fixed before any outsider meets the program. Beta testing hands the system to selected real users outside the team, so what they meet should already work - which is why alpha comes first, because the team’s users absorb the faults that real users should not have to, and the beta findings that remain are the ones only real use can produce.",
+   "marking_guidance": [
+    "Reason: alpha is in-house and beta is with real users outside - 1 mark.",
+    "Purpose: so the team’s users absorb the early faults first, because the beta round is for findings only real use can produce - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-005": 1
+   },
+   "authored_hash": "cba1d72f054293dabac0a2db5361de24be6a4b1711c2119bb8b1b81b0f8e5055",
+   "objective_titles": [
+    "Show understanding of the methods of testing available and select appropriate data for a given method"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-012-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-005",
+    "CLM-9618-12.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The table shows a booking system’s testing programme. Complete the four missing entries.\n\n| Question the test asks | Method |\n|---|---|\n| Does each module do its own job? | (a) tested alone, then (b) at the interfaces |\n| Does the calling module work while the called module is unfinished? | (c) |\n| Does the system meet the requirements, seen from outside? | (d) |",
+   "canonical_answer": "(a) Each module. (b) Integration testing. (c) A stub stands in for the unfinished module. (d) Black-box testing.",
+   "marking_guidance": [
+    "Context: this given booking system’s programme of tests - 1 mark per completed entry, (a), (b), (c), (d).",
+    "Reason: each entry names the method that answers its question, because a testing method is named by what it asks - so the four entries carry 4 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-005": 1,
+    "CLM-9618-12.3-006": 1
+   },
+   "authored_hash": "1e5f83011f73a1e0b0869e1516bc11d46e3d69d125085796bdf2c0691121dfe7",
+   "objective_titles": [
+    "Show understanding of the methods of testing available and select appropriate data for a given method"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-029-MISCON",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that integration testing is the testing of one module together with its own internals. Explain the error.",
+   "canonical_answer": "Integration testing checks that separately tested modules work together - the test is on modules combined, not on one module, because single-module tests were done before. The learner has described a single module’s testing, which is white-box’s and the module tests’ territory, whereas integration begins where those end: at the interfaces between modules that each passed alone.",
+   "marking_guidance": [
+    "1 mark: the error named - one module’s own testing has been described for the combined-modules test.",
+    "1 mark: the correction with the test - integration testing is on modules combined, because the question is whether the passing modules work together."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-006": 1
+   },
+   "authored_hash": "1a83f83efc8c6b9d5b8173a02ef134d9741b29aedc56fc7aeacacefe10fdf8ed",
+   "misconception_entry": "MC-9618-12.3-04",
+   "objective_titles": [
+    "Show understanding of the methods of testing available and select appropriate data for a given method"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-013-DEF",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a test plan lists.",
+   "canonical_answer": "The tests one by one, each with the data it will use, the expected result from the specification, and the actual result - so the plan is a document a tester works through and checks off.",
+   "marking_guidance": [
+    "1 mark: the meaning - the tests with their data, expected results and actual results, listed one by one."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-007": 1
+   },
+   "authored_hash": "cfededd78cfae0096bc2062fab116fab40d5109e94e99d63fb4360514bd3d5df",
+   "objective_titles": [
+    "Show understanding of the need for a test strategy and test plan and their likely contents"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-014-WHY",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why the expected-result column in a test plan is written before testing begins.",
+   "canonical_answer": "The expected results come from the specification, so writing them first fixes what the program should do before anyone runs it. If the expected column were filled after seeing the actual result, the tester’s expectation would quietly follow the program’s behaviour and every test would pass, because the evidence of a wrong result is the difference between the two columns - which is why the expectation is written blind.",
+   "marking_guidance": [
+    "Reason: the expected results come from the specification, written before the run - 1 mark.",
+    "Purpose: so the difference between the columns is evidence, because an expectation written after the result follows it and hides the fault - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-007": 1
+   },
+   "authored_hash": "dcd2f53095c54f90542c42c8d50558ea74b6dbfea271fddef43d298327af4feb",
+   "objective_titles": [
+    "Show understanding of the need for a test strategy and test plan and their likely contents"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-015-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A project’s strategy says: money computations are tested white-box, the interfaces by integration, and the customer accepts the system before release. Explain how the test plan follows this strategy.",
+   "canonical_answer": "The plan turns each strategic decision into listed work: one row per test, so the money modules each get their white-box tests with data drawn from their code, the interfaces get their integration tests with the modules combined, and the acceptance round gets its own rows with the customer’s checks against the requirements - each with its data, expected result and a column for the actual, because the plan is the strategy written as work that can be checked off.",
+   "marking_guidance": [
+    "Context: this given strategy and its three decisions - 1 mark for the plan’s tests following them.",
+    "Reason: because each strategic decision becomes listed tests with data and expected results, the plan is the strategy made checkable, so the mapping carries 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-007": 1
+   },
+   "authored_hash": "687e94c1fbe6dc2afc04f431acc6968f98244120b49fbb15848437b1dd80c44d",
+   "objective_titles": [
+    "Show understanding of the need for a test strategy and test plan and their likely contents"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-016-BEN",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "BEN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain one benefit of including extreme data in a test plan.",
+   "canonical_answer": "Extreme data is valid data at the limits of the acceptable range, so it tests the edges the program must still survive: twelve nights where twelve is the maximum, an age of 100 where 100 is the top of the range. A program that works for the middle of the range can still fail at the last valid value, so the extreme tests show the range is exactly right at its edge - which is a benefit the ordinary data of the middle never delivers.",
+   "marking_guidance": [
+    "Benefit: the valid limits are tested, so the edges of the range are shown working - 1 mark.",
+    "Because a program can work in the middle and fail at the last valid value, the extreme test catches the edge fault, so the edge belongs in the plan - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1
+   },
+   "authored_hash": "6f74182e3a6afaab617f92bedb9699bf568abaa5582be9ec6e44ff5ed26c379f",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-017-LIM",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "LIM",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Explain one limitation of a test plan whose data is all normal.",
+   "canonical_answer": "Normal data is valid data in the ordinary range, so the whole plan tests only the middle of the specification: the rejection of invalid data goes untested, because abnormal data is missing, and the edges of the range go untested, because extreme and boundary data are missing. A program can pass such a plan and still accept what it should reject and mishandle the last valid value - the plan certifies the easy half and is silent about the rest.",
+   "marking_guidance": [
+    "Drawback: only the middle of the range is tested, so rejecting and edge-handling are untested - 1 mark.",
+    "Because abnormal and boundary data are missing, a passing program can still fail the invalid and the last valid value, so the plan proves less than it seems to - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1
+   },
+   "authored_hash": "eafa2f67f5eae50b8f6c578c7349b4b3ad596cf98d443cced46a6bc24e030d04",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-018-EVAL",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "EVAL",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Evaluate",
+   "command_word": "Explain",
+   "mark_tariff": 3,
+   "difficulty": 4,
+   "prompt": "A booking program accepts 1 to 12 nights. A test plan’s rows are being chosen. Explain which data kinds belong in the plan and why, giving one value of each.",
+   "canonical_answer": "Normal data, such as 3 nights: valid and ordinary, showing the program works where it will live. Abnormal data, such as 13 nights and 0 nights: invalid values the program should reject, because its rejection behaviour is required and untested without them. Extreme data, 12 nights and 1 night: the valid limits, showing the range works at its edges. Boundary data, 11, 12 and 13 together: either side of the top limit, because a bound set one off works for the middle and fails only at the edge - so the boundary trio is the pair that catches it. All four kinds belong, because each asks a question the others do not.",
+   "marking_guidance": [
+    "Suitable kinds named with values - 1 mark for normal with 3, because the middle must be shown working.",
+    "Reason for abnormal: 13 and 0, because rejection of the invalid is required behaviour - 1 mark.",
+    "Context: extreme and boundary with values - 12 and 1 at the limits, 11, 12 and 13 either side of the top, because the edges are where a bound goes wrong - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-009": 1
+   },
+   "authored_hash": "3e01e5aeb1765c730d9c657e603b69c3da9527f283040fe1b0fd6d5d51d87b4e",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-019-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A program registers players aged 11 to 19. Write the four data rows for the Age field of a test plan - one normal, one abnormal, one extreme and one boundary value - each with its expected result.",
+   "canonical_answer": "Normal: age 15, expected - registered. Abnormal: age 47, expected - rejected, because the program should refuse a value outside the range. Extreme: age 11 (or 19), expected - registered, because it is the first (or last) valid value. Boundary: ages 10, 11 and 12 either side of the lower limit, expected - reject, register, register, because a bound set wrongly fails exactly at the edge.",
+   "marking_guidance": [
+    "Context: this given age range and its registration program - 1 mark for the normal and abnormal rows with their expectations.",
+    "Reason: because each kind asks its own question - working, rejecting, edge - the extreme row and the boundary trio with their expected results complete the plan, so the rows carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-009": 1
+   },
+   "authored_hash": "c86d4679605d8f4e578a1f9755b92b724bb10b3502fc2de494ded6c36ec17cf9",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-027-MISCON",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A learner writes that boundary data is invalid data, and gives the range 5 to 25 as one boundary value. Explain both errors.",
+   "canonical_answer": "Boundary data is valid data testing either side of a limit - 24, 25 and 26 around the top of the range - so it is not invalid: the invalid kind is abnormal data, which the program should reject. And a boundary value is a single value on one side of a limit, not a range - a range is the whole span, and the boundary is at its edges. The test asks two questions: should the program accept it? Is it on the edge?",
+   "marking_guidance": [
+    "1 mark: each error named - boundary data called invalid, and a range given where a value was asked for.",
+    "1 mark: the correction with the test - boundary data is valid data either side of a limit, because the questions are acceptability and edge, not rejection."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1
+   },
+   "authored_hash": "def8355aebabc1821dea2ee946b3c93285ca8f5fe4d377dee6b9be88326849dd",
+   "misconception_entry": "MC-9618-12.3-02",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-030-PROC",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 4,
+   "prompt": "A program processes a season’s bookings; the specification says a booking is 1 to 14 nights and a party is 1 to 8 guests. Write four rows of the test plan’s Nights column - one normal, one abnormal, one extreme, one boundary - each with its expected result, in the plan’s row-per-test form.",
+   "canonical_answer": "| Nights | Kind | Expected result |\n|---|---|---|\n| 6 | Normal | Booking accepted |\n| 15 | Abnormal | Booking rejected |\n| 14 | Extreme | Booking accepted |\n| 13, 14, 15 | Boundary | Accept, accept, reject |",
+   "marking_guidance": [
+    "Order: the rows in sequence - normal, abnormal, extreme, boundary - each statement a mark point.",
+    "Input: the rows start from the given specification’s range, 1 to 14 nights.",
+    "Each statement is a mark point: the normal row with its expectation - 1 mark; the abnormal row with the rejection - 1 mark; the extreme row at 14 - 1 mark; the boundary trio either side of the top - 1 mark.",
+    "Result: the end product is a plan column whose kinds together ask every question the range can be asked."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-007": 1
+   },
+   "authored_hash": "c287fe699e7995c0f3968641b7eeea65d7f1bb19e9b5af86383e94f1c0e810e9",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-020-DEF",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what adaptive maintenance is.",
+   "canonical_answer": "Adjusting a working program to a change in its environment or requirements - a new levy rate in law, a replaced operating system - so the program keeps working in a world that moved around it.",
+   "marking_guidance": [
+    "1 mark: the meaning - responding to a change around the working program, so it keeps working in the changed world."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-010": 1
+   },
+   "authored_hash": "44341f385a803f3a2a474687ad3c0673a12513c3161e8062b4ad85ee0d0e27ff",
+   "objective_titles": [
+    "Show understanding of the need for continuing maintenance of a system and the differences between each type of maintenance"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-021-DIST",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between corrective and perfective maintenance.",
+   "canonical_answer": "Corrective maintenance fixes errors found in use - a fault, something broken, repaired; whereas perfective maintenance improves a working program that meets its requirements - an improvement, nothing broken, made better. One responds to a fault and the other to a wish, so the difference is the program’s state: broken against working-but-improvable.",
+   "marking_guidance": [
+    "Difference: fixing what is broken against improving what already works - 1 mark per side, and both sides are needed with the program’s state naming each."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-010": 1
+   },
+   "authored_hash": "a4c8d4134c5d39a99fd3673a0f9742efdf32274a9530341ab510b6dab8171231",
+   "objective_titles": [
+    "Show understanding of the need for continuing maintenance of a system and the differences between each type of maintenance"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-022-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-010",
+    "CLM-9618-12.3-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A delivered levy program meets every requirement. In its first year the levy rate changes in law, and the users ask for a monthly summary screen. Explain which maintenance each work is, and why the need for maintenance does not end with them.",
+   "canonical_answer": "The rate change is adaptive maintenance: the environment around the working program changed, and the program is adjusted to keep working in it. The summary screen is perfective maintenance: the program meets its requirements and the users want it better, so the work improves a working program. The need does not end, because the world keeps moving - laws change, systems are replaced, users keep seeing improvements they want - so a program is not finished being maintained, which is why the maintenance stage continues for the program’s whole working life.",
+   "marking_guidance": [
+    "Context: this given program with its rate change and its requested summary - 1 mark for the two kinds named with their reasons.",
+    "Reason: because the world around a working program keeps changing, maintenance continues for the whole working life, so the continuing need carries 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-010": 1,
+    "CLM-9618-12.3-011": 1
+   },
+   "authored_hash": "0297b57bcd7bf128288191feae0e88429013f3b3fb24936c4fd2bd9a7584360c",
+   "objective_titles": [
+    "Show understanding of the need for continuing maintenance of a system and the differences between each type of maintenance"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-028-MISCON",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A learner calls the monthly summary screen \"corrective maintenance, because it corrects the program’s lack of a summary\". Explain the error.",
+   "canonical_answer": "Corrective maintenance fixes errors found in use - something broken, repaired. The summary screen is an improvement to a working program that meets its requirements, which is perfective maintenance, because the program is not broken and nothing is being fixed. The test asks: is something broken, has something changed around it, or is it merely improvable? Here it is merely improvable, so the form is perfective.",
+   "marking_guidance": [
+    "1 mark: the error named - an improvement has been called a fault fix, a confusion of perfective with corrective.",
+    "1 mark: the correction with the test - nothing is broken, the working program is being improved, so the form is perfective."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-010": 1
+   },
+   "authored_hash": "d311cdc3bb12c8fc32255ecc715f607336f0804a5853dc97fbb5e27aece4fdfc",
+   "misconception_entry": "MC-9618-12.3-03",
+   "objective_titles": [
+    "Show understanding of the need for continuing maintenance of a system and the differences between each type of maintenance"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-023-INTERP",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A delivered program is being amended to add a bulk discount. The amendment steps are listed with four gaps. Complete the four missing entries.\n\n| Step | The move |\n|---|---|\n| 1 | Read the existing code with a (a) until each module’s job can be stated |\n| 2 | Place the change at the (b) that owns the affected value |\n| 3 | Follow the existing style, so the program reads as (c) program after the change |\n| 4 | Re-test the (d) program, because a change to one value travels to every use of it |",
+   "canonical_answer": "(a) trace (a dry run or walkthrough). (b) statement. (c) one. (d) whole.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) trace, (b) statement, (c) one, (d) whole.",
+    "Meaning: the completed list shows the amendment read first and re-tested last, so the result is a change placed with evidence, because the trace and the re-test are what hold the middle steps to account."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-012": 1
+   },
+   "authored_hash": "10c2394fbe6e44edd0c1c8954631a9f9a3636ddfd4a36047cf541ab320d2abcd",
+   "objective_titles": [
+    "Analyse an existing program and make amendments to enhance functionality"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-024-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A delivered program totals a stall’s takings in the module TotalTakings. The amendment: takings above 5000 dollars in a week attract a 5 percent levy, applied after the total is computed. Write the amended lines inside TotalTakings - after the loop that totals, before the output - using the existing identifier TakingsTotal.",
+   "canonical_answer": "```pseudocode\nIF TakingsTotal > 5000 THEN\n   TakingsTotal <- TakingsTotal - TakingsTotal * 0.05\nENDIF\nOUTPUT TakingsTotal\n```",
+   "marking_guidance": [
+    "Context: this given module and its given amendment - 1 mark for the selection with the complete comparison.",
+    "Reason: because the change is placed after the total is computed and before the output, using the existing identifier TakingsTotal, the levy lines follow the program’s own shape - so the two amended lines and the placement carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-012": 1
+   },
+   "authored_hash": "daebd4ca426ae4d87d7032dd87de9d3e799116ad97b9f6ad4a82a3e3699535ae",
+   "objective_titles": [
+    "Analyse an existing program and make amendments to enhance functionality"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-025-APP",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-012"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A delivered program prints each member’s renewal date. The amendment: members who joined more than 10 years ago get the line \"Loyal member\" printed first. The existing loop prints each member from the array JoinYears, index 1 to NumMembers. Write the amendment lines inside the loop, before the existing OUTPUT, using the existing identifier JoinYears and the loop index Member.",
+   "canonical_answer": "```pseudocode\nIF JoinYears[Member] < CURRENT_YEAR() - 10 THEN\n   OUTPUT \"Loyal member\"\nENDIF\n```",
+   "marking_guidance": [
+    "Context: this given loop and its given amendment - 1 mark for the selection with its condition on the array element.",
+    "Reason: because the change is placed inside the loop before the existing output and uses the existing identifier and index, the amendment follows the program’s own shape, so the placement and the lines carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-012": 1
+   },
+   "authored_hash": "b6087bdb7cb4f329c851f841353332dd3a5a945495411845c7e713bcbd6a8b7f",
+   "objective_titles": [
+    "Analyse an existing program and make amendments to enhance functionality"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-P01",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02",
+    "OBJ-9618-12.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-003",
+    "CLM-9618-12.3-004"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A spaza shop’s program totals a week of takings, but the printed total is wrong. The code is below. Dry-run it with takings of 60, 40, 20 for the three days, record the trace table, name the statement that causes the wrong total, and write the corrected statement.\n\n```pseudocode\nDECLARE Day : INTEGER\nDECLARE Total : INTEGER\nTotal <- 60\nFOR Day <- 1 TO 3\n   Total <- Total + Takings[Day]\nNEXT Day\nOUTPUT Total\n```",
+   "canonical_answer": "The trace table, Total and Day after each statement:\n\n| Statement | Total | Day |\n|---|---|---|\n| Total <- 60 | 60 | - |\n| FOR Day <- 1 TO 3 | 60 | 1 |\n| Total <- Total + Takings[1] | 120 | 1 |\n| NEXT Day | 120 | 2 |\n| Total <- Total + Takings[2] | 160 | 2 |\n| NEXT Day | 160 | 3 |\n| Total <- Total + Takings[3] | 180 | 3 |\n\nThe printed total is 180, but the week’s takings are 60 + 40 + 20 = 120, so the total is 60 too high - exactly the first reading’s value. The statement that causes it is the initialisation Total <- 60, which loaded the first day’s takings before the loop then added all three again. The corrected statement is Total <- 0.",
+   "marking_guidance": [
+    "Mark point 1: the trace table with one row per executed statement, Total and Day recorded after each. Mark point 2: the trace values correct - 60, 120, 160, 180 through the loop.",
+    "Mark point 3: the wrong result identified against the required 120, with the difference of 60 tied to the first reading. Mark point 4: the causing statement named - the initialisation Total <- 60.",
+    "Mark point 5: the correction written, Total <- 0, changing that statement and only that statement. Mark point 6: the corrected trace shown to reach 120 - the loop adding 60, 40, 20 to 0.",
+    "Mark point 7: the re-test named - the test that exposed the error runs again after the correction. Mark point 8: the whole worked example ends with the program’s heading and structure unchanged, re-run with the total 120 printed, because the correction is a change and a change is re-checked."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A spaza week’s total traced, found and corrected.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-003": 1,
+    "CLM-9618-12.3-004": 1
+   },
+   "authored_hash": "0102219de1c4ed7154caaa719498caa1033f2fcb3646b9543ffbbcc26f7a38ce",
+   "objective_titles": [
+    "Locate and identify the different types of errors",
+    "Correct identified errors"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-P02",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02",
+    "OBJ-9618-12.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-002",
+    "CLM-9618-12.3-005"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A vet’s dose program is tested. Write pseudocode for a function DoseCheck that takes the real Weight in kilograms and returns TRUE when the computed dose is safe, FALSE otherwise - the dose is Weight times 12 milligrams, and a dose above 300 milligrams is not safe; a weight of 0 or less is also not safe, because no animal was weighed. The function is the test’s oracle: black-box tests will call it with data chosen from the specification alone.",
+   "canonical_answer": "```pseudocode\nFUNCTION DoseCheck(Weight : REAL) RETURNS BOOLEAN\n   DECLARE Dose : REAL\n   IF Weight <= 0 THEN\n      RETURN FALSE\n   ENDIF\n   Dose <- Weight * 12\n   IF Dose > 300 THEN\n      RETURN FALSE\n   ELSE\n      RETURN TRUE\n   ENDIF\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the parameter and its type, RETURNS BOOLEAN, and ENDFUNCTION. Mark point 2: the declaration of Dose.",
+    "Mark point 3: the selection guarding the invalid weight, Weight <= 0, returning FALSE, because a weight of zero or less is abnormal data the program should reject. Mark point 4: the dose computed from the specification’s rule, Weight times 12.",
+    "Mark point 5: the safety selection with the condition Dose > 300, a complete comparison. Mark point 6: FALSE RETURNed above the limit and TRUE below it, both branches returning.",
+    "Mark point 7: the limits consistent with the black-box data the specification allows - 25 kilograms gives exactly 300, returning TRUE, because 300 is the limit, not above it. Mark point 8: the function complete and closed - one parameter in, the Boolean verdict back through RETURN, never output."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A vet’s dose check as the black-box test’s oracle.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1,
+    "CLM-9618-12.3-005": 1
+   },
+   "authored_hash": "32871273ac7daf31f20da1242bfb604e995649c7d053fce2663279094ea98890",
+   "objective_titles": [
+    "Locate and identify the different types of errors",
+    "Show understanding of the methods of testing available and select appropriate data for a given method"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-P03",
+   "objective_ids": [
+    "OBJ-9618-12.3.2-02",
+    "OBJ-9618-12.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-007",
+    "CLM-9618-12.3-008"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A lodge’s booking program accepts 1 to 14 nights per booking. Write pseudocode for a function NightsAccepted that takes the integer Nights and returns TRUE when the booking is accepted and FALSE when it is rejected - a booking of 1 to 14 nights is accepted, all other values rejected - so the function’s returned value is the expected-result column of the test plan’s data rows.",
+   "canonical_answer": "```pseudocode\nFUNCTION NightsAccepted(Nights : INTEGER) RETURNS BOOLEAN\n   IF Nights >= 1 AND Nights <= 14 THEN\n      RETURN TRUE\n   ELSE\n      RETURN FALSE\n   ENDIF\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the parameter and its type, RETURNS BOOLEAN, and ENDFUNCTION. Mark point 2: no declaration is needed and no loop runs, because one verdict is one decision made by a single selection with both branches.",
+    "Mark point 3: the condition with both bounds written as complete comparisons, Nights >= 1 AND Nights <= 14, because each side of the AND must stand alone.",
+    "Mark point 4: TRUE RETURNed inside the range - the normal data, such as 3 nights, and the extreme data, 1 and 14, all return TRUE, because the limits are valid.",
+    "Mark point 5: FALSE RETURNed outside the range - the abnormal data, such as 0, 15 and -2, all return FALSE, because the program should reject the invalid.",
+    "Mark point 6: the boundary behaviour stated - 13, 14 and 15 around the top limit return TRUE, TRUE, FALSE, so a bound set wrongly would fail exactly here.",
+    "Mark point 7: the verdicts RETURNed and not output, because the test plan’s expected column is a value to compare. Mark point 8: the function complete and closed - the specification’s whole range in one decision."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge’s booking range as the test plan’s expected results.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-007": 1,
+    "CLM-9618-12.3-008": 1
+   },
+   "authored_hash": "4ac6b63c297af2db166f246e4474d5e90766992ef3b749fde36f65ee7b831a31",
+   "objective_titles": [
+    "Choose appropriate test data for a test plan",
+    "Show understanding of the need for a test strategy and test plan and their likely contents"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-12.3-P04",
+   "objective_ids": [
+    "OBJ-9618-12.3.1-02",
+    "OBJ-9618-12.3.2-02",
+    "OBJ-9618-12.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-12.3-002",
+    "CLM-9618-12.3-008",
+    "CLM-9618-12.3-010"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A clinic’s dispensary program is delivered and in use.\n(a) The program prints each patient’s total incorrectly when a patient has exactly one item. State the error type and explain why the program runs and looks healthy. [2]\n(b) The program accepts quantities 1 to 5 per item. Write two rows of a test plan’s Quantity column - one boundary row and one abnormal row - each with its expected result. [2]\n(c) After a year of use, the ministry’s account format grows a digit, and the dispensary also asks for a weekly stock screen. Name the maintenance form of each work. [2]",
+   "canonical_answer": "(a) A logic error: the program runs, breaks no rule of the language and stops at no operation, so it looks healthy - the wrong total only shows in the result, because a logic error is found by comparing the printed value with the required one, never by the program failing.\n(b) Boundary row: quantities 4, 5 and 6 either side of the top limit, expected accept, accept, reject - because the bound set wrongly fails exactly at the edge. Abnormal row: quantity 0 (or -1), expected reject - because invalid data the program should refuse is required behaviour.\n(c) The account format is a change in the environment around a working program, so the work is adaptive maintenance. The weekly stock screen improves a working program that meets its requirements, so the work is perfective maintenance.",
+   "marking_guidance": [
+    "Part (a): the reason for the type - 2 marks, 1 per point: logic named, because it runs and only the result is wrong.",
+    "Part (b): the context of the given range - 2 marks, 1 per point: the boundary trio with its expectations, the abnormal value with its rejection.",
+    "Part (c): the state of the program in each situation - 2 marks, 1 per point: adaptive for the changed environment, perfective for the improvement."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A dispensary program with one wrong result, one range and two changes.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 12.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-12.3-002": 1,
+    "CLM-9618-12.3-008": 1,
+    "CLM-9618-12.3-010": 1
+   },
+   "authored_hash": "6224291a9a0c0993c9fd1b7c84d9384e43c93181c7e8c1556d0b1bf269607d57",
+   "objective_titles": [
+    "Locate and identify the different types of errors",
+    "Choose appropriate test data for a test plan",
+    "Show understanding of the need for continuing maintenance of a system and the differences between each type of maintenance"
+   ]
+  }
+ ]
+}

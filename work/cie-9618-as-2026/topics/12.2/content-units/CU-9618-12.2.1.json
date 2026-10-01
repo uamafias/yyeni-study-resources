@@ -1,0 +1,131 @@
+{
+ "unit_id": "CU-9618-12.2.1",
+ "title": "Design tools: structure charts and state-transition diagrams",
+ "objective_ids": [
+  "OBJ-9618-12.2.1-01",
+  "OBJ-9618-12.2.1-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_construct",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 630,
+  "target": 765,
+  "max": 900
+ },
+ "blocks": [
+  {
+   "block_id": "12.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Using a structure chart to decompose a problem into sub-tasks and show the parameters passed between them; and the purpose of state-transition diagrams to document an algorithm.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "70b34ec92e0efb4bc61eab5aa146beddb936201e06445b09c05db0bed4746a4b"
+  },
+  {
+   "block_id": "12.2.1-b2",
+   "block_type": "definition",
+   "heading": "Structure charts",
+   "text": "A structure chart draws a program's decomposition. Each box is a module - one sub-task, one named job. The lines join the boxes in the calling order: the calling module above, the modules it calls below it, so the chart is read top-down. On those lines the parameters are drawn as circles: a hollow circle carries data - a value the called module works on - and a filled circle carries a flag - a Boolean signal, such as a completion or error indication. A BYREF parameter is shown as data going both ways on the same line, because the value travels down into the module and the changed value travels back up. A worked chart in words, a lodge check-in: the top box HandleCheckIn calls three boxes beneath it. FindRoom takes one hollow circle down (the guest's name) and returns one hollow circle up (the room number). RecordBooking takes two hollow circles down (the guest's name and the room number) and returns one filled circle up (the recorded flag). IssueKey takes one hollow circle down (the room number). Read as a design, the chart says the check-in has three sub-tasks, each takes what it needs, and the flag tells the caller the booking was recorded - a reader can check all of that against the problem before any code is written, which is the chart's whole purpose.",
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-002",
+    "CLM-9618-12.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-002": 1,
+    "CLM-9618-12.2-004": 1
+   },
+   "authored_hash": "a5debbece2e96e01dc0a20b1f0730423fb2ee20ee22d7ccc54d29a7b40528b3c"
+  },
+  {
+   "block_id": "12.2.1-b3",
+   "block_type": "definition",
+   "heading": "Deriving pseudocode from a structure chart",
+   "text": "The chart is the design, and the code is derived from it box by box. Each box becomes a module: the top box becomes the main program or top procedure, and each box beneath it becomes a module with that job. Each line beneath a box becomes a call with the line's circles as its parameters: the down-circles are the arguments passed in, and the up-circles are the results - a function's returned value, a BYREF parameter, or a flag the module sets. The lodge chart derives into FUNCTION FindRoom(GuestName : STRING) RETURNS INTEGER, a PROCEDURE RecordBooking with the two data parameters and the flag, and PROCEDURE IssueKey(RoomNumber : INTEGER), with the top module calling each in the chart's order. The derivation runs the other way too: a program's modules and parameters can be drawn as a chart, and the drawing is the check - a module whose box needs five circles is a module doing more than one job, and a line with no circles is a call that passes nothing, which is worth a second look at the design stage.",
+   "claim_ids": [
+    "CLM-9618-12.2-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.2-003": 1
+   },
+   "authored_hash": "17da01bfeee0c54153e19851f6d47a51477c011ddaa660babbac368f57ca38ed"
+  },
+  {
+   "block_id": "12.2.1-b4",
+   "block_type": "definition",
+   "heading": "State-transition diagrams",
+   "text": "Some algorithms are better documented as situations than as steps. A state-transition diagram shows an algorithm as states and transitions: each state is one situation the system can be in, and each transition is the event that moves the system from one state to the next, drawn as a line from the old state to the new one labelled with the event. A gate controller in words: two states, Locked and Unlocked; a transition 'coin' from Locked to Unlocked, and a transition 'push' from Unlocked to Locked. The diagram's purpose is to document behaviour that depends on history: what the gate does when pushed depends on which state it is in - a Locked gate swallows the push, an Unlocked gate opens - and the diagram puts every state against every event in one picture, so the reader can check the behaviour for gaps. The structure chart suits behaviour that is a decomposition into jobs; the state diagram suits behaviour that is a set of situations and events - and the two design tools sit together, one for what the program is made of, one for how it behaves.",
+   "claim_ids": [
+    "CLM-9618-12.2-005",
+    "CLM-9618-12.2-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.2-005": 1,
+    "CLM-9618-12.2-006": 1
+   },
+   "authored_hash": "4187737d654d18837f96e8896eb5b6070e244b5761012178ec5f8ee5a9ad20c2"
+  },
+  {
+   "block_id": "12.2.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "The recurring slip in structure charts is the wrong circle. A hollow circle carries data and a filled circle carries a flag - a Boolean signal, not a value - so the test is whether the parameter is a flag: if it is, fill the circle. And a BYREF parameter is data going both ways on the one line, because the value returns changed - a single one-way arrow on a BYREF line loses the way back.",
+   "claim_ids": [
+    "CLM-9618-12.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.2-004": 1
+   },
+   "authored_hash": "ae1e8412674952e06d4efe145ec17d12de98579ffa917131e25b408213160a1a"
+  },
+  {
+   "block_id": "12.2.1-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The modules in these boxes are 11.3's procedures and functions, the parameters on the lines are 11.3's parameters, and the decomposition the chart draws is 9.1's decomposition made visual. The states are the record structures 10.1 holds between events, and 12.1's design stage is where both tools are used.",
+   "claim_ids": [
+    "CLM-9618-12.2-001",
+    "CLM-9618-12.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.2-001": 1,
+    "CLM-9618-12.2-005": 1
+   },
+   "authored_hash": "6192ca0d1c62c47b35152d394c91d9e46595eed4a3cd8ed555743822fa43c4d0"
+  }
+ ],
+ "word_count": 771,
+ "qa_status": "review_required",
+ "notes": []
+}

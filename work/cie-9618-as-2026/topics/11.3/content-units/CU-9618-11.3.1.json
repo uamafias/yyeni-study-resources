@@ -1,0 +1,137 @@
+{
+ "unit_id": "CU-9618-11.3.1",
+ "title": "Procedures, functions and parameters",
+ "objective_ids": [
+  "OBJ-9618-11.3.1-01",
+  "OBJ-9618-11.3.1-02",
+  "OBJ-9618-11.3.1-03",
+  "OBJ-9618-11.3.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_programming",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 1125,
+  "target": 1368,
+  "max": 1611
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-11.3.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Defining and using procedures; where a procedure is appropriate; parameters, by value and by reference; and defining and using functions.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "78d55f5dec93756b1e02a842b499a2f767e44dd51c654f4e7929c551b11ffd22"
+  },
+  {
+   "block_id": "CU-9618-11.3.1-b2",
+   "block_type": "definition",
+   "heading": "Procedures: definition, call, placement",
+   "text": "A procedure is a module that does one named job and hands back no value through its name. Its definition:\n\n```pseudocode\nPROCEDURE GreetCustomer(Name : STRING)\n   OUTPUT \"Welcome, \", Name\nENDPROCEDURE\n```\n\nThe header names the module and its parameters; ENDPROCEDURE closes it. Its call is a statement on its own: CALL GreetCustomer(\"Anna\") - the call does the job, and nothing is left over to assign, because a procedure returns nothing through its name. Where a procedure belongs in the construction of an algorithm is the design question, and it has two answers. Where the same job is needed in several places: printing a receipt header, greeting a caller, drawing a menu border - written once as a procedure and called by name, the job is maintained in one place, so a change to the greeting is a change to one module. Where the program is a long sequence of named steps: a payroll run decomposes into ReadTimes, CalculatePay, PrintPayslips - each step a procedure, the main program reads as the plan, and each module is small enough to check on its own. A procedure is also where the module's job ends with an action rather than an answer - printing, saving, showing - which is the first hint of the procedure-function split that follows. A design habit keeps the placement honest: when a program is planned on paper, each named step of the plan is a candidate module, and the test for candidacy is repetition or length - a step that appears twice in the plan, or a step whose body runs to a page, is written as a procedure and its line in the plan becomes a call. The plan then reads at two levels: the main program as a list of calls, the modules as the detail beneath each - which is exactly the two-level shape 12.2's structure charts draw, arrived at from the writing side.",
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-002": 1
+   },
+   "authored_hash": "3658e7c76093ec6bc8305ffacf8d6d6f7be016cbba5e239e26e0cbfd4e2a5275"
+  },
+  {
+   "block_id": "CU-9618-11.3.1-b3",
+   "block_type": "definition",
+   "heading": "Parameters and arguments",
+   "text": "A module's values arrive through its parameters - and through nothing else. A parameter is a variable named in the header: PROCEDURE ReportStall(StallName : STRING, TakingsToday : REAL) - and the argument is the value the caller passes in the call: CALL ReportStall(\"Spices\", 435.50). The rule with teeth: the values a module works on arrive through its parameters, so INPUT inside a module is the wrong place for the module's data - the header already holds every value as a parameter, and the call already supplies them. A parameter is passed by value or by reference, and the difference is who owns the variable. By value, the module receives a copy: it may change the parameter inside, and the caller's variable keeps its own value, because the caller handed over a copy. By reference, the module works on the caller's variable itself: a change inside shows outside the call, which is how a procedure that computes an answer can hand it back - write the result into a reference parameter and the caller's variable now holds it. The choice is design: values that only feed the module pass by value, protected from stray changes; values the module must fill in for the caller pass by reference, because the caller is waiting to receive the result. The parameter list is also a contract the caller can check: the number of arguments must match the number of parameters, the types must match in order, and the caller's variable for a reference parameter must exist before the call. A call that passes two arguments to a three-parameter module, or a string where an integer stands in the header, is caught by reading the header alone - which is why the header is called the interface in the next unit's terms: it is where the two sides meet and where every mismatch is visible.",
+   "claim_ids": [
+    "CLM-9618-11.3-003",
+    "CLM-9618-11.3-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-003": 1,
+    "CLM-9618-11.3-004": 1
+   },
+   "authored_hash": "4667d123527426b93861e46d8541a9641c02691d375f341d735ff840d1090218"
+  },
+  {
+   "block_id": "CU-9618-11.3.1-b4",
+   "block_type": "definition",
+   "heading": "Functions",
+   "text": "A function is a module that computes a single value and hands it back through its name. Its definition:\n\n```pseudocode\nFUNCTION AreaOfRoof(Length : REAL, Width : REAL) RETURNS REAL\n   DECLARE Area : REAL\n   Area <- Length * Width\n   RETURN Area\nENDFUNCTION\n```\n\nThe header names the module, its parameters and the type of the returned value; RETURN inside the body sends the value back and ends the function; ENDFUNCTION closes it. The use is the difference from a procedure: a function is used in an expression - the call is replaced by the returned value - so it is assigned, RoofArea <- AreaOfRoof(6.5, 4.2), tested, IF AreaOfRoof(L, W) > 20 THEN, or joined into a larger expression, and it never follows CALL, because CALL names a job and a function's call is a value. OUTPUT inside a function is the same fault wearing a different coat: the caller needs the value, so the body RETURNs it - displaying it does the caller no good, because OUTPUT goes to the screen and the caller's expression gets nothing. A function is appropriate exactly where a value must be computed and used: the fee for a weight, the average of an array, the larger of two readings - any question the program asks whose answer belongs in an expression. A function also earns its place in a test: because the call is a value, the condition can be written straight against it - IF ParcelFee(Weight) > 50 THEN reads as one question - and a function used in a test is a function that can be reused in a print, a save and a further computation without ever being rewritten. That is the compound interest of returning values: each caller that needs the fee gets it from one module, so the rule itself is stated once and lives once, and every change to the fee - a new threshold, a new rate - is one change in one body.",
+   "claim_ids": [
+    "CLM-9618-11.3-005",
+    "CLM-9618-11.3-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1,
+    "CLM-9618-11.3-006": 1
+   },
+   "authored_hash": "c0fd5f1bc3eaeb4199cb2615522380e5362e4c523fe36e7c709fcbe2f5a2b5a5"
+  },
+  {
+   "block_id": "CU-9618-11.3.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Three slips recur. OUTPUT where a function must RETURN: the caller needs the value, so the body RETURNs it - the test is whether the calling code needs the value, because a displayed value is nothing to assign. INPUT inside a module: the values arrive through the parameters - the test is the header, because every parameter is already a value. And CALLing a function or assigning a procedure's result: a procedure is CALLed as a statement, a function is used in an expression - the test is whether the module returns a value, because a value-returning module never follows CALL.",
+   "claim_ids": [
+    "CLM-9618-11.3-005",
+    "CLM-9618-11.3-003",
+    "CLM-9618-11.3-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1,
+    "CLM-9618-11.3-003": 1,
+    "CLM-9618-11.3-001": 1
+   },
+   "authored_hash": "e830a4cb0bfe8dcac7da95054ccfc66b3d87e72feefc3fa2a7a50a13d0ed3373"
+  },
+  {
+   "block_id": "CU-9618-11.3.1-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The modules here are what 9.1's decomposition produced and what 9.2's constructs fill; the identifier rules and the insert's functions are 11.1's subject; the loops these modules carry walk 10.2's arrays and read 10.3's files, and 12.2 designs with these modules named.",
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "fa62a31179266bfcfb38ed475d6bb8cbd4105c78f0f66772d14cf0865273b005"
+  }
+ ],
+ "word_count": 1134,
+ "qa_status": "review_required",
+ "notes": []
+}

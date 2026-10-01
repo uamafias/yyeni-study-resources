@@ -1,0 +1,111 @@
+{
+ "unit_id": "CU-9618-9.1.1",
+ "title": "Computational thinking: abstraction and decomposition",
+ "objective_ids": [
+  "OBJ-9618-9.1.1-01",
+  "OBJ-9618-9.1.1-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 660,
+  "target": 800,
+  "max": 940
+ },
+ "blocks": [
+  {
+   "block_id": "9.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Abstraction: removing unnecessary detail; and decomposition: breaking a problem into sub-problems that lead to program modules.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "4b51c5cea7437547c28db21bdbb5121eeeb004b2ab11bd6d37287e8607cb4fa5"
+  },
+  {
+   "block_id": "9.1.1-b2",
+   "block_type": "definition",
+   "heading": "Abstraction",
+   "text": "Abstraction is leaving out what does not matter. To abstract a system is to remove the unnecessary detail so that only the essential details remain, and the test of what is essential is the purpose: a road map for drivers keeps the turns and the distances and drops the drainage pipes beneath, because the driver's purpose never touches them; the same road drawn for a repairs crew keeps the pipes and drops the speed limits. A tuck-shop stock program models each item as a name, a price and a count, and leaves out the shelf colour and the smell of the kitchen, because reordering needs the first three and not the last two. The benefit is workability. A model that carried everything would be as hard to handle as the system itself, so abstraction keeps the model small enough to understand, build and check, and matched to its purpose, because what was kept was chosen for it. One warning to carry: what is unnecessary depends on the purpose, so no abstraction is right or wrong in itself - the stock program's abstraction is wrong for a health inspector, who needs what it leaves out, the use-by date. Making an abstract model, then, is a series of purpose-led choices: name the purpose, list what it touches, keep those details and state the rest away, and the model that remains is the system as that purpose sees it.",
+   "claim_ids": [
+    "CLM-9618-9.1-001",
+    "CLM-9618-9.1-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.1-001": 1,
+    "CLM-9618-9.1-002": 1
+   },
+   "authored_hash": "2d50eb799ef3c5d4ccec7a3c51da1fe52a92e9ec4228b3c84cf1ffd1770170d2"
+  },
+  {
+   "block_id": "9.1.1-b3",
+   "block_type": "definition",
+   "heading": "Decomposition",
+   "text": "Decomposition is taking the problem apart. A problem too large to solve in one hold is broken into smaller sub-problems, each solvable on its own, and the solutions combine to solve the whole. The benefit begins before any code: each sub-problem is small enough to understand, solve and check, so each part is easier to get right; the sub-problems name the modules the program will need, so the design settles before the writing starts; and two programmers can take two parts at once, because the parts are separate. And the parts become modules: a sub-problem that does one clear job is written as a procedure or a function - print the ticket, total the money, list the seller's sales - and the main program calls them in turn. The two skills of this topic work as a pair: decompose the problem into parts, then abstract each part to the details that matter for it, and what comes out at the end is a set of modules small enough to write - which is how every program in the rest of this course is reached. A worked miniature shows the pair working: the school fete's problem - run the ticketing for a Saturday - decomposes into printing, totalling and listing; the printing sub-problem abstracts to what it needs, the ticket's holder, price and number, leaving out the stall colours and the weather; and what lands on the programmer's desk is a function to price a ticket and a procedure to print it, small enough to write in one sitting.",
+   "claim_ids": [
+    "CLM-9618-9.1-003",
+    "CLM-9618-9.1-004",
+    "CLM-9618-9.1-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.1-003": 1,
+    "CLM-9618-9.1-004": 1,
+    "CLM-9618-9.1-005": 1
+   },
+   "authored_hash": "bf66285e15bfa4c5d4df6592d7e040bee115c4331a2830c443e2fc8934a930e5"
+  },
+  {
+   "block_id": "9.1.1-b4",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur. Treating abstraction and decomposition as one process: abstraction leaves detail out, decomposition divides the problem - the test is whether detail is being left out or the problem is being divided. And giving decomposition a program to break: decomposition breaks down a problem, leading to modules; taking apart a finished program is reading it - the test is what is being broken down, and for decomposition the answer is the problem.",
+   "claim_ids": [
+    "CLM-9618-9.1-001",
+    "CLM-9618-9.1-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.1-001": 1,
+    "CLM-9618-9.1-003": 1
+   },
+   "authored_hash": "12210d15faf0d41d77bc6b4680b5e9a9eb72e2f3a5c9136577c35b4ce9303c03"
+  },
+  {
+   "block_id": "9.1.1-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The modules decomposition produces are the procedures and functions of 11.3, the identifiers of 9.2 name their data, and the stepwise refinement of 9.2 is decomposition taken a step at a time. The databases of 8 are the everyday partners of this thinking: the abstract model of a system is an entity-relationship diagram, and the modules that decomposition finds there are the stored procedures a database runs. The data types and records of 10 are the abstractions a program works in, and 12's design methods are this pair applied with a deadline.",
+   "claim_ids": [
+    "CLM-9618-9.1-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.1-004": 1
+   },
+   "authored_hash": "83293272e56ff60e2d4f5079b16990a1bee909649699a806cd7922d4b9bcae14"
+  }
+ ],
+ "word_count": 687,
+ "qa_status": "review_required",
+ "notes": []
+}

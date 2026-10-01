@@ -1,0 +1,431 @@
+{
+ "dataset_id": "ITEMS-9618-8.2",
+ "topic_id": "8.2",
+ "items": [
+  {
+   "item_id": "ITEM-9618-8.2-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what the data dictionary holds.",
+   "canonical_answer": "It records every table, attribute, key and relationship in the database - the database’s own description, maintained by the DBMS.",
+   "marking_guidance": [
+    "1 mark: the meaning - the database’s self-description: its tables, attributes, keys and relationships, kept by the DBMS."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-001": 1
+   },
+   "authored_hash": "dae226e88b728605fb52cfebfae4128b580c16a94fa1be6ffb1c678dfd5b7b99"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-002-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Describe two features a DBMS provides for data integrity.",
+   "canonical_answer": "Primary-key uniqueness: the DBMS refuses a record whose key value already exists, so no two records share an identity. Referential integrity: a foreign key’s value must match a primary key value in the referenced table, so the DBMS refuses a record pointing at a record that does not exist, which keeps the links true.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the uniqueness check on keys, and the referential check on foreign keys."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-003": 1
+   },
+   "authored_hash": "b63141686fced6b20e2f973def0c5135eec58a4ea8087bbe1725e6997fb622e1"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-003-APP",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A booking clerk tries to enter an appointment for a patient number that is not in the patient table. The DBMS refuses it. Explain what feature acted and why it matters.",
+   "canonical_answer": "Referential integrity acted: the appointment’s patient number is a foreign key to the patient table, and the DBMS refuses a foreign key value with no matching record, so the appointment cannot point at a patient who does not exist. The refusal matters because a mistyped number would otherwise create a link to nothing that every later query would treat as real, so the feature keeps the database’s links true.",
+   "marking_guidance": [
+    "Context: this clerk’s given refusal on the unmatched patient number - 1 mark for the feature named with its rule.",
+    "Reason: because the foreign key must match a primary key that exists, a link to nothing is refused, so the database’s links stay true - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-003": 1
+   },
+   "authored_hash": "cc24cd9cedaa9c20b0fdc7cf4ccdcecd250437555fb008e5cfb8eba5408086bb"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-007-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes that a view and access rights are the same feature. Explain the error.",
+   "canonical_answer": "They answer different questions. Access rights control which operations a user may perform - which tables the user may read, change or delete; a view controls which data a user is shown - a subset of a table, or joined tables presented as one. The test: is it about what the user can do, or what the user can see? Rights say do; views say see.",
+   "marking_guidance": [
+    "1 mark: the error named - the doing rule and the seeing rule have been treated as one feature, a confusion of the two questions they answer.",
+    "1 mark: the correction with the test - access rights control operations, a view controls the data shown, because do and see are different questions."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-004": 1
+   },
+   "authored_hash": "75b9c28ab27055aa94e8e6e3849f5b1bcdd21cb54fbd0652f22a519d2c3e4ed5",
+   "misconception_entry": "MC-9618-8.2-01"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-004-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what the query processor does.",
+   "canonical_answer": "It takes a query in the database language, checks and optimises it, and carries it out against the database, returning the result, so applications ask for data rather than navigating the storage.",
+   "marking_guidance": [
+    "1 mark: the meaning - the DBMS part that checks, optimises and executes queries, returning results."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-006": 1
+   },
+   "authored_hash": "ee5ee56c269fba5d1b51e0e731dd6b868f42a8d510a11deb447129bff94791c9"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-005-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-005",
+    "CLM-9618-8.2-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a developer changes the database’s structure through the DBMS’s developer interface rather than with external tools.",
+   "canonical_answer": "The developer interface is part of the DBMS and works on the database itself: creating tables, keys and constraints, and building forms, queries and reports, with every change recorded in the data dictionary at once. An external tool that edited files beside the database would leave the dictionary stale and the DBMS working from a false description, so the structure is changed through the interface, because the database and its description stay one.",
+   "marking_guidance": [
+    "Reason: the interface is part of the DBMS and records each change in the data dictionary - 1 mark.",
+    "Purpose: so the DBMS keeps working from a true description, because a stale dictionary would misdescribe the database it serves - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-005": 1,
+    "CLM-9618-8.2-001": 1
+   },
+   "authored_hash": "879603c53bdf8437af6eb383f808fe1702471f4c15772607e10de76384833347"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-006-APP",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-02",
+    "OBJ-9618-8.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-004",
+    "CLM-9618-8.2-002",
+    "CLM-9618-8.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A nurse's screen in a clinic's DBMS shows only the ward's patients, and the nurse can change care notes but not billing. Explain which two DBMS features are at work here.",
+   "canonical_answer": "A view: the nurse's screen presents only the ward's patients, a subset of the patient table that the DBMS shows as if it were a table of its own. Access rights: the nurse's account is granted the operations of reading patients and changing care notes, and denied billing, so the rights decide what may be done and the view decides what is seen, which is the pair the screen is built on.",
+   "marking_guidance": [
+    "Context: this nurse's screen with the given limits - 1 mark for the view with what it shows.",
+    "Reason: because the rights grant and deny the operations while the view narrows the data shown, the two features together make the screen, so the pair carries the second mark - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-004": 1,
+    "CLM-9618-8.2-002": 1,
+    "CLM-9618-8.2-005": 1
+   },
+   "authored_hash": "e6f3d997e0f20fbe798c6380b98c199e63599040c1ed06c77d76f56b43189e99"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-008-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Asked about the DBMS developer interface, a learner describes an IDE’s editor and debugger. Explain the error.",
+   "canonical_answer": "An IDE is for writing programs; the developer interface is part of the DBMS and works on the database: creating and changing the database structure - tables, keys, constraints - and building forms, queries and reports against it. The test: is it part of the DBMS, working on the database? Then it is the developer interface, and a program editor is neither.",
+   "marking_guidance": [
+    "1 mark: the error named - the program-writing IDE has been described for the DBMS’s own developer tool, a confusion of the two tools.",
+    "1 mark: the correction with the test - the developer interface is part of the DBMS and works on the database structure, forms, queries and reports, because working on the database is what makes it that interface."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-005": 1
+   },
+   "authored_hash": "25add81c9fc14c54a66a016a60ef32505993f17beaad2f8fb4b88a3b5ec1d44a",
+   "misconception_entry": "MC-9618-8.2-02"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-P01",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-01",
+    "OBJ-9618-8.2.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-001",
+    "CLM-9618-8.2-003",
+    "CLM-9618-8.2-004",
+    "CLM-9618-8.2-005",
+    "CLM-9618-8.2-006"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 8,
+   "difficulty": 3,
+   "prompt": "A lodge's database runs on a DBMS that serves the front desk, the accounts office and the manager.\n(a) The manager decides the accounts office may see billing data that the front desk may not. Identify the DBMS feature to use, and explain how it is applied for the two offices. [2]\n(b) Explain how the data dictionary and the backup procedures each serve the lodge's database. [4]\n(c) Explain what the query processor does when the front desk searches for a guest's booking. [2]",
+   "canonical_answer": "(a) Access rights: the manager grants the accounts office’s accounts the operations of reading the billing tables, and grants the front desk’s accounts none on them, so each office’s users may do only what their work was granted.\n(b) The data dictionary records every table, attribute, key and relationship in the database, maintained by the DBMS itself, so every tool - forms, queries, reports - works from one true description, and a structural change is recorded the moment it is made. Backup procedures copy the database on a schedule, so a disk failure or a corrupting error loses the hours since the last copy, not the bookings of years, because the copies are restored in place of the damaged data.\n(c) The front desk’s search arrives as a query; the query processor checks it, works out an efficient way to carry it out, executes it against the database, and returns the guest’s booking as the result, so the desk asked in a language and never navigated the storage.",
+   "marking_guidance": [
+    "Part (a): identify access rights - 2 marks, 1 per point: the feature named, and the granting and denying to the two offices.",
+    "Part (b): the reason each serves the database - 4 marks, 1 per point: the dictionary’s contents, the one true description it gives, the scheduled copies, the bounded loss the backups give.",
+    "Part (c): the context of this given search - 2 marks, 1 per point: the query checked and optimised, the execution returning the result."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge DBMS serves three kinds of user.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-001": 1,
+    "CLM-9618-8.2-003": 1,
+    "CLM-9618-8.2-004": 1,
+    "CLM-9618-8.2-005": 1,
+    "CLM-9618-8.2-006": 1
+   },
+   "authored_hash": "474b0673f4fb0433538d3d7234ae9375724f2bd6574995147afd87d6e01ce358"
+  },
+  {
+   "item_id": "ITEM-9618-8.2-P02",
+   "objective_ids": [
+    "OBJ-9618-8.2.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.2-001",
+    "CLM-9618-8.2-003",
+    "CLM-9618-8.2-004",
+    "CLM-9618-8.2-006"
+   ],
+   "item_type": "data_response",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "The table shows DBMS features with what they provide. Read the table and complete the four missing entries, then answer the question.\n\n| Feature | What it provides |\n|---|---|\n| Data dictionary | (a) |\n| (b) | Constraints checked on every change, so invalid data is refused |\n| Backup procedures | (c) |\n| Query processor | (d) |\n\n(e) State, with a reason, which feature in the table refuses an appointment whose patient number matches no patient. [2]",
+   "canonical_answer": "(a) A record of every table, attribute, key and relationship - the database’s own description, maintained by the DBMS. (b) Data integrity. (c) Copies of the database made on a schedule, so a failure loses the hours since the last copy, not everything. (d) The taking of a query, checking and optimising it, carrying it out against the database and returning the result.\n(e) Data integrity: referential integrity is one of its constraints, and a foreign key value with no matching primary key is refused on entry, so the appointment pointing at no patient is rejected.",
+   "marking_guidance": [
+    "Read the given table: (a) to (d) - 4 marks, 1 per correct value in each row, with each feature matched to its own job.",
+    "Answer and value: (e) data integrity - 1 mark - because referential integrity refuses the unmatched foreign key, keeping every link pointing at a record that exists - 1 mark.",
+    "The completed table shows the features divided by their jobs, because each answers a different question the database asks of its manager."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A table of DBMS features with four jobs to complete.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.2-001": 1,
+    "CLM-9618-8.2-003": 1,
+    "CLM-9618-8.2-004": 1,
+    "CLM-9618-8.2-006": 1
+   },
+   "authored_hash": "3985b8aa6fe69387986b591ffc1bd78016095e7745033bb46dd5634b8a75a0fe"
+  }
+ ]
+}

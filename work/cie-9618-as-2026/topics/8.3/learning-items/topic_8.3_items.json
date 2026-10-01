@@ -1,0 +1,1421 @@
+{
+ "dataset_id": "ITEMS-9618-8.3",
+ "topic_id": "8.3",
+ "items": [
+  {
+   "item_id": "ITEM-9618-8.3-001-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a Data Definition Language is used for.",
+   "canonical_answer": "A DDL creates and changes the database's structure: creating the database and its tables, defining attributes and their data types, and changing table definitions.",
+   "marking_guidance": [
+    "1 mark: the meaning - the language that creates and changes the database’s structure."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1
+   },
+   "authored_hash": "979a07ddabfb95483e66cc26f3885623967fccbc49634fd28b05ed8eaaf7f73a"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-002-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why the DBMS, not a file editor, carries out changes to the database's structure.",
+   "canonical_answer": "The DBMS owns the data dictionary - the database's own description - and every structural change must be recorded there at once, so a table created outside the DBMS would leave the dictionary describing a table that does not exist. The DDL goes through the DBMS, which makes the change and records it in the same act, so the description and the structure stay one, which is why the DBMS carries out all creation and modification.",
+   "marking_guidance": [
+    "Reason: the data dictionary must record every structural change as it is made - 1 mark.",
+    "Purpose: so the description and the structure stay one, because the DBMS makes the change and records it in the same act - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1
+   },
+   "authored_hash": "70ada3818cf8aaa65da56cb3be6fb0bf07a241604dc6180a58e32d7a3510b803"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-003-APP",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A school's database needs a new table for sports teams. Explain which language the administrator uses and what the DBMS does.",
+   "canonical_answer": "The administrator writes a DDL statement - CREATE TABLE with the attributes, their data types and a primary key - and the DBMS carries it out: it creates the table in the database and records it in the data dictionary, so every form, query and report can use it at once. Structure is the DDL's business and the DBMS does the doing, which is the whole arrangement.",
+   "marking_guidance": [
+    "Context: this school's given new table - 1 mark for the DDL named with its statement.",
+    "Reason: because the DBMS carries out the statement and records the table in the dictionary, every tool can use the table at once, so the change is made once and known everywhere - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-002": 1
+   },
+   "authored_hash": "621053b7f30cd838c5e5c214e39c9d6ffcf1ac56f4c4e17cb3adf32f2073f9ea"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-024-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two DDL statements and what each does.",
+   "canonical_answer": "CREATE TABLE defines a table: its attributes, their data types and its primary key, so the database gains a new table with its rules in place. ALTER TABLE changes a table definition - adding an attribute, for example - so the structure changes without the table being rebuilt.",
+   "marking_guidance": [
+    "Features: two statements as two points, 1 mark each - CREATE TABLE with what it defines, and ALTER TABLE with what it changes."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-002": 1
+   },
+   "authored_hash": "79645e004fcadd3b401fff920e96db679ff9aed3bb868217b94d5f5c39ebdc3b"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-030-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between a database's structure and its data, naming the language for each.",
+   "canonical_answer": "The structure is what holds: tables, attributes, data types and keys - created and changed with the DDL, whereas the data is what is held: the records in the tables - queried and modified with the DML. DDL changes what the boxes are and DML changes what is in them, so the pair divides a database's work exactly, and each half names its language.",
+   "marking_guidance": [
+    "Difference: what holds against what is held, with each language named - 1 mark per side, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "52cc76e44c8c89e70a6d447680f7262ca0d042a52e901653f6bc36d8cf838fec"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-004-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a Data Manipulation Language is used for.",
+   "canonical_answer": "A DML works on the data inside the tables: selecting records with queries, and inserting, updating and deleting records.",
+   "marking_guidance": [
+    "1 mark: the meaning - the language that queries and modifies the data in the tables."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "677edc208f42f1af31853389afa88ee5bde3d68baf4857027f512aa8e2f5882d"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-005-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why queries and maintenance of data go through the DBMS’s DML.",
+   "canonical_answer": "Every DML statement is checked against the structure the DBMS knows - the right tables and attributes, the data types, the key rules - so a query against a mistyped attribute name is refused rather than returning nonsense, and an update that breaks a key rule is refused rather than corrupting the data. The DBMS knows the database's description because it wrote it, so it is the one part that can police every read and change, which is why all queries and maintenance go through it.",
+   "marking_guidance": [
+    "Reason: each statement is checked against the structure the DBMS itself recorded - 1 mark.",
+    "Purpose: so a mistyped query or a rule-breaking update is refused, because the DBMS is the one part that can check every change against every rule - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "9a1862728ab7d25bd756b9f6e7821113ab19bb4c9f02805c21fb2a6912a70b57"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-006-APP",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-003",
+    "CLM-9618-8.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A clerk changes a customer's phone number in the database. Explain which kind of statement is used and what the DBMS does with it.",
+   "canonical_answer": "The number is data in a table, so the statement is DML: UPDATE ... SET ... WHERE naming the customer, and the DBMS checks it - the table and attribute exist, the value suits the attribute's type - then changes the one record the WHERE names, and no structure is touched. Data changed by the DML, structure unchanged, which is the division the two languages make.",
+   "marking_guidance": [
+    "Context: this clerk’s given change of a phone number - 1 mark for the DML named with its statement.",
+    "Reason: because the DBMS checks the statement against the structure and then changes the named record only, the data moves and the structure stays, so the division holds - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-003": 1,
+    "CLM-9618-8.3-004": 1
+   },
+   "authored_hash": "eacda8c2651d63666ef2ab3933288b044260dcb190deec98e071d886dad041ae"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-025-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two DML statements and what each does.",
+   "canonical_answer": "SELECT queries data: it names the fields, the table and the condition, and returns the matching records, so a screen or a report gets exactly the rows it asked for. UPDATE changes values: it names the table, the new values and the records to change, so the named records are altered and the rest are untouched.",
+   "marking_guidance": [
+    "Features: two statements as two points, 1 mark each - SELECT with what it returns, and UPDATE with what it changes and leaves alone."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1
+   },
+   "authored_hash": "11bd3e246c8e6b7e9ef8eb1f3d8261901ffe22ddc1be0f302575b6dbf81fd02d"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-031-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between DDL and DML.",
+   "canonical_answer": "DDL changes the database's structure - creating tables and defining attributes - whereas DML works on the data inside the tables - selecting, inserting, updating and deleting records. The test is structure or data: a new attribute is DDL, a new customer is DML, and the two languages never swap jobs.",
+   "marking_guidance": [
+    "Difference: structure against data, with each language’s statements named - 1 mark per side, and both sides are needed with the test."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "35cda91c1303eda10558b988382538361c881fad85569a4276d8fb8822ad9ffa"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-007-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what SQL is.",
+   "canonical_answer": "Structured Query Language: the industry standard language for both DDL and DML, so its statements define a database’s structure and query and modify its data.",
+   "marking_guidance": [
+    "1 mark: the meaning - the industry-standard language for both definition and manipulation."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1
+   },
+   "authored_hash": "2d6f1266a9ce498608b137de96c34f5a38c98112249ba55f10ba51322c88cf83"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-008-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a standard language for databases matters.",
+   "canonical_answer": "The same SQL works on any DBMS that accepts the standard, so a query written against one system can be carried to another, and skills learned on one system transfer to all of them, because the standard fixes the statements’ forms. The standard is what makes the industry’s database work shareable, which is why it matters.",
+   "marking_guidance": [
+    "Reason: the same statements work across systems, because the forms are fixed - 1 mark.",
+    "Purpose: so skills and scripts are carried between systems, because a standard makes the language the shared part and the schema the local part - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1
+   },
+   "authored_hash": "05f7c70642d2b3aecf92bfb21afa0ecce3249ca869851dd4157575d7fc1211a2"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-009-APP",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-005",
+    "CLM-9618-8.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A school's database uses SQL; a new clerk who learned SQL at a bank's system starts work. Explain what transfers and what the clerk must still learn.",
+   "canonical_answer": "The SQL transfers: SELECT, WHERE, the joins and the totals are the standard's forms, so the clerk's queries against the school's tables are written the same way the bank's were, because the language is shared. What must be learned is this database: its tables, attributes and keys - the structure the statements name - so the clerk learns the school's schema, not a new dialect, which is what a standard buys.",
+   "marking_guidance": [
+    "Context: this clerk moving between the given two systems - 1 mark for what transfers with its reason.",
+    "Reason: because the standard fixes the statement forms and the schema is local to each database, the clerk learns the school’s tables and keys alone, so the transfer is the language and the learning is the structure - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1,
+    "CLM-9618-8.3-006": 1
+   },
+   "authored_hash": "511264211749556086a928ae93752b39307035026072593d02f43e63f9af2188"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-026-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe two features that make SQL the industry standard for both definition and manipulation.",
+   "canonical_answer": "One language for both halves: CREATE TABLE and SELECT are written in the same form and sent to the same DBMS, so a database’s structure and its data are served by one skill. A published, stable form: the standard’s statements are fixed and documented, so statements written years apart, on systems from different makers, still name the same clauses in the same order, which is what a standard is.",
+   "marking_guidance": [
+    "Features: two points, 1 mark each - the one language serving both halves, and the published, stable statement forms."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1
+   },
+   "authored_hash": "38f6226d11be637d691db52b21ce6246b5bb56dd25fc392e0768806382e9aeef"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-032-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-005",
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the difference between the DDL half and the DML half of SQL.",
+   "canonical_answer": "The DDL half defines: CREATE DATABASE, CREATE TABLE, ALTER TABLE - statements that build and change the structure, whereas the DML half works: SELECT, INSERT, UPDATE, DELETE - statements that read and change the data in the structure. Both are SQL sent to the same DBMS, whereas the difference is the subject: structure with DDL, data with DML.",
+   "marking_guidance": [
+    "Difference: defining statements against working statements, with each half’s words named - 1 mark per side, and both sides are needed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1,
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "1b137a5aa76ad0f92287514e12fbd0dfd9f904d53a29b09d02ff1310f2f5bc69"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-010-PROC",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-007",
+    "CLM-9618-8.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the SQL DDL statements to create a database named MEDICAL and a table named PATIENT with attributes: PatientID INTEGER, Surname VARCHAR(30), Telephone VARCHAR(15), with PatientID the primary key.",
+   "canonical_answer": "```sql\nCREATE DATABASE MEDICAL;\nCREATE TABLE PATIENT (\n   PatientID INTEGER,\n   Surname VARCHAR(30),\n   Telephone VARCHAR(15),\n   PRIMARY KEY (PatientID)\n);\n```",
+   "marking_guidance": [
+    "Order: the statements in sequence - the database created first, then the table with its attributes - each statement is a mark point.",
+    "Input: the definitions start from the given attributes and their types.",
+    "Each statement is a mark point: the CREATE DATABASE - 1 mark; the CREATE TABLE with the three attributes and their types - 2 marks; the PRIMARY KEY declaration - 1 mark.",
+    "Result: the end product is a database holding one table with its key rule declared with the structure."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-007": 1,
+    "CLM-9618-8.3-008": 1
+   },
+   "authored_hash": "1bc581718eed7bd55dbf0c40c1976d63d17221e7fef48cfa3be53bfacd60feaf"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-011-PROC",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-008",
+    "CLM-9618-8.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The MEDICAL database exists and holds PATIENT(PatientID, Surname, Telephone). Write the SQL DDL statement to create a table named BOOKING with attributes: BookingID INTEGER, PatientID INTEGER, BookingDate DATE, BookingTime TIME, with BookingID the primary key and PatientID a foreign key pointing at PATIENT(PatientID).",
+   "canonical_answer": "```sql\nCREATE TABLE BOOKING (\n   BookingID INTEGER,\n   PatientID INTEGER,\n   BookingDate DATE,\n   BookingTime TIME,\n   PRIMARY KEY (BookingID),\n   FOREIGN KEY (PatientID) REFERENCES PATIENT(PatientID)\n);\n```",
+   "marking_guidance": [
+    "Order: the statement defines the table first, then its attributes and types in order, then the keys - each statement is a mark point.",
+    "Input: the definition starts from the given attributes, types and keys.",
+    "Each statement is a mark point: the CREATE TABLE with the four attributes and their types - 2 marks; the PRIMARY KEY on BookingID - 1 mark; the FOREIGN KEY with its REFERENCES phrase - 1 mark.",
+    "Result: the end product is a table linked to PATIENT by the foreign key."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-008": 1,
+    "CLM-9618-8.3-007": 1
+   },
+   "authored_hash": "3afe0ee2d5cc7d6df512eab10df28fde75de0ada4984ba74951b8ffa79e4a24a"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-012-APP",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "The MEDICAL database’s PATIENT table needs a new attribute, MobilePhone VARCHAR(15). Write the single SQL statement that changes the table definition.",
+   "canonical_answer": "```sql\nALTER TABLE PATIENT\nADD COLUMN MobilePhone VARCHAR(15);\n```",
+   "marking_guidance": [
+    "Context: this given table and its new attribute - 1 mark for ALTER TABLE PATIENT naming the table.",
+    "Reason: because the attribute is added to the definition rather than a new table built, ADD COLUMN with the name and type carries the change - 1 mark for each part, the ADD COLUMN with MobilePhone and its VARCHAR(15) type - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-007": 1
+   },
+   "authored_hash": "73f7603d339c246d692ae73eeeef031fe91097f5ce37232dd5efc7b682370c91"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-013-INTERP",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-007",
+    "CLM-9618-8.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "The CREATE TABLE statement for a school’s CLUB table is written below with four gaps. Complete the four missing entries, where Name is the club’s name of up to 20 characters, NextMeet is the date of the next meeting, and Fee is a money amount with cents.\n\n```sql\nCREATE TABLE CLUB (\n   ClubID INTEGER,\n   Name (a),\n   NextMeet (b),\n   Fee (c),\n   (d) (ClubID)\n);\n```",
+   "canonical_answer": "(a) VARCHAR(20). (b) DATE. (c) REAL. (d) PRIMARY KEY.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) VARCHAR(20), (b) DATE, (c) REAL, (d) PRIMARY KEY.",
+    "Meaning: the completed statement shows each attribute’s type following what it holds, so the result is a table whose definition states every rule it will enforce."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-007": 1,
+    "CLM-9618-8.3-008": 1
+   },
+   "authored_hash": "6e3fdeafc1deb9d539f0e2258a4fced01f865fc88136299e473696e383c32212"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-019-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A learner writes UPDATE TABLE CLUB when a new attribute is added to the CLUB table, and CREATE TABLE CLUB for the same job. Explain the errors.",
+   "canonical_answer": "Both mix up structure and data. A new attribute changes the table’s structure, and the DDL statement for that is ALTER TABLE ... ADD ..., because the table already exists and is being changed, not created. UPDATE is DML and changes data in records, not the table’s definition; CREATE TABLE would build a second table beside the existing one. The test: structure or data? DDL changes structure, and ALTER is DDL’s change word.",
+   "marking_guidance": [
+    "1 mark: the error named - the DML update word and the DDL create word have both been used for a structural change, a confusion of the two halves.",
+    "1 mark: the correction with the test - a new attribute is structure, so ALTER TABLE ... ADD ... is the statement, because structure goes to the DDL’s change word."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "1e174216f908e5de163d7836293d8ca771dae88fb69f828f66bd80afd20a1c67",
+   "misconception_entry": "MC-9618-8.3-02"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-021-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 4,
+   "prompt": "State the SQL data type for an attribute that holds a whole number.",
+   "canonical_answer": "INTEGER: the attribute holds a whole number, with no fractional part.",
+   "marking_guidance": [
+    "1 mark: the meaning - INTEGER, the type for whole numbers."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-007": 1
+   },
+   "authored_hash": "51b6a9e8bbaa2ef431b100f42686f3e4cbaa066e9909dc8670d8d331e5c1f86a"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-023-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Describe two SQL data types and what each holds.",
+   "canonical_answer": "VARCHAR(n) holds a string of up to n characters, such as a name or a phone number, so the length adapts to the value stored. DATE holds a date - day, month and year - so dates can be compared and sorted as dates rather than as strings of digits.",
+   "marking_guidance": [
+    "Features: two types as two points, 1 mark each - a named type with what it holds and what that buys."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-007": 1
+   },
+   "authored_hash": "c324c42bd97e564857ce7f0ecc4cffbfec82307b5a0ac40677cd18ff0ffd1f87"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-027-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain why PRIMARY KEY (field) belongs in a CREATE TABLE statement.",
+   "canonical_answer": "The table's records must be identifiable from the moment the table exists, so the definition declares the identifying attribute with the table: PRIMARY KEY (field) tells the DBMS to refuse duplicate keys and empty keys from the first record, because uniqueness is the table's rule, not an afterthought. It also tells every later query which attribute names a record, so the key travels with the table wherever the table goes.",
+   "marking_guidance": [
+    "Reason: the key rule is declared with the structure, so the DBMS enforces it from the first record - 1 mark.",
+    "Purpose: so every query and join knows which attribute names a record, because the key travels with the table - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-008": 1
+   },
+   "authored_hash": "37bb36267fcb296602d10c6efaca525b08f3e0814158b652b8bc22a3f0c7b0d8"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-029-DIST",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DIST",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Describe the difference between CHARACTER and VARCHAR(n).",
+   "canonical_answer": "CHARACTER holds exactly one character, whereas VARCHAR(n) holds a string of up to n characters, its length adapting to the value stored. One is for a single letter or symbol - a grade, a flag - and the other for words and numbers written as text, so the choice turns on how many characters the attribute holds.",
+   "marking_guidance": [
+    "Difference: one character against up to n characters with an adapting length - 1 mark per side, and both sides are needed with what each suits."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-007": 1
+   },
+   "authored_hash": "5d67f162e234d766bf2def0badb15244b2d032ec38f33d16cd1d39f5e5ee40d7"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-014-PROC",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A newsagent's database has the table SALE(NewsagentID, Town, PapersSold, Day). Write the SQL query that shows the Town and PapersSold fields for sales where PapersSold is greater than 100, sorted by PapersSold in descending order.",
+   "canonical_answer": "```sql\nSELECT Town, PapersSold\nFROM SALE\nWHERE PapersSold > 100\nORDER BY PapersSold DESC;\n```",
+   "marking_guidance": [
+    "Order: the clauses in sequence - SELECT first, then FROM, WHERE and ORDER BY - each statement is a mark point.",
+    "Input: the query starts from the given table and its fields.",
+    "Each statement is a mark point: SELECT Town, PapersSold - 1 mark; FROM SALE - 1 mark; WHERE PapersSold > 100 - 1 mark; ORDER BY ... DESC - 1 mark.",
+    "Result: the end product is the busy days’ towns and totals, sorted largest first."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1
+   },
+   "authored_hash": "95bba0aef628b72480769b59044d1d17fbc476d7db95536465128b4d2406ca95"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-015-PROC",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-004",
+    "CLM-9618-8.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "On the same SALE table, write the SQL query that shows each newsagent’s ID together with the total of all that newsagent’s PapersSold values.",
+   "canonical_answer": "```sql\nSELECT NewsagentID, SUM(PapersSold)\nFROM SALE\nGROUP BY NewsagentID;\n```",
+   "marking_guidance": [
+    "Order: the clauses in sequence - the fields selected, the table named, the grouping made - each statement is a mark point.",
+    "Input: the query starts from the given table and its fields.",
+    "Each statement is a mark point: SELECT NewsagentID with SUM(PapersSold) - 2 marks for the field and the aggregate; FROM SALE - 1 mark; GROUP BY NewsagentID - 1 mark.",
+    "Result: the end product is one row per newsagent with the total for that group."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1,
+    "CLM-9618-8.3-009": 1
+   },
+   "authored_hash": "febe292a724aff8a56e2ad75c621039b51bca2ade6daf12f1940588671c9c22b"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-016-APP",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-004",
+    "CLM-9618-8.3-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A new sale is recorded for the newsagent's table: NewsagentID 17, Town 'Otjiwarongo', PapersSold 145, Day '2026-10-03'. Write the SQL statement that inserts this record into SALE.",
+   "canonical_answer": "```sql\nINSERT INTO SALE (NewsagentID, Town, PapersSold, Day)\nVALUES (17, 'Otjiwarongo', 145, '2026-10-03');\n```",
+   "marking_guidance": [
+    "Context: this given record and the SALE table - 1 mark for INSERT INTO SALE with the field list.",
+    "Reason: because each value is placed against its field, the strings carry quotation marks and the numbers go bare - 1 mark for the VALUES list in field order, 1 mark for the quotation marks on the string and the date and none on the numbers - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1,
+    "CLM-9618-8.3-011": 1
+   },
+   "authored_hash": "b5475ef8ad05d4070523098a0f063955809f152344b46cd48c318e1bc058586d"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-017-INTERP",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A shop’s database has the table STOCK(ItemName, Price, Quantity, Supplier). The query below lists the names and quantities of the items costing less than 50, sorted by name. Complete the four missing entries.\n\n```sql\nSELECT (a), Quantity\nFROM (b)\nWHERE Price (c) 50\nORDER BY (d);\n```",
+   "canonical_answer": "(a) ItemName. (b) STOCK. (c) <. (d) ItemName.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) ItemName, (b) STOCK, (c) <, (d) ItemName.",
+    "Meaning: the completed query shows each clause doing one job, so the result is the cheap items’ names and quantities, sorted by name."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1
+   },
+   "authored_hash": "78c0cb9f5c457a1d87bd62f8e4aabb660e2eadc310338b47893b99a438d824f9"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-018-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A learner writes SUM(PatientID) where the number of patients is needed. Explain the error.",
+   "canonical_answer": "SUM adds up the values in a field - the total of the amounts - whereas COUNT gives how many rows meet the condition - the number of records. SUM on the patient IDs would total the ID numbers, an answer no one asked for, and the number of patients needs COUNT(*). The test: is the answer a number of records, or a total of amounts?",
+   "marking_guidance": [
+    "1 mark: the error named - the totalling function has been used for a counting job, a confusion of the two aggregates.",
+    "1 mark: the correction with the test - COUNT gives the number of rows, SUM totals a field’s values, because a count of records and a total of amounts are different questions."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-009": 1
+   },
+   "authored_hash": "295d6185033c18ffad87eb2fd75728722df05af439bef3a678bbc5f0d27bf2cf",
+   "misconception_entry": "MC-9618-8.3-01"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-020-MISCON",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-011"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "A learner writes WHERE Paid = 'TRUE' and WHERE Price = '49.50' on a table where Paid is BOOLEAN and Price is REAL. Explain the errors.",
+   "canonical_answer": "Quotation marks are for string literals. Paid is BOOLEAN, so its value is written TRUE with no quotation marks, and Price is REAL, so 49.50 is written bare, because numbers and Boolean values are not strings. Quoting them makes the comparison run against a string, which is not the field’s kind of thing. The test: check the field’s data type in the table definition first, and quote exactly the fields that are strings.",
+   "marking_guidance": [
+    "1 mark: the error named - quotation marks have been put on Boolean and numeric values, which are not strings.",
+    "1 mark: the correction with the test - check the attribute’s type in the table definition, because strings take the marks and TRUE and 49.50 do not."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-011": 1
+   },
+   "authored_hash": "b6dd8e6da9826dae50f6ea2d28f66896d6e5d013f418768ad01007c937b5e120",
+   "misconception_entry": "MC-9618-8.3-03"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-022-DEF",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-010"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 4,
+   "prompt": "State what INNER JOIN does.",
+   "canonical_answer": "It joins two tables on matching values of a shared attribute, so one query can select fields from both tables for each matched pair of records.",
+   "marking_guidance": [
+    "1 mark: the meaning - a join matching two tables’ shared attribute, pairing records from both."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-010": 1
+   },
+   "authored_hash": "061a10690bd5d21ebf46d1999e939e30ce7ab8ad8a04b2e0c2995d4b8ad7db35"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-028-WHY",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-010",
+    "CLM-9618-8.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain why INNER JOIN is needed to show customer names with their order details from two tables.",
+   "canonical_answer": "The name is in the customer table and the order’s details in the order table, so neither table alone holds both, because the design keeps each entity’s data in its own table. INNER JOIN matches the order’s foreign key to the customer’s primary key, so each order row is paired with the one customer row it names, and the query selects the name from one table and the details from the other, which is what the join buys: two tables answering as one.",
+   "marking_guidance": [
+    "Reason: neither table holds both fields, because the design separates the entities - 1 mark.",
+    "Purpose: so the join pairs each order with the customer its key names, because one query then reads both tables as if they were one - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-010": 1,
+    "CLM-9618-8.3-004": 1
+   },
+   "authored_hash": "7da84747235c549a20a60004ef84a21fdc569526a0920bff1e00661a9b7a5803"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-P01",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-01",
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-007",
+    "CLM-9618-8.3-008",
+    "CLM-9618-8.3-004",
+    "CLM-9618-8.3-009",
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-003"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A craft market's database has MAKER(MakerID, Name, Town) already created. New tables are needed, and the market's manager wants a report.\n(a) Write the SQL DDL statement to create the table STALL with attributes: StallID INTEGER, MakerID INTEGER, Fee REAL, DayPaid DATE, with StallID the primary key and MakerID a foreign key pointing at MAKER(MakerID). [4]\n(b) Write the SQL query that shows each maker's MakerID together with the total of that maker's stall fees. [2]\n(c) Explain the difference between what the statements in (a) and (b) do, naming the half of SQL each belongs to. [2]",
+   "canonical_answer": "(a)\n```sql\nCREATE TABLE STALL (\n   StallID INTEGER,\n   MakerID INTEGER,\n   Fee REAL,\n   DayPaid DATE,\n   PRIMARY KEY (StallID),\n   FOREIGN KEY (MakerID) REFERENCES MAKER(MakerID)\n);\n```\n(b)\n```sql\nSELECT MakerID, SUM(Fee)\nFROM STALL\nGROUP BY MakerID;\n```\n(c) The statement in (a) is DDL: it creates structure - a new table with its attributes, types and keys - which the DBMS records in the data dictionary. The statement in (b) is DML: it works on data, grouping the stall records and totalling each maker’s fees, changing no structure. One defines, the other works, which is the difference between the two halves of SQL.",
+   "marking_guidance": [
+    "Part (a): the DDL written for this given market’s stall table - 4 marks, 1 per point: the CREATE TABLE with attributes and types, the primary key on StallID, the foreign key with its REFERENCES phrase, the correct data types throughout, because each clause defines one part of the structure.",
+    "Part (b): the query written - 2 marks, 1 per point: the SUM with the selected field, the GROUP BY making each maker a group.",
+    "Part (c): the difference explained with each half named - 2 marks, 1 per point: (a) as DDL creating structure the DBMS records, (b) as DML working on data."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A craft market database gains a table and a report.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-007": 1,
+    "CLM-9618-8.3-008": 1,
+    "CLM-9618-8.3-004": 1,
+    "CLM-9618-8.3-009": 1,
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "2fd3492091e65d90c85b4039d2f7617fef609b32e3cd0b1676598cbc0a19b6d3"
+  },
+  {
+   "item_id": "ITEM-9618-8.3-P02",
+   "objective_ids": [
+    "OBJ-9618-8.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-8.3-004",
+    "CLM-9618-8.3-010",
+    "CLM-9618-8.3-011"
+   ],
+   "item_type": "data_response",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 6,
+   "difficulty": 4,
+   "prompt": "A farmers' database has FARM(FarmID, Name, Region) and CROP(CropID, FarmID, CropName, Tonnes). The query below lists each farm's name with its maize tonnes, for farms in the North region. Read the query and complete the four missing entries, then answer the question.\n\n```sql\nSELECT Name, (a)\nFROM FARM\n(b) CROP ON FARM.(c) = CROP.FarmID\nWHERE Region = 'North' (d) CropName = 'Maize';\n```\n\n(e) State, with a reason, which clause decides which farms appear in the result. [2]",
+   "canonical_answer": "(a) Tonnes. (b) INNER JOIN. (c) FarmID. (d) AND.\n(e) The WHERE clause: it filters the rows, keeping only the farms in the North region with maize crops, because WHERE is the filtering clause - the join decided which records paired together, and WHERE decided which of those rows appear.",
+   "marking_guidance": [
+    "Read the given query: (a) to (d) - 4 marks, 1 per correct value in each row, with each clause in its place in the query’s order.",
+    "Answer and value: (e) the WHERE clause - 1 mark - because it filters the rows to the region and the crop, while the join pairs and the ORDER would sort - 1 mark.",
+    "The completed query shows each clause doing one job in order, because a query is read as a sequence of one job per clause."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A join query on farms and crops with four gaps.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 8.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-8.3-004": 1,
+    "CLM-9618-8.3-010": 1,
+    "CLM-9618-8.3-011": 1
+   },
+   "authored_hash": "ce182f1501646b0d3a771244470d2bd5ea9a959122ef10ab5954edb7e1e7f086"
+  }
+ ]
+}

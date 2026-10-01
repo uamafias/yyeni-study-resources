@@ -1,0 +1,142 @@
+{
+ "unit_id": "CU-9618-8.1.2",
+ "title": "Normalisation",
+ "objective_ids": [
+  "OBJ-9618-8.1.2-01",
+  "OBJ-9618-8.1.2-02",
+  "OBJ-9618-8.1.2-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_process",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 848,
+  "target": 1030,
+  "max": 1212
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-8.1.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The normalisation process to Third Normal Form, why a given set of tables is or is not in 3NF, and producing a normalised design from a description or set of data.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "6b41f2b16eed6b224990da3294142d99b15a6b5f17f80086453875834ee277bd"
+  },
+  {
+   "block_id": "CU-9618-8.1.2-b2",
+   "block_type": "definition",
+   "heading": "The three normal forms",
+   "text": "Normalisation reorganises a table until every attribute depends on the key, the whole key and nothing but the key, and the forms are the stages of that journey. First Normal Form: no repeating groups - each field holds a single value, and a primary key identifies each record. A patient list with a column of that patient's appointments repeated in one row is not 1NF; flattened to one row per appointment, it is. Second Normal Form: 1NF, plus no non-key attribute depending on only part of a composite primary key. In the flattened appointment table keyed by (PatientNo, Date, Time), PatientName depends on PatientNo alone - part of the key - so the table is 1NF but not 2NF until PatientName moves to its own patient table. Third Normal Form: 2NF, plus no non-key attribute depending on another non-key attribute. DentistName depends on DentistNo, and both are non-key in the appointment table, so the table is not 3NF until the dentist's data moves to its own table. Note the shape of the journey: each form removes one kind of dependency, and each removal moves attributes into the table of the thing they truly depend on.",
+   "claim_ids": [
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "e64e96c7a6f367bd6798d08364da09d6a02ebfce5da3644e38ebe250b7818e06"
+  },
+  {
+   "block_id": "CU-9618-8.1.2-b3",
+   "block_type": "process",
+   "heading": "Testing whether a table is in 3NF",
+   "text": "Testing runs the definitions in order, and the first failure names the form the table is stuck at. Check for repeating groups: any attribute holding several values in one record breaks 1NF - stop, the table is unnormalised. Check for part-key dependencies: with a composite key, take each non-key attribute and ask which part of the key fixes its value - if any part alone fixes it, the table is 1NF and no further. Check for non-key dependencies: take each non-key attribute and ask what fixes its value - if the answer is another non-key attribute, the table is 2NF but not 3NF. A single-attribute key skips the middle test, because it has no parts, so a 1NF table with a single-attribute key is 2NF as well, and only the non-key test remains. A worked mini-example for each failure keeps the three straight: a row holding several appointment values in one field is a 1NF failure; a patient’s name keyed to only part of (PatientNo, Date, Time) is a 2NF failure; a dentist’s name keyed to a dentist’s number, both non-key, is a 3NF failure - and each failure’s remedy is the same move: the fact goes to the table of the thing it depends on. One habit serves every test: read the table’s rows aloud and ask, for each attribute, what fixes this value - the answer names the dependency, and the dependency names the form.",
+   "claim_ids": [
+    "CLM-9618-8.1-016",
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.1-016": 1,
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "ee06c4f21b597ea2ebf6c17c0399729ed997b9a2a18d9c9fbef3b06b81ae5b05"
+  },
+  {
+   "block_id": "CU-9618-8.1.2-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example: normalising an appointment list",
+   "text": "Start unnormalised, one row per patient with the appointments repeated: (PatientNo, PatientName, PatientTel, and for each appointment Date, Time, DentistNo, DentistName, Treatment). To 1NF: flatten - one row per appointment, key (PatientNo, Date, Time), fields PatientName, PatientTel, DentistNo, DentistName, Treatment. Each field now holds one value. To 2NF: find the part-key dependencies. PatientName and PatientTel depend on PatientNo alone, so they move out: PATIENT(PatientNo, PatientName, PatientTel), and the appointment table keeps PatientNo, which links back. To 3NF: find the non-key dependency. DentistName depends on DentistNo, a non-key attribute in the appointment table, so it moves out: DENTIST(DentistNo, DentistName), and the appointment table keeps DentistNo. The final design, three tables: PATIENT(PatientNo, PatientName, PatientTel); DENTIST(DentistNo, DentistName); APPOINTMENT(PatientNo, Date, Time, DentistNo, Treatment), with PatientNo and DentistNo foreign keys to the tables they name. Every attribute now depends on its table's key, the whole key and nothing but the key - and the anomalies are gone: a dentist's name is stored once, a patient's move is one update, and deleting the last appointment deletes no dentist.",
+   "claim_ids": [
+    "CLM-9618-8.1-013",
+    "CLM-9618-8.1-014",
+    "CLM-9618-8.1-015",
+    "CLM-9618-8.1-017"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.1-013": 1,
+    "CLM-9618-8.1-014": 1,
+    "CLM-9618-8.1-015": 1,
+    "CLM-9618-8.1-017": 1
+   },
+   "authored_hash": "cdf62815de592617e1da7a587979d0f3a277f78f817457041d0f143bc4f0658f"
+  },
+  {
+   "block_id": "CU-9618-8.1.2-b5",
+   "block_type": "process",
+   "heading": "Producing a normalised design",
+   "text": "Producing a design from a description runs the same moves forward. Identify the entities - the things the description counts: farmers, plots, crops - and give each a table with a primary key. Move each repeating group into its own table: the crops repeated in a plot's row become a CROP table with the plot's key as a foreign key back. Move each attribute that depends on something other than its table's key into the table of the thing it depends on: the farmer's name depends on the farmer, not the plot, so it lives in FARMER. Resolve any many-to-many with a link table holding both sides' keys. The result is the same journey as testing, run in the building direction: no repeating groups, no part-key dependencies, no non-key dependencies - three tables where one grew, and every fact stored exactly once.",
+   "claim_ids": [
+    "CLM-9618-8.1-017",
+    "CLM-9618-8.1-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.1-017": 1,
+    "CLM-9618-8.1-009": 1
+   },
+   "authored_hash": "bb8720c9fcf5c915debc81258d6626a9e411b87ab1798982d0e8603c87f84316"
+  },
+  {
+   "block_id": "CU-9618-8.1.2-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The tables normalisation produces are created and filled in 8.3 with SQL, guarded by 8.2's DBMS, and protected by 6.1's security and 6.2's integrity. The E-R diagrams of the last unit are the pictures of these designs before they are normalised, and the records these tables hold are mirrored by 10.1's record structures in programs.",
+   "claim_ids": [
+    "CLM-9618-8.1-015"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.1-015": 1
+   },
+   "authored_hash": "3bb747a58b831fd14f38e2d02285d29ed157bd20b4287b45ff828357b29413a8"
+  }
+ ],
+ "word_count": 860,
+ "qa_status": "review_required",
+ "notes": []
+}

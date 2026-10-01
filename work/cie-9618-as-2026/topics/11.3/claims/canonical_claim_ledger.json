@@ -1,0 +1,197 @@
+{
+ "ledger_id": "CLM-LEDGER-9618-11.3",
+ "claims": [
+  {
+   "claim_id": "CLM-9618-11.3-001",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01",
+    "OBJ-9618-11.3.1-02"
+   ],
+   "text": "A procedure is defined as PROCEDURE <name>(<parameters>) ... ENDPROCEDURE and called as a statement with CALL <name>(<arguments>) - it does one named job and returns no value through its name.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-002",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-02"
+   ],
+   "text": "A procedure is appropriate where the same job is needed in several places or where it splits a long program into named steps, because the job is written once and called by name wherever it is needed.",
+   "claim_type": "evaluative",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-003",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03",
+    "OBJ-9618-11.3.2-02"
+   ],
+   "text": "A parameter is a variable named in a module's header through which values arrive; an argument is the value the caller passes in the call, and every parameter is already a value the module works on, so a module takes its values through its parameters rather than by INPUT inside it.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-004",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03"
+   ],
+   "text": "A parameter may be passed by value, where the module receives a copy and cannot change the caller's variable, or by reference, where the module works on the caller's variable itself and a change inside shows outside.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-005",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04",
+    "OBJ-9618-11.3.2-01"
+   ],
+   "text": "A function is defined as FUNCTION <name>(<parameters>) RETURNS <type> ... ENDFUNCTION, RETURNs a single value inside its body, and is used in an expression - its call replaced by the returned value - never after CALL.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-006",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-01"
+   ],
+   "text": "A function is appropriate where a value must be computed and used in an expression or assigned, because the call itself carries the value back to the caller.",
+   "claim_type": "evaluative",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-007",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-02"
+   ],
+   "text": "The module terminology: the header states the name and parameters; the interface is what the caller needs to know - the header and what the module does; the return value is what a function hands back with RETURN.",
+   "claim_type": "definition",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-008",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-02"
+   ],
+   "text": "An identifier may not be a keyword, a data type or a built-in function name such as LENGTH, CHAR or MONTH, because those names are the language's own.",
+   "claim_type": "factual",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  },
+  {
+   "claim_id": "CLM-9618-11.3-009",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-03"
+   ],
+   "text": "Efficient pseudocode avoids repeating identical work: a job done in several places is written once as a module, a loop repeats what repeats, and a computed value is stored once rather than recomputed.",
+   "claim_type": "evaluative",
+   "provenance": "generated_gap",
+   "evidence": [],
+   "derived_from_claim_ids": [],
+   "revision": 1,
+   "verification": {
+    "status": "unverified",
+    "method": "Authored originally for 9618 AS under standard v0.2.0-draft. Requires semantic review (RS-28).",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "confidence": 0.9
+   },
+   "publishable": false,
+   "notes": []
+  }
+ ]
+}

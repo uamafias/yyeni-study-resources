@@ -1,0 +1,10 @@
+{
+ "topic_id": "7",
+ "deviations": [
+  {
+   "from": "Work order: a MISCON slot also names its misconception_entry as a field on the item.",
+   "to": "The entry id is carried inside the item's provenance string (e.g. 'Misconception entry: MC-9702-7-01') because the v0.2.0 learning_items schema forbids additional properties and has no misconception_entry field.",
+   "why": "The schema (standard/v0.2.0-draft/schemas/learning_items.schema.json) fails C-00 on any field it does not declare, so the entry name is preserved where the schema allows it."
+  }
+ ]
+}

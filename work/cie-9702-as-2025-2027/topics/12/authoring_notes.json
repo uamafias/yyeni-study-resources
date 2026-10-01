@@ -1,0 +1,30 @@
+{
+ "topic_id": "12",
+ "deviations": [
+  {
+   "from": "The work order's fourteen MISCON slots declare a misconception_entry field (e.g. misconception_entry: MC-9702-12-01) to be carried onto the item.",
+   "to": "The misconception entry id is recorded in the item's provenance string (\"Discrimination card for misconception entry MC-9702-12-01, from curriculum/misconceptions.json; ...\"), and each MISCON card's canonical answer names the error, the correct idea and the entry's test field verbatim in substance.",
+   "why": "The learning_items schema (standard v0.2.0-draft, additionalProperties: false) does not permit a misconception_entry property, so carrying the field verbatim fails C-00 schema validation; the mapping stays machine-readable through the provenance string. This follows the precedent recorded in topics/2/authoring_notes.json."
+  },
+  {
+   "from": "Slot ITEM-9702-12-016-PROC is a PROC/Describe card on OBJ-9702-12.1-06 (stop-watch use) whose marking_guidance_must_name patterns expect an equation among the PROC parts (equation|definition|definitions|measure|measured|reading|readings).",
+   "to": "The card's guidance names readings and measurements and states explicitly that no equation is needed, only the arithmetic of the mean (T = t ÷ n is the only relation, and it is named in the answer).",
+   "why": "The objective is a timing procedure with a single division, not a formula objective; the PROC part list is satisfied through the 'measure|readings' alternative, and the guidance says so rather than inventing an equation the physics does not have."
+  },
+  {
+   "from": "The work order's P01-P04 briefs each say \"choose 2-4 objectives from this topic that the task genuinely exercises\" without naming them.",
+   "to": "P01 (trolley timing, mechanical) carries OBJ-9702-12.2-11, 12.3-03, 12.3-04, 12.3-08; P02 (spring stiffness, mechanical) carries OBJ-9702-12.3-06, 12.3-09, 12.3-11, 12.3-13; P03 (wire resistance, electrical) carries OBJ-9702-12.2-05, 12.3-03, 12.3-01, 12.3-08; P04 (cooling water, thermal) carries OBJ-9702-12.3-07, 12.3-09, 12.3-11, 12.3-13. Each objective is also backed by a cited claim that serves it (C-04).",
+   "why": "The four tasks between them exercise the presentation, gradient/intercept, uncertainty, criterion-test, limitation and improvement objectives exactly as the two Paper 3 question styles do, with each pairing one Question 1 style and one Question 2 style in each of the two areas of physics (mechanical and electrical/thermal)."
+  },
+  {
+   "from": "The work order's P01 and P02 briefs describe the readings as \"a set of our readings\" without stating the intended equation's fit quality.",
+   "to": "P01's readings were generated to fit t² = k/m + c closely (the line the answer reads is consistent with the tabulated values), and P03's readings fit R = (ρ/A)L + r; P02 and P04 use two-condition data deliberately not equal under the suggested relationship, so the criterion test fails honestly (4.4% and 20% differences against 2% and 10% criteria).",
+   "why": "A Question 2 style task needs data that fail or strain the criterion so the four limitations have something real to name; a Question 1 style task needs data that support a straight line. All readings were recomputed numerically against the stated equations before authoring the answers (a first draft of P01's line points contradicted the table and was corrected)."
+  },
+  {
+   "from": "The schema requires item.blooms_level and difficulty on every item, and the work order's performance_tasks give blooms_level Analyse but no difficulty.",
+   "to": "All four practical tasks carry difficulty 4, matching the MISCON slot difficulty in this topic's work order and sitting between the Apply (3) and Evaluate (5) flashcard levels.",
+   "why": "The work order names difficulty for every flashcard slot but not for performance tasks; difficulty 4 reflects a 20-mark multi-part task sitting above single cards but below the Evaluate-level judgement cards, and no check constrains the choice."
+  }
+ ]
+}

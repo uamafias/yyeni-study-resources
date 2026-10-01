@@ -1,0 +1,118 @@
+{
+ "unit_id": "CU-9618-9.2.2",
+ "title": "Constructs, documentation and translation",
+ "objective_ids": [
+  "OBJ-9618-9.2.2-01",
+  "OBJ-9618-9.2.2-02",
+  "OBJ-9618-9.2.2-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_programming",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 836,
+  "target": 1018,
+  "max": 1200
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-9.2.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Writing pseudocode with sequence, selection and iteration; documenting an algorithm in structured English, a flowchart or pseudocode; and writing pseudocode from a structured English description or a flowchart.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "851004cae400d90c13865664600d748e21564733dabad236f02ab5cbc92abe80"
+  },
+  {
+   "block_id": "CU-9618-9.2.2-b2",
+   "block_type": "definition",
+   "heading": "The three constructs",
+   "text": "Every process ever written in this course is built from three constructs. Sequence: statements run in order, one after the previous, and the order is part of the meaning - Total <- 0 before the loop that adds to Total, because the reverse order destroys the total. Selection: the algorithm chooses between paths. The binary choice is IF ... THEN ... ELSE ... ENDIF; the multi-way choice is CASE OF ... OTHERWISE ... ENDCASE. Iteration: the algorithm repeats steps, in the two forms of 10.2's terms - a count-controlled loop, FOR Counter <- start TO end ... NEXT Counter, when the number of repetitions is known; a conditional loop, WHILE condition ... ENDWHILE, when the repetitions depend on a condition that changes inside the loop, or REPEAT ... UNTIL condition, which tests after the body and so runs it at least once. A worked pair shows the choice: counting a fixed 12 multiples of 7 is FOR work; reading marks until a negative mark arrives is WHILE work, because no count is known - the condition is what ends it. Choosing the construct is the first design decision of any process, because the loop that fits the problem is the loop that ends. The wrong loop shows itself in the ending: a FOR loop reading marks stops after its fixed count whether the marks have run out or not, and a WHILE loop on a condition no statement inside ever changes runs forever, because the loop's ending must be a change the loop itself makes. Ask of every loop 'what ends this?', and ask of every selection 'what if neither branch suits?' - the two questions catch the constructs' two classic faults, a loop that cannot end and a decision that cannot be taken, and both answers must already be in the pseudocode.",
+   "claim_ids": [
+    "CLM-9618-9.2-006",
+    "CLM-9618-9.2-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-006": 1,
+    "CLM-9618-9.2-007": 1
+   },
+   "authored_hash": "ae0529f7dd65ad07515332dad62ea622fd743a5b7195f37d78402f1e217c0ba6"
+  },
+  {
+   "block_id": "CU-9618-9.2.2-b3",
+   "block_type": "definition",
+   "heading": "Documenting an algorithm: three languages",
+   "text": "The same algorithm can be written in three languages, and each serves a different reader. Structured English: the steps in ordinary sentences, ordered and unambiguous - the form a non-programmer can check against the problem, which is why designs are signed off in it. Pseudocode: the steps in the constructs' exact forms, still language-independent - the form a programmer reads straight into code, which is the working form of this whole course. The flowchart: the steps as boxes and arrows, and the shapes carry meanings every reader shares. A rounded shape is a terminator: START or END. A rectangle is a process: an assignment, a calculation, a defined action. A parallelogram is input or output: values coming in from the world, results going out. A diamond is a decision: a question with exactly two exits, labelled Yes and No, because the follower must know which way each answer goes. The three languages are interchangeable by construction: each English sentence, each pseudocode statement, each flowchart box says one step, so translating between them is statement-by-statement work - and the translation is exactly what the next block practises. The flowchart's shapes earn their keep when a design is argued: two people reading the same boxes see the same paths, because the shapes are the shared vocabulary, and an argument about a diamond is an argument about a decision, not about a drawing style. That is the quiet strength of all three languages - each states the algorithm in a form that carries no argument about the stating.",
+   "claim_ids": [
+    "CLM-9618-9.2-008",
+    "CLM-9618-9.2-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-008": 1,
+    "CLM-9618-9.2-009": 1
+   },
+   "authored_hash": "80bd3e6ee97261492758c8eeb3b97eeaa8bd57f5d45cf8d1aaa9900dda522352"
+  },
+  {
+   "block_id": "CU-9618-9.2.2-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example: one algorithm, translated",
+   "text": "Take a ride's height rule in structured English: 'Ask the rider's height. If it is less than 120 centimetres, tell them they are too short. Otherwise tell them the ride is allowed.' Translate to pseudocode, statement by statement - the question becomes an INPUT, the condition becomes the IF's condition, the two outcomes become the two branches:\n\n```pseudocode\nINPUT Height\nIF Height < 120 THEN\n   OUTPUT \"Too short\"\nELSE\n   OUTPUT \"Ride allowed\"\nENDIF\n```\n\nTranslate the same rule to a flowchart, box by box: a rounded START; a parallelogram INPUT Height; a diamond 'Height < 120?' with its Yes exit to a parallelogram OUTPUT 'Too short' and its No exit to a parallelogram OUTPUT 'Ride allowed'; both output arrows meeting at a rounded END. Now reverse the direction, flowchart to pseudocode, and the boxes hand over their kinds: each parallelogram becomes INPUT or OUTPUT, the diamond becomes IF ... THEN ... ELSE ... ENDIF, the arrows' order becomes the statements' order. One rule, three languages, and nothing of the algorithm gained or lost between them - which is the check to run on any translation: count the decisions, count the paths, and each language must show the same number of each.",
+   "claim_ids": [
+    "CLM-9618-9.2-010",
+    "CLM-9618-9.2-009",
+    "CLM-9618-9.2-008",
+    "CLM-9618-9.2-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-010": 1,
+    "CLM-9618-9.2-009": 1,
+    "CLM-9618-9.2-008": 1,
+    "CLM-9618-9.2-006": 1
+   },
+   "authored_hash": "c14c3048cd54012db280c385c8f3499498dab70ba56631783df1bbc3bebc2311"
+  },
+  {
+   "block_id": "CU-9618-9.2.2-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The constructs' exact forms are 11.2's subject in full, count-controlled and conditional loops are 10.2's everyday tools for walking arrays, and the decisions' conditions are 9.2.3's logic statements. The stepwise refinement of 9.2.3 is how a structured English description is produced in the first place.",
+   "claim_ids": [
+    "CLM-9618-9.2-006",
+    "CLM-9618-9.2-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-9.2-006": 1,
+    "CLM-9618-9.2-007": 1
+   },
+   "authored_hash": "5082d3fef23959f3063bfb99efc07500a667c916d69ac870bbf0659cb9657bb2"
+  }
+ ],
+ "word_count": 852,
+ "qa_status": "review_required",
+ "notes": []
+}

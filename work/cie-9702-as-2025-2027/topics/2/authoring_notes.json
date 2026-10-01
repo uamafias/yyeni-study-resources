@@ -1,0 +1,15 @@
+{
+ "topic_id": "2",
+ "deviations": [
+  {
+   "from": "The work order's seven MISCON slots declare a misconception_entry field (e.g. misconception_entry: MC-9702-2-01) to be carried onto the item.",
+   "to": "The misconception entry id is recorded in the item's provenance string instead (\"discrimination card for misconception entry MC-9702-2-01\"), and each MISCON card's marking guidance and canonical answer name the error and its test from curriculum/misconceptions.json.",
+   "why": "The learning_items schema (standard v0.2.0-draft, additionalProperties: false) does not permit a misconception_entry property, so carrying the field verbatim fails C-00 schema validation; the mapping stays machine-readable through the provenance string."
+  },
+  {
+   "from": "ITEM-9702-2-022-DEF is a DEF slot whose objective (2.1-07) instructs with State, so the natural card states the free-fall equation.",
+   "to": "The card asks the learner to state what free fall is with its equation s = ut + ½gt², g = 9.81 m s⁻² downward, u = 0 for a released body, under the prompt word State.",
+   "why": "Objective 2.1-07 is quantitative problem-solving; a pure recall of a formula without the condition (u = 0, downward direction, mass-independence) would not be a definition, so the card states the equation with the conditions that make it usable."
+  }
+ ]
+}

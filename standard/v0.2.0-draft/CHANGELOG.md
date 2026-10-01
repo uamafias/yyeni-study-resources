@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0-draft - CR-007, 2026-10-01
+
+From the first four authoring runs (9618 Computer Science, 9702 Physics, 0460 Geography, 9093 English Language).
+
+- **C-32 reads chained working.** `1000 × 9.81 × 0.20 = 1962` is evaluated whole, multiplication and division
+  first; before, the check read the 81 of 9.81 as an operand and failed correct physics answers.
+- **MISCON items may carry their register entry** (`misconception_entry` or `misconception_id`). The work orders
+  named it and the schema refused it, so authors had hidden it in `provenance`. Backfilled from the slots on all
+  four subjects (329 items) and republished; all 73 topics still PUBLISH.
+- 6 new tests in `tests/test_cr007_chains_and_misconception_ids.py`. Suite: 80 passed.
+
 ## 0.2.0-draft - CR-006, 2026-09-29
 
 Found while planning Cambridge AS Computer Science 9618, AS Physics 9702, IGCSE Geography 0460 and AS English

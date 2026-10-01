@@ -1,0 +1,190 @@
+{
+ "unit_id": "CU-9702-10.3",
+ "title": "Potential dividers, potentiometers and sensing circuits",
+ "objective_ids": [
+  "OBJ-9702-10.3-01",
+  "OBJ-9702-10.3-02",
+  "OBJ-9702-10.3-03",
+  "OBJ-9702-10.3-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "phys_concept",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 1127,
+  "target": 1374,
+  "max": 1620
+ },
+ "blocks": [
+  {
+   "block_id": "10.3-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The potential divider and the sharing rule behind it, the potentiometer as a way of comparing two potential differences, the galvanometer in null methods, and dividers that sense temperature and light with a thermistor or a light-dependent resistor.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "6d69de0bbd3d4bbf5e11e5ef56c85241e5cb8c49d9fd40772ae3c95a73ab0914"
+  },
+  {
+   "block_id": "10.3-b2",
+   "block_type": "definition",
+   "heading": "The potential divider",
+   "text": "A potential divider is two or more resistors in series across a supply, used to provide a p.d. that is a chosen fraction of the supply p.d. The supply p.d. is shared between the series resistors in the ratio of their resistances, because the same current flows through each and every p.d. is V = IR. For two resistors R1 and R2 across a supply of p.d. V, the p.d. across R1 is V1 = R1/(R1 + R2) \u00d7 V. No single resistor of the chain takes the whole supply p.d.: the p.d.s across the chain add up to the supply p.d., which is Kirchhoff's second law written for the chain, and each share is in proportion to its resistance. To make the output larger, lower the fixed resistance it is taken across, or raise the other; to make it smaller, the reverse.",
+   "claim_ids": [
+    "CLM-9702-10-036",
+    "CLM-9702-10-037",
+    "CLM-9702-10-038"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-036": 1,
+    "CLM-9702-10-037": 1,
+    "CLM-9702-10-038": 1
+   },
+   "authored_hash": "88d116d313970817d308f18886177f559822f7b001bb29e95480a1afc2d30ff9"
+  },
+  {
+   "block_id": "10.3-b3",
+   "block_type": "worked_calculation",
+   "heading": "Worked example: setting a divider's output",
+   "text": "A 6.0 V supply feeds a divider made of a 2.0 k\u03a9 resistor and a 4.0 k\u03a9 resistor in series, and the output is taken across the 4.0 k\u03a9 resistor. Convert first: 2.0 k\u03a9 is 2000 \u03a9 and 4.0 k\u03a9 is 4000 \u03a9. The chain's total is 2000 + 4000 = 6000 \u03a9, so the current is I = 6.0 \u00f7 6000 = 0.0010 A. The output is then V = IR = 0.0010 \u00d7 4000 = 4.0 V. The 4.0 k\u03a9 resistor has 4.0 V across it and the 2.0 k\u03a9 resistor has the other 2.0 V: the shares, 4.0 V and 2.0 V, are in the ratio 2 : 1 of the resistances turned about, and they add to the 6.0 V supply. The same sum run for the output across the 2.0 k\u03a9 resistor gives 0.0010 \u00d7 2000 = 2.0 V, the smaller share of the smaller resistance.",
+   "claim_ids": [
+    "CLM-9702-10-037"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-037": 1
+   },
+   "authored_hash": "b1e6221365695e8364504d185dc854e845dad7e7d2b1643eff851a3bf903d1be"
+  },
+  {
+   "block_id": "10.3-b4",
+   "block_type": "definition",
+   "heading": "The potentiometer",
+   "text": "A potentiometer is a length of uniform resistance wire or track with a driver p.d. applied across its full length L, and a sliding contact that can tap the wire at any distance x from one end. Because the wire is uniform, its resistance is spread evenly along it, so the p.d. between one end and the contact is x/L of the driver p.d.: a contact halfway along taps half the driver p.d. The potentiometer compares two p.d.s without drawing current from them at the moment of comparison. The unknown p.d. is connected between the sliding contact and the near end of the wire, and the contact is moved until the galvanometer in that connecting lead reads zero. At that balance position the p.d. tapped from the wire equals the unknown p.d., and the balance length is read off. Comparing two unknowns on the same wire, the balance lengths are in the ratio of the p.d.s: V1/V2 = x1/x2. A potentiometer is preferred to a voltmeter for comparing p.d.s because at balance no current is drawn from the source being measured, so the source's internal resistance does not reduce the reading the way it can through a voltmeter taking its small current.",
+   "claim_ids": [
+    "CLM-9702-10-039",
+    "CLM-9702-10-040",
+    "CLM-9702-10-041"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-039": 1,
+    "CLM-9702-10-040": 1,
+    "CLM-9702-10-041": 1
+   },
+   "authored_hash": "0eef36e45e13c85dbbf76afab223a10ff96d0a006dbfc0d4218a92bca466c8ca"
+  },
+  {
+   "block_id": "10.3-b5",
+   "block_type": "plain_explanation",
+   "heading": "The galvanometer and null methods",
+   "text": "A galvanometer is a sensitive centre-zero meter: it reads zero when no current flows through it, and it deflects to either side according to the direction of the current, which makes it a detector of small currents rather than a meter of large ones. In a null method, the galvanometer is connected between two points whose p.d.s are to be compared, and one of the two is adjusted until the reading is exactly zero. At that balance point no current flows through the meter, so no current is drawn from the source being measured either: the comparison does not disturb the thing it measures. The balance point is an exact position of the sliding contact, found by moving the contact until the deflection changes from one side to the other and then narrowing the interval down: it is the position where the reading is zero, not a vague region where the needle happens to look small.",
+   "claim_ids": [
+    "CLM-9702-10-042",
+    "CLM-9702-10-043",
+    "CLM-9702-10-044"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-042": 1,
+    "CLM-9702-10-043": 1,
+    "CLM-9702-10-044": 1
+   },
+   "authored_hash": "2ae3d25f251961bfbf5f7563f1e8be14cc2c2d00658eb6559c8f8e16b71ef4d1"
+  },
+  {
+   "block_id": "10.3-b6",
+   "block_type": "plain_explanation",
+   "heading": "Sensing dividers: the thermistor and the light-dependent resistor",
+   "text": "A thermistor is a resistor whose resistance falls as its temperature rises. A light-dependent resistor (LDR) is a resistor whose resistance falls as the light intensity falling on it rises: in bright light its resistance is low, and in darkness it is very large. In a sensing divider, one of the two series resistors is the sensor and the other is fixed, and the output is taken across one of the two. Take a thermistor in series with a fixed resistor R across a supply. As the temperature rises, the thermistor's resistance falls, so its share of the supply p.d. falls and the fixed resistor's share rises: the shares still add to the supply p.d., and the split has simply moved towards the fixed resistor. The output taken across the fixed resistor rises with temperature; the output taken across the thermistor falls with temperature. Which way the output moves is decided by where the output leads are attached, and by nothing else. The same reasoning with an LDR: more light, lower LDR resistance, larger p.d. across the fixed resistor. This is how a divider comes to switch things: a cooling fan, a street lamp or an alarm waits for the output p.d. to cross a threshold, and the sensor moves it there as light or temperature changes.",
+   "claim_ids": [
+    "CLM-9702-10-045",
+    "CLM-9702-10-046",
+    "CLM-9702-10-047",
+    "CLM-9702-10-048"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-045": 1,
+    "CLM-9702-10-046": 1,
+    "CLM-9702-10-047": 1,
+    "CLM-9702-10-048": 1
+   },
+   "authored_hash": "7734a9e61a8175a796300df89bb24b61d4b6d374d66360e30d973e1efcfa543a"
+  },
+  {
+   "block_id": "10.3-b7",
+   "block_type": "worked_calculation",
+   "heading": "Worked example: a temperature switch",
+   "text": "A divider for a greenhouse fan is made from a thermistor and a 5.0 k\u03a9 fixed resistor across a 6.0 V supply, and the output is taken across the fixed resistor. The fan is to run when the output exceeds 3.0 V. On a warm evening the thermistor's resistance is 5.0 k\u03a9: the two resistances are equal, so the supply halves across each, and the output is 3.0 V, which does not exceed the threshold, so the fan stays off. Later the temperature rises and the thermistor's resistance falls to 3.0 k\u03a9. The chain is then 3.0 + 5.0 = 8.0 k\u03a9, which is 8000 \u03a9, so the current is I = 6.0 \u00f7 8000 = 0.00075 A, and the output across the fixed resistor is V = 0.00075 \u00d7 5000 = 3.75 V, which is 3.8 V to two significant figures. The output has crossed the threshold, so the fan runs: the divider has turned a change of temperature into a change of p.d., and the switch has answered it.",
+   "claim_ids": [
+    "CLM-9702-10-046",
+    "CLM-9702-10-048"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-046": 1,
+    "CLM-9702-10-048": 1
+   },
+   "authored_hash": "ce1da004f66289d9ee388537fd3de5e9b158692ee749fb01d73f4fbe5a00d086"
+  },
+  {
+   "block_id": "10.3-b8",
+   "block_type": "misconception",
+   "heading": "Common errors: the whole supply across one resistor, and a vague balance point",
+   "text": "Two errors recur in this sub-topic. The first is taking the whole supply p.d. as the p.d. across one resistor of a divider, as though a single component of the chain received everything the supply offers. The supply p.d. is shared by every resistor in the series chain, in proportion to resistance, and the shares add to the supply. The test is to ask how many resistors share the supply p.d., and to share it before quoting any single p.d. The second is describing the balance point vaguely, as a region where the needle settles down. At balance the galvanometer reads zero: no current flows through it, the two p.d.s being compared are equal, and the exact position of the sliding contact is the measurement. The test is to ask what the meter reads at balance, and to answer: zero, at one point, and nowhere else.",
+   "claim_ids": [
+    "CLM-9702-10-038",
+    "CLM-9702-10-043"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9702-10-038": 1,
+    "CLM-9702-10-043": 1
+   },
+   "authored_hash": "c662171e17db26f7867dfae658800f7aed7e9c188626bf1af45a9b379800d0e1"
+  },
+  {
+   "block_id": "10.3-b9",
+   "block_type": "cross_link",
+   "heading": "Connections",
+   "text": "Topic 9 introduced how the resistance of materials depends on conditions, including the thermistor; this topic puts that behaviour to work in a circuit that senses. Kirchhoff's second law from the previous section is the sharing rule the divider runs on. Topic 12 uses potential dividers and potentiometers at the bench, and its advice on readings, repeats and uncertainties applies to the balance lengths measured here.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "0e7a55a6400fd741d917909cb996ac19288d29f15d0d30be406d4f198578f4c3"
+  }
+ ],
+ "qa_status": "review_required",
+ "word_count": 1337
+}

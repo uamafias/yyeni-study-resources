@@ -1,0 +1,129 @@
+{
+ "unit_id": "CU-9618-11.3.2",
+ "title": "Choosing functions, terminology, efficient pseudocode",
+ "objective_ids": [
+  "OBJ-9618-11.3.2-01",
+  "OBJ-9618-11.3.2-02",
+  "OBJ-9618-11.3.2-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_purpose",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 844,
+  "target": 1026,
+  "max": 1208
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-11.3.2-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Where a function is appropriate in an algorithm’s construction; the terminology of procedures and functions; and writing efficient pseudocode.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "577b06cda1f9455fd55f246ef2b252b017a8a5d472ed5fe7c9432ba3751230c8"
+  },
+  {
+   "block_id": "CU-9618-11.3.2-b2",
+   "block_type": "definition",
+   "heading": "Where a function belongs",
+   "text": "The function question in construction is: does this step produce a value the next step uses? A step that answers a question - what is the fee for this weight, is this customer overdrawn, which day sold most - is a function, because the answer belongs where it can be used: in the assignment that stores it, the IF that tests it, the larger expression that continues with it. A step that acts without an answer - print the slip, save the record, sound the alarm - is a procedure, because its job ends with the action. The mistake to avoid is the answer that is computed and then stranded: a program that prints a fee inside the module that computed it has used a procedure for a function’s job, and every later caller that needs the fee quietly cannot have it. The dividing habit: name the step’s output - if the output is a value, the step is a function that RETURNs it; if the output is an action done, the step is a procedure that does it. A boundary worth walking both ways: the same job can be served by either module shape when the caller both needs the value and prints it - a function that returns the fee, with the printing left to the caller, keeps the computation reusable, whereas a procedure that prints the fee bakes the printing in. The reusable arrangement wins the design argument, because a later caller that only tests the fee can join the first caller without either of them changing - which is why the default habit is: compute in functions, act in procedures, and let callers decide what to do with values they are handed.",
+   "claim_ids": [
+    "CLM-9618-11.3-006",
+    "CLM-9618-11.3-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-006": 1,
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "c32f74c671efe16e5598fb05fe62d23d8e1e2544da57c8074e201719b432dfb5"
+  },
+  {
+   "block_id": "CU-9618-11.3.2-b3",
+   "block_type": "definition",
+   "heading": "The terminology",
+   "text": "Four terms travel together and name one thing from four sides. The header is the module’s first line: the name, the parameters, and for a function the return type. The interface is what the caller works from: the header plus what the module does - the deal between the caller and the module, stated in the header and honoured in the body. A parameter is a variable in the header through which a value arrives; an argument is the value the caller passes in the call. The return value is what a function hands back with RETURN - one value, of the declared type, replacing the call in the caller’s expression. And one rule guards all the names: an identifier may not be a keyword, a data type or a built-in function name - DECLARE INTEGER : INTEGER and DECLARE Length : INTEGER both fail, because INTEGER and LENGTH are the language’s own words, and the insert’s function names are part of the language too. One naming habit keeps the interface readable at a distance: the parameters are named for the values they carry - WeightInKg, not W - so the header alone tells a new caller what to pass, and the interface stays legible in every call the program ever writes.",
+   "claim_ids": [
+    "CLM-9618-11.3-007",
+    "CLM-9618-11.3-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-007": 1,
+    "CLM-9618-11.3-008": 1
+   },
+   "authored_hash": "03bdcec576502a09d1fe46e34d57108c85855e1dcf417f92034fca402938a8d8"
+  },
+  {
+   "block_id": "CU-9618-11.3.2-b4",
+   "block_type": "definition",
+   "heading": "Efficient pseudocode",
+   "text": "Efficient pseudocode is written so that no work is done twice and no repetition is spelled out. Three habits carry it. A job done in several places is written once as a module and called by name - the receipt header printed after every sale is one procedure called three times, not three printed blocks that must be kept alike. A repetition is written as a loop, not as copies - totaling twelve stalls is one loop body, not twelve near-identical lines, because the loop states the shape once. A computed value is stored once and reused - Length(Word) computed four times in one module is one assignment and three uses, because the word did not change in between. Efficiency is also readability, which is the same coin: the short version says the shape once, so the reader checks one statement instead of twelve, and the change that comes later is made in one place - which is what efficient means before it means fast. Efficiency also has a change face worth naming in any justification: the one-module form is cheaper to change, because a job stated once is changed once, and the change is inherited by every caller at the next run - so the efficiency argument in a design discussion is about the writer's work as much as the machine's, and that is the work the next round of changes pays for.",
+   "claim_ids": [
+    "CLM-9618-11.3-009"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-009": 1
+   },
+   "authored_hash": "f9c0a13ef53fd61148a031003cf0d0a3bfb8f3cc61a15a1441e2439a3e0c9526"
+  },
+  {
+   "block_id": "CU-9618-11.3.2-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "The recurring slip in terminology is a borrowed name. An identifier cannot be a keyword, a data type or a built-in function name such as LENGTH, CHAR or MONTH, because those words are the language’s own - a variable named Length collides with the insert’s function, and a module named Count collides with the register word’s neighbours in a reader’s mind. The test: is the name in the insert or a data type? Choose another.",
+   "claim_ids": [
+    "CLM-9618-11.3-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-008": 1
+   },
+   "authored_hash": "02e9ecdd2104170df4c57cb6af27e035333222cdc09b42ce95574698e13f7fc2"
+  },
+  {
+   "block_id": "CU-9618-11.3.2-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The functions chosen here are 11.3.1’s definitions in the design’s service, the identifiers named here follow 11.1’s rules, and the efficiency habits are what 12.2’s designs aim at and 12.3’s dry runs test. The library routines of 11.1 are these modules kept for reuse.",
+   "claim_ids": [
+    "CLM-9618-11.3-009",
+    "CLM-9618-11.3-007"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.3-009": 1,
+    "CLM-9618-11.3-007": 1
+   },
+   "authored_hash": "9793890c8263e7efef7e2945d0dbecd83d3d2f88d4229b138afac024fb03273e"
+  }
+ ],
+ "word_count": 887,
+ "qa_status": "review_required",
+ "notes": []
+}

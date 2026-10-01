@@ -1,0 +1,140 @@
+{
+ "unit_id": "CU-9618-11.1.1",
+ "title": "Programming basics: statements, constants, functions",
+ "objective_ids": [
+  "OBJ-9618-11.1.1-01",
+  "OBJ-9618-11.1.1-02",
+  "OBJ-9618-11.1.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_programming",
+ "depth_tier": 3,
+ "word_budget": {
+  "min": 910,
+  "target": 1105,
+  "max": 1300
+ },
+ "blocks": [
+  {
+   "block_id": "11.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Writing pseudocode from a given design; declaring and initialising constants and variables, assigning and comparing; and using the built-in functions and library routines.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "7eee8c3ac6acdf280506280204671ba91fa7184db162df46fedb359768df0501"
+  },
+  {
+   "block_id": "11.1.1-b2",
+   "block_type": "process",
+   "heading": "From a design to pseudocode",
+   "text": "A design arrives as a flowchart or as structured English, and the move to pseudocode is statement by statement - never a rewrite. Each box or sentence is one construct in the design's order: an input box becomes INPUT, a process box an assignment, a decision box an IF with the diamond's condition, a loop's back-arrow a WHILE or a FOR with the arrow's condition. A worked pair, from 9.2's ride rule: the English 'if the height is less than 120, say too short, otherwise say allowed' and the diamond 'Height < 120?' both become the same three statements - INPUT Height, IF Height < 120 THEN, the two OUTPUTs in their branches - because the design and the pseudocode say the same thing in two languages, and the translation changes the clothing, not the content. The check to run afterwards: count the decisions and count the paths in each - a faithful translation shows the same number of each, so a missing ELSE is caught before it costs a run. The habit that carries the translation’s discipline: translate nothing you cannot point to in the design, and add nothing the design does not show - every extra line is a second place the program can disagree with what was signed off, and every dropped line is a path the program cannot take. A short checklist serves both ways: after translating, walk the design again box by box or sentence by sentence and tick each one against a construct, then walk the pseudocode and ask of each line which box or sentence it came from - anything that survives neither question is either a translation error or an invention, and both are fixed the same way, by going back to the design.",
+   "claim_ids": [
+    "CLM-9618-11.1-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.1-001": 1
+   },
+   "authored_hash": "b8609dade5db254e90c469f7d2a5a8a049ae10ba36c2296b4cbb3857083ff1f9"
+  },
+  {
+   "block_id": "11.1.1-b3",
+   "block_type": "definition",
+   "heading": "Constants, variables, assignment and comparison",
+   "text": "The values a program works with are declared before use, and the two declarations answer two different needs. A constant holds a value fixed for the whole run - the shop's VAT rate, the clinic's maximum dose - and it is declared and initialised in one statement: CONSTANT VatRate = 0.15. A variable holds a value that changes - a running total, a loop counter - and it is declared with its type and initialised before use: DECLARE Total : REAL, then Total <- 0. That arrow is the third thing to keep exact: the assignment arrow <- stores a value into a variable or a field, whereas = compares two values, so 'is a value being stored, or tested?' names which symbol belongs - Total <- Total + Item stores the new total; Total = 0 tests whether the total has reached zero. The two accumulators that most programs carry are declared and initialised here, and they are worth telling apart: a count adds 1 for each item that qualifies - BigDays <- BigDays + 1 - whereas a total adds the item's value - Total <- Total + Item - so what is added each time, 1 or the value, names which accumulator the algorithm needs. Both start at 0 before the loop, because an accumulator initialised inside the loop resets itself every pass. One naming habit keeps the two accumulators from ever being confused at the keyboard: put what is added in the name - ZeroCount counts qualifying items, FeeTotal totals their values - so the identifier repeats the rule, and a reader of the program knows what the loop’s body must add before reading it.",
+   "claim_ids": [
+    "CLM-9618-11.1-002",
+    "CLM-9618-11.1-003",
+    "CLM-9618-11.1-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.1-002": 1,
+    "CLM-9618-11.1-003": 1,
+    "CLM-9618-11.1-004": 1
+   },
+   "authored_hash": "284bf2d3c6bcd97250a7096ceb42849914c3c5805dfb4d23750a36d3c0ff2b00"
+  },
+  {
+   "block_id": "11.1.1-b4",
+   "block_type": "definition",
+   "heading": "Built-in functions and library routines",
+   "text": "The pseudocode guide's built-in functions are used by name, and the strings ones are the working set. LENGTH(Word) returns the number of characters - LENGTH(\"Okavango\") is 8. LEFT(Word, 4) returns the first four characters - \"Okav\". RIGHT(Word, 3) the last three - \"ngo\". MID(Word, 5, 2) returns two characters starting from the fifth - \"an\" - and MID(Word, 5, 1) is how a single character is extracted, because a string is not an array: its characters are reached by the function, not by an index in brackets. STRING_TO_NUM(\"49\") converts a string of digits to its number, and NUM_TO_STR(49) converts the other way. The joining rule follows from the types: & joins strings - Initials <- LeftLetter & RightLetter - so a number is joined only after conversion, Message <- \"Fee: \" & NUM_TO_STR(Fee), because & joins strings and a number is not one. A library routine is the same idea at module scale: a pre-written, tested module kept in a program library (5.1's subject), used by calling its name with the right parameters - the tested code is used rather than rewritten, and the routine's parameters are all the caller needs to know. The functions given in an insert are the only ones assumed: any function not given is provided with the question, so the habit is to use what is given and name what is not.",
+   "claim_ids": [
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-006",
+    "CLM-9618-11.1-007",
+    "CLM-9618-11.1-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-006": 1,
+    "CLM-9618-11.1-007": 1,
+    "CLM-9618-11.1-008": 1
+   },
+   "authored_hash": "999e558773d3b369c13fc8f6b1a698bf6c051dc76f05f6da25f1420545eef86b"
+  },
+  {
+   "block_id": "11.1.1-b5",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Four slips recur. Joining with +, or joining a number unconverted: strings join with &, and a number joins only after NUM_TO_STR() - the test is whether both sides are strings. Indexing a string like an array: a character comes out with MID(<string>, <start>, 1), because a string is not an array - the test is whether it is declared as an ARRAY. A running total confused with a count: a count adds 1 per qualifying item, a total adds the item's value - the test is what is added each time. And using = to assign: the arrow <- stores, = compares - the test is whether a value is being stored or tested.",
+   "claim_ids": [
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-007",
+    "CLM-9618-11.1-004",
+    "CLM-9618-11.1-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-007": 1,
+    "CLM-9618-11.1-004": 1,
+    "CLM-9618-11.1-003": 1
+   },
+   "authored_hash": "4940b3a72c81fea83c3b4cdb13306f64140632e744ad8c815c67c11583f5754b"
+  },
+  {
+   "block_id": "11.1.1-b6",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The constructs these statements build are 11.2's whole subject, the modules they fill are 11.3's, and the strings these functions work on are the lines 10.3's files read. The library routines are 5.1's program libraries in use, and the identifier habits come from 9.2.",
+   "claim_ids": [
+    "CLM-9618-11.1-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-11.1-008": 1
+   },
+   "authored_hash": "36e8246d6e32219108f954ba123e48906115c23dfe7a8fdc569ce1acb39412f5"
+  }
+ ],
+ "word_count": 1004,
+ "qa_status": "review_required",
+ "notes": []
+}

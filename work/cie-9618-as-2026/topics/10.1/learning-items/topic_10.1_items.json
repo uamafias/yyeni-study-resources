@@ -1,0 +1,567 @@
+{
+ "dataset_id": "ITEMS-9618-10.1",
+ "topic_id": "10.1",
+ "items": [
+  {
+   "item_id": "ITEM-9618-10.1-001-BEN",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-001",
+    "CLM-9618-10.1-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "BEN",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain one benefit of storing a member number as INTEGER rather than STRING.",
+   "canonical_answer": "Arithmetic and comparison work on it: the program can add 1 for the next member and test which number is larger, because INTEGER holds what the number is. Stored as STRING, the digits lose their arithmetic and their order, because a string is not a number, so the type earns its keep by what the program needs to do with the value.",
+   "marking_guidance": [
+    "Benefit: INTEGER arithmetic and comparison work on member numbers - 1 mark.",
+    "Because INTEGER holds what the number is and a string only its spelling, adding and ordering work, so the program does what it needs with the value - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-001": 1,
+    "CLM-9618-10.1-002": 1
+   },
+   "authored_hash": "d18be78417e82a0987e88d7bdb3dcf332d1957012bb3344cf49270e9e3bf9b8a"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-002-LIM",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-001",
+    "CLM-9618-10.1-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "LIM",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 4,
+   "prompt": "Explain one drawback of storing a phone number as INTEGER.",
+   "canonical_answer": "Phone numbers carry what integers lose: the leading zero of 061 disappears, because the number 61234567 is not the number dialled, and no phone arithmetic ever runs on one anyway, so the digits that matter are the digits as written. INTEGER's shape is the drawback here, and STRING's exactness is what the value needs.",
+   "marking_guidance": [
+    "Drawback: the leading zero is lost and no arithmetic ever runs on one - 1 mark.",
+    "Because INTEGER holds a number’s value rather than its digits as written, the phone number’s spelling is what matters, so STRING suits it - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-001": 1,
+    "CLM-9618-10.1-002": 1
+   },
+   "authored_hash": "656e7982739cbd2889912df50b7149b9c83a25879d85986bf7634637909acc6f"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-003-EVAL",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-002",
+    "CLM-9618-10.1-003",
+    "CLM-9618-10.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "EVAL",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Evaluate",
+   "command_word": "Explain",
+   "mark_tariff": 3,
+   "difficulty": 5,
+   "prompt": "A club stores each member's join date as DATE and unpaid fees as REAL. Explain why each type suits its value, and what would go wrong if the join date were held as STRING.",
+   "canonical_answer": "Join date as DATE: the club sorts and compares join dates - who joined first, whose renewal falls due - and DATE does that natively, because a date is what the type holds. Fees as REAL: money carries cents and fees grow by amounts like 12.50, which INTEGER cannot hold. STRING for the join date would hold something that looks like a date but sorts as characters, because the characters compare character by character, so 'first to join' answers wrongly - which is what the wrong type costs.",
+   "marking_guidance": [
+    "Suitable choice for the join date - DATE, because dates are compared and ordered - 1 mark.",
+    "Reason for the fees: REAL holds the cents, because money grows fractionally - 1 mark.",
+    "Context: with STRING the join date would sort as text, because a string only looks like a date, so the club’s ordering answers wrongly - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-002": 1,
+    "CLM-9618-10.1-003": 1,
+    "CLM-9618-10.1-001": 1
+   },
+   "authored_hash": "5dd2bff4cb620056ea9f6a85c4c4904a7c47a171f7be1f36f5a7f22c7a872010"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-004-APP",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-001",
+    "CLM-9618-10.1-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 4,
+   "prompt": "A program must hold a patient's temperature, one decimal value, and whether the patient is insured. Write the DECLARE statements for the two variables, with suitable types.",
+   "canonical_answer": "```pseudocode\nDECLARE Temperature : REAL\nDECLARE Insured : BOOLEAN\n```",
+   "marking_guidance": [
+    "Context: this given temperature and insurance state - 1 mark for the two DECLARE statements.",
+    "Reason: because a temperature with a decimal part is REAL and a yes-or-no state is BOOLEAN, each type follows its value, so the types carry 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-001": 1,
+    "CLM-9618-10.1-002": 1
+   },
+   "authored_hash": "0d4c6f374ce35846cff54019a9c425b33e900dbb2178b79ccf7588909167d488"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-008-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-003",
+    "CLM-9618-10.1-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 5,
+   "prompt": "A learner declares DECLARE JoinDate : STRING and assigns it '2026-01-15' in quotation marks. Explain the error.",
+   "canonical_answer": "The quotation marks make the assigned value a string, but a date is not a string of characters: pseudocode has a DATE type, and JoinDate should be declared DATE, so the value is stored as a date and compared as one. The test: look for the quotation marks, then ask whether the data has its own type - DATE exists, so the field's type is DATE and the string's spelling of it is a mistake.",
+   "marking_guidance": [
+    "1 mark: the error named - the date has been stored as a string of characters, because quotation marks make a string.",
+    "1 mark: the correction with the test - DATE is a pseudocode data type, so JoinDate is declared DATE, because a date needs its own type to sort and compare as one."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-003": 1,
+    "CLM-9618-10.1-001": 1
+   },
+   "authored_hash": "4f938dbcb966be23d43285a7aa8ca591e02967a2a4e5753a6bf0a621f89f0ed0",
+   "misconception_entry": "MC-9618-10.1-01"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-005-DEF",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a record structure holds.",
+   "canonical_answer": "A set of data of different data types, held together as one unit with each field named and typed, so one thing’s data is kept as one value.",
+   "marking_guidance": [
+    "1 mark: the meaning - data of different types held together as one unit, field by field."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-004": 1
+   },
+   "authored_hash": "cfef454c3a008e8ff062c92ad24bcf512e29ee9b3aa7cb14a6dc799a88956f71"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-006-WHY",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-004",
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a record structure suits a patient's details rather than separate variables.",
+   "canonical_answer": "The details belong together: the patient's ID, name and date of birth are one patient, and a record holds them as one unit, so one value moves the whole patient - into a parameter, a file, an array of patients. Separate variables scatter the one thing across the program's names, so the record keeps the data with the thing it describes, which is the purpose.",
+   "marking_guidance": [
+    "Reason: the details are one thing’s data, and the record holds them as one unit - 1 mark.",
+    "Purpose: so the whole patient moves as one value wherever the program needs it, because the record keeps the data with the thing it describes - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-004": 1,
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "5c770e30163b0bcdc8171c8fbfd8d2fe42e0f763a54a6a58c1ee523de2dfc717"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-007-APP",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 2,
+   "prompt": "A bus service stores a route's name, its length in kilometres and whether it runs on Sundays. Write the pseudocode that defines a record structure RouteRecord with these three fields and declares a variable Route of that type.",
+   "canonical_answer": "```pseudocode\nTYPE RouteRecord\n   DECLARE RouteName : STRING\n   DECLARE LengthKm : REAL\n   DECLARE RunsSunday : BOOLEAN\nENDTYPE\n\nDECLARE Route : RouteRecord\n```",
+   "marking_guidance": [
+    "Context: this given route and its three details - 1 mark for the TYPE ... ENDTYPE block with three DECLARE lines.",
+    "Reason: because each field carries its own type - STRING for the name, REAL for the kilometres, BOOLEAN for the Sunday truth - the definition with its types earns 1 mark each, and the variable declaration of Route : RouteRecord completes the 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "a4c491fbbda30ba6666dde056081adfa0cbab1ecff8b891661010c92f519e772"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-009-MISCON",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes a record definition without DECLARE on the field lines and without ENDTYPE. Explain the errors.",
+   "canonical_answer": "Both parts of the form are missing. Each field line inside a record definition starts with DECLARE and its type, and the block ends with ENDTYPE, so a definition without them is not a definition - the reader cannot see where the record’s fields end and the rest of the program begins. The test: every field line starts with DECLARE; the block ends ENDTYPE.",
+   "marking_guidance": [
+    "1 mark: the error named - the field lines lack DECLARE and the block lacks ENDTYPE, so the definition’s form is broken.",
+    "1 mark: the correction with the test - TYPE <name> opens the definition, each field line is DECLARE <name> : <type>, and ENDTYPE closes it, because the form is what shows the fields’ end."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "d85e7428f5a82ebec540d0b07c29c2a013a0f7908fa165ab6d47b66aaf1e2fba",
+   "misconception_entry": "MC-9618-10.1-02"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-P01",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-004",
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A clinic stores each consultation in a record structure ConsultRecord with the fields PatientName : STRING, FeePaid : REAL and Waived : BOOLEAN. Write pseudocode for a procedure FillConsult that takes the string PatientName, the real FeeAmount, the Boolean FeeWaived and the record MyConsult, saves the patient's name into the record, and saves the fee and waived state into the record's fields - but if FeeAmount is negative, the clinic's rule is to save 0 as the fee with Waived set to TRUE instead.",
+   "canonical_answer": "```pseudocode\nTYPE ConsultRecord\n   DECLARE PatientName : STRING\n   DECLARE FeePaid : REAL\n   DECLARE Waived : BOOLEAN\nENDTYPE\n\nPROCEDURE FillConsult(PatientName : STRING, FeeAmount : REAL, FeeWaived : BOOLEAN, MyConsult : ConsultRecord)\n   MyConsult.PatientName <- PatientName\n   IF FeeAmount >= 0 THEN\n      MyConsult.FeePaid <- FeeAmount\n      MyConsult.Waived <- FeeWaived\n   ELSE\n      MyConsult.FeePaid <- 0\n      MyConsult.Waived <- TRUE\n   ENDIF\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with all four parameters and their types, and ENDPROCEDURE. Mark point 2: the record definition with TYPE ... ENDTYPE and each field declared with DECLARE.",
+    "Mark point 3: the field written by dot access, MyConsult.PatientName <- PatientName, saving the name to the record. Mark point 4: the selection IF ... THEN ... ELSE ... ENDIF covering both fee cases.",
+    "Mark point 5: the condition FeeAmount >= 0, so the negative case is caught. Mark point 6: the normal branch saving both fields, the fee and the waived state together.",
+    "Mark point 7: the else branch applying the clinic’s rule, 0 with TRUE. Mark point 8: the procedure's result is the record's saved fields - output by their state, with no returned value, because a procedure acts on its parameters - so the module is complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A clinic consultation record filled under a fee rule.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-004": 1,
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "48637c6024d38a7dbc1aa86c56d13a8870d38885c45b14bec2761d823f6bb11f"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-P02",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-004",
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A lodge stores each guest's stay in a record structure StayRecord with the fields NightsStayed : INTEGER, NightlyRate : REAL and Breakfast : BOOLEAN. Write pseudocode for a function StayCost that takes the record Stay and returns the total cost of the stay: the nights multiplied by the nightly rate, plus 90 dollars for each night if breakfast is included.",
+   "canonical_answer": "```pseudocode\nTYPE StayRecord\n   DECLARE NightsStayed : INTEGER\n   DECLARE NightlyRate : REAL\n   DECLARE Breakfast : BOOLEAN\nENDTYPE\n\nFUNCTION StayCost(Stay : StayRecord) RETURNS REAL\n   DECLARE Total : REAL\n   Total <- Stay.NightsStayed * Stay.NightlyRate\n   IF Stay.Breakfast = TRUE THEN\n      Total <- Total + Stay.NightsStayed * 90\n   ENDIF\n   RETURN Total\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the record parameter Stay and RETURNS REAL, and ENDFUNCTION. Mark point 2: the record definition with TYPE ... ENDTYPE and each field declared with DECLARE.",
+    "Mark point 3: the declaration of Total, and the initialisation of Total to the nights times the rate before any addition.",
+    "Mark point 4: the selection IF ... THEN ... ENDIF with the condition Stay.Breakfast = TRUE. Mark point 5: the breakfast charge added inside the selection only, computed as nights times 90.",
+    "Mark point 6: the record’s fields read by dot access - Stay.NightsStayed, Stay.NightlyRate, Stay.Breakfast. Mark point 7: the arithmetic in the right order, the multiplication before the addition.",
+    "Mark point 8: the value RETURNed at the end - returned, not output - so the function is closed and complete."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge stay costed from its record fields.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-004": 1,
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "fd8a96d3d880b0091487746336076bf1c74db6ecfcb8ada3d02fe41b9a7907e5"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-P03",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-004",
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A school stores each athlete's record as AthleteRecord with the fields BestDistance : REAL and Attempts : INTEGER. Write pseudocode for a procedure RecordAttempt that takes the real Distance and the record Athlete, adds 1 to the athlete's Attempts field whatever the distance, and updates BestDistance to the new distance only if the new distance is longer than the best so far.",
+   "canonical_answer": "```pseudocode\nTYPE AthleteRecord\n   DECLARE BestDistance : REAL\n   DECLARE Attempts : INTEGER\nENDTYPE\n\nPROCEDURE RecordAttempt(Distance : REAL, Athlete : AthleteRecord)\n   IF Distance > Athlete.BestDistance THEN\n      Athlete.BestDistance <- Distance\n   ENDIF\n   Athlete.Attempts <- Athlete.Attempts + 1\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: the record definition with TYPE ... ENDTYPE and each field declared with DECLARE.",
+    "Mark point 3: the selection IF ... THEN ... ENDIF guarding the best distance. Mark point 4: the condition Distance > Athlete.BestDistance, so only a longer jump updates the best.",
+    "Mark point 5: the update inside the selection, Athlete.BestDistance <- Distance by dot access. Mark point 6: the attempts counter incremented outside the selection, so every attempt is counted.",
+    "Mark point 7: the record’s fields reached as <record>.<field> throughout. Mark point 8: the procedure closed with ENDPROCEDURE, its result the record's updated fields rather than a returned value - values through parameters, fields saved by dot access, complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "An athlete record updated attempt by attempt.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-004": 1,
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "270641a4a679b08dc3c97eee473be8e484cca9cb827f034dea652eaca6344677"
+  },
+  {
+   "item_id": "ITEM-9618-10.1-P04",
+   "objective_ids": [
+    "OBJ-9618-10.1.1-01",
+    "OBJ-9618-10.1.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.1-001",
+    "CLM-9618-10.1-002",
+    "CLM-9618-10.1-003",
+    "CLM-9618-10.1-005"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A craft shop stores each item's details: its name, its price in dollars and cents, and the date it was last checked.\n(a) Explain why the price suits REAL and the check date suits DATE, and why STRING would fail for the date. [2]\n(b) Write the pseudocode that defines the record structure ItemRecord with the fields ItemName : STRING, Price : REAL and LastChecked : DATE, and declares Item : ItemRecord. [2]\n(c) The program then runs Item.Price <- 49.50. State what this statement does and what type Item.Price is. [2]",
+   "canonical_answer": "(a) The price grows in dollars and cents - amounts like 49.50 - so REAL holds it, because INTEGER cannot carry the fractional part. The check date is compared and ordered - which item was checked first, which is overdue - and DATE does that natively, whereas STRING would sort the date as characters, because a string only looks like a date, so the ordering answers wrongly.\n(b)\n```pseudocode\nTYPE ItemRecord\n   DECLARE ItemName : STRING\n   DECLARE Price : REAL\n   DECLARE LastChecked : DATE\nENDTYPE\n\nDECLARE Item : ItemRecord\n```\n(c) The statement saves the value 49.50 into the Price field of the record Item, by dot access naming the record then the field; Item.Price is REAL.",
+   "marking_guidance": [
+    "Part (a): the reason each type suits its value - 2 marks, 1 per point: REAL for the cents, DATE for the ordering STRING cannot do.",
+    "Part (b): the given record written - 2 marks, 1 per point: the TYPE ... ENDTYPE block with each field’s DECLARE and type, and the variable declaration.",
+    "Part (c): the dot access stated - 2 marks, 1 per point: the save of 49.50 into Item’s Price field, and the field’s type REAL."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A craft shop item stored as one record.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 10.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.1-001": 1,
+    "CLM-9618-10.1-002": 1,
+    "CLM-9618-10.1-003": 1,
+    "CLM-9618-10.1-005": 1
+   },
+   "authored_hash": "e81d75d8524f719fce647a14f40a6627f2e2b468ffdac9477bc5e058151de920"
+  }
+ ]
+}

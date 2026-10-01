@@ -1,0 +1,172 @@
+{
+ "unit_id": "CU-9618-2.1.3",
+ "title": "Routers, Ethernet, bit streaming and the web",
+ "objective_ids": [
+  "OBJ-9618-2.1.3-01",
+  "OBJ-9618-2.1.3-02",
+  "OBJ-9618-2.1.3-03",
+  "OBJ-9618-2.1.3-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1136,
+  "target": 1382,
+  "max": 1629
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-2.1.3-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The router's job; Ethernet and how collisions are detected and avoided; bit streaming, real-time and on-demand; and the difference between the internet and the World Wide Web.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "dcdc6fa72cef2c8833dc2993ad36ebbd062430d3206d5a282bb286f43b6669e6"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b2",
+   "block_type": "definition",
+   "heading": "What a router does",
+   "text": "A router connects networks together. A switch moves packets between devices on the one network it serves; a router stands between networks, and its job is to forward each packet from one network toward another, choosing the packet's next step by the destination IP address it carries. On the internet, this is the whole mechanism of delivery: a packet leaves the sender's network through a router, is passed from router to router, each reading the destination address and choosing the next network in that direction, until a router on the destination's own network delivers the packet to the device. Two properties follow. Packets of one message may travel different routes, because each router chooses for itself, so the parts of one photo can arrive by different paths and be reassembled at the far end. And the sender needs no map: the sender hands the packet to its own router, and every step after that is chosen by the router that holds the packet. This is why a school LAN that must reach the internet needs a router and not only a switch - the LAN and the internet are different networks, and joining networks is the router's job, not the switch's.",
+   "claim_ids": [
+    "CLM-9618-2.1-028",
+    "CLM-9618-2.1-029",
+    "CLM-9618-2.1-030"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-028": 1,
+    "CLM-9618-2.1-029": 1,
+    "CLM-9618-2.1-030": 1
+   },
+   "authored_hash": "8c43f484a90a6e2b96269558293ba340ab36dc5f00028c8173eea7cf80d4a862"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b3",
+   "block_type": "process",
+   "heading": "Ethernet and how collisions are handled",
+   "text": "Ethernet is the family of standards a wired LAN most often runs on: it defines the cables, the connectors and the rules devices follow to place data on the network. The rule that matters here is CSMA/CD - Carrier Sense Multiple Access with Collision Detection. Take it in order, as its name runs. Carrier sense: before a device transmits, it listens to the cable, and it transmits only when it senses no signal already on it. Multiple access: every device on the cable shares it, and any of them may transmit when it finds the cable free. Collision detection: transmitting devices keep listening while they send; if two devices found the cable free at the same moment and transmitted together, their signals overlap and garble on the cable, and each detects that what is on the cable is not what it sent. What happens next closes the loop: each colliding device stops, sends a short jamming signal so every other transmitter stops too, then waits a random time - different for each device - before sensing the cable and trying again. The different random waits are what break the deadlock: the two devices no longer choose the same moment, so the retry goes through.",
+   "claim_ids": [
+    "CLM-9618-2.1-031",
+    "CLM-9618-2.1-032"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-031": 1,
+    "CLM-9618-2.1-032": 1
+   },
+   "authored_hash": "8dc1e151f4b6391da236d0da11503914e5dd1c70c033397a55dfc98629c9e54a"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b4",
+   "block_type": "definition",
+   "heading": "Bit streaming",
+   "text": "Downloading waits; streaming does not. Bit streaming sends multimedia content as a continuous stream of bits, and the player starts playing from the first bits that arrive, before the whole file has come. Two forms cover most use. Real-time streaming presents an event as it happens: the match, the meeting, the ceremony - the viewer sees what is happening now, or as close to now as the stream's delay allows. On-demand streaming starts whenever the user chooses: the film begins when the play button is pressed, because the file waits on a server, ready to stream. The two forms differ in who sets the clock: in real-time streaming the event sets it, and joining late means seeing the event from the moment of joining; in on-demand streaming the user sets it, pausing and resuming as they please, because the server streams from wherever the player asks. Both forms live on one number: the bit rate. The player consumes bits at the content's own rate, and the connection delivers bits at the connection's rate. If the connection's bit rate is at least the content's, playback runs smooth. If the connection delivers more slowly than the player consumes, the player's store of bits runs out, playback pauses, and the buffering mark appears until enough bits have arrived - and if the gap is large, this repeats to the end, which is the experience the word 'buffering' has come to stand for. The remedies follow from the cause: a lower-bit-rate stream that fits the connection, or a faster connection - the film's size is not the number that decides.",
+   "claim_ids": [
+    "CLM-9618-2.1-033",
+    "CLM-9618-2.1-034"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-033": 1,
+    "CLM-9618-2.1-034": 1
+   },
+   "authored_hash": "ac44eee9d1a6390b9107f91efc0628a82f9a9461b763d08fc4564ace60147706"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b5",
+   "block_type": "definition",
+   "heading": "The internet and the World Wide Web",
+   "text": "The two words are used as if they meant one thing, and they do not. The internet is the infrastructure: the cables, the routers, the connected networks - a global network of networks that carries whatever is sent on it. The World Wide Web is a service that runs on that infrastructure: a collection of pages of content, linked to each other, stored on servers, and fetched by browsers. A web page cannot travel without the internet's cables and routers, because that infrastructure moves every packet; equally, the internet carries far more than the web - email, file transfers, streaming services - so the web is one service among several on the same wires. The everyday complaint 'the web is down' usually means one service failed while the infrastructure still carries the others, which the distinction explains. Resources on the web are named by URLs, which 2.1.4 unpacks; fetching them is the work a browser does.",
+   "claim_ids": [
+    "CLM-9618-2.1-035"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-035": 1
+   },
+   "authored_hash": "a8293786679cf60256a805c8e2b67698876bf631eac2b93d6c923b6450d1fd3f"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b6",
+   "block_type": "worked_application",
+   "heading": "Worked example: a film on a thin connection",
+   "text": "A teacher wants to show a 20-minute documentary in a village classroom whose connection delivers reliably at 1 megabit per second. The documentary's standard stream plays at 2 megabits per second. Started at that rate, the player's buffer drains: the connection delivers 1 megabit each second while the player consumes 2, so after a minute of playing, a minute of stream is missing, playback stops, the buffering mark appears, and the cycle repeats - the class watches a slideshow of pauses. The lower-quality stream at 0.8 megabits per second fits: the connection delivers faster than the player consumes, the buffer grows while playing, and the film runs to the end. What changed was not the film's size but its rate: streaming is decided by bits per second on both sides, which is why the choice of stream, not the choice of file, is the classroom's lever.",
+   "claim_ids": [
+    "CLM-9618-2.1-033",
+    "CLM-9618-2.1-034"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-033": 1,
+    "CLM-9618-2.1-034": 1
+   },
+   "authored_hash": "4c6d693d5df4f8166a9801677a1676b58fb38a66506afc4ffecd44916e08a1d5"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b7",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur. Sending data in 'packages': the unit of data on a network is a packet - a header carrying addresses and a sequence number, and a payload - and 'package' is not the technical term, so an answer that uses it has not named what is addressed and routed. Confusing the internet with the web: the internet is the infrastructure of cables and routers, the web is a service of linked pages that runs on it, and the test is to ask which one carries the other.",
+   "claim_ids": [
+    "CLM-9618-2.1-030",
+    "CLM-9618-2.1-035"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-030": 1,
+    "CLM-9618-2.1-035": 1
+   },
+   "authored_hash": "a64df37fa6a6bbdf8c2e9cfb9d2be6f8a0645f6fbb6334ba27882dd8420525b4"
+  },
+  {
+   "block_id": "CU-9618-2.1.3-b8",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The packets this unit routes were described in 2.1.2's topologies; the addresses that steer them are 2.1.4's IP addresses; the content they carry includes the multimedia of 1.2 and the streams of this unit, whose sizes 1.3's methods reduce.",
+   "claim_ids": [
+    "CLM-9618-2.1-029"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-2.1-029": 1
+   },
+   "authored_hash": "3720864fb7687f9cb7f9504570df8448282f46993840fc1cdf82fc2321514d0b"
+  }
+ ],
+ "word_count": 1164,
+ "qa_status": "review_required",
+ "notes": []
+}

@@ -1,0 +1,120 @@
+{
+ "unit_id": "CU-9618-8.2.1",
+ "title": "What a DBMS provides",
+ "objective_ids": [
+  "OBJ-9618-8.2.1-01",
+  "OBJ-9618-8.2.1-02"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_features",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 630,
+  "target": 765,
+  "max": 900
+ },
+ "blocks": [
+  {
+   "block_id": "8.2.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The features a DBMS provides that address the file-based limitations - data management, data modelling, logical schema, integrity, security - and the software tools found within it: the developer interface and the query processor.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "da696675f933f32001ef97fcc06aac8486e07c9e4052237588ff3f2980b2caa0"
+  },
+  {
+   "block_id": "8.2.1-b2",
+   "block_type": "definition",
+   "heading": "The features a DBMS provides",
+   "text": "8.1 named the two limitations - duplicated data and programs bound to file layouts - and the DBMS is the answer at work. Data management: the DBMS stores, finds and maintains the data, and it keeps the data dictionary, a record of every table, attribute, key and relationship, so the database describes itself and every tool works from the same description. Data modelling and the logical schema: the design is stated once - these tables, these attributes, these relationships - and the DBMS maps it onto the physical storage beneath, so the storage can be reorganised without the design or the programs changing. Data integrity: constraints are checked on every change; a primary key must be unique, and a foreign key must match a primary key in the referenced table, so the DBMS refuses a duplicate patient and refuses an appointment pointing at a patient who does not exist. Data security: backup procedures copy the database on a schedule so a failure loses hours, not everything, and access rights granted to individuals and groups decide which operations each user may perform - the clerk reads and books, the manager changes prices. One distinction to keep straight inside security: access rights control what a user may do, whereas a view controls what a user is shown - a subset of a table or a join presented as a table - so the pair answers two different questions, do and see. The two work together in practice: a nurse's account is granted the right to read the patient table, and the nurse's screen is built on a view of that table showing only the ward's patients - the right opens the door, and the view decides what is standing in it.",
+   "claim_ids": [
+    "CLM-9618-8.2-001",
+    "CLM-9618-8.2-002",
+    "CLM-9618-8.2-003",
+    "CLM-9618-8.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.2-001": 1,
+    "CLM-9618-8.2-002": 1,
+    "CLM-9618-8.2-003": 1,
+    "CLM-9618-8.2-004": 1
+   },
+   "authored_hash": "a037c7e75e4db447b84d8043d7014ac6ecf9435e8d49c7edca161c5a176a4a48"
+  },
+  {
+   "block_id": "8.2.1-b3",
+   "block_type": "definition",
+   "heading": "The tools inside: developer interface and query processor",
+   "text": "Two software tools inside the DBMS carry its work in practice. The developer interface is the developer's door into the DBMS: through it the developer creates and changes the database structure - tables, attributes, keys, constraints - and builds the forms, queries and reports the applications use. Because the interface is part of the DBMS, every change it makes is recorded in the data dictionary at once, so the description and the database stay one. The query processor is the DBMS's answering part: an application sends a query in the database language, the processor checks it, works out an efficient way to carry it out, and returns the result. The pair divides the labour cleanly: the developer interface shapes the database, and the query processor serves it - and neither is an IDE, the program-writing tool of 5.2, because both of these work on the database, not on a program's code. An hour with the two makes the division plain: the developer opens the interface to add a constraint, and the clerk's query a minute later is checked against the new rule by the processor, because the change made through the one was already recorded for the other to obey.",
+   "claim_ids": [
+    "CLM-9618-8.2-005",
+    "CLM-9618-8.2-006",
+    "CLM-9618-8.2-001"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.2-005": 1,
+    "CLM-9618-8.2-006": 1,
+    "CLM-9618-8.2-001": 1
+   },
+   "authored_hash": "09a57c71701c882d35cc3ccafad5f9625c9f4d317022b678b1127af18eb504f2"
+  },
+  {
+   "block_id": "8.2.1-b4",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "Two slips recur here. Treating access rights and views as one feature: access rights control which operations a user may perform, a view controls which data a user is shown - the test is whether it is about what the user can do or what the user can see. And describing an IDE for the developer interface: the developer interface is part of the DBMS and works on the database - structure, forms, queries, reports - whereas an IDE writes programs; the test is whether the tool is part of the DBMS, working on the database.",
+   "claim_ids": [
+    "CLM-9618-8.2-004",
+    "CLM-9618-8.2-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.2-004": 1,
+    "CLM-9618-8.2-005": 1
+   },
+   "authored_hash": "bfdac897f715efedf925c9f8e7d84fc610b9a1d22240a32bb72648c8b21288ff"
+  },
+  {
+   "block_id": "8.2.1-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The limitations these features answer are 8.1's, the tables they manage are normalised there, and the queries the processor serves are 8.3's SQL. The rights and backups here are 6.1's security at the database's own level.",
+   "claim_ids": [
+    "CLM-9618-8.2-003",
+    "CLM-9618-8.2-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.2-003": 1,
+    "CLM-9618-8.2-004": 1
+   },
+   "authored_hash": "9b095ce453ce4a5f438a2e3b1c9a3cbaf37eef042bc0c68e2e1ffcda53494f69"
+  }
+ ],
+ "word_count": 677,
+ "qa_status": "review_required",
+ "notes": []
+}

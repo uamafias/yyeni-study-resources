@@ -1,0 +1,151 @@
+{
+ "unit_id": "CU-9618-12.1.1",
+ "title": "The program development life cycle",
+ "objective_ids": [
+  "OBJ-9618-12.1.1-01",
+  "OBJ-9618-12.1.1-02",
+  "OBJ-9618-12.1.1-03",
+  "OBJ-9618-12.1.1-04"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_process",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 1100,
+  "target": 1340,
+  "max": 1580
+ },
+ "blocks": [
+  {
+   "block_id": "12.1.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "Why a development life cycle is needed; why different programs suit different cycles - waterfall, iterative, rapid application development; each cycle’s principles, benefits and drawbacks; and the analysis, design, coding, testing and maintenance stages.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {},
+   "authored_hash": "5f703ab410ba6c04bbc0b265f6779b44074d91dcaeed5ae72526c7c2355a147d"
+  },
+  {
+   "block_id": "12.1.1-b2",
+   "block_type": "definition",
+   "heading": "Why a life cycle is needed",
+   "text": "A program development life cycle is a managed sequence of stages - analysis, design, coding, testing and maintenance - and the need for it is the need for management. A program written without stages leaves each activity undone in the rush to the next: requirements never analysed show up later as a design that solves the wrong problem; a design never drawn shows up as code whose pieces do not fit; code never tested shows up in use, where every fault costs a user's evening; a program never maintained dies with its first needed change, because nobody knows where to change it. The cycle names each activity as a stage, gives each stage an output the next stage can work from, and makes each stage's completion visible before the next begins, so the program's progress is checked stage by stage - which is what management means here: the work is sequenced, and its state is known. The cycle also buys control: each stage has an owner, an output and an end, so the program's progress is reported in the currency managers can read - which stage, which output, what done means - and a late stage is visible as a late stage, not as a feeling that the program is taking long. That is the quiet second purpose of every cycle shape in the next section: whatever arrangement of stages a cycle chooses, it keeps the work legible to the people paying for it.",
+   "claim_ids": [
+    "CLM-9618-12.1-001",
+    "CLM-9618-12.1-002"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.1-001": 1,
+    "CLM-9618-12.1-002": 1
+   },
+   "authored_hash": "dcb07c3580057c4d9ef9fdb0df133df7a13bf9968b41ca8bae34bbbfc414bd2a"
+  },
+  {
+   "block_id": "12.1.1-b3",
+   "block_type": "definition",
+   "heading": "Different cycles for different programs",
+   "text": "Not every program deserves the same cycle, and the decider is the requirements. Where the requirements are fixed and knowable in advance - a payroll whose rules are set by statute and change once a year, a controller for a device whose behaviour is specified - the waterfall suits: the stages run once, each after the previous and each completed before the next begins, so the whole requirement is settled at the start and the program is delivered complete. Where the requirements are expected to change or to be discovered - a booking system whose users refine what they want as they see what they get - the waterfall's one pass is a trap, and the iterative cycle suits instead: the stages run in small repeated passes, each pass delivering a working part of the program, so the users' discoveries from one pass feed the next. Rapid application development compresses the cycle for urgent work: intensive user involvement throughout, a working prototype built quickly and reworked, and development tools that speed the building - trading long analysis for a fast first version that is allowed to be wrong about details. The comparison is the answer to the question 'why different cycles?' - and the comparison is what the answer must contain, because saying only that a cycle is useful answers a different question.",
+   "claim_ids": [
+    "CLM-9618-12.1-003",
+    "CLM-9618-12.1-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.1-003": 1,
+    "CLM-9618-12.1-004": 1
+   },
+   "authored_hash": "9495f8bf032640bdafcd74b90e0109947845cca7207e91b1a49c261dcc0c14ed"
+  },
+  {
+   "block_id": "12.1.1-b4",
+   "block_type": "evaluation",
+   "heading": "Benefits and drawbacks of each cycle",
+   "text": "Each cycle's benefit is the other's drawback, which is why the choice is a trade. The waterfall's benefit is its completeness: every requirement settled before design, every design before code, so the delivered program is documented, and the large fixed problem is solved in one coherent effort. Its drawback is the same coin seen from the other side: nothing works until late, so a wrong requirement discovered at testing has travelled through design and code already - a late fault in a waterfall is expensive. The iterative cycle's benefit is its working program early: users hold a part of the system in the first pass, so wrong requirements are discovered while they are cheap to fix, and change is the cycle's normal business. Its drawback is the mirror: the parts are integrated gradually, so the whole system's shape can drift, and a pass-by-pass development needs the discipline to revisit earlier work - documentation and time can be lost to the rhythm of passes. RAD's benefit is speed with the user in the room: the prototype is real, the feedback immediate. Its drawback is commitment: a project run this way demands the users' time for its whole length and a team and tools that can keep the pace, and the prototype-first habit can leave a program that works but is built on quick foundations that were never re-laid. A justified choice names the program's requirements, the users' availability and the deadline, and takes the cycle whose costs the situation can pay.",
+   "claim_ids": [
+    "CLM-9618-12.1-005"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.1-005": 1
+   },
+   "authored_hash": "8a821814447632440e2510a4f55d5fb1121c63e824dfe8e101c363285d374228"
+  },
+  {
+   "block_id": "12.1.1-b5",
+   "block_type": "process",
+   "heading": "The stages: analysis, design, coding, testing, maintenance",
+   "text": "The program's stages, in the order the waterfall shows them plainly. Analysis: state what the program must do. The problem's owners are interviewed, the current system is studied, and the requirements are written down as statements the program can be checked against - the output is the requirements document. Design: state how the program will do it. The data is designed first - the records and arrays of topics 10 and 11 - then the modules, their names, parameters and interfaces, and the algorithms each will run; the outputs are the designs that coding follows. Coding: write the program in a language, module by module against the design, with the identifiers named for their data. Testing: check the program against the requirements - the dry runs and test data of 12.3, from single modules to the whole system. Maintenance: keep the program working after delivery, and it takes its three named forms because programs are changed for three different reasons - corrective maintenance fixes faults the testing missed; adaptive maintenance adjusts the program to a changed environment, a new levy rate or a new operating system; perfective maintenance improves the program in response to new requirements from its users. Each stage's output is the next stage's input, which is why the stages are a cycle and not a list: the requirements drive the design, the design the code, the code the testing, and the documented program is what maintenance can change safely - and what analysis' output drives next time around.",
+   "claim_ids": [
+    "CLM-9618-12.1-006",
+    "CLM-9618-12.1-007",
+    "CLM-9618-12.1-008"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.1-006": 1,
+    "CLM-9618-12.1-007": 1,
+    "CLM-9618-12.1-008": 1
+   },
+   "authored_hash": "1583aeef488b9362cf8aa4ce6f772ed739c8e158549a927eb5ffd76fa0318155"
+  },
+  {
+   "block_id": "12.1.1-b6",
+   "block_type": "misconception",
+   "heading": "Common errors",
+   "text": "The recurring slip is answering the wrong question with a true sentence. Asked why different life cycles exist, a learner explains why a life cycle is useful - the stages, the checking, the management. The question was comparison, and the answer must compare: fixed requirements suit the waterfall, changing requirements suit the iterative cycle, urgent work with committed users suits RAD. The test: does the answer compare cycles? It must.",
+   "claim_ids": [
+    "CLM-9618-12.1-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.1-003": 1
+   },
+   "authored_hash": "eb38a452b8a307aacacfa00cf1b3ab371f76d683ec360331fa7e315645ae04dc"
+  },
+  {
+   "block_id": "12.1.1-b7",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The data and module designs of the design stage are topics 10 and 11's material; the testing stage is 12.3's whole subject, and the stage's tools - dry runs, trace tables, test data - live there; the structured English and stepwise refinement of 9.2 are the analysis stage's working tools; and 5.2's translators serve the coding stage, with the program's life in a language beginning there.",
+   "claim_ids": [
+    "CLM-9618-12.1-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-12.1-006": 1
+   },
+   "authored_hash": "cd4a85e4dee6d9387915132aed8ea4e52e6acfc35af552b91971c87635158312"
+  }
+ ],
+ "word_count": 1171,
+ "qa_status": "review_required",
+ "notes": []
+}

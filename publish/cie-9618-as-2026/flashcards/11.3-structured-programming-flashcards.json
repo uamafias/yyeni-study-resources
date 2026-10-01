@@ -1,0 +1,1458 @@
+{
+ "topic_number": "11.3",
+ "topic_title": "Structured Programming",
+ "topic": "11.3 Structured Programming",
+ "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
+ "item_count": 32,
+ "items": [
+  {
+   "item_id": "ITEM-9618-11.3-001-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode that defines a procedure ShowBill that takes the string CustomerName and the real AmountOwed, and outputs \"Amount owed: \" joined with the amount converted to a string.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ShowBill(CustomerName : STRING, AmountOwed : REAL)\n   OUTPUT CustomerName, \" \", \"Amount owed: \", NUM_TO_STR(AmountOwed)\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the header first, the output body, then ENDPROCEDURE - each statement is a mark point.",
+    "Input: the module starts from its two parameters, which are the given values it works on.",
+    "Each statement is a mark point: the header with both parameters and their types - 2 marks; the body converting the number before joining - 1 mark; ENDPROCEDURE closing - 1 mark.",
+    "Result: the end product is a closed module that takes its values as parameters and produces the output asked."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1
+   },
+   "authored_hash": "c80e4120b1dceed639103d49c0cd2ed865b34d656bd65f49a749ede223139f99",
+   "objective_titles": [
+    "Define and use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-002-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01",
+    "OBJ-9618-11.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A market stall’s program prints a receipt header - the stall name and the date - after every sale. Write the pseudocode that defines the procedure ReceiptHeader taking the string StallName, and write the statement that calls it for the stall \"Spices\".",
+   "canonical_answer": "```pseudocode\nPROCEDURE ReceiptHeader(StallName : STRING)\n   OUTPUT StallName\n   OUTPUT \"Date: \", TODAY()\nENDPROCEDURE\n\nCALL ReceiptHeader(\"Spices\")\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the definition first, then the call - each statement is a mark point.",
+    "Input: the module starts from its parameter, the given stall name.",
+    "Each statement is a mark point: the header with the parameter - 1 mark; the body outputting the name - 1 mark; ENDPROCEDURE closing - 1 mark; the CALL with the argument \"Spices\" - 1 mark.",
+    "Result: the end product is a header job written once and called by name, which is the procedure’s whole point."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-002": 1
+   },
+   "authored_hash": "6b18a968f18db52fb5e720b8bd21236f90e9d440d145055dc00250b901ab15b3",
+   "objective_titles": [
+    "Define and use a procedure",
+    "Explain where in the construction of an algorithm it would be appropriate to use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-003-APP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01",
+    "OBJ-9618-11.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A warehouse program must sound an overstock alarm - output \"Overstock\" - whenever any bay’s stock count exceeds 900. Write the pseudocode that defines the procedure OverstockAlarm taking the string BayName and the integer StockCount, and outputs the alarm only when the count exceeds 900.",
+   "canonical_answer": "```pseudocode\nPROCEDURE OverstockAlarm(BayName : STRING, StockCount : INTEGER)\n   IF StockCount > 900 THEN\n      OUTPUT \"Overstock \", BayName\n   ENDIF\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Context: this given warehouse rule with its two values - 1 mark for the header with both parameters.",
+    "Reason: because the alarm is an action, not a value, the module is a procedure that outputs inside its selection, so the body with its condition and the closing ENDPROCEDURE complete 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-002": 1
+   },
+   "authored_hash": "84d4244dcc76462ececa020a7c00d9729d931decb0bd82761e70015d3199c758",
+   "objective_titles": [
+    "Define and use a procedure",
+    "Explain where in the construction of an algorithm it would be appropriate to use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-004-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This procedure outputs a park gate’s fee message. It is written with four gaps. Complete the four missing entries.\n\n```pseudocode\n(a) GateFee(VehicleClass : STRING, Passengers : INTEGER)\n   IF VehicleClass = \"bus\" THEN\n      (b) \"Gate fee: \", Passengers * 10\n   ELSE\n      OUTPUT \"Gate fee: 50\"\n   (c)\n(d)\n```",
+   "canonical_answer": "(a) PROCEDURE. (b) OUTPUT. (c) ENDIF. (d) ENDPROCEDURE.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) PROCEDURE, (b) OUTPUT, (c) ENDIF, (d) ENDPROCEDURE.",
+    "Meaning: the completed program shows a closed module - the header naming the module and its parameter, the selection with both branches, and both closings in the right order - so the result is a procedure that acts rather than returns."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1
+   },
+   "authored_hash": "6654ea04e2b1acbf2e786ebb9193909c9cc518ac2952524cf09cd3327fd61337",
+   "objective_titles": [
+    "Define and use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-027-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner calls a function with CALL PriceOfCake(\"chocolate\") and assigns nothing. Explain the error.",
+   "canonical_answer": "A function is used in an expression, never after CALL: its call is replaced by the returned value, so the caller writes Fee <- PriceOfCake(\"chocolate\") and the value lands in Fee. CALL names a job for a procedure - a statement on its own - and assigning a procedure’s result is the mirror error, because a procedure returns no value to assign. The test: does the module return a value? Then it is a function, used in an expression and never called with CALL.",
+   "marking_guidance": [
+    "1 mark: the error named - the function has been called as a procedure, so its returned value goes nowhere.",
+    "1 mark: the correction with the test - a function’s call is used in an expression and its result assigned, because the call itself is a value that CALL cannot hold."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "83a727521a263b480e9b1cbf788e07ed4a9dd243d3283ec981ca423e94297c7c",
+   "misconception_entry": "MC-9618-11.3-03",
+   "objective_titles": [
+    "Define and use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-005-DEF",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State one situation in an algorithm’s construction where a procedure is the appropriate module.",
+   "canonical_answer": "The same job needed in several places: the receipt header printed after every sale is written once as a procedure and called by name wherever it is needed, because one module is maintained in one place.",
+   "marking_guidance": [
+    "1 mark: the meaning - a repeated job or a named step of a long program, with the reason it belongs in a module."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-002": 1
+   },
+   "authored_hash": "4139cd6b66ca96646d5b1f64b429fb4243c6d54f6d15245c3a2a16c58ba2e6e7",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it would be appropriate to use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-006-WHY",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-002"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a long payroll program is better constructed from procedures than as one sequence.",
+   "canonical_answer": "The long program decomposes into named steps - read the times, calculate the pay, print the slips - and each step as a procedure is small enough to write and check on its own, so the main program reads as the plan. A change to one step is a change to one module, because the steps are written separately, and two programmers can build two steps at once, because the modules are separate - which is why the construction uses procedures.",
+   "marking_guidance": [
+    "Reason: each step is a module small enough to check alone, and the main program reads as the plan - 1 mark.",
+    "Purpose: so a change lands in one module and work can be split, because the construction is already split - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-002": 1
+   },
+   "authored_hash": "ea35ad75686fb9d7cd2c210965de73a8beb02506756bfb589844a178b5277036",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it would be appropriate to use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-007-APP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-002",
+    "CLM-9618-11.3-001"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "A booking program outputs its cancellation policy after every booking, every change and every cancellation. Explain where in the construction a procedure belongs, and why there.",
+   "canonical_answer": "The policy output is the same job in three places, so it belongs in one procedure - OutputPolicy - called by name after the booking, the change and the cancellation. Written once, the policy is maintained in one place, so a change to the wording is a change to one module, because the three call sites share the one definition - which is the procedure’s place in the construction.",
+   "marking_guidance": [
+    "Context: this given program with its three call sites - 1 mark for the procedure named with its job.",
+    "Reason: because the job is identical in three places, one module carries it and three calls use it, so the maintenance lands in one place - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-002": 1,
+    "CLM-9618-11.3-001": 1
+   },
+   "authored_hash": "31e822fa7683407237c11b648847c26aa52e27fedf83944547dcca1eb1a26b71",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it would be appropriate to use a procedure"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-008-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode that defines a procedure ReportRainfall taking the string RegionName and the real Millimetres, and outputs the region name joined with the millimetres converted to a string; then write the call that reports \"Omaheke\" with 12.5 millimetres.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ReportRainfall(RegionName : STRING, Millimetres : REAL)\n   OUTPUT RegionName, \" \", NUM_TO_STR(Millimetres), \" mm\"\nENDPROCEDURE\n\nCALL ReportRainfall(\"Omaheke\", 12.5)\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - definition first, then the call - each statement is a mark point.",
+    "Input: the module takes its values through its two parameters, and the call supplies the arguments.",
+    "Each statement is a mark point: the header with both parameters - 2 marks; the body converting before joining - 1 mark; the CALL with both arguments in order - 1 mark.",
+    "Result: the end product is a closed module and a call whose arguments match the parameters in order and type."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-003": 1
+   },
+   "authored_hash": "128da406ccd2b9a2c29ce3983ab9eaa5c22368c64da48774e7322312fbee24ea",
+   "objective_titles": [
+    "Use parameters"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-009-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-003",
+    "CLM-9618-11.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode that defines a procedure DoubleIt that takes the integer Num by reference, doubles it, and leaves the doubled value in the caller’s variable; then write the statement that calls it for the variable Tickets.",
+   "canonical_answer": "```pseudocode\nPROCEDURE DoubleIt(Num : INTEGER) [BY REFERENCE]\n   Num <- Num * 2\nENDPROCEDURE\n\nCALL DoubleIt(Tickets)\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the header with its reference parameter, the body, the ending, then the call - each statement is a mark point.",
+    "Input: the module works on the caller’s own variable, which is what by reference means.",
+    "Each statement is a mark point: the parameter marked by reference - 2 marks; the body doubling the parameter - 1 mark; the CALL with the variable - 1 mark.",
+    "Result: the end product is the caller’s variable doubled through the call, because the reference gave the module the variable itself."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-003": 1,
+    "CLM-9618-11.3-004": 1
+   },
+   "authored_hash": "5f0c77c0fa9f72be7799e39ea4ae5cdda931c0b63e841da68925d9ea3b01390a",
+   "objective_titles": [
+    "Use parameters"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-010-APP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-003",
+    "CLM-9618-11.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A program’s variable Price holds 49.50. Write the pseudocode that defines a procedure ApplyDiscount that takes the real Amount by value and outputs the amount after 10 percent off - without changing the caller’s Price - then write the call for Price.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ApplyDiscount(Amount : REAL)\n   OUTPUT Amount * 0.9\nENDPROCEDURE\n\nCALL ApplyDiscount(Price)\n```",
+   "marking_guidance": [
+    "Context: this given Price and the given discount job - 1 mark for the by-value parameter in the header.",
+    "Reason: because a by-value parameter is a copy, the body’s arithmetic leaves the caller’s Price at 49.50, so the output-only body and the CALL complete 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-003": 1,
+    "CLM-9618-11.3-004": 1
+   },
+   "authored_hash": "4ab7081263c3fd20b4a3728febbe2f32eb0dbe7201ed5b283932cf27d6151786",
+   "objective_titles": [
+    "Use parameters"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-011-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-003",
+    "CLM-9618-11.3-004"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This program passes values to a procedure. Complete the four missing entries, where the caller’s FuelLitres must stay unchanged and the caller’s TotalLitres must receive the module’s answer.\n\n```pseudocode\nPROCEDURE AddFuel(FuelLitres : REAL, TotalLitres : REAL) [(a)]\n   (b) <- TotalLitres + FuelLitres\nENDPROCEDURE\n\nDECLARE FuelLitres : REAL\nDECLARE TotalLitres : REAL\nTotalLitres <- 0\nINPUT FuelLitres\n(c) AddFuel(FuelLitres, (d))\n```",
+   "canonical_answer": "(a) - TotalLitres is the reference parameter, FuelLitres the value parameter. (b) TotalLitres. (c) CALL. (d) TotalLitres.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) TotalLitres by reference while FuelLitres passes by value, (b) TotalLitres, (c) CALL, (d) TotalLitres.",
+    "Meaning: the completed program shows the answer coming back through the reference parameter and the fuel staying with the caller, so the result is a filled TotalLitres and an unchanged FuelLitres."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-003": 1,
+    "CLM-9618-11.3-004": 1
+   },
+   "authored_hash": "e5fe61b458c8df41b010d7cbd81fbf7545530e0e5799f55699828d1dfb475aff",
+   "objective_titles": [
+    "Use parameters"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-026-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-003"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner writes a procedure ReportSale(StallName : STRING) whose body begins with INPUT StallName. Explain the error.",
+   "canonical_answer": "The value arrives as the parameter, so the INPUT asks again for a value the header already holds - the call supplies StallName, and the module’s job is to work on what it was given. The body needs no INPUT: it uses StallName as it is. The test: look at the header - every parameter is already a value, so a module takes its values through its parameters and never by INPUT inside it.",
+   "marking_guidance": [
+    "1 mark: the error named - the module inputs a value its parameter already carries, doubling the entry.",
+    "1 mark: the correction with the test - the header’s parameters are the values, because the call supplies them."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-003": 1
+   },
+   "authored_hash": "20f03a1fbe47022804ba3e21fb4438e178281593e08c288715ab0c09ea78f005",
+   "misconception_entry": "MC-9618-11.3-02",
+   "objective_titles": [
+    "Use parameters"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-012-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode that defines a function CircleArea that takes the real Radius and returns the area, 3.14159 times the radius squared; then write the statement that stores the area for the radius 2.5 in the variable RoofArea.",
+   "canonical_answer": "```pseudocode\nFUNCTION CircleArea(Radius : REAL) RETURNS REAL\n   DECLARE Area : REAL\n   Area <- 3.14159 * Radius * Radius\n   RETURN Area\nENDFUNCTION\n\nRoofArea <- CircleArea(2.5)\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the function definition first, then the use in an expression - each statement is a mark point.",
+    "Input: the function takes its value through its parameter and returns its answer through its name.",
+    "Each statement is a mark point: the header with RETURNS REAL - 1 mark; the declaration and computation - 1 mark; RETURN Area - 1 mark; the use assigned to RoofArea, never called - 1 mark.",
+    "Result: the end product is a value returned to the caller’s expression, which is a function’s whole shape."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "1003ccbab7b80f7650cc3092997671d15de37120526ba4698a3ec0197717c338",
+   "objective_titles": [
+    "Define and use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-013-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "Write the pseudocode that defines a function Larger that takes the two integers First and Second and returns the larger of them (either one when they are equal); then write the statement that puts the larger of Members and Guests into the variable HeadCount.",
+   "canonical_answer": "```pseudocode\nFUNCTION Larger(First : INTEGER, Second : INTEGER) RETURNS INTEGER\n   IF First >= Second THEN\n      RETURN First\n   ELSE\n      RETURN Second\n   ENDIF\nENDFUNCTION\n\nHeadCount <- Larger(Members, Guests)\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the function with its selection, then the use - each statement is a mark point.",
+    "Input: the function takes its two values as parameters and returns one of them.",
+    "Each statement is a mark point: the header with both parameters and RETURNS - 1 mark; the selection with both branches - 1 mark; the RETURN in each branch - 1 mark; the use assigned, never called - 1 mark.",
+    "Result: the end product is the larger value in the caller’s variable, because each branch returns the branch’s answer."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "0c663864cdb8235f1d2c926c57a9f9c665d34195fce391af85ca93f487f2fc61",
+   "objective_titles": [
+    "Define and use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-014-APP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005",
+    "CLM-9618-11.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A courier charges 45 dollars per parcel up to 5 kilograms, and 65 dollars per parcel above that. Write the pseudocode that defines a function ParcelFee taking the real Weight and returning the fee, and the statement that stores the fee for a 4-kilogram parcel in the variable Fee.",
+   "canonical_answer": "```pseudocode\nFUNCTION ParcelFee(Weight : REAL) RETURNS REAL\n   IF Weight <= 5 THEN\n      RETURN 45\n   ELSE\n      RETURN 65\n   ENDIF\nENDFUNCTION\n\nFee <- ParcelFee(4)\n```",
+   "marking_guidance": [
+    "Context: this given courier rule with its two rates - 1 mark for the header with the parameter and RETURNS REAL.",
+    "Reason: because the fee is a value the caller uses, the body returns one of the two rates from its selection’s branches, so the assigned use completes 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1,
+    "CLM-9618-11.3-006": 1
+   },
+   "authored_hash": "c9408b5640a9d91353bc0fd98cd9fe12a5ae530ec7aa5e30d868727976f27944",
+   "objective_titles": [
+    "Define and use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-015-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This function halves a stall’s price for a sale. It is written with four gaps. Complete the four missing entries.\n\n```pseudocode\n(a) SalePrice(OriginalPrice : REAL) RETURNS (b)\n   DECLARE Half : REAL\n   Half <- OriginalPrice / 2\n   (c) Half\n(d)\nDECLARE Ticket : REAL\nTicket <- SalePrice(80)\n```",
+   "canonical_answer": "(a) FUNCTION. (b) REAL. (c) RETURN. (d) ENDFUNCTION.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) FUNCTION, (b) REAL, (c) RETURN, (d) ENDFUNCTION.",
+    "Meaning: the completed program shows the value returned to the caller’s expression and assigned to Ticket, so the result is 40 in Ticket, because the call was replaced by the return value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "ec7105f9cf296a1f367b4cefe2d5fe9516bb2bf86b0fcae7f1f69528292b8312",
+   "objective_titles": [
+    "Define and use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-025-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner’s function doubles a number but the body ends with OUTPUT Doubled instead of RETURN. Explain the error.",
+   "canonical_answer": "OUTPUT displays the value to the screen, which does the caller no good: the caller’s expression receives nothing, so the assignment stores no value. The function must RETURN the value, because RETURN hands it back to the caller’s expression - the caller needs the value, so the module returns it. The test: does the calling code need the value? Then RETURN.",
+   "marking_guidance": [
+    "1 mark: the error named - the value has been displayed instead of handed back, so the caller receives nothing.",
+    "1 mark: the correction with the test - RETURN sends the value to the caller’s expression, because the calling code needs the value to assign or test."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "e1379612008cb67152f731857d7c94e145afbb47fc12ddc62df04dfef812fcd1",
+   "misconception_entry": "MC-9618-11.3-01",
+   "objective_titles": [
+    "Define and use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-016-DEF",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-006"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what makes a step in an algorithm’s construction a function’s job rather than a procedure’s.",
+   "canonical_answer": "A step that computes a value the next step uses: the fee for a weight, the average of an array - the answer belongs where it can be used, so the module returns it to the caller’s expression.",
+   "marking_guidance": [
+    "1 mark: the meaning - a computed value used by the caller, because the call itself carries the value back."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-006": 1
+   },
+   "authored_hash": "60cf9b872d2653f4b890f7caf1cfad9effd0455c1946934fe2eecd418f092175",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it is appropriate to use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-017-WHY",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-006",
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "WHY",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 2,
+   "prompt": "Explain why a program that tests a computed fee is better constructed with a function than with a procedure that outputs the fee.",
+   "canonical_answer": "The test needs the value, so the module must hand it back: a function’s call is replaced by the returned value, so the test writes IF ParcelFee(Weight) > 50 THEN and the answer sits inside the condition. A procedure that outputs the fee puts it on the screen and gives the test nothing, because OUTPUT goes to the screen and the condition receives no value - the value belongs in the caller’s expression, which is what RETURN is for.",
+   "marking_guidance": [
+    "Reason: the caller’s test needs the value, so the module must return it - 1 mark.",
+    "Purpose: so the call sits inside the condition holding the value, because a displayed fee is nothing to test - 1 mark."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-006": 1,
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "d0efc199445b0f32c75b5cc33a890d2df2aa0672df9c3b9bc863bc5cab8f1f1c",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it is appropriate to use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-018-APP",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-006",
+    "CLM-9618-11.3-005"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A bakery’s program must state whether a batch’s yield beats the record: write the pseudocode that defines a function YieldMargin taking the two integers ThisBatch and RecordBatch and returning the difference ThisBatch minus RecordBatch, then write the IF line that outputs \"New record\" when the margin is positive.",
+   "canonical_answer": "```pseudocode\nFUNCTION YieldMargin(ThisBatch : INTEGER, RecordBatch : INTEGER) RETURNS INTEGER\n   RETURN ThisBatch - RecordBatch\nENDFUNCTION\n\nIF YieldMargin(ThisBatch, RecordBatch) > 0 THEN\n   OUTPUT \"New record\"\nENDIF\n```",
+   "marking_guidance": [
+    "Context: this given yield rule with its two values - 1 mark for the function header with RETURNS INTEGER.",
+    "Reason: because the test needs the value, the function’s call sits inside the IF’s condition, so the RETURN inside the body and the testing use complete 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-006": 1,
+    "CLM-9618-11.3-005": 1
+   },
+   "authored_hash": "98f89ee70d6396ba46afdb03bb2839d09757e712d91da51d7e365afee8218a70",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it is appropriate to use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-019-DEF",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "DEF",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "State",
+   "mark_tariff": 1,
+   "difficulty": 2,
+   "prompt": "State what a module’s interface is.",
+   "canonical_answer": "What the caller works from: the header - the module’s name, its parameters, and for a function the return type - plus what the module does, which is the deal the caller relies on.",
+   "marking_guidance": [
+    "1 mark: the meaning - the header plus what the module does, the deal between caller and module."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-007": 1
+   },
+   "authored_hash": "bd8693d3844cdfb7e45c6ae99949f4eb969890750af4fa81ab35ec2d53aa6b89",
+   "objective_titles": [
+    "Use the terminology associated with procedures and functions"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-020-FEATURE",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-007"
+   ],
+   "item_type": "flashcard",
+   "subtype": "FEATURE",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Remember",
+   "command_word": "Describe",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "Describe the terms parameter, argument and return value, with one example of each.",
+   "canonical_answer": "A parameter is a variable named in a module’s header: Weight in ParcelFee(Weight : REAL). An argument is the value the caller passes in the call: 4 in ParcelFee(4). A return value is what a function hands back with RETURN: the 45 that ParcelFee(4) returns, which replaces the call in the caller’s expression.",
+   "marking_guidance": [
+    "Features: three terms as three points, 1 mark per two named with an example - the parameter in the header, the argument in the call, the return value replacing the call."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-007": 1
+   },
+   "authored_hash": "95257299e16d16cd71460076d3c5a3430941e886b6c426cde57b52acd12d0fa3",
+   "objective_titles": [
+    "Use the terminology associated with procedures and functions"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-028-MISCON",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-02"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-008"
+   ],
+   "item_type": "flashcard",
+   "subtype": "MISCON",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Understand",
+   "command_word": "Explain",
+   "mark_tariff": 2,
+   "difficulty": 3,
+   "prompt": "A learner declares a variable Length and a module CHAR. Explain both errors.",
+   "canonical_answer": "Both names are the language’s own: LENGTH is a built-in function of the insert, so a variable named Length collides with it, and CHAR is a data type, so a module named CHAR collides with the type’s name. An identifier may not be a keyword, a data type or a built-in function name, because those words are taken. The test: is the name in the insert or a data type? Choose another.",
+   "marking_guidance": [
+    "1 mark: the error named - the insert’s function name and a data type name have both been used as identifiers.",
+    "1 mark: the correction with the test - check the name against the insert and the data types, because those words belong to the language."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-008": 1
+   },
+   "authored_hash": "e0bb0b4194043cda870fdb4bdbe820196027f20b3bd7ab1aba1116ca7f22d12c",
+   "misconception_entry": "MC-9618-11.3-04",
+   "objective_titles": [
+    "Use the terminology associated with procedures and functions"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-021-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A program must output \"Evening\" for each of the 7 days’ duty rosters that is marked as evening, and \"Day\" for each that is not. The rosters are in the array EveningRoster of 7 BOOLEAN values, index 1 to 7. Write efficient pseudocode: one loop, one selection, no repeated blocks.",
+   "canonical_answer": "```pseudocode\nDECLARE Day : INTEGER\nFOR Day <- 1 TO 7\n   IF EveningRoster[Day] = TRUE THEN\n      OUTPUT \"Evening\"\n   ELSE\n      OUTPUT \"Day\"\n   ENDIF\nNEXT Day\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the loop, then the selection inside it - each statement is a mark point.",
+    "Input: the program works over the given array with one loop, stating the repetition’s shape once.",
+    "Each statement is a mark point: the loop over the bounds - 2 marks; the selection with both branches - 1 mark; the array element by index inside the selection - 1 mark.",
+    "Result: the end product is the repetition written once, not seven copies, because the loop is the efficient form of a repetition."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-009": 1
+   },
+   "authored_hash": "c62fa8b96ce7e188e3815bfa0887cfca815e0ef61e57a65b3e9903ac5f37585c",
+   "objective_titles": [
+    "Write efficient pseudocode"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-022-PROC",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "PROC",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "A program must output the words \"Over\", \"Due\", \"Notice\" joined together, then output the message again with an exclamation mark - and this double output is needed after each of the 6 overdue checks in a loop. Write efficient pseudocode using one procedure called twice from the loop, not repeated OUTPUT blocks.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ShowNotice()\n   OUTPUT \"Over\", \"Due\", \"Notice\"\n   OUTPUT \"Over\", \"Due\", \"Notice\", \"!\"\nENDPROCEDURE\n\nDECLARE Check : INTEGER\nFOR Check <- 1 TO 6\n   CALL ShowNotice()\nNEXT Check\n```",
+   "marking_guidance": [
+    "Order: the steps in sequence - the procedure defined once, then the loop calling it - each statement is a mark point.",
+    "Input: the job is written once and called by name wherever it is needed, which is the efficiency.",
+    "Each statement is a mark point: the procedure with its header and ENDPROCEDURE - 2 marks; the loop over the six checks - 1 mark; the CALL inside the loop - 1 mark.",
+    "Result: the end product is the job once and twelve outputs, because the repetition of a job is a call, not a copy."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-009": 1
+   },
+   "authored_hash": "f5bd44d6ad70968f23d4c623b1df3ea47e79e221618f64ae96fb0c939551ce92",
+   "objective_titles": [
+    "Write efficient pseudocode"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-023-APP",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "APP",
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Write",
+   "mark_tariff": 3,
+   "difficulty": 3,
+   "prompt": "A program computes LENGTH(CustomerName) three times: in a test, in an assignment and in an output. Rewrite the statements efficiently: compute the length once, store it, and use the stored value in all three places.",
+   "canonical_answer": "```pseudocode\nDECLARE NameLength : INTEGER\nNameLength <- LENGTH(CustomerName)\nIF NameLength > 20 THEN\n   OUTPUT \"Long name\"\nENDIF\nOUTPUT NameLength\n```",
+   "marking_guidance": [
+    "Context: this given triple computation and its one value - 1 mark for the single computation stored once.",
+    "Reason: because the word did not change in between, the stored value serves all three uses, so the test and the output using NameLength complete 1 mark each - 3 marks."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-009": 1
+   },
+   "authored_hash": "3073ec00cd5a646218f761d070759e1093ec05fdb7c4c2ef5f7ec0cea4f65654",
+   "objective_titles": [
+    "Write efficient pseudocode"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-024-INTERP",
+   "objective_ids": [
+    "OBJ-9618-11.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-009"
+   ],
+   "item_type": "flashcard",
+   "subtype": "INTERP",
+   "assessment_objectives": [
+    "AO2"
+   ],
+   "blooms_level": "Analyse",
+   "command_word": "Complete",
+   "mark_tariff": 4,
+   "difficulty": 3,
+   "prompt": "This program was written inefficiently and is being rewritten. Complete the four missing entries that make the loop replace the four repeated blocks and the single computation replace the four additions.\n\n```pseudocode\nDECLARE Day : INTEGER\nDECLARE WeekTotal : INTEGER\n(a) <- 0\nFOR Day <- 1 TO 4\n   WeekTotal <- WeekTotal + (b)\nNEXT (c)\nOUTPUT (d)\n```",
+   "canonical_answer": "(a) WeekTotal. (b) Takings[Day]. (c) Day. (d) WeekTotal.",
+   "marking_guidance": [
+    "Trace: 1 mark per correct value in each row - (a) WeekTotal, (b) Takings[Day], (c) Day, (d) WeekTotal.",
+    "Meaning: the completed program shows the four additions replaced by one loop body and the repetition stated once, so the result is the same total with a quarter of the writing."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": null,
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-009": 1
+   },
+   "authored_hash": "bb85322b8e038257431bc176104de7a7ff1d22440bc73d72ad158f55e622c79c",
+   "objective_titles": [
+    "Write efficient pseudocode"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-P01",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-01",
+    "OBJ-9618-11.3.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-003"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A bus service names its routes and reports its loads. Write pseudocode for a procedure ReportLoad that takes the string RouteName and the integer PassengersOnBoard, and outputs the route name joined with the count converted to a string and the word \" aboard\" - and then write the two statements that call it for \"Katima - Rundu\" with 34 aboard and \"Tsumeb - Ondangwa\" with 51 aboard.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ReportLoad(RouteName : STRING, PassengersOnBoard : INTEGER)\n   OUTPUT RouteName, \" \", NUM_TO_STR(PassengersOnBoard), \" aboard\"\nENDPROCEDURE\n\nCALL ReportLoad(\"Katima - Rundu\", 34)\nCALL ReportLoad(\"Tsumeb - Ondangwa\", 51)\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE.",
+    "Mark point 2: no declaration and no loop needed - the module works on its parameters alone, its values arriving through them, with no INPUT inside, because the two reports are two calls and not a repetition.",
+    "Mark point 3: the conversion of the count with NUM_TO_STR before the join, because a number joins only as a string. Mark point 4: the parts joined with commas in one OUTPUT.",
+    "Mark point 5: the first CALL with both arguments in parameter order, \"Katima - Rundu\" and 34. Mark point 6: the second CALL with its two arguments.",
+    "Mark point 7: both calls as statements on their own - CALL names the job, which is the procedure’s use. Mark point 8: the module complete and closed - one definition, two calls, because the repeated job is written once."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A bus service load reported route by route.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-003": 1
+   },
+   "authored_hash": "1a529a12a902bf3edc696ad2240dfa0fe5bd7cb6e45e36177ab5c8534f12c2e5",
+   "objective_titles": [
+    "Define and use a procedure",
+    "Use parameters"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-P02",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04",
+    "OBJ-9618-11.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005",
+    "CLM-9618-11.3-006"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A craft market charges its stalls: the fee for a stall is 60 dollars for a front-row stall and 90 dollars for any other. Write pseudocode for a function StallFee that takes the string StallRow and returns the fee; then write the two statements that store the fees for a front-row stall and a back-row stall in the variables FrontFee and BackFee.",
+   "canonical_answer": "```pseudocode\nFUNCTION StallFee(StallRow : STRING) RETURNS REAL\n   IF StallRow = \"front\" THEN\n      RETURN 60\n   ELSE\n      RETURN 90\n   ENDIF\nENDFUNCTION\n\nFrontFee <- StallFee(\"front\")\nBackFee <- StallFee(\"back\")\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the parameter and RETURNS REAL, and ENDFUNCTION. Mark point 2: no declaration needed, because each branch returns a literal value.",
+    "Mark point 3: the selection IF ... THEN ... ELSE ... ENDIF with both branches, matching the two-row rule. Mark point 4: the condition StallRow = \"front\", a complete comparison.",
+    "Mark point 5: the RETURN in the THEN branch, 60 for the front row. Mark point 6: the RETURN in the ELSE branch, 90 for every other row.",
+    "Mark point 7: the function used in expressions - each call assigned, never following CALL, because the call is a value. Mark point 8: the arguments match the parameter in type and order, and the two stored fees are the result."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A craft market stall fee by row.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1,
+    "CLM-9618-11.3-006": 1
+   },
+   "authored_hash": "95d10311813fd11c2f9d3c6e18b3964c14be4b051cb5d329d3b2295de314a518",
+   "objective_titles": [
+    "Define and use a function",
+    "Explain where in the construction of an algorithm it is appropriate to use a function"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-P03",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03",
+    "OBJ-9618-11.3.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-004",
+    "CLM-9618-11.3-009"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A savings club’s program must add a member’s weekly deposit to the club’s running total and report the new total after each deposit. Write pseudocode for a procedure Deposit that takes the real Amount by value and the real ClubTotal by reference, adds the amount to the total, and outputs the new total; then write the statements that initialise the club total to 0 and call Deposit for the amounts 25.50 and 40.00.",
+   "canonical_answer": "```pseudocode\nPROCEDURE Deposit(Amount : REAL, ClubTotal : REAL) [ClubTotal BY REFERENCE]\n   ClubTotal <- ClubTotal + Amount\n   OUTPUT ClubTotal\nENDPROCEDURE\n\nDECLARE ClubTotal : REAL\nClubTotal <- 0\nCALL Deposit(25.50, ClubTotal)\nCALL Deposit(40.00, ClubTotal)\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: ClubTotal marked as the reference parameter, because the caller’s variable must receive the addition.",
+    "Mark point 3: the declaration and initialisation of ClubTotal to 0 in the caller, before any deposit. Mark point 4: the body adding Amount to ClubTotal through the reference.",
+    "Mark point 5: the output of the new total after each addition, inside the module. Mark point 6: the amount parameter taken by value, so the caller’s argument is only read.",
+    "Mark point 7: the two CALLs with their arguments in parameter order - no loop, because two calls are two events and not a repetition. Mark point 8: the result visible outside - the caller’s ClubTotal holds 65.50 after the second call, because the reference carried the change back."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A savings club total carried by a reference parameter.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-004": 1,
+    "CLM-9618-11.3-009": 1
+   },
+   "authored_hash": "574ddddaa74bb2bb3f57ba2a9fc3ec5a7843dd4039717e7543a5f9843b4095eb",
+   "objective_titles": [
+    "Use parameters",
+    "Write efficient pseudocode"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.3-P04",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-02",
+    "OBJ-9618-11.3.2-02",
+    "OBJ-9618-11.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-001",
+    "CLM-9618-11.3-005",
+    "CLM-9618-11.3-006",
+    "CLM-9618-11.3-007"
+   ],
+   "item_type": "short_answer",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO2",
+    "AO3"
+   ],
+   "blooms_level": "Apply",
+   "command_word": "Explain",
+   "mark_tariff": 6,
+   "difficulty": 3,
+   "prompt": "A lodge’s program has four jobs: (i) print the checkout slip, (ii) compute the bill for the nights stayed, (iii) greet each guest by name, (iv) test whether the bill exceeds the deposit paid.\n(a) For each job, state whether a procedure or a function is the appropriate module, with the reason. [4]\n(b) For job (ii), name the term for the nights stayed in the header and the term for the value the caller passes in the call. [2]",
+   "canonical_answer": "(a) (i) Procedure: printing is an action that ends with no value, so the module does it. (ii) Function: the bill is a value the caller stores or tests, so the module returns it. (iii) Procedure: the greeting is shown, not handed back, so the module outputs it. (iv) Function: the test needs the bill’s value in its condition, and the module from (ii) supplies it in the caller’s expression.\n(b) The nights stayed in the header is a parameter; the value the caller passes in the call is an argument - 3 nights, say, passed to the parameter NightsStayed.",
+   "marking_guidance": [
+    "Part (a): the context of this lodge’s four jobs - the state of each - 4 marks, 1 per point: each module type named with its reason - action against value.",
+    "Part (b): the two terms named - 2 marks, 1 per point: the parameter in the header, the argument in the call."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge’s four jobs sorted into procedures and functions.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for 9618 AS from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-001": 1,
+    "CLM-9618-11.3-005": 1,
+    "CLM-9618-11.3-006": 1,
+    "CLM-9618-11.3-007": 1
+   },
+   "authored_hash": "e714711b4bb9d3a0d69a53eee65a4b42364aff3ab1d462239bae38e387d6fb86",
+   "objective_titles": [
+    "Explain where in the construction of an algorithm it would be appropriate to use a procedure",
+    "Use the terminology associated with procedures and functions",
+    "Explain where in the construction of an algorithm it is appropriate to use a function"
+   ]
+  }
+ ]
+}

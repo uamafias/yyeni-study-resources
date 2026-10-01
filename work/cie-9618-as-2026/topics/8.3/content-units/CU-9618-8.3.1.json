@@ -1,0 +1,125 @@
+{
+ "unit_id": "CU-9618-8.3.1",
+ "title": "DDL, DML and the standard they share",
+ "objective_ids": [
+  "OBJ-9618-8.3.1-01",
+  "OBJ-9618-8.3.1-02",
+  "OBJ-9618-8.3.1-03"
+ ],
+ "level": "AS Level",
+ "core_status": "core",
+ "objective_type": "cs_concept",
+ "depth_tier": 2,
+ "word_budget": {
+  "min": 822,
+  "target": 999,
+  "max": 1176
+ },
+ "blocks": [
+  {
+   "block_id": "CU-9618-8.3.1-b1",
+   "block_type": "learner_objective",
+   "heading": "What this section covers",
+   "text": "The DDL, the DML, and SQL as the industry standard for both; reading a given SQL statement.",
+   "claim_ids": [],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {},
+   "authored_hash": "ef2271d5b9eb3b4489b35620f72fb424a6249b150ac4f1bcfd7436c140c89618"
+  },
+  {
+   "block_id": "CU-9618-8.3.1-b2",
+   "block_type": "definition",
+   "heading": "DDL and DML",
+   "text": "A database's work divides into two halves, and a language serves each. The Data Definition Language (DDL) serves structure: its statements create the database, create tables with their attributes and data types, add primary keys and foreign keys, and change table definitions - and the DBMS carries out every change, because the structure is the DBMS's own to hold: a table created outside the DBMS would leave its data dictionary describing a table that does not exist, so every creation and modification goes through the DBMS, which makes the change and records it in the same act. The Data Manipulation Language (DML) serves data: its statements select records with queries, insert new records, update values and delete records - and the DBMS carries out every one, checking each against the structure it knows: the right tables and attributes, the data types, the key rules, so a query against a mistyped attribute is refused rather than returning nonsense, and an update that breaks a key rule is refused rather than corrupting the data. The two halves never swap jobs: a new attribute changes what the boxes are (DDL), a new customer changes what is in them (DML), and the test in each case is structure or data. Two quick examples set the boundary in memory: 'add a MobilePhone column to PATIENT' names a structure change, so it goes to ALTER TABLE; 'set the clinic’s afternoon fees to 60' names a data change, so it goes to UPDATE - the same wording trick serves on any statement, because asking what the statement leaves behind (a new column, a changed value) names the half it belongs to.",
+   "claim_ids": [
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-002",
+    "CLM-9618-8.3-003",
+    "CLM-9618-8.3-004"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-002": 1,
+    "CLM-9618-8.3-003": 1,
+    "CLM-9618-8.3-004": 1
+   },
+   "authored_hash": "b948a43f8373b906e5fa84c1bde2c4fc372396960d391bc14b5e1c7eb4f701e2"
+  },
+  {
+   "block_id": "CU-9618-8.3.1-b3",
+   "block_type": "definition",
+   "heading": "SQL: the industry standard",
+   "text": "Structured Query Language (SQL) is the industry standard for both halves: the same language defines the structure with CREATE and ALTER, and queries and modifies the data with SELECT, INSERT, UPDATE and DELETE. What a standard buys is shareability. A query written against one DBMS that accepts the standard can be carried to another, and skills learned on one system transfer to all of them, because the standard fixes the statements' forms - the same clauses, in the same order, whatever the system. A clerk who learned SQL at a bank writes the school's queries the same way, and what that clerk learns afresh is this database - its tables and attributes - not a new dialect, because the language is the shared part and the schema is the local part. The history explains the standing: databases grew up with rival private languages, and every system demanded its own training and its own rewrites, until SQL's published forms made the database's work shareable the way shared screw threads made parts interchangeable - so the standard is not a convenience but the industry's common ground. The two halves of SQL mirror the two halves of the work: the DDL half defines, the DML half works, and both are sent to the same DBMS, which is why one language and one manager serve a database's whole life.",
+   "claim_ids": [
+    "CLM-9618-8.3-005",
+    "CLM-9618-8.3-006"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1,
+    "CLM-9618-8.3-006": 1
+   },
+   "authored_hash": "df42738cecebe1e0c16b700c71c8634d523a1d646dc4677d13cffb6921d435a7"
+  },
+  {
+   "block_id": "CU-9618-8.3.1-b4",
+   "block_type": "worked_application",
+   "heading": "Worked example: reading a given SQL statement",
+   "text": "Reading SQL is reading clauses in order, and one query shows the whole route. Take a newsagent's table SALE(NewsagentID, Town, PapersSold, Day) and the query:\n\n```sql\nSELECT Town, SUM(PapersSold)\nFROM SALE\nWHERE Day = '2026-09-28'\nGROUP BY Town;\n```\n\nRead it line by line. SELECT Town, SUM(PapersSold): the result will show one row per town, with the total of that town's PapersSold values. FROM SALE: the data comes from the SALE table. WHERE Day = '2026-09-28': only the rows for that day are kept - and note the quotation marks, because a date literal is written as a string. GROUP BY Town: the kept rows are grouped by town, so SUM totals each group. Put together: each town's total papers sold on 28 September 2026. A second example, from the defining half:\n\n```sql\nCREATE TABLE SALE (\n   NewsagentID INTEGER,\n   Town VARCHAR(20),\n   PapersSold INTEGER,\n   Day DATE,\n   PRIMARY KEY (NewsagentID, Day)\n);\n```\n\nRead it the same way: a table named SALE, four attributes with their types - whole numbers, a string of up to 20 characters, whole numbers, a date - and a primary key made of two attributes together, because one newsagent sells on many days and each day's row is named by both. Every SQL statement in this course reads like this: clauses in order, each clause saying one thing. A reading habit to carry: cover the statement's lines below the first and ask what the first line promises - SELECT names what will come back, CREATE names what will exist afterwards - then read each next line as a refinement of that promise, because every clause narrows what the one before it set out, and a statement is understood when the last clause's effect can be said in one sentence.",
+   "claim_ids": [
+    "CLM-9618-8.3-005",
+    "CLM-9618-8.3-006",
+    "CLM-9618-8.3-004",
+    "CLM-9618-8.3-007",
+    "CLM-9618-8.3-011"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1",
+    "AO2"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-005": 1,
+    "CLM-9618-8.3-006": 1,
+    "CLM-9618-8.3-004": 1,
+    "CLM-9618-8.3-007": 1,
+    "CLM-9618-8.3-011": 1
+   },
+   "authored_hash": "c0e6077f9d0340c874dafea70743dc9afcf49d4cf364c1ef0ca29f7e7b631310"
+  },
+  {
+   "block_id": "CU-9618-8.3.1-b5",
+   "block_type": "cross_link",
+   "heading": "Where this connects",
+   "text": "The structure these statements define is 8.1's normalised design, and the DBMS that carries them out is 8.2's. The queries' joins walk 8.1's foreign keys, and the data they return feeds the files and records of 10 and the programs of 11.",
+   "claim_ids": [
+    "CLM-9618-8.3-001",
+    "CLM-9618-8.3-003"
+   ],
+   "context_tags": [],
+   "assessment_objectives": [
+    "AO1"
+   ],
+   "claims_seen": {
+    "CLM-9618-8.3-001": 1,
+    "CLM-9618-8.3-003": 1
+   },
+   "authored_hash": "a2b8d7210924d467d2a0fcded0d85544d0022bcad9dd2a81d879aafc77b9fb51"
+  }
+ ],
+ "word_count": 871,
+ "qa_status": "review_required",
+ "notes": []
+}
