@@ -3,7 +3,7 @@
  "topic_title": "Algorithms",
  "topic": "9.2 Algorithms",
  "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
- "item_count": 39,
+ "item_count": 41,
  "items": [
   {
    "item_id": "ITEM-9618-9.2-001-DEF",
@@ -1782,6 +1782,112 @@
     "Use suitable identifier names for the representation of data used by a problem and represent these using an identifier table",
     "Document a simple algorithm using a structured English description, a flowchart or pseudocode",
     "Use logic statements to define parts of an algorithm solution"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-9.2-P05",
+   "objective_ids": [
+    "OBJ-9618-9.2.2-01",
+    "OBJ-9618-9.2.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-9.2-006",
+    "CLM-9618-9.2-007",
+    "CLM-9618-9.2-008"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A weather station at Grootfontein records twelve months of rainfall in the array Rainfall of 12 REAL values, indexed 1 to 12. Write pseudocode for a procedure SortRainfall that takes Rainfall and puts its twelve values into ascending order using a bubble sort: repeatedly test neighbouring pairs and swap those out of order, pass after pass.",
+   "canonical_answer": "```pseudocode\nPROCEDURE SortRainfall(Rainfall : ARRAY[1:12] OF REAL)\n   DECLARE Pass, Month : INTEGER\n   DECLARE Temp : REAL\n   FOR Pass <- 1 TO 11\n      FOR Month <- 1 TO 12 - Pass\n         IF Rainfall[Month] > Rainfall[Month + 1] THEN\n            Temp <- Rainfall[Month]\n            Rainfall[Month] <- Rainfall[Month + 1]\n            Rainfall[Month + 1] <- Temp\n         ENDIF\n      NEXT Month\n   NEXT Pass\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with the array parameter and its bounds and type, and ENDPROCEDURE. Mark point 2: the declaration of Pass, Month and Temp, with Temp the swap’s spare hand.",
+    "Mark point 3: the outer loop FOR Pass <- 1 TO 11, closed with NEXT Pass - one fewer pass than elements.",
+    "Mark point 4: the inner loop FOR Month <- 1 TO 12 - Pass, so each pass tests one fewer pair because the bubbled end is settled.",
+    "Mark point 5: the selection IF ... THEN ... ENDIF with the condition comparing neighbours, Rainfall[Month] > Rainfall[Month + 1].",
+    "Mark point 6: the swap with three assignments through Temp - save, overwrite, restore - so no value is lost.",
+    "Mark point 7: the array accessed by index on both sides of the pair. Mark point 8: both loops closed with NEXT in the right order, the procedure closed - its result is the sorted array, not a returned value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A weather station’s twelve rainfall readings put into ascending order.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 9.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-9.2-006": 1,
+    "CLM-9618-9.2-007": 1,
+    "CLM-9618-9.2-008": 1
+   },
+   "authored_hash": "a8f7aab438a4cae4d9f60530f0a6b69528d0fdd720f80c2d633f7a9668de9879",
+   "objective_titles": [
+    "Write pseudocode using the three basic constructs of sequence, selection and iteration (repetition)",
+    "Write pseudocode from: • a structured English description • a flowchart"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-9.2-P06",
+   "objective_ids": [
+    "OBJ-9618-9.2.2-01",
+    "OBJ-9618-9.2.2-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-9.2-006",
+    "CLM-9618-9.2-007",
+    "CLM-9618-9.2-008"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A lodge keeps the names of its 25 staff in the array StaffNames of STRING values, indexed 1 to 25, in no particular order. Write pseudocode for a function FindStaffIndex that takes StaffNames and the string WantedName, and returns the index of the position where WantedName is stored, or 0 when no element holds it. Use a linear search: look at elements in turn from index 1.",
+   "canonical_answer": "```pseudocode\nFUNCTION FindStaffIndex(StaffNames : ARRAY[1:25] OF STRING, WantedName : STRING) RETURNS INTEGER\n   DECLARE Index : INTEGER\n   DECLARE Found : BOOLEAN\n   Found <- FALSE\n   Index <- 1\n   WHILE Found = FALSE AND Index <= 25\n      IF StaffNames[Index] = WantedName THEN\n         Found <- TRUE\n      ELSE\n         Index <- Index + 1\n      ENDIF\n   ENDWHILE\n   IF Found = TRUE THEN\n      RETURN Index\n   ELSE\n      RETURN 0\n   ENDIF\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with both parameters and their types, RETURNS INTEGER, and ENDFUNCTION. Mark point 2: the declaration of Index and Found, and the initialisation of Found to FALSE and Index to 1 before the loop.",
+    "Mark point 3: the conditional loop WHILE ... ENDWHILE testing two conditions - Found = FALSE and Index <= 25 - so it stops on a find or at the bounds.",
+    "Mark point 4: the selection IF ... THEN ... ELSE ... ENDIF inside the loop, with the element compared by index, StaffNames[Index] = WantedName.",
+    "Mark point 5: the find case setting Found to TRUE without moving Index, so the position survives.",
+    "Mark point 6: the else case advancing Index by 1 only, so the walk continues one element per pass.",
+    "Mark point 7: the second selection choosing between the found index and 0. Mark point 8: the value RETURNed in both cases - returned, not output - so the function is closed and complete."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge staff list searched name by name.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 9.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-9.2-006": 1,
+    "CLM-9618-9.2-007": 1,
+    "CLM-9618-9.2-008": 1
+   },
+   "authored_hash": "a9b059f6e7103b580f2019bdc5c38a9c6d2fcc8329285a30fb19cf62a0007146",
+   "objective_titles": [
+    "Write pseudocode using the three basic constructs of sequence, selection and iteration (repetition)",
+    "Write pseudocode from: • a structured English description • a flowchart"
    ]
   }
  ]

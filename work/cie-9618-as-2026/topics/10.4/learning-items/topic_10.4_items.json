@@ -859,6 +859,57 @@
     "CLM-9618-10.4-009": 1
    },
    "authored_hash": "cf0b8eaf0d6acf1da6ff0f17d6414273e119c00a86856d1ae3b4fdf9435076ec"
+  },
+  {
+   "item_id": "ITEM-9618-10.4-P05",
+   "objective_ids": [
+    "OBJ-9618-10.4.1-03",
+    "OBJ-9618-10.4.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.4-004",
+    "CLM-9618-10.4-008",
+    "CLM-9618-10.4-006",
+    "CLM-9618-10.4-009"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A clinic’s waiting room runs as a queue held in the array Waiting, of up to 20 patient names as STRING values with indices 1 to 20, with the integer pointers Front and Rear holding the indices of the queue’s front and rear elements (an empty queue has Front = 1 and Rear = 0). Write pseudocode for a procedure ReportWaiting that takes Waiting, Front and Rear, and outputs every waiting patient’s name from the front of the queue to the rear, one per line, in the order they will be seen.",
+   "canonical_answer": "```pseudocode\nPROCEDURE ReportWaiting(Waiting : ARRAY[1:20] OF STRING, Front : INTEGER, Rear : INTEGER)\n   DECLARE Position : INTEGER\n   FOR Position <- Front TO Rear\n      OUTPUT Waiting[Position]\n   NEXT Position\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with all three parameters and their types, and ENDPROCEDURE. Mark point 2: the declaration of Position, the walking variable.",
+    "Mark point 3: no initialisation beyond the declaration, because the loop’s bounds are the queue’s own two pointers, which arrive as parameters - values through parameters, never by INPUT inside the module.",
+    "Mark point 4: the loop FOR Position <- Front TO Rear, whose bounds are the two ends of the queue, so the front patient is output first, which is the queue’s first-in-first-out rule.",
+    "Mark point 5: the array element reached by index inside the loop, Waiting[Position], one patient per pass.",
+    "Mark point 6: the OUTPUT inside the loop, so each waiting patient is output on a line in the order they will be seen.",
+    "Mark point 7: the loop closed with NEXT Position after the output. Mark point 8: the procedure closed with ENDPROCEDURE - no loop beyond the queue’s ends, its result the outputs themselves, with no returned value."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A clinic waiting-room queue reported front to rear.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 10.4 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.4-004": 1,
+    "CLM-9618-10.4-008": 1,
+    "CLM-9618-10.4-006": 1,
+    "CLM-9618-10.4-009": 1
+   },
+   "authored_hash": "0457ff38b9e861646b60b0a58a839a9f1077e9b498df3eb4561cc43c80620c93"
   }
  ]
 }

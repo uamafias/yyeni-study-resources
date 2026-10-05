@@ -1,6 +1,6 @@
 # Cambridge International AS Level Computer Science 9618 (examined 2026)
 
-Study notes and flashcards. 29 topics, 751 flashcards and performance tasks, 46,997 words of notes.
+Study notes and flashcards. 29 topics, 759 flashcards and performance tasks, 47,037 words of notes.
 
 Every topic here passes the full deterministic check suite. Semantic review runs on published material rather than ahead of it, so the **Open issues** column is debt that ships visibly and is cleared in a maintenance pass - it is not a warning that the topic is unusable.
 
@@ -67,24 +67,24 @@ Every topic here passes the full deterministic check suite. Semantic review runs
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
 | **9.1** Computational Thinking Skills | [9.1-computational-thinking-skills.md](notes/9.1-computational-thinking-skills.md) | [9.1-computational-thinking-skills-flashcards.json](flashcards/9.1-computational-thinking-skills-flashcards.json) | 12 | 728 | — |
-| **9.2** Algorithms | [9.2-algorithms.md](notes/9.2-algorithms.md) | [9.2-algorithms-flashcards.json](flashcards/9.2-algorithms-flashcards.json) | 39 | 2,628 | — |
+| **9.2** Algorithms | [9.2-algorithms.md](notes/9.2-algorithms.md) | [9.2-algorithms-flashcards.json](flashcards/9.2-algorithms-flashcards.json) | 41 | 2,628 | — |
 
 ## Section 10 — Data Types and Structures
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
 | **10.1** Data Types and Records | [10.1-data-types-and-records.md](notes/10.1-data-types-and-records.md) | [10.1-data-types-and-records-flashcards.json](flashcards/10.1-data-types-and-records-flashcards.json) | 13 | 760 | — |
-| **10.2** Arrays | [10.2-arrays.md](notes/10.2-arrays.md) | [10.2-arrays-flashcards.json](flashcards/10.2-arrays-flashcards.json) | 22 | 1,247 | — |
-| **10.3** Files | [10.3-files.md](notes/10.3-files.md) | [10.3-files-flashcards.json](flashcards/10.3-files-flashcards.json) | 14 | 782 | — |
-| **10.4** Introduction to Abstract Data Types (ADT) | [10.4-introduction-to-abstract-data-types-adt.md](notes/10.4-introduction-to-abstract-data-types-adt.md) | [10.4-introduction-to-abstract-data-types-adt-flashcards.json](flashcards/10.4-introduction-to-abstract-data-types-adt-flashcards.json) | 20 | 1,367 | — |
+| **10.2** Arrays | [10.2-arrays.md](notes/10.2-arrays.md) | [10.2-arrays-flashcards.json](flashcards/10.2-arrays-flashcards.json) | 23 | 1,247 | — |
+| **10.3** Files | [10.3-files.md](notes/10.3-files.md) | [10.3-files-flashcards.json](flashcards/10.3-files-flashcards.json) | 15 | 782 | — |
+| **10.4** Introduction to Abstract Data Types (ADT) | [10.4-introduction-to-abstract-data-types-adt.md](notes/10.4-introduction-to-abstract-data-types-adt.md) | [10.4-introduction-to-abstract-data-types-adt-flashcards.json](flashcards/10.4-introduction-to-abstract-data-types-adt-flashcards.json) | 21 | 1,367 | — |
 
 ## Section 11 — Programming
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
-| **11.1** Programming Basics | [11.1-programming-basics.md](notes/11.1-programming-basics.md) | [11.1-programming-basics-flashcards.json](flashcards/11.1-programming-basics-flashcards.json) | 21 | 1,045 | — |
+| **11.1** Programming Basics | [11.1-programming-basics.md](notes/11.1-programming-basics.md) | [11.1-programming-basics-flashcards.json](flashcards/11.1-programming-basics-flashcards.json) | 22 | 1,045 | — |
 | **11.2** Constructs | [11.2-constructs.md](notes/11.2-constructs.md) | [11.2-constructs-flashcards.json](flashcards/11.2-constructs-flashcards.json) | 14 | 836 | — |
-| **11.3** Structured Programming | [11.3-structured-programming.md](notes/11.3-structured-programming.md) | [11.3-structured-programming-flashcards.json](flashcards/11.3-structured-programming-flashcards.json) | 32 | 2,070 | — |
+| **11.3** Structured Programming | [11.3-structured-programming.md](notes/11.3-structured-programming.md) | [11.3-structured-programming-flashcards.json](flashcards/11.3-structured-programming-flashcards.json) | 34 | 2,110 | — |
 
 ## Section 12 — Software Development
 

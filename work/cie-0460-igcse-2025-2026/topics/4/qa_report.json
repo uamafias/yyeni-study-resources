@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-cie-0460-igcse-2025-2026-4",
   "build_id": "cie-0460-igcse-2025-2026/topic-4",
-  "generated_at": "2026-10-01T17:10:44Z",
+  "generated_at": "2026-10-01T18:09:56Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -12,7 +12,7 @@
     {
       "check_id": "C-01",
       "status": "pass",
-      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 4 content units, 161 items and 50 claims resolves in the registry (37 nodes in this topic branch, 36 assessable).",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 4 content units, 161 items and 101 claims resolves in the registry (37 nodes in this topic branch, 36 assessable).",
       "affected_ids": []
     },
     {
@@ -24,7 +24,7 @@
     {
       "check_id": "C-03",
       "status": "pass",
-      "message": "[RS-07 Claim orphans] All 50 ledger claims are cited by at least one block or item.",
+      "message": "[RS-07 Claim orphans] All 101 ledger claims are cited by at least one block or item.",
       "affected_ids": []
     },
     {
@@ -54,7 +54,7 @@
     {
       "check_id": "C-30",
       "status": "pass",
-      "message": "[RS-41 No bulk stamp] All 202 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
+      "message": "[RS-41 No bulk stamp] All 255 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
       "affected_ids": []
     },
     {
@@ -198,7 +198,7 @@
     {
       "check_id": "C-24",
       "status": "pass",
-      "message": "[RS-13 Publication gate] Gate holds: 0 of 50 claims are publishable or verified. 50 are generated_gap and need documented human approval (RS-13).",
+      "message": "[RS-13 Publication gate] Gate holds: 0 of 101 claims are publishable or verified. 101 are generated_gap and need documented human approval (RS-13).",
       "affected_ids": []
     },
     {
@@ -209,14 +209,9 @@
     },
     {
       "check_id": "C-26",
-      "status": "warn",
-      "message": "[RS-09 Word budget] 4 content units sit outside their declared word budget.",
-      "affected_ids": [
-        "CU-0460-4.1",
-        "CU-0460-4.2",
-        "CU-0460-4.3",
-        "CU-0460-4.4"
-      ]
+      "status": "pass",
+      "message": "[RS-09 Word budget] All 4 content units sit inside their declared word budget (10414 words total).",
+      "affected_ids": []
     },
     {
       "check_id": "C-27",
@@ -227,7 +222,7 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 17 files to topics/4/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (0397bfcb5e9cbb53) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 17 files to topics/4/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (99ce36ec5adde453) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
@@ -288,14 +283,14 @@
   ],
   "metrics": {
     "objective_count": 36,
-    "claim_count": 50,
+    "claim_count": 101,
     "content_unit_count": 4,
     "learning_item_count": 161,
-    "word_count": 3712
+    "word_count": 10414
   },
   "release_decision": "publish",
   "notes": [
-    "Standard v0.2.0-draft check suite. 44 checks: 38 pass, 0 fail, 2 warn, 4 not_run.",
+    "Standard v0.2.0-draft check suite. 44 checks: 39 pass, 0 fail, 1 warn, 4 not_run.",
     "A not_run check means an input the check needs is absent. It is never a pass.",
     "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
   ]

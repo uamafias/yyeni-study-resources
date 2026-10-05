@@ -1,6 +1,6 @@
 # Cambridge IGCSE Geography 0460 (examined 2025-2026)
 
-Study notes and flashcards. 21 topics, 629 flashcards and performance tasks, 37,978 words of notes.
+Study notes and flashcards. 21 topics, 629 flashcards and performance tasks, 46,346 words of notes.
 
 Every topic here passes the full deterministic check suite. Semantic review runs on published material rather than ahead of it, so the **Open issues** column is debt that ships visibly and is cleared in a maintenance pass - it is not a warning that the topic is unusable.
 
@@ -43,13 +43,13 @@ Every topic here passes the full deterministic check suite. Semantic review runs
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
-| **4** Geographical skills | [4-geographical-skills.md](notes/4-geographical-skills.md) | [4-geographical-skills-flashcards.json](flashcards/4-geographical-skills-flashcards.json) | 161 | 3,798 | — |
+| **4** Geographical skills | [4-geographical-skills.md](notes/4-geographical-skills.md) | [4-geographical-skills-flashcards.json](flashcards/4-geographical-skills-flashcards.json) | 161 | 10,553 | — |
 
 ## Topic 5 — Geographical enquiry (Paper 4)
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
-| **5** Geographical enquiry | [5-geographical-enquiry.md](notes/5-geographical-enquiry.md) | [5-geographical-enquiry-flashcards.json](flashcards/5-geographical-enquiry-flashcards.json) | 83 | 3,715 | — |
+| **5** Geographical enquiry | [5-geographical-enquiry.md](notes/5-geographical-enquiry.md) | [5-geographical-enquiry-flashcards.json](flashcards/5-geographical-enquiry-flashcards.json) | 83 | 5,328 | — |
 
 ## What is in a flashcard file
 

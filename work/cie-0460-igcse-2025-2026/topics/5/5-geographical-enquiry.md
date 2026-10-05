@@ -1,6 +1,6 @@
 # 5 Geographical enquiry
 
-*cie-0460-igcse-2025-2026. Offline study notes, rendered from the approved content units on 2026-09-29. Everything here is also what the flashcards are built from.*
+*cie-0460-igcse-2025-2026. Offline study notes, rendered from the approved content units on 2026-10-01. Everything here is also what the flashcards are built from.*
 
 **What this topic asks of you**
 
@@ -102,6 +102,42 @@ The physical kit holds four instruments, each with its job. The ranging poles ma
 
 The weather instruments here are the ones taught with topic 2.4, the river and beach measures answer the process questions of topics 2.2 and 2.3, and the town surveys serve the settlement and urbanisation questions of topics 1.5 to 1.7. The recording-sheet and sampling rules serve every practical task in this topic.
 
+### A questionnaire built, question by question
+
+A questionnaire built for a resort study, question by question, so the design rules show in use. Q1, closed: Is your visit today for the beach, the town, or both? One thing asked, three tick boxes, talliable in seconds. Q2, closed: How long will you stay today, under two hours, two to four, over four? Bands that tally, not an open estimate. Q3, closed: How far is your home, under 10 kilometres, 10 to 50, over 50? The bands a sphere-of-influence question needs. Q4, open: What one thing would improve your visit? One open question only, because open answers are slow to gather and slower to tally. Q5, closed and neutral: Do you plan to return next season, yes, no, unsure? No suggestion in the wording. Five questions, two or three minutes, and every one feeds a hypothesis the study named.
+
+### The survey day, run to plan
+
+The survey day, run as the plan prescribes. The location: the promenade, where the visitors are, and the same spot for every session, because a sample gathered at the beach and one at the shops are two populations. The sampling: every fifth adult passing the fixed point, an interviewer counting silently and stepping forward on the fifth, which removes the eye's preference for a friendly face. The pilot, run first on five respondents, catches what the design missed: Q2's bands confused one respondent, who asked whether lunch counted, so the band edges are stated in the question, and Q4 invites a grumble that takes four minutes, so the prompt narrows to one thing. The sheets come home with time, date, location and recorder on each, so the tally can be trusted the next day.
+
+### An observation walked, recorded twice
+
+An observation survey, walked once and recorded twice. The resource: a base map of a street, printed one per pair, and a recording sheet with columns for frontage class, condition and note. Walking north to south, each frontage is classified against the key, shop, office, service, vacant, the class letter written in its box on the map, and the same letter in the sheet's row with its condition ticked, good, fair, poor. The map is the pattern, the sheet is the detail, and between them the survey is checkable, because a second walker can be handed the pair and agree or disagree line by line. Where a frontage is ambiguous, a photograph is taken and its number written on the sheet, so the judgement is preserved rather than remembered.
+
+### Two count sheets, compared and caught
+
+Two count sheets compared, worked. Sheet one: 10:00, 14 March, site A, the market square, recorder Tomas, total 240. Sheet two: 10:00, 14 March, site B, the station approach, recorder Selma, total 60. The comparison is fair, because the details match, the same hour, the same date, the same ten-minute period, so the difference, 240 against 60, is the places' own. Now the trap: a third sheet reads 15:00, 14 March, site C, 180, and a learner compares it with site A's 240 and calls site A busier, but the afternoon count carries an hour the morning count does not, so the comparison is not fair until either site C is counted at 10:00 or site A at 15:00. The identifying details are not decoration, they are the conditions a comparison depends on.
+
+### Instrument siting, worked at a weather station
+
+A school weather station, sited by the rules and worked. The rain gauge: sunk in open level ground midway down the playing field, funnel rim a hand's width above the grass, ten metres from the fence and thirty from the building, so nothing intercepts or splashes the catch, and it is read at 08:35 each morning by the duty pair, into the graduated cylinder, the depth in millimetres entered on the sheet. The Stevenson screen: four metres from the building, over mown grass, louvres facing the sun path's low side, thermometers read at 08:35 and again at midday, the markers reset with the magnet after reading. The anemometer and wind vane: on the roof mast, clear of every parapet, read at the same times. Siting, reading time, reset, record, and the station's data is a series a study can use.
+
+### A river cross-section, measured and drawn
+
+A river cross-section, worked from bank to bank. The tape: stretched water-surface edge to edge, 3.6 metres across. The depths, a metre rule held upright every 0.4 metres, six readings: 0, 0.35, 0.55, 0.6, 0.4, 0 metres. The drawing: distance across the horizontal axis, depth on the vertical, six points plotted and joined, and the channel's shape appears, a shallow edge, a deepest middle at 0.6 metres, a shallower far bank. The speed beside it: two ranging poles ten metres apart on the bank, a float released mid-channel, three timings of 24, 26 and 25 seconds, mean 25 seconds, so the speed is 10 / 25 = 0.4 metres per second. The wetted cross-section, roughly the mean depth 0.38 metres times the width, is drawn and recorded, and the enquiry has its numbers, each with a unit, each from a stated method.
+
+### A beach profile, measured facet by facet
+
+A beach profile, worked facet by facet. The line: from the driftwood berm at the top, across the shingle face, down the wet sand to the sea's edge. Poles at each break of slope, a tape between them, a clinometer read eye-level to eye-level, and the record: berm to shingle crest, 4 metres, 8 degrees; crest to mid-face, 6 metres, 14 degrees; mid-face to wet sand, 8 metres, 5 degrees; wet sand to sea edge, 5 metres, 2 degrees. The profile drawn from those four lines falls gently, steepens on the mid-face, and flattens at the sea, which is the shape a wave-built beach makes. Pebbles sampled beside it, every fifth pebble on a tape laid down each facet, measured with callipers, long axis 3 to 8 centimetres on the upper beach, 1 to 3 on the lower, so the sorting shows: the sea has carried the small stones down and left the large.
+
+### A human survey, scored and counted
+
+A human survey, worked as one morning's plan. The environmental quality sheet: five criteria, litter, noise, building upkeep, vegetation, graffiti, scored 1 to 5 with the ends defined on the sheet, 1 none or excellent, 5 heavy or poor, and three scorers walk the six sites independently, their marks averaged per site. The pedestrian count beside it: two counters per site, ten minutes, all six sites in the same window, the sheets carrying time, date, location and recorder. The results feed straight to presentation, per-site quality means and per-site counts, and the two columns are compared, because the hypothesis says the busy streets are the well-kept ones and the data will or will not agree. Paper 4 examines the coursework criteria through fieldwork scenarios, and the syllabus sets its marks in the same proportions as the enquiry itself, knowledge with understanding, collecting data, presenting data, analysis, and conclusion and evaluation, twelve marks each.
+
+### How Paper 4 sets the methods
+
+How the paper sets these methods, from the syllabus's own account of Paper 4. The paper, ninety minutes and sixty marks, examines two compulsory questions on fieldwork scenarios, and its marks are spread across the enquiry's stages, knowledge with understanding, collecting data, presenting data, analysis, and conclusion and evaluation, twelve marks each, which is why this unit's methods matter more than any single fact. A scenario gives a hypothesis, an area, maybe a recording sheet with faults to find, or a results table to present, or a conclusion to improve, and the question asks the candidate to judge, correct, extend, the very things a well-taught enquiry planner knows. The method is the answer, and the worked examples above are the method.
+
 ---
 
 ## Presenting the data
@@ -169,3 +205,11 @@ Close the river study as the discipline runs. The hypothesis: bedload becomes sm
 ### Where this connects
 
 The conclusion discipline, decision then paired figures, is the levels-marked case-study answer of Paper 1 in miniature, and the evaluation skills are what the practical tasks of this topic rehearse end to end.
+
+### An evaluation worked on one enquiry
+
+An evaluation worked on the resort survey above. The sample: 60 interviews at one site is a small sample for a town that holds thousands, so the improvement is 120 interviews across two sites, and what it fixes is the sample's reach, because one promenade cannot speak for the shoppers. The timing: a single Saturday says nothing about Tuesday, so the improvement is a weekday repeat, and what it fixes is the day's bias, because the market-day crowd is a different population. The question wording: the pilot caught two faults, so the improvement is a second pilot when the questions change again, and what it fixes is the wording faults a changed form reintroduces. Each improvement names what is done differently and what defect it removes, which is the discipline the evaluation marks reward.
+
+### A conclusion and an extension, worked
+
+A conclusion and an extension, worked on the same survey. The hypothesis, that visitors to the resort are mostly day-trippers from within 50 kilometres, found 41 of 60 interviews under 50 kilometres, so 41 / 60 x 100 = 68 per cent, and the conclusion is true, stated with its paired figures, 68 per cent within 50 kilometres against 32 per cent beyond. The extension follows from what the enquiry did not ask: where the 32 per cent came from and why they came so far, so the extension is a second questionnaire at the overnight accommodation, comparing the stayers' distances and reasons with the day-trippers', which answers a different question rather than repeating the first. Paper 4 examines the coursework criteria through fieldwork scenarios, and the syllabus sets its marks in the same proportions as the enquiry itself, knowledge with understanding, collecting data, presenting data, analysis, and conclusion and evaluation, twelve marks each.

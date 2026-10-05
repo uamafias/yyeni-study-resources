@@ -54,7 +54,7 @@
    "block_id": "CU-9618-11.3.1-b3",
    "block_type": "definition",
    "heading": "Parameters and arguments",
-   "text": "A module's values arrive through its parameters - and through nothing else. A parameter is a variable named in the header: PROCEDURE ReportStall(StallName : STRING, TakingsToday : REAL) - and the argument is the value the caller passes in the call: CALL ReportStall(\"Spices\", 435.50). The rule with teeth: the values a module works on arrive through its parameters, so INPUT inside a module is the wrong place for the module's data - the header already holds every value as a parameter, and the call already supplies them. A parameter is passed by value or by reference, and the difference is who owns the variable. By value, the module receives a copy: it may change the parameter inside, and the caller's variable keeps its own value, because the caller handed over a copy. By reference, the module works on the caller's variable itself: a change inside shows outside the call, which is how a procedure that computes an answer can hand it back - write the result into a reference parameter and the caller's variable now holds it. The choice is design: values that only feed the module pass by value, protected from stray changes; values the module must fill in for the caller pass by reference, because the caller is waiting to receive the result. The parameter list is also a contract the caller can check: the number of arguments must match the number of parameters, the types must match in order, and the caller's variable for a reference parameter must exist before the call. A call that passes two arguments to a three-parameter module, or a string where an integer stands in the header, is caught by reading the header alone - which is why the header is called the interface in the next unit's terms: it is where the two sides meet and where every mismatch is visible.",
+   "text": "A module's values arrive through its parameters - and through nothing else. A parameter is a variable named in the header: PROCEDURE ReportStall(StallName : STRING, TakingsToday : REAL) - and the argument is the value the caller passes in the call: CALL ReportStall(\"Spices\", 435.50). The rule with teeth: the values a module works on arrive through its parameters, so INPUT inside a module is the wrong place for the module's data - the header already holds every value as a parameter, and the call already supplies them. A parameter is passed by value or by reference, and the difference is who owns the variable. By value, the module receives a copy: it may change the parameter inside, and the caller's variable keeps its own value, because the caller handed over a copy. By reference, the module works on the caller's variable itself: a change inside shows outside the call, which is how a procedure that computes an answer can hand it back - write the result into a reference parameter and the caller's variable now holds it. In pseudocode the keyword stands in front of the parameter it governs: PROCEDURE Deposit(BYVAL Amount : REAL, BYREF ClubTotal : REAL) passes Amount by value and ClubTotal by reference, and a parameter written with neither keyword is passed by value. The choice is design: values that only feed the module pass by value, protected from stray changes; values the module must fill in for the caller pass by reference, because the caller is waiting to receive the result. The parameter list is also a contract the caller can check: the number of arguments must match the number of parameters, the types must match in order, and the caller's variable for a reference parameter must exist before the call. A call that passes two arguments to a three-parameter module, or a string where an integer stands in the header, is caught by reading the header alone - which is why the header is called the interface in the next unit's terms: it is where the two sides meet and where every mismatch is visible.",
    "claim_ids": [
     "CLM-9618-11.3-003",
     "CLM-9618-11.3-004"
@@ -68,7 +68,8 @@
     "CLM-9618-11.3-003": 1,
     "CLM-9618-11.3-004": 1
    },
-   "authored_hash": "4667d123527426b93861e46d8541a9641c02691d375f341d735ff840d1090218"
+   "authored_hash": "3dfaa0f7f826b0e6f6538a84a4f28b144b4ab9d4bec4fa73f43b123b2e6348cf",
+   "prior_hash": "4667d123527426b93861e46d8541a9641c02691d375f341d735ff840d1090218"
   },
   {
    "block_id": "CU-9618-11.3.1-b4",
@@ -131,7 +132,7 @@
    "authored_hash": "fa62a31179266bfcfb38ed475d6bb8cbd4105c78f0f66772d14cf0865273b005"
   }
  ],
- "word_count": 1134,
+ "word_count": 1174,
  "qa_status": "review_required",
  "notes": []
 }

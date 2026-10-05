@@ -949,6 +949,57 @@
     "CLM-9618-10.2-005": 1
    },
    "authored_hash": "0e99c0b463e7001cd6a8ae5a1494c6b852f52440e19327085dffecba2fa08238"
+  },
+  {
+   "item_id": "ITEM-9618-10.2-P05",
+   "objective_ids": [
+    "OBJ-9618-10.2.1-02",
+    "OBJ-9618-10.2.1-04"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.2-004",
+    "CLM-9618-10.2-007",
+    "CLM-9618-10.2-006",
+    "CLM-9618-10.2-002"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A craft market records its 5 cashiers’ takings for each of 8 trading hours in the 2D array Takings, of REAL values with row indices 1 to 5 (the cashiers) and column indices 1 to 8 (the hours). Write pseudocode for a function BusiestCashier that takes Takings and returns the cashier’s row number whose total takings across the 8 hours is the largest; if two cashiers tie, return the lower row number.",
+   "canonical_answer": "```pseudocode\nFUNCTION BusiestCashier(Takings : ARRAY[1:5, 1:8] OF REAL) RETURNS INTEGER\n   DECLARE Cashier, Hour, BestRow : INTEGER\n   DECLARE Best, Total : REAL\n   Best <- 0\n   BestRow <- 1\n   FOR Cashier <- 1 TO 5\n      Total <- 0\n      FOR Hour <- 1 TO 8\n         Total <- Total + Takings[Cashier, Hour]\n      NEXT Hour\n      IF Total > Best THEN\n         Best <- Total\n         BestRow <- Cashier\n      ENDIF\n   NEXT Cashier\n   RETURN BestRow\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the 2D array parameter and both bound pairs, RETURNS INTEGER, and ENDFUNCTION. Mark point 2: the declaration of the loop variables and the two totals, with Best initialised to 0 and BestRow to 1 before the loop - the first row held from the start.",
+    "Mark point 3: the outer loop FOR Cashier <- 1 TO 5, one pass per row. Mark point 4: the inner loop FOR Hour <- 1 TO 8, one pass per column, with Total reset to 0 at each row’s start.",
+    "Mark point 5: the 2D element reached by both indices, Takings[Cashier, Hour], added to the running total inside the inner loop.",
+    "Mark point 6: the selection IF ... THEN ... ENDIF after the inner loop, comparing each row’s completed total with Best - a strict comparison, so a tie keeps the lower row number.",
+    "Mark point 7: both updates inside the selection, Best and BestRow together, so the row number travels with its total.",
+    "Mark point 8: the value RETURNed at the end - BestRow, the row number, returned and not output - so the function is complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A craft market’s five cashiers ranked by eight hours of takings.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 10.2 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.2-004": 1,
+    "CLM-9618-10.2-007": 1,
+    "CLM-9618-10.2-006": 1,
+    "CLM-9618-10.2-002": 1
+   },
+   "authored_hash": "33427435043dcf5d04d07ce0a568154684b99a176ba0c5d39a77cc25f6362522"
   }
  ]
 }

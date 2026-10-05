@@ -3,7 +3,7 @@
  "topic_title": "Programming Basics",
  "topic": "11.1 Programming Basics",
  "qualification": "Cambridge International AS Level Computer Science 9618 (examined 2026)",
- "item_count": 21,
+ "item_count": 22,
  "items": [
   {
    "item_id": "ITEM-9618-11.1-001-PROC",
@@ -976,6 +976,59 @@
    "authored_hash": "c4b13447f12307218a0d0f3a48106cdf2ea2ae9a8d9c2fe32aa14a9c76c6a3c3",
    "objective_titles": [
     "Write pseudocode statements for: • the declaration and initialisation of constants • the declaration of variables • the assignment of values to variables • expressions involving any of the arithmetic or logical operators input from the keyboard and output to the console",
+    "Use built-in functions and library routines"
+   ]
+  },
+  {
+   "item_id": "ITEM-9618-11.1-P05",
+   "objective_ids": [
+    "OBJ-9618-11.1.1-01",
+    "OBJ-9618-11.1.1-03"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.1-005",
+    "CLM-9618-11.1-006",
+    "CLM-9618-11.1-001"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A lodge’s reception program asks a guest for their first name and their last name, and produces a baggage tag line. Write pseudocode for a procedure BaggageTag that takes no parameters, inputs the two names, and outputs one line in this shape: the first letter of the first name, a full stop, the first letter of the last name, a full stop, a space, then the full last name as it was input - so the inputs \"Selma\" and \"Shipanga\" produce the line \"S.S. Shipanga\". Use LEFT for the first letters and & to join the parts, and include a validation check: if the last name is empty (its length is zero), output \"No name\" instead of the tag line.",
+   "canonical_answer": "```pseudocode\nPROCEDURE BaggageTag()\n   DECLARE FirstName, LastName : STRING\n   DECLARE Tag : STRING\n   INPUT FirstName\n   INPUT LastName\n   IF LENGTH(LastName) = 0 THEN\n      OUTPUT \"No name\"\n   ELSE\n      Tag <- LEFT(FirstName, 1) & \".\" & LEFT(LastName, 1) & \". \" & LastName\n      OUTPUT Tag\n   ENDIF\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with empty parameter brackets, and ENDPROCEDURE. Mark point 2: the declaration of the two names and the tag string, with both inputs brought in before use.",
+    "Mark point 3: the selection IF ... THEN ... ELSE ... ENDIF with both branches, testing LENGTH(LastName) = 0 - the empty last name is the invalid case, and the comparison uses the equals sign.",
+    "Mark point 4: the validation branch outputting \"No name\" and changing nothing else.",
+    "Mark point 5: the first letters extracted with LEFT(FirstName, 1) and LEFT(LastName, 1) - one character each from the start.",
+    "Mark point 6: every part joined with &, in the stated order - letter, full stop, letter, full stop and space, then the full last name - so every joined part is a string.",
+    "Mark point 7: the tag line OUTPUT in the else branch, after the join. Mark point 8: the procedure complete and closed - its result the output line itself, with no returned value, and the two paths cover both inputs the guest can give."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A lodge baggage tag built from two input names.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 11.1 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.1-005": 1,
+    "CLM-9618-11.1-006": 1,
+    "CLM-9618-11.1-001": 1
+   },
+   "authored_hash": "3c1b22e8a8b494c4bed976cea7ae2f1835aa365414f4f5e1778fcbbb37fdce04",
+   "objective_titles": [
+    "Implement and write pseudocode from a given design presented as either a program flowchart or structured English",
     "Use built-in functions and library routines"
    ]
   }

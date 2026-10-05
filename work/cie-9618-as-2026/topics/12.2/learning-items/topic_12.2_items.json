@@ -353,10 +353,10 @@
    "mark_tariff": 8,
    "difficulty": 4,
    "prompt": "A structure chart is described: the top box HandleSale calls TakePayment (amount due passed down, paid flag returned up as a signal), PrintReceipt (amount paid passed down), and UpdateStock (item code passed down, stock count passed down by reference and passed back up changed). Derive the pseudocode: write the function TakePayment, the procedure PrintReceipt, the procedure UpdateStock with its by-reference parameter, and the three calls from HandleSale in chart order.",
-   "canonical_answer": "```pseudocode\nFUNCTION TakePayment(AmountDue : REAL) RETURNS BOOLEAN\n   DECLARE Paid : BOOLEAN\n   ... payment taken ...\n   RETURN Paid\nENDFUNCTION\n\nPROCEDURE PrintReceipt(AmountPaid : REAL)\n   ... receipt printed ...\nENDPROCEDURE\n\nPROCEDURE UpdateStock(ItemCode : STRING, StockCount : INTEGER) [StockCount BY REFERENCE]\n   ... stock updated ...\nENDPROCEDURE\n\nPROCEDURE HandleSale\n   DECLARE AmountDue, AmountPaid : REAL\n   DECLARE Paid : BOOLEAN\n   DECLARE ItemCode : STRING\n   DECLARE StockCount : INTEGER\n   IF TakePayment(AmountDue) = TRUE THEN\n      CALL PrintReceipt(AmountPaid)\n      CALL UpdateStock(ItemCode, StockCount)\n   ENDIF\nENDPROCEDURE\n```",
+   "canonical_answer": "```pseudocode\nFUNCTION TakePayment(AmountDue : REAL) RETURNS BOOLEAN\n   DECLARE Paid : BOOLEAN\n   ... payment taken ...\n   RETURN Paid\nENDFUNCTION\n\nPROCEDURE PrintReceipt(AmountPaid : REAL)\n   ... receipt printed ...\nENDPROCEDURE\n\nPROCEDURE UpdateStock(BYVAL ItemCode : STRING, BYREF StockCount : INTEGER)\n   ... stock updated ...\nENDPROCEDURE\n\nPROCEDURE HandleSale\n   DECLARE AmountDue, AmountPaid : REAL\n   DECLARE Paid : BOOLEAN\n   DECLARE ItemCode : STRING\n   DECLARE StockCount : INTEGER\n   IF TakePayment(AmountDue) = TRUE THEN\n      CALL PrintReceipt(AmountPaid)\n      CALL UpdateStock(ItemCode, StockCount)\n   ENDIF\nENDPROCEDURE\n```",
    "marking_guidance": [
     "Mark point 1: the function heading with the parameter and RETURNS BOOLEAN, and ENDFUNCTION. Mark point 2: the RETURN of the flag at the end, returned and not output.",
-    "Mark point 3: the procedure headings with their parameters and their types, and ENDPROCEDURE - the variables declared inside the top module before any call. Mark point 4: StockCount marked as the by-reference parameter, because the chart drew its circle both ways.",
+    "Mark point 3: the procedure headings with their parameters and their types, and ENDPROCEDURE - the variables declared inside the top module before any call. Mark point 4: StockCount marked BYREF as the by-reference parameter, because the chart drew its circle both ways.",
     "Mark point 5: the declarations in HandleSale before the calls, and no loop - the three calls are three events, not a repetition - with the calls in the chart’s order: the flag tested, then the two procedures called. Mark point 6: the function used in the condition, never after CALL, because the up-circle became a returned value.",
     "Mark point 7: the two procedures CALLed as statements, because boxes with no up-circle became procedures. Mark point 8: the derivation complete - every box a module, every circle a parameter, and every call in the chart’s order."
    ],
@@ -375,7 +375,8 @@
    "claims_seen": {
     "CLM-9618-12.2-003": 1
    },
-   "authored_hash": "10176c46b8bbe8b9c927a43ddbc1b572ffb1810abf1fabcb98bd3a23e39bb3bd"
+   "authored_hash": "daa9841313ed3232e25c89f3c372f87d48064457b0ca5c1341bd76a0e7172e19",
+   "prior_hash": "10176c46b8bbe8b9c927a43ddbc1b572ffb1810abf1fabcb98bd3a23e39bb3bd"
   },
   {
    "item_id": "ITEM-9618-12.2-P02",

@@ -609,6 +609,57 @@
     "CLM-9618-10.3-004": 1
    },
    "authored_hash": "a294ff760b8053bd81e2c7fa1e5d9dc892ca3160aec0229687e035abdf58d7ef"
+  },
+  {
+   "item_id": "ITEM-9618-10.3-P05",
+   "objective_ids": [
+    "OBJ-9618-10.3.1-02",
+    "OBJ-9618-10.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-10.3-002",
+    "CLM-9618-10.3-003",
+    "CLM-9618-10.3-001",
+    "CLM-9618-10.3-005"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A taxi rank records each day’s fares in the text file \"Fares.txt\", one fare in dollars on each line, as digits (for example \"45.50\"). Write pseudocode for a function TotalFares that returns the sum of all the fares in the file: read every line from the start, convert each line’s digits to its number with the built-in conversion, and add it to a running total.",
+   "canonical_answer": "```pseudocode\nFUNCTION TotalFares() RETURNS REAL\n   DECLARE Line : STRING\n   DECLARE Total : REAL\n   Total <- 0\n   OPENFILE \"Fares.txt\" FOR READ\n   WHILE NOT EOF(\"Fares.txt\")\n      READFILE \"Fares.txt\", Line\n      Total <- Total + STRING_TO_NUM(Line)\n   ENDWHILE\n   CLOSEFILE \"Fares.txt\"\n   RETURN Total\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading, with no parameters because the file name is fixed, RETURNS REAL, and ENDFUNCTION. Mark point 2: the declaration of Line and Total, and the initialisation of Total to 0 before the loop.",
+    "Mark point 3: OPENFILE with the file name in quotation marks and mode READ.",
+    "Mark point 4: the conditional loop WHILE NOT EOF(\"Fares.txt\"), closed with ENDWHILE, so the loop never reads past the last line.",
+    "Mark point 5: READFILE inside the loop, with the file name and the string Line, so each fare arrives as a line.",
+    "Mark point 6: the conversion STRING_TO_NUM(Line) before the addition, because a line of digits is a string until converted.",
+    "Mark point 7: the running total updated inside the loop, one fare per pass. Mark point 8: CLOSEFILE with the same file name after the loop, and the total RETURNed - returned, not output - so the function is complete and closed."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A taxi rank’s fare file summed line by line.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 10.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-10.3-002": 1,
+    "CLM-9618-10.3-003": 1,
+    "CLM-9618-10.3-001": 1,
+    "CLM-9618-10.3-005": 1
+   },
+   "authored_hash": "4aadb8bff3dfab3ba6d5f8a77fc45eb91ae06f64aa01a0cab88bc836948a4c6c"
   }
  ]
 }

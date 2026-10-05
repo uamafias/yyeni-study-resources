@@ -397,11 +397,11 @@
    "mark_tariff": 4,
    "difficulty": 3,
    "prompt": "Write the pseudocode that defines a procedure DoubleIt that takes the integer Num by reference, doubles it, and leaves the doubled value in the caller’s variable; then write the statement that calls it for the variable Tickets.",
-   "canonical_answer": "```pseudocode\nPROCEDURE DoubleIt(Num : INTEGER) [BY REFERENCE]\n   Num <- Num * 2\nENDPROCEDURE\n\nCALL DoubleIt(Tickets)\n```",
+   "canonical_answer": "```pseudocode\nPROCEDURE DoubleIt(BYREF Num : INTEGER)\n   Num <- Num * 2\nENDPROCEDURE\n\nCALL DoubleIt(Tickets)\n```",
    "marking_guidance": [
     "Order: the steps in sequence - the header with its reference parameter, the body, the ending, then the call - each statement is a mark point.",
     "Input: the module works on the caller’s own variable, which is what by reference means.",
-    "Each statement is a mark point: the parameter marked by reference - 2 marks; the body doubling the parameter - 1 mark; the CALL with the variable - 1 mark.",
+    "Each statement is a mark point: the parameter marked BYREF - 2 marks; the body doubling the parameter - 1 mark; the CALL with the variable - 1 mark.",
     "Result: the end product is the caller’s variable doubled through the call, because the reference gave the module the variable itself."
    ],
    "context": {
@@ -420,7 +420,8 @@
     "CLM-9618-11.3-003": 1,
     "CLM-9618-11.3-004": 1
    },
-   "authored_hash": "5f0c77c0fa9f72be7799e39ea4ae5cdda931c0b63e841da68925d9ea3b01390a"
+   "authored_hash": "39bfe4411366cd23f1e79d1fa10e9050e83a0e817be4b85bf5afb71b7b001aa7",
+   "prior_hash": "5f0c77c0fa9f72be7799e39ea4ae5cdda931c0b63e841da68925d9ea3b01390a"
   },
   {
    "item_id": "ITEM-9618-11.3-010-APP",
@@ -1274,9 +1275,9 @@
    "mark_tariff": 8,
    "difficulty": 4,
    "prompt": "A savings club’s program must add a member’s weekly deposit to the club’s running total and report the new total after each deposit. Write pseudocode for a procedure Deposit that takes the real Amount by value and the real ClubTotal by reference, adds the amount to the total, and outputs the new total; then write the statements that initialise the club total to 0 and call Deposit for the amounts 25.50 and 40.00.",
-   "canonical_answer": "```pseudocode\nPROCEDURE Deposit(Amount : REAL, ClubTotal : REAL) [ClubTotal BY REFERENCE]\n   ClubTotal <- ClubTotal + Amount\n   OUTPUT ClubTotal\nENDPROCEDURE\n\nDECLARE ClubTotal : REAL\nClubTotal <- 0\nCALL Deposit(25.50, ClubTotal)\nCALL Deposit(40.00, ClubTotal)\n```",
+   "canonical_answer": "```pseudocode\nPROCEDURE Deposit(BYVAL Amount : REAL, BYREF ClubTotal : REAL)\n   ClubTotal <- ClubTotal + Amount\n   OUTPUT ClubTotal\nENDPROCEDURE\n\nDECLARE ClubTotal : REAL\nClubTotal <- 0\nCALL Deposit(25.50, ClubTotal)\nCALL Deposit(40.00, ClubTotal)\n```",
    "marking_guidance": [
-    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: ClubTotal marked as the reference parameter, because the caller’s variable must receive the addition.",
+    "Mark point 1: the procedure heading with both parameters and their types, and ENDPROCEDURE. Mark point 2: ClubTotal marked BYREF as the reference parameter, because the caller’s variable must receive the addition.",
     "Mark point 3: the declaration and initialisation of ClubTotal to 0 in the caller, before any deposit. Mark point 4: the body adding Amount to ClubTotal through the reference.",
     "Mark point 5: the output of the new total after each addition, inside the module. Mark point 6: the amount parameter taken by value, so the caller’s argument is only read.",
     "Mark point 7: the two CALLs with their arguments in parameter order - no loop, because two calls are two events and not a repetition. Mark point 8: the result visible outside - the caller’s ClubTotal holds 65.50 after the second call, because the reference carried the change back."
@@ -1297,7 +1298,8 @@
     "CLM-9618-11.3-004": 1,
     "CLM-9618-11.3-009": 1
    },
-   "authored_hash": "574ddddaa74bb2bb3f57ba2a9fc3ec5a7843dd4039717e7543a5f9843b4095eb"
+   "authored_hash": "123189b3141ebdc019799b9e9365ce383d7981de23a21f53d85d393eb20d8692",
+   "prior_hash": "574ddddaa74bb2bb3f57ba2a9fc3ec5a7843dd4039717e7543a5f9843b4095eb"
   },
   {
    "item_id": "ITEM-9618-11.3-P04",
@@ -1347,6 +1349,107 @@
     "CLM-9618-11.3-007": 1
    },
    "authored_hash": "e714711b4bb9d3a0d69a53eee65a4b42364aff3ab1d462239bae38e387d6fb86"
+  },
+  {
+   "item_id": "ITEM-9618-11.3-P05",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-03",
+    "OBJ-9618-11.3.1-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-004",
+    "CLM-9618-11.3-003",
+    "CLM-9618-11.3-001"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A savings club keeps its running balance in the variable ClubBalance. Each member’s weekly deposit is added to the balance, and the club records how many deposits have been made. Write pseudocode for a procedure RecordDeposit that takes the real Deposit by value and the real ClubBalance by reference, adds the deposit to the balance, and adds 1 to the deposit count - the integer DepositCount also arrives by reference, so the caller’s own variables carry both answers away.",
+   "canonical_answer": "```pseudocode\nPROCEDURE RecordDeposit(BYVAL Deposit : REAL, BYREF ClubBalance : REAL, BYREF DepositCount : INTEGER)\n   ClubBalance <- ClubBalance + Deposit\n   DepositCount <- DepositCount + 1\nENDPROCEDURE\n```",
+   "marking_guidance": [
+    "Mark point 1: the procedure heading with all three parameters and their types, and ENDPROCEDURE.",
+    "Mark point 2: ClubBalance and DepositCount marked BYREF as the reference parameters, because the caller’s own variables must receive both answers - the changes inside must show outside the call.",
+    "Mark point 3: Deposit taken by value, so the caller’s deposit amount is read but never changed - the reference marks belong to the two answers only.",
+    "Mark point 4: no declaration and no loop needed - the job is two updates on the parameters, and the values arrive through the header, never by INPUT inside the module.",
+    "Mark point 5: the balance updated through the reference, ClubBalance <- ClubBalance + Deposit, so the addition lands in the caller’s own variable.",
+    "Mark point 6: the count updated through its reference, DepositCount <- DepositCount + 1, so each deposit is counted as it is added.",
+    "Mark point 7: both updates inside the procedure body, between the heading and the ending. Mark point 8: the procedure closed with ENDPROCEDURE - its result the caller’s two changed variables rather than a returned value, because the references carried the answers out."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A savings club balance and deposit count carried out by reference.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-004": 1,
+    "CLM-9618-11.3-003": 1,
+    "CLM-9618-11.3-001": 1
+   },
+   "authored_hash": "cda24567b7e1f32f5d8b6b217aa6152c5b3def41036349c28008e6e556743d6b",
+   "prior_hash": "a6a8671ca0ff3e076b694945e16477b48968661424f08872939bac89eab2e0f1"
+  },
+  {
+   "item_id": "ITEM-9618-11.3-P06",
+   "objective_ids": [
+    "OBJ-9618-11.3.1-04",
+    "OBJ-9618-11.3.2-01"
+   ],
+   "claim_ids": [
+    "CLM-9618-11.3-005",
+    "CLM-9618-11.3-006",
+    "CLM-9618-11.3-002"
+   ],
+   "item_type": "worked_example",
+   "subtype": null,
+   "assessment_objectives": [
+    "AO3"
+   ],
+   "blooms_level": "Create",
+   "command_word": "Write",
+   "mark_tariff": 8,
+   "difficulty": 4,
+   "prompt": "A water utility charges households by the litres they draw: 15 cents per litre for the first 1000 litres in a month, and 45 cents per litre for every litre beyond 1000. Write pseudocode for a function WaterCost that takes the integer Litres drawn in a month and returns the cost in cents as an integer: no litres cost 0, a negative input is invalid and returns -1, and any input above 1000 is charged as the two tiers.",
+   "canonical_answer": "```pseudocode\nFUNCTION WaterCost(Litres : INTEGER) RETURNS INTEGER\n   DECLARE Cost : INTEGER\n   IF Litres < 0 THEN\n      RETURN -1\n   ENDIF\n   IF Litres <= 1000 THEN\n      Cost <- Litres * 15\n   ELSE\n      Cost <- 1000 * 15 + (Litres - 1000) * 45\n   ENDIF\n   RETURN Cost\nENDFUNCTION\n```",
+   "marking_guidance": [
+    "Mark point 1: the function heading with the parameter and its type, RETURNS INTEGER, and ENDFUNCTION. Mark point 2: the declaration of Cost, the computed answer.",
+    "Mark point 3: the validation selection first - IF Litres < 0 THEN RETURN -1 ENDIF - so the invalid input is refused before any cost is computed, and the comparison uses the correct sign.",
+    "Mark point 4: the tier selection IF ... THEN ... ELSE ... ENDIF with the condition Litres <= 1000, so the first 1000 litres and the litres beyond it sit on their own branches.",
+    "Mark point 5: the first-tier cost computed as Litres * 15 in the THEN branch - each of the drawn litres at 15 cents.",
+    "Mark point 6: the two-tier cost computed in the ELSE branch as 1000 * 15 + (Litres - 1000) * 45 - the first thousand at 15 cents, the litres beyond a thousand at 45 cents, and the subtraction before the multiplication.",
+    "Mark point 7: the final RETURN Cost, one return of the computed answer at the end - returned, not output, and never after CALL, because the call itself is a value.",
+    "Mark point 8: the function complete and closed - the value through the parameter, the answer through RETURN, and every branch returning or falling to the one final return."
+   ],
+   "context": {
+    "sector": null,
+    "business_size": null,
+    "ownership": null,
+    "situation": "A household’s water cost worked out tier by tier.",
+    "facts": []
+   },
+   "prerequisite_item_ids": [],
+   "core_status": "core",
+   "intentional_duplicate_group": null,
+   "provenance": "Authored for the 9618 AS top-up from the topic 11.3 claim ledger.",
+   "qa_status": "review_required",
+   "claims_seen": {
+    "CLM-9618-11.3-005": 1,
+    "CLM-9618-11.3-006": 1,
+    "CLM-9618-11.3-002": 1
+   },
+   "authored_hash": "1a2693379e494ef1f8116827a1c28c3aae07d363148f479ae7a64f5ea9572bd6"
   }
  ]
 }
