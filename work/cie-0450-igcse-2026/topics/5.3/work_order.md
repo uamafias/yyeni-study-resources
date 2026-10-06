@@ -2,13 +2,13 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-5 assessable objectives · 28 planned items · 2 content units
+5 assessable objectives · 29 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 57% | 40% |
+| AO1 | 59% | 40% |
 | AO2 | 21% | 20% |
 | AO3 | 21% | 25% |
 | AO4 | 0% | 15% |
@@ -17,12 +17,12 @@
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 37% | 40% |
-| AO2 | 20% | 20% |
-| AO3 | 29% | 25% |
-| AO4 | 14% | 15% |
+| AO1 | 39% | 40% |
+| AO2 | 19% | 20% |
+| AO3 | 28% | 25% |
+| AO4 | 13% | 15% |
 
-191 marks-equivalent of practice in this topic.
+197 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 18% in this topic (5 objectives against 28 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -65,6 +65,7 @@
 | `016-APP` | Use simple income statements in decision- making based on profit calculations | APP | AO2 | Explain | 6 | instructs with Explain, which this objective carries |
 | `017-CHAIN` | Use simple income statements in decision- making based on profit calculations | CHAIN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `020-FEATURE` | Use simple income statements in decision- making based on profit calculations | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `025-MISCON` | Main features of an income statement, e.g. revenue, cost of sales, gross profit, profit and retained profit | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of a cash-flow forecast with an income statement |
 
 ## Performance tasks
 

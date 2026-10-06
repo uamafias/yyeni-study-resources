@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-5 assessable objectives · 20 planned items · 1 content units
+5 assessable objectives · 22 planned items · 1 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 65% | 40% |
-| AO2 | 10% | 20% |
-| AO3 | 20% | 25% |
+| AO1 | 68% | 40% |
+| AO2 | 9% | 20% |
+| AO3 | 18% | 25% |
 | AO4 | 5% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 15% | 20% |
-| AO3 | 24% | 25% |
-| AO4 | 24% | 15% |
+| AO1 | 41% | 40% |
+| AO2 | 14% | 20% |
+| AO3 | 22% | 25% |
+| AO4 | 22% | 15% |
 
-157 marks-equivalent of practice in this topic.
+169 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 25% in this topic (5 objectives against 20 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -55,6 +55,8 @@
 | `013-FEATURE` | Recommend and justify a suitable form of business organisation to owners/management in a given situation | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
 | `011-DEF` | Business organisations in the public sector, e.g. public corporations | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `012-WHY` | Business organisations in the public sector, e.g. public corporations | WHY | AO1/AO3 | Explain | 6 | instructs with Explain, which this objective carries |
+| `017-MISCON` | Sole traders, partnerships, private and public limited companies, franchises and joint ventures | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of entrepreneur with sole trader |
+| `018-MISCON` | Concepts of risk, ownership and limited liability | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of limited liability with unlimited liability |
 
 ## Performance tasks
 

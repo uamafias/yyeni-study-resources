@@ -69,25 +69,29 @@
   },
   {
    "construct": "an exchange-rate calculation",
-   "pattern": "\\bexchange[- ]rate calculations?\\b|\\bcalculat\\w*\\b[^.]{0,40}\\bexchange rate\\b|\\bexchange rate\\b[^.]{0,40}\\bcalculat\\w*|\\bconvert\\w*\\b[^.]{0,60}\\b(?:at|using)\\s+(?:an?\\s+|the\\s+)?(?:exchange\\s+)?rate of\\b|\\bat an exchange rate of\\b|(?:N\\$|US\\$|€|£)\\s?\\d+(?:\\.\\d+)?\\s*=\\s*(?:N\\$|US\\$|€|£|R)\\s?\\d",
+   "pattern": "\\bexchange[- ]rate calculations?\\b|\\bcalculat\\w*\\b[^.]{0,40}\\bexchange rate\\b|\\bexchange rate\\b[^.]{0,40}\\bcalculat\\w*|\\bconvert\\w*\\b[^.]{0,60}\\b(?:at|using)\\s+(?:an?\\s+|the\\s+)?(?:exchange\\s+)?rate of\\b|\\bat an exchange rate of\\b|(?P<cur>N\\$|US\\$|€|£)\\s?\\d+(?:\\.\\d+)?\\s*=\\s*(?!(?P=cur))(?:N\\$|US\\$|€|£|R)\\s?\\d",
    "applies_to": "subject",
    "controls": {
     "must_catch": [
      "At an exchange rate of N$18 = US$1, the price rises.",
      "Convert US$200 into Namibian dollars at a rate of 18 to 1.",
-     "Calculate the new price after the exchange rate changes."
+     "Calculate the new price after the exchange rate changes.",
+     "The rate moved from N$17 = US$1 to N$19 = US$1."
     ],
     "must_allow": [
      "A weaker Namibian dollar makes Namibian exports cheaper abroad.",
      "The exchange rate fell, so imported fuel became more expensive.",
-     "Mr Nangolo imports car parts."
+     "Mr Nangolo imports car parts.",
+     "Gross profit is N$180 - N$40 = N$140.",
+     "Total cost = N$2 000 + N$500 = N$2 500."
     ]
    },
    "source": "syllabus, page 24, topic 6.3",
    "syllabus_sentence": "Exchange rate calculations will not be assessed.",
    "provenance": {
     "sentence": "syllabus",
-    "pattern": "judgement"
+    "pattern": "judgement",
+    "pattern_amended": "2026-10-06 planner: currency-equation clause now requires two different currencies, so same-currency arithmetic such as N$180 - N$40 = N$140 is allowed (agent report deviation 2)."
    }
   }
  ],

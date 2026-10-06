@@ -2,14 +2,14 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-11 assessable objectives · 53 planned items · 4 content units
+11 assessable objectives · 54 planned items · 4 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 51% | 40% |
-| AO2 | 18% | 20% |
+| AO1 | 52% | 40% |
+| AO2 | 17% | 20% |
 | AO3 | 31% | 25% |
 | AO4 | 0% | 15% |
 
@@ -17,12 +17,12 @@
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
+| AO1 | 37% | 40% |
 | AO2 | 21% | 20% |
-| AO3 | 35% | 25% |
+| AO3 | 34% | 25% |
 | AO4 | 8% | 15% |
 
-325 marks-equivalent of practice in this topic.
+331 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 22% in this topic (11 objectives against 51 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -100,6 +100,7 @@
 | `035-CHAIN` | Why new businesses are at a greater risk of failing | CHAIN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `036-APP` | Why new businesses are at a greater risk of failing | APP | AO2 | Explain | 6 | instructs with Explain, which this objective carries |
 | `042-FEATURE` | Why new businesses are at a greater risk of failing | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `050-MISCON` | Methods of measuring business size, e.g. number of people employed, value of output, capital employed (profit is not a method of measuring business size) | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of capital employed with working capital |
 
 ## Performance tasks
 

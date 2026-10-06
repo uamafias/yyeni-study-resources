@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-7 assessable objectives · 33 planned items · 2 content units
+7 assessable objectives · 34 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 53% | 40% |
-| AO2 | 16% | 20% |
-| AO3 | 31% | 25% |
+| AO1 | 55% | 40% |
+| AO2 | 15% | 20% |
+| AO3 | 30% | 25% |
 | AO4 | 0% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 20% | 20% |
-| AO3 | 33% | 25% |
-| AO4 | 12% | 15% |
+| AO1 | 37% | 40% |
+| AO2 | 19% | 20% |
+| AO3 | 32% | 25% |
+| AO4 | 11% | 15% |
 
-225 marks-equivalent of practice in this topic.
+231 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 22% in this topic (7 objectives against 32 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -72,6 +72,7 @@
 | `021-CHAIN` | Analyse market research data shown in the form of graphs, charts and diagrams; draw simple conclusions from such data | CHAIN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `022-DEF` | Analyse market research data shown in the form of graphs, charts and diagrams; draw simple conclusions from such data | DEF | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
 | `024-FEATURE` | Analyse market research data shown in the form of graphs, charts and diagrams; draw simple conclusions from such data | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `030-MISCON` | Primary research and secondary research (benefits and limitations of each) | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of primary research with secondary research |
 
 ## Performance tasks
 

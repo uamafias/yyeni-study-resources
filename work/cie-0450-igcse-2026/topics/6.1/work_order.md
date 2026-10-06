@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-6 assessable objectives · 27 planned items · 2 content units
+6 assessable objectives · 28 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 58% | 40% |
-| AO2 | 17% | 20% |
-| AO3 | 25% | 25% |
+| AO1 | 60% | 40% |
+| AO2 | 16% | 20% |
+| AO3 | 24% | 25% |
 | AO4 | 0% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 21% | 20% |
-| AO3 | 30% | 25% |
-| AO4 | 14% | 15% |
+| AO1 | 38% | 40% |
+| AO2 | 20% | 20% |
+| AO3 | 29% | 25% |
+| AO4 | 13% | 15% |
 
-189 marks-equivalent of practice in this topic.
+195 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 25% in this topic (6 objectives against 24 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -65,6 +65,7 @@
 | `016-BEN` | How businesses might respond to these changes | BEN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `017-LIM` | How businesses might respond to these changes | LIM | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `023-FEATURE` | How businesses might respond to these changes | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `024-MISCON` | Main stages of the business cycle, e.g. growth, boom, recession, slump | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of recession with inflation |
 
 ## Performance tasks
 

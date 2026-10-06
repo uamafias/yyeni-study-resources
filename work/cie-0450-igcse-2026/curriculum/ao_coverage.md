@@ -8,12 +8,12 @@ The syllabus states its assessment-objective weights as a share of **marks**, ac
 
 | AO | planned | syllabus weight | gap |
 |---|---:|---:|---:|
-| AO1 | 36% | 40% | -4 |
-| AO2 | 20% | 20% | +0 |
-| AO3 | 30% | 25% | +5 |
+| AO1 | 38% | 40% | -2 |
+| AO2 | 19% | 20% | -1 |
+| AO3 | 29% | 25% | +4 |
 | AO4 | 14% | 15% | -1 |
 
-✅ **largest gap 5 points** across 5,939 marks-equivalent of practice.
+✅ **largest gap 4 points** across 6,107 marks-equivalent of practice.
 
 A gap inside 5 points is the plan matching the exam. A larger one means the item plan needs more of that kind of practice - not that a topic should be padded.
 
@@ -23,26 +23,26 @@ A gap inside 5 points is the plan matching the exam. A larger one means the item
 |---|---:|---:|---:|---:|---:|---:|---:|
 | **1.1** Business activity | 4 | 21 | 161 | 38% | 17% | 29% | 16% |
 | **1.2** Classification of businesses | 3 | 15 | 129 | 36% | 19% | 25% | 20% |
-| **1.3** Enterprise, business growth and size | 11 | 53 | 325 | 36% | 21% | 35% | 8% |
-| **1.4** Types of business organisation | 5 | 20 | 157 | 36% | 15% | 24% | 24% |
+| **1.3** Enterprise, business growth and size | 11 | 54 | 331 | 37% | 21% | 34% | 8% |
+| **1.4** Types of business organisation | 5 | 22 | 169 | 41% | 14% | 22% | 22% |
 | **1.5** Business objectives and stakeholder objectives | 7 | 28 | 191 | 37% | 22% | 28% | 14% |
-| **2.1** Motivating employees | 7 | 29 | 199 | 36% | 17% | 28% | 19% |
-| **2.2** Organisation and management | 7 | 30 | 209 | 36% | 20% | 25% | 18% |
-| **2.3** Recruitment, selection and training of employe | 11 | 45 | 289 | 36% | 22% | 25% | 17% |
+| **2.1** Motivating employees | 7 | 30 | 205 | 38% | 16% | 27% | 19% |
+| **2.2** Organisation and management | 7 | 32 | 221 | 40% | 19% | 24% | 17% |
+| **2.3** Recruitment, selection and training of employe | 11 | 50 | 319 | 42% | 20% | 22% | 16% |
 | **2.4** Internal and external communication | 4 | 33 | 263 | 35% | 24% | 27% | 14% |
 | **3.1** Marketing, competition and the customer contin | 12 | 47 | 291 | 36% | 15% | 36% | 13% |
-| **3.2** Market research | 7 | 33 | 225 | 36% | 20% | 33% | 12% |
-| **3.3** Marketing mix | 16 | 68 | 411 | 36% | 20% | 32% | 12% |
+| **3.2** Market research | 7 | 34 | 231 | 37% | 19% | 32% | 11% |
+| **3.3** Marketing mix | 16 | 73 | 441 | 40% | 19% | 30% | 11% |
 | **3.4** Marketing strategy | 6 | 37 | 255 | 36% | 18% | 31% | 15% |
-| **4.1** Production of goods and services | 8 | 35 | 235 | 36% | 20% | 28% | 16% |
+| **4.1** Production of goods and services | 8 | 38 | 253 | 40% | 19% | 26% | 15% |
 | **4.2** Costs, scale of production and break-even anal | 11 | 63 | 367 | 36% | 19% | 35% | 10% |
 | **4.3** Achieving quality production | 3 | 21 | 171 | 36% | 23% | 26% | 15% |
 | **4.4** Location decisions | 4 | 25 | 197 | 36% | 17% | 22% | 25% |
 | **5.1** Business finance: needs and sources | 7 | 32 | 227 | 36% | 19% | 23% | 22% |
 | **5.2** Cash-flow forecasting and working capital | 6 | 44 | 275 | 36% | 20% | 35% | 9% |
-| **5.3** Income statements | 5 | 28 | 191 | 37% | 20% | 29% | 14% |
+| **5.3** Income statements | 5 | 29 | 197 | 39% | 19% | 28% | 13% |
 | **5.4** Statement of financial position | 2 | 16 | 141 | 35% | 20% | 27% | 18% |
 | **5.5** Analysis of accounts | 9 | 64 | 373 | 36% | 21% | 34% | 10% |
-| **6.1** Economic issues | 6 | 27 | 189 | 36% | 21% | 30% | 14% |
-| **6.2** Environmental and ethical issues | 7 | 38 | 251 | 36% | 16% | 38% | 10% |
-| **6.3** Business and the international economy | 8 | 32 | 211 | 36% | 20% | 32% | 12% |
+| **6.1** Economic issues | 6 | 28 | 195 | 38% | 20% | 29% | 13% |
+| **6.2** Environmental and ethical issues | 7 | 40 | 263 | 39% | 15% | 36% | 10% |
+| **6.3** Business and the international economy | 8 | 37 | 241 | 44% | 17% | 28% | 11% |

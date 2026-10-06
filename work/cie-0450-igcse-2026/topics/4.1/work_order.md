@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-8 assessable objectives · 35 planned items · 3 content units
+8 assessable objectives · 38 planned items · 3 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 56% | 40% |
-| AO2 | 18% | 20% |
-| AO3 | 24% | 25% |
+| AO1 | 59% | 40% |
+| AO2 | 16% | 20% |
+| AO3 | 22% | 25% |
 | AO4 | 3% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 20% | 20% |
-| AO3 | 28% | 25% |
-| AO4 | 16% | 15% |
+| AO1 | 40% | 40% |
+| AO2 | 19% | 20% |
+| AO3 | 26% | 25% |
+| AO4 | 15% | 15% |
 
-235 marks-equivalent of practice in this topic.
+253 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 24% in this topic (8 objectives against 34 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -77,6 +77,9 @@
 | `022-LIM` | How technology has changed and is changing production methods, e.g. using computers in design and manufacturing | LIM | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `023-APP` | How technology has changed and is changing production methods, e.g. using computers in design and manufacturing | APP | AO2 | Explain | 6 | instructs with Explain, which this objective carries |
 | `028-FEATURE` | How technology has changed and is changing production methods, e.g. using computers in design and manufacturing | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `032-MISCON` | Features, benefits and limitations of job, batch and flow production | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of flow production with batch production |
+| `033-MISCON` | The concept of lean production: how to achieve it, e.g. just-in-time inventory control and Kaizen; benefits of lean production | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of lean production with flow production |
+| `034-MISCON` | The concept of lean production: how to achieve it, e.g. just-in-time inventory control and Kaizen; benefits of lean production | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of just-in-time inventory control with inventory control in general |
 
 ## Performance tasks
 

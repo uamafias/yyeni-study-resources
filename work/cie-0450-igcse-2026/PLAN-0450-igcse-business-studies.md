@@ -114,7 +114,7 @@ From 1267 error statements across 17 Principal Examiner Reports. These are not s
 - a solution offered where the question asked for a cause or an effect scores nothing
 - a point restated in different words is not a second point
 
-`curriculum/misconceptions.json` holds **72 examiner-evidenced confusions**, each attached to the objective it belongs to (49 adjacent concept, 13 wrong angle same concept, 7 near neighbour term, 3 opposite direction). Every one earns a `MISCON` card.
+`curriculum/misconceptions.json` holds **72 examiner-evidenced confusions**, each attached to the objective it belongs to (49 adjacent concept, 13 wrong angle same concept, 7 near neighbour term, 3 opposite direction). Every one earns a `MISCON` card. *(Amended 6 October 2026, planner: the register is mined automatically and is noisy. Some entries were already drilled by the first authoring run (for example roles of marketing vs the four Ps, profit vs cash); 29 genuine concept confusions not yet drilled were added as `MISCON` slots, three of them re-attached to the objective they belong to (job description vs person specification and recruitment vs product advertising to 2.3; motivators vs hygiene factors to 2.1); the rest are duplicates, wrong-angle answering habits already covered by the rules above, or fragments. See `TOPUP-0450-igcse-business-studies.md`.)*
 
 A `MISCON` card is a **discrimination**, not a definition repeated louder: it states the boundary between the two ideas and gives the test that tells them apart.
 

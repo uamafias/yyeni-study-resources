@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-7 assessable objectives · 38 planned items · 1 content units
+7 assessable objectives · 40 planned items · 1 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 53% | 40% |
+| AO1 | 55% | 40% |
 | AO2 | 11% | 20% |
-| AO3 | 36% | 25% |
+| AO3 | 34% | 25% |
 | AO4 | 0% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 16% | 20% |
-| AO3 | 38% | 25% |
+| AO1 | 39% | 40% |
+| AO2 | 15% | 20% |
+| AO3 | 36% | 25% |
 | AO4 | 10% | 15% |
 
-251 marks-equivalent of practice in this topic.
+263 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 19% in this topic (7 objectives against 36 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -75,6 +75,8 @@
 | `023-BEN` | How business might react and respond to ethical issues, e.g. child labour, paying fair prices to suppliers | BEN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `024-LIM` | How business might react and respond to ethical issues, e.g. child labour, paying fair prices to suppliers | LIM | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `031-FEATURE` | How business might react and respond to ethical issues, e.g. child labour, paying fair prices to suppliers | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `035-MISCON` | Ethical issues a business might face: conflicts between profits and ethics | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of acting ethically with being environmentally friendly |
+| `036-MISCON` | Ethical issues a business might face: conflicts between profits and ethics | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of acting ethically with obeying the law |
 
 ## Performance tasks
 

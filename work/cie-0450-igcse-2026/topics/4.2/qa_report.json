@@ -1,18 +1,18 @@
 {
   "qa_report_id": "QA-cie-0450-igcse-2026-4.2",
   "build_id": "cie-0450-igcse-2026/topic-4.2",
-  "generated_at": "2026-09-28T15:00:48Z",
+  "generated_at": "2026-10-06T19:17:58Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
-      "status": "fail",
-      "message": "[RS-27 Schema validity] 3 schema violations: objective_registry.json []: Additional properties are not allowed ('authority', 'generated_at', 'granularity_note' were unexpected) | objective_registry.json []: 'qualification_profile_id' is a required property | objective_registry.json []: 'subject_profile_id' is a required property",
+      "status": "pass",
+      "message": "[RS-27 Schema validity] All 6 structured artifacts validate against the v0.2.0 schemas.",
       "affected_ids": []
     },
     {
       "check_id": "C-01",
       "status": "pass",
-      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 0 content units, 0 items and 0 claims resolves in the registry (12 nodes in this topic branch, 11 assessable).",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 3 content units, 63 items and 35 claims resolves in the registry (12 nodes in this topic branch, 11 assessable).",
       "affected_ids": []
     },
     {
@@ -24,7 +24,7 @@
     {
       "check_id": "C-03",
       "status": "pass",
-      "message": "[RS-07 Claim orphans] All 0 ledger claims are cited by at least one block or item.",
+      "message": "[RS-07 Claim orphans] All 35 ledger claims are cited by at least one block or item.",
       "affected_ids": []
     },
     {
@@ -35,39 +35,15 @@
     },
     {
       "check_id": "C-05",
-      "status": "fail",
-      "message": "[RS-05 Coverage floor - items (meaningful mappings only)] 11 of 11 assessable objectives have no learning item that genuinely practises them (RS-40 mappings only).",
-      "affected_ids": [
-        "OBJ-0450-4.2.1-01",
-        "OBJ-0450-4.2.1-02",
-        "OBJ-0450-4.2.2-01",
-        "OBJ-0450-4.2.2-02",
-        "OBJ-0450-4.2.3-01",
-        "OBJ-0450-4.2.3-02",
-        "OBJ-0450-4.2.3-03",
-        "OBJ-0450-4.2.3-04",
-        "OBJ-0450-4.2.3-05",
-        "OBJ-0450-4.2.3-06",
-        "OBJ-0450-4.2.3-07"
-      ]
+      "status": "pass",
+      "message": "[RS-05 Coverage floor - items (meaningful mappings only)] All 11 assessable objectives are practised by at least one item under RS-40.",
+      "affected_ids": []
     },
     {
       "check_id": "C-06",
-      "status": "fail",
-      "message": "[RS-05 Coverage floor - content units] 11 assessable objectives are taught by no content unit.",
-      "affected_ids": [
-        "OBJ-0450-4.2.1-01",
-        "OBJ-0450-4.2.1-02",
-        "OBJ-0450-4.2.2-01",
-        "OBJ-0450-4.2.2-02",
-        "OBJ-0450-4.2.3-01",
-        "OBJ-0450-4.2.3-02",
-        "OBJ-0450-4.2.3-03",
-        "OBJ-0450-4.2.3-04",
-        "OBJ-0450-4.2.3-05",
-        "OBJ-0450-4.2.3-06",
-        "OBJ-0450-4.2.3-07"
-      ]
+      "status": "pass",
+      "message": "[RS-05 Coverage floor - content units] All 11 assessable objectives are taught by at least one content unit.",
+      "affected_ids": []
     },
     {
       "check_id": "C-07",
@@ -78,28 +54,25 @@
     {
       "check_id": "C-30",
       "status": "pass",
-      "message": "[RS-41 No bulk stamp] All 0 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
+      "message": "[RS-41 No bulk stamp] All 85 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
       "affected_ids": []
     },
     {
       "check_id": "C-29",
-      "status": "not_run",
-      "message": "[RS-41 No stale derivative] No claim carries a revision, so staleness cannot be computed. Bootstrap RS-41 revision tracking on the ledger before relying on this check.",
+      "status": "pass",
+      "message": "[RS-41 No stale derivative] No stale derivative: every block and item was authored against the current revision of every claim it cites.",
       "affected_ids": []
     },
     {
       "check_id": "C-31",
-      "status": "fail",
-      "message": "[RS-17 Syllabus modality coverage] 2 objectives name a form of representation in their syllabus wording (a chart, graph or diagram) and no learning item practises it. Numeric coverage satisfies the calculation half of the objective and leaves the other half untested.",
-      "affected_ids": [
-        "OBJ-0450-4.2.3-02",
-        "OBJ-0450-4.2.3-03"
-      ]
+      "status": "pass",
+      "message": "[RS-17 Syllabus modality coverage] Every objective whose syllabus wording names a chart, graph or diagram is practised in that form.",
+      "affected_ids": []
     },
     {
       "check_id": "C-32",
       "status": "pass",
-      "message": "[RS-22 Stated arithmetic is correct] All 0 stated calculations in canonical answers evaluate correctly.",
+      "message": "[RS-22 Stated arithmetic is correct] All 52 stated calculations in canonical answers evaluate correctly.",
       "affected_ids": []
     },
     {
@@ -147,7 +120,7 @@
     {
       "check_id": "C-11",
       "status": "pass",
-      "message": "[RS-15 Scope discipline - excluded constructs] None of the 34 constructs the contract excludes appears in learner-facing material.",
+      "message": "[RS-15 Scope discipline - excluded constructs] None of the 4 constructs the contract excludes appears in learner-facing material.",
       "affected_ids": []
     },
     {
@@ -165,26 +138,14 @@
     {
       "check_id": "C-14",
       "status": "pass",
-      "message": "[RS-19 Command-word discipline] No item prompt instructs with a command word absent from this level ().",
+      "message": "[RS-19 Command-word discipline] No item prompt instructs with a command word absent from this level (Justify).",
       "affected_ids": []
     },
     {
       "check_id": "C-15",
-      "status": "fail",
-      "message": "[RS-37 Command-word-shaped practice] 11 objectives have no item whose prompt instructs with one of their own command words, so they are covered but not practised in the shape the paper asks for: OBJ-0450-4.2.1-01 (needs state/define/identify/calculate/outline/explain/consider); OBJ-0450-4.2.1-02 (needs state/define/identify/outline/explain); OBJ-0450-4.2.2-01 (needs state/define/identify/outline/explain); OBJ-0450-4.2.2-02 (needs state/define/identify/outline/explain); OBJ-0450-4.2.3-01 (needs state/define/identify/calculate/outline/explain/consider); OBJ-0450-4.2.3-02 (needs state/define/identify/calculate/outline/explain/consider) ...",
-      "affected_ids": [
-        "OBJ-0450-4.2.1-01",
-        "OBJ-0450-4.2.1-02",
-        "OBJ-0450-4.2.2-01",
-        "OBJ-0450-4.2.2-02",
-        "OBJ-0450-4.2.3-01",
-        "OBJ-0450-4.2.3-02",
-        "OBJ-0450-4.2.3-03",
-        "OBJ-0450-4.2.3-04",
-        "OBJ-0450-4.2.3-05",
-        "OBJ-0450-4.2.3-06",
-        "OBJ-0450-4.2.3-07"
-      ]
+      "status": "pass",
+      "message": "[RS-37 Command-word-shaped practice] Every objective with a command word carries an item that instructs with one of them.",
+      "affected_ids": []
     },
     {
       "check_id": "C-16",
@@ -200,14 +161,14 @@
     },
     {
       "check_id": "C-18",
-      "status": "warn",
-      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 0, 'AO2': 0, 'AO3': 0, 'AO4': 0} against target {'AO1': 40, 'AO2': 20, 'AO3': 25, 'AO4': 15}; largest deviation across AO1-AO3 is 40 points. AO4 is reported, not tested by count: 0 items carry it, of which 0 are performance tasks (none). RS-19 measures the AO4 share in practice time. No performance task exists, so no practice time carries AO4 at all.",
+      "status": "pass",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 45, 'AO2': 22, 'AO3': 27, 'AO4': 5} against target {'AO1': 40, 'AO2': 20, 'AO3': 25, 'AO4': 15}; largest deviation across AO1-AO3 is 5 points. AO4 is reported, not tested by count: 4 items carry it, of which 4 are performance tasks (case_analysis, data_response, essay_plan, short_answer). RS-19 measures the AO4 share in practice time.",
       "affected_ids": []
     },
     {
       "check_id": "C-19",
       "status": "pass",
-      "message": "[RS-25 Flashcard integrity] All 0 flashcards carry a non-null canonical answer and a declared subtype.",
+      "message": "[RS-25 Flashcard integrity] All 59 flashcards carry a non-null canonical answer and a declared subtype.",
       "affected_ids": []
     },
     {
@@ -219,13 +180,13 @@
     {
       "check_id": "C-21",
       "status": "pass",
-      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 0 items.",
+      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 63 items.",
       "affected_ids": []
     },
     {
       "check_id": "C-22",
       "status": "pass",
-      "message": "[RS-30 Marking guidance present] All 0 items carry marking guidance.",
+      "message": "[RS-30 Marking guidance present] All 63 items carry marking guidance.",
       "affected_ids": []
     },
     {
@@ -237,7 +198,7 @@
     {
       "check_id": "C-24",
       "status": "pass",
-      "message": "[RS-13 Publication gate] Gate holds: 0 of 0 claims are publishable or verified. 0 are generated_gap and need documented human approval (RS-13).",
+      "message": "[RS-13 Publication gate] Gate holds: 0 of 35 claims are publishable or verified. 35 are generated_gap and need documented human approval (RS-13).",
       "affected_ids": []
     },
     {
@@ -249,7 +210,7 @@
     {
       "check_id": "C-26",
       "status": "pass",
-      "message": "[RS-09 Word budget] All 0 content units sit inside their declared word budget (0 words total).",
+      "message": "[RS-09 Word budget] All 3 content units sit inside their declared word budget (3558 words total).",
       "affected_ids": []
     },
     {
@@ -261,19 +222,19 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 10 files to topics/4.2/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (c969689396fae716) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 17 files to topics/4.2/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (3d4aaea54a742434) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
       "check_id": "C-37",
       "status": "pass",
-      "message": "[RS-43 Conditioned mechanisms carry their conditions] No artefact asserts any of the 2 registered conditioned mechanisms in this topic.",
+      "message": "[RS-43 Conditioned mechanisms carry their conditions] All 11 assertions of a registered conditioned mechanism carry every condition the register requires.",
       "affected_ids": []
     },
     {
       "check_id": "C-38",
       "status": "pass",
-      "message": "[RS-44 Answers do not supply their own facts] No answer in this topic asserts a completeness fact.",
+      "message": "[RS-44 Answers do not supply their own facts] All 1 completeness assertions are either established by the prompt or made conditional in the answer.",
       "affected_ids": []
     },
     {
@@ -296,8 +257,14 @@
     },
     {
       "check_id": "C-42",
-      "status": "warn",
-      "message": "[RS-45 Contract counts match the live build] The contract authorises no counts, so nothing can be reconciled against the build.",
+      "status": "pass",
+      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 63 learning items, 3 content units.",
+      "affected_ids": []
+    },
+    {
+      "check_id": "C-43",
+      "status": "not_run",
+      "message": "[RS-48 Practice texts are declared, original and the stated length] No item in this topic is answered from a practice text.",
       "affected_ids": []
     }
   ],
@@ -310,26 +277,20 @@
     }
   ],
   "blockers": [
-    "Deterministic checks failed. This is the publication gate and it is not waivable.",
-    "C-00 [RS-27 Schema validity] 3 schema violations: objective_registry.json []: Additional properties are not allowed ('authority', 'generated_at', 'granularity_note' were unexpected) | objective_registry.json []: 'qualification_profile_id' is a required property | objective_registry.json []: 'subject_profile_id' is a required property",
-    "C-05 [RS-05 Coverage floor - items (meaningful mappings only)] 11 of 11 assessable objectives have no learning item that genuinely practises them (RS-40 mappings only).",
-    "C-06 [RS-05 Coverage floor - content units] 11 assessable objectives are taught by no content unit.",
-    "C-31 [RS-17 Syllabus modality coverage] 2 objectives name a form of representation in their syllabus wording (a chart, graph or diagram) and no learning item practises it. Numeric coverage satisfies the calculation half of the objective and leaves the other half untested.",
-    "C-15 [RS-37 Command-word-shaped practice] 11 objectives have no item whose prompt instructs with one of their own command words, so they are covered but not practised in the shape the paper asks for: OBJ-0450-4.2.1-01 (needs state/define/identify/calculate/outline/explain/consider); OBJ-0450-4.2.1-02 (needs state/define/identify/outline/explain); OBJ-0450-4.2.2-01 (needs state/define/identify/outline/explain); OBJ-0450-4.2.2-02 (needs state/define/identify/outline/explain); OBJ-0450-4.2.3-01 (needs state/define/identify/calculate/outline/explain/consider); OBJ-0450-4.2.3-02 (needs state/define/identify/calculate/outline/explain/consider) ...",
-    "Packet incomplete - absent inputs: curriculum/item-budget.json, learner notes (topics/<id>/notes-*.md), topics/4.2/claims/canonical_claim_ledger.json.",
-    "No deterministic opinion on 3 checks (C-29, C-35, C-41) - on these a human or model reviewer is the only line of defence.",
+    "Packet incomplete - absent inputs: curriculum/item-budget.json.",
+    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
     "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
   ],
   "metrics": {
     "objective_count": 11,
-    "claim_count": 0,
-    "content_unit_count": 0,
-    "learning_item_count": 0,
-    "word_count": 0
+    "claim_count": 35,
+    "content_unit_count": 3,
+    "learning_item_count": 63,
+    "word_count": 3558
   },
-  "release_decision": "reject",
+  "release_decision": "publish",
   "notes": [
-    "Standard v0.2.0-draft check suite. 43 checks: 33 pass, 5 fail, 2 warn, 3 not_run.",
+    "Standard v0.2.0-draft check suite. 44 checks: 41 pass, 0 fail, 0 warn, 3 not_run.",
     "A not_run check means an input the check needs is absent. It is never a pass.",
     "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
   ]

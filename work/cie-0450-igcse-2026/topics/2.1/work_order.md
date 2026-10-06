@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-7 assessable objectives · 29 planned items · 2 content units
+7 assessable objectives · 30 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 61% | 40% |
-| AO2 | 11% | 20% |
-| AO3 | 25% | 25% |
-| AO4 | 4% | 15% |
+| AO1 | 62% | 40% |
+| AO2 | 10% | 20% |
+| AO3 | 24% | 25% |
+| AO4 | 3% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 17% | 20% |
-| AO3 | 28% | 25% |
+| AO1 | 38% | 40% |
+| AO2 | 16% | 20% |
+| AO3 | 27% | 25% |
 | AO4 | 19% | 15% |
 
-199 marks-equivalent of practice in this topic.
+205 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 25% in this topic (7 objectives against 28 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -68,6 +68,7 @@
 | `018-APP` | Recommend and justify appropriate method(s) of motivation in given circumstances | APP | AO2 | Explain | 6 | instructs with Explain, which this objective carries |
 | `019-CHAIN` | Recommend and justify appropriate method(s) of motivation in given circumstances | CHAIN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `020-FEATURE` | Recommend and justify appropriate method(s) of motivation in given circumstances | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
+| `026-MISCON` | Key motivational theories: Taylor and Herzberg | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of motivators with hygiene factors |
 
 ## Performance tasks
 

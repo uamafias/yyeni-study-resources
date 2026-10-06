@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-8 assessable objectives · 32 planned items · 3 content units
+8 assessable objectives · 37 planned items · 3 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 56% | 40% |
-| AO2 | 16% | 20% |
-| AO3 | 28% | 25% |
+| AO1 | 62% | 40% |
+| AO2 | 14% | 20% |
+| AO3 | 24% | 25% |
 | AO4 | 0% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 20% | 20% |
-| AO3 | 32% | 25% |
-| AO4 | 12% | 15% |
+| AO1 | 44% | 40% |
+| AO2 | 17% | 20% |
+| AO3 | 28% | 25% |
+| AO4 | 11% | 15% |
 
-211 marks-equivalent of practice in this topic.
+241 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 25% in this topic (8 objectives against 32 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -74,6 +74,11 @@
 | `020-DEF` | How exchange rate changes can affect businesses as importers and exporters of products, e.g. prices, competitiveness, profitability | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `021-BEN` | How exchange rate changes can affect businesses as importers and exporters of products, e.g. prices, competitiveness, profitability | BEN | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
 | `022-LIM` | How exchange rate changes can affect businesses as importers and exporters of products, e.g. prices, competitiveness, profitability | LIM | AO3 | Explain | 6 | instructs with Explain, which this objective carries |
+| `029-MISCON` | The concept of globalisation and the reasons for it | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of globalisation with selling abroad |
+| `030-MISCON` | Opportunities and threats of globalisation for businesses | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of globalisation with multinational businesses |
+| `031-MISCON` | Why governments might introduce import tariffs and import quotas | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of legal controls with import tariffs and quotas |
+| `032-MISCON` | Benefits to a business of becoming a multinational and the impact on its stakeholders | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of stakeholders with shareholders |
+| `033-MISCON` | Depreciation and appreciation of an exchange rate | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of currency appreciation with currency depreciation |
 
 ## Performance tasks
 

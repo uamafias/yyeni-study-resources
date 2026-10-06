@@ -2,27 +2,27 @@
 
 *build/make_work_order.py — regenerate, never edit*
 
-11 assessable objectives · 45 planned items · 4 content units
+11 assessable objectives · 50 planned items · 4 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| AO1 | 56% | 40% |
-| AO2 | 20% | 20% |
-| AO3 | 20% | 25% |
+| AO1 | 60% | 40% |
+| AO2 | 18% | 20% |
+| AO3 | 18% | 25% |
 | AO4 | 4% | 15% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| AO1 | 36% | 40% |
-| AO2 | 22% | 20% |
-| AO3 | 25% | 25% |
-| AO4 | 17% | 15% |
+| AO1 | 42% | 40% |
+| AO2 | 20% | 20% |
+| AO3 | 22% | 25% |
+| AO4 | 16% | 15% |
 
-289 marks-equivalent of practice in this topic.
+319 marks-equivalent of practice in this topic.
 
 > The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 24% in this topic (11 objectives against 45 slots) and cannot reach the 40% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
@@ -92,6 +92,11 @@
 | `034-FEATURE` | Recommend and justify which employees to make redundant in given circumstances | FEATURE | AO1 | Explain | 6 | added to reach the framework AO1 target of 40% |
 | `031-DEF` | Legal controls over employment contracts, unfair dismissal, discrimination, health and safety, legal minimum wage | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `032-WHY` | Legal controls over employment contracts, unfair dismissal, discrimination, health and safety, legal minimum wage | WHY | AO1/AO3 | Explain | 6 | instructs with Explain, which this objective carries |
+| `042-MISCON` | Recruitment and selection methods | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of advertising a job vacancy with advertising a product |
+| `043-MISCON` | Difference between internal recruitment and external recruitment | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of external recruitment with external training |
+| `044-MISCON` | Main stages in recruitment and selection of employees | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of job description with person specification |
+| `045-MISCON` | Benefits and limitations of part-time employees and full-time employees | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of part-time employees with temporary employees |
+| `046-MISCON` | Difference between dismissal and redundancy with examples | MISCON | AO1 | Explain | 6 | planner top-up 2026-10-06: discriminates the examiner-evidenced confusion of dismissal with redundancy |
 
 ## Performance tasks
 
