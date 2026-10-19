@@ -28,3 +28,7 @@ recorded in its manifest and bindings.
 Before learner release, resolve the 35 figure items and their exact answer keys, demonstrate
 YYeni image display and multi-mark guidance where needed, and make a separate release decision.
 The unresolved claim-verification state must remain visible despite the operator waiver.
+
+Repository sync status on 2026-10-19: local commit `7879ce4` was created. `git push origin main`
+failed with `Could not resolve host: github.com`. The remote copy is pending network access;
+the Step 7 committed-and-pushed checkbox remains open.

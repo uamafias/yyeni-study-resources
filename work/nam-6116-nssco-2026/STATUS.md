@@ -826,3 +826,8 @@ from the tracked source inventory, provenance and generation scripts. Project-ge
 are included. A fresh clone must rebuild the visual bank before running its file-integrity
 check. The source workspace and review package keep visual needs open; omitted files are not
 presented as supplied figures. See `review/REPOSITORY-PUBLICATION-RECORD-2026-10-19.md`.
+
+Local commit `7879ce4` contains the review copy, subject sources, analysis, review records and
+tracker update. The push to `origin/main` was attempted on 2026-10-19 and failed because the
+shell could not resolve `github.com`. The Step 7 committed-and-pushed checkbox remains open;
+the remote repository has not been updated by this attempt.
