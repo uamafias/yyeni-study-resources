@@ -1,0 +1,124 @@
+review_id: SR-6116-1-STEP6-CLAUDE-R1
+reviewer_role: combined
+packet_hash_verified: null
+status: accept_with_open_issues
+coverage_confirmed: 'items_read: 29 of 29 records in items_1.json (26 single items including 1 MISCON, plus practice sets
+  P01 with 12 MCQs, P02 and P03). The file contained no flashcards. notes_read: All of topics/1/1-scientific-processes.md,
+  every section of 1.1, 1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.2.5 and 1.2.6. The cross-reference to 3.1 was checked and resolves (topic
+  3 notes, "3.1 Magnification and the light microscope"). not_checked: AO, Bloom, command-word and tariff labels (excluded
+  by the brief); renderer header; deterministic checks; flashcards outside this file; figures for held Fig. VIS items (the
+  wording and answer of ITEM-6116-1-100 were judged sound).'
+reconstruction_test: 'q6_learner_test: OBJ-6116-1.2.3-05 (ITEM-6116-1-041, 5 marks): from 1.2.3 alone, a learner puts temperature
+  on x and time on y, labels them temperature / °C and endpoint time / s, uses regular scales (1, 2, 5 or 10 per square),
+  plots with crosses, draws a smooth curve and titles it ''endpoint time against temperature''. This earns 5/5. OBJ-6116-1.2.5-05
+  with 1.2.1-04 (ITEM-6116-1-P03, 10 marks): 1.2.1 gives IV setting and DV time; 1.1 gives the mean 60 s; 1.2.3 and 1.2.5
+  give the trend with quoted values; 1.2.1 and 1.2.6 give the controlled 30 cm³; the 1.2.5 anomaly section gives 55 s as the
+  anomaly; the 1.2.5 and 1.2.6 timing guidance gives too-short times and starting at a defined moment. This earns 10/10. The
+  6-flashcard sample was not done because the file contained no flashcards. q7_misconceptions: ITEM-6116-1-106-MISCON (MISCON-6116-029)
+  confronts the wrong label, but the stem gives the answer away by using ''changes'' and ''measures'', so it only partly discriminates
+  (1-002). P01 Q1 tests the same idea and is similarly cued (1-003).'
+issues:
+- issue_id: 1-001
+  severity: medium
+  category: coherence
+  affected_ids:
+  - 1.2.5 Errors and improvements
+  - 1.1 Mathematical instruments
+  - ITEM-6116-1-057-PROC
+  - ITEM-6116-1-P01 Q8
+  finding: The notes and items give two different eye positions for avoiding parallax when reading a ruler. 1.1 and item 057
+    say the eye should be directly above the mark, which is correct for a ruler lying flat. 1.2.5 tells learners to "read
+    at eye level" for the same oblique-ruler case, and P01 Q8 keys "Read at eye level" as the general precaution against parallax.
+    "Eye level" is right for a vertical scale (measuring cylinder, thermometer) but not for a ruler on a bench. The real condition,
+    that the line of sight is perpendicular to the scale at the reading point, is never stated.
+  evidence: '1.2.5: "If a ruler is viewed obliquely, parallax can shift the apparent endpoint; read at eye level." 1.1: "Read
+    graduations with the eye directly above the mark". ITEM-6116-1-057-PROC: "reading with the eye directly above the scale".
+    P01 Q8 key: "B. Read at eye level ... B aligns eye and scale".'
+  educational_consequence: A learner learns "eye level" as the rule for parallax and uses it for a horizontal ruler, or sees
+    the two notes as contradicting each other. If 057 were marked strictly, an answer of "read at eye level" taken from 1.2.5
+    could lose the mark.
+  recommended_repair: State the rule once with its condition, that the line of sight is perpendicular to the scale at the
+    reading, so the eye is directly above a flat ruler and level with a vertical scale or meniscus. Change "read at eye level"
+    in 1.2.5 to "read with the eye directly above the mark". Reword P01 Q8 option B to "Read with the eye perpendicular to
+    the scale", or set the question on a vertical scale.
+  confidence: 0.8
+  status: open
+- issue_id: 1-002
+  severity: medium
+  category: evaluation
+  affected_ids:
+  - ITEM-6116-1-106-MISCON
+  finding: The misconception item only partly discriminates. The stem already describes salt concentration as the factor the
+    learner "changes" and growth as what the learner "measures", and says the labelling is an error. With the two definitions,
+    the answer is just a relabelling. The learner never has to work out which variable was manipulated from a neutral description,
+    which is the misconception's own discriminating_test.
+  evidence: 'ITEM-6116-1-106-MISCON prompt: "A learner changes the salt concentration and measures seedling growth, but calls
+    growth the independent variable. Explain the error." MISCON-6116-029 discriminating_test: "Describe an investigation and
+    ask which variable the investigator chose to change and which was measured."'
+  educational_consequence: A learner who confuses the two variables could still score by matching the verbs "changes" and
+    "measures" to the definitions. The item would then show false mastery of the misconception that examiners reported.
+  recommended_repair: Describe the investigation neutrally, for example "Seedlings were grown in solutions of 0, 1, 2 and
+    3 % salt and their height recorded after 7 days", and ask the learner to name the independent and dependent variables,
+    or to judge a learner's claim that height is independent with a reason.
+  confidence: 0.7
+  status: open
+- issue_id: 1-003
+  severity: low
+  category: evaluation
+  affected_ids:
+  - ITEM-6116-1-P01 Q1
+  finding: The stem of P01 Q1 gives the answer away. It says soaking time is "chosen" and germination is "counted". Options
+    C ("The measured response") and D ("The final percentage") are not variables named in the stem, so they are weak distractors.
+  evidence: 'P01 Q1: "Which is the independent variable when soaking time is chosen and germination is counted? A. Soaking
+    time B. Germination count C. The measured response D. The final percentage"'
+  educational_consequence: The question tests matching "chosen" to the definition, not telling the variables apart in a described
+    investigation.
+  recommended_repair: Use a neutral description of the investigation, and make the distractors plausible variables (for example
+    temperature, a controlled variable).
+  confidence: 0.6
+  status: open
+- issue_id: 1-004
+  severity: low
+  category: curriculum
+  affected_ids:
+  - 1.2.3 Marking points clearly
+  - OBJ-6116-1.2.3-06
+  finding: The syllabus wording says that when a further curve is added, vertical crosses (+) may be used to mark its points.
+    The notes say only "a different point symbol" and never name the vertical cross.
+  evidence: 'OBJ-6116-1.2.3-06: "If a further curve is included, vertical crosses (+) may be used to mark the points". 1.2.3:
+    "A second curve can use a different point symbol, with a key".'
+  educational_consequence: A learner may not know the expected convention for a second data set.
+  recommended_repair: Add one sentence saying that points on a second curve may be marked with vertical crosses (+), shown
+    in the key.
+  confidence: 0.75
+  status: open
+- issue_id: 1-005
+  severity: low
+  category: curriculum
+  affected_ids:
+  - 1.2.1 Key points
+  - 1.2.1 Independent, dependent and controlled variables
+  - OBJ-6116-1.2.1-04
+  finding: The syllabus calls them "constant variables", but the notes use only "controlled variables" and never give the
+    syllabus term.
+  evidence: 'OBJ-6116-1.2.1-04: "distinguish between independent, dependent and constant variables". 1.2.1 table: "Controlled
+    variable | kept comparable".'
+  educational_consequence: A learner asked in an exam for a "constant variable" may not recognise it as the controlled variable
+    from the notes.
+  recommended_repair: Write "Controlled (constant) variable" in the key-points table and the first sentence of the section.
+  confidence: 0.6
+  status: open
+- issue_id: 1-006
+  severity: low
+  category: accuracy
+  affected_ids:
+  - 1.2.4 Standard form
+  finding: The definition of the power of ten is imprecise. It says the power records "how many decimal places separate that
+    value from the original number". It should say how many places the decimal point moves, and in which direction. The worked
+    examples are correct (4.5 × 10⁵, 4.5 × 10⁻⁴, 3.2 × 10⁻⁵, 640).
+  evidence: '1.2.4: "The power records how many decimal places separate that value from the original number."'
+  educational_consequence: Mild confusion with "decimal places" in the rounding sense. The examples correct it.
+  recommended_repair: '"The power shows how many places the decimal point has moved: positive when the original number is
+    large, negative when it is smaller than 1."'
+  confidence: 0.55
+  status: open

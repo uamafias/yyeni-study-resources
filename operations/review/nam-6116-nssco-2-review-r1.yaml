@@ -1,0 +1,221 @@
+review_id: SR-6116-2-STEP6-CLAUDE-R1
+reviewer_role: combined
+packet_hash_verified: null
+status: accept_with_open_issues
+coverage_confirmed: 'items_read: All 26 records in items_2.json: ITEM-6116-2-001 to 016, 018, 019, 020, 022, 023, P01 (12
+  MCQs with rationales), P02, P03. Every answer and marking line was checked against biology and the notes. notes_read: The
+  whole of 2-classification-and-diversity-of-living-organisms.md. 2.1: key points, grouping, binomial, hierarchy, keys, connections.
+  2.2: key points, virus structure, viruses living, monocots, dicots, molluscs, annelids, insects, arachnids, crustaceans,
+  myriapods, fish, amphibians, reptiles, birds, mammals, observing/drawing, connections. Also read: the topic 2 objective
+  registry entries, MISCON-6116-030, and a grep of the exclusions and scope scan (no topic 2 exclusions). not_checked: Deterministic
+  checks (arithmetic, references, coverage, scope, counts) and AO/Bloom/command-word/tariff labels were not checked, as the
+  brief instructs. Flashcards not in the sample were not checked. Cross-reference targets (1.2.6, 3.8.3, topic 4) were not
+  opened. The notes from other topics were not read.'
+reconstruction_test: 'q6_learner_test: OBJ-6116-2.1-04 (item 005, 4 marks), answered from the notes alone: 1a jointed legs
+  absent -> A; 1b present -> 2; 2a antennae absent -> C; 2b antennae present -> 3; 3a one pair antennae -> B; 3b two pairs
+  -> D. Earns 4/4, although the notes'' own model couplet is weak (2-004). OBJ-6116-2.2-16 (item 022, 4 marks), answered from
+  the notes alone: large continuous outline with no shading; ant drawn with head, thorax and abdomen in true proportion; ruled
+  label lines ending on the parts; labels for three pairs of legs on the thorax, three body regions and one pair of antennae.
+  Earns 4/4. Sampled flashcard-style items 001, 002, 009, 013, 015 and 020 can all be answered from the notes alone (for 020,
+  wings is supported by ''Their forelimbs form the wings''). q7_misconceptions: Only ITEM-6116-2-023 carries a misconception_entry
+  (MISCON-6116-030). It discriminates weakly. The learner must name the right group (crustacean) against the wrong one (insect),
+  so it is more than a restated definition. But the stem''s counts make the error obvious, and the arachnid side of the entry
+  is not tested (2-010). The stem does not name the right group.'
+issues:
+- issue_id: 2-001
+  severity: medium
+  category: coherence
+  affected_ids:
+  - notes 2.2 Mammals
+  - notes 2.2 Key points (Vertebrates row)
+  finding: The Mammals section first states that all mammals have hair or fur at some stage of life, then says no single external
+    feature is found in every mammal. Hair is an external feature, so the two sentences contradict each other. The whale example
+    then says the whale "has some hair", which supports the first sentence and not the second.
+  evidence: 'Notes 2.2 Mammals: "Mammals have hair or fur at some stage of life and females have mammary glands that produce
+    milk." ... "no single external feature is found in every mammal; whales have little hair and no external legs."'
+  educational_consequence: A learner cannot tell whether hair is a defining mammal feature. They may hesitate to give hair
+    as the diagnostic answer, or may repeat the "no single feature" line in an exam.
+  recommended_repair: Delete "no single external feature is found in every mammal". Say instead that hair is present at some
+    stage in every mammal, even if it is sparse, as in whales, and that limbs and habitat vary.
+  confidence: 0.85
+  status: open
+- issue_id: 2-002
+  severity: medium
+  category: curriculum
+  affected_ids:
+  - notes 2.2 Mammals
+  - OBJ-6116-2.2-15
+  finding: The mammal features listed are hair/fur, mammary glands/milk and live birth. External ears (pinnae) and whiskers
+    are missing. These are the standard visible external mammal features in Cambridge-style mark schemes for "list the visible
+    external features used to classify mammals". Milk and live birth are not visible external features.
+  evidence: 'Notes 2.2 Mammals: "Mammals have hair or fur ... mammary glands that produce milk. Most mammals give birth to
+    live young".'
+  educational_consequence: A learner asked for visible external features of a mammal has hair and nothing else visible to
+    offer, and so loses the second mark.
+  recommended_repair: Add external ears (pinnae) and whiskers as visible external features. Keep mammary glands, with a note
+    that milk and live birth are not external.
+  confidence: 0.7
+  status: open
+- issue_id: 2-003
+  severity: medium
+  category: coherence
+  affected_ids:
+  - notes 2.1 A hierarchy of groups
+  - notes 2.1 Two-part scientific names
+  finding: The lion hierarchy ends with "species leo", which treats the specific name alone as the species. The section just
+    before it says the specific name alone is not a complete species name, and item 004 marks the same point.
+  evidence: 'Notes 2.1 Hierarchy: "... genus Panthera, species leo." Notes 2.1 Two-part names: "the specific name alone is
+    not a complete species name."'
+  educational_consequence: The learner meets two contradictory models. They may write "species = leo" in an answer about the
+    binomial system and lose the mark.
+  recommended_repair: Write "species Panthera leo".
+  confidence: 0.8
+  status: open
+- issue_id: 2-004
+  severity: medium
+  category: analysis
+  affected_ids:
+  - notes 2.1 Constructing and using dichotomous keys (worked example step 2)
+  - ITEM-6116-2-005-APP
+  finding: In the worked key, step 2 pairs "body in ring-like segments" with "body with a shell". These are two unrelated
+    features, not a contrasting pair (feature present / feature absent, or one state against another state of the same feature).
+    The same notes require mutually exclusive choices, and item 005 gives a mark for "two contrasting statements". An animal
+    with neither feature, such as a slug, has no route. An animal with both would have two routes.
+  evidence: 'Notes 2.1: "At step 2, 2a body in ring-like segments gives earthworm and 2b body with a shell gives snail." Same
+    section: "make the two choices at a step mutually exclusive".'
+  educational_consequence: A learner who copies the model writes non-contrasting couplets and loses the contrasting-statement
+    mark in key construction.
+  recommended_repair: Change step 2 to "2a body divided into ring-like segments -> earthworm; 2b body not divided into segments
+    -> snail" (or shell present / shell absent).
+  confidence: 0.75
+  status: open
+- issue_id: 2-005
+  severity: medium
+  category: accuracy
+  affected_ids:
+  - ITEM-6116-2-020-FEATURE
+  finding: The marking guidance first says feathers are "the one feature found only in birds". It then justifies the wings
+    mark by saying wings "together with feathers" separate a bird from a bat. A bat has no feathers, so feathers alone already
+    separate it from a bird. The stated reason for the second feature is invalid, and the prompt's "taken together, identify"
+    premise rests on it. The notes also say "A bat has wings but no feathers, so feathers identify a bird."
+  evidence: 'ITEM-6116-2-020-FEATURE marking: "names feathers, the one feature found only in birds." / "names forelimbs formed
+    as wings as the second feature; together with feathers this separates a bird from a bat."'
+  educational_consequence: The learner is trained to think a uniquely diagnostic feature still needs a second feature to rule
+    out a group that lacks it. This muddles what diagnostic means.
+  recommended_repair: Remove the bat clause and simply credit wings (or a beak with hard-shelled eggs, if wanted) as a supporting
+    second feature. Alternatively, reword the prompt to "List two external features of a bird".
+  confidence: 0.85
+  status: open
+- issue_id: 2-006
+  severity: medium
+  category: evaluation
+  affected_ids:
+  - ITEM-6116-2-P02 (e)
+  - notes 2.1 Grouping by shared features
+  - notes 2.2 Crustaceans
+  - notes 2.2 Myriapods
+  finding: A condition is dropped. P02(e)'s answer and the 2.1 notes say leg and antenna counts are fixed, or stay the same
+    within a group. The 2.2 notes give crustaceans "more than four pairs" (crab 5, woodlouse 7) and myriapods "many". So leg
+    count is fixed for insects and arachnids but not for every group. The 2.1 sentence is true in its insect context. P02(e)'s
+    general claim ("stay the same within a group") is false.
+  evidence: 'P02 canonical (e): "leg and antenna counts are structural features that stay the same within a group"; marking:
+    "fixed structural features that distinguish groups". Notes 2.1: "the number of leg pairs is fixed and strong evidence."
+    Notes 2.2: "more than four pairs of jointed legs".'
+  educational_consequence: A learner may reject a crustacean because its leg count differs from a crab's, or claim that every
+    group has one fixed count.
+  recommended_repair: Rephrase to "leg and antenna counts are structural features that fall in a set range for a group and
+    differ between groups, whereas colour varies within a group".
+  confidence: 0.65
+  status: open
+- issue_id: 2-007
+  severity: medium
+  category: curriculum
+  affected_ids:
+  - notes 2.2 Observing and drawing local organisms
+  - OBJ-6116-2.2-16
+  finding: The objective says to concentrate on "diagnostic features and/or features that adapt them to their environment".
+    The notes and item 022 cover only diagnostic features. The adaptation option is never mentioned and no example is given
+    (for example, a thick waxy cuticle or a sunken stoma on a local desert plant).
+  evidence: 'OBJ-6116-2.2-16: "...concentrating on diagnostic features and/or features that adapt them to their environment".
+    Notes: "select diagnostic features that can actually be seen".'
+  educational_consequence: A learner given a drawing task about adaptive features has no guidance on choosing or labelling
+    them.
+  recommended_repair: Add one sentence and one example on labelling adaptive features, for instance a succulent's swollen
+    stem or a beetle's hard wing cases.
+  confidence: 0.6
+  status: open
+- issue_id: 2-008
+  severity: low
+  category: curriculum
+  affected_ids:
+  - ITEM-6116-2-019-FEATURE
+  finding: The marking guidance accepts only dry scaly skin and leathery-shelled eggs laid on land. Eggs are not a visible
+    external feature of the lizard. Clawed toes are given in the notes as a typical lizard feature that amphibians lack, but
+    they earn no credit. Separately, the notes condition egg-laying with "most reptiles", which the item covers only through
+    the word "typical".
+  evidence: 'ITEM-6116-2-019 marking: "names eggs with leathery shells laid on land as the second feature." Notes 2.2 Reptiles:
+    "A typical reptile such as a lizard has clawed toes, and most reptiles lay eggs with leathery shells on land."'
+  educational_consequence: A learner who correctly gives clawed toes from the notes loses the mark.
+  recommended_repair: Add clawed toes (claws on the digits) to the creditable list.
+  confidence: 0.6
+  status: open
+- issue_id: 2-009
+  severity: low
+  category: curriculum
+  affected_ids:
+  - notes 2.2 Fish
+  finding: The notes call gills the most dependable fish feature, but in bony fish the gills are hidden under the gill cover
+    (operculum). Neither the operculum nor the lateral line, both standard visible features of fish, is mentioned.
+  evidence: 'Notes 2.2 Fish: "Fins and gills are the most dependable features."'
+  educational_consequence: A learner asked for visible external features has a smaller list to choose from, and may describe
+    gills as directly visible.
+  recommended_repair: Add "gill cover (operculum) over the gills" and "lateral line".
+  confidence: 0.5
+  status: open
+- issue_id: 2-010
+  severity: low
+  category: analysis
+  affected_ids:
+  - ITEM-6116-2-023-MISCON
+  - MISCON-6116-030
+  finding: The misconception entry is "crustaceans vs insects and arachnids". Item 023 tests only crustacean against insect,
+    and the arachnid half is not tested. The stem gives both counts (five pairs of legs, two pairs of antennae), both well
+    above the insect counts, so the error is obvious. The item asks the learner to recall counts. It does not make them choose
+    between two plausible groups.
+  evidence: 'ITEM-6116-2-023 prompt: "an animal with five pairs of jointed legs and two pairs of antennae is an insect. Explain
+    the error."'
+  educational_consequence: A learner can score full marks without being able to tell a crustacean from an arachnid. The near
+    confusion, legs above four pairs against exactly four pairs, is never forced.
+  recommended_repair: Add a case that sits close to the boundary, for example "a learner calls an animal with four pairs of
+    legs and two pairs of antennae an arachnid", or ask for a three-way choice.
+  confidence: 0.6
+  status: open
+- issue_id: 2-011
+  severity: low
+  category: curriculum
+  affected_ids:
+  - ITEM-6116-2-P03
+  finding: P03 is mapped to OBJ-6116-2.2-16 (observe and draw), but nine of its ten marks test sampling design, means and
+    bias. The topic 2 notes do not teach these. They need scientific-process content from topic 1 that the notes never cross-reference
+    for sampling, only for drawing.
+  evidence: ITEM-6116-2-P03 objective_ids [OBJ-6116-2.2-16, 2.2-07, 2.2-09]; parts (a)-(e) test variables, means and bias.
+  educational_consequence: A learner revising topic 2 alone cannot prepare for most of this task.
+  recommended_repair: Map P03 to the relevant 1.2 scientific-process objectives as well, or add a cross-reference from 2.2
+    to the sampling and variables content.
+  confidence: 0.5
+  status: open
+- issue_id: 2-012
+  severity: low
+  category: accuracy
+  affected_ids:
+  - ITEM-6116-2-022-APP
+  finding: The example of a realistic proportion, "an ant's abdomen drawn larger than its head", does not hold for every ant.
+    Many ants, and soldier castes especially, have a head as large as the gaster or larger. The notes use a different comparison,
+    abdomen against thorax.
+  evidence: 'ITEM-6116-2-022 marking: "for example an ant''s abdomen drawn larger than its head."'
+  educational_consequence: A marker may penalise a faithful drawing of a large-headed ant, which is the very opposite of "draw
+    what you see".
+  recommended_repair: Change the marking to require proportions that match the specimen observed, and use the notes' abdomen-against-thorax
+    example.
+  confidence: 0.45
+  status: open

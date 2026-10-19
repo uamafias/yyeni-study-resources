@@ -1,0 +1,177 @@
+review_id: SR-6116-3-STEP6-CLAUDE-R1-3AB
+reviewer_role: combined
+packet_hash_verified: null
+status: accept_with_open_issues
+coverage_confirmed: 'items_read: 46 of 46 records in items_3AB.json (35 short items including the flashcard sample, 8 MISCON
+  items, practice sets P01 to P03). P01 questions outside 3.1-3.6.2 (heart, eye, ventilation, kidney, homeostasis, transpiration)
+  were checked only for keys and arithmetic. notes_read: In full, sections 3.1, 3.2, 3.3.1, 3.3.2, 3.3.3, 3.4, 3.5, 3.6, 3.6.1
+  and 3.6.2 (lines 1-1326) of topics/3/3-organisation-and-maintenance-of-the-organism.md. Coverage was checked against all
+  3.1-3.6.2.4 objectives in objective_registry.json and against syllabus-exclusions.json and scope-scan.json. The only missing
+  coverage found is 3AB-003 and 3AB-007. not_checked: AO, Bloom, command-word and tariff labels (excluded by the brief); figure-held
+  items were judged only on wording and biology; notes sections 3.7 to 3.14; the deterministic checks were not re-run; flashcards
+  beyond the sample in the file.'
+reconstruction_test: 'question_6_learner_test: ["OBJ-6116-3.3.1-08 / ITEM-6116-3-149-SYNTH (5 marks): from ''Investigating
+  diffusion along a tube'' alone the answer is: IV distance from the source; DV time to turn blue; controls of the same litmus,
+  wetness, tube and temperature; the clock starts when the teacher places the ammonia pad; repeat and take a mean at each
+  distance. This earns 5/5.", "OBJ-6116-3.6.2.3-03 / ITEM-6116-3-325-MECH (4 marks): from ''The digestion of starch'' alone
+  the answer is: salivary amylase turns starch to maltose in the mouth; stomach acid inhibits it; pancreatic amylase continues
+  in the small intestine; maltase on the lining gives glucose for absorption. This earns 4/4.", "Flashcards ITEM-6116-3-127-DIST,
+  -141-PROC, -168-DEF, -190-PROC, -230-FEATURE and -312-DEF can all be answered from the notes alone. ITEM-6116-3-P03 (10
+  marks) is also fully supported by the worked example and ''Making the results trustworthy''."] question_7_misconceptions:
+  All 8 MISCON items (464, 465, 466, 469, 472, 475, 476, 477) are error-correction items quoting the wrong idea, so the learner
+  must reject it and give the right one. All discriminate. 469 names ''mineral-condition pairings'', a mild cue. 472 cues
+  the answer with ''using the active site'' (3AB-009). None restates a bare definition.'
+issues:
+- issue_id: 3AB-001
+  severity: high
+  category: analysis
+  affected_ids:
+  - ITEM-6116-3-258-APP
+  finding: The second marking point and the canonical answer justify "light was not limiting at the plateau" with an invalid
+    reason. Light intensity being the same for both curves does not show that light was not limiting. What shows it is that
+    the first curve is flat there, so more light gave no rise in rate. What shows carbon dioxide was limiting is that raising
+    carbon dioxide alone raised the rate. The mark scheme credits a non-sequitur as the reason.
+  evidence: 'ITEM-6116-3-258-APP marking_guidance[1]: "carbon dioxide was therefore the limiting factor at the plateau of
+    the first curve, because the light intensity was the same here and so was not limiting." canonical_answer: "...so light
+    intensity was not the limit there."'
+  educational_consequence: Learners learn that a factor held equal between two treatments is "not limiting". That is the reasoning
+    the notes warn against in "Identify the active limit", where a flat curve alone does not identify the limit.
+  recommended_repair: 'Rewrite mark 2 as: "the first curve is flat (level) at high light, so extra light did not raise the
+    rate and light was not limiting; raising carbon dioxide alone did raise it, so carbon dioxide was the limiting factor."
+    Make the canonical answer match.'
+  confidence: 0.85
+  status: open
+- issue_id: 3AB-002
+  severity: high
+  category: coherence
+  affected_ids:
+  - 3.6.2 / The digestion of starch
+  - MISCON-6116-021
+  - ITEM-6116-3-472-MISCON
+  finding: 'The boiled-saliva control in the notes is interpreted with the exact word the examiners penalise ("destroyed",
+    MISCON-6116-021: "killed" or "destroyed" instead of "denatured"). The inference is also back to front. The control does
+    not show that boiling destroyed the enzyme, which is assumed. It shows that the starch loss in the first tube needed active
+    enzyme, not some other part of saliva or the conditions.'
+  evidence: '3.6.2 "The digestion of starch": "...while a control made with boiled saliva still does. This shows that the
+    enzyme was destroyed by boiling and that starch had been broken down in the first tube."'
+  educational_consequence: Learners copy "destroyed by boiling" into exam answers and lose the denaturation mark. They also
+    learn to describe what a control assumes instead of what it shows.
+  recommended_repair: 'Replace with: "Boiling denatures amylase, so the boiled-saliva tube shows that the starch disappeared
+    in the first tube because of active enzyme, not because of anything else in saliva or the conditions."'
+  confidence: 0.9
+  status: open
+- issue_id: 3AB-003
+  severity: medium
+  category: curriculum
+  affected_ids:
+  - OBJ-6116-3.5-06
+  - 3.5 / Investigating amylase and lipase
+  finding: OBJ-6116-3.5-06 requires investigating the effect of temperature and pH on lipase as well as amylase. The notes
+    give a full amylase method but only one sentence on lipase, that fatty acids lower pH and can be followed with an indicator.
+    The notes then say an indicator endpoint cannot be compared across pH values, and offer no workable alternative. A learner
+    has no lipase method for either factor, for example milk or cream with lipase and sodium carbonate and phenolphthalein,
+    timed until the pink disappears, at different temperatures.
+  evidence: '3.5 "Investigating amylase and lipase": "For lipase acting on lipid, the fatty acids produced lower the pH, which
+    can be followed with a pH indicator." ... "In a lipase investigation that follows pH indicator colour change, the starting
+    pH differs between pH values, so a fixed colour-change time cannot be compared directly."'
+  educational_consequence: A learner asked to plan a lipase temperature investigation cannot write the substrate, indicator,
+    endpoint or controls from the notes. The pH caveat may leave them thinking lipase cannot be investigated at all.
+  recommended_repair: Add a short lipase method with a temperature series (milk, sodium carbonate, phenolphthalein, time to
+    colour loss, boiled-lipase control, equal volumes, water baths). Restate the pH caveat with what to do instead, for example
+    measuring pH change with a meter or probe rather than a fixed indicator colour.
+  confidence: 0.75
+  status: open
+- issue_id: 3AB-004
+  severity: medium
+  category: coherence
+  affected_ids:
+  - 3.6.2 / Water absorption
+  - 3.6.2 / How cholera causes fluid loss
+  finding: Water absorption is taught unconditionally as osmosis "from the more dilute gut contents into the more concentrated
+    blood". The cholera section in the same unit correctly teaches the reverse, where raised gut solute concentration draws
+    water into the gut. The condition, that water is absorbed because solutes are absorbed and so the gut contents are the
+    more dilute side, is dropped in the water-absorption section.
+  evidence: '3.6.2 "Water absorption": "Water crosses the intestinal lining by osmosis, from the more dilute gut contents
+    into the more concentrated blood." vs "How cholera causes fluid loss": "The increased gut solute concentration draws water
+    into the intestine by osmosis".'
+  educational_consequence: A learner may treat gut contents as always more dilute than blood. They then cannot explain why
+    the direction reverses in cholera, or after a very salty or sugary load.
+  recommended_repair: 'Condition the sentence: "Normally, as digested food and ions are absorbed, the gut contents become
+    more dilute than the blood, so water follows by osmosis; if solutes build up in the gut, as in cholera, water moves the
+    other way."'
+  confidence: 0.7
+  status: open
+- issue_id: 3AB-005
+  severity: low
+  category: coherence
+  affected_ids:
+  - ITEM-6116-3-P02
+  finding: Part (b) asks for the solution in which cells "neither gain nor lose water". The notes stress that water crosses
+    in both directions and that there is "no net movement" in an isotonic solution. The stem drops "net".
+  evidence: 'ITEM-6116-3-P02 (b): "Name the type of solution in which the onion cells neither gain nor lose water." Notes
+    3.3.2: "In an isotonic solution ... there is no net movement of water".'
+  educational_consequence: The wording supports the misconception that water stops moving at equilibrium. The answer, isotonic,
+    is unaffected.
+  recommended_repair: Reword to "...in which the onion cells show no net gain or loss of water".
+  confidence: 0.6
+  status: open
+- issue_id: 3AB-006
+  severity: low
+  category: accuracy
+  affected_ids:
+  - 3.5 / Enzymes in germination
+  finding: '"Warmth and water switch the enzymes on" is loose. Water uptake triggers enzyme activity and production. Warmth
+    only affects the rate, and germination also needs oxygen. The sentence presents temperature as an on/off switch, which
+    contradicts the unit''s own teaching that low temperature only slows enzymes.'
+  evidence: '3.5 "Enzymes in germination": "Warmth and water switch the enzymes on, which is why a dry seed can be stored
+    for years."'
+  educational_consequence: Learners may write that a cold seed's enzymes are "off", or leave oxygen out of the germination
+    conditions taught in 4.3.5.
+  recommended_repair: 'Say: "Water taken up by the seed activates its enzymes; a suitable temperature lets them work at a
+    useful rate. A dry seed''s enzymes are inactive, which is why it can be stored for years."'
+  confidence: 0.6
+  status: open
+- issue_id: 3AB-007
+  severity: low
+  category: curriculum
+  affected_ids:
+  - OBJ-6116-3.2-04
+  - 3.2 / Animal tissue observations
+  finding: The objective names "epithelium of mammalian trachea" as an example slide. The notes describe epithelium only as
+    "cells packed together as a covering layer" and never mention the ciliated cells or goblet cells a learner would see and
+    label on a trachea slide.
+  evidence: '3.2 "Animal tissue observations": "Epithelium shows cells packed together as a covering layer, and muscle tissue
+    shows long cells arranged in parallel."'
+  educational_consequence: A learner drawing a trachea slide has no guidance on what to look for or label.
+  recommended_repair: Add one sentence that tracheal epithelium shows column-shaped cells with cilia on the free surface and
+    scattered mucus-secreting (goblet) cells, cross-referenced to 3.9.
+  confidence: 0.5
+  status: open
+- issue_id: 3AB-008
+  severity: low
+  category: coherence
+  affected_ids:
+  - ITEM-6116-3-233-APP
+  finding: The stem asks "which mineral treatment is supported". The marking credits identifying the cause of paleness (iron
+    shortage) and iron's role in chlorophyll, not a treatment, so the question and the marked answer do not match.
+  evidence: 'ITEM-6116-3-233-APP prompt: "Explain which mineral treatment is supported by these seedling results." canonical_answer:
+    "The recovery supports iron deficiency as the cause of paleness..."'
+  educational_consequence: A learner may answer "add iron" and stop, missing both marks, which need the evidence and the chlorophyll
+    link.
+  recommended_repair: Reword to "Explain what these results show about the cause of the pale leaves."
+  confidence: 0.6
+  status: open
+- issue_id: 3AB-009
+  severity: low
+  category: evaluation
+  affected_ids:
+  - ITEM-6116-3-472-MISCON
+  finding: The stem "Explain the error using the active site" points learners to the shape change, so it partly gives the
+    answer away. A learner who holds the "killed" misconception is still steered to the active-site account. The item does
+    test the denature-versus-kill distinction, but weakly.
+  evidence: 'ITEM-6116-3-472-MISCON prompt: "A learner says that boiling “kills the enzyme”. Explain the error using the active
+    site."'
+  educational_consequence: Weaker discrimination of MISCON-6116-021 than the other misconception items.
+  recommended_repair: Drop "using the active site", or ask for the word that should replace "kills" and what it means.
+  confidence: 0.5
+  status: open

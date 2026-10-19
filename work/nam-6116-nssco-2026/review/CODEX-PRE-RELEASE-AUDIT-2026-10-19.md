@@ -1,0 +1,32 @@
+# Codex pre-release audit of the revised 6116 draft — 2026-10-19
+
+This is a bounded review of the revised Step 5 workspace and of the reported repair process. It is not a named Biology teacher verification, a review of every item, or the post-package Step 6 verdict. No learner package was built or released during this audit.
+
+## Reproduced
+
+- The project virtual environment reports `PUBLISH` with no failures for topics 1–5 through `what_to_fix.py`. Warnings are C-18 in all topics and C-20 for three topic 3 cards (3-053, 3-125, 3-140). C-35, C-41 and C-43 are `not_run` on topic 3, not semantic approvals.
+- `check_release_hygiene.py` reports 0 wording matches; all five operative unit-budget declarations, `check_docs.py` and visual-bank integrity pass. The profile sets `depictions.chart_model: none`, the supported fix for the old C-35 false business-chart demand.
+- The authored audit records 1,102 claims, 50 units, 886 items and 72,263 rendered note words; no unit is below its minimum. All claims remain unverified and not publishable. Thirty-five item IDs appear in `visuals_pending`.
+- In the sampled revised cards, ITEM-6116-2-020-FEATURE now uses feathers and wings rather than a beak as its bird features, and ITEM-6116-5-033-CHAIN explains the carbon-dioxide consequences of forest removal and burning without the former atmospheric-oxygen overclaim. The notes for 3.3.2 and 5.4.1, together with Topic 1's method teaching, cover the concepts and procedures needed to answer performance tasks 3-P03 and 5-P03. This is a limited top-tariff self-containment check, not a full subject read.
+
+## Findings
+
+1. **High — the standard package builder does not enforce the figure holds.** `standard/v0.2.0-draft/build/publish_subject.py` collects every JSON item from each topic whose deterministic decision is not `reject`; it does not read `authoring_notes.json` or `visuals_pending`. The 35 figure prompts therefore enter a package if it is built. This is already acknowledged in STATUS, and the package has correctly not been built. Keep these items in the authoring source, but provide an explicit held-item exclusion or an unmistakably internal review-only package before any learner-facing build. Do not count excluded held items as fulfilled visual needs.
+
+2. **Medium — the hygiene gate is narrower than its headline suggests.** `topics/check_release_hygiene.py` is a useful lexical gate. It explicitly permits one `Fig. VIS-6116-…` token in each held prompt. Its 0-problem result confirms the specified phrase patterns are absent; it does not show that the held items are answerable or safe to package. For example, ITEM-6116-3-258-APP needs the missing second curve before the limiting factor can be determined. Continue to report the gate as a wording check only.
+
+3. **Medium — two held image answers are not keyed to a definite diagram.** ITEM-6116-4-052-FEATURE and ITEM-6116-4-053-FEATURE ask for the function of labels X and Y, but their canonical answers list several possible organs because no labelled figure has been selected. For 4-053 the proposed cervix alternative describes its structure (a ring of muscle), not its function. These remain honest holds. Once the exact figures and labels are approved, give each a single keyed function, review the scoring point, and restamp the items.
+
+4. **Medium — the repair record lacks item-level traceability.** The workspace has the initial Claude review and the current author scripts, but no saved second-round sample IDs, issue list, reviewer dispositions or the approximately 40 label mismatches mentioned in STATUS. Since the whole workspace is untracked by Git, a reviewer cannot reproduce the reported before/after changes from a diff. Record a bounded issue register with affected IDs, old and new demand or wording, reviewer decision and validation result. The existing approved work orders should not be changed merely to improve the AO percentages.
+
+5. **Low — the source-gap count in the status report is stale.** `topics/authoring_audit.json` currently lists 448 claims without evidence entries: topic counts 110, 26, 172, 81 and 59. STATUS and the operator handover say 442; the difference is six claims in topic 4. Reconcile the current count before assigning verification work.
+
+6. **Low — the one-point-per-mark assertion is too broad.** In the current JSON, 118 flashcards have a `marking_guidance` list length different from their tariff (topic 1: 11; topic 3: 99; topic 5: 8). Some are acceptable compact “any two/three” rules or contain several explicit mark sentences in one string, so 118 is **not** a count of invalid rubrics. It does show that the reported one-list-entry-per-mark structure was not implemented or checked. ITEM-6116-3-355-APP puts four distinct drawing credits in one entry; ITEM-6116-5-020-MECH has a framing entry plus five options for four marks. Review the high-tariff and held cases for learner clarity, and state the actual convention in the process record.
+
+7. **Low — the scratch checking script can report a clean-looking tail after a failed command.** `topics/scratch_check.sh` uses `set -u`, pipes checks through `tail`, and does not enable `pipefail` or assert the budget and hygiene exit codes. Its output helped the repair rounds, but it is not a reliable independent gate. The direct live `what_to_fix.py` and hygiene calls reproduced above did pass. Make this helper fail on a failed author, merge, render, budget or hygiene command; handle the known `run_checks.py` clean-PUBLISH exit mismatch explicitly rather than masking all exits.
+
+## Remaining decisions
+
+- Prioritize the roughly 40 reported AO/Bloom/command-word cases by what the prompt actually demands. The generic taught-comparison AO1 decision stands; a verb such as “describe” can still ask a learner to create an investigation plan (for example ITEM-6116-5-105-SYNTH). Record genuine mismatches and update the work order only with an explicit plan deviation and recalculated AO basis.
+- Name the Biology verifier and school textbook for the 1,102 claim checks. Resolve the specified curriculum questions about Benedict's heating temperature, Namibian examples, expired-air figures, sewage treatment and hypotonic/isotonic terminology with that verifier.
+- Decide how to produce a reviewable package that cannot be mistaken for a learner release. The current standard builder has no hold filter. The 35 image items, scientific/rights/variant issues, platform delivery and teacher verification must stay open.

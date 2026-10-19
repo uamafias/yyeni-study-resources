@@ -1,0 +1,16 @@
+{
+  "provenance": "judgement",
+  "why": "Topic 3 has 284 objectives and about 470 items, too much for one authoring agent to hold consistently. It is split into four groups of whole content units that teach together, so no unit is divided and each agent owns one coherent area.",
+  "groups": {
+    "3A": {"title": "Cells, movement across membranes, biological molecules and enzymes", "units": ["3.1", "3.2", "3.3.1", "3.3.2", "3.3.3", "3.4", "3.5"], "also": "the three topic-3 performance tasks (P01-P03)"},
+    "3B": {"title": "Nutrition in plants and humans", "units": ["3.6", "3.6.1", "3.6.2"]},
+    "3C": {"title": "Transport in plants and animals, defence, gas exchange", "units": ["3.7", "3.8.1", "3.8.2", "3.8.3", "3.9"]},
+    "3D": {"title": "Respiration, excretion, co-ordination and homeostasis", "units": ["3.10.1", "3.10.2", "3.11", "3.12", "3.13.1", "3.13.2", "3.13.3", "3.14"]}
+  },
+  "protocol": [
+    "Each group writes only its own content-units/CU-6116-<unit>.json files and one items file, learning-items/topic_3_items_<group>.json; the checks and publish_subject.py read every file in learning-items/.",
+    "Each group writes its claims to claims/staging/claims_<group>.json with ids CLM-6116-<group>-NNN (for example CLM-6116-3B-014), never to claims/canonical_claim_ledger.json.",
+    "Shared terminology comes from curriculum/glossary.json; a group that needs a fact taught in another group's unit names that sub-topic in a cross_link block instead of re-teaching it.",
+    "When all four groups are done, the lead merges the four staging files into claims/canonical_claim_ledger.json (ledger_id CLM-LEDGER-6116-3), removes claims/staging/, renders the notes once and runs the checks on the whole topic."
+  ]
+}
