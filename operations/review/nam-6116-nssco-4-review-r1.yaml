@@ -1,0 +1,260 @@
+review_id: SR-6116-4-STEP6-CLAUDE-R1
+reviewer_role: combined
+packet_hash_verified: null
+status: accept_with_open_issues
+coverage_confirmed: 'items_read: All 37 records in items_4.json (32 short items including DEF/FEATURE flashcard-type records,
+  4 MISCON items, performance tasks P01 (12 MCQs), P02, P03). notes_read: All of topics/4/4-development-of-the-organism-and-the-continuity-of-life.md
+  (1342 lines), sections 4.1, 4.2.1, 4.2.2, 4.3.1 to 4.3.5, 4.4, 4.4.1 to 4.4.4, read in full. Registry objectives for topic
+  4, syllabus-exclusions.json, misconception entries 005/011/014/019. not_checked: Deterministic checks (arithmetic, references,
+  coverage counts, scope scan) were not redone, per the brief. AO/Bloom/command-word/tariff labels were not assessed. Held
+  figure VIS-6116-4.2.2-06 was judged only for wording and the biological answer (item 031: sound). Flashcards outside the
+  sample were not read. Botanical claims about named Namibian plants (Welwitschia root depth, devil''s thorn) were not checked
+  against a source; only 4-010 is logged.'
+reconstruction_test: 'q6_learner_test: OBJ-6116-4.4.2-07 (ITEM-6116-4-P02, 8 marks): from the notes alone, (a) tt, (b) tall,
+  (c) Tt x Tt, gametes T/t, offspring TT Tt Tt tt, 3 tall : 1 short, (d) 150, (e) chance/ratio is a probability. Full 8/8.
+  OBJ-6116-4.3.5-04/05 (ITEM-6116-4-P03, 10 marks): the notes support (a)-(f) fully (independent variable, 2 mm rule, percentage
+  method, pattern, controlled variables, drying as a second variable). (g) the interval point is not in the notes (4-014),
+  so likely 9/10. Flashcard-type records sampled: 009 meiosis def, 022 sexual reproduction def, 043 progesterone sources,
+  064 vasectomy/ligation, 098 gene def, 126 ABO blood group. All answerable from the notes alone. 097 diploid is also answerable
+  from the notes, but see 4-004 on its marking. q7_misconceptions: 150 (MISCON-005 mitosis vs meiosis): discriminates. The
+  learner must use the 16 to 8 count to reject mitosis, and the stem does not name meiosis. 151 (MISCON-011 petals vs sepals):
+  discriminates moderately. The learner must name petals and give both functions; the stem says only that the label is wrong.
+  152 (MISCON-014 genotype vs phenotype): weak, because the stem points to the answer (4-015). 153 (MISCON-019 embryo vs fetus):
+  does not test the entry at all, because it tests egg vs fetus (4-003).'
+issues:
+- issue_id: 4-001
+  severity: medium
+  category: coherence
+  affected_ids:
+  - 4.3.2 Placenta and umbilical cord
+  finding: The section first states correctly that maternal and fetal blood are kept separate and do not mix, then says the
+    mother's lungs and kidneys clean 'the blood that she shares with the fetus'. The blood is not shared; only substances
+    are exchanged across the placenta. The same paragraph also says the fetus does not excrete for itself, whereas the fetus
+    does make urea (and urine); it relies on the placenta to pass the urea to the mother.
+  evidence: '4.3.2 Placenta and umbilical cord: ''The two blood supplies are normally kept separate and do not mix.'' ...
+    ''The mother''s lungs remove carbon dioxide and her kidneys remove urea, from the blood that she shares with the fetus
+    through the placenta.'' / ''The fetus does not breathe or excrete for itself.'''
+  educational_consequence: A learner may write that maternal and fetal blood mix or are shared, which loses the mark on placental
+    exchange and contradicts the card they learned from.
+  recommended_repair: Replace 'from the blood that she shares with the fetus through the placenta' with 'after these wastes
+    have diffused from the fetal blood into her blood in the placenta'. Rephrase 'does not breathe or excrete for itself'
+    to 'cannot get rid of its carbon dioxide and urea by its own lungs and kidneys, so they pass to the mother's blood'.
+  confidence: 0.85
+  status: open
+- issue_id: 4-002
+  severity: medium
+  category: accuracy
+  affected_ids:
+  - 4.4.3 Gene mutation
+  finding: The statement that a mutation is passed on only if it happens in a cell that makes gametes is true only for sexual
+    reproduction (in animals). In asexual reproduction, which the same notes teach (binary fission, tubers, mitosis copying
+    the parent 'apart from the rare mutation'), a mutation in an ordinary cell is passed to the offspring. The condition has
+    been dropped.
+  evidence: '4.4.3 Gene mutation: ''A mutation is passed to offspring only if it happens in a cell that makes gametes. A mutation
+    in an ordinary body cell is not inherited.'' Compare 4.2.1 Bacterial binary fission: ''The two offspring are genetically
+    identical apart from mutations.'''
+  educational_consequence: A learner may deny that a mutation in a bacterium or in a potato tuber can be inherited, which
+    undermines the antibiotic-resistance explanation in 4.4.4 (a chance mutation in a bacterium is passed to all its offspring).
+  recommended_repair: 'Add the condition: ''In animals and other organisms that reproduce sexually, a mutation is passed to
+    offspring only if it happens in a cell that makes gametes. In asexual reproduction, such as binary fission, the mutation
+    is copied into the offspring.'''
+  confidence: 0.8
+  status: open
+- issue_id: 4-003
+  severity: medium
+  category: curriculum
+  affected_ids:
+  - ITEM-6116-4-153-MISCON
+  - MISCON-6116-019
+  finding: The item is tagged to misconception entry MISCON-6116-019, which is 'embryo vs fetus'. The item tests 'unfertilised
+    egg called a fetus', which is a different confusion (gamete vs developing organism). It never asks the learner to tell
+    an embryo from a fetus, so the entry it claims to address is not tested.
+  evidence: 'MISCON-6116-019: a: ''embryo vs fetus''. ITEM-6116-4-153-MISCON prompt: ''A learner calls an unfertilised egg
+    cell a fetus. Explain the error.'''
+  educational_consequence: The embryo/fetus confusion recorded in the curriculum stays untested; the coverage report shows
+    the misconception as handled when it is not.
+  recommended_repair: 'Rewrite the stem around the embryo/fetus distinction without a week number (per the entry''s authoring
+    constraint), e.g. ''A learner calls a ball of cells that has just implanted a fetus. Explain why embryo is the better
+    term, and when fetus is used.'' Answer: early stage, organs forming, is the embryo; later stage, organs present and mainly
+    growing in size, is the fetus. Or re-tag the current item to a different entry.'
+  confidence: 0.8
+  status: open
+- issue_id: 4-004
+  severity: medium
+  category: evaluation
+  affected_ids:
+  - ITEM-6116-4-097-DEF
+  finding: The second mark requires 'one set coming from each parent, so the chromosomes form homologous pairs'. The syllabus
+    definition (OBJ-6116-4.4.1-04) is 'a nucleus containing two sets of chromosomes (e.g. in body cells)'. A learner who writes
+    the syllabus definition verbatim, including the example, earns only 1 of 2 marks, while the example 'in body cells' carries
+    no credit.
+  evidence: 'ITEM-6116-4-097-DEF marking_guidance: ''1 mark: the definition gives a second, separate feature: one set coming
+    from each parent, so that the chromosomes form homologous pairs.'' Registry OBJ-6116-4.4.1-04: ''define diploid nucleus
+    as a nucleus containing two sets of chromosomes (e.g. in body cells)''.'
+  educational_consequence: Learners are penalised for giving the exact syllabus definition, and are pushed to memorise an
+    addition that the syllabus does not ask for.
+  recommended_repair: Make the second mark 'e.g. in body cells' (or accept either the example or one set from each parent),
+    or reduce the item to 1 mark.
+  confidence: 0.7
+  status: open
+- issue_id: 4-005
+  severity: low
+  category: accuracy
+  affected_ids:
+  - 4.2.1 Asexual reproduction
+  finding: The notes say that, because two gametes fuse in self-pollination, 'the offspring are not identical to the parent'.
+    This is stated unconditionally. A plant that is homozygous at its genes (common in regularly self-pollinating crops such
+    as the beans named in 4.2.2) gives offspring that are genetically the same as the parent. The valid point is that self-pollination
+    is sexual because gametes fuse, not that the offspring must differ.
+  evidence: '4.2.1 Asexual reproduction: ''In self-pollination pollen still fertilises an ovule, so two gametes fuse and the
+    offspring are not identical to the parent.'''
+  educational_consequence: A learner may use 'offspring differ from the parent' as the test for sexual reproduction and misclassify
+    cases.
+  recommended_repair: Change to 'so two gametes fuse and the offspring can differ from the parent. The fusion of gametes,
+    not the result, makes it sexual reproduction.'
+  confidence: 0.6
+  status: open
+- issue_id: 4-006
+  severity: low
+  category: coherence
+  affected_ids:
+  - 4.4.2 Simulating inheritance
+  finding: 'After saying ''about a quarter should be rr'', the notes give ''the expected 1:3''. Everywhere else in 4.4.2 the
+    ratio is written dominant first as 3 : 1. ''1:3'' is correct only as rr : not-rr and reads as a reversed 3 : 1.'
+  evidence: '4.4.2 Simulating inheritance: ''After 400 draws the proportions are usually closer to the expected 1:3.'''
+  educational_consequence: 'A learner may write the expected ratio for Rr x Rr as 1 : 3 dominant : recessive.'
+  recommended_repair: 'Write ''closer to the expected 3 dominant : 1 recessive (one quarter rr)''.'
+  confidence: 0.6
+  status: open
+- issue_id: 4-007
+  severity: low
+  category: coherence
+  affected_ids:
+  - ITEM-6116-4-P01 question 11 answer key
+  finding: The rationale for distractor D is wrong. Option D says 'Reproductive success becomes irrelevant'; the key says
+    D 'removes the mechanism of inheritance'. D removes unequal reproductive success (the selection step), not inheritance.
+  evidence: 'ITEM-6116-4-P01 canonical_answer 11: ''D removes the mechanism of inheritance.'''
+  educational_consequence: A learner reading the key is told the wrong reason the option fails.
+  recommended_repair: Change to 'D denies the unequal reproductive success that natural selection depends on.'
+  confidence: 0.7
+  status: open
+- issue_id: 4-008
+  severity: low
+  category: coherence
+  affected_ids:
+  - ITEM-6116-4-047-APP
+  finding: The canonical answer says the corpus luteum 'does not form normally', while the marking guidance says 'no corpus
+    luteum forms'. The two disagree on the claim credited.
+  evidence: 'ITEM-6116-4-047-APP canonical_answer: ''the corpus luteum does not form normally''; marking_guidance: ''no corpus
+    luteum forms.'''
+  educational_consequence: A marker may withhold or give the mark inconsistently.
+  recommended_repair: Use one wording in both, e.g. 'the egg is not released and no corpus luteum forms'.
+  confidence: 0.6
+  status: open
+- issue_id: 4-009
+  severity: low
+  category: coherence
+  affected_ids:
+  - 4.1 Where this connects
+  finding: 'Wrong cross-reference: drawing skills are placed in Topic 3, but the registry puts ''make a clear, labelled line
+    drawing'' and drawing magnification in Topic 1 (OBJ-6116-1.2.6-12, -13). Microscope use is in Topic 3 (OBJ-6116-3.1-02).'
+  evidence: '4.1 Where this connects: ''Microscope and drawing skills are in Topic 3 and measurement skills are in Topic 1.'''
+  educational_consequence: A learner looking for drawing rules looks in the wrong topic.
+  recommended_repair: Change to 'Microscope skills are in Topic 3; drawing and measurement skills are in Topic 1.'
+  confidence: 0.7
+  status: open
+- issue_id: 4-010
+  severity: low
+  category: accuracy
+  affected_ids:
+  - 4.2.2 Why seeds are dispersed
+  finding: 'The Namibian dispersal example may name the wrong plant. The plant of the Kalahari sands whose fruit has hooks
+    that catch on animals'' feet and fur is devil''s claw (Harpagophytum). ''Devil''s thorn'' usually refers to Tribulus,
+    whose fruit has sharp spines, not hooks. Not certain: local common names vary.'
+  evidence: '4.2.2 Why seeds are dispersed: ''The fruit of the devil''s thorn, a plant of the Namibian and Kalahari sands,
+    has hooks that catch on the feet and fur of animals''.'
+  educational_consequence: A learner may give a wrongly matched local example; low impact on marks.
+  recommended_repair: Check against a Namibian source. Either rename it devil's claw (Harpagophytum procumbens) or describe
+    Tribulus fruit as spiny.
+  confidence: 0.5
+  status: open
+- issue_id: 4-011
+  severity: low
+  category: accuracy
+  affected_ids:
+  - 4.3.2 Female reproductive system
+  finding: '''The ovary is not joined directly to the uterus, so there is a short gap that the egg crosses'' puts the gap
+    in the wrong place. The gap the egg crosses is between the ovary and the funnel of the oviduct, not between the ovary
+    and the uterus.'
+  evidence: '4.3.2 Female reproductive system: ''The ovary is not joined directly to the uterus, so there is a short gap that
+    the egg crosses.'''
+  educational_consequence: A learner may picture the egg moving directly from the ovary to the uterus across a gap.
+  recommended_repair: Change to 'The ovary is not joined directly to the oviduct, so the egg crosses a short gap into the
+    oviduct's funnel.'
+  confidence: 0.6
+  status: open
+- issue_id: 4-012
+  severity: low
+  category: coherence
+  affected_ids:
+  - 4.4.1 Homologous chromosomes
+  - 4.4.1 Diploid nucleus
+  - 4.4.2 X-linked recessive inheritance
+  finding: 4.4.1 says without a condition that the chromosomes of a body cell are in homologous pairs and that each set has
+    'one chromosome of each kind'. 4.4.2 then teaches that Y carries no allele of an X-linked gene, so the X and Y of a male
+    are not a matched pair. The male exception is not flagged.
+  evidence: '4.4.1 Homologous chromosomes: ''In a body cell the chromosomes are in homologous pairs''; 4.4.2: ''The Y chromosome
+    carries no allele of this gene.'''
+  educational_consequence: Minor. A strong learner may be confused about why a male expresses one X-linked allele if every
+    chromosome has a homologous partner.
+  recommended_repair: 'Add a clause in 4.4.1: ''except that in males the X and Y chromosomes are different from each other''.'
+  confidence: 0.5
+  status: open
+- issue_id: 4-013
+  severity: low
+  category: curriculum
+  affected_ids:
+  - 4.3.4 HIV and vulnerability to other illness
+  finding: 'OBJ-6116-4.3.4-04 asks for the increased vulnerability of Namibians to other illness because HIV is common: a
+    population effect. The notes explain the individual effect well, but give the population effect only as a bare statement
+    (''TB and other infections are also more common among the population'') with no reason. The reason is that more people
+    with active TB means more TB bacteria spread, including to HIV-negative people.'
+  evidence: '4.3.4 HIV and vulnerability to other illness: ''Where HIV is common, TB and other infections are also more common
+    among the population.'''
+  educational_consequence: A 'discuss' answer on this objective would stop at the individual and miss the community-level
+    link.
+  recommended_repair: 'Add one sentence: ''More people with active TB means more TB bacteria are passed on, so even people
+    without HIV are more exposed.'''
+  confidence: 0.5
+  status: open
+- issue_id: 4-014
+  severity: low
+  category: curriculum
+  affected_ids:
+  - 4.3.5 Investigating germination
+  - ITEM-6116-4-P03 (g)
+  finding: P03(g) credits 'temperatures between those tested, such as 30 °C, were not tested, so the best temperature could
+    lie between them'. The germination notes never make this point about the gap between tested values. A learner working
+    from the notes alone must infer it.
+  evidence: 'ITEM-6116-4-P03 (g) marking: ''temperatures between those tested, such as 30 °C, were not tested.'' No corresponding
+    sentence in 4.3.5.'
+  educational_consequence: Learners who rely on the notes may miss the mark.
+  recommended_repair: 'Add to 4.3.5 Investigating germination: ''The best temperature can only be placed between tested values;
+    test more temperatures close to the highest result to find it.'''
+  confidence: 0.5
+  status: open
+- issue_id: 4-015
+  severity: low
+  category: evaluation
+  affected_ids:
+  - ITEM-6116-4-152-MISCON
+  finding: The stem largely gives the answer away. It names the line as 'the parental genotypes' and quotes 'tall x short',
+    so the learner only has to say that these are phenotypes. It does not make the learner tell a genotype from a phenotype
+    without help.
+  evidence: 'ITEM-6116-4-152-MISCON prompt: ''a learner writes "tall × short" on the line for the parental genotypes. Explain
+    the error.'''
+  educational_consequence: The item checks recall of the label, not discrimination.
+  recommended_repair: Give the learner a diagram with both lines filled in, one correct and one swapped, and ask which line
+    is wrong and why. Or ask them to write the correct parental line for given plants.
+  confidence: 0.6
+  status: open

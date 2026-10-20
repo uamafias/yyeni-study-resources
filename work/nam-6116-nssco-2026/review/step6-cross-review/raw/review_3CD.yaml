@@ -1,0 +1,199 @@
+- issue_id: 3CD-001
+  severity: medium
+  category: curriculum
+  affected_ids: ["3.13.1 Alcohol and synaptic signalling", "3.13.1 Transmission across a synapse", ITEM-6116-3-481-MISCON]
+  finding: >-
+    Objective OBJ-6116-3.13.1-05 asks learners to "describe the effects of alcohol on the release of the
+    neurotransmitter". The notes never connect alcohol to transmitter release. They say only that alcohol
+    "slows synaptic transmission". The one sentence about blocked release, in the synapse section, is about
+    an unnamed chemical and is not linked to alcohol. The expected point is that alcohol reduces or slows
+    neurotransmitter release at synapses, so impulses in the next neurone are delayed or fewer.
+  evidence: >-
+    "Alcohol is a depressant that slows synaptic transmission in the nervous system." (3.13.1 Alcohol and
+    synaptic signalling); "A chemical that blocks release leaves the impulse arriving normally but stops the
+    signal reaching the next cell." (3.13.1 Transmission across a synapse)
+  educational_consequence: >-
+    Asked about alcohol and neurotransmitter release, a learner can only say "slows transmission" and cannot
+    name the step affected. That answer is likely to lose the mark that depends on release.
+  recommended_repair: >-
+    In 3.13.1 Alcohol and synaptic signalling, add one sentence: alcohol reduces (slows) the release of
+    neurotransmitter at synapses, so less transmitter crosses the gap and the next neurone is stimulated more
+    slowly. Keep the ITEM-481 wording consistent with it.
+  confidence: 0.8
+  status: open
+- issue_id: 3CD-002
+  severity: medium
+  category: coherence
+  affected_ids: ["3.7 Where this connects"]
+  finding: >-
+    Both sub-topic cross-references in the 3.7 connector point to the wrong place. In the objective registry,
+    3.6.1.1 is leaf structure and 3.6.1.2 is mineral ions; the photosynthesis equation and rate objectives are
+    3.6.1.3. The note says the reverse, and it also cites a numbering that the notes file does not use: its
+    headings stop at "3.6.1 Photosynthesis and plant nutrition".
+  evidence: >-
+    "Leaf anatomy is in 3.6.1.2. ... Sucrose moved in the phloem is made in photosynthesis, covered in
+    3.6.1.1." (3.7 Where this connects)
+  educational_consequence: >-
+    A learner who follows the reference to revise leaf anatomy lands on mineral-deficiency content. A
+    learner looking for photosynthesis lands on leaf structure.
+  recommended_repair: Change to "Leaf anatomy is in 3.6.1.1" and "covered in 3.6.1.3", or cite the heading names in 3.6.1.
+  confidence: 0.9
+  status: open
+- issue_id: 3CD-003
+  severity: medium
+  category: accuracy
+  affected_ids: ["3.13.3 Adrenaline and metabolic activity (worked example)"]
+  finding: >-
+    The worked example credits adrenaline with supplying the energy for a movement that is over before
+    adrenaline can act. Stepping back from a car takes a fraction of a second and is a nervous response.
+    Adrenaline is secreted into the blood and acts afterwards, raising pulse rate and blood glucose to
+    support continued activity. The example also contradicts the notes' own rule in 3.13.1: nervous
+    responses are rapid, hormonal responses are slower.
+  evidence: >-
+    "a runner sees a car and steps back quickly. Adrenaline is released, the pulse rate rises ... More
+    glucose and oxygen reach the leg muscles, which respire faster and release the energy for rapid
+    movement." (3.13.3 Adrenaline and metabolic activity)
+  educational_consequence: >-
+    Learners may explain an instant avoiding movement by adrenaline, mixing up nervous and hormonal
+    coordination. This is exactly the comparison that OBJ-6116-3.13.1-22 tests.
+  recommended_repair: >-
+    Reframe the example: the quick step is a nervous response. Adrenaline released at the same time keeps
+    pulse rate and blood glucose raised for the following seconds to minutes, for example while the person
+    runs on or stays alert. Say that the hormonal effect follows the nervous one.
+  confidence: 0.7
+  status: open
+- issue_id: 3CD-004
+  severity: medium
+  category: evaluation
+  affected_ids: [ITEM-6116-3-471-MISCON, ITEM-6116-3-473-MISCON, ITEM-6116-3-481-MISCON]
+  finding: >-
+    These misconception items give away the answer in the stem. 471 and 473 each name exactly two agents
+    and two effects, say the pairing is wrong, and ask for it to be reassigned. A learner can earn both marks
+    by swapping the pairs, with no biology needed. In 481 the stem itself says lung damage "happens with
+    smoking", which is the whole content of mark 1. None of the three makes the learner choose between the
+    right idea and the wrong one.
+  evidence: >-
+    ITEM-471: "Explain the mistake in saying that tar binds haemoglobin while carbon monoxide damages airway
+    cleaning. Assign each effect correctly." ITEM-473: "phloem carries soil water upwards while xylem
+    delivers sucrose ... Give the correct tissue for each cargo." ITEM-481: "caused by damage to the lungs, as
+    happens with smoking"; mark 1 "states that lung damage is caused by smoking, not by drinking alcohol."
+  educational_consequence: >-
+    Learners who still hold the misconception score full or half marks. The items then report the
+    misconception as cleared when it is not.
+  recommended_repair: >-
+    Use the discriminating tests in misconceptions.json. For 020, ask which smoke component reduces oxygen
+    carried by blood and which damages cilia, without pairing them in the stem. For 022, give one cargo and
+    ask for the tissue and direction. For 041, remove "as happens with smoking" and ask which organ system
+    alcohol acts on to slow reactions.
+  confidence: 0.85
+  status: open
+- issue_id: 3CD-005
+  severity: low
+  category: evaluation
+  affected_ids: [ITEM-6116-3-467-MISCON, ITEM-6116-3-480-MISCON]
+  finding: >-
+    These are binary inversions with the error flagged in the stem. Reversing the stated equation, or
+    negating each stated condition (tight to slack, thin to thick), gives most of the answer. Each needs one
+    small piece of knowledge: that the reversed equation is photosynthesis, and that the stated conditions
+    are those for distant vision. They discriminate only weakly.
+  evidence: >-
+    ITEM-467: "A student writes carbon dioxide + water → glucose + oxygen as the equation for aerobic
+    respiration. Explain the error." ITEM-480: "Explain the error in saying that near vision requires tight
+    suspensory ligaments and a thin lens."
+  educational_consequence: >-
+    A learner who mixes up near and distant accommodation can still score by negating each condition.
+  recommended_repair: >-
+    For 039, ask what the ciliary muscles do for a near object and what follows, so the learner must produce
+    the sequence. For 012, ask for the reactants of respiration with no equation given.
+  confidence: 0.6
+  status: open
+- issue_id: 3CD-006
+  severity: low
+  category: accuracy
+  affected_ids: [ITEM-6116-3-110-APP]
+  finding: >-
+    The marking guidance makes an absolute claim that the notes do not teach and that is not strictly true:
+    blood glucose rises "only" when liver glycogen is broken down. Adrenaline also mobilises other reserves.
+    The item works at this level because the stem tells the learner that blood glucose does not rise, but
+    the "only" is unnecessary.
+  evidence: >-
+    "1 mark: blood glucose rises only when liver glycogen is broken down, so with no glycogen left there is
+    no glucose to release." (ITEM-6116-3-110-APP)
+  educational_consequence: >-
+    Learners take away a false absolute: that glycogen breakdown is the sole route by which blood glucose
+    can rise.
+  recommended_repair: Change to "adrenaline raises blood glucose mainly by causing the liver to break down glycogen; with no glycogen store, it cannot do this".
+  confidence: 0.5
+  status: open
+- issue_id: 3CD-007
+  severity: low
+  category: coherence
+  affected_ids: [ITEM-6116-3-387-FEATURE, "3.8.1 Arteries"]
+  finding: >-
+    The marking guidance credits "a narrow lumen helps keep the pressure high" as a linked adaptation. The
+    notes never make that link: they say only that a narrow lumen "accompanies" the strong wall. A learner
+    cannot learn this creditable point from the notes. The point is also weak physiologically.
+  evidence: >-
+    ITEM-387 guidance: "a narrow lumen helps keep the pressure high." Notes 3.8.1 Arteries: "a relatively
+    narrow lumen accompanies the strong wall."
+  educational_consequence: The notes and the mark scheme do not agree on which artery features earn credit.
+  recommended_repair: Either drop the lumen point from the guidance or state it, with its function, in the notes.
+  confidence: 0.6
+  status: open
+- issue_id: 3CD-008
+  severity: low
+  category: accuracy
+  affected_ids: ["3.12 Synthetic growth substances as weedkillers"]
+  finding: >-
+    The effect of selective weedkillers is first stated without its condition ("leave grasses and cereals
+    unharmed"). The dose and species condition comes only in the following sentence. The key-point line
+    has the condition ("at the intended dose"); the body sentence does not.
+  evidence: >-
+    "they kill broad-leaved weeds such as dandelions but leave grasses and cereals unharmed. Selectivity ...
+    depends on the dose, the plant species and the conditions of application."
+  educational_consequence: A learner may memorise the absolute claim that weedkillers never harm grasses.
+  recommended_repair: Change to "at the recommended dose they kill broad-leaved weeds ... while grasses and cereals are largely unaffected".
+  confidence: 0.5
+  status: open
+- issue_id: 3CD-009
+  severity: low
+  category: curriculum
+  affected_ids: ["3.9 Nicotine"]
+  finding: >-
+    The objective asks for the effects of nicotine "on the gas exchange system". The notes give only
+    dependence and cardiovascular effects, and they say outright that these are different from airway
+    damage. This is defensible, but the notes do not explain how these effects fit an objective about the
+    gas exchange system. A learner may think the answer is off-topic.
+  evidence: >-
+    OBJ-6116-3.9-10 "describe the effects of nicotine in tobacco smoke on the gas exchange system"; notes:
+    "Its other effects are on the circulation ... They are different from the airway damage caused by tar."
+  educational_consequence: The learner is unsure what to write for a nicotine question set under gas exchange.
+  recommended_repair: >-
+    Add one line: nicotine's main contribution is addiction, which keeps the smoker exposed to tar and carbon
+    monoxide that damage the gas exchange system. Its direct effects are mainly on the heart and blood
+    vessels.
+  confidence: 0.5
+  status: open
+- coverage_statement:
+    items_read: "All 47 records in items_3CD.json: 35 performance items and 12 misconception items (MISCON-6116-003, 004, 012, 013, 017, 020, 022, 024, 037, 038, 039, 041 checked against misconceptions.json)."
+    notes_read: "Read in full: 3.7, 3.8.1, 3.8.2, 3.8.3, 3.9, 3.10.1, 3.10.2, 3.11, 3.12, 3.13.1, 3.13.2, 3.13.3, 3.14 (lines 1327-2843). Coverage checked against all 149 registry objectives for 3.7-3.14 and EXC-6116-02/03/04."
+    recomputed: "Recomputed every worked number and found no arithmetic error: potometer 6 mm/min and 0.79 mm² giving 4.7 mm³/min; stomata 75 and 10 per mm²; uptake 0.20 and 0.35 cm³/min; pulse +36; air 4.9 and 3.96 points; ventilation 6, 20 and +14 dm³/min; respirometer 0.03 cm³/min; aerobic and yeast equation atom counts; auxin 3 mm."
+    q6_learner_test: >-
+      OBJ-6116-3.10.1-06 (ITEM-012, 5 marks): written from notes 3.10.1 alone: separate samples in water baths
+      at 15, 25 and 35 °C; equilibrate; droplet distance per minute with CO2 absorbent; same species, mass,
+      hydration and germination stage; repeat with fresh samples and compare. This earns 5/5. "Mean" is
+      implied rather than explicit in 3.10.1. OBJ-6116-3.14-04 (ITEM-116, 4 marks): hypothalamus detects the
+      fall in blood temperature; arterioles narrow; shivering releases heat; raised hairs trap air. This earns
+      4/4. Sampled short-answer items (ITEM-008, 076, 406, 415, 416, 424) can all be answered from the notes
+      alone. ITEM-387 is the exception: its narrow-lumen point is not in the notes (3CD-007).
+    q7_misconceptions: >-
+      Every misconception item uses an "explain the error" stem, so the stem always says the statement is
+      wrong. Discriminating: 463 (iris vs ciliary), 468 (condom), 474 (nucleated cell), 478 (urea vs bile), 479
+      (retina) and 470 (mesophyll site; the "how it leaves" half is cued). 462 discriminates moderately: the
+      bile attributes are in the stem, but the learner must supply pancreas, blood and glucose. Weak: 467 and
+      480, which are binary inversions (3CD-005). Stem gives the answer away: 471, 473, and half of 481
+      (3CD-004).
+    not_checked: >-
+      Notes 3.1-3.6.2 (another reviewer); figures VIS-6116-* (held); AO/Bloom/command-word/tariff labels;
+      deterministic checks; flashcards outside this sample. I did not verify syllabus wording against the PDF;
+      I relied on objective_registry.json.

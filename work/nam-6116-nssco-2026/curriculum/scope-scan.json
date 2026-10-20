@@ -1,0 +1,142 @@
+{
+  "scan_id": "SCOPE-6116",
+  "status": "tested",
+  "rule": "One scannable pattern per limit the syllabus states (curriculum/syllabus-facts.json stated_exclusions). Each pattern is written against the objective it qualifies so that it catches the excluded detail and leaves the required content alone; build_curriculum_evidence.py tests every must_catch and must_leave_alone example and stops on a failure. Two 2026-10-17 patterns were too broad and are narrowed here: 'water potential' is required in 3.3.2 (osmosis) and excluded only for tissue fluid in 3.8.2; 'maternal and paternal chromosomes' is the wording of objective 4.1 itself, so only the excluded mechanism detail is caught.",
+  "entries": [
+    {
+      "construct": "full names of DNA bases",
+      "pattern": "\\b(adenine|thymine|cytosine|guanine)\\b",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "3.4",
+        "printed_page": 12,
+        "pdf_page": 15,
+        "quote": "(no reference to full names is required)"
+      },
+      "must_catch": [
+        "the base adenine pairs with thymine"
+      ],
+      "must_leave_alone": [
+        "A always pairs with T, and C with G",
+        "two strands form a double helix"
+      ],
+      "pattern_provenance": "judgement"
+    },
+    {
+      "construct": "roles of water potential and hydrostatic pressure in tissue-fluid exchange",
+      "pattern": "\\b(hydrostatic pressure|solute potential|pressure potential|oncotic)\\b",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "3.8.2",
+        "printed_page": 18,
+        "pdf_page": 21,
+        "quote": "(details of roles of water potential and hydrostatic pressure are not required)"
+      },
+      "must_catch": [
+        "hydrostatic pressure forces fluid out of the capillary"
+      ],
+      "must_leave_alone": [
+        "water moves by osmosis from a higher water potential to a lower water potential",
+        "tissue fluid bathes the cells"
+      ],
+      "pattern_provenance": "judgement"
+    },
+    {
+      "construct": "kidney structure and nephron detail",
+      "pattern": "\\b(nephrons?|glomerul\\w*|Bowman'?s capsule|loop of Henl[eé]|proximal tubule|distal tubule|collecting duct|ultrafiltration)\\b",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "3.11",
+        "printed_page": 21,
+        "pdf_page": 24,
+        "quote": "(details of kidney structure and nephron are not required)"
+      },
+      "must_catch": [
+        "blood is filtered in the glomerulus",
+        "each nephron reabsorbs glucose"
+      ],
+      "must_leave_alone": [
+        "the kidney removes urea and excess water",
+        "glucose and some salts are reabsorbed"
+      ],
+      "pattern_provenance": "judgement"
+    },
+    {
+      "construct": "detail of the pancreatic cells that secrete insulin",
+      "pattern": "(\\b(beta|alpha)[- ]cells?\\b|β[- ]?cells?|islets? of Langerhans)",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "3.14",
+        "printed_page": 23,
+        "pdf_page": 26,
+        "quote": "(details of β cells are not required)"
+      },
+      "must_catch": [
+        "insulin is made by beta cells",
+        "the islets of Langerhans"
+      ],
+      "must_leave_alone": [
+        "the pancreas releases insulin",
+        "Type 1 diabetes is treated with insulin injections"
+      ],
+      "pattern_provenance": "judgement"
+    },
+    {
+      "construct": "stages of mitosis and meiosis",
+      "pattern": "\\b(prophase|metaphase|anaphase|telophase|interphase|spindle fibres?|centromeres?)\\b",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "4.1",
+        "printed_page": 24,
+        "pdf_page": 27,
+        "quote": "(details of stages are not required)"
+      },
+      "must_catch": [
+        "during metaphase the chromosomes line up"
+      ],
+      "must_leave_alone": [
+        "mitosis gives genetically identical daughter nuclei",
+        "meiosis halves the chromosome number"
+      ],
+      "pattern_provenance": "judgement"
+    },
+    {
+      "construct": "mechanism detail of how meiosis produces variation",
+      "pattern": "\\b(crossing[- ]over|chiasmat?a?|independent assortment)\\b",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "4.1",
+        "printed_page": 24,
+        "pdf_page": 27,
+        "quote": "(details are not required)"
+      },
+      "must_catch": [
+        "crossing over swaps genes between chromosomes",
+        "independent assortment of chromosomes"
+      ],
+      "must_leave_alone": [
+        "meiosis forms new combinations of maternal and paternal chromosomes"
+      ],
+      "pattern_provenance": "judgement"
+    },
+    {
+      "construct": "endosperm production and seed development detail",
+      "pattern": "\\b(endosperm|double fertilisation|triploid|aleurone|polar nuclei)\\b",
+      "source": {
+        "authority": "syllabus",
+        "sub_topic": "4.2.2",
+        "printed_page": 25,
+        "pdf_page": 28,
+        "quote": "(details of production of endosperm and development are not required)"
+      },
+      "must_catch": [
+        "the endosperm stores food",
+        "double fertilisation occurs"
+      ],
+      "must_leave_alone": [
+        "the pollen tube enters the ovule and the male nucleus fuses with the female nucleus"
+      ],
+      "pattern_provenance": "judgement"
+    }
+  ]
+}

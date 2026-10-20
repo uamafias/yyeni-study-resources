@@ -14,7 +14,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Kind | Pilot subject | Status |
 |---|---|---|
 | Cambridge IGCSE / AS | 9702 AS Physics and others below | piloted |
-| Namibia NSSCO | | not yet |
+| Namibia NSSCO | 6116 Biology — pilot run by Lotto under a recorded exception to the Vitalis-only rule (Lotto, 2026-10-16); repository review copy only, with learner release still open; see `work/nam-6116-nssco-2026/STATUS.md` | piloted |
 | Namibia NSSCAS | | not yet |
 | Junior secondary, grades 8 to 9 | | not yet |
 | Upper primary, grades 4 to 7 | | not yet |
@@ -37,3 +37,4 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE | 0460 | Geography | `cie-0460-igcse-2025-2026` | Hermes / OpenCode | Claude | 629 | |
 | Cambridge IGCSE | 0450 | Business Studies | `cie-0450-igcse-2026` | Hermes / OpenCode | Claude | 913 | |
 | Cambridge IGCSE | 0455 | Economics | `cie-0455-igcse-2026` | Hermes, then Codex | Claude | 674 | 46 diagrams in `publish/cie-0455-igcse-2026/diagrams/` |
+| Namibia NSSCO | 6116 | Biology | `nam-6116-nssco-2026` | Codex, with Claude repair rounds | Claude Step 6 (also repaired) | 851 | Repository review copy under `work/`, 886 authored and 35 figure items held; pilot process complete under operator override; unverified and not released to learners. |

@@ -1,0 +1,329 @@
+{
+  "provenance": "judgement",
+  "reviewed": "2026-10-18",
+  "rule": "Second curation pass, read entry by entry. The automatic pass (curate_misconceptions.py) keeps any statement that mentions confusion and reads the two sides off the sentence with a regex; on this corpus that produced sides such as 'bile and could not score any marks' and sub-topics taken from distinctive-term matching (HCl/bile filed under Nervous control, the respiration equation under Photosynthesis). This pass decides keep, drop, merge or split for each entry, sets the sub-topic by reading the statement, restates the two sides in our words, and writes the discriminating test. A test is written only where the statement itself names both sides; otherwise the entry is flagged for a teacher. Every kept entry still cites its examiner statement; nothing here is invented evidence.",
+  "match_on": "misconception_id plus the opening words of evidence_statement; a mismatch stops the build; each kept entry names the objective it discriminates by the opening words of that objective, so renumbering cannot move it",
+  "decisions": {
+    "MISCON-6116-001": {
+      "starts": "(c) Fairly answered, though foreign exchange",
+      "action": "drop",
+      "reason": "word-form slip (tourism/tourist) in the 2020 Paper 2 rhino-poaching question; a wording habit, not a belief about biology"
+    },
+    "MISCON-6116-002": {
+      "starts": "Effector",
+      "action": "merge_into",
+      "into": "MISCON-6116-003",
+      "reason": "same question (2020 P2 Q6); the confusion about insulin's role is the one 003 names"
+    },
+    "MISCON-6116-003": {
+      "starts": "Some candidates confused insulin with bile",
+      "action": "keep",
+      "sub_topic": "3.14",
+      "a": "insulin",
+      "b": "bile",
+      "test": "Insulin is a hormone made by the pancreas and carried in the blood; it lowers blood glucose. Bile is made by the liver and enters the small intestine, where it neutralises acid and emulsifies fat. Ask where each is made, how it travels and what it acts on: an answer that sends bile through the blood or has insulin digest fat has not separated them.",
+      "objective_starts": "describe the control of the glucose content"
+    },
+    "MISCON-6116-004": {
+      "starts": "There was confusion as some candidates stated the rods",
+      "action": "keep",
+      "sub_topic": "3.13.1",
+      "a": "the pupil reflex (circular and radial muscles of the iris)",
+      "b": "accommodation and light detection (ciliary muscles, suspensory ligaments, rods and cones)",
+      "test": "Bright light makes the pupil narrow: which muscles contract and which relax? Only the circular and radial muscles of the iris are acceptable; naming ciliary muscles, suspensory ligaments, rods or cones shows the reflex has been mixed up with focusing or detection.",
+      "objective_starts": "explain the pupil reflex"
+    },
+    "MISCON-6116-005": {
+      "starts": "Some candidates confused meiosis with mitosis",
+      "action": "keep",
+      "sub_topic": "4.1",
+      "a": "mitosis",
+      "b": "meiosis",
+      "test": "Give a cell type and ask which division made it and why: body cells for growth and repair come from mitosis (identical, diploid); gametes come from meiosis (chromosome number halved, genetically different).",
+      "objective_starts": "distinguish between mitosis and meiosis"
+    },
+    "MISCON-6116-006": {
+      "starts": "Many candidates confused the order of embryonic development",
+      "action": "drop",
+      "reason": "a gap in recalled sequence and timing, with no second idea named; it is taught by the 4.3.2 growth-and-development items, not a confusion card"
+    },
+    "MISCON-6116-007": {
+      "starts": "Candidates are often confused over terms such as turgid",
+      "action": "keep",
+      "sub_topic": "3.3.2",
+      "a": "words that describe the state of a cell (turgid, flaccid, plasmolysed)",
+      "b": "words that describe a solution relative to the cell (hypertonic, isotonic, hypotonic)",
+      "test": "Ask the learner to complete 'a plant cell placed in a ___ solution becomes ___'. A correct answer puts a solution word in the first gap and a cell-state word in the second, and the pair must match the direction of water movement.",
+      "objective_starts": "describe the effects of osmosis on plant tissues"
+    },
+    "MISCON-6116-008": {
+      "starts": "Some candidates also confused the actual size with magnification",
+      "action": "keep",
+      "sub_topic": "3.1",
+      "a": "magnification",
+      "b": "actual size",
+      "test": "Given an image length and a magnification, ask for the actual size. The answer must be a length with a unit (mm or µm); an answer written as '×…' has calculated or reported a magnification instead.",
+      "objective_starts": "calculate the magnification and size"
+    },
+    "MISCON-6116-009": {
+      "starts": "The most common mistake made was the proportion mark",
+      "action": "drop",
+      "reason": "fragment: does not say what was mistaken"
+    },
+    "MISCON-6116-010": {
+      "starts": "In some cases, the function of HCl",
+      "action": "keep",
+      "sub_topic": "3.6.2.3",
+      "a": "hydrochloric acid in gastric juice",
+      "b": "bile",
+      "test": "Ask what each does to the pH where it acts: hydrochloric acid makes the stomach acidic (and kills bacteria); bile makes the mixture entering the small intestine less acidic (and emulsifies fat). An answer giving both the same effect has not separated them.",
+      "objective_starts": "outline the role of bile in neutralising"
+    },
+    "MISCON-6116-011": {
+      "starts": "A few candidates confused petals with sepals",
+      "action": "keep",
+      "sub_topic": "4.2.2",
+      "a": "petals",
+      "b": "sepals",
+      "test": "Ask which part protects the flower while it is a bud and which attracts insects. Sepals protect the bud and sit outermost; petals attract pollinators.",
+      "objective_starts": "describe the structural adaptations and functions of the parts of insect-pollinated"
+    },
+    "MISCON-6116-012": {
+      "starts": "The equation was greatly confused with that of photosynthesis",
+      "action": "keep",
+      "sub_topic": "3.10.1",
+      "a": "the aerobic respiration equation",
+      "b": "the photosynthesis equation",
+      "test": "Ask for the reactants of aerobic respiration. Glucose and oxygen is correct; carbon dioxide and water as reactants, or any mention of light or chlorophyll, means the photosynthesis equation has been given.",
+      "objective_starts": "state the word equation for aerobic respiration"
+    },
+    "MISCON-6116-013": {
+      "starts": "Some lost marks by writing ciliated cells",
+      "action": "keep",
+      "sub_topic": "3.8.3",
+      "a": "mechanical barriers that defend the body against pathogens",
+      "b": "barrier methods of contraception",
+      "test": "Ask for one mechanical barrier against disease. Skin or nasal hairs is a defence barrier; a condom or diaphragm is a contraceptive barrier and does not answer a question about the body's defences.",
+      "objective_starts": "state mechanical barriers as a defence",
+      "resolution": "Resolved 2026-10-18 from the source paper (2022 Paper 2, question on the body's defences): the question asked for the body's mechanical barriers against pathogens; the confused answers gave contraceptive barriers.",
+      "authoring_constraint": "Do not offer ciliated cells as an example of a mechanical barrier: the report records answers naming them as losing marks. Use skin and nasal hairs."
+    },
+    "MISCON-6116-014": {
+      "starts": "The majority of the candidates confused parental genotype",
+      "action": "keep",
+      "sub_topic": "4.4.2",
+      "a": "genotype",
+      "b": "phenotype",
+      "test": "In a genetic diagram, ask what goes on the parental line. Allele symbols (for example Tt) are the genotype; a description such as 'tall' is the phenotype and belongs on the offspring line.",
+      "objective_starts": "define genotype"
+    },
+    "MISCON-6116-015": {
+      "starts": "Some candidates confuse iodine with iron",
+      "action": "keep",
+      "sub_topic": "3.6.2.1",
+      "a": "iodine deficiency",
+      "b": "iron deficiency",
+      "test": "Ask which mineral's shortage causes goitre and which causes anaemia. Iodine deficiency is linked to goitre; iron deficiency to anaemia, because iron is needed to make haemoglobin.",
+      "objective_starts": "describe the causes and effects of iodine deficiency"
+    },
+    "MISCON-6116-016": {
+      "starts": "It can, therefore, be assumed",
+      "action": "drop",
+      "reason": "fragment: refers to another sentence and names no idea"
+    },
+    "MISCON-6116-017": {
+      "starts": "The majority of candidates opted for D (stoma)",
+      "action": "keep",
+      "sub_topic": "3.7",
+      "a": "where water evaporates (the surfaces of mesophyll cells, into the air spaces)",
+      "b": "where water vapour leaves the leaf (by diffusion through the stomata)",
+      "test": "Ask where liquid water becomes water vapour in a leaf. The surfaces of the mesophyll cells is correct; the stoma is where vapour diffuses out, not where it forms.",
+      "objective_starts": "define transpiration"
+    },
+    "MISCON-6116-018": {
+      "starts": "It is assumed that some candidates did not pay attention",
+      "action": "drop",
+      "reason": "answering habit (reproducing remembered answers), not a belief about biology"
+    },
+    "MISCON-6116-019": {
+      "starts": "The most popular incorrect answer was A, as candidates confused embryo",
+      "action": "keep",
+      "sub_topic": "4.3.2",
+      "a": "embryo",
+      "b": "fetus",
+      "test": "Ask what the developing offspring is called once its organs have formed and it is mainly increasing in size. Fetus is correct; embryo is the earlier stage while the organs are forming.",
+      "objective_starts": "outline the growth and development of the fetus",
+      "resolution": "Resolved 2026-10-18: the discrimination (organs forming = embryo; organs formed and mainly growing = fetus) does not need a week number, and the syllabus states none.",
+      "authoring_constraint": "State no week at which the embryo becomes a fetus."
+    },
+    "MISCON-6116-020": {
+      "starts": "QUESTION 3",
+      "action": "split",
+      "sub_topic": "3.9",
+      "a": "the effects of tar",
+      "b": "the effects of carbon monoxide",
+      "test": "Ask which component of tobacco smoke reduces the oxygen the blood can carry, and which causes cancer and damages the airways. Carbon monoxide combines with haemoglobin; tar is carcinogenic and coats the airways.",
+      "split_out": [
+        {
+          "sub_topic": "3.13.2",
+          "a": "the effects of smoking",
+          "b": "the effects of alcohol",
+          "test": "Ask which drug causes liver damage and slows reaction times, and which damages the gas exchange system. Alcohol acts on the nervous system and the liver; tobacco smoke acts on the airways, alveoli and blood oxygen.",
+          "objective_starts": "describe the effect of excessive alcohol and heroin on reaction times"
+        }
+      ],
+      "objective_starts": "describe the effects of tar in tobacco"
+    },
+    "MISCON-6116-021": {
+      "starts": "(ii) The most common mistake made was that enzymes",
+      "action": "keep",
+      "sub_topic": "3.5",
+      "a": "enzymes being killed or destroyed",
+      "b": "enzymes being denatured",
+      "test": "Ask what happens to an enzyme at a high temperature. A correct answer says it is denatured: its active site changes shape so the substrate no longer fits. 'Killed' is wrong because an enzyme is a protein, not a living thing.",
+      "objective_starts": "explain the effect of changes in temperature on enzyme"
+    },
+    "MISCON-6116-022": {
+      "starts": "Option A was also attractive",
+      "action": "keep",
+      "sub_topic": "3.7",
+      "a": "xylem",
+      "b": "phloem",
+      "test": "Ask which tissue carries water and mineral ions up from the roots and which carries sucrose and amino acids to where they are used. Xylem carries water and ions; phloem carries the products of photosynthesis, in either direction.",
+      "objective_starts": "explain the mechanisms by which water enters a plant"
+    },
+    "MISCON-6116-023": {
+      "starts": "Answers were all over",
+      "action": "drop",
+      "reason": "fragment: says understanding of tropism was weak but names no confusion"
+    },
+    "MISCON-6116-024": {
+      "starts": "(c) (i) Component Z, white blood cell",
+      "action": "keep",
+      "sub_topic": "3.8.2",
+      "a": "red blood cells",
+      "b": "white blood cells (lymphocytes and phagocytes)",
+      "test": "Show a cell with a large nucleus and ask what it is. Red blood cells have no nucleus and are biconcave; a cell with a nucleus is a white blood cell.",
+      "objective_starts": "identify red and white blood cells"
+    },
+    "MISCON-6116-025": {
+      "starts": "Some mistaken explanations were incorrectly based",
+      "action": "drop",
+      "reason": "fragment, and it runs into indicative-answer text"
+    },
+    "MISCON-6116-026": {
+      "starts": "(ii) The reason given for the mistakes",
+      "action": "drop",
+      "reason": "fragment: names no idea"
+    },
+    "MISCON-6116-027": {
+      "starts": "(ii) Most mistakes were seen when candidates gave inaccurate",
+      "action": "drop",
+      "reason": "measurement accuracy is a practical skill failure, not a belief; it is taught by the 1.2.6 drawing and measuring items"
+    },
+    "MISCON-6116-028": {
+      "starts": "Weaker performance was commonly associated",
+      "action": "drop",
+      "reason": "general summary naming no specific confusion"
+    },
+    "MISCON-6116-029": {
+      "starts": "Errors arose where candidates confused dependent",
+      "action": "keep",
+      "sub_topic": "1.2.1",
+      "a": "the independent variable",
+      "b": "the dependent variable",
+      "test": "Describe an investigation and ask which variable the investigator chose to change and which was measured. The one changed is independent; the one measured is dependent.",
+      "objective_starts": "distinguish between independent, dependent"
+    },
+    "MISCON-6116-030": {
+      "starts": "Many candidates confused crustaceans",
+      "action": "keep",
+      "sub_topic": "2.2",
+      "a": "crustaceans",
+      "b": "insects and arachnids",
+      "test": "Give leg counts and body sections and ask for the group. Insects have three pairs of legs and three body parts; arachnids four pairs and two parts; crustaceans more than four pairs of legs and two pairs of antennae.",
+      "objective_starts": "list the visible external features used to classify crustaceans"
+    },
+    "MISCON-6116-031": {
+      "starts": "The common misconception was assuming all movement",
+      "action": "keep",
+      "sub_topic": "3.3.3",
+      "a": "active transport",
+      "b": "diffusion and osmosis",
+      "test": "Ask whether a named movement needs energy from respiration. Only movement against a concentration gradient (active transport) does; diffusion and osmosis go down a gradient and need none.",
+      "objective_starts": "define active transport"
+    },
+    "MISCON-6116-032": {
+      "starts": "Many candidates confused monomers",
+      "action": "keep",
+      "sub_topic": "3.4",
+      "a": "the building blocks of carbohydrates, proteins and fats",
+      "b": "one another",
+      "test": "Ask what each large molecule is built from. Starch and glycogen from simple sugars; proteins from amino acids; fats and oils from fatty acids and glycerol. Any swap is the confusion.",
+      "objective_starts": "describe the synthesis of proteins from amino acids"
+    },
+    "MISCON-6116-033": {
+      "starts": "A small number confused autotrophs",
+      "action": "keep",
+      "sub_topic": "5.1",
+      "a": "autotrophs (producers)",
+      "b": "decomposers",
+      "test": "Ask where each gets its energy. A producer makes its own organic nutrients, usually using light; a decomposer gets energy from dead or waste organic material.",
+      "objective_starts": "define decomposer"
+    },
+    "MISCON-6116-034": {
+      "starts": "Many candidates confused the hepatic portal vein",
+      "action": "keep",
+      "sub_topic": "3.6.2.4",
+      "a": "the hepatic portal vein",
+      "b": "the hepatic artery and the vena cava",
+      "test": "Ask which vessel carries absorbed food from the small intestine to the liver. The hepatic portal vein; the hepatic artery brings oxygenated blood to the liver and the vena cava returns blood to the heart.",
+      "objective_starts": "state the role of the hepatic portal vein"
+    },
+    "MISCON-6116-035": {
+      "starts": "Errors were linked to confusion between xylem",
+      "action": "merge_into",
+      "into": "MISCON-6116-022",
+      "reason": "the same xylem/phloem confusion, now evidenced in 2024 and 2025"
+    },
+    "MISCON-6116-036": {
+      "starts": "Many candidates confused red blood cells",
+      "action": "merge_into",
+      "into": "MISCON-6116-024",
+      "reason": "the same red/white blood cell confusion, now evidenced in 2024 and 2025"
+    },
+    "MISCON-6116-037": {
+      "starts": "20 A Generally well answered",
+      "action": "keep",
+      "sub_topic": "3.11",
+      "a": "the liver's role in excretion (forming urea by deamination)",
+      "b": "the liver's role in digestion (producing bile)",
+      "test": "Ask which liver product is excreted and why. Urea, formed by deamination of excess amino acids, is excretory; bile production supports fat digestion and is not the excretory role asked about.",
+      "objective_starts": "describe the formation of urea in the liver"
+    },
+    "MISCON-6116-038": {
+      "starts": "Errors arose from confusing retina",
+      "action": "keep",
+      "sub_topic": "3.13.1",
+      "a": "the retina",
+      "b": "other parts of the eye",
+      "test": "Ask which part contains the light-sensitive cells. The retina (rods and cones); the lens and cornea refract light, the iris controls pupil size.",
+      "objective_starts": "identify the retina and state its function",
+      "resolution": "Resolved 2026-10-18: the evidence does not name the structure the retina was mistaken for; the card discriminates the retina (light-sensitive rods and cones) from the structures the syllabus lists beside it (cornea, lens, iris), which is the syllabus content either way."
+    },
+    "MISCON-6116-039": {
+      "starts": "Many candidates confused near and distant",
+      "action": "keep",
+      "sub_topic": "3.13.1",
+      "a": "accommodation for near objects",
+      "b": "accommodation for distant objects",
+      "test": "Ask what the ciliary muscles do when the eye looks at a near object. They contract, the suspensory ligaments slacken and the lens becomes fatter. Any answer with relaxed ciliary muscles and a thin lens describes distant vision.",
+      "objective_starts": "explain accommodation to view near objects"
+    },
+    "MISCON-6116-040": {
+      "starts": "Explanations of the two were confused",
+      "action": "drop",
+      "reason": "fragment: does not name the two ideas"
+    }
+  }
+}
