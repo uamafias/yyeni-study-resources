@@ -1,0 +1,32 @@
+[
+  {
+    "issue": "run_checks.py exits nonzero even when JSON decision is publish",
+    "evidence": "The wrapper compares release_decision to pass, while yyeni_checks.run returns publish/reject.",
+    "status": "Observed on both exemplars: JSON PUBLISH, zero deterministic failures, process exit 1. No exit code is silently reclassified.",
+    "action": "Standard maintainer should align the wrapper with the runner. Until resolved, report JSON decision, failure counts, no-opinion checks and exit code explicitly."
+  },
+  {
+    "issue": "Subject-profile schema predates the supported profile extensions",
+    "evidence": "subject_profile.schema.json rejects slot_plan, conditioned_mechanisms and depictions, while the build and checks explicitly consume them (CR-006 and C-37).",
+    "status": "Open standard-owner discrepancy; full subject-profile schema validation does not pass. No schema changed or error filtered.",
+    "action": "Vitalis/standard maintainer should reconcile the schema with the documented supported fields before recording the NSSCO pilot as complete."
+  },
+  {
+    "issue": "Graph rendering/checking is limited to business break-even charts",
+    "evidence": "C-35/C-41 and context.chart schema support break-even parameters, not Development Studies pie/bar graphs, maps or population pyramids.",
+    "status": "No compatible graphical check; no deterministic graph PASS is claimed. Tables and learner plotting tasks use the supported no-renderer depiction policy.",
+    "action": "Independently recompute original graph datasets, percentages, pie angles, scales and labels. Resolve any check that is required but inapplicable in the standard, not through a workspace bypass."
+  },
+  {
+    "issue": "PUBLISH is not equivalent to every check passing",
+    "evidence": "The runner returns PUBLISH with no failures even when checks are not_run; TEAM-PLAYBOOK.md says not_run is never a pass.",
+    "status": "Every exemplar no-opinion check is listed in validation.json and must be visible in final QA. No publication or pilot completion claimed.",
+    "action": "Follow the playbook. Do not count a required missing-input check as passed; standard owner resolves actual pilot incompatibilities."
+  },
+  {
+    "issue": "Generated contract narrative says Cambridge and default AO commentary names AO1–AO4",
+    "evidence": "The stock contract and AO commentary contain Cambridge/AO1–AO4 prose even with correct 6136 data and A/B/C/D labels.",
+    "status": "Cosmetic template mismatch in internal generated text. PLAN and HANDOVER explicitly use NIED/DNEA and A/B/C/D; never copy boilerplate into learner prose.",
+    "action": "Standard maintainer should generalise the narrative. Do not edit generated outputs or standard here."
+  }
+]

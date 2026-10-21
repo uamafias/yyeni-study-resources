@@ -1,0 +1,115 @@
+{
+  "scope_scan_id": "SCOPE-SCAN-NAM-6136",
+  "rule": "Carry the three stated preparation/assessment/answer constraints into planning; no topic exclusion is invented.",
+  "entries": [
+    {
+      "construct": "assuming prior Development Studies study",
+      "pattern": "\\b(?:must|need to) have (?:already )?studied Development Studies (?:at|in) (?:Junior Secondary|JS)\\b",
+      "applies_to": "subject",
+      "controls": {
+        "must_catch": [
+          "You must have studied Development Studies in Junior Secondary."
+        ],
+        "must_allow": [
+          "No prior Development Studies study is assumed."
+        ]
+      },
+      "source": {
+        "page": 3,
+        "pdf_page": 6,
+        "section": "4 Additional information – Prior learning",
+        "method": "transcribed from PDF layout text"
+      },
+      "syllabus_sentence": "Learners beginning this course are not expected to have studied Development Studies\npreviously in Junior Secondary (JS) level.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "judgement"
+      },
+      "note": "Instruction/assessment safeguard; this does not exclude any of the ten content themes."
+    },
+    {
+      "construct": "claiming the investigation is formally assessed coursework",
+      "pattern": "\\b(?:research investigation|investigation report) (?:is|will be) (?:formally )?assessed as (?:a )?(?:formal )?coursework(?: assignment)?\\b",
+      "applies_to": "subject",
+      "controls": {
+        "must_catch": [
+          "The research investigation is assessed as formal coursework."
+        ],
+        "must_allow": [
+          "Paper 3 asks questions about the investigation; it is not assessed as a formal coursework assignment."
+        ]
+      },
+      "source": {
+        "page": 23,
+        "pdf_page": 26,
+        "section": "10 Explanatory notes – (ii) Individual research",
+        "method": "transcribed from PDF layout text"
+      },
+      "syllabus_sentence": "It is important that learners are aware that, whilst the research investigation will not be assessed\nas a formal coursework assignment, a number of questions will be set on it as part of the Paper\n3 examination.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "judgement"
+      },
+      "note": "Instruction/assessment safeguard; this does not exclude any of the ten content themes."
+    },
+    {
+      "construct": "recommending separate descriptions in place of a comparison",
+      "pattern": "\\b(?:comparison|compare)\\b.{0,50}\\b(?:just|only) describe [AB] (?:and|then) [AB] separately\\b",
+      "applies_to": "subject",
+      "controls": {
+        "must_catch": [
+          "For a comparison, just describe A then B separately."
+        ],
+        "must_allow": [
+          "Compare the two places directly using paired statements."
+        ]
+      },
+      "source": {
+        "page": 26,
+        "pdf_page": 29,
+        "section": "11 Glossary",
+        "method": "transcribed from PDF layout text"
+      },
+      "syllabus_sentence": "to B. Factual descriptions of A and B are not required.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "judgement"
+      },
+      "note": "Instruction/assessment safeguard; this does not exclude any of the ten content themes."
+    },
+    {
+      "construct": "out-of-scope sampling techniques taught as required 6136 methods",
+      "pattern": "\\b(?:cluster|quota|snowball|convenience|purposive) sampling\\b",
+      "applies_to": "research teaching beyond the named syllabus methods",
+      "controls": {
+        "must_catch": [
+          "Use cluster sampling to choose participants.",
+          "Quota sampling is a required method."
+        ],
+        "must_allow": [
+          "Use random, systematic or stratified sampling.",
+          "Choose an appropriate sample."
+        ]
+      },
+      "source": {
+        "page": 17,
+        "pdf_page": 20,
+        "section": "10.1 names random, stratified and systematic; examiner-report advice supports this boundary"
+      },
+      "syllabus_sentence": "name and describe different sampling methods: random, stratified and systematic",
+      "provenance": {
+        "sentence": "syllabus named list; report-backed scope policy",
+        "pattern": "judgement"
+      },
+      "note": "Do not introduce neighbouring or advanced sampling curricula. Teaching depth is bounded in objective/contract guidance."
+    }
+  ],
+  "explicit_topic_exclusions": [],
+  "report_scope_advice": [
+    {
+      "source": "2023 P3 examiner report printed p.168 / PDF p.170",
+      "note": "Practice policy from examiner-report advice: generate suitable bar/pie/divided-rectangle exercises and no line-graph construction tasks. This is a planning choice, not an invented syllabus exclusion. No teacher-access decision is pending."
+    }
+  ],
+  "pattern_limit": "Regexes catch specific wording risks, not all conceptual violations. Contextual reading remains necessary."
+}
