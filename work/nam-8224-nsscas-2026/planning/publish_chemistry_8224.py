@@ -64,6 +64,10 @@ def package(workspace, output):
     validation=json.loads(validation_path.read_text()) if validation_path.is_file() else {}
     reviewed=(validation.get('status')=='complete' and validation.get('verdict')=='publish'
               and validation.get('manuscript_sha256')==manuscript_hashes(workspace))
+    import_path=workspace/'planning/yyeni-import/final-import-verification.json'
+    import_record=json.loads(import_path.read_text()) if import_path.is_file() else {}
+    imported=(reviewed and import_record.get('status')=='complete'
+              and import_record.get('source_manuscript_sha256')==manuscript_hashes(workspace))
     index=output/'INDEX.md'
     text=index.read_text()
     heading,body=text.split('\n',1)
@@ -81,8 +85,14 @@ def package(workspace, output):
         (output/'review').mkdir(parents=True,exist_ok=True)
         for name in ('REVIEW.md','coverage.json','findings.json','repairs.json','operator-final-validation.json','operator-source-locator-correction.json'):
             if (review/name).is_file():shutil.copy2(review/name,output/'review'/name)
+    if imported:
+        notice=notice.replace('Human diagram and claim approvals remain outstanding; no YYeni import has been performed.',
+                              'Imported into the NSSCAS Chemistry template classroom with Jeremy’s approval:565 active flashcards,21 note files and21 practice files. Learner deck assignment is separate. Human diagram/individual claim verification records remain unchanged.')
+        body=body.replace('This folder is the local review package; release and YYeni import are separate steps.',
+                          'This folder mirrors the reviewed resources imported into the YYeni NSSCAS Chemistry template classroom. Learner deck assignment is separate.')
+        shutil.copy2(import_path,output/'review/yyeni-import-verification.json')
     index.write_text(heading+'\n\n'+notice+'\n'+body)
-    (output/'MANIFEST.json').write_text(json.dumps({'qualification':qualification,'build_status':'reviewed_human_approvals_pending' if reviewed else 'authored_review_pending','independent_semantic_review':'complete' if reviewed else 'pending','human_diagram_approval':'pending','claim_approval':'pending','open_review_findings':12 if reviewed else None,'topics':manifest},indent=2)+'\n')
+    (output/'MANIFEST.json').write_text(json.dumps({'qualification':qualification,'build_status':'reviewed_human_approvals_pending' if reviewed else 'authored_review_pending','independent_semantic_review':'complete' if reviewed else 'pending','human_diagram_approval':'pending','claim_approval':'pending','open_review_findings':12 if reviewed else None,'yyeni_import':{'status':'complete','school_id':17,'classroom_id':import_record['classroom_id'],'active_flashcards':565,'resources':42,'learner_assignments':0} if imported else {'status':'not_verified_for_current_manuscript'},'topics':manifest},indent=2)+'\n')
     for source,target in copies:
         target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(source,target)

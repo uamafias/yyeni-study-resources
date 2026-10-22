@@ -1,6 +1,6 @@
 # NSSCAS Chemistry 8224 (examined 2026)
 
-**INDEPENDENT REVIEW COMPLETE — HUMAN APPROVALS PENDING.** Claude reviewed all21 topics,390 sampled items and30 PNG figures. Four substantive findings were repaired;12 low-severity findings remain open. [Review report](review/REVIEW.md). Human diagram and claim approvals remain outstanding; no YYeni import has been performed.
+**INDEPENDENT REVIEW COMPLETE — HUMAN APPROVALS PENDING.** Claude reviewed all21 topics,390 sampled items and30 PNG figures. Four substantive findings were repaired;12 low-severity findings remain open. [Review report](review/REVIEW.md). Imported into the NSSCAS Chemistry template classroom with Jeremy’s approval:565 active flashcards,21 note files and21 practice files. Learner deck assignment is separate. Human diagram/individual claim verification records remain unchanged.
 
 Study notes and flashcards. 21 topics, 631 flashcards and performance tasks, 69,935 words of notes.
 
@@ -68,4 +68,4 @@ One JSON file per topic, carrying `topic_number`, `topic_title` and a list of `i
 
 ## Where the source lives
 
-This folder is the local review package; release and YYeni import are separate steps. The source of record is `/Users/jeremytiboth/Documents/yyeni-study-resources/work/nam-8224-nsscas-2026/topics/<number>/`, which holds each topic's claim ledger, content units, learning items and QA report. Regenerate this folder at any time with `python3 work/nam-8224-nsscas-2026/planning/publish_chemistry_8224.py`; nothing in it is edited by hand.
+This folder mirrors the reviewed resources imported into the YYeni NSSCAS Chemistry template classroom. Learner deck assignment is separate. The source of record is `/Users/jeremytiboth/Documents/yyeni-study-resources/work/nam-8224-nsscas-2026/topics/<number>/`, which holds each topic's claim ledger, content units, learning items and QA report. Regenerate this folder at any time with `python3 work/nam-8224-nsscas-2026/planning/publish_chemistry_8224.py`; nothing in it is edited by hand.

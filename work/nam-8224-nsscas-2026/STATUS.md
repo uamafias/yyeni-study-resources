@@ -18,8 +18,8 @@ Pilot: first NSSCAS subject; run with Vitalis's agreement (Jeremy, 2026-10-18). 
 - [x] 6 Reviewed by Claude: verdict **publish**; operator final validation complete, all 21 topics PUBLISH with zero failed checks. Four substantive findings fixed; 12 low findings open. Human diagram and applicable RS-13 claim approvals remain recorded as pending. 2026-10-22; see review/claude-full-r1/REVIEW.md and operator-final-validation.json
 - [x] 6 YOU: verdict read — Jeremy requested “Publish now” after receiving the final verdict, 2026-10-22
 - [x] 7 Committed and pushed on Jeremy’s explicit publication instruction — 2026-10-22; reviewed package commit `52422ac`, branch `nsscas-8224-chemistry` on origin
-- [ ] 8 (diagram) Compare with existing YYeni NSSCAS Chemistry cards (school 17, classroom `a5695c1d-390d-4025-b013-2e218a2c1ca9`; 0 cards on 2026-10-18)
-- [ ] 8 (diagram) YOU: approve replacements, preview and import into YYeni
+- [x] 8 Compare with existing YYeni NSSCAS Chemistry cards — complete preimport query: 0 cards, rechecked 2026-10-22
+- [x] 8 YOU: approve import and missing destinations — Jeremy, explicit “yes”, 2026-10-22; imported and live-verified 565 active cards and 42 resources
 
 ## Quality policy (reconciled with the playbook, 2026-10-22)
 - Codex authors this subject and Claude Code performs the required independent cross-vendor review in a fresh context.
@@ -179,3 +179,21 @@ Operator corrected only the new Annexe D source locator from printed p52 to p53 
 Jeremy requested “Publish now” and clarified GitHub as the expected destination. This authorises the subject-scoped commit and push normally performed by the person in playbook Step 7. Publishing the reviewed package does not assert individual claim verification or human inspection of every diagram. The source ledgers and package retain those pending approval states and the 12 open low-severity findings. YYeni import is separate. Publication branch: `nsscas-8224-chemistry`.
 
 GitHub push succeeded: `52422ac` on `origin/nsscas-8224-chemistry`; three Git LFS objects (62 MB) uploaded successfully. Tracker marked published. This is a branch publication; no merge into main or YYeni import was performed.
+
+## YYeni import staged — 2026-10-22
+
+Jeremy explicitly requested import and then archive all preexisting cards after completion. Verified target: school 17 (NSSCAS Template Classrooms), NSSCAS Chemistry classroom `a5695c1d-390d-4025-b013-2e218a2c1ca9`; 44 existing lessons, no Atomic Structure or practical-skills lesson, no enrolled learners, complete preimport card query total 0 (rechecked after staging).
+
+Prepared `planning/yyeni-import/IMPORT-PLAN.md` and `IMPORT-PREVIEW.md`: 565 flashcards, 21 learner notes, 21 practice files with all 66 tasks. All 30 PNGs uploaded with semantic grading descriptions; 42 Markdown files uploaded to managed storage and resource-attachment previews prepared. 455 cards validated in five preview batches with N$0 import fee. The other 110 cards require the new Atomic Structure and Practical Skills lesson IDs. Curriculum create previews prepared for Atomic Structure (14 objectives) and a new Practical Skills section; the dependent practical lesson (39 objectives) is specified in practical-lesson-plan.json.
+
+No curriculum, cards, resource attachments, assignments or charges confirmed. YYeni tools explicitly require exact preview approval before their confirm operations. User approval request is pending. Preview IDs and payloads are saved in curriculum-previews.json, card-previews.json and resource-previews.json (15-minute expiry). After approval, confirm valid previews or refresh expired unconfirmed previews; create practical lesson once the new section exists, fill created-destinations.json, rerun prepare_import.py to resolve all 565 card mappings, validate remaining cards and confirm approved exact payloads. Reuse the same approval_id for any uncertain confirmation retry. Verify live totals and every returned ID; archive only IDs from the complete preimport baseline (currently empty), preserving every new ID. Teacher cards in the template are not learner deck assignments or proof of propagation to existing cloned classrooms.
+
+## YYeni import complete — 2026-10-22
+
+Jeremy approved the exact staged import, destination additions, and archival of preexisting cards. Created Atomic Structure lesson 24180 (14 objectives), Practical Skills section 5968, and practical lesson 24181 (39 objectives). Imported 565 active shared teacher flashcards, 21 learner-note resources and 21 practice resources containing all 66 tasks, with 30 source figures in managed image storage. Import fee N$0. No learner assignments or charges.
+
+YYeni appended image grading context to 18 imported card texts. Restored the approved answer wording on 13 cards. Updating the five image-question cards cleared their Bloom metadata, so replaced those five with correctly labelled imports using factual accessible diagram descriptions, then archived superseded IDs 47383, 47591, 47732, 47780 and 47784. The final active IDs and exact app wording are in planning/yyeni-import/final-card-id-map.json and final-cards.json. Source manuscript remains unchanged.
+
+Final live verification: 565 unique active cards, no unexpected active IDs, exact final question/answer/Bloom/difficulty/type/lesson/image-link match on every card; all 42 resource IDs/titles/URLs found in the five sections. Preexisting cards: 0, therefore no legacy archival needed. Five superseded versions from this import were archived. See planning/yyeni-import/final-import-verification.json; the earlier import-verification.json is an intermediate failed audit retained for traceability and superseded by the final report.
+
+Availability: shared cards and section resources are in NSSCAS Template Classrooms → NSSCAS Chemistry. Teachers with access can use these source cards. Learner decks were not assigned, and existing cloned classrooms were not changed. Human diagram/individual claim verification records and the 12 low review findings remain unchanged; import approval does not assert individual source verification.

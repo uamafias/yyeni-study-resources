@@ -37,4 +37,4 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE | 0460 | Geography | `cie-0460-igcse-2025-2026` | Hermes / OpenCode | Claude | 629 | |
 | Cambridge IGCSE | 0450 | Business Studies | `cie-0450-igcse-2026` | Hermes / OpenCode | Claude | 913 | |
 | Cambridge IGCSE | 0455 | Economics | `cie-0455-igcse-2026` | Hermes, then Codex | Claude | 674 | 46 diagrams in `publish/cie-0455-igcse-2026/diagrams/` |
-| Namibia NSSCAS | 8224 | Chemistry | `nam-8224-nsscas-2026` | Codex | Claude Code | 631 | Jeremy; GitHub package publication authorised 22 October 2026; 21 topics; 12 low review findings open; human diagram/applicable claim approvals pending; YYeni import separate |
+| Namibia NSSCAS | 8224 | Chemistry | `nam-8224-nsscas-2026` | Codex | Claude Code | 631 | Jeremy; GitHub package publication authorised 22 October 2026; 21 topics; 12 low review findings open; human diagram/applicable claim approvals pending; YYeni template import verified: 565 active cards and 42 resources |
