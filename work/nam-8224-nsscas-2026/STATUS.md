@@ -58,3 +58,16 @@ Jeremy explicitly approved the completed plan: 21 topics, 253 objectives, 565 fl
 - Restored ITEM-8224-1.1-019-EQUATION to EQUATION, removed temporary procedure-only marking guidance, restamped it and removed the workaround from the exemplar generator. No topic was rebuilt.
 - Validation: four existing schema tests executed directly (pytest is unavailable in the default interpreter), acceptance checks for both new labels and rejection of an unknown label; all passed. Topic 1.1 and the reduced practical exemplar both retain PUBLISH with zero failed checks. Their existing AO warning and three inapplicable checks remain.
 - Next action: full subject authoring, starting with Topic 1.2. No additional plan or subtype approval is pending. Claude review remains reserved for the complete subject.
+
+## Pre-build preparation completed — 2026-10-22
+
+Jeremy authorised the preparation pass after asking whether everything was ready. Scope approval and the approved schema extension remain valid; no plan regeneration occurred.
+
+- Recovered the exact original NSSCAS Examiners Report 2025 from NIED into this subject’s reference pack. The SHA-256 matches the previous record, so the 92 derived report records remain attached to the same source content.
+- Archived and indexed the OpenStax Chemistry textbook (2015 edition, 2017 revision; 1,355 pages), the Organic Chemistry Tenth Edition study guide (222 pages), 40 organic textbook sections and the current Chemistry 2e mole section. All 253 objectives have topic-level reference routes; claims must still cite exact supporting locators and be semantically checked. The existing registry coverage ratings describe the old corpus; use the new reference inventory alongside them without regenerating frozen work orders.
+- Harvester integrity verification: all three acquired PDFs readable, none corrupt or image-only. Each HTML reference was checked for substantive textbook article content rather than a page shell. URLs, dates, hashes and searchable text are recorded locally.
+- Added subject-local original SVG/PNG generators for charged-particle paths, displayed ethanol, gas-volume/rate data and titration apparatus. A one-objective visual pilot passes with zero failed checks. Asset generation reproduces byte-for-byte; local image references survive the subject-local publication wrapper. These pilot outputs are not counted as additional production Topic 1.2 items.
+- `exemplar/visual/contact-sheet.png` was inspected by Codex; repaired a font-glyph issue and made the proton/electron relative deflection clear. This is model inspection only. Human visual review remains required before final publication.
+- Use `planning/publish_chemistry_8224.py` for the eventual full-subject package: the generic publisher does not copy image assets. The wrapper requires passing reports and validates image paths, then carries assets into both notes and flashcards. No shared code changed in this pass.
+
+Next: author Topics 1.2–5.1 sequentially from the approved work orders. Full-subject Claude review, human visual inspection and platform import remain later stages. No further plan or preparation approval is required to begin.

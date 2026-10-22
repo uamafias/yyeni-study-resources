@@ -1,6 +1,6 @@
 # NSSCAS Chemistry 8224 — evidence and knowledge gaps
 
-**Updated:** 2026-10-21  
+**Updated:** 2026-10-22
 **Stage:** Step 3 corpus analysis  
 **Purpose:** keep uncertainty explicit so planning and flashcard authors do not invent evidence or repeatedly search for the same answer.
 
@@ -21,7 +21,7 @@ Research is corpus-first and is done before flashcard authoring. The searchable 
 | No examiner reports for 2021–2024 | Recurring misconceptions cannot be triangulated across those years | Keep all misconception claims from 2025 marked `single_source` |
 | 2025 question papers are not held | The 2025 examiner-report records cannot always be tied back to full question wording or diagrams | Preserve report locators and summaries; do not infer missing stems |
 | 2021–2023 papers are proof copies; 2024 papers are unlabelled | Wording or layout may differ from final printed papers | Treat frequencies as corpus observations, not a complete historical record |
-| Chemistry revision-notes directory is empty | No local secondary explanation source is available for learner-friendly wording | Author from approved local authorities and transparent derivations under RS-12; flag unresolved low-confidence claims under RS-13 |
+| Original Chemistry revision-notes directory is empty, but the reference pack now supplies teaching references | OpenStax textbook, organic guide and 41 chapter/section HTML pages are archived and searchable locally | Use `sources/reference-pack/references.json`; cite exact pages/sections per claim. Source availability does not replace semantic verification |
 
 ## Evidence gaps and qualifications
 
@@ -40,7 +40,7 @@ All 76 records marked `needs_graphic: yes` were checked against 46 relevant page
 
 ## Curriculum and platform gaps
 
-The live YYeni Chemistry classroom still needs a separate, previewed repair transaction before cards are authored or assigned:
+The live YYeni Chemistry classroom still needs a separate, previewed repair transaction before resources are mapped/imported or assigned in YYeni (repository authoring can proceed):
 
 - Topic 1.2 Atomic Structure has no lesson in the current classroom structure.
 - The Group 2 lesson is filed under the wrong section.
@@ -58,3 +58,12 @@ These are operational mapping gaps, not reasons to alter the official syllabus f
 - Formula and calculation cards may be prioritised where the corpus supports them, but the deck plan must still include conceptual, explanatory, practical and representation demands.
 - No learner-facing card should claim a topic is “most examined” unless the claim cites the mapped corpus analysis and states its limits.
 - Do not author or publish cards until the Step 3 analysis checkpoint and the subsequent Step 4 plan checkpoint are accepted.
+
+## Preparation gaps closed — 22 October 2026
+
+- The original 2025 examiner report has been restored into this subject’s own reference pack, with an exact hash match. The earlier dependency on a missing file in another subject is removed.
+- The teaching reference pack has topic/objective routes for all 21 topics and 253 assessable objectives. It supports source-based authoring; individual fact verification remains part of each claim ledger. See the edition and scope qualifications in the pack README.
+- Four original diagram families now have deterministic SVG and PNG generation. A one-objective visual exemplar passes the standard checks and a separate reproducibility/asset-packaging check. No standard generator or checker was modified. Use `planning/publish_chemistry_8224.py` so image files travel with notes and card JSON.
+- Model inspection of previews is complete. Human inspection of final generated visuals is still pending before publication and cannot be inferred from model inspection.
+
+The missing official mark schemes, older examiner reports and 2025 question papers remain evidence limitations. No frequency/marking assumptions were revised during this teaching-source preparation pass.

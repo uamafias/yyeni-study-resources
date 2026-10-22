@@ -10,7 +10,7 @@ Jeremy explicitly approved the completed Step 4 plan on 22 October 2026. Scope: 
 - The thin `exemplar/5.1/` titration slice now passes all applicable checks against its five-objective reduced scratch contract: six claims, one 426-word unit, three supporting cards and one 20-mark task. Run `python3 work/nam-8224-nsscas-2026/planning/validate_practical_exemplar_8224.py` to reproduce. The full practical contract and 84-slot work order are unchanged. The scratch result does not certify the complete practical topic or independently verify claims.
 - Fixed early rounding in the practical calculation, practical AO C permissions in the framework, and direct evidence metadata. Broad practical skill-category frequencies are explicitly labelled planning proxies; no individual practical criterion currently has a direct evidence mapping. Do not describe the proxy numbers as criterion-specific frequencies.
 
-The approved plan is committed locally as b7ca4eb. Do not rebuild Topic 1.1 or ask Jeremy to approve the scope again. The schema compatibility issue is resolved; proceed to whole-subject authoring, starting with Topic 1.2.
+The approved plan is committed locally as b7ca4eb. Do not rebuild Topic 1.1 or ask Jeremy to approve the scope again. The schema compatibility issue and the subsequent source/diagram preparation gaps are resolved; proceed to whole-subject authoring, starting with Topic 1.2. Read `sources/reference-pack/README.md` and `references.json` for the factual references and objective routes. The report is held in this workspace with the original hash. `exemplar/visual/` demonstrates generated Chemistry images and packaged image references; it is not a completed Topic 1.2.
 
 Jeremy explicitly authorised the shared-schema extension on 22 October 2026 (“yes extend shared schema”). Both subtype enums now permit EQUATION and DIAGRAM. Topic 1.1’s temporary EQUATION-to-PROC exception has been resolved by restoring its planned EQUATION subtype and equation-specific guidance; the generator no longer applies that workaround. Both exemplars still pass. The user’s narrow override is complete; it does not authorise unrelated standard changes.
 
@@ -30,7 +30,7 @@ Read these before writing anything:
 4. `work/nam-8224-nsscas-2026/curriculum/answer-shapes.json` — observed command-word and tariff shapes.
 5. `standard/v0.2.0-draft/roles/AUTHOR.md` — where it conflicts with this handover, this handover wins.
 
-The syllabus facts, objective registry and assessment evidence have already been verified. Do not re-derive them, search the web card by card, or open another subject workspace. Work from the local corpus and approved local authorities. Under RS-12, every factual claim must be source-backed, externally verified against an approved authority, or transparently derived from verified premises.
+The syllabus facts and assessment evidence have already been verified. The frozen registry’s source-coverage ratings predate the acquired teaching reference pack; use the pack’s topic routes without treating them as claim-level verification. Do not re-derive them, search the web card by card, or open another subject workspace. Work from the local corpus and approved local authorities. Under RS-12, every factual claim must be source-backed, externally verified against an approved authority, or transparently derived from verified premises.
 
 ## The job
 
@@ -73,10 +73,10 @@ python3 standard/v0.2.0-draft/checks/what_to_fix.py  work/nam-8224-nsscas-2026 <
 
 Loop until `what_to_fix.py` reports nothing to fix. If the same check fails after three attempts, record the topic, check, output and attempted repairs in `STATUS.md`, then continue with the other topics.
 
-When every topic reads PUBLISH:
+When every topic reads PUBLISH, use the subject wrapper so image assets travel with the outputs:
 
 ```bash
-python3 standard/v0.2.0-draft/build/publish_subject.py work/nam-8224-nsscas-2026
+python3 work/nam-8224-nsscas-2026/planning/publish_chemistry_8224.py
 ```
 
 Do not edit anything under `standard/`, regenerate the planning inputs, touch another workspace, modify YYeni, import cards, assign a deck or approve a fee. Those are separate operations.
