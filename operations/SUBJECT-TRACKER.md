@@ -24,6 +24,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Board and level | Code | Subject | Workspace | Owner | Authoring tool | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
+| Namibia NSSCAS | 8224 | Chemistry | `nam-8224-nsscas-2026` | Jeremy | Codex | in progress | pilot with Vitalis’s agreement (18 October); plan approved 22 October; shared-schema decision pending |
 | | | | | | | | |
 
 ## Published

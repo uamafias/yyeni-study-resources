@@ -1,0 +1,11 @@
+# NSSCAS Chemistry (8224) — pilot claim
+
+- **Subject:** NSSCAS Chemistry 8224, Advanced Subsidiary, Grade 12 (NIED syllabus updated 20 November 2020)
+- **Claimed:** 2026-10-18 by Jeremy (with Claude Code). NSSCO level is covered by Lotto, so Chemistry here is AS (NSSCAS), not Ordinary. Biology AS (8223) is a separate claim in `work/nam-8223-nsscas-2026/`.
+- **Pilot unit:** Topic 1.1, Atoms, molecules and stoichiometry, as the Step 4 exemplar slice. The formal evidence source is `operations/analysis/8224-nsscas-chemistry-corpus-analysis.md`; the earlier keyword count is superseded.
+- **Authority order (revised after Codex review):** 1 official syllabus (examinable scope and stated boundaries); 2 official question papers (observed assessment coverage); 3 official examiner reports and marking guidance (difficulty, credited responses, common errors); 4 YYeni classroom curriculum (operational lesson/objective mapping); 5 revision notes and textbooks (explanatory, secondary). Question frequency never overrides syllabus scope; difficulty is not frequency.
+- **YYeni target:** school 17 "NSSCAS Template Classrooms" → classroom "NSSCAS Chemistry" (`a5695c1d-390d-4025-b013-2e218a2c1ca9`), currently 0 cards. 44 lessons in 4 sections that correspond to the 4 syllabus themes (mapping problems are listed in `curriculum/SYLLABUS-SUMMARY.md`).
+- **Sources on disk:** see `sources/SOURCES.md`. No mark schemes and no 2021–2024 examiner reports. The 2025 NSSCAS report covers 8224.
+- **Parked:** an earlier NSSCO 6117 (Ordinary) start is in `work/nied-6117-nssco-2020-2024/` (Topic 7 plan, qualification profile, objective registry). Not deleted; not being continued.
+- **Workflow:** claim → acquire the local source corpus → verify syllabus → mine papers/reports once → record gaps → plan → approval → author from the evidence base → checks → Codex review → publish → compare with existing cards → import. No card-by-card web searching; unresolved claims stay in `assessment-evidence/GAPS.md`.
+- **Shared source note:** the 2025 NSSCAS examiner report currently lives under `work/nam-8223-nsscas-2026/sources/`; it should eventually move to a shared source directory (not done: it is another package's path).

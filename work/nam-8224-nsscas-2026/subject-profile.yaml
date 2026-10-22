@@ -1,0 +1,532 @@
+profile_id: yyeni-subject-chemistry-nsscas-v0.2.0
+version: 0.2.0-draft
+status: draft
+subject_name: Chemistry (Namibia NSSCAS 8224)
+language_variant: British English
+purpose: A full teaching and retrieval-practice model derived from the verified syllabus and the local assessment corpus.
+depth_model:
+  note_mode: full teaching depth
+  words_per_objective: 230-470 depending on exposure
+terminology_rules:
+- Use syllabus wording and curriculum/glossary.json for settled meanings.
+- Write chemical formulae and equations unambiguously; include state symbols when the task requires them.
+- For calculations show the relationship, substitution, units, conversion and justified significant figures.
+- Never describe corpus frequency or examiner behaviour in learner-facing text.
+answer_structures:
+  DEF:
+  - definition
+  - required term
+  - conditions where relevant
+  FEATURE:
+  - feature
+  - property
+  - point
+  DIST:
+  - similarity
+  - difference
+  - whereas
+  PROC:
+  - sequence
+  - reagent or apparatus
+  - condition
+  - observation or result
+  WHY:
+  - reason
+  - because
+  - effect
+  MECH:
+  - electron movement
+  - intermediate
+  - product
+  CHAIN:
+  - change
+  - because
+  - therefore
+  - result
+  APP:
+  - given situation
+  - principle
+  - application
+  CALC:
+  - relationship or equation
+  - conversion
+  - substitution
+  - answer
+  - unit
+  - significant figures
+  INTERP:
+  - data or representation
+  - feature
+  - inference
+  DIAGRAM:
+  - required labels
+  - bonds or axes
+  - unambiguous representation
+  EQUATION:
+  - reactants
+  - products
+  - balance
+  - state symbols where required
+  EVAL:
+  - criterion
+  - evidence
+  - limitation
+  - judgement
+  MISCON:
+  - error
+  - correct idea
+  - discriminating test
+  SYNTH:
+  - linked objectives
+  - reasoning chain
+  multiple_choice_set:
+  - key
+  - correct option
+  - distractor
+  - error
+  short_answer:
+  - part
+  - mark
+  - creditworthy point
+  calculation:
+  - equation
+  - working
+  - answer
+  - unit
+  - significant figures
+  practical_task:
+  - apparatus and method
+  - observations or data table
+  - working
+  - conclusion
+  - error
+  - improvement
+variant_register:
+- term: conditions
+  variants:
+  - s.t.p.
+  - r.t.p.
+  consequence: The molar gas volume changes from 22.4 to 24.0 dm3 mol-1.
+  teach_as: Carry the stated temperature and pressure into every gas-volume calculation.
+- term: formula
+  variants:
+  - molecular
+  - empirical
+  - structural condensed
+  - displayed
+  - skeletal
+  consequence: Each representation supplies different information.
+  teach_as: Answer in the representation requested.
+depictions:
+  chart_model: managed visual or bounded data table
+  code_fence_languages: []
+  rule: Use managed diagrams for structures, apparatus and graphs where a visual is essential; every visual is reviewed by
+    a person.
+conditioned_mechanisms:
+- mechanism_id: CM-8224-EQUILIBRIUM
+  name: Equilibrium response
+  rationale: A predicted shift depends on the stated change and reaction conditions.
+  asserted_when:
+  - equilibrium
+  - Le Chatelier
+  required_conditions:
+  - name: the imposed change is stated
+    any_of:
+    - temperature
+    - pressure
+    - concentration
+- mechanism_id: CM-8224-GAS-VOLUME
+  name: Molar gas volume
+  rationale: 22.4 and 24.0 dm3 mol-1 apply under different conditions.
+  asserted_when:
+  - molar gas volume
+  - dm3 mol-1
+  required_conditions:
+  - name: conditions are named
+    any_of:
+    - s.t.p.
+    - r.t.p.
+    - 273 K
+    - 298 K
+prohibited_patterns:
+- Do not teach beyond the explicit syllabus scope limits in curriculum/scope-scan.json.
+- Do not reproduce question-paper, examiner-report or future marking-scheme wording.
+- Do not present a practical observation as remembered recall when Paper 3 supplies qualitative-analysis notes and tests observation,
+  recording and conclusion.
+glossary_homonyms:
+- term: relative atomic mass
+  senses:
+  - The weighted mean mass of an atom of an element relative to one twelfth of the mass of a carbon-12 atom.
+  rule: Not the mass number of one isotope.
+- term: mole
+  senses:
+  - The amount of substance containing the Avogadro constant number of specified particles.
+  rule: Always state which particles are counted.
+- term: empirical formula
+  senses:
+  - The simplest whole-number ratio of atoms of each element in a compound.
+  rule: Not necessarily the molecular formula.
+- term: molecular formula
+  senses:
+  - The actual number of atoms of each element in one molecule.
+  rule: It is a whole-number multiple of the empirical formula for a molecular substance.
+- term: oxidation number
+  senses:
+  - The charge assigned to an atom by the agreed electron-accounting rules.
+  rule: Not necessarily an actual ionic charge.
+- term: standard enthalpy change
+  senses:
+  - The enthalpy change when reactants and products are in their standard states under standard conditions.
+  rule: The named process—formation, combustion or neutralisation—must also be stated.
+- term: activation energy
+  senses:
+  - The minimum energy that colliding particles must have for a reaction to occur.
+  rule: On a Boltzmann graph it is a position on the energy axis, not an area.
+- term: dynamic equilibrium
+  senses:
+  - A closed-system state in which forward and reverse reactions continue at equal rates, so concentrations remain constant.
+  rule: Equal rates do not mean equal concentrations.
+- term: catalyst
+  senses:
+  - A substance that increases reaction rate by providing an alternative pathway of lower activation energy and is regenerated
+    overall.
+  rule: It does not change the equilibrium position.
+- term: electrophile
+  senses:
+  - An electron-pair acceptor.
+  rule: Usually electron-deficient; do not define it only as a positive ion.
+- term: nucleophile
+  senses:
+  - An electron-pair donor.
+  rule: Its lone pair or negative charge is the reactive feature.
+- term: free radical
+  senses:
+  - A species containing an unpaired electron.
+  rule: The dot represents the unpaired electron.
+- term: homologous series
+  senses:
+  - A family of organic compounds with the same functional group and general formula, similar chemical properties and a gradual
+    change in physical properties.
+  rule: Successive members differ by CH2.
+- term: structural isomer
+  senses:
+  - A compound with the same molecular formula as another compound but a different structural formula.
+  rule: Different connectivity, not merely a different drawing.
+- term: stereoisomer
+  senses:
+  - A compound with the same structural formula as another but a different arrangement of atoms in space.
+  rule: Includes cis-trans and optical isomerism in this syllabus.
+- term: concordant titres
+  senses:
+  - Titre values that agree within 0.10 cm3 for this syllabus.
+  rule: The rough titre is not used in the mean.
+- term: random error
+  senses:
+  - Unpredictable variation that causes repeated readings to scatter.
+  rule: Repeating and averaging can reduce its effect.
+- term: systematic error
+  senses:
+  - An error that shifts readings consistently in one direction.
+  rule: Repeating does not remove it.
+- term: precision
+  senses:
+  - The closeness of repeated measurements to one another and the resolution with which readings are recorded.
+  rule: Not the same as accuracy.
+- term: accuracy
+  senses:
+  - The closeness of a measured or calculated value to the accepted value.
+  rule: A precise set of readings may still be inaccurate.
+slot_plan:
+  subtypes_by_objective_type:
+    chem_definition:
+    - DEF
+    - APP
+    chem_quantitative:
+    - FEATURE
+    - CALC
+    - INTERP
+    chem_quantitative_multi:
+    - FEATURE
+    - CALC
+    - CALC
+    - CALC
+    - INTERP
+    chem_equation:
+    - FEATURE
+    - EQUATION
+    chem_reaction:
+    - FEATURE
+    - EQUATION
+    - APP
+    chem_reaction_multi:
+    - FEATURE
+    - EQUATION
+    - EQUATION
+    - APP
+    chem_particle_field:
+    - FEATURE
+    - DIAGRAM
+    chem_mechanism:
+    - FEATURE
+    - MECH
+    - DIAGRAM
+    chem_representation:
+    - FEATURE
+    - DIAGRAM
+    chem_nomenclature:
+    - DEF
+    - APP
+    chem_data_interpretation:
+    - FEATURE
+    - INTERP
+    chem_comparison:
+    - FEATURE
+    - DIST
+    chem_explanation:
+    - FEATURE
+    - MECH
+    chem_relationship:
+    - FEATURE
+    - CHAIN
+    chem_description:
+    - FEATURE
+    - APP
+    chem_concept:
+    - FEATURE
+    - WHY
+    prac_mmo:
+    - PROC
+    - APP
+    prac_recording:
+    - PROC
+    - CALC
+    prac_presentation:
+    - INTERP
+    - APP
+    prac_analysis:
+    - INTERP
+    - EVAL
+  subtypes_by_tier:
+    1: []
+    2: []
+    3: []
+    4: []
+  high_tariff:
+    threshold: 99
+    adds: []
+  command_words_by_subtype:
+    DEF:
+    - Define
+    - Name
+    - Give
+    - State
+    FEATURE:
+    - State
+    - Describe
+    - Identify
+    - Give
+    DIST:
+    - Contrast
+    - Describe
+    - Explain
+    PROC:
+    - Describe
+    - Write
+    - Construct
+    WHY:
+    - Explain
+    MECH:
+    - Explain
+    - Describe
+    CHAIN:
+    - Explain
+    - Describe
+    APP:
+    - Suggest
+    - Determine
+    - Explain
+    CALC:
+    - Calculate
+    - Determine
+    INTERP:
+    - Determine
+    - Identify
+    - State
+    - Explain
+    DIAGRAM:
+    - Draw
+    - Sketch
+    - Construct
+    EQUATION:
+    - Write
+    - Construct
+    EVAL:
+    - Suggest
+    - Explain
+    - Describe
+    MISCON:
+    - Explain
+    - State
+    SYNTH:
+    - Explain
+    - Calculate
+    - Determine
+  tariff_overrides:
+    MECH:Explain: 2
+    CHAIN:Explain: 2
+    EVAL:Suggest: 2
+    PROC:Describe: 3
+    DIAGRAM:Draw: 2
+    DIAGRAM:Sketch: 2
+    EQUATION:Write: 2
+    CALC:Calculate: 3
+    CALC:Determine: 2
+  ao_by_objective_type:
+    '*':
+      DEF:
+      - A
+      FEATURE:
+      - A
+      DIST:
+      - A
+      - B
+      PROC:
+      - A
+      - B
+      WHY:
+      - A
+      MECH:
+      - A
+      - B
+      CHAIN:
+      - B
+      APP:
+      - B
+      CALC:
+      - B
+      INTERP:
+      - B
+      DIAGRAM:
+      - B
+      EQUATION:
+      - A
+      - B
+      EVAL:
+      - B
+      MISCON:
+      - A
+      - B
+      SYNTH:
+      - B
+    prac_mmo:
+      PROC:
+      - C
+      APP:
+      - C
+      EVAL:
+      - C
+    prac_recording:
+      PROC:
+      - C
+      APP:
+      - C
+      CALC:
+      - C
+    prac_presentation:
+      PROC:
+      - C
+      INTERP:
+      - C
+      APP:
+      - C
+    prac_analysis:
+      INTERP:
+      - C
+      CALC:
+      - C
+      EVAL:
+      - C
+      APP:
+      - C
+      SYNTH:
+      - C
+  ao_by_paper:
+    1+2:
+      C: B
+    '3':
+      A: C
+      B: C
+  topic_targets_by_paper:
+    1+2:
+      A: 50
+      B: 50
+      C: 0
+    '3':
+      A: 0
+      B: 0
+      C: 100
+  misconception_slots: one_per_entry
+  top_up: []
+  performance_tasks:
+  - item_type: multiple_choice_set
+    papers:
+    - '1'
+    brief: A set of {n} original four-option questions for this topic, about half recall and half application or calculation,
+      with a key and an explanation of every distractor.
+  - item_type: short_answer
+    papers:
+    - '2'
+    brief: An original structured response with linked 1-3 mark parts using the topic's observed command words and tariffs,
+      about 8 marks.
+    ao_split:
+      A: 4
+      B: 4
+  - item_type: calculation
+    papers:
+    - '2'
+    brief: An original multi-step calculation or quantitative interpretation, about 5 marks, with conversions, working, units
+      and justified significant figures.
+    ao_split:
+      A: 1
+      B: 4
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: A 20-mark titration or volumetric-analysis task with readings, a correctly formatted table, concordance, calculations,
+      conclusion and evaluation.
+    ao_split:
+      C: 20
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: A 20-mark redox-titration task with readings, a correctly formatted table, concordance, stoichiometric calculations,
+      conclusion and evaluation.
+    ao_split:
+      C: 20
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: A 20-mark thermometric or enthalpy task with original data, calculation, conclusion, uncertainty and improvement.
+    ao_split:
+      C: 20
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: A 20-mark rates or gravimetric task with original data, a graph or linear treatment, calculation, conclusion, uncertainty
+      and improvement.
+    ao_split:
+      C: 20
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: A 20-mark qualitative-analysis task requiring precise observations, use of excess reagent where relevant, deductions
+      and confirmatory tests using supplied notes.
+    ao_split:
+      C: 20
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: A 20-mark planning and evaluation task covering apparatus, control variables, error, uncertainty, realistic improvements
+      and an extension.
+    ao_split:
+      C: 20
