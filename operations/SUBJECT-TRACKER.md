@@ -15,7 +15,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 |---|---|---|
 | Cambridge IGCSE / AS | 9702 AS Physics and others below | piloted |
 | Namibia NSSCO | | not yet |
-| Namibia NSSCAS | | not yet |
+| Namibia NSSCAS | 8224 Chemistry | piloted |
 | Junior secondary, grades 8 to 9 | | not yet |
 | Upper primary, grades 4 to 7 | | not yet |
 
@@ -24,7 +24,6 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Board and level | Code | Subject | Workspace | Owner | Authoring tool | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
-| Namibia NSSCAS | 8224 | Chemistry | `nam-8224-nsscas-2026` | Jeremy | Codex | in progress | pilot with Vitalis’s agreement (18 October); plan and schema extension approved 22 October; authoring 1/21 topics complete |
 | | | | | | | | |
 
 ## Published
@@ -38,3 +37,4 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE | 0460 | Geography | `cie-0460-igcse-2025-2026` | Hermes / OpenCode | Claude | 629 | |
 | Cambridge IGCSE | 0450 | Business Studies | `cie-0450-igcse-2026` | Hermes / OpenCode | Claude | 913 | |
 | Cambridge IGCSE | 0455 | Economics | `cie-0455-igcse-2026` | Hermes, then Codex | Claude | 674 | 46 diagrams in `publish/cie-0455-igcse-2026/diagrams/` |
+| Namibia NSSCAS | 8224 | Chemistry | `nam-8224-nsscas-2026` | Codex | Claude Code | 631 | Jeremy; GitHub package publication authorised 22 October 2026; 21 topics; 12 low review findings open; human diagram/applicable claim approvals pending; YYeni import separate |

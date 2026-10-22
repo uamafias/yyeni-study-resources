@@ -39,8 +39,12 @@ class Figure:
     def circle(self, x, y, r=9, colour='#176e9a'):
         self.shapes.append(('circle', [x, y, r, colour]))
 
-    def save(self, slug):
-        OUT.mkdir(parents=True, exist_ok=True)
+    def polygon(self, points, colour='#24475c'):
+        self.shapes.append(('polygon', [points, colour]))
+
+    def save(self, slug, out=None):
+        destination = Path(out) if out is not None else OUT
+        destination.mkdir(parents=True, exist_ok=True)
         canvas = Image.new('RGB', (W*2, H*2), 'white')
         draw = ImageDraw.Draw(canvas)
         svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title desc">',
@@ -55,14 +59,18 @@ class Figure:
                 points,colour,width = args
                 svg.append(f'<polyline points="{" ".join(f"{x},{y}" for x,y in points)}" fill="none" stroke="{colour}" stroke-width="{width}" stroke-linejoin="round"/>')
                 draw.line([(x*2,y*2) for x,y in points],fill=colour,width=width*2)
+            elif kind == 'polygon':
+                points,colour=args
+                svg.append(f'<polygon points="{" ".join(f"{x},{y}" for x,y in points)}" fill="{colour}"/>')
+                draw.polygon([(x*2,y*2) for x,y in points],fill=colour)
             else:
                 x,y,r,colour=args
                 svg.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{colour}"/>')
                 draw.ellipse(((x-r)*2,(y-r)*2,(x+r)*2,(y+r)*2),fill=colour)
         svg.append('</svg>')
-        (OUT / f'{slug}.svg').write_text('\n'.join(svg)+'\n')
-        canvas.save(OUT / f'{slug}.png')
-        (OUT / f'{slug}.geometry.json').write_text(json.dumps({'title':self.title,'description':self.description,'width':W,'height':H,'primitives':self.shapes},indent=2)+'\n')
+        (destination / f'{slug}.svg').write_text('\n'.join(svg)+'\n')
+        canvas.save(destination / f'{slug}.png')
+        (destination / f'{slug}.geometry.json').write_text(json.dumps({'title':self.title,'description':self.description,'width':W,'height':H,'primitives':self.shapes},indent=2)+'\n')
 
 
 def build():

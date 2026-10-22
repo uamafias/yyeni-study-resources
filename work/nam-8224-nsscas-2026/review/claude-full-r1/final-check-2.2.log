@@ -1,0 +1,46 @@
+C-00   PASS     [RS-27 Schema validity] All 5 structured artifacts validate against the v0.2.0 schemas.
+C-01   PASS     [RS-07 Objective referential integrity] Every objective_id cited by 2 content units, 25 items and 28 claims resolves in the registry (11 nodes in this
+C-02   PASS     [RS-07 Claim referential integrity] Every claim_id cited by a content-unit block or learning item exists in the topic ledger.
+C-03   PASS     [RS-07 Claim orphans] All 28 ledger claims are cited by at least one block or item.
+C-04   PASS     [RS-40 Meaningful objective mapping] Every (item, objective) mapping is backed by a cited claim that serves that objective.
+C-05   PASS     [RS-05 Coverage floor - items (meaningful mappings only)] All 10 assessable objectives are practised by at least one item under RS-40.
+C-06   PASS     [RS-05 Coverage floor - content units] All 10 assessable objectives are taught by at least one content unit.
+C-07   PASS     [RS-39 Offline reconstructibility] Every claim cited by a learning item is also taught in a content-unit block.
+C-30   PASS     [RS-41 No bulk stamp] All 35 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged dec
+C-29   PASS     [RS-41 No stale derivative] No stale derivative: every block and item was authored against the current revision of every claim it cites.
+C-31   PASS     [RS-17 Syllabus modality coverage] Every objective whose syllabus wording names a chart, graph or diagram is practised in that form.
+C-32   PASS     [RS-22 Stated arithmetic is correct] All 3 stated calculations in canonical answers evaluate correctly.
+C-33   PASS     [RS-25 Flashcards are self-contained] No flashcard depends on facts held only in another card.
+C-34   PASS     [RS-22 Interpretation is interpretation, not a second check] No quantitative item passes off an arithmetic check as interpretation.
+C-35   NOT_RUN  [RS-22 Graphical stimulus is consistent and necessary] No graphical task in this topic, so nothing to verify.
+C-36   PASS     [RS-22 Magnitude claims carry their figure] Every magnitude claim in a quantitative answer is backed by a stated figure.
+C-08   PASS     [RS-33 Unqualified universals] No unqualified universal or exclusivity statement found in claims, learner prose or answers.
+C-09   PASS     [RS-21 Third-party certainty] No statement asserts a third party's decision as certain.
+C-10   PASS     [RS-36 Assessment-priority claims need assessment evidence] No learner-facing claim about examiner behaviour, mark priority or question frequency.
+C-11   PASS     [RS-15 Scope discipline - excluded constructs] None of the 10 constructs the contract excludes appears in learner-facing material.
+C-12   PASS     [RS-35 Variant completeness] Every variant-register term used in this topic names its consequential forms.
+C-13   PASS     [RS-34 Generalisations declare their scope] Every grouping or across-the-board statement declares the members it claims to hold for.
+C-14   PASS     [RS-19 Command-word discipline] No item prompt instructs with a command word absent from this level ().
+C-15   PASS     [RS-37 Command-word-shaped practice] Every objective with a command word carries an item that instructs with one of them.
+C-16   PASS     [RS-38 Declared answer structures] Every item names all declared parts of its subtype answer structure.
+C-17   PASS     [RS-19 Subtype to AO consistency] Every item's assessment objectives are permitted by its subtype.
+C-18   WARN     [RS-19 AO mix against target] AO mix by item count {'A': 53, 'B': 47, 'C': 0} against target {'A': 40, 'B': 40, 'C': 20}; largest deviation across AO1
+C-19   PASS     [RS-25 Flashcard integrity] All 22 flashcards carry a non-null canonical answer and a declared subtype.
+C-20   PASS     [RS-25 One target per flashcard] No flashcard asks for several separate answers in one card.
+C-21   PASS     [RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 25 items.
+C-22   PASS     [RS-30 Marking guidance present] All 25 items carry marking guidance.
+C-23   PASS     [RS-12 Items cite a claim] Every item cites at least one ledger claim.
+C-24   PASS     [RS-13 Publication gate] Gate holds: 0 of 28 claims are publishable or verified. 28 are generated_gap and need documented human approval (RS-13).
+C-25   PASS     [RS-31 QA status consistency] Every content unit and item carries a recognised qa_status.
+C-26   PASS     [RS-09 Word budget] All 2 content units sit inside their declared word budget (2855 words total).
+C-27   PASS     [RS-05 Exposure required subtypes] Every exposure-required subtype is present or waived in writing.
+C-28   PASS     [RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/2.2/packet.sha256; the manifest's own SHA-256 is detached in p
+C-37   PASS     [RS-43 Conditioned mechanisms carry their conditions] No artefact asserts any of the 2 registered conditioned mechanisms in this topic.
+C-38   PASS     [RS-44 Answers do not supply their own facts] No answer in this topic asserts a completeness fact.
+C-39   PASS     [RS-45 Derived exposure metadata recomputes] All 10 computed exposure entries for this topic recompute from the evidence map, satisfy the file's own c
+C-40   PASS     [RS-46 Quantities are named in their own units] No quantity is named in units it is not measured in.
+C-41   NOT_RUN  [RS-47 Depictions are generated, not authored] No item in this topic shows a generated depiction.
+C-42   PASS     [RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 25 learning items, 2 content units.
+C-43   NOT_RUN  [RS-48 Practice texts are declared, original and the stated length] No item in this topic is answered from a practice text.
+
+DECISION: PUBLISH   ->  work/nam-8224-nsscas-2026/topics/2.2/qa_report.json

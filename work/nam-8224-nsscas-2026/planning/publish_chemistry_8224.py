@@ -18,6 +18,18 @@ sys.path.insert(0, str(ROOT / 'standard/v0.2.0-draft/build'))
 from publish_subject import collect, publish, write_index
 
 
+def manuscript_hashes(workspace):
+    workspace=Path(workspace)
+    paths=[]
+    for topic in (workspace/'topics').iterdir():
+        if not topic.is_dir():
+            continue
+        paths.extend(topic/name for name in ('contract.json','work_order.json','authoring_notes.json') if (topic/name).is_file())
+        for name in ('claims','content-units','learning-items','assets'):
+            paths.extend(p for p in (topic/name).rglob('*') if p.is_file())
+    return {str(p.relative_to(workspace)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
+
+
 def package(workspace, output):
     workspace, output = Path(workspace), Path(output)
     rows = collect(str(workspace))
@@ -47,7 +59,30 @@ def package(workspace, output):
     if skipped:
         raise ValueError('Publication skipped topics: '+repr(skipped))
     write_index(str(output),manifest,qualification,str(workspace))
-    (output/'MANIFEST.json').write_text(json.dumps({'qualification':qualification,'topics':manifest},indent=2)+'\n')
+    review=workspace/'review/claude-full-r1'
+    validation_path=review/'operator-final-validation.json'
+    validation=json.loads(validation_path.read_text()) if validation_path.is_file() else {}
+    reviewed=(validation.get('status')=='complete' and validation.get('verdict')=='publish'
+              and validation.get('manuscript_sha256')==manuscript_hashes(workspace))
+    index=output/'INDEX.md'
+    text=index.read_text()
+    heading,body=text.split('\n',1)
+    body=body.replace('Every topic here passes the full deterministic check suite. Semantic review runs on published material rather than ahead of it, so the **Open issues** column is debt that ships visibly and is cleared in a maintenance pass - it is not a warning that the topic is unusable.',
+                      'All topics have zero failed deterministic checks. Independent Chemistry review and human diagram approval are outstanding. An empty Open issues cell does not mean that semantic review has occurred.')
+    body=body.replace('This folder is the copy to upload.', 'This folder is the local review package; release and YYeni import are separate steps.')
+    body=body.replace('`build/publish_subject.py`', '`python3 work/nam-8224-nsscas-2026/planning/publish_chemistry_8224.py`')
+    notice='**AUTHORING COMPLETE — REVIEW PENDING.** This is a local review build. Claim verification and human visual approval are recorded in the source workspace.'
+    if reviewed:
+        notice=('**INDEPENDENT REVIEW COMPLETE — HUMAN APPROVALS PENDING.** Claude reviewed all21 topics,390 sampled items and30 PNG figures. '
+                'Four substantive findings were repaired;12 low-severity findings remain open. '
+                '[Review report](review/REVIEW.md). Human diagram and claim approvals remain outstanding; no YYeni import has been performed.')
+        body=body.replace('Independent Chemistry review and human diagram approval are outstanding. An empty Open issues cell does not mean that semantic review has occurred.',
+                          'Independent Chemistry review is complete for its stated coverage. The per-topic Open issues column reflects automated QA records; the review report lists the12 open low-severity findings. Human approvals remain outstanding.')
+        (output/'review').mkdir(parents=True,exist_ok=True)
+        for name in ('REVIEW.md','coverage.json','findings.json','repairs.json','operator-final-validation.json','operator-source-locator-correction.json'):
+            if (review/name).is_file():shutil.copy2(review/name,output/'review'/name)
+    index.write_text(heading+'\n\n'+notice+'\n'+body)
+    (output/'MANIFEST.json').write_text(json.dumps({'qualification':qualification,'build_status':'reviewed_human_approvals_pending' if reviewed else 'authored_review_pending','independent_semantic_review':'complete' if reviewed else 'pending','human_diagram_approval':'pending','claim_approval':'pending','open_review_findings':12 if reviewed else None,'topics':manifest},indent=2)+'\n')
     for source,target in copies:
         target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(source,target)

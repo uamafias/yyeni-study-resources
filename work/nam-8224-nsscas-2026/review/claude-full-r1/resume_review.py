@@ -1,0 +1,10 @@
+"""Resume the interrupted Claude reviewer after the account quota resets."""
+from pathlib import Path
+import subprocess
+import sys
+RUN=Path(__file__).resolve().parent
+ROOT=RUN.parents[3]
+prompt='''Continue the independent NSSCAS Chemistry8224 review from reviewer-worklog.md. The previous call stopped at the account session limit, not a completed verdict. You completed15 topics through4.2. Finish4.3,4.4,4.5,4.6,4.7 and5.1, all remaining sampled items, figures, misconceptions and the two learner tests. Complete copied-wording dispositions and all outputs required in REVIEW-BRIEF.md. Codex has applied your three explicit findings to original topic JSONs1.3,2.3,3.4: see operator-applied-repairs.json and operator-checkpoint.json. Independently validate those repairs from the current original files (the initial packets are historical), including claim revisions/dependencies and the updated Data Booklet values. They were restamped/rendered/checked and the local review package regenerated. No claims were marked verified. Do not rerun the initial authoring generators, which predate manual review repairs. You remain the same reviewer; do not redo all previously logged topics. Do not give a final verdict until the remaining coverage and repair validation are complete. Write REVIEW.md, findings.json, coverage.json, repairs.json and update STATUS per the original brief. Shell validation remains operator-managed. No commit/push or other workspaces.'''
+with (RUN/'claude-resume-stream.jsonl').open('a') as out,(RUN/'claude-resume-stderr.log').open('a') as err:
+ result=subprocess.run(['claude','--resume','171bd519-1270-4d30-ab79-bc043dd93e0e','--safe-mode','--restricted','--strict-mcp-config','--tools','Read,Glob,Grep,Write,Edit','--allowedTools','Read','Glob','Grep','Write','Edit','--permission-mode','acceptEdits','--model','opus','--effort','medium','--print','--verbose','--output-format','stream-json'],cwd=ROOT,input=prompt,text=True,stdout=out,stderr=err)
+sys.exit(result.returncode)
