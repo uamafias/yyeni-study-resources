@@ -17,7 +17,7 @@ Pilot: first NSSCAS subject; run with Vitalis's agreement (Jeremy, 2026-10-18). 
 - [x] 5 Local package generated and verified — 2026-10-22; independent review complete; human diagram and applicable claim approvals remain recorded as pending
 - [x] 6 Reviewed by Claude: verdict **publish**; operator final validation complete, all 21 topics PUBLISH with zero failed checks. Four substantive findings fixed; 12 low findings open. Human diagram and applicable RS-13 claim approvals remain recorded as pending. 2026-10-22; see review/claude-full-r1/REVIEW.md and operator-final-validation.json
 - [x] 6 YOU: verdict read — Jeremy requested “Publish now” after receiving the final verdict, 2026-10-22
-- [ ] 7 YOU: committed and pushed
+- [x] 7 Committed and pushed on Jeremy’s explicit publication instruction — 2026-10-22; reviewed package commit `52422ac`, branch `nsscas-8224-chemistry` on origin
 - [ ] 8 (diagram) Compare with existing YYeni NSSCAS Chemistry cards (school 17, classroom `a5695c1d-390d-4025-b013-2e218a2c1ca9`; 0 cards on 2026-10-18)
 - [ ] 8 (diagram) YOU: approve replacements, preview and import into YYeni
 
@@ -177,3 +177,5 @@ Operator corrected only the new Annexe D source locator from printed p52 to p53 
 ## GitHub publication — 2026-10-22
 
 Jeremy requested “Publish now” and clarified GitHub as the expected destination. This authorises the subject-scoped commit and push normally performed by the person in playbook Step 7. Publishing the reviewed package does not assert individual claim verification or human inspection of every diagram. The source ledgers and package retain those pending approval states and the 12 open low-severity findings. YYeni import is separate. Publication branch: `nsscas-8224-chemistry`.
+
+GitHub push succeeded: `52422ac` on `origin/nsscas-8224-chemistry`; three Git LFS objects (62 MB) uploaded successfully. Tracker marked published. This is a branch publication; no merge into main or YYeni import was performed.
