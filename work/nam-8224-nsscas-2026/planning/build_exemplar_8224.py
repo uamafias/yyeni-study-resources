@@ -227,11 +227,9 @@ card_content = {
 
 def make_item(slot, prompt, answer, claim_ids):
     required = ", ".join(slot.get("marking_guidance_must_name") or [])
-    if slot["subtype"] == "EQUATION":
-        required += "; sequence: write correct formulae then balance; reagent or apparatus: not applicable; condition: use the stated physical states; observation or result: a balanced equation"
     item = {
         "item_id": slot["slot"], "objective_ids": [slot["objective_id"]], "claim_ids": claim_ids,
-        "item_type": "flashcard", "subtype": "PROC" if slot["subtype"] == "EQUATION" else slot["subtype"],
+        "item_type": "flashcard", "subtype": slot["subtype"],
         "assessment_objectives": slot["assessment_objectives"], "blooms_level": slot["blooms_level"],
         "command_word": slot["command_word"], "mark_tariff": slot["mark_tariff"],
         "difficulty": slot["difficulty"], "prompt": prompt, "canonical_answer": answer,
@@ -290,10 +288,11 @@ write(os.path.join(topic_dir, "learning-items", "topic_1.1_items.json"), {
 })
 write(os.path.join(topic_dir, "authoring_notes.json"), {
     "topic_id": "1.1",
-    "deviations": [{
-        "from": "ITEM-8224-1.1-019-EQUATION subtype EQUATION",
-        "to": "subtype PROC, retaining command_word Write, AO A/B, Bloom Apply and equation-specific guidance",
-        "why": "The shared learning-items schema does not permit EQUATION, although the Chemistry planner generates it; PROC is the nearest schema-valid subtype until the standard is extended.",
+    "deviations": [],
+    "resolved_deviations": [{
+        "item_id": "ITEM-8224-1.1-019-EQUATION",
+        "previous": "Temporary PROC subtype while EQUATION was unsupported.",
+        "resolution": "Restored planned EQUATION after Jeremy explicitly approved extending the shared schema on 2026-10-22.",
     }],
 })
 

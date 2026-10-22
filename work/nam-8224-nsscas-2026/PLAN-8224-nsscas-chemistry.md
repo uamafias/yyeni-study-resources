@@ -2,7 +2,7 @@
 
 The brief for authoring the complete learner resource. Drafted 21 October 2026 from the verified syllabus facts, the 475-record local assessment corpus, and the generated topic work orders. The analysis it rests on is `operations/analysis/8224-nsscas-chemistry-corpus-analysis.md`.
 
-Jeremy approved this computed plan on 22 October 2026 after both structural exemplars passed their applicable deterministic checks. The shared-schema compatibility decision remains a separate pre-build issue.
+Jeremy approved this computed plan on 22 October 2026 after both structural exemplars passed their applicable deterministic checks. Jeremy subsequently authorised the shared-schema extension on the same date; the compatibility issue is resolved.
 
 ## 0. What the syllabus says
 
@@ -154,4 +154,4 @@ No live YYeni curriculum repair, card import, learner assignment or fee is autho
 
 Topic 1.1: 27 claims, five units, 30 items, zero failed checks. Thin practical exemplar: six claims, one 426-word unit, three cards and one 20-mark task, zero failed checks against its five-objective scratch contract. Both reports contain 40 passes, one AO-mix warning and three inapplicable checks. Claims remain unverified and non-publishable pending the required semantic review.
 
-Before whole-subject authoring, the standard owner must resolve the unsupported EQUATION and DIAGRAM subtypes, or approve regenerating the plan with supported types and explicit preservation of equation/drawing demands. The one Topic 1.1 EQUATION-to-PROC deviation is recorded; it is not blanket permission to relabel other slots.
+Resolved on 22 October 2026: Jeremy explicitly authorised adding EQUATION and DIAGRAM to both subtype enums in the shared schema. All 51 affected slots retain the approved shapes. Topic 1.1’s temporary EQUATION-to-PROC deviation has been removed; its planned EQUATION subtype is restored. Full authoring can proceed.
