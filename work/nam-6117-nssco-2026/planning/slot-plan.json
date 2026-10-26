@@ -1,0 +1,248 @@
+{
+  "slot_plan": {
+    "subtypes_by_objective_type": {
+      "chem_fact": [
+        "DEF"
+      ],
+      "chem_description": [
+        "FEATURE",
+        "MECH"
+      ],
+      "chem_explanation": [
+        "MECH",
+        "APP"
+      ],
+      "chem_process": [
+        "PROC",
+        "APP"
+      ],
+      "chem_comparison": [
+        "DIST",
+        "APP"
+      ],
+      "chem_applied": [
+        "APP",
+        "INTERP"
+      ],
+      "chem_quantitative": [
+        "CALC",
+        "CALC"
+      ],
+      "chem_stoichiometry": [
+        "CALC",
+        "CALC",
+        "CALC",
+        "CALC"
+      ],
+      "chem_diagram": [
+        "APP",
+        "INTERP"
+      ],
+      "chem_practical": [
+        "PROC",
+        "INTERP"
+      ],
+      "chem_qualitative": [
+        "PROC",
+        "INTERP"
+      ],
+      "chem_gas_flame": [
+        "FEATURE",
+        "PROC"
+      ],
+      "chem_evaluation": [
+        "LIM",
+        "APP"
+      ],
+      "chem_container": []
+    },
+    "subtypes_by_tier": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    },
+    "high_tariff": {
+      "threshold": 99,
+      "adds": []
+    },
+    "command_words_by_subtype": {
+      "DEF": [
+        "State",
+        "Define",
+        "Name",
+        "Identify"
+      ],
+      "FEATURE": [
+        "State",
+        "Describe"
+      ],
+      "MECH": [
+        "Explain",
+        "Describe"
+      ],
+      "APP": [
+        "Suggest",
+        "Explain",
+        "Deduce"
+      ],
+      "PROC": [
+        "Describe"
+      ],
+      "DIST": [
+        "Distinguish",
+        "Compare",
+        "Explain"
+      ],
+      "INTERP": [
+        "State",
+        "Deduce",
+        "Explain"
+      ],
+      "CALC": [
+        "Calculate"
+      ],
+      "LIM": [
+        "Suggest",
+        "Explain"
+      ],
+      "MISCON": [
+        "Explain"
+      ]
+    },
+    "tariff_overrides": {},
+    "ao_by_objective_type": {
+      "*": {
+        "DEF": [
+          "A"
+        ],
+        "FEATURE": [
+          "A"
+        ],
+        "MECH": [
+          "A"
+        ],
+        "PROC": [
+          "A"
+        ],
+        "DIST": [
+          "A"
+        ],
+        "APP": [
+          "B"
+        ],
+        "INTERP": [
+          "B"
+        ],
+        "CALC": [
+          "B"
+        ],
+        "LIM": [
+          "B"
+        ],
+        "MISCON": [
+          "B"
+        ]
+      },
+      "chem_practical": {
+        "PROC": [
+          "C"
+        ],
+        "INTERP": [
+          "C"
+        ],
+        "MISCON": [
+          "C"
+        ]
+      },
+      "chem_qualitative": {
+        "PROC": [
+          "C"
+        ],
+        "INTERP": [
+          "C"
+        ],
+        "MISCON": [
+          "C"
+        ]
+      },
+      "chem_gas_flame": {
+        "FEATURE": [
+          "A"
+        ],
+        "PROC": [
+          "C"
+        ]
+      },
+      "chem_diagram": {
+        "APP": [
+          "A"
+        ],
+        "INTERP": [
+          "B"
+        ]
+      }
+    },
+    "top_up": [],
+    "misconception_slots": "one_per_entry",
+    "performance_tasks": [
+      {
+        "item_type": "multiple_choice_set",
+        "papers": [
+          "1"
+        ],
+        "brief": "A set of {n} original four-option questions; key, reason and misconception-based distractor explanations for each."
+      },
+      {
+        "item_type": "short_answer",
+        "papers": [
+          "2"
+        ],
+        "brief": "An original structured chemistry activity with separately marked parts, worked answers and specific credit points.",
+        "ao_split": {
+          "A": 5,
+          "B": 3
+        }
+      },
+      {
+        "item_type": "practical_task",
+        "papers": [
+          "3"
+        ],
+        "brief": "An original experimental context using appropriate apparatus, observations or data; independently checked answers, distinct credit points and a required visual.",
+        "ao_split": {
+          "C": 12
+        }
+      }
+    ]
+  },
+  "additional_performance_by_topic": {
+    "4": [
+      {
+        "item_type": "calculation",
+        "papers": [
+          "2"
+        ],
+        "brief": "An original multi-step mole/concentration calculation with unit conversion and independent arithmetic checks.",
+        "ao_split": {
+          "A": 1,
+          "B": 4
+        }
+      }
+    ],
+    "6": [
+      {
+        "item_type": "calculation",
+        "papers": [
+          "2"
+        ],
+        "brief": "An original calorimetry or bond-energy calculation with signs, units and independently checked arithmetic.",
+        "ao_split": {
+          "A": 1,
+          "B": 4
+        }
+      }
+    ]
+  },
+  "note": "Merged in memory into the schema-valid subject profile by build_resource_plan.py; no files under standard are edited."
+}
