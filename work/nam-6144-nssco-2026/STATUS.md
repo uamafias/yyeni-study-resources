@@ -16,7 +16,7 @@ Workspace: work/nam-6144-nssco-2026/   Owner: Vitalis   Authoring tool: Codex
 - [x] 5 Local publication package generated — 22 topics, 474 flashcards + 88 practice packages; 562 exported items reconciled, 7 original diagrams carried. Claude review completed; platform import pending.
 - [x] 6 Reviewed by Claude: verdict **publish** — 2026-10-27. 22/22 PUBLISH before and after fixes; 562/562 slots matched; copied wording 9 runs, all syllabus-glossary definitions. Findings fixed in topics/ and republished; 3 plan problems for Vitalis. See review/step6-review-6144.md.
 - [x] 6 YOU: verdict read — Vitalis, 2026-10-28; after receiving Claude’s publish verdict, explicitly requested marking the NSSCO Business Studies flashcards complete.
-- [ ] 7 YOU: committed and pushed
+- [x] 7 Committed and pushed on Vitalis’s explicit instruction — 2026-10-28; reviewed resources commit 47403a3 pushed to origin/main. Platform import pending.
 
 ## Scope and next action
 
@@ -26,7 +26,7 @@ The NSSCO pilot remains unconfirmed in the tracker. Vitalis is the authorised ow
 
 ## Current checkpoint — 2026-10-28
 
-Content complete at Vitalis’s explicit request on 28 October 2026. All 22 topics are authored, Claude’s independent review has a publish verdict, and Vitalis has acknowledged that verdict. The local reviewed package contains 474 flashcards and 88 practice packages. Final commit/push of reviewed changes and platform import remain pending. The review’s P1–P3 follow-ups remain recorded, not silently resolved. The approved plan is included with the authored Git checkpoint; authoring began locally on that explicit instruction, with an immutable hashed copy of the approved input packet retained before production writes. Vitalis subsequently authorised the subject-specific Git checkpoint; unrelated changes remain outside it. Structural exemplar drafts are not full production topics or independent subject approval.
+Content complete at Vitalis’s explicit request on 28 October 2026. All 22 topics are authored, Claude’s independent review has a publish verdict, and Vitalis has acknowledged that verdict. The local reviewed package contains 474 flashcards and 88 practice packages. Reviewed changes were committed and pushed to origin/main as 47403a3; platform import remains pending. The review’s P1–P3 follow-ups remain recorded, not silently resolved. The approved plan is included with the authored Git checkpoint; authoring began locally on that explicit instruction, with an immutable hashed copy of the approved input packet retained before production writes. Vitalis subsequently authorised the subject-specific Git checkpoint; unrelated changes remain outside it. Structural exemplar drafts are not full production topics or independent subject approval.
 
 The grid states A/B/C/D overall weights 40/20/25/15%; Paper 1 marks 50/20/20/10; Paper 2 marks 30/20/30/20. Both papers are 100 marks, 2 h 15 min, 50% each, five compulsory 20-mark questions. Paper 2 questions arise from a business case study. The syllabus caveat that these AO allocations indicate relative importance remains recorded.
 
@@ -87,3 +87,7 @@ Vitalis requested: “mark the flashcards for nssco business studies as complete
 ## Remote release requested — 2026-10-28
 
 Vitalis explicitly requested pushing the reviewed flashcards to the remote repository. Rechecked all 22 topics: PUBLISH with zero failures; 474 flashcards plus 88 practice packages, and all published items and notes match reviewed source files. The release commit includes Claude’s fixes and review report, together with the acknowledged completion status. Existing non-blocking review follow-ups remain recorded. No platform import is included in this Git release.
+
+## Remote publication completed — 2026-10-28
+
+Claude-reviewed resources were committed as 47403a3 and successfully pushed to origin/main (GitHub uamafias/yyeni-study-resources). The push includes authoring checkpoint 5b88c8a. It contains the 474 reviewed flashcards, 88 practice packages, notes, diagrams and review evidence. Tracker updated to published and the first NSSCO pilot recorded. Outstanding non-blocking review follow-ups remain documented. YYeni classroom import has not been performed.

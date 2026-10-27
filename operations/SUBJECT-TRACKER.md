@@ -14,7 +14,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Kind | Pilot subject | Status |
 |---|---|---|
 | Cambridge IGCSE / AS | 9702 AS Physics and others below | piloted |
-| Namibia NSSCO | | not yet |
+| Namibia NSSCO | 6144 Business Studies | piloted |
 | Namibia NSSCAS | | not yet |
 | Junior secondary, grades 8 to 9 | | not yet |
 | Upper primary, grades 4 to 7 | | not yet |
@@ -27,16 +27,11 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
 | | | | | | | | |
 
-## Completed content — awaiting repository release
-
-| Board and level | Code | Subject | Workspace | Owner | Authoring tool | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Vitalis | Codex | complete | Marked complete by Vitalis, 28 October 2026. Claude reviewed: publish. 22 topics, 474 flashcards and 88 practice packages. Review follow-ups retained; reviewed changes await final commit/push; platform import pending. |
-
 ## Published
 
 | Board and level | Code | Subject | Workspace | Authoring tool | Reviewed by | Items | Notes |
 |---|---|---|---|---|---|---:|---|
+| Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Codex | Claude | 562 | Vitalis; 474 flashcards + 88 practice packages. Reviewed resources pushed 28 October 2026 (47403a3). Non-blocking review follow-ups retained; YYeni import pending. |
 | Cambridge AS | 9609 | Business | `cie-9609-as-2026-2028` | | Codex | | pilot subject |
 | Cambridge AS | 9618 | Computer Science | `cie-9618-as-2026` | Hermes / OpenCode | Claude | 759 | |
 | Cambridge AS | 9702 | Physics | `cie-9702-as-2025-2027` | Hermes / OpenCode | Claude | 860 | |
