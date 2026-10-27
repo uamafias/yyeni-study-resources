@@ -25,6 +25,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 |---|---|---|---|---|---|---|---|
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
+| Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Vitalis | Codex | in progress | Vitalis; authored 22 topics, 474 flashcards and 88 practice packages on 27 October 2026. Awaiting independent Claude review; NSSCO pilot completion remains unconfirmed. |
 | | | | | | | | |
 
 ## Published

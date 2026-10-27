@@ -1,0 +1,198 @@
+{
+  "scope_scan_id": "SCOPE-6144-PLANNER",
+  "entries": [
+    {
+      "construct": "SCOPE-6144-LEGAL",
+      "pattern": "\\b(?:memorandum of association|articles of association|company registration forms?|step.by.step (?:company )?registration)\\b",
+      "source": "NIED 6144 PDF p.10: analyse the appropriateness of each of these forms of business ownership to particular circumstances and make a justified choice between them (a detailed knowledge of legal requirements and procedures is not expected)",
+      "authority": "syllabus limit; operational regex is judgement",
+      "must_catch": [
+        "Complete the company registration form.",
+        "Explain the articles of association."
+      ],
+      "must_allow": [
+        "Owners have limited liability.",
+        "A franchisee uses a franchisor’s business format."
+      ]
+    },
+    {
+      "construct": "SCOPE-6144-CBA",
+      "pattern": "\\b(?:net present value|discounted cash flow|social discount rate|monetis\\w* (?:all |the )?social (?:costs|benefits))\\b",
+      "source": "NIED 6144 PDF p.21: discuss the idea of social costs and the concept of cost-benefit analysis in general terms (the treatment should be entirely descriptive)",
+      "authority": "syllabus limit; operational regex is judgement",
+      "must_catch": [
+        "Calculate net present value for the social project.",
+        "Choose a social discount rate."
+      ],
+      "must_allow": [
+        "Compare the social costs and social benefits descriptively.",
+        "Calculate the current ratio using the financial table."
+      ]
+    }
+  ],
+  "semantic_review_requirements": [
+    {
+      "topic_id": "2.1",
+      "kind": "depth_or_format_limit",
+      "text": "analyse the appropriateness of each of these forms of business ownership to particular circumstances and make a justified choice between them (a detailed knowledge of legal requirements and procedures is not expected)",
+      "source": {
+        "page": 10,
+        "printed_page": 6,
+        "section": "5 Learning content",
+        "verbatim": "analyse the appropriateness of each of these forms of business ownership to particular circumstances and make a justified choice between them (a detailed knowledge of legal requirements and procedures is not expected)",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "2.2",
+      "kind": "depth_or_format_limit",
+      "text": "draw and explain a simple organisation chart",
+      "source": {
+        "page": 11,
+        "printed_page": 7,
+        "section": "5 Learning content",
+        "verbatim": "draw and explain a simple organisation chart",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "2.4",
+      "kind": "depth_or_format_limit",
+      "text": "use and interpret simple quantitative accounting data, in particular the financial statements (Income Statement and Statement of Financial Position) of a business, calculating performance ratios (return on capital employed, gross profit margin (%), net profit margin (%)), liquidity ratios (current ratio, quick/liquid ratio, rate of inventory turnover) and the solvency ratio",
+      "source": {
+        "page": 12,
+        "printed_page": 8,
+        "section": "5 Learning content",
+        "verbatim": "use and interpret simple quantitative accounting data, in particular the financial statements (Income Statement and Statement of Financial Position) of a business, calculating performance ratios (return on capital employed, gross profit margin (%), net profit margin (%)), liquidity ratios (current ratio, quick/liquid ratio, rate of inventory turnover) and the solvency ratio",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "3.4",
+      "kind": "depth_or_format_limit",
+      "text": "briefly discuss the means of avoiding and resolving conflict when relations break down (negotiation, collective bargaining, arbitration)",
+      "source": {
+        "page": 15,
+        "printed_page": 11,
+        "section": "5 Learning content",
+        "verbatim": "briefly discuss the means of avoiding and resolving conflict when relations break down (negotiation, collective bargaining, arbitration)",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "4.4",
+      "kind": "depth_or_format_limit",
+      "text": "briefly explain the requirements for effective advertising (AIDA)",
+      "source": {
+        "page": 19,
+        "printed_page": 15,
+        "section": "5 Learning content",
+        "verbatim": "briefly explain the requirements for effective advertising (AIDA)",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "4.4",
+      "kind": "depth_or_format_limit",
+      "text": "briefly explain methods of transporting goods",
+      "source": {
+        "page": 19,
+        "printed_page": 15,
+        "section": "5 Learning content",
+        "verbatim": "briefly explain methods of transporting goods",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "4.5",
+      "kind": "depth_or_format_limit",
+      "text": "explain the general idea of scale of operation and the economies / diseconomies associated with scale",
+      "source": {
+        "page": 20,
+        "printed_page": 16,
+        "section": "5 Learning content",
+        "verbatim": "explain the general idea of scale of operation and the economies / diseconomies associated with scale",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "5.1",
+      "kind": "depth_or_format_limit",
+      "text": "discuss in general terms why the government needs to intervene in business activity",
+      "source": {
+        "page": 21,
+        "printed_page": 17,
+        "section": "5 Learning content",
+        "verbatim": "discuss in general terms why the government needs to intervene in business activity",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "5.1",
+      "kind": "depth_or_format_limit",
+      "text": "discuss the idea of social costs and the concept of cost-benefit analysis in general terms (the treatment should be entirely descriptive)",
+      "source": {
+        "page": 21,
+        "printed_page": 17,
+        "section": "5 Learning content",
+        "verbatim": "discuss the idea of social costs and the concept of cost-benefit analysis in general terms (the treatment should be entirely descriptive)",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "topic_id": "5.1",
+      "kind": "depth_or_format_limit",
+      "text": "apply the concept descriptively to the resolution of simple social cost and social benefits situations",
+      "source": {
+        "page": 21,
+        "printed_page": 17,
+        "section": "5 Learning content",
+        "verbatim": "apply the concept descriptively to the resolution of simple social cost and social benefits situations",
+        "provenance": "syllabus",
+        "column": "specific"
+      }
+    },
+    {
+      "kind": "application_requirement",
+      "text": "In the specific objectives in the learning content the words “…in particular circumstances” would expect application of the knowledge to circumstances given in a case study and not a general discussion. The applications are however not limited to these specific objectives.",
+      "source": {
+        "page": 7,
+        "printed_page": 3,
+        "section": "5 Learning content",
+        "verbatim": "In the specific objectives in the learning content the words “…in particular circumstances” would expect application of the knowledge to circumstances given in a case study and not a general discussion. The applications are however not limited to these specific objectives.",
+        "provenance": "syllabus"
+      }
+    },
+    {
+      "kind": "calculation_convention",
+      "text": "Calculate ratios using year-end balances where appropriate, unless the question specifies the use of average figures.",
+      "source": {
+        "page": 34,
+        "printed_page": 30,
+        "section": "Annexe A",
+        "verbatim": "Calculate ratios using year-end balances where appropriate, unless the question specifies the use of average figures.",
+        "provenance": "syllabus"
+      }
+    },
+    {
+      "kind": "calculation_convention",
+      "text": "Calculate ratios to two decimal places.",
+      "source": {
+        "page": 34,
+        "printed_page": 30,
+        "section": "Annexe A",
+        "verbatim": "Calculate ratios to two decimal places.",
+        "provenance": "syllabus"
+      }
+    }
+  ]
+}
