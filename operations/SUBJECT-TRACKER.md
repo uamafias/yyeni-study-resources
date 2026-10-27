@@ -4,7 +4,7 @@ Who is doing which subject. Claim a subject **before** you start it (playbook st
 
 Each subject's detailed progress is in `work/<workspace>/STATUS.md`. This file only records who owns what.
 
-- **Status values:** `in progress`, `blocked` (with a note), `published`.
+- **Status values:** `in progress`, `blocked` (with a note), `complete` (content authored and reviewed; repository release and platform import tracked separately), `published`.
 - **Team:** Vitalis, Jeremy, Justus, Lotto.
 
 ## Pilots
@@ -25,8 +25,13 @@ The first subject of each new kind is run by Vitalis before the team scales that
 |---|---|---|---|---|---|---|---|
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
-| Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Vitalis | Codex | in progress | Vitalis; authored 22 topics, 474 flashcards and 88 practice packages on 27 October 2026. Awaiting independent Claude review; NSSCO pilot completion remains unconfirmed. |
 | | | | | | | | |
+
+## Completed content — awaiting repository release
+
+| Board and level | Code | Subject | Workspace | Owner | Authoring tool | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Vitalis | Codex | complete | Marked complete by Vitalis, 28 October 2026. Claude reviewed: publish. 22 topics, 474 flashcards and 88 practice packages. Review follow-ups retained; reviewed changes await final commit/push; platform import pending. |
 
 ## Published
 

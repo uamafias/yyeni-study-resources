@@ -12,10 +12,10 @@ Workspace: work/nam-6144-nssco-2026/   Owner: Vitalis   Authoring tool: Codex
 - [x] 4 Plan built — 2026-10-27. 22 topics, 383 teaching targets (146 original bullets, 234 member targets, 3 additional Annexe A ratios), 474 flashcards, 88 practice packages / 220 subparts; 562 total items. Notes allocation 95,130–136,590 words, with advisory minima and no padding. Largest exact AO marks-equivalent gap 3.70 percentage points. Both thin structural exemplars PUBLISH with zero failures; warnings and three inapplicable checks retained. See PLAN-6144-nssco-business-studies.md and planning/plan-validation.json.
 - [x] 4 YOU: plan approved — Vitalis, 2026-10-27: “I approve the scope please go ahead with the next step”. Explicitly authorised starting authoring; human plan commit remains pending and is not silently ticked.
 - [x] 4 Plan included in authored Git checkpoint — Vitalis explicitly authorised saving to Git on 27 October 2026; the checkpoint contains the approved plan and completed Step 5 resources.
-- [x] 5 Topics authored — 22 / 22 complete drafts, deterministic PUBLISH; independent review pending. See authoring-progress.json.
-- [x] 5 Local publication package generated — 22 topics, 474 flashcards + 88 practice packages; 562 exported items reconciled, 7 original diagrams carried. Independent review and platform import pending.
-- [ ] 6 Independently reviewed by Claude
-- [ ] 6 YOU: verdict read
+- [x] 5 Topics authored — 22 / 22 authored; Claude review completed with publish verdict. See authoring-progress.json.
+- [x] 5 Local publication package generated — 22 topics, 474 flashcards + 88 practice packages; 562 exported items reconciled, 7 original diagrams carried. Claude review completed; platform import pending.
+- [x] 6 Reviewed by Claude: verdict **publish** — 2026-10-27. 22/22 PUBLISH before and after fixes; 562/562 slots matched; copied wording 9 runs, all syllabus-glossary definitions. Findings fixed in topics/ and republished; 3 plan problems for Vitalis. See review/step6-review-6144.md.
+- [x] 6 YOU: verdict read — Vitalis, 2026-10-28; after receiving Claude’s publish verdict, explicitly requested marking the NSSCO Business Studies flashcards complete.
 - [ ] 7 YOU: committed and pushed
 
 ## Scope and next action
@@ -24,9 +24,9 @@ Whole subject: NSSCO Business Studies 6144, preparing for the 2 November 2026 ex
 
 The NSSCO pilot remains unconfirmed in the tracker. Vitalis is the authorised owner for this subject. Existing Cambridge Business Studies resources do not substitute for the NSSCO syllabus or subject-specific analysis.
 
-## Current checkpoint — 2026-10-27
+## Current checkpoint — 2026-10-28
 
-Step 5 complete locally. Vitalis approved the plan and explicitly instructed authoring; all 22 topics and the local publication package are now generated. Independent Claude review is next. The approved plan is included with the authored Git checkpoint; authoring began locally on that explicit instruction, with an immutable hashed copy of the approved input packet retained before production writes. Vitalis subsequently authorised the subject-specific Git checkpoint; unrelated changes remain outside it. Structural exemplar drafts are not full production topics or independent subject approval.
+Content complete at Vitalis’s explicit request on 28 October 2026. All 22 topics are authored, Claude’s independent review has a publish verdict, and Vitalis has acknowledged that verdict. The local reviewed package contains 474 flashcards and 88 practice packages. Final commit/push of reviewed changes and platform import remain pending. The review’s P1–P3 follow-ups remain recorded, not silently resolved. The approved plan is included with the authored Git checkpoint; authoring began locally on that explicit instruction, with an immutable hashed copy of the approved input packet retained before production writes. Vitalis subsequently authorised the subject-specific Git checkpoint; unrelated changes remain outside it. Structural exemplar drafts are not full production topics or independent subject approval.
 
 The grid states A/B/C/D overall weights 40/20/25/15%; Paper 1 marks 50/20/20/10; Paper 2 marks 30/20/30/20. Both papers are 100 marks, 2 h 15 min, 50% each, five compulsory 20-mark questions. Paper 2 questions arise from a business case study. The syllabus caveat that these AO allocations indicate relative importance remains recorded.
 
@@ -70,6 +70,20 @@ Local package: publish/nam-6144-nssco-2026/INDEX.md. Every exported item equals 
 
 Step 6 remains a separate independent Claude review, started by Vitalis after the human commit checkpoint. The author’s source, number, diagram and wording checks do not tick it. Claims remain unverified/non-publishable pending review; no platform import, learner assignment, commit or push occurred. The subject tracker remains in progress.
 
+## Step 6 cross-review — 2026-10-27 (Claude)
+
+Reviewed the Codex-authored commit 5b88c8a in full: every topic's notes and every item read; each finding verified against the item, the syllabus or the examiner reports before fixing. No inverted mechanisms and no arithmetic errors. Fixed: Define answers trimmed to the definition (129), padded State-two answers rewritten, "fictional/invented/hypothetical/Original" authoring words removed from learner text (about 830 fields; 4.2 line-chart title regenerated), and the content findings: finance by term and owner's savings (2.3), economic systems (1.1), glossary cost pairings and inventory-turnover grouping (2.4), economies of scale and locating abroad (4.5), product life cycle (4.4), the Rena orientation case (4.1), concrete government measures in theme 5, and answers resting on unstated facts. 63 claims revised and propagated; all topics restamped, re-rendered, re-checked (22 × PUBLISH, warnings unchanged) and republished with topics/publish_with_assets.py. curriculum/, contracts and work orders unchanged.
+
+Not fixed (logged in the report): padded APP/CHAIN/DIST answers and generic marking guidance from the template composer; minor duplicates; "organisation by systems" definition unverified. Plan problems for Vitalis: (P1) Namibian statutes/institutions/minimum-wage rate excluded by the "no unsupported current legal detail" rule; (P2) template authoring quality; (P3) standard-level issues. Next: Vitalis reads the verdict (step 6), then step 7 commit and push.
+
 ## Authored Git checkpoint
 
 Vitalis explicitly requested saving the work to Git so Claude review can proceed. This checkpoint includes only work/nam-6144-nssco-2026/, publish/nam-6144-nssco-2026/, the two 6144 analysis files and the subject tracker entry. It records the approved plan together with completed Step 5 authoring. Independent Claude review remains pending. Unrelated Economics edits are excluded.
+
+## Completion acknowledged — 2026-10-28
+
+Vitalis requested: “mark the flashcards for nssco business studies as complete”. Recorded content completion in operations/SUBJECT-TRACKER.md under Vitalis: 22 topics, 474 flashcards and 88 practice packages, reviewed by Claude with verdict publish. The non-blocking review follow-ups remain in review/step6-review-6144.md. This status update does not assert that the reviewed changes have been committed/pushed or imported into YYeni; Step 7 remains unticked.
+
+## Remote release requested — 2026-10-28
+
+Vitalis explicitly requested pushing the reviewed flashcards to the remote repository. Rechecked all 22 topics: PUBLISH with zero failures; 474 flashcards plus 88 practice packages, and all published items and notes match reviewed source files. The release commit includes Claude’s fixes and review report, together with the acknowledged completion status. Existing non-blocking review follow-ups remain recorded. No platform import is included in this Git release.

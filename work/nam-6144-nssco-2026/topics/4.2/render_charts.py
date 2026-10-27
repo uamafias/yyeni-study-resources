@@ -23,7 +23,7 @@ for v,c in zip(values,colours):
 for y,label,v,c in zip([230,320,410],labels,values,colours):
  d.rectangle((650,y,675,y+25),fill=c);d.text((695,y),f'{label}: {v} ({v/40*100:.0f}%)',fill='black',font=f)
 im.save(D/'format-pie.png')
-im,d=base('Annual orders: fictional Omi Lunches');years=[2022,2023,2024,2025];vals=[40,60,55,80];xs=[160,400,640,880]
+im,d=base('Annual orders: Omi Lunches');years=[2022,2023,2024,2025];vals=[40,60,55,80];xs=[160,400,640,880]
 for v in range(0,101,20):
  y=520-v*4;d.line((110,y,930,y),fill='#dfe6eb');d.text((90,y),str(v),fill='black',font=f,anchor='rm')
 pts=[(x,520-v*4) for x,v in zip(xs,vals)];d.line(pts,fill='#1c7180',width=4)
