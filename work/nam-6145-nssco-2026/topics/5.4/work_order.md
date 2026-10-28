@@ -1,15 +1,15 @@
 # Work order — 5.4 Economies and diseconomies of scale
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-18 assessable objectives · 34 planned items · 4 content units
+21 assessable objectives · 37 planned items · 4 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 61% | 39.0% |
-| B | 39% | 25.5% |
+| A | 62% | 39.0% |
+| B | 38% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
@@ -17,21 +17,22 @@
 | AO | planned | syllabus weight |
 |---|---:|---:|
 | A | 47% | 39.0% |
-| B | 29% | 25.5% |
-| C | 24% | 35.5% |
+| B | 30% | 25.5% |
+| C | 23% | 35.5% |
 
-124 marks-equivalent of practice in this topic.
+132 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 58% in this topic (18 objectives against 31 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 62% in this topic (21 objectives against 34 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-5.4** — sub-topic 5.4, 5 objectives, 1205–1730 words
+**CU-6145-5.4** — sub-topic 5.4, 6 objectives, 1205–1730 words
 - `OBJ-6145-5.4-01` tier 2 — Define and identify the different types of integration
 - `OBJ-6145-5.4-02` tier 3 — Explain and illustrate the various economies of scale
 - `OBJ-6145-5.4-03` tier 3 — Explain and illustrate the various diseconomies of scale
 - `OBJ-6145-5.4-04` tier 3 — Discuss how the economies and diseconomies of scale affect business costs
 - `OBJ-6145-5.4-05` tier 3 — Discuss the main reasons for the different sizes of firms (size of market; capital; organisation), and the different factors that influence the size of a firm
+- `OBJ-6145-5.4-06` tier 1 — Long-run average cost and scale
 
 **CU-6145-5.4.1** — sub-topic 5.4.1, 4 objectives, 964–1384 words
 - `OBJ-6145-5.4.1-01` tier 1 — Horizontal integration
@@ -39,18 +40,20 @@
 - `OBJ-6145-5.4.1-03` tier 1 — Backward vertical integration
 - `OBJ-6145-5.4.1-04` tier 1 — Conglomerate integration
 
-**CU-6145-5.4.2** — sub-topic 5.4.2, 6 objectives, 1446–2076 words
+**CU-6145-5.4.2** — sub-topic 5.4.2, 7 objectives, 1446–2076 words
 - `OBJ-6145-5.4.2-01` tier 1 — Technical economies of scale
 - `OBJ-6145-5.4.2-02` tier 1 — Purchasing economies of scale
 - `OBJ-6145-5.4.2-03` tier 1 — Financial economies of scale
 - `OBJ-6145-5.4.2-04` tier 1 — Marketing economies of scale
 - `OBJ-6145-5.4.2-05` tier 1 — Managerial economies of scale
 - `OBJ-6145-5.4.2-06` tier 1 — Risk-bearing economies of scale
+- `OBJ-6145-5.4.2-07` tier 1 — External economies of scale
 
-**CU-6145-5.4.3** — sub-topic 5.4.3, 3 objectives, 723–1038 words
+**CU-6145-5.4.3** — sub-topic 5.4.3, 4 objectives, 723–1038 words
 - `OBJ-6145-5.4.3-01` tier 1 — Communication diseconomies
 - `OBJ-6145-5.4.3-02` tier 1 — Co-ordination diseconomies
 - `OBJ-6145-5.4.3-03` tier 1 — Control and motivation diseconomies
+- `OBJ-6145-5.4.3-04` tier 1 — External diseconomies of scale
 
 ## Item slots
 
@@ -59,11 +62,9 @@
 | `001-FEATURE` | Define and identify the different types of integration | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `002-DIST` | Define and identify the different types of integration | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Define and identify the different types of integration | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `029-MISCON` | Define and identify the different types of integration | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-006 (2 examiner statements): Forward versus backward vertical integration |
 | `004-DEF` | Explain and illustrate the various economies of scale | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-MECH` | Explain and illustrate the various economies of scale | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Explain and illustrate the various economies of scale | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `030-MISCON` | Explain and illustrate the various economies of scale | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-007 (2 examiner statements): Economies versus diseconomies of scale |
 | `007-DEF` | Explain and illustrate the various diseconomies of scale | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `008-MECH` | Explain and illustrate the various diseconomies of scale | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-APP` | Explain and illustrate the various diseconomies of scale | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -86,6 +87,11 @@
 | `026-DEF` | Communication diseconomies | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `027-DEF` | Co-ordination diseconomies | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `028-DEF` | Control and motivation diseconomies | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `029-MISCON` | Define and identify the different types of integration | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-006 (2 examiner statements): Forward versus backward vertical integration |
+| `030-MISCON` | Explain and illustrate the various economies of scale | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-007 (2 examiner statements): Economies versus diseconomies of scale |
+| `031-PROC` | Long-run average cost and scale | PROC | B | Use | 4 | instructs with Use, which this objective carries |
+| `032-DEF` | External economies of scale | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `033-DEF` | External diseconomies of scale | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

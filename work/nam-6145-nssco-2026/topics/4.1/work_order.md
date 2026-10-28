@@ -1,33 +1,35 @@
 # Work order — 4.1 Occupational choices
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-3 assessable objectives · 10 planned items · 2 content units
+5 assessable objectives · 12 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 57% | 39.0% |
-| B | 43% | 25.5% |
+| A | 67% | 39.0% |
+| B | 33% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 38% | 39.0% |
-| B | 23% | 25.5% |
-| C | 39% | 35.5% |
+| A | 41% | 39.0% |
+| B | 22% | 25.5% |
+| C | 37% | 35.5% |
 
-77 marks-equivalent of practice in this topic.
+81 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 43% in this topic (3 objectives against 7 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 56% in this topic (5 objectives against 9 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-4.1** — sub-topic 4.1, 1 objectives, 243–350 words
+**CU-6145-4.1** — sub-topic 4.1, 3 objectives, 243–350 words
 - `OBJ-6145-4.1-01` tier 2 — Differentiate between and discuss wage and non-wage factors affecting an individual’s choice of occupation
+- `OBJ-6145-4.1-02` tier 1 — Occupational mobility of labour
+- `OBJ-6145-4.1-03` tier 1 — Geographical mobility of labour
 
 **CU-6145-4.1.1** — sub-topic 4.1.1, 2 objectives, 486–700 words
 - `OBJ-6145-4.1.1-01` tier 1 — Wage factors in occupational choice
@@ -40,9 +42,11 @@
 | `001-DEF` | Differentiate between and discuss wage and non-wage factors affecting an individual’s choice of occupation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-DIST` | Differentiate between and discuss wage and non-wage factors affecting an individual’s choice of occupation | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Differentiate between and discuss wage and non-wage factors affecting an individual’s choice of occupation | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `006-MISCON` | Differentiate between and discuss wage and non-wage factors affecting an individual’s choice of occupation | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-025 (1 examiner statements): Occupational versus geographical mobility |
 | `004-DEF` | Wage factors in occupational choice | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-DEF` | Non-wage factors in occupational choice | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `006-MISCON` | Differentiate between and discuss wage and non-wage factors affecting an individual’s choice of occupation | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-025 (1 examiner statements): Occupational versus geographical mobility |
+| `007-DEF` | Occupational mobility of labour | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `008-DEF` | Geographical mobility of labour | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

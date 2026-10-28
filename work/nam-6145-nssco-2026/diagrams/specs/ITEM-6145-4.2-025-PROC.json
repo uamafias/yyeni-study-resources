@@ -1,0 +1,346 @@
+{
+  "item_id": "ITEM-6145-4.2-025-PROC",
+  "topic_id": "4.2",
+  "model": {
+    "name": "Competitive labour market for guest-house housekeepers: rise in labour demand",
+    "status": "illustrative: invented schedules generated from declared linear equations, not observed wages",
+    "equations": {
+      "S": "L = 10W - 100",
+      "D1": "L = 400 - 10W",
+      "D2": "L = 500 - 10W (D1 plus 100 workers at every wage)"
+    },
+    "units": {
+      "x": "housekeepers employed",
+      "y": "N$ per hour"
+    },
+    "schedule": {
+      "wage": [
+        15,
+        20,
+        25,
+        30,
+        35
+      ],
+      "D1": [
+        250,
+        200,
+        150,
+        100,
+        50
+      ],
+      "S": [
+        50,
+        100,
+        150,
+        200,
+        250
+      ],
+      "D2": [
+        350,
+        300,
+        250,
+        200,
+        150
+      ]
+    },
+    "equilibria": {
+      "E1": [
+        150,
+        25
+      ],
+      "E2": [
+        200,
+        30
+      ]
+    },
+    "cause": "More tourists raise demand for guest-house rooms; labour demand is derived from it, so only labour demand shifts.",
+    "assumptions": [
+      "Competitive labour market; the wage adjusts to equate labour demanded and supplied.",
+      "Nothing changes the number of people willing to work at each wage, so labour supply does not shift."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "title": "Original labour market for guest-house housekeepers",
+    "description": "Axes with wage (N$ per hour) vertically and quantity of labour (housekeepers) horizontally, showing the original labour demand curve D1 (from 325 workers at N$7.50 to 25 at N$37.50) and labour supply curve S (from 25 workers at N$12.50 to 325 at N$42.50). Text states that guest houses now want 100 more housekeepers at every wage.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          70
+        ],
+        "size": 30,
+        "weight": "bold",
+        "halo": false,
+        "text": "Labour market for guest-house housekeepers"
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          128
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "More tourists visit the town. Guest houses now",
+          "want 100 more housekeepers at every wage."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Labour demand shifts right; wage and employment rise",
+    "description": "Original equilibrium E1 where D1 meets S: N$25 an hour and 150 housekeepers. Labour demand shifts right by 100 workers at every wage to D2; supply S does not move. New equilibrium E2 where D2 meets S: N$30 an hour and 200 housekeepers.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          66
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 42,
+        "text": [
+          "E1 (original): N$25 an hour, 150 housekeepers",
+          "E2 (new): N$30 an hour, 200 housekeepers",
+          "D1 to D2: 100 more housekeepers wanted at every wage"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          212
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 38,
+        "text": [
+          "Only labour demand shifts: it is derived from",
+          "the demand for guest-house rooms."
+        ]
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "labour",
+      "frame": [
+        150,
+        365,
+        690,
+        525
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 420,
+          "ticks": [
+            0,
+            50,
+            100,
+            150,
+            200,
+            250,
+            300,
+            350,
+            400
+          ],
+          "title": "Quantity of labour (housekeepers)"
+        },
+        "y": {
+          "min": 0,
+          "max": 45,
+          "ticks": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45
+          ],
+          "title": "Wage (N$ per hour)"
+        }
+      },
+      "question": [
+        {
+          "type": "curve",
+          "id": "D1",
+          "kind": "x_of_y",
+          "expr": "400 - 10*y",
+          "domain": [
+            7.5,
+            37.5
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D1",
+            "at": [
+              325,
+              7.5
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "10*y - 100",
+          "domain": [
+            12.5,
+            42.5
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              325,
+              42.5
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        }
+      ],
+      "answer": [
+        {
+          "type": "curve",
+          "id": "D1",
+          "kind": "x_of_y",
+          "expr": "400 - 10*y",
+          "domain": [
+            7.5,
+            37.5
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D1",
+            "at": [
+              325,
+              7.5
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "D2",
+          "kind": "x_of_y",
+          "expr": "500 - 10*y",
+          "domain": [
+            12.5,
+            42.5
+          ],
+          "style": "demand_new",
+          "label": {
+            "text": "D2",
+            "at": [
+              375,
+              12.5
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "10*y - 100",
+          "domain": [
+            12.5,
+            42.5
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              325,
+              42.5
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "shift-at-35",
+          "from": [
+            50,
+            35
+          ],
+          "to": [
+            150,
+            35
+          ],
+          "trim": [
+            8,
+            8
+          ]
+        },
+        {
+          "type": "arrow",
+          "id": "shift-at-15",
+          "from": [
+            250,
+            15
+          ],
+          "to": [
+            350,
+            15
+          ],
+          "trim": [
+            8,
+            8
+          ]
+        },
+        {
+          "type": "point",
+          "id": "E1",
+          "at": [
+            150,
+            25
+          ],
+          "guides": true,
+          "label": {
+            "text": "E1",
+            "dx": 0,
+            "dy": -20,
+            "anchor": "middle"
+          }
+        },
+        {
+          "type": "point",
+          "id": "E2",
+          "at": [
+            200,
+            30
+          ],
+          "guides": true,
+          "label": {
+            "text": "E2",
+            "dx": 0,
+            "dy": -20,
+            "anchor": "middle"
+          }
+        }
+      ]
+    }
+  ]
+}

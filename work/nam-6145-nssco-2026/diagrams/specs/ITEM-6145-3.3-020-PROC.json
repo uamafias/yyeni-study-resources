@@ -1,0 +1,347 @@
+{
+  "item_id": "ITEM-6145-3.3-020-PROC",
+  "topic_id": "3.3",
+  "model": {
+    "name": "Two supply curves through a common starting point",
+    "status": "illustrative: invented workshop data; straight lines through the two observed price-quantity pairs per workshop",
+    "equations": {
+      "workshop A": "Q = 0.2P - 30",
+      "workshop B": "Q = 0.05P + 30"
+    },
+    "units": {
+      "x": "chairs per month",
+      "y": "N$ per chair"
+    },
+    "reference_point": [
+      50,
+      400
+    ],
+    "after_rise": {
+      "workshop A": [
+        90,
+        600
+      ],
+      "workshop B": [
+        60,
+        600
+      ]
+    },
+    "elasticity_basis": "initial values: %change in quantity supplied / %change in price over the N$400 to N$600 rise",
+    "results": {
+      "price change": "+50%",
+      "workshop A": {
+        "quantity change": "+80%",
+        "PES": 1.6,
+        "class": "elastic"
+      },
+      "workshop B": {
+        "quantity change": "+20%",
+        "PES": 0.4,
+        "class": "inelastic"
+      }
+    },
+    "assumptions": [
+      "Only the price of chairs changes; costs and technology are unchanged, so each change is a movement along one supply curve.",
+      "Workshop A has unused machines; workshop B is already near capacity.",
+      "Each curve is a straight line through its two observed points; the elasticity is stated for this change only."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "title": "Workshop supply data and blank axes",
+    "description": "Table: workshops A (unused machines) and B (near capacity) each supply 50 chairs a month at N$400 a chair; when the price rises to N$600, A supplies 90 and B supplies 60. Empty axes with price (N$ per chair) vertically and quantity supplied (chairs per month) horizontally, on one common scale.",
+    "static": [
+      {
+        "type": "table",
+        "id": "supply",
+        "px": [
+          40,
+          80
+        ],
+        "col_widths": [
+          280,
+          140,
+          140,
+          175,
+          175
+        ],
+        "row_height": 50,
+        "size": 26,
+        "title": "Chairs supplied per month by two workshops",
+        "header": [
+          "Workshop",
+          "Old price",
+          "New price",
+          "Old supply",
+          "New supply"
+        ],
+        "rows": [
+          [
+            "A (unused machines)",
+            "N$400",
+            "N$600",
+            "50",
+            "90"
+          ],
+          [
+            "B (near capacity)",
+            "N$400",
+            "N$600",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          282
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 38,
+        "text": [
+          "Draw both supply curves on these axes and",
+          "label each with its PES (use initial values)."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Elastic and inelastic supply curves through a common starting point",
+    "description": "Both supply curves pass through R (50 chairs, N$400). Workshop A's curve (flatter) passes through A (90, N$600): PES = +80% / +50% = 1.6, elastic. Workshop B's curve (steeper) passes through B (60, N$600): PES = +20% / +50% = 0.4, inelastic. Arrows along each curve show the movement from R as price rises.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          66
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 42,
+        "text": [
+          "Price rise: N$400 to N$600 = +50%",
+          "Workshop A: +80% ÷ +50% = 1.6, elastic",
+          "Workshop B: +20% ÷ +50% = 0.4, inelastic"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          214
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 38,
+        "text": [
+          "Same axes, same starting point R: the flatter",
+          "supply curve is the more elastic over this change."
+        ]
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "pes",
+      "frame": [
+        150,
+        410,
+        680,
+        480
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 110,
+          "ticks": [
+            0,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100
+          ],
+          "title": "Quantity supplied (chairs per month)"
+        },
+        "y": {
+          "min": 0,
+          "max": 700,
+          "ticks": [
+            0,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700
+          ],
+          "title": "Price (N$ per chair)"
+        }
+      },
+      "question": [],
+      "answer": [
+        {
+          "type": "curve",
+          "id": "S-A",
+          "kind": "x_of_y",
+          "expr": "0.2*y - 30",
+          "domain": [
+            250,
+            650
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S workshop A",
+            "at": [
+              100,
+              650
+            ],
+            "dx": 10,
+            "dy": 10
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S-B",
+          "kind": "x_of_y",
+          "expr": "0.05*y + 30",
+          "domain": [
+            150,
+            680
+          ],
+          "style": "supply_alt",
+          "label": {
+            "text": "S workshop B",
+            "at": [
+              64,
+              680
+            ],
+            "dx": -12,
+            "dy": -2,
+            "anchor": "end"
+          }
+        },
+        {
+          "type": "point",
+          "id": "R",
+          "at": [
+            50,
+            400
+          ],
+          "guides": true,
+          "label": {
+            "text": "R",
+            "dx": 16,
+            "dy": 30
+          }
+        },
+        {
+          "type": "point",
+          "id": "A",
+          "at": [
+            90,
+            600
+          ],
+          "guides": true,
+          "label": {
+            "text": "A",
+            "dx": 16,
+            "dy": 28
+          }
+        },
+        {
+          "type": "point",
+          "id": "B",
+          "at": [
+            60,
+            600
+          ],
+          "guides": true,
+          "label": {
+            "text": "B",
+            "dx": -14,
+            "dy": -14,
+            "anchor": "end"
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "R-to-A",
+          "from": [
+            50,
+            400
+          ],
+          "to": [
+            90,
+            600
+          ],
+          "offset_px": 0,
+          "trim": [
+            16,
+            16
+          ]
+        },
+        {
+          "type": "arrow",
+          "id": "R-to-B",
+          "from": [
+            50,
+            400
+          ],
+          "to": [
+            60,
+            600
+          ],
+          "offset_px": 0,
+          "trim": [
+            16,
+            16
+          ]
+        },
+        {
+          "type": "text",
+          "at": [
+            20,
+            250
+          ],
+          "dx": 0,
+          "dy": 40,
+          "anchor": "middle",
+          "size": 26,
+          "weight": "bold",
+          "fill": "#b03a2e",
+          "text": "PES 1.6"
+        },
+        {
+          "type": "text",
+          "at": [
+            37.5,
+            150
+          ],
+          "dx": 0,
+          "dy": 40,
+          "anchor": "middle",
+          "size": 26,
+          "weight": "bold",
+          "fill": "#6a3d9a",
+          "text": "PES 0.4"
+        }
+      ]
+    }
+  ]
+}

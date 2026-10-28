@@ -1,28 +1,28 @@
 # Work order — 2.3 Financial institutions
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-24 assessable objectives · 41 planned items · 3 content units
+31 assessable objectives · 48 planned items · 3 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 63% | 39.0% |
-| B | 34% | 25.5% |
-| C | 3% | 35.5% |
+| A | 69% | 39.0% |
+| B | 29% | 25.5% |
+| C | 2% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 47% | 39.0% |
-| B | 27% | 25.5% |
-| C | 26% | 35.5% |
+| A | 52% | 39.0% |
+| B | 25% | 25.5% |
+| C | 24% | 35.5% |
 
-145 marks-equivalent of practice in this topic.
+159 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 63% in this topic (24 objectives against 38 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 69% in this topic (31 objectives against 45 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
@@ -51,10 +51,17 @@
 - `OBJ-6145-2.3.2.3-02` tier 1 — Bank deposits
 - `OBJ-6145-2.3.2.3-03` tier 1 — Electronic means of payment
 
-**CU-6145-2.3.5** — sub-topic 2.3.5, 3 objectives, 732–1050 words
+**CU-6145-2.3.5** — sub-topic 2.3.5, 10 objectives, 732–1050 words
 - `OBJ-6145-2.3.5-01` tier 1 — Central bank
 - `OBJ-6145-2.3.5-02` tier 1 — Stock exchange
 - `OBJ-6145-2.3.5-03` tier 1 — Commercial bank
+- `OBJ-6145-2.3.5-04` tier 1 — Why a central bank issues currency
+- `OBJ-6145-2.3.5-05` tier 1 — Why government uses the central bank as its banker
+- `OBJ-6145-2.3.5-06` tier 1 — Why a central bank acts as lender of last resort
+- `OBJ-6145-2.3.5-07` tier 1 — Why banks are supervised
+- `OBJ-6145-2.3.5-08` tier 1 — Repo rate
+- `OBJ-6145-2.3.5-09` tier 1 — Why secondary share trading supports liquidity
+- `OBJ-6145-2.3.5-10` tier 1 — Why listing can help a company raise capital
 
 ## Item slots
 
@@ -66,7 +73,6 @@
 | `004-FEATURE` | Explain the functions, quality and types of money | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `005-DIST` | Explain the functions, quality and types of money | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Explain the functions, quality and types of money | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `036-MISCON` | Explain the functions, quality and types of money | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-024 (1 examiner statements): Unit of account versus store of value |
 | `007-DEF` | Define and calculate exchange rate | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `008-CALC` | Define and calculate exchange rate | CALC | B | Calculate | 1 | instructs with Calculate, which this objective carries |
 | `009-INTERP` | Define and calculate exchange rate | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
@@ -77,7 +83,6 @@
 | `014-BEN` | Describe and evaluate the functions of central banks, stock exchanges and commercial banks | BEN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `015-LIM` | Describe and evaluate the functions of central banks, stock exchanges and commercial banks | LIM | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `016-EVAL` | Describe and evaluate the functions of central banks, stock exchanges and commercial banks | EVAL | C | Evaluate | 8 | instructs with Evaluate, which this objective carries |
-| `037-MISCON` | Describe and evaluate the functions of central banks, stock exchanges and commercial banks | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-032 (1 examiner statements): Central bank versus commercial bank |
 | `017-DEF` | Functions of money | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `018-DEF` | Qualities of money | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `019-DEF` | Types of money | DEF | A | Define | 2 | instructs with Define, which this objective carries |
@@ -97,6 +102,15 @@
 | `033-DEF` | Central bank | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `034-DEF` | Stock exchange | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `035-DEF` | Commercial bank | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `036-MISCON` | Explain the functions, quality and types of money | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-024 (1 examiner statements): Unit of account versus store of value |
+| `037-MISCON` | Describe and evaluate the functions of central banks, stock exchanges and commercial banks | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-032 (1 examiner statements): Central bank versus commercial bank |
+| `038-WHY` | Why a central bank issues currency | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
+| `039-WHY` | Why government uses the central bank as its banker | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
+| `040-WHY` | Why a central bank acts as lender of last resort | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
+| `041-WHY` | Why banks are supervised | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
+| `042-DEF` | Repo rate | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `043-WHY` | Why secondary share trading supports liquidity | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
+| `044-WHY` | Why listing can help a company raise capital | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 

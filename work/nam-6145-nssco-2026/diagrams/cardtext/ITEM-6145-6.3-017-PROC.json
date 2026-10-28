@@ -1,0 +1,133 @@
+{
+  "item_id": "ITEM-6145-6.3-017-PROC",
+  "topic_id": "6.3",
+  "unit_id": "CU-6145-6.3",
+  "new_card": true,
+  "new_claims": [
+    {
+      "claim_id": "CL-6145-6.3-13",
+      "objective_ids": [
+        "OBJ-6145-6.3-06"
+      ],
+      "text": "A maximum price set below the equilibrium price is binding: neither demand nor supply shifts, quantity demanded exceeds quantity supplied at the controlled price, and the shortage limits the quantity bought to the quantity supplied.",
+      "claim_type": "causal",
+      "provenance": "source_synthesised",
+      "evidence": [
+        {
+          "source_id": "NIED-6145-2018",
+          "locator": "PDF p.13; OBJ-6145-6.3-02 (explain how the government controls production of goods and services); OBJ-6145-6.3-06",
+          "support_type": "derivation"
+        }
+      ],
+      "derived_from_claim_ids": [
+        "CL-6145-6.3-04"
+      ],
+      "verification": {
+        "status": "unverified",
+        "method": "Claude visual authoring under revision-01; independent Codex review pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "confidence": 0.85
+      },
+      "publishable": false,
+      "revision": 1
+    },
+    {
+      "claim_id": "CL-6145-6.3-14",
+      "objective_ids": [
+        "OBJ-6145-6.3-06"
+      ],
+      "text": "If demand is 700, 600, 500 and 400 loaves a day and supply 300, 400, 500 and 600 loaves at N$10, N$12, N$14 and N$16, the equilibrium is N$14 and 500 loaves; a maximum price of N$12 gives a shortage of 200 loaves, with 400 bought.",
+      "claim_type": "factual",
+      "provenance": "source_synthesised",
+      "evidence": [
+        {
+          "source_id": "NIED-6145-2018",
+          "locator": "PDF p.13; OBJ-6145-6.3-02 (explain how the government controls production of goods and services); OBJ-6145-6.3-06",
+          "support_type": "derivation"
+        }
+      ],
+      "derived_from_claim_ids": [],
+      "verification": {
+        "status": "unverified",
+        "method": "Claude visual authoring under revision-01; independent Codex review pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "confidence": 0.85
+      },
+      "publishable": false,
+      "revision": 1
+    }
+  ],
+  "unit_objectives": [
+    "OBJ-6145-6.3-06"
+  ],
+  "blocks": [
+    {
+      "op": "insert_after",
+      "anchor": "CU-6145-6.3-B02",
+      "block": {
+        "block_id": "CU-6145-6.3-B06",
+        "block_type": "worked_application",
+        "heading": "A maximum price on a diagram",
+        "claim_ids": [
+          "CL-6145-6.3-13",
+          "CL-6145-6.3-14"
+        ],
+        "text": "With bread at an equilibrium of N$14 and 500 loaves a day, a maximum price of N$12 cuts quantity supplied to 400 and raises quantity demanded to 600: a shortage of 200. Neither curve shifts.\n\n![Maximum price on bread](diagrams/item-6145-6.3-017-proc-answer.png)",
+        "context_tags": [
+          "Namibia",
+          "price controls",
+          "diagram"
+        ],
+        "assessment_objectives": [
+          "A",
+          "B"
+        ]
+      }
+    }
+  ],
+  "item": {
+    "item_id": "ITEM-6145-6.3-017-PROC",
+    "objective_ids": [
+      "OBJ-6145-6.3-06"
+    ],
+    "claim_ids": [
+      "CL-6145-6.3-04",
+      "CL-6145-6.3-13",
+      "CL-6145-6.3-14"
+    ],
+    "item_type": "flashcard",
+    "subtype": "PROC",
+    "assessment_objectives": [
+      "B"
+    ],
+    "difficulty": 1,
+    "prompt": "Bakeries in a town supply 300, 400, 500 and 600 loaves of bread a day at N$10, N$12, N$14 and N$16 a loaf, and consumers demand 700, 600, 500 and 400 loaves at those prices, as in the diagram. The government sets a maximum price of N$12 a loaf. Use the diagram to show the original equilibrium, the maximum price and its effect on the market (4).",
+    "canonical_answer": "The original equilibrium E, where D meets S, is N$14 a loaf and 500 loaves a day. Draw the maximum price as a horizontal line at N$12, below the equilibrium price, so it is binding. Neither curve shifts: at N$12 quantity demanded, read off D, is 600 loaves and quantity supplied, read off S, is 400 loaves. Demand exceeds supply, so there is a shortage of 200 loaves a day. Only 400 loaves can be bought, fewer than the 500 before, so queues or an illegal market may develop.",
+    "marking_guidance": [
+      "Diagram: original equilibrium E labelled where D meets S, at N$14 a loaf and 500 loaves a day (1).",
+      "Labels: maximum price drawn as a horizontal line at N$12, below the equilibrium price, with neither curve shifted (1).",
+      "Labels: quantity supplied 400 (on S) and quantity demanded 600 (on D) at N$12 (1).",
+      "Change: shortage of 200 loaves a day, with only 400 loaves bought instead of 500 (1)."
+    ],
+    "context": {
+      "sector": "secondary",
+      "business_size": null,
+      "ownership": "private",
+      "situation": "The government caps the price of bread in a town",
+      "facts": [
+        "Supply: 300, 400, 500, 600 loaves a day at N$10, N$12, N$14, N$16",
+        "Demand: 700, 600, 500, 400 loaves a day at those prices",
+        "Maximum price N$12 a loaf"
+      ]
+    },
+    "prerequisite_item_ids": [],
+    "core_status": "core",
+    "intentional_duplicate_group": null,
+    "provenance": "Claude visual authoring under approved 6145 revision-01; diagram rendered from diagrams/specs/ITEM-6145-6.3-017-PROC.json",
+    "blooms_level": "Apply",
+    "command_word": "Use",
+    "mark_tariff": 4
+  }
+}

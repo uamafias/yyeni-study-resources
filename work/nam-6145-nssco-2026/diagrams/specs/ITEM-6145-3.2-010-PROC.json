@@ -1,0 +1,308 @@
+{
+  "item_id": "ITEM-6145-3.2-010-PROC",
+  "topic_id": "3.2",
+  "existing_card": true,
+  "preserved_item_authored_hash": "a14379ddae70c3a4bb18a3275e496f93f770833541525d6008ac1b7d07f31740",
+  "model": {
+    "name": "Increase in demand for seed packets with supply unchanged",
+    "status": "uses the existing card's data unchanged; straight lines through the three given points of each schedule",
+    "equations": {
+      "D0": "Q = 120 - 3P",
+      "D1": "Q = 150 - 3P (30 more at every price)",
+      "S": "Q = 3P"
+    },
+    "units": {
+      "x": "packets per week",
+      "y": "N$ per packet"
+    },
+    "equilibria": {
+      "E0": [
+        60,
+        20
+      ],
+      "E1": [
+        75,
+        25
+      ]
+    },
+    "assumptions": [
+      "Basic competitive model; demand increases (shifts right) while supply is unchanged; price adjusts to the new intersection."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "canvas": [
+      1000,
+      440
+    ],
+    "title": "Seed-packet schedules before and after a rise in demand",
+    "description": "Table: at N$10, N$20 and N$30 a packet, original weekly demand D0 is 90, 60 and 30, new demand D1 is 120, 90 and 60, and unchanged supply S is 30, 60 and 90. Instruction to draw D0, D1 and S and label both equilibria.",
+    "static": [
+      {
+        "type": "table",
+        "id": "schedule",
+        "px": [
+          60,
+          80
+        ],
+        "col_widths": [
+          380,
+          150,
+          150,
+          150
+        ],
+        "row_height": 54,
+        "size": 28,
+        "title": "Weekly seed packets",
+        "header": [
+          "Price (N$ per packet)",
+          "10",
+          "20",
+          "30"
+        ],
+        "rows": [
+          [
+            "Original demand D0",
+            "90",
+            "60",
+            "30"
+          ],
+          [
+            "New demand D1",
+            "120",
+            "90",
+            "60"
+          ],
+          [
+            "Supply S (unchanged)",
+            "30",
+            "60",
+            "90"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          60,
+          350
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "Draw D0, D1 and S with straight lines and label",
+          "both equilibria."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Demand shifts right from D0 to D1; price and quantity rise",
+    "description": "S through (30, N$10), (60, N$20), (90, N$30); D0 through (90, N$10), (60, N$20), (30, N$30); D1 through (120, N$10), (90, N$20), (60, N$30), to the right of D0 by 30 at every price. E0 at N$20 and 60 packets; E1 at N$25 and 75 packets, both projected to the axes.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          62
+        ],
+        "size": 27,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "E0 (original): N$20, 60 packets a week",
+          "E1 (new): N$25, 75 packets a week",
+          "D0 to D1: 30 more packets demanded at every price",
+          "Price rises N$20 to N$25; quantity 60 to 75"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          238
+        ],
+        "size": 27,
+        "weight": "bold",
+        "halo": false,
+        "text": "Demand shifts right; supply does not move."
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "dshift",
+      "sides": [
+        "answer"
+      ],
+      "frame": [
+        150,
+        360,
+        690,
+        530
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 140,
+          "ticks": [
+            0,
+            15,
+            30,
+            45,
+            60,
+            75,
+            90,
+            105,
+            120
+          ],
+          "title": "Quantity (packets per week)"
+        },
+        "y": {
+          "min": 0,
+          "max": 40,
+          "ticks": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "title": "Price (N$ per packet)"
+        }
+      },
+      "answer": [
+        {
+          "type": "curve",
+          "id": "D0",
+          "kind": "x_of_y",
+          "expr": "120 - 3*y",
+          "domain": [
+            6,
+            36
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D0",
+            "at": [
+              102,
+              6
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "D1",
+          "kind": "x_of_y",
+          "expr": "150 - 3*y",
+          "domain": [
+            6,
+            36
+          ],
+          "style": "demand_new",
+          "label": {
+            "text": "D1",
+            "at": [
+              132,
+              6
+            ],
+            "dx": 10,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "3*y",
+          "domain": [
+            4,
+            38
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              114,
+              38
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "shift-at-30",
+          "from": [
+            30,
+            30
+          ],
+          "to": [
+            60,
+            30
+          ],
+          "trim": [
+            8,
+            8
+          ]
+        },
+        {
+          "type": "arrow",
+          "id": "shift-at-10",
+          "from": [
+            90,
+            10
+          ],
+          "to": [
+            120,
+            10
+          ],
+          "trim": [
+            8,
+            8
+          ]
+        },
+        {
+          "type": "point",
+          "id": "E0",
+          "at": [
+            60,
+            20
+          ],
+          "guides": true,
+          "label": {
+            "text": "E0",
+            "dx": 16,
+            "dy": 10
+          }
+        },
+        {
+          "type": "point",
+          "id": "E1",
+          "at": [
+            75,
+            25
+          ],
+          "guides": true,
+          "label": {
+            "text": "E1",
+            "dx": 0,
+            "dy": -20,
+            "anchor": "middle"
+          }
+        }
+      ]
+    }
+  ]
+}

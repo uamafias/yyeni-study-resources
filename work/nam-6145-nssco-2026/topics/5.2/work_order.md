@@ -1,6 +1,6 @@
 # Work order — 5.2 Productivity
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 5 assessable objectives · 20 planned items · 1 content units
 

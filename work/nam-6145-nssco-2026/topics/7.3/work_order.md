@@ -1,6 +1,6 @@
 # Work order — 7.3 Output
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 9 assessable objectives · 20 planned items · 3 content units
 
@@ -48,7 +48,6 @@
 | `001-FEATURE` | Define Gross Domestic Product, Gross National Product and National Income | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `002-DIST` | Define Gross Domestic Product, Gross National Product and National Income | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Define Gross Domestic Product, Gross National Product and National Income | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `016-MISCON` | Define Gross Domestic Product, Gross National Product and National Income | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-029 (1 examiner statements): GDP versus GNP |
 | `004-FEATURE` | Describe the different methods of calculating the national income | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `005-DIST` | Describe the different methods of calculating the national income | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Describe the different methods of calculating the national income | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -61,6 +60,7 @@
 | `013-DEF` | Output method | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `014-DEF` | Income method | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `015-DEF` | Expenditure method | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `016-MISCON` | Define Gross Domestic Product, Gross National Product and National Income | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-029 (1 examiner statements): GDP versus GNP |
 
 ## Performance tasks
 

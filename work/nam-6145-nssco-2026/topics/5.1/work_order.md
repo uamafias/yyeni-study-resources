@@ -1,36 +1,37 @@
 # Work order — 5.1 The private firm as producer and employer
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-4 assessable objectives · 17 planned items · 1 content units
+5 assessable objectives · 18 planned items · 1 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 31% | 39.0% |
-| B | 62% | 25.5% |
-| C | 8% | 35.5% |
+| A | 36% | 39.0% |
+| B | 57% | 25.5% |
+| C | 7% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 30% | 39.0% |
+| A | 32% | 39.0% |
 | B | 30% | 25.5% |
-| C | 40% | 35.5% |
+| C | 39% | 35.5% |
 
-96 marks-equivalent of practice in this topic.
+98 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 31% in this topic (4 objectives against 13 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 36% in this topic (5 objectives against 14 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-5.1** — sub-topic 5.1, 4 objectives, 1100–1580 words
+**CU-6145-5.1** — sub-topic 5.1, 5 objectives, 1100–1580 words
 - `OBJ-6145-5.1-01` tier 3 — Describe and analyse the principle of profit maximisation as a goal
 - `OBJ-6145-5.1-02` tier 2 — Define production
 - `OBJ-6145-5.1-03` tier 3 — Describe what determines the demand for factors of production
 - `OBJ-6145-5.1-04` tier 4 — Analyse particular situations to show the effects of substituting one factor for another
+- `OBJ-6145-5.1-05` tier 1 — Value added
 
 ## Item slots
 
@@ -42,13 +43,14 @@
 | `004-DEF` | Define production | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-FEATURE` | Define production | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `006-APP` | Define production | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `013-MISCON` | Define production | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-020 (2 examiner statements): Production versus productivity |
 | `007-DEF` | Describe what determines the demand for factors of production | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `008-CHAIN` | Describe what determines the demand for factors of production | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-APP` | Describe what determines the demand for factors of production | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `010-BEN` | Analyse particular situations to show the effects of substituting one factor for another | BEN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `011-LIM` | Analyse particular situations to show the effects of substituting one factor for another | LIM | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `012-EVAL` | Analyse particular situations to show the effects of substituting one factor for another | EVAL | C | Evaluate | 8 | instructs with Evaluate, which this objective carries |
+| `013-MISCON` | Define production | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-020 (2 examiner statements): Production versus productivity |
+| `014-DEF` | Value added | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

@@ -17,9 +17,9 @@
       ],
       "difficulty": 2,
       "prompt": "Define scarcity in economics.",
-      "canonical_answer": "Resources are limited relative to the wants people seek to satisfy.",
+      "canonical_answer": "Scarcity is the situation in which limited resources are not enough to satisfy unlimited human wants, so choices must be made.",
       "marking_guidance": [
-        "Meaning: resources are limited (1). Distinguishing feature: those resources cannot satisfy the competing wants (1)."
+        "Meaning: resources are limited (1). Distinguishing feature: wants are unlimited, so not all can be satisfied and choices are needed (1)."
       ],
       "context": {
         "sector": null,
@@ -37,9 +37,11 @@
       "command_word": "Define",
       "mark_tariff": 2,
       "claims_seen": {
-        "CL-6145-1.1-01": 1
+        "CL-6145-1.1-01": 2
       },
-      "authored_hash": "75434bdd12d5c3eb4772e3d4f7bb3646ded32d1dced7198fcb94dd1d48415487"
+      "authored_hash": "143be0c8a8d9fec76369a9d602f372b4f35aad3c56b3cf6a74675e9a54e601c6",
+      "prior_hash": "75434bdd12d5c3eb4772e3d4f7bb3646ded32d1dced7198fcb94dd1d48415487",
+      "repair_note": "Step-6 Claude review: added standard examined content (named points, definitions, lists) missing from notes; corrected definition cards and template-garbled answers; removed author/tooling wording and invented/original labels."
     },
     {
       "item_id": "ITEM-6145-1.1-002-WHY",
@@ -77,10 +79,12 @@
       "command_word": "Explain",
       "mark_tariff": 2,
       "claims_seen": {
-        "CL-6145-1.1-01": 1,
+        "CL-6145-1.1-01": 2,
         "CL-6145-1.1-02": 1
       },
-      "authored_hash": "c7c41331259207203275fa78e6249a52ca4ebf33e839423ef8ec4efe0867dd4e"
+      "authored_hash": "c7c41331259207203275fa78e6249a52ca4ebf33e839423ef8ec4efe0867dd4e",
+      "prior_hash": "c7c41331259207203275fa78e6249a52ca4ebf33e839423ef8ec4efe0867dd4e",
+      "reviewed_unchanged": "Re-read after step-6 revision of CL-6145-1.1-01; this text needed no change."
     },
     {
       "item_id": "ITEM-6145-1.1-003-APP",
@@ -118,10 +122,12 @@
       "command_word": "Explain",
       "mark_tariff": 2,
       "claims_seen": {
-        "CL-6145-1.1-01": 1,
+        "CL-6145-1.1-01": 2,
         "CL-6145-1.1-02": 1
       },
-      "authored_hash": "b639d4f6bcb42ed393f826107661bd4ae8e1775133abac419cbb1f3fd56ab9b1"
+      "authored_hash": "b639d4f6bcb42ed393f826107661bd4ae8e1775133abac419cbb1f3fd56ab9b1",
+      "prior_hash": "b639d4f6bcb42ed393f826107661bd4ae8e1775133abac419cbb1f3fd56ab9b1",
+      "reviewed_unchanged": "Re-read after step-6 revision of CL-6145-1.1-01; this text needed no change."
     },
     {
       "item_id": "ITEM-6145-1.1-010-MISCON",
@@ -159,11 +165,13 @@
       "command_word": "Explain",
       "mark_tariff": 2,
       "claims_seen": {
-        "CL-6145-1.1-01": 1,
+        "CL-6145-1.1-01": 2,
         "CL-6145-1.1-02": 1
       },
       "authored_hash": "a3a4b62acafd94052f9929abb47f765dfcb3f984f7a60ee5f6e13f245e1f9f9e",
-      "misconception_entry": "MISCON-6145-001"
+      "misconception_entry": "MISCON-6145-001",
+      "prior_hash": "a3a4b62acafd94052f9929abb47f765dfcb3f984f7a60ee5f6e13f245e1f9f9e",
+      "reviewed_unchanged": "Re-read after step-6 revision of CL-6145-1.1-01; this text needed no change."
     },
     {
       "item_id": "ITEM-6145-1.1-004-DEF",
@@ -420,6 +428,62 @@
       "authored_hash": "af919f7607a315ab86654b9cc8e64d06d3340402d8a5c2e32a81e84b23bb5bff"
     },
     {
+      "item_id": "ITEM-6145-1.1-011-PROC",
+      "objective_ids": [
+        "OBJ-6145-1.1-04"
+      ],
+      "claim_ids": [
+        "CL-6145-1.1-03",
+        "CL-6145-1.1-09",
+        "CL-6145-1.1-10"
+      ],
+      "item_type": "flashcard",
+      "subtype": "PROC",
+      "assessment_objectives": [
+        "B"
+      ],
+      "difficulty": 1,
+      "prompt": "A farming district fully and efficiently uses its fixed land, labour and equipment to produce maize and cattle. Its yearly production schedule is A (0 t maize, 80 cattle), B (50 t, 75), C (100 t, 60), D (150 t, 35) and E (200 t, 0). Use the schedule to draw the district's production possibility curve (PPC), with maize on the horizontal axis. Plot J (50 t, 40 cattle) and K (100 t, 80 cattle) and state what each shows. Show the change from C to D and state its opportunity cost (4).",
+      "canonical_answer": "Plot A (0, 80), B (50, 75), C (100, 60), D (150, 35) and E (200, 0), with maize (tonnes per year) on the horizontal axis and cattle (head per year) on the vertical axis, and join them with a smooth curve bowed outwards: this is the PPC. J (50, 40) lies inside the curve: resources are unemployed or used inefficiently, because 50 t of maize could be produced alongside 75 cattle. K (100, 80) lies outside the curve: it cannot be reached with the district's present resources and technology. Moving from C to D gives 50 t more maize (an arrow across from C) and 25 fewer cattle (an arrow down to D), so the opportunity cost of the extra 50 t of maize is 25 cattle. From B to C the same 50 t cost only 15 cattle; the cost rises because land and workers better suited to cattle are moved into maize.",
+      "marking_guidance": [
+        "Diagram: original schedule points A to E plotted on labelled axes and joined as one curve bowed outwards (1).",
+        "Labels: J inside the curve, identified as unemployed or inefficiently used resources (1).",
+        "Labels: K outside the curve, identified as unattainable with present resources and technology (1).",
+        "Change: movement from C to D shown as 50 t more maize and 25 fewer cattle, with the opportunity cost of the extra 50 t of maize stated as 25 cattle (1)."
+      ],
+      "context": {
+        "sector": "primary",
+        "business_size": null,
+        "ownership": null,
+        "situation": "A farming district choosing between maize and cattle production",
+        "facts": [
+          "A (0 t maize, 80 cattle)",
+          "B (50 t, 75 cattle)",
+          "C (100 t, 60 cattle)",
+          "D (150 t, 35 cattle)",
+          "E (200 t, 0 cattle)",
+          "J (50 t, 40 cattle)",
+          "K (100 t, 80 cattle)"
+        ]
+      },
+      "prerequisite_item_ids": [],
+      "core_status": "core",
+      "intentional_duplicate_group": null,
+      "provenance": "Claude visual authoring under approved 6145 revision-01; diagram rendered from diagrams/specs/ITEM-6145-1.1-011-PROC.json",
+      "blooms_level": "Apply",
+      "command_word": "Use",
+      "mark_tariff": 4,
+      "qa_status": "review_required",
+      "claims_seen": {
+        "CL-6145-1.1-03": 1,
+        "CL-6145-1.1-09": 1,
+        "CL-6145-1.1-10": 1
+      },
+      "authored_hash": "a630927a7621d1c6b08b91cc698ae18ef7b7ea0c0165ff729d86582ed26267f6",
+      "prior_hash": "d7905283a9aa8ecc9b94540e623c6db3b21434d7c3fe72cf261caef76bd6578e",
+      "repair_note": "Independent Codex visual review: state model assumptions, repair near-capacity premise and qualify employment claims; preserve geometry and slot labels."
+    },
+    {
       "item_id": "ITEM-6145-1.1-P01",
       "objective_ids": [
         "OBJ-6145-1.1-01",
@@ -464,7 +528,7 @@
       "command_word": "Describe",
       "mark_tariff": 20,
       "claims_seen": {
-        "CL-6145-1.1-01": 1,
+        "CL-6145-1.1-01": 2,
         "CL-6145-1.1-02": 1,
         "CL-6145-1.1-03": 1,
         "CL-6145-1.1-04": 1,
@@ -473,7 +537,9 @@
         "CL-6145-1.1-07": 1,
         "CL-6145-1.1-08": 1
       },
-      "authored_hash": "661f678d833ce129770cb46395a15350cb49dcc82dddee2182d8805f954255d1"
+      "authored_hash": "661f678d833ce129770cb46395a15350cb49dcc82dddee2182d8805f954255d1",
+      "prior_hash": "661f678d833ce129770cb46395a15350cb49dcc82dddee2182d8805f954255d1",
+      "reviewed_unchanged": "Re-read after step-6 revision of CL-6145-1.1-01; this text needed no change."
     },
     {
       "item_id": "ITEM-6145-1.1-P02",
@@ -518,7 +584,7 @@
       "command_word": "Define",
       "mark_tariff": 16,
       "claims_seen": {
-        "CL-6145-1.1-01": 1,
+        "CL-6145-1.1-01": 2,
         "CL-6145-1.1-02": 1,
         "CL-6145-1.1-03": 1,
         "CL-6145-1.1-04": 1,
@@ -526,7 +592,9 @@
         "CL-6145-1.1-06": 1,
         "CL-6145-1.1-08": 1
       },
-      "authored_hash": "3364727b12d48ef3088657fba32b52c8d0164fb92b429bec124ef95c64f77a34"
+      "authored_hash": "3364727b12d48ef3088657fba32b52c8d0164fb92b429bec124ef95c64f77a34",
+      "prior_hash": "3364727b12d48ef3088657fba32b52c8d0164fb92b429bec124ef95c64f77a34",
+      "reviewed_unchanged": "Re-read after step-6 revision of CL-6145-1.1-01; this text needed no change."
     },
     {
       "item_id": "ITEM-6145-1.1-P03",
@@ -553,7 +621,7 @@
         "C"
       ],
       "difficulty": 4,
-      "prompt": "An invented residents' association can use N$24,000 and its available volunteers either to install shade shelters at a meeting area or to repair a footpath. It cannot complete both this year. Older residents report difficulty using the damaged path; the meeting area is heavily used in summer. The cost figures include the resources needed for each complete project. (a) Define opportunity cost (2). (b) Explain how funding and volunteer time create constraints (4). (c) Explain what is sacrificed by selecting the shelters and why that sacrifice is not adequately described by the shelters' cash cost alone (7). (d) Discuss whether the association should choose the shelters (7).",
+      "prompt": "A residents' association can use N$24,000 and its available volunteers either to install shade shelters at a meeting area or to repair a footpath. It cannot complete both this year. Older residents report difficulty using the damaged path; the meeting area is heavily used in summer. The cost figures include the resources needed for each complete project. (a) Define opportunity cost (2). (b) Explain how funding and volunteer time create constraints (4). (c) Explain what is sacrificed by selecting the shelters and why that sacrifice is not adequately described by the shelters' cash cost alone (7). (d) Discuss whether the association should choose the shelters (7).",
       "canonical_answer": "(a) The value of the next-best feasible alternative forgone. (b) The budget supports one project, not the combination; volunteer hours committed to one project cannot perform the competing work in that period. (c) The selected shelters provide a meeting-area benefit. The next-best footpath repair is rejected. Residents lose the improvement in access that repair could deliver. This is a valuable service even without a sale. Spending N$24,000 names a payment, not that forgone service. The comparison concerns this year's constrained choice, assuming the projects are feasible; later resources may allow another decision. (d) Shelters can improve comfort and the usefulness of an already popular space. Footpath repair addresses reported access difficulties and may particularly help older residents. Choose according to the severity, timing and available substitutes for these needs. Prioritise the footpath if the damage is a serious barrier and shelter alternatives exist; prioritise shelters if path access is manageable and summer use is urgent.",
       "marking_guidance": [
         "Context/parts/allocation: (a) rejected benefit 1 and next-best qualifier 1. (b) funding constraint/effect 2 and volunteer-time constraint/effect 2. (c) mechanism: chosen benefit 1, next-best footpath use 1, lost access benefit 1, non-cash relevance 1, payment-versus-sacrifice distinction 1, year constraint 1, feasible or changed-resource qualification 1. (d) developed argument for 3, developed argument against 3, supported judgement 1. Total 20."
@@ -574,7 +642,7 @@
       "command_word": "Define",
       "mark_tariff": 20,
       "claims_seen": {
-        "CL-6145-1.1-01": 1,
+        "CL-6145-1.1-01": 2,
         "CL-6145-1.1-02": 1,
         "CL-6145-1.1-03": 1,
         "CL-6145-1.1-04": 1,
@@ -583,7 +651,10 @@
         "CL-6145-1.1-07": 1,
         "CL-6145-1.1-08": 1
       },
-      "authored_hash": "b14eb9603f788d25662855425956033f098f52b6c14094d786e6a5780e874b4b"
+      "authored_hash": "1be28283e5d8d7cb3914dd194bf79f6064fcaa4900df910b335d60199947a16f",
+      "prior_hash": "b14eb9603f788d25662855425956033f098f52b6c14094d786e6a5780e874b4b",
+      "reviewed_unchanged": "Re-read after step-6 revision of CL-6145-1.1-01; this text needed no change.",
+      "repair_note": "Step-6 Claude review: added standard examined content (named points, definitions, lists) missing from notes; corrected definition cards and template-garbled answers; removed author/tooling wording and invented/original labels."
     },
     {
       "item_id": "ITEM-6145-1.1-P04",

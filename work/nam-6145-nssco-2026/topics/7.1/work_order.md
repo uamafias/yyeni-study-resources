@@ -1,35 +1,36 @@
 # Work order — 7.1 Prices
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-6 assessable objectives · 17 planned items · 2 content units
+7 assessable objectives · 18 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 50% | 39.0% |
-| B | 50% | 25.5% |
+| A | 53% | 39.0% |
+| B | 47% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 37% | 39.0% |
-| B | 30% | 25.5% |
-| C | 33% | 35.5% |
+| A | 39% | 39.0% |
+| B | 29% | 25.5% |
+| C | 32% | 35.5% |
 
-91 marks-equivalent of practice in this topic.
+93 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 43% in this topic (6 objectives against 14 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 47% in this topic (7 objectives against 15 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-7.1** — sub-topic 7.1, 3 objectives, 795–1140 words
+**CU-6145-7.1** — sub-topic 7.1, 4 objectives, 795–1140 words
 - `OBJ-6145-7.1-01` tier 3 — Define retail price index and show its simple calculation
 - `OBJ-6145-7.1-02` tier 2 — Describe different types of inflation
 - `OBJ-6145-7.1-03` tier 3 — Discuss the consequences of inflation
+- `OBJ-6145-7.1-04` tier 1 — Inflation
 
 **CU-6145-7.1.2** — sub-topic 7.1.2, 3 objectives, 795–1140 words
 - `OBJ-6145-7.1.2-01` tier 1 — Demand-pull inflation
@@ -53,6 +54,7 @@
 | `011-DEF` | Demand-pull inflation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `012-DEF` | Cost-push inflation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `013-DEF` | Monetary inflation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `014-DEF` | Inflation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

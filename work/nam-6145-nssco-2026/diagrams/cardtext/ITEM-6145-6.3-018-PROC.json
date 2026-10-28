@@ -1,0 +1,134 @@
+{
+  "item_id": "ITEM-6145-6.3-018-PROC",
+  "topic_id": "6.3",
+  "unit_id": "CU-6145-6.3",
+  "new_card": true,
+  "new_claims": [
+    {
+      "claim_id": "CL-6145-6.3-15",
+      "objective_ids": [
+        "OBJ-6145-6.3-07"
+      ],
+      "text": "A minimum price set above the equilibrium price is binding: neither demand nor supply shifts, quantity supplied exceeds quantity demanded at the controlled price, and the surplus is offered but not bought unless the government or another buyer purchases it.",
+      "claim_type": "causal",
+      "provenance": "source_synthesised",
+      "evidence": [
+        {
+          "source_id": "NIED-6145-2018",
+          "locator": "PDF p.13; OBJ-6145-6.3-02 (explain how the government controls production of goods and services); OBJ-6145-6.3-07",
+          "support_type": "derivation"
+        }
+      ],
+      "derived_from_claim_ids": [
+        "CL-6145-6.3-04"
+      ],
+      "verification": {
+        "status": "unverified",
+        "method": "Claude visual authoring under revision-01; independent Codex review pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "confidence": 0.85
+      },
+      "publishable": false,
+      "revision": 1
+    },
+    {
+      "claim_id": "CL-6145-6.3-16",
+      "objective_ids": [
+        "OBJ-6145-6.3-07"
+      ],
+      "text": "If supply is 200, 300, 400 and 500 bags a week and demand 400, 300, 200 and 100 bags at N$150, N$200, N$250 and N$300, the equilibrium is N$200 and 300 bags; a minimum price of N$250 gives a surplus of 200 bags, with 400 offered and 200 bought.",
+      "claim_type": "factual",
+      "provenance": "source_synthesised",
+      "evidence": [
+        {
+          "source_id": "NIED-6145-2018",
+          "locator": "PDF p.13; OBJ-6145-6.3-02 (explain how the government controls production of goods and services); OBJ-6145-6.3-07",
+          "support_type": "derivation"
+        }
+      ],
+      "derived_from_claim_ids": [],
+      "verification": {
+        "status": "unverified",
+        "method": "Claude visual authoring under revision-01; independent Codex review pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "confidence": 0.85
+      },
+      "publishable": false,
+      "revision": 1
+    }
+  ],
+  "unit_objectives": [
+    "OBJ-6145-6.3-07"
+  ],
+  "blocks": [
+    {
+      "op": "insert_after",
+      "anchor": "CU-6145-6.3-B06",
+      "block": {
+        "block_id": "CU-6145-6.3-B07",
+        "block_type": "worked_application",
+        "heading": "A minimum price on a diagram",
+        "claim_ids": [
+          "CL-6145-6.3-15",
+          "CL-6145-6.3-16"
+        ],
+        "text": "With mahangu at an equilibrium of N$200 and 300 bags a week, a minimum price of N$250 raises quantity supplied to 400 but cuts quantity demanded to 200: farmers offer 400 bags but sell 200, a surplus of 200.\n\n![Minimum price on mahangu](diagrams/item-6145-6.3-018-proc-answer.png)",
+        "context_tags": [
+          "Namibia",
+          "agriculture",
+          "price controls",
+          "diagram"
+        ],
+        "assessment_objectives": [
+          "A",
+          "B"
+        ]
+      }
+    }
+  ],
+  "item": {
+    "item_id": "ITEM-6145-6.3-018-PROC",
+    "objective_ids": [
+      "OBJ-6145-6.3-07"
+    ],
+    "claim_ids": [
+      "CL-6145-6.3-04",
+      "CL-6145-6.3-15",
+      "CL-6145-6.3-16"
+    ],
+    "item_type": "flashcard",
+    "subtype": "PROC",
+    "assessment_objectives": [
+      "B"
+    ],
+    "difficulty": 1,
+    "prompt": "Farmers supply 200, 300, 400 and 500 bags of mahangu (pearl millet) a week at N$150, N$200, N$250 and N$300 a bag, and buyers demand 400, 300, 200 and 100 bags at those prices, as in the diagram. To protect farmers' incomes, the government sets a minimum price of N$250 a bag. Use the diagram to show the original equilibrium, the minimum price and its effect on the market (4).",
+    "canonical_answer": "The original equilibrium E, where D meets S, is N$200 a bag and 300 bags a week. Draw the minimum price as a horizontal line at N$250, above the equilibrium price, so it is binding. Neither curve shifts: at N$250 quantity supplied, read off S, is 400 bags and quantity demanded, read off D, is 200 bags. Supply exceeds demand, so there is a surplus of 200 bags a week. Farmers offer 400 bags but only 200 are bought, fewer than the 300 sold before; the surplus stays unsold unless the government or another buyer purchases it.",
+    "marking_guidance": [
+      "Diagram: original equilibrium E labelled where D meets S, at N$200 a bag and 300 bags a week (1).",
+      "Labels: minimum price drawn as a horizontal line at N$250, above the equilibrium price, with neither curve shifted (1).",
+      "Labels: quantity demanded 200 (on D) and quantity supplied 400 (on S) at N$250 (1).",
+      "Change: surplus of 200 bags a week; farmers offer 400 bags but sell only 200 (1)."
+    ],
+    "context": {
+      "sector": "primary",
+      "business_size": null,
+      "ownership": "private",
+      "situation": "The government sets a floor price for mahangu to protect farmers' incomes",
+      "facts": [
+        "Supply: 200, 300, 400, 500 bags a week at N$150, N$200, N$250, N$300",
+        "Demand: 400, 300, 200, 100 bags a week at those prices",
+        "Minimum price N$250 a bag"
+      ]
+    },
+    "prerequisite_item_ids": [],
+    "core_status": "core",
+    "intentional_duplicate_group": null,
+    "provenance": "Claude visual authoring under approved 6145 revision-01; diagram rendered from diagrams/specs/ITEM-6145-6.3-018-PROC.json",
+    "blooms_level": "Apply",
+    "command_word": "Use",
+    "mark_tariff": 4
+  }
+}

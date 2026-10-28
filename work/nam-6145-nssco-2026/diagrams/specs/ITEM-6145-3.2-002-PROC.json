@@ -1,0 +1,303 @@
+{
+  "item_id": "ITEM-6145-3.2-002-PROC",
+  "topic_id": "3.2",
+  "existing_card": true,
+  "preserved_item_authored_hash": "5ac1f6f4411565538e3ace3cf486b5773338cd10d951e325e4a20332606d4e1e",
+  "model": {
+    "name": "Demand and supply schedules plotted as curves, with movements along both",
+    "status": "uses the existing card's data unchanged; straight lines through the three given points",
+    "equations": {
+      "D": "Q = 120 - 5P",
+      "S": "Q = 5P"
+    },
+    "units": {
+      "x": "units per week",
+      "y": "N$ per unit"
+    },
+    "points": {
+      "D": [
+        [
+          80,
+          8
+        ],
+        [
+          60,
+          12
+        ],
+        [
+          40,
+          16
+        ]
+      ],
+      "S": [
+        [
+          40,
+          8
+        ],
+        [
+          60,
+          12
+        ],
+        [
+          80,
+          16
+        ]
+      ]
+    },
+    "change": "price rises from N$8 to N$16: quantity demanded 80 to 40 along D; quantity supplied 40 to 80 along S",
+    "assumptions": [
+      "Only the product's own price changes, so both changes are movements along unchanged curves."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "canvas": [
+      1000,
+      400
+    ],
+    "title": "Demand and supply schedule",
+    "description": "Table: at prices of N$8, N$12 and N$16 a unit, weekly demand is 80, 60 and 40 units and weekly supply is 40, 60 and 80 units. Instruction to draw D and S on labelled axes and show the change along both curves when price rises from N$8 to N$16.",
+    "static": [
+      {
+        "type": "table",
+        "id": "schedule",
+        "px": [
+          60,
+          80
+        ],
+        "col_widths": [
+          340,
+          160,
+          160,
+          160
+        ],
+        "row_height": 54,
+        "size": 28,
+        "title": "Weekly demand and supply",
+        "header": [
+          "Price (N$ per unit)",
+          "8",
+          "12",
+          "16"
+        ],
+        "rows": [
+          [
+            "Demand (units)",
+            "80",
+            "60",
+            "40"
+          ],
+          [
+            "Supply (units)",
+            "40",
+            "60",
+            "80"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          60,
+          300
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "Draw D and S on labelled axes. Show the change along",
+          "both curves when price rises from N$8 to N$16."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Demand and supply curves with movements along both curves",
+    "description": "Price (N$ per unit) on the vertical axis and quantity (units per week) on the horizontal axis. D slopes down through (80, N$8), (60, N$12) and (40, N$16); S slopes up through (40, N$8), (60, N$12) and (80, N$16). Arrows along the curves show the price rise from N$8 to N$16: up-left along D (80 to 40 units) and up-right along S (40 to 80 units).",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          62
+        ],
+        "size": 27,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "D through (80, N$8), (60, N$12), (40, N$16): slopes down",
+          "S through (40, N$8), (60, N$12), (80, N$16): slopes up",
+          "N$8 to N$16: quantity demanded 80 to 40 along D,",
+          "quantity supplied 40 to 80 along S"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          238
+        ],
+        "size": 27,
+        "weight": "bold",
+        "halo": false,
+        "text": "A change in the product's own price moves along the curves."
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "ds",
+      "sides": [
+        "answer"
+      ],
+      "frame": [
+        150,
+        360,
+        690,
+        530
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 110,
+          "ticks": [
+            0,
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "title": "Quantity (units per week)"
+        },
+        "y": {
+          "min": 0,
+          "max": 21,
+          "ticks": [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "title": "Price (N$ per unit)"
+        }
+      },
+      "answer": [
+        {
+          "type": "curve",
+          "id": "D",
+          "kind": "x_of_y",
+          "expr": "120 - 5*y",
+          "domain": [
+            5,
+            19
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D",
+            "at": [
+              95,
+              5
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "5*y",
+          "domain": [
+            5,
+            19
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              95,
+              19
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "along-D",
+          "from": [
+            80,
+            8
+          ],
+          "to": [
+            40,
+            16
+          ],
+          "trim": [
+            14,
+            14
+          ]
+        },
+        {
+          "type": "arrow",
+          "id": "along-S",
+          "from": [
+            40,
+            8
+          ],
+          "to": [
+            80,
+            16
+          ],
+          "trim": [
+            14,
+            14
+          ]
+        },
+        {
+          "type": "point",
+          "id": "D8",
+          "at": [
+            80,
+            8
+          ],
+          "guides": "y"
+        },
+        {
+          "type": "point",
+          "id": "D16",
+          "at": [
+            40,
+            16
+          ],
+          "guides": "x"
+        },
+        {
+          "type": "point",
+          "id": "S8",
+          "at": [
+            40,
+            8
+          ]
+        },
+        {
+          "type": "point",
+          "id": "S16",
+          "at": [
+            80,
+            16
+          ],
+          "guides": true
+        }
+      ]
+    }
+  ]
+}

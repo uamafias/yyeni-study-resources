@@ -1,15 +1,15 @@
 # Work order — 3.3 Price elasticity
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-7 assessable objectives · 22 planned items · 3 content units
+9 assessable objectives · 26 planned items · 3 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 28% | 39.0% |
-| B | 72% | 25.5% |
+| A | 32% | 39.0% |
+| B | 68% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
@@ -17,19 +17,21 @@
 | AO | planned | syllabus weight |
 |---|---:|---:|
 | A | 30% | 39.0% |
-| B | 41% | 25.5% |
-| C | 29% | 35.5% |
+| B | 44% | 25.5% |
+| C | 26% | 35.5% |
 
-104 marks-equivalent of practice in this topic.
+116 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 39% in this topic (7 objectives against 18 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 41% in this topic (9 objectives against 22 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-3.3** — sub-topic 3.3, 3 objectives, 792–1135 words
+**CU-6145-3.3** — sub-topic 3.3, 5 objectives, 792–1135 words
 - `OBJ-6145-3.3-01` tier 2 — Define price elasticity of demand and supply
 - `OBJ-6145-3.3-02` tier 3 — Discuss and apply price elasticity of demand and supply
 - `OBJ-6145-3.3-03` tier 3 — Perform simple calculations of elasticity and inelasticity of demand and supply
+- `OBJ-6145-3.3-04` tier 1 — Demand elasticity diagrams
+- `OBJ-6145-3.3-05` tier 1 — Supply elasticity diagrams
 
 **CU-6145-3.3.1** — sub-topic 3.3.1, 2 objectives, 528–757 words
 - `OBJ-6145-3.3.1-01` tier 1 — Price elasticity of demand
@@ -46,11 +48,9 @@
 | `001-DEF` | Define price elasticity of demand and supply | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-FEATURE` | Define price elasticity of demand and supply | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `003-APP` | Define price elasticity of demand and supply | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `018-MISCON` | Define price elasticity of demand and supply | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-018 (2 examiner statements): Perfectly inelastic versus merely inelastic demand |
 | `004-DEF` | Discuss and apply price elasticity of demand and supply | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-MECH` | Discuss and apply price elasticity of demand and supply | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Discuss and apply price elasticity of demand and supply | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `017-MISCON` | Discuss and apply price elasticity of demand and supply | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-017 (1 examiner statements): Price elastic versus price inelastic demand |
 | `007-INTERP` | Perform simple calculations of elasticity and inelasticity of demand and supply | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `008-APP` | Perform simple calculations of elasticity and inelasticity of demand and supply | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-DEF` | Price elasticity of demand | DEF | A | Define | 2 | instructs with Define, which this objective carries |
@@ -61,6 +61,12 @@
 | `014-CALC` | Calculation of price elasticity of supply | CALC | B | Calculate | 1 | instructs with Calculate, which this objective carries |
 | `015-INTERP` | Calculation of price elasticity of supply | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `016-APP` | Calculation of price elasticity of supply | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
+| `017-MISCON` | Discuss and apply price elasticity of demand and supply | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-017 (1 examiner statements): Price elastic versus price inelastic demand |
+| `018-MISCON` | Define price elasticity of demand and supply | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-018 (2 examiner statements): Perfectly inelastic versus merely inelastic demand |
+| `019-PROC` | Demand elasticity diagrams | PROC | B | Use | 4 | instructs with Use, which this objective carries |
+| `020-PROC` | Supply elasticity diagrams | PROC | B | Use | 4 | instructs with Use, which this objective carries |
+| `021-WHY` | Calculation of price elasticity of demand | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
+| `022-WHY` | Calculation of price elasticity of supply | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 

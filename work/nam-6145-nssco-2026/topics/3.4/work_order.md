@@ -1,6 +1,6 @@
 # Work order — 3.4 Advertising
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 4 assessable objectives · 12 planned items · 2 content units
 

@@ -1,0 +1,73 @@
+{
+  "item_id": "ITEM-6145-6.3-019-PROC",
+  "topic_id": "6.3",
+  "model": {
+    "name": "Binding minimum wage in a competitive labour market for security guards",
+    "status": "illustrative: invented schedules generated from declared linear equations; example rates, not Namibia's legal minimum wage",
+    "equations": {"D (labour demanded)": "L = 900 - 20W", "S (labour supplied)": "L = 20W - 100"},
+    "units": {"x": "security guards", "y": "N$ per hour"},
+    "schedule": {"wage": [20, 25, 30, 35], "labour_demanded": [500, 400, 300, 200], "labour_supplied": [300, 400, 500, 600]},
+    "equilibrium": [400, 25],
+    "control": {"type": "minimum wage", "level": 30, "labour_demanded": 300, "labour_supplied": 500, "excess_supply": 200,
+                "employment": 300, "jobs_lost_vs_equilibrium": 100},
+    "assumptions": [
+      "Basic competitive labour market: many employers, none able to set the wage alone.",
+      "The minimum wage is above the equilibrium wage, so it is binding; a floor below N$25 would have no effect.",
+      "The floor does not shift labour demand or labour supply; employment equals labour demanded at the floor.",
+      "The result is specific to this model; it is not a claim that every minimum wage reduces employment."
+    ]
+  },
+  "canvas": [1000, 1010],
+  "question": {
+    "title": "Competitive labour market for security guards before a minimum wage",
+    "description": "Labour demand curve D and labour supply curve S for security guards, with wage (N$ per hour) vertically and quantity of labour (guards) horizontally. Text states that the government sets a minimum wage of N$30 an hour.",
+    "static": [
+      {"type": "text", "px": [40, 70], "size": 30, "weight": "bold", "halo": false, "text": "Competitive labour market: security guards"},
+      {"type": "text", "px": [40, 128], "size": 28, "halo": false, "leading": 40,
+       "text": ["The government sets a minimum wage", "of N$30 an hour."]}
+    ]
+  },
+  "answer": {
+    "title": "Binding minimum wage creates an excess supply of labour in the competitive model",
+    "description": "Original equilibrium E at N$25 an hour and 400 guards. A minimum wage of N$30, above equilibrium, is drawn as a horizontal line. Neither curve shifts: at N$30 firms want 300 guards (on D) and 500 people want to work (on S), an excess supply of labour of 200. In this model employment falls from 400 to 300.",
+    "static": [
+      {"type": "text", "px": [40, 62], "size": 27, "halo": false, "leading": 40,
+       "text": ["E (original): N$25 an hour, 400 guards",
+                "At the N$30 minimum wage: firms want 300, 500 want work",
+                "Excess supply of labour = 500 − 300 = 200",
+                "In this competitive model, employment falls 400 to 300"]},
+      {"type": "text", "px": [40, 238], "size": 27, "weight": "bold", "halo": false,
+       "text": "Neither curve shifts: read both quantities off D and S."}
+    ]
+  },
+  "panels": [
+    {
+      "id": "minwage",
+      "frame": [150, 360, 690, 530],
+      "axes": {
+        "grid": true,
+        "x": {"min": 0, "max": 750, "ticks": [0, 100, 200, 300, 400, 500, 600, 700], "title": "Quantity of labour (guards)"},
+        "y": {"min": 0, "max": 45, "ticks": [0, 5, 10, 15, 20, 25, 30, 35, 40], "title": "Wage (N$ per hour)"}
+      },
+      "question": [
+        {"type": "curve", "id": "D", "kind": "x_of_y", "expr": "900 - 20*y", "domain": [10, 40], "style": "demand",
+         "label": {"text": "D", "at": [700, 10], "dx": 12, "dy": 8}},
+        {"type": "curve", "id": "S", "kind": "x_of_y", "expr": "20*y - 100", "domain": [10, 40], "style": "supply",
+         "label": {"text": "S", "at": [700, 40], "dx": 12, "dy": 8}}
+      ],
+      "answer": [
+        {"type": "curve", "id": "D", "kind": "x_of_y", "expr": "900 - 20*y", "domain": [10, 40], "style": "demand",
+         "label": {"text": "D", "at": [700, 10], "dx": 12, "dy": 8}},
+        {"type": "curve", "id": "S", "kind": "x_of_y", "expr": "20*y - 100", "domain": [10, 40], "style": "supply",
+         "label": {"text": "S", "at": [700, 40], "dx": 12, "dy": 8}},
+        {"type": "hline", "id": "min-wage", "y": 30, "from_x": 0, "to_x": 750, "style": "control",
+         "label": {"text": "Minimum wage N$30", "x": 750, "dx": 150, "dy": -12, "anchor": "end", "size": 24}},
+        {"type": "point", "id": "E", "at": [400, 25], "guides": true, "label": {"text": "E", "dx": 0, "dy": 38, "anchor": "middle"}},
+        {"type": "point", "id": "Ld", "at": [300, 30], "guides": true},
+        {"type": "point", "id": "Ls", "at": [500, 30], "guides": true},
+        {"type": "span", "id": "excess", "y": 30, "x1": 300, "x2": 500, "offset_px": -44,
+         "label": {"text": "Excess supply 200", "dy": -14, "size": 24}}
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Work order — 1.2 Types of economic systems and economic resources
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 10 assessable objectives · 22 planned items · 3 content units
 
@@ -49,8 +49,6 @@
 | `001-FEATURE` | Describe the factors of production (land, labour, capital, entrepreneurship) | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `002-DIST` | Describe the factors of production (land, labour, capital, entrepreneurship) | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Describe the factors of production (land, labour, capital, entrepreneurship) | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `017-MISCON` | Describe the factors of production (land, labour, capital, entrepreneurship) | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-023 (1 examiner statements): Labour versus entrepreneurship |
-| `018-MISCON` | Describe the factors of production (land, labour, capital, entrepreneurship) | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-036 (1 examiner statements): Economic investment versus a financial deposit |
 | `004-DEF` | Explain allocation of resources in market, planned and mixed economic systems | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-DIST` | Explain allocation of resources in market, planned and mixed economic systems | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Explain allocation of resources in market, planned and mixed economic systems | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -64,6 +62,8 @@
 | `014-DEF` | Market economic system | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `015-DEF` | Planned economic system | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `016-DEF` | Mixed economic system | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `017-MISCON` | Describe the factors of production (land, labour, capital, entrepreneurship) | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-023 (1 examiner statements): Labour versus entrepreneurship |
+| `018-MISCON` | Describe the factors of production (land, labour, capital, entrepreneurship) | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-036 (1 examiner statements): Economic investment versus a financial deposit |
 
 ## Performance tasks
 

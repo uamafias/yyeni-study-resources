@@ -1,0 +1,15 @@
+# Paste into Claude — 6145 nonvisual cross-review
+
+You are the **Reviewer** for `work/nam-6145-nssco-2026/` in `/Users/professor/Documents/YYeni Study Resources`. Vitalis authorised the approved revision-01 nonvisual additions and budget repairs. Codex has finished authoring; please independently cross-review that work now.
+
+Read `AGENTS.md`, `TEAM-PLAYBOOK.md` and only the Reviewer role brief. Start with `review/nonvisual-authoring-completion-6145.md`, then read `review/nonvisual-review-packet-6145.md` in full. It contains all 37 new cards, the approved internal-growth retarget of `ITEM-6145-5.4-013-DEF`, 69 new claims and before/after text for all 21 changed notes blocks. The exact mapping, start snapshot, six claim clarifications, checks and reconciliation are beside the report.
+
+Read the official syllabus before consulting assessment sources. Check accuracy, scope, named examinable points, self-contained prompts, AO/Bloom fit, tariffs and concrete mark allocations; independently recompute the examples. Check that notes actually teach each answer, not merely cite its claim. In particular, check that trimming 3.1, 3.5 and 6.1.1 retained every substantive named point, that total/average revenue guidance awards two distinct components, and that elasticity, central-bank lending, share issues, subsidies and dependency measures carry their necessary conditions.
+
+The current author checkpoint is 625/625 items, 513 flashcards + 112 packages, all 28 topics PUBLISH and all 63 unit budgets passing. C-18 warnings and C-35/C-41/C-43 not_run remain. All 587 other existing items and all pre-existing claims are unchanged. All 12 accepted visual cards and 48 image/master hashes remain unchanged: preserve those accepted artefacts. Scope, contracts and work orders are fixed. Keep unrelated 0455 changes untouched.
+
+Fix confirmed defects in the canonical 6145 files within this review scope, record findings and fixes, reconcile claim revisions/claims_seen/stamps, render changed notes and rerun the affected checks. Then verify all 28 topics and all 625 slots, the copied-wording scan, and the accepted visual hashes. Do not run any old bootstrap, authoring, `apply_card_text.py` or one-shot authoring scripts; they can overwrite review fixes. Read the completion audit as author-checkpoint evidence: any new reviewer changes need their own reconciliation record.
+
+Please write `review/step6-nonvisual-crossreview-6145.md` with a clear verdict and update STATUS. The complete scratch export is at `/private/tmp/6145-nonvisual-complete-review`; the real publication remains the earlier 580-item package. After a favourable verdict, publish the full subject with `python3 work/nam-6145-nssco-2026/diagrams/publish_6145_with_diagrams.py` and reconcile all 625 exports and asset references. Do not use an incomplete-build override for the real publication.
+
+Do not upload assets, import into YYeni, commit or push. Leave the revision-01 Git and human “verdict read” checkpoints for Vitalis. Report the verdict, actual changes, final counts/check limitations and publication result.

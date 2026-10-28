@@ -1,0 +1,937 @@
+{
+  "manifest": "6145 diagram cards, revision-01",
+  "workspace": "work/nam-6145-nssco-2026",
+  "paths_are_relative_to": "work/nam-6145-nssco-2026",
+  "upload_status": "not uploaded; managed asset IDs are assigned at the later teacher-approved import",
+  "items": {
+    "ITEM-6145-1.1-011-PROC": {
+      "topic_id": "1.1",
+      "target": "Production possibility curve",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-1.1-011-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-1.1-011-PROC.json",
+      "model": {
+        "name": "Production possibility curve for a farming district",
+        "status": "illustrative: an invented schedule generated from a declared equation, not observed data",
+        "equation": "cattle = 80 - maize^2/500, for 0 <= maize <= 200",
+        "units": {
+          "x": "tonnes of maize per year",
+          "y": "head of cattle per year"
+        },
+        "assumptions": [
+          "All the district's land, labour and equipment are fully and efficiently used on the curve.",
+          "Resources and technology are fixed for the period.",
+          "Land and workers are not equally suited to maize and cattle, so the curve is bowed outwards (increasing opportunity cost)."
+        ],
+        "schedule": {
+          "A": [
+            0,
+            80
+          ],
+          "B": [
+            50,
+            75
+          ],
+          "C": [
+            100,
+            60
+          ],
+          "D": [
+            150,
+            35
+          ],
+          "E": [
+            200,
+            0
+          ]
+        },
+        "extra_points": {
+          "J": [
+            50,
+            40
+          ],
+          "K": [
+            100,
+            80
+          ]
+        },
+        "movement": {
+          "from": "C",
+          "to": "D",
+          "maize_gained": 50,
+          "cattle_forgone": 25
+        }
+      },
+      "question": {
+        "png": "topics/1.1/diagrams/item-6145-1.1-011-proc-question.png",
+        "svg_master": "topics/1.1/diagrams/item-6145-1.1-011-proc-question.svg",
+        "png_sha256": "5539ac9cad559eaa0bb03e6caa2b60f6e751b54a9d463d8f71fe8256262bff07",
+        "svg_sha256": "3abf2ef40f1b36c5f96452dd61616fff8e0afa4efd4059f96fc657fa3d8cbdd9",
+        "title": "Production schedule and blank axes for a farming district",
+        "alt_text": "Table of five production combinations A to E of maize and cattle per year, the coordinates of two further points J (50 t, 40 cattle) and K (100 t, 80 cattle), and empty axes with maize (tonnes per year) horizontally and cattle (head per year) vertically.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/1.1/diagrams/item-6145-1.1-011-proc-answer.png",
+        "svg_master": "topics/1.1/diagrams/item-6145-1.1-011-proc-answer.svg",
+        "png_sha256": "a4a881a4944df7d3cd51d1cd85bc42a234b514b8cfb5a7ac26da6e8701811a06",
+        "svg_sha256": "61a02aa774a7914f43e03cdd017efc1fbabcb45b1ee4d52f86e0806d3eebd5aa",
+        "title": "Production possibility curve with points J and K and the movement from C to D",
+        "alt_text": "PPC bowed outwards through A (0, 80), B (50, 75), C (100, 60), D (150, 35) and E (200, 0). J (50, 40) lies inside the curve and K (100, 80) outside it. From C, an arrow across shows 50 more tonnes of maize and an arrow down to D shows 25 fewer cattle: the opportunity cost of the extra 50 t of maize is 25 cattle.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 44,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-3.3-019-PROC": {
+      "topic_id": "3.3",
+      "target": "Demand elasticity diagrams",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-3.3-019-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-3.3-019-PROC.json",
+      "model": {
+        "name": "Two demand curves through a common starting point",
+        "status": "illustrative: invented shop data; straight lines through the two observed price-quantity pairs per product",
+        "equations": {
+          "maize meal": "Q = 150 - 2.5P (P = 60 - 0.4Q)",
+          "crisps": "Q = 250 - 7.5P (P = 100/3 - 2Q/15)"
+        },
+        "units": {
+          "x": "packets per week",
+          "y": "N$ per packet"
+        },
+        "reference_point": [
+          100,
+          20
+        ],
+        "after_rise": {
+          "maize meal": [
+            75,
+            30
+          ],
+          "crisps": [
+            25,
+            30
+          ]
+        },
+        "elasticity_basis": "initial values: %change in quantity demanded / %change in price over the N$20 to N$30 rise",
+        "results": {
+          "price change": "+50%",
+          "maize meal": {
+            "quantity change": "-25%",
+            "PED": -0.5,
+            "class": "inelastic"
+          },
+          "crisps": {
+            "quantity change": "-75%",
+            "PED": -1.5,
+            "class": "elastic"
+          }
+        },
+        "assumptions": [
+          "Only each product's own price changes; other demand conditions are unchanged, so each change is a movement along one curve.",
+          "Each curve is drawn as a straight line through its two observed points; elasticity is stated for this change only and varies along a straight line."
+        ]
+      },
+      "question": {
+        "png": "topics/3.3/diagrams/item-6145-3.3-019-proc-question.png",
+        "svg_master": "topics/3.3/diagrams/item-6145-3.3-019-proc-question.svg",
+        "png_sha256": "0ff095658ec47dffc3231cdf0b5e82130d21579cce93df975c7a63b135f1f232",
+        "svg_sha256": "34075aaa3c458d5916d2441ef06ff6b3c75a0b486307bd93bef1e683df746fca",
+        "title": "Shop sales data and blank axes for two products",
+        "alt_text": "Table: maize meal and one brand of crisps, each sold at N$20 a packet with weekly sales of 100 packets; after both prices rise to N$30, sales are 75 and 25 packets. Empty axes with price (N$ per packet) vertically and quantity demanded (packets per week) horizontally, on one common scale.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/3.3/diagrams/item-6145-3.3-019-proc-answer.png",
+        "svg_master": "topics/3.3/diagrams/item-6145-3.3-019-proc-answer.svg",
+        "png_sha256": "24aeedfd858b0394dc6f0719fb8d539f56b5ae09d18d345d0e9e7e0fc9a14496",
+        "svg_sha256": "c5c1af2a28bbd5fc5afdbca0fc1800ce450b77adaac33bef0dd6c040ad1662ed",
+        "title": "Inelastic and elastic demand curves through a common starting point",
+        "alt_text": "Both demand curves pass through R (100 packets, N$20). The maize meal curve (solid, steeper) passes through M (75, N$30): PED = -25% / +50% = -0.5, inelastic. The crisps curve (dashed, flatter) passes through C (25, N$30): PED = -75% / +50% = -1.5, elastic. Arrows along each curve show the movement from R as price rises.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 41,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-3.3-020-PROC": {
+      "topic_id": "3.3",
+      "target": "Supply elasticity diagrams",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-3.3-020-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-3.3-020-PROC.json",
+      "model": {
+        "name": "Two supply curves through a common starting point",
+        "status": "illustrative: invented workshop data; straight lines through the two observed price-quantity pairs per workshop",
+        "equations": {
+          "workshop A": "Q = 0.2P - 30",
+          "workshop B": "Q = 0.05P + 30"
+        },
+        "units": {
+          "x": "chairs per month",
+          "y": "N$ per chair"
+        },
+        "reference_point": [
+          50,
+          400
+        ],
+        "after_rise": {
+          "workshop A": [
+            90,
+            600
+          ],
+          "workshop B": [
+            60,
+            600
+          ]
+        },
+        "elasticity_basis": "initial values: %change in quantity supplied / %change in price over the N$400 to N$600 rise",
+        "results": {
+          "price change": "+50%",
+          "workshop A": {
+            "quantity change": "+80%",
+            "PES": 1.6,
+            "class": "elastic"
+          },
+          "workshop B": {
+            "quantity change": "+20%",
+            "PES": 0.4,
+            "class": "inelastic"
+          }
+        },
+        "assumptions": [
+          "Only the price of chairs changes; costs and technology are unchanged, so each change is a movement along one supply curve.",
+          "Workshop A has unused machines; workshop B is already near capacity.",
+          "Each curve is a straight line through its two observed points; the elasticity is stated for this change only."
+        ]
+      },
+      "question": {
+        "png": "topics/3.3/diagrams/item-6145-3.3-020-proc-question.png",
+        "svg_master": "topics/3.3/diagrams/item-6145-3.3-020-proc-question.svg",
+        "png_sha256": "1c1ca610499df88d5f62d77d8d7d5f7dabcc9d75d52b9a5b0cedc56b072e2f22",
+        "svg_sha256": "3fe234d23896cfbfe2c18844d04802f61ea8a1a3d24e8170a81dd9559fdd3116",
+        "title": "Workshop supply data and blank axes",
+        "alt_text": "Table: workshops A (unused machines) and B (near capacity) each supply 50 chairs a month at N$400 a chair; when the price rises to N$600, A supplies 90 and B supplies 60. Empty axes with price (N$ per chair) vertically and quantity supplied (chairs per month) horizontally, on one common scale.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/3.3/diagrams/item-6145-3.3-020-proc-answer.png",
+        "svg_master": "topics/3.3/diagrams/item-6145-3.3-020-proc-answer.svg",
+        "png_sha256": "eb8fcbf5c1e5010adc4a8ff7ca525b81588f4d53f4f99e93972b3d97f000a715",
+        "svg_sha256": "87d2a3feea305a87db207b63b140da0b50129861b7255cad5422632e7346fd84",
+        "title": "Elastic and inelastic supply curves through a common starting point",
+        "alt_text": "Both supply curves pass through R (50 chairs, N$400). Workshop A's curve (flatter) passes through A (90, N$600): PES = +80% / +50% = 1.6, elastic. Workshop B's curve (steeper) passes through B (60, N$600): PES = +20% / +50% = 0.4, inelastic. Arrows along each curve show the movement from R as price rises.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 43,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-4.2-025-PROC": {
+      "topic_id": "4.2",
+      "target": "Labour market equilibrium and demand shift",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-4.2-025-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-4.2-025-PROC.json",
+      "model": {
+        "name": "Competitive labour market for guest-house housekeepers: rise in labour demand",
+        "status": "illustrative: invented schedules generated from declared linear equations, not observed wages",
+        "equations": {
+          "S": "L = 10W - 100",
+          "D1": "L = 400 - 10W",
+          "D2": "L = 500 - 10W (D1 plus 100 workers at every wage)"
+        },
+        "units": {
+          "x": "housekeepers employed",
+          "y": "N$ per hour"
+        },
+        "schedule": {
+          "wage": [
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "D1": [
+            250,
+            200,
+            150,
+            100,
+            50
+          ],
+          "S": [
+            50,
+            100,
+            150,
+            200,
+            250
+          ],
+          "D2": [
+            350,
+            300,
+            250,
+            200,
+            150
+          ]
+        },
+        "equilibria": {
+          "E1": [
+            150,
+            25
+          ],
+          "E2": [
+            200,
+            30
+          ]
+        },
+        "cause": "More tourists raise demand for guest-house rooms; labour demand is derived from it, so only labour demand shifts.",
+        "assumptions": [
+          "Competitive labour market; the wage adjusts to equate labour demanded and supplied.",
+          "Nothing changes the number of people willing to work at each wage, so labour supply does not shift."
+        ]
+      },
+      "question": {
+        "png": "topics/4.2/diagrams/item-6145-4.2-025-proc-question.png",
+        "svg_master": "topics/4.2/diagrams/item-6145-4.2-025-proc-question.svg",
+        "png_sha256": "ce514df3d9f509fb6fe7125b0d6601a32ee27f6fb0086ba4394487a53acbd21a",
+        "svg_sha256": "3a41b63adbbaa33b776694f0ab4e5d7a5c488ce08246bd0bcbe5b659a858a6a8",
+        "title": "Original labour market for guest-house housekeepers",
+        "alt_text": "Axes with wage (N$ per hour) vertically and quantity of labour (housekeepers) horizontally, showing the original labour demand curve D1 (from 325 workers at N$7.50 to 25 at N$37.50) and labour supply curve S (from 25 workers at N$12.50 to 325 at N$42.50). Text states that guest houses now want 100 more housekeepers at every wage.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/4.2/diagrams/item-6145-4.2-025-proc-answer.png",
+        "svg_master": "topics/4.2/diagrams/item-6145-4.2-025-proc-answer.svg",
+        "png_sha256": "b6c7ab278194bdf89f11f9480ed030034029a45873c13780546b9728cd5a768e",
+        "svg_sha256": "a5df93e00f6b148e33a8706f24d0e49700ab7b430e5762e1a0fc275443ec0f8b",
+        "title": "Labour demand shifts right; wage and employment rise",
+        "alt_text": "Original equilibrium E1 where D1 meets S: N$25 an hour and 150 housekeepers. Labour demand shifts right by 100 workers at every wage to D2; supply S does not move. New equilibrium E2 where D2 meets S: N$30 an hour and 200 housekeepers.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 53,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-5.4-031-PROC": {
+      "topic_id": "5.4",
+      "target": "Long-run average cost and scale",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-5.4-031-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-5.4-031-PROC.json",
+      "model": {
+        "name": "Long-run average cost of a juice bottler across factory scales",
+        "status": "illustrative: invented costs generated from a declared U-shaped average-cost equation, not observed data",
+        "equation": "AC = 4 + (Q - 40)^2 / 200, with Q in thousand litres a month and AC in N$ per litre; total cost = AC x Q",
+        "units": {
+          "x": "thousand litres per month",
+          "y": "N$ per litre"
+        },
+        "schedule": {
+          "output_thousand_litres": [
+            10,
+            20,
+            30,
+            40,
+            50,
+            60
+          ],
+          "total_cost_N$": [
+            85000,
+            120000,
+            135000,
+            160000,
+            225000,
+            360000
+          ],
+          "average_cost_N$_per_litre": [
+            8.5,
+            6.0,
+            4.5,
+            4.0,
+            4.5,
+            6.0
+          ]
+        },
+        "optimum": [
+          40,
+          4.0
+        ],
+        "comparison": {
+          "from": 20,
+          "to": 40,
+          "total_cost": [
+            120000,
+            160000
+          ],
+          "average_cost": [
+            6.0,
+            4.0
+          ]
+        },
+        "assumptions": [
+          "Each output is produced with a factory designed for that scale (long run), so the points are not short-run changes in one factory.",
+          "Input prices and product quality are the same at every scale."
+        ]
+      },
+      "question": {
+        "png": "topics/5.4/diagrams/item-6145-5.4-031-proc-question.png",
+        "svg_master": "topics/5.4/diagrams/item-6145-5.4-031-proc-question.svg",
+        "png_sha256": "0bbe157325746f743eb6b0bc62fdf94da03ddca897ec632bf54b4d655e2bb42d",
+        "svg_sha256": "28afa4d2b5cc4c901af62985b4b7a86ef2f49b0d4c0a518811c81cf5cded60ed",
+        "title": "Total costs of a juice bottler at different factory scales, with blank axes",
+        "alt_text": "Table of monthly output 10 to 60 thousand litres with total costs N$85,000, N$120,000, N$135,000, N$160,000, N$225,000 and N$360,000; each output uses a factory built for that scale. Empty axes with average cost (N$ per litre) vertically and output (thousand litres per month) horizontally.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/5.4/diagrams/item-6145-5.4-031-proc-answer.png",
+        "svg_master": "topics/5.4/diagrams/item-6145-5.4-031-proc-answer.svg",
+        "png_sha256": "1160b79f15a324c22736ee03ff5a58dff8986d0911ab124f462a8ee0c68e9af3",
+        "svg_sha256": "0e577f2a05a853fa933ab8f982980ab3740674530d03a73dfd8352818c096419",
+        "title": "U-shaped long-run average cost curve with economies, optimum scale and diseconomies",
+        "alt_text": "Average cost (total cost divided by output) is N$8.50, 6.00, 4.50, 4.00, 4.50 and 6.00 a litre at 10 to 60 thousand litres. The LRAC curve falls to a minimum M at 40 thousand litres and N$4.00 (optimum scale), then rises. Economies of scale are labelled where it falls and diseconomies where it rises. From 20 to 40 thousand litres total cost rises from N$120,000 to N$160,000 while average cost falls from N$6.00 to N$4.00.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 44,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-6.3-017-PROC": {
+      "topic_id": "6.3",
+      "target": "Binding maximum price",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-6.3-017-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-6.3-017-PROC.json",
+      "model": {
+        "name": "Binding maximum price in a competitive market for bread",
+        "status": "illustrative: invented schedules generated from declared linear equations, not observed data",
+        "equations": {
+          "D": "Q = 1200 - 50P",
+          "S": "Q = 50P - 200"
+        },
+        "units": {
+          "x": "loaves per day",
+          "y": "N$ per loaf"
+        },
+        "schedule": {
+          "price": [
+            10,
+            12,
+            14,
+            16
+          ],
+          "demand": [
+            700,
+            600,
+            500,
+            400
+          ],
+          "supply": [
+            300,
+            400,
+            500,
+            600
+          ]
+        },
+        "equilibrium": [
+          500,
+          14
+        ],
+        "control": {
+          "type": "maximum price",
+          "level": 12,
+          "quantity_demanded": 600,
+          "quantity_supplied": 400,
+          "shortage": 200,
+          "quantity_traded": 400
+        },
+        "assumptions": [
+          "Competitive market; the maximum price is below equilibrium, so it is binding.",
+          "The control does not shift demand or supply; quantities are read off the unchanged curves.",
+          "Quantity bought is limited to the smaller of quantity demanded and quantity supplied."
+        ]
+      },
+      "question": {
+        "png": "topics/6.3/diagrams/item-6145-6.3-017-proc-question.png",
+        "svg_master": "topics/6.3/diagrams/item-6145-6.3-017-proc-question.svg",
+        "png_sha256": "2b3e39c8cc00a11aaa82b29b1758327e80683a448e4f4f999e3e44c904d031bc",
+        "svg_sha256": "b8729260b8188ca1ee4f36e79a97a42f6814c29b7d41146199c5326b6856dde0",
+        "title": "Market for bread before a maximum price",
+        "alt_text": "Demand curve D and supply curve S for bread in a town, with price (N$ per loaf) vertically and quantity (loaves per day) horizontally. Text states that the government sets a maximum price of N$12 a loaf.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/6.3/diagrams/item-6145-6.3-017-proc-answer.png",
+        "svg_master": "topics/6.3/diagrams/item-6145-6.3-017-proc-answer.svg",
+        "png_sha256": "6488358616402572e65f94cd903b556532e09a4911944140c832a461683ce75a",
+        "svg_sha256": "089e883ecfbc413fdcbbb48df60f0f903602f275ac0755c06a3e6250308be31b",
+        "title": "Binding maximum price creates a shortage",
+        "alt_text": "Original equilibrium E at N$14 and 500 loaves a day. A maximum price of N$12, below equilibrium, is drawn as a horizontal line. Neither curve shifts: at N$12 quantity supplied is 400 loaves (on S) and quantity demanded is 600 loaves (on D), a shortage of 200 loaves a day. Only 400 loaves can be bought.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 46,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-6.3-018-PROC": {
+      "topic_id": "6.3",
+      "target": "Binding minimum price",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-6.3-018-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-6.3-018-PROC.json",
+      "model": {
+        "name": "Binding minimum price in a competitive market for mahangu (pearl millet)",
+        "status": "illustrative: invented schedules generated from declared linear equations, not observed data",
+        "equations": {
+          "D": "Q = 700 - 2P",
+          "S": "Q = 2P - 100"
+        },
+        "units": {
+          "x": "bags per week",
+          "y": "N$ per bag"
+        },
+        "schedule": {
+          "price": [
+            150,
+            200,
+            250,
+            300
+          ],
+          "demand": [
+            400,
+            300,
+            200,
+            100
+          ],
+          "supply": [
+            200,
+            300,
+            400,
+            500
+          ]
+        },
+        "equilibrium": [
+          300,
+          200
+        ],
+        "control": {
+          "type": "minimum price",
+          "level": 250,
+          "quantity_demanded": 200,
+          "quantity_supplied": 400,
+          "surplus": 200,
+          "quantity_bought": 200,
+          "quantity_offered": 400
+        },
+        "assumptions": [
+          "Competitive market; the minimum price is above equilibrium, so it is binding.",
+          "The control does not shift demand or supply; quantities are read off the unchanged curves.",
+          "Without a government or other buyer for the surplus, quantity bought equals quantity demanded at the floor."
+        ]
+      },
+      "question": {
+        "png": "topics/6.3/diagrams/item-6145-6.3-018-proc-question.png",
+        "svg_master": "topics/6.3/diagrams/item-6145-6.3-018-proc-question.svg",
+        "png_sha256": "1d55c0d39ef0e99ba5d495f6ea521a846bc64ed5c2a0081cb6ed973d9a6b8e6f",
+        "svg_sha256": "5822ee08a227f53297d49e648440f1e1fe1401b1ca6268b694389f1a26826b40",
+        "title": "Market for mahangu before a minimum price",
+        "alt_text": "Demand curve D and supply curve S for mahangu (pearl millet), with price (N$ per bag) vertically and quantity (bags per week) horizontally. Text states that the government sets a minimum price of N$250 a bag to protect farmers' incomes.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/6.3/diagrams/item-6145-6.3-018-proc-answer.png",
+        "svg_master": "topics/6.3/diagrams/item-6145-6.3-018-proc-answer.svg",
+        "png_sha256": "61f398f5da979aae5f9014dff5ada8eb8d0fc3b6ebcaa0c3b89501881a294c3e",
+        "svg_sha256": "2c86449c561d07a70abd3afc487dffdbe1bd26f40530c5812ae03664e389690d",
+        "title": "Binding minimum price creates a surplus",
+        "alt_text": "Original equilibrium E at N$200 a bag and 300 bags a week. A minimum price of N$250, above equilibrium, is drawn as a horizontal line. Neither curve shifts: at N$250 quantity demanded is 200 bags (on D) and quantity supplied is 400 bags (on S), a surplus of 200 bags a week. Farmers offer 400 bags but only 200 are bought.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 46,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-6.3-019-PROC": {
+      "topic_id": "6.3",
+      "target": "Binding minimum wage in the competitive model",
+      "existing_card": false,
+      "spec": "diagrams/specs/ITEM-6145-6.3-019-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-6.3-019-PROC.json",
+      "model": {
+        "name": "Binding minimum wage in a competitive labour market for security guards",
+        "status": "illustrative: invented schedules generated from declared linear equations; example rates, not Namibia's legal minimum wage",
+        "equations": {
+          "D (labour demanded)": "L = 900 - 20W",
+          "S (labour supplied)": "L = 20W - 100"
+        },
+        "units": {
+          "x": "security guards",
+          "y": "N$ per hour"
+        },
+        "schedule": {
+          "wage": [
+            20,
+            25,
+            30,
+            35
+          ],
+          "labour_demanded": [
+            500,
+            400,
+            300,
+            200
+          ],
+          "labour_supplied": [
+            300,
+            400,
+            500,
+            600
+          ]
+        },
+        "equilibrium": [
+          400,
+          25
+        ],
+        "control": {
+          "type": "minimum wage",
+          "level": 30,
+          "labour_demanded": 300,
+          "labour_supplied": 500,
+          "excess_supply": 200,
+          "employment": 300,
+          "jobs_lost_vs_equilibrium": 100
+        },
+        "assumptions": [
+          "Basic competitive labour market: many employers, none able to set the wage alone.",
+          "The minimum wage is above the equilibrium wage, so it is binding; a floor below N$25 would have no effect.",
+          "The floor does not shift labour demand or labour supply; employment equals labour demanded at the floor.",
+          "The result is specific to this model; it is not a claim that every minimum wage reduces employment."
+        ]
+      },
+      "question": {
+        "png": "topics/6.3/diagrams/item-6145-6.3-019-proc-question.png",
+        "svg_master": "topics/6.3/diagrams/item-6145-6.3-019-proc-question.svg",
+        "png_sha256": "2fa9a25af018384e0cf8f1ccc9a912720711eef913470552b977501ba185e894",
+        "svg_sha256": "1635b1d1385a64a276fcbffcfa3438b40fa1b9b0e8ae780f5de62d8490421368",
+        "title": "Competitive labour market for security guards before a minimum wage",
+        "alt_text": "Labour demand curve D and labour supply curve S for security guards, with wage (N$ per hour) vertically and quantity of labour (guards) horizontally. Text states that the government sets a minimum wage of N$30 an hour.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/6.3/diagrams/item-6145-6.3-019-proc-answer.png",
+        "svg_master": "topics/6.3/diagrams/item-6145-6.3-019-proc-answer.svg",
+        "png_sha256": "58af3a02e7222970e86d4b10d7bcf84c35d6ac0cd97dd42db16f1ed655c11b75",
+        "svg_sha256": "118c27515d10191011a4dca99cdfbf7ba71c3bdf532cd4ebad9e8e27b2b73061",
+        "title": "Binding minimum wage creates an excess supply of labour in the competitive model",
+        "alt_text": "Original equilibrium E at N$25 an hour and 400 guards. A minimum wage of N$30, above equilibrium, is drawn as a horizontal line. Neither curve shifts: at N$30 firms want 300 guards (on D) and 500 people want to work (on S), an excess supply of labour of 200. In this model employment falls from 400 to 300.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 49,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-3.2-002-PROC": {
+      "topic_id": "3.2",
+      "target": "Define and illustrate demand and supply",
+      "existing_card": true,
+      "spec": "diagrams/specs/ITEM-6145-3.2-002-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-3.2-002-PROC.json",
+      "model": {
+        "name": "Demand and supply schedules plotted as curves, with movements along both",
+        "status": "uses the existing card's data unchanged; straight lines through the three given points",
+        "equations": {
+          "D": "Q = 120 - 5P",
+          "S": "Q = 5P"
+        },
+        "units": {
+          "x": "units per week",
+          "y": "N$ per unit"
+        },
+        "points": {
+          "D": [
+            [
+              80,
+              8
+            ],
+            [
+              60,
+              12
+            ],
+            [
+              40,
+              16
+            ]
+          ],
+          "S": [
+            [
+              40,
+              8
+            ],
+            [
+              60,
+              12
+            ],
+            [
+              80,
+              16
+            ]
+          ]
+        },
+        "change": "price rises from N$8 to N$16: quantity demanded 80 to 40 along D; quantity supplied 40 to 80 along S",
+        "assumptions": [
+          "Only the product's own price changes, so both changes are movements along unchanged curves."
+        ]
+      },
+      "question": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-002-proc-question.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-002-proc-question.svg",
+        "png_sha256": "2eb94b47accad82ff9327490a600e34f0a6e3c7f2fde5868c81814c62191f1ed",
+        "svg_sha256": "9bfa5ea5cf0ea5a10d165ac28f942f7265008ce410c0cdce240eefc98d809001",
+        "title": "Demand and supply schedule",
+        "alt_text": "Table: at prices of N$8, N$12 and N$16 a unit, weekly demand is 80, 60 and 40 units and weekly supply is 40, 60 and 80 units. Instruction to draw D and S on labelled axes and show the change along both curves when price rises from N$8 to N$16.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-002-proc-answer.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-002-proc-answer.svg",
+        "png_sha256": "83a42addc03900a705845599935ec8bcb5ed580d7afc4c60fe38977e3edb42da",
+        "svg_sha256": "ecfe56e8d476b10d5095854aaf5b36dd22f78d79bd2a1955aebba2ddf486f36d",
+        "title": "Demand and supply curves with movements along both curves",
+        "alt_text": "Price (N$ per unit) on the vertical axis and quantity (units per week) on the horizontal axis. D slopes down through (80, N$8), (60, N$12) and (40, N$16); S slopes up through (40, N$8), (60, N$12) and (80, N$16). Arrows along the curves show the price rise from N$8 to N$16: up-left along D (80 to 40 units) and up-right along S (40 to 80 units).",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 39,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-3.2-006-PROC": {
+      "topic_id": "3.2",
+      "target": "Discuss and illustrate the principle of equilibrium price",
+      "existing_card": true,
+      "spec": "diagrams/specs/ITEM-6145-3.2-006-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-3.2-006-PROC.json",
+      "model": {
+        "name": "Equilibrium and adjustment from a price below equilibrium (seed packets)",
+        "status": "uses the existing card's data unchanged; straight lines through the three given points",
+        "equations": {
+          "D": "Q = 120 - 3P",
+          "S": "Q = 3P"
+        },
+        "units": {
+          "x": "packets per week",
+          "y": "N$ per packet"
+        },
+        "points": {
+          "D": [
+            [
+              90,
+              10
+            ],
+            [
+              60,
+              20
+            ],
+            [
+              30,
+              30
+            ]
+          ],
+          "S": [
+            [
+              30,
+              10
+            ],
+            [
+              60,
+              20
+            ],
+            [
+              90,
+              30
+            ]
+          ]
+        },
+        "equilibrium": [
+          60,
+          20
+        ],
+        "start_price": {
+          "price": 10,
+          "quantity_supplied": 30,
+          "quantity_demanded": 90,
+          "excess_demand": 60
+        },
+        "assumptions": [
+          "Basic competitive model: price can adjust; the curves do not shift."
+        ]
+      },
+      "question": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-006-proc-question.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-006-proc-question.svg",
+        "png_sha256": "d53a9d059422c9745db8e23d0d8526a963dc8a2aa2b874691e84a74a808366e0",
+        "svg_sha256": "3598b6359598ad8311ed5bada6d043071a93be9cbf94d2a5ede0d164e61fb773",
+        "title": "Seed-packet demand and supply schedule",
+        "alt_text": "Table: at N$10, N$20 and N$30 a packet, weekly demand is 90, 60 and 30 packets and weekly supply is 30, 60 and 90 packets. Instruction to draw D and S, mark the equilibrium and show the change towards it from N$10.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-006-proc-answer.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-006-proc-answer.svg",
+        "png_sha256": "9467bfb76293e173a4ca90e9fa79b63f5a89caee04be3685831c210f5a0aec19",
+        "svg_sha256": "ba69d449a92b01216893a37c1d825da41968bf4028a2ad3b1626f0de64b22ea9",
+        "title": "Equilibrium, the shortage at N$10 and the upward price adjustment",
+        "alt_text": "D through (90, N$10), (60, N$20), (30, N$30) and S through (30, N$10), (60, N$20), (90, N$30) cross at E: N$20 and 60 packets a week, projected to both axes. At N$10 quantity supplied is 30 and quantity demanded 90, an excess demand (shortage) of 60. Arrows along both curves show price rising towards E: quantity demanded contracts and quantity supplied extends.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 41,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-3.2-010-PROC": {
+      "topic_id": "3.2",
+      "target": "Analyse simple market situations with changes in supply and demand",
+      "existing_card": true,
+      "spec": "diagrams/specs/ITEM-6145-3.2-010-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-3.2-010-PROC.json",
+      "model": {
+        "name": "Increase in demand for seed packets with supply unchanged",
+        "status": "uses the existing card's data unchanged; straight lines through the three given points of each schedule",
+        "equations": {
+          "D0": "Q = 120 - 3P",
+          "D1": "Q = 150 - 3P (30 more at every price)",
+          "S": "Q = 3P"
+        },
+        "units": {
+          "x": "packets per week",
+          "y": "N$ per packet"
+        },
+        "equilibria": {
+          "E0": [
+            60,
+            20
+          ],
+          "E1": [
+            75,
+            25
+          ]
+        },
+        "assumptions": [
+          "Basic competitive model; demand increases (shifts right) while supply is unchanged; price adjusts to the new intersection."
+        ]
+      },
+      "question": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-010-proc-question.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-010-proc-question.svg",
+        "png_sha256": "2a7046260a55d0f5fd733c11e2459f600488a86747b135527c3cb7ba5614ecfe",
+        "svg_sha256": "baf83114c47422b0d733790a4774bb3a995b2cebb1867cceb05f5584f3ae7fe1",
+        "title": "Seed-packet schedules before and after a rise in demand",
+        "alt_text": "Table: at N$10, N$20 and N$30 a packet, original weekly demand D0 is 90, 60 and 30, new demand D1 is 120, 90 and 60, and unchanged supply S is 30, 60 and 90. Instruction to draw D0, D1 and S and label both equilibria.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-010-proc-answer.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-010-proc-answer.svg",
+        "png_sha256": "0f426d9a6c21664b9a487ca47ef3f9db9f9dc70aeee1334f090b2f322b7f259b",
+        "svg_sha256": "fc30668a6b5472857018bae9b51f35725a343f3e2bed09cd19f88e82374f7fe2",
+        "title": "Demand shifts right from D0 to D1; price and quantity rise",
+        "alt_text": "S through (30, N$10), (60, N$20), (90, N$30); D0 through (90, N$10), (60, N$20), (30, N$30); D1 through (120, N$10), (90, N$20), (60, N$30), to the right of D0 by 30 at every price. E0 at N$20 and 60 packets; E1 at N$25 and 75 packets, both projected to the axes.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 48,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    },
+    "ITEM-6145-3.2-017-PROC": {
+      "topic_id": "3.2",
+      "target": "Analyse such changes to show effects on price",
+      "existing_card": true,
+      "spec": "diagrams/specs/ITEM-6145-3.2-017-PROC.json",
+      "renderer": "diagrams/render_6145_diagrams.py",
+      "verifier_report": "diagrams/checks/ITEM-6145-3.2-017-PROC.json",
+      "model": {
+        "name": "Increase in supply of seed packets with demand unchanged",
+        "status": "uses the existing card's data unchanged; straight lines through the three given points of each schedule",
+        "equations": {
+          "D": "Q = 120 - 3P",
+          "S0": "Q = 3P",
+          "S1": "Q = 3P + 30 (30 more at every price)"
+        },
+        "units": {
+          "x": "packets per week",
+          "y": "N$ per packet"
+        },
+        "equilibria": {
+          "E0": [
+            60,
+            20
+          ],
+          "E1": [
+            75,
+            15
+          ]
+        },
+        "assumptions": [
+          "Basic competitive model; supply increases (shifts right) while demand is unchanged; price adjusts to the new intersection."
+        ]
+      },
+      "question": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-017-proc-question.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-017-proc-question.svg",
+        "png_sha256": "b3f152e9ff0c46cadd7b7a87428ebfb71bddd9ee1acaaeb280388fbe57c05db2",
+        "svg_sha256": "f14a060bfddac8c6c80a1edd7b81b892129f5e8bed0871ab1af724608ea0d11e",
+        "title": "Seed-packet schedules before and after a rise in supply",
+        "alt_text": "Table: at N$10, N$20 and N$30 a packet, unchanged weekly demand D is 90, 60 and 30, original supply S0 is 30, 60 and 90 and new supply S1 is 60, 90 and 120. Instruction to draw D, S0 and S1 and label the original and changed equilibria.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "question_asset_id"
+      },
+      "answer": {
+        "png": "topics/3.2/diagrams/item-6145-3.2-017-proc-answer.png",
+        "svg_master": "topics/3.2/diagrams/item-6145-3.2-017-proc-answer.svg",
+        "png_sha256": "8cf94dcf702988f194e8459f2dd7dd423860154ceb59e2da157e4b44d05bb730",
+        "svg_sha256": "2c296841d1c8a20936f036c72fb3e2d382374cbbf7fd6ac6afebf49b61dea18d",
+        "title": "Supply shifts right from S0 to S1; price falls and quantity rises",
+        "alt_text": "D through (90, N$10), (60, N$20), (30, N$30); S0 through (30, N$10), (60, N$20), (90, N$30); S1 through (60, N$10), (90, N$20), (120, N$30), to the right of S0 by 30 at every price. E0 at N$20 and 60 packets; E1 at N$15 and 75 packets, both projected to the axes.",
+        "yyeni_asset_id": null,
+        "yyeni_field": "answer_asset_id"
+      },
+      "status": "reviewed by Codex; visual subset accepted",
+      "checks_passed": 48,
+      "independent_review": "diagrams/CODEX-REVIEW-6145.json"
+    }
+  }
+}

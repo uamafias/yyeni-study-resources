@@ -1,32 +1,32 @@
 # Work order — 2.2 Trade unions and employer association
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-10 assessable objectives · 30 planned items · 2 content units
+11 assessable objectives · 31 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 44% | 39.0% |
-| B | 52% | 25.5% |
+| A | 46% | 39.0% |
+| B | 50% | 25.5% |
 | C | 4% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 35% | 39.0% |
+| A | 36% | 39.0% |
 | B | 33% | 25.5% |
-| C | 32% | 35.5% |
+| C | 31% | 35.5% |
 
-120 marks-equivalent of practice in this topic.
+122 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 37% in this topic (10 objectives against 27 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 39% in this topic (11 objectives against 28 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-2.2** — sub-topic 2.2, 7 objectives, 1743–2506 words
+**CU-6145-2.2** — sub-topic 2.2, 8 objectives, 1743–2506 words
 - `OBJ-6145-2.2-01` tier 2 — Define a trade union
 - `OBJ-6145-2.2-02` tier 2 — Identify the aims of trade unions
 - `OBJ-6145-2.2-03` tier 3 — Describe the advantages of joining a trade union
@@ -34,6 +34,7 @@
 - `OBJ-6145-2.2-05` tier 3 — Discuss the factors affecting trade union activities in Namibia
 - `OBJ-6145-2.2-06` tier 4 — Explain and evaluate the role of trade unions
 - `OBJ-6145-2.2-07` tier 3 — Explain the role of employer association
+- `OBJ-6145-2.2-08` tier 1 — Industrial action
 
 **CU-6145-2.2.4** — sub-topic 2.2.4, 3 objectives, 747–1074 words
 - `OBJ-6145-2.2.4-01` tier 1 — White collar union
@@ -62,14 +63,15 @@
 | `016-BEN` | Explain and evaluate the role of trade unions | BEN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `017-LIM` | Explain and evaluate the role of trade unions | LIM | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `018-EVAL` | Explain and evaluate the role of trade unions | EVAL | C | Evaluate | 8 | instructs with Evaluate, which this objective carries |
-| `026-MISCON` | Explain and evaluate the role of trade unions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-003 (1 examiner statements): Collective bargaining versus the organisation conducting it |
 | `019-DEF` | Explain the role of employer association | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `020-MECH` | Explain the role of employer association | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `021-APP` | Explain the role of employer association | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `025-MISCON` | Explain the role of employer association | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-002 (2 examiner statements): Employers' association versus trade union |
 | `022-DEF` | White collar union | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `023-DEF` | Blue collar union | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `024-DEF` | Craft union | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `025-MISCON` | Explain the role of employer association | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-002 (2 examiner statements): Employers' association versus trade union |
+| `026-MISCON` | Explain and evaluate the role of trade unions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-003 (1 examiner statements): Collective bargaining versus the organisation conducting it |
+| `027-DEF` | Industrial action | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

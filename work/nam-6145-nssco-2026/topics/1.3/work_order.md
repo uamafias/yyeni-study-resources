@@ -1,6 +1,6 @@
 # Work order — 1.3 Specialisation and division of labour
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 6 assessable objectives · 16 planned items · 2 content units
 

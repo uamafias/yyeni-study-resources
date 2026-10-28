@@ -1,0 +1,38 @@
+[
+  {
+    "case": "duplicate source IDs",
+    "pass": true,
+    "errors": [
+      "1.1: item IDs do not fill every slot exactly once"
+    ]
+  },
+  {
+    "case": "failing topic despite complete IDs",
+    "pass": true,
+    "errors": [
+      "1.1: topic is not PUBLISH"
+    ]
+  },
+  {
+    "case": "stale topic QA",
+    "pass": true,
+    "errors": [
+      "1.1: QA counts do not describe the complete current scope"
+    ]
+  },
+  {
+    "case": "complete checked source",
+    "pass": true,
+    "errors": []
+  },
+  {
+    "case": "current incomplete source refuses scratch publication before writes",
+    "pass": true,
+    "message": "37 work-order slots are unfilled (first: ITEM-6145-2.2-027-DEF). Publication waits for every slot."
+  },
+  {
+    "case": "incomplete override refused for real publication",
+    "pass": true,
+    "message": "Refusing to write an incomplete build into publish/nam-6145-nssco-2026."
+  }
+]

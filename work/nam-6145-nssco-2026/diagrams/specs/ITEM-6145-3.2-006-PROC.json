@@ -1,0 +1,68 @@
+{
+  "item_id": "ITEM-6145-3.2-006-PROC",
+  "topic_id": "3.2",
+  "existing_card": true,
+  "preserved_item_authored_hash": "af42502e1f72b59753063c67143a31ec583f14b29659ab6f624b72b489c8f1da",
+  "model": {
+    "name": "Equilibrium and adjustment from a price below equilibrium (seed packets)",
+    "status": "uses the existing card's data unchanged; straight lines through the three given points",
+    "equations": {"D": "Q = 120 - 3P", "S": "Q = 3P"},
+    "units": {"x": "packets per week", "y": "N$ per packet"},
+    "points": {"D": [[90, 10], [60, 20], [30, 30]], "S": [[30, 10], [60, 20], [90, 30]]},
+    "equilibrium": [60, 20],
+    "start_price": {"price": 10, "quantity_supplied": 30, "quantity_demanded": 90, "excess_demand": 60},
+    "assumptions": ["Basic competitive model: price can adjust; the curves do not shift."]
+  },
+  "canvas": [1000, 1010],
+  "question": {
+    "canvas": [1000, 400],
+    "title": "Seed-packet demand and supply schedule",
+    "description": "Table: at N$10, N$20 and N$30 a packet, weekly demand is 90, 60 and 30 packets and weekly supply is 30, 60 and 90 packets. Instruction to draw D and S, mark the equilibrium and show the change towards it from N$10.",
+    "static": [
+      {"type": "table", "id": "schedule", "px": [60, 80], "col_widths": [340, 160, 160, 160], "row_height": 54, "size": 28,
+       "title": "Weekly demand and supply of seed packets",
+       "header": ["Price (N$ per packet)", "10", "20", "30"],
+       "rows": [["Demand (packets)", "90", "60", "30"], ["Supply (packets)", "30", "60", "90"]]},
+      {"type": "text", "px": [60, 300], "size": 28, "weight": "bold", "halo": false, "leading": 40,
+       "text": ["Draw D and S on labelled axes, mark the equilibrium", "and show the change towards it from N$10."]}
+    ]
+  },
+  "answer": {
+    "title": "Equilibrium, the shortage at N$10 and the upward price adjustment",
+    "description": "D through (90, N$10), (60, N$20), (30, N$30) and S through (30, N$10), (60, N$20), (90, N$30) cross at E: N$20 and 60 packets a week, projected to both axes. At N$10 quantity supplied is 30 and quantity demanded 90, an excess demand (shortage) of 60. Arrows along both curves show price rising towards E: quantity demanded contracts and quantity supplied extends.",
+    "static": [
+      {"type": "text", "px": [40, 62], "size": 27, "halo": false, "leading": 40,
+       "text": ["E: N$20 a packet and 60 packets a week (D = S)",
+                "At N$10: supplied 30, demanded 90, excess demand 60",
+                "Price is pushed up towards N$20: quantity demanded",
+                "contracts along D, quantity supplied extends along S"]},
+      {"type": "text", "px": [40, 238], "size": 27, "weight": "bold", "halo": false,
+       "text": "The shortage at N$10 closes as price rises to E."}
+    ]
+  },
+  "panels": [
+    {
+      "id": "eq",
+      "sides": ["answer"],
+      "frame": [150, 360, 690, 530],
+      "axes": {
+        "grid": true,
+        "x": {"min": 0, "max": 130, "ticks": [0, 30, 60, 90, 120], "title": "Quantity (packets per week)"},
+        "y": {"min": 0, "max": 40, "ticks": [0, 10, 20, 30, 40], "minor": [5, 15, 25, 35], "title": "Price (N$ per packet)"}
+      },
+      "answer": [
+        {"type": "curve", "id": "D", "kind": "x_of_y", "expr": "120 - 3*y", "domain": [4, 36], "style": "demand",
+         "label": {"text": "D", "at": [108, 4], "dx": 12, "dy": 8}},
+        {"type": "curve", "id": "S", "kind": "x_of_y", "expr": "3*y", "domain": [4, 36], "style": "supply",
+         "label": {"text": "S", "at": [108, 36], "dx": 12, "dy": 8}},
+        {"type": "point", "id": "E", "at": [60, 20], "guides": true, "label": {"text": "E", "dx": 0, "dy": -20, "anchor": "middle"}},
+        {"type": "point", "id": "Qs", "at": [30, 10], "guides": "x"},
+        {"type": "point", "id": "Qd", "at": [90, 10], "guides": true},
+        {"type": "arrow", "id": "S-up-to-E", "from": [30, 10], "to": [60, 20], "trim": [14, 14]},
+        {"type": "arrow", "id": "D-up-to-E", "from": [90, 10], "to": [60, 20], "trim": [14, 14]},
+        {"type": "span", "id": "excess-demand", "y": 10, "x1": 30, "x2": 90, "offset_px": 44,
+         "label": {"text": "Excess demand 60", "dy": 34, "size": 24}}
+      ]
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 # Work order — 5.3 Production costs and revenue
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-10 assessable objectives · 26 planned items · 3 content units
+10 assessable objectives · 28 planned items · 3 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 35% | 39.0% |
-| B | 65% | 25.5% |
+| A | 40% | 39.0% |
+| B | 60% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 32% | 39.0% |
-| B | 41% | 25.5% |
-| C | 27% | 35.5% |
+| A | 34% | 39.0% |
+| B | 40% | 25.5% |
+| C | 26% | 35.5% |
 
-112 marks-equivalent of practice in this topic.
+116 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 43% in this topic (10 objectives against 23 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 40% in this topic (10 objectives against 25 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
@@ -51,7 +51,6 @@
 | `003-APP` | Define total, average, fixed and variable costs | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `004-INTERP` | Define total and average revenue | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `005-APP` | Define total and average revenue | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `022-MISCON` | Define total and average revenue | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-005 (2 examiner statements): Average revenue versus marginal revenue |
 | `006-DEF` | Discuss how costs and revenue might change as output changes | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `007-CHAIN` | Discuss how costs and revenue might change as output changes | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `008-APP` | Discuss how costs and revenue might change as output changes | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -68,6 +67,9 @@
 | `019-CALC` | Average revenue | CALC | B | Calculate | 1 | instructs with Calculate, which this objective carries |
 | `020-INTERP` | Average revenue | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `021-APP` | Average revenue | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
+| `022-MISCON` | Define total and average revenue | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-005 (2 examiner statements): Average revenue versus marginal revenue |
+| `023-DEF` | Total revenue | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `024-DEF` | Average revenue | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

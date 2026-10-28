@@ -1,6 +1,6 @@
 # Work order — 2.1 Business organisations
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 11 assessable objectives · 22 planned items · 2 content units
 
@@ -48,7 +48,6 @@
 | `001-DEF` | Explain the differences between the private and public sector | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-DIST` | Explain the differences between the private and public sector | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Explain the differences between the private and public sector | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `018-MISCON` | Explain the differences between the private and public sector | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-016 (2 examiner statements): Ownership sectors versus stages of production |
 | `004-FEATURE` | Describe the different forms of business organisations: sole proprietors, partnerships, private companies, public companies, multi-nationals, co-operatives, close corporations, public corporations | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `005-DIST` | Describe the different forms of business organisations: sole proprietors, partnerships, private companies, public companies, multi-nationals, co-operatives, close corporations, public corporations | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Describe the different forms of business organisations: sole proprietors, partnerships, private companies, public companies, multi-nationals, co-operatives, close corporations, public corporations | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -63,6 +62,7 @@
 | `015-DEF` | Co-operative | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `016-DEF` | Close corporation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `017-DEF` | Public corporation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `018-MISCON` | Explain the differences between the private and public sector | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-016 (2 examiner statements): Ownership sectors versus stages of production |
 
 ## Performance tasks
 

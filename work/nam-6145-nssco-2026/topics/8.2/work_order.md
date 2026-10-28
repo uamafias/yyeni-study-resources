@@ -1,28 +1,28 @@
 # Work order — 8.2 Living standards
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-7 assessable objectives · 18 planned items · 2 content units
+8 assessable objectives · 19 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 56% | 39.0% |
-| B | 44% | 25.5% |
+| A | 59% | 39.0% |
+| B | 41% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 40% | 39.0% |
+| A | 41% | 39.0% |
 | B | 27% | 25.5% |
-| C | 33% | 35.5% |
+| C | 32% | 35.5% |
 
-92 marks-equivalent of practice in this topic.
+94 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 44% in this topic (7 objectives against 16 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 47% in this topic (8 objectives against 17 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
@@ -31,11 +31,12 @@
 - `OBJ-6145-8.2-02` tier 2 — Describe differences in living standards and discuss reasons for disparities within nations and between nations, both developed and developing countries
 - `OBJ-6145-8.2-03` tier 3 — Explain the effect of Information Technology on living standards
 
-**CU-6145-8.2.1** — sub-topic 8.2.1, 4 objectives, 994–1428 words
+**CU-6145-8.2.1** — sub-topic 8.2.1, 5 objectives, 994–1428 words
 - `OBJ-6145-8.2.1-01` tier 1 — Real income per head
 - `OBJ-6145-8.2.1-02` tier 1 — Life expectancy
 - `OBJ-6145-8.2.1-03` tier 1 — Education and literacy
 - `OBJ-6145-8.2.1-04` tier 1 — Health, housing and sanitation indicators
+- `OBJ-6145-8.2.1-05` tier 1 — Human Development Index
 
 ## Item slots
 
@@ -44,7 +45,6 @@
 | `001-FEATURE` | Describe simple measures and indicators of comparative living standards | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `002-DIST` | Describe simple measures and indicators of comparative living standards | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Describe simple measures and indicators of comparative living standards | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `014-MISCON` | Describe simple measures and indicators of comparative living standards | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-034 (2 examiner statements): Real income versus real income per head |
 | `004-DEF` | Describe differences in living standards and discuss reasons for disparities within nations and between nations, both developed and developing countries | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-DIST` | Describe differences in living standards and discuss reasons for disparities within nations and between nations, both developed and developing countries | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Describe differences in living standards and discuss reasons for disparities within nations and between nations, both developed and developing countries | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -55,6 +55,8 @@
 | `011-DEF` | Life expectancy | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `012-DEF` | Education and literacy | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `013-DEF` | Health, housing and sanitation indicators | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `014-MISCON` | Describe simple measures and indicators of comparative living standards | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-034 (2 examiner statements): Real income versus real income per head |
+| `015-DEF` | Human Development Index | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

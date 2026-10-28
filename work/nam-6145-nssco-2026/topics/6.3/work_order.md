@@ -1,37 +1,40 @@
 # Work order — 6.3 Government control
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-5 assessable objectives · 20 planned items · 1 content units
+8 assessable objectives · 23 planned items · 1 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 25% | 39.0% |
-| B | 69% | 25.5% |
-| C | 6% | 35.5% |
+| A | 21% | 39.0% |
+| B | 74% | 25.5% |
+| C | 5% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 29% | 39.0% |
-| B | 34% | 25.5% |
-| C | 37% | 35.5% |
+| A | 26% | 39.0% |
+| B | 41% | 25.5% |
+| C | 33% | 35.5% |
 
-103 marks-equivalent of practice in this topic.
+115 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 31% in this topic (5 objectives against 16 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 42% in this topic (8 objectives against 19 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-6.3** — sub-topic 6.3, 5 objectives, 1400–2010 words
+**CU-6145-6.3** — sub-topic 6.3, 8 objectives, 1400–2010 words
 - `OBJ-6145-6.3-01` tier 4 — Explain the reasons for government’s intervention in business
 - `OBJ-6145-6.3-02` tier 3 — Explain how the government controls production of goods and services
 - `OBJ-6145-6.3-03` tier 3 — Discuss how consumers are protected in Namibia
 - `OBJ-6145-6.3-04` tier 3 — Discuss how employees are protected by the State
 - `OBJ-6145-6.3-05` tier 3 — Discuss how the government can protect people with HIV and AIDS at the workplace
+- `OBJ-6145-6.3-06` tier 1 — Binding maximum price
+- `OBJ-6145-6.3-07` tier 1 — Binding minimum price
+- `OBJ-6145-6.3-08` tier 1 — Binding minimum wage in the competitive model
 
 ## Item slots
 
@@ -49,10 +52,13 @@
 | `010-DEF` | Discuss how employees are protected by the State | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `011-MECH` | Discuss how employees are protected by the State | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `012-APP` | Discuss how employees are protected by the State | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `016-MISCON` | Discuss how employees are protected by the State | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-009 (1 examiner statements): Minimum wage versus a low wage |
 | `013-DEF` | Discuss how the government can protect people with HIV and AIDS at the workplace | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `014-MECH` | Discuss how the government can protect people with HIV and AIDS at the workplace | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `015-APP` | Discuss how the government can protect people with HIV and AIDS at the workplace | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
+| `016-MISCON` | Discuss how employees are protected by the State | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-009 (1 examiner statements): Minimum wage versus a low wage |
+| `017-PROC` | Binding maximum price | PROC | B | Use | 4 | instructs with Use, which this objective carries |
+| `018-PROC` | Binding minimum price | PROC | B | Use | 4 | instructs with Use, which this objective carries |
+| `019-PROC` | Binding minimum wage in the competitive model | PROC | B | Use | 4 | instructs with Use, which this objective carries |
 
 ## Performance tasks
 

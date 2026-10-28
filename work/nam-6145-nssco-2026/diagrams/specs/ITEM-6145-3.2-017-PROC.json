@@ -1,0 +1,65 @@
+{
+  "item_id": "ITEM-6145-3.2-017-PROC",
+  "topic_id": "3.2",
+  "existing_card": true,
+  "preserved_item_authored_hash": "43f322ec8985dd41b001214312bac744b32995f2cb2dd3ab8e10c02d8476ee81",
+  "model": {
+    "name": "Increase in supply of seed packets with demand unchanged",
+    "status": "uses the existing card's data unchanged; straight lines through the three given points of each schedule",
+    "equations": {"D": "Q = 120 - 3P", "S0": "Q = 3P", "S1": "Q = 3P + 30 (30 more at every price)"},
+    "units": {"x": "packets per week", "y": "N$ per packet"},
+    "equilibria": {"E0": [60, 20], "E1": [75, 15]},
+    "assumptions": ["Basic competitive model; supply increases (shifts right) while demand is unchanged; price adjusts to the new intersection."]
+  },
+  "canvas": [1000, 1010],
+  "question": {
+    "canvas": [1000, 440],
+    "title": "Seed-packet schedules before and after a rise in supply",
+    "description": "Table: at N$10, N$20 and N$30 a packet, unchanged weekly demand D is 90, 60 and 30, original supply S0 is 30, 60 and 90 and new supply S1 is 60, 90 and 120. Instruction to draw D, S0 and S1 and label the original and changed equilibria.",
+    "static": [
+      {"type": "table", "id": "schedule", "px": [60, 80], "col_widths": [380, 150, 150, 150], "row_height": 54, "size": 28,
+       "title": "Weekly seed packets",
+       "header": ["Price (N$ per packet)", "10", "20", "30"],
+       "rows": [["Demand D (unchanged)", "90", "60", "30"], ["Original supply S0", "30", "60", "90"], ["New supply S1", "60", "90", "120"]]},
+      {"type": "text", "px": [60, 350], "size": 28, "weight": "bold", "halo": false, "leading": 40,
+       "text": ["Draw D, S0 and S1 and label the original and", "changed equilibria."]}
+    ]
+  },
+  "answer": {
+    "title": "Supply shifts right from S0 to S1; price falls and quantity rises",
+    "description": "D through (90, N$10), (60, N$20), (30, N$30); S0 through (30, N$10), (60, N$20), (90, N$30); S1 through (60, N$10), (90, N$20), (120, N$30), to the right of S0 by 30 at every price. E0 at N$20 and 60 packets; E1 at N$15 and 75 packets, both projected to the axes.",
+    "static": [
+      {"type": "text", "px": [40, 62], "size": 27, "halo": false, "leading": 40,
+       "text": ["E0 (original): N$20, 60 packets a week",
+                "E1 (new): N$15, 75 packets a week",
+                "S0 to S1: 30 more packets supplied at every price",
+                "Price falls N$20 to N$15; quantity rises 60 to 75"]},
+      {"type": "text", "px": [40, 238], "size": 27, "weight": "bold", "halo": false,
+       "text": "Supply shifts right; demand does not move."}
+    ]
+  },
+  "panels": [
+    {
+      "id": "sshift",
+      "sides": ["answer"],
+      "frame": [150, 360, 690, 530],
+      "axes": {
+        "grid": true,
+        "x": {"min": 0, "max": 140, "ticks": [0, 15, 30, 45, 60, 75, 90, 105, 120], "title": "Quantity (packets per week)"},
+        "y": {"min": 0, "max": 40, "ticks": [0, 5, 10, 15, 20, 25, 30, 35], "title": "Price (N$ per packet)"}
+      },
+      "answer": [
+        {"type": "curve", "id": "D", "kind": "x_of_y", "expr": "120 - 3*y", "domain": [4, 38], "style": "demand",
+         "label": {"text": "D", "at": [108, 4], "dx": 12, "dy": 8}},
+        {"type": "curve", "id": "S0", "kind": "x_of_y", "expr": "3*y", "domain": [4, 36], "style": "supply",
+         "label": {"text": "S0", "at": [108, 36], "dx": 10, "dy": 8}},
+        {"type": "curve", "id": "S1", "kind": "x_of_y", "expr": "3*y + 30", "domain": [2, 34], "style": "supply_new",
+         "label": {"text": "S1", "at": [132, 34], "dx": 8, "dy": 30}},
+        {"type": "arrow", "id": "shift-at-10", "from": [30, 10], "to": [60, 10], "trim": [8, 8]},
+        {"type": "arrow", "id": "shift-at-30", "from": [90, 30], "to": [120, 30], "trim": [8, 8]},
+        {"type": "point", "id": "E0", "at": [60, 20], "guides": true, "label": {"text": "E0", "dx": 0, "dy": -20, "anchor": "middle"}},
+        {"type": "point", "id": "E1", "at": [75, 15], "guides": true, "label": {"text": "E1", "dx": 16, "dy": 10}}
+      ]
+    }
+  ]
+}

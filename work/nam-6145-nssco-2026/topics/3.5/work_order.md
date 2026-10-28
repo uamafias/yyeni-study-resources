@@ -1,6 +1,6 @@
 # Work order — 3.5 Policies
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 3 assessable objectives · 9 planned items · 2 content units
 

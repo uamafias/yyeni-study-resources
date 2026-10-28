@@ -1,36 +1,37 @@
 # Work order — 8.1 Population
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-8 assessable objectives · 21 planned items · 2 content units
+9 assessable objectives · 22 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 53% | 39.0% |
-| B | 47% | 25.5% |
+| A | 55% | 39.0% |
+| B | 45% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 40% | 39.0% |
-| B | 30% | 25.5% |
-| C | 31% | 35.5% |
+| A | 41% | 39.0% |
+| B | 29% | 25.5% |
+| C | 30% | 35.5% |
 
-98 marks-equivalent of practice in this topic.
+100 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 42% in this topic (8 objectives against 19 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 45% in this topic (9 objectives against 20 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-8.1** — sub-topic 8.1, 4 objectives, 1075–1540 words
+**CU-6145-8.1** — sub-topic 8.1, 5 objectives, 1075–1540 words
 - `OBJ-6145-8.1-01` tier 2 — Describe developed and developing economies and reasons for different stages of development
 - `OBJ-6145-8.1-02` tier 3 — Discuss problems and consequences for developing countries as they develop
 - `OBJ-6145-8.1-03` tier 2 — Describe the factors that affect population growth (birth rate, death rate, fertility rate, net migration) and reasons for rates of growth in Namibia and other countries
 - `OBJ-6145-8.1-04` tier 3 — Discuss the effects of changing size and structure of population on an economy
+- `OBJ-6145-8.1-05` tier 1 — Age-dependency ratio
 
 **CU-6145-8.1.3** — sub-topic 8.1.3, 4 objectives, 1075–1540 words
 - `OBJ-6145-8.1.3-01` tier 1 — Birth rate
@@ -51,7 +52,6 @@
 | `007-FEATURE` | Describe the factors that affect population growth (birth rate, death rate, fertility rate, net migration) and reasons for rates of growth in Namibia and other countries | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `008-DIST` | Describe the factors that affect population growth (birth rate, death rate, fertility rate, net migration) and reasons for rates of growth in Namibia and other countries | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-APP` | Describe the factors that affect population growth (birth rate, death rate, fertility rate, net migration) and reasons for rates of growth in Namibia and other countries | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `017-MISCON` | Describe the factors that affect population growth (birth rate, death rate, fertility rate, net migration) and reasons for rates of growth in Namibia and other countries | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-022 (1 examiner statements): Natural population change versus total population change |
 | `010-DEF` | Discuss the effects of changing size and structure of population on an economy | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `011-CHAIN` | Discuss the effects of changing size and structure of population on an economy | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `012-APP` | Discuss the effects of changing size and structure of population on an economy | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -59,6 +59,8 @@
 | `014-DEF` | Death rate | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `015-DEF` | Fertility rate | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `016-DEF` | Net migration | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `017-MISCON` | Describe the factors that affect population growth (birth rate, death rate, fertility rate, net migration) and reasons for rates of growth in Namibia and other countries | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-022 (1 examiner statements): Natural population change versus total population change |
+| `018-DEF` | Age-dependency ratio | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

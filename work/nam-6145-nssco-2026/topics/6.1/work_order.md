@@ -1,37 +1,40 @@
 # Work order — 6.1 Government as producer and employer
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-3 assessable objectives · 10 planned items · 2 content units
+6 assessable objectives · 13 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 50% | 39.0% |
-| B | 50% | 25.5% |
+| A | 67% | 39.0% |
+| B | 33% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 36% | 39.0% |
-| B | 25% | 25.5% |
-| C | 39% | 35.5% |
+| A | 41% | 39.0% |
+| B | 23% | 25.5% |
+| C | 36% | 35.5% |
 
-77 marks-equivalent of practice in this topic.
+83 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 50% in this topic (3 objectives against 6 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 67% in this topic (6 objectives against 9 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
 **CU-6145-6.1** — sub-topic 6.1, 1 objectives, 263–376 words
 - `OBJ-6145-6.1-01` tier 3 — Describe the government as a producer of goods and services and as an employer
 
-**CU-6145-6.1.1** — sub-topic 6.1.1, 2 objectives, 526–753 words
+**CU-6145-6.1.1** — sub-topic 6.1.1, 5 objectives, 526–753 words
 - `OBJ-6145-6.1.1-01` tier 1 — Government as producer
 - `OBJ-6145-6.1.1-02` tier 1 — Government as employer
+- `OBJ-6145-6.1.1-03` tier 1 — Merit goods
+- `OBJ-6145-6.1.1-04` tier 1 — Privatisation
+- `OBJ-6145-6.1.1-05` tier 1 — Nationalisation
 
 ## Item slots
 
@@ -40,9 +43,12 @@
 | `001-DEF` | Describe the government as a producer of goods and services and as an employer | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-MECH` | Describe the government as a producer of goods and services and as an employer | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Describe the government as a producer of goods and services and as an employer | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `006-MISCON` | Describe the government as a producer of goods and services and as an employer | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-028 (2 examiner statements): Public goods versus free goods |
 | `004-DEF` | Government as producer | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-DEF` | Government as employer | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `006-MISCON` | Describe the government as a producer of goods and services and as an employer | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-028 (2 examiner statements): Public goods versus free goods |
+| `007-DEF` | Merit goods | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `008-DEF` | Privatisation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `009-DEF` | Nationalisation | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 
 ## Performance tasks
 

@@ -1,0 +1,317 @@
+{
+  "item_id": "ITEM-6145-6.3-017-PROC",
+  "topic_id": "6.3",
+  "model": {
+    "name": "Binding maximum price in a competitive market for bread",
+    "status": "illustrative: invented schedules generated from declared linear equations, not observed data",
+    "equations": {
+      "D": "Q = 1200 - 50P",
+      "S": "Q = 50P - 200"
+    },
+    "units": {
+      "x": "loaves per day",
+      "y": "N$ per loaf"
+    },
+    "schedule": {
+      "price": [
+        10,
+        12,
+        14,
+        16
+      ],
+      "demand": [
+        700,
+        600,
+        500,
+        400
+      ],
+      "supply": [
+        300,
+        400,
+        500,
+        600
+      ]
+    },
+    "equilibrium": [
+      500,
+      14
+    ],
+    "control": {
+      "type": "maximum price",
+      "level": 12,
+      "quantity_demanded": 600,
+      "quantity_supplied": 400,
+      "shortage": 200,
+      "quantity_traded": 400
+    },
+    "assumptions": [
+      "Competitive market; the maximum price is below equilibrium, so it is binding.",
+      "The control does not shift demand or supply; quantities are read off the unchanged curves.",
+      "Quantity bought is limited to the smaller of quantity demanded and quantity supplied."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "title": "Market for bread before a maximum price",
+    "description": "Demand curve D and supply curve S for bread in a town, with price (N$ per loaf) vertically and quantity (loaves per day) horizontally. Text states that the government sets a maximum price of N$12 a loaf.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          70
+        ],
+        "size": 30,
+        "weight": "bold",
+        "halo": false,
+        "text": "Market for bread in a town"
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          128
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "The government sets a maximum price",
+          "of N$12 a loaf."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Binding maximum price creates a shortage",
+    "description": "Original equilibrium E at N$14 and 500 loaves a day. A maximum price of N$12, below equilibrium, is drawn as a horizontal line. Neither curve shifts: at N$12 quantity supplied is 400 loaves (on S) and quantity demanded is 600 loaves (on D), a shortage of 200 loaves a day. Only 400 loaves can be bought.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          62
+        ],
+        "size": 27,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "E (original): N$14 a loaf, 500 loaves a day",
+          "At the N$12 maximum price: supplied 400, demanded 600",
+          "Shortage = 600 − 400 = 200 loaves a day",
+          "Only 400 loaves can be bought (fewer than 500)"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          238
+        ],
+        "size": 27,
+        "weight": "bold",
+        "halo": false,
+        "text": "Neither curve shifts: read both quantities off D and S."
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "maxprice",
+      "frame": [
+        150,
+        360,
+        690,
+        530
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 1000,
+          "ticks": [
+            0,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900
+          ],
+          "title": "Quantity of bread (loaves per day)"
+        },
+        "y": {
+          "min": 0,
+          "max": 24,
+          "ticks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22
+          ],
+          "title": "Price (N$ per loaf)"
+        }
+      },
+      "question": [
+        {
+          "type": "curve",
+          "id": "D",
+          "kind": "x_of_y",
+          "expr": "1200 - 50*y",
+          "domain": [
+            6,
+            22
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D",
+            "at": [
+              900,
+              6
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "50*y - 200",
+          "domain": [
+            6,
+            22
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              900,
+              22
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        }
+      ],
+      "answer": [
+        {
+          "type": "curve",
+          "id": "D",
+          "kind": "x_of_y",
+          "expr": "1200 - 50*y",
+          "domain": [
+            6,
+            22
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D",
+            "at": [
+              900,
+              6
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "50*y - 200",
+          "domain": [
+            6,
+            22
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              900,
+              22
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "hline",
+          "id": "max-price",
+          "y": 12,
+          "from_x": 0,
+          "to_x": 960,
+          "style": "control",
+          "label": {
+            "text": "Maximum price N$12",
+            "x": 0,
+            "dx": 8,
+            "dy": -12,
+            "anchor": "start",
+            "size": 24
+          }
+        },
+        {
+          "type": "point",
+          "id": "E",
+          "at": [
+            500,
+            14
+          ],
+          "guides": true,
+          "label": {
+            "text": "E",
+            "dx": 0,
+            "dy": -20,
+            "anchor": "middle"
+          }
+        },
+        {
+          "type": "point",
+          "id": "Qs",
+          "at": [
+            400,
+            12
+          ],
+          "guides": true
+        },
+        {
+          "type": "point",
+          "id": "Qd",
+          "at": [
+            600,
+            12
+          ],
+          "guides": true
+        },
+        {
+          "type": "span",
+          "id": "shortage",
+          "y": 12,
+          "x1": 400,
+          "x2": 600,
+          "offset_px": 44,
+          "label": {
+            "text": "Shortage 200",
+            "dy": 34,
+            "size": 24
+          }
+        }
+      ]
+    }
+  ]
+}

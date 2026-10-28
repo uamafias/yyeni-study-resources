@@ -1,28 +1,28 @@
 # Work order — 6.2 Government economic policies
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-18 assessable objectives · 38 planned items · 4 content units
+22 assessable objectives · 42 planned items · 4 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 56% | 39.0% |
-| B | 42% | 25.5% |
-| C | 3% | 35.5% |
+| A | 60% | 39.0% |
+| B | 38% | 25.5% |
+| C | 2% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 42% | 39.0% |
-| B | 30% | 25.5% |
-| C | 28% | 35.5% |
+| A | 44% | 39.0% |
+| B | 29% | 25.5% |
+| C | 27% | 35.5% |
 
-137 marks-equivalent of practice in this topic.
+141 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 50% in this topic (18 objectives against 36 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 55% in this topic (22 objectives against 40 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
@@ -45,12 +45,16 @@
 - `OBJ-6145-6.2.3-01` tier 1 — Fiscal policy
 - `OBJ-6145-6.2.3-02` tier 1 — Monetary policy
 
-**CU-6145-6.2.4** — sub-topic 6.2.4, 5 objectives, 1247–1788 words
+**CU-6145-6.2.4** — sub-topic 6.2.4, 9 objectives, 1247–1788 words
 - `OBJ-6145-6.2.4-01` tier 1 — Direct tax
 - `OBJ-6145-6.2.4-02` tier 1 — Indirect tax
 - `OBJ-6145-6.2.4-03` tier 1 — Progressive tax
 - `OBJ-6145-6.2.4-04` tier 1 — Proportional tax
 - `OBJ-6145-6.2.4-05` tier 1 — Regressive tax
+- `OBJ-6145-6.2.4-06` tier 1 — Personal income tax as a direct tax example
+- `OBJ-6145-6.2.4-07` tier 1 — Company tax as a direct tax example
+- `OBJ-6145-6.2.4-08` tier 1 — VAT as an indirect tax example
+- `OBJ-6145-6.2.4-09` tier 1 — Excise duty as an indirect tax example
 
 ## Item slots
 
@@ -62,19 +66,15 @@
 | `004-BEN` | Discuss the aims of government policy and why they should be achieved - full employment - prevention of inflation - economic growth - redistribution of income - balance of payments stability | BEN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `005-LIM` | Discuss the aims of government policy and why they should be achieved - full employment - prevention of inflation - economic growth - redistribution of income - balance of payments stability | LIM | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-EVAL` | Discuss the aims of government policy and why they should be achieved - full employment - prevention of inflation - economic growth - redistribution of income - balance of payments stability | EVAL | C | Evaluate | 8 | instructs with Evaluate, which this objective carries |
-| `034-MISCON` | Discuss the aims of government policy and why they should be achieved - full employment - prevention of inflation - economic growth - redistribution of income - balance of payments stability | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-037 (1 examiner statements): Economic growth versus population growth |
 | `007-DEF` | Explain fiscal and monetary policies of the government | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `008-DIST` | Explain fiscal and monetary policies of the government | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-APP` | Explain fiscal and monetary policies of the government | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `032-MISCON` | Explain fiscal and monetary policies of the government | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-021 (3 examiner statements): Fiscal versus monetary policy |
 | `010-FEATURE` | Describe the different types of taxes | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 | `011-DIST` | Describe the different types of taxes | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `012-APP` | Describe the different types of taxes | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `033-MISCON` | Describe the different types of taxes | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-027 (1 examiner statements): Proportional tax rate versus equal tax amount |
 | `013-DEF` | Discuss how taxes are used by the government to influence business activities and the role of the budget | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `014-MECH` | Discuss how taxes are used by the government to influence business activities and the role of the budget | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `015-APP` | Discuss how taxes are used by the government to influence business activities and the role of the budget | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `031-MISCON` | Discuss how taxes are used by the government to influence business activities and the role of the budget | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-013 (2 examiner statements): Budget balance versus trade balance |
 | `016-DEF` | Describe how the government can use the interest rate to influence business activity | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `017-CHAIN` | Describe how the government can use the interest rate to influence business activity | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `018-APP` | Describe how the government can use the interest rate to influence business activity | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -90,6 +90,14 @@
 | `028-DEF` | Progressive tax | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `029-DEF` | Proportional tax | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `030-DEF` | Regressive tax | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `031-MISCON` | Discuss how taxes are used by the government to influence business activities and the role of the budget | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-013 (2 examiner statements): Budget balance versus trade balance |
+| `032-MISCON` | Explain fiscal and monetary policies of the government | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-021 (3 examiner statements): Fiscal versus monetary policy |
+| `033-MISCON` | Describe the different types of taxes | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-027 (1 examiner statements): Proportional tax rate versus equal tax amount |
+| `034-MISCON` | Discuss the aims of government policy and why they should be achieved - full employment - prevention of inflation - economic growth - redistribution of income - balance of payments stability | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-037 (1 examiner statements): Economic growth versus population growth |
+| `035-FEATURE` | Personal income tax as a direct tax example | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
+| `036-FEATURE` | Company tax as a direct tax example | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
+| `037-FEATURE` | VAT as an indirect tax example | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
+| `038-FEATURE` | Excise duty as an indirect tax example | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 
 ## Performance tasks
 

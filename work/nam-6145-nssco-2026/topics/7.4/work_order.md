@@ -1,35 +1,37 @@
 # Work order — 7.4 International trade
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-5 assessable objectives · 21 planned items · 2 content units
+7 assessable objectives · 23 planned items · 2 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 12% | 39.0% |
-| B | 88% | 25.5% |
+| A | 21% | 39.0% |
+| B | 79% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 25% | 39.0% |
-| B | 46% | 25.5% |
-| C | 29% | 35.5% |
+| A | 27% | 39.0% |
+| B | 44% | 25.5% |
+| C | 28% | 35.5% |
 
-103 marks-equivalent of practice in this topic.
+106 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 29% in this topic (5 objectives against 17 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 37% in this topic (7 objectives against 19 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-7.4** — sub-topic 7.4, 3 objectives, 798–1146 words
+**CU-6145-7.4** — sub-topic 7.4, 5 objectives, 798–1146 words
 - `OBJ-6145-7.4-01` tier 3 — Describe the changing patterns of exports and imports and the effects on the balance of payments
 - `OBJ-6145-7.4-02` tier 3 — Discuss exchange rates and give reasons for their fluctuations
 - `OBJ-6145-7.4-03` tier 3 — Demonstrate the simple application of absolute and comparative advantage in trade
+- `OBJ-6145-7.4-04` tier 1 — Current account of the balance of payments
+- `OBJ-6145-7.4-05` tier 1 — Components of the current account
 
 **CU-6145-7.4.3** — sub-topic 7.4.3, 2 objectives, 532–764 words
 - `OBJ-6145-7.4.3-01` tier 3 — Absolute advantage from output data
@@ -42,20 +44,22 @@
 | `001-DEF` | Describe the changing patterns of exports and imports and the effects on the balance of payments | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-CHAIN` | Describe the changing patterns of exports and imports and the effects on the balance of payments | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Describe the changing patterns of exports and imports and the effects on the balance of payments | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `016-MISCON` | Describe the changing patterns of exports and imports and the effects on the balance of payments | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-015 (2 examiner statements): Balance of trade versus balance of payments |
-| `017-MISCON` | Describe the changing patterns of exports and imports and the effects on the balance of payments | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-033 (2 examiner statements): Financial investment flows versus current-account trade flows |
 | `004-DEF` | Discuss exchange rates and give reasons for their fluctuations | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-CHAIN` | Discuss exchange rates and give reasons for their fluctuations | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Discuss exchange rates and give reasons for their fluctuations | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `007-INTERP` | Demonstrate the simple application of absolute and comparative advantage in trade | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `008-APP` | Demonstrate the simple application of absolute and comparative advantage in trade | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `015-MISCON` | Demonstrate the simple application of absolute and comparative advantage in trade | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-014 (2 examiner statements): Absolute advantage versus comparative advantage |
 | `009-CALC` | Absolute advantage from output data | CALC | B | Calculate | 1 | instructs with Calculate, which this objective carries |
 | `010-INTERP` | Absolute advantage from output data | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `011-APP` | Absolute advantage from output data | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `012-CALC` | Comparative advantage from opportunity-cost data | CALC | B | Calculate | 1 | instructs with Calculate, which this objective carries |
 | `013-INTERP` | Comparative advantage from opportunity-cost data | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `014-APP` | Comparative advantage from opportunity-cost data | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
+| `015-MISCON` | Demonstrate the simple application of absolute and comparative advantage in trade | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-014 (2 examiner statements): Absolute advantage versus comparative advantage |
+| `016-MISCON` | Describe the changing patterns of exports and imports and the effects on the balance of payments | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-015 (2 examiner statements): Balance of trade versus balance of payments |
+| `017-MISCON` | Describe the changing patterns of exports and imports and the effects on the balance of payments | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-033 (2 examiner statements): Financial investment flows versus current-account trade flows |
+| `018-DEF` | Current account of the balance of payments | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `019-FEATURE` | Components of the current account | FEATURE | A | Identify | 1 | instructs with Identify, which this objective carries |
 
 ## Performance tasks
 

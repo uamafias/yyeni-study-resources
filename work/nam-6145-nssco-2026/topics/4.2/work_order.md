@@ -1,36 +1,41 @@
 # Work order — 4.2 Earnings
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-10 assessable objectives · 24 planned items · 3 content units
+15 assessable objectives · 29 planned items · 3 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 55% | 39.0% |
-| B | 45% | 25.5% |
+| A | 59% | 39.0% |
+| B | 41% | 25.5% |
 | C | 0% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 42% | 39.0% |
+| A | 44% | 39.0% |
 | B | 30% | 25.5% |
-| C | 29% | 35.5% |
+| C | 26% | 35.5% |
 
-105 marks-equivalent of practice in this topic.
+117 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 45% in this topic (10 objectives against 22 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 56% in this topic (15 objectives against 27 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-4.2** — sub-topic 4.2, 4 objectives, 984–1412 words
+**CU-6145-4.2** — sub-topic 4.2, 9 objectives, 984–1412 words
 - `OBJ-6145-4.2-01` tier 3 — Identify and analyse the factors determining earnings
 - `OBJ-6145-4.2-02` tier 2 — Describe and explain the differences in earnings between different occupational groups and different economic sectors (male/female; skilled/unskilled; private/public; agricultural/manufacturing/ services)
 - `OBJ-6145-4.2-03` tier 3 — Analyse and discuss changes in earnings over time between occupations and between economic sectors
 - `OBJ-6145-4.2-04` tier 2 — Explain economic rent and transfer earnings
+- `OBJ-6145-4.2-05` tier 1 — Gross pay
+- `OBJ-6145-4.2-06` tier 1 — Net pay
+- `OBJ-6145-4.2-07` tier 1 — Time-rate payment
+- `OBJ-6145-4.2-08` tier 1 — Piece-rate payment
+- `OBJ-6145-4.2-09` tier 1 — Labour market equilibrium and demand shift
 
 **CU-6145-4.2.2** — sub-topic 4.2.2, 4 objectives, 984–1412 words
 - `OBJ-6145-4.2.2-01` tier 1 — Male and female earnings
@@ -49,7 +54,6 @@
 | `001-DEF` | Identify and analyse the factors determining earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-CHAIN` | Identify and analyse the factors determining earnings | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Identify and analyse the factors determining earnings | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `019-MISCON` | Identify and analyse the factors determining earnings | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-004 (1 examiner statements): Real income versus disposable income |
 | `004-DEF` | Describe and explain the differences in earnings between different occupational groups and different economic sectors (male/female; skilled/unskilled; private/public; agricultural/manufacturing/ services) | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-DIST` | Describe and explain the differences in earnings between different occupational groups and different economic sectors (male/female; skilled/unskilled; private/public; agricultural/manufacturing/ services) | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Describe and explain the differences in earnings between different occupational groups and different economic sectors (male/female; skilled/unskilled; private/public; agricultural/manufacturing/ services) | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -59,13 +63,19 @@
 | `010-DEF` | Explain economic rent and transfer earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `011-DIST` | Explain economic rent and transfer earnings | DIST | A/B | Explain | 2 | instructs with Explain, which this objective carries |
 | `012-APP` | Explain economic rent and transfer earnings | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `020-MISCON` | Explain economic rent and transfer earnings | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-031 (1 examiner statements): Transfer earnings versus economic rent |
 | `013-DEF` | Male and female earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `014-DEF` | Skilled and unskilled earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `015-DEF` | Private and public sector earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `016-DEF` | Agricultural, manufacturing and service-sector earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `017-DEF` | Economic rent | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `018-DEF` | Transfer earnings | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `019-MISCON` | Identify and analyse the factors determining earnings | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-004 (1 examiner statements): Real income versus disposable income |
+| `020-MISCON` | Explain economic rent and transfer earnings | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-031 (1 examiner statements): Transfer earnings versus economic rent |
+| `021-DEF` | Gross pay | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `022-DEF` | Net pay | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `023-DEF` | Time-rate payment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `024-DEF` | Piece-rate payment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `025-PROC` | Labour market equilibrium and demand shift | PROC | B | Use | 4 | instructs with Use, which this objective carries |
 
 ## Performance tasks
 

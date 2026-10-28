@@ -1,0 +1,361 @@
+{
+  "item_id": "ITEM-6145-1.1-011-PROC",
+  "topic_id": "1.1",
+  "model": {
+    "name": "Production possibility curve for a farming district",
+    "status": "illustrative: an invented schedule generated from a declared equation, not observed data",
+    "equation": "cattle = 80 - maize^2/500, for 0 <= maize <= 200",
+    "units": {
+      "x": "tonnes of maize per year",
+      "y": "head of cattle per year"
+    },
+    "assumptions": [
+      "All the district's land, labour and equipment are fully and efficiently used on the curve.",
+      "Resources and technology are fixed for the period.",
+      "Land and workers are not equally suited to maize and cattle, so the curve is bowed outwards (increasing opportunity cost)."
+    ],
+    "schedule": {
+      "A": [
+        0,
+        80
+      ],
+      "B": [
+        50,
+        75
+      ],
+      "C": [
+        100,
+        60
+      ],
+      "D": [
+        150,
+        35
+      ],
+      "E": [
+        200,
+        0
+      ]
+    },
+    "extra_points": {
+      "J": [
+        50,
+        40
+      ],
+      "K": [
+        100,
+        80
+      ]
+    },
+    "movement": {
+      "from": "C",
+      "to": "D",
+      "maize_gained": 50,
+      "cattle_forgone": 25
+    }
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "title": "Production schedule and blank axes for a farming district",
+    "description": "Table of five production combinations A to E of maize and cattle per year, the coordinates of two further points J (50 t, 40 cattle) and K (100 t, 80 cattle), and empty axes with maize (tonnes per year) horizontally and cattle (head per year) vertically.",
+    "static": [
+      {
+        "type": "table",
+        "id": "schedule",
+        "px": [
+          85,
+          80
+        ],
+        "col_widths": [
+          250,
+          116,
+          116,
+          116,
+          116,
+          116
+        ],
+        "row_height": 50,
+        "title": "Production schedule for the district, per year",
+        "header": [
+          "Combination",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "rows": [
+          [
+            "Maize (tonnes)",
+            "0",
+            "50",
+            "100",
+            "150",
+            "200"
+          ],
+          [
+            "Cattle (head)",
+            "80",
+            "75",
+            "60",
+            "35",
+            "0"
+          ]
+        ],
+        "size": 28
+      },
+      {
+        "type": "text",
+        "px": [
+          85,
+          282
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 38,
+        "text": [
+          "Also plot point J: 50 t maize and 40 cattle,",
+          "and point K: 100 t maize and 80 cattle."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Production possibility curve with points J and K and the movement from C to D",
+    "description": "PPC bowed outwards through A (0, 80), B (50, 75), C (100, 60), D (150, 35) and E (200, 0). J (50, 40) lies inside the curve and K (100, 80) outside it. From C, an arrow across shows 50 more tonnes of maize and an arrow down to D shows 25 fewer cattle: the opportunity cost of the extra 50 t of maize is 25 cattle.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          60,
+          66
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 42,
+        "text": [
+          "J: inside the PPC – resources unemployed or used inefficiently",
+          "K: outside the PPC – unattainable with present resources",
+          "C to D: 50 t more maize, 25 fewer cattle"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          60,
+          214
+        ],
+        "size": 30,
+        "weight": "bold",
+        "halo": false,
+        "text": "Opportunity cost of the extra 50 t of maize = 25 cattle"
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "ppc",
+      "frame": [
+        150,
+        410,
+        740,
+        480
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 220,
+          "ticks": [
+            0,
+            50,
+            100,
+            150,
+            200
+          ],
+          "title": "Maize (tonnes per year)"
+        },
+        "y": {
+          "min": 0,
+          "max": 100,
+          "ticks": [
+            0,
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "title": "Cattle (head per year)"
+        }
+      },
+      "question": [],
+      "answer": [
+        {
+          "type": "curve",
+          "id": "PPC",
+          "kind": "y_of_x",
+          "expr": "80 - x**2/500",
+          "domain": [
+            0,
+            200
+          ],
+          "style": "curve",
+          "label": {
+            "text": "PPC",
+            "at": [
+              180,
+              15.2
+            ],
+            "dx": 18,
+            "dy": -6
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "C-across",
+          "from": [
+            100,
+            60
+          ],
+          "to": [
+            150,
+            60
+          ],
+          "trim": [
+            14,
+            4
+          ],
+          "label": {
+            "text": "+50 t maize",
+            "dx": 0,
+            "dy": -16,
+            "anchor": "middle",
+            "size": 26
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "down-to-D",
+          "from": [
+            150,
+            60
+          ],
+          "to": [
+            150,
+            35
+          ],
+          "trim": [
+            4,
+            14
+          ],
+          "label": {
+            "text": "−25 cattle",
+            "dx": 14,
+            "dy": 8,
+            "anchor": "start",
+            "size": 26
+          }
+        },
+        {
+          "type": "point",
+          "id": "A",
+          "at": [
+            0,
+            80
+          ],
+          "label": {
+            "text": "A",
+            "dx": 16,
+            "dy": -16
+          }
+        },
+        {
+          "type": "point",
+          "id": "B",
+          "at": [
+            50,
+            75
+          ],
+          "label": {
+            "text": "B",
+            "dx": 10,
+            "dy": -18
+          }
+        },
+        {
+          "type": "point",
+          "id": "C",
+          "at": [
+            100,
+            60
+          ],
+          "label": {
+            "text": "C",
+            "dx": -16,
+            "dy": -14,
+            "anchor": "end"
+          }
+        },
+        {
+          "type": "point",
+          "id": "D",
+          "at": [
+            150,
+            35
+          ],
+          "label": {
+            "text": "D",
+            "dx": -16,
+            "dy": 30,
+            "anchor": "end"
+          }
+        },
+        {
+          "type": "point",
+          "id": "E",
+          "at": [
+            200,
+            0
+          ],
+          "label": {
+            "text": "E",
+            "dx": 10,
+            "dy": -18
+          }
+        },
+        {
+          "type": "point",
+          "id": "J",
+          "at": [
+            50,
+            40
+          ],
+          "marker": "ring",
+          "label": {
+            "text": "J (inside)",
+            "dx": 18,
+            "dy": 10
+          }
+        },
+        {
+          "type": "point",
+          "id": "K",
+          "at": [
+            100,
+            80
+          ],
+          "marker": "cross",
+          "label": {
+            "text": "K (outside)",
+            "dx": 20,
+            "dy": 10
+          }
+        }
+      ]
+    }
+  ]
+}

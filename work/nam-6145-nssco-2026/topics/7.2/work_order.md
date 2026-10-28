@@ -1,6 +1,6 @@
 # Work order — 7.2 Employment
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 11 assessable objectives · 24 planned items · 3 content units
 
@@ -53,7 +53,6 @@
 | `004-DEF` | Investigate the reasons for unemployment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-CHAIN` | Investigate the reasons for unemployment | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Investigate the reasons for unemployment | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `020-MISCON` | Investigate the reasons for unemployment | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-030 (3 examiner statements): Structural, seasonal and cyclical unemployment |
 | `007-DEF` | Investigate the consequences of unemployment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `008-CHAIN` | Investigate the consequences of unemployment | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-APP` | Investigate the consequences of unemployment | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
@@ -67,6 +66,7 @@
 | `017-DEF` | Structural unemployment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `018-DEF` | Seasonal unemployment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `019-DEF` | Frictional unemployment | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `020-MISCON` | Investigate the reasons for unemployment | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-030 (3 examiner statements): Structural, seasonal and cyclical unemployment |
 
 ## Performance tasks
 

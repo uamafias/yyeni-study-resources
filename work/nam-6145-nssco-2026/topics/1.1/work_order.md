@@ -1,35 +1,36 @@
 # Work order — 1.1 Basic economic problem: scarcity and exercise of choice
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
-3 assessable objectives · 14 planned items · 1 content units
+4 assessable objectives · 15 planned items · 1 content units
 
 ## Planned AO mix by item count (reported, not targeted)
 
 | AO | planned | item-count target |
 |---|---:|---:|
-| A | 30% | 39.0% |
-| B | 60% | 25.5% |
-| C | 10% | 35.5% |
+| A | 27% | 39.0% |
+| B | 64% | 25.5% |
+| C | 9% | 35.5% |
 
 ## Planned AO mix in marks-equivalent — the measure the syllabus uses
 
 | AO | planned | syllabus weight |
 |---|---:|---:|
-| A | 31% | 39.0% |
-| B | 27% | 25.5% |
-| C | 42% | 35.5% |
+| A | 29% | 39.0% |
+| B | 31% | 25.5% |
+| C | 40% | 35.5% |
 
-91 marks-equivalent of practice in this topic.
+95 marks-equivalent of practice in this topic.
 
-> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 30% in this topic (3 objectives against 10 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
+> The syllabus states its AO weights as a share of MARKS, so planned_ao_mix_by_marks is the one that answers "does this resource match the exam". It values each card at the tariff of the question it models, split across the AOs the card declares, and values each performance task at the marks of the paper part it models. The count-based mix below is reported only because it is what a reader expects to see; do not balance against it. AO shares by ITEM COUNT: Every objective needs one recall anchor, so AO1 has a structural floor of about 36% in this topic (4 objectives against 11 slots) and cannot reach the None% target by count however many other cards are added - padding the bank to chase it makes the resource worse. The framework already measures the AO4 share in practice time rather than by count for the same reason. Treat AO1 above target as expected, and AO2/AO3/AO4 below target as the thing worth fixing.
 
 ## Content units
 
-**CU-6145-1.1** — sub-topic 1.1, 3 objectives, 860–1230 words
+**CU-6145-1.1** — sub-topic 1.1, 4 objectives, 860–1230 words
 - `OBJ-6145-1.1-01` tier 2 — Describe the nature of the economic problem (limited resources and unlimited wants)
 - `OBJ-6145-1.1-02` tier 3 — Explain and illustrate opportunity cost
 - `OBJ-6145-1.1-03` tier 4 — Evaluate the implications of specific courses of action in terms of opportunity cost
+- `OBJ-6145-1.1-04` tier 1 — Production possibility curve
 
 ## Item slots
 
@@ -38,13 +39,14 @@
 | `001-DEF` | Describe the nature of the economic problem (limited resources and unlimited wants) | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `002-WHY` | Describe the nature of the economic problem (limited resources and unlimited wants) | WHY | A | Explain | 2 | instructs with Explain, which this objective carries |
 | `003-APP` | Describe the nature of the economic problem (limited resources and unlimited wants) | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `010-MISCON` | Describe the nature of the economic problem (limited resources and unlimited wants) | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-001 (1 examiner statements): Scarcity of resources versus shortage of finished goods |
 | `004-DEF` | Explain and illustrate opportunity cost | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `005-MECH` | Explain and illustrate opportunity cost | MECH | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `006-APP` | Explain and illustrate opportunity cost | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `007-BEN` | Evaluate the implications of specific courses of action in terms of opportunity cost | BEN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `008-LIM` | Evaluate the implications of specific courses of action in terms of opportunity cost | LIM | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `009-EVAL` | Evaluate the implications of specific courses of action in terms of opportunity cost | EVAL | C | Evaluate | 8 | instructs with Evaluate, which this objective carries |
+| `010-MISCON` | Describe the nature of the economic problem (limited resources and unlimited wants) | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-001 (1 examiner statements): Scarcity of resources versus shortage of finished goods |
+| `011-PROC` | Production possibility curve | PROC | B | Use | 4 | instructs with Use, which this objective carries |
 
 ## Performance tasks
 

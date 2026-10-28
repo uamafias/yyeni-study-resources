@@ -1,6 +1,6 @@
 # Work order — 3.2 Market forces
 
-*build/make_work_order.py — regenerate, never edit*
+*standard/build/make_work_order.py + planning/reopen_step4_6145.py stable-ID migration*
 
 7 assessable objectives · 29 planned items · 2 content units
 
@@ -49,7 +49,6 @@
 | `006-PROC` | Discuss and illustrate the principle of equilibrium price | PROC | B | Use | 4 | instructs with Use, which this objective carries |
 | `007-INTERP` | Discuss and illustrate the principle of equilibrium price | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `008-APP` | Discuss and illustrate the principle of equilibrium price | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `023-MISCON` | Discuss and illustrate the principle of equilibrium price | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-010 (2 examiner statements): Price control versus shifting demand or supply |
 | `009-DEF` | Analyse simple market situations with changes in supply and demand | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `010-PROC` | Analyse simple market situations with changes in supply and demand | PROC | B | Use | 4 | instructs with Use, which this objective carries |
 | `011-INTERP` | Analyse simple market situations with changes in supply and demand | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
@@ -57,15 +56,16 @@
 | `013-DEF` | Discuss the causes of changes in demand and supply conditions | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `014-CHAIN` | Discuss the causes of changes in demand and supply conditions | CHAIN | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `015-APP` | Discuss the causes of changes in demand and supply conditions | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
-| `022-MISCON` | Discuss the causes of changes in demand and supply conditions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-008 (1 examiner statements): Demand determinants versus supply determinants |
-| `024-MISCON` | Discuss the causes of changes in demand and supply conditions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-026 (1 examiner statements): A substitute pair versus a brand and its product category |
-| `025-MISCON` | Discuss the causes of changes in demand and supply conditions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-035 (1 examiner statements): Demand shifts versus price elasticity determinants |
 | `016-DEF` | Analyse such changes to show effects on price | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `017-PROC` | Analyse such changes to show effects on price | PROC | B | Use | 4 | instructs with Use, which this objective carries |
 | `018-INTERP` | Analyse such changes to show effects on price | INTERP | B | Explain | 4 | instructs with Explain, which this objective carries |
 | `019-APP` | Analyse such changes to show effects on price | APP | B | Explain | 2 | instructs with Explain, which this objective carries |
 | `020-DEF` | Demand | DEF | A | Define | 2 | instructs with Define, which this objective carries |
 | `021-DEF` | Supply | DEF | A | Define | 2 | instructs with Define, which this objective carries |
+| `022-MISCON` | Discuss the causes of changes in demand and supply conditions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-008 (1 examiner statements): Demand determinants versus supply determinants |
+| `023-MISCON` | Discuss and illustrate the principle of equilibrium price | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-010 (2 examiner statements): Price control versus shifting demand or supply |
+| `024-MISCON` | Discuss the causes of changes in demand and supply conditions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-026 (1 examiner statements): A substitute pair versus a brand and its product category |
+| `025-MISCON` | Discuss the causes of changes in demand and supply conditions | MISCON | B | Explain | 2 | discriminates misconception MISCON-6145-035 (1 examiner statements): Demand shifts versus price elasticity determinants |
 
 ## Performance tasks
 

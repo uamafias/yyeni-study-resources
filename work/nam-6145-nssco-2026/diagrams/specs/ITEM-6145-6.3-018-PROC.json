@@ -1,0 +1,311 @@
+{
+  "item_id": "ITEM-6145-6.3-018-PROC",
+  "topic_id": "6.3",
+  "model": {
+    "name": "Binding minimum price in a competitive market for mahangu (pearl millet)",
+    "status": "illustrative: invented schedules generated from declared linear equations, not observed data",
+    "equations": {
+      "D": "Q = 700 - 2P",
+      "S": "Q = 2P - 100"
+    },
+    "units": {
+      "x": "bags per week",
+      "y": "N$ per bag"
+    },
+    "schedule": {
+      "price": [
+        150,
+        200,
+        250,
+        300
+      ],
+      "demand": [
+        400,
+        300,
+        200,
+        100
+      ],
+      "supply": [
+        200,
+        300,
+        400,
+        500
+      ]
+    },
+    "equilibrium": [
+      300,
+      200
+    ],
+    "control": {
+      "type": "minimum price",
+      "level": 250,
+      "quantity_demanded": 200,
+      "quantity_supplied": 400,
+      "surplus": 200,
+      "quantity_bought": 200,
+      "quantity_offered": 400
+    },
+    "assumptions": [
+      "Competitive market; the minimum price is above equilibrium, so it is binding.",
+      "The control does not shift demand or supply; quantities are read off the unchanged curves.",
+      "Without a government or other buyer for the surplus, quantity bought equals quantity demanded at the floor."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "title": "Market for mahangu before a minimum price",
+    "description": "Demand curve D and supply curve S for mahangu (pearl millet), with price (N$ per bag) vertically and quantity (bags per week) horizontally. Text states that the government sets a minimum price of N$250 a bag to protect farmers' incomes.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          70
+        ],
+        "size": 30,
+        "weight": "bold",
+        "halo": false,
+        "text": "Market for mahangu (pearl millet)"
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          128
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "To protect farmers' incomes, the government",
+          "sets a minimum price of N$250 a bag."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Binding minimum price creates a surplus",
+    "description": "Original equilibrium E at N$200 a bag and 300 bags a week. A minimum price of N$250, above equilibrium, is drawn as a horizontal line. Neither curve shifts: at N$250 quantity demanded is 200 bags (on D) and quantity supplied is 400 bags (on S), a surplus of 200 bags a week. Farmers offer 400 bags but only 200 are bought.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          40,
+          62
+        ],
+        "size": 27,
+        "halo": false,
+        "leading": 40,
+        "text": [
+          "E (original): N$200 a bag, 300 bags a week",
+          "At the N$250 minimum price: demanded 200, supplied 400",
+          "Surplus = 400 − 200 = 200 bags a week",
+          "Farmers offer 400 but sell only 200 (fewer than 300)"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          40,
+          238
+        ],
+        "size": 27,
+        "weight": "bold",
+        "halo": false,
+        "text": "Neither curve shifts: read both quantities off D and S."
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "minprice",
+      "frame": [
+        150,
+        360,
+        690,
+        530
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 650,
+          "ticks": [
+            0,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600
+          ],
+          "title": "Quantity of mahangu (bags per week)"
+        },
+        "y": {
+          "min": 0,
+          "max": 375,
+          "ticks": [
+            0,
+            50,
+            100,
+            150,
+            200,
+            250,
+            300,
+            350
+          ],
+          "title": "Price (N$ per bag)"
+        }
+      },
+      "question": [
+        {
+          "type": "curve",
+          "id": "D",
+          "kind": "x_of_y",
+          "expr": "700 - 2*y",
+          "domain": [
+            75,
+            325
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D",
+            "at": [
+              550,
+              75
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "2*y - 100",
+          "domain": [
+            75,
+            325
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              550,
+              325
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        }
+      ],
+      "answer": [
+        {
+          "type": "curve",
+          "id": "D",
+          "kind": "x_of_y",
+          "expr": "700 - 2*y",
+          "domain": [
+            75,
+            325
+          ],
+          "style": "demand",
+          "label": {
+            "text": "D",
+            "at": [
+              550,
+              75
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "curve",
+          "id": "S",
+          "kind": "x_of_y",
+          "expr": "2*y - 100",
+          "domain": [
+            75,
+            325
+          ],
+          "style": "supply",
+          "label": {
+            "text": "S",
+            "at": [
+              550,
+              325
+            ],
+            "dx": 12,
+            "dy": 8
+          }
+        },
+        {
+          "type": "hline",
+          "id": "min-price",
+          "y": 250,
+          "from_x": 0,
+          "to_x": 650,
+          "style": "control",
+          "label": {
+            "text": "Minimum price N$250",
+            "x": 650,
+            "dx": 150,
+            "dy": -12,
+            "anchor": "end",
+            "size": 24
+          }
+        },
+        {
+          "type": "point",
+          "id": "E",
+          "at": [
+            300,
+            200
+          ],
+          "guides": true,
+          "label": {
+            "text": "E",
+            "dx": 0,
+            "dy": 38,
+            "anchor": "middle"
+          }
+        },
+        {
+          "type": "point",
+          "id": "Qd",
+          "at": [
+            200,
+            250
+          ],
+          "guides": true
+        },
+        {
+          "type": "point",
+          "id": "Qs",
+          "at": [
+            400,
+            250
+          ],
+          "guides": true
+        },
+        {
+          "type": "span",
+          "id": "surplus",
+          "y": 250,
+          "x1": 200,
+          "x2": 400,
+          "offset_px": -44,
+          "label": {
+            "text": "Surplus 200",
+            "dy": -14,
+            "size": 24
+          }
+        }
+      ]
+    }
+  ]
+}

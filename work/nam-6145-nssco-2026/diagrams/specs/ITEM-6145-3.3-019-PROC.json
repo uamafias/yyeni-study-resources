@@ -1,0 +1,339 @@
+{
+  "item_id": "ITEM-6145-3.3-019-PROC",
+  "topic_id": "3.3",
+  "model": {
+    "name": "Two demand curves through a common starting point",
+    "status": "illustrative: invented shop data; straight lines through the two observed price-quantity pairs per product",
+    "equations": {
+      "maize meal": "Q = 150 - 2.5P (P = 60 - 0.4Q)",
+      "crisps": "Q = 250 - 7.5P (P = 100/3 - 2Q/15)"
+    },
+    "units": {
+      "x": "packets per week",
+      "y": "N$ per packet"
+    },
+    "reference_point": [
+      100,
+      20
+    ],
+    "after_rise": {
+      "maize meal": [
+        75,
+        30
+      ],
+      "crisps": [
+        25,
+        30
+      ]
+    },
+    "elasticity_basis": "initial values: %change in quantity demanded / %change in price over the N$20 to N$30 rise",
+    "results": {
+      "price change": "+50%",
+      "maize meal": {
+        "quantity change": "-25%",
+        "PED": -0.5,
+        "class": "inelastic"
+      },
+      "crisps": {
+        "quantity change": "-75%",
+        "PED": -1.5,
+        "class": "elastic"
+      }
+    },
+    "assumptions": [
+      "Only each product's own price changes; other demand conditions are unchanged, so each change is a movement along one curve.",
+      "Each curve is drawn as a straight line through its two observed points; elasticity is stated for this change only and varies along a straight line."
+    ]
+  },
+  "canvas": [
+    1000,
+    1010
+  ],
+  "question": {
+    "title": "Shop sales data and blank axes for two products",
+    "description": "Table: maize meal and one brand of crisps, each sold at N$20 a packet with weekly sales of 100 packets; after both prices rise to N$30, sales are 75 and 25 packets. Empty axes with price (N$ per packet) vertically and quantity demanded (packets per week) horizontally, on one common scale.",
+    "static": [
+      {
+        "type": "table",
+        "id": "sales",
+        "px": [
+          60,
+          80
+        ],
+        "col_widths": [
+          250,
+          160,
+          160,
+          155,
+          155
+        ],
+        "row_height": 50,
+        "size": 28,
+        "title": "Weekly sales at one shop (packets per week)",
+        "header": [
+          "Product",
+          "Old price",
+          "New price",
+          "Old sales",
+          "New sales"
+        ],
+        "rows": [
+          [
+            "Maize meal",
+            "N$20",
+            "N$30",
+            "100",
+            "75"
+          ],
+          [
+            "Crisps (one brand)",
+            "N$20",
+            "N$30",
+            "100",
+            "25"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          60,
+          282
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 38,
+        "text": [
+          "Draw both demand curves on these axes and",
+          "label each with its PED (use initial values)."
+        ]
+      }
+    ]
+  },
+  "answer": {
+    "title": "Inelastic and elastic demand curves through a common starting point",
+    "description": "Both demand curves pass through R (100 packets, N$20). The maize meal curve (solid, steeper) passes through M (75, N$30): PED = -25% / +50% = -0.5, inelastic. The crisps curve (dashed, flatter) passes through C (25, N$30): PED = -75% / +50% = -1.5, elastic. Arrows along each curve show the movement from R as price rises.",
+    "static": [
+      {
+        "type": "text",
+        "px": [
+          60,
+          66
+        ],
+        "size": 28,
+        "halo": false,
+        "leading": 42,
+        "text": [
+          "Price rise: N$20 to N$30 = +50%",
+          "Maize meal: −25% ÷ +50% = −0.5, inelastic",
+          "Crisps: −75% ÷ +50% = −1.5, elastic"
+        ]
+      },
+      {
+        "type": "text",
+        "px": [
+          60,
+          214
+        ],
+        "size": 28,
+        "weight": "bold",
+        "halo": false,
+        "leading": 38,
+        "text": [
+          "Same axes, same starting point R: the flatter",
+          "curve is the more elastic over this change."
+        ]
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": "ped",
+      "frame": [
+        150,
+        410,
+        680,
+        480
+      ],
+      "axes": {
+        "grid": true,
+        "x": {
+          "min": 0,
+          "max": 140,
+          "ticks": [
+            0,
+            25,
+            50,
+            75,
+            100,
+            125
+          ],
+          "title": "Quantity demanded (packets per week)"
+        },
+        "y": {
+          "min": 0,
+          "max": 40,
+          "ticks": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "title": "Price (N$ per packet)"
+        }
+      },
+      "question": [],
+      "answer": [
+        {
+          "type": "curve",
+          "id": "D-maize",
+          "kind": "x_of_y",
+          "expr": "150 - 2.5*y",
+          "domain": [
+            12,
+            34
+          ],
+          "style": "curve",
+          "label": {
+            "text": "D maize meal",
+            "at": [
+              65,
+              34
+            ],
+            "dx": 14,
+            "dy": -4
+          }
+        },
+        {
+          "type": "curve",
+          "id": "D-crisps",
+          "kind": "x_of_y",
+          "expr": "250 - 7.5*y",
+          "domain": [
+            16,
+            32
+          ],
+          "style": "curve_alt",
+          "label": {
+            "text": "D crisps",
+            "at": [
+              10,
+              32
+            ],
+            "dx": 10,
+            "dy": -16
+          }
+        },
+        {
+          "type": "point",
+          "id": "R",
+          "at": [
+            100,
+            20
+          ],
+          "guides": true,
+          "label": {
+            "text": "R",
+            "dx": -16,
+            "dy": 34,
+            "anchor": "end"
+          }
+        },
+        {
+          "type": "point",
+          "id": "M",
+          "at": [
+            75,
+            30
+          ],
+          "guides": true,
+          "label": {
+            "text": "M",
+            "dx": 16,
+            "dy": -12
+          }
+        },
+        {
+          "type": "point",
+          "id": "C",
+          "at": [
+            25,
+            30
+          ],
+          "guides": true,
+          "label": {
+            "text": "C",
+            "dx": -14,
+            "dy": 36,
+            "anchor": "end"
+          }
+        },
+        {
+          "type": "arrow",
+          "id": "R-to-M",
+          "from": [
+            100,
+            20
+          ],
+          "to": [
+            75,
+            30
+          ],
+          "offset_px": 0,
+          "trim": [
+            16,
+            16
+          ]
+        },
+        {
+          "type": "arrow",
+          "id": "R-to-C",
+          "from": [
+            100,
+            20
+          ],
+          "to": [
+            25,
+            30
+          ],
+          "offset_px": 0,
+          "trim": [
+            16,
+            16
+          ]
+        },
+        {
+          "type": "text",
+          "at": [
+            120,
+            12
+          ],
+          "dx": 12,
+          "dy": 10,
+          "size": 26,
+          "weight": "bold",
+          "fill": "#1f4e9c",
+          "text": "PED −0.5"
+        },
+        {
+          "type": "text",
+          "at": [
+            130,
+            16
+          ],
+          "dx": -10,
+          "dy": -18,
+          "size": 26,
+          "weight": "bold",
+          "fill": "#b03a2e",
+          "text": "PED −1.5"
+        }
+      ]
+    }
+  ]
+}

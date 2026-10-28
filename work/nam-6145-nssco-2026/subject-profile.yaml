@@ -108,6 +108,43 @@ objective_types:
   - relevant example or discrimination
   recommended_item_types:
   - flashcard
+- type_id: economics_revision_def
+  label: Focused DEF revision
+  description: Planner-scoped retrieval or representation within an existing syllabus
+    outcome.
+  required_components: &id001
+  - meaning|definition
+  - distinguishing feature|qualifier
+  recommended_item_types:
+  - flashcard
+- type_id: economics_revision_why
+  label: Focused WHY revision
+  description: Planner-scoped retrieval or representation within an existing syllabus
+    outcome.
+  required_components: &id003
+  - reason
+  - because|link
+  recommended_item_types:
+  - flashcard
+- type_id: economics_revision_feature
+  label: Focused FEATURE revision
+  description: Planner-scoped retrieval or representation within an existing syllabus
+    outcome.
+  required_components: &id002
+  - feature|characteristic
+  recommended_item_types:
+  - flashcard
+- type_id: economics_revision_proc
+  label: Focused PROC revision
+  description: Planner-scoped retrieval or representation within an existing syllabus
+    outcome.
+  required_components: &id004
+  - diagram
+  - labels
+  - original
+  - change
+  recommended_item_types:
+  - flashcard
 assessment_skill_model:
 - skill_id: A
   label: Knowledge with understanding
@@ -290,14 +327,9 @@ variant_register:
   consequence: Magnitude determines quantity/revenue responsiveness; coefficient has
     no percentage unit.
 answer_structures:
-  DEF:
-  - meaning|definition
-  - distinguishing feature|qualifier
-  FEATURE:
-  - feature|characteristic
-  WHY:
-  - reason
-  - because|link
+  DEF: *id001
+  FEATURE: *id002
+  WHY: *id003
   DIST:
   - difference|whereas
   - test|distinguishing
@@ -336,11 +368,7 @@ answer_structures:
   - relationship
   - evidence
   - explanation
-  PROC:
-  - diagram
-  - labels
-  - original
-  - change
+  PROC: *id004
   MISCON:
   - confusion
   - boundary
@@ -419,13 +447,18 @@ conditioned_mechanisms:
     - \bexternal costs?\b
   rationale: Higher output alone does not establish better living standards for every
     person.
-depiction_rule: Use original generated economic diagrams or complete coordinate tables;
-  label axes, curves, equilibrium and changes. Never claim a generic business break-even
-  renderer validates supply/demand geometry.
+depiction_rule: Claude generates reproducible original economic diagrams from declared
+  numeric parameters and exports question/answer PNGs plus SVG masters; Codex reviews
+  geometry, economics, answer leakage and offline/mobile legibility. Do not misuse
+  the shared business break-even chart model.
 slot_plan:
   note: 6145-specific design from the approved corpus; no MCQ paper. AO marks are
     planning estimates, not official per-part allocations. Parent outcomes integrate
-    skills; member rows prevent omissions.
+    skills; member rows prevent omissions. Revision-01 adds precise retrieval targets
+    and representations; existing IDs are migrated by semantic key. New objectives
+    use single-purpose types to avoid duplicated definition/interpretation padding.
+    depictions.chart_model none means the shared break-even model cannot validate
+    these economic visuals; it does not excuse the separate geometry and visual review.
   subtypes_by_objective_type:
     economics_member:
     - DEF
@@ -464,6 +497,14 @@ slot_plan:
     - BEN
     - LIM
     - EVAL
+    economics_revision_def:
+    - DEF
+    economics_revision_why:
+    - WHY
+    economics_revision_feature:
+    - FEATURE
+    economics_revision_proc:
+    - PROC
   subtypes_by_tier:
     1: []
     2:
@@ -556,3 +597,9 @@ slot_plan:
       rubric; this is an extended-response drill, not a full Paper 2 essay.'
     ao_split:
       C: 9
+depictions:
+  chart_model: none
+  code_fence_languages:
+  - pseudocode
+  - sql
+  - text

@@ -1,70 +1,29 @@
-# Handover prompt — Namibia NSSCO Economics 6145
+# Revision handover — 6145 NSSCO Economics
 
-Paste below the line into the authoring session after the approved plan is committed.
+This replaces the original whole-subject authoring prompt, archived in planning/revision-01/baseline/. Revision-01 was **approved by Vitalis on 28 October 2026 and activated**. Do not run an old whole-subject bootstrap.
 
----
+## Approved and activated starting state
 
-You are the AUTHOR for Namibia NSSCO Economics 6145, workspace `work/nam-6145-nssco-2026/`, owner Vitalis P Haupindi. The learner examination is in 2026. The accepted syllabus is NIED 2018, first examination 2020; the user has confirmed it for these learners. Do not invent a terminal validity year.
+Read planning/revision-01/approval-and-activation.json, STATUS.md and PLAN-6145-nssco-economics.md. Vitalis approved the 625-item revision and asked for Claude to start. Candidate curriculum, subject profile, contracts and orders are already live. Reviewed canonical content and the 580-item publication remain intact; the 45 new slots are pending. The saved baseline and activation hashes identify the starting state. Old topic QA describes the earlier 580-item scope, not a completed new build.
 
-## Start here
+Claude starts the visual phase first, using CLAUDE-DIAGRAM-HANDOVER-6145.md. Codex’s nonvisual phase is pending and not running. Keep topic-file authoring sequential. The approved local authoring may proceed under Vitalis’s current instruction; the separate Git checkpoint is pending and must not be reported complete. Do not commit, push or upload from this handover.
 
-Read AGENTS.md, TEAM-PLAYBOOK.md, this subject's PLAN-6145-nssco-economics.md, subject-profile.yaml, curriculum/answer-shapes.json and the AUTHOR role brief. This handover wins over generic business-oriented author instructions. Do not read another subject workspace. Approved syllabus facts and evidence already exist; do not re-mine or overwrite them.
+Do not rerun planning/reopen_step4_6145.py or planning/write_revision_6145.py over the approved/activated state; they generated the proposal. Do not run old authoring bootstrap scripts. Preserve prior canonical content while filling approved slots.
 
-Check STATUS.md first. **Do not author production topics until the scope approval and plan-commit checkpoints are ticked.** The exemplar is an example, not proof of user approval.
+## Stage 2: Codex nonvisual authoring
 
-## The job
+Role AUTHOR, workspace work/nam-6145-nssco-2026/. Read AGENTS.md, TEAM-PLAYBOOK.md and only the AUTHOR role brief. This narrowed assignment overrides the generic whole-subject run. Use `planning/revision-01/scope.json`, filtered owner Codex: **37 exact new slots**. Fill the named standard term or function, not a generic abstract category. Follow the labels and use current reviewed notes and the syllabus/corpus anchors. Add a claim where the named concept has no suitable canonical claim, and teach/map it in the existing content unit. Preserve source provenance and all prior fixes.
 
-Author the complete 28-topic subject in syllabus order: 468 flashcards and 112 packages, 580 planned items, 63 content units and 56,250–80,710 teaching words. Codex works sequentially; Claude may delegate according to the playbook. Use every topic's contract.json and work_order.json. Exact output filenames are generated in the work order.
+Complete the ten `notes-budget-work-order.json` tasks, preserving examinable points. Review the single internal-growth retargeting proposed in the plan and record it in authoring_notes before changing its existing prompt/claim dependencies. Do not alter valid cards merely for style, re-author the whole subject or pad prose to a minimum. Recalculate actual block words. If a budget cannot accommodate the named teaching, report it to the planner rather than silently changing the envelope.
 
-The exemplar at exemplar/topics/1.1/ has eight ledger claims, one content unit, ten cards and four packages, with no check failures. Copy field structure and dependency stamps, not its prose, scenarios or volume. It is outside production topics and does not count as topic 1.1 authored. Its warning/not_run checks remain visible in qa_report.json.
+Preserve all 580 existing IDs and labels and add exactly the assigned 37 cards. The eight pending Claude visual slots must remain explicitly pending, not filled with placeholders. Several topics will be incomplete until both phases finish; do not republish an incomplete extension as complete. Re-stamp and render affected canonical material, and record partial completion honestly.
 
-Produce claims/canonical_claim_ledger.json, content-units/*.json and learning-items/topic_<T>_items.json for each topic. Every claim has a revision. Every block/item cites claims, carries claims_seen and a SHA-256 authored_hash from checks.yyeni_checks._artefact_text. Claims remain unverified and not publishable until the proper review/approval stage. Each item has a complete model answer and content-specific marking guidance.
+## Stage 3: Claude diagrams
 
-## Every item carries its labels
+Claude’s visual phase is authorised to start first; paste CLAUDE-DIAGRAM-HANDOVER-6145.md into Claude. No Codex authoring is currently running. Its exact assignment is eight new and four existing diagram cards with 24 PNGs and 24 SVG masters. Codex will review those images and diagram edits. Claude also independently reviews Codex’s new nonvisual cards and budget edits; distinguish these review responsibilities in STATUS.
 
-Copy item_id from slot, subtype or item_type, assessment_objectives, blooms_level, command_word and mark_tariff. A MISCON slot also copies misconception_entry. Performance labels use the subject profile's declared task allocation: data_response B/C; short_answer A; case_analysis A/B/C; essay_plan C. Mark tariffs are 20, 16, 20 and 9 respectively. Package opening command is the actual first directive; every part uses an observed form and its stated tariff.
+## Stage 4: finish and validate
 
-## Rules that come from the syllabus and corpus
+Once all 625 items and assets exist, run all topic checks, complete slot/label reconciliation, copied-wording checking against subject-only assessment extracts, actual-word counts, claims/revision/hash checking, repeatable asset generation, per-side image-reference checks and canonical/export equality. Regenerate using the standard note/publish tools plus the subject-owned asset-copy helper described in the Claude handover. Never edit exports by hand. Report C-18, any C-26 and all not_run limitations honestly.
 
-1. The A/B/C names are those in the 6145 syllabus. Overall targets 39/25.5/35.5 are calculated from the equal paper weights, not a separately printed qualification table. Do not substitute AO1–AO4 conventions.
-2. Every named member must be taught. A parent compares, links or evaluates; a child defines or practises its own concept. Do not duplicate a definition to fill a parent slot. The objective crosswalk identifies original anchors and planner-specified members of open lists.
-3. Commands and tariffs come from slots. Calculate 1 awards one result mark even when teaching shows method. Diagram construction uses Use 4; interpretation is separate. Never treat every Discuss task as a debate or every 7-mark task as the same rubric.
-4. Each package is a full original task with source facts and answers for all parts. The Paper 1-style data case has Describe 6, Examine 7 and Suggest 7; the knowledge set has eight two-mark parts; the Paper 2-style case has 2/4/7/7 parts; the 9-mark evaluation plan has developed opposing cases and a supported distinct judgement. If a narrow topic cannot support its package within scope, report the specific mismatch rather than invent an unrelated economic issue.
-5. A MISCON card asks a discriminating question from the register; it is not another definition. Use new numbers/examples, never report wording.
-6. Use original invented Namibian businesses or community settings, N$ and British spelling. Notes are a standalone teaching text. Do not pad answers with generic template phrases or paste the same rubric onto different cards.
-7. Read assessment-evidence/source-anomalies.json and GAPS.md. Do not repeat the reversed imported-inflation mechanism, misleading public-good/private-sector line, blanket multinational legal-form claim, malformed population arithmetic or scale/diminishing-returns conflation.
-8. Apply all registered conditions wherever a mechanism is asserted. Use exact real-income deflation when an exact index calculation is requested; label approximations. Elasticity coefficients are not percentages. Keep net migration and a migration rate distinct.
-9. Derive diagrams from original parameters. Check geometry and numerical solutions independently, preserve explicit figure/coordinate data and resolve every referenced asset. Do not claim that the generic break-even chart checker verified demand/supply geometry. If using coordinates for a learner to plot, supply axes, labels, original/new points and the written reasoning.
-10. No copied official question, case or marking wording reaches learners. No claims about what examiners reward or future question frequency. Source evidence is internal only.
-11. For precise Namibia legal/current institutional claims, verify an official source rather than relying on a dated report. Keep general textbook principles and verified live law separate; record any remaining limitation.
-12. Do not edit standard/, sources/, another subject, the approved curriculum, contracts or work orders. If a slot is semantically wrong, record the issue for the planner. Do not silently weaken checks or add cards solely to tune AO counts.
-
-## Voice
-
-Plain, connected explanatory prose with worked original examples, precise distinctions, labelled calculations and case-led reasoning. Each model answer is as long as its demand needs; no filler. A two-mark explanation should not become an essay. Each piece of marking guidance identifies the specific credit-worthy content and actual allocation.
-
-## The work order is the approved scope
-
-Exactly one item per slot. Report genuine required deviations in topics/<T>/authoring_notes.json as from/to/why; do not overwrite the plan. A planner must approve and regenerate a revised plan before a mismatch is silently normalised. Parent exposure is not automatically evidence for every named child.
-
-## Finishing each topic
-
-Run:
-
-```bash
-python3 standard/v0.2.0-draft/build/render_notes.py work/nam-6145-nssco-2026 <T>
-python3 standard/v0.2.0-draft/checks/run_checks.py work/nam-6145-nssco-2026 <T>
-python3 standard/v0.2.0-draft/checks/what_to_fix.py work/nam-6145-nssco-2026 <T>
-```
-
-Fix failures, retaining warnings/not_run results. The run_checks CLI exits 1 even when the saved decision is publish; inspect qa_report.json and use what_to_fix, which exits 0 when no failures remain. Do not call a not_run check a pass. Update STATUS.md after each topic. If the same check fails three times, record the topic/check/attempts and continue other independent topics as the playbook directs.
-
-After every production topic is clean, run publish_subject.py for the workspace and reconcile counts/exports. Do not publish the exemplar as a separate classroom resource.
-
-## Boundaries
-
-No Git commit/push or YYeni import by default. Follow the user's explicit authorisation and the playbook checkpoints. Business Studies import is deferred. Stop when production authoring/publication is complete so the user can start independent Claude review; **this subject still requires step 6 review**.
-
-## Report back when the subject is finished
-
-Report topics completed/blocked, actual counts, notes words, final decisions, warning/not_run limitations, deviations and plan problems. Do not call authored content independently reviewed or imported. Keep the summary under 250 words.
+Then return for the human review/Git checkpoint. A later classroom import remains separately authorised. The later import maps local manifest sides to YYeni managed question_asset_id/answer_asset_id; it is not part of this authoring pass.
