@@ -4,7 +4,7 @@ Workspace: work/nam-6145-nssco-2026/
 Owner: Vitalis P Haupindi  
 Authoring tool: Codex  
 Target examination: 2026, as requested by Vitalis  
-Current role: complete and published locally. Claude’s nonvisual verdict is publish; Codex has independently checked and accepted all five repair categories. Final verification: 625/625 items (513 flashcards + 112 packages), 28 topics PUBLISH, all 63 unit budgets pass, all 12 visual cards / 48 PNG-SVG hashes preserved; 68,109 rendered-note words, 12 notes images and 24 card images reconciled. Manifest completion label corrected in its generator. Git checkpoints and the human verdict-read checkbox remain open; YYeni import remains deferred. See review/codex-final-repair-check-6145.md.
+Current role: reviewed resources committed and pushed to origin/main in 06c382c. Claude’s nonvisual verdict is publish; Codex has independently checked and accepted all five repair categories. Final verification: 625/625 items (513 flashcards + 112 packages), 28 topics PUBLISH, all 63 unit budgets pass, all 12 visual cards / 48 PNG-SVG hashes preserved; 68,109 rendered-note words, 12 notes images and 24 card images reconciled. Manifest completion label corrected in its generator. Vitalis authorised the final Git release after supplying the publish verdict. Git checkpoints and verdict acknowledgement are complete; YYeni import remains deferred. See review/codex-final-repair-check-6145.md.
 
 - [x] 0 Claimed by Vitalis — 2026-10-28; tracker committed and pushed in 0720bf3.
 - [x] 1 Sources found — 2026-10-28; see SOURCE-INVENTORY.md. Ten paper PDFs (2020–2024), five annual examiner-report volumes; Economics sections subsequently checked in step 3. No standalone mark schemes found.
@@ -24,9 +24,9 @@ Current role: complete and published locally. Claude’s nonvisual verdict is pu
 - [x] 4r Revised plan generated — 45 new cards; proposed 513 flashcards + 112 packages = 625 items; 264 assessable outcomes; exact largest AO gap 4.886 pp. All 580 existing IDs/labels preserved. Candidate scope only, not new authored material.
 - [x] 4r YOU: revised 625-item scope approved — Vitalis, 2026-10-28: “i approve teh revised scope so please give me the handover prompt to give claude to start working on this.”
 - [x] 4r Approved plan activated — 2026-10-28; 98 planning files promoted, reviewed canonical/publication hashes unchanged. See planning/revision-01/approval-and-activation.json.
-- [ ] 4r Git checkpoint — reviewed 625-item revision included in the final release commit; remote confirmation pending.
+- [x] 4r Git checkpoint — revision-01 resources committed and pushed in 06c382c; origin/main acknowledged the update.
 - [x] 6 YOU: verdict read / final release authorised — Vitalis supplied the publish verdict and explicitly requested “the final git commit and push to the remote repo”.
-- [ ] 7 YOU: committed and pushed — final checkpoint explicitly delegated to Codex by Vitalis; remote confirmation pending.
+- [x] 7 YOU: committed and pushed — explicitly delegated to Codex by Vitalis; 06c382c pushed successfully to origin/main. This status confirmation follows that verified release.
 
 ## Step 6 cross-review
 
@@ -48,7 +48,7 @@ The generated scope preserves 63 content units and the 56,250–80,710 topic-wor
 
 ## Current handover
 
-The 625-item subject is complete and published locally. Claude reviewed the 37 new nonvisual cards, the approved internal-growth retarget, 69 new claims and 21 edited notes blocks, with verdict **publish**. Codex subsequently read and accepted all five repair categories; no further learner-facing changes were needed. See review/step6-nonvisual-crossreview-6145.md and review/codex-final-repair-check-6145.md.
+The 625-item subject is complete, published and pushed to origin/main in 06c382c. Claude reviewed the 37 new nonvisual cards, the approved internal-growth retarget, 69 new claims and 21 edited notes blocks, with verdict **publish**. Codex subsequently read and accepted all five repair categories; no further learner-facing changes were needed. See review/step6-nonvisual-crossreview-6145.md and review/codex-final-repair-check-6145.md.
 
 Final checks: 28 topics PUBLISH, no failures, all 63 unit budgets pass; C-18 warns in all topics and C-35/C-41/C-43 remain not_run. All 625 planned slots exist once with matching labels. The accepted visual cards and all 48 PNG/SVG files are unchanged. All existing claims are preserved, and all 69 new claims match the author packet.
 
@@ -56,7 +56,7 @@ The guarded helper regenerated publish/nam-6145-nssco-2026/ without an incomplet
 
 The earlier contract-count defect was corrected from the unchanged approved work orders, with superseding hashes retained in planning/revision-01/contract-count-correction.json. Scope remains 625 items; no planning changes were made during the final review.
 
-Remaining: revision-01/final Git checkpoint and the human verdict-read checkbox. YYeni image upload and classroom import remain separate later work. No upload, import, commit or push occurred in the final repair check. Do not rerun old authoring/bootstrap/apply-card-text scripts over reviewed content; author-checkpoint audit files intentionally describe the earlier state.
+The revision-01/final Git checkpoint is complete: release commit 06c382c was successfully pushed to origin/main after Vitalis’s explicit request. YYeni image upload and classroom import remain separate later work; neither has occurred. The earlier final repair check itself performed no Git writes. Do not rerun old authoring/bootstrap/apply-card-text scripts over reviewed content; author-checkpoint audit files intentionally describe the earlier state.
 
 ## Visual review progress (revision-01)
 
