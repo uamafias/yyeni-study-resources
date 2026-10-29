@@ -27,7 +27,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
 | Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Vitalis | Codex | in progress | Step 4 plan ready: 737 flashcards + 64 practice packages, 54 planned resources, all 18 topics; largest AO gap 0.948 points. Scope approved by Vitalis; plan Git checkpoint authorised and recorded in the containing commit. Maps 2021–2024; confirmed 2026 P3 coasts/tourism. No production authoring. |
 | | | | | | | | |
-| Namibia NSSCO | 6117 | Chemistry | `nam-6117-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Owner confirmed 2026-10-24; Step 3 approved 2026-10-26; Step 4 approved 2026-10-26; nine-card prototype review before full production |
+| Namibia NSSCO | 6117 | Chemistry | `nam-6117-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Owner confirmed 2026-10-24; Step 3 approved 2026-10-26; Step 4 approved 2026-10-26; nine-card prototypes approved 2026-10-26; Step 5 authored and editorial repairs complete 2026-10-29: 12 topics, 808 cards + 36 activities; independent re-verification pending; publication hold; see FINAL-EDITORIAL-HANDOVER-6117.md |
 
 ## Published
 
@@ -43,3 +43,5 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE | 0450 | Business Studies | `cie-0450-igcse-2026` | Hermes / OpenCode | Claude | 913 | |
 | Cambridge IGCSE | 0455 | Economics | `cie-0455-igcse-2026` | Hermes, then Codex | Claude | 674 | 46 diagrams in `publish/cie-0455-igcse-2026/diagrams/` |
 | Namibia NSSCO | 6116 | Biology | `nam-6116-nssco-2026` | Codex, with Claude repair rounds | Claude Step 6 (also repaired) | 851 | Repository review copy under `work/`, 886 authored and 35 figure items held; pilot process complete under operator override; unverified and not released to learners. |
+
+Historical Chemistry 6117 review repair update (2026-10-27; superseded by final handover 2026-10-29): authored bank repaired for re-verification; publication held. Full audit of 1,008 responses and 146 rewritten cards gives recall 23.31%; all QA reports hold for independent re-verification. See work/nam-6117-nssco-2026/REVIEW-REPAIRS-6117.md.

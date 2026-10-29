@@ -1,0 +1,60 @@
+# Exact copied-wording source manifest
+
+28 paths; 24 distinct file contents. Four archive copies are byte-identical to 2020–2023 reports in the Chemistry folder. The 2024/2025 reports reside only in the annual report archive. SHA-256 values and the previous 24-path list are in copied-wording-sources.json.
+
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2020/6117_1 (2020).pdf`
+  - SHA-256: `56a192cf01c7d620d13044a0325223396cf5cd27eb420aa53cbcc972525fcf24`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2020/6117_2(2020).pdf`
+  - SHA-256: `849315490a6c99caff8f621fb771e87e65cb11e2c8770963f87c53334f230053`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2020/6117_3(2020).pdf`
+  - SHA-256: `b22f269ea0c8bf12bc6ece88b86723a3c4c508627ec6103cbb2f25caa98a28e6`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2020/NSSCO(New) Examiners Report 2020.pdf`
+  - SHA-256: `5dc012a10881beb97d45314ef7cf69c831d3d4c7702e61d98ca39a44d427e77d`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2021/6117-1.pdf`
+  - SHA-256: `4671a7d3a46af136d3fc0fb04e98452ed6d1723d493c2a02b171d5f29b88a55d`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2021/6117-2.pdf`
+  - SHA-256: `45c271095f69bc603dc3a4c98a701152af1112ddbb2d4c8dc00f91fd6d8226c5`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2021/6117-3.pdf`
+  - SHA-256: `3b9a3b3b0296ec7639b105e7517e3c83bacc5c8f44c2dd2a2035eb7339a662ee`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2021/NSSCO(New) Examiners Report 2021.pdf`
+  - SHA-256: `3cc460095f90d63a778780aff2db6e93f8fbba8524f8f6697acae5a16862d7e4`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2022/NSSCO(New) Examiners Report 2022.pdf`
+  - SHA-256: `03feaff40ca6c90b32ef924707cf5999255cc9e1dec3472a88f54f94288f0f7d`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2022/Ordinary - Chemistry Paper 1 6117-1 - First Proof 24.05.2022.pdf`
+  - SHA-256: `b2cbf8a2d014665f497e4867da627f4d18712a3a2ed1518716e8d5106ff29221`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2022/Ordinary - Chemistry Paper 2 6117-2 - First Proof 24.05.2022.pdf`
+  - SHA-256: `0dd4e1600f7d43bbe45d0a5a118dbb4b18b08e52db5f385b7037484c50bc85f1`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2022/Ordinary - Chemistry Paper 3 6117-3 - First Proof 24.05.2022.pdf`
+  - SHA-256: `741489fda76f04f9d0b8d7b1a1d25bdedb7519671d63c85647a735e714b285d3`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2023/NSSCO(New) Examiners Report 2023.pdf`
+  - SHA-256: `f9abfa704d1525e5cab63ddefa8cb674e6e6936dc1df68f51a76457913a80773`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2023/Ord - Chemistry Paper 2 6117-2 - First Revised Proof 15.03.2023.pdf`
+  - SHA-256: `948d7b1523e593960df773895ffc452988a4d9d7a77447fff6bdc459e045b0de`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2023/Ordinary - Chemistry Paper 1 6117-1 - First Proof 10.03.2023.pdf`
+  - SHA-256: `ab0f4a47898afb39663bd20fe37b3509b1a2cce5db9634eada5b4fb59f09578d`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2023/Ordinary - Chemistry Paper 3 6117-3 - First Proof 13.03.2023.pdf`
+  - SHA-256: `f3d92049327829da9b7a65849d3e411d00f8c7a5e637220cccedec5a82497578`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2024/6117-1.pdf`
+  - SHA-256: `7edac2a2f010b410e74d31f19e841d16031726a9fe395b94eaa1ccc7782bffab`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2024/6117-2.pdf`
+  - SHA-256: `90fdc5bd6615ff83dd36cabeeb88937821b986eeb49820c15fc5ab6ad8e9928a`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2024/6117-3.pdf`
+  - SHA-256: `96cf25e547ce47b2a12ceabc46f5738e79fd5949a616b86f5cc3690031c8e63d`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2025/6117-1.pdf`
+  - SHA-256: `2a4cc70330a60286511cf0b5a6e3967c38a6f933991bc5d8bd870f872622480d`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2025/6117-2.pdf`
+  - SHA-256: `8a281142e639e8137b776492849f7360e7cbab39605bf61016d344624a5d36ee`
+- `Question Banks/Namibian Curricula/NSSCO (New)/Chemistry (6117)/2025/6117-3.pdf`
+  - SHA-256: `ffecdfce635de6efacca2241fd6efe364bc23dafbeea8ba48f37cfccb0f787f7`
+- `Question Banks/Namibian Examiner Reports/NSSCO (New) /2020/NSSCO(New) Examiners Report 2020 (1).pdf`
+  - SHA-256: `5dc012a10881beb97d45314ef7cf69c831d3d4c7702e61d98ca39a44d427e77d` — additional duplicate archive path
+- `Question Banks/Namibian Examiner Reports/NSSCO (New) /2021/NSSCO New 2021 (Gr 11).pdf`
+  - SHA-256: `3cc460095f90d63a778780aff2db6e93f8fbba8524f8f6697acae5a16862d7e4` — additional duplicate archive path
+- `Question Banks/Namibian Examiner Reports/NSSCO (New) /2022/NSSCO 2022.pdf`
+  - SHA-256: `03feaff40ca6c90b32ef924707cf5999255cc9e1dec3472a88f54f94288f0f7d` — additional duplicate archive path
+- `Question Banks/Namibian Examiner Reports/NSSCO (New) /2023/Examiners Report NSSCO 2023.pdf`
+  - SHA-256: `f9abfa704d1525e5cab63ddefa8cb674e6e6936dc1df68f51a76457913a80773` — additional duplicate archive path
+- `Question Banks/Namibian Examiner Reports/NSSCO (New) /2024/Examiners Report NSSCO 2024.pdf`
+  - SHA-256: `85a4fe4f50e9c3140a6577afff7674807b7198f82c1eaea83ed51a751d4e0a84`
+- `Question Banks/Namibian Examiner Reports/NSSCO (New) /2025/NSSCOExaminersReport2025.pdf`
+  - SHA-256: `55fd79bd06b925c2648a5a35f83fdad07895c9340f07f74a1044f5eff00e3b1d`

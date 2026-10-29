@@ -1,0 +1,293 @@
+# 1 Scientific processes
+
+*NSSCO Chemistry 6117 — study notes. Worked examples teach methods; assessment tasks are supplied separately.*
+
+---
+
+## 1.1 — Mathematical requirements
+
+### Arithmetic with measured quantities
+
+Choose the operation from the physical meaning of the quantities. Add portions to obtain a total, subtract a starting reading from a final reading to obtain a change, multiply a rate by its duration to obtain an amount, and divide an amount by a duration to obtain an average rate. For example, a gas syringe changes from 8 cm³ to 32 cm³: the gas collected during that interval is 24 cm³, not 32 cm³. If the interval lasts 12 s, the average production rate is 2 cm³/s. A rate is a ratio; it is not an extra volume.
+
+Convert quantities to compatible units before adding or subtracting them. Adding 0.050 dm³ to 20 cm³ means adding 50 cm³ to 20 cm³. Keep the working line with the numbers and their units so that another person can reconstruct the calculation. Brackets preserve the intended order: subtract the two syringe readings before dividing by time. Intermediate values should retain enough digits to avoid introducing rounding errors. Check the magnitude: a collected volume cannot exceed the final reading if the initial reading is positive. These arithmetic habits support reacting quantities, concentration and experimental rates later in the course.
+
+### Means, fractions, percentages and ratios
+
+An arithmetic mean is the sum of comparable readings divided by their number. Three volumes of 19.8, 20.0 and 20.2 cm³ give a mean of 20.0 cm³. Repeated measurements should refer to the same conditions; averaging results from different temperatures would conceal the effect being investigated. A mean can reduce the influence of random variation, but it cannot repair an instrument that reads too high on every trial.
+
+A fraction compares a part with a whole. Convert it to a percentage by multiplying by 100. If 18 g of a 24 g sample is the wanted substance, the fraction is 18/24 = 0.75 and the percentage is 75%. State what the denominator represents: using impurity mass instead of total sample mass answers a different question. A ratio such as 2:3 specifies relative amounts; five equal shares make the total. The reciprocal of a value x is 1/x, so the reciprocal of 4 s is 0.25 s⁻¹. Reciprocals reverse the unit as well as the number. Decimals, fractions and percentages can describe the same proportion, but they must not be interchanged without conversion.
+
+### Direct and inverse proportion
+
+Two quantities are directly proportional when multiplying one by a factor multiplies the other by the same factor, with the other relevant conditions unchanged. The ratio y/x is then constant. At fixed solution concentration, doubling the solution volume doubles the dissolved amount. A graph of y against x for direct proportion is a straight line through the origin; a straight line with a non-zero intercept represents a different relationship.
+
+For inverse proportion, increasing one quantity by a factor decreases the other by that factor, so their product is constant. If a fixed quantity of material is processed at twice the constant rate, the required time is halved. Do not assume that every decreasing graph is inverse proportion: the product must remain constant. First identify the fixed quantity, then write the relationship and substitute the new value. A useful direction check is whether the result moves as expected. Requiring more time at a faster rate, while the amount remains unchanged, signals that the proportional relationship has been reversed. These examples concern numerical reasoning, not gas-law calculations outside the syllabus.
+
+### Powers of ten and indices
+
+An index tells us how many times a factor is multiplied by itself. Thus 10³ is 1000, while 10⁻³ is 1/1000. A negative index does not make a quantity negative: 2 × 10⁻³ g is a small positive mass. For the same base, multiplication adds indices and division subtracts them. Therefore 10³ × 10⁻² = 10¹, while 10³/10⁻² = 10⁵. The coefficient is handled separately from the power of ten.
+
+Brackets matter when a whole quantity is raised to a power: (2 × 10³)² is 4 × 10⁶. The square applies to both the coefficient and the power. The zeroth power of a non-zero number is one. Scientific calculators may show E−3 instead of ×10⁻³; these are alternative displays of the same numerical value. Enter a negative exponent using the calculator's exponent controls rather than interpreting it as subtraction from the coefficient. Estimate the size before accepting a display: multiplying two small positive quantities should not produce a very large answer.
+
+### Estimating before calculating
+
+An estimate is a deliberately simplified calculation used to check order of magnitude. Round awkward values to nearby convenient values, perform the arithmetic mentally, and compare the estimate with the detailed calculation. For example, 19.7/4.9 is close to 20/5, which is 4. An exact calculator result near 4 is plausible; one near 40 suggests an entry or decimal-place error. An estimate is not a replacement for a requested precise calculation.
+
+Choose rounding that preserves the overall size. Rounding every value upward does not necessarily round the result upward, because a larger denominator makes a quotient smaller. State the rounded expression so that the approximation is visible. When estimating a product, each coefficient and power of ten still contributes: 0.020 × 300 is approximately 6, not 6000. The unit remains attached to the physical quantity even though its value is approximate. Use estimates to catch errors before rounding a final answer. A final answer with many decimal places can still be wrong if its scale is implausible.
+
+### Rearranging a relationship
+
+In x = yz, x is the product of y and z. To find y, divide both sides by z; to find z, divide both sides by y. The operation must be applied to the whole side, not just one term chosen from it. For a laboratory example, mass = density × volume gives volume = mass/density. Substituting units gives g/(g/cm³) = cm³, which checks the rearrangement.
+
+Write the symbolic rearrangement before inserting numbers. This makes it easier to see whether the unknown belongs in a numerator or denominator and avoids a calculator sequence hiding an algebra mistake. If mass is 15 g and density is 3 g/cm³, volume is 5 cm³. Multiplying mass by density would produce neither the right number nor the right unit. After solving, substitute the result into the original relationship: 3 × 5 gives the stated mass of 15. The original equation, worked substitution and unit together provide a more reliable check than the number alone.
+
+### Connections
+
+Use these methods when calculating solution quantities in Stoichiometry, interpreting reactions in Chemical reactions, and evaluating laboratory methods in Practical skills and investigation planning.
+
+---
+
+## 1.2.1 — Planning and conducting investigations
+
+### Observing and handling apparatus safely
+
+An observation records what is detected or measured; an inference explains what it might mean. “Bubbles formed” is an observation. “Hydrogen formed” is an inference that requires an appropriate gas test or other evidence. Record colour, state, temperature and changes with enough detail to distinguish possibilities. A blue solid settling in a liquid is not the same observation as a blue solution.
+
+Choose a technique that matches the quantity. Put a measuring cylinder upright on a level surface and view a concave meniscus at eye level. Read the bottom of the meniscus rather than the top edge. A sloping view gives parallax error. Support hot apparatus securely, use eye protection where required, and follow the teacher's instructions for reagents and heating. Never taste a laboratory sample or use a mouth to fill a pipette. Safety is part of a valid method: a badly supported vessel can spill material and invalidate the measurement as well as cause injury. Record the observation immediately rather than reconstructing it from memory after later steps.
+
+### Separating the variables in a fair comparison
+
+The independent variable is deliberately changed. The dependent variable is the response measured. Control variables are other factors kept sufficiently constant to make the comparison meaningful. In a rate investigation, solution temperature might be the independent variable and the volume of gas produced in 30 s the dependent variable. Reactant quantities, concentration, chip size and apparatus could need controlling.
+
+Naming a variable is not the same as explaining how it is controlled. “Keep temperature constant” becomes a workable instruction when the method says to use a water bath at a stated temperature and allow the solutions to reach that temperature before mixing. Choose a measurable response: “amount of reaction” is too vague unless it is defined as gas volume, mass change or another quantity. A control variable can become the independent variable in a different investigation; these labels describe its role in the particular method, not an unchanging property of the quantity. Changing temperature and concentration together makes it difficult to decide which caused an observed rate difference.
+
+### Aims, hypotheses and predictions
+
+An aim states the question that the investigation will answer. A hypothesis proposes a testable relationship or explanation. A prediction states an expected observation if that hypothesis is correct. For example, the aim could be to investigate how powder size affects reaction rate. A hypothesis could link greater exposed surface to more frequent reacting collisions. The prediction would be that a fine powder produces a fixed gas volume in less time than equal-mass large chips under otherwise matched conditions.
+
+Write a prediction before examining the results. It should name the quantities and the direction of change, so that the measurements can support or challenge it. “The reaction will be better” cannot be tested clearly; “the time to collect 20 cm³ will decrease” can. A result that differs from the prediction is useful evidence, not permission to rewrite the original hypothesis unnoticed. First consider method limitations and repeatable results, then revise the explanation where justified. The aim, chosen measurements and final conclusion should address the same relationship.
+
+### Fairness, repeats and zero readings
+
+A fair comparison changes the intended factor while controlling other influential conditions. Repeatability asks whether the same method gives similar results when repeated. Accuracy concerns closeness to an accepted or true value. These ideas support each other but are not interchangeable: a balance with a zero error can give repeated readings that agree closely yet are all too high.
+
+Before measuring, check the instrument's initial reading. An empty balance should read zero or be tared with the sample container in place. If the empty container is not tared, subtract its mass from the combined reading. A gas syringe can start above zero, provided that the initial reading is recorded and subtracted from the final one. Do not silently assume zero. Repeating the same biased measurement does not remove its bias. If a measuring instrument shows a consistent offset, correct its setup or apply a justified correction. Controls establish comparability, repeats reveal random variation, and zero checks help prevent systematic error.
+
+---
+
+## 1.2.2 — Recording data
+
+### Selecting and organising evidence
+
+Use information that answers the investigation question. A table of temperatures and reaction times is relevant to a temperature-rate investigation; a list of apparatus prices is not evidence of the rate. Keep sources, conditions and units attached for traceability. Data from different methods should not be combined without checking whether they measure the same thing under comparable conditions.
+
+When selecting information, distinguish a direct measurement from a calculated value or someone else's interpretation. Organise comparable results into a consistent table rather than copying them into an unstructured paragraph. For example, convert all volumes to the same unit before comparing samples. Keep unusual readings in the original record even if they are later investigated as anomalies. A transparent record explains why each source was selected or rejected. Do not select just results agreeing with the prediction.
+
+### Recording complete experimental results
+
+A results record should preserve the measurements needed to answer the question. Write the readings as they are made, including the independent-variable setting, response, units and repeat number. A table is useful for exact values; a graph helps reveal a trend or compare patterns. Record the original readings before calculating means, changes or rates. Otherwise a later arithmetic mistake may be impossible to trace.
+
+Units tell the reader which physical quantity a number represents and how large it is. A bare value of 25 could mean seconds, degrees Celsius or cubic centimetres. Use a consistent number of decimal places for repeated readings from the same instrument when its resolution supports that convention. Record a qualitative observation clearly alongside the relevant trial, such as cloudiness or a persistent precipitate. Do not replace an unexpected measurement with the value that seems more likely. Make a note, investigate and repeat if needed; retain the original evidence.
+
+### Quantity-and-unit headings
+
+A table heading names the quantity and its unit, for example time / s or mass / g. The numerical entries then contain values without repeating the unit in each cell. This makes the table easier to scan and avoids ambiguous mixtures of notation. Use specific names such as initial burette reading / cm³ and final burette reading / cm³ rather than two columns both labelled volume.
+
+A column of calculated values also needs a heading: average rate / cm³ s⁻¹ distinguishes a rate from a collected volume. Do not confuse the solidus in a heading with an instruction to divide each recorded measurement again. It expresses the unit in which the numerical values are given. State a changed unit in the heading before entering converted data. If a time column is labelled min, a value of 30 s must appear as 0.50 rather than 30. An unambiguous heading is part of the evidence, not decorative formatting.
+
+### Turning a table into a graph
+
+Use the table headings to label graph axes with quantities and units. The independent variable normally goes on the horizontal axis and the dependent variable on the vertical axis. Choose scales that spread the data across a substantial part of the grid and use equal numerical intervals at equal distances. A graph scale must not change halfway along an axis simply to fit an inconvenient point.
+
+Plot each pair of values as a small clear cross or point. Decide whether the pattern supports a straight best-fit line or a smooth curve; joining every point with sharp segments may exaggerate random variation. A best-fit line is not required to pass through every point, and an intercept should not be forced to zero unless the relationship supports that choice. To read an intermediate value, move from the specified horizontal coordinate to the line and then to the vertical scale. Marking the two read-off directions helps distinguish interpolation from simply quoting the nearest measured point.
+
+---
+
+## 1.3 — Basic units and derived units
+
+### Length, area and volume scale differently
+
+Length measures one dimension, area measures two and volume measures three. Their units therefore change differently. Because 1 m = 100 cm, a square metre is 100 cm × 100 cm = 10 000 cm². A cubic metre is 100 cm × 100 cm × 100 cm = 1 000 000 cm³. Applying a length conversion factor just once to an area or volume gives a large error.
+
+For similarly shaped objects, multiplying every length by a factor k multiplies area by k² and volume by k³. A cube with twice the edge length has four times the surface area but eight times the volume. The surface-area-to-volume ratio therefore decreases as the cube becomes larger. This helps explain why breaking a solid into smaller pieces can expose more surface for reaction without increasing its total mass. Keep geometric reasoning separate from changing the amount of substance: cutting a cube creates extra exposed surfaces, whereas increasing its edge length creates a larger object.
+
+### SI units and metric prefixes
+
+Use the unit appropriate to the quantity. The SI units relevant here include metre for length, kilogram for mass, second for time, kelvin for temperature and mole for amount of substance. Derived units combine these: volume is measured in m³ and speed in m/s. Laboratory measurements also commonly use g, cm³ and dm³, provided the unit is stated and conversions are made correctly.
+
+Prefixes multiply a unit by a power of ten: tera T is 10¹²; giga G, 10⁹; mega M, 10⁶; kilo k, 10³; deci d, 10⁻¹; centi c, 10⁻²; milli m, 10⁻³; micro μ, 10⁻⁶; nano n, 10⁻⁹; and pico p, 10⁻¹². Letter case matters: M and m indicate different factors. A milligram is 0.001 g, not 0.001 kg. First convert the prefixed quantity to its stated base unit, then make any further conversion. A cubic prefix applies in three dimensions: 1 dm³ = 1000 cm³. The conversion of solution volumes is especially important in concentration calculations.
+
+### Writing numbers in scientific notation
+
+Scientific notation writes a number as a coefficient between one and ten multiplied by an integer power of ten. Thus 4500 is 4.5 × 10³ and 0.0045 is 4.5 × 10⁻³. Count how far the decimal point moves and choose the sign that reproduces the original size. A positive exponent describes a large multiplier; a negative one a fraction.
+
+Scientific notation makes significant figures clearer. The expression 4.50 × 10³ explicitly gives three significant figures, whereas a bare 4500 may be ambiguous about the significance of the trailing zeros. For a calculation, combine the coefficients and powers separately, then adjust the final coefficient if it is outside the standard range. For instance, 12 × 10³ becomes 1.2 × 10⁴. Do not discard the unit: 4.5 × 10⁻³ g and 4.5 × 10⁻³ kg are different masses. A calculator's E display is a compact power-of-ten notation, not a separate physical unit.
+
+### Writing compound units
+
+A compound unit shows how quantities combine. Metres per second can be written m/s or m s⁻¹. The exponent −1 means “per second”, not a negative time. Similarly, cm³/s is a volume-production rate, whereas cm³ alone is a volume. Use spacing and brackets to make the meaning clear when several units are involved.
+
+In table and graph labels, a form such as distance / cm says that the numerical entries are distances expressed in centimetres. A rate axis might read gas-production rate / cm³ s⁻¹. Do not write cm/s when the measured response is a gas volume: the missing cube changes the physical quantity. Unit checking can expose an incorrect relationship even when the arithmetic looks tidy. Dividing a volume by a time produces a volume-per-time unit; multiplying the same quantities would not give a rate. Keep symbols consistent across a task so that a reader does not have to guess whether different labels describe the same quantity.
+
+### Absolute zero and the Kelvin scale
+
+Absolute zero is the zero point of the thermodynamic temperature scale: 0 K corresponds to −273.15 °C. A temperature interval of one kelvin is the same size as an interval of one degree Celsius, but the two scales have different zero points. The kelvin is written K, without a degree symbol.
+
+A room temperature near 20 °C is therefore near 293 K, not 20 K. Celsius temperatures below zero are common, but a negative Celsius reading is not a negative Kelvin reading. At this level, use absolute zero as the lower endpoint of the Kelvin scale; do not describe it as every kind of microscopic motion completely stopping. The scale is useful because it refers temperatures to an absolute zero rather than to the Celsius reference point. Temperature is distinct from heat transferred: an amount of energy is measured in joules, not kelvin. Converting a temperature scale changes the numerical label, not the physical state or warmth of the sample.
+
+### Converting between Celsius and kelvin
+
+Add 273.15 to a Celsius temperature to obtain the corresponding Kelvin temperature. Subtract 273.15 to convert in the other direction. Thus 20.00 °C corresponds to 293.15 K. The conversion is an offset, not multiplication by a scale factor. Writing the formula before the substitution helps avoid multiplying by 273.15 or choosing the wrong direction.
+
+The temperature change between two states has the same numerical value on both scales. Heating a sample from 20 °C to 30 °C is an increase of 10 °C or 10 K. The initial temperatures are not numerically the same, but the offset cancels when taking their difference. Follow the precision of the supplied data: adding a conversion constant does not create extra experimental accuracy. If a question specifies the approximate conversion 273, use that stated convention; otherwise retain the syllabus value 273.15. These conversions are mathematical temperature-scale work and do not require gas laws.
+
+---
+
+## 1.4 — Error, accuracy and uncertainty
+
+### Precision, accuracy and uncertainty
+
+Precision describes how closely repeated results agree; accuracy describes closeness to an accepted value. Uncertainty expresses the range within which a measurement is reasonably judged to lie. A fine scale division may reduce reading uncertainty, but it does not guarantee that the instrument is correctly calibrated. Three readings near 10.5 g can be precise while inaccurate if the accepted mass is 10.0 g.
+
+Record measured values to a resolution justified by the instrument. A scale marked every 1 cm³ does not normally justify a reading with many decimal places. Keep enough intermediate digits in calculations, then round the final result appropriately. Leading zeros locate the decimal point but are not significant figures; in 0.00450, the digits 4, 5 and the final zero express three significant figures. Do not confuse significant figures with decimal places. When comparing results, consider whether a small difference is meaningful relative to uncertainty. A difference smaller than the measurement uncertainty does not justify a strong claim of a real physical change.
+
+### Processing results and investigating anomalies
+
+Process results in a way that answers the question: calculate changes, means or rates only after preserving the original readings. An anomalous result lies unexpectedly far from a consistent pattern or cluster. It is a reason to investigate the method and repeat a measurement, not a reason to delete an inconvenient value without explanation.
+
+Suppose repeated times are 30, 31, 58 and 30 s. The 58 s result deserves attention, but the list alone does not prove its cause. A delayed start, a changed reactant quantity or a genuine variable effect may need checking. Record what was found and state whether the suspect result was retained or excluded when calculating a mean. Repeating under controlled conditions provides evidence for that decision. Keep uncertainty and precision in view: a difference of 0.1 s is not necessarily anomalous when manual timing varies by much more. A trend can also be non-linear, so a point should be compared with the appropriate pattern rather than an assumed straight line.
+
+### Drawing a conclusion that the data support
+
+A conclusion connects the results to the investigation's aim or hypothesis. State the observed relationship, refer to the relevant measurements and explain it using chemistry where possible. If increasing a controlled solution temperature reduces the time to collect a fixed gas volume, the data support a faster reaction over the tested range. They do not prove that the same relationship holds at every possible temperature.
+
+Check whether alternative explanations remain. If particle size changed alongside temperature, the effect cannot confidently be attributed to temperature alone. Repeats and uncertainty help judge how strong the evidence is. A conclusion can report that the data are insufficient or inconsistent; it need not force agreement with the original prediction. Separate what the measurements show from the model used to explain them. “The time fell from 60 to 35 s” is evidence; a collision-based explanation interprets that evidence. A valid conclusion should not claim a finer difference or wider scope than the experiment can support.
+
+### Random and systematic errors
+
+Random errors cause results to vary unpredictably around a value. Manual reaction timing can vary because the observer starts or stops slightly differently on each trial. Repeats can reveal this scatter and averaging can reduce its influence on the estimated result. A systematic error shifts results consistently, as when a balance reads 0.3 g with nothing on it or a scale is incorrectly calibrated.
+
+Identify an error in relation to the actual measurement. “Human error” is too vague to explain a result or propose a repair. State which action or instrument feature affects which reading and whether it tends to increase, decrease or scatter the values. A consistent viewing angle can introduce a directional parallax bias; variable viewing can contribute to scatter. Some errors depend on conditions, so distinguish the observed symptom from an assumed cause. Repeating a biased procedure does not remove the bias. Correct the zero, calibrate against an appropriate reference or improve the method, then repeat to evaluate the change.
+
+### Choosing an improvement that addresses the error
+
+An improvement should remove or reduce a named limitation in the method. If results scatter because of manual timing, repeat trials or use a more consistent timing trigger. If a gas syringe leaks, repair the connection and test its seal; averaging more leaking trials will not recover the lost gas. If an instrument has a zero offset, zero or calibrate it rather than merely repeating the measurement.
+
+Explain why the proposed change improves the particular quantity. Reading a meniscus at eye level reduces parallax; using an instrument with finer divisions can reduce reading uncertainty. A larger sample may reduce the percentage uncertainty of a fixed absolute uncertainty, but the method must still be safe and within the apparatus capacity. Improvements can affect different qualities: repeats mainly assess repeatability and random scatter, while calibration addresses accuracy. Do not promise that a change makes a measurement exact. State the limitation it reduces and how the revised results would be checked.
+
+### Measurement precision and significant figures
+
+Significant figures describe the precision retained in a number, not its size. Leading zeros locate the decimal point and do not count: 0.00470 has three significant figures. Zeros between non-zero digits do count. A final zero after a decimal point can record precision: 6.20 has three significant figures whereas 6.2 has two. Scientific notation makes this unambiguous; 4.50 × 10³ carries three significant figures.
+
+Keep extra digits during a calculation and round the final result. For multiplication or division, the least precise measured input usually limits the final significant figures. For addition and subtraction, consider decimal places. A measured value should not acquire extra precision merely because a calculator displays more digits. Exact counting numbers and defined conversions do not limit precision in the same way as measurements. For example, 1 dm³ = 1000 cm³ is an exact conversion.
+
+Accuracy concerns closeness to a reference value; precision concerns agreement among repeated measurements. A balance that always reads too high may give precise results with poor accuracy. Repeating and averaging reduces the influence of random scatter but cannot remove a constant zero offset. Check calibration or the empty reading, record the correction and keep the original observations. A single apparently plausible result is not evidence that an instrument is calibrated.
+
+### Worked example: from measurements to a defensible density
+
+A pebble has a mass of 31.5 g. Water in a measuring cylinder rises from 18.0 to 30.5 cm³ when the pebble is fully submerged. First identify what each reading measures: neither cylinder reading alone is the pebble's volume. Subtract the initial reading from the final one: 30.5 − 18.0 = 12.5 cm³. Then divide mass by displaced volume: 31.5/12.5 = 2.52 g/cm³. The unit follows from the division; it is not g or cm³ alone.
+
+The practical sequence matters. Zero the balance, dry the pebble before weighing, and read the bottom of the water meniscus at eye level. Lower the pebble gently so no water is lost. Check that it is completely submerged and that no air bubbles cling to it. A labelled apparatus drawing would show the cylinder, the two liquid levels and the submerged pebble; it would not show the balance measuring volume. A cylinder with 1 cm³ divisions cannot justify a volume recorded to 0.001 cm³.
+
+If a repeat displacement is 12.6 cm³, the difference is evidence of measurement spread, not permission to select the result giving a preferred density. Repeat the whole measurement, record all valid values and investigate obvious causes such as trapped bubbles. A constant additive error in both cylinder readings cancels in the difference, but lost water or a changing viewing angle does not. Compare the result with a known reference only after establishing the unit and measurement method.
+
+Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. Label graph axes with quantities and units, plot measured points on suitable scales, and distinguish an interval gradient from an instantaneous tangent gradient. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias.
+
+---
+
+## 1.5 — Experimental techniques
+
+### Choosing measuring apparatus
+
+Choose apparatus by the quantity, required precision and practical conditions. Use a stopwatch for time, a suitable thermometer for temperature and a balance for mass. A measuring cylinder is useful for approximate liquid volumes over a range; a volumetric pipette delivers one specified volume more precisely when used correctly. A burette delivers variable volumes found from the difference between its initial and final readings.
+
+A beaker can hold, mix or heat a liquid, but its coarse markings usually make it unsuitable for an accurate titration volume. Read a burette with its tip filled and free of air bubbles, and use the bottom of the meniscus for a clear aqueous solution. The scale usually increases downwards. Use a pipette filler, not mouth suction. Choosing a more precise instrument is useful only if the technique matches it: an incorrectly read burette can still give a poor result. Gas volume can be measured with a suitable gas syringe or collected over water when the gas does not dissolve significantly under the collection conditions.
+
+### Temperature ranges and mixtures
+
+A pure substance has a characteristic melting point and, at a stated pressure, a characteristic boiling point. Many mixtures melt or boil over a range because their components do not all change state under the same conditions. A sample beginning to melt at 78 °C and finishing at 84 °C behaves differently from a pure reference that melts sharply near 80 °C.
+
+Use the range as evidence rather than assuming that one observed temperature settles identity. The heating rate, thermometer position, pressure and instrument uncertainty affect the measurement. A mixture's boiling behaviour can change as its composition changes during distillation; the more volatile component may be removed first. A narrow range supports purity, but experimental resolution limits what can be detected, and some mixtures have special behaviour. At this level, use the general distinction without claiming that a sharp reading proves the absence of every impurity. Compare like conditions and record both the start and completion of melting where relevant.
+
+### Using melting and boiling points as evidence
+
+Compare a measured melting or boiling point with an appropriate reference under the same conditions. A sharp melting point close to the reference supports the conclusion that the sample is relatively pure and may be that substance. A shifted or broadened melting range can indicate impurities. For boiling measurements, pressure matters, so a reference at a different pressure may not be directly comparable.
+
+Identity and purity are related questions but not identical. Two substances can have similar physical constants; further tests may be needed to distinguish them. A poorly positioned thermometer can also produce an inaccurate reading, so investigate apparatus before attributing every difference to the sample. Record the full observation rather than selecting the temperature closest to the expected value. In a simple identification problem, choose the candidate whose characteristic value and state-change behaviour match the evidence, but avoid claiming proof beyond the available tests.
+
+### Why purity matters in everyday substances
+
+Purity matters when the composition of a substance affects its purpose or safety. An unwanted substance in food or medicine can introduce harmful material, change taste or stability, or alter the intended dose. A medicine containing less active ingredient than its labelled amount may not provide the expected treatment; a harmful contaminant creates a different problem. This is why composition needs checking rather than assuming that a clean appearance proves purity.
+
+In laboratory work, impurities can change measured melting points, cause unexpected reactions or distort a mass used in a calculation. The required purity depends on the use: drinking water contains dissolved minerals and is not chemically pure water, yet it can meet its intended safety requirements. Distinguish chemical purity from suitability for use. A substance need not be a single pure chemical to be useful, but its composition and contaminants must be appropriate for the application. Purification methods are chosen using the physical properties of both the wanted substance and the impurities.
+
+### Filtration and selective dissolving
+
+Filtration separates an insoluble solid from a fluid using a porous barrier. The liquid and dissolved substances pass through as the filtrate; the insoluble solid is retained as the residue. This distinction is essential: filtering a salt solution does not normally remove the dissolved salt. The dissolved particles pass through with the solvent.
+
+To separate a mixture of soluble salt and insoluble sand, add a suitable amount of water and stir to dissolve the salt. Filter the mixture so that sand remains on the paper and salt solution passes into a clean vessel. Washing the residue with a little water can transfer remaining salt solution into the filtrate. If the salt is wanted, recover it from the filtrate by a suitable crystallisation method. If the sand is wanted, wash and dry the residue. State which substance is being collected; otherwise a technically correct method can end with the wrong fraction. The choice of solvent depends on differential solubility, not simply on which liquid is most convenient.
+
+### Crystallisation and re-crystallisation
+
+Crystallisation recovers a dissolved solid by forming crystals from its solution. Gently evaporate some solvent to concentrate the solution, then allow it to cool so that crystals form. Separate the crystals from the remaining solution and dry them appropriately. Do not assume that heating to complete dryness is suitable: some substances decompose or lose water from their crystal structure when overheated.
+
+Re-crystallisation uses a suitable solvent in which the wanted solid is more soluble when hot than when cold. Dissolve the impure solid in a small amount of hot solvent, remove insoluble impurities by filtration when appropriate, then cool the solution. The wanted material crystallises while some soluble impurities remain in the mother liquor. Wash crystals with a small amount of cold solvent to remove adhering solution while limiting product loss. Using too much solvent may leave too much product dissolved. Purification and yield can compete, so describe both the purpose of the steps and which fraction contains the product.
+
+### Paper chromatography of coloured mixtures
+
+Paper chromatography separates dissolved components because they move at different rates with a solvent through the paper. Draw a pencil baseline near the bottom and place a small concentrated sample spot on it. Let the spot dry. Stand the paper in a small depth of solvent with the starting spot above the solvent surface, and cover the container where appropriate to limit evaporation.
+
+As the solvent rises, components distribute differently between the paper and the moving solvent, so their spots travel different distances. Remove the paper before the solvent reaches the top and mark the solvent front promptly, before it evaporates. A sample giving several separated spots contains several detectable components under those conditions. One spot is not absolute proof of purity, because components can overlap or fail to be visible. Pencil is used because an ink baseline might itself dissolve and separate. Compare samples and references on the same chromatogram or under closely matched solvent and paper conditions.
+
+### Simple distillation
+
+Simple distillation can recover a volatile solvent from a solution containing a non-volatile dissolved solid. Heat the solution so that solvent vapour leaves the flask, then cool that vapour in a condenser and collect the liquid distillate. The dissolved solid remains mainly in the original vessel under the intended conditions. Evaporation alone would lose the solvent to the surroundings rather than collect it.
+
+Place the thermometer bulb where it measures the vapour entering the condenser, rather than immersing it unnecessarily in the boiling mixture. Run cooling water into the lower condenser port and out through the upper port so the jacket fills effectively. Keep the apparatus open to the atmosphere through its normal outlet; a sealed heated system can build pressure. Use controlled heating and suitable anti-bumping precautions under supervision. Distillation separates by volatility; it does not guarantee that every volatile impurity has been removed. Choosing the method requires knowing whether the wanted material is the solvent, a solute or one of several volatile liquids.
+
+### Fractional distillation
+
+Fractional distillation separates a mixture of miscible liquids with different volatilities more effectively than simple distillation when their boiling points are relatively close. A fractionating column provides repeated vaporisation and condensation. Vapour travelling up the column becomes richer in the more volatile component, while less volatile material tends to condense and return towards the flask.
+
+Collect fractions over appropriate temperature ranges rather than assuming that the first drop is completely pure. The temperature and composition change as distillation proceeds. The column increases separation through repeated equilibrations; it is not a filter that catches larger molecules. The method is used in contexts such as separating products from fermented mixtures and separating crude-oil fractions, which are taught in Organic Chemistry. Crude-oil fractions are themselves mixtures with boiling ranges. Choose fractional distillation when the task requires separating volatile miscible components, and use a suitable safe heating method when flammable liquids are involved.
+
+### Selecting a separation method from properties
+
+Choose a separation method by identifying the physical difference that can be used. Insolubility supports filtration; a difference in solubility in a chosen solvent supports selective dissolving; formation of crystals on cooling supports crystallisation; different movement through paper supports chromatography; and different volatility supports distillation. The method must also recover the material that the task actually asks for.
+
+For a salt-and-sand mixture, filtration alone is not enough before a solvent is added: both components begin as solids. Dissolve the salt, filter away sand and recover the salt from solution if it is wanted. If water is the wanted product, distillation is more appropriate than evaporating it away. A multi-step method should follow the changing state and location of each substance. State the assumptions given by the task, such as salt being soluble in water and sand being insoluble. A method name without this connection can hide the wrong reasoning. Purification is an application of properties rather than a list of interchangeable procedures.
+
+### Choosing gas-collection and rate apparatus
+
+A gas syringe measures gas volume directly if it moves freely, has sufficient capacity and is connected without leaks. Collection over water can be suitable when the gas is not appreciably soluble in water under the experiment's conditions. A gas that dissolves readily in water would give a misleadingly small collected volume by that method. Choose a method using the stated gas properties rather than using the same setup for every gas.
+
+Rate measurements can follow gas volume against time, mass loss against time or a visible endpoint, depending on the reaction. The selected quantity must change detectably and relate to the process being investigated. Read the syringe at fixed intervals using a stopwatch and record the initial volume. Keep tubing secure without blocking the outlet, and avoid a sealed rigid system in which gas pressure can build. A balance can monitor mass loss when gas escapes, but splashing or evaporation of other material can confuse the result. The apparatus choice therefore includes both a measurable response and control of competing effects.
+
+### Locating colourless chromatogram spots
+
+A colourless substance may separate on chromatography paper without producing visible spots. After the chromatogram is developed and the solvent front is marked, a suitable locating agent can reveal the positions of the separated substances. The locating treatment makes the pattern visible; it does not replace the separation stage or change the distances already measured from the baseline.
+
+Use only a locating procedure appropriate to the substances and the supervised method. The syllabus does not require the identities of particular locating agents, so the important reasoning is when they are used and why. Mark the solvent front promptly because it can become invisible as solvent evaporates. Once spots have been revealed, measure from the same baseline to the spot centres and the front. Do not infer that no substance was present merely because the untreated paper appeared blank. Visibility depends on the detection method, while movement depends on the chromatography conditions. Compare unknown spots with suitable references under the same conditions.
+
+### Interpreting spots and calculating Rf
+
+The retention factor Rf is the distance travelled by the substance divided by the distance travelled by the solvent front, both measured from the same baseline. Measure to the centre of a spot and use compatible distance units. A spot 3.0 cm above the baseline with a solvent front 6.0 cm above it has Rf = 0.50. The units cancel, so Rf has no unit.
+
+Use the actual distance travelled, not the spot's height above the bottom edge of the paper. If the baseline is 1 cm above the bottom, that offset must be excluded from both travel distances. Under the intended chromatography conditions, a spot carried by the solvent front has an Rf between zero and one. A calculated value above one suggests a distance or reference error. Matching Rf values support identification when the same paper, solvent and conditions are used, but do not give an unconditional identity guarantee. Several components may overlap. Comparing unknown and known samples on the same sheet provides a stronger controlled comparison than comparing values from different solvent systems.
+
+### Suggested practical — Crystallisation from solution
+
+Under teacher supervision, gently concentrate a salt solution without boiling it dry. Allow it to cool, then separate and dry the crystals. Record when crystals first appear and compare their appearance with the starting solution. Use a small cold-solvent wash to reduce adhering impurities; explain why a large hot wash could reduce yield.
+
+### Suggested practical — Distillation of a fermented sample
+
+Use a teacher-prepared fermented sample with supervised apparatus and a suitable non-flame heating method. Record vapour temperature as distillate is collected. Explain the roles of the condenser and fractionating column where used. Do not taste the distillate or assume it is pure or safe; the task is to interpret separation by volatility.
+
+### Suggested practical — Filtration of muddy water
+
+Stir a prepared water-and-sand mixture, then filter it through paper in a funnel. Record the retained residue and clarity of the filtrate. Explain why removing suspended solid does not establish that water is safe to drink: dissolved material and microorganisms may remain.
+
+### Suggested practical — Chromatography of coloured substances
+
+Place small coloured-sample spots and a reference on a pencil baseline. Keep the starting spots above the solvent and develop the chromatogram under supervision. Mark the solvent front, count separated spots and measure their baseline distances. Calculate Rf values and compare references under the same conditions; avoid claiming that a single spot proves complete purity.

@@ -1,0 +1,128 @@
+"""Original activities, keys and distinct credit points for Matter."""
+MC=[('Which property distinguishes a gas from a liquid?',
+  ['It fills the available container.', 'It has mass.', 'Its particles move.', 'It contains particles.'],
+  'A',
+  'A gas expands to fill its container; a liquid retains a fixed volume.',
+  'B: liquids also have mass. D: both contain particles. C: liquid particles also move.'),
+ ('Why can a perfume spread through still air after evaporating?',
+  ['The molecules stop colliding.',
+   'Air molecules carry it deliberately towards noses.',
+   'The perfume molecules become larger.',
+   'Random motion spreads perfume molecules.'],
+  'D',
+  'Random molecular motion produces net diffusion from higher to lower concentration.',
+  'B: particles have no intention. C: spreading changes separation, not molecular size. A: collisions continue.'),
+ ('What does nucleon number count?',
+  ['Protons and electrons.', 'All particles in the atom.', 'Neutrons and electrons.', 'Protons and neutrons.'],
+  'D',
+  'Nucleons are the protons and neutrons in the nucleus.',
+  'A: electrons are not nucleons. C: it omits protons. B: electrons are excluded.'),
+ ('Which statement correctly relates isotopes to radioactivity?',
+  ['Every isotope is radioactive.',
+   'Radioactivity means an atom has lost an outer electron.',
+   'Isotopes may be stable or radioactive.',
+   'Only different elements can have different mass numbers.'],
+  'C',
+  'Isotopes describe nuclear composition; radioactivity concerns instability and decay.',
+  'A: many isotopes are stable. D: one element can have several mass numbers. B: ordinary ion formation changes '
+  'electrons, not nuclear stability.'),
+ ('A supplied table places X in Group I and Y in Group VII. Which prediction best fits their positions?',
+  ['X commonly forms X⁻ and Y commonly forms Y⁺.',
+   'X forms X⁺; Y forms Y⁻.',
+   'Both are unreactive noble gases.',
+   'Both must be transition metals.'],
+  'B',
+  'The main-group outer-electron patterns favour loss of one electron by X and gain of one by Y.',
+  'C: neither position is the noble-gas group. A: the common charge signs are reversed. D: these are main-group '
+  'positions.'),
+ ('Why is helium very unreactive under ordinary conditions?',
+  ['Its first electron shell is full.',
+   'It has no electrons.',
+   'It contains eight electrons in its first shell.',
+   'Its nucleus has no positive charge.'],
+  'A',
+  'A complete first shell accounts for helium’s low tendency to gain, lose or share electrons.',
+  'B: helium has two electrons. D: it has two protons. C: its complete first shell contains two, not eight.'),
+ ('Why can brass have different copper-to-zinc proportions in different products?',
+  ['Brass is a variable-composition mixture.',
+   'Its atoms change proton numbers during mixing.',
+   'All alloys contain only one element.',
+   'Copper and zinc have identical atoms.'],
+  'A',
+  'Alloy composition can vary because the components are mixed rather than fixed in one compound formula.',
+  'D: the elements have different proton numbers. C: brass contains two elements. B: alloying does not change nuclear '
+  'identities.'),
+ ('Which attraction is responsible for a covalent bond?',
+  ['Attraction between two positive nuclei.',
+   'Attraction between two electrons.',
+   'Nuclei attract the shared electron pair.',
+   'Attraction between neutral molecules only.'],
+  'C',
+  'Positive nuclei attract the negative shared electrons.',
+  'A: positive nuclei repel. B: electrons repel. D: intermolecular attraction is distinct from the bond within the '
+  'molecule.'),
+ ('Which electron arrangement correctly describes neutral NH3?',
+  ['Three N–H bonds and two nitrogen lone pairs.',
+   'Two N–H bonds and no lone pairs.',
+   'Three N–H bonds and one nitrogen lone pair.',
+   'Four N–H bonds and no lone pair.'],
+  'C',
+  'Three shared pairs plus one lone pair complete nitrogen’s outer shell using the available eight outer electrons.',
+  'D: four hydrogens are not NH3. A: it adds two excess electrons. B: it omits one H and does not complete nitrogen’s '
+  'shell.'),
+ ('What is the molecular shape of water?',
+  ['Tetrahedral.', 'V-shaped.', 'Linear.', 'Pyramidal.'],
+  'B',
+  'The H–O–H arrangement is bent or V-shaped.',
+  'C: describes CO2. A: describes CH4. D: describes NH3.'),
+ ('Why does graphite withstand very high temperatures despite its layers sliding readily?',
+  ['The weak interlayer attractions are stronger than covalent bonds.',
+   'Strong covalent bonds remain within each layer.',
+   'All carbon atoms form separate molecules.',
+   'There are no bonds in graphite.'],
+  'B',
+  'Sliding involves weaker interlayer attractions, while strong intralayer covalent bonds require much energy to '
+  'break.',
+  'D: graphite has extensive covalent bonds. C: it is a giant layered structure. A: the relative strengths are '
+  'reversed.'),
+ ('Which pairing correctly matches a structure with its bonding model?',
+  ['Copper: alternating positive and negative copper ions.',
+   'Diamond: separate molecules held by weak intermolecular forces.',
+   'Sodium chloride: positive ions in a sea of electrons.',
+   'Chlorine molecule: a shared electron pair between two atoms.'],
+  'D',
+  'Cl2 contains a single covalent bond.',
+  'A: copper has positive ions and delocalised electrons. B: diamond is a giant covalent network. C: NaCl contains '
+  'positive and negative ions.')]
+
+SHORT_PROMPTS=[
+ 'Calculate the neutron count in a sodium atom with proton number 11 and nucleon number 23.',
+ 'Describe the electron transfer when sodium atoms react with chlorine atoms to form sodium chloride.',
+ 'Explain why solid sodium chloride does not conduct electricity.',
+ 'Explain the bonding and conductivity of sample X from these supplied observations: it melts at a high temperature, does not conduct as a solid, and conducts when molten.']
+SHORT_ANSWERS=[
+ 'Neutrons = 23 − 11 = 12.',
+ 'Each sodium atom loses one electron to form Na⁺. Each chlorine atom gains one electron to form Cl⁻.',
+ 'The ions are charged, but they are held in fixed positions in the solid lattice and cannot move through it to carry current.',
+ 'X has an ionic lattice. Strong electrostatic attractions require much energy to overcome, giving a high melting point. When molten, its ions can move and carry current.']
+SHORT_GUIDANCE=[
+ ['12 neutrons (1); electron count is not subtracted.'],
+ ['Sodium loses one electron and forms Na⁺ (1).','Chlorine gains one electron and forms Cl⁻ (1).'],
+ ['Ions are the charged particles (1).','They cannot move through the solid lattice (1); do not credit “there are no charges”.'],
+ ['Ionic structure inferred (1).','Strong attractions linked to high energy/melting point (1).','Mobile ions in the melt carry current (1); do not substitute electrons.']]
+
+PRACTICAL_PROMPTS=[
+ 'Draw a circuit for comparing conductivity using a 3 V current-limited DC supply, a switch, an indicator and two graphite electrodes in a sample beaker. Label the components; the electrodes must not touch.',
+ 'Describe a method for comparing aqueous sodium chloride with sugar solution using the low-voltage apparatus. Include how the observations are recorded and how contamination between samples is reduced.',
+ 'Explain these supplied observations from an original teaching dataset: a copper strip conducts; solid sodium chloride does not; aqueous sodium chloride conducts; sugar solution does not. Identify the charge carriers where present.',
+ 'Describe improvements to this method: the electrode gap changes between solutions, immersion depth is not fixed, and the supply is changed from 3 V to 6 V for the second solution. Link each improvement to the comparison.']
+PRACTICAL_ANSWERS=[
+ 'A single series circuit connects supply, switch, indicator and two separated graphite electrodes dipping into the sample. The sample completes the path between electrodes. See the labelled reference circuit in visuals/VIS-6117-2-circuit.svg.',
+ 'Test each solution with the same voltage, electrode spacing and immersion depth. Record the indicator response in a results table for each named sample. Switch off between tests and rinse electrodes with deionised water, removing residual rinse water before the next sample.',
+ 'Copper conducts through mobile delocalised electrons. Aqueous sodium chloride conducts through mobile ions, whereas the ions in solid sodium chloride are fixed. Sugar dissolves as neutral molecules, so its solution has no appreciable concentration of mobile ions from the sugar and does not light the indicator in this test.',
+ 'Fix electrode spacing with a holder so the current path length is comparable. Mark and maintain immersion depth so the electrode contact area is comparable. Keep the supply at 3 V so a changed driving voltage cannot explain the different response.']
+PRACTICAL_GUIDANCE=[
+ ['Supply and switch in a complete series path (1).','Indicator correctly in the path (1).','Two separated electrodes contact the sample and complete the path through it (1).'],
+ ['Test the named solutions using the apparatus (1).','Record the indicator response against each sample in a table (1).','Rinse electrodes between samples to avoid contamination (1); switching off is required safe procedure.'],
+ ['Mobile electrons in copper (1).','Mobile ions in aqueous NaCl, distinguished from fixed solid ions (1).','Neutral sugar molecules give no appreciable ionic conduction in this test (1).'],
+ ['Fixed spacing linked to comparable current path (1).','Fixed depth linked to comparable contact area (1).','Same 3 V supply linked to a fair electrical comparison (1).']]

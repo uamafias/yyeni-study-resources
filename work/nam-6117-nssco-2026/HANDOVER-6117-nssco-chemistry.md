@@ -1,4 +1,20 @@
+> **Current state — 29 October 2026:** [Final editorial repair handover](FINAL-EDITORIAL-HANDOVER-6117.md). Latest reviewer follow-up implemented and checked (132 MC explanations sets, note placement/labels, card commands and repeated fraction advice): 808 cards + 36 activities; recall 392/1,637 (23.95%); all 12 topic QA reports have zero failures and retain **hold**. Independent re-verification and release approval remain open. Older repair summaries below are historical.
+
 # Handover — NSSCO Chemistry 6117
+
+## Final rubric repair and independent-review handover
+
+**Author corrections and checks below are not independent approval. Publication remains on hold.**
+
+- Replaced 55 vague rubric entries with specific accepted answers and separate credited elements; repaired 9-038 using comparative wear measurements and a 0.50 mm replacement limit. One mark requires the choice plus the numerical justification.
+- Recall remains the author estimate **366/1,557 = 23.51%**. The rule is documented in RECALL-RULE-2026-10-29.md; user/independent acceptance must not be inferred from passing QA. See [the 24-card contingency](RECALL-CONTINGENCY.md) for explicit rewrite priorities, triggers and stop conditions. It is not counted as work already authored.
+- planning/round3-numerical-check.json now verifies **26 revised calculation answers plus four additional Ar-only edits** (4-025–028), confirming their unchanged molecular formulae. These four are additional to the 26, not included in that count.
+- All twelve topic checks rerun with no blocking failures; all release decisions remain hold. Full-bank accounting, demand freshness, numerical and copied-wording checks are author/tool checks.
+- Independent reviewer reports completed: integrity, 55+ calculations, cited repairs, earlier QA freshness and copied-wording review; approximately 45 cards in Topics 5, 7, 8, 9 and 10 scientifically sampled. This is the reviewer's reported scope, not a claim that Codex repeated it independently.
+- Still open: twelve topic notes, 67 visuals, at least 20 cards per topic, all 19 misconception cards, and acceptance of the recall interpretation. The reviewer can now continue notes and visuals while checking the explicitly recorded demand rule. Do not mark these gates complete from the author QA results.
+
+Rebuild applies authoring/round4_rubrics.py through apply_round3_repairs.py, so earlier templates do not silently return. Nothing committed, pushed or published.
+
 
 Read AGENTS.md and the author role brief. Work only in `work/nam-6117-nssco-2026/` after the user approves Step 4.
 
