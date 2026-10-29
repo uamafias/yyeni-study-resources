@@ -1,0 +1,515 @@
+{
+  "source": "syllabus-facts.json stated_limits",
+  "purpose": "Context-sensitive review patterns. These are not unsupported blanket topic exclusions. Regex is a triage aid, not semantic proof.",
+  "rules": [
+    {
+      "limit_id": "case-study-choice",
+      "pattern": "case stud(?:y|ies).{0,45}(?:only|compulsory|prescriptive)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "The syllabus case studies are the only permitted examples."
+      ],
+      "must_leave": [
+        "Use a relevant named case study to support the answer."
+      ],
+      "interpretation": "Examples listed by the syllabus are not exclusive; this does not remove the need for examples in questions asking for them.",
+      "source": {
+        "page": 7,
+        "pdf_page": 7,
+        "printed_page": 4,
+        "section": "5 Learning content",
+        "verbatim": "Case studies included in the learning content are not prescriptive. Teachers are urged to use other case studies which may be relevant.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "integrated-theme4",
+      "pattern": "(?:research|map).{0,35}skills.{0,35}(?:only|solely).{0,30}(?:isolat|separate)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Teach map skills only as a separate isolated unit."
+      ],
+      "must_leave": [
+        "Practise map skills within population and river topics."
+      ],
+      "interpretation": "Integrate skills into content. A short standalone skills explanation is still useful.",
+      "source": {
+        "page": 28,
+        "pdf_page": 28,
+        "printed_page": 25,
+        "section": "4 Research techniques and map reading skills",
+        "verbatim": "It is important that these skills are not taught in isolation but are integrated into the teaching of other three themes.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p1-unfamiliar-resource",
+      "pattern": "Paper 1.{0,55}(?:memorise|prior knowledge).{0,35}unfamiliar",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Paper 1 requires prior knowledge of every unfamiliar resource location."
+      ],
+      "must_leave": [
+        "Paper 1 includes named case-study examples as well as unfamiliar resources."
+      ],
+      "interpretation": "Resource interpretation does not demand prior place knowledge; case-study demands remain.",
+      "source": {
+        "page": 32,
+        "pdf_page": 32,
+        "printed_page": 29,
+        "section": "9 Explanatory notes; Paper 1 stimulus context, not a waiver of case studies",
+        "verbatim": "The resource use does not req uire specific local or regional knowledge.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p1-no-specific-fieldwork-question",
+      "pattern": "Paper 1.{0,35}(?:specific fieldwork questions|fieldwork-method questions).{0,20}(?:compulsory|required)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Paper 1 specific fieldwork questions are compulsory."
+      ],
+      "must_leave": [
+        "Use an appropriate fieldwork example to illustrate a Paper 1 answer."
+      ],
+      "interpretation": "No specific fieldwork questions set in P1; do not ban fieldwork evidence.",
+      "source": {
+        "page": 32,
+        "pdf_page": 32,
+        "printed_page": 29,
+        "section": "9 Explanatory notes; Paper 1",
+        "verbatim": "Whilst specific questions will not be set in Paper 1 based upon fie ld work, learners may use this information to illustrate answers.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-place-knowledge",
+      "pattern": "Paper 2.{0,45}(?:must memorise|requires memorised).{0,35}(?:place|town)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Paper 2 requires memorised facts about every mapped town."
+      ],
+      "must_leave": [
+        "Use the provided map to identify the town’s services."
+      ],
+      "interpretation": "General topic knowledge is still applied.",
+      "source": {
+        "page": 30,
+        "pdf_page": 30,
+        "printed_page": 27,
+        "section": "7 Scheme of Assessment",
+        "verbatim": "This paper will be largely skills-based and candidates will not require knowledge of specific places, but will be expected to apply some knowledge of topics.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-map-scale-key",
+      "pattern": "Paper 2.{0,50}(?:1:25.?000|without a (?:full )?key|non-SADC)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Paper 2 uses a 1:25 000 topographic map without a key."
+      ],
+      "must_leave": [
+        "Paper 2 uses a 1:50 000 SADC map with its key."
+      ],
+      "interpretation": "Describes the stated exam map resource, not a ban on all other illustrative map scales in teaching.",
+      "source": {
+        "page": 30,
+        "pdf_page": 30,
+        "printed_page": 27,
+        "section": "7 Scheme of Assessment",
+        "verbatim": "One question will be specifically based on a large -scale (1:50 000) topographical map, with full colour map from any country in SADC. The map will always be presented with a full key.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-cross-sections",
+      "pattern": "Paper 2.{0,40}(?:construct|draw).{0,25}(?:topographic |map )?cross.section",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "In Paper 2 construct a topographic cross-section from contours."
+      ],
+      "must_leave": [
+        "In Paper 3 complete a beach profile from measured data."
+      ],
+      "interpretation": "Paper 2 interpretation limit must not prohibit Paper 3 river-channel cross-section or beach-profile completion, which occurs in 2023/2024.",
+      "source": {
+        "page": 33,
+        "pdf_page": 33,
+        "printed_page": 30,
+        "section": "9 Explanatory notes; Paper 2",
+        "verbatim": "Cross -sections may be set for interpre tation but learners will not be asked to construct them.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-gradient-units",
+      "pattern": "gradient.{0,45}(?:metres? by kilometres?|mixed units|without converting)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Calculate gradient in mixed units."
+      ],
+      "must_leave": [
+        "Convert the horizontal distance to metres before calculating gradient."
+      ],
+      "interpretation": "Vertical and horizontal distances use the same unit.",
+      "source": {
+        "page": 33,
+        "pdf_page": 33,
+        "printed_page": 30,
+        "section": "9 Explanatory notes; Paper 2",
+        "verbatim": "It should be noted that both measurements must be made in the sam e units before the calculation can be made.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-map-evidence",
+      "pattern": "mapwork.{0,40}(?:ignore (?:the )?map|outside knowledge alone)",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "For mapwork ignore the map and use outside knowledge alone."
+      ],
+      "must_leave": [
+        "Use a mapped school as evidence for an education service."
+      ],
+      "interpretation": "Mapwork answers require map evidence; this is not a prohibition on applying topic knowledge elsewhere in P2.",
+      "source": {
+        "page": 34,
+        "pdf_page": 34,
+        "printed_page": 31,
+        "section": "9 Explanatory notes; mapwork question",
+        "verbatim": "It must be stressed that all answers to this question must be based on map evidence only.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-simple-photographs",
+      "pattern": "Paper 2 photograph.{0,40}(?:requires?|must use).{0,20}complex photogrammetry",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Paper 2 photograph description requires complex photogrammetry."
+      ],
+      "must_leave": [
+        "Describe the visible valley features in the photograph."
+      ],
+      "interpretation": "Keep photograph description at the stated depth; not a ban on geographical interpretation or other resource tasks.",
+      "source": {
+        "page": 34,
+        "pdf_page": 34,
+        "printed_page": 31,
+        "section": "9 Explanatory notes; Photographs and pictorial materials",
+        "verbatim": "Only simple descriptions wi ll be required.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p2-plotting-context",
+      "pattern": "Paper 2.{0,45}(?:always|every time).{0,30}(?:design|invent).{0,30}axes",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Paper 2 candidates must always design their own axes."
+      ],
+      "must_leave": [
+        "Complete the graph using the provided axes and scales."
+      ],
+      "interpretation": "Positive statement of supported plotting, not proof that axes design is globally excluded.",
+      "source": {
+        "page": 34,
+        "pdf_page": 34,
+        "printed_page": 31,
+        "section": "9 Explanatory notes; Maps, Diagrams, Graphs",
+        "verbatim": "Learners may be required to plot information on graphs when axes and scales are provided.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p3-coursework-not-operational",
+      "pattern": "coursework.{0,40}(?:replaces|instead of).{0,20}Paper 3",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "Submitted coursework replaces Paper 3."
+      ],
+      "must_leave": [
+        "Practise fieldwork methods to prepare for the written Paper 3."
+      ],
+      "interpretation": "User-confirmed route is three written papers; practical teaching is encouraged.",
+      "source": {
+        "page": 30,
+        "pdf_page": 30,
+        "printed_page": 27,
+        "section": "7 Scheme of Assessment",
+        "verbatim": "Coursework will not become operational as an option until necessary materials and tr aining of teachers are in place but the methodology of teaching geographical enquiry skills and techniques will be encouraged.",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    },
+    {
+      "limit_id": "p3-cycle-ends-2024",
+      "pattern": "(?:2016 syllabus|2020.2024 rotation).{0,55}(?:proves|automatically|confirms).{0,20}2026",
+      "flags": "IGNORECASE",
+      "must_catch": [
+        "The 2020-2024 rotation automatically confirms 2026 topics."
+      ],
+      "must_leave": [
+        "For 2026 use Coastal/Marine Processes and Leisure and Tourism from the confirmed later circular."
+      ],
+      "interpretation": "Use the separate confirmed circular, not an inferred five-year restart.",
+      "source": {
+        "page": 30,
+        "pdf_page": 30,
+        "printed_page": 27,
+        "section": "7 Scheme of Assessment",
+        "verbatim": "Topics to be assessed in each theme from 2020 -2024 will be highlighted under explan atory notes to teachers, page 30",
+        "provenance": "syllabus"
+      },
+      "action": "human scope review; context matters"
+    }
+  ],
+  "entries": [
+    {
+      "construct": "case-study-choice",
+      "pattern": "case stud(?:y|ies).{0,45}(?:only|compulsory|prescriptive)",
+      "source": "NIED 6137 syllabus PDF p7: Case studies included in the learning content are not prescriptive. Teachers are urged to use other case studies which may be relevant.",
+      "controls": {
+        "must_catch": [
+          "The syllabus case studies are the only permitted examples."
+        ],
+        "must_allow": [
+          "Use a relevant named case study to support the answer."
+        ]
+      },
+      "syllabus_sentence": "Case studies included in the learning content are not prescriptive. Teachers are urged to use other case studies which may be relevant.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "integrated-theme4",
+      "pattern": "(?:research|map).{0,35}skills.{0,35}(?:only|solely).{0,30}(?:isolat|separate)",
+      "source": "NIED 6137 syllabus PDF p28: It is important that these skills are not taught in isolation but are integrated into the teaching of other three themes.",
+      "controls": {
+        "must_catch": [
+          "Teach map skills only as a separate isolated unit."
+        ],
+        "must_allow": [
+          "Practise map skills within population and river topics."
+        ]
+      },
+      "syllabus_sentence": "It is important that these skills are not taught in isolation but are integrated into the teaching of other three themes.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p1-unfamiliar-resource",
+      "pattern": "Paper 1.{0,55}(?:memorise|prior knowledge).{0,35}unfamiliar",
+      "source": "NIED 6137 syllabus PDF p32: The resource use does not req uire specific local or regional knowledge.",
+      "controls": {
+        "must_catch": [
+          "Paper 1 requires prior knowledge of every unfamiliar resource location."
+        ],
+        "must_allow": [
+          "Paper 1 includes named case-study examples as well as unfamiliar resources."
+        ]
+      },
+      "syllabus_sentence": "The resource use does not req uire specific local or regional knowledge.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p1-no-specific-fieldwork-question",
+      "pattern": "Paper 1.{0,35}(?:specific fieldwork questions|fieldwork-method questions).{0,20}(?:compulsory|required)",
+      "source": "NIED 6137 syllabus PDF p32: Whilst specific questions will not be set in Paper 1 based upon fie ld work, learners may use this information to illustrate answers.",
+      "controls": {
+        "must_catch": [
+          "Paper 1 specific fieldwork questions are compulsory."
+        ],
+        "must_allow": [
+          "Use an appropriate fieldwork example to illustrate a Paper 1 answer."
+        ]
+      },
+      "syllabus_sentence": "Whilst specific questions will not be set in Paper 1 based upon fie ld work, learners may use this information to illustrate answers.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-place-knowledge",
+      "pattern": "Paper 2.{0,45}(?:must memorise|requires memorised).{0,35}(?:place|town)",
+      "source": "NIED 6137 syllabus PDF p30: This paper will be largely skills-based and candidates will not require knowledge of specific places, but will be expected to apply some knowledge of topics.",
+      "controls": {
+        "must_catch": [
+          "Paper 2 requires memorised facts about every mapped town."
+        ],
+        "must_allow": [
+          "Use the provided map to identify the town’s services."
+        ]
+      },
+      "syllabus_sentence": "This paper will be largely skills-based and candidates will not require knowledge of specific places, but will be expected to apply some knowledge of topics.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-map-scale-key",
+      "pattern": "Paper 2.{0,50}(?:1:25.?000|without a (?:full )?key|non-SADC)",
+      "source": "NIED 6137 syllabus PDF p30: One question will be specifically based on a large -scale (1:50 000) topographical map, with full colour map from any country in SADC. The map will always be presented with a full key.",
+      "controls": {
+        "must_catch": [
+          "Paper 2 uses a 1:25 000 topographic map without a key."
+        ],
+        "must_allow": [
+          "Paper 2 uses a 1:50 000 SADC map with its key."
+        ]
+      },
+      "syllabus_sentence": "One question will be specifically based on a large -scale (1:50 000) topographical map, with full colour map from any country in SADC. The map will always be presented with a full key.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-cross-sections",
+      "pattern": "Paper 2.{0,40}(?:construct|draw).{0,25}(?:topographic |map )?cross.section",
+      "source": "NIED 6137 syllabus PDF p33: Cross -sections may be set for interpre tation but learners will not be asked to construct them.",
+      "controls": {
+        "must_catch": [
+          "In Paper 2 construct a topographic cross-section from contours."
+        ],
+        "must_allow": [
+          "In Paper 3 complete a beach profile from measured data."
+        ]
+      },
+      "syllabus_sentence": "Cross -sections may be set for interpre tation but learners will not be asked to construct them.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-gradient-units",
+      "pattern": "gradient.{0,45}(?:metres? by kilometres?|mixed units|without converting)",
+      "source": "NIED 6137 syllabus PDF p33: It should be noted that both measurements must be made in the sam e units before the calculation can be made.",
+      "controls": {
+        "must_catch": [
+          "Calculate gradient in mixed units."
+        ],
+        "must_allow": [
+          "Convert the horizontal distance to metres before calculating gradient."
+        ]
+      },
+      "syllabus_sentence": "It should be noted that both measurements must be made in the sam e units before the calculation can be made.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-map-evidence",
+      "pattern": "mapwork.{0,40}(?:ignore (?:the )?map|outside knowledge alone)",
+      "source": "NIED 6137 syllabus PDF p34: It must be stressed that all answers to this question must be based on map evidence only.",
+      "controls": {
+        "must_catch": [
+          "For mapwork ignore the map and use outside knowledge alone."
+        ],
+        "must_allow": [
+          "Use a mapped school as evidence for an education service."
+        ]
+      },
+      "syllabus_sentence": "It must be stressed that all answers to this question must be based on map evidence only.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-simple-photographs",
+      "pattern": "Paper 2 photograph.{0,40}(?:requires?|must use).{0,20}complex photogrammetry",
+      "source": "NIED 6137 syllabus PDF p34: Only simple descriptions wi ll be required.",
+      "controls": {
+        "must_catch": [
+          "Paper 2 photograph description requires complex photogrammetry."
+        ],
+        "must_allow": [
+          "Describe the visible valley features in the photograph."
+        ]
+      },
+      "syllabus_sentence": "Only simple descriptions wi ll be required.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p2-plotting-context",
+      "pattern": "Paper 2.{0,45}(?:always|every time).{0,30}(?:design|invent).{0,30}axes",
+      "source": "NIED 6137 syllabus PDF p34: Learners may be required to plot information on graphs when axes and scales are provided.",
+      "controls": {
+        "must_catch": [
+          "Paper 2 candidates must always design their own axes."
+        ],
+        "must_allow": [
+          "Complete the graph using the provided axes and scales."
+        ]
+      },
+      "syllabus_sentence": "Learners may be required to plot information on graphs when axes and scales are provided.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p3-coursework-not-operational",
+      "pattern": "coursework.{0,40}(?:replaces|instead of).{0,20}Paper 3",
+      "source": "NIED 6137 syllabus PDF p30: Coursework will not become operational as an option until necessary materials and tr aining of teachers are in place but the methodology of teaching geographical enquiry skills and techniques will be encouraged.",
+      "controls": {
+        "must_catch": [
+          "Submitted coursework replaces Paper 3."
+        ],
+        "must_allow": [
+          "Practise fieldwork methods to prepare for the written Paper 3."
+        ]
+      },
+      "syllabus_sentence": "Coursework will not become operational as an option until necessary materials and tr aining of teachers are in place but the methodology of teaching geographical enquiry skills and techniques will be encouraged.",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    },
+    {
+      "construct": "p3-cycle-ends-2024",
+      "pattern": "(?:2016 syllabus|2020.2024 rotation).{0,55}(?:proves|automatically|confirms).{0,20}2026",
+      "source": "NIED 6137 syllabus PDF p30: Topics to be assessed in each theme from 2020 -2024 will be highlighted under explan atory notes to teachers, page 30",
+      "controls": {
+        "must_catch": [
+          "The 2020-2024 rotation automatically confirms 2026 topics."
+        ],
+        "must_allow": [
+          "For 2026 use Coastal/Marine Processes and Leisure and Tourism from the confirmed later circular."
+        ]
+      },
+      "syllabus_sentence": "Topics to be assessed in each theme from 2020 -2024 will be highlighted under explan atory notes to teachers, page 30",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "planner judgement; context-specific claim detector"
+      }
+    }
+  ]
+}
