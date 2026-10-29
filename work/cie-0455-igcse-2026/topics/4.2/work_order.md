@@ -27,27 +27,27 @@
 ## Content units
 
 **CU-0455-4.2.1** — sub-topic 4.2.1, 1 objectives, 300–430 words
-- `OBJ-0455-4.2.1` tier 2 — the macroeconomic aims of government
+- `OBJ-0455-4.2.1` tier 2 — The macroeconomic aims of government: Economic growth, full employment/low unemployment, stable prices/low inflation, balance of payments stability, redistribution of income. Reasons behind the choice of aims and the criteria that governments set for each aim.
 
 **CU-0455-4.2.2** — sub-topic 4.2.2, 1 objectives, 300–430 words
-- `OBJ-0455-4.2.2` tier 2 — possible conflicts between macroeconomic aims
+- `OBJ-0455-4.2.2` tier 2 — Possible conflicts between macroeconomic aims: Possible conflicts between aims: full employment versus stable prices; economic growth versus balance of payments stability; and full employment versus balance of payments stability.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | the macroeconomic aims of government | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-WHY` | the macroeconomic aims of government | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `003-APP` | the macroeconomic aims of government | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `007-CHAIN` | the macroeconomic aims of government | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
-| `004-DEF` | possible conflicts between macroeconomic aims | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `005-DIST` | possible conflicts between macroeconomic aims | DIST | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-APP` | possible conflicts between macroeconomic aims | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `001-DEF` | The macroeconomic aims of government: Economic growth, full employment/low unemployment, stable prices/low inflation, balance of payments stability, redistribution of income. Reasons behind the choice of aims and the criteria that governments set for each aim. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-WHY` | The macroeconomic aims of government: Economic growth, full employment/low unemployment, stable prices/low inflation, balance of payments stability, redistribution of income. Reasons behind the choice of aims and the criteria that governments set for each aim. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `003-APP` | The macroeconomic aims of government: Economic growth, full employment/low unemployment, stable prices/low inflation, balance of payments stability, redistribution of income. Reasons behind the choice of aims and the criteria that governments set for each aim. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `007-CHAIN` | The macroeconomic aims of government: Economic growth, full employment/low unemployment, stable prices/low inflation, balance of payments stability, redistribution of income. Reasons behind the choice of aims and the criteria that governments set for each aim. | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
+| `004-DEF` | Possible conflicts between macroeconomic aims: Possible conflicts between aims: full employment versus stable prices; economic growth versus balance of payments stability; and full employment versus balance of payments stability. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `005-DIST` | Possible conflicts between macroeconomic aims: Possible conflicts between aims: full employment versus stable prices; economic growth versus balance of payments stability; and full employment versus balance of payments stability. | DIST | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-APP` | Possible conflicts between macroeconomic aims: Possible conflicts between aims: full employment versus stable prices; economic growth versus balance of payments stability; and full employment versus balance of payments stability. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

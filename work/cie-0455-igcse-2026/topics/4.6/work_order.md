@@ -30,19 +30,19 @@
 - `OBJ-0455-4.6.1` tier 1 — definition of economic growth
 
 **CU-0455-4.6.2** — sub-topic 4.6.2, 1 objectives, 273–393 words
-- `OBJ-0455-4.6.2` tier 2 — measurement of economic growth
+- `OBJ-0455-4.6.2` tier 2 — Measurement of economic growth: Real Gross Domestic Product (GDP) and how it can be used to measure economic growth. GDP per head (capita).
 
 **CU-0455-4.6.3** — sub-topic 4.6.3, 1 objectives, 273–393 words
-- `OBJ-0455-4.6.3` tier 3 — causes and consequences of recession
+- `OBJ-0455-4.6.3` tier 3 — Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC.
 
 **CU-0455-4.6.4** — sub-topic 4.6.4, 1 objectives, 273–393 words
-- `OBJ-0455-4.6.4` tier 3 — causes of economic growth
+- `OBJ-0455-4.6.4` tier 3 — Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production.
 
 **CU-0455-4.6.5** — sub-topic 4.6.5, 1 objectives, 273–393 words
-- `OBJ-0455-4.6.5` tier 3 — consequences of economic growth
+- `OBJ-0455-4.6.5` tier 3 — Consequences of economic growth: The costs and benefits of economic growth in the context of different economies.
 
 **CU-0455-4.6.6** — sub-topic 4.6.6, 1 objectives, 273–393 words
-- `OBJ-0455-4.6.6` tier 4 — policies to promote economic growth
+- `OBJ-0455-4.6.6` tier 4 — Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be.
 
 ## Item slots
 
@@ -50,37 +50,37 @@
 |---|---|---|---|---|---:|---|
 | `001-DEF` | definition of economic growth | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `002-FEATURE` | definition of economic growth | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | measurement of economic growth | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-CALC` | measurement of economic growth | CALC | AO1 | Calculate | 1 | instructs with Calculate, which this objective carries |
-| `005-INTERP` | measurement of economic growth | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-APP` | measurement of economic growth | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `007-DEF` | causes and consequences of recession | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `008-DIAGRAM` | causes and consequences of recession | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `009-INTERP` | causes and consequences of recession | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `010-APP` | causes and consequences of recession | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `011-CHAIN` | causes and consequences of recession | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `027-FEATURE` | causes and consequences of recession | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `012-DEF` | causes of economic growth | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `013-DIAGRAM` | causes of economic growth | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `014-INTERP` | causes of economic growth | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `015-APP` | causes of economic growth | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `016-CHAIN` | causes of economic growth | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `028-FEATURE` | causes of economic growth | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `017-DEF` | consequences of economic growth | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `018-CHAIN` | consequences of economic growth | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `019-APP` | consequences of economic growth | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `020-DEF` | policies to promote economic growth | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `021-BEN` | policies to promote economic growth | BEN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `022-LIM` | policies to promote economic growth | LIM | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `023-EVAL` | policies to promote economic growth | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
-| `024-APP` | policies to promote economic growth | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `025-CHAIN` | policies to promote economic growth | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `026-FEATURE` | policies to promote economic growth | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `003-DEF` | Measurement of economic growth: Real Gross Domestic Product (GDP) and how it can be used to measure economic growth. GDP per head (capita). | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-CALC` | Measurement of economic growth: Real Gross Domestic Product (GDP) and how it can be used to measure economic growth. GDP per head (capita). | CALC | AO1 | Calculate | 1 | instructs with Calculate, which this objective carries |
+| `005-INTERP` | Measurement of economic growth: Real Gross Domestic Product (GDP) and how it can be used to measure economic growth. GDP per head (capita). | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-APP` | Measurement of economic growth: Real Gross Domestic Product (GDP) and how it can be used to measure economic growth. GDP per head (capita). | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `007-DEF` | Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `008-DIAGRAM` | Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `009-INTERP` | Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `010-APP` | Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `011-CHAIN` | Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `027-FEATURE` | Causes and consequences of recession: Meaning of recession and how a recession moves the economy within its PPC. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `012-DEF` | Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `013-DIAGRAM` | Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `014-INTERP` | Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `015-APP` | Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `016-CHAIN` | Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `028-FEATURE` | Causes of economic growth: How changes in total demand may increase the utilisation of resources and GDP – resulting in a movement from inside toward the PPC. How economic growth shifts the economy’s PPC to the right and is caused by changes in investment, technology, and the quantity and quality of the factors of production. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `017-DEF` | Consequences of economic growth: The costs and benefits of economic growth in the context of different economies. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `018-CHAIN` | Consequences of economic growth: The costs and benefits of economic growth in the context of different economies. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `019-APP` | Consequences of economic growth: The costs and benefits of economic growth in the context of different economies. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `020-DEF` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `021-BEN` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | BEN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `022-LIM` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | LIM | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `023-EVAL` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
+| `024-APP` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `025-CHAIN` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `026-FEATURE` | Policies to promote economic growth: The range of policies available to promote economic growth and how effective they might be. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

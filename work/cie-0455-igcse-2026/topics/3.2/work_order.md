@@ -27,21 +27,21 @@
 ## Content units
 
 **CU-0455-3.2.1** — sub-topic 3.2.1, 1 objectives, 330–470 words
-- `OBJ-0455-3.2.1` tier 3 — the influences on spending, saving and borrowing
+- `OBJ-0455-3.2.1` tier 3 — The influences on spending, saving and borrowing: Including income, the rate of interest and confidence – between different households and over time.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | the influences on spending, saving and borrowing | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-CHAIN` | the influences on spending, saving and borrowing | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `003-APP` | the influences on spending, saving and borrowing | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `004-FEATURE` | the influences on spending, saving and borrowing | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `001-DEF` | The influences on spending, saving and borrowing: Including income, the rate of interest and confidence – between different households and over time. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-CHAIN` | The influences on spending, saving and borrowing: Including income, the rate of interest and confidence – between different households and over time. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `003-APP` | The influences on spending, saving and borrowing: Including income, the rate of interest and confidence – between different households and over time. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `004-FEATURE` | The influences on spending, saving and borrowing: Including income, the rate of interest and confidence – between different households and over time. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

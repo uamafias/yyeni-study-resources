@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-cie-0455-igcse-2026-5.1",
   "build_id": "cie-0455-igcse-2026/topic-5.1",
-  "generated_at": "2026-10-12T22:54:19Z",
+  "generated_at": "2026-10-13T21:51:43Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -12,7 +12,7 @@
     {
       "check_id": "C-01",
       "status": "pass",
-      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 2 content units, 11 items and 8 claims resolves in the registry (3 nodes in this topic branch, 2 assessable).",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 2 content units, 22 items and 15 claims resolves in the registry (3 nodes in this topic branch, 2 assessable).",
       "affected_ids": []
     },
     {
@@ -24,7 +24,7 @@
     {
       "check_id": "C-03",
       "status": "pass",
-      "message": "[RS-07 Claim orphans] All 8 ledger claims are cited by at least one block or item.",
+      "message": "[RS-07 Claim orphans] All 15 ledger claims are cited by at least one block or item.",
       "affected_ids": []
     },
     {
@@ -54,7 +54,7 @@
     {
       "check_id": "C-30",
       "status": "pass",
-      "message": "[RS-41 No bulk stamp] All 21 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
+      "message": "[RS-41 No bulk stamp] All 38 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
       "affected_ids": []
     },
     {
@@ -161,14 +161,14 @@
     },
     {
       "check_id": "C-18",
-      "status": "pass",
-      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 45, 'AO2': 40, 'AO3': 15} against target {'AO1': 40, 'AO2': 40, 'AO3': 20}; largest deviation across AO1-AO3 is 5 points. AO4 is reported, not tested by count: 0 items carry it, of which 4 are performance tasks (data_response, essay_plan, multiple_choice_set, short_answer). RS-19 measures the AO4 share in practice time.",
+      "status": "warn",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 52, 'AO2': 39, 'AO3': 9} against target {'AO1': 40, 'AO2': 40, 'AO3': 20}; largest deviation across AO1-AO3 is 12 points. AO4 is reported, not tested by count: 0 items carry it, of which 4 are performance tasks (data_response, essay_plan, multiple_choice_set, short_answer). RS-19 measures the AO4 share in practice time.",
       "affected_ids": []
     },
     {
       "check_id": "C-19",
       "status": "pass",
-      "message": "[RS-25 Flashcard integrity] All 7 flashcards carry a non-null canonical answer and a declared subtype.",
+      "message": "[RS-25 Flashcard integrity] All 18 flashcards carry a non-null canonical answer and a declared subtype.",
       "affected_ids": []
     },
     {
@@ -180,13 +180,13 @@
     {
       "check_id": "C-21",
       "status": "pass",
-      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 11 items.",
+      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 22 items.",
       "affected_ids": []
     },
     {
       "check_id": "C-22",
       "status": "pass",
-      "message": "[RS-30 Marking guidance present] All 11 items carry marking guidance.",
+      "message": "[RS-30 Marking guidance present] All 22 items carry marking guidance.",
       "affected_ids": []
     },
     {
@@ -198,7 +198,7 @@
     {
       "check_id": "C-24",
       "status": "pass",
-      "message": "[RS-13 Publication gate] Gate holds: 0 of 8 claims are publishable or verified. 8 are generated_gap and need documented human approval (RS-13).",
+      "message": "[RS-13 Publication gate] Gate holds: 0 of 15 claims are publishable or verified. 15 are generated_gap and need documented human approval (RS-13).",
       "affected_ids": []
     },
     {
@@ -209,9 +209,12 @@
     },
     {
       "check_id": "C-26",
-      "status": "pass",
-      "message": "[RS-09 Word budget] All 2 content units sit inside their declared word budget (812 words total).",
-      "affected_ids": []
+      "status": "warn",
+      "message": "[RS-09 Word budget] 2 content units sit outside their declared word budget.",
+      "affected_ids": [
+        "CU-0455-5.1.1",
+        "CU-0455-5.1.2"
+      ]
     },
     {
       "check_id": "C-27",
@@ -222,7 +225,7 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 15 files to topics/5.1/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (a898bd3a7ce4d3e1) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 15 files to topics/5.1/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (1c40ce9228cad16b) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
@@ -258,7 +261,7 @@
     {
       "check_id": "C-42",
       "status": "pass",
-      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 11 learning items, 2 content units.",
+      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 22 learning items, 2 content units.",
       "affected_ids": []
     },
     {
@@ -270,27 +273,63 @@
   ],
   "semantic_reviews": [
     {
-      "review_id": "SR-5.1-PENDING",
-      "reviewer_role": "combined",
-      "status": "not_run",
-      "issues": []
+      "review_id": "CODEX-0455-20261013-COVERAGE",
+      "reviewer_role": "reviewer",
+      "status": "fix_the_plan_first",
+      "packet_hash_verified": null,
+      "coverage_confirmed": false,
+      "reconstruction_test": null,
+      "source": "work/cie-0455-igcse-2026/review/codex-coverage-5.1.yaml",
+      "issues": [
+        {
+          "issue_id": "CODEX-0455-20261013-GDP",
+          "severity": "critical",
+          "category": "accuracy",
+          "affected_ids": [
+            "CLM-0455-5.1-011",
+            "ITEM-0455-5.1-013-LIM",
+            "5.1.1-b4"
+          ],
+          "finding": "Unsold subsistence goods and self-built housing were incorrectly treated as excluded from GDP.",
+          "educational_consequence": "Learners exclude production that belongs in GDP in principle.",
+          "recommended_repair": "Distinguish GDP inclusion from under-recording and unpaid household services.",
+          "confidence": 0.98,
+          "status": "resolved",
+          "resolution": "Distinguish GDP inclusion from under-recording and unpaid household services. The cited learner-facing artefacts have been revised, re-stamped and checked; see codex-coverage-review.md for details."
+        },
+        {
+          "issue_id": "CODEX-0455-20261013-INCOME",
+          "severity": "high",
+          "category": "quantitative",
+          "affected_ids": [
+            "ITEM-0455-5.1-006-CHAIN",
+            "5.1.2-b3",
+            "ITEM-0455-5.1-P03"
+          ],
+          "finding": "The worked comparison mixed GDP per person with typical household income.",
+          "educational_consequence": "Learners convert an output average into disposable household income without adequate information.",
+          "recommended_repair": "Supply separate disposable-income figures per person and comparable prices and services.",
+          "confidence": 0.98,
+          "status": "resolved",
+          "resolution": "Supply separate disposable-income figures per person and comparable prices and services. The cited learner-facing artefacts have been revised, re-stamped and checked; see codex-coverage-review.md for details."
+        }
+      ]
     }
   ],
   "blockers": [
     "Packet incomplete - absent inputs: assessment-evidence/assessment_evidence.json, curriculum/item-budget.json.",
-    "No deterministic opinion on 4 checks (C-35, C-39, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
-    "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
+    "No deterministic opinion on 4 checks (C-35, C-39, C-41, C-43) - on these a human or model reviewer is the only line of defence."
   ],
   "metrics": {
     "objective_count": 2,
-    "claim_count": 8,
+    "claim_count": 15,
     "content_unit_count": 2,
-    "learning_item_count": 11,
-    "word_count": 812
+    "learning_item_count": 22,
+    "word_count": 2392
   },
   "release_decision": "publish",
   "notes": [
-    "Standard v0.2.0-draft check suite. 44 checks: 40 pass, 0 fail, 0 warn, 4 not_run.",
+    "Standard v0.2.0-draft check suite. 44 checks: 38 pass, 0 fail, 2 warn, 4 not_run.",
     "A not_run check means an input the check needs is absent. It is never a pass.",
     "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
   ]

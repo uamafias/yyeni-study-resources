@@ -27,46 +27,46 @@
 ## Content units
 
 **CU-0455-2.3.1** — sub-topic 2.3.1, 1 objectives, 257–370 words
-- `OBJ-0455-2.3.1` tier 3 — definition of demand
+- `OBJ-0455-2.3.1` tier 3 — Definition of demand: Definition, drawing and interpretation of appropriate diagrams.
 
 **CU-0455-2.3.2** — sub-topic 2.3.2, 1 objectives, 257–370 words
-- `OBJ-0455-2.3.2` tier 3 — price, demand and quantity
+- `OBJ-0455-2.3.2` tier 3 — Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand.
 
 **CU-0455-2.3.3** — sub-topic 2.3.3, 1 objectives, 257–370 words
-- `OBJ-0455-2.3.3` tier 2 — individual and market demand
+- `OBJ-0455-2.3.3` tier 2 — Individual and market demand: The link between individual and market demand in terms of aggregation.
 
 **CU-0455-2.3.4** — sub-topic 2.3.4, 1 objectives, 257–370 words
-- `OBJ-0455-2.3.4` tier 3 — conditions of demand
+- `OBJ-0455-2.3.4` tier 3 — Conditions of demand: The causes of shifts in a demand curve with appropriate terminology, for example increase and decrease in demand.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | definition of demand | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-DIAGRAM` | definition of demand | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `003-INTERP` | definition of demand | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `004-APP` | definition of demand | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `005-CHAIN` | definition of demand | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `019-FEATURE` | definition of demand | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `006-DEF` | price, demand and quantity | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `007-DIAGRAM` | price, demand and quantity | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `008-INTERP` | price, demand and quantity | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `009-APP` | price, demand and quantity | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `010-CHAIN` | price, demand and quantity | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `020-FEATURE` | price, demand and quantity | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `011-DEF` | individual and market demand | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `012-WHY` | individual and market demand | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `013-APP` | individual and market demand | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `014-DEF` | conditions of demand | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `015-DIAGRAM` | conditions of demand | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `016-INTERP` | conditions of demand | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `017-APP` | conditions of demand | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `018-CHAIN` | conditions of demand | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `001-DEF` | Definition of demand: Definition, drawing and interpretation of appropriate diagrams. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-DIAGRAM` | Definition of demand: Definition, drawing and interpretation of appropriate diagrams. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `003-INTERP` | Definition of demand: Definition, drawing and interpretation of appropriate diagrams. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `004-APP` | Definition of demand: Definition, drawing and interpretation of appropriate diagrams. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `005-CHAIN` | Definition of demand: Definition, drawing and interpretation of appropriate diagrams. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `019-FEATURE` | Definition of demand: Definition, drawing and interpretation of appropriate diagrams. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `006-DEF` | Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `007-DIAGRAM` | Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `008-INTERP` | Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `009-APP` | Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `010-CHAIN` | Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `020-FEATURE` | Price, demand and quantity: A demand curve to be drawn and used to illustrate movements along a demand curve with appropriate terminology, for example extensions and contractions in demand. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `011-DEF` | Individual and market demand: The link between individual and market demand in terms of aggregation. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `012-WHY` | Individual and market demand: The link between individual and market demand in terms of aggregation. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `013-APP` | Individual and market demand: The link between individual and market demand in terms of aggregation. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `014-DEF` | Conditions of demand: The causes of shifts in a demand curve with appropriate terminology, for example increase and decrease in demand. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `015-DIAGRAM` | Conditions of demand: The causes of shifts in a demand curve with appropriate terminology, for example increase and decrease in demand. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `016-INTERP` | Conditions of demand: The causes of shifts in a demand curve with appropriate terminology, for example increase and decrease in demand. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `017-APP` | Conditions of demand: The causes of shifts in a demand curve with appropriate terminology, for example increase and decrease in demand. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `018-CHAIN` | Conditions of demand: The causes of shifts in a demand curve with appropriate terminology, for example increase and decrease in demand. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

@@ -30,10 +30,10 @@
 - `OBJ-0455-3.4.1` tier 1 — definition of a trade union
 
 **CU-0455-3.4.2** — sub-topic 3.4.2, 1 objectives, 270–390 words
-- `OBJ-0455-3.4.2` tier 2 — the role of trade unions in the economy
+- `OBJ-0455-3.4.2` tier 2 — The role of trade unions in the economy: Including engaging in collective bargaining on wages, working hours and working conditions; protecting employment; and influencing government policy.
 
 **CU-0455-3.4.3** — sub-topic 3.4.3, 1 objectives, 270–390 words
-- `OBJ-0455-3.4.3` tier 2 — the advantages and disadvantages of trade union activity
+- `OBJ-0455-3.4.3` tier 2 — The advantages and disadvantages of trade union activity: Factors influencing the strength of trade unions. From the viewpoint of workers, firms and the government.
 
 ## Item slots
 
@@ -41,18 +41,18 @@
 |---|---|---|---|---|---:|---|
 | `001-DEF` | definition of a trade union | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `002-FEATURE` | definition of a trade union | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | the role of trade unions in the economy | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-WHY` | the role of trade unions in the economy | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `005-APP` | the role of trade unions in the economy | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `009-CHAIN` | the role of trade unions in the economy | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
-| `006-DEF` | the advantages and disadvantages of trade union activity | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `007-WHY` | the advantages and disadvantages of trade union activity | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `008-APP` | the advantages and disadvantages of trade union activity | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `003-DEF` | The role of trade unions in the economy: Including engaging in collective bargaining on wages, working hours and working conditions; protecting employment; and influencing government policy. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-WHY` | The role of trade unions in the economy: Including engaging in collective bargaining on wages, working hours and working conditions; protecting employment; and influencing government policy. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `005-APP` | The role of trade unions in the economy: Including engaging in collective bargaining on wages, working hours and working conditions; protecting employment; and influencing government policy. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `009-CHAIN` | The role of trade unions in the economy: Including engaging in collective bargaining on wages, working hours and working conditions; protecting employment; and influencing government policy. | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
+| `006-DEF` | The advantages and disadvantages of trade union activity: Factors influencing the strength of trade unions. From the viewpoint of workers, firms and the government. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `007-WHY` | The advantages and disadvantages of trade union activity: Factors influencing the strength of trade unions. From the viewpoint of workers, firms and the government. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `008-APP` | The advantages and disadvantages of trade union activity: Factors influencing the strength of trade unions. From the viewpoint of workers, firms and the government. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

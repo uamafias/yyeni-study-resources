@@ -27,26 +27,26 @@
 ## Content units
 
 **CU-0455-1.1.1** — sub-topic 1.1.1, 1 objectives, 285–410 words
-- `OBJ-0455-1.1.1` tier 1 — finite resources and unlimited wants
+- `OBJ-0455-1.1.1` tier 1 — Finite resources and unlimited wants: Definition and examples of the economic problem in the contexts of: consumers; workers; producers; and governments.
 
 **CU-0455-1.1.2** — sub-topic 1.1.2, 1 objectives, 285–410 words
-- `OBJ-0455-1.1.2` tier 2 — economic and free goods
+- `OBJ-0455-1.1.2` tier 2 — Economic and free goods: The difference between economic goods and free goods.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | finite resources and unlimited wants | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-FEATURE` | finite resources and unlimited wants | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | economic and free goods | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-DIST` | economic and free goods | DIST | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `005-APP` | economic and free goods | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-CHAIN` | economic and free goods | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
+| `001-DEF` | Finite resources and unlimited wants: Definition and examples of the economic problem in the contexts of: consumers; workers; producers; and governments. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-FEATURE` | Finite resources and unlimited wants: Definition and examples of the economic problem in the contexts of: consumers; workers; producers; and governments. | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
+| `003-DEF` | Economic and free goods: The difference between economic goods and free goods. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-DIST` | Economic and free goods: The difference between economic goods and free goods. | DIST | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `005-APP` | Economic and free goods: The difference between economic goods and free goods. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-CHAIN` | Economic and free goods: The difference between economic goods and free goods. | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

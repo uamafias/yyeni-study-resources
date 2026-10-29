@@ -1054,6 +1054,377 @@ def g_fx(kind):
         figures='none (generic)'))
 
 
+# =========================================================================================
+# ADDED 2026-10-13: special elasticities, intervention diagrams, costs, currency, pyramids
+# =========================================================================================
+
+def s_2_6_010():
+    S = lambda p: 1200 + 100 * (p - 14)
+    D1 = lambda p: 1200 - 100 * (p - 14)
+    D2 = lambda p: 1000 - 100 * (p - 12)
+    fig, (ax,) = new_fig('A fall in demand for bread after a factory closes')
+    frame(ax, 'Quantity (loaves a week)', 'Price (N$ per loaf)', (500, 1700), (8, 22),
+          xticks={1000: '1 000', 1200: '1 200'}, yticks={12: '12', 14: '14'})
+    draw_qp(ax, D1, (9, 18), BLUE, 'D1', dx=10, label_at='start')
+    draw_qp(ax, D2, (9, 18), ORANGE, 'D2', dx=10, label_at='start')
+    draw_qp(ax, S, (9, 18), INK2, 'S', dx=10)
+    pt(ax, 1200, 14, 'E1', off=(10, 2)); pt(ax, 1000, 12, 'E2', off=(-36, -22))
+    ax.annotate('', (800, 14), (1200, 14), arrowprops=dict(arrowstyle='<->', color=INK, lw=1.6))
+    ax.text(1000, 14.2, 'surplus at N$14', ha='center', va='bottom', fontsize=12)
+    arrow(ax, (900, 16.5), (620, 16.5), ORANGE)
+    note(ax, 0.02, 0.98, 'Lower incomes: demand shifts left, D1 to D2.\nS does not move. Price N$14 to N$12,\nsales 1 200 to 1 000 loaves a week')
+    save(fig, '0455-T2.6-S33-demand-fall-bread', dict(
+        topic='2.6', kind='card', shows='Demand for bread shifts left from D1 to D2 as incomes fall; surplus at N$14; E1 (N$14, 1 200 loaves) to E2 (N$12, 1 000 loaves) along an unchanged S.',
+        cards=['ITEM-0455-2.6-010-DIAGRAM'], blocks=['CU-0455-2.6.2 / 2.6.2-b6'],
+        figures='E1 (1 200, N$14); E2 (1 000, N$12); surplus at N$14 drawn without a figure (the card gives none)'))
+
+
+def g_unit_ped():
+    k = 2400
+    fig, (ax,) = new_fig('Unit elastic demand: equal spending at every price')
+    frame(ax, 'Quantity demanded', 'Price', (0, 120), (0, 110),
+          xticks={30: 'Q1', 60: 'Q2'}, yticks={80: 'P1', 40: 'P2'})
+    ax.add_patch(Rectangle((0, 0), 30, 80, fc=TINT_B, alpha=0.20, ec=BLUE, lw=1.2))
+    ax.add_patch(Rectangle((0, 0), 60, 40, fc=TINT_O, alpha=0.20, ec=ORANGE, lw=1.2))
+    draw_qp(ax, lambda p: k / p, (21, 104), BLUE, 'D  (PED = 1)', dx=2, label_at='start')
+    pt(ax, 30, 80, 'A'); pt(ax, 60, 40, 'B')
+    arrow(ax, (30, 80), (60, 40), rad=-0.15)
+    ax.text(15, 60, 'P1 × Q1', ha='center', va='center', fontsize=12.5, color=BLUE, fontweight='bold')
+    ax.text(45, 20, 'P2 × Q2', ha='center', va='center', fontsize=12.5, color=ORANGE, fontweight='bold')
+    note(ax, 0.45, 0.98, 'The two rectangles have the same area:\nthe price change is offset exactly by\nthe change in quantity, so spending\ndoes not change. The curve bends\ntowards the origin.')
+    save(fig, '0455-T2.7-G15-unit-elastic-demand', dict(
+        topic='2.7', kind='generic', shows='A unit elastic demand curve (a rectangular hyperbola): the spending rectangles at A (P1, Q1) and B (P2, Q2) have equal areas.',
+        cards=['ITEM-0455-2.7-021-DEF', 'ITEM-0455-2.7-025-MECH'], blocks=['CU-0455-2.7.2 / 2.7.2-b6', 'CU-0455-2.7.4 / 2.7.4-b6'],
+        figures='none (generic)'))
+
+
+def s_2_7_022():
+    S1 = lambda p: 300 + 5 * (p - 40)
+    S2 = lambda p: 300 + 5 * (p - 60)
+    fig, (ax,) = new_fig('Perfectly inelastic demand: anti-venom for a hospital')
+    frame(ax, 'Quantity (doses a week)', 'Price (N$ per dose)', (0, 500), (0, 90),
+          xticks={300: '300'}, yticks={40: '40', 60: '60'})
+    ax.plot([300, 300], [4, 84], color=BLUE, lw=2.6, solid_capstyle='round')
+    ax.text(306, 84, 'D', color=BLUE, fontsize=15, fontweight='bold', va='center')
+    draw_qp(ax, S1, (8, 80), INK2, 'S1', dx=8)
+    draw_qp(ax, S2, (20, 86), ORANGE, 'S2', dx=-34)
+    pt(ax, 300, 40, 'E1', off=(10, -22)); pt(ax, 300, 60, 'E2', off=(-36, 6))
+    arrow(ax, (380, 44), (318, 56), ORANGE)
+    note(ax, 0.02, 0.98, 'Costs rise: S1 shifts left to S2.\nPrice N$40 to N$60, quantity stays 300.\nPED = 0 / 50 = 0\nSpending N$12 000 to N$18 000 a week')
+    save(fig, '0455-T2.7-S34-perfectly-inelastic-demand-antivenom', dict(
+        topic='2.7', kind='card', shows='Vertical demand D at 300 doses; supply shifts left from S1 to S2; E1 (N$40, 300) to E2 (N$60, 300): the whole change lands on price.',
+        cards=['ITEM-0455-2.7-022-DIAGRAM'], blocks=['CU-0455-2.7.2 / 2.7.2-b6'],
+        figures='D vertical at 300; E1 (300, N$40); E2 (300, N$60); spending N$12 000 and N$18 000'))
+
+
+def s_2_7_023():
+    S1 = lambda p: 40 + 0.01 * (p - 5000)
+    S2 = lambda p: 60 + 0.01 * (p - 5000)
+    fig, (ax,) = new_fig('Perfectly elastic demand: a maize grower')
+    frame(ax, 'Quantity (tonnes)', 'Price (N$ per tonne)', (0, 100), (0, 11000),
+          xticks={40: '40', 60: '60'}, yticks={5000: '5 000'})
+    ax.plot([2, 92], [5000, 5000], color=BLUE, lw=2.6, solid_capstyle='round')
+    ax.text(93, 5000, 'D', color=BLUE, fontsize=15, fontweight='bold', va='center')
+    draw_qp(ax, S1, (1500, 8200), INK2, 'S1', dx=-6)
+    draw_qp(ax, S2, (2200, 8200), ORANGE, 'S2', dx=1.5)
+    pt(ax, 40, 5000, 'E1', off=(-34, 6)); pt(ax, 60, 5000, 'E2', off=(8, -22))
+    arrow(ax, (38, 2600), (58, 2600), ORANGE)
+    note(ax, 0.02, 0.98, 'Good rains: S1 shifts right to S2.\nQuantity 40 to 60 tonnes; price stays N$5 000.\nPED is infinite.\nRevenue N$200 000 to N$300 000')
+    save(fig, '0455-T2.7-S35-perfectly-elastic-demand-maize', dict(
+        topic='2.7', kind='card', shows='Horizontal demand D at N$5 000 a tonne; supply shifts right from S1 to S2; E1 (40 t) to E2 (60 t) at the same price: the whole change lands on quantity.',
+        cards=['ITEM-0455-2.7-023-DIAGRAM'], blocks=['CU-0455-2.7.2 / 2.7.2-b6'],
+        figures='D horizontal at N$5 000; E1 (40, N$5 000); E2 (60, N$5 000); revenue N$200 000 and N$300 000'))
+
+
+def g_unit_pes():
+    fig, (ax,) = new_fig('Unit elastic supply: straight lines through the origin')
+    frame(ax, 'Quantity supplied', 'Price', (0, 120), (0, 140))
+    for slope, c, lab in ((2.2, BLUE, 'S1'), (1.0, ORANGE, 'S2'), (0.45, GREEN, 'S3')):
+        qmax = min(100 / slope, 100)
+        q = np.linspace(0, qmax, 200)
+        draw_xy(ax, q, slope * q, c, lab, lx=qmax + 1.5, ly=slope * qmax)
+    q0 = 40
+    pt(ax, q0, 40, 'A', guides=False, off=(-22, 6)); pt(ax, 1.5 * q0, 60, 'B', guides=False, off=(-22, 6))
+    arrow(ax, (q0, 40), (1.5 * q0, 60))
+    note(ax, 0.06, 0.99, 'Any straight supply line that starts at the origin has\nPES = 1 at every point, whatever its slope:\nfrom A to B price rises 50% and quantity supplied 50%')
+    save(fig, '0455-T2.8-G16-unit-elastic-supply', dict(
+        topic='2.8', kind='generic', shows='Three straight supply lines of different slopes, each through the origin: all unit elastic (PES = 1); A to B on S2 shows equal percentage changes.',
+        cards=['ITEM-0455-2.8-017-CALC'], blocks=['CU-0455-2.8.2 / 2.8.2-b6'], figures='none (generic)'))
+
+
+def s_2_8_015():
+    D1 = lambda p: 10000 - 40 * (p - 100)
+    D2 = lambda p: 10000 - 40 * (p - 250)
+    fig, (ax,) = new_fig('Perfectly inelastic supply: seats at a cup final')
+    frame(ax, 'Quantity (tickets)', 'Price (N$ per ticket)', (0, 17000), (0, 420),
+          xticks={10000: '10 000'}, yticks={100: '100', 250: '250'})
+    ax.plot([10000, 10000], [8, 315], color=INK2, lw=2.6, solid_capstyle='round')
+    ax.text(10200, 315, 'S', color=INK2, fontsize=15, fontweight='bold', va='center')
+    draw_qp(ax, D1, (20, 300), BLUE, 'D1', dx=200, label_at='start')
+    draw_qp(ax, D2, (100, 320), ORANGE, 'D2', dx=250, dy=14)
+    pt(ax, 10000, 100, 'E1', off=(-38, 6)); pt(ax, 10000, 250, 'E2', off=(-38, 6))
+    arrow(ax, (12200, 120), (13800, 160), ORANGE)
+    note(ax, 0.02, 0.98, 'The final: D1 shifts right to D2.\nPrice N$100 to N$250, still 10 000 tickets.\nPES = 0')
+    save(fig, '0455-T2.8-S36-perfectly-inelastic-supply-stadium', dict(
+        topic='2.8', kind='card', shows='Vertical supply S at 10 000 seats; demand shifts right from D1 to D2; E1 (N$100) to E2 (N$250) with the quantity unchanged.',
+        cards=['ITEM-0455-2.8-015-DIAGRAM'], blocks=['CU-0455-2.8.2 / 2.8.2-b6'],
+        figures='S vertical at 10 000; E1 (10 000, N$100); E2 (10 000, N$250)'))
+
+
+def s_2_8_016():
+    D1 = lambda p: 200 - 5 * (p - 80)
+    D2 = lambda p: 350 - 5 * (p - 80)
+    fig, (ax,) = new_fig('Perfectly elastic supply: a T-shirt printer')
+    frame(ax, 'Quantity (shirts a week)', 'Price (N$ per shirt)', (0, 600), (0, 140),
+          xticks={200: '200', 350: '350'}, yticks={80: '80'})
+    ax.plot([8, 555], [80, 80], color=INK2, lw=2.6, solid_capstyle='round')
+    ax.text(560, 80, 'S', color=INK2, fontsize=15, fontweight='bold', va='center')
+    draw_qp(ax, D1, (45, 120), BLUE, 'D1', dx=8, label_at='start')
+    draw_qp(ax, D2, (45, 125), ORANGE, 'D2', dx=8, label_at='start')
+    pt(ax, 200, 80, 'E1', off=(-34, 6)); pt(ax, 350, 80, 'E2', off=(8, 6))
+    arrow(ax, (325, 58), (445, 58), ORANGE)
+    note(ax, 0.45, 0.98, 'Sports day: D1 shifts right to D2.\nSales 200 to 350 shirts, still at N$80.\nPES is infinite')
+    save(fig, '0455-T2.8-S37-perfectly-elastic-supply-tshirts', dict(
+        topic='2.8', kind='card', shows='Horizontal supply S at N$80; demand shifts right from D1 to D2; E1 (200 shirts) to E2 (350 shirts) at the same price.',
+        cards=['ITEM-0455-2.8-016-DIAGRAM'], blocks=['CU-0455-2.8.2 / 2.8.2-b6'],
+        figures='S horizontal at N$80; E1 (200, N$80); E2 (350, N$80)'))
+
+
+def _price_limit(title, slug, xlabel, ylabel, xlim, ylim, D, S, prange_d, prange_s, eq, limit, q_d, q_s,
+                 line_label, gap_label, xticks, yticks, meta, gap_above=True, d_name='D', s_name='S'):
+    fig, (ax,) = new_fig(title)
+    frame(ax, xlabel, ylabel, xlim, ylim, xticks=xticks, yticks=yticks)
+    draw_qp(ax, D, prange_d, BLUE, d_name, dx=0.01 * (xlim[1] - xlim[0]), label_at='start')
+    draw_qp(ax, S, prange_s, ORANGE, s_name, dx=0.01 * (xlim[1] - xlim[0]))
+    pt(ax, eq[0], eq[1], 'E', off=(10, -4) if gap_above else (10, 2))
+    span = xlim[1] - xlim[0]
+    ax.plot([xlim[0], xlim[0] + 0.86 * span], [limit, limit], color=INK, lw=1.6, ls='--')
+    ax.text(xlim[0] + 0.865 * span, limit, line_label, fontsize=12, va='center')
+    lo, hi = sorted((q_d, q_s))
+    for q in (lo, hi):
+        ax.plot([q, q], [ylim[0], limit], ls=(0, (2, 3)), color=INK2, lw=1.2)
+        ax.plot(q, limit, 'o', color=INK, ms=7, mec='white', mew=1.5, zorder=5)
+    ax.annotate('', (lo, limit), (hi, limit), arrowprops=dict(arrowstyle='<->', color=INK, lw=1.8))
+    dy = 0.025 * (ylim[1] - ylim[0])
+    ax.text((lo + hi) / 2, limit + dy if gap_above else limit - dy, gap_label, ha='center',
+            va='bottom' if gap_above else 'top', fontsize=12.5, bbox=dict(fc='white', ec='none', pad=1.5))
+    save(fig, slug, meta)
+
+
+def s_2_11_011():
+    _price_limit('A maximum price on bread in Ondangwa: a shortage', '0455-T2.11-S38-maximum-price-bread-ondangwa',
+                 'Quantity (loaves per week)', 'Price (N$ per loaf)', (0, 10500), (0, 17),
+                 lin((6000, 12), (7500, 9)), lin((6000, 12), (4000, 9)), (5, 15.5), (6, 15.5),
+                 (6000, 12), 9, 7500, 4000, 'maximum\nprice N$9', 'shortage 3 500',
+                 {4000: '4 000', 6000: '6 000', 7500: '7 500'}, {9: '9', 12: '12'},
+                 dict(topic='2.11', kind='card', shows='Bread market clears at N$12 (6 000 loaves); a maximum price of N$9 gives 7 500 demanded and 4 000 supplied: a shortage of 3 500 a week.',
+                      cards=['ITEM-0455-2.11-011-DIAGRAM'], blocks=['CU-0455-2.11.2 / 2.11.2-b8'],
+                      figures='E (6 000, N$12); at N$9: D 7 500, S 4 000; shortage 3 500'), gap_above=False)
+
+
+def s_2_11_013():
+    _price_limit('A minimum price on milk: a surplus', '0455-T2.11-S39-minimum-price-milk',
+                 'Quantity (litres per day)', 'Price (N$ per litre)', (14000, 46000), (8, 21),
+                 lin((30000, 14), (26000, 17)), lin((30000, 14), (36000, 17)), (9.5, 20.5), (9.5, 19.5),
+                 (30000, 14), 17, 26000, 36000, 'minimum\nprice N$17', 'surplus 10 000',
+                 {26000: '26 000', 30000: '30 000', 36000: '36 000'}, {14: '14', 17: '17'},
+                 dict(topic='2.11', kind='card', shows='Milk market clears at N$14 (30 000 litres a day); a minimum price of N$17 gives 26 000 demanded and 36 000 supplied: a surplus of 10 000 litres a day.',
+                      cards=['ITEM-0455-2.11-013-DIAGRAM'], blocks=['CU-0455-2.11.2 / 2.11.2-b9'],
+                      figures='E (30 000, N$14); at N$17: D 26 000, S 36 000; surplus 10 000'))
+
+
+def s_2_11_014():
+    _price_limit('A minimum wage for security guards: unemployment', '0455-T2.11-S40-minimum-wage-guards',
+                 'Quantity of labour (guards)', 'Wage rate (N$ per hour)', (3000, 7200), (10, 32),
+                 lin((5000, 20), (4200, 25)), lin((5000, 20), (5600, 25)), (12, 30.5), (12, 29.5),
+                 (5000, 20), 25, 4200, 5600, 'minimum\nwage N$25', 'unemployment 1 400',
+                 {4200: '4 200', 5000: '5 000', 5600: '5 600'}, {20: '20', 25: '25'},
+                 dict(topic='2.11', kind='card', shows='Labour market for guards clears at N$20 an hour (5 000 guards); a minimum wage of N$25 gives 4 200 demanded and 5 600 supplied: 1 400 unemployed.',
+                      cards=['ITEM-0455-2.11-014-DIAGRAM'], blocks=['CU-0455-2.11.2 / 2.11.2-b10'],
+                      figures='E (5 000, N$20); at N$25: D 4 200, S 5 600; excess supply of labour 1 400'))
+
+
+def s_2_11_017():
+    _price_limit('A minimum exchange rate for the lune: excess supply', '0455-T2.11-S41-minimum-exchange-rate-lune',
+                 'Quantity of lunes (millions a month)', 'Price of the lune (US$ per lune)', (550, 1100), (0.36, 0.72),
+                 lin((800, 0.50), (700, 0.60)), lin((800, 0.50), (900, 0.60)), (0.385, 0.69), (0.385, 0.68),
+                 (800, 0.50), 0.60, 700, 900, 'minimum\nexchange\nrate US$0.60', 'excess supply 200 million',
+                 {700: '700', 800: 'Q*', 900: '900'}, {0.50: '0.50', 0.60: '0.60'},
+                 dict(topic='2.11', kind='card', shows='Market for lunes clears at US$0.50 (quantity Q*); a minimum rate of US$0.60 gives 700 million demanded and 900 million supplied: 200 million excess supply, bought by the central bank.',
+                      cards=['ITEM-0455-2.11-017-DIAGRAM'], blocks=['CU-0455-2.11.2 / 2.11.2-b11'],
+                      figures='market rate US$0.50 at Q* (symbolic: the card gives no equilibrium quantity); at US$0.60: D 700 m, S 900 m; excess supply 200 m'))
+
+
+def s_2_11_018():
+    D = lambda p: 1000 - 0.3 * (p - 8000)
+    S = lambda p: 1000 + 0.6 * (p - 8000)
+    S1 = lambda p: 1000 + 0.6 * (p - 6500)
+    fig, (ax,) = new_fig('A subsidy of N$1 500 on each solar water heater')
+    frame(ax, 'Quantity (heaters per month)', 'Price (N$ per heater)', (0, 1750), (4500, 10500),
+          xticks={1000: '1 000', 1300: '1 300'}, yticks={7000: '7 000', 8000: '8 000', 8500: '8 500'})
+    ax.add_patch(Rectangle((0, 7000), 1300, 1500, fc=TINT_O, alpha=0.20, ec='none'))
+    ax.text(650, 5000, 'shaded: cost of the subsidy\nN$1 500 × 1 300 = N$1 950 000', ha='left', va='center', fontsize=11.5,
+            bbox=dict(fc='white', ec='none', alpha=0.85, pad=1.5), zorder=6)
+    draw_qp(ax, D, (5000, 10200), INK2, 'D', dx=15, label_at='start')
+    draw_qp(ax, S, (6400, 10200), BLUE, 'S', dx=15)
+    draw_qp(ax, S1, (4800, 9900), ORANGE, 'S1', dx=15)
+    pt(ax, 1000, 8000, 'E1', off=(-38, 6)); pt(ax, 1300, 7000, 'E2', off=(10, -22))
+    pt(ax, 1300, 8500, None, guides=False)
+    ax.annotate('', (1300, 8500), (1300, 7000), arrowprops=dict(arrowstyle='<->', color=ORANGE, lw=1.8))
+    ax.text(1325, 7750, 'subsidy\nN$1 500', fontsize=12, va='center')
+    save(fig, '0455-T2.11-S42-subsidy-solar-heaters', dict(
+        topic='2.11', kind='card', shows='Supply shifts down by the N$1 500 subsidy from S to S1; D unchanged; E1 (N$8 000, 1 000 heaters) to E2 (N$7 000, 1 300); subsidy cost N$1 950 000 shaded.',
+        cards=['ITEM-0455-2.11-018-DIAGRAM'], blocks=['CU-0455-2.11.2 / 2.11.2-b12'],
+        figures='E1 (1 000, N$8 000); E2 (1 300, N$7 000); S at 1 300 = N$8 500 (S1 + N$1 500); cost N$1 950 000'))
+
+
+def s_3_3_026():
+    D = lin((20, 90), (90, 20)); S1 = lin((20, 20), (90, 90)); S2 = lin((45, 20), (115, 90))
+    fig, (ax,) = new_fig('More trained welders: supply of labour shifts right')
+    frame(ax, 'Number of welders', 'Wage (N$ per month)', (0, 125), (0, 135),
+          xticks={55: 'Q1', 67.5: 'Q2'}, yticks={55: 'W1', 42.5: 'W2'})
+    draw_qp(ax, D, (20, 92), BLUE, 'D', dx=2, label_at='start')
+    draw_qp(ax, S1, (20, 92), INK2, 'S1', dx=2)
+    draw_qp(ax, S2, (20, 88), ORANGE, 'S2', dx=2)
+    pt(ax, 55, 55, 'E1', off=(-34, 4)); pt(ax, 67.5, 42.5, 'E2', off=(8, -22))
+    ax.annotate('', (55, 55), (80, 55), arrowprops=dict(arrowstyle='<->', color=INK, lw=1.4))
+    ax.text(82, 55, 'surplus of welders\nat W1: wage bid down', fontsize=11.5, va='center')
+    arrow(ax, (52, 30), (72, 30), ORANGE)
+    note(ax, 0.42, 0.98, '150 newly qualified welders a year:\nS1 to S2, demand unchanged.\nWage falls W1 to W2; employment\nrises Q1 to Q2')
+    save(fig, '0455-T3.3-S43-labour-supply-welders', dict(
+        topic='3.3', kind='card', shows='Supply of welders shifts right from S1 to S2 with demand unchanged; surplus at W1; wage falls to W2 and employment rises from Q1 to Q2.',
+        cards=['ITEM-0455-3.3-026-SYNTH'], blocks=['CU-0455-3.3.3 / 3.3.3-b8'],
+        figures='wages and employment symbolic (W1, W2, Q1, Q2): the card gives none'))
+
+
+def s_3_7_018():
+    q = np.linspace(0, 6000, 200)
+    fig, (ax,) = new_fig('Fixed, variable and total cost: Otjiwa Dairy')
+    frame(ax, 'Output (litres a month)', 'Costs (N$)', (0, 7200), (0, 42000),
+          xticks={3000: '3 000', 6000: '6 000'}, yticks={6000: '6 000', 24000: '24 000', 30000: '30 000'})
+    draw_xy(ax, q, 6000 + 0 * q, GREEN, 'FC', lx=6080, ly=6000)
+    draw_xy(ax, q, 4 * q, ORANGE, 'VC', lx=6080, ly=24000)
+    draw_xy(ax, q, 6000 + 4 * q, BLUE, 'TC', lx=6080, ly=30000)
+    for y in (24000, 30000):
+        ax.plot([0, 6000], [y, y], ls=(0, (2, 3)), color=INK2, lw=1.2)
+    ax.plot([6000, 6000], [0, 30000], ls=(0, (2, 3)), color=INK2, lw=1.2)
+    ax.annotate('', (3000, 12000), (3000, 18000), arrowprops=dict(arrowstyle='<->', color=INK, lw=1.6))
+    ax.text(3080, 15000, 'gap = fixed cost\nN$6 000 at every output', fontsize=12, va='center')
+    note(ax, 0.03, 0.98, 'FC: N$6 000 whatever the output\nVC: N$4 a litre, 0 to N$24 000\nTC = FC + VC: N$6 000 to N$30 000')
+    save(fig, '0455-T3.7-S44-cost-lines-dairy', dict(
+        topic='3.7', kind='card', shows='Fixed cost flat at N$6 000; variable cost rising from 0 to N$24 000 and total cost from N$6 000 to N$30 000 over 0 to 6 000 litres; the TC-VC gap is the fixed cost.',
+        cards=['ITEM-0455-3.7-018-SYNTH'], blocks=['CU-0455-3.7.2 / 3.7.2-b6'],
+        figures='FC N$6 000; VC N$4 a litre; at 6 000 litres VC N$24 000, TC N$30 000'))
+
+
+def s_4_4_014():
+    D = lambda p: 50 - 1000 * (p - 0.10)
+    S1 = lambda p: 50 + 1000 * (p - 0.10)
+    q2 = D(1 / 12)
+    S2 = lambda p: q2 + 1000 * (p - 1 / 12)
+    fig, (ax,) = new_fig('The central bank sells crowns: the crown depreciates')
+    frame(ax, 'Quantity of crowns', 'Price of 1 crown (US$)', (0, 120), (0.05, 0.16),
+          xticks={50: 'Q1', q2: 'Q2'}, yticks={0.10: '0.10', 1 / 12: '0.083'})
+    draw_qp(ax, D, (0.06, 0.13), INK2, 'D', dx=1.5, label_at='start')
+    draw_qp(ax, S1, (0.062, 0.128), BLUE, 'S1', dx=1.5)
+    draw_qp(ax, S2, (0.052, 0.125), ORANGE, 'S2', dx=1.5)
+    pt(ax, 50, 0.10, 'E1', off=(-34, 4)); pt(ax, q2, 1 / 12, 'E2', off=(10, -20))
+    arrow(ax, (52, 0.066), (76, 0.066), ORANGE)
+    note(ax, 0.02, 0.98, 'Central bank sells crowns for US dollars:\nsupply of crowns shifts right, S1 to S2.\n10 crowns per US$1 = US$0.10 a crown\n12 crowns per US$1 = about US$0.083 a crown')
+    save(fig, '0455-T4.4-S45-crown-depreciation', dict(
+        topic='4.4', kind='card', shows='Market for crowns: the central bank sells crowns, so supply shifts right from S1 to S2; the price of a crown falls from US$0.10 (10 per US$1) to about US$0.083 (12 per US$1).',
+        cards=['ITEM-0455-4.4-014-APP'], blocks=['CU-0455-4.4.2 / 4.4.2-b7'],
+        figures='rate 10 to 12 crowns per US$1 drawn as US$0.10 to US$0.083 per crown; quantities symbolic (Q1, Q2): the card gives none'))
+
+
+AGE_BANDS_K = ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49',
+               '50-54', '55-59', '60-64', '65-69', '70-74', '75+']
+AGE_BANDS_M = AGE_BANDS_K[:-1] + ['75-79', '80+']
+
+
+def _pyramid(title, slug, bands, male, female, groups, text, meta):
+    fig, (ax,) = new_fig(title, size=(8, 7.5))
+    y = np.arange(len(bands))
+    ax.barh(y, [-m for m in male], color=BLUE, height=0.82, alpha=0.9)
+    ax.barh(y, female, color=ORANGE, height=0.82, alpha=0.9)
+    lim = max(max(male), max(female)) * 1.25
+    ax.set_xlim(-lim, lim)
+    ax.set_ylim(-0.7, len(bands) + 0.6)
+    ax.set_yticks(y)
+    ax.set_yticklabels(bands)
+    ticks = [t for t in range(-int(lim), int(lim) + 1) if t % 2 == 0]
+    ax.set_xticks(ticks)
+    ax.set_xticklabels([str(abs(t)) for t in ticks])
+    ax.axvline(0, color=INK, lw=1.2)
+    for s in ('top', 'right', 'left'):
+        ax.spines[s].set_visible(False)
+    ax.tick_params(length=0, pad=6, labelsize=12)
+    ax.set_xlabel('Share of the whole population in each age group (%)', fontsize=13, labelpad=8)
+    ax.set_ylabel('Age (years)', fontsize=13, labelpad=8)
+    ax.text(-lim * 0.95, len(bands) + 0.05, 'Males', color=BLUE, fontsize=15, fontweight='bold', va='center')
+    ax.text(lim * 0.95, len(bands) + 0.05, 'Females', color=ORANGE, fontsize=15, fontweight='bold', va='center', ha='right')
+    for lo, hi, lab in groups:
+        ax.annotate('', (lim * 1.02, lo - 0.4), (lim * 1.02, hi + 0.4), xycoords='data',
+                    arrowprops=dict(arrowstyle='-', color=INK2, lw=1.4), annotation_clip=False)
+        ax.text(lim * 1.05, (lo + hi) / 2, lab, fontsize=12.5, va='center', ha='left', color=INK, clip_on=False)
+    ax.set_title(text, fontsize=13, color=INK2, loc='left', pad=12)
+    fig.tight_layout(rect=(0, 0, 0.84, 0.95))
+    png = os.path.join(OUT, slug + '.png'); svg = os.path.join(OUT, slug + '.svg')
+    fig.savefig(png, facecolor='white'); fig.savefig(svg, facecolor='white')
+    plt.close(fig)
+    meta['file'] = slug
+    REGISTRY.append(meta)
+
+
+def s_5_3_017():
+    shares = [15.5, 14, 12.5, 11, 9.5, 8, 6.5, 5.5, 4.5, 3.5, 2.8, 2.1, 1.6, 1.4, 0.9, 0.7]
+    half = [v / 2 for v in shares]
+    _pyramid('A young population: Country K', '0455-T5.3-S46-pyramid-young-country-k', AGE_BANDS_K, half, half,
+             [(0, 2, '0-14\n42%'), (3, 12, '15-64\n55%'), (13, 15, '65+\n3%')],
+             'Wide base, narrow top: each bar is narrower than the one below',
+             dict(topic='5.3', kind='card', shows='Population pyramid for Country K: 42% aged 0-14, 55% aged 15-64, 3% aged 65 and over; each bar narrower than the one below (a young population).',
+                  cards=['ITEM-0455-5.3-017-INTERP'], blocks=['CU-0455-5.3.3 / 5.3.3-b5'],
+                  figures='0-14 = 42% (15.5, 14, 12.5); 15-64 = 55% (11, 9.5, 8, 6.5, 5.5, 4.5, 3.5, 2.8, 2.1, 1.6); 65+ = 3% (1.4, 0.9, 0.7); five-year bands invented to sum to the card\'s shares, split evenly by sex'))
+
+
+def s_5_3_018():
+    shares = [4.4, 4.7, 4.9, 5.2, 5.5, 5.8, 6.0, 6.3, 6.4, 6.5, 6.5, 6.3, 6.5, 7.0, 6.4, 6.2, 5.4]
+    male = [v / 2 for v in shares[:-1]] + [1.8]
+    female = [v / 2 for v in shares[:-1]] + [3.6]
+    _pyramid('An ageing population: Country M', '0455-T5.3-S47-pyramid-ageing-country-m', AGE_BANDS_M, male, female,
+             [(0, 2, '0-14\n14%'), (3, 12, '15-64\n61%'), (13, 16, '65+\n25%')],
+             'Narrow base, broad top; at 80+ the female bar is twice the male bar',
+             dict(topic='5.3', kind='card', shows='Population pyramid for Country M: 14% aged 0-14, 61% aged 15-64, 25% aged 65 and over; at 80+ the female bar is twice the male bar (an ageing population).',
+                  cards=['ITEM-0455-5.3-018-INTERP'], blocks=['CU-0455-5.3.3 / 5.3.3-b5'],
+                  figures='0-14 = 14% (4.4, 4.7, 4.9); 15-64 = 61%; 65+ = 25% (7.0, 6.4, 6.2, 5.4); 80+ male 1.8, female 3.6; five-year bands invented to sum to the card\'s shares'))
+
+
+def s_6_3_018():
+    S = lambda p: 20 + 400 * (p - 0.055)
+    D = lambda p: 20 - 400 * (p - 0.055)
+    D1 = lambda p: 22 - 400 * (p - 0.060)
+    fig, (ax,) = new_fig('Foreign orders for wine: demand for the rand rises')
+    frame(ax, 'Quantity of rand traded (R billion a week)', 'Exchange rate (US$ per rand)', (10, 34), (0.042, 0.078),
+          xticks={20: '20', 22: '22'}, yticks={0.055: '0.055', 0.060: '0.060'})
+    draw_qp(ax, D, (0.045, 0.068), BLUE, 'D', dx=0.3, label_at='start')
+    draw_qp(ax, D1, (0.045, 0.069), ORANGE, 'D1', dx=0.3, label_at='start')
+    draw_qp(ax, S, (0.045, 0.069), INK2, 'S', dx=0.3)
+    pt(ax, 20, 0.055, 'E1', off=(-36, 4)); pt(ax, 22, 0.060, 'E2', off=(-14, 10))
+    ax.annotate('', (20, 0.055), (24, 0.055), arrowprops=dict(arrowstyle='<->', color=INK, lw=1.4))
+    ax.text(24.4, 0.055, 'excess demand\nat US$0.055', fontsize=11.5, va='center')
+    arrow(ax, (22.6, 0.0495), (25.6, 0.0495), ORANGE)
+    note(ax, 0.02, 0.98, 'Wine buyers abroad need rand: D shifts\nright to D1; S does not move.\nThe rand appreciates')
+    save(fig, '0455-T6.3-S48-rand-demand-wine', dict(
+        topic='6.3', kind='card', shows='Market for rand: demand shifts right from D to D1 as foreign wine orders rise; excess demand at US$0.055; E1 (US$0.055, R20 bn) to E2 (US$0.060, R22 bn): the rand appreciates.',
+        cards=['ITEM-0455-6.3-018-DIAGRAM'], blocks=['CU-0455-6.3.2 / 6.3.2-b6'],
+        figures='E1 (R20 bn, US$0.055); E2 (R22 bn, US$0.060) as the card\'s worked example; excess demand drawn without a figure'))
+
+
+BUILD_ADDED = [s_2_6_010, g_unit_ped, s_2_7_022, s_2_7_023, g_unit_pes, s_2_8_015, s_2_8_016,
+               s_2_11_011, s_2_11_013, s_2_11_014, s_2_11_017, s_2_11_018,
+               s_3_3_026, s_3_7_018, s_4_4_014, s_5_3_017, s_5_3_018, s_6_3_018]
+
+
 BUILD = [g_ppc_anatomy, g_ppc_opportunity_cost, g_ppc_move_vs_shift, g_ppc_inward,
          s_1_4_002, s_1_4_rising_cost, s_1_4_007, s_1_4_012, s_1_4_017,
          g_demand_move_shift, s_2_3_schedule, s_2_3_002, s_2_3_007, s_2_3_015,
@@ -1065,7 +1436,7 @@ BUILD = [g_ppc_anatomy, g_ppc_opportunity_cost, g_ppc_move_vs_shift, g_ppc_inwar
          s_2_10_007, s_2_11_004, g_subsidy, s_2_11_max_bread, s_2_11_min_beef,
          g_labour, s_3_3_labour, s_3_7_004, s_3_8_002, s_3_8_007,
          s_4_6_008, s_4_6_013, g_two_routes,
-         s_6_3_005, lambda: g_fx('app'), lambda: g_fx('dep')]
+         s_6_3_005, lambda: g_fx('app'), lambda: g_fx('dep')] + BUILD_ADDED
 
 
 def write_index():
@@ -1083,7 +1454,8 @@ def write_index():
               '2.7': 'Price elasticity of demand (PED)', '2.8': 'Price elasticity of supply (PES)',
               '2.10': 'Market failure', '2.11': 'Mixed economic system', '3.3': 'Workers',
               '3.7': 'Firms’ costs, revenue and objectives', '3.8': 'Market structure',
-              '4.6': 'Economic growth', '6.3': 'Foreign exchange rates'}
+              '4.4': 'Monetary policy', '4.6': 'Economic growth', '5.3': 'Population',
+              '6.3': 'Foreign exchange rates'}
     L = ['# Diagrams — 0455 Cambridge IGCSE Economics', '',
          f'{len(rows)} diagrams, each as a PNG (1600 × 1200 or wider, white background) and an SVG. '
          'Add them to the cards and note sections listed against each one.', '',

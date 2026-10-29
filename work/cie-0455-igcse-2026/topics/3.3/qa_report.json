@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-cie-0455-igcse-2026-3.3",
   "build_id": "cie-0455-igcse-2026/topic-3.3",
-  "generated_at": "2026-10-12T22:54:16Z",
+  "generated_at": "2026-10-13T21:51:40Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -12,7 +12,7 @@
     {
       "check_id": "C-01",
       "status": "pass",
-      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 4 content units, 22 items and 16 claims resolves in the registry (5 nodes in this topic branch, 4 assessable).",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 4 content units, 34 items and 27 claims resolves in the registry (5 nodes in this topic branch, 4 assessable).",
       "affected_ids": []
     },
     {
@@ -24,7 +24,7 @@
     {
       "check_id": "C-03",
       "status": "pass",
-      "message": "[RS-07 Claim orphans] All 16 ledger claims are cited by at least one block or item.",
+      "message": "[RS-07 Claim orphans] All 27 ledger claims are cited by at least one block or item.",
       "affected_ids": []
     },
     {
@@ -53,9 +53,11 @@
     },
     {
       "check_id": "C-30",
-      "status": "pass",
-      "message": "[RS-41 No bulk stamp] All 44 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
-      "affected_ids": []
+      "status": "warn",
+      "message": "[RS-41 No bulk stamp] 1 advanced stamps carry no prior_hash, so they predate the audit trail and cannot be verified. 62 stamps are auditable and clean. Every stamp made from now on records the text it replaced.",
+      "affected_ids": [
+        "CU-0455-3.3.2/3.3.2-b8"
+      ]
     },
     {
       "check_id": "C-29",
@@ -72,7 +74,7 @@
     {
       "check_id": "C-32",
       "status": "pass",
-      "message": "[RS-22 Stated arithmetic is correct] All 9 stated calculations in canonical answers evaluate correctly.",
+      "message": "[RS-22 Stated arithmetic is correct] All 14 stated calculations in canonical answers evaluate correctly.",
       "affected_ids": []
     },
     {
@@ -162,13 +164,13 @@
     {
       "check_id": "C-18",
       "status": "warn",
-      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 50, 'AO2': 35, 'AO3': 15} against target {'AO1': 40, 'AO2': 40, 'AO3': 20}; largest deviation across AO1-AO3 is 10 points. AO4 is reported, not tested by count: 0 items carry it, of which 4 are performance tasks (data_response, essay_plan, multiple_choice_set, short_answer). RS-19 measures the AO4 share in practice time.",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 50, 'AO2': 40, 'AO3': 10} against target {'AO1': 40, 'AO2': 40, 'AO3': 20}; largest deviation across AO1-AO3 is 10 points. AO4 is reported, not tested by count: 0 items carry it, of which 4 are performance tasks (data_response, essay_plan, multiple_choice_set, short_answer). RS-19 measures the AO4 share in practice time.",
       "affected_ids": []
     },
     {
       "check_id": "C-19",
       "status": "pass",
-      "message": "[RS-25 Flashcard integrity] All 18 flashcards carry a non-null canonical answer and a declared subtype.",
+      "message": "[RS-25 Flashcard integrity] All 30 flashcards carry a non-null canonical answer and a declared subtype.",
       "affected_ids": []
     },
     {
@@ -182,13 +184,13 @@
     {
       "check_id": "C-21",
       "status": "pass",
-      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 22 items.",
+      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 34 items.",
       "affected_ids": []
     },
     {
       "check_id": "C-22",
       "status": "pass",
-      "message": "[RS-30 Marking guidance present] All 22 items carry marking guidance.",
+      "message": "[RS-30 Marking guidance present] All 34 items carry marking guidance.",
       "affected_ids": []
     },
     {
@@ -200,7 +202,7 @@
     {
       "check_id": "C-24",
       "status": "pass",
-      "message": "[RS-13 Publication gate] Gate holds: 0 of 16 claims are publishable or verified. 16 are generated_gap and need documented human approval (RS-13).",
+      "message": "[RS-13 Publication gate] Gate holds: 0 of 27 claims are publishable or verified. 27 are generated_gap and need documented human approval (RS-13).",
       "affected_ids": []
     },
     {
@@ -212,10 +214,12 @@
     {
       "check_id": "C-26",
       "status": "warn",
-      "message": "[RS-09 Word budget] 2 content units sit outside their declared word budget.",
+      "message": "[RS-09 Word budget] 4 content units sit outside their declared word budget.",
       "affected_ids": [
         "CU-0455-3.3.1",
-        "CU-0455-3.3.3"
+        "CU-0455-3.3.2",
+        "CU-0455-3.3.3",
+        "CU-0455-3.3.4"
       ]
     },
     {
@@ -227,13 +231,13 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 17 files to topics/3.3/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (0b22d97a69455bfa) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 17 files to topics/3.3/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (38e46fd465e79556) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
       "check_id": "C-37",
       "status": "pass",
-      "message": "[RS-43 Conditioned mechanisms carry their conditions] No artefact asserts any of the 5 registered conditioned mechanisms in this topic.",
+      "message": "[RS-43 Conditioned mechanisms carry their conditions] All 2 assertions of a registered conditioned mechanism carry every condition the register requires.",
       "affected_ids": []
     },
     {
@@ -263,7 +267,7 @@
     {
       "check_id": "C-42",
       "status": "pass",
-      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 22 learning items, 4 content units.",
+      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 34 learning items, 4 content units.",
       "affected_ids": []
     },
     {
@@ -275,27 +279,45 @@
   ],
   "semantic_reviews": [
     {
-      "review_id": "SR-3.3-PENDING",
-      "reviewer_role": "combined",
-      "status": "not_run",
-      "issues": []
+      "review_id": "CODEX-0455-20261013-COVERAGE",
+      "reviewer_role": "reviewer",
+      "status": "fix_the_plan_first",
+      "packet_hash_verified": null,
+      "coverage_confirmed": false,
+      "reconstruction_test": null,
+      "source": "work/cie-0455-igcse-2026/review/codex-coverage-3.3.yaml",
+      "issues": [
+        {
+          "issue_id": "CODEX-0455-20261013-MINWAGE",
+          "severity": "high",
+          "category": "curriculum",
+          "affected_ids": [
+            "CM-0455-MINWAGE-UNEMPLOYMENT"
+          ],
+          "finding": "The subject-profile rule requires elastic labour demand for unemployment from a binding minimum wage.",
+          "educational_consequence": "The plan encodes elasticity as a necessary condition instead of an influence on size.",
+          "recommended_repair": "Planner must correct the competitive-model condition and regenerate affected inputs.",
+          "confidence": 0.98,
+          "status": "open"
+        }
+      ]
     }
   ],
   "blockers": [
     "Packet incomplete - absent inputs: assessment-evidence/assessment_evidence.json, curriculum/item-budget.json.",
     "No deterministic opinion on 4 checks (C-35, C-39, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
-    "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
+    "RS-42 - 1 unresolved review issues ride with this release (0 critical, 1 high). They are debt, not a block: fix them in the maintenance pass and keep them open here until they are fixed."
   ],
   "metrics": {
     "objective_count": 4,
-    "claim_count": 16,
+    "claim_count": 27,
     "content_unit_count": 4,
-    "learning_item_count": 22,
-    "word_count": 1854
+    "learning_item_count": 34,
+    "word_count": 3161
   },
   "release_decision": "publish",
   "notes": [
-    "Standard v0.2.0-draft check suite. 44 checks: 37 pass, 0 fail, 3 warn, 4 not_run.",
+    "Standard v0.2.0-draft check suite. 44 checks: 36 pass, 0 fail, 4 warn, 4 not_run.",
     "A not_run check means an input the check needs is absent. It is never a pass.",
     "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
   ]

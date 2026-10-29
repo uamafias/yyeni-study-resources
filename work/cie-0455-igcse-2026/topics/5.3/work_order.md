@@ -27,33 +27,33 @@
 ## Content units
 
 **CU-0455-5.3.1** — sub-topic 5.3.1, 1 objectives, 300–430 words
-- `OBJ-0455-5.3.1` tier 2 — the factors that affect population growth
+- `OBJ-0455-5.3.1` tier 2 — The factors that affect population growth: Birth rate, death rate, net migration, immigration and emigration.
 
 **CU-0455-5.3.2** — sub-topic 5.3.2, 1 objectives, 300–430 words
-- `OBJ-0455-5.3.2` tier 3 — reasons for different rates of population growth in different countries
+- `OBJ-0455-5.3.2` tier 3 — Reasons for different rates of population growth in different countries: How and why birth rates, death rates and net migration vary between countries.
 
 **CU-0455-5.3.3** — sub-topic 5.3.3, 1 objectives, 300–430 words
-- `OBJ-0455-5.3.3` tier 3 — the effects of changes in the size and structure of population on different countries
+- `OBJ-0455-5.3.3` tier 3 — The effects of changes in the size and structure of population on different countries: The concept of an optimum population. The effects of increases and decreases in population size and changes in the age and gender distribution of population. Note: interpretation of a population pyramid is required, but drawing is not.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | the factors that affect population growth | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-WHY` | the factors that affect population growth | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `003-APP` | the factors that affect population growth | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `004-DEF` | reasons for different rates of population growth in different countries | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `005-CHAIN` | reasons for different rates of population growth in different countries | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `006-APP` | reasons for different rates of population growth in different countries | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `010-EVAL` | reasons for different rates of population growth in different countries | EVAL | AO3 | Discuss | 8 | added to reach the framework AO3 target of 20% |
-| `007-DEF` | the effects of changes in the size and structure of population on different countries | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `008-CHAIN` | the effects of changes in the size and structure of population on different countries | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `009-APP` | the effects of changes in the size and structure of population on different countries | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `001-DEF` | The factors that affect population growth: Birth rate, death rate, net migration, immigration and emigration. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-WHY` | The factors that affect population growth: Birth rate, death rate, net migration, immigration and emigration. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `003-APP` | The factors that affect population growth: Birth rate, death rate, net migration, immigration and emigration. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `004-DEF` | Reasons for different rates of population growth in different countries: How and why birth rates, death rates and net migration vary between countries. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `005-CHAIN` | Reasons for different rates of population growth in different countries: How and why birth rates, death rates and net migration vary between countries. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `006-APP` | Reasons for different rates of population growth in different countries: How and why birth rates, death rates and net migration vary between countries. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `010-EVAL` | Reasons for different rates of population growth in different countries: How and why birth rates, death rates and net migration vary between countries. | EVAL | AO3 | Discuss | 8 | added to reach the framework AO3 target of 20% |
+| `007-DEF` | The effects of changes in the size and structure of population on different countries: The concept of an optimum population. The effects of increases and decreases in population size and changes in the age and gender distribution of population. Note: interpretation of a population pyramid is required, but drawing is not. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `008-CHAIN` | The effects of changes in the size and structure of population on different countries: The concept of an optimum population. The effects of increases and decreases in population size and changes in the age and gender distribution of population. Note: interpretation of a population pyramid is required, but drawing is not. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `009-APP` | The effects of changes in the size and structure of population on different countries: The concept of an optimum population. The effects of increases and decreases in population size and changes in the age and gender distribution of population. Note: interpretation of a population pyramid is required, but drawing is not. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-cie-0455-igcse-2026-1.1",
   "build_id": "cie-0455-igcse-2026/topic-1.1",
-  "generated_at": "2026-10-12T22:54:12Z",
+  "generated_at": "2026-10-13T21:51:37Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -12,7 +12,7 @@
     {
       "check_id": "C-01",
       "status": "pass",
-      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 2 content units, 10 items and 5 claims resolves in the registry (3 nodes in this topic branch, 2 assessable).",
+      "message": "[RS-07 Objective referential integrity] Every objective_id cited by 2 content units, 13 items and 5 claims resolves in the registry (3 nodes in this topic branch, 2 assessable).",
       "affected_ids": []
     },
     {
@@ -54,7 +54,7 @@
     {
       "check_id": "C-30",
       "status": "pass",
-      "message": "[RS-41 No bulk stamp] All 18 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
+      "message": "[RS-41 No bulk stamp] All 21 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
       "affected_ids": []
     },
     {
@@ -162,13 +162,13 @@
     {
       "check_id": "C-18",
       "status": "warn",
-      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 47, 'AO2': 35, 'AO3': 18} against target {'AO1': 40, 'AO2': 40, 'AO3': 20}; largest deviation across AO1-AO3 is 7 points. AO4 is reported, not tested by count: 0 items carry it, of which 4 are performance tasks (data_response, essay_plan, multiple_choice_set, short_answer). RS-19 measures the AO4 share in practice time.",
+      "message": "[RS-19 AO mix against target] AO mix by item count {'AO1': 48, 'AO2': 39, 'AO3': 13} against target {'AO1': 40, 'AO2': 40, 'AO3': 20}; largest deviation across AO1-AO3 is 8 points. AO4 is reported, not tested by count: 0 items carry it, of which 4 are performance tasks (data_response, essay_plan, multiple_choice_set, short_answer). RS-19 measures the AO4 share in practice time.",
       "affected_ids": []
     },
     {
       "check_id": "C-19",
       "status": "pass",
-      "message": "[RS-25 Flashcard integrity] All 6 flashcards carry a non-null canonical answer and a declared subtype.",
+      "message": "[RS-25 Flashcard integrity] All 9 flashcards carry a non-null canonical answer and a declared subtype.",
       "affected_ids": []
     },
     {
@@ -180,13 +180,13 @@
     {
       "check_id": "C-21",
       "status": "pass",
-      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 10 items.",
+      "message": "[RS-25 Duplicate prompts] No exact duplicate and no near-duplicate prompt pair above 0.85 Jaccard across 13 items.",
       "affected_ids": []
     },
     {
       "check_id": "C-22",
       "status": "pass",
-      "message": "[RS-30 Marking guidance present] All 10 items carry marking guidance.",
+      "message": "[RS-30 Marking guidance present] All 13 items carry marking guidance.",
       "affected_ids": []
     },
     {
@@ -222,7 +222,7 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 15 files to topics/1.1/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (e1d7e075780d62b9) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 15 files to topics/1.1/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (01eec56be8f1e978) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
@@ -258,7 +258,7 @@
     {
       "check_id": "C-42",
       "status": "pass",
-      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 10 learning items, 2 content units.",
+      "message": "[RS-45 Contract counts match the live build] All 3 counts the contract authorises match the build: 13 learning items, 2 content units.",
       "affected_ids": []
     },
     {
@@ -270,22 +270,43 @@
   ],
   "semantic_reviews": [
     {
-      "review_id": "SR-1.1-PENDING",
-      "reviewer_role": "combined",
-      "status": "not_run",
-      "issues": []
+      "review_id": "CODEX-0455-20261013-COVERAGE",
+      "reviewer_role": "reviewer",
+      "status": "fix_the_plan_first",
+      "packet_hash_verified": null,
+      "coverage_confirmed": false,
+      "reconstruction_test": null,
+      "source": "work/cie-0455-igcse-2026/review/codex-coverage-1.1.yaml",
+      "issues": [
+        {
+          "issue_id": "CODEX-0455-20261013-FREEWATER",
+          "severity": "high",
+          "category": "analysis",
+          "affected_ids": [
+            "ITEM-0455-1.1-006-CHAIN",
+            "ITEM-0455-1.1-P02",
+            "ITEM-0455-1.1-P03",
+            "ITEM-0455-1.1-P04"
+          ],
+          "finding": "Zero household charges were treated as inevitably causing unfunded maintenance and service collapse.",
+          "educational_consequence": "Learners overlook public funding and non-price rationing.",
+          "recommended_repair": "Condition effects on funding, capacity and demand management and discuss free basic access.",
+          "confidence": 0.98,
+          "status": "resolved",
+          "resolution": "Condition effects on funding, capacity and demand management and discuss free basic access. The cited learner-facing artefacts have been revised, re-stamped and checked; see codex-coverage-review.md for details."
+        }
+      ]
     }
   ],
   "blockers": [
     "Packet incomplete - absent inputs: assessment-evidence/assessment_evidence.json, curriculum/item-budget.json.",
-    "No deterministic opinion on 4 checks (C-35, C-39, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
-    "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
+    "No deterministic opinion on 4 checks (C-35, C-39, C-41, C-43) - on these a human or model reviewer is the only line of defence."
   ],
   "metrics": {
     "objective_count": 2,
     "claim_count": 5,
     "content_unit_count": 2,
-    "learning_item_count": 10,
+    "learning_item_count": 13,
     "word_count": 690
   },
   "release_decision": "publish",

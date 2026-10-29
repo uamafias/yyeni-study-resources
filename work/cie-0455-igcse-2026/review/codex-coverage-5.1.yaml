@@ -1,0 +1,39 @@
+review_id: CODEX-0455-20261013-COVERAGE
+reviewer_role: reviewer
+status: fix_the_plan_first
+coverage_confirmed: false
+scope: 178 added prompts and canonical answers; selected older content; full-bank
+  structural/check audit. Whole-subject Step 6 not completed.
+issues:
+- issue_id: CODEX-0455-20261013-GDP
+  topic: '5.1'
+  severity: critical
+  category: accuracy
+  affected_ids:
+  - CLM-0455-5.1-011
+  - ITEM-0455-5.1-013-LIM
+  - 5.1.1-b4
+  finding: Unsold subsistence goods and self-built housing were incorrectly treated
+    as excluded from GDP.
+  evidence: it leaves out output that is not sold, such as subsistence farming
+  educational_consequence: Learners exclude production that belongs in GDP in principle.
+  recommended_repair: Distinguish GDP inclusion from under-recording and unpaid household
+    services.
+  confidence: 0.98
+  status: resolved
+- issue_id: CODEX-0455-20261013-INCOME
+  topic: '5.1'
+  severity: high
+  category: quantitative
+  affected_ids:
+  - ITEM-0455-5.1-006-CHAIN
+  - 5.1.2-b3
+  - ITEM-0455-5.1-P03
+  finding: The worked comparison mixed GDP per person with typical household income.
+  evidence: the typical household earns about 0.40 x N$60 000 = N$24 000
+  educational_consequence: Learners convert an output average into disposable household
+    income without adequate information.
+  recommended_repair: Supply separate disposable-income figures per person and comparable
+    prices and services.
+  confidence: 0.98
+  status: resolved

@@ -30,16 +30,16 @@
 - `OBJ-0455-4.8.1` tier 1 — definition of inflation and deflation
 
 **CU-0455-4.8.2** — sub-topic 4.8.2, 1 objectives, 250–360 words
-- `OBJ-0455-4.8.2` tier 2 — measurement of inflation and deflation
+- `OBJ-0455-4.8.2` tier 2 — Measurement of inflation and deflation: Measurement of inflation and deflation using the Consumer Prices Index (CPI).
 
 **CU-0455-4.8.3** — sub-topic 4.8.3, 1 objectives, 250–360 words
-- `OBJ-0455-4.8.3` tier 3 — causes of inflation and deflation
+- `OBJ-0455-4.8.3` tier 3 — Causes of inflation and deflation: Causes of inflation: demand-pull and cost-push. Causes of deflation: demand-side and supply-side.
 
 **CU-0455-4.8.4** — sub-topic 4.8.4, 1 objectives, 250–360 words
-- `OBJ-0455-4.8.4` tier 3 — consequences of inflation and deflation
+- `OBJ-0455-4.8.4` tier 3 — Consequences of inflation and deflation: The consequences of inflation and deflation for consumers, workers, savers, lenders, firms and the economy as a whole.
 
 **CU-0455-4.8.5** — sub-topic 4.8.5, 1 objectives, 250–360 words
-- `OBJ-0455-4.8.5` tier 4 — policies to control inflation and deflation
+- `OBJ-0455-4.8.5` tier 4 — Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be.
 
 ## Item slots
 
@@ -47,28 +47,28 @@
 |---|---|---|---|---|---:|---|
 | `001-DEF` | definition of inflation and deflation | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `002-FEATURE` | definition of inflation and deflation | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | measurement of inflation and deflation | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-CALC` | measurement of inflation and deflation | CALC | AO1 | Calculate | 1 | instructs with Calculate, which this objective carries |
-| `005-INTERP` | measurement of inflation and deflation | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-APP` | measurement of inflation and deflation | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `007-DEF` | causes of inflation and deflation | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `008-CHAIN` | causes of inflation and deflation | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `009-APP` | causes of inflation and deflation | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `010-DEF` | consequences of inflation and deflation | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `011-CHAIN` | consequences of inflation and deflation | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `012-APP` | consequences of inflation and deflation | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `013-DEF` | policies to control inflation and deflation | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `014-BEN` | policies to control inflation and deflation | BEN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `015-LIM` | policies to control inflation and deflation | LIM | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `016-EVAL` | policies to control inflation and deflation | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
-| `017-APP` | policies to control inflation and deflation | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `018-CHAIN` | policies to control inflation and deflation | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `019-FEATURE` | policies to control inflation and deflation | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `003-DEF` | Measurement of inflation and deflation: Measurement of inflation and deflation using the Consumer Prices Index (CPI). | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-CALC` | Measurement of inflation and deflation: Measurement of inflation and deflation using the Consumer Prices Index (CPI). | CALC | AO1 | Calculate | 1 | instructs with Calculate, which this objective carries |
+| `005-INTERP` | Measurement of inflation and deflation: Measurement of inflation and deflation using the Consumer Prices Index (CPI). | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-APP` | Measurement of inflation and deflation: Measurement of inflation and deflation using the Consumer Prices Index (CPI). | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `007-DEF` | Causes of inflation and deflation: Causes of inflation: demand-pull and cost-push. Causes of deflation: demand-side and supply-side. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `008-CHAIN` | Causes of inflation and deflation: Causes of inflation: demand-pull and cost-push. Causes of deflation: demand-side and supply-side. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `009-APP` | Causes of inflation and deflation: Causes of inflation: demand-pull and cost-push. Causes of deflation: demand-side and supply-side. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `010-DEF` | Consequences of inflation and deflation: The consequences of inflation and deflation for consumers, workers, savers, lenders, firms and the economy as a whole. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `011-CHAIN` | Consequences of inflation and deflation: The consequences of inflation and deflation for consumers, workers, savers, lenders, firms and the economy as a whole. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `012-APP` | Consequences of inflation and deflation: The consequences of inflation and deflation for consumers, workers, savers, lenders, firms and the economy as a whole. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `013-DEF` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `014-BEN` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | BEN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `015-LIM` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | LIM | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `016-EVAL` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
+| `017-APP` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `018-CHAIN` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `019-FEATURE` | Policies to control inflation and deflation: The range of policies available to control inflation and deflation and how effective they might be. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

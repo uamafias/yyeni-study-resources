@@ -27,45 +27,45 @@
 ## Content units
 
 **CU-0455-6.3.1** — sub-topic 6.3.1, 1 objectives, 282–406 words
-- `OBJ-0455-6.3.1` tier 1 — definition of foreign exchange rate
+- `OBJ-0455-6.3.1` tier 1 — Definition of foreign exchange rate: Floating and fixed systems.
 
 **CU-0455-6.3.2** — sub-topic 6.3.2, 1 objectives, 282–406 words
-- `OBJ-0455-6.3.2` tier 3 — determination of foreign exchange rate in foreign exchange market
+- `OBJ-0455-6.3.2` tier 3 — Determination of foreign exchange rate in foreign exchange market: The demand for and supply of a currency in the foreign exchange market and the determination of the equilibrium foreign exchange rate.
 
 **CU-0455-6.3.3** — sub-topic 6.3.3, 1 objectives, 282–406 words
-- `OBJ-0455-6.3.3` tier 3 — causes of foreign exchange rate fluctuations
+- `OBJ-0455-6.3.3` tier 3 — Causes of foreign exchange rate fluctuations: Including changes in demand for exports and imports, changes in the rate of interest, speculation, and the entry or departure of MNCs.
 
 **CU-0455-6.3.4** — sub-topic 6.3.4, 1 objectives, 282–406 words
-- `OBJ-0455-6.3.4` tier 3 — consequences of foreign exchange rate fluctuations
+- `OBJ-0455-6.3.4` tier 3 — Consequences of foreign exchange rate fluctuations: The effects of foreign exchange rate fluctuations on export and import prices and spending on imports and exports via the PED.
 
 **CU-0455-6.3.5** — sub-topic 6.3.5, 1 objectives, 282–406 words
-- `OBJ-0455-6.3.5` tier 2 — floating and fixed foreign exchange rates
+- `OBJ-0455-6.3.5` tier 2 — Floating and fixed foreign exchange rates: The difference between, and the advantages and disadvantages of, a floating foreign exchange rate and a fixed foreign exchange rate system.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | definition of foreign exchange rate | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-FEATURE` | definition of foreign exchange rate | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | determination of foreign exchange rate in foreign exchange market | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-MECH` | determination of foreign exchange rate in foreign exchange market | MECH | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `005-APP` | determination of foreign exchange rate in foreign exchange market | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-CHAIN` | determination of foreign exchange rate in foreign exchange market | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `016-EVAL` | determination of foreign exchange rate in foreign exchange market | EVAL | AO3 | Discuss | 8 | added to reach the framework AO3 target of 20% |
-| `007-DEF` | causes of foreign exchange rate fluctuations | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `008-CHAIN` | causes of foreign exchange rate fluctuations | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `009-APP` | causes of foreign exchange rate fluctuations | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `010-DEF` | consequences of foreign exchange rate fluctuations | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `011-CHAIN` | consequences of foreign exchange rate fluctuations | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `012-APP` | consequences of foreign exchange rate fluctuations | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `013-DEF` | floating and fixed foreign exchange rates | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `014-DIST` | floating and fixed foreign exchange rates | DIST | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `015-APP` | floating and fixed foreign exchange rates | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `001-DEF` | Definition of foreign exchange rate: Floating and fixed systems. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-FEATURE` | Definition of foreign exchange rate: Floating and fixed systems. | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
+| `003-DEF` | Determination of foreign exchange rate in foreign exchange market: The demand for and supply of a currency in the foreign exchange market and the determination of the equilibrium foreign exchange rate. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-MECH` | Determination of foreign exchange rate in foreign exchange market: The demand for and supply of a currency in the foreign exchange market and the determination of the equilibrium foreign exchange rate. | MECH | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `005-APP` | Determination of foreign exchange rate in foreign exchange market: The demand for and supply of a currency in the foreign exchange market and the determination of the equilibrium foreign exchange rate. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-CHAIN` | Determination of foreign exchange rate in foreign exchange market: The demand for and supply of a currency in the foreign exchange market and the determination of the equilibrium foreign exchange rate. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `016-EVAL` | Determination of foreign exchange rate in foreign exchange market: The demand for and supply of a currency in the foreign exchange market and the determination of the equilibrium foreign exchange rate. | EVAL | AO3 | Discuss | 8 | added to reach the framework AO3 target of 20% |
+| `007-DEF` | Causes of foreign exchange rate fluctuations: Including changes in demand for exports and imports, changes in the rate of interest, speculation, and the entry or departure of MNCs. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `008-CHAIN` | Causes of foreign exchange rate fluctuations: Including changes in demand for exports and imports, changes in the rate of interest, speculation, and the entry or departure of MNCs. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `009-APP` | Causes of foreign exchange rate fluctuations: Including changes in demand for exports and imports, changes in the rate of interest, speculation, and the entry or departure of MNCs. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `010-DEF` | Consequences of foreign exchange rate fluctuations: The effects of foreign exchange rate fluctuations on export and import prices and spending on imports and exports via the PED. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `011-CHAIN` | Consequences of foreign exchange rate fluctuations: The effects of foreign exchange rate fluctuations on export and import prices and spending on imports and exports via the PED. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `012-APP` | Consequences of foreign exchange rate fluctuations: The effects of foreign exchange rate fluctuations on export and import prices and spending on imports and exports via the PED. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `013-DEF` | Floating and fixed foreign exchange rates: The difference between, and the advantages and disadvantages of, a floating foreign exchange rate and a fixed foreign exchange rate system. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `014-DIST` | Floating and fixed foreign exchange rates: The difference between, and the advantages and disadvantages of, a floating foreign exchange rate and a fixed foreign exchange rate system. | DIST | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `015-APP` | Floating and fixed foreign exchange rates: The difference between, and the advantages and disadvantages of, a floating foreign exchange rate and a fixed foreign exchange rate system. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

@@ -27,50 +27,50 @@
 ## Content units
 
 **CU-0455-1.4.1** — sub-topic 1.4.1, 1 objectives, 250–360 words
-- `OBJ-0455-1.4.1` tier 3 — definition of PPC
+- `OBJ-0455-1.4.1` tier 3 — Definition of PPC: Definition, drawing and interpretation of appropriate diagrams.
 
 **CU-0455-1.4.2** — sub-topic 1.4.2, 1 objectives, 250–360 words
-- `OBJ-0455-1.4.2` tier 3 — points under, on and beyond a PPC
+- `OBJ-0455-1.4.2` tier 3 — Points under, on and beyond a PPC: The significance of the location of production points.
 
 **CU-0455-1.4.3** — sub-topic 1.4.3, 1 objectives, 250–360 words
-- `OBJ-0455-1.4.3` tier 3 — movements along a PPC
+- `OBJ-0455-1.4.3` tier 3 — Movements along a PPC: Movements along a PPC and opportunity cost.
 
 **CU-0455-1.4.4** — sub-topic 1.4.4, 1 objectives, 250–360 words
-- `OBJ-0455-1.4.4` tier 3 — shifts in a PPC
+- `OBJ-0455-1.4.4` tier 3 — Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | definition of PPC | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-DIAGRAM` | definition of PPC | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `003-INTERP` | definition of PPC | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `004-APP` | definition of PPC | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `005-CHAIN` | definition of PPC | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `021-FEATURE` | definition of PPC | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `006-DEF` | points under, on and beyond a PPC | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `007-DIAGRAM` | points under, on and beyond a PPC | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `008-INTERP` | points under, on and beyond a PPC | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `009-APP` | points under, on and beyond a PPC | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `010-CHAIN` | points under, on and beyond a PPC | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `022-FEATURE` | points under, on and beyond a PPC | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `011-DEF` | movements along a PPC | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `012-DIAGRAM` | movements along a PPC | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `013-INTERP` | movements along a PPC | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `014-APP` | movements along a PPC | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `015-CHAIN` | movements along a PPC | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `023-FEATURE` | movements along a PPC | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `016-DEF` | shifts in a PPC | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `017-DIAGRAM` | shifts in a PPC | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `018-INTERP` | shifts in a PPC | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `019-APP` | shifts in a PPC | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `020-CHAIN` | shifts in a PPC | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `024-FEATURE` | shifts in a PPC | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `001-DEF` | Definition of PPC: Definition, drawing and interpretation of appropriate diagrams. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-DIAGRAM` | Definition of PPC: Definition, drawing and interpretation of appropriate diagrams. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `003-INTERP` | Definition of PPC: Definition, drawing and interpretation of appropriate diagrams. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `004-APP` | Definition of PPC: Definition, drawing and interpretation of appropriate diagrams. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `005-CHAIN` | Definition of PPC: Definition, drawing and interpretation of appropriate diagrams. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `021-FEATURE` | Definition of PPC: Definition, drawing and interpretation of appropriate diagrams. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `006-DEF` | Points under, on and beyond a PPC: The significance of the location of production points. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `007-DIAGRAM` | Points under, on and beyond a PPC: The significance of the location of production points. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `008-INTERP` | Points under, on and beyond a PPC: The significance of the location of production points. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `009-APP` | Points under, on and beyond a PPC: The significance of the location of production points. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `010-CHAIN` | Points under, on and beyond a PPC: The significance of the location of production points. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `022-FEATURE` | Points under, on and beyond a PPC: The significance of the location of production points. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `011-DEF` | Movements along a PPC: Movements along a PPC and opportunity cost. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `012-DIAGRAM` | Movements along a PPC: Movements along a PPC and opportunity cost. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `013-INTERP` | Movements along a PPC: Movements along a PPC and opportunity cost. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `014-APP` | Movements along a PPC: Movements along a PPC and opportunity cost. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `015-CHAIN` | Movements along a PPC: Movements along a PPC and opportunity cost. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `023-FEATURE` | Movements along a PPC: Movements along a PPC and opportunity cost. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `016-DEF` | Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `017-DIAGRAM` | Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `018-INTERP` | Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `019-APP` | Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `020-CHAIN` | Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `024-FEATURE` | Shifts in a PPC: The causes and consequences of shifts in a PPC in terms of an economy’s growth. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

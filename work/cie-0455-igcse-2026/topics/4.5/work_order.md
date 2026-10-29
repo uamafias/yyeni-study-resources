@@ -30,10 +30,10 @@
 - `OBJ-0455-4.5.1` tier 1 — definition of supply-side policy
 
 **CU-0455-4.5.2** — sub-topic 4.5.2, 1 objectives, 270–386 words
-- `OBJ-0455-4.5.2` tier 4 — supply-side policy measures
+- `OBJ-0455-4.5.2` tier 4 — Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation.
 
 **CU-0455-4.5.3** — sub-topic 4.5.3, 1 objectives, 270–386 words
-- `OBJ-0455-4.5.3` tier 3 — effects of supply-side policy measures on government macroeconomic aims
+- `OBJ-0455-4.5.3` tier 3 — Effects of supply-side policy measures on government macroeconomic aims: How supply-side policy measures may enable the government to achieve its macroeconomic aims.
 
 ## Item slots
 
@@ -41,22 +41,22 @@
 |---|---|---|---|---|---:|---|
 | `001-DEF` | definition of supply-side policy | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `002-FEATURE` | definition of supply-side policy | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | supply-side policy measures | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-BEN` | supply-side policy measures | BEN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `005-LIM` | supply-side policy measures | LIM | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `006-EVAL` | supply-side policy measures | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
-| `007-APP` | supply-side policy measures | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `008-CHAIN` | supply-side policy measures | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `012-FEATURE` | supply-side policy measures | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
-| `009-DEF` | effects of supply-side policy measures on government macroeconomic aims | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `010-CHAIN` | effects of supply-side policy measures on government macroeconomic aims | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `011-APP` | effects of supply-side policy measures on government macroeconomic aims | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `013-FEATURE` | effects of supply-side policy measures on government macroeconomic aims | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `003-DEF` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-BEN` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | BEN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `005-LIM` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | LIM | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `006-EVAL` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
+| `007-APP` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `008-CHAIN` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `012-FEATURE` | Supply-side policy measures: Possible supply-side policy measures include education and training, labour market reforms, lower direct taxes, deregulation, improving incentives to work and invest, and privatisation. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
+| `009-DEF` | Effects of supply-side policy measures on government macroeconomic aims: How supply-side policy measures may enable the government to achieve its macroeconomic aims. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `010-CHAIN` | Effects of supply-side policy measures on government macroeconomic aims: How supply-side policy measures may enable the government to achieve its macroeconomic aims. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `011-APP` | Effects of supply-side policy measures on government macroeconomic aims: How supply-side policy measures may enable the government to achieve its macroeconomic aims. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `013-FEATURE` | Effects of supply-side policy measures on government macroeconomic aims: How supply-side policy measures may enable the government to achieve its macroeconomic aims. | FEATURE | AO1 | Explain | 4 | added to reach the framework AO1 target of 40% |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

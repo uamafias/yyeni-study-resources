@@ -27,27 +27,27 @@
 ## Content units
 
 **CU-0455-3.1.1** — sub-topic 3.1.1, 1 objectives, 315–450 words
-- `OBJ-0455-3.1.1` tier 2 — money
+- `OBJ-0455-3.1.1` tier 2 — Money: The forms, functions and characteristics of money.
 
 **CU-0455-3.1.2** — sub-topic 3.1.2, 1 objectives, 315–450 words
-- `OBJ-0455-3.1.2` tier 2 — banking
+- `OBJ-0455-3.1.2` tier 2 — Banking: The role and importance of central banks and commercial banks for government, producers and consumers.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | money | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-FEATURE` | money | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-APP` | money | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `007-CHAIN` | money | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
-| `004-DEF` | banking | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `005-WHY` | banking | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-APP` | banking | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `001-DEF` | Money: The forms, functions and characteristics of money. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-FEATURE` | Money: The forms, functions and characteristics of money. | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
+| `003-APP` | Money: The forms, functions and characteristics of money. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `007-CHAIN` | Money: The forms, functions and characteristics of money. | CHAIN | AO2 | Discuss | 8 | added to reach the framework AO2 target of 40% |
+| `004-DEF` | Banking: The role and importance of central banks and commercial banks for government, producers and consumers. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `005-WHY` | Banking: The role and importance of central banks and commercial banks for government, producers and consumers. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-APP` | Banking: The role and importance of central banks and commercial banks for government, producers and consumers. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

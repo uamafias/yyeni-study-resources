@@ -27,27 +27,27 @@
 ## Content units
 
 **CU-0455-6.1.1** — sub-topic 6.1.1, 1 objectives, 270–390 words
-- `OBJ-0455-6.1.1` tier 3 — specialisation at a national level
+- `OBJ-0455-6.1.1` tier 3 — Specialisation at a national level: The basis for specialisation at national level in broad terms of: superior resource allocation and/or cheaper production methods.
 
 **CU-0455-6.1.2** — sub-topic 6.1.2, 1 objectives, 270–390 words
-- `OBJ-0455-6.1.2` tier 2 — advantages and disadvantages of specialisation at a national level
+- `OBJ-0455-6.1.2` tier 2 — Advantages and disadvantages of specialisation at a national level: For consumers, firms and the economy.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | specialisation at a national level | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-MECH` | specialisation at a national level | MECH | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `003-APP` | specialisation at a national level | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `004-CHAIN` | specialisation at a national level | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `005-DEF` | advantages and disadvantages of specialisation at a national level | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `006-WHY` | advantages and disadvantages of specialisation at a national level | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `007-APP` | advantages and disadvantages of specialisation at a national level | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `001-DEF` | Specialisation at a national level: The basis for specialisation at national level in broad terms of: superior resource allocation and/or cheaper production methods. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-MECH` | Specialisation at a national level: The basis for specialisation at national level in broad terms of: superior resource allocation and/or cheaper production methods. | MECH | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `003-APP` | Specialisation at a national level: The basis for specialisation at national level in broad terms of: superior resource allocation and/or cheaper production methods. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `004-CHAIN` | Specialisation at a national level: The basis for specialisation at national level in broad terms of: superior resource allocation and/or cheaper production methods. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `005-DEF` | Advantages and disadvantages of specialisation at a national level: For consumers, firms and the economy. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `006-WHY` | Advantages and disadvantages of specialisation at a national level: For consumers, firms and the economy. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `007-APP` | Advantages and disadvantages of specialisation at a national level: For consumers, firms and the economy. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

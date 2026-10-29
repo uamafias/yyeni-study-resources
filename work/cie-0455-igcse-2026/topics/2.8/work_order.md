@@ -30,13 +30,13 @@
 - `OBJ-0455-2.8.1` tier 1 — definition of PES
 
 **CU-0455-2.8.2** — sub-topic 2.8.2, 1 objectives, 252–362 words
-- `OBJ-0455-2.8.2` tier 3 — calculation of PES
+- `OBJ-0455-2.8.2` tier 3 — Calculation of PES: Calculation of PES using the formula and interpreting the significance of the result. Drawing and interpretation of supply curve diagrams to show different PES.
 
 **CU-0455-2.8.3** — sub-topic 2.8.3, 1 objectives, 252–362 words
-- `OBJ-0455-2.8.3` tier 4 — determinants of PES
+- `OBJ-0455-2.8.3` tier 4 — Determinants of PES: The key influences on whether supply is elastic or inelastic.
 
 **CU-0455-2.8.4** — sub-topic 2.8.4, 1 objectives, 252–362 words
-- `OBJ-0455-2.8.4` tier 2 — significance of PES
+- `OBJ-0455-2.8.4` tier 2 — Significance of PES: The implications for decision making by consumers, producers and government.
 
 ## Item slots
 
@@ -44,23 +44,23 @@
 |---|---|---|---|---|---:|---|
 | `001-DEF` | definition of PES | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
 | `002-FEATURE` | definition of PES | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | calculation of PES | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-DIAGRAM` | calculation of PES | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
-| `005-INTERP` | calculation of PES | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `006-APP` | calculation of PES | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `007-CHAIN` | calculation of PES | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `008-DEF` | determinants of PES | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `009-CHAIN` | determinants of PES | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `010-APP` | determinants of PES | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
-| `011-EVAL` | determinants of PES | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
-| `012-DEF` | significance of PES | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `013-WHY` | significance of PES | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
-| `014-APP` | significance of PES | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `003-DEF` | Calculation of PES: Calculation of PES using the formula and interpreting the significance of the result. Drawing and interpretation of supply curve diagrams to show different PES. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `004-DIAGRAM` | Calculation of PES: Calculation of PES using the formula and interpreting the significance of the result. Drawing and interpretation of supply curve diagrams to show different PES. | DIAGRAM | AO2/AO3 | Discuss | 8 | instructs with Discuss, the shape this subtype needs |
+| `005-INTERP` | Calculation of PES: Calculation of PES using the formula and interpreting the significance of the result. Drawing and interpretation of supply curve diagrams to show different PES. | INTERP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `006-APP` | Calculation of PES: Calculation of PES using the formula and interpreting the significance of the result. Drawing and interpretation of supply curve diagrams to show different PES. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `007-CHAIN` | Calculation of PES: Calculation of PES using the formula and interpreting the significance of the result. Drawing and interpretation of supply curve diagrams to show different PES. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `008-DEF` | Determinants of PES: The key influences on whether supply is elastic or inelastic. | DEF | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
+| `009-CHAIN` | Determinants of PES: The key influences on whether supply is elastic or inelastic. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `010-APP` | Determinants of PES: The key influences on whether supply is elastic or inelastic. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `011-EVAL` | Determinants of PES: The key influences on whether supply is elastic or inelastic. | EVAL | AO3 | Discuss | 8 | instructs with Discuss, which this objective carries |
+| `012-DEF` | Significance of PES: The implications for decision making by consumers, producers and government. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `013-WHY` | Significance of PES: The implications for decision making by consumers, producers and government. | WHY | AO1 | Explain | 4 | instructs with Explain, which this objective carries |
+| `014-APP` | Significance of PES: The implications for decision making by consumers, producers and government. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 

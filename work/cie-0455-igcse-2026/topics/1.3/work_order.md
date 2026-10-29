@@ -27,25 +27,25 @@
 ## Content units
 
 **CU-0455-1.3.1** — sub-topic 1.3.1, 1 objectives, 300–430 words
-- `OBJ-0455-1.3.1` tier 1 — definition of opportunity cost
+- `OBJ-0455-1.3.1` tier 1 — Definition of opportunity cost: Definition and examples of opportunity cost in different contexts.
 
 **CU-0455-1.3.2** — sub-topic 1.3.2, 1 objectives, 300–430 words
-- `OBJ-0455-1.3.2` tier 3 — the influence of opportunity cost on decision making
+- `OBJ-0455-1.3.2` tier 3 — The influence of opportunity cost on decision making: Decisions made by consumers, workers, producers and governments when allocating their resources.
 
 ## Item slots
 
 | Slot | Objective | Subtype | AO | Command word | Tariff | Why |
 |---|---|---|---|---|---:|---|
-| `001-DEF` | definition of opportunity cost | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `002-FEATURE` | definition of opportunity cost | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
-| `003-DEF` | the influence of opportunity cost on decision making | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
-| `004-CHAIN` | the influence of opportunity cost on decision making | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
-| `005-APP` | the influence of opportunity cost on decision making | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
+| `001-DEF` | Definition of opportunity cost: Definition and examples of opportunity cost in different contexts. | DEF | AO1 | Define | 2 | instructs with Define, which this objective carries |
+| `002-FEATURE` | Definition of opportunity cost: Definition and examples of opportunity cost in different contexts. | FEATURE | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
+| `003-DEF` | The influence of opportunity cost on decision making: Decisions made by consumers, workers, producers and governments when allocating their resources. | DEF | AO1 | Identify | 2 | instructs with Identify, which this objective carries |
+| `004-CHAIN` | The influence of opportunity cost on decision making: Decisions made by consumers, workers, producers and governments when allocating their resources. | CHAIN | AO2 | Analyse | 6 | instructs with Analyse, which this objective carries |
+| `005-APP` | The influence of opportunity cost on decision making: Decisions made by consumers, workers, producers and governments when allocating their resources. | APP | AO1/AO2 | Explain | 4 | instructs with Explain, which this objective carries |
 
 ## Performance tasks
 
 - **multiple_choice_set** — A set of 8 four-option multiple-choice questions on this topic in the style of Paper 1, one mark each, every distractor explained on the back as the specific misunderstanding it catches.
-- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
+- **data_response** — A Paper 2 Section A-style data-response question on this topic (14 marks): an original short economic news extract with a table or figures, with parts of 1 mark each (two Calculate from the data), 2 marks (Identify or State two distinct points, never a single value read off the data), 4 marks (Explain), and 6 marks (Analyse, using the data as evidence: expected relationship, evidence, analysis, exception). The guidance marks one point per distinct linked statement and refuses figure-quoting as analysis.
 - **short_answer** — A Paper 2 Section B-style structured question on this topic (20 marks): (a) Define, 2 marks; (b) Explain, 4 marks; (c) Analyse, 6 marks; (d) Discuss, 8 marks, level-marked over three bands with the top band examining both sides (why it might, why it might not) and reaching a judgement. Model answer and guidance for every part.
 - **essay_plan** — A plan for an 8-mark Discuss question on this topic: the case for, the case against, each point developed into a chain, and the judgement with the condition it depends on. Not written out in full.
 
