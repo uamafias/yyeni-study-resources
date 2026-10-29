@@ -1,3 +1,5 @@
+> **Repository checkpoint:** the corrected review snapshot was committed locally as `6bb957f` on `chemistry-6117-approved-plan` after the user instructed us to move on. No push or learner publication. Start independent review with [REVIEW-NEXT-6117.md](REVIEW-NEXT-6117.md). Earlier “no commit” statements below describe the repair pass before this checkpoint.
+
 # NSSCO Chemistry 6117 — final editorial repair handover
 
 29 October 2026. **The requested author repairs are complete; publication remains on hold for independent re-verification and release approval.** This document supersedes the current-state claims in earlier repair reports. Those reports remain as history. No commit, push or publication was performed in this repair pass.
