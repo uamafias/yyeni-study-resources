@@ -34,7 +34,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 |---|---|---|---|---|---|---:|---|
 | Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Codex | Claude | 562 | Vitalis; 474 flashcards + 88 practice packages. Reviewed resources pushed 28 October 2026 (47403a3). Non-blocking review follow-ups retained; YYeni import pending. |
 | Namibia NSSCO | 6145 | Economics | `nam-6145-nssco-2026` | Codex; Claude diagrams | Claude; Codex visual and repair checks | 625 | Vitalis; 513 flashcards + 112 practice packages. Reviewed resources pushed to origin/main in 06c382c; all 28 topics PUBLISH. YYeni image upload/classroom import deferred. |
-| Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Codex; Claude visuals and maps | Claude; Codex visual and repair checks | 801 | Vitalis; 737 flashcards + 64 practice packages, 56 visual resources (2 maps added in approved map-revision-01). All 18 topics PUBLISH; Claude whole-subject acceptance 30 October 2026. YYeni image upload/classroom import deferred. |
+| Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Codex; Claude visuals and maps | Claude; Codex visual and repair checks | 801 | Vitalis; 737 flashcards + 64 practice packages, 56 visual resources (2 maps added in approved map-revision-01). Reviewed resources pushed to origin/main in e6244fe; all 18 topics PUBLISH; Claude whole-subject acceptance 30 October 2026. YYeni image upload/classroom import deferred. |
 | Cambridge AS | 9609 | Business | `cie-9609-as-2026-2028` | | Codex | | pilot subject |
 | Cambridge AS | 9618 | Computer Science | `cie-9618-as-2026` | Hermes / OpenCode | Claude | 759 | |
 | Cambridge AS | 9702 | Physics | `cie-9702-as-2025-2027` | Hermes / OpenCode | Claude | 860 | |

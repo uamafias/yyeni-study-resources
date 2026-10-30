@@ -372,4 +372,5 @@ Vitalis approved publication ("please go ahead and do the publishing") and chose
   - 281 image links, 0 broken; 112 item-image bindings in `IMAGE-SIDECAR.json`.
 - [x] The whole-subject acceptance is still current after the build.
 - [x] Tracker row moved to Published.
-- [ ] Commit and push (this commit). The YYeni image upload and classroom import remain deferred and need separate approval.
+- [x] Committed and pushed to origin/main as `e6244fe6`, "6137 NSSCO Geography: reviewed and published": 2,090 files, all 6137 paths, including 8 Git LFS objects. Verified on GitHub: 18 flashcard files and `review/subject-acceptance-6137.json` are present at that commit.
+- [ ] The YYeni image upload and classroom import remain deferred and need separate approval.
