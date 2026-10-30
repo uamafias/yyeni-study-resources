@@ -84,3 +84,9 @@ Use the derived local PNG/SVG paths and exact item IDs. Keep question figures fr
 Structural exemplars are isolated under `exemplar/work/nam-6137-nssco-2026/`: five cards in two thin slices, excluded from production totals. Both yield PUBLISH with zero FAIL, one AO warning and three NOT_RUN checks each. Claims remain unverified and non-publishable pending independent review. C-35/C-41 do not validate Geography geometry; C-43 is not run without a practice text. A shared CLI bug returns exit 1 for PUBLISH because it tests for pass; preserve raw reports, inspect actual failures and do not treat NOT_RUN as a pass. No shared tool was edited.
 
 Do not rerun old Step 3 miners or the planning builder after approval: they overwrite the activated identifier view or generated contracts. Reopening scope requires a recorded revision and regenerated counts. Do not run an authoring template over reviewed content. Subject review, Git publication and classroom import are separate checkpoints.
+
+## Active map amendment — approved by Vitalis
+
+`planning/map-revision-01-approval-6137.json` and the active visual-resource plan supersede the original 54-resource total above: **56 visual resources**, still **737 flashcards + 64 practice packages**. Added VIS-6137-2.2-02 (farming map, four existing cards) and VIS-6137-2.6-02 (conservation map, one existing card). Claude authors; Codex independently reviews. The farming schematic inset and suitable sourced online adaptations are approved. No new slots, contract changes, uploads or imports. Original approval is preserved; this amendment is uncommitted and resources are not yet authored or accepted.
+
+Do not rerun `plan_resources_6137.py`, the full plan builder or the original 54-resource document renderer over this amendment. Verify it with `planning/verify_map_revision_6137.py`. Use `review/HANDOVER-claude-final-resources-6137.md`.

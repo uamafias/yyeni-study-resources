@@ -26,7 +26,6 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Namibia NSSCO | 6118 | Physics | `nam-6118-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Claimed 2026-10-30; examiner reports accepted as memos. Source completeness OPEN for cohort governing syllabus before Step 3; working-syllabus Step 2 table approval pending. |
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
-| Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Vitalis | Codex | in progress | Step 4 plan ready: 737 flashcards + 64 practice packages, 54 planned resources, all 18 topics; largest AO gap 0.948 points. Scope approved by Vitalis; plan Git checkpoint authorised and recorded in the containing commit. Maps 2021–2024; confirmed 2026 P3 coasts/tourism. No production authoring. |
 | | | | | | | | |
 
 ## Published
@@ -35,6 +34,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 |---|---|---|---|---|---|---:|---|
 | Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Codex | Claude | 562 | Vitalis; 474 flashcards + 88 practice packages. Reviewed resources pushed 28 October 2026 (47403a3). Non-blocking review follow-ups retained; YYeni import pending. |
 | Namibia NSSCO | 6145 | Economics | `nam-6145-nssco-2026` | Codex; Claude diagrams | Claude; Codex visual and repair checks | 625 | Vitalis; 513 flashcards + 112 practice packages. Reviewed resources pushed to origin/main in 06c382c; all 28 topics PUBLISH. YYeni image upload/classroom import deferred. |
+| Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Codex; Claude visuals and maps | Claude; Codex visual and repair checks | 801 | Vitalis; 737 flashcards + 64 practice packages, 56 visual resources (2 maps added in approved map-revision-01). All 18 topics PUBLISH; Claude whole-subject acceptance 30 October 2026. YYeni image upload/classroom import deferred. |
 | Cambridge AS | 9609 | Business | `cie-9609-as-2026-2028` | | Codex | | pilot subject |
 | Cambridge AS | 9618 | Computer Science | `cie-9618-as-2026` | Hermes / OpenCode | Claude | 759 | |
 | Cambridge AS | 9702 | Physics | `cie-9702-as-2025-2027` | Hermes / OpenCode | Claude | 860 | |

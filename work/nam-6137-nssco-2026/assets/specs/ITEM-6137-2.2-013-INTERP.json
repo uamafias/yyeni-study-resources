@@ -1,0 +1,351 @@
+{
+ "kind": "original thematic map of Namibia from open data (no examination or atlas map traced)",
+ "base": {
+  "regions": {
+   "dataset": "geoBoundaries gbHumanitarian NAM ADM1",
+   "boundaryID": "NAM-ADM1-65246180",
+   "source": "Namibia Statistics Agency (NSA), HDX",
+   "licence": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+   "year_represented": "2011",
+   "units": 14,
+   "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/NAM/ADM1/geoBoundaries-NAM-ADM1.geojson",
+   "metadata_url": "https://www.geoboundaries.org/api/current/gbHumanitarian/NAM/ADM1/",
+   "local_copy": "assets/sources/maps/geoBoundaries-gbHumanitarian-NAM-ADM1.geojson",
+   "sha256": "eb742c8be0c5fca1b8cff36b8b26263e8f8a3cae5b8509eeb76a6fe20b344b15",
+   "retrieved": "2026-10-30",
+   "attribution": "Namibia Statistics Agency via OCHA HDX / geoBoundaries (CC BY 3.0 IGO)"
+  },
+  "rejected_regions": {
+   "dataset": "geoBoundaries gbOpen NAM ADM1 NAM-ADM1-33880854 (named in the handover)",
+   "local_copy": "assets/sources/maps/geoBoundaries-NAM-ADM1.geojson",
+   "sha256": "f68d643fc2f030809de3a38fb85a78212cf0d38911d150e8521201a0d0c6441d",
+   "units_in_file": 13,
+   "names_in_file": [
+    "Caprivi",
+    "Erongo",
+    "Hardap",
+    "Karas",
+    "Kavango",
+    "Khomas",
+    "Kunene",
+    "Ohangwena",
+    "Omaheke",
+    "Omusati",
+    "Oshana",
+    "Oshikoto",
+    "Otjozondjupa"
+   ],
+   "reason": "pre-2013 regions: Caprivi (now Zambezi) and a single Kavango (now Kavango East and West)"
+  },
+  "neighbouring_land": {
+   "name": "Natural Earth 1:110m land (public domain)",
+   "local_copy": "assets/sources/ne_110m_land.geojson",
+   "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+  },
+  "towns": {
+   "name": "GeoNames NA.zip country dump (CC BY 4.0)",
+   "url": "https://download.geonames.org/export/dump/NA.zip",
+   "local_copy": "assets/sources/maps/geonames-NA.zip",
+   "sha256": "198a8fb81bc465810f32d2fb57368605dc053c26af620d14856806a85b17f9be",
+   "retrieved": "2026-10-30"
+  },
+  "projection": "equirectangular, longitude scaled by cos(22.5 deg); scale bar true north-south, east-west within about 5 %"
+ },
+ "thematic_sources": {
+  "atlas": {
+   "citation": "Atlas of Namibia Team, 2022, Atlas of Namibia: its land, water and life, Namibia Nature Foundation, Windhoek",
+   "licence": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), stated on https://atlasofnamibia.online/chapter-8/farming",
+   "text_used": "chapter 8 farming page, read 2026-10-30: central cattle and southern sheep/goats; 60-80 % of sheep in Hardap and ||Kharas; largest crop clearing in central northern Namibia; about 90 % of cleared land belongs to smallholders; maize and sunflowers in the Otavi-Grootfontein-Tsumeb area; irrigation along the Orange River, Hardap Dam, Kunene and Okavango rivers"
+  },
+  "data_zips": {
+   "8.02": {
+    "url": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Atlas_ch_08_02.zip",
+    "local_copy": "assets/sources/maps/atlas/Atlas_ch_08_02.zip",
+    "sha256": "bf0beb7555341f013ac00587b4e6857696f8592ef7d1a7a65254796e13e9907e"
+   },
+   "8.06": {
+    "url": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Atlas_ch_08_06.zip",
+    "local_copy": "assets/sources/maps/atlas/Atlas_ch_08_06.zip",
+    "sha256": "551b900f8d03786f08b90976c93100463dc73e956f50bdb77698f062f1082f82"
+   },
+   "8.07": {
+    "url": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Atlas_ch_08_07.zip",
+    "local_copy": "assets/sources/maps/atlas/Atlas_ch_08_07.zip",
+    "sha256": "5f9b0a11b424e3a5a1b1e7fbd19ac51150c5be793895ba5107dc65ce4fcd2cd8"
+   }
+  },
+  "farming_system_areas": "Figure 8_02/farming system areas.shp (from Mendelsohn 2006, Farming Systems in Namibia, RAISON)",
+  "crop_fields": {
+   "file": "Figure 8_06/cleared_land.shp",
+   "method": "0.1-degree grid, cells with >= 15 % cleared",
+   "cells": 236,
+   "date_limit": "the national file records no survey date; the Atlas region grids date from 1996-2018"
+  },
+  "commercial_farms": "Figure 8_07/Tourism_Conservation Farms.shp (MEFT farm cadastre, 9,168 farms), dissolved; parts under 0.05 sq deg dropped",
+  "irrigation": {
+   "file": "Figure 8_02/AGRI_Irrigation_areas.shp",
+   "rule": ">= 50 ha irrigated in the dataset; points within 0.25 deg merged",
+   "points": [
+    {
+     "lon": 17.86,
+     "lat": -24.32,
+     "merged": [
+      "HARDAP"
+     ]
+    },
+    {
+     "lon": 14.56,
+     "lat": -17.44,
+     "merged": [
+      "ETUNDA"
+     ]
+    },
+    {
+     "lon": 20.694915440092366,
+     "lat": -18.013882264812487,
+     "merged": [
+      "SHITEMO"
+     ]
+    },
+    {
+     "lon": 17.56,
+     "lat": -28.44,
+     "merged": [
+      "NAMIBIA GRAPE CO",
+      "AUSSENKEHR (NDC)",
+      "AUSSENKEHR PTY LTD",
+      "GROOT GARIEP BOERDERY",
+      "NAGRAPEX",
+      "NIVEX"
+     ]
+    },
+    {
+     "lon": 17.56,
+     "lat": -28.7,
+     "merged": [
+      "NOORDOEWER"
+     ]
+    },
+    {
+     "lon": 17.94,
+     "lat": -26.69,
+     "merged": [
+      "NAUTE"
+     ]
+    },
+    {
+     "lon": 21.272567223173827,
+     "lat": -17.992542279953813,
+     "merged": [
+      "SHADIKONGORO"
+     ]
+    },
+    {
+     "lon": 18.06,
+     "lat": -28.81,
+     "merged": [
+      "HAAKIESDOORN"
+     ]
+    },
+    {
+     "lon": 17.71,
+     "lat": -19.26,
+     "merged": [
+      "TSUMEB TOWN AND TOWNLANDS",
+      "MANNHEIM FARMS AND PLOTS",
+      "LUDWIGSHAVEN"
+     ]
+    },
+    {
+     "lon": 17.81,
+     "lat": -19.69,
+     "merged": [
+      "KOMBAT",
+      "RIETFONTEIN FARM"
+     ]
+    },
+    {
+     "lon": 18.94,
+     "lat": -17.81,
+     "merged": [
+      "MUSESE"
+     ]
+    },
+    {
+     "lon": 21.69,
+     "lat": -18.06,
+     "merged": [
+      "BAGANI PRISONS"
+     ]
+    },
+    {
+     "lon": 19.69,
+     "lat": -28.44,
+     "merged": [
+      "STOLZENFELS",
+      "KOMSBERG"
+     ]
+    },
+    {
+     "lon": 18.31,
+     "lat": -24.44,
+     "merged": [
+      "STAMPRIET"
+     ]
+    },
+    {
+     "lon": 19.826061361915755,
+     "lat": -17.87745772004618,
+     "merged": [
+      "VUNGU-VUNGU"
+     ]
+    },
+    {
+     "lon": 24.31,
+     "lat": -17.56,
+     "merged": [
+      "KATIMA FARM"
+     ]
+    }
+   ],
+   "limit": "locations only; current operation not shown"
+  },
+  "maize_triangle": "triangle joining the GeoNames points of Otavi, Grootfontein and Tsumeb"
+ },
+ "measured": {
+  "dense_crop_share_by_region": {
+   "Omusati": 0.266,
+   "Oshana": 0.298,
+   "Ohangwena": 0.412,
+   "Oshikoto": 0.148,
+   "Kavango West": 0.066,
+   "Kavango East": 0.059,
+   "Zambezi": 0.188,
+   "Kunene": 0.0
+  },
+  "class_shares_inside_commercial_farms": {
+   "Otjozondjupa": {
+    "cereal": 0.0,
+    "cattle": 1.0,
+    "mixed": 0.0,
+    "small": 0.0
+   },
+   "Omaheke": {
+    "cereal": 0.0,
+    "cattle": 0.68,
+    "mixed": 0.27,
+    "small": 0.05
+   },
+   "Khomas": {
+    "cereal": 0.0,
+    "cattle": 0.52,
+    "mixed": 0.32,
+    "small": 0.16
+   },
+   "Hardap": {
+    "cereal": 0.0,
+    "cattle": 0.0,
+    "mixed": 0.34,
+    "small": 0.66
+   },
+   "//Karas": {
+    "cereal": 0.0,
+    "cattle": 0.0,
+    "mixed": 0.39,
+    "small": 0.6
+   }
+  }
+ },
+ "inset_015": "schematic only: one plot keyed vegetables for sale beside a town and road; four plots keyed cultivated, purpose not shown",
+ "question_withholds": [
+  "interpretation panels and markers"
+ ],
+ "independent_solution": {
+  "ITEM-6137-2.2-013-INTERP": [
+   "northern crop belt, densest north-central (1)",
+   "central cattle to southern small stock inside commercial farms (1)",
+   "irrigation sites as local exceptions (1)"
+  ],
+  "ITEM-6137-2.2-014-INTERP": [
+   "north-central cluster, Ohangwena/Oshana/eastern Omusati, thinning into Oshikoto (1)",
+   "named regions or eastern Kavango/Zambezi evidence (1)",
+   "qualified extent: few fields in the west; density not purpose (1)"
+  ],
+  "ITEM-6137-2.2-015-INTERP": [
+   "keyed sale plot = small-scale cash crop (1)",
+   "beside town and road (1)",
+   "neighbouring plots purpose not shown (1)"
+  ],
+  "ITEM-6137-2.2-016-INTERP": [
+   "commercial farms over central and south (1)",
+   "cattle centre vs sheep/goats south (1)",
+   "inland Otavi-Grootfontein-Tsumeb crop area (1)"
+  ]
+ },
+ "resource_id": "VIS-6137-2.2-02",
+ "assigned_item_id": "ITEM-6137-2.2-013-INTERP",
+ "master_path": "assets/masters/ITEM-6137-2.2-013-INTERP.svg",
+ "data_spec_path": "assets/specs/ITEM-6137-2.2-013-INTERP.json",
+ "plan_master_path": "assets/masters/ITEM-6137-2.2-013-INTERP.svg",
+ "plan_data_spec_path": "assets/specs/ITEM-6137-2.2-013-INTERP.json",
+ "sides": {
+  "question": {
+   "path": "assets/images/ITEM-6137-2.2-013-INTERP-question.png",
+   "visible_layers": [
+    "base",
+    "q"
+   ],
+   "clip": null,
+   "height_px": 1425,
+   "bound_item": null
+  },
+  "answer": {
+   "path": "assets/images/ITEM-6137-2.2-013-INTERP-answer.png",
+   "visible_layers": [
+    "base",
+    "a"
+   ],
+   "clip": null,
+   "height_px": 1875,
+   "bound_item": null
+  },
+  "answer_014": {
+   "path": "assets/images/ITEM-6137-2.2-014-INTERP-VIS-6137-2.2-02-answer.png",
+   "visible_layers": [
+    "base",
+    "a14"
+   ],
+   "clip": null,
+   "height_px": 1875,
+   "bound_item": "ITEM-6137-2.2-014-INTERP"
+  },
+  "answer_015": {
+   "path": "assets/images/ITEM-6137-2.2-015-INTERP-VIS-6137-2.2-02-answer.png",
+   "visible_layers": [
+    "base",
+    "a15"
+   ],
+   "clip": null,
+   "height_px": 1845,
+   "bound_item": "ITEM-6137-2.2-015-INTERP"
+  },
+  "answer_016": {
+   "path": "assets/images/ITEM-6137-2.2-016-INTERP-VIS-6137-2.2-02-answer.png",
+   "visible_layers": [
+    "base",
+    "a16"
+   ],
+   "clip": null,
+   "height_px": 1875,
+   "bound_item": "ITEM-6137-2.2-016-INTERP"
+  }
+ },
+ "render": {
+  "engine": "Chromium via Playwright",
+  "device_scale_factor": 1.5,
+  "master_viewbox": [
+   1000,
+   1875
+  ]
+ }
+}

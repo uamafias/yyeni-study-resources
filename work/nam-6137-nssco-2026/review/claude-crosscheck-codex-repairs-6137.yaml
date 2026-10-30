@@ -1,0 +1,262 @@
+# 6137 Geography - cross-check of Codex's repairs against CURRENT saved objects
+# Reviewer: Claude (read-only). Date: 2026-10-30. No repo files edited.
+# Scripts: scratchpad/check_claims_seen.py, scratchpad/dump_changes.py, scratchpad/find.py
+
+claims_seen_check:
+  script: /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/29c25c8f-cb06-4d79-a9df-d7841d205921/scratchpad/check_claims_seen.py
+  result: >-
+    All 23 Codex-revised claims are at revision 2 in their ledgers. Every block, item and
+    part that cites them has claims_seen = 2 (60 citing references). No record lists a claim in
+    claims_seen without citing it. A sweep of every claim across all 18 topics found 0
+    claims_seen/revision mismatches. The ids are consistent. Text consistency is a separate
+    question and fails in several places (F01, F07-F10).
+
+findings:
+  - id: F01
+    topic: "2.4"
+    object_ids: [CL-6137-2.4.04-R1, BL-6137-2.4.04-03, ITEM-6137-2.4-025-EVAL]
+    severity: high
+    defect: >-
+      Codex changed the Atlas 45% figure to "electricity produced in Namibia". That is
+      factually wrong. Ruacana alone produces most of Namibia's domestic generation:
+      26% of all electricity used in 2018/19 while about 70% was imported, so roughly 85-90%
+      of local output, and 87.3% of local generation in March 2025. The Atlas 45% can only be
+      a share of electricity used. The wording also puts "in the Atlas account" in front of
+      learners. ITEM-2.4-025 still says "45 per cent of Namibia's electricity", so the claim
+      and the card now contradict each other.
+    evidence:
+      - "https://atlasofnamibia.online/node/144 - 'the Kunene that supplies up to 45 per cent of Namibia's electricity'"
+      - "https://atlasofnamibia.online/node/126 - Ruacana 'contributed 26 per cent of all the electricity used in Namibia' (2018/19); 'about 70 per cent of the electricity used in Namibia has been imported'"
+      - "https://www.namibian.com.na/local-power-lights-up-march-figures-with-59/ - Ruacana 'producing 87.3%' of locally generated electricity, March 2025"
+    fix:
+      - object: BL-6137-2.4.04-03
+        old: "it supplies up to 45 per cent of electricity produced in Namibia in the Atlas account."
+        new: "it supplies up to 45 per cent of the electricity Namibia uses and most electricity generated within Namibia."
+      - object: CL-6137-2.4.04-R1 (raise to revision 3; reset claims_seen on BL-2.4.04-03, ITEM-2.4-025, ITEM-2.4-P03)
+        old: "the Kunene supplies up to 45 per cent of electricity produced in Namibia in the Atlas account,"
+        new: "the Kunene supplies up to 45 per cent of the electricity Namibia uses, and Ruacana produces most electricity generated in Namibia,"
+      - object: ITEM-6137-2.4-025-EVAL
+        note: "No change needed once the claim is corrected. Its existing wording matches the Atlas."
+
+  - id: F02
+    topic: "3.2"
+    object_ids: [BL-6137-3.2.02-03, BL-6137-3.2.02-04, CL-6137-3.2.02-R1]
+    severity: high
+    defect: >-
+      The syllabus objective OBJ-6137-3.2.02 says "account for its spatial distribution".
+      Codex removed all the named Namibian location evidence Claude had added: Zambezi
+      bordering Zambia and Botswana, the Trans-Caprivi Highway through Katima Mulilo,
+      Ohangwena bordering Angola and its density (about 32 per km2 in 2023), and Kunene at
+      about 1 per km2. The notes now say mainly what prevalence cannot prove, so the unit no
+      longer gives learners the standard locational account. Keeping the non-causal caveat is
+      right; deleting the geography is not.
+    evidence:
+      - "Current BL-6137-3.2.02-04: 'Regional prevalence alone cannot establish why regions differ or which explanation matters most.' There are no place-specific factors anywhere in CU-6137-3.2.02."
+      - "topics/3.2/work_order.md: OBJ-6137-3.2.02 'interpret Namibia's HIV and AIDS statistics and account for its spatial distribution'"
+    fix:
+      - object: BL-6137-3.2.02-03
+        old: "Transport routes and border crossings offer a possible explanation for part of the pattern. Travel or migration can separate partners,"
+        new: "Zambezi borders Zambia and Botswana, and the Trans-Caprivi Highway carries freight through Katima Mulilo; Ohangwena borders Angola. Travel or migration along such routes can separate partners,"
+      - object: BL-6137-3.2.02-04
+        old: "Regional prevalence alone cannot establish why regions differ or which explanation matters most. It reflects past infections,"
+        new: "Ohangwena is densely settled (about 32 people per km² in 2023); Kunene has about one person per km² and lower prevalence. These are associations: prevalence also reflects past infections,"
+      - object: CL-6137-3.2.02-R1 (raise to revision 3; reset claims_seen on the 3 citers)
+        old: "Mobility can affect sexual networks and access to prevention or treatment, but these regional prevalences do not establish the main cause of their differences."
+        new: "Zambezi borders Zambia and Botswana on the Trans-Caprivi route through Katima Mulilo; Ohangwena borders Angola (about 32 people per km², 2023), Kunene about 1. Mobility can affect sexual networks and service access, but prevalence alone does not establish the main cause."
+
+  - id: F03
+    topic: "3.2"
+    object_ids: [ITEM-6137-3.2-P03]
+    severity: medium
+    defect: >-
+      The prompt asks whether Zambezi's prevalence is mainly due to "its transport routes and
+      borders", but the answer never names Zambezi's borders or route. The rubric no longer
+      requires the supplied or named evidence either, so the "for" side is a generic mechanism.
+      The card is still two-sided, and the tariff of 2+2+1 = 5 is correct.
+    evidence: "Current answer: 'Transport and borders are a plausible part of the explanation, but the figures cannot show that they are the main cause. Mobility can separate partners...'"
+    fix:
+      - field: canonical_answer
+        old: "Transport and borders are a plausible part of the explanation, but the figures cannot show that they are the main cause."
+        new: "Transport and borders are plausible: Zambezi borders Zambia and Botswana, and the Trans-Caprivi Highway crosses Katima Mulilo. The figures cannot show they are the main cause."
+      - field: marking_guidance[0]
+        old: "Up to 2 C marks for explaining a plausible mobility-related exposure or service-access mechanism."
+        new: "Up to 2 C marks for a mobility-related exposure or service-access mechanism linked to Zambezi's borders or route."
+
+  - id: F04
+    topic: "2.4"
+    object_ids: [BL-6137-2.4.09-03]
+    severity: medium
+    defect: >-
+      Codex's new wording "reduce payments overseas" is wrong. Namibia imports electricity
+      overland from SAPP neighbours such as South Africa, Zambia and Zimbabwe, not from
+      overseas. The undated "generates less than half" is also out of date: Namibia produced
+      51.6% of its own electricity in 2025.
+    evidence: "https://www.namibian.com.na/share-of-sources-of-electricity-for-namibia/ (19 July 2026) - 'Namibia produced 51.6% of its own electricity in 2025', '52.2% in the first five months of this year'"
+    fix:
+      old: "Because Namibia generates less than half of the electricity it uses, local generation can displace imported electricity and reduce payments overseas."
+      new: "Because Namibia generated less than half of the electricity it used in 2024, local generation can displace imported electricity and reduce payments to neighbouring suppliers."
+
+  - id: F05
+    topic: "2.4"
+    object_ids: [ITEM-6137-2.4-038-CHAIN, ITEM-6137-2.4-P03]
+    severity: medium
+    defect: >-
+      Both cards state "Namibia generates less than half of the electricity it uses" in the
+      present tense. Their cited claim CL-6137-2.4.10-R1 and block BL-2.4.10-01 date this to
+      2024, and 2025 local production was 51.6%. A learner reading in 2026 is given a
+      statement that is now false.
+    evidence: "CL-6137-2.4.10-R1: 'Namibia generates less than half of the electricity it uses (2024)'; Namibian 19 July 2026 as in F04"
+    fix:
+      - object: ITEM-6137-2.4-038-CHAIN
+        old: "Namibia generates less than half of the electricity it uses and imports the rest"
+        new: "In 2024 Namibia generated less than half of the electricity it used and imported the rest"
+      - object: ITEM-6137-2.4-P03
+        old: "Partly agree. Namibia generates less than half of the electricity it uses, and Ruacana"
+        new: "Partly agree. In 2024 Namibia generated less than half of the electricity it used, and Ruacana"
+
+  - id: F06
+    topic: "1.6"
+    object_ids: [CL-6137-1.6.02-01-R1, ITEM-6137-1.6-006-FEATURE, ITEM-6137-1.6-P01, BL-6137-1.6.02-01]
+    severity: medium
+    defect: >-
+      Revision 2 of this claim dropped the "school model about 1.2 m" figure and "wood, a poor
+      conductor of heat". Those are still taught by ITEM-1.6-006 (answer "About 1.2 m",
+      prompt "in the school model"), ITEM-1.6-P01(b) ("about 1.2 m"; "wooden walls are poor
+      conductors of heat") and BL-1.6.02-01. Codex marked all three reviewed_unchanged, but
+      no claim now supports these points. BL-1.6.02-03 now says 1.25 m while ITEM-1.6-006
+      says 1.2 m. The claim also says the Met Office "mounts screens" at 1.25 m, but 1.25 m is
+      the thermometer height.
+    evidence: "Current claim: 'The Met Office mounts screens about 1.25 m above ground; ... White paint limits solar heating and the traditional wooden louvres allow ventilation.'"
+    fix:
+      object: CL-6137-1.6.02-01-R1 (raise to revision 3; reset claims_seen on the 4 citers)
+      old: "The Met Office mounts screens about 1.25 m above ground; meteorological guidance commonly uses 1.25–2 m. White paint limits solar heating and the traditional wooden louvres allow ventilation."
+      new: "School texts give about 1.2 m; the Met Office places thermometers about 1.25 m up, and guidance uses 1.25–2 m. White paint limits solar heating, louvres allow ventilation and wood conducts heat poorly."
+
+  - id: F07
+    topic: "3.2"
+    object_ids: [ITEM-6137-3.2-016-EVAL, CL-6137-3.2.04-03-R1]
+    severity: medium
+    defect: >-
+      Codex removed "About 90% of Namibians are Christian" from the claim and from
+      BL-3.2.04-11, but ITEM-3.2-016 (marked reviewed_unchanged) still asserts it. No claim
+      now supports the figure.
+    evidence: "Current ITEM-3.2-016 answer: 'Agree to a large extent. About 90% of Namibians are Christian, so churches reach many people.'"
+    fix:
+      old: "About 90% of Namibians are Christian, so churches reach many people."
+      new: "Most Namibians belong to churches, so churches reach many people through congregations."
+
+  - id: F08
+    topic: "2.2"
+    object_ids: [BL-6137-2.2.05-02, CL-6137-2.2.05-R2]
+    severity: medium
+    defect: >-
+      Revision 2 of the claim dropped the Red Line history (colonial boundary 1896-1907,
+      physical fence in the early 1960s) and the named diseases (foot-and-mouth, lung
+      sickness). BL-2.2.05-02, marked reviewed_unchanged, still teaches all of these, so they
+      are no longer claim-backed. The block also keeps the kind of overstatement Codex removed
+      elsewhere ("keeps most northern herds outside commercial production"). The Atlas
+      supports the diseases and quarantine but does not give dates.
+    evidence:
+      - "https://atlasofnamibia.online/chapter-8/farming - fence 'protects livestock to its south from infectious diseases such as foot-and-mouth and lung sickness'; quarantine 'before their meat can be processed and sold elsewhere'"
+      - "Current block: 'Northern cattle must be quarantined before they can be moved south and cannot easily be exported, which raises costs and keeps most northern herds outside commercial production.'"
+    fix:
+      - object: BL-6137-2.2.05-02
+        old: "Northern cattle must be quarantined before they can be moved south and cannot easily be exported, which raises costs and keeps most northern herds outside commercial production."
+        new: "Northern cattle face quarantine before moving south and restricted access to some export markets, which raises costs and helps keep many northern herds outside commercial production."
+      - object: CL-6137-2.2.05-R2 (raise to revision 3)
+        old: "The veterinary cordon fence separates livestock-health zones."
+        new: "The veterinary cordon fence (Red Line), a colonial boundary of 1896–1907 fenced in the early 1960s, separates livestock-health zones, protecting the south from foot-and-mouth disease and lung sickness."
+        note: "Restore the earlier source locator for the dates. If it cannot be re-verified, delete the dates from the block instead."
+
+  - id: F09
+    topic: "2.5"
+    object_ids: [ITEM-6137-2.5-008-INTERP]
+    severity: medium
+    defect: >-
+      The rubric awards 1 mark for "the groundwater relationship using a named aquifer", but
+      Codex's answer names no aquifer ("Named aquifers occur in several interior areas"). It
+      also brings in interior dams, which are not on the described map, so the answer goes
+      beyond the stimulus.
+    evidence: "Current answer: 'Named aquifers occur in several interior areas, so groundwater is important away from the perennial rivers. Interior dams also store surface water; the pattern does not mean all permanent water is at the border.'"
+    fix:
+      old: "Named aquifers occur in several interior areas, so groundwater is important away from the perennial rivers. Interior dams also store surface water; the pattern does not mean all permanent water is at the border."
+      new: "Productive aquifers lie inland in the Karstveld and at Stampriet, so groundwater supplies places away from the perennial rivers; the map does not show that all usable water is at the border."
+
+  - id: F10
+    topic: "3.2"
+    object_ids: [ITEM-6137-3.2-018-INTERP]
+    severity: low
+    defect: "There is a stray space before a semicolon, and the rubric line reads as two fragments."
+    evidence: "marking_guidance[2]: '1 mark for the trend towards more people in older age groups ; the net growth effect is not fixed.'"
+    fix:
+      old: "1 mark for the trend towards more people in older age groups ; the net growth effect is not fixed."
+      new: "1 mark for the trend towards more people in older age groups (do not require a fixed net growth effect)."
+
+  - id: F11
+    topic: "3.3"
+    object_ids: [ITEM-6137-3.3-015-INTERP, ITEM-6137-3.3-016-INTERP, ITEM-6137-3.3-017-INTERP, ITEM-6137-3.3-018-INTERP, ITEM-6137-3.3-019-INTERP, ITEM-6137-3.3-020-INTERP, ITEM-6137-3.3-021-INTERP, ITEM-6137-3.3-002-INTERP, ITEM-6137-3.3-003-INTERP, ITEM-6137-3.3-004-INTERP, ITEM-6137-3.3-005-INTERP]
+    severity: low
+    defect: >-
+      The answer leak is fixed. However, the town-plan alt text tells readers to "use its ...
+      scale" when the image is captioned "not a measured map" and has no scale bar. The
+      replacement text is now so generic that screen-reader users learn nothing about either
+      image.
+    evidence: "Viewed ITEM-6137-3.3-015-INTERP-question.png: title 'Schematic land-use plan of a town (not a measured map)', key, N arrow, no scale bar. Current alt: 'Settlement diagram; use its symbols, scale and key'."
+    fix:
+      - object: "3.3-015 to 3.3-021 prompt alt text"
+        old: "Settlement diagram; use its symbols, scale and key"
+        new: "Schematic town plan, not to scale, with coloured land-use zones, a key, main roads, a freight railway and north arrow"
+      - object: "3.3-002 to 3.3-005 prompt alt text"
+        old: "Settlement diagram; use its symbols, scale and key"
+        new: "Plans A, B and C at one scale, each with eight houses, roads and field boundaries; key, scale bar and north arrow"
+
+preservation_check:
+  named_content_retained: >-
+    Each of these is still present in current text: convection (1.1, 1.6, 1.7), drag (1.1,
+    1.5, 2.1), seif dunes near Swakopmund (BL-1.4.04-06, ITEM-1.4-019), wave energy (1.5,
+    2.4), Six's thermometer (BL-1.6.03-04), bi-polar grid (2.3, 3.1), footpath (2.3),
+    LEDC/MEDC models (3.3), energy and water sources (2.4, 2.5). The only named-content loss
+    is the HIV distribution geography (F02, F03).
+  school_models: >-
+    The standard models are kept. ITEM-1.5-028 still has prevailing-wind oblique swash, and
+    ITEM-1.3-030 still has less volume, less energy, deposition. The altitude, seif and star
+    dune, and longshore drift hedges are acceptable. The over-hedging is in 3.2.02 (F02).
+  judgement_cards_two_sided: >-
+    All checked judgement cards still argue both sides with tariffs matching: 3.2-P03, 3.2-013,
+    3.2-014, 2.5-P03, 2.6-018, 2.6-019, 2.3-032, 2.4-025.
+  banned_wording: "No 'examiners reward' or examiner wording found. N$ is used correctly. No US spellings were found in the changed text."
+
+confirmed:
+  - check: 1 census vs microdata cooking fuel
+    status: confirmed
+    evidence: "NSA 30 Oct 2024 media statement para 5(k): 'majority of private households in Namibia (50.1%) use firewood ... rural areas (84.6%)'. BL-2.4.02-10 and CL-2.4.02-04-R1 match it, and no 58%/29% figures remain."
+  - check: 2 U=U conditional wording; no fixed net condom growth effect
+    status: confirmed
+    evidence: "ITEM-3.2-013/014, BL-3.2.01-05, BL-3.2.05-04 all state that the undetectable viral load must be maintained. BL-3.2.05-02, CL-3.2.05-01-R1 and ITEM-3.2-018 say the net effect depends on births and deaths (rubric typo F10)."
+  - check: 3 regional prevalence not causal proof
+    status: confirmed, but over-applied
+    evidence: "The caveat is correct, but it displaced syllabus-required locational content. See F02 and F03."
+  - check: 4 expansion cooling with altitude
+    status: confirmed
+    evidence: "BL-1.6.08-05 and CL-1.6.08-02-R1 have rising air expanding and cooling as pressure falls, and distinguish the average environmental decrease (6.5°C/km) from the parcel rate. 'Thin air holds less heat' appears nowhere in the subject."
+  - check: 5 veterinary restrictions vary; no blanket export ban
+    status: "confirmed for ITEM-2.2-017 and BL-2.2.04-02 ('Some homesteads'; Atlas: 'Less than half of these households keep ... cattle')"
+    evidence: "Residual claim/block mismatch in F08."
+  - check: 6 groundwater and perennial rivers wording
+    status: confirmed
+    evidence: "BL-2.5.02-04 says 'lie along or cross its borders'. BL-2.5.03-02, ITEM-2.5-011 and CL-2.5.03-R1 make supply depend on storage, recharge, quality and abstraction. One answer/rubric mismatch remains in ITEM-2.5-008 (F09)."
+  - check: 7 desalination opening 2010 vs NamWater 2013 contract
+    status: confirmed
+    evidence: "Wikipedia/Orano: operation date 1 June 2010, about 35 km north of Swakopmund, water sold to NamWater. The 2013 contract year rests on the NamWater 2024 report as Codex cited it; I did not re-fetch it."
+  - check: 8 date-bounded Windhoek reserves
+    status: confirmed
+    evidence: "City of Windhoek release, 8 Aug 2025: reserves 'sufficient ... for at least the next two rainy seasons', restrictions lifted effective 11 Aug 2025, Managed Aquifer Recharge commenced. ITEM-2.5-P03 prompt and rubric are time-bounded, and the card is two-sided."
+  - check: 9 electricity generated vs consumption (Atlas 45%)
+    status: NOT confirmed
+    evidence: "Codex's denominator change is wrong (F01), it introduced 'overseas' (F04), and the undated 'less than half' is now outdated (F05)."
+  - check: 10 settlement alt-text leakage
+    status: confirmed (no leak)
+    evidence: "No question-side alt text in 3.3 reveals the pattern names or land-use positions. Other topics' question alt texts describe only supplied data. Accuracy and accessibility issue in F11."
+  - check: claims_seen consistency for the 23 revised claims
+    status: confirmed
+    evidence: "All 23 claims at revision 2; 60 citing references with claims_seen 2; 0 mismatches subject-wide."

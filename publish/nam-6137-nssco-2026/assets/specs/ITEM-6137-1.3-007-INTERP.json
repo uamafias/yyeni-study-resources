@@ -1,0 +1,137 @@
+{
+ "kind": "line graph: longitudinal profile (height vs distance downstream)",
+ "axes": {
+  "x": {
+   "label": "Distance downstream from source (km)",
+   "range": [
+    0,
+    50
+   ],
+   "major": 10,
+   "minor": 5
+  },
+  "y": {
+   "label": "Height above sea level (m)",
+   "range": [
+    0,
+    1000
+   ],
+   "major": 200,
+   "minor": 100
+  }
+ },
+ "anchor_points_km_m": [
+  [
+   0,
+   900
+  ],
+  [
+   3,
+   740
+  ],
+  [
+   10,
+   500
+  ],
+  [
+   15,
+   420
+  ],
+  [
+   19.7,
+   358
+  ],
+  [
+   20.0,
+   318
+  ],
+  [
+   25,
+   255
+  ],
+  [
+   30,
+   200
+  ],
+  [
+   40,
+   140
+  ],
+  [
+   50,
+   100
+  ]
+ ],
+ "interpolation": "monotone cubic (PCHIP) through anchors; sampled every 0.05 km",
+ "notes_values_matched": {
+  "0": 900,
+  "10": 500,
+  "30": 200,
+  "50": 100
+ },
+ "local_step": {
+  "from_km": 19.7,
+  "to_km": 20.0,
+  "drop_m": 40
+ },
+ "derived": {
+  "0-10 km": {
+   "drop_m": 400,
+   "gradient": "1:25"
+  },
+  "10-30 km": {
+   "drop_m": 300,
+   "gradient": "1:66.7"
+  },
+  "30-50 km": {
+   "drop_m": 100,
+   "gradient": "1:200"
+  }
+ },
+ "question_withholds": [
+  "gradient values",
+  "step annotation",
+  "the words steep/gentle/waterfall/knickpoint"
+ ],
+ "independent_solution": [
+  "falls 900 -> 100 m (1)",
+  "steeper upstream (400 m in first 10 km) than downstream (100 m in last 20 km) (1)",
+  "local abrupt step ~40 m at ~20 km (1)"
+ ],
+ "resource_id": "VIS-6137-1.3-02",
+ "assigned_item_id": "ITEM-6137-1.3-007-INTERP",
+ "master_path": "assets/masters/ITEM-6137-1.3-007-INTERP.svg",
+ "data_spec_path": "assets/specs/ITEM-6137-1.3-007-INTERP.json",
+ "plan_master_path": "assets/masters/ITEM-6137-1.3-007-INTERP.svg",
+ "plan_data_spec_path": "assets/specs/ITEM-6137-1.3-007-INTERP.json",
+ "sides": {
+  "question": {
+   "path": "assets/images/ITEM-6137-1.3-007-INTERP-question.png",
+   "visible_layers": [
+    "base",
+    "q"
+   ],
+   "clip": null,
+   "height_px": 760,
+   "bound_item": null
+  },
+  "answer": {
+   "path": "assets/images/ITEM-6137-1.3-007-INTERP-answer.png",
+   "visible_layers": [
+    "base",
+    "a"
+   ],
+   "clip": null,
+   "height_px": 1120,
+   "bound_item": null
+  }
+ },
+ "render": {
+  "engine": "Chromium via Playwright",
+  "device_scale_factor": 1.5,
+  "master_viewbox": [
+   1000,
+   1120
+  ]
+ }
+}

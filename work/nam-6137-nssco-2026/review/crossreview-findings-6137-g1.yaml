@@ -1,0 +1,335 @@
+# Read-only semantic review, group g1 (6137 NSSCO Geography): topics 1.1, 1.2, 1.3, 1.4
+# Reviewer: Claude (independent cross-review of Codex-authored text). Date 2026-10-30.
+# Read: syllabus objectives (objective_registry), contracts, misconceptions MIS-01..08, examiner-findings
+# records mapped to 1.1-1.4, full rendered notes for all four topics, all 148 items, all claim ledgers.
+# Images opened (to check a text claim): ITEM-6137-1.1-014-INTERP-question.png, ITEM-6137-1.4-017-INTERP-question.png (both consistent with card text).
+
+# ---------------------------------------------------------------- 1.1
+- issue_id: 6137-1.1-001
+  severity: high
+  category: curriculum
+  affected_ids: [BL-6137-1.1.03-01, BL-6137-1.1.03-02, BL-6137-1.1.03-03, ITEM-6137-1.1-008-PROC, ITEM-6137-1.1-009-INTERP, CL-6137-1.1.03-1, CL-6137-1.1.03-2]
+  finding: >
+    Syllabus 1.1.03 asks learners to "describe how convection current causes plate movement". Neither the notes nor
+    any card states the causal link: the sideways-moving mantle current drags/carries the overlying plate, and plates
+    move apart above rising currents and towards each other above sinking currents. The notes only say the flow "can be
+    associated with" plate motion, then shift to slab pull/ridge push and warn against the convection model. The model
+    answer for ITEM-008 ends "completing circulation connected to plate motion", so a learner learns the convection
+    loop but never how it moves a plate. The 2023 P1 1(a)(ii) report says candidates lost the second mark for exactly this
+    missing result (rising magma, crust breaking, plates moving).
+  evidence: >
+    BL-6137-1.1.03-02: "Rising and spreading mantle flow can be associated with plates moving apart ... It should not imply
+    that friction from one circular current is the sole force moving every plate". ITEM-008 answer: "Cooler, denser material
+    sinks elsewhere, completing circulation connected to plate motion."
+  educational_consequence: >
+    Learners describe heat transfer and circulation but leave out the plate-moving step. They lose the result mark on the
+    syllabus's own question and may conclude that convection does not move plates.
+  recommended_repair: >
+    Add to BL-6137-1.1.03-02: "Where the current moves sideways beneath the lithosphere, it drags the plate above it in the
+    same direction. Plates therefore move apart above rising currents (constructive margins) and towards each other where
+    currents converge and sink (destructive margins). Slab pull and ridge push add to this movement." Change the ITEM-008
+    answer to end "...the sideways flow drags the overlying plates, moving them apart above the rising current and together
+    where it sinks." Update the marking guidance to "1 for sideways flow dragging the plate", and add this point to CL-6137-1.1.03-1.
+  confidence: 0.85
+
+- issue_id: 6137-1.1-002
+  severity: medium
+  category: curriculum
+  affected_ids: [BL-6137-1.1.09-06, BL-6137-1.1.09-08, ITEM-6137-1.1-033-FEATURE, ITEM-6137-1.1-031-INTERP]
+  finding: >
+    Objective 1.1.09 ("explain how earthquakes and volcanoes are formed and their impact on human beings and the
+    environment") is only partly covered by cards. Volcanic impacts and how volcanoes form get no card: the only 1.1.09-02
+    card is "Name ... lava". The notes also never teach two recurring, high-tariff 1.1.09 demands: why people continue to
+    live in earthquake or volcanic areas (2020 P1 1(c), 2023 P1 1(a)(iv), 5 marks), and why an earthquake of the same
+    magnitude causes more deaths in an LEDC than an MEDC (2020 P1 1(a)(iv), 2023 P1 1(b)(ii), 5 marks). BL-09-08 has one
+    generic sentence. BL-09-06 mentions soils, geothermal energy and tourism only as long-term opportunities.
+  evidence: >
+    BL-6137-1.1.09-08: "The same earthquake can have different consequences in two places with different buildings, ground
+    conditions and response capacity." ITEM-033 prompt: "Name molten rock after it emerges at the Earth's surface."
+  educational_consequence: >
+    Learners could not write a top-tariff answer to "Explain why people live in areas where earthquakes occur" or to the
+    LEDC/MEDC contrast from these notes. They also never practise describing volcanic effects on people and the environment.
+  recommended_repair: >
+    Add a short block under 1.1.09: reasons people stay (cannot afford to move, family and land ties, jobs, fertile weathered
+    volcanic soils, geothermal energy, minerals, tourism, infrequent events, confidence in buildings or warnings). Add a
+    contrast block on LEDC/MEDC vulnerability (building quality and enforcement, warning systems, emergency and medical
+    services, transport access). Add one card on volcanic effects on people and the environment and one card on why people
+    live in hazard zones.
+  confidence: 0.8
+
+- issue_id: 6137-1.1-003
+  severity: low
+  category: coherence
+  affected_ids: [ITEM-6137-1.1-012-INTERP, ITEM-6137-1.1-013-INTERP, ITEM-6137-1.1-014-INTERP, ITEM-6137-1.2-015-INTERP, ITEM-6137-1.2-019-INTERP, ITEM-6137-1.2-021-INTERP, ITEM-6137-1.3-002-INTERP, ITEM-6137-1.3-007-INTERP, ITEM-6137-1.3-018-INTERP, ITEM-6137-1.4-007-INTERP, ITEM-6137-1.4-012-INTERP, ITEM-6137-1.4-017-INTERP]
+  finding: >
+    The context.situation metadata on every visual item still says "(Claude, self-reviewed; awaiting Codex visual review)".
+    The brief says the visuals have since been reviewed and accepted by Codex, so this status is stale.
+  evidence: >
+    ITEM-6137-1.1-012-INTERP context: "Stimulus VIS-6137-1.1-01: original schematic cross-section (Claude, self-reviewed;
+    awaiting Codex visual review)."
+  educational_consequence: None for learners. The stale status misleads anyone auditing provenance.
+  recommended_repair: Replace with "(Claude-authored; Codex visual review accepted <date>)" or drop the review-status text from the context.
+  confidence: 0.7
+
+- issue_id: 6137-1.1-004
+  severity: low
+  category: coherence
+  affected_ids: [BL-6137-1.1.03-03, BL-6137-1.1.05-05]
+  finding: The American form "toward" is used twice, while the rest of the notes use the British "towards".
+  evidence: >
+    BL-6137-1.1.03-03: "Arrows pointing toward one another would contradict..." BL-6137-1.1.05-05: "3,000 m farther toward an
+    island chain."
+  educational_consequence: None. Spelling consistency only.
+  recommended_repair: Change "toward" to "towards" in both places.
+  confidence: 0.9
+
+# ---------------------------------------------------------------- 1.2
+- issue_id: 6137-1.2-001
+  severity: high
+  category: curriculum
+  affected_ids: [BL-6137-1.2.02-09, BL-6137-1.2.85-01, BL-6137-1.2.85-03, BL-6137-1.2.84-01, BL-6137-1.2.82-03]
+  finding: >
+    Syllabus 1.2.02 reads "name and describe types of weathering and associated landforms". The notes never name a
+    weathering landform. They refer only to "rounded residual masses", "solution features" and "loose angular material", and
+    no item asks for a landform. Missing: scree/talus slopes below frost-shattered cliffs, exfoliation domes on granite,
+    residual boulders or tors (kopjes), and limestone solution landforms (enlarged joints, caves). The 2024 P1 1(b)(ii)
+    exfoliation diagram also reserved a mark for "talus/scree/regolith at base of dome". The exfoliation blocks never
+    mention debris collecting at the base.
+  evidence: >
+    BL-6137-1.2.02-09: "Bare rock, fractured blocks, rounded residual masses and solution features all need a process
+    explanation appropriate to their evidence." No item in topic_1.2_items.json names or asks for a weathering landform.
+  educational_consequence: >
+    Learners cannot name or describe the landforms the syllabus requires. They also drop the scree/talus mark when drawing
+    or describing exfoliation.
+  recommended_repair: >
+    Add a block "Landforms produced by weathering": scree (talus) of angular fragments below jointed cliffs where
+    freeze-thaw operates; exfoliation domes, rounded granite hills with curved peeling sheets and loose sheets and debris at
+    their foot; residual boulders or kopjes left as jointed granite weathers along its joints; limestone joints widened by
+    carbonation into grooves and caves. Optionally add Namibian granite inselbergs (e.g. Spitzkoppe) and Otavi-area dolomite
+    caves, after verifying them against a source. Add the base-debris step to BL-6137-1.2.85-01 and the exfoliation card
+    answers. Add one FEATURE or INTERP card asking for a landform of physical weathering and its process.
+  confidence: 0.8
+
+- issue_id: 6137-1.2-002
+  severity: medium
+  category: curriculum
+  affected_ids: [BL-6137-1.2.03-04, BL-6137-1.2.03-05, ITEM-6137-1.2-011-FEATURE, CL-6137-1.2.03-02-1]
+  finding: >
+    The rock controls on weathering (1.2.03-02) are taught only as mineral composition, joints and porosity/permeability.
+    Grain size is mentioned in passing without a mechanism. Hardness/resistance and rock colour (darker rocks absorb more
+    heat, which matters for thermal weathering) are absent. The notes also discourage the hardness framing ("misleading to
+    call one rock universally weak"). The 2022 P1 2(b)(iii) answer for "Describe two rock features which influence the rate
+    of weathering" credits hardness, composition, grain size, jointing, permeability and colour.
+  evidence: >
+    BL-6137-1.2.03-04: "It is misleading to call one rock universally weak and another universally strong without
+    specifying the process." BL-6137-1.2.03-05: "Bedding, grain size and the arrangement of minerals can also influence how
+    weathering proceeds."
+  educational_consequence: >
+    Learners have a narrow list of rock features, and may avoid the resistance and colour answers that the mark scheme
+    credits.
+  recommended_repair: >
+    Add to BL-6137-1.2.03-04/05: "Rock resistance: less resistant rocks generally break down faster under a given process
+    than more resistant ones. Grain size: coarse-grained rocks such as granite can loosen grain by grain as different
+    minerals expand by different amounts. Colour: dark rock absorbs more heat by day, so surface heating and cooling, and the
+    thermal stress they cause, can be greater." Keep the existing "depends on the process" qualifier.
+  confidence: 0.7
+
+# ---------------------------------------------------------------- 1.3
+- issue_id: 6137-1.3-001
+  severity: high
+  category: analysis
+  affected_ids: [BL-6137-1.3.06-02, BL-6137-1.3.06-06, BL-6137-1.3.06-11, ITEM-6137-1.3-032-FEATURE, ITEM-6137-1.3-034-FEATURE, CL-6137-1.3.06-01-1, CL-6137-1.3.06-01-2, CL-6137-1.3.06-03-2]
+  finding: >
+    Syllabus 1.3.06 asks why and where deposition occurs "with reference to volume and velocity of flow, nature of the load
+    and bed-rock". The notes never teach the volume reason: when discharge falls (dry season, evaporation, seepage into
+    permeable beds, abstraction, the end of a flood), the river has less energy and deposits load. Instead every volume
+    passage warns against using volume as a reason, and the closing worked example shows deposition where discharge
+    increases. The bedrock reason (water seeping into permeable or fissured bedrock reduces volume; obstacles and rock steps
+    create slack water) appears only as a hedge. The only volume card names "discharge" (ITEM-032), and no card covers
+    bedrock. A learner would reasonably conclude that volume is irrelevant to deposition.
+  evidence: >
+    BL-6137-1.3.06-02: "A deposition explanation must follow the actual change described, not substitute volume for
+    velocity". BL-6137-1.3.06-11: "Discharge is greater at the second section even though velocity is lower ... not an
+    incorrect claim that the volume passing per second must have decreased." BL-6137-1.3.06-06: "permeable ground can allow
+    water losses that influence flow, but the resulting deposition must be linked to changed transport conditions rather
+    than assumed from the rock name alone."
+  educational_consequence: >
+    Learners cannot answer the syllabus question about volume and bedrock, and may argue that volume does not matter. The
+    worked example teaches the exception before the rule.
+  recommended_repair: >
+    Insert before BL-6137-1.3.06-11: "Volume: when the volume of water falls, for example in the dry season, through
+    evaporation in hot dry areas, by seepage into a sandy or permeable bed, or through water abstraction, the river has less
+    energy and can no longer carry all its load, so it deposits it. Many Namibian ephemeral rivers drop their load on their
+    beds as flow dies away after rain. Bedrock: where the river crosses permeable or fissured rock, water seeps away and
+    volume falls; resistant rock bars and boulders create sheltered slack water where load settles." Keep BL-06-11 as an
+    explicitly labelled exception. Add an APP or CHAIN card: "Explain how a fall in discharge as a river crosses permeable
+    sandy bedrock can cause deposition."
+  confidence: 0.85
+
+- issue_id: 6137-1.3-002
+  severity: medium
+  category: curriculum
+  affected_ids: [BL-6137-1.3.07-10, ITEM-6137-1.3-041-INTERP]
+  finding: >
+    The syllabus names "inland deltas/oshanas" as a landform (1.3.07-05). The notes define an inland delta only in the
+    abstract and never name the standard southern African example, the Okavango Delta in Botswana. It is fed by the
+    Okavango (Kavango) River, which flows from Angola across Namibia's Kavango regions and ends in the Kalahari rather than
+    the sea. Only the oshana example is given, and the only card tests oshanas.
+  evidence: >
+    BL-6137-1.3.07-10: "An inland delta is a branching depositional system that spreads within an interior basin rather than
+    building directly into the sea ... When a resource names a particular system, describe its documented characteristics".
+  educational_consequence: >
+    Learners asked for a named inland delta, or to explain one, have no example and would fall back on the oshanas, which
+    are a different system.
+  recommended_repair: >
+    Add to BL-6137-1.3.07-10: "The Okavango Delta in north-western Botswana is a major inland delta. The Okavango River,
+    which crosses Namibia from Angola, spreads into distributaries across a flat basin. Its water is lost by evaporation,
+    transpiration and seepage instead of reaching the sea, and it deposits sediment across the swamps." Add one FEATURE card
+    naming it.
+  confidence: 0.75
+
+- issue_id: 6137-1.3-003
+  severity: medium
+  category: curriculum
+  affected_ids: [BL-6137-1.3.04-01, BL-6137-1.3.04-05, BL-6137-1.3.04-12]
+  finding: >
+    The erosion landforms (waterfall, rapids, gorge) are taught only through hypothetical diagrams, with no named Namibian or
+    southern African example. Examiner evidence rewards place-specific detail: 2022 P1 2(c) "Must include place specific
+    information ... e.g. Ruacana waterfall on Kunene River", and 2021 P1 2(c) reserved a mark for a named floodplain example.
+    Well-known examples are available: Ruacana and Epupa Falls on the Kunene, Popa Falls rapids on the Okavango, Fish River
+    Canyon (gorge) and Victoria Falls with its gorges on the Zambezi.
+  evidence: >
+    BL-6137-1.3.04-12: "A gorge is a deep, narrow valley with steep sides. Retreat of a waterfall can create a gorge ..." (no
+    named example anywhere in sections 1.3.03-1.3.05).
+  educational_consequence: >
+    Learners lose the place-specific marks on "named example of a fast-flowing river" questions and have no local reference
+    for these landforms.
+  recommended_repair: >
+    Add one sentence per landform with a named example, e.g. "Ruacana and Epupa Falls on the Kunene River (waterfalls); Popa
+    Falls on the Okavango (rapids); Fish River Canyon in southern Namibia (a deep gorge cut by the Fish River); Victoria Falls
+    on the Zambezi, where retreat has left a series of zig-zag gorges." Add a short opportunities note: hydro-electric power
+    at Ruacana and tourism at Epupa.
+  confidence: 0.75
+
+- issue_id: 6137-1.3-004
+  severity: low
+  category: coherence
+  affected_ids: [ITEM-6137-1.3-036-INTERP]
+  finding: >
+    The answer and rubric rely on an "origin" for B that the prompt does not supply. The prompt says only "B is a raised
+    river-side sediment ridge", but the answer says "if its stated origin is flood deposition" and the rubric awards "1 for
+    B's ridge and origin evidence".
+  evidence: >
+    Prompt: "B is a raised river-side sediment ridge". Answer: "B is a natural levee if its stated origin is flood
+    deposition." Marking: "1 for B's ridge and origin evidence".
+  educational_consequence: A learner cannot earn the "origin evidence" mark from the information given.
+  recommended_repair: >
+    Change the prompt to "B is a raised river-side ridge of flood-deposited sediment" and the answer to "B is a natural levee
+    built by flood deposition".
+  confidence: 0.75
+
+# ---------------------------------------------------------------- 1.4
+- issue_id: 6137-1.4-001
+  severity: high
+  category: curriculum
+  affected_ids: [BL-6137-1.4.04-05, BL-6137-1.4.04-06, ITEM-6137-1.4-019-INTERP, ITEM-6137-1.4-016-PROC, CL-6137-1.4.04-02-1]
+  finding: >
+    Syllabus 1.4.04 names "seif dunes at Swakopmund" and asks learners to describe and explain wind-deposition landforms in
+    Namibia. The notes avoid stating that seif dunes occur at Swakopmund, saying only that the area "contain[s] varied
+    forms". They never explain why seif or linear dunes form in the Namib: the prevailing south to south-westerly winds run
+    roughly parallel to the ridges; seasonal winds from another direction (e.g. easterly berg winds) keep the ridges
+    elongated; sand supply is plentiful; vegetation is sparse and conditions are dry. The only seif card (ITEM-019)
+    deliberately avoids the wind explanation. 2024 P1 2(a)(iii) asked "Describe why seif dunes are formed in the Namib
+    Desert", and its expected answers are exactly these factors.
+  evidence: >
+    BL-6137-1.4.04-06: "Namibia's coastal dune environments, including the broader Swakopmund area used for studying wind
+    deposition, contain varied forms. A seif or linear dune should be identified by its elongated ridge rather than by
+    assuming that the place name establishes its type." ITEM-019 answer: "Today's wind alone cannot establish the long-term
+    formation regime."
+  educational_consequence: >
+    Learners cannot give the syllabus's named example with confidence, and cannot explain why seif dunes form in the Namib.
+    That answer was poorly done in 2024.
+  recommended_repair: >
+    Rewrite BL-6137-1.4.04-06: "Seif (linear) dunes occur in the dune belt around Swakopmund and across much of the Namib
+    Sand Sea. They form where a strong prevailing south to south-westerly wind blows roughly along the ridge, while
+    occasional winds from another direction (such as hot easterly berg winds in winter) pile sand onto the flanks so the
+    ridge grows in length rather than migrating as a crescent. A plentiful sand supply (sand brought north along the coast
+    and blown inland), sparse vegetation and dry, loose sand allow long ridges to build." Add an EXPLAIN card: "Describe why
+    seif dunes form in the Namib Desert near Swakopmund." Verify the dune-belt detail against a source before publishing.
+  confidence: 0.8
+
+- issue_id: 6137-1.4-002
+  severity: low
+  category: curriculum
+  affected_ids: [BL-6137-1.4.04-03, BL-6137-1.4.04-04, ITEM-6137-1.4-018-INTERP]
+  finding: >
+    The star-dune explanation gives only the multi-directional wind regime. It does not state the plentiful sand supply that
+    large star dunes such as those at Sossusvlei require, or that each arm has its own slip face. The 2024 P1 2(b)(i) mark
+    scheme credits both points ("unlimited supply of sand"; "peak with many arms/slip faces").
+  evidence: >
+    BL-6137-1.4.04-03: "Winds from different directions over time can promote deposition and redistribution around more than
+    one flank, helping build the complex shape."
+  educational_consequence: Learners get one of the three formation points and lose easy marks.
+  recommended_repair: >
+    Add: "Star dunes need a very large sand supply. Because winds blow from several directions over the year, sand is pushed
+    back towards the centre, so the dune grows upwards into a high peak with several arms, each with its own slip face,
+    instead of moving away."
+  confidence: 0.7
+
+- issue_id: 6137-1.4-003
+  severity: low
+  category: coherence
+  affected_ids: [BL-6137-1.4.03-03, BL-6137-1.4.04-06]
+  finding: Two typos in the learner notes.
+  evidence: >
+    BL-6137-1.4.03-03: "fine particles passing a observation station". BL-6137-1.4.04-06: "the particular image or supplied
+    resource supplied."
+  educational_consequence: None. Readability only.
+  recommended_repair: Change to "an observation station" and "the particular image or resource supplied".
+  confidence: 0.95
+
+# ================================================================ coverage and learner tests
+#
+# TOPIC 1.1 The Earth's structure. Items read: 40/40 (37 cards + P01-P03). Notes read in full (all 10 sections).
+# Objectives checked: 1.1.01(-01..03), .02, .03, .04(-01..03), .05(-01..04), .06, .07(-01..03), .08, .09(-01..02), .10(-01..02).
+#   All are taught in the notes and all have at least one card. Gaps: 1.1.03 causal drag link missing (6137-1.1-001);
+#   1.1.09-02 volcanic effects have no card, and "why people live there" and LEDC/MEDC are untaught (6137-1.1-002).
+# Checked and correct: crust 8 km/3.0 vs 38 km/2.7, difference 30 km; trench 7,500 - 4,000 = 3,500 m; cone ratios 0.5/0.1/0.4;
+#   18/20 = 90%; Tohoku 11 March 2011, USGS M9.1; Mayon 20 Jan 2018 bulletin (6 km PDZ, 7 km southern extension, Miisi
+#   Gully) consistent with my knowledge of the PHIVOLCS bulletins of that week; MAR, Himalayas, Andes, Aleutian/Mariana settings
+#   correct. ITEM-014 directions (M south, K north, east part of stream offset north) checked against the image and correct.
+# Learner test: (1) 1.1.03 convection causing plate movement: NOT supported at top tariff (no drag/plate-movement step).
+#   (2) 1.1.07 volcano shapes: supported. Cone shapes, materials and causal links are all in the notes.
+#
+# TOPIC 1.2 Weathering and erosion. Items read: 27/27. Notes read in full.
+# Objectives checked: 1.2.01, .02(-01..03), .03(-01..02), .81 hydrolysis, .82 carbonation, .83 oxidation, .84 freeze-thaw,
+#   .85 exfoliation. All processes are taught and carded, and the MIS-01/02/03 discrimination cards (022/023/024) do
+#   discriminate. Gaps: the "associated landforms" in 1.2.02 are missing (6137-1.2-001); rock-feature controls are
+#   incomplete (6137-1.2-002).
+# Learner test: (1) 1.2.85 exfoliation: mostly supported; the day/night expansion-contraction sequence is clear, but the
+#   scree/debris mark and the "dome" landform are missing. (2) 1.2.03-02 rock features: partly supported (composition,
+#   joints, permeability yes; resistance, grain size and colour not explained).
+#
+# TOPIC 1.3 River processes. Items read: 56/56. Notes read in full (all 10 sections).
+# Objectives checked: 1.3.01(-01..03), .02(-01..03), .03(-01..04), .04(-01..05), .05(-01..04), .06(-01..03),
+#   .07(-01..05), .08(-01..02), .09(-01..02), .91. All have cards. Gaps: the volume and bedrock reasons in .06 are
+#   effectively untaught (6137-1.3-001); no named inland delta (6137-1.3-002); no named erosion-landform examples
+#   (6137-1.3-003). The MIS-07 (052) and MIS-08 (053) cards discriminate correctly.
+# Checked and correct: 4 x 0.5 x 0.8 = 1.6 m3/s; gradients 1:25, 1:66.7, 1:200; 12 + 4 x 0.5 = 14 km2; 12 m / 6 yr = 2 m/yr;
+#   100 mg/L x 10 L/s = 1,000 mg/s; 2 x 1 = 2 and 8 x 0.5 = 4 m3/s. Cuvelai/oshanas in north-central Namibia, inflow from
+#   Angola, the Ramsar site "Etosha Pan, Lake Oponono & Cuvelai drainage" and the Zambezi floodplain in north-eastern
+#   Namibia are all correct.
+# Learner test: (1) 1.3.06 deposition with reference to volume and bedrock: NOT supported (see 6137-1.3-001).
+#   (2) 1.3.04-01 waterfall formation: supported at top tariff (cap rock, undercutting, plunge pool, collapse, retreat, gorge).
+#
+# TOPIC 1.4 Wind/Aeolian processes. Items read: 25/25. Notes read in full.
+# Objectives checked: 1.4.01(-01..03), .02(-01..03), .03(-01..03), .04(-01..02). All have cards, and the MIS-04/05/06 cards
+#   (020/021/022) discriminate. Gap: the syllabus-named "seif dunes at Swakopmund" and their formation (6137-1.4-001).
+#   Star dunes at Sossusvlei are correctly named. 800/40 = 20:1 checked, and the ITEM-017 image matches (B about 800 m;
+#   A arms about 300 m; both wind roses sum to 100%).
+# Learner test: (1) 1.4.04-02 seif dunes: NOT supported (no location commitment, no wind-direction explanation).
+#   (2) 1.4.02-02 deflation hollow: supported (loose fines removed, ground lowered, coarse or resistant material left,
+#   distinguished from an oasis).
+#
+# House-rule scan (all four topics): no real companies in learner text; no money values; no "examiners reward" or claims
+#   about paper content in notes or items. American spelling found only in 6137-1.1-004.
