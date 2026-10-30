@@ -3,6 +3,7 @@ import json,math,hashlib,copy
 from pathlib import Path
 from round8_diversity import CHANGES
 from round10_repairs import card as apply_round10
+from round11_repairs import card as apply_round11
 from round7_replacements import CHANGES as PREVIOUS
 from round9_repairs import CARDS as LATEST,apply_card as apply_latest
 from final_content_edits import CARDS as FINAL,apply_card as apply_final
@@ -12,7 +13,7 @@ for t in range(1,13):
   if x['item_type']=='flashcard':items['-'.join(x['item_id'].split('-')[2:4])]=x
 rows={r['id']:r for r in json.loads((W/'planning/full-demand-audit.json').read_text())['records']}
 for k,c in (PREVIOUS|CHANGES|LATEST|FINAL).items():
- c=copy.deepcopy(c);apply_latest(c,k);apply_final(c,k);apply_round10(c,k)
+ c=copy.deepcopy(c);apply_latest(c,k);apply_final(c,k);apply_round10(c,k);apply_round11(c,k)
  for f in ['prompt','canonical_answer','marking_guidance']:assert items[k][f]==c[f],(k,f)
  assert rows[items[k]['item_id']]['recall_marks']==c['recall'],k
 coverage={'lithium':'8-015','sodium':'8-015','potassium':'8-019','calcium':'8-021','barium':'8-019','ammonia':'8-037','carbon_dioxide':'8-039','chlorine':'8-042','hydrogen':'8-043','oxygen':'8-045','carbonate':'8-026','chloride':'8-028','bromide':'8-030','iodide':'8-032','nitrate':'8-034','sulfate':'8-036'}

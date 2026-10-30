@@ -2,6 +2,7 @@
 import copy,re
 from final_method_examples import EXAMPLES,EXTRA4
 from round10_repairs import notes as round10_notes
+from round11_repairs import notes as round11_notes
 PRINCIPLES={
 '12.1-01':'Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument.',
 '12.2-01':'Choose the operation and instrument to match the measured quantity; keep sample identity clear and use separate clean portions when reagents could interfere.',
@@ -42,8 +43,6 @@ def rebuild(t,d,ld,units,notes,registry):
   short=oid.removeprefix('OBJ-6117-');assert short in PRINCIPLES,oid
   c=copy.deepcopy(sample);c.update(claim_id=f'CLM-6117-FINAL-{t}-{i}',objective_ids=[oid],text=PRINCIPLES[short],revision=1);ld['claims'].append(c);newclaims.append(c)
  heading,text=EXAMPLES[t]
- if t==4:text+='\n\n'+EXTRA4
- if newclaims:text+='\n\n'+' '.join(c['text'] for c in newclaims)
  factual=[c for c in ld['claims'] if any(oid in target['objective_ids'] for oid in c['objective_ids'])]
  claimids=[c['claim_id'] for c in newclaims]+[c['claim_id'] for c in factual[:2]]
  target['blocks'].append({'block_id':target['unit_id']+'-FINAL-METHOD','block_type':'worked_application','heading':heading,'text':text,'claim_ids':claimids,'context_tags':[],'assessment_objectives':['A','B','C'],'claims_seen':{}})
@@ -74,5 +73,6 @@ def rebuild(t,d,ld,units,notes,registry):
    if not b['text']:assert not b['claim_ids'],b['block_id']
   u['blocks']=[b for b in u['blocks'] if b['text']]
  round10_notes(t,units)
+ round11_notes(t,units)
  notes.setdefault('deviations',[]).append({'from':'Answer-only activity feedback in learner notes','to':'Independent method examples, de-duplicated prose, and activity claims linked to factual teaching','why':'User instructed completion of all remaining editorial work; answer keys remain in activity records, not in the notes.'})
  return {'topic':t,'answer_blocks_removed':removed,'repeated_long_sentences_removed':removed_sentences,'new_method_claims':len(newclaims)}

@@ -22,7 +22,7 @@ Names ending in -ene, -ol and -oic acid usually identify the alkene, alcohol and
 
 ![Full bonds in ethene, ethanol, ethanoic acid and ethyl ethanoate.](visuals/VIS-6117-10-01.svg)
 
-Full bonds in ethene, ethanol, ethanoic acid and ethyl ethanoate. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Full bonds in ethene, ethanol, ethanoic acid and ethyl ethanoate.
 
 ---
 
@@ -54,37 +54,37 @@ Its small hydrocarbon molecules remain gaseous at ordinary conditions. A burner 
 
 ### Gasoline and its use
 
-Gasoline is a petroleum fraction used for fuel for petrol engines. The molecules in a fraction do not all have identical chain lengths. Different refinery operations can produce somewhat different mixtures while retaining the same broad fraction name.
+Gasoline is a petroleum fraction used as fuel for petrol engines.
 
 Gasoline is also called petrol. Its useful volatility helps it form a fuel–air mixture in an appropriate engine. It is a fraction containing several hydrocarbons, not a pure substance called octane. Engine suitability is a use, whereas ‘a liquid’ is only a physical description.
 
 ### Naphtha and its use
 
-Naphtha is a petroleum fraction used for a chemical feedstock. The molecules in a fraction do not all have identical chain lengths. Different refinery operations can produce somewhat different mixtures while retaining the same broad fraction name.
+Naphtha is a petroleum fraction used as a chemical feedstock.
 
 A feedstock is a raw material for making other chemicals. Naphtha can be processed to supply smaller molecules used in chemical manufacture, including starting materials for plastics. It should not be treated as the name of a finished polymer. Burning and using as a feedstock are different ways of consuming a hydrocarbon resource.
 
 ### Kerosene and its use
 
-Kerosene is a petroleum fraction used for fuel for aircraft jet engines. The molecules in a fraction do not all have identical chain lengths. Different refinery operations can produce somewhat different mixtures while retaining the same broad fraction name.
+Kerosene is a petroleum fraction used as fuel for aircraft jet engines.
 
 Kerosene has a boiling range between the lighter gasoline fractions and heavier diesel fractions. The name describes a mixture suitable for a particular fuel use. It is not the gas used to inflate an aircraft tyre, and its purpose in a jet engine is energy release by combustion.
 
 ### Diesel oil and its use
 
-Diesel oil is a petroleum fraction used for fuel for diesel engines. The molecules in a fraction do not all have identical chain lengths. Different refinery operations can produce somewhat different mixtures while retaining the same broad fraction name.
+Diesel oil is a petroleum fraction used as fuel for diesel engines.
 
 Diesel engines and petrol engines use different fuel systems, so the names of their fuels should not be interchanged. Diesel oil contains hydrocarbons with generally larger molecules and higher boiling ranges than gasoline. ‘Transport’ alone is too broad when an examination asks for a named use.
 
 ### Fuel oil and its use
 
-Fuel oil is a petroleum fraction used for fuel for ships and home heating systems. The molecules in a fraction do not all have identical chain lengths. Different refinery operations can produce somewhat different mixtures while retaining the same broad fraction name.
+Fuel oil is a petroleum fraction used as fuel for ships and home heating systems.
 
 Heavy fuel fractions can provide heat in suitable industrial equipment and marine engines. Their greater viscosity affects handling; it does not mean they contain no chemical energy. Combustion may produce pollutants, especially if sulfur compounds are present or oxygen supply is insufficient.
 
 ### Bitumen and its use
 
-Bitumen is a petroleum fraction used for road surfacing and roofing. The molecules in a fraction do not all have identical chain lengths. Different refinery operations can produce somewhat different mixtures while retaining the same broad fraction name.
+Bitumen is a petroleum fraction used for road surfacing and roofing.
 
 Bitumen is the heavy residue associated with the bottom of the fractionation process. Its viscosity, adhesion and resistance to water are useful in road surfacing and waterproof roofing. It is not a light volatile fuel collected at the cool top of the column.
 
@@ -300,7 +300,7 @@ Link a use to a relevant property. An insulating covering on an electrical wire 
 
 ![Single backbone bonds with continuation through brackets.](visuals/VIS-6117-10-03.svg)
 
-Single backbone bonds with continuation through brackets. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Single backbone bonds with continuation through brackets.
 
 ---
 
@@ -362,8 +362,6 @@ Apply a small sample spot to the pencil line, keeping it above the initial solve
 
 Run reference substances on the same paper with the same solvent when comparing identities. A matching Rf supports a possible identity under those conditions; it does not uniquely prove it because different compounds can travel similarly. Two spots show at least two detected components, not a guarantee that every component has been resolved or visualised. For repeated trials keep solvent, paper type, temperature and development conditions comparable. An apparatus drawing should show the initial solvent below the baseline and should distinguish the initial setup from the developed chromatogram.
 
-Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
-
 ### Suggested practical SP-6117-45 — Preparing soap from oil and alkali
 
 Aim: connect ester hydrolysis to soap formation. A teacher-controlled preparation uses a measured oil or fat portion, an appropriate alkali solution, a beaker or reaction vessel, stirring equipment and a controlled warming bath. Alkali can damage skin and eyes; wear the specified protection and follow the teacher's quantities and handling procedure. If any flammable solvent is included in the approved method, avoid flames and control vapour exposure.
@@ -376,13 +374,13 @@ Compare a small appropriately prepared soap solution with an unreacted oil contr
 
 ![Generic units preserve carbonyl and joining-oxygen connectivity.](visuals/VIS-6117-10-02.svg)
 
-Generic units preserve carbonyl and joining-oxygen connectivity. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Generic units preserve carbonyl and joining-oxygen connectivity.
 
 ### Hydrolysate chromatogram
 
 ![Chromatography diagram with ruler, separate learner and answer panels, and covered-chamber setup.](visuals/VIS-6117-10-04.svg)
 
-Chromatography diagram with ruler, separate learner and answer panels, and covered-chamber setup. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Chromatography diagram with ruler, separate learner and answer panels, and covered-chamber setup.
 
 ---
 

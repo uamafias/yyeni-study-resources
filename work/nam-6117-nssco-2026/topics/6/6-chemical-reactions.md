@@ -88,7 +88,7 @@ Compare equal small teacher-prepared silver chloride samples, one exposed to lig
 
 ![Separate exothermic and endothermic profiles show activation barriers and net energy changes.](visuals/VIS-6117-6-01.svg)
 
-Separate exothermic and endothermic profiles show activation barriers and net energy changes. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Separate exothermic and endothermic profiles show activation barriers and net energy changes.
 
 ---
 
@@ -226,8 +226,6 @@ Plot cumulative gas volume against time. The slope represents the gas-production
 
 To compare particle size, use equal masses of the same carbonate, the same acid concentration and excess volume, and matched temperature. Start timing consistently when reactants are brought together. A leak or delay in fitting the bung can lower the measured volume without changing the chemistry, so check the apparatus and use a consistent starting method. Draw a gas-tight flask-to-syringe connection with no sealed outlet blocking the evolving gas. Repeat trials before deciding that a small difference is reliable. The model prediction is a steeper early curve for greater exposed surface area; equal amounts of the limiting reactant should give the same final gas amount under matched collection conditions.
 
-Choose the operation and instrument to match the measured quantity; keep sample identity clear and use separate clean portions when reagents could interfere. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. Label graph axes with quantities and units, plot measured points on suitable scales, and distinguish an interval gradient from an instantaneous tangent gradient. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
-
 ### Suggested practical SP-6117-27 — Comparing rates with dilute acid
 
 Under teacher supervision, react equal masses of carbonate chips with equal volumes of dilute acid at several concentrations, each chosen to leave acid in excess. Collect carbon dioxide in a gas syringe and record volume at fixed intervals, starting consistently at mixing. Keep particle-size range and temperature constant. Plot volume against time and compare early gradients; the larger gradient indicates faster measured gas production. Repeat trials to judge spread and check for leakage or delayed collection. A metal–acid alternative produces hydrogen, so ignition sources must be excluded and product identity distinguished. Keep the gas outlet unobstructed. Explain a concentration effect by particle encounters rather than claiming that a larger endpoint alone proves a faster reaction.
@@ -240,7 +238,7 @@ In a teacher-supervised comparison, manganese(IV) oxide increases oxygen evoluti
 
 ![chip and powder data distinguish initial gradient from final gas volume.](visuals/VIS-6117-6-02.svg)
 
-chip and powder data distinguish initial gradient from final gas volume. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+chip and powder data distinguish initial gradient from final gas volume.
 
 ---
 
@@ -290,7 +288,7 @@ Use teacher demonstrations or recorded observations of small hydrated-salt sampl
 
 ![Equal forward and reverse rates do not require equal reactant and product amounts.](visuals/VIS-6117-6-03.svg)
 
-Equal forward and reverse rates do not require equal reactant and product amounts. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Equal forward and reverse rates do not require equal reactant and product amounts.
 ## 6.6 — Redox
 
 ### Oxidation

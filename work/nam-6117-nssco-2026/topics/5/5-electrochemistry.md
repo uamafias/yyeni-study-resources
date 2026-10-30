@@ -92,9 +92,7 @@ At either cathode, Cu²⁺ + 2e⁻ → Cu deposits copper. At the carbon anode, 
 
 Suppose the copper cathode gains mass in both cells, but the blue colour fades noticeably only in the carbon-anode cell. This is consistent with removal of Cu²⁺ without replacement at that anode. Copper dissolving from a copper anode replenishes Cu²⁺, so concentration can remain approximately constant under matched conditions. Colour alone is qualitative evidence; different starting concentrations or path lengths can mislead.
 
-A fair comparison uses matched initial solution concentration and volume, current, time and electrode immersion. Record masses before and after after consistent washing and drying. Observe any anode gas in a supervised setup. Do not infer the anode reaction from polarity alone: the electrode material and electrolyte also matter.
-
-An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. An observation can support an identification without proving purity; shared observations require another discriminating test. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
+A fair comparison uses matched initial solution concentration and volume, current, time and electrode immersion. Record masses before and after consistent washing and drying. Observe any anode gas in a supervised setup. Do not infer the anode reaction from polarity alone: the electrode material and electrolyte also matter.
 
 ### Electroplating
 
@@ -138,13 +136,13 @@ For a teacher demonstration, clean a small zinc object and connect it to the neg
 
 ![Open aqueous copper(II) sulfate cell with separated carbon electrodes and collection above the anode.](visuals/VIS-6117-5-01.svg)
 
-Open aqueous copper(II) sulfate cell with separated carbon electrodes and collection above the anode. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Open aqueous copper(II) sulfate cell with separated carbon electrodes and collection above the anode.
 
 ### Comparing anodes
 
 ![Carbon and copper anodes give different reactions in aqueous copper(II) sulfate.](visuals/VIS-6117-5-02.svg)
 
-Carbon and copper anodes give different reactions in aqueous copper(II) sulfate. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Carbon and copper anodes give different reactions in aqueous copper(II) sulfate.
 
 ### Connections
 

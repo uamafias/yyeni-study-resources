@@ -94,8 +94,6 @@ Read delivered soap volume as final minus initial burette reading. If the initia
 
 Repeat the comparisons because a lather endpoint is partly observational. Positive chemical tests for water establish its presence, while hardness and purity are different questions.
 
-Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument. An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. An observation can support an identification without proving purity; shared observations require another discriminating test. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
-
 ### Removing carbonate scale
 
 A suitable dilute acid reacts with carbonate scale to form a salt, carbon dioxide and water. For calcium carbonate and hydrochloric acid, CaCO3 + 2HCl → CaCl2 + CO2 + H2O. The deposit decreases and bubbles of carbon dioxide can be observed. The reaction is chemical removal, not merely mechanical scraping. The acid must be compatible with the material of the vessel and used according to a supervised or product-approved procedure.
@@ -142,7 +140,7 @@ The syllabus emphasises that seawater desalination is expensive and does not pre
 
 Aim: compare hardness-ion effects using equal water portions. Prepare teacher-approved dilute calcium salt, magnesium salt and sodium chloride solutions, plus a soft-water control. Use identical tubes, measured soap solution, a timer and a graduated addition device. Keep water volume, temperature, soap concentration, shaking and the persistent-lather criterion constant.
 
-Add soap in measured increments, stopper and shake consistently, and record the volume needed for lather lasting 30 s. Calcium and magnesium solutions generally form scum and need more soap than the soft-water control. Sodium chloride is a useful contrast because the presence of dissolved ions alone does not define hardness. Example volumes for equal portions are 2.0 cm³ control, 2.0 cm³ sodium chloride, 5.5 cm³ calcium salt and 5.0 cm³ magnesium salt; these are synthetic practice data, not universal values.
+Add soap in measured increments, stopper and shake consistently, and record the volume needed for lather lasting 30 s. Calcium and magnesium solutions generally form scum and need more soap than the soft-water control. Sodium chloride is a useful contrast because the presence of dissolved ions alone does not define hardness. Example volumes for equal portions are 2.0 cm³ control, 2.0 cm³ sodium chloride, 5.5 cm³ calcium salt and 5.0 cm³ magnesium salt; these are results for these test conditions, not universal values.
 
 Repeat and compare means. The conclusion concerns the supplied concentrations and method; it does not rank calcium and magnesium as intrinsically harder from those numbers alone. Clean soap spills and use the teacher's handling rules. Separate observations of precipitate from observations of foam.
 
@@ -174,13 +172,13 @@ For a fair rate comparison keep acid concentration, temperature, chip mass and e
 
 ![Solid-removal stages followed by disinfection; sludge leaves through a waste path.](visuals/VIS-6117-11-01.svg)
 
-Solid-removal stages followed by disinfection; sludge leaves through a waste path. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Solid-removal stages followed by disinfection; sludge leaves through a waste path.
 
 ### Hardness apparatus and scales
 
 ![Soap-test diagram with unkeyed burette scale panels and a separate answer overlay.](visuals/VIS-6117-11-04.svg)
 
-Soap-test diagram with unkeyed burette scale panels and a separate answer overlay. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Soap-test diagram with unkeyed burette scale panels and a separate answer overlay.
 
 ### Connections
 
@@ -222,7 +220,7 @@ Aim: identify the gas released by a fermenting sugar mixture. Use teacher-prepar
 
 Collect or pass the evolved gas through limewater; initial milkiness supports CO2 formation. The mixture may show bubbles, but bubbles alone do not identify the gas. Fermentation also forms ethanol, as taught in Topic 10. Keep sugar concentration, mixture volume and temperature comparable across trials. Excessive heat can denature enzymes, while low temperature slows the process.
 
-Record observations over a stated time and avoid interpreting unequal temperatures as evidence for different yeast activity. Do not taste the fermented laboratory mixture. The original equation C6H12O6 → 2C2H5OH + 2CO2 conserves atoms and links the gas test to a specific chemical process.
+Record observations over a stated time and avoid interpreting unequal temperatures as evidence for different yeast activity. Do not taste the fermented laboratory mixture. The equation C6H12O6 → 2C2H5OH + 2CO2 conserves atoms and links the gas test to a specific chemical process.
 
 ---
 
@@ -268,7 +266,7 @@ A packaging explanation should say that replacing much of the oxygen can slow ox
 
 ![Remove water and CO2 before liquefaction; lower-boiling nitrogen separates from oxygen.](visuals/VIS-6117-11-02.svg)
 
-Remove water and CO2 before liquefaction; lower-boiling nitrogen separates from oxygen. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Remove water and CO2 before liquefaction; lower-boiling nitrogen separates from oxygen.
 
 ---
 
@@ -410,4 +408,4 @@ Record initial material, reagent, observation and inference in separate columns.
 
 ![Typical essential conditions, product recovery and appropriate absorption sequence.](visuals/VIS-6117-11-03.svg)
 
-Typical essential conditions, product recovery and appropriate absorption sequence. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Typical essential conditions, product recovery and appropriate absorption sequence.

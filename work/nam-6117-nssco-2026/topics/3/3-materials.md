@@ -112,8 +112,6 @@ Plot time on the horizontal axis and temperature on the vertical axis using a sc
 
 The comparison is about the fabric arrangement tested, not every possible use of the material. Match water volume, starting temperature, vessel, lids and surroundings; otherwise a difference can have another cause. Keep the thermometer bulb in the water without touching the beaker. Repeat both arrangements and compare the repeated results. Water spilled onto one jacket changes its condition, so that trial should be investigated and repeated rather than quietly averaged with the dry tests.
 
-Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. Label graph axes with quantities and units, plot measured points on suitable scales, and distinguish an interval gradient from an instantaneous tangent gradient. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias.
-
 ### Making concrete
 
 Concrete is prepared by mixing cement, sand and crushed stone or other suitable aggregate, then adding a controlled amount of water. Water allows the cement to undergo hydration reactions that form a hardened binder around the aggregate. Setting is therefore not simply the evaporation of all the water. Appropriate curing maintains conditions that allow the binder to develop. The precise proportions and treatment depend on the intended material specification.
@@ -137,10 +135,6 @@ Survey an accessible building without disturbing its structure. Record component
 ### Suggested practical SP-6117-21 — Comparing insulation
 
 Under teacher supervision, compare equal-thickness roofing-material samples in the same small model enclosure using safe warm-water containers as a heat source. Record temperatures at equal times with the same starting temperature, exposed area and room conditions. A slower temperature change can support better insulation under those conditions. Repeat and compare results; gaps around samples or unequal thickness are alternative explanations. Do not use an open flame or high-temperature heater to test unknown materials. The model simplifies ventilation and weather conditions found in real roofs.
-
-### Connections
-
-Connect material properties to Matter and bonding, Organic chemistry and Environmental and industrial chemistry. Distinguish a measured observation from an inferred structure or environmental claim.
 
 ---
 
@@ -194,11 +188,7 @@ Use a teacher demonstration of alkaline hydrolysis of a fat or oil, with eye pro
 
 ![Hydrophilic heads face water; hydrophobic tails enter grease.](visuals/VIS-6117-3-01.svg)
 
-Hydrophilic heads face water; hydrophobic tails enter grease. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
-
-### Connections
-
-Connect material properties to Matter and bonding, Organic chemistry and Environmental and industrial chemistry. Distinguish a measured observation from an inferred structure or environmental claim.
+Hydrophilic heads face water; hydrophobic tails enter grease.
 
 ---
 
@@ -212,7 +202,7 @@ Producing or organising a material at a small scale can change how it interacts 
 
 ### The nanoscale
 
-The approximate nanoscale range used here is 1–100 nanometres in at least one dimension. One nanometre is 10⁻9 metres. A particle can therefore contain many atoms while being far smaller than an ordinary visible grain. A thin sheet can have a nanoscale thickness even if its length and width are much greater. Do not assume that every dimension must be identical or that a material is nanoscale merely because its packaging uses the word small.
+The approximate nanoscale range used here is 1–100 nanometres in at least one dimension. One nanometre is 10⁻⁹ metres. A particle can therefore contain many atoms while being far smaller than an ordinary visible grain. A thin sheet can have a nanoscale thickness even if its length and width are much greater. Do not assume that every dimension must be identical or that a material is nanoscale merely because its packaging uses the word small.
 
 Compare units carefully: 1 micrometre is 1000 nanometres, while 1 millimetre is one million nanometres. A 50 nm particle lies within the stated range; a 5000 nm particle does not on that dimension. A logarithmic size ladder gives equal spacing to equal multiplication factors, not equal differences in size. Label that scale explicitly so that a drawing does not falsely suggest 1 nm and 1 mm differ by only a few times. For example, a stated thickness of 0.050 micrometres converts to 0.050 × 1000 = 50 nm, within the stated nanoscale range. A thickness of 0.50 micrometres gives 500 nm, outside that range on the measured dimension. Check the decimal place before classifying a size: a tenfold error can reverse the conclusion. These conversions describe size; they do not establish toxicity, usefulness or chemical identity by themselves.
 
@@ -232,8 +222,4 @@ These are application categories rather than a promise that any nanoparticle wil
 
 ![Logarithmic scale distinguishing nanometres, micrometres and millimetres.](visuals/VIS-6117-3-02.svg)
 
-Logarithmic scale distinguishing nanometres, micrometres and millimetres. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
-
-### Connections
-
-Connect material properties to Matter and bonding, Organic chemistry and Environmental and industrial chemistry. Distinguish a measured observation from an inferred structure or environmental claim.
+Logarithmic scale distinguishing nanometres, micrometres and millimetres.

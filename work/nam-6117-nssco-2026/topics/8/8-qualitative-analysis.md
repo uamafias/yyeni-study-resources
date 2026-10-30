@@ -34,8 +34,6 @@ For a chloride test on another fresh portion, first add dilute nitric acid, then
 
 Positive cation and anion tests support their presence, not the absence of every impurity. Check unexpected observations with fresh portions, suitable controls and a repeat. A diagram should show labelled test tubes and controlled dropwise addition rather than a reagent bottle poured into an unlabelled mixture. Keep gases, solutions and precipitates distinct in the written record.
 
-Choose the operation and instrument to match the measured quantity; keep sample identity clear and use separate clean portions when reagents could interfere. An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. A conclusion should name the observed change and its comparison or control, rather than substituting a remembered expectation for evidence. An observation can support an identification without proving purity; shared observations require another discriminating test.
-
 ### Calcium ions
 
 Calcium ions give a white precipitate with aqueous sodium hydroxide, insoluble in excess. With aqueous ammonia there is no precipitate or only a very slight white precipitate under the syllabus test conditions. Preserve this qualification rather than treating every slight cloudiness as evidence against calcium.
@@ -179,13 +177,13 @@ Take separate labelled portions of a soluble unknown. Use sodium hydroxide and, 
 
 ![Unknown X observation matrix without identities; separate answer overlay supplied.](visuals/VIS-6117-8-01.svg)
 
-Unknown X observation matrix without identities; separate answer overlay supplied. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Unknown X observation matrix without identities; separate answer overlay supplied.
 
 ### Copper and ammonia
 
 ![Light-blue precipitate dissolves in excess ammonia to a deep-blue solution.](visuals/VIS-6117-8-02.svg)
 
-Light-blue precipitate dissolves in excess ammonia to a deep-blue solution. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Light-blue precipitate dissolves in excess ammonia to a deep-blue solution.
 
 ### Connections
 
@@ -237,4 +235,4 @@ Use teacher-provided small samples or recorded observations to distinguish the s
 
 ![Separate apparatus panels distinguish glowing splints, damp litmus, limewater and clean-wire flame testing.](visuals/VIS-6117-8-03.svg)
 
-Separate apparatus panels distinguish glowing splints, damp litmus, limewater and clean-wire flame testing. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Separate apparatus panels distinguish glowing splints, damp litmus, limewater and clean-wire flame testing.

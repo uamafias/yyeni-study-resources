@@ -192,8 +192,6 @@ The practical sequence matters. Zero the balance, dry the pebble before weighing
 
 If a repeat displacement is 12.6 cm³, the difference is evidence of measurement spread, not permission to select the result giving a preferred density. Repeat the whole measurement, record all valid values and investigate obvious causes such as trapped bubbles. A constant additive error in both cylinder readings cancels in the difference, but lost water or a changing viewing angle does not. Compare the result with a known reference only after establishing the unit and measurement method.
 
-Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. Label graph axes with quantities and units, plot measured points on suitable scales, and distinguish an interval gradient from an instantaneous tangent gradient. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias.
-
 ---
 
 ## 1.5 — Experimental techniques

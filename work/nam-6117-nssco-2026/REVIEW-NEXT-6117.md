@@ -1,3 +1,5 @@
+> **Current re-check scope:** use [REVIEW-DELTA-2026-10-30.md](REVIEW-DELTA-2026-10-30.md) on the repaired working tree. The previous independent full-card/activity review is recorded there. The original broad brief below is historical; do not claim its remaining coverage is complete.
+
 # Independent re-review — NSSCO Chemistry 6117
 
 Read TEAM-PLAYBOOK.md Step 6 and the reviewer role brief. Review `work/nam-6117-nssco-2026/`, authored by Codex. Start with `FINAL-EDITORIAL-HANDOVER-6117.md`, especially “Latest reviewer follow-up — implemented”. Earlier reports contain superseded counts and findings; use the current files as evidence.

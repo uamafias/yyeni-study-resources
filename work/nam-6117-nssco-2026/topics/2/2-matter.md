@@ -60,7 +60,7 @@ Compare a small drop of food colouring in two equal volumes of still water at di
 
 ![Solid, liquid and gas particle arrangements; identical particle sizes throughout.](visuals/VIS-6117-2-01.svg)
 
-Solid, liquid and gas particle arrangements; identical particle sizes throughout. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Solid, liquid and gas particle arrangements; identical particle sizes throughout.
 
 ---
 
@@ -136,7 +136,7 @@ For ⁴⁰₂₀Ca²⁺, neutron number is 40 − 20 = 20 and electron number is
 
 ![Sodium-23 nucleus unchanged on formation of Na⁺; shell counts differ by one electron.](visuals/VIS-6117-2-01.svg)
 
-Sodium-23 nucleus unchanged on formation of Na⁺; shell counts differ by one electron. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Sodium-23 nucleus unchanged on formation of Na⁺; shell counts differ by one electron.
 
 ---
 
@@ -181,8 +181,6 @@ In a Bohr diagram for a first-twenty-element atom, label the nucleus, then distr
 An ionic dot-and-cross diagram shows transferred electrons, not a shared pair between the final ions. For sodium chloride, sodium loses its outer electron and chlorine gains it. Enclose each resulting ion in brackets and place the charge outside. Chloride’s outer shell contains seven original electrons and one transferred electron. For a Group II metal with a Group VII non-metal, two non-metal ions are needed for each 2+ metal ion. Distinguish dots from crosses by origin; all electrons have the same charge.
 
 Isotopes have the same proton number but different neutron counts. Relative atomic mass is an abundance-weighted mean, not an unweighted midpoint unless the isotope abundances are equal. A sample made of 80% mass-10 atoms and 20% mass-11 atoms has mean mass 10.2 relative units. Changing abundance changes the mean without changing either isotope’s mass. Radioactive decay changes an unstable nucleus by emission of radiation/particles; it is not loss of an outer-shell electron in a chemical reaction. No identification of radiation types or half-life calculation is required here.
-
-Group I metals react with cold water to form an alkaline hydroxide solution and hydrogen. Lithium, sodium and potassium become more vigorous down the group. Balance atoms when writing an equation: two metal atoms and two water molecules produce two hydroxide formula units and one hydrogen molecule. These are teacher demonstrations; potassium and sodium must not be tested with dilute acids.
 
 ---
 
@@ -243,6 +241,8 @@ Flame tests help distinguish these metals in their compounds: lithium gives crim
 The Group I metals studied here react with water to form soluble hydroxides and hydrogen. Sodium hydroxide dissolves to give sodium ions and hydroxide ions, while potassium hydroxide gives potassium ions and hydroxide ions. These are alkaline solutions. The hydroxides are not obtained as insoluble precipitates simply by adding hydroxide ions to solutions of their salts. This contrasts with many metal-ion tests in qualitative analysis, where an insoluble hydroxide appears.
 
 A precipitate is an insoluble solid formed from substances in solution. A colourless solution is not a white precipitate, and gas bubbles are not a precipitate either. If sodium hydroxide is added to a solution containing only potassium ions and a suitable soluble counter-ion, no potassium-hydroxide precipitate is expected. That result concerns solubility rather than an absence of particles: the ions remain dispersed in the solution. When writing observations, report “no precipitate” rather than “nothing exists”. The same distinction helps interpret negative tests without inventing a visible reaction.
+
+Group I metals react with cold water to form an alkaline hydroxide solution and hydrogen. Lithium, sodium and potassium become more vigorous down the group. Balance atoms when writing an equation: two metal atoms and two water molecules produce two hydroxide formula units and one hydrogen molecule. These are teacher demonstrations; potassium and sodium must not be tested with dilute acids.
 
 ### The halogens
 
@@ -396,8 +396,6 @@ Test the solutions using the same supply voltage, electrode spacing and immersed
 
 Solid sodium chloride contains ions but they cannot move through the solid lattice. The aqueous salt has mobile ions. This distinction explains why counting charged particles without considering their mobility is insufficient. A metal strip, tested separately in a suitable circuit, conducts by mobile electrons instead. If the electrode gap was smaller for the salt solution, the current difference alone would be an unfair comparison; repeat with the same gap. Describe the observation first, then infer the charge carrier, and finally state the control that makes the comparison interpretable.
 
-An apparatus diagram needs labelled components, correct connections and the positions that affect the measurement; artistic perspective is unnecessary. An observation can support an identification without proving purity; shared observations require another discriminating test. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias.
-
 ---
 
 ## 2.4.3 — Molecules and covalent bonds
@@ -500,21 +498,21 @@ The two O–H bonds and two oxygen lone pairs belong to the electron arrangement
 
 ### Methane: molecular shape
 
-The molecular shape of methane, CH4, is tetrahedral. C is central and the four H atoms point towards the corners of a tetrahedron. A correct formula does not by itself guarantee a correct shape drawing.
+The molecular shape of methane, CH4, is tetrahedral. C is central and the four H atoms point towards the corners of a tetrahedron.
 
-A flat cross is a useful connectivity drawing but is not the molecular shape. Use ordinary lines for bonds in the plane and a wedge/dashed bond convention to show bonds pointing towards and away from the viewer. Use an explicit legend for a three-dimensional drawing. Bond angles need not be invented when the task asks only for the shape name.
+A flat cross is a useful connectivity drawing but is not the molecular shape. Use ordinary lines for bonds in the plane and a wedge/dashed bond convention to show bonds pointing towards and away from the viewer.
 
 ### Ammonia: molecular shape
 
-The molecular shape of ammonia, NH3, is pyramidal. N lies above a triangular arrangement of three H atoms. A correct formula does not by itself guarantee a correct shape drawing.
+The molecular shape of ammonia, NH3, is pyramidal. N lies above a triangular arrangement of three H atoms.
 
-The nitrogen lone pair is part of the electron arrangement but is not a fourth hydrogen atom. A triangular flat drawing misses the height of the pyramid. A wedge and dashed bond can make the three-dimensional arrangement clear. Use an explicit legend for a three-dimensional drawing. Bond angles need not be invented when the task asks only for the shape name.
+The nitrogen lone pair is part of the electron arrangement but is not a fourth hydrogen atom. A triangular flat drawing misses the height of the pyramid. A wedge and dashed bond can make the three-dimensional arrangement clear.
 
 ### Carbon dioxide: molecular shape
 
-The molecular shape of carbon dioxide, CO2, is linear. The O, C and O atoms lie on one straight line. A correct formula does not by itself guarantee a correct shape drawing.
+The molecular shape of carbon dioxide, CO2, is linear. The O, C and O atoms lie on one straight line.
 
-Each C=O bond contains two shared electron pairs, but a double bond does not bend the molecule. Keep the two oxygen atoms on opposite sides of the central carbon. A V-shaped drawing would describe the wrong shape. Use an explicit legend for a three-dimensional drawing. Bond angles need not be invented when the task asks only for the shape name.
+Each C=O bond contains two shared electron pairs, but a double bond does not bend the molecule. Keep the two oxygen atoms on opposite sides of the central carbon. A V-shaped drawing would describe the wrong shape.
 
 ### Bonds within molecules and forces between them
 
@@ -542,13 +540,13 @@ Compare supplied data for sodium chloride, sugar and a volatile molecular substa
 
 ![All ten required molecular cases, with complete outer-electron counts and a dot-and-cross key.](visuals/VIS-6117-2-02.svg)
 
-All ten required molecular cases, with complete outer-electron counts and a dot-and-cross key. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+All ten required molecular cases, with complete outer-electron counts and a dot-and-cross key.
 
 ### Molecular shape reference
 
 ![Water bent, methane tetrahedral, ammonia pyramidal and carbon dioxide linear.](visuals/VIS-6117-2-03.svg)
 
-Water bent, methane tetrahedral, ammonia pyramidal and carbon dioxide linear. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Water bent, methane tetrahedral, ammonia pyramidal and carbon dioxide linear.
 
 ---
 
@@ -582,7 +580,7 @@ State the shared structure before explaining a shared property. High melting poi
 
 ![Diamond and graphite network fragments and a metallic model; bonds at boundaries continue beyond the drawing.](visuals/VIS-6117-2-04.svg)
 
-Diamond and graphite network fragments and a metallic model; bonds at boundaries continue beyond the drawing. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Diamond and graphite network fragments and a metallic model; bonds at boundaries continue beyond the drawing.
 
 ### Connections
 

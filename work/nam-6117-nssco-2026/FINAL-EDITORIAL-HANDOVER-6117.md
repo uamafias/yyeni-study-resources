@@ -1,3 +1,7 @@
+> **Latest re-review:** must-fix list cleared by the independent reviewer; four minor wording items subsequently implemented and checked. All 12 topic QA runs and 12 audit/regression scripts pass. Independent coverage and operator AO/recall/publication decisions remain open. See the minor-follow-up section of [the review delta](REVIEW-DELTA-2026-10-30.md).
+
+> **30 October 2026 review repair:** [Changed-item re-review packet](REVIEW-DELTA-2026-10-30.md). All latest named defects addressed, including optional items; counts clarified as 20 MISCON-subtype cards, 19 examiner mappings and eight image-bearing activities. Current author recall/AO figures remain unapproved; publication stays on hold. This working-tree repair follows the previously committed snapshot.
+
 > **Repository checkpoint:** the corrected review snapshot was committed locally as `6bb957f` on `chemistry-6117-approved-plan` after the user instructed us to move on. No push or learner publication. Start independent review with [REVIEW-NEXT-6117.md](REVIEW-NEXT-6117.md). Earlier “no commit” statements below describe the repair pass before this checkpoint.
 
 # NSSCO Chemistry 6117 — final editorial repair handover

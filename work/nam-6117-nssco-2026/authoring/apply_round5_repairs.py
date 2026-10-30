@@ -11,6 +11,7 @@ from round9_repairs import apply_card as apply_round9,apply_part as part_round9,
 from final_content_edits import apply_card as final_card,apply_mc as final_mc
 from final_notes_rebuild import rebuild as final_notes
 from round10_repairs import card as round10_card,part as round10_part
+from round11_repairs import card as round11_card,part as round11_part,whole as round11_whole
 W=Path(__file__).resolve().parents[1];R=W.parents[1]
 sys.path.insert(0,str(R/'standard/v0.2.0-draft/checks'))
 from yyeni_checks import _artefact_text
@@ -61,6 +62,7 @@ for t in range(1,13):
   rf=final_card(x,key)
   if rf is not None:recall=rf
   round10_card(x,key)
+  round11_card(x,key)
   x['command_word']=x['prompt'].split()[0]
   # IDs identify current subtype; a migration file preserves traceability to old slots.
   new_id=x['item_id'].rsplit('-',1)[0]+'-'+x['subtype']
@@ -75,6 +77,7 @@ for t in range(1,13):
   for f in ['prompt','canonical_answer','marking_guidance']:x[f]=n[f]
   oids=['OBJ-6117-'+z for z in n['objectives']];x.update(item_id=iid,objective_ids=oids,subtype=n['sub'],assessment_objectives=[n['ao']],blooms_level=n['bloom'],mark_tariff=tariff(n['marking_guidance']),command_word=n['prompt'].split()[0],claim_ids=[],claims_seen={},context={'sector':None,'business_size':None,'ownership':None,'situation':None,'facts':[]},difficulty=2,prerequisite_item_ids=[])
   for k in ['misconception_entry','prior_hash','repair_note','reviewed_unchanged']:x.pop(k,None)
+  round11_card(x,f'{t}-{iid.split("-")[3]}')
   # One explicit teaching claim per objective, supported by the supplemental prose.
   for oid in oids:
    cid=f'CLM-6117-R5-{t}-{nextnum-1}-{len(x["claim_ids"])+1}'
@@ -160,7 +163,9 @@ for t in range(1,13):
   if z['task_id'].endswith('P01') and t<12:
    z['prompt']=re.sub(r'(?m)^([A-D]\. .+?)[.。]+$',r'\1',z['prompt'])
   round10_part(z,t)
-  row=copy.deepcopy(oldrows[z['task_id']+':'+z['part']]);row.update(marks=z['mark_tariff'],prompt=z['prompt'],credit_points=z['marking_guidance'],recall_marks=recall,non_recall_marks=z['mark_tariff']-recall,fingerprint=fp(z),basis='Author reclassification after removing learner cues; familiar observation credit counted as recall, numerical/evidence processing separately.');rows.append(row)
+  prior_part=z['part']
+  round11_part(z,t)
+  row=copy.deepcopy(oldrows[z['task_id']+':'+prior_part]);row.update(id=z['task_id']+':'+z['part'],marks=z['mark_tariff'],prompt=z['prompt'],credit_points=z['marking_guidance'],recall_marks=recall,non_recall_marks=z['mark_tariff']-recall,fingerprint=fp(z),basis='Author reclassification after removing learner cues; familiar observation credit counted as recall, numerical/evidence processing separately.');rows.append(row)
  for x in d['items']:
   if x['item_type']=='flashcard':continue
   ps=[p for p in pp['parts'] if p['task_id']==x['item_id']]
@@ -175,6 +180,7 @@ for t in range(1,13):
   prompt='\n\n'.join((f"({p['part']}) " if not p['part'].startswith('credit-group') else '')+p['prompt']+f" [{p['mark_tariff']}]" for p in ps)
   if x['item_id']=='ITEM-6117-8-P03':prompt=SHARED+'\n\n'+prompt
   x['prompt']=prompt+'\n\n'+'\n'.join(i for i in images if i not in prompt)
+  round11_whole(x,t)
   x['canonical_answer']='\n\n'.join(f"({p['part']}) "+p['canonical_answer'] for p in ps)
   x['marking_guidance']=[f"Part {p['part']}: {g}" for p in ps for g in p['marking_guidance']]
   x['objective_ids']=list(dict.fromkeys(oid for p in ps for oid in p['objective_ids']))

@@ -73,3 +73,6 @@ OPTIONS.update({
 # Complete forward-direction test practice without adding duplicate item slots.
 card('8-027','Describe the reagent sequence and positive observation for chloride ions in a fresh aqueous sample.','Acidify with dilute nitric acid, then add aqueous silver nitrate. A white precipitate forms.','Dilute nitric acid followed by aqueous silver nitrate (1).|White precipitate (1).',2,'PROC','A','Remember')
 card('8-029','Describe how to test a solution for bromide ions, naming the acid, the test reagent and the visible result.','Acidify with dilute nitric acid, then add aqueous silver nitrate. A cream precipitate forms.','Dilute nitric acid followed by aqueous silver nitrate (1).|Cream precipitate (1).',2,'PROC','A','Remember')
+
+# Every option in this flame-colour question is now a flame colour.
+OPTIONS[(8,"5")]=["Lilac","Bright yellow","Brick-red","Red"]

@@ -58,7 +58,7 @@ The volume is the total solution volume, not the volume of solvent before dissol
 
 ![Routes between mass, amount, concentration and gas volume at room temperature and pressure.](visuals/VIS-6117-4-01.svg)
 
-Routes between mass, amount, concentration and gas volume at room temperature and pressure. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Routes between mass, amount, concentration and gas volume at room temperature and pressure.
 
 ### Connections
 
@@ -96,23 +96,15 @@ A 15.0 cm³ portion of sodium carbonate solution is completely neutralised by 18
 
 Convert acid volume before using n = cV: 18.6 cm³ = 0.0186 dm³. The acid amount is 0.150 × 0.0186 = 0.00279 mol. Two moles of acid react with one mole of carbonate, so carbonate amount is 0.00279/2 = 0.001395 mol. Its solution volume is 0.0150 dm³, giving concentration 0.001395/0.0150 = 0.0930 mol/dm³. Keep extra digits during the steps and round the final result sensibly.
 
-A pipette transfers the fixed carbonate portion to a conical flask. A burette delivers a variable acid volume. Rinse each volumetric instrument with the solution it will contain; rinse the flask with deionised water. Remove any air bubble from the burette tip before the initial reading. Near the endpoint, add acid dropwise while swirling and observe the methyl-orange endpoint. Obtain repeat titres that agree sufficiently for the instrument and method, rather than averaging a rough trial with careful repeats.
-
-If the final burette reading is 20.10 cm³ and the initial reading is 1.50 cm³, the delivered volume is 18.60 cm³. Neither reading alone is the titre. A drawing should label the burette, tap, flask and indicator, with the burette vertical and its tip over the flask.
-
-For a limiting-reactant calculation, start with the equation rather than comparing masses directly. In Mg + 2HCl → MgCl2 + H2, 4.80 g Mg is 4.80/24.0 = 0.200 mol. If acid contains 0.300 mol HCl, it can react with only 0.150 mol Mg, so acid is limiting. Hydrogen amount is 0.150 mol, not 0.200 mol. At room temperature and pressure using 24 dm³/mol, this is 3.60 dm³. The remaining magnesium is 0.0500 mol, or 1.20 g.
-
-For an empirical formula, convert each mass to an amount and divide by the smallest. A sample contains 2.40 g carbon and 0.600 g hydrogen. Amounts are 0.200 and 0.600 mol, giving a 1:3 ratio and empirical formula CH3. If relative molecular mass is 30, the empirical formula mass is 15, so the molecular formula is C2H6. The multiplier applies to every atom count.
-
-For percentage yield, first identify the theoretical product amount from the limiting reactant. If 7.50 g is theoretically possible and 6.00 g of dry product is isolated, yield is 6.00/7.50 × 100 = 80.0%. A mass recorded before drying can falsely inflate this value. Purity instead compares the desired substance in a sample with the whole sample; it is not the fraction of theoretical product collected.
-
-Read a scale at eye level using its divisions; a meniscus reading describes the liquid level, and reported precision must match the instrument. Choose the operation and instrument to match the measured quantity; keep sample identity clear and use separate clean portions when reagents could interfere. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
-
 ### Gas volume at room conditions
 
 Use a molar gas volume of 24 dm³/mol at room temperature and pressure in these calculations. Then Vgas = n × 24 and n = Vgas/24 when volume is in dm³. Convert cm³ to dm³ before division, or use the equivalent 24 000 cm³/mol consistently. The condition belongs with the numerical value: do not apply 24 dm³/mol to an unspecified high-temperature or different-pressure situation without justification.
 
 Combine gas volume with the balanced-equation ratio where needed. If one mole of a carbonate produces one mole of carbon dioxide, calculate carbonate amount and transfer that amount to CO2 before finding volume. Gas volume ratios equal the equation's mole ratios when the gases are compared at the same temperature and pressure. State whether a calculated product volume is theoretical, especially for a reversible reaction. The question must supply enough conditions and completion assumptions to support the requested result.
+
+### Worked example: limiting reagent, excess metal and gas volume
+
+For a limiting-reactant calculation, start with the equation rather than comparing masses directly. In Mg + 2HCl → MgCl2 + H2, 4.80 g Mg is 4.80/24.0 = 0.200 mol. If acid contains 0.300 mol HCl, it can react with only 0.150 mol Mg, so acid is limiting. Hydrogen amount is 0.150 mol, not 0.200 mol. At room temperature and pressure using 24 dm³/mol, this is 3.60 dm³. The remaining magnesium is 0.0500 mol, or 1.20 g.
 
 ### Empirical formula from mass data
 
@@ -126,6 +118,10 @@ Calculate the empirical formula mass, then divide the supplied relative molecula
 
 The molecular formula must preserve the empirical atom ratio and have the stated relative molecular mass. These are independent checks. A formula can have the correct ratio but the wrong total mass if the multiplier is wrong. Conversely, a guessed formula with the right mass may not preserve the measured composition. Keep implied subscripts of one visible in the working when that helps. A molecular formula specifies atom counts but does not necessarily identify one unique structure; different compounds can share a formula. Do not add a structural claim that the calculation cannot establish.
 
+### Worked example: empirical and molecular formulae
+
+For an empirical formula, convert each mass to an amount and divide by the smallest. A sample contains 2.40 g carbon and 0.600 g hydrogen. Amounts are 0.200 and 0.600 mol, giving a 1:3 ratio and empirical formula CH3. If relative molecular mass is 30, the empirical formula mass is 15, so the molecular formula is C2H6. The multiplier applies to every atom count.
+
 ### Percentage composition
 
 Percentage by mass of an element in a compound equals its total mass contribution in the formula divided by the relative formula mass, multiplied by 100. Include every atom of that element, including those in repeated bracketed groups. In NH4NO3 there are two nitrogen atoms, not one, so nitrogen contributes 28 when Ar(N) = 14.
@@ -138,6 +134,10 @@ Percentage yield compares the actual product obtained with the theoretical maxim
 
 An actual yield can be lower because reaction is incomplete, competing reactions occur, or product is lost during separation and transfer. An apparent yield above 100% suggests a problem such as retained solvent, contamination or measurement error, rather than extra matter being created. Rearrange the percentage relationship when actual or theoretical mass is unknown. For a 75% yield, use the fraction 0.75; multiplying by 75 without dividing by 100 gives the wrong scale. State whether the measured product was dry and pure when those assumptions matter.
 
+### Worked example: percentage yield
+
+For percentage yield, first identify the theoretical product amount from the limiting reactant. If 7.50 g is theoretically possible and 6.00 g of dry product is isolated, yield is 6.00/7.50 × 100 = 80.0%. A mass recorded before drying can falsely inflate this value. Purity instead compares the desired substance in a sample with the whole sample; it is not the fraction of theoretical product collected.
+
 ### Percentage purity
 
 Percentage purity is the mass of the desired pure substance divided by the total sample mass, multiplied by 100. It concerns sample composition, whereas percentage yield concerns how much product was obtained relative to a theoretical amount. A sample may have high purity but low recovery yield, so the two percentages answer different questions.
@@ -148,7 +148,13 @@ A reaction can determine the amount of a component if the other sample constitue
 
 ![A clamped burette above a conical flask, with a pipette and filler for the fixed aliquot.](visuals/VIS-6117-4-02.svg)
 
-A clamped burette above a conical flask, with a pipette and filler for the fixed aliquot. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+A clamped burette above a conical flask, with a pipette and filler for the fixed aliquot.
+
+### Worked example: reading a titre and controlling the endpoint
+
+A pipette transfers the fixed carbonate portion to a conical flask. A burette delivers a variable acid volume. Rinse each volumetric instrument with the solution it will contain; rinse the flask with deionised water. Remove any air bubble from the burette tip before the initial reading. Near the endpoint, add acid dropwise while swirling and observe the methyl-orange endpoint. Obtain repeat titres that agree sufficiently for the instrument and method, rather than averaging a rough trial with careful repeats.
+
+If the final burette reading is 20.10 cm³ and the initial reading is 1.50 cm³, the delivered volume is 18.60 cm³. Neither reading alone is the titre. A drawing should label the burette, tap, flask and indicator, with the burette vertical and its tip over the flask.
 
 ### Connections
 

@@ -128,7 +128,7 @@ ax.add_patch(Circle((6.5,5),.5,fill=False));ax.text(6.5,5,'A',ha='center',va='ce
 ax.plot([7,8,8],[5,5,2.5],c='black');ax.plot([1.7,1.7,6,6],[4.4,4,4,3.7],c='black')
 ax.plot([5.3,5.3,8.7,8.7],[3.7,1.5,1.5,3.7],c='black');ax.add_patch(Rectangle((5.35,1.55),3.3,1.6,fc='#d6edf3',zorder=-1))
 ax.plot([6,6],[3.7,2.2],c='#444',lw=5);ax.plot([8,8],[3.7,2.2],c='#444',lw=5)
-ax.annotate('two graphite electrodes',xy=(8,3.2),xytext=(6.8,4.15),arrowprops={'arrowstyle':'->'})
+ax.annotate('two graphite\nelectrodes',xy=(8,3.2),xytext=(9.25,4.1),ha='center',fontsize=9,arrowprops={'arrowstyle':'->'})
 ax.annotate('sample solution',xy=(7,2),xytext=(3.1,2),arrowprops={'arrowstyle':'->'});ax.annotate('',xy=(6,2.7),xytext=(8,2.7),arrowprops={'arrowstyle':'<->'});ax.text(7,2.95,'fixed gap',ha='center',fontsize=9)
 save(fig,'VIS-6117-2-circuit')
 (D/'parameters.json').write_text(json.dumps({'molecules':MOLECULES,'sodium':{'protons':11,'neutrons':12,'atom_shells':[2,8,1],'ion_shells':[2,8]},'circuit_supply_V':3,'scope':'Answer/reference images; no keyed image is placed in an assessed drawing prompt.','electron_count_check':'Every atom contributes its specified valence count; all ten molecular datasets asserted.'},indent=2)+'\n')

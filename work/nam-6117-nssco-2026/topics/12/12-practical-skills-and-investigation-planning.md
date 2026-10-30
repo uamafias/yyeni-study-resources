@@ -28,7 +28,7 @@ For practice data, titres 20.10, 20.20 and 20.10 cm³ are close together, while 
 
 ![Thermometer, burette and cylinder scales with separate keyed readings.](visuals/VIS-6117-12-01.svg)
 
-Thermometer, burette and cylinder scales with separate keyed readings. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Thermometer, burette and cylinder scales with separate keyed readings.
 
 ---
 
@@ -92,7 +92,7 @@ Use a large appropriate triangle on a best-fit line when finding its gradient; n
 
 ![Blank learner grid and separate cooling answer curves.](visuals/VIS-6117-12-02.svg)
 
-Blank learner grid and separate cooling answer curves. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Blank learner grid and separate cooling answer curves.
 
 ---
 
@@ -138,11 +138,11 @@ In the final conclusion, cite the measured difference and its conditions. One pa
 
 ![Cooling-investigation apparatus: labelled answer/reference arrangement.](visuals/VIS-6117-12-03.svg)
 
-Cooling-investigation apparatus: labelled answer/reference arrangement. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Cooling-investigation apparatus: labelled answer/reference arrangement.
 
 ### Connections
 
-Practise these skills in the content topics. The [55-practical index](../../PRACTICAL-INDEX.md) links each suggested experience to its original teaching box. Check the measurement, control and conclusion separately.
+Practise these skills in the content topics. The [55-practical index](../../PRACTICAL-INDEX.md) links each suggested experience to the relevant practical method. Check the measurement, control and conclusion separately.
 
 ---
 
@@ -152,4 +152,4 @@ Practise these skills in the content topics. The [55-practical index](../../PRAC
 
 A qualitative test response should name the reagent or procedure, state the observation and give a conclusion limited by that evidence. For hydrogen, a lighted splint gives a squeaky pop; oxygen relights a glowing splint. Carbon dioxide turns limewater milky. Confusing the splint conditions changes the test, so 'a splint' alone is incomplete.
 
-Ion tests often need observations both before and after adding excess reagent. Copper(II) with aqueous ammonia can first form a light-blue precipitate that dissolves in excess to give a deep-blue solution. The final colour belongs to a solution, not a precipitate. Use fresh portions for separate tests and avoid contamination. The complete test tables are taught in Topic 8. This consolidation chapter organises the syllabus practical skills rather than adding a twelfth content topic to the official eleven; the linked practical index points back to all 55 suggested experiences in their teaching contexts.
+Ion tests often need observations both before and after adding excess reagent. Copper(II) with aqueous ammonia can first form a light-blue precipitate that dissolves in excess to give a deep-blue solution. The final colour belongs to a solution, not a precipitate. Use fresh portions for separate tests and avoid contamination. The complete test tables are taught in Topic 8. Use the practical index to find a method, its measurements and the evidence needed for a conclusion.

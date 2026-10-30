@@ -102,7 +102,7 @@ Compare teacher-prepared strong and weak acid samples with the same stated total
 
 ![Approximate Universal Indicator colours and the pH 0–14 scale; neutral at 7.](visuals/VIS-6117-7-01.svg)
 
-Approximate Universal Indicator colours and the pH 0–14 scale; neutral at 7. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Approximate Universal Indicator colours and the pH 0–14 scale; neutral at 7.
 
 ---
 
@@ -270,8 +270,6 @@ The two solid appearances have different explanations: black residue is excess i
 
 If the cooled liquid gives no crystals, examine whether enough water was removed or whether the solution has cooled sufficiently. Concentrating further may help; adding more oxide to a filtered, fully reacted solution does not address insufficient concentration. A method explanation should name the operation, the material it retains and the property making the separation possible. In an apparatus sketch, put filter paper inside a supported funnel and the collecting vessel below it.
 
-Choose the operation and instrument to match the measured quantity; keep sample identity clear and use separate clean portions when reagents could interfere. A conclusion should name the observed change and its comparison or control, rather than substituting a remembered expectation for evidence. An observation can support an identification without proving purity; shared observations require another discriminating test. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
-
 ### Solubility exceptions and the acid–metal gas
 
 The syllabus’s lead-compound rule has two soluble exceptions: lead nitrate and lead ethanoate. Most hydroxides are insoluble, but Group I hydroxides and barium hydroxide are soluble; calcium hydroxide is only slightly soluble. These exceptions matter when choosing a precipitation method. An intended product that stays dissolved cannot be recovered as a precipitate by ordinary filtration.
@@ -290,4 +288,4 @@ Use teacher-approved soluble reagents that supply the desired product ions. For 
 
 ![Keep the filtrate for soluble CuSO4, but the washed residue for insoluble AgCl.](visuals/VIS-6117-7-02.svg)
 
-Keep the filtrate for soluble CuSO4, but the washed residue for insoluble AgCl. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Keep the filtrate for soluble CuSO4, but the washed residue for insoluble AgCl.

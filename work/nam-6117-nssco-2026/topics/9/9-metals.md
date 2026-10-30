@@ -28,9 +28,9 @@ Alloys can include a non-metal as well as a metal: steel contains iron with carb
 
 ![Equal atoms in regular layers compared with a model alloy containing differently sized atoms.](visuals/VIS-6117-9-02.svg)
 
-Equal atoms in regular layers compared with a model alloy containing differently sized atoms. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
+Equal atoms in regular layers compared with a model alloy containing differently sized atoms.
 
-### Connections
+### Linking properties, structure and reactions
 
 Connect metal behaviour to particle structure, redox and electrolysis. Distinguish intrinsic reactivity from apparent rate, and connect a material choice to the actual property required.
 
@@ -88,11 +88,7 @@ Under supervision, place suitable clean metal strips in separate labelled soluti
 
 ![Matched magnesium/zinc setups with timed gas data and no ignition source.](visuals/VIS-6117-9-03.svg)
 
-Matched magnesium/zinc setups with timed gas data and no ignition source. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
-
-### Connections
-
-Connect metal behaviour to particle structure, redox and electrolysis.
+Matched magnesium/zinc setups with timed gas data and no ignition source.
 
 ---
 
@@ -129,8 +125,6 @@ An iron(III) oxide sample has mass 8.00 g. After a complete, appropriately super
 The equation Fe2O3 + 3CO → 2Fe + 3CO2 describes oxygen transfer. Iron(III) oxide is reduced and carbon monoxide is oxidised. Carbon-containing reducing agents can be used for suitable metals below carbon in the reactivity series; this does not justify using carbon for aluminium oxide. Extraction choices depend on reactivity, not simply whether a substance is called an ore.
 
 A reliable mass comparison requires the same clean container before and after, consistent cooling before weighing and prevention of material loss during transfer. Moist product can make the final mass too high; spilled solid can make it too low. Those errors have opposite effects on the inferred oxygen loss. Repeated heat–cool–weigh cycles can help establish a stable final mass in an appropriate method. The example explains the measurement logic; carbon monoxide reduction is hazardous and is not an instruction for unsupervised generation or handling of the gas. A laboratory method must use an approved supervised apparatus and ventilation.
-
-Choose the operation and instrument to match the measured quantity; keep sample identity clear and use separate clean portions when reagents could interfere. Record quantities and units in table headings and calculate changes by final reading minus initial reading before calculating a rate or ratio. An improvement must identify the source of error and explain how the change reduces it; repeats estimate variation but do not automatically remove a persistent bias. A fair investigation specifies the changed variable, measured outcome, controls, repeats, relevant precautions and the comparison used for its conclusion.
 
 ### Bauxite and aluminium
 
@@ -169,6 +163,12 @@ Coke burns in the incoming hot air: C + O2 → CO2. The hot carbon dioxide react
 Limestone decomposes on heating: CaCO3 → CaO + CO2. Calcium oxide reacts with silica impurity: CaO + SiO2 → CaSiO3, forming slag. Molten iron and slag collect separately, with less dense slag above the iron. Assign the inputs correctly: ore supplies iron, coke supports heating and reduction, and limestone removes silica through a basic oxide. The iron produced contains carbon and other impurities, so it is not automatically steel of the required composition. State the essential chemical reactions rather than treating the furnace as a machine that merely melts ore into metal.
 
 Check the reduction equation by counting atoms: Fe2O3 supplies two iron atoms and three oxygen atoms, while three CO molecules supply three carbon and three more oxygen atoms. The products contain two Fe atoms and three CO2 molecules, accounting for six oxygen atoms in total. Iron oxide loses oxygen and is reduced; carbon monoxide gains oxygen and is oxidised. It is therefore the reducing agent. Limestone has a different role: its calcium oxide product removes silica through an acid–base reaction, not by reducing iron oxide. Confusing these roles leads to a correct-looking list of ingredients with an incorrect explanation. Follow each input to the reaction it enables, and then to the material leaving the furnace. Slag removal and iron collection are physical separations after the relevant chemical changes.
+
+### Blast furnace chemistry
+
+![Essential furnace inputs, reactions and separate iron/slag layers.](visuals/VIS-6117-9-01.svg)
+
+Essential furnace inputs, reactions and separate iron/slag layers.
 
 ### Making steel
 
@@ -211,16 +211,6 @@ Finite does not mean every deposit will run out on a known date, and these notes
 Recycling iron, steel and aluminium can conserve ores, reduce waste and avoid some extraction stages. Aluminium recycling can avoid repeating the electrolysis needed to make primary metal, although remelting still uses energy. Iron and steel scrap can be used in an electric arc furnace with composition control.
 
 Costs and limitations include collection, transport, sorting, contamination and energy use. Mixed alloys may produce an unsuitable composition unless separated or adjusted. A decision should compare the available clean scrap with the required product quality, rather than assume all scrap is interchangeable. For a local collection scheme, reliable sorting may improve recovery quality even if it adds effort. Discuss both benefit and limitation and connect them to a workable improvement. Avoid unsupported percentage energy savings or claims about current scrap prices; the chemical reasoning is sufficient for the syllabus comparison.
-
-### Blast furnace chemistry
-
-![Essential furnace inputs, reactions and separate iron/slag layers.](visuals/VIS-6117-9-01.svg)
-
-Essential furnace inputs, reactions and separate iron/slag layers. These labelled diagrams are answer and teaching references; attempt drawing tasks before consulting them.
-
-### Connections
-
-Connect metal behaviour to particle structure, redox and electrolysis.
 
 ---
 
@@ -281,7 +271,3 @@ Consider three identical iron samples in the same moist air: one painted intact,
 Aluminium and zinc can appear less reactive than their positions in the reactivity series suggest because an adherent surface oxide layer limits contact with air, water or another reagent. For aluminium, a thin oxide film forms readily and can protect the metal beneath. The observation concerns the accessible surface, not a reversal of the metal's intrinsic reactivity ranking.
 
 A fresh or consistently cleaned surface may react differently from one with an established coating. This matters when comparing reaction rates experimentally: unequal surface preparation can make a more reactive metal appear slower. Cleaning must be done safely and consistently under supervision, not by indiscriminate attack with concentrated chemicals. Explain apparent unreactivity through a barrier to contact and then state the evidence needed to test that explanation. Do not claim the oxide film survives every acid or alkali; the surrounding conditions determine whether it remains protective.
-
-### Connections
-
-Connect metal behaviour to particle structure, redox and electrolysis.
