@@ -1,0 +1,265 @@
+profile_id: yyeni-6118-nssco-physics
+version: 0.1.0-draft
+status: draft
+subject_name: NSSCO Physics 6118
+language_variant: British English
+purpose: Full teaching notes, targeted cards and complete practical practice; all content and examples authored
+  originally.
+depth_model:
+  note_mode: full teaching depth
+  rationale: A source bullet is not a card quota. Containers orient; members provide targeted practice. Definition
+    and equation teaching is not repeated as extra recall cards on every numerical outcome.
+answer_structures:
+  DEF:
+  - definition|meaning|condition|equation|unit
+  FEATURE:
+  - property|feature|name|unit|fact
+  DIST:
+  - difference|whereas|both|contrast
+  PROC:
+  - step|procedure|method|action
+  WHY:
+  - reason|because|cause
+  MECH:
+  - cause|because|process
+  - effect|result|so
+  BEN:
+  - benefit|advantage
+  - because|reason
+  LIM:
+  - limitation|error|uncertainty
+  - effect|because
+  APP:
+  - given|situation|data|case
+  - reason|working|because
+  CHAIN:
+  - change|when|if
+  - because|cause
+  - result|effect
+  EVAL:
+  - data|evidence
+  - conclusion|judgement|criterion
+  CALC:
+  - equation|relation|formula
+  - substitution|working|conversion
+  - answer|result|unit
+  INTERP:
+  - axis|axes|graph|diagram|line|reading
+  - feature|direction|gradient|scale|point
+  MISCON:
+  - confusion|error|distinction|incorrect
+  - correct|because|instead
+  SYNTH:
+  - link|combine
+  - reason|result
+  multiple_choice_set:
+  - key|correct option
+  - distractor|wrong option
+  short_answer:
+  - mark|marks
+  - reason|working|definition|feature
+  practical_task:
+  - method|procedure
+  - table|heading
+  - graph|gradient
+  - conclusion|control
+variant_register:
+- term: image
+  variants:
+  - real
+  - virtual
+  consequence: Actual convergence and backward extensions imply different screen behaviour.
+- term: lens
+  variants:
+  - converging
+  - diverging
+  consequence: Diverging lenses are restricted to eye correction; full image construction uses converging lenses.
+conditioned_mechanisms:
+- mechanism_id: CM-6118-MOMENTUM
+  name: Conservation of momentum
+  asserted_when:
+  - \bmomentum\b
+  - \bconserv
+  required_conditions:
+  - name: external resultant force absent
+    any_of:
+    - \bexternal\b
+    - \bisolated\b
+- mechanism_id: CM-6118-OHM
+  name: Ohmic proportionality
+  asserted_when:
+  - \bcurrent\b
+  - \bproportional\b
+  - \bvoltage\b
+  required_conditions:
+  - name: temperature remains fixed
+    any_of:
+    - \btemperature\b
+prohibited_patterns:
+- Do not copy official stems or marking wording.
+- Do not teach beyond the three scoped limits or the 35 depth/condition statements.
+- Do not call a gradient a physical constant before checking its axes and units.
+- Do not turn historical mains-voltage wording into current wiring instructions. Use the syllabus model; do
+  not provide live mains practical instructions.
+depictions:
+  chart_model: none
+  code_fence_languages: []
+  rule: Use original diagrams as accessible images where available and original data tables for graph-paper
+    construction. Never replace required ray/circuit reasoning with decorative images. Provide a textual description
+    of axes, labels, connections and directions. No code fences or LaTeX.
+glossary_homonyms:
+- term: moment
+  senses:
+  - turning effect
+  - instant of time
+  rule: Use instant for time.
+- term: resistance
+  senses:
+  - electrical resistance
+  - drag force
+  rule: Qualify air resistance explicitly.
+marking_evidence_policy: Use checked marking architecture in answer-shapes.json. 267 outstanding demands are
+  listed in GAPS.md; do not invent their official rubrics. State-one-feature and describe-one-action prototypes
+  use specifically located table rows listed in planning/task-shape-anchors.json. Proposed original teaching
+  rubrics are labelled judgement, never official memo reconstructions.
+slot_plan:
+  note: Dedicated scientific skills are C; content recall/explanation is A, new numerical or graphical processing
+    B. Integrated practical performance is C. This is our task coding, not official part coding.
+  subtypes_by_objective_type:
+    phys_container:
+    - SYNTH
+    phys_definition:
+    - DEF
+    phys_feature:
+    - FEATURE
+    phys_quantitative:
+    - CALC
+    phys_graph:
+    - INTERP
+    phys_procedure:
+    - PROC
+    phys_explanation:
+    - MECH
+    phys_comparison:
+    - DIST
+    phys_derivation:
+    - PROC
+    - CALC
+  subtypes_by_tier:
+    1: []
+    2: []
+    3: []
+    4: []
+  high_tariff:
+    threshold: 99
+    adds: []
+  command_words_by_subtype:
+    DEF:
+    - Define
+    - State
+    FEATURE:
+    - State
+    DIST:
+    - Explain
+    PROC:
+    - Describe
+    - Derive
+    WHY:
+    - Explain
+    MECH:
+    - Explain
+    BEN:
+    - Explain
+    LIM:
+    - Explain
+    APP:
+    - Explain
+    CHAIN:
+    - Explain
+    EVAL:
+    - Explain
+    CALC:
+    - Calculate
+    INTERP:
+    - Draw
+    - Explain
+    MISCON:
+    - Explain
+    SYNTH:
+    - Explain
+  tariff_overrides:
+    DEF:Define: 1
+    DEF:State: 1
+    FEATURE:State: 1
+    DIST:Explain: 2
+    PROC:Describe: 1
+    PROC:Derive: 4
+    MECH:Explain: 2
+    CALC:Calculate: 2
+    INTERP:Draw: 2
+    INTERP:Explain: 2
+    MISCON:Explain: 2
+    SYNTH:Explain: 2
+  tariff_override_reasons:
+    DEF:Define: One precise core meaning; longer conditioned definitions are taught fully in notes and structured
+      tasks, not misrepresented as universal one-point official definitions.
+    PROC:Describe: One clearly requested operational action; full methods are practised in the integrated eight-mark
+      plan.
+    INTERP:Draw: Two explicitly named graphical/diagram features; full multi-ray construction is a structured
+      task with its own entered source architecture.
+  ao_by_objective_type:
+    '*':
+      DEF:
+      - A
+      FEATURE:
+      - A
+      DIST:
+      - A
+      PROC:
+      - A
+      MECH:
+      - A
+      CALC:
+      - B
+      INTERP:
+      - B
+      MISCON:
+      - A
+      SYNTH:
+      - A
+      - B
+    phys_derivation:
+      PROC:
+      - B
+  ao_by_paper:
+    '3':
+      A: C
+      B: C
+  misconception_slots: one_per_entry
+  top_up: []
+  performance_tasks:
+  - item_type: multiple_choice_set
+    papers:
+    - '1'
+    brief: Create {n} original four-option, one-mark MC questions for this topic. State each key and explain
+      every distractor. Include both knowledge and application; the A/B split is a practice-design estimate,
+      not an official code for individual items.
+  - item_type: short_answer
+    papers:
+    - '2'
+    brief: 'An original eight-mark structured task: two one-mark knowledge parts, one two-mark definition/explanation
+      and two two-mark applications or calculations. Use checked task architecture and topic-appropriate verbs;
+      replace the structure if the topic is non-numerical and record the reason.'
+    ao_split:
+      A: 4
+      B: 4
+  - item_type: practical_task
+    papers:
+    - '3'
+    brief: 'An original 16-mark practical task in an in-scope physical context: construct a graph (5), derive
+      and interpret its gradient (3), then plan an investigation (8). Provide realistic invented data with
+      units, a complete operational method, controls, a results table and a data-based conclusion. Use the
+      task-specific source anchors; do not label a reciprocal gradient as density or stiffness. This practices
+      components, not a fixed complete Paper 3 question.'
+    ao_split:
+      C: 16

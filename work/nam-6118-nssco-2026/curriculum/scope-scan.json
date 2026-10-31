@@ -1,0 +1,675 @@
+{
+  "scope_scan_id": "6118-scope-scan",
+  "entries": [
+    {
+      "construct": "Collision definitions",
+      "pattern": "\\b(?:define|definition\\s+of)\\s+(?:(?:an?|the)\\s+)?(?:elastic|inelastic)\\s+collision\\b|\\b(?:elastic|inelastic)\\s+collision\\s+(?:is\\s+defined\\s+as|means)\\b",
+      "applies_to": "subject",
+      "context_subtopic": "2.4",
+      "controls": {
+        "must_catch": [
+          "Define an elastic collision.",
+          "An inelastic collision means a collision that changes kinetic energy."
+        ],
+        "must_allow": [
+          "Apply momentum conservation to an inelastic collision.",
+          "Two bodies collide along one line."
+        ]
+      },
+      "source": "syllabus PDF 14; topic 2.4",
+      "syllabus_sentence": "apply the conservation of momentum in simple applications, including elastic and inelastic collisions between two bodies in one dimension (definitions of an elastic and inelastic collision are not required)",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "judgement"
+      },
+      "interpretation": "Definitions are not required; one-dimensional two-body momentum applications remain in scope. Do not ban the collision terms themselves.",
+      "automation_limit": "Heuristic screen plus human context review; a passing regex check does not certify complete scope compliance."
+    },
+    {
+      "construct": "Nuclide formulae in energy-source teaching",
+      "pattern": "\\b(?:nuclear\\s+energy\\s+source|energy\\s+from\\s+nuclear\\s+fuel)\\b.{0,100}\\b(?:write|balance|derive)\\b.{0,45}\\b(?:nuclide|nuclear)\\s+(?:formula|equation)",
+      "applies_to": "subject",
+      "context_subtopic": "2.10.1",
+      "controls": {
+        "must_catch": [
+          "For a nuclear energy source, write a nuclide equation for the fuel reaction."
+        ],
+        "must_allow": [
+          "Write a decay equation for beta emission.",
+          "Explain an advantage of a nuclear energy source.",
+          "Balance a nuclear equation in radioactivity."
+        ]
+      },
+      "source": "syllabus PDF 17; topic 2.10.1",
+      "syllabus_sentence": "discuss radioactive isotopes as the source of nuclear energy, its conversion to electrical energy and the problems associated with this process (no nuclide formulas are required)",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "judgement"
+      },
+      "interpretation": "Requires energy-source context. Nuclear Physics decay equations remain required. A paragraph-level pattern cannot replace a contextual review of an entire energy section.",
+      "automation_limit": "Heuristic screen plus human context review; a passing regex check does not certify complete scope compliance."
+    },
+    {
+      "construct": "Standalone diverging-lens theory",
+      "pattern": "\\b(?:derive|calculate)\\b.{0,70}\\b(?:diverging|concave)\\s+lens\\b.{0,60}\\b(?:formula|magnification|image\\s+distance)\\b",
+      "applies_to": "subject",
+      "context_subtopic": "4.3.3",
+      "controls": {
+        "must_catch": [
+          "Calculate the diverging lens image distance using the lens formula."
+        ],
+        "must_allow": [
+          "A diverging lens corrects short sight.",
+          "Draw rays showing a diverging lens correcting short sight.",
+          "Construct an image formed by a converging lens."
+        ]
+      },
+      "source": "syllabus PDF 28; topic 4.3.3",
+      "syllabus_sentence": "describe short sight and long sight and describe the correction of these eye defects (diverging lenses are only mentioned at this stage)",
+      "provenance": {
+        "sentence": "syllabus",
+        "pattern": "judgement"
+      },
+      "interpretation": "Diverging lenses are limited to eye-defect correction. Lexical screen catches selected standalone depth excursions; human context review is required for other formulations.",
+      "automation_limit": "Heuristic screen plus human context review; a passing regex check does not certify complete scope compliance."
+    }
+  ],
+  "depth_and_condition_checks": [
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.1",
+      "text": "describe a simple experiment to establish that the only variable that affects the period of a pendulum is the length",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 12,
+        "printed_page": 9,
+        "bbox": [
+          356.69,
+          242.2648,
+          810,
+          275.6248
+        ],
+        "verbatim": "describe a simple experiment to establish that the only variable that affects the period\nof a pendulum is the length"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.3.2",
+      "text": "identify from the shape of a distance-time or speed-time graph when a body is - at rest - moving with constant speed - moving with changing speed",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 13,
+        "printed_page": 10,
+        "bbox": [
+          356.69,
+          277.1848,
+          810,
+          330.6048
+        ],
+        "verbatim": "identify from the shape of a distance-time or speed-time graph when a body is\n- at rest\n- moving with constant speed\n- moving with changing speed"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.3.3",
+      "text": "identify linear motion for which the acceleration is constant and calculate the acceleration",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 13,
+        "printed_page": 10,
+        "bbox": [
+          356.69,
+          381.0048,
+          810,
+          408.0048
+        ],
+        "verbatim": "identify linear motion for which the acceleration is constant and calculate the\nacceleration"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.3.3",
+      "text": "calculate the area under a speed-time graph to determine the distance travelled for motion with constant acceleration",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 13,
+        "printed_page": 10,
+        "bbox": [
+          356.69,
+          422.4048,
+          810,
+          449.4348
+        ],
+        "verbatim": "calculate the area under a speed-time graph to determine the distance travelled for\nmotion with constant acceleration"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.3.3",
+      "text": "state that the acceleration of free fall for a body near the Earth’s surface is constant and has a value of approximately 10 m/s 2",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 13,
+        "printed_page": 10,
+        "bbox": [
+          356.69,
+          449.4348,
+          810,
+          476.5548
+        ],
+        "verbatim": "state that the acceleration of free fall for a body near the Earth’s surface is constant\nand has a value of approximately 10 m/s 2"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.3.3",
+      "text": "recall and use motion equations in calculations involving constant acceleration:   v u   1   v u  v u at   2 v 2 u 2 2 as  a ; ; s ut at ; ; s t t 2 2",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 13,
+        "printed_page": 10,
+        "bbox": [
+          356.69,
+          476.5548,
+          810,
+          530
+        ],
+        "verbatim": "recall and use motion equations in calculations involving constant acceleration:\n \nv u   1   v u\n v u at   2 v 2 u 2 2 as \na ; ; s ut at ; ; s t\nt 2 2"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.4",
+      "text": "plot and interpret extension-load graphs, describe the associated experimental procedure and use proportionality in simple calculations",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 14,
+        "printed_page": 11,
+        "bbox": [
+          356.69,
+          240.5848,
+          810,
+          267.58480000000003
+        ],
+        "verbatim": "plot and interpret extension-load graphs, describe the associated experimental\nprocedure and use proportionality in simple calculations"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.4",
+      "text": "state Hooke's law and recall and use the expression F = kx where F is the force applied, k is the spring constant and x is the extension of the spring",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 14,
+        "printed_page": 11,
+        "bbox": [
+          356.69,
+          267.58480000000003,
+          810,
+          294.70480000000003
+        ],
+        "verbatim": "state Hooke's law and recall and use the expression F = kx where F is the force\napplied, k is the spring constant and x is the extension of the spring"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.4",
+      "text": "define the principle of conservation of momentum as when two or more objects interact, their total momentum remains constant, provided that no external resultant force is acting on them",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 14,
+        "printed_page": 11,
+        "bbox": [
+          356.69,
+          370.3248,
+          810,
+          410.0448
+        ],
+        "verbatim": "define the principle of conservation of momentum as when two or more objects\ninteract, their total momentum remains constant, provided that no external resultant\nforce is acting on them"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.5",
+      "text": "describe qualitatively the motion of bodies falling in a uniform gravitational field with and without air resistance, including reference to terminal velocity",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 15,
+        "printed_page": 12,
+        "bbox": [
+          356.69,
+          189.5848,
+          810,
+          216.7048
+        ],
+        "verbatim": "describe qualitatively the motion of bodies falling in a uniform gravitational field with\nand without air resistance, including reference to terminal velocity"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.7",
+      "text": "use the conditions of equilibrium in simple calculations",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 16,
+        "printed_page": 13,
+        "bbox": [
+          356.69,
+          267.9448,
+          810,
+          289.6648
+        ],
+        "verbatim": "use the conditions of equilibrium in simple calculations"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.8",
+      "text": "describe qualitatively the effect of the position of the centre of mass on the stability of simple objects",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 16,
+        "printed_page": 13,
+        "bbox": [
+          356.69,
+          316.8048,
+          810,
+          350.0448
+        ],
+        "verbatim": "describe qualitatively the effect of the position of the centre of mass on the stability of\nsimple objects"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.10.3",
+      "text": "give examples of energy in different forms, its conversion and conservation and apply the principle of energy conservation to simple examples (e.g. the kinetic energy changing to potential energy in a pendulum and the sum of the two is constant if air resistance is negligible)",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 18,
+        "printed_page": 15,
+        "bbox": [
+          356.69,
+          106.6348,
+          810,
+          159.0748
+        ],
+        "verbatim": "give examples of energy in different forms, its conversion and conservation and apply\nthe principle of energy conservation to simple examples (e.g. the kinetic energy\nchanging to potential energy in a pendulum and the sum of the two is constant if air\nresistance is negligible)"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "2.10.5",
+      "text": "relate power as the amount of work done per unit time (power is measured in watt) 𝐸 𝑊 and recall and use the formula P = = to calculate the power output in everyday 𝑡 𝑡 applications or in simple systems",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 19,
+        "printed_page": 16,
+        "bbox": [
+          356.69,
+          119.11479999999999,
+          810,
+          178.6348
+        ],
+        "verbatim": "relate power as the amount of work done per unit time (power is measured in watt)\n𝐸 𝑊\nand recall and use the formula P = = to calculate the power output in everyday\n𝑡 𝑡\napplications or in simple systems"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.1",
+      "text": "explain the kinetic particle model of matter as: - the particles and the space the particles occupy - the forces between particles - the constant state of motion of the particles - elastic collisions between particles - an increase in kinetic energy of the particles as temperature rises",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 21,
+        "printed_page": 18,
+        "bbox": [
+          356.69,
+          124.6348,
+          810,
+          202.3048
+        ],
+        "verbatim": "explain the kinetic particle model of matter as:\n- the particles and the space the particles occupy\n- the forces between particles\n- the constant state of motion of the particles\n- elastic collisions between particles\n- an increase in kinetic energy of the particles as temperature rises"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.1",
+      "text": "interpret the change from one phase of matter to another which involves an energy change (heat energy is either given out or taken in) and explain that the temperature of matter is constant during a phase change",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 21,
+        "printed_page": 18,
+        "bbox": [
+          356.69,
+          296.14480000000003,
+          810,
+          334.8048
+        ],
+        "verbatim": "interpret the change from one phase of matter to another which involves an energy\nchange (heat energy is either given out or taken in) and explain that the temperature\nof matter is constant during a phase change"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.1",
+      "text": "describe qualitatively the pressure of a gas in terms of the motion of its molecules",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 21,
+        "printed_page": 18,
+        "bbox": [
+          356.69,
+          374.2848,
+          810,
+          387.6048
+        ],
+        "verbatim": "describe qualitatively the pressure of a gas in terms of the motion of its molecules"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.1",
+      "text": "describe qualitatively the effect of a change of temperature on the pressure of a gas at constant volume (Pressure Law)",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 21,
+        "printed_page": 18,
+        "bbox": [
+          356.69,
+          387.6048,
+          810,
+          413.64480000000003
+        ],
+        "verbatim": "describe qualitatively the effect of a change of temperature on the pressure of a gas at\nconstant volume (Pressure Law)"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.1",
+      "text": "describe qualitatively the effect of a change of temperature on the volume of a gas at constant pressure (Charles’s Law)",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 21,
+        "printed_page": 18,
+        "bbox": [
+          356.69,
+          413.64480000000003,
+          810,
+          439.7148
+        ],
+        "verbatim": "describe qualitatively the effect of a change of temperature on the volume of a gas at\nconstant pressure (Charles’s Law)"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.1",
+      "text": "describe qualitatively the effect of a change of volume on the pressure of a gas at constant temperature (Boyle’s Law)",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 21,
+        "printed_page": 18,
+        "bbox": [
+          356.69,
+          439.7148,
+          810,
+          465.7548
+        ],
+        "verbatim": "describe qualitatively the effect of a change of volume on the pressure of a gas at\nconstant temperature (Boyle’s Law)"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.2.2",
+      "text": "describe an investigation to establish that the temperature increase is proportional to the time of heating (for a constant mass) and inversely proportional to mass (for a constant time of heating)",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 23,
+        "printed_page": 20,
+        "bbox": [
+          356.69,
+          252.7048,
+          810,
+          291.4648
+        ],
+        "verbatim": "describe an investigation to establish that the temperature increase is proportional to\nthe time of heating (for a constant mass) and inversely proportional to mass (for a\nconstant time of heating)"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "3.3.1",
+      "text": "give a simple molecular account of the heat transfer in insulators and the migration of electrons in metals",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 24,
+        "printed_page": 21,
+        "bbox": [
+          356.69,
+          176.7148,
+          810,
+          210.34480000000002
+        ],
+        "verbatim": "give a simple molecular account of the heat transfer in insulators and the migration of\nelectrons in metals"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "4.1",
+      "text": "define oscillations or simple harmonic motion as any repeated to-and-fro motion of a fluid or elastic solid, e.g. a tuning-fork, pendulum or stretched string",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 26,
+        "printed_page": 23,
+        "bbox": [
+          356.69,
+          138.19480000000001,
+          810,
+          164.2348
+        ],
+        "verbatim": "define oscillations or simple harmonic motion as any repeated to-and-fro motion of a\nfluid or elastic solid, e.g. a tuning-fork, pendulum or stretched string"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "4.3.2",
+      "text": "perform simple constructions, measurements and calculations on a ray diagram",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 27,
+        "printed_page": 24,
+        "bbox": [
+          356.69,
+          493.1108,
+          810,
+          530
+        ],
+        "verbatim": "perform simple constructions, measurements and calculations on a ray diagram"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.1",
+      "text": "describe simple experiments to show the production of charges by friction and detection of electrostatic charges (using an electroscope)",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 31,
+        "printed_page": 28,
+        "bbox": [
+          357.77,
+          124.6348,
+          810,
+          150.6748
+        ],
+        "verbatim": "describe simple experiments to show the production of charges by friction and\ndetection of electrostatic charges (using an electroscope)"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.1",
+      "text": "distinguish between electrical conductors and insulators using the simple electron model and give typical examples",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 31,
+        "printed_page": 28,
+        "bbox": [
+          357.77,
+          256.4248,
+          810,
+          282.4648
+        ],
+        "verbatim": "distinguish between electrical conductors and insulators using the simple electron\nmodel and give typical examples"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.1",
+      "text": "state the direction of the electric lines of force and describe simple electric field patterns, including the electric field around a point charge and between two parallel plates with opposite charges",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 31,
+        "printed_page": 28,
+        "bbox": [
+          357.77,
+          282.4648,
+          810,
+          321.1248
+        ],
+        "verbatim": "state the direction of the electric lines of force and describe simple electric field\npatterns, including the electric field around a point charge and between two parallel\nplates with opposite charges"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.2.4",
+      "text": "sketch and interpret graphically and by calculation the relationship between current and voltage in an electrical conductor at a fixed temperature",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 32,
+        "printed_page": 29,
+        "bbox": [
+          355.61,
+          370.9248,
+          810,
+          396.9648
+        ],
+        "verbatim": "sketch and interpret graphically and by calculation the relationship between current\nand voltage in an electrical conductor at a fixed temperature"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.7.1.2",
+      "text": "discuss how this turning effect is used to make a simple electric motor",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 35,
+        "printed_page": 32,
+        "bbox": [
+          356.69,
+          344.8848,
+          810,
+          358.3248
+        ],
+        "verbatim": "discuss how this turning effect is used to make a simple electric motor"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.7.2.2",
+      "text": "describe a simple form of a.c. generator (rotating coil or rotating magnet) and the use of slip rings where needed",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 36,
+        "printed_page": 33,
+        "bbox": [
+          357.65,
+          105.67479999999999,
+          810,
+          131.7148
+        ],
+        "verbatim": "describe a simple form of a.c. generator (rotating coil or rotating magnet) and the use\nof slip rings where needed"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.7.2.2",
+      "text": "sketch a graph of voltage output against time for a simple a.c. generator and the effect on the graph of increasing the frequency of rotation",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 36,
+        "printed_page": 33,
+        "bbox": [
+          357.65,
+          131.7148,
+          810,
+          157.75480000000002
+        ],
+        "verbatim": "sketch a graph of voltage output against time for a simple a.c. generator and the\neffect on the graph of increasing the frequency of rotation"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.7.2.2",
+      "text": "discuss the generation of current using a simple generator",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 36,
+        "printed_page": 33,
+        "bbox": [
+          357.65,
+          157.75480000000002,
+          810,
+          177.5548
+        ],
+        "verbatim": "discuss the generation of current using a simple generator"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.7.2.3",
+      "text": "describe the structure and principle of operation of a simple iron-cored transformer",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 36,
+        "printed_page": 33,
+        "bbox": [
+          357.65,
+          177.5548,
+          810,
+          189.616
+        ],
+        "verbatim": "describe the structure and principle of operation of a simple iron-cored transformer"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "5.7.2.3",
+      "text": "recall and use the equation V I = V I (for 100% efficiency) p p s s",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 36,
+        "printed_page": 33,
+        "bbox": [
+          357.65,
+          257.5048,
+          810,
+          270.9448
+        ],
+        "verbatim": "recall and use the equation V I = V I (for 100% efficiency)\np p s s"
+      }
+    },
+    {
+      "kind": "depth_or_condition",
+      "subtopic_code": "6.2.5",
+      "text": "use the term half-life in simple calculations which might involve information in tables or decay curves",
+      "source": {
+        "provenance": "syllabus",
+        "pdf_page": 39,
+        "printed_page": 36,
+        "bbox": [
+          347.69,
+          119.11479999999999,
+          810,
+          180.85328
+        ],
+        "verbatim": "use the term half-life in simple calculations which might involve information in tables or\ndecay curves"
+      }
+    }
+  ],
+  "rule": "Three explicit exclusions have bounded patterns. Other depth/condition wording is retained for manual planning review, not converted into broad banned-word rules."
+}
