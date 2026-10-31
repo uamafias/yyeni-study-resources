@@ -16,7 +16,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE / AS | 9702 AS Physics and others below | piloted |
 | Namibia NSSCO | 6144 Business Studies | piloted |
 | Namibia NSSCAS | | not yet |
-| Junior secondary, grades 8 to 9 | | not yet |
+| Junior secondary, grades 8 to 9 | Geography (`nam-geography_jss-gr8-9-2026`) | in progress |
 | Upper primary, grades 4 to 7 | | not yet |
 
 ## In progress and backlog
@@ -27,6 +27,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
 | Namibia NSSCO | 6136 | Development Studies | `nam-6136-nssco-2026` | Jeremy | Codex | in progress | Authored by Jeremy (18 topics, 505 flashcards + 38 activities; five Claude reviews, last verdict content PUBLISH, release NOT YET) on branch `nssco-6136-development-studies` (420dd6e, 21 October 2026), not yet merged to main. Row recorded 31 October 2026 by Vitalis, replacing Vitalis's mistaken duplicate claim. |
+| Namibia JSS (gr 8–9) | – | Geography | `nam-geography_jss-gr8-9-2026` | Vitalis | | in progress | Pilot for grades 8 to 9, claimed 1 November 2026. Revised syllabus (Grade 8 2025, Grade 9 2026); method in `operations/frameworks/JSS-GR8-9-FRAMEWORK.md`. |
 | | | | | | | | |
 
 ## Published
