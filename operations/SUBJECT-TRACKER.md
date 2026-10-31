@@ -32,6 +32,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 
 | Board and level | Code | Subject | Workspace | Authoring tool | Reviewed by | Items | Notes |
 |---|---|---|---|---|---|---:|---|
+| Namibia NSSCO | 6117 | Chemistry | `nam-6117-nssco-2026` | Codex | Claude; interim ChatGPT reviews | 844 | Lotto N. Nanghonda Jr.; pilot complete 2026-10-31 by user instruction. 808 cards active at 2026 Angra Pequena SSS, all 3,501 old cards archived and full inventory verified; 36 activities remain repository resources. Shared branch pushed at 427c37b; PR #2 created, old fork PR #1 closed; main merge separate. Review limits retained in work/nam-6117-nssco-2026/PILOT-COMPLETION-6117.md. |
 | Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Codex | Claude | 562 | Vitalis; 474 flashcards + 88 practice packages. Reviewed resources pushed 28 October 2026 (47403a3). Non-blocking review follow-ups retained; YYeni import pending. |
 | Namibia NSSCO | 6145 | Economics | `nam-6145-nssco-2026` | Codex; Claude diagrams | Claude; Codex visual and repair checks | 625 | Vitalis; 513 flashcards + 112 practice packages. Reviewed resources pushed to origin/main in 06c382c; all 28 topics PUBLISH. YYeni image upload/classroom import deferred. |
 | Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Codex; Claude visuals and maps | Claude; Codex visual and repair checks | 801 | Vitalis; 737 flashcards + 64 practice packages, 56 visual resources (2 maps added in approved map-revision-01). Reviewed resources pushed to origin/main in e6244fe; all 18 topics PUBLISH; Claude whole-subject acceptance 30 October 2026. YYeni image upload/classroom import deferred. |
@@ -42,3 +43,6 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Cambridge IGCSE | 0460 | Geography | `cie-0460-igcse-2025-2026` | Hermes / OpenCode | Claude | 629 | |
 | Cambridge IGCSE | 0450 | Business Studies | `cie-0450-igcse-2026` | Hermes / OpenCode | Claude | 913 | |
 | Cambridge IGCSE | 0455 | Economics | `cie-0455-igcse-2026` | Hermes, then Codex | Claude | 674 | 46 diagrams in `publish/cie-0455-igcse-2026/diagrams/` |
+| Namibia NSSCO | 6116 | Biology | `nam-6116-nssco-2026` | Codex, with Claude repair rounds | Claude Step 6 (also repaired) | 851 | Repository review copy under `work/`, 886 authored and 35 figure items held; pilot process complete under operator override; unverified and not released to learners. |
+
+Historical Chemistry 6117 review repair update (2026-10-27; superseded by final handover 2026-10-29): authored bank repaired for re-verification; publication held. Full audit of 1,008 responses and 146 rewritten cards gives recall 23.31%; all QA reports hold for independent re-verification. See work/nam-6117-nssco-2026/REVIEW-REPAIRS-6117.md.

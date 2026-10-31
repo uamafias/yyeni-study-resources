@@ -1,0 +1,70 @@
+{
+  "provenance": "judgement",
+  "decided": "2026-10-18",
+  "rule": "The syllabus and the corpus set scope and assessment demand; they do not supply the science. Every substantive claim (claim_type factual, causal, procedural, comparison, formula, inference, or a definition that is not the syllabus's own) carries at least one evidence entry: source_id from this list, a locator precise enough to find the passage (chapter.section, or page), and support_type. A claim with no suitable reference says so in its notes and goes to the verifier as teacher-knowledge. Proposed marking guidance is never evidence for a scientific claim.",
+  "sources": [
+    {
+      "source_id": "SRC-SYL-6116",
+      "title": "NSSCO Biology Syllabus, NIED 2018 (6116)",
+      "use": "scope; the syllabus's own definitions, verbatim",
+      "licence": "official curriculum document",
+      "locator_form": "printed page and sub-topic"
+    },
+    {
+      "source_id": "SRC-OSB2E",
+      "title": "OpenStax, Biology 2e (Clark, Douglas, Choi), 2018, updated",
+      "use": "the science behind explanations; check depth against the syllabus before using",
+      "licence": "Verify exact edition and component terms before reproduction; no blanket clearance for visual reuse",
+      "locator_form": "chapter.section, e.g. 5.2",
+      "licence_previous_unverified_label": "CC BY 4.0"
+    },
+    {
+      "source_id": "SRC-OSCB",
+      "title": "OpenStax, Concepts of Biology, 2013, updated",
+      "use": "the science at an introductory level",
+      "licence": "Verify exact edition and component terms before reproduction; no blanket clearance for visual reuse",
+      "locator_form": "chapter.section",
+      "licence_previous_unverified_label": "CC BY 4.0"
+    },
+    {
+      "source_id": "SRC-0610",
+      "title": "Cambridge IGCSE Biology 0610 syllabus, 2026-2028",
+      "use": "standard equations and conventions at this level (e.g. the balanced photosynthesis equation); never NSSCO scope",
+      "licence": "public syllabus document",
+      "locator_form": "page and section"
+    },
+    {
+      "source_id": "SRC-SCHOOL",
+      "title": "The NIED-approved NSSCO Biology textbook the school uses",
+      "use": "practical procedures and Namibian-curriculum conventions",
+      "licence": "held by the school; cite only, never reproduce",
+      "locator_form": "edition and page",
+      "status": "OPEN: the operator names the title and edition"
+    }
+  ],
+  "not_allowed": [
+    {
+      "what": "Revision Notes/NSSCO/NSSCO Biology (6116)/*",
+      "why": "third-party notes with no recorded licence (one file is a PDFDrive download); not for derivation, citation or verification (conform_registry.py R-04)"
+    },
+    {
+      "what": "past papers, examiner reports, indicative answers",
+      "why": "evidence of demand only; their wording never reaches learners (mine, do not reproduce)"
+    }
+  ],
+  "verification": {
+    "who": "a qualified Biology teacher named by the operator (not the authoring agent, not the step-6 reviewing agent)",
+    "when": "after the step-6 cross-vendor review and before release to learners",
+    "how": "for each topic, every substantive claim is checked against its cited evidence, or against the teacher's own knowledge where none is cited, and recorded in topics/<T>/verification.json as {claim_id: {status: verified | corrected | rejected, reviewer, date, note}}; corrected claims raise their revision and restamp what cites them (TEAM-PLAYBOOK step 6 procedure).",
+    "why_a_separate_register": "check C-24 (the publication gate) fails if any claim in the ledger is marked verified before review, and the standard defines no post-review ledger state; recording verification in the ledger during authoring would fail the build. This is reported as a framework finding.",
+    "release_rule": "publish_subject.py may build the package once checks pass; the package is not released to learners until every topic's verification.json covers all its substantive claims with no rejected claim outstanding, and every visual it depends on has passed its acceptance check."
+  },
+  "visual_candidate_policy": {
+    "operator_direction": "2026-10-18: search existing notes and papers and the web; stage visual assets and bindings for future YYeni image support",
+    "local_notes": "May be inspected and extracted as reference-only visual candidates; not automatically approved factual references or cleared for learner publication.",
+    "assessment_images": "May be inventoried as reference-only candidates. Trace original image and reuse rights; never reproduce official question text in a new activity.",
+    "web_images": "Use file-specific source and licence records, not a blanket site/book licence assumption. Preserve scale bars and image-specific credits. Wikimedia Commons only so far: CC0, public domain, CC BY or CC BY-SA; NC, ND, fair use and unstated licences are rejected. The Commons API metadata is stored per file in visuals/provenance/ and compared with the recorded licence on every rebuild.",
+    "graphs": "Generated by planning/make_graphs_6116.py from declared data (learner readings, model curves or published figures). Published figures (human population) must be verified against the cited source before release. Project-owned.",
+    "accuracy": "Being found, licensed or labelled does not make an image accurate. Each stored image was inspected; defects found so far include a wrong scale label (ROOT-001, \"3 µm\"), a field missing lymphocytes (BLOOD-001), uncertain organ identity (ROOT-002) and plasmolysis not clearly shown (OSMOSIS-001). Scientific review is still pending for every asset."
+  }
+}

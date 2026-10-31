@@ -1,0 +1,13 @@
+# Chemistry 6117 assessment-evidence gaps
+
+- All 18 question papers and six examiner reports for 2020–2025 are held locally. No stand-alone Chemistry mark-scheme PDFs were found; the reports supply answer keys, answers, alternatives and marking notes.
+- The 2020 report's Paper 2 and 3 answer tables are scanned images. Seventy-seven written parts were manually paraphrased after OCR and image review. OCR alone is not authoritative.
+- Of 451 written parts, 147 have paraphrased report guidance; 299 have verified report answer rows aligned to the part and retained for internal mining only. They require newly worded answers and independent numerical checks before learner use. The remaining five, 2022 Paper 2 Q3, have question commentary but no printed part-level answer allocation. Their guidance is explicitly labelled commentary-only. See `guidance-coverage.json`, `report-alignment-audit.json` and `reviewed-answer-pairs.json`. The 324 candidate links were checked against paper and report labels and reviewed question/answer meaning; changed source pairs lose verified status. Link verification does not certify every accepted alternative or calculation in the report.
+- Thirty-four examiner findings are curated and linked to question evidence where possible. The review was targeted; this is not a manual audit of every question or every report statement. Main-question comments may span several marked parts.
+- Paper 1 and 2 evidence is mapped to named syllabus subtopics, and Paper 3 is mapped to AO C1–C5 plus practical skill type. These are more specific than whole-topic mapping but do not yet encode every nested syllabus competency.
+- The corrected command audit covers all 451 written parts, including lowercase verbs, OCR corrections and inherited instructions. It supersedes the older line-level command-opening scan for tariff decisions.
+- The 2022 and 2023 paper filenames say first or revised proof; final-version equivalence is unverified.
+- The 2025 Paper 1 cover gives one hour while the syllabus gives 45 minutes. Keep 45 minutes as the syllabus duration.
+- The 2025 Paper 2 Q2(d)(ii) report has the conflicting “0.02 seen” line. Independent calculation gives 0.00400 mol HCl. See `source-discrepancies.json`.
+
+- Citation checks now run during evidence rebuilding: all 34 finding pages require exact-page anchors; adjacent-only hits fail. All 324 answer-row links require their label line on the row-level cited page. Four text-native manual planning tables are checked separately. Scanned 2020 marking pages still require image/OCR review; the 2020 Q4 energy-profile marking page was visually confirmed as PDF p. 90.

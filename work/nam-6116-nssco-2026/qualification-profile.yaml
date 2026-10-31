@@ -1,0 +1,83 @@
+# 6116 NSSCO Biology - qualification profile
+profile_id: namibia-6116-nssco-2026
+version: "0.1.0"
+status: draft
+board: Namibia - NIED (syllabus) and DNEA (examinations)
+qualification: Namibia Senior Secondary Certificate Ordinary (NSSCO)
+subject: Biology
+syllabus_code: "6116"
+level: Ordinary Level
+grades: "10-11"
+examination_years: ["2026"]
+first_exam: "2020"
+route: core
+source: Syllabi/Namibian Curricula/NSSCO (New)/NSSCO_BIOLOGY_SYLLABUS.pdf (NIED 2018)
+syllabus_states_final_exam_year: false
+
+ao_code_crosswalk:
+  note: >-
+    NSSCO names its objectives A, B and C. build/make_work_order.py reads AO codes from
+    curriculum/assessment-framework.json (set_ao_codes, make_work_order.py:123), and the slot plan,
+    checks and work orders address AOs by those codes. This workspace uses AO1/AO2/AO3 as the
+    codes for NSSCO A/B/C. They are not Cambridge AOs. (An earlier note here said the codes were
+    hardcoded in the build; that was wrong and is withdrawn.)
+  AO1: A - Knowledge with understanding
+  AO2: B - Handling information, application and solving problems
+  AO3: C - Practical (experimental and investigative) skills and abilities
+  AO4: unused by this syllabus
+
+assessment_objectives:
+  - code: A
+    name: Knowledge with understanding
+    description: >-
+      A1 scientific phenomena, facts, laws, definitions, concepts, theories; A2 scientific vocabulary, terminology, conventions (including symbols, quantities and units); A3 scientific instruments and apparatus, including techniques of operation and aspects of safety; A4 scientific and technological applications with their social, economic and environmental implications.
+    qualification_weight_percent: 47
+    final_grade_weight_percent: 50   # derived
+    constraint: "not more than 24% recall - denominator undefined in the syllabus, open issue"
+  - code: B
+    name: Handling information, application and solving problems
+    description: >-
+      B1 locate, select, organise and present information from a variety of sources; B2 translate information from one form to another; B3 manipulate numerical and other data B4 use information to identify patterns, report trends and draw inferences; B5 present reasoned explanations of phenomena, patterns and relationships; B6 make predictions and propose hypotheses; B7 solve problems including some of a qualitative nature as they relate to everyday life.
+    qualification_weight_percent: 28
+    final_grade_weight_percent: 30   # derived
+  - code: C
+    name: Practical (experimental and investigative) skills and abilities
+    description: >-
+      C1 demonstrate knowledge of how to use apparatus and materials safely (including following a sequence of instructions where appropriate) C2 plan experiments and investigations (including how to record accurate estimates, observations and measurements accurately and make deductions from simple tests) C3 handle and process experimental observations and data (including dealing with anomalous or inconsistent results) C4 apply scientific knowledge and understanding to make interpretations and to draw appropriate conclusions from practical observations and data; C5 evaluate methods and suggest possible improvements
+    qualification_weight_percent: 25
+    final_grade_weight_percent: 20   # derived
+
+ao_source_note: >-
+  STATED: 47/28/25 is printed in the specification grid (printed p.37 [PDF 40]) as the "Overall
+  Weighting across all components"; it equals the raw marks A 75, B 45, C 40 of 160. DERIVED, not
+  stated: 50/30/20 is each paper's AO marks weighted by the stated paper weightings 30/50/20, i.e.
+  the share of the final grade. The AO balance check (curriculum/ao_coverage.md) uses the STATED
+  47/28/25. Neither is a card quota.
+
+papers:
+  - paper_id: P1
+    name: Theory - Multiple Choice
+    duration_minutes: 45
+    duration_note: "syllabus states 45 minutes; the 2025 paper states 1 hour; 2026 UNCONFIRMED"
+    marks: 40
+    qualification_weight_percent: 30
+    question_basis: Forty four-choice multiple-choice questions on the specific objectives.
+    assessment_objective_weights: {A: 25, B: 15, C: 0}
+  - paper_id: P2
+    name: Theory - Structured
+    duration_minutes: 90
+    marks: 80
+    qualification_weight_percent: 50
+    question_basis: Compulsory short-answer and structured questions.
+    assessment_objective_weights: {A: 50, B: 30, C: 0}
+  - paper_id: P3
+    name: Alternative to Practical
+    duration_minutes: 75
+    marks: 40
+    qualification_weight_percent: 20
+    question_basis: Written paper testing practical skills, specified by Annexe A (a)-(k), printed p.41 [PDF 44].
+    assessment_objective_weights: {A: 0, B: 0, C: 40}
+
+total_marks: 160
+learner_context: Namibian secondary learners, English medium. Worked examples use Namibian contexts and N$.
+prior_teaching: Junior Secondary phase (JSC), completed before this two-year course.

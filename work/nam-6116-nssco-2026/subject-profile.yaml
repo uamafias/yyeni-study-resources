@@ -1,0 +1,250 @@
+# 6116 NSSCO Biology - subject profile
+profile_id: namibia-6116-nssco-biology
+version: "0.1.0"
+status: draft
+subject_name: Biology
+language_variant: en-GB
+purpose: >-
+  Learner notes and flashcards for NSSCO Biology 6116, built from the syllabus and the assessment
+  corpus. No approved teaching source exists for derivation, so content is authored from the
+  syllabus wording and the measured demand.
+depth_model: >-
+  Tier 1 a term to know, tier 2 a fact or relationship, tier 3 a multi-step idea, tier 4 a
+  container. The sampled papers put 70% of parts at 1-2 marks with nothing above 6, so items are
+  short by default; the 5-6 mark tasks are experimental design and multi-step reasoning, so those
+  skills are built inside short answers rather than through extended-response items.
+terminology_rules:
+  - Examiner reports name spelling and imprecise terminology in 39 statements; structure names are
+    given exactly and drilled.
+  - Never reproduce question or indicative-answer wording from any paper or examiner report.
+depictions:
+  chart_model: none   # no chart renderer: graphs are image assets held under visuals_pending; C-35 then checks only items that declare context.chart
+  rule: >-
+    Diagrams are generated from declared data through the supported build, never hand-edited.
+    Annexe B conventions apply: solidus between quantity and unit, independent variable on x.
+# Keyed by the standard's subtype and item_type codes (schemas/learning_items.schema.json
+# allows only DEF FEATURE DIST PROC WHY MECH BEN LIM APP CHAIN EVAL CALC INTERP MISCON SYNTH).
+# make_work_order.py copies these onto each slot as marking_guidance_must_name, and C-38 checks
+# every item names each part. The 2026-10-17 keys ("DEF card", "LABEL card + diagram") matched
+# no subtype, so every slot carried an empty list.
+answer_structures:
+  # Each part is a set of alternative words separated by |; C-16 checks the marking guidance
+  # names at least one word from every part (same convention as 9702 Physics).
+  DEF:      ["definition|defined|means|meaning|term", "feature|features|key words|key idea|must include"]
+  FEATURE:  ["name|named|names|part|parts|feature|features|structure|function|functions|fact|point|points"]
+  PROC:     ["order|sequence|first|then|step|steps", "result|outcome|so|gives|final"]
+  MECH:     ["how|because|so that|which|then|causes|cause", "effect|result|so"]
+  DIST:     ["difference|differences|whereas|contrast|distinction|unlike|while"]
+  WHY:      ["reason|purpose|why|because|so that"]
+  CHAIN:    ["change|changes|if|when|increase|increases|decrease|decreases|more|less", "because|so|therefore|which", "effect|result|so the"]
+  APP:      ["situation|given|this|here|case|new", "because|so|therefore|since"]
+  CALC:     ["method|working|formula|diagram|step|steps", "answer|result|final|ratio|unit|units"]
+  INTERP:   ["data|table|graph|diagram|reading|readings|value|values|ratio", "shows|means|so|conclusion|pattern|trend"]
+  LIM:      ["limitation|error|errors|uncertainty|inaccurate|problem", "improvement|improve|instead|better"]
+  EVAL:     ["for|advantage|advantages|benefit", "against|disadvantage|disadvantages|but", "judgement|overall|conclusion|on balance"]
+  MISCON:   ["error|mistake|confusion|confused|wrongly|not the same|instead"]
+  SYNTH:    ["independent|changed|change", "dependent|measure|measured", "same|controlled|control|constant", "repeat|repeats|mean|reliable"]
+  multiple_choice_set: ["key|correct option|correct answer", "distractor|distractors|wrong option|wrong options"]
+  short_answer:        ["mark|marks", "point|points|creditable|accept"]
+  practical_task:      ["variable|variables|method|table|heading|headings", "graph|trend|conclusion|data", "error|errors|limitation|improvement|improvements"]
+
+marking_guidance_status: proposed
+marking_guidance_note: >
+  No mark scheme is published for NSSCO 6116. All marking guidance is derived from the syllabus
+  objectives, observed tariffs and examiner evidence, labelled proposed, carrying its evidence,
+  and subject to review. Nothing is presented as the board's own marking.
+
+data_conventions:            # Annexe B, printed p.42 [PDF 45]
+  unit_separator: "solidus, e.g. time / s"
+  independent_variable_axis: x
+  column_headings_transfer_to_axes: true
+
+variant_register:
+  - {term: magnification, note: "drawing size and actual size must be in the same unit before dividing"}
+  - {term: respiration, note: "aerobic and anaerobic differ in products and energy yield; never 'breathing'"}
+  - {term: diffusion/osmosis/active transport, note: "separated by energy requirement and what moves"}
+
+conditioned_mechanisms:
+  - {mechanism: photosynthesis rate, condition: "holds only while the named factor is limiting"}
+  - {mechanism: enzyme activity, condition: "holds either side of the optimum; denaturation is not reversible"}
+  - {mechanism: natural selection, condition: "requires existing variation and a selection pressure"}
+
+prohibited_patterns:
+  - "reproducing question or indicative-answer wording from any paper or examiner report"
+  - "opening a prompt with a command word the papers do not use as an opener"
+  - "stating any marking rule as the board's own"
+  - "real named companies or people in worked examples"
+
+glossary_homonyms:
+  - {term: "respiration", keep_apart_from: "breathing / gas exchange"}
+  - {term: "excretion", keep_apart_from: "egestion"}
+  - {term: "growth", keep_apart_from: "development"}
+
+slot_plan:
+  note: >-
+    Read by build/make_work_order.py (CR-006 keys). How it is used, traced 2026-10-18: each
+    registry objective with a parent gets the subtypes listed for its objective_type, plus those for
+    its depth tier; each slot's AO comes from ao_by_objective_type for that type and subtype; its
+    command word is the first word in command_words_by_subtype that the objective itself carries
+    and the papers use, else the first the papers use; its tariff is that word's exact_mark_tariff
+    in the framework (the modal tariff observed), unless tariff_overrides says otherwise. The AO
+    balance is then measured in marks-equivalent (make_work_order.py:259). top_up is EMPTY on
+    purpose: the default top-up adds cards to a topic until it reaches a target, which is the
+    padding the playbook forbids. The balance is reached by what each objective genuinely needs.
+    Topic papers: every topic carries both content objectives (Papers 1 and 2) and practical
+    objectives (Paper 3), so no per-paper remapping applies.
+  subtypes_by_objective_type:
+    bio_definition:    [DEF]
+    bio_concept:       [FEATURE]
+    bio_structure:     [FEATURE]
+    bio_function:      [FEATURE]
+    bio_relationship:  [FEATURE, WHY]
+    bio_process:       [PROC]
+    bio_causal:        [CHAIN]
+    bio_comparison:    [DIST]
+    bio_application:   [APP]
+    bio_evaluation:    [EVAL]
+    bio_quantitative:  [CALC, INTERP]
+    prac_mmo:          [PROC, WHY]
+    prac_presentation: [INTERP]
+    prac_analysis:     [PROC, LIM]
+    prac_quantitative: [CALC]
+    prac_conclusion:   [APP, LIM]
+    prac_investigation: [SYNTH, LIM]
+    task_key:          [APP, INTERP]
+    task_drawing:      [APP]
+    task_drawing_interp: [APP, WHY]
+    task_mechanism:    [PROC, MECH]
+    task_genetics:     [CALC, WHY]
+    prac_trend:        [INTERP]
+  subtypes_by_objective_type_reasons:
+    bio_relationship: >-
+      "describe the role / effects / causes of X" asks how one thing acts on another: one card
+      recalls the role or effect (A), one explains the taught relationship (A). A separate
+      unfamiliar APP demand may be B; the per-slot demand audit is authoritative. "state the function of X" is recall only and is typed bio_function.
+    bio_evaluation: >-
+      Only objectives that are themselves two-sided ("advantages and disadvantages", "arguments for
+      and against", self- against cross-pollination): an EVAL slot worded "discuss", weighed with a
+      judgement. Every other "discuss" objective is typed bio_causal and gets a CHAIN slot worded
+      "discuss": developed points, each with its consequence. Evidence: the syllabus defines Discuss
+      as "a critical account of the points involved" (printed p.39), and 6 of the 7 "discuss" parts
+      in 2020-2025 ask for developed points, 1 for advantages and disadvantages.
+    prac_analysis: >-
+      an investigation objective is planned (PROC: variables, method, controls; C2) and evaluated
+      (LIM: error and improvement; C5); at tier 3 the APP slot asks the learner to interpret
+      results from an unfamiliar version of the experiment and conclude (C4). A separate INTERP
+      slot repeated that interpretation and was removed.
+  complete_tasks: >-
+    The demanding tasks the papers set (4-6 marks) are planned explicitly instead of through the
+    disabled high-tariff additions: a coherent investigation plan (SYNTH, describe, 5 marks) for every
+    objective to investigate, design or plan; constructing a key (APP, construct, 4) and using one
+    (INTERP, identify, 4); a labelled drawing (APP, draw, 4) for every drawing objective; a full
+    genetic diagram (CALC, draw, 5) for the monohybrid-cross objectives; a full account of a
+    multi-step mechanism (MECH, describe or explain, 4) for 19 objectives, 12 of them evidenced by a
+    4-6 mark part in 2020-2025. Each assignment and its evidence is in
+    planning/objective_overrides.json; marks are the tariffs the papers set for that task.
+  subtypes_by_tier: {1: [], 2: [], 3: [APP]}
+  subtypes_by_tier_reason: >-
+    A tier-3 objective (explain, discuss, describe how, investigate) is examined on unfamiliar
+    material as well as taught examples: Paper 2 sets 30 of its 80 marks on B, which the syllabus
+    describes as applying knowledge to new situations (B5-B7), and Paper 3 asks learners to apply
+    knowledge to interpret an unfamiliar experiment (C4). So each tier-3 objective gets one APP slot:
+    AO2 on a content objective, AO3 on a practical one.
+  high_tariff: {threshold: 99, adds: []}
+  command_words_by_subtype:
+    DEF:     [define, state]
+    FEATURE: [state, name, identify, label, list, describe, outline, draw]
+    SYNTH:   [describe]
+    PROC:    [describe, outline, explain, name, identify, measure, distinguish, state, draw]
+    MECH:    [explain, describe]
+    DIST:    [distinguish, describe, explain]
+    WHY:     [explain, suggest]
+    CHAIN:   [explain, describe and explain, discuss]
+    APP:     [suggest, explain, describe, draw, construct, state]
+    CALC:    [calculate, determine, draw]
+    INTERP:  [complete, plot, draw, describe, determine, label, discuss, identify]
+    LIM:     [suggest, identify]
+    EVAL:    [discuss]
+    MISCON:  [explain, state]
+  command_words_by_subtype_reason: >-
+    The slot takes the first listed word that its objective itself carries, so the work order
+    instructs each objective in the words the syllabus uses for it (C-15). The later words in each
+    list are there for objectives that carry them: "name appropriate apparatus", "measure images",
+    "draw prepared slides", "identify sources of error".
+  tariff_overrides:
+    'INTERP:describe': 2
+    'PROC:explain': 2
+    'PROC:draw': 4
+    'FEATURE:draw': 4
+    'SYNTH:describe': 5
+    'MECH:describe': 4
+    'MECH:explain': 4
+    'CALC:draw': 5
+    'APP:draw': 4
+    'APP:construct': 4
+    'INTERP:identify': 4
+    'APP:state': 2
+  tariff_override_reasons:
+    'INTERP:describe': describing a trend in data is modelled at 2 marks, the trend and a value quoted.
+    'PROC:explain': a procedure explained step by step is modelled at 2 marks.
+    'PROC:draw': a labelled drawing from a slide, specimen or photomicrograph; draw is observed at 1-5 marks with a modal 4, and the 4-mark form is the drawing (re-mined 2026-10-18).
+    'SYNTH:describe': a complete investigation plan, set at 5 marks (2020 P3 3(b), 2023 P3 4(b), 2024 P3 1(a)).
+    'MECH:describe': a full account of a multi-step mechanism, set at 4-5 marks (e.g. 2022 P2 6(c), 2025 P2 6(b)(ii)); 4 is the lower, more frequent value.
+    'MECH:explain': as MECH:describe; explain is observed up to 4 marks.
+    'CALC:draw': a complete genetic diagram, set at 5 marks (2020 P2 8(c), 2022 P2 7(c)(iii)).
+    'APP:draw': a labelled drawing produced from a specimen, slide or photograph, set at 4 marks (2022 P3 1(a)(i)).
+    'APP:construct': constructing a dichotomous key, set at 4 marks (2020 P2 2(a), 2025 P2 1(a)).
+    'APP:state': stating and explaining a result in a new data set; state is observed at 1-4 marks.
+    'INTERP:identify': using a key to identify several organisms, set at 4 marks (2022 P2 1(a)).
+    'FEATURE:draw': a labelled drawing of a structure (the heart, the spinal cord); modelled at 4 as above.
+  ao_by_objective_type:
+    '*':               {DEF: [AO1], FEATURE: [AO1], PROC: [AO1], MECH: [AO1], DIST: [AO1], WHY: [AO1],
+                        CHAIN: [AO1], APP: [AO2], CALC: [AO2], INTERP: [AO2], EVAL: [AO1], MISCON: [AO1]}
+    bio_causal:        {MISCON: [AO1]}
+    bio_comparison:    {MISCON: [AO1]}
+    prac_mmo:          {PROC: [AO3], WHY: [AO3], APP: [AO3], MISCON: [AO3]}
+    prac_presentation: {INTERP: [AO3], APP: [AO3], MISCON: [AO3]}
+    prac_analysis:     {PROC: [AO3], INTERP: [AO3], LIM: [AO3], APP: [AO3], MISCON: [AO3]}
+    prac_quantitative: {CALC: [AO3], APP: [AO3], MISCON: [AO3]}
+    prac_conclusion:   {APP: [AO3], LIM: [AO3], MISCON: [AO3]}
+    prac_investigation: {SYNTH: [AO3], LIM: [AO3], APP: [AO3], MISCON: [AO3]}
+    task_drawing:      {APP: [AO3], MISCON: [AO3]}
+    task_drawing_interp: {APP: [AO3], WHY: [AO3], MISCON: [AO3]}
+    task_key:          {APP: [AO2], INTERP: [AO2]}
+    task_mechanism:    {PROC: [AO1], MECH: [AO1]}
+    task_genetics:     {CALC: [AO2], WHY: [AO2], MISCON: [AO1]}
+    prac_trend:        {INTERP: [AO3], APP: [AO3], MISCON: [AO3]}
+  ao_reasons: >-
+    AO approach approved by Lotto, 2026-10-18 (full plan approved, 2026-10-18): A includes taught explanation, comparison
+    and implications, not merely recall. B covers actual information processing, reasoned explanation, inference or problem solving
+    (B1-B7). Supplied data or unfamiliarity are not universal prerequisites; new names alone do not suffice.
+    C requires C1-C5 practical technique/planning, observation/data or method evaluation.
+    planning/ao_demand_audit.json records every slot's decision and ambiguity. After the shared
+    build run planning/apply_ao_demand_audit.py: it applies the explicit decisions and exact rollup.
+    Generic taught EVAL comparisons are A per operator direction; classify genuine reasoning separately.
+    Genetics WHY retains B only for reasoning from a supplied cross. Actual prompts are rechecked.
+  misconception_slots: one_per_entry
+  top_up: []
+  performance_tasks:
+    - item_type: multiple_choice_set
+      papers: ['1']
+      brief: >-
+        A set of {n} four-option multiple-choice questions on this topic in the style of Paper 1,
+        one mark each: about five in eight on knowledge with understanding and three in eight on
+        handling information or application, each distractor built from a known confusion (the
+        misconception register first), with the key and the reason each distractor is wrong.
+    - item_type: short_answer
+      papers: ['2']
+      brief: >-
+        A Paper 2 style structured question of about 8 marks: four or five parts on one situation,
+        moving from naming or stating (1 mark) through describing (2 marks) to explaining or
+        suggesting about unfamiliar material (2-3 marks), each part with its mark allocation.
+      ao_split: {AO1: 5, AO2: 3}
+    - item_type: practical_task
+      papers: ['3']
+      brief: >-
+        A Paper 3 (Alternative to Practical) style question of about 10 marks set on an experiment
+        from this topic, described in words with our own readings: identify the variables, complete a
+        table with units in the headings, plot or describe a graph, draw a conclusion from the data,
+        and name one source of error with an improvement tied to it.
+      ao_split: {AO3: 10}
