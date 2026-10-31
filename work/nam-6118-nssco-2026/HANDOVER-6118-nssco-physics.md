@@ -2,7 +2,7 @@
 
 ## Start here
 
-This is a draft authoring handover, effective only after the operator approves the Step 4 plan. Read AGENTS.md, the active Author role, PLAN-6118-nssco-physics.md, the relevant generated work_order.json and the original structural exemplars. Work only in the assigned topic inside work/nam-6118-nssco-2026/. The plan follows the operator-approved 2018 working syllabus; do not reopen that decision or the waived non-major Paper 1 duration conflict.
+This authoring handover accompanies the Step 4 plan. The operator approval recorded in curriculum/operator-decisions.json makes it effective for Step 5. Read AGENTS.md, the active Author role, PLAN-6118-nssco-physics.md, the relevant generated work_order.json and the original structural exemplars. Work only in the assigned topic inside work/nam-6118-nssco-2026/. The plan follows the operator-approved 2018 working syllabus; do not reopen that decision or the waived non-major Paper 1 duration conflict.
 
 ## The job
 

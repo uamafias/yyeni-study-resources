@@ -27,7 +27,7 @@ on 2026-10-31; this supersedes the earlier pending-approval notes.
 - [x] 3 YOU: analysis read and progression approved - operator: “move on to step 4”.
 - [x] 4 Plan built - 28 topics, 666 items; draft operator approval pending.
 - [x] 4 YOU: plan approved - operator: “i approve the plan”; Step 4 package accepted for progression.
-- [ ] 4 Approved plan committed
+- [x] 4 Approved plan committed and pushed - 19eae09e44936be2b9f256ff44d39d106b67537f to shared origin/main; remote SHA verified.
 - [ ] 5 Topics authored: 0 / not yet established
 - [ ] 5 Published
 - [ ] 6 Independent cross-review and repairs completed
@@ -383,3 +383,8 @@ the approved Physics workspace and its two analysis documents will be committed
 and pushed to shared origin/main, using an isolated index so the active Chemistry
 branch, its index and unrelated files are preserved. Publication result is recorded
 separately in review/plan-publication-result.json after verification.
+
+
+### Approved plan package published
+
+Commit `19eae09e44936be2b9f256ff44d39d106b67537f` (“6118 Physics: approved plan”) was pushed by a normal fast-forward to shared origin/main. A fresh git ls-remote returned the identical SHA. The commit contains 271 files: the Physics workspace, its two analysis documents and the Physics tracker-row update. All other upstream tracker lines, the active Chemistry HEAD and the shared index were preserved. The result is recorded in review/plan-publication-result.json. Step 5 is next; full-topic authoring has not begun.

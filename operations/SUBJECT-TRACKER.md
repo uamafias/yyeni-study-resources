@@ -23,7 +23,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 
 | Board and level | Code | Subject | Workspace | Owner | Authoring tool | Status | Notes |
 |---|---|---|---|---|---|---|---|
-| Namibia NSSCO | 6118 | Physics | `nam-6118-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Step 4 plan approved: 28 topics, 666 learning items, raw-grid AO gap 2 points. Approved plan package accompanies this update; Step 5 not started. Working syllabus accepted; Paper 1 duration discrepancy explicitly waived as non-major. Marking-evidence gaps retained. |
+| Namibia NSSCO | 6118 | Physics | `nam-6118-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Step 4 plan approved: 28 topics, 666 learning items, raw-grid AO gap 2 points. Approved plan committed and pushed as 19eae09e; remote SHA verified. Step 5 ready. Working syllabus accepted; Paper 1 duration discrepancy explicitly waived as non-major. Marking-evidence gaps retained. |
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
 | | | | | | | | |

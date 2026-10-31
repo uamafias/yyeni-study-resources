@@ -1,6 +1,6 @@
 # Plan — Namibia NSSCO Physics 6118
 
-Draft for operator approval · generated 31 October 2026. No full-subject authoring, commit or release is authorised by this draft.
+Operator-approved plan · approval recorded in curriculum/operator-decisions.json. Approved for Step 5 authoring; learner release remains separate.
 
 ## 0. What the syllabus says
 
@@ -119,5 +119,5 @@ The 23 retained misconception entries, 53 glossary senses and three bounded scop
 5. Full practical plans must say what changes, what is measured, what is controlled, how data is recorded, and how a conclusion follows. Written preparation accompanies real practical experience.
 6. All demand mappings and registry decomposition remain lead-planner judgements. Independent mapping/content review is scheduled for Step 6; no such review is claimed here.
 7. The operator-approved working syllabus and waived non-major P1 timing issue are not reopened. The First Proof and outstanding-marking caveats remain visible.
-8. Await operator approval of this topic/AO table and the exemplars before Step 5. Approval of this plan is separate from approval to publish or any new push.
+8. Use the recorded Step 4 approval to proceed with Step 5. Learner publication remains a separate decision.
 
