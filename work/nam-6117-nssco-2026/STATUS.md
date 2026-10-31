@@ -1,15 +1,12 @@
-> **Latest re-review:** must-fix list cleared by the independent reviewer; four minor wording items subsequently implemented and checked. All 12 topic QA runs and 12 audit/regression scripts pass. Independent coverage and operator AO/recall/publication decisions remain open. See the minor-follow-up section of [the review delta](REVIEW-DELTA-2026-10-30.md).
-
-> **30 October 2026 review repair:** [Changed-item re-review packet](REVIEW-DELTA-2026-10-30.md). All latest named defects addressed, including optional items; counts clarified as 20 MISCON-subtype cards, 19 examiner mappings and eight image-bearing activities. Current author recall/AO figures remain unapproved; publication stays on hold. This working-tree repair follows the previously committed snapshot.
-
-> **Current state — 29 October 2026:** [Final editorial repair handover](FINAL-EDITORIAL-HANDOVER-6117.md). Latest reviewer follow-up implemented and checked (132 MC explanations sets, note placement/labels, card commands and repeated fraction advice): 808 cards + 36 activities; recall 392/1,637 (23.95%); all 12 topic QA reports have zero failures and retain **hold**. Independent re-verification and release approval remain open. Older repair summaries below are historical.
-
 # STATUS — 6117 Chemistry (Namibia NSSCO)
 
-Workspace: `work/nam-6117-nssco-2026/`  
-Owner: Lotto N. Nanghonda Jr. — confirmed 2026-10-24  
-Authoring tool: Codex
+**Pilot complete — 31 October 2026 (Africa/Windhoek).** User instruction after live verification: “great. record everyu satep as completed for this pilot”. This is the current operational status; earlier holds and pending steps below are historical.
 
+Workspace: `work/nam-6117-nssco-2026/`  
+Owner: Lotto N. Nanghonda Jr.
+Authoring tool: Codex; cross-review: Claude, with interim ChatGPT reviews supplied by the user.
+
+- [x] 0 Subject claimed — owner confirmed 2026-10-24; recorded in the shared repository.
 - [x] 1 Sources found — 2026-10-23 (2018 syllabus; Papers 1–3 for 2020–2025; six examiner reports; no stand-alone mark schemes found)
 - [x] 1 YOU: sources complete — user directed Step 2 on 2026-10-23
 - [x] 2 Syllabus facts written — 2026-10-23
@@ -18,12 +15,27 @@ Authoring tool: Codex
 - [x] 3 YOU: analysis read — Lotto N. Nanghonda Jr., 2026-10-26: “Okay step 3 is great let’s go ahead and move on.”
 - [x] 4 Plan built — 2026-10-26: revised after external review; 418 assessable targets, 772 cards, 36 activities, 55 suggested-practical mappings; structural validation passed
 - [x] 4 YOU: plan approved — 2026-10-26: user said “Great, let’s move on. I approve”; production-stage caveats retained.
-- [x] 5 Topics authored: 12 / 12 complete as review drafts — 808 cards, 36 activities; final editorial repairs complete 2026-10-29; independent re-verification next
-- [ ] 5 Published
-- [ ] 6 Cross-reviewed
-- [ ] 7 Committed and pushed
+- [x] 4 YOU: prototype review complete — 2026-10-26: “these are great, huamn review is over. I approve. Next step.”
+- [x] 5 Topics authored — all 12 topics; 808 flashcards and 36 activities in the repository.
+- [x] 5 Published for the classroom pilot — all 808 flashcards active in YYeni at 2026 Angra Pequena SSS; the 36 activities and notes were not part of this flashcard import.
+- [x] 6 Cross-reviewed — successive independent reviews completed; latest supplied re-review cleared the must-fix list. Four subsequent minor wording fixes recorded in REVIEW-DELTA-2026-10-30.md. Coverage limits retained below.
+- [x] 6 YOU: verdict read and pilot continuation approved — user accepted progress, approved the import/archive preview, and now explicitly closes the pilot.
+- [x] 7 Content committed and pushed — shared `biology-6116-flashcards` branch, imported revision `427c37b1a0a2a4e7ab4ecd63db310362300be96d`.
+- [x] 7 Shared repository PR created — [PR #2](https://github.com/uamafias/yyeni-study-resources/pull/2); main merge is separate from pilot completion.
+- [x] 7 Old Biology fork PR withdrawn — [PR #1 closed](https://github.com/uamafias/yyeni-study-resources/pull/1).
+- [x] 8 Replacement import verified — 808 unique active cards, all matching the verified import's content and metadata.
+- [x] 8 Old Chemistry bank archived — all 3,501 original card IDs accounted for; zero old cards remain active; zero pending archive operations.
+- [x] 9 Pilot completion recorded — this status, subject tracker, completion report and verification evidence updated on 2026-10-31.
 
-Subject ownership is recorded in the local tracker for Lotto N. Nanghonda Jr., confirmed 2026-10-24. The tracker claim still needs the owner's commit and push. The 2025 question papers are still uncommitted, per the user's instruction.
+## Completion evidence and scope
+
+See [PILOT-COMPLETION-6117.md](PILOT-COMPLETION-6117.md) and [live verification](review/yyeni-pilot-final-verification.json). Target school ID 68; Chemistry classroom `63c1702f-68a7-4026-95ff-d8bdc5b81538` (internal ID 649). Verification completed at 2026-10-30 23:23 UTC / 2026-10-31 01:23 Africa/Windhoek.
+
+Pilot closure records the user's operational approval. It does not turn author checks into independent certification. Prior QA snapshots retain `hold` and `not_run` results; they have not been rewritten. The last independent review left portions of notes/images, most syllabus alignment and claim ledgers outside its coverage. Recall remains the author estimate 392/1,637 (23.95%); AO shares remain A 47.89%, B 33.60%, C 18.51%. No new independent endorsement of those judgements is claimed.
+
+The content push above is complete. Completion records are included in the containing closeout commit. The user subsequently authorised pushing these records and merging shared PR #2 into main; GitHub is the source of the final merge status. The 2025 source papers and unrelated working files remain outside this change.
+
+## Historical progress log (superseded by the completion record above)
 
 Review resolution — 2026-10-26: corrected 2023 Paper 3 Q4 commentary to report PDF p. 106 and planning marks to p. 107; confirmed and corrected 2022 Paper 2 Q4 Avogadro/mole-ratio commentary to p. 94; added generated glossary-versus-observed-command comparison and prompt implications. The reviewer reported spot-checking about eight findings and did not audit every part or subtopic mapping.
 

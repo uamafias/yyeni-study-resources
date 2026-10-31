@@ -27,12 +27,12 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
 | Namibia NSSCO | 6137 | Geography | `nam-6137-nssco-2026` | Vitalis | Codex | in progress | Step 4 plan ready: 737 flashcards + 64 practice packages, 54 planned resources, all 18 topics; largest AO gap 0.948 points. Scope approved by Vitalis; plan Git checkpoint authorised and recorded in the containing commit. Maps 2021–2024; confirmed 2026 P3 coasts/tourism. No production authoring. |
 | | | | | | | | |
-| Namibia NSSCO | 6117 | Chemistry | `nam-6117-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Owner confirmed 2026-10-24; Step 3 approved 2026-10-26; Step 4 approved 2026-10-26; nine-card prototypes approved 2026-10-26; Step 5 authored and editorial repairs complete 2026-10-29: 12 topics, 808 cards + 36 activities; independent re-verification pending; publication hold; see FINAL-EDITORIAL-HANDOVER-6117.md |
 
 ## Published
 
 | Board and level | Code | Subject | Workspace | Authoring tool | Reviewed by | Items | Notes |
 |---|---|---|---|---|---|---:|---|
+| Namibia NSSCO | 6117 | Chemistry | `nam-6117-nssco-2026` | Codex | Claude; interim ChatGPT reviews | 844 | Lotto N. Nanghonda Jr.; pilot complete 2026-10-31 by user instruction. 808 cards active at 2026 Angra Pequena SSS, all 3,501 old cards archived and full inventory verified; 36 activities remain repository resources. Shared branch pushed at 427c37b; PR #2 created, old fork PR #1 closed; main merge separate. Review limits retained in work/nam-6117-nssco-2026/PILOT-COMPLETION-6117.md. |
 | Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Codex | Claude | 562 | Vitalis; 474 flashcards + 88 practice packages. Reviewed resources pushed 28 October 2026 (47403a3). Non-blocking review follow-ups retained; YYeni import pending. |
 | Namibia NSSCO | 6145 | Economics | `nam-6145-nssco-2026` | Codex; Claude diagrams | Claude; Codex visual and repair checks | 625 | Vitalis; 513 flashcards + 112 practice packages. Reviewed resources pushed to origin/main in 06c382c; all 28 topics PUBLISH. YYeni image upload/classroom import deferred. |
 | Cambridge AS | 9609 | Business | `cie-9609-as-2026-2028` | | Codex | | pilot subject |

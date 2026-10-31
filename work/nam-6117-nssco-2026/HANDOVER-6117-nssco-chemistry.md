@@ -1,3 +1,7 @@
+> **Current status — 31 October 2026: pilot complete.** The user has closed the Chemistry classroom pilot. All 808 replacement cards are active and all 3,501 old cards are archived, verified against the full inventory. See [completion record](PILOT-COMPLETION-6117.md) and [STATUS.md](STATUS.md). Earlier holds and pending actions below are historical; review coverage limits and original QA results remain preserved. Main-branch merge and uploads of notes/activities are not claimed.
+
+---
+
 > **30 October 2026 review repair:** [Changed-item re-review packet](REVIEW-DELTA-2026-10-30.md). All latest named defects addressed, including optional items; counts clarified as 20 MISCON-subtype cards, 19 examiner mappings and eight image-bearing activities. Current author recall/AO figures remain unapproved; publication stays on hold. This working-tree repair follows the previously committed snapshot.
 
 > **Current state — 29 October 2026:** [Final editorial repair handover](FINAL-EDITORIAL-HANDOVER-6117.md). Latest reviewer follow-up implemented and checked (132 MC explanations sets, note placement/labels, card commands and repeated fraction advice): 808 cards + 36 activities; recall 392/1,637 (23.95%); all 12 topic QA reports have zero failures and retain **hold**. Independent re-verification and release approval remain open. Older repair summaries below are historical.
