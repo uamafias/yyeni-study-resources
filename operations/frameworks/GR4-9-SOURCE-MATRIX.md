@@ -68,7 +68,7 @@ No external examination: assessment is continuous assessment plus a school exami
 ## Gaps to fill before the pilots (step 1)
 
 1. **Specimen papers for the revised junior curriculum (C).** These would be DNEA specimen or sample papers for the 2026 semi-external exam. They do exist for Geography at least: its C syllabus (p. 35) says the Grade 8 school exam "will be set using the specimen paper for Grade 9". Search DNEA and NIED with the Harvester.
-2. **Mark schemes.** The repository holds no mark scheme for any JSSEE or old JSC paper, in any subject. Without them, step 3 cannot describe a creditable answer from evidence.
+2. **Mark schemes.** None are published separately for JSSEE or JSC papers. The examiners' and moderators' reports serve as mark schemes, question part by question part, so a missing report year means that year's papers have no answer evidence.
 3. **The 2020–2022 JSSEE papers and the moderators' reports for years other than 2019.** These are probably COVID gaps; to confirm.
 4. **The senior primary English syllabus**, and confirmation of whether Environmental Studies is still taught.
 5. **A dated provenance check of every revision-notes file.** Revision notes are unofficial. They are used only to cross-check coverage, never copied, and never treated as an authority.
