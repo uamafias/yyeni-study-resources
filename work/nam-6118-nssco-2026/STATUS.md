@@ -1,3 +1,13 @@
+# Physics pilot complete — 2026-11-01
+
+Lotto explicitly instructed archiving all old cards, importing the new deck and marking the pilot complete with caveats logged. **616 new flashcards are active across 44 lessons**, with **56 managed answer images**; all **1,429 original shared cards are archived**. The complete active inventory equals the import receipts, with zero original IDs remaining. Questions, answers, rubrics, Bloom levels, difficulty and card types match the import payload. Duplicate image grading text was removed. No learners were assigned or charged; 77 assessment tasks remain repository resources.
+
+[Completion record and open discussions](review/pilot-completion.json), [card IDs and authored/platform marks](review/yyeni-imported-ids.json), and [lesson grouping](review/yyeni-lesson-map.json) preserve the handover. **271 platform maximum marks differ from authored tariffs**; the reviewed rubric is intact, and the connector exposes no native override. This is an open grading-policy discussion.
+
+The 267 marking-evidence gaps, partial 355/622 coverage, independent mappings, First Proof equivalence, C-35/C-41 and interactive rendering remain open. Managed downloads match their server hashes; 52 images retain identical pixels and four were resized by YYeni. Existing deck/test snapshots and learner history remain unchanged. Working-syllabus approval and the non-major duration waiver stand. PR #3 remains open for Vitalis; no follow-up merge is claimed. Historical statuses below are superseded by this operator decision.
+
+---
+
 # Current update: final optional fixes and classroom comparison, 2026-11-01
 
 Claude’s supplied final feedback confirms no must-fix findings remain. The optional pendulum-table and plot-overlap fixes are implemented; uranium-235 wording now explicitly describes controlled fission, and the thermometer note uses sensitivity/range rather than resolution. Topics 4, 9 and 13 pass checks; the author repair checks pass. The original resource publication is already on shared main at `8c460ecd`.
@@ -64,9 +74,9 @@ on 2026-10-31; this supersedes the earlier pending-approval notes.
 - [x] 4 Approved plan committed and pushed - 19eae09e44936be2b9f256ff44d39d106b67537f to shared origin/main; remote SHA verified.
 - [x] 5 Topics authored: 28 / 28 by Codex; zero failed deterministic checks in every topic. Full counts, warnings and deviations: authoring/progress.json.
 - [x] 5 Local export assembled in publish/nam-6118-nssco-2026/; this is a review package, with no platform import or external learner release.
-- [ ] 6 Independent cross-review and repairs completed
-- [ ] 6 YOU: verdict read and release decision recorded
-- [ ] 7 Committed and pushed; tracker updated
+- [x] 6 Claude feedback and repairs completed; partial-review caveats retained
+- [x] 6 YOU: operator accepted pilot completion with open discussions logged
+- [x] 7 Original package committed/pushed; tracker published; follow-up PR #3 remains separate
 
 ## Step 1 record
 

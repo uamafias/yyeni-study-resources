@@ -1,4 +1,4 @@
-> **Operator-approved repository release.** Lotto authorised Step 7 on 2026-11-01. 693 items across 28 topics; Claude partial cross-review and Codex repair records are retained in review/. All topics have zero failed mechanical checks. Evidence/mapping limits and platform image verification remain open. Platform import has not occurred.
+> **Physics pilot complete by operator instruction.** 616 new flashcards are active on YYeni; all 1,429 old shared cards are archived. The 77 assessment tasks remain repository resources. No learners were assigned or charged. Evidence, mapping, paper-version, chart/rendering and platform-mark discussions remain open in review/pilot-completion.json; operator completion does not clear those caveats.
 
 # Namibia Senior Secondary Certificate Ordinary Level Physics 6118 (examined 2026)
 
