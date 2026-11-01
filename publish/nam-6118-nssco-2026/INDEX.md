@@ -2,7 +2,7 @@
 
 # Namibia Senior Secondary Certificate Ordinary Level Physics 6118 (examined 2026)
 
-Study notes and flashcards. 28 topics, 693 flashcards and performance tasks, 93,037 words of notes.
+Study notes and flashcards. 28 topics, 693 flashcards and performance tasks, 93,121 words of notes.
 
 Every topic here passes the full deterministic check suite. Semantic review runs on published material rather than ahead of it, so the **Open issues** column is debt that ships visibly and is cleared in a maintenance pass - it is not a warning that the topic is unusable.
 
@@ -29,7 +29,7 @@ Every topic here passes the full deterministic check suite. Semantic review runs
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
-| **4** Measurement, scalars and vectors | [4-measurement-scalars-and-vectors.md](notes/4-measurement-scalars-and-vectors.md) | [4-measurement-scalars-and-vectors-flashcards.json](flashcards/4-measurement-scalars-and-vectors-flashcards.json) | 21 | 3,467 | — |
+| **4** Measurement, scalars and vectors | [4-measurement-scalars-and-vectors.md](notes/4-measurement-scalars-and-vectors.md) | [4-measurement-scalars-and-vectors-flashcards.json](flashcards/4-measurement-scalars-and-vectors-flashcards.json) | 21 | 3,530 | — |
 
 ## Position, speed and acceleration
 
@@ -59,7 +59,7 @@ Every topic here passes the full deterministic check suite. Semantic review runs
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
-| **9** Energy sources and renewable systems | [9-energy-sources-and-renewable-systems.md](notes/9-energy-sources-and-renewable-systems.md) | [9-energy-sources-and-renewable-systems-flashcards.json](flashcards/9-energy-sources-and-renewable-systems-flashcards.json) | 26 | 3,216 | — |
+| **9** Energy sources and renewable systems | [9-energy-sources-and-renewable-systems.md](notes/9-energy-sources-and-renewable-systems.md) | [9-energy-sources-and-renewable-systems-flashcards.json](flashcards/9-energy-sources-and-renewable-systems-flashcards.json) | 26 | 3,237 | — |
 
 ## Energy, work, efficiency and power
 

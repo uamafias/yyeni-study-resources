@@ -52,4 +52,9 @@ write(W/'authoring/progress.json',report);write(OUT/'BUILD-REPORT.json',report)
 for name in ['REPAIR-LOG.md','repair-validation.json','followup-validation.json','followup-figures.jpg','card-change-counts.json','what-to-fix-results.json']:
  shutil.copy2(W/'review/claude-step6'/name,OUT/'review'/name)
 if approval:shutil.copy2(approval_path,OUT/'review/step7-approval.json')
+comparison_path=W/'review/yyeni-card-comparison.json'
+if comparison_path.exists():
+ comparison=read(comparison_path);shutil.copy2(comparison_path,OUT/'review/yyeni-card-comparison.json')
+ report['yyeni_card_comparison']=dict(path='review/yyeni-card-comparison.json',scope=comparison['scope'],totals=comparison['totals'])
+ write(W/'authoring/progress.json',report);write(OUT/'BUILD-REPORT.json',report)
 print(json.dumps(totals,indent=2))

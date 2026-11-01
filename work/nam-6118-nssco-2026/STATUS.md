@@ -1,3 +1,13 @@
+# Current update: final optional fixes and classroom comparison, 2026-11-01
+
+Claude’s supplied final feedback confirms no must-fix findings remain. The optional pendulum-table and plot-overlap fixes are implemented; uranium-235 wording now explicitly describes controlled fission, and the thermometer note uses sensitivity/range rather than resolution. Topics 4, 9 and 13 pass checks; the author repair checks pass. The original resource publication is already on shared main at `8c460ecd`.
+
+The requested read-only comparison with existing YYeni cards is complete: **1,429 active shared cards** in **2026 Angra Pequena SSS → NSSCO PHYSICS (6118)**, compared with **616 new flashcards** and **77 separate assessment tasks**. There are two exact normalized question/answer matches and fourteen further same-question/different-answer matches. Existing metadata omits Bloom and maximum marks on 726 cards; all new cards declare both. The report includes broad-section counts and exact-match item/card IDs, and does not infer semantic coverage from text matching. [Comparison report](review/yyeni-card-comparison.json).
+
+No classroom cards were imported, modified, archived or assigned. The 56 new cards with Markdown answer figures still require managed assets and platform rendering checks at import. The evidence/mapping/First Proof and C-35/C-41 caveats remain unchanged. These follow-up changes and report are prepared on a separate branch for Vitalis’s PR review.
+
+---
+
 # Current status: Step 7 repository publication approved, 2026-11-01
 
 Lotto instructed **“great move on to step 7”** after the repaired build was reported. This records operator acceptance for repository publication of the 28-topic Physics package: **693 items — 616 flashcards, 26 MC sets, 26 structured tasks and 25 practical tasks**. Author: Codex. Cross-review/feedback: Claude, with partial-verification limits retained; repairs: Codex. [Step 7 approval](review/step7-approval.json) records the exact instruction and scope.
