@@ -479,6 +479,7 @@ The pipeline was proven on Cambridge IGCSE and AS subjects. Namibian subjects us
   - The first subject of each new kind is a pilot, run by Vitalis: NSSCO, NSSCAS, grades 8 to 9, upper primary.
   - Any check that cannot apply is resolved in the standard. Nobody works around it in a workspace.
   - Each pilot is marked in the tracker when it publishes. Then the team scales that kind.
+- **Grades 4 to 9 frameworks.** How these steps change for each band is in `operations/frameworks/`: `JSS-GR8-9-FRAMEWORK.md` (grades 8 to 9, with a crosswalk from older JSSEE and JSC papers to the current syllabus), `UP-GR4-7-FRAMEWORK.md` (grades 4 to 7, no exams) and `GR4-9-SOURCE-MATRIX.md` (what we hold for every subject). They are drafts until each pilot publishes.
 
 ---
 
