@@ -23,7 +23,6 @@ The first subject of each new kind is run by Vitalis before the team scales that
 
 | Board and level | Code | Subject | Workspace | Owner | Authoring tool | Status | Notes |
 |---|---|---|---|---|---|---|---|
-| Namibia NSSCO | 6118 | Physics | `nam-6118-nssco-2026` | Lotto N. Nanghonda Jr. | Codex | in progress | Step 4 plan approved: 28 topics, 666 learning items, raw-grid AO gap 2 points. Approved plan committed and pushed as 19eae09e; remote SHA verified. Step 5 ready. Working syllabus accepted; Paper 1 duration discrepancy explicitly waived as non-major. Marking-evidence gaps retained. |
 | Cambridge IGCSE | 0500 | First Language English | `cie-0500-igcse-2024-2026` | Vitalis | | in progress | planned; check its STATUS.md or the latest run before claiming |
 | Namibia NSSCO | 6138 | History | `nam-6138-nssco-2026` | Jeremy | Codex | in progress | Claimed 26 October 2026; source inventory started. Jeremy explicitly instructed claim/start; NSSCO pilot remains unconfirmed. |
 | Namibia NSSCO | 6136 | Development Studies | `nam-6136-nssco-2026` | Jeremy | Codex | in progress | Authored by Jeremy (18 topics, 505 flashcards + 38 activities; five Claude reviews, last verdict content PUBLISH, release NOT YET) on branch `nssco-6136-development-studies` (420dd6e, 21 October 2026), not yet merged to main. Row recorded 31 October 2026 by Vitalis, replacing Vitalis's mistaken duplicate claim. |
@@ -34,6 +33,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 
 | Board and level | Code | Subject | Workspace | Authoring tool | Reviewed by | Items | Notes |
 |---|---|---|---|---|---|---:|---|
+| Namibia NSSCO | 6118 | Physics | `nam-6118-nssco-2026` | Codex | Claude (partial cross-review); Lotto approval | 693 | Lotto N. Nanghonda Jr.; Step 7 approved 2026-11-01. 616 flashcards + 77 assessment tasks across 28 topics; all mechanical checks clear. Review/evidence limits retained; platform import and image rendering checks pending. |
 | Namibia NSSCO | 6117 | Chemistry | `nam-6117-nssco-2026` | Codex | Claude; interim ChatGPT reviews | 844 | Lotto N. Nanghonda Jr.; pilot complete 2026-10-31 by user instruction. 808 cards active at 2026 Angra Pequena SSS, all 3,501 old cards archived and full inventory verified; 36 activities remain repository resources. Shared branch pushed at 427c37b; PR #2 created, old fork PR #1 closed; main merge separate. Review limits retained in work/nam-6117-nssco-2026/PILOT-COMPLETION-6117.md. |
 | Namibia NSSCO | 6144 | Business Studies | `nam-6144-nssco-2026` | Codex | Claude | 562 | Vitalis; 474 flashcards + 88 practice packages. Reviewed resources pushed 28 October 2026 (47403a3). Non-blocking review follow-ups retained; YYeni import pending. |
 | Namibia NSSCO | 6145 | Economics | `nam-6145-nssco-2026` | Codex; Claude diagrams | Claude; Codex visual and repair checks | 625 | Vitalis; 513 flashcards + 112 practice packages. Reviewed resources pushed to origin/main in 06c382c; all 28 topics PUBLISH. YYeni image upload/classroom import deferred. |

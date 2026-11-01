@@ -1,3 +1,27 @@
+# Current status: Step 7 repository publication approved, 2026-11-01
+
+Lotto instructed **“great move on to step 7”** after the repaired build was reported. This records operator acceptance for repository publication of the 28-topic Physics package: **693 items — 616 flashcards, 26 MC sets, 26 structured tasks and 25 practical tasks**. Author: Codex. Cross-review/feedback: Claude, with partial-verification limits retained; repairs: Codex. [Step 7 approval](review/step7-approval.json) records the exact instruction and scope.
+
+Publication target: shared `origin/main` at `uamafias/yyeni-study-resources`. An isolated checkout preserves the active Chemistry branch and unrelated working files. Only Physics workspace/export paths, its two analyses and the Physics tracker entry are included. The remote branch SHA is verified after pushing.
+
+All 28 topics have zero failed mechanical checks. The operator approval does not convert unverified claims into verified ones or erase the remaining 267 evidence gaps, partial 355/622 marking coverage, independent mapping work, First Proof caveat or C-35/C-41 not_run results. Platform import and Markdown-image rendering checks remain separate. The working syllabus approval and waived non-major Paper 1 duration conflict stand.
+
+The prior review/repair records below are historical; the pending-verdict language in them is superseded by this operator decision.
+
+---
+
+# Current status: follow-up repairs ready for Lotto/Claude verdict, 2026-10-31
+
+The second feedback has been implemented. The local review build contains **693 items: 616 flashcards, 26 MC sets, 26 structured tasks and 25 practical tasks**, with 82 figure assets. All 28 topics have zero failed mechanical checks, and both author repair-validation scripts pass. All 686 first-repair IDs remain; seven additional cards cover Newton’s first law, friction, energy forms, named machines and eye/camera parts. The 666 original IDs remain intact.
+
+[REPAIR-LOG.md](review/claude-step6/REPAIR-LOG.md) maps the fixes to feedback items 1–13. [followup-validation.json](review/claude-step6/followup-validation.json) includes exact MC letters/feedback, comparison and repetition credit, coverage items, numerical assumptions and scoped answer-change counts. The earlier 203 count concerned flashcards only; 255 included all original item types. The latest build changes 256 original canonical answers, with 27 supplements counted separately. All 87 calculation rubrics are separately authored.
+
+**Lotto/Claude’s final Step 6 verdict remains pending.** Claims remain unverified/non-publishable; items remain review_required. The 267 marking-evidence gaps, partial 355/622 evidence, independent mappings, First Proof equivalence and platform image rendering remain open. C-35/C-41 still report not_run. No new source verification, commit, push or platform import is claimed. The accepted working syllabus and waived non-major Paper 1 duration conflict remain settled.
+
+The records below are historical and their earlier counts describe the pre-review baseline.
+
+---
+
 # STATUS - 6118 Physics (Namibia NSSCO)
 
 Workspace: `work/nam-6118-nssco-2026/`  
@@ -25,11 +49,11 @@ on 2026-10-31; this supersedes the earlier pending-approval notes.
 - [x] 2 YOU: reviewed AO and paper tables approved - Lotto, 2026-10-31. Paper 1 duration discrepancy explicitly waived as non-major/non-blocking; both durations retained.
 - [x] 3 Corpus analysis written - 2026-10-31; question census complete, marking evidence explicitly partial; ready for operator reading checkpoint.
 - [x] 3 YOU: analysis read and progression approved - operator: “move on to step 4”.
-- [x] 4 Plan built - 28 topics, 666 items; draft operator approval pending.
+- [x] 4 Plan built - 28 topics, 666 items; operator approval recorded below.
 - [x] 4 YOU: plan approved - operator: “i approve the plan”; Step 4 package accepted for progression.
 - [x] 4 Approved plan committed and pushed - 19eae09e44936be2b9f256ff44d39d106b67537f to shared origin/main; remote SHA verified.
-- [ ] 5 Topics authored: 0 / not yet established
-- [ ] 5 Published
+- [x] 5 Topics authored: 28 / 28 by Codex; zero failed deterministic checks in every topic. Full counts, warnings and deviations: authoring/progress.json.
+- [x] 5 Local export assembled in publish/nam-6118-nssco-2026/; this is a review package, with no platform import or external learner release.
 - [ ] 6 Independent cross-review and repairs completed
 - [ ] 6 YOU: verdict read and release decision recorded
 - [ ] 7 Committed and pushed; tracker updated
@@ -388,3 +412,52 @@ separately in review/plan-publication-result.json after verification.
 ### Approved plan package published
 
 Commit `19eae09e44936be2b9f256ff44d39d106b67537f` (“6118 Physics: approved plan”) was pushed by a normal fast-forward to shared origin/main. A fresh git ls-remote returned the identical SHA. The commit contains 271 files: the Physics workspace, its two analysis documents and the Physics tracker-row update. All other upstream tracker lines, the active Chemistry HEAD and the shared index were preserved. The result is recorded in review/plan-publication-result.json. Step 5 is next; full-topic authoring has not begun.
+
+
+### Step 5 authoring authorised
+
+Operator: “Okay, go ahead and build the the resources and the flashcards as well.” Codex is authoring all 28 topics sequentially, following the approved plan and active Author role. Original claims, teaching, flashcards, MC distractor explanations and complete practical methods are written in per-topic authored.py sources. A shared authoring/engine.py structures metadata and calls the standard renderer/checks; it contains no fallback physics answers. Parameter-generated original scientific plots use Matplotlib because the shared renderer only models business charts. No independent review, platform import or new Git publication is being performed.
+
+
+### Step 5 authoring complete, 2026-10-31
+
+Codex authored all 28 topics sequentially. The approved 666 slot identities are present exactly once: 590 flashcards, 26 MC sets containing 312 questions, 26 eight-mark structured tasks and 24 sixteen-mark practical tasks. The build contains 1,215 claims, 57 content units and 78,732 content words; rendered notes include headings and metadata and total 88,268 words. All 28 topics return PUBLISH with zero failed checks, and what_to_fix reports nothing left to fix. Warnings and checks not run remain explicit in authoring/progress.json and the topic QA files. No semantic or copied-wording review is claimed.
+
+The standard publisher assembled the local review folder, and authoring/export_resources.py copied all 81 original image assets into both notes and flashcard export paths and checked every local image reference. This wrapper adds an explicit review-status banner and manifest; it does not alter standard/. Regenerate the complete package using that wrapper after changes. The standard publisher alone does not copy Physics image assets.
+
+Claims remain unverified and non-publishable; items remain review_required. The mechanical PUBLISH decision is separate from operator release. No authoring commit, push or platform import occurred. The active Chemistry branch and unrelated working files were preserved.
+
+Author judgements and deviations are enumerated per topic in authoring_notes.json and aggregated in the export BUILD-REPORT.json. They include exact objective bindings for MC/structured parts rather than two broad anchors; additional genuinely exercised graph/table mappings where needed; parameter-generated scientific figures because the standard renderer models business charts; qualitative structured applications where numeric equations would exceed the syllabus; seven knowledge and five application MC questions per set rather than alternating seven/eight knowledge questions; and dated local energy examples rather than unverified current rankings or generation percentages. The approved item IDs, subtypes, AOs, Bloom levels, commands and tariffs are preserved.
+
+The 267 marking-evidence gaps are still visible, independent demand mappings still need Step 6 review, and First Proof equivalence is unconfirmed. The working-syllabus acceptance and explicit non-major Paper 1 duration waiver stand. Lotto and Claude perform Step 6; no new approval gate is introduced by this authoring report.
+
+| Topic | Claims | Units | Items | Content words | Final check |
+|---|---:|---:|---:|---:|---|
+| 1 Mathematical skills and units | 98 | 2 | 51 | 5,802 | PUBLISH; 0 fail |
+| 2 Planning investigations and recording results | 30 | 2 | 14 | 1,903 | PUBLISH; 0 fail |
+| 3 Graphs, uncertainty and experimental conclusions | 47 | 2 | 20 | 2,657 | PUBLISH; 0 fail |
+| 4 Measurement, scalars and vectors | 38 | 2 | 21 | 3,071 | PUBLISH; 0 fail |
+| 5 Position, speed and acceleration | 48 | 3 | 26 | 3,777 | PUBLISH; 0 fail |
+| 6 Forces, springs and momentum | 43 | 1 | 25 | 3,348 | PUBLISH; 0 fail |
+| 7 Mass, weight and density | 27 | 2 | 16 | 2,586 | PUBLISH; 0 fail |
+| 8 Moments, equilibrium, stability and friction | 25 | 3 | 15 | 2,622 | PUBLISH; 0 fail |
+| 9 Energy sources and renewable systems | 44 | 2 | 24 | 2,719 | PUBLISH; 0 fail |
+| 10 Energy, work, efficiency and power | 44 | 3 | 24 | 2,770 | PUBLISH; 0 fail |
+| 11 Pressure and hydraulics | 24 | 1 | 15 | 2,081 | PUBLISH; 0 fail |
+| 12 Particles, phases and gases | 50 | 1 | 27 | 2,963 | PUBLISH; 0 fail |
+| 13 Temperature and thermometers | 31 | 1 | 18 | 2,254 | PUBLISH; 0 fail |
+| 14 Heat capacity and changes of state | 40 | 2 | 23 | 2,701 | PUBLISH; 0 fail |
+| 15 Thermal energy transfer | 35 | 4 | 20 | 2,470 | PUBLISH; 0 fail |
+| 16 Wave motion and wavefronts | 49 | 1 | 27 | 2,642 | PUBLISH; 0 fail |
+| 17 Light propagation and reflection | 36 | 3 | 20 | 2,527 | PUBLISH; 0 fail |
+| 18 Refraction, lenses and vision | 71 | 1 | 39 | 3,922 | PUBLISH; 0 fail |
+| 19 The electromagnetic spectrum | 38 | 1 | 21 | 2,012 | PUBLISH; 0 fail |
+| 20 Sound and echoes | 29 | 1 | 17 | 2,136 | PUBLISH; 0 fail |
+| 21 Electrostatics | 37 | 1 | 21 | 2,156 | PUBLISH; 0 fail |
+| 22 Current, electromotive force and potential difference | 31 | 2 | 18 | 2,102 | PUBLISH; 0 fail |
+| 23 Resistance and electric circuits | 75 | 4 | 40 | 3,834 | PUBLISH; 0 fail |
+| 24 Electrical energy and safety | 56 | 2 | 30 | 3,022 | PUBLISH; 0 fail |
+| 25 Magnets, electromagnets and motors | 59 | 2 | 32 | 3,438 | PUBLISH; 0 fail |
+| 26 Induction, generators and transformers | 36 | 1 | 20 | 2,499 | PUBLISH; 0 fail |
+| 27 Atomic structure and isotopes | 34 | 2 | 20 | 2,194 | PUBLISH; 0 fail |
+| 28 Radioactivity and half-life | 40 | 5 | 22 | 2,524 | PUBLISH; 0 fail |
