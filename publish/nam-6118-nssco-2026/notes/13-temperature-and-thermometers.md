@@ -1,6 +1,6 @@
 # 13 Temperature and thermometers
 
-*nam-6118-nssco-2026. Offline study notes, rendered from the approved content units on 2026-10-31. Everything here is also what the flashcards are built from.*
+*nam-6118-nssco-2026. Offline study notes, rendered from the approved content units on 2026-11-01. Everything here is also what the flashcards are built from.*
 
 ---
 

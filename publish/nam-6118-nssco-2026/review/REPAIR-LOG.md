@@ -43,3 +43,10 @@ Current build: **693 items — 616 flashcards, 26 MC sets (312 questions), 26 st
 - The accepted working syllabus and waived non-major Paper 1 duration conflict remain settled.
 
 Rebuild sequentially with the repository `.venv` Python: `topics/1/authored.py` through `topics/28/authored.py`, then `authoring/verify_repairs.py`, `authoring/verify_followup.py` and `authoring/export_resources.py`. The review repairs run from the authoring engine on every build.
+
+## Final optional tidy-up — 1 November 2026
+
+- 4-P03 now explicitly specifies a 0.49 m pivot-to-bob-centre length for its invented timing table, and the results-table rubric records length for each timing series. The graph uses hollow readings markers above the fitted line and a legend outside the plotting area; the rebuilt image was opened to check title, labels and legend placement.
+- Topic 9 now explicitly separates uranium-235 reactor fuel from the controlled fission process supplying the described heat. This does not add nuclide formulas or confuse fission energy with natural radioactive decay.
+- The topic 13 authoring input and generated notes contain the sensitivity/range account, with the superseded resolution comparison removed.
+- Affected topics 4, 9 and 13 pass mechanical checks. The evidence, mapping, First Proof, C-35/C-41 and platform-rendering caveats are unchanged. Claude’s supplied final feedback confirms no must-fix findings remain; this tidy-up does not claim a new independent review.

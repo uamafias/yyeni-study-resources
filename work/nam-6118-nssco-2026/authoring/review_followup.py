@@ -32,6 +32,10 @@ def apply(A):
   pr=A.practical
   pr['method'][3]='For each selected oscillation count, repeat the timing at least three times, retain all raw values and calculate the mean elapsed time.'
   pr['method'][4]='Use several counts at each length, then compare period estimates at new lengths; keep bob mass and small release angle matched.'
+  pr['table']='For each pendulum length, record pivot-to-bob-centre length / m, oscillation count, three elapsed-time readings / s and mean elapsed time / s. Use a separate labelled section or length column for each length.'
+  pr['stimulus_note']='For this invented practice table, the specified pivot-to-bob-centre pendulum length is 0.49 m. Record the measured length alongside each timing series when repeating the investigation at other lengths.'
+  pr['table_caption']='Specified pendulum length for the supplied readings: 0.49 m (pivot to bob centre).'
+  pr['legend_outside']=True;pr['readings_marker']='o'
   pr['measurement_credit']='One mark each: time a stated number of full cycles using the same fiducial and direction; repeat each timing at least three times and take a mean; measure new pivot-to-centre lengths and repeat the period comparison.'
  if t==5:
   A.practical['conclusion']='A straight speed-time line of constant gradient shows constant acceleration within the measurement uncertainty. Here that gradient is 0.20 m/s²; a changing gradient would indicate changing acceleration.'
