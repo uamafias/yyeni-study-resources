@@ -13,7 +13,7 @@ import re
 from dataclasses import dataclass, replace
 from typing import List, Sequence
 
-from services.math_marking import check
+from ..math_marking import check
 
 from .base import GeneratedProblem, Step
 

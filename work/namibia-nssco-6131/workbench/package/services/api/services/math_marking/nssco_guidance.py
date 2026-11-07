@@ -635,7 +635,7 @@ for concept_level, demand in (
 
 
 # Authored static visual recipes share the frozen contract, not a second grader.
-from services.math_generators import registered_generator_ids, get_generator
+from ..math_generators import registered_generator_ids, get_generator
 for visual_id in registered_generator_ids():
     if visual_id.startswith('nssco_visual_'):
         for visual_level in get_generator(visual_id).levels:
@@ -813,7 +813,7 @@ def resolve(problem):
         if level == 5 and task == 'joint_late': use('calculation2','2024-P2-Q29b.i','Multiply the probability of the specified route by the lateness probability conditional on that route.')
 
     if gid == 'functions_concepts':
-        from services.math_generators.functions_concepts_content import marking_achievements
+        from ..math_generators.functions_concepts_content import marking_achievements
         r['dynamic_awards'] = [{'marks':1,'achievement':a} for a in marking_achievements(problem)]
         r['selection'] = 'authored_concept_task_rule'
         r['evidence_relation'] = 'syllabus_objective_no_direct_exam_tariff'
@@ -822,7 +822,7 @@ def resolve(problem):
             'these independent whole-mark achievements are proposed Recall allocations, not an official exam scheme.')
 
     if problem.generator_id.startswith('nssco_visual_'):
-        from services.math_generators.visual_common import guidance as visual_guidance
+        from ..math_generators.visual_common import guidance as visual_guidance
         r['dynamic_awards'],r['sources'],visual_note=visual_guidance(problem)
         r['selection']='authored_visual_task_rule'
         r['evidence_relation']='adapted_visual_exam_demand' if all(s[:4].isdigit() for s in r['sources']) else 'syllabus_visual_objective_proposed_tariff'
@@ -840,7 +840,7 @@ def resolve(problem):
         awards = [{'marks':1,'achievement':f'Correct table value at requested input {i+1} ({x}), in the required position.'} for i,x in enumerate(m['x'])]
     from .instance_awards import instantiate
     awards = instantiate(problem,r['profile'],awards,r['demand'])
-    from services.math_generators.prose_formatting import normalise_notation
+    from ..math_generators.prose_formatting import normalise_notation
     for award in awards:award['achievement']=normalise_notation(award['achievement'])
     r['awards'] = awards
     r['proposed_total_marks'] = sum(a['marks'] for a in awards)
@@ -880,7 +880,7 @@ def resolve(problem):
     if reference_program:
         reference_work=[f"{s['action']}. Reason: {s['reason']} Working: {s['result']}" for s in reference_program.steps]
     else:
-        from services.math_generators.presentation import worked_example
+        from ..math_generators.presentation import worked_example
         reference_work=[worked_example(problem)]
     r['grading_guide_answer'] = '\n'.join([
         f"DRAFT — teacher review required. Proposed total: {r['marks']}.",

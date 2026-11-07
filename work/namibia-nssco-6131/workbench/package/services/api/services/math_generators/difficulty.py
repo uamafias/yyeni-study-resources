@@ -161,17 +161,3 @@ def summarise(cards):
             'breakdown':sorted(groups.values(),key=lambda g:(g['lesson'],g['level'],g['generator_id']))}
 
 
-def deck_summaries(db, deck_ids):
-    """One narrow metadata query for any number of authorised decks."""
-    from models import FlashcardStudioDeckCard as Card
-    by_deck = defaultdict(list)
-    if not deck_ids:
-        return {}
-    for row in db.query(Card.deck_id,Card.generator_id,Card.generator_params,
-                        Card.source_classroom_id,Card.source_topic_bucket_id,
-                        Card.topic_title_snapshot).filter(Card.deck_id.in_(deck_ids)).all():
-        by_deck[row.deck_id].append({'generator_id':row.generator_id,
-            'rating':saved_rating(row.generator_id,row.generator_params),
-            'lesson_key':(row.source_classroom_id,row.source_topic_bucket_id),
-            'lesson':row.topic_title_snapshot})
-    return {deck_id:summarise(cards) for deck_id,cards in by_deck.items()}

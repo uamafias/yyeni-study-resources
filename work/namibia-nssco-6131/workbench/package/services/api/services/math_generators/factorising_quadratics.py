@@ -359,7 +359,7 @@ class FactorisingQuadraticsGenerator(MathGenerator):
         distractors = [d for d in distractors if d.answer != answer]
         seen = set()
         distractors = [d for d in distractors if not (d.answer in seen or seen.add(d.answer))]
-        from services.math_marking.parse import clean
+        from ..math_marking.parse import clean
 
         a, b, c = machine["quadratic"]
         if machine["task"] == "factorise":
@@ -374,7 +374,7 @@ class FactorisingQuadraticsGenerator(MathGenerator):
                 # must not award this two-part question for either part alone.
                 marking = {"answer_type": "text_description", "expected": [answer], "typed": answer}
         from types import SimpleNamespace
-        from services.math_marking.factorising_program import quadratic_program
+        from ..math_marking.factorising_program import quadratic_program
         program=quadratic_program(SimpleNamespace(machine=machine,answer=answer))
         steps=tuple(Step(row['action']+'. '+row['reason'],row['result']) for row in program.steps)
         distractors = [Distractor(d.answer, d.error_code, d.description, clean(d.answer)) for d in distractors]

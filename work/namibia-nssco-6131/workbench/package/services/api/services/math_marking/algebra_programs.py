@@ -13,7 +13,7 @@ def algebra_program(p,content):
             import re
             variables=list(dict.fromkeys(re.findall(r'[a-z]',re.findall(r'\$([^$]+)\$',p.question)[0])))
             u,v=variables[:2];k=m['m'];b,c=m['bracket'];d,e=m['extra']
-            from services.math_generators.algebra_content import _sum
+            from ..math_generators.algebra_content import _sum
             expanded=_sum((k*b,u),(k*c,v),(d,u),(e,v))
             add('expand','Distribute the outside factor','Multiply both terms in the bracket by the supplied factor, preserving their actual variable names.',expression=expanded)
             add('collect','Collect like variables','Combine coefficients of matching variables only.',expression=_sum((k*b+d,u),(k*c+e,v)))
@@ -59,7 +59,7 @@ def algebra_program(p,content):
     elif f=='polynomials_algebraic_fractions':
         if t=='single_fraction':
             add('common_denominator','Express the terms over one common denominator','Multiply each numerator by the factor its own denominator is missing.',[0])
-            from services.math_generators.formatting import linear_latex,number_latex
+            from ..math_generators.formatting import linear_latex,number_latex
             sign=-1 if m['subtract'] else 1
             if 'dens' in m:
                 A,B=m['tops'];(u,v),(w,z)=m['dens']
@@ -186,7 +186,7 @@ def algebra_program(p,content):
         elif t=='solve_exponential':
             base=m['a'];power=m.get('p',1);offset=m.get('q',m.get('b',0));scale=m.get('k',1)
             rhs=Fraction(str(m['c']))/scale
-            from services.math_generators.formatting import linear_latex
+            from ..math_generators.formatting import linear_latex
             exponent=linear_latex(power,offset)
             quotient=rf'\frac{{\log({q(rhs)})}}{{\log {base}}}'
             add('logarithms','Take logarithms of the isolated exponential','Divide out the outside multiplier, then bring down the complete exponent with the logarithm power law.',expression=rf'{base}^{{{exponent}}}={q(rhs)}\quad\Rightarrow\quad ({exponent})\log {base}=\log({q(rhs)})')

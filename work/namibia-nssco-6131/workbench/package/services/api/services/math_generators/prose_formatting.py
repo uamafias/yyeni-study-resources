@@ -90,5 +90,5 @@ def notation_faults(text):
 
 def markdown_result(value):
     """Compatibility export: new consumers use typed blocks instead."""
-    from services.math_workbench.content_format import display_content
+    from ..math_workbench.content_format import display_content
     return '\n\n'.join(('$$\n'+b['value']+'\n$$') if b['kind']=='math' else b['value'] for b in display_content(value)['blocks'])

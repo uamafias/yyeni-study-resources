@@ -25,8 +25,8 @@ from fractions import Fraction
 from math import gcd
 from typing import Dict, List, NamedTuple, Optional, Sequence, Tuple
 
-from services.math_marking.parse import clean, to_expr
-from services.math_marking import check
+from ..math_marking.parse import clean, to_expr
+from ..math_marking import check
 
 from .base import Distractor, GeneratedProblem, GeneratorError, MathGenerator, SeededRandom, Step
 from .formatting import math

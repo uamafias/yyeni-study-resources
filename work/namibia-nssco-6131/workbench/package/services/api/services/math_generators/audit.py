@@ -5,8 +5,8 @@ import re
 from collections import Counter
 from time import monotonic
 
-from services.math_marking import check
-from services.math_marking.grading_contract import build_contract
+from ..math_marking import check
+from ..math_marking.grading_contract import build_contract
 from . import generate_problem, get_generator
 
 

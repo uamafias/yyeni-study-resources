@@ -210,7 +210,7 @@ def _drop_accepted_distractors(problem: "GeneratedProblem") -> Tuple["Distractor
     marking = problem.marking
     if not marking or not marking.get("expected"):
         return problem.distractors
-    from services.math_marking import check
+    from ..math_marking import check
 
     kwargs = {k: marking[k] for k in ("rounding", "digits", "form") if k in marking}
     kept = []
