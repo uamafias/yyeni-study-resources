@@ -64,7 +64,7 @@ def build_ratio_all_shares(seed,rng,requested_key=None):
 
 def build_monomial_products(seed,rng,requested_key=None):
     a,b,c,d=[rng.randint(2,8) for _ in range(4)]
-    from services.math_generators.algebra_content import _sum
+    from ..math_generators.algebra_content import _sum
     specs=[(rf'{a}x({b}x^2-{c}x+{d})',polynomial([a*b,-a*c,a*d,0]),rf'{a*b}x^3-{a*c}x^2+{a*d}x'),
       (rf'-{a}y^2({b}y^3-{c}y+{d})',_sum((-a*b,'y^5'),(a*c,'y^3'),(-a*d,'y^2')),rf'-{a*b}y^5+{a*c}y^3-{a*d}y^2'),
       (rf'{a}xy({b}x^2-{c}y^2)',_sum((a*b,'x^3y'),(-a*c,'xy^3')),rf'{a*b}x^3y-{a*c}xy^3')]

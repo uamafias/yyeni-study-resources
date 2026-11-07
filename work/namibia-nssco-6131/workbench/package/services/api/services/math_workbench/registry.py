@@ -103,7 +103,7 @@ def generate_question(recipe_id, seed, *, version=None):
                  'wb6131:line-equation-from-graph':66}
     pool=known_pools.get(recipe_id)
     if recipe.module is legacy:
-        from services.math_generators import get_generator
+        from ..math_generators import get_generator
         definition=next(d for d in legacy.recipe_definitions() if d['recipe_id']==recipe_id)
         pool=getattr(get_generator(definition['generator_id']),'bank_sizes',{}).get(definition['legacy_setting'])
     q['generation_space']={'kind':'finite_parameterised_or_prepared',
@@ -112,7 +112,7 @@ def generate_question(recipe_id, seed, *, version=None):
     q['card_key'] = f'{recipe_id}:seed:{seed}'
     from .diagrams import learner_assets
     visible_assets=learner_assets(q['assets'])
-    from services.math_generators.prose_formatting import normalise_notation,markdown_result
+    from ..math_generators.prose_formatting import normalise_notation,markdown_result
     q['stem']=normalise_notation(q['stem'])
     for p in q['parts']:
         for key in ('prompt','reference_answer','teaching_context'):
@@ -132,7 +132,7 @@ def generate_question(recipe_id, seed, *, version=None):
 
 
 def validate_question(q):
-    from services.math_generators.prose_formatting import notation_faults
+    from ..math_generators.prose_formatting import notation_faults
     assert not notation_faults(q['stem']), ('Invalid stem notation',notation_faults(q['stem']))
     assert not any(re.search(r'\d{12,}',s) for s in [q['stem'],*(p['prompt'] for p in q['parts'])]), 'Long digit artefact in question prompt'
     assert all(a.get('role') in ('question_and_solution','solution_only') for a in q['assets']), 'Asset roles must be explicit'

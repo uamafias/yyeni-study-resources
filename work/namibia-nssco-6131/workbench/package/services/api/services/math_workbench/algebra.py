@@ -23,7 +23,7 @@ def build_factorising_required_forms(seed, rng, requested_key=None):
     q = lambda key, objs, title, stem, ps, **kw: out.append(question(key, objs, title, stem, ps, variant=seed, **kw))
     r,s=rng.choice([(r,s) for r in range(2,8) for s in range(2,7) if math.gcd(r,s)==1])
     k=rng.randint(2,9)
-    from services.math_generators.factorisation_forms import perfect_square_form,grouping_form
+    from ..math_generators.factorisation_forms import perfect_square_form,grouping_form
     u,v=rng.choice([(u,v) for u in range(2,8) for v in range(2,7) if math.gcd(u,v)==1 and (u,v)!=(r,s)])
     square,square_answer,square_work=perfect_square_form(u,v,compact=True)
     grouped,grouped_answer,grouped_work=grouping_form(1,1,k,compact=True)

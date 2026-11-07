@@ -27,7 +27,7 @@ from decimal import ROUND_HALF_UP, Decimal
 from fractions import Fraction
 from typing import Any, Callable, Dict, List, Mapping, Sequence, Tuple
 
-from services.math_marking import check
+from ..math_marking import check
 
 from .base import Distractor, GeneratedProblem, GeneratorError, MathGenerator, SeededRandom, Step
 from .formatting import math, number_latex

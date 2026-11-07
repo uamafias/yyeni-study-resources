@@ -50,7 +50,7 @@ def build_contract(problem):
         'evidence_relation':guidance['evidence_relation'],
         'review_reason':guidance['review_reason'],
     }
-    from services.math_generators.graph_bank import problem_references
+    from ..math_generators.graph_bank import problem_references
     refs = problem_references(problem)
     if refs:
         contract['reference_images'] = refs
@@ -97,14 +97,14 @@ def validate_contract(value, *, question=None, max_marks=None, problem=None):
     refs = value.get('reference_images', {})
     if not isinstance(refs,dict) or (refs and (set(refs) != {'question','answer'} or any(not isinstance(v,str) for v in refs.values()))):
         raise InvalidMarkingContract('Invalid reference images')
-    from services.math_generators.base import visible_question_fingerprint
+    from ..math_generators.base import visible_question_fingerprint
     fingerprint = visible_question_fingerprint(value['question'], refs.get('question'))
     if value.get('question_fingerprint') != fingerprint:
         raise InvalidMarkingContract('Question fingerprint mismatch')
     if question is not None and value['question'] != question:
         raise InvalidMarkingContract('Snapshot question differs from marking contract')
     if max_marks is not None:
-        from services.grading_result_validation import finite_number
+        from .numeric import finite_number
         if finite_number(max_marks) != maximum:
             raise InvalidMarkingContract('Snapshot maximum differs from marking contract')
     if problem is not None:
@@ -113,7 +113,7 @@ def validate_contract(value, *, question=None, max_marks=None, problem=None):
                     'question':problem.question,'canonical_answer':problem.answer}
         if any(value.get(k)!=v for k,v in bindings.items()):
             raise InvalidMarkingContract('Generated instance differs from marking contract')
-    from services.math_generators.graph_bank import validate_references
+    from ..math_generators.graph_bank import validate_references
     try:
         validate_references(value)
     except (ValueError, OSError, KeyError, TypeError) as exc:
