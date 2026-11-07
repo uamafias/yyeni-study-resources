@@ -7,9 +7,9 @@ from pathlib import Path
 import random
 import re
 
-from services.math_generators import generate_problem
-from services.math_generators.graph_bank import problem_references
-from services.math_marking.grading_contract import build_contract
+from ..math_generators import generate_problem
+from ..math_generators.graph_bank import problem_references
+from ..math_marking.grading_contract import build_contract
 from .legacy_objectives import classify,SETTING_SPECS
 from .core import part,question,step
 
@@ -117,14 +117,14 @@ def rejection_reasons(problem,card_key=None):
 
 def authored_content(problem):
     """Use the authored operation explanations, never infer reasons from keywords."""
-    from services.math_generators.presentation import (algebra_content, number_content,
+    from ..math_generators.presentation import (algebra_content, number_content,
         functions_content, functions_concepts_content, graph_content, topic_content)
     return (algebra_content(problem) or number_content(problem) or functions_content(problem)
             or functions_concepts_content(problem) or graph_content(problem) or topic_content(problem))
 
 
 def retained_steps(problem, teaching):
-    from services.math_marking.solution_programs import program_for
+    from ..math_marking.solution_programs import program_for
     program=program_for(problem)
     if program is None:raise ValueError('No authored retained solution program')
     return program.steps
@@ -134,7 +134,7 @@ def adapt(problem,*,source_key=None):
     rejected=rejection_reasons(problem,source_key)
     if rejected:raise ValueError('; '.join(rejected))
     c=build_contract(problem);mapped=mapping(problem);steps=[]
-    from services.math_generators.presentation import worked_example
+    from ..math_generators.presentation import worked_example
     teaching=worked_example(problem)
     blocks=[] if problem.generator_id in ('nssco_factorisation_basics','nssco_factorising_quadratics','nssco_factorisation_extension') else re.split(r'(?m)^\d+\.\s+',teaching)[1:]
     for block in blocks:

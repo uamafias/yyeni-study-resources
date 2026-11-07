@@ -1,7 +1,7 @@
 """Authored, question-bound prompts. Never derive hints from the final answer."""
 import re
-from services.math_generators import generate_problem
-from services.math_generators.algebra_content import _power, _term
+from ..math_generators import generate_problem
+from ..math_generators.algebra_content import _power, _term
 
 
 def pilot_hints(question):

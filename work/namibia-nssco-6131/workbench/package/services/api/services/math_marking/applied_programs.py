@@ -132,7 +132,7 @@ def applied_program(p,content):
     elif f=='transformations_coordinates':
         if t=='enlarge':
             points=[ast.literal_eval(x) for x in m['points']];centre=tuple(Fraction(x) for x in m['centre']);k=Fraction(m['k'])
-            from services.math_workbench.core import coordinates
+            from ..math_workbench.core import coordinates
             vectors=[(Fraction(x)-centre[0],Fraction(y)-centre[1]) for x,y in points];scaled=[(k*x,k*y) for x,y in vectors]
             add('displacements','Find the displacements from the given centre','Subtract centre coordinates from each original vertex; the centre need not be the origin.',expression=coordinates(vectors))
             add('scale','Scale each displacement','Multiply both components by the signed enlargement factor.',expression=coordinates(scaled))

@@ -85,12 +85,6 @@ def validate_references(contract):
     return expected
 
 
-def prepared_reference_images(contract):
-    from media.prepare_images import PreparedImage
-    refs = validate_references(contract)
-    return [PreparedImage(base64.b64encode(read_asset(refs[role])).decode('ascii'),
-                          'image/png', f'reference-{role}', False)
-            for role in ('question', 'answer')] if refs else []
 
 
 def teaching(problem):

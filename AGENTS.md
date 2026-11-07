@@ -3,6 +3,11 @@
 You are working inside the repository that produces YYeni's learner notes and flashcards from
 official syllabuses, past papers and examiner reports.
 
+**Workbench recipes/generators:** use [workbench/playbook/README.md](workbench/playbook/README.md)
+for the Workbench-specific workflow, role mapping, exact output paths and quality
+requirements. It supplements this repository's source/ownership rules; static
+notes/flashcard quotas and publication checks do not certify Workbench resources.
+
 **Read this file, then read exactly one role brief below. Do not read the others.**
 
 **Starting or continuing a subject with a person?** If someone asks you to create, plan, author, review or continue notes and flashcards for a subject, read `TEAM-PLAYBOOK.md` at the repository root first and follow it step by step. It sets the order of work, which role brief applies at each step, and where to stop for the person's answer. The role briefs below say how each step is done.

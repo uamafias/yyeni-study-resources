@@ -8,7 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from services.math_generators import GeneratorError
+from ..math_generators import GeneratorError
 
 DATA = Path(__file__).resolve().parents[2] / 'data/imports/nam-6131-nssco-2026'
 TARGET_GENERATORS=frozenset(k.rsplit(':',1)[0] for k in

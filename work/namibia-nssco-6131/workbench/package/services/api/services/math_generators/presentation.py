@@ -157,7 +157,7 @@ def _fixed_example(generator_id, seed, level):
 
 @lru_cache(maxsize=512)
 def _example_marks(generator_id, seed, level):
-    from services.math_marking.grading_contract import build_contract
+    from ..math_marking.grading_contract import build_contract
     return build_contract(_fixed_example(generator_id, seed, level))['marks']
 
 

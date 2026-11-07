@@ -1,9 +1,9 @@
 """Instance-authored working for factorising quadratics and completing squares."""
 from fractions import Fraction
-from services.math_generators.formatting import quadratic_latex, linear_latex, factors_latex, square_form_latex, number_latex
-from services.math_generators.algebra_content import _sum
+from ..math_generators.formatting import quadratic_latex, linear_latex, factors_latex, square_form_latex, number_latex
+from ..math_generators.algebra_content import _sum
 from .solution_programs import SolutionProgram, math_text
-from services.math_generators.factorisation_forms import outside_product
+from ..math_generators.factorisation_forms import outside_product
 
 
 def quadratic_program(problem):
@@ -50,7 +50,7 @@ def quadratic_program(problem):
 
 
 def extension_program(problem):
-    from services.math_generators.algebra_content import _term, _power
+    from ..math_generators.algebra_content import _term, _power
     m=problem.machine;task=m['task'];rows=[]
     def signed(n):return f'({n})' if n<0 else str(n)
     def squared(value):return value+'^2' if len(value)==1 and value.isalpha() else '('+value+')^2'
@@ -93,7 +93,7 @@ def extension_program(problem):
 
 def basics_program(problem):
     """One clear decision or operation per row, bound to this expression."""
-    from services.math_generators.algebra_content import _term, _power
+    from ..math_generators.algebra_content import _term, _power
     m=problem.machine;task=m['task'];rows=[]
     def add(action,reason,result):rows.append(dict(action=action,reason=reason,result=result))
     if task in ('common_number_factor','common_letter_factor'):

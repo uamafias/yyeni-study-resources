@@ -13,7 +13,7 @@ def instantiate(problem, profile, awards, demand):
             {'marks':1,'achievement':f'All {len(rounded)} operands correctly rounded (one additional mark; the preceding partial stage alone cannot earn it). Reference values: {examples}.'},
             {'marks':1,'achievement':f'Correct estimate calculated from the rounded inputs: {problem.answer}.'}]
     if profile == 'algebra_fraction3' and family == 'polynomials_algebraic_fractions' and problem.machine.get('task') == 'single_fraction':
-        from services.math_generators.formatting import linear_latex
+        from ..math_generators.formatting import linear_latex
         m=problem.machine; op='−' if m['subtract'] else '+'
         if 'dens' in m:
             (a,b),(c,d)=m['dens'];left,right=linear_latex(a,b),linear_latex(c,d)

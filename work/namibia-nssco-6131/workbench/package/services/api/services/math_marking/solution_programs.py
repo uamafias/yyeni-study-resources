@@ -60,7 +60,7 @@ def _alignment_tab_filter():
 
 
 def math_text(value):
-    from services.math_generators.prose_formatting import normalise_notation
+    from ..math_generators.prose_formatting import normalise_notation
     text=str(value).strip()
     # Results are Markdown/LaTeX fragments, not assumed to be a single formula.
     # Strip only a whole outer display wrapper; preserve inline math in prose.
@@ -102,7 +102,7 @@ def numeric_program(p,content):
     add=a.add
     if f=='fractions_decimals_percentages' and t in ('pick_smallest','pick_largest','compare_with_symbol'):
         from math import lcm
-        from services.math_generators.formatting import number_latex
+        from ..math_generators.formatting import number_latex
         if t=='compare_with_symbol':
             left,right=p.steps[0].value.split(' and ')
             values=[Fraction(left),Fraction(right)]
@@ -306,7 +306,7 @@ def numeric_program(p,content):
 
 
 def source_content(problem):
-    from services.math_generators.presentation import (algebra_content,number_content,
+    from ..math_generators.presentation import (algebra_content,number_content,
         functions_content,functions_concepts_content,graph_content,topic_content)
     return (algebra_content(problem) or number_content(problem) or functions_content(problem)
             or functions_concepts_content(problem) or graph_content(problem) or topic_content(problem))
@@ -338,8 +338,8 @@ def program_for(problem, *, strict=True):
 
 def set_program(p,content):
     """Follow the exact set-expression tree, explaining its actual operators."""
-    from services.math_generators.family_sets_graphs import _TWO_SET_EXPRS,_THREE_SET_EXPRS,_lx,_eval_set,_members
-    from services.math_generators.topic_sets_graphs_content import set_tex
+    from ..math_generators.family_sets_graphs import _TWO_SET_EXPRS,_THREE_SET_EXPRS,_lx,_eval_set,_members
+    from ..math_generators.topic_sets_graphs_content import set_tex
     m=p.machine;a=Author(p,content)
     universe_text=re.search(r'\\xi = \\\{(.*?)\\\}',p.question)[1]
     universe=list(map(int,re.findall(r'\d+',universe_text)));members=_members(universe,m['sets'])

@@ -1,7 +1,7 @@
 """Small instance programs that need extra working beyond legacy presenters."""
 from fractions import Fraction
 from .solution_programs import Author
-from services.math_generators.formatting import number_latex
+from ..math_generators.formatting import number_latex
 
 
 def q(value):
