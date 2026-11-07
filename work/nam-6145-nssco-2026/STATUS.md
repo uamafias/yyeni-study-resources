@@ -3,7 +3,7 @@
 Workspace: work/nam-6145-nssco-2026/   Owner: Jeremy   Authoring tool: Codex
 
 - [x] 0 Claimed locally — Jeremy, 2026-11-07. Explicit approval to claim and proceed despite the unconfirmed NSSCO pilot status. Tracker still records NSSCO as not yet piloted; this approval does not certify the pilot.
-- [ ] 0 YOU: tracker claim committed and pushed
+- [x] 0 YOU: publication tracker committed and pushed — final reviewed publication records Jeremy’s ownership; no separate original claim push is claimed.
 - [x] 1 Sources found — 2026-11-07: 2018 syllabus (implementation 2019; first examination 2020), 10 question papers and 5 combined examiner reports containing Economics sections, covering 2020–2024. See SOURCE-INVENTORY.md.
 - [x] 1 YOU: sources complete for proceeding with documented gaps — Jeremy, 2026-11-07; answered “yes” to proceeding with the available sources.
 - [x] 2 Syllabus facts written — 2026-11-07; 3 AOs, 2 papers, 13 command words, 9 themes, 28 topics, 96 specific-objective bullets. 79 citations verified against a fresh PDF extraction; specification grid visually checked.
@@ -14,16 +14,14 @@ Workspace: work/nam-6145-nssco-2026/   Owner: Jeremy   Authoring tool: Codex
 - [x] 4 YOU: plan approved — Jeremy, 2026-11-07; explicit “approved” for the repaired 458-item plan after Claude closure review.
 - [x] 4 Plan checkpoint committed and pushed — Jeremy authorised proceeding; scoped commit 6ed5ca33 on nssco-6145-economics.
 - [x] 5 Topics authored: 28 / 28 — 467 claims, 28 units, 458 items, 50,249 content words; all PUBLISH, zero failures, none blocked.
-- [x] 5 Published locally — publish/nam-6145-nssco-2026/; 28 topics, 458 items, 52,710 rendered words; no upload or push.
+- [x] 5 Published — publish/nam-6145-nssco-2026/; 28 topics, 458 items, 52,710 rendered words; GitHub revision 3a596e7c pushed.
 - [x] 6 Reviewed by Claude — 2026-11-08, authored r1: PUBLISH, no plan rebuild; 2 medium and 6 low findings addressed by author resolutions on 2026-11-08. See review/authored-claude-r1/REVIEW.md.
 - [x] 6 YOU: verdict read — Jeremy authorised publication/import on 2026-11-08 after the repair summary.
-- [ ] 7 YOU: committed and pushed
+- [x] 7 YOU: committed and pushed — authorised by Jeremy, reviewed publication 3a596e7c on nssco-6145-economics; final import audit follows in a separate scoped commit.
 
-## Next step
+## Completion
 
-Claude authored-subject review r1 is complete: PUBLISH, no plan rebuild. Jeremy requested all improvements; all eight findings are addressed in canonical learner content and recorded through the standard resolution workflow. See review/authored-claude-r1/REPAIRS.md. All 28 topics PUBLISH, 197 objectives, 378 flashcards plus 80 tasks, 50,249 content words and 52,710 rendered words. No open review issues remain. This is author repair completion rather than a second Claude verdict.
-
-Jeremy authorised publication, YYeni import and archival of the previous Economics cards on 2026-11-08. Final publication commit/push and live import are in progress. Local authored checkpoint before review is 97573395.
+Reviewed publication is pushed to GitHub. YYeni import/replacement is complete: 458 new active items in the NSSCO Economics template and each of five linked classrooms (2,748 native records). All 953 previous shared cards archived: school 54 (544), school 79 (104), school 68 (305). Full paginated readback verifies exact native-field equality, all expected IDs, and no old active IDs across all six targets. No learner charges or assignments; historical deck/test snapshots and learner history retained. See import/AUDIT.md and import/verification.json. Notes are published in GitHub; YYeni card import does not import note resources.
 
 ## Decisions
 
@@ -54,3 +52,5 @@ Jeremy authorised publication, YYeni import and archival of the previous Economi
 - 2026-11-08 — Jeremy instructed “make those improvements”. All eight Claude findings and both optional reminders addressed; three claim revisions and 89 item-specific rubrics recorded. Affected topics restamped, rendered and checked; all 28 PUBLISH. Review resolutions ingested and local publication refreshed, with zero open issues and no scope/slot changes.
 
 - 2026-11-08 — Jeremy instructed “okay publish and import into yyeni and archive all existing cards so only the new ones are available”. Authorises the scoped publication commit/push and replacement of NSSCO Economics shared cards. Connected YYeni template school 16 / classroom 6ff1a2fb-c99a-44e7-a6fd-a10917fe1533 reports zero active shared cards before import. Other subjects are excluded.
+
+- 2026-11-08 — Final live replacement verified through connected YYeni tools: 458 new cards in each of six targets, 953 previous shared cards archived, zero content mismatches and zero old active IDs. Publication commit 3a596e7c pushed; full import/archival evidence saved under import/. One failed connection during archive preview preparation resumed safely from checkpoint.
