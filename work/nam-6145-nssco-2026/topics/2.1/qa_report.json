@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-nam-6145-nssco-2026-2.1",
   "build_id": "nam-6145-nssco-2026/topic-2.1",
-  "generated_at": "2026-11-07T18:43:52Z",
+  "generated_at": "2026-11-07T22:40:43Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -53,9 +53,12 @@
     },
     {
       "check_id": "C-30",
-      "status": "pass",
-      "message": "[RS-41 No bulk stamp] All 39 stamped artefacts are consistent: every advanced stamp is matched by changed text or by a recorded reviewed_unchanged decision.",
-      "affected_ids": []
+      "status": "warn",
+      "message": "[RS-41 No bulk stamp] 2 advanced stamps carry no prior_hash, so they predate the audit trail and cannot be verified. 37 stamps are auditable and clean. Every stamp made from now on records the text it replaced.",
+      "affected_ids": [
+        "ITEM-6145-2.1-004-DEF",
+        "ITEM-6145-2.1-P01"
+      ]
     },
     {
       "check_id": "C-29",
@@ -210,7 +213,7 @@
     {
       "check_id": "C-26",
       "status": "pass",
-      "message": "[RS-09 Word budget] All 1 content units sit inside their declared word budget (2726 words total).",
+      "message": "[RS-09 Word budget] All 1 content units sit inside their declared word budget (2735 words total).",
       "affected_ids": []
     },
     {
@@ -222,7 +225,7 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/2.1/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (04f1a50af24c7115) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/2.1/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (d9a71d686407b12e) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
@@ -270,27 +273,48 @@
   ],
   "semantic_reviews": [
     {
-      "review_id": "SR-2.1-PENDING",
-      "reviewer_role": "combined",
-      "status": "not_run",
-      "issues": []
+      "review_id": "6145-AUTH-R1-2.1",
+      "reviewer_role": "Claude Opus medium; full authored-subject read-only review",
+      "status": "conditional_pass",
+      "packet_hash_verified": true,
+      "coverage_confirmed": true,
+      "reconstruction_test": "See REVIEW.md: comparative advantage sufficient; central-bank descriptive content requires repair.",
+      "source": "review/authored-claude-r1/2.1-review.yaml",
+      "issues": [
+        {
+          "issue_id": "6145-AUTH-R1-003",
+          "severity": "low",
+          "category": "curriculum (terminology)",
+          "affected_ids": [
+            "B-6145-2.1-003",
+            "B-6145-2.1-004",
+            "ITEM-6145-2.1-005-FEATURE",
+            "ITEM-6145-2.1-P03"
+          ],
+          "finding": "Sole-proprietor risk is described (\"personal resources at risk under the applicable rules\") but the standard term \"unlimited liability\" never appears, although \"limited liability\" is taught.",
+          "educational_consequence": "Learners may not connect the idea to the term used in exam wording and mark schemes.",
+          "recommended_repair": "Name it once: \"this is usually called unlimited liability\", keeping the existing caution about legal detail.",
+          "confidence": 0.6,
+          "status": "resolved",
+          "resolution": "Named unlimited liability in the sole-proprietor notes and relevant answers, retaining the qualification about applicable enforcement rules. Revised supporting claim 2.1-008 and advanced its citations, recording unchanged correct derivatives explicitly."
+        }
+      ]
     }
   ],
   "blockers": [
     "Packet incomplete - absent inputs: curriculum/item-budget.json.",
-    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
-    "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
+    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence."
   ],
   "metrics": {
     "objective_count": 11,
     "claim_count": 25,
     "content_unit_count": 1,
     "learning_item_count": 26,
-    "word_count": 2726
+    "word_count": 2735
   },
   "release_decision": "publish",
   "notes": [
-    "Standard v0.2.0-draft check suite. 44 checks: 40 pass, 0 fail, 1 warn, 3 not_run.",
+    "Standard v0.2.0-draft check suite. 44 checks: 39 pass, 0 fail, 2 warn, 3 not_run.",
     "A not_run check means an input the check needs is absent. It is never a pass.",
     "RS-30: these are mechanical results computed by code. They say nothing about whether the material teaches the subject well."
   ]

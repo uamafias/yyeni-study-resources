@@ -13,17 +13,17 @@ Workspace: work/nam-6145-nssco-2026/   Owner: Jeremy   Authoring tool: Codex
 - [x] 4 Plan built and repaired — 2026-11-07; 28 topics, 197 assessable objectives, 378 flashcards + 80 composite tasks = 458 items; 49,260–70,760 notes words. Exact AO shares A37.71/B29.66/C32.63; largest gap 4.16 points. See PLAN-6145-nssco-economics.md and planning/plan-validation.json.
 - [x] 4 YOU: plan approved — Jeremy, 2026-11-07; explicit “approved” for the repaired 458-item plan after Claude closure review.
 - [x] 4 Plan checkpoint committed and pushed — Jeremy authorised proceeding; scoped commit 6ed5ca33 on nssco-6145-economics.
-- [x] 5 Topics authored: 28 / 28 — 467 claims, 28 units, 458 items, 49,975 content words; all PUBLISH, zero failures, none blocked.
-- [x] 5 Published locally — publish/nam-6145-nssco-2026/; 28 topics, 458 items, 52,429 rendered words; no upload or push.
-- [ ] 6 Reviewed by Claude
-- [ ] 6 YOU: verdict read
+- [x] 5 Topics authored: 28 / 28 — 467 claims, 28 units, 458 items, 50,249 content words; all PUBLISH, zero failures, none blocked.
+- [x] 5 Published locally — publish/nam-6145-nssco-2026/; 28 topics, 458 items, 52,710 rendered words; no upload or push.
+- [x] 6 Reviewed by Claude — 2026-11-08, authored r1: PUBLISH, no plan rebuild; 2 medium and 6 low findings addressed by author resolutions on 2026-11-08. See review/authored-claude-r1/REVIEW.md.
+- [x] 6 YOU: verdict read — Jeremy authorised publication/import on 2026-11-08 after the repair summary.
 - [ ] 7 YOU: committed and pushed
 
 ## Next step
 
-Step 5 complete in /Users/jeremytiboth/Documents/yyeni-study-resources-6145, branch nssco-6145-economics. Final topic and publication audit: AUTHORING-REPORT.md and authoring-audit.json. All 197 objectives covered; all 28 topics PUBLISH with zero deterministic failures. The local publication index is publish/nam-6145-nssco-2026/INDEX.md.
+Claude authored-subject review r1 is complete: PUBLISH, no plan rebuild. Jeremy requested all improvements; all eight findings are addressed in canonical learner content and recorded through the standard resolution workflow. See review/authored-claude-r1/REPAIRS.md. All 28 topics PUBLISH, 197 objectives, 378 flashcards plus 80 tasks, 50,249 content words and 52,710 rendered words. No open review issues remain. This is author repair completion rather than a second Claude verdict.
 
-Step 6 is the final authored-subject Claude review, started by Jeremy at the playbook checkpoint. Prior Claude r1–r3 reviews examined the plan only. Review the full authored content, conditions, calculations, independent question/answer integrity and rubric quality, then repair findings and republish as needed. No authored-subject commit or push has been made; the original shared checkout remains untouched by this completion step.
+Jeremy authorised publication, YYeni import and archival of the previous Economics cards on 2026-11-08. Final publication commit/push and live import are in progress. Local authored checkpoint before review is 97573395.
 
 ## Decisions
 
@@ -46,3 +46,11 @@ Step 6 is the final authored-subject Claude review, started by Jeremy at the pla
 - 2026-11-07 — Jeremy explicitly answered “approved” for the repaired plan: 28 topics, 197 assessable objectives, 378 flashcards + 80 tasks, exact AO gap 4.16 points. Approval recorded. Git inspection finds the workspace and analysis documents untracked and no plan commit. Human commit remains pending; authoring has not started. Approval metadata in PLAN/HANDOVER was updated after the frozen review snapshot; no reviewed curriculum, work order or exemplar changed.
 
 - 2026-11-07 — Jeremy instructed “proceed” after plan approval and the concrete checkpoint commands. This authorises carrying out the scoped plan checkpoint and continuing step 5. Economics is isolated on branch nssco-6145-economics in /Users/jeremytiboth/Documents/yyeni-study-resources-6145 because the shared checkout is on a Chemistry branch. No unrelated changes are staged.
+
+- 2026-11-08 — Jeremy instructed “send for review”. Authored checkpoint 97573395 committed locally for the playbook review; no push. Fresh checks pass for all 28 topics and every slot label/type is preserved. Copied-wording scan against the 32 assessment extracts finds no 12+ run and one standard 8-word exchange-rate phrase. Claude Opus medium is conducting a read-only full-content review; findings and coverage will be saved in review/authored-claude-r1/REVIEW.md.
+
+- 2026-11-08 — Claude completed the full authored review: PUBLISH, 0 critical/high, 2 medium, 6 low. Findings were ingested through the standard tool, checks re-run and publication refreshed without changing learner content. No authored-content fixes, new push or upload performed.
+
+- 2026-11-08 — Jeremy instructed “make those improvements”. All eight Claude findings and both optional reminders addressed; three claim revisions and 89 item-specific rubrics recorded. Affected topics restamped, rendered and checked; all 28 PUBLISH. Review resolutions ingested and local publication refreshed, with zero open issues and no scope/slot changes.
+
+- 2026-11-08 — Jeremy instructed “okay publish and import into yyeni and archive all existing cards so only the new ones are available”. Authorises the scoped publication commit/push and replacement of NSSCO Economics shared cards. Connected YYeni template school 16 / classroom 6ff1a2fb-c99a-44e7-a6fd-a10917fe1533 reports zero active shared cards before import. Other subjects are excluded.

@@ -1,0 +1,52 @@
+review_id: 6145-AUTH-R1-3.2
+reviewer_role: Claude Opus medium; full authored-subject read-only review
+status: conditional_pass
+packet_hash_verified: true
+coverage_confirmed: true
+reconstruction_test: 'See REVIEW.md: comparative advantage sufficient; central-bank
+  descriptive content requires repair.'
+issues:
+- issue_id: 6145-AUTH-R1-001
+  severity: medium
+  category: accuracy (terminology)
+  affected_ids:
+  - B-6145-3.2-006
+  - B-6145-3.2-008
+  - B-6145-3.2-009
+  - ITEM-6145-3.2-014-APP
+  - ITEM-6145-3.2-015-DIAGRAM
+  - ITEM-6145-3.2-016-INTERP
+  - ITEM-6145-3.2-P02
+  - ITEM-6145-3.2-P03
+  - 3.2 claim "A supply contraction with demand unchanged raises equilibrium price…"
+  finding: A leftward shift of supply is called a "contraction" ("can contract bread
+    supply", "contracted supply curve S2", "supply contracts left", "supply contraction").
+    In the convention NSSCO inherits, contraction/extension mean movements ALONG a
+    curve; a shift is an increase/decrease. The notes elsewhere carefully separate
+    movements from shifts, so this word undermines their own distinction.
+  evidence: 3.2-014-APP answer "…less is offered at each price and supply contracts
+    left." Examiner material for this subject uses "decrease in supply" for a leftward
+    shift and "shift S to S1".
+  educational_consequence: Learners may write "contraction of supply" for a shift,
+    or misread an exam question that uses "contraction" for a movement along the curve,
+    and lose the shift/movement mark.
+  recommended_repair: Replace with "decrease in supply (leftward shift)" in all listed
+    blocks, items and the claim text. Optionally add one sentence in B-6145-3.2-002/003
+    that extension/contraction describe movements along a curve. Revise and restamp
+    the claim. The wording comes from the planning performance spec, but fixing the
+    learner text needs no plan rebuild.
+  confidence: 0.8
+  status: open
+- issue_id: 6145-AUTH-R1-006
+  severity: low
+  category: coherence (cross-reference)
+  affected_ids:
+  - B-6145-3.2-013
+  finding: After teaching maximum and minimum prices, the block says "topic 6.3 examines
+    reasons and methods of government intervention". 6.3 covers production controls
+    and protection, not price controls, so a learner following the link for price-control
+    evaluation finds nothing.
+  recommended_repair: Reword so it does not imply 6.3 develops price controls (e.g.
+    "topic 6.3 examines other reasons and methods of intervention in business").
+  confidence: 0.5
+  status: open

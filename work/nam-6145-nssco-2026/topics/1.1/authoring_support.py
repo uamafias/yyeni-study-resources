@@ -58,6 +58,9 @@ class Topic:
         if slot.get('misconception_entry'):x['misconception_entry']=slot['misconception_entry']
         self.items.append(stamp(x))
     def finish(self,deviations=None):
+        note_path=self.td/'authoring_notes.json'
+        if note_path.exists() and read(note_path).get('post_review_locked'):
+            raise RuntimeError('This initial authoring snapshot would overwrite reviewed repairs. Maintain the canonical JSON, then run restamp.py, render_notes.py and run_checks.py as the playbook requires.')
         expected={s['slot'] for s in self.wo['item_slots']+self.wo['performance_tasks']}
         assert {i['item_id'] for i in self.items}==expected
         assert len(self.items)==len(expected)

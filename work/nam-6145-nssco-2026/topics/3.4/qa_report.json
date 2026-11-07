@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-nam-6145-nssco-2026-3.4",
   "build_id": "nam-6145-nssco-2026/topic-3.4",
-  "generated_at": "2026-11-07T19:50:47Z",
+  "generated_at": "2026-11-07T22:40:47Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -210,7 +210,7 @@
     {
       "check_id": "C-26",
       "status": "pass",
-      "message": "[RS-09 Word budget] All 1 content units sit inside their declared word budget (518 words total).",
+      "message": "[RS-09 Word budget] All 1 content units sit inside their declared word budget (547 words total).",
       "affected_ids": []
     },
     {
@@ -222,7 +222,7 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/3.4/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (eb75f58714e0570e) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/3.4/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (13f651cf2404bb90) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
@@ -270,23 +270,26 @@
   ],
   "semantic_reviews": [
     {
-      "review_id": "SR-3.4-PENDING",
-      "reviewer_role": "combined",
-      "status": "not_run",
+      "review_id": "6145-AUTH-R1-3.4",
+      "reviewer_role": "Claude Opus medium; full authored-subject read-only review",
+      "status": "pass",
+      "packet_hash_verified": true,
+      "coverage_confirmed": true,
+      "reconstruction_test": "See REVIEW.md: comparative advantage sufficient; central-bank descriptive content requires repair.",
+      "source": "review/authored-claude-r1/3.4-review.yaml",
       "issues": []
     }
   ],
   "blockers": [
     "Packet incomplete - absent inputs: curriculum/item-budget.json.",
-    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
-    "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
+    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence."
   ],
   "metrics": {
     "objective_count": 2,
     "claim_count": 6,
     "content_unit_count": 1,
     "learning_item_count": 6,
-    "word_count": 518
+    "word_count": 547
   },
   "release_decision": "publish",
   "notes": [

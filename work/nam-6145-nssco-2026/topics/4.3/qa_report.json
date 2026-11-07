@@ -1,7 +1,7 @@
 {
   "qa_report_id": "QA-nam-6145-nssco-2026-4.3",
   "build_id": "nam-6145-nssco-2026/topic-4.3",
-  "generated_at": "2026-11-07T20:04:57Z",
+  "generated_at": "2026-11-07T22:40:50Z",
   "deterministic_checks": [
     {
       "check_id": "C-00",
@@ -222,7 +222,7 @@
     {
       "check_id": "C-28",
       "status": "pass",
-      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/4.3/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (06074d9fef693a22) so the whole packet is verifiable.",
+      "message": "[RS-32 Packet hash manifest] Critic-packet hash manifest written for 16 files to topics/4.3/packet.sha256; the manifest's own SHA-256 is detached in packet.sha256.hash (f6ea9df6e7572a97) so the whole packet is verifiable.",
       "affected_ids": []
     },
     {
@@ -270,16 +270,43 @@
   ],
   "semantic_reviews": [
     {
-      "review_id": "SR-4.3-PENDING",
-      "reviewer_role": "combined",
-      "status": "not_run",
-      "issues": []
+      "review_id": "6145-AUTH-R1-4.3",
+      "reviewer_role": "Claude Opus medium; full authored-subject read-only review",
+      "status": "conditional_pass",
+      "packet_hash_verified": true,
+      "coverage_confirmed": true,
+      "reconstruction_test": "See REVIEW.md: comparative advantage sufficient; central-bank descriptive content requires repair.",
+      "source": "review/authored-claude-r1/4.3-review.yaml",
+      "issues": [
+        {
+          "issue_id": "6145-AUTH-R1-005",
+          "severity": "low",
+          "category": "coherence (marking guidance)",
+          "affected_ids": [
+            "4.2 MECH/APP items 001\u2013020",
+            "4.3 MECH/APP items 002\u2013017",
+            "5.4-015\u2026020",
+            "6.1-001\u2026004",
+            "6.2 MECH/APP/FEATURE items 004\u2013033",
+            "6.3-005\u2026007",
+            "7.2-001/003/005",
+            "7.3 FEATURE items",
+            "8.1-011\u2026017",
+            "9.1-002\u2026006"
+          ],
+          "finding": "These items reuse generic rubric text (e.g. \"Context (1): use the stated comparison. Reason/conclusion (1): the explained consequence follows from the supplied condition\") instead of naming the creditable points. The canonical answers themselves are specific and correct.",
+          "educational_consequence": "Weaker self-marking: learners cannot see which exact point earns each mark.",
+          "recommended_repair": "Generate item-specific marking guidance from each canonical answer, as already done in 1.x\u20133.x and 5.1\u20135.3. Optional but worthwhile.",
+          "confidence": 0.7,
+          "status": "resolved",
+          "resolution": "Replaced generic marking guidance on 89 affected cards with individually written credit points from each actual question and answer. Every point has an explicit one-mark allocation, and four- and seven-mark responses retain their required mechanism or evaluation architecture and unchanged tariffs."
+        }
+      ]
     }
   ],
   "blockers": [
     "Packet incomplete - absent inputs: curriculum/item-budget.json.",
-    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence.",
-    "RS-28 - no semantic review has run on this topic yet. Under the amended RS-42 that does not hold publication; it schedules one."
+    "No deterministic opinion on 3 checks (C-35, C-41, C-43) - on these a human or model reviewer is the only line of defence."
   ],
   "metrics": {
     "objective_count": 9,

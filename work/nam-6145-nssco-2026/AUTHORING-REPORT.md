@@ -7,13 +7,13 @@ Step 5 complete. 28 topics; 197 objectives; 467 claims; 28 units; 378 flashcards
 | 1.1 | 9 | 1 | 10 | 929 | PUBLISH |
 | 1.2 | 21 | 1 | 20 | 2554 | PUBLISH |
 | 1.3 | 17 | 1 | 17 | 1967 | PUBLISH |
-| 2.1 | 25 | 1 | 26 | 2726 | PUBLISH |
+| 2.1 | 25 | 1 | 26 | 2735 | PUBLISH |
 | 2.2 | 24 | 1 | 22 | 2485 | PUBLISH |
-| 2.3 | 28 | 1 | 21 | 2785 | PUBLISH |
+| 2.3 | 28 | 1 | 21 | 2883 | PUBLISH |
 | 3.1 | 6 | 1 | 6 | 515 | PUBLISH |
-| 3.2 | 21 | 1 | 22 | 2290 | PUBLISH |
+| 3.2 | 21 | 1 | 22 | 2367 | PUBLISH |
 | 3.3 | 21 | 1 | 17 | 2308 | PUBLISH |
-| 3.4 | 6 | 1 | 6 | 518 | PUBLISH |
+| 3.4 | 6 | 1 | 6 | 547 | PUBLISH |
 | 3.5 | 8 | 1 | 8 | 814 | PUBLISH |
 | 4.1 | 7 | 1 | 9 | 736 | PUBLISH |
 | 4.2 | 23 | 1 | 25 | 2425 | PUBLISH |
@@ -27,7 +27,7 @@ Step 5 complete. 28 topics; 197 objectives; 467 claims; 28 units; 378 flashcards
 | 6.3 | 14 | 1 | 10 | 1310 | PUBLISH |
 | 7.1 | 9 | 1 | 11 | 870 | PUBLISH |
 | 7.2 | 12 | 1 | 10 | 1119 | PUBLISH |
-| 7.3 | 20 | 1 | 18 | 2214 | PUBLISH |
+| 7.3 | 20 | 1 | 18 | 2275 | PUBLISH |
 | 7.4 | 14 | 1 | 16 | 1339 | PUBLISH |
 | 8.1 | 22 | 1 | 23 | 2530 | PUBLISH |
 | 8.2 | 10 | 1 | 12 | 836 | PUBLISH |
@@ -46,3 +46,8 @@ All topics have zero deterministic failures. C-18 item-count warnings remain; th
 Local publication: `publish/nam-6145-nssco-2026/INDEX.md`. All 28 notes and 28 item files verified against source. No upload, authored-subject commit or push. Final Claude content review and Jeremy’s reading of its verdict are pending. All 467 claims remain unverified and publishable false; deterministic PUBLISH is not semantic certification.
 
 Existing source gaps and standard-tool limitations remain as documented in the approved plan. The cross-topic audit and file-level counts are in authoring-audit.json.
+
+
+## Post-review repair completion — 8 November 2026
+
+Claude r1: PUBLISH with two medium and six low findings. All eight are now addressed by author resolutions. All 28 topics still PUBLISH; 458 items and 197 objectives preserved. Current content words 50,249; rendered words 52,710. See review/authored-claude-r1/REPAIRS.md and RESOLUTIONS.json. No second independent review, push or upload is implied.

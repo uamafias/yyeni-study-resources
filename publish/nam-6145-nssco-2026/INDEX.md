@@ -1,6 +1,6 @@
 # NSSCO Economics 6145 (syllabus vNIED 2018; implementation 2019; first examination 2020, examined 2026)
 
-Study notes and flashcards. 28 topics, 458 flashcards and performance tasks, 52,429 words of notes.
+Study notes and flashcards. 28 topics, 458 flashcards and performance tasks, 52,710 words of notes.
 
 Every topic here passes the full deterministic check suite. Semantic review runs on published material rather than ahead of it, so the **Open issues** column is debt that ships visibly and is cleared in a maintenance pass - it is not a warning that the topic is unusable.
 
@@ -17,18 +17,18 @@ Every topic here passes the full deterministic check suite. Semantic review runs
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
-| **2.1** Business organisations | [2.1-business-organisations.md](notes/2.1-business-organisations.md) | [2.1-business-organisations-flashcards.json](flashcards/2.1-business-organisations-flashcards.json) | 26 | 2,859 | — |
+| **2.1** Business organisations | [2.1-business-organisations.md](notes/2.1-business-organisations.md) | [2.1-business-organisations-flashcards.json](flashcards/2.1-business-organisations-flashcards.json) | 26 | 2,868 | — |
 | **2.2** Trade unions and employer association | [2.2-trade-unions-and-employer-association.md](notes/2.2-trade-unions-and-employer-association.md) | [2.2-trade-unions-and-employer-association-flashcards.json](flashcards/2.2-trade-unions-and-employer-association-flashcards.json) | 22 | 2,591 | — |
-| **2.3** Financial institutions | [2.3-financial-institutions.md](notes/2.3-financial-institutions.md) | [2.3-financial-institutions-flashcards.json](flashcards/2.3-financial-institutions-flashcards.json) | 21 | 2,909 | — |
+| **2.3** Financial institutions | [2.3-financial-institutions.md](notes/2.3-financial-institutions.md) | [2.3-financial-institutions-flashcards.json](flashcards/2.3-financial-institutions-flashcards.json) | 21 | 3,007 | — |
 
 ## The Market
 
 | Topic | Notes | Flashcards | Items | Words | Open issues |
 |---|---|---|---:|---:|---:|
 | **3.1** What is a market? | [3.1-what-is-a-market.md](notes/3.1-what-is-a-market.md) | [3.1-what-is-a-market-flashcards.json](flashcards/3.1-what-is-a-market-flashcards.json) | 6 | 579 | — |
-| **3.2** Market forces | [3.2-market-forces.md](notes/3.2-market-forces.md) | [3.2-market-forces-flashcards.json](flashcards/3.2-market-forces-flashcards.json) | 22 | 2,415 | — |
+| **3.2** Market forces | [3.2-market-forces.md](notes/3.2-market-forces.md) | [3.2-market-forces-flashcards.json](flashcards/3.2-market-forces-flashcards.json) | 22 | 2,492 | — |
 | **3.3** Price elasticity | [3.3-price-elasticity.md](notes/3.3-price-elasticity.md) | [3.3-price-elasticity-flashcards.json](flashcards/3.3-price-elasticity-flashcards.json) | 17 | 2,428 | — |
-| **3.4** Advertising | [3.4-advertising.md](notes/3.4-advertising.md) | [3.4-advertising-flashcards.json](flashcards/3.4-advertising-flashcards.json) | 6 | 572 | — |
+| **3.4** Advertising | [3.4-advertising.md](notes/3.4-advertising.md) | [3.4-advertising-flashcards.json](flashcards/3.4-advertising-flashcards.json) | 6 | 601 | — |
 | **3.5** Policies | [3.5-policies.md](notes/3.5-policies.md) | [3.5-policies-flashcards.json](flashcards/3.5-policies-flashcards.json) | 8 | 873 | — |
 
 ## Occupation, Income And Expenditure Of Individuals
@@ -62,7 +62,7 @@ Every topic here passes the full deterministic check suite. Semantic review runs
 |---|---|---|---:|---:|---:|
 | **7.1** Prices | [7.1-prices.md](notes/7.1-prices.md) | [7.1-prices-flashcards.json](flashcards/7.1-prices-flashcards.json) | 11 | 921 | — |
 | **7.2** Employment | [7.2-employment.md](notes/7.2-employment.md) | [7.2-employment-flashcards.json](flashcards/7.2-employment-flashcards.json) | 10 | 1,178 | — |
-| **7.3** Output | [7.3-output.md](notes/7.3-output.md) | [7.3-output-flashcards.json](flashcards/7.3-output-flashcards.json) | 18 | 2,308 | — |
+| **7.3** Output | [7.3-output.md](notes/7.3-output.md) | [7.3-output-flashcards.json](flashcards/7.3-output-flashcards.json) | 18 | 2,376 | — |
 | **7.4** International trade | [7.4-international-trade.md](notes/7.4-international-trade.md) | [7.4-international-trade-flashcards.json](flashcards/7.4-international-trade-flashcards.json) | 16 | 1,401 | — |
 
 ## Developed And Developing Economies
@@ -93,4 +93,4 @@ One JSON file per topic, carrying `topic_number`, `topic_title` and a list of `i
 
 ## Where the source lives
 
-This folder is the copy to upload. The source of record is `work/nam-6145-nssco-2026/topics/<number>/`, which holds each topic's claim ledger, content units, learning items and QA report. Regenerate this folder at any time with `build/publish_subject.py`; nothing in it is edited by hand.
+This folder is the copy to upload. The source of record is `/Users/jeremytiboth/Documents/yyeni-study-resources-6145/work/nam-6145-nssco-2026/topics/<number>/`, which holds each topic's claim ledger, content units, learning items and QA report. Regenerate this folder at any time with `build/publish_subject.py`; nothing in it is edited by hand.
