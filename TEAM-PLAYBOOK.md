@@ -1,5 +1,10 @@
 # YYeni team playbook: from syllabus to published notes and flashcards
 
+For Workbench calculation/procedural recipes, follow the companion
+[Workbench playbook](workbench/playbook/README.md). This document continues to
+govern the notes/flashcard pipeline; its item quotas/check verdicts are not a
+Workbench content-acceptance process.
+
 **Who this is for.** Every YYeni team member (Vitalis, Jeremy, Justus, Lotto) and the AI agent they work with: Claude Code or Codex. Read it once yourself. Your agent reads it every time.
 
 **What it produces.** For one syllabus, a published set of learner notes and flashcards. Every flashcard carries its assessment objective, command word, mark tariff and Bloom level. Every topic passes the automatic checks, and an agent from the other vendor has reviewed the subject.

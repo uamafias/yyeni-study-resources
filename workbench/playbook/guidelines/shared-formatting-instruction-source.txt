@@ -1,0 +1,95 @@
+"""
+Shared LaTeX / Markdown formatting instructions for any LLM whose
+output is rendered through the YYeni frontend's ReactMarkdown +
+remark-math + rehype-katex pipeline.
+
+Single source of truth — DO NOT inline these rules in individual
+prompt builders. Both the Socratic Challenge tutor (used by learners
+in ChatInterface.js) and the Assessment Authoring chat (used by
+teachers in AIAuthoringChat) import this constant verbatim, so any
+formatting rule is automatically applied to every flow.
+
+This text was originally lifted from
+services/fallback_prompt_handler.py lines 1498–1572 (the LaTeX
+formatting block in the learner tutor system prompt). Keep the two
+in sync — if you tighten the rules here, the legacy file should be
+refactored to import from here too.
+"""
+
+
+LATEX_FORMATTING_INSTRUCTION = r"""### 📐 CRITICAL LATEX FORMATTING GUIDELINES
+
+**ABSOLUTE RULE:** NEVER mix Markdown formatting with LaTeX expressions. This breaks rendering completely.
+
+#### ❌ FORBIDDEN PATTERNS (These will NOT render):
+- **NEVER:** `**$5y$**` or `**The answer is $x + 2$**`
+- **NEVER:** `*$x$*` or `*$a + b = c$*`
+- **NEVER:** `__$formula$__` or any other markdown emphasis on LaTeX
+- **NEVER:** Apply bold, italic, or any markdown formatting to mathematical expressions
+
+#### ✅ CORRECT PATTERNS:
+- **For emphasis on math results:** Write "The answer is $5y$" then say "(this is important)"
+- **For inline math:** Use `$expression$` - Example: The value $x = 5$ satisfies the equation
+- **For display math:** Use `$$expression$$` on its own line
+- **To emphasize:** Use words like "Note that" or "Important:" before the math
+
+#### 📚 LATEX FORMATTING FOR DIFFERENT SUBJECTS:
+
+**Mathematics:**
+- Fractions: `$\frac{a}{b}$` renders as a fraction
+- Powers: `$x^2$` or `$x^{n+1}$`
+- Roots: `$\sqrt{x}$` or `$\sqrt[3]{x}$`
+- Summation: `$\sum_{i=1}^{n} i^2$`
+- Integrals: `$\int_0^1 x^2 dx$`
+- Matrices: `$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$`
+- Example: The quadratic formula is $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+**Chemistry:**
+- Chemical formulas: `$\text{H}_2\text{O}$` for water
+- Reaction arrows: `$\rightarrow$` or `$\rightleftharpoons$` for equilibrium
+- Ions: `$\text{Na}^+$` or `$\text{SO}_4^{2-}$`
+- Rate equations: `$\text{rate} = k[A]^m[B]^n$`
+- Example: The reaction $\text{2H}_2 + \text{O}_2 \rightarrow \text{2H}_2\text{O}$
+
+**Physics:**
+- Vectors: `$\vec{F}$` or `$\mathbf{v}$`
+- Units: `$5\text{ m/s}^2$` (note the space and \text{} for units)
+- Greek letters: `$\alpha$`, `$\beta$`, `$\gamma$`, `$\Delta$`, `$\omega$`
+- Equations: `$E = mc^2$` or `$F = ma$`
+- Example: The kinetic energy is $KE = \frac{1}{2}mv^2$ where $m$ is mass and $v$ is velocity
+
+**Biology/Genetics:**
+- Probability: `$P(Aa) = 0.5$`
+- Crosses: `$AA \times aa$`
+- Ratios: `$3:1$` phenotypic ratio
+- Example: Hardy-Weinberg equation: $p^2 + 2pq + q^2 = 1$
+
+**Economics:**
+- Derivatives: `$\frac{dQ}{dP}$` for marginal changes
+- Optimization: `$\max_{x} U(x)$`
+- Example: Profit function $\pi = TR - TC$
+
+#### 🎯 KEY RULES FOR RELIABLE RENDERING:
+
+1. **SEPARATION PRINCIPLE:** Keep LaTeX and Markdown completely separate
+   - Math gets LaTeX formatting ONLY
+   - Text gets Markdown formatting ONLY
+   - Never overlap the two
+
+2. **WHITESPACE MATTERS:**
+   - Always put spaces around inline math: "The value $x$ is positive"
+   - Display math should be on its own line with blank lines before/after
+
+3. **ESCAPE SEQUENCES:**
+   - Use `\\` for LaTeX commands (double backslash)
+   - Use `\text{}` for normal text within math mode
+   - Use `\$` to display a literal dollar sign
+
+4. **TESTING PATTERN:**
+   Before sending any response with math, mentally check:
+   - Is any LaTeX inside markdown emphasis? (If yes, remove the markdown)
+   - Are dollar signs properly paired?
+   - Are LaTeX commands using double backslashes?
+
+**REMEMBER:** Clear, correctly formatted math is more important than visually emphasized math. When in doubt, use plain LaTeX without any markdown formatting.
+"""
