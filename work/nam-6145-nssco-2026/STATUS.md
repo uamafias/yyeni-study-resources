@@ -12,16 +12,18 @@ Workspace: work/nam-6145-nssco-2026/   Owner: Jeremy   Authoring tool: Codex
 - [x] 3 YOU: analysis read — Jeremy, 2026-11-07; answered “yes” to the paper-structure, command-word and learner-error summary.
 - [x] 4 Plan built and repaired — 2026-11-07; 28 topics, 197 assessable objectives, 378 flashcards + 80 composite tasks = 458 items; 49,260–70,760 notes words. Exact AO shares A37.71/B29.66/C32.63; largest gap 4.16 points. See PLAN-6145-nssco-economics.md and planning/plan-validation.json.
 - [x] 4 YOU: plan approved — Jeremy, 2026-11-07; explicit “approved” for the repaired 458-item plan after Claude closure review.
-- [ ] 4 YOU: plan committed
-- [ ] 5 Topics authored: 0 / 28
-- [ ] 5 Published
+- [x] 4 Plan checkpoint committed and pushed — Jeremy authorised proceeding; scoped commit 6ed5ca33 on nssco-6145-economics.
+- [x] 5 Topics authored: 28 / 28 — 467 claims, 28 units, 458 items, 49,975 content words; all PUBLISH, zero failures, none blocked.
+- [x] 5 Published locally — publish/nam-6145-nssco-2026/; 28 topics, 458 items, 52,429 rendered words; no upload or push.
 - [ ] 6 Reviewed by Claude
 - [ ] 6 YOU: verdict read
 - [ ] 7 YOU: committed and pushed
 
 ## Next step
 
-Jeremy approved the repaired plan on 2026-11-07. The remaining step-4 checkpoint is the human commit: the workspace and both analysis documents are still untracked, with no plan commit in history. Claude's final plan review returned READY_FOR_PLAN_APPROVAL with no remaining blocker. See review/plan-claude-r3/REVIEW.md and CLOSURE.json. All 184 frozen review input hashes match. Revised plan: 28 topics, 197 assessable objectives, 378 flashcards + 80 composite tasks = 458 items; exact AO gap 4.16 points. Plan approval is complete; Jeremy commits the plan before step 5 under TEAM-PLAYBOOK.md. Approval does not attest that a commit has happened. Main topics remain unauthored; no subject output is published. The scarcity exemplar has zero deterministic failures, C18 warning, three deterministic not_run checks and a separate pending semantic-review entry. Thin market/cost slices pass schemas, saved-input numerical controls and independent claim/revision/hash checks. C16 integration probes pass for all four non-evaluative case_analysis slots. These are planning validations, not whole-topic or diagram-renderer certification. Rebuild: `.venv/bin/python work/nam-6145-nssco-2026/planning/rebuild_plan.py`; repair audit: `.venv/bin/python work/nam-6145-nssco-2026/planning/audit_review_fixes.py`.
+Step 5 complete in /Users/jeremytiboth/Documents/yyeni-study-resources-6145, branch nssco-6145-economics. Final topic and publication audit: AUTHORING-REPORT.md and authoring-audit.json. All 197 objectives covered; all 28 topics PUBLISH with zero deterministic failures. The local publication index is publish/nam-6145-nssco-2026/INDEX.md.
+
+Step 6 is the final authored-subject Claude review, started by Jeremy at the playbook checkpoint. Prior Claude r1–r3 reviews examined the plan only. Review the full authored content, conditions, calculations, independent question/answer integrity and rubric quality, then repair findings and republish as needed. No authored-subject commit or push has been made; the original shared checkout remains untouched by this completion step.
 
 ## Decisions
 
