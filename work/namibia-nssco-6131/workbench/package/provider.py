@@ -19,7 +19,7 @@ class MathsProvider:
         self.by_key = {row['id']: row for row in self.rows}
 
     def describe(self):
-        return {'package_id': 'namibia-nssco-6131', 'version': '1.0.0'}
+        return {'package_id': 'namibia-nssco-6131', 'version': '1.0.1'}
 
     def list_recipes(self):
         return deepcopy(self.rows)

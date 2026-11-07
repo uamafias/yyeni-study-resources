@@ -102,6 +102,8 @@ def build_help(question,special_prompts=None,special_title=None):
             label=f"**Part ({part['part_id']}): {part['method']}**\n\n" if len(parts)>1 and index==0 else ''
             prompts.append(label+prompt)
     bound={'recipe_id':question['recipe_id'],'stem':question.get('stem',''),'parts':[p['prompt'] for p in question['parts']]}
-    return {'version':VERSION,'question_fingerprint':hashlib.sha256(json.dumps(bound,sort_keys=True).encode()).hexdigest(),
+    guide = {'version':VERSION,'question_fingerprint':hashlib.sha256(json.dumps(bound,sort_keys=True).encode()).hexdigest(),
         'title':special_title or (parts[0]['method'] if len(parts)==1 else 'Methods for this question'),
         'parts':parts,'prompts':prompts,'source':'authored_operations_and_displayed_inputs; no solution results'}
+    from .help_language import coach_saved_help
+    return coach_saved_help(question, guide)

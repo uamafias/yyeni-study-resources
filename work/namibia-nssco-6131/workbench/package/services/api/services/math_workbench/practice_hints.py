@@ -121,3 +121,6 @@ def help_for(question):
 
 def hints_for(question):
     return help_for(question)['prompts']
+
+
+from .help_language import coach_saved_help
