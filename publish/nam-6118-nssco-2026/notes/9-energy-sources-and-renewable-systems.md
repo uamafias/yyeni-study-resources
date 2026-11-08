@@ -1,6 +1,6 @@
 # 9 Energy sources and renewable systems
 
-*nam-6118-nssco-2026. Offline study notes, rendered from the approved content units on 2026-10-31. Everything here is also what the flashcards are built from.*
+*nam-6118-nssco-2026. Offline study notes, rendered from the approved content units on 2026-11-01. Everything here is also what the flashcards are built from.*
 
 ---
 
@@ -76,7 +76,7 @@ Tidal timing is predictable but output varies during a cycle. Wind and solar var
 
 Nuclear fuel can release energy through controlled fission, heating a working fluid. A turbine and generator convert part of that energy into electrical output, with other energy transferred to the surroundings.
 
-A reactor is an energy-conversion system, not a device that produces electricity directly from a nucleus into the grid. Heat removal, containment, radiation protection, long-lived waste management and eventual decommissioning are important difficulties. Compare these with the benefit of substantial generation without fuel combustion at the station. Do not confuse reactor fission with fusion in the Sun. Radioactive isotopes such as uranium-235 provide suitable nuclear fuel. Radioactive waste needs shielded secure storage, radiation can damage cells, and loss of cooling or containment can cause a serious accident; construction and decommissioning are costly.
+A reactor is an energy-conversion system, not a device that produces electricity directly from a nucleus into the grid. Heat removal, containment, radiation protection, long-lived waste management and eventual decommissioning are important difficulties. Compare these with the benefit of substantial generation without fuel combustion at the station. Do not confuse reactor fission with fusion in the Sun. Uranium-235 is an example of a radioactive isotope used as reactor fuel. The heating in this account comes from controlled nuclear fission, rather than simply from its natural radioactive decay. Radioactive waste needs shielded secure storage, radiation can damage cells, and loss of cooling or containment can cause a serious accident; construction and decommissioning are costly.
 
 ### Practice task with worked feedback
 
