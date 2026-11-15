@@ -141,3 +141,16 @@ selection/content scope/digest, publication and named-environment activation.
 Enabled recipe versions must match accepted bytes, with no open blockers and
 disclosed held gaps. Technical self-attestation is not independent review.
 Whole-subject acceptance cannot be inferred from a pilot or migration checks.
+
+## Owner additions — 15 November 2026
+
+Under Q03/Q07/Q13 apply [BLOOM-CLASSIFICATION.md](../../BLOOM-CLASSIFICATION.md):
+classify the learner evidence required by each part's criteria, verify the complete
+maximum and branch-specific inheritance, preserve historical labels and explicitly
+unclassified parts. These checks are not yet implemented by the generic CLI.
+
+Under source, selection, asset and wording review use
+[textbook-analysis.md](textbook-analysis.md). Verify actual pages, current-syllabus
+fit, source identity and permission basis; distinguish textbook-derived patterns
+from official award evidence. No source file or diagram is accepted by its name alone.
+These additions are outside the previous independent closure review.

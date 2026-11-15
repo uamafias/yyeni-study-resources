@@ -108,6 +108,10 @@ Understand, Apply, Analyse, Evaluate, Create. The work order decides both for ev
 both onto the item. A subject whose assessment objectives do not name application still sets cards
 that ask a learner to apply something, and those are Bloom Apply whatever AO credits them.
 
+For whole-card classification, part labels and reviewed recipe/branch inheritance,
+follow [BLOOM-CLASSIFICATION.md](BLOOM-CLASSIFICATION.md). The whole-card level is
+the highest genuinely assessed part level; incomplete classification stays explicit.
+
 **5. Command words come from the papers, not from the syllabus table.** Each subject's framework
 carries a verdict per word: how often it actually opens a question, at what tariffs, on which
 paper. Only a word with `use_in_prompts: true` may appear in a generated prompt. A word the

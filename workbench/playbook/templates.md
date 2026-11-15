@@ -76,6 +76,8 @@ for Vitalis is not proof that Vitalis received it.
 Source inventory columns: document ID, exact repository-relative path, hash,
 code/edition/year/series, type, relevant pages, paper↔scheme/report pairing,
 final/proof status, usable bytes/LFS status, used/excluded and reason.
+For instructional sources also use the bibliographic, curriculum-fit, rights and
+exercise/figure fields in [textbook-analysis.md](textbook-analysis.md).
 Also list missing documents with locations searched, gap ID, scope impact,
 recipient/date, decision and resolution evidence. State the actual corpus window.
 
@@ -89,7 +91,7 @@ between ranges disappears. Absence of an ID is not an exclusion decision.
 
 | Selection ID / demand links | Pattern and paper locator | Marking/report locator | Required reasoning, representation, connected parts | Disposition / hold ID | Recipe grouping, distinguishing decision and evidence | Basis, rationale and limits |
 |---|---|---|---|---|---|---|
-| Placeholder only: replace before acceptance | Exact question/part/page, or none available | Exact criteria/report page, or none available with impact | Actual learner work, not a topic tag | include / exclude / hold + reason | Existing/new/standalone/shared; concrete discriminating response or format | observed / syllabus-derived / supporting; owner decisions and gaps |
+| Placeholder only: replace before acceptance | Exact question/part/page, or none available | Exact criteria/report page, or none available with impact | Actual learner work, not a topic tag | include / exclude / hold + reason | Existing/new/standalone/shared; concrete discriminating response or format | examination-observed / textbook-derived / syllabus-derived / supporting-practice; owner decisions and gaps |
 
 For every separate-recipe or supporting-drill proposal, record the need and why
 existing recipes are insufficient. A representation-specific response may be
@@ -147,6 +149,9 @@ Recipe ID/proposed version; included selection IDs; author/owner:
 Reuse decision: existing recipe | versioned extension | new; justification
 Independent learner target; prerequisites and out-of-scope work:
 Syllabus, paper, marking and report locators; evidence labels/limitations:
+Part Bloom labels, criterion-linked rationale, classification version/review status:
+Whole-card maximum only if all assessed parts classified; branch inheritance rules:
+Textbook chapter/page/exercise/figure evidence, current-syllabus fit and output origin:
 Pattern and connected parts; standalone justification if applicable:
 Question/response structure, values supplied, assets and calibration:
 Branches and domains: permitted changes, exclusions, difficulty evidence/bounds

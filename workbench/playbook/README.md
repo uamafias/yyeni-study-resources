@@ -23,6 +23,23 @@ analysis has selected worthwhile demands and the owner has accepted the plan.
 | [Review responses](review-response.md) | F1–F12 and O1–O6 corrections, evidence and remaining limits |
 | [Consistency walkthrough](validation.md) | Author checks and hypothetical workflow exercises; not independent review |
 
+## Current owner additions — 15 November 2026
+
+Follow [the shared Bloom policy](../../BLOOM-CLASSIFICATION.md): classify every
+assessed part and derive the whole-card maximum only when classification is
+complete. Review per recipe version and structural branch. Existing banks are not
+retrospectively classified or accepted by this requirement.
+
+Use [textbook and visual-source analysis](textbook-analysis.md) alongside syllabus,
+paper, scheme and report analysis. This extension implements Vitalis's current
+source requirements; it has not undergone the earlier playbook's independent
+closure review. The original closure verdict does not cover these additions.
+
+Workbench recipes are purpose-built. Do not reuse, migrate or convert Mathematics,
+Physics or Chemistry Flashcard Studio cards. Verified curriculum/source analysis
+may be referenced with edition and source checks. A recipe bank supplies types;
+learner decks select them and remain application-owned.
+
 ## 1. Purpose and scope
 
 Give learners quality repetitions on specific numerical, symbolic, geometrical

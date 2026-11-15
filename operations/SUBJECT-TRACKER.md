@@ -28,6 +28,7 @@ The first subject of each new kind is run by Vitalis before the team scales that
 | Namibia NSSCO | 6136 | Development Studies | `nam-6136-nssco-2026` | Jeremy | Codex | in progress | Authored by Jeremy (18 topics, 505 flashcards + 38 activities; five Claude reviews, last verdict content PUBLISH, release NOT YET) on branch `nssco-6136-development-studies` (420dd6e, 21 October 2026), not yet merged to main. Row recorded 31 October 2026 by Vitalis, replacing Vitalis's mistaken duplicate claim. |
 | Namibia JSS (gr 8–9) | – | Geography | `nam-geography_jss-gr8-9-2026` | Vitalis | Codex | in progress | Pilot for grades 8 to 9, claimed 1 November 2026. Revised syllabus (Grade 8 2025, Grade 9 2026); method in `operations/frameworks/JSS-GR8-9-FRAMEWORK.md`. |
 | | | | | | | | |
+| Namibia NSSCAS | 8227 | Mathematics | `nam-8227-nsscas-2026` | Vitalis | Codex | in progress | Workbench framework pilot and whole-syllabus problem-type mapping commissioned 15 November 2026. Steps 1–3 first author analysis saved: source preparation, syllabus mapping and problem families. Source/analysis acceptance, finer reconciliation and recipe authoring pending. No Flashcard Studio conversion. |
 
 ## Published
 
