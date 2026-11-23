@@ -1,0 +1,1474 @@
+{
+  "scope": "Fixed-source Chapter 13 log-power; each explicit response checked.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C13:Try-Now-5:1",
+      "source_pdf_page": 568,
+      "notes": "One root of x=9e^(−2x); sketch and sign bracket 1..2; supplied log map, start1, each iterate4dp and final2dp1.07.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Map each requested outcome, not every calculation used to reach it. Preserve supplied versus derived recurrence, the selected real root, connected-part dependencies, and stipulated versus freely chosen starts. Formal convergence tests are outside LIMIT08.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "One root of x=9e^(−2x); sketch and sign bracket 1..2; supplied log map, start1, each iterate4dp and final2dp1.07.",
+          "reason": "Use the supplied recurrence or a provided rearrangement and interpret convergence qualitatively; no formal derivative convergence condition required."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "One root of x=9e^(−2x); sketch and sign bracket 1..2; supplied log map, start1, each iterate4dp and final2dp1.07.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "One root of x=9e^(−2x); sketch and sign bracket 1..2; supplied log map, start1, each iterate4dp and final2dp1.07.",
+        "comparison": "Full internal iteration states; round only displays and the final response at their independently stated precisions. Trigonometric arguments are radians. A book display preference is not an official NSSCAS convention."
+      },
+      "expected_subpart_labels": [
+        "a-one-root",
+        "b-sign-bracket",
+        "c-conditional-fixed-point",
+        "d-x2",
+        "d-x3",
+        "d-x4",
+        "d-x5",
+        "d-x6",
+        "d-x7",
+        "d-root"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-one-root",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Same axes: increasing line through the origin; positive decreasing exponential through (0,9), tending to zero at positive infinity; one intersection in (1,2).",
+          "author_derivation": "Original difference derivative 1+18e^(-2x)>0 and limits of opposite sign establish exactly one real root independently of the sketch.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O01:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "sketch",
+          "original_functions": [
+            "x",
+            "9*exp(-2*x)"
+          ],
+          "credited_features": [
+            "Same axes: increasing line through the origin",
+            " positive decreasing exponential through (0,9), tending to zero at positive infinity",
+            " one intersection in (1,2)."
+          ],
+          "criteria_basis": "Author-derivedfromoriginalfunctionsandcomparedwithsourceworked/answergraph. Noofficialawardtable. Graphpair/countasaskedmustbepreserved.",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-sign-bracket",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "Atleastonerootbetween1and2.",
+          "author_derivation": "Original continuous difference has values approximately −0.2180 and +1.8352.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O01:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "proof/show-that",
+          "original_equation_zero_form": "x-9*exp(-2*x)",
+          "original_bracket": [
+            "1",
+            "2"
+          ],
+          "continuity_check": "Originalfunctionisrealandcontinuousthroughouttheclosedbracket. Oppositeendpointsignsproveexistence;otherpartsestablishrootcount/whichroot.",
+          "source_endpoint_order": [
+            "1",
+            "2"
+          ],
+          "additional_operations": {
+            "original-endpoint-values": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((x-9*exp(-2*x)).subs(x,1),(x-9*exp(-2*x)).subs(x,2))"
+              ]
+            },
+            "opposite-endpoint-signs": {
+              "kind": "identity",
+              "operands": [
+                "sign((x-9*exp(-2*x)).subs(x,1))*sign((x-9*exp(-2*x)).subs(x,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-endpoint-values": "Tuple(1-9*exp(-2),2-9*exp(-4))",
+            "opposite-endpoint-signs": "-1"
+          },
+          "depends_on_source_parts": [
+            "a-one-root"
+          ],
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-conditional-fixed-point",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A convergent sequence has limit alpha=9e^(-2alpha).",
+          "author_derivation": "The supplied map is (ln9−ln x)/2 with x>0. At a finite positive limit, rearrange 2alpha=ln9−ln alpha and exponentiate to recover the ORIGINAL equation. This is conditional on convergence, not a formal convergence proof.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O03:D01",
+            "8227:2020:M2:T6:O03:D02"
+          ],
+          "component_demand_ids": [],
+          "response_format": "proof/show-that",
+          "given_representation": "text",
+          "additional_operations": {
+            "reconstruction": {
+              "kind": "identity",
+              "operands": [
+                "simplify(exp(log(9)-2*x)-9*exp(-2*x))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "reconstruction": "0"
+          },
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x2",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(log(9)-log(x))/2",
+              "1"
+            ],
+            "steps": 1,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.0986",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 1
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 2,
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(log(9)-log(x))/2",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x3",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(log(9)-log(x))/2",
+              "1"
+            ],
+            "steps": 2,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.0516",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 2
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 3,
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(log(9)-log(x))/2",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x4",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(log(9)-log(x))/2",
+              "1"
+            ],
+            "steps": 3,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.0735",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 3
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 4,
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(log(9)-log(x))/2",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x5",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(log(9)-log(x))/2",
+              "1"
+            ],
+            "steps": 4,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.0632",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 4
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 5,
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(log(9)-log(x))/2",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x6",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(log(9)-log(x))/2",
+              "1"
+            ],
+            "steps": 5,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.0680",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 5
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 6,
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(log(9)-log(x))/2",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x7",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(log(9)-log(x))/2",
+              "1"
+            ],
+            "steps": 6,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.0657",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 6
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 7,
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(log(9)-log(x))/2",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-root",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x-9*exp(-2*x)",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.07",
+          "method": "Independentlysolve the continuous verification equation in its admissible sign bracket,then round to the source requested accuracy. Separately test BOTH final iteration states at that accuracy;use unrounded states throughout. A stipulated start is binding;an author benchmark start is only one valid permitted trace.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01",
+            "8227:2020:M2:T6:O04:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "verification_equation": "x-9*exp(-2*x)",
+          "equation_origin": "given source equation",
+          "verification_bracket_origin": "source-stated sign bracket",
+          "requested_precision": "2 decimal places",
+          "initial_value_policy": "Stem stipulates x1=1; every evaluated state must remain positive for ln x.",
+          "author_reference_start": "1",
+          "depends_on_source_parts": [
+            "d-x2",
+            "d-x3",
+            "d-x4",
+            "d-x5",
+            "d-x6",
+            "d-x7"
+          ],
+          "additional_operations": {
+            "last-state-target-precision": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 6,
+              "rounding": {
+                "decimal_places": 2
+              }
+            },
+            "previous-state-target-precision": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(log(9)-log(x))/2",
+                "1"
+              ],
+              "steps": 5,
+              "rounding": {
+                "decimal_places": 2
+              }
+            }
+          },
+          "additional_operation_expected": {
+            "last-state-target-precision": "1.07",
+            "previous-state-target-precision": "1.07"
+          },
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C13:Try-Now-5:2",
+      "source_pdf_page": 568,
+      "notes": "Exactly one positive-domain root of3ln x=15−x³; bracket2..2.5. Supplied cube-root log map; each5dp, final3dp2.319; start open, key chooses1.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Map each requested outcome, not every calculation used to reach it. Preserve supplied versus derived recurrence, the selected real root, connected-part dependencies, and stipulated versus freely chosen starts. Formal convergence tests are outside LIMIT08.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Exactly one positive-domain root of3ln x=15−x³; bracket2..2.5. Supplied cube-root log map; each5dp, final3dp2.319; start open, key chooses1.",
+          "reason": "Use the supplied recurrence or a provided rearrangement and interpret convergence qualitatively; no formal derivative convergence condition required."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Exactly one positive-domain root of3ln x=15−x³; bracket2..2.5. Supplied cube-root log map; each5dp, final3dp2.319; start open, key chooses1.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactly one positive-domain root of3ln x=15−x³; bracket2..2.5. Supplied cube-root log map; each5dp, final3dp2.319; start open, key chooses1.",
+        "comparison": "Full internal iteration states; round only displays and the final response at their independently stated precisions. Trigonometric arguments are radians. A book display preference is not an official NSSCAS convention."
+      },
+      "expected_subpart_labels": [
+        "a-one-root",
+        "b-sign-bracket",
+        "c-x2",
+        "c-x3",
+        "c-x4",
+        "c-x5",
+        "c-x6",
+        "c-root"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-one-root",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Domain x>0: logarithm increasing from negative infinity; 15−x³ decreasing, intercept15 and positive-axis crossing cube root15; one intersection in (2,2.5).",
+          "author_derivation": "The original difference has derivative 3/x+3x²>0 for x>0, and opposite infinite endpoint limits. No logarithm is drawn on x<=0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O01:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "sketch",
+          "original_functions": [
+            "3*log(x)",
+            "15-x**3"
+          ],
+          "credited_features": [
+            "Domain x>0: logarithm increasing from negative infinity",
+            " 15−x³ decreasing, intercept15 and positive-axis crossing cube root15",
+            " one intersection in (2,2.5)."
+          ],
+          "criteria_basis": "Author-derivedfromoriginalfunctionsandcomparedwithsourceworked/answergraph. Noofficialawardtable. Graphpair/countasaskedmustbepreserved.",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-sign-bracket",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "Atleastonerootbetween2andRational(5,2).",
+          "author_derivation": "Original continuous log difference at2 and2.5 is approximately−4.9206,+3.3739.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O01:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "proof/show-that",
+          "original_equation_zero_form": "3*log(x)-15+x**3",
+          "original_bracket": [
+            "2",
+            "Rational(5,2)"
+          ],
+          "continuity_check": "Originalfunctionisrealandcontinuousthroughouttheclosedbracket. Oppositeendpointsignsproveexistence;otherpartsestablishrootcount/whichroot.",
+          "source_endpoint_order": [
+            "2",
+            "Rational(5,2)"
+          ],
+          "additional_operations": {
+            "original-endpoint-values": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((3*log(x)-15+x**3).subs(x,2),(3*log(x)-15+x**3).subs(x,Rational(5,2)))"
+              ]
+            },
+            "opposite-endpoint-signs": {
+              "kind": "identity",
+              "operands": [
+                "sign((3*log(x)-15+x**3).subs(x,2))*sign((3*log(x)-15+x**3).subs(x,Rational(5,2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-endpoint-values": "Tuple(3*log(2)-7,3*log(Rational(5,2))+Rational(5,8))",
+            "opposite-endpoint-signs": "-1"
+          },
+          "depends_on_source_parts": [
+            "a-one-root"
+          ],
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-x2",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "real_root(15-3*log(x),3)",
+              "1"
+            ],
+            "steps": 1,
+            "rounding": {
+              "decimal_places": 5
+            }
+          },
+          "printed_key_normalised": "2.46621",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 1
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 2,
+          "initial_value_policy": "No start stipulated; key uses1. This benchmark remains positive. Other suitable starts are permitted; negative intermediate states would make the next logarithm undefined.",
+          "author_reference_start": "1",
+          "display_precision": "5decimalplaces",
+          "original_iteration_formula": "real_root(15-3*log(x),3)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-x3",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "real_root(15-3*log(x),3)",
+              "1"
+            ],
+            "steps": 2,
+            "rounding": {
+              "decimal_places": 5
+            }
+          },
+          "printed_key_normalised": "2.30785",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 2
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 3,
+          "initial_value_policy": "No start stipulated; key uses1. This benchmark remains positive. Other suitable starts are permitted; negative intermediate states would make the next logarithm undefined.",
+          "author_reference_start": "1",
+          "display_precision": "5decimalplaces",
+          "original_iteration_formula": "real_root(15-3*log(x),3)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-x4",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "real_root(15-3*log(x),3)",
+              "1"
+            ],
+            "steps": 3,
+            "rounding": {
+              "decimal_places": 5
+            }
+          },
+          "printed_key_normalised": "2.32024",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 3
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 4,
+          "initial_value_policy": "No start stipulated; key uses1. This benchmark remains positive. Other suitable starts are permitted; negative intermediate states would make the next logarithm undefined.",
+          "author_reference_start": "1",
+          "display_precision": "5decimalplaces",
+          "original_iteration_formula": "real_root(15-3*log(x),3)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-x5",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "real_root(15-3*log(x),3)",
+              "1"
+            ],
+            "steps": 4,
+            "rounding": {
+              "decimal_places": 5
+            }
+          },
+          "printed_key_normalised": "2.31925",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 4
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 5,
+          "initial_value_policy": "No start stipulated; key uses1. This benchmark remains positive. Other suitable starts are permitted; negative intermediate states would make the next logarithm undefined.",
+          "author_reference_start": "1",
+          "display_precision": "5decimalplaces",
+          "original_iteration_formula": "real_root(15-3*log(x),3)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-x6",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "real_root(15-3*log(x),3)",
+              "1"
+            ],
+            "steps": 5,
+            "rounding": {
+              "decimal_places": 5
+            }
+          },
+          "printed_key_normalised": "2.31933",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 5
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 6,
+          "initial_value_policy": "No start stipulated; key uses1. This benchmark remains positive. Other suitable starts are permitted; negative intermediate states would make the next logarithm undefined.",
+          "author_reference_start": "1",
+          "display_precision": "5decimalplaces",
+          "original_iteration_formula": "real_root(15-3*log(x),3)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-root",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "3*log(x)-15+x**3",
+              "2",
+              "Rational(5,2)"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "2.319",
+          "method": "Independentlysolve the continuous verification equation in its admissible sign bracket,then round to the source requested accuracy. Separately test BOTH final iteration states at that accuracy;use unrounded states throughout. A stipulated start is binding;an author benchmark start is only one valid permitted trace.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01",
+            "8227:2020:M2:T6:O04:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "verification_equation": "3*log(x)-15+x**3",
+          "equation_origin": "given source equation",
+          "verification_bracket_origin": "source-stated sign bracket",
+          "requested_precision": "3 decimal places",
+          "initial_value_policy": "No start stipulated; key uses1. This benchmark remains positive. Other suitable starts are permitted; negative intermediate states would make the next logarithm undefined.",
+          "author_reference_start": "1",
+          "depends_on_source_parts": [
+            "c-x2",
+            "c-x3",
+            "c-x4",
+            "c-x5",
+            "c-x6"
+          ],
+          "additional_operations": {
+            "last-state-target-precision": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 5,
+              "rounding": {
+                "decimal_places": 3
+              }
+            },
+            "previous-state-target-precision": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(15-3*log(x),3)",
+                "1"
+              ],
+              "steps": 4,
+              "rounding": {
+                "decimal_places": 3
+              }
+            }
+          },
+          "additional_operation_expected": {
+            "last-state-target-precision": "2.319",
+            "previous-state-target-precision": "2.319"
+          },
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C13:Try-Now-5:3",
+      "source_pdf_page": 568,
+      "notes": "Quartic x⁴−1−x=0: positive alpha in1..2; show positive fourth-root relation, write recurrence, start1.5, each4dp, root2dp1.22.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Map each requested outcome, not every calculation used to reach it. Preserve supplied versus derived recurrence, the selected real root, connected-part dependencies, and stipulated versus freely chosen starts. Formal convergence tests are outside LIMIT08.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Quartic x⁴−1−x=0: positive alpha in1..2; show positive fourth-root relation, write recurrence, start1.5, each4dp, root2dp1.22.",
+          "reason": "Use the supplied recurrence or a provided rearrangement and interpret convergence qualitatively; no formal derivative convergence condition required."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Quartic x⁴−1−x=0: positive alpha in1..2; show positive fourth-root relation, write recurrence, start1.5, each4dp, root2dp1.22.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Quartic x⁴−1−x=0: positive alpha in1..2; show positive fourth-root relation, write recurrence, start1.5, each4dp, root2dp1.22.",
+        "comparison": "Full internal iteration states; round only displays and the final response at their independently stated precisions. Trigonometric arguments are radians. A book display preference is not an official NSSCAS convention."
+      },
+      "expected_subpart_labels": [
+        "a-positive-root-bracket",
+        "b-positive-fourth-root",
+        "c-write-recurrence",
+        "d-x2",
+        "d-x3",
+        "d-x4",
+        "d-x5",
+        "d-root"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-positive-root-bracket",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "Atleastonerootbetween1and2.",
+          "author_derivation": "Sign bracket1..2 selects the positive root; the quartic also has a negative root, not requested here.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O01:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "proof/show-that",
+          "original_equation_zero_form": "x**4-1-x",
+          "original_bracket": [
+            "1",
+            "2"
+          ],
+          "continuity_check": "Originalfunctionisrealandcontinuousthroughouttheclosedbracket. Oppositeendpointsignsproveexistence;otherpartsestablishrootcount/whichroot.",
+          "source_endpoint_order": [
+            "1",
+            "2"
+          ],
+          "additional_operations": {
+            "original-endpoint-values": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((x**4-1-x).subs(x,1),(x**4-1-x).subs(x,2))"
+              ]
+            },
+            "opposite-endpoint-signs": {
+              "kind": "identity",
+              "operands": [
+                "sign((x**4-1-x).subs(x,1))*sign((x**4-1-x).subs(x,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-endpoint-values": "Tuple(-1,13)",
+            "opposite-endpoint-signs": "-1"
+          },
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-positive-fourth-root",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "alpha=(1+alpha)^(1/4).",
+          "author_derivation": "The bracket establishes alpha>0, so the positive fourth-root rearrangement preserves this selected root. The original quartic has another real branch; do not extend this rearrangement to all roots.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O03:D02",
+            "8227:2020:M2:T6:O03:D01"
+          ],
+          "component_demand_ids": [],
+          "response_format": "proof/show-that",
+          "given_representation": "text",
+          "additional_operations": {
+            "original-reconstruction": {
+              "kind": "identity",
+              "operands": [
+                "expand(x**4-(1+x))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-reconstruction": "x**4-1-x"
+          },
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-write-recurrence",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(1+x)**Rational(1,4)"
+            ]
+          },
+          "printed_key_normalised": "(1+x)**Rational(1,4)",
+          "method": "Replace the selected-root equality by the next-state formula x_(n+1)=(1+x_n)^(1/4), with real map domain x_n>=−1 and the selected positive target.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O03:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "depends_on_source_parts": [
+            "b-positive-fourth-root"
+          ],
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x2",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1+x)**Rational(1,4)",
+              "Rational(3,2)"
+            ],
+            "steps": 1,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.2574",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1+x)**Rational(1,4)",
+                "Rational(3,2)"
+              ],
+              "steps": 1
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 2,
+          "initial_value_policy": "Stem specifies1.5; principal nonnegative fourth root, not an arbitrary real fourth-root sign.",
+          "author_reference_start": "Rational(3,2)",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(1+x)**Rational(1,4)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x3",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1+x)**Rational(1,4)",
+              "Rational(3,2)"
+            ],
+            "steps": 2,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.2258",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1+x)**Rational(1,4)",
+                "Rational(3,2)"
+              ],
+              "steps": 2
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 3,
+          "initial_value_policy": "Stem specifies1.5; principal nonnegative fourth root, not an arbitrary real fourth-root sign.",
+          "author_reference_start": "Rational(3,2)",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(1+x)**Rational(1,4)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x4",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1+x)**Rational(1,4)",
+              "Rational(3,2)"
+            ],
+            "steps": 3,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.2214",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1+x)**Rational(1,4)",
+                "Rational(3,2)"
+              ],
+              "steps": 3
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 4,
+          "initial_value_policy": "Stem specifies1.5; principal nonnegative fourth root, not an arbitrary real fourth-root sign.",
+          "author_reference_start": "Rational(3,2)",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(1+x)**Rational(1,4)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-x5",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1+x)**Rational(1,4)",
+              "Rational(3,2)"
+            ],
+            "steps": 4,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1.2208",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1+x)**Rational(1,4)",
+                "Rational(3,2)"
+              ],
+              "steps": 4
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_index_one_based": 5,
+          "initial_value_policy": "Stem specifies1.5; principal nonnegative fourth root, not an arbitrary real fourth-root sign.",
+          "author_reference_start": "Rational(3,2)",
+          "display_precision": "4decimalplaces",
+          "original_iteration_formula": "(1+x)**Rational(1,4)",
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d-root",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x**4-1-x",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.22",
+          "method": "Independentlysolve the continuous verification equation in its admissible sign bracket,then round to the source requested accuracy. Separately test BOTH final iteration states at that accuracy;use unrounded states throughout. A stipulated start is binding;an author benchmark start is only one valid permitted trace.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T6:O04:D01",
+            "8227:2020:M2:T6:O04:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "verification_equation": "x**4-1-x",
+          "equation_origin": "given source equation",
+          "verification_bracket_origin": "source-stated sign bracket",
+          "requested_precision": "2 decimal places",
+          "initial_value_policy": "Stem specifies1.5; principal nonnegative fourth root, not an arbitrary real fourth-root sign.",
+          "author_reference_start": "Rational(3,2)",
+          "depends_on_source_parts": [
+            "d-x2",
+            "d-x3",
+            "d-x4",
+            "d-x5"
+          ],
+          "additional_operations": {
+            "last-state-target-precision": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1+x)**Rational(1,4)",
+                "Rational(3,2)"
+              ],
+              "steps": 4,
+              "rounding": {
+                "decimal_places": 2
+              }
+            },
+            "previous-state-target-precision": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1+x)**Rational(1,4)",
+                "Rational(3,2)"
+              ],
+              "steps": 3,
+              "rounding": {
+                "decimal_places": 2
+              }
+            }
+          },
+          "additional_operation_expected": {
+            "last-state-target-precision": "1.22",
+            "previous-state-target-precision": "1.22"
+          },
+          "source_pdf_page": 568,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-568-source.png",
+            "sha256": "b8e8b165b84f10a3227d520e81e4a42e7be9fc32fda770fad795d282d711c837"
+          },
+          "answer_pdf_page": 654,
+          "answer_printed_page": "A68",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C13-key-653.png",
+            "sha256": "e2f4d4979a4a2a3ef8d4f812d9dc8029753be60f26afa40563b7ee264aacd6ed"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}

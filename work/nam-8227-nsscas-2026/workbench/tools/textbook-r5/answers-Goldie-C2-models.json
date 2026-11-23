@@ -1,0 +1,1953 @@
+{
+  "scope": "EveryExample6–8and Exercise2C1–9response;fitted models are nonunique.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:6",
+      "source_pdf_page": 51,
+      "notes": "Plot six experimental temperature/time observations and find a raw straight-line relation;the near-linear warm-up does not itself assess logarithmic linearisation.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Plot six experimental temperature/time observations and find a raw straight-line relation;the near-linear warm-up does not itself assess logarithmic linearisation.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Plot all six temperature points with time in seconds on the horizontal axis and temperature°Cvertically;they lie close to a straight increasing line.",
+          "author_derivation": "The increments are approximately4°Cper20seconds. Plot the actual rounded observations,not an exponential curve inferred from the chapter title. The independent raw-data line has slope about0.19886and intercept12.3567;the source hand line0.2t+12.3is a close graphical model.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "Example6-temperature",
+            "x": [
+              "20",
+              "40",
+              "60",
+              "80",
+              "100",
+              "120"
+            ],
+            "y": [
+              "16.3",
+              "20.4",
+              "24.2",
+              "28.5",
+              "32.0",
+              "36.3"
+            ],
+            "fit_mode": "linear",
+            "author_fit": {
+              "intercept": 12.373333333333335,
+              "slope": 0.19871428571428568,
+              "k": 12.373333333333335,
+              "b_or_n": 0.19871428571428568,
+              "original_response_sse": 0.13676190476190414
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((16.3+20.4+24.2+28.5+32.0+36.3)-(((6*((20)*(16.3)+(40)*(20.4)+(60)*(24.2)+(80)*(28.5)+(100)*(32.0)+(120)*(36.3))-(20+40+60+80+100+120)*(16.3+20.4+24.2+28.5+32.0+36.3))/(6*((20)**2+(40)**2+(60)**2+(80)**2+(100)**2+(120)**2)-(20+40+60+80+100+120)**2)))*(20+40+60+80+100+120))/6),((6*((20)*(16.3)+(40)*(20.4)+(60)*(24.2)+(80)*(28.5)+(100)*(32.0)+(120)*(36.3))-(20+40+60+80+100+120)*(16.3+20.4+24.2+28.5+32.0+36.3))/(6*((20)**2+(40)**2+(60)**2+(80)**2+(100)**2+(120)**2)-(20+40+60+80+100+120)**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(928/75, 1391/7000)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((16.3+20.4+24.2+28.5+32.0+36.3)-(((6*((20)*(16.3)+(40)*(20.4)+(60)*(24.2)+(80)*(28.5)+(100)*(32.0)+(120)*(36.3))-(20+40+60+80+100+120)*(16.3+20.4+24.2+28.5+32.0+36.3))/(6*((20)**2+(40)**2+(60)**2+(80)**2+(100)**2+(120)**2)-(20+40+60+80+100+120)**2)))*(20+40+60+80+100+120))/6),((6*((20)*(16.3)+(40)*(20.4)+(60)*(24.2)+(80)*(28.5)+(100)*(32.0)+(120)*(36.3))-(20+40+60+80+100+120)*(16.3+20.4+24.2+28.5+32.0+36.3))/(6*((20)**2+(40)**2+(60)**2+(80)**2+(100)**2+(120)**2)-(20+40+60+80+100+120)**2)))"
+              ]
+            }
+          },
+          "source_pdf_page": 51,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 51,
+          "answer_printed_page": 37,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "A reasonable source model is θ≈0.2t+12.3°C.",
+          "author_derivation": "From source endpoint readings(20,16.3),(120,36.3),gradient=(36.3−16.3)/100=0.2and intercept16.3−0.2·20=12.3. These are fitted approximate data,not six exact collinear givens. No log transformation is requested.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_line": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((36.3-16.3)/(120-20),16.3-((36.3-16.3)/(120-20))*20)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_line": "Tuple(0.2,12.3)"
+          },
+          "source_pdf_page": 51,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 51,
+          "answer_printed_page": 37,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting raw straight-line plotting and fitting warm-up;no direct logarithmic-demand coverage."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:7",
+      "source_pdf_page": 52,
+      "notes": "Test the pipe-flow power model R=kd^n,make transformed table/plot,and recover constants. The question orders logd against logR;the worked plot reverses these axes while returning the same original relation.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Test the pipe-flow power model R=kd^n,make transformed table/plot,and recover constants. The question orders logd against logR;the worked plot reverses these axes while returning the same original relation.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii-table-plot",
+        "iii-parameters"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "For R=kd^n,taking common logs gives logR=nlogd+logk. Either axis orientation gives a straightness test,but swaps slope/intercept interpretation.",
+          "author_derivation": "The question asks logd against logR;then logd=(1/n)logR−logk/n for n≠0. The worked solution instead plots logR vertically against logd,where gradient=nand intercept=logk. Both straightness tests are valid;their gradient interpretations cannot be interchanged.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 52,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 52,
+          "answer_printed_page": 38,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*x**n),force=True)-log(k)-n*log(x)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "ii-table-plot",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "The source solution uses logd=(0,0.30,0.48,0.70,1.00)and logR=(−1.70,−0.49,0.21,1.10,2.30),then plots logR against logd.",
+          "author_derivation": "Transform each positive measurement before rounding to2decimal places;retain both axis labels. The five points are almost exactly linear in these coordinates. A learner following the requested reversed axes should obtain reciprocal slope and still recover the same original model.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "Example7-pipe",
+            "x": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "10"
+            ],
+            "y": [
+              "0.02",
+              "0.32",
+              "1.62",
+              "12.53",
+              "199.80"
+            ],
+            "fit_mode": "power",
+            "author_fit": {
+              "intercept": -1.6988424200519834,
+              "slope": 3.99998733400392,
+              "k": 0.02000587633652462,
+              "b_or_n": 3.99998733400392,
+              "original_response_sse": 0.06467981897241036
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(0.02)/log(10),45)+N(log(0.32)/log(10),45)+N(log(1.62)/log(10),45)+N(log(12.53)/log(10),45)+N(log(199.80)/log(10),45))-(((5*((N(log(1)/log(10),45))*(N(log(0.02)/log(10),45))+(N(log(2)/log(10),45))*(N(log(0.32)/log(10),45))+(N(log(3)/log(10),45))*(N(log(1.62)/log(10),45))+(N(log(5)/log(10),45))*(N(log(12.53)/log(10),45))+(N(log(10)/log(10),45))*(N(log(199.80)/log(10),45)))-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))*(N(log(0.02)/log(10),45)+N(log(0.32)/log(10),45)+N(log(1.62)/log(10),45)+N(log(12.53)/log(10),45)+N(log(199.80)/log(10),45)))/(5*((N(log(1)/log(10),45))**2+(N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(10)/log(10),45))**2)-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))**2)))*(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45)))/5),((5*((N(log(1)/log(10),45))*(N(log(0.02)/log(10),45))+(N(log(2)/log(10),45))*(N(log(0.32)/log(10),45))+(N(log(3)/log(10),45))*(N(log(1.62)/log(10),45))+(N(log(5)/log(10),45))*(N(log(12.53)/log(10),45))+(N(log(10)/log(10),45))*(N(log(199.80)/log(10),45)))-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))*(N(log(0.02)/log(10),45)+N(log(0.32)/log(10),45)+N(log(1.62)/log(10),45)+N(log(12.53)/log(10),45)+N(log(199.80)/log(10),45)))/(5*((N(log(1)/log(10),45))**2+(N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(10)/log(10),45))**2)-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(-1.69884242005198349485070423703291886511731987, 3.99998733400392052838168212432748585528049134)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(0.02)/log(10),45)+N(log(0.32)/log(10),45)+N(log(1.62)/log(10),45)+N(log(12.53)/log(10),45)+N(log(199.80)/log(10),45))-(((5*((N(log(1)/log(10),45))*(N(log(0.02)/log(10),45))+(N(log(2)/log(10),45))*(N(log(0.32)/log(10),45))+(N(log(3)/log(10),45))*(N(log(1.62)/log(10),45))+(N(log(5)/log(10),45))*(N(log(12.53)/log(10),45))+(N(log(10)/log(10),45))*(N(log(199.80)/log(10),45)))-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))*(N(log(0.02)/log(10),45)+N(log(0.32)/log(10),45)+N(log(1.62)/log(10),45)+N(log(12.53)/log(10),45)+N(log(199.80)/log(10),45)))/(5*((N(log(1)/log(10),45))**2+(N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(10)/log(10),45))**2)-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))**2)))*(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45)))/5),((5*((N(log(1)/log(10),45))*(N(log(0.02)/log(10),45))+(N(log(2)/log(10),45))*(N(log(0.32)/log(10),45))+(N(log(3)/log(10),45))*(N(log(1.62)/log(10),45))+(N(log(5)/log(10),45))*(N(log(12.53)/log(10),45))+(N(log(10)/log(10),45))*(N(log(199.80)/log(10),45)))-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))*(N(log(0.02)/log(10),45)+N(log(0.32)/log(10),45)+N(log(1.62)/log(10),45)+N(log(12.53)/log(10),45)+N(log(199.80)/log(10),45)))/(5*((N(log(1)/log(10),45))**2+(N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(10)/log(10),45))**2)-(N(log(1)/log(10),45)+N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(5)/log(10),45)+N(log(10)/log(10),45))**2)))"
+              ]
+            },
+            "table_0_cell_0": {
+              "kind": "rounded",
+              "operands": [
+                "log(1)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_1": {
+              "kind": "rounded",
+              "operands": [
+                "log(2)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_2": {
+              "kind": "rounded",
+              "operands": [
+                "log(3)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_3": {
+              "kind": "rounded",
+              "operands": [
+                "log(5)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_4": {
+              "kind": "rounded",
+              "operands": [
+                "log(10)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_0": {
+              "kind": "rounded",
+              "operands": [
+                "log(0.02)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_1": {
+              "kind": "rounded",
+              "operands": [
+                "log(0.32)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_2": {
+              "kind": "rounded",
+              "operands": [
+                "log(1.62)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_3": {
+              "kind": "rounded",
+              "operands": [
+                "log(12.53)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_4": {
+              "kind": "rounded",
+              "operands": [
+                "log(199.80)/log(10)"
+              ],
+              "decimal_places": 2
+            }
+          },
+          "source_pdf_page": 52,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 53,
+          "answer_printed_page": 39,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "review_date": "2026-11-18",
+          "additional_operation_expected": {
+            "table_0_cell_0": "0",
+            "table_0_cell_1": "0.30",
+            "table_0_cell_2": "0.48",
+            "table_0_cell_3": "0.70",
+            "table_0_cell_4": "1.00",
+            "table_1_cell_0": "-1.70",
+            "table_1_cell_1": "-0.49",
+            "table_1_cell_2": "0.21",
+            "table_1_cell_3": "1.10",
+            "table_1_cell_4": "2.30"
+          }
+        },
+        {
+          "subpart": "iii-parameters",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The source model is R≈0.020d^4,so n≈4andk≈0.020.",
+          "author_derivation": "From the worked orientation,gradient4and logk≈−1.70give k=10^(−1.70)≈0.020. Independently fitting the original data gives exponent very close4and coefficient near0.020. In the requested reverse orientation,the slope is≈1/4and intercept≈0.425.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 52,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 53,
+          "answer_printed_page": 39,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "continuation_pdf_pages": [
+        53
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:8",
+      "source_pdf_page": 53,
+      "notes": "Plot cooling measurements,derive a suitable logarithmic test,make the transformed table/graph,and estimate exponential decay constants. Worked solution continues54–55.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Plot cooling measurements,derive a suitable logarithmic test,make the transformed table/graph,and estimate exponential decay constants. Worked solution continues54–55.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii-table-plot",
+        "iii-parameters"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Plot the six decreasing temperature observations against time;join with a smooth decay curve,not a straight raw-data line.",
+          "author_derivation": "All data are positive and decrease with progressively smaller absolute drops. The raw source plot agrees. A chosen exponential model extrapolated beyond these data is not a verified full cooling law.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 53,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 54,
+          "answer_printed_page": 40,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "Test θ=ka^tby plotting logθagainstt;straightness supports the proposed exponential relationship.",
+          "author_derivation": "For k>0,a>0,logθ=logk+tloga. The log-ordinate line has interceptlogkand gradientloga. It does not require plotting logt.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 53,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 54,
+          "answer_printed_page": 40,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*a**t),force=True)-log(k)-t*log(a)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "iii-table-plot",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "The3dpcommon-log temperatures are1.908,1.845,1.785,1.716,1.653,1.580at t=2,4,6,8,10,12.",
+          "author_derivation": "Transform all six measured temperatures and plot these ordinate values against original time. They lie near a decreasing straight line. The actual data,not the rounded key log values,feed the independent fit.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "Example8-coffee",
+            "x": [
+              "2",
+              "4",
+              "6",
+              "8",
+              "10",
+              "12"
+            ],
+            "y": [
+              "81",
+              "70",
+              "61",
+              "52",
+              "45",
+              "38"
+            ],
+            "fit_mode": "exponential",
+            "author_fit": {
+              "intercept": 1.9768344094619617,
+              "slope": -0.032692716877170076,
+              "k": 94.80569132613932,
+              "b_or_n": 0.927485829735144,
+              "original_response_sse": 1.051709950738367
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(81)/log(10),45)+N(log(70)/log(10),45)+N(log(61)/log(10),45)+N(log(52)/log(10),45)+N(log(45)/log(10),45)+N(log(38)/log(10),45))-(((6*((2)*(N(log(81)/log(10),45))+(4)*(N(log(70)/log(10),45))+(6)*(N(log(61)/log(10),45))+(8)*(N(log(52)/log(10),45))+(10)*(N(log(45)/log(10),45))+(12)*(N(log(38)/log(10),45)))-(2+4+6+8+10+12)*(N(log(81)/log(10),45)+N(log(70)/log(10),45)+N(log(61)/log(10),45)+N(log(52)/log(10),45)+N(log(45)/log(10),45)+N(log(38)/log(10),45)))/(6*((2)**2+(4)**2+(6)**2+(8)**2+(10)**2+(12)**2)-(2+4+6+8+10+12)**2)))*(2+4+6+8+10+12))/6),((6*((2)*(N(log(81)/log(10),45))+(4)*(N(log(70)/log(10),45))+(6)*(N(log(61)/log(10),45))+(8)*(N(log(52)/log(10),45))+(10)*(N(log(45)/log(10),45))+(12)*(N(log(38)/log(10),45)))-(2+4+6+8+10+12)*(N(log(81)/log(10),45)+N(log(70)/log(10),45)+N(log(61)/log(10),45)+N(log(52)/log(10),45)+N(log(45)/log(10),45)+N(log(38)/log(10),45)))/(6*((2)**2+(4)**2+(6)**2+(8)**2+(10)**2+(12)**2)-(2+4+6+8+10+12)**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(1.97683440946196163063070741778633857979660357, -0.0326927168771700755772808545640271018693966377)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(81)/log(10),45)+N(log(70)/log(10),45)+N(log(61)/log(10),45)+N(log(52)/log(10),45)+N(log(45)/log(10),45)+N(log(38)/log(10),45))-(((6*((2)*(N(log(81)/log(10),45))+(4)*(N(log(70)/log(10),45))+(6)*(N(log(61)/log(10),45))+(8)*(N(log(52)/log(10),45))+(10)*(N(log(45)/log(10),45))+(12)*(N(log(38)/log(10),45)))-(2+4+6+8+10+12)*(N(log(81)/log(10),45)+N(log(70)/log(10),45)+N(log(61)/log(10),45)+N(log(52)/log(10),45)+N(log(45)/log(10),45)+N(log(38)/log(10),45)))/(6*((2)**2+(4)**2+(6)**2+(8)**2+(10)**2+(12)**2)-(2+4+6+8+10+12)**2)))*(2+4+6+8+10+12))/6),((6*((2)*(N(log(81)/log(10),45))+(4)*(N(log(70)/log(10),45))+(6)*(N(log(61)/log(10),45))+(8)*(N(log(52)/log(10),45))+(10)*(N(log(45)/log(10),45))+(12)*(N(log(38)/log(10),45)))-(2+4+6+8+10+12)*(N(log(81)/log(10),45)+N(log(70)/log(10),45)+N(log(61)/log(10),45)+N(log(52)/log(10),45)+N(log(45)/log(10),45)+N(log(38)/log(10),45)))/(6*((2)**2+(4)**2+(6)**2+(8)**2+(10)**2+(12)**2)-(2+4+6+8+10+12)**2)))"
+              ]
+            },
+            "table_0_cell_0": {
+              "kind": "rounded",
+              "operands": [
+                "log(81)/log(10)"
+              ],
+              "decimal_places": 3
+            },
+            "table_0_cell_1": {
+              "kind": "rounded",
+              "operands": [
+                "log(70)/log(10)"
+              ],
+              "decimal_places": 3
+            },
+            "table_0_cell_2": {
+              "kind": "rounded",
+              "operands": [
+                "log(61)/log(10)"
+              ],
+              "decimal_places": 3
+            },
+            "table_0_cell_3": {
+              "kind": "rounded",
+              "operands": [
+                "log(52)/log(10)"
+              ],
+              "decimal_places": 3
+            },
+            "table_0_cell_4": {
+              "kind": "rounded",
+              "operands": [
+                "log(45)/log(10)"
+              ],
+              "decimal_places": 3
+            },
+            "table_0_cell_5": {
+              "kind": "rounded",
+              "operands": [
+                "log(38)/log(10)"
+              ],
+              "decimal_places": 3
+            }
+          },
+          "source_pdf_page": 53,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 54,
+          "answer_printed_page": 40,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "review_date": "2026-11-18",
+          "additional_operation_expected": {
+            "table_0_cell_0": "1.908",
+            "table_0_cell_1": "1.845",
+            "table_0_cell_2": "1.785",
+            "table_0_cell_3": "1.716",
+            "table_0_cell_4": "1.653",
+            "table_0_cell_5": "1.580"
+          }
+        },
+        {
+          "subpart": "iii-parameters",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The source graphical estimates are k≈94.2and a≈0.927,thus θ≈94.2·0.927^t.",
+          "author_derivation": "Its displayed fitted intercept1.974gives10^1.974≈94.2and gradient−0.033gives10^(−0.033)≈0.927. The independent data fit is nearby. These are graphical approximations,not exact coefficients fixed uniquely by the noisy data.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 53,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-50.png",
+            "sha256": "ca8c24d64416a90f975ef7640ef9335618e629581aeceb9a2893e6635e6005f4"
+          },
+          "answer_pdf_page": 55,
+          "answer_printed_page": 41,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "continuation_pdf_pages": [
+        54,
+        55
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:1",
+      "source_pdf_page": 55,
+      "notes": "Use the five moon radii(×10^5km)and periods(days)to test R=kT^n,make the transformed plot,estimate k,nand predict a sixth moon’s period. Part(iv)continues56;source graphical parameters are nonunique.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02",
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Use the five moon radii(×10^5km)and periods(days)to test R=kT^n,make the transformed plot,estimate k,nand predict a sixth moon’s period. Part(iv)continues56;source graphical parameters are nonunique.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii-table-graph",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "Plot logRagainstlogT;R=kT^nbecomes logR=nlogT+logk.",
+          "author_derivation": "Use R in kilometres,including the table’s×10^5factor. A consistent scaled-radius plot is also valid,but its coefficient kdiffers by10^5. Keep units when recovering the intercept.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 55,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*t**n),force=True)-log(k)-n*log(t)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "ii-table-graph",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Plot the five transformed positive-radius/period observations;the source’s2dplogRvalues are5.46,5.58,5.72,6.09,6.55andlogT0.28,0.43,0.65,1.20,1.90.",
+          "author_derivation": "Common logs preserve the stated physical units in the numerical arguments. The data form a close straight line. All five actual pairs are retained;an independent log-space fit has n≈0.66743,k≈192739km,showing that source graphical coefficients are not unique exact answers.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "2C1-moons",
+            "x": [
+              "1.9",
+              "2.7",
+              "4.5",
+              "15.9",
+              "79.3"
+            ],
+            "y": [
+              "290000",
+              "380000",
+              "530000",
+              "1220000",
+              "3560000"
+            ],
+            "fit_mode": "power",
+            "author_fit": {
+              "intercept": 5.284968719571243,
+              "slope": 0.6674335949249636,
+              "k": 192738.60865722864,
+              "b_or_n": 0.6674335949249636,
+              "original_response_sse": 178103773.97192317
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(290000)/log(10),45)+N(log(380000)/log(10),45)+N(log(530000)/log(10),45)+N(log(1220000)/log(10),45)+N(log(3560000)/log(10),45))-(((5*((N(log(1.9)/log(10),45))*(N(log(290000)/log(10),45))+(N(log(2.7)/log(10),45))*(N(log(380000)/log(10),45))+(N(log(4.5)/log(10),45))*(N(log(530000)/log(10),45))+(N(log(15.9)/log(10),45))*(N(log(1220000)/log(10),45))+(N(log(79.3)/log(10),45))*(N(log(3560000)/log(10),45)))-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))*(N(log(290000)/log(10),45)+N(log(380000)/log(10),45)+N(log(530000)/log(10),45)+N(log(1220000)/log(10),45)+N(log(3560000)/log(10),45)))/(5*((N(log(1.9)/log(10),45))**2+(N(log(2.7)/log(10),45))**2+(N(log(4.5)/log(10),45))**2+(N(log(15.9)/log(10),45))**2+(N(log(79.3)/log(10),45))**2)-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))**2)))*(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45)))/5),((5*((N(log(1.9)/log(10),45))*(N(log(290000)/log(10),45))+(N(log(2.7)/log(10),45))*(N(log(380000)/log(10),45))+(N(log(4.5)/log(10),45))*(N(log(530000)/log(10),45))+(N(log(15.9)/log(10),45))*(N(log(1220000)/log(10),45))+(N(log(79.3)/log(10),45))*(N(log(3560000)/log(10),45)))-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))*(N(log(290000)/log(10),45)+N(log(380000)/log(10),45)+N(log(530000)/log(10),45)+N(log(1220000)/log(10),45)+N(log(3560000)/log(10),45)))/(5*((N(log(1.9)/log(10),45))**2+(N(log(2.7)/log(10),45))**2+(N(log(4.5)/log(10),45))**2+(N(log(15.9)/log(10),45))**2+(N(log(79.3)/log(10),45))**2)-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(5.28496871957124211980685138853552102521224076, 0.667433594924963880877094352717966129129232437)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(290000)/log(10),45)+N(log(380000)/log(10),45)+N(log(530000)/log(10),45)+N(log(1220000)/log(10),45)+N(log(3560000)/log(10),45))-(((5*((N(log(1.9)/log(10),45))*(N(log(290000)/log(10),45))+(N(log(2.7)/log(10),45))*(N(log(380000)/log(10),45))+(N(log(4.5)/log(10),45))*(N(log(530000)/log(10),45))+(N(log(15.9)/log(10),45))*(N(log(1220000)/log(10),45))+(N(log(79.3)/log(10),45))*(N(log(3560000)/log(10),45)))-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))*(N(log(290000)/log(10),45)+N(log(380000)/log(10),45)+N(log(530000)/log(10),45)+N(log(1220000)/log(10),45)+N(log(3560000)/log(10),45)))/(5*((N(log(1.9)/log(10),45))**2+(N(log(2.7)/log(10),45))**2+(N(log(4.5)/log(10),45))**2+(N(log(15.9)/log(10),45))**2+(N(log(79.3)/log(10),45))**2)-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))**2)))*(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45)))/5),((5*((N(log(1.9)/log(10),45))*(N(log(290000)/log(10),45))+(N(log(2.7)/log(10),45))*(N(log(380000)/log(10),45))+(N(log(4.5)/log(10),45))*(N(log(530000)/log(10),45))+(N(log(15.9)/log(10),45))*(N(log(1220000)/log(10),45))+(N(log(79.3)/log(10),45))*(N(log(3560000)/log(10),45)))-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))*(N(log(290000)/log(10),45)+N(log(380000)/log(10),45)+N(log(530000)/log(10),45)+N(log(1220000)/log(10),45)+N(log(3560000)/log(10),45)))/(5*((N(log(1.9)/log(10),45))**2+(N(log(2.7)/log(10),45))**2+(N(log(4.5)/log(10),45))**2+(N(log(15.9)/log(10),45))**2+(N(log(79.3)/log(10),45))**2)-(N(log(1.9)/log(10),45)+N(log(2.7)/log(10),45)+N(log(4.5)/log(10),45)+N(log(15.9)/log(10),45)+N(log(79.3)/log(10),45))**2)))"
+              ]
+            },
+            "table_0_cell_0": {
+              "kind": "rounded",
+              "operands": [
+                "log(1.9)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_1": {
+              "kind": "rounded",
+              "operands": [
+                "log(2.7)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_2": {
+              "kind": "rounded",
+              "operands": [
+                "log(4.5)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_3": {
+              "kind": "rounded",
+              "operands": [
+                "log(15.9)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_0_cell_4": {
+              "kind": "rounded",
+              "operands": [
+                "log(79.3)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_0": {
+              "kind": "rounded",
+              "operands": [
+                "log(290000)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_1": {
+              "kind": "rounded",
+              "operands": [
+                "log(380000)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_2": {
+              "kind": "rounded",
+              "operands": [
+                "log(530000)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_3": {
+              "kind": "rounded",
+              "operands": [
+                "log(1220000)/log(10)"
+              ],
+              "decimal_places": 2
+            },
+            "table_1_cell_4": {
+              "kind": "rounded",
+              "operands": [
+                "log(3560000)/log(10)"
+              ],
+              "decimal_places": 2
+            }
+          },
+          "source_pdf_page": 55,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operation_expected": {
+            "table_0_cell_0": "0.28",
+            "table_0_cell_1": "0.43",
+            "table_0_cell_2": "0.65",
+            "table_0_cell_3": "1.20",
+            "table_0_cell_4": "1.90",
+            "table_1_cell_0": "5.46",
+            "table_1_cell_1": "5.58",
+            "table_1_cell_2": "5.72",
+            "table_1_cell_3": "6.09",
+            "table_1_cell_4": "6.55"
+          }
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The printed hand-graph model uses n≈0.690,k≈1.8×10^5km. A reproducible least-squares alternative is n≈0.66743,k≈1.92739×10^5km.",
+          "author_derivation": "Recover exponent from transformed gradient and coefficient from exponentiating the intercept. The key explicitly allows some variation for eye fitting. Its model and the independent fit differ,so neither pair is a unique exact marking target. Preserve the original measurements and each chosen model for follow-on predictions.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 55,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Using the printed graphical model,R=1.4×10^5km gives T≈0.70days;the independent fitted model gives about0.62days.",
+          "author_derivation": "For either chosen positive model,solve T=(R/k)^(1/n). Carry the same model’s coefficients into this part;do not mark a different defensible graphical fit wrong solely for disagreeing with0.7. The measurement/model fit controls uncertainty;this is not an exactly determined orbital period.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "source_model": {
+              "kind": "identity",
+              "operands": [
+                "(140000/180000)**(1/(69/100))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "source_model": "(7/9)**(100/69)"
+          },
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "continuation_pdf_pages": [
+        56
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:2",
+      "source_pdf_page": 56,
+      "notes": "Test the mould-area model A=kb^tfrom six rounded measurements,choose and draw log axes,estimate constants,predict time/area and identify the growth type.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02",
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Test the mould-area model A=kb^tfrom six rounded measurements,choose and draw log axes,estimate constants,predict time/area and identify the growth type.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv-a",
+        "iv-b",
+        "v"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "logA=tlogb+logk.",
+          "author_derivation": "Take common logs of A=kb^twith positive A,k,b;apply product and power laws. The model is linear in tversuslogA.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*b**t),force=True)-log(k)-t*log(b)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Plot logAvertically against original time t.",
+          "author_derivation": "The proposed form has constant gradientlogband interceptlogk;logt would test a different power model and would also be undefined at the suppliedt=0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "The source hand-graph estimates are b≈1.4,k≈0.89. The independent data fit gives b≈1.41178,k≈0.90329.",
+          "author_derivation": "Transform and plot all six positive areas,including0.9at t=0with a negative logarithm. Recover both parameters from the fitted line. The source graph and table agreement are approximate;do not require an exact fit through every measured point.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "2C2-mould",
+            "x": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "y": [
+              "0.9",
+              "1.3",
+              "1.8",
+              "2.5",
+              "3.5",
+              "5.2"
+            ],
+            "fit_mode": "exponential",
+            "author_fit": {
+              "intercept": -0.044172593035314234,
+              "slope": 0.14976702144789772,
+              "k": 0.9032904255985688,
+              "b_or_n": 1.4117799879175155,
+              "original_response_sse": 0.028135679420233112
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(0.9)/log(10),45)+N(log(1.3)/log(10),45)+N(log(1.8)/log(10),45)+N(log(2.5)/log(10),45)+N(log(3.5)/log(10),45)+N(log(5.2)/log(10),45))-(((6*((0)*(N(log(0.9)/log(10),45))+(1)*(N(log(1.3)/log(10),45))+(2)*(N(log(1.8)/log(10),45))+(3)*(N(log(2.5)/log(10),45))+(4)*(N(log(3.5)/log(10),45))+(5)*(N(log(5.2)/log(10),45)))-(0+1+2+3+4+5)*(N(log(0.9)/log(10),45)+N(log(1.3)/log(10),45)+N(log(1.8)/log(10),45)+N(log(2.5)/log(10),45)+N(log(3.5)/log(10),45)+N(log(5.2)/log(10),45)))/(6*((0)**2+(1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(0+1+2+3+4+5)**2)))*(0+1+2+3+4+5))/6),((6*((0)*(N(log(0.9)/log(10),45))+(1)*(N(log(1.3)/log(10),45))+(2)*(N(log(1.8)/log(10),45))+(3)*(N(log(2.5)/log(10),45))+(4)*(N(log(3.5)/log(10),45))+(5)*(N(log(5.2)/log(10),45)))-(0+1+2+3+4+5)*(N(log(0.9)/log(10),45)+N(log(1.3)/log(10),45)+N(log(1.8)/log(10),45)+N(log(2.5)/log(10),45)+N(log(3.5)/log(10),45)+N(log(5.2)/log(10),45)))/(6*((0)**2+(1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(0+1+2+3+4+5)**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(-0.0441725930353142348441779090955519398271272037, 0.149767021447897701824693709471404395393753963)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(0.9)/log(10),45)+N(log(1.3)/log(10),45)+N(log(1.8)/log(10),45)+N(log(2.5)/log(10),45)+N(log(3.5)/log(10),45)+N(log(5.2)/log(10),45))-(((6*((0)*(N(log(0.9)/log(10),45))+(1)*(N(log(1.3)/log(10),45))+(2)*(N(log(1.8)/log(10),45))+(3)*(N(log(2.5)/log(10),45))+(4)*(N(log(3.5)/log(10),45))+(5)*(N(log(5.2)/log(10),45)))-(0+1+2+3+4+5)*(N(log(0.9)/log(10),45)+N(log(1.3)/log(10),45)+N(log(1.8)/log(10),45)+N(log(2.5)/log(10),45)+N(log(3.5)/log(10),45)+N(log(5.2)/log(10),45)))/(6*((0)**2+(1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(0+1+2+3+4+5)**2)))*(0+1+2+3+4+5))/6),((6*((0)*(N(log(0.9)/log(10),45))+(1)*(N(log(1.3)/log(10),45))+(2)*(N(log(1.8)/log(10),45))+(3)*(N(log(2.5)/log(10),45))+(4)*(N(log(3.5)/log(10),45))+(5)*(N(log(5.2)/log(10),45)))-(0+1+2+3+4+5)*(N(log(0.9)/log(10),45)+N(log(1.3)/log(10),45)+N(log(1.8)/log(10),45)+N(log(2.5)/log(10),45)+N(log(3.5)/log(10),45)+N(log(5.2)/log(10),45)))/(6*((0)**2+(1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(0+1+2+3+4+5)**2)))"
+              ]
+            }
+          },
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv-a",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "A reasonable graphical time to2cm²is about2.3–2.4days;the source key gives2.4days.",
+          "author_derivation": "For a chosen model,solve t=log(2/k)/logb. The source rounded parameters give approximately2.41days;the independent data-fit parameters give approximately2.31days. Preserve the selected model and graphical uncertainty rather than forcing a unique two-decimal value.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv-b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The area at3.5days is approximately3cm²;the key gives3.0cm².",
+          "author_derivation": "Evaluate the same fitted exponential at t=3.5. The independent fit gives about3.02cm²;the source rounded parameters give about2.89cm². Such differences are model/graph rounding,not an exact measurement contradiction.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "v",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Exponential growth.",
+          "author_derivation": "The fitted factor b>1multiplies the area over each equal time increment. It is not a constant additive growth model.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 323,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:3",
+      "source_pdf_page": 56,
+      "notes": "Derive the exponential deforestation log relation;read the supplied logNagainst years-since1930graph,estimate k,aand explain k.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Derive the exponential deforestation log relation;read the supplied logNagainst years-since1930graph,estimate k,aand explain k.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "logN=tloga+logk.",
+          "author_derivation": "Take logs of N=ka^twith positive coefficient/base. The given straight graph is logNagainst original years since1930.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*a**t),force=True)-log(k)-t*log(a)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The source estimates k≈3.2×10^6trees,a≈0.98; krepresents the modelled number of trees in1930.",
+          "author_derivation": "The line’s intercept is about6.5,so k≈10^6.5≈3.16million. A gradient near−0.008gives a≈10^(−0.008)≈0.982. The source rounded graphical estimates are consistent. At t=0,the original model is N=k;do not interpret the logarithmic intercept6.5as the tree count.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 56,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:4",
+      "source_pdf_page": 57,
+      "notes": "Assume s=kt^nfor train distance in metres and time in minutes;derive the log line,read k,n,predict the first100seconds and discuss extrapolating to10minutes.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Assume s=kt^nfor train distance in metres and time in minutes;derive the log line,read k,n,predict the first100seconds and discuss extrapolating to10minutes.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "logs=nlogt+logkfor t>0.",
+          "author_derivation": "The suggested s=kt^nwith positive measured distance admits common logs. The log plot excludes t=0even though the original journey starts there.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 57,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*t**n),force=True)-log(k)-n*log(t)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The source graphical estimates are k≈1100,n≈1.6.",
+          "author_derivation": "Read the given log-plot slope and intercept;the intercept islogk,so exponentiate it. The time unit in the original relationship remains minutes.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 57,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The estimated distance in100seconds is about2500m.",
+          "author_derivation": "Convert100seconds to5/3minutes before evaluating1100(5/3)^1.6≈2490.9m. The graphical parameters justify an approximate answer,not an exact2491m requirement.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "unit_conversion": {
+              "kind": "identity",
+              "operands": [
+                "100/60"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "unit_conversion": "5/3"
+          },
+          "source_pdf_page": 57,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The early-journey power fit need not remain valid after10minutes.",
+          "author_derivation": "For n≈1.6the model predicts continually increasing speed;the actual train may reach cruising speed or slow down. A fit over the observed short interval does not establish its longer-time physical validity.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 57,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:5",
+      "source_pdf_page": 57,
+      "notes": "For A=kb^t,derive the log line and recover constants from the given transformed points(0,0.2),(4,0.75),rather than noisy measurements.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "For A=kb^t,derive the log line and recover constants from the given transformed points(0,0.2),(4,0.75),rather than noisy measurements.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "logA=tlogb+logk.",
+          "author_derivation": "Apply logarithm laws to the positive exponential model;the gradient islogband interceptlogk.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 57,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(k*b**t),force=True)-log(k)-t*log(b)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "b=10^0.1375≈1.37,k=10^0.2≈1.58.",
+          "author_derivation": "The supplied transformed points(0,0.2),(4,0.75)fix the line exactly:gradient0.55/4=0.1375. Unlike a line fitted to noisy data,this given line has exact slope/intercept before rounding.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "slope": {
+              "kind": "identity",
+              "operands": [
+                "(0.75-0.2)/4"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "slope": "0.1375"
+          },
+          "source_pdf_page": 57,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-54.png",
+            "sha256": "82bda3cb7fb41ba14a05e0f19f25291571ab3d361742f6dbfa9a0519cd98a0d7"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:6",
+      "source_pdf_page": 58,
+      "notes": "Explain a power-model test and how to recover A,B,then carry it out for x=4,7,10,13,20and y=3,3.97,4.74,5.41,6.71.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Explain a power-model test and how to recover A,B,then carry it out for x=4,7,10,13,20and y=3,3.97,4.74,5.41,6.71.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "model-test",
+        "plot-parameters"
+      ],
+      "subparts": [
+        {
+          "subpart": "model-test",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Plot logyagainstlogx;straightness tests y=Ax^B. Nonlinear transformed points would reject that proposed form over the observed data.",
+          "author_derivation": "Take logs with x,y,Apositive. Gradient is B,and intercept islogA. A visually near-straight finite dataset supports this candidate fit;it does not prove a global physical law.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "linearisation_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand_log(log(a*x**b),force=True)-log(a)-b*log(x)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "linearisation_identity": "0"
+          }
+        },
+        {
+          "subpart": "plot-parameters",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "The table is closely modelled by y≈1.5x^0.5,with A≈1.5,B≈0.5.",
+          "author_derivation": "Plot all five positive observations in log coordinates;the independently fitted intercept/slope are close to log1.5and0.5. The source labelled graph and formula agree. The variable Bdoes not denote a logarithm base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "2C6-power",
+            "x": [
+              "4",
+              "7",
+              "10",
+              "13",
+              "20"
+            ],
+            "y": [
+              "3",
+              "3.97",
+              "4.74",
+              "5.41",
+              "6.71"
+            ],
+            "fit_mode": "power",
+            "author_fit": {
+              "intercept": 0.1760073136861416,
+              "slope": 0.5001044049009776,
+              "k": 1.4997100909845642,
+              "b_or_n": 0.5001044049009776,
+              "original_response_sse": 1.76520465659286e-05
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(3)/log(10),45)+N(log(3.97)/log(10),45)+N(log(4.74)/log(10),45)+N(log(5.41)/log(10),45)+N(log(6.71)/log(10),45))-(((5*((N(log(4)/log(10),45))*(N(log(3)/log(10),45))+(N(log(7)/log(10),45))*(N(log(3.97)/log(10),45))+(N(log(10)/log(10),45))*(N(log(4.74)/log(10),45))+(N(log(13)/log(10),45))*(N(log(5.41)/log(10),45))+(N(log(20)/log(10),45))*(N(log(6.71)/log(10),45)))-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))*(N(log(3)/log(10),45)+N(log(3.97)/log(10),45)+N(log(4.74)/log(10),45)+N(log(5.41)/log(10),45)+N(log(6.71)/log(10),45)))/(5*((N(log(4)/log(10),45))**2+(N(log(7)/log(10),45))**2+(N(log(10)/log(10),45))**2+(N(log(13)/log(10),45))**2+(N(log(20)/log(10),45))**2)-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))**2)))*(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45)))/5),((5*((N(log(4)/log(10),45))*(N(log(3)/log(10),45))+(N(log(7)/log(10),45))*(N(log(3.97)/log(10),45))+(N(log(10)/log(10),45))*(N(log(4.74)/log(10),45))+(N(log(13)/log(10),45))*(N(log(5.41)/log(10),45))+(N(log(20)/log(10),45))*(N(log(6.71)/log(10),45)))-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))*(N(log(3)/log(10),45)+N(log(3.97)/log(10),45)+N(log(4.74)/log(10),45)+N(log(5.41)/log(10),45)+N(log(6.71)/log(10),45)))/(5*((N(log(4)/log(10),45))**2+(N(log(7)/log(10),45))**2+(N(log(10)/log(10),45))**2+(N(log(13)/log(10),45))**2+(N(log(20)/log(10),45))**2)-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(0.176007313686141567997526824915805173713384557, 0.50010440490097767878657668944632557353286791)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(3)/log(10),45)+N(log(3.97)/log(10),45)+N(log(4.74)/log(10),45)+N(log(5.41)/log(10),45)+N(log(6.71)/log(10),45))-(((5*((N(log(4)/log(10),45))*(N(log(3)/log(10),45))+(N(log(7)/log(10),45))*(N(log(3.97)/log(10),45))+(N(log(10)/log(10),45))*(N(log(4.74)/log(10),45))+(N(log(13)/log(10),45))*(N(log(5.41)/log(10),45))+(N(log(20)/log(10),45))*(N(log(6.71)/log(10),45)))-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))*(N(log(3)/log(10),45)+N(log(3.97)/log(10),45)+N(log(4.74)/log(10),45)+N(log(5.41)/log(10),45)+N(log(6.71)/log(10),45)))/(5*((N(log(4)/log(10),45))**2+(N(log(7)/log(10),45))**2+(N(log(10)/log(10),45))**2+(N(log(13)/log(10),45))**2+(N(log(20)/log(10),45))**2)-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))**2)))*(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45)))/5),((5*((N(log(4)/log(10),45))*(N(log(3)/log(10),45))+(N(log(7)/log(10),45))*(N(log(3.97)/log(10),45))+(N(log(10)/log(10),45))*(N(log(4.74)/log(10),45))+(N(log(13)/log(10),45))*(N(log(5.41)/log(10),45))+(N(log(20)/log(10),45))*(N(log(6.71)/log(10),45)))-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))*(N(log(3)/log(10),45)+N(log(3.97)/log(10),45)+N(log(4.74)/log(10),45)+N(log(5.41)/log(10),45)+N(log(6.71)/log(10),45)))/(5*((N(log(4)/log(10),45))**2+(N(log(7)/log(10),45))**2+(N(log(10)/log(10),45))**2+(N(log(13)/log(10),45))**2+(N(log(20)/log(10),45))**2)-(N(log(4)/log(10),45)+N(log(7)/log(10),45)+N(log(10)/log(10),45)+N(log(13)/log(10),45)+N(log(20)/log(10),45))**2)))"
+              ]
+            }
+          },
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:7",
+      "source_pdf_page": 58,
+      "notes": "Plot weekly virus cases after vaccination,choose a suitable mathematical decay model and transformed plot,then interpret its prediction at week15without claiming clinical effectiveness.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Plot weekly virus cases after vaccination,choose a suitable mathematical decay model and transformed plot,then interpret its prediction at week15without claiming clinical effectiveness.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Plot the five observed weekly cases against week1–5and join with a smooth decreasing positive curve.",
+          "author_derivation": "The counts240,150,95,58,38fall by an approximately constant ratio. The source answer section supplies no separate raw-plot key;these features are author-derived from its actual table.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            337,
+            338
+          ],
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "An exponential decay model is suitable;plot logyagainstt. The source graphical fit is y≈400·0.63^t;an independent fit is y≈379.75·0.6290^t.",
+          "author_derivation": "The transformed observed points are close to a line. Recover coefficient and base together,then retain them consistently. The source’s coarse hand-fit coefficient differs from the least-squares intercept;it is not a unique exact requirement.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_data_fit": {
+            "dataset_id": "2C7-virus",
+            "x": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "y": [
+              "240",
+              "150",
+              "95",
+              "58",
+              "38"
+            ],
+            "fit_mode": "exponential",
+            "author_fit": {
+              "intercept": 2.5795031059518774,
+              "slope": -0.20135185556823357,
+              "k": 379.7546548600089,
+              "b_or_n": 0.6289963777274892,
+              "original_response_sse": 4.049899175035859
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(240)/log(10),45)+N(log(150)/log(10),45)+N(log(95)/log(10),45)+N(log(58)/log(10),45)+N(log(38)/log(10),45))-(((5*((1)*(N(log(240)/log(10),45))+(2)*(N(log(150)/log(10),45))+(3)*(N(log(95)/log(10),45))+(4)*(N(log(58)/log(10),45))+(5)*(N(log(38)/log(10),45)))-(1+2+3+4+5)*(N(log(240)/log(10),45)+N(log(150)/log(10),45)+N(log(95)/log(10),45)+N(log(58)/log(10),45)+N(log(38)/log(10),45)))/(5*((1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(1+2+3+4+5)**2)))*(1+2+3+4+5))/5),((5*((1)*(N(log(240)/log(10),45))+(2)*(N(log(150)/log(10),45))+(3)*(N(log(95)/log(10),45))+(4)*(N(log(58)/log(10),45))+(5)*(N(log(38)/log(10),45)))-(1+2+3+4+5)*(N(log(240)/log(10),45)+N(log(150)/log(10),45)+N(log(95)/log(10),45)+N(log(58)/log(10),45)+N(log(38)/log(10),45)))/(5*((1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(1+2+3+4+5)**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(2.57950310595187720169947157645273017136634007, -0.201351855568233569190704778473121835398021327)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(240)/log(10),45)+N(log(150)/log(10),45)+N(log(95)/log(10),45)+N(log(58)/log(10),45)+N(log(38)/log(10),45))-(((5*((1)*(N(log(240)/log(10),45))+(2)*(N(log(150)/log(10),45))+(3)*(N(log(95)/log(10),45))+(4)*(N(log(58)/log(10),45))+(5)*(N(log(38)/log(10),45)))-(1+2+3+4+5)*(N(log(240)/log(10),45)+N(log(150)/log(10),45)+N(log(95)/log(10),45)+N(log(58)/log(10),45)+N(log(38)/log(10),45)))/(5*((1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(1+2+3+4+5)**2)))*(1+2+3+4+5))/5),((5*((1)*(N(log(240)/log(10),45))+(2)*(N(log(150)/log(10),45))+(3)*(N(log(95)/log(10),45))+(4)*(N(log(58)/log(10),45))+(5)*(N(log(38)/log(10),45)))-(1+2+3+4+5)*(N(log(240)/log(10),45)+N(log(150)/log(10),45)+N(log(95)/log(10),45)+N(log(58)/log(10),45)+N(log(38)/log(10),45)))/(5*((1)**2+(2)**2+(3)**2+(4)**2+(5)**2)-(1+2+3+4+5)**2)))"
+              ]
+            }
+          },
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The fitted weekly count at t=15is about0.4;this is a modelled rate/expectation,not a literal fractional recorded case.",
+          "author_derivation": "Using the source fit gives400·0.63^15≈0.391. The independent fit gives a nearby smaller value. Both indicate a large predicted decline under the assumed continuation. The source says undercontrol;that is a model interpretation,not verified medical evidence or proof the infection is eliminated.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:8",
+      "source_pdf_page": 58,
+      "notes": "Investigate models for users P=4600,5000,5300,5500,5700at weeks2–6,estimate first-week use and discuss long-term validity. The enlarged key correctly prints4000,not400.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01",
+        "8227:2020:M2:T2:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example or ordinary exercise.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Investigate models for users P=4600,5000,5300,5500,5700at weeks2–6,estimate first-week use and discuss long-term validity. The enlarged key correctly prints4000,not400.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Among the specified simple linear,exponential and power candidates,the data best support a power fit close to P=4000t^0.2.",
+          "author_derivation": "The independent fits give original-response SSEabout19000(linear),26951(exponential),985(power). These compare the explicitly defined fitted candidates on the same response scale,not incomparable transformedR²values. The source model4000t^0.2also closely matches the observations;other model classes have not been exhausted.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "candidate_model_fits": [
+            {
+              "dataset_id": "2C8-shopping-linear",
+              "x": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ],
+              "y": [
+                "4600",
+                "5000",
+                "5300",
+                "5500",
+                "5700"
+              ],
+              "fit_mode": "linear",
+              "author_fit": {
+                "intercept": 4140.0,
+                "slope": 270.0,
+                "k": 4140.0,
+                "b_or_n": 270.0,
+                "original_response_sse": 19000.0
+              },
+              "independent_CAS_operation": {
+                "kind": "identity",
+                "operands": [
+                  "Tuple((((4600+5000+5300+5500+5700)-(((5*((2)*(4600)+(3)*(5000)+(4)*(5300)+(5)*(5500)+(6)*(5700))-(2+3+4+5+6)*(4600+5000+5300+5500+5700))/(5*((2)**2+(3)**2+(4)**2+(5)**2+(6)**2)-(2+3+4+5+6)**2)))*(2+3+4+5+6))/5),((5*((2)*(4600)+(3)*(5000)+(4)*(5300)+(5)*(5500)+(6)*(5700))-(2+3+4+5+6)*(4600+5000+5300+5500+5700))/(5*((2)**2+(3)**2+(4)**2+(5)**2+(6)**2)-(2+3+4+5+6)**2)))"
+                ]
+              },
+              "CAS_intercept_slope": "(4140, 270)",
+              "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+            },
+            {
+              "dataset_id": "2C8-shopping-exponential",
+              "x": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ],
+              "y": [
+                "4600",
+                "5000",
+                "5300",
+                "5500",
+                "5700"
+              ],
+              "fit_mode": "exponential",
+              "author_fit": {
+                "intercept": 3.625397556900999,
+                "slope": 0.02276267331400601,
+                "k": 4220.8270477086535,
+                "b_or_n": 1.0538108683764789,
+                "original_response_sse": 26950.726872984324
+              },
+              "independent_CAS_operation": {
+                "kind": "identity",
+                "operands": [
+                  "Tuple((((N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45))-(((5*((2)*(N(log(4600)/log(10),45))+(3)*(N(log(5000)/log(10),45))+(4)*(N(log(5300)/log(10),45))+(5)*(N(log(5500)/log(10),45))+(6)*(N(log(5700)/log(10),45)))-(2+3+4+5+6)*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((2)**2+(3)**2+(4)**2+(5)**2+(6)**2)-(2+3+4+5+6)**2)))*(2+3+4+5+6))/5),((5*((2)*(N(log(4600)/log(10),45))+(3)*(N(log(5000)/log(10),45))+(4)*(N(log(5300)/log(10),45))+(5)*(N(log(5500)/log(10),45))+(6)*(N(log(5700)/log(10),45)))-(2+3+4+5+6)*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((2)**2+(3)**2+(4)**2+(5)**2+(6)**2)-(2+3+4+5+6)**2)))"
+                ]
+              },
+              "CAS_intercept_slope": "(3.62539755690099955767376208575550505966543008, 0.0227626733140059690249890715315748343077816764)",
+              "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+            },
+            {
+              "dataset_id": "2C8-shopping-power",
+              "x": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ],
+              "y": [
+                "4600",
+                "5000",
+                "5300",
+                "5500",
+                "5700"
+              ],
+              "fit_mode": "power",
+              "author_fit": {
+                "intercept": 3.6053086478773175,
+                "slope": 0.19448139552977492,
+                "k": 4030.0334221541193,
+                "b_or_n": 0.19448139552977492,
+                "original_response_sse": 985.4458452005226
+              },
+              "independent_CAS_operation": {
+                "kind": "identity",
+                "operands": [
+                  "Tuple((((N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45))-(((5*((N(log(2)/log(10),45))*(N(log(4600)/log(10),45))+(N(log(3)/log(10),45))*(N(log(5000)/log(10),45))+(N(log(4)/log(10),45))*(N(log(5300)/log(10),45))+(N(log(5)/log(10),45))*(N(log(5500)/log(10),45))+(N(log(6)/log(10),45))*(N(log(5700)/log(10),45)))-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(4)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(6)/log(10),45))**2)-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))**2)))*(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45)))/5),((5*((N(log(2)/log(10),45))*(N(log(4600)/log(10),45))+(N(log(3)/log(10),45))*(N(log(5000)/log(10),45))+(N(log(4)/log(10),45))*(N(log(5300)/log(10),45))+(N(log(5)/log(10),45))*(N(log(5500)/log(10),45))+(N(log(6)/log(10),45))*(N(log(5700)/log(10),45)))-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(4)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(6)/log(10),45))**2)-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))**2)))"
+                ]
+              },
+              "CAS_intercept_slope": "(3.60530864787731790799221471172843809748332962, 0.194481395529774542876218124520845505362912213)",
+              "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+            }
+          ],
+          "source_data_fit": {
+            "dataset_id": "2C8-shopping-power",
+            "x": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "y": [
+              "4600",
+              "5000",
+              "5300",
+              "5500",
+              "5700"
+            ],
+            "fit_mode": "power",
+            "author_fit": {
+              "intercept": 3.6053086478773175,
+              "slope": 0.19448139552977492,
+              "k": 4030.0334221541193,
+              "b_or_n": 0.19448139552977492,
+              "original_response_sse": 985.4458452005226
+            },
+            "independent_CAS_operation": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45))-(((5*((N(log(2)/log(10),45))*(N(log(4600)/log(10),45))+(N(log(3)/log(10),45))*(N(log(5000)/log(10),45))+(N(log(4)/log(10),45))*(N(log(5300)/log(10),45))+(N(log(5)/log(10),45))*(N(log(5500)/log(10),45))+(N(log(6)/log(10),45))*(N(log(5700)/log(10),45)))-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(4)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(6)/log(10),45))**2)-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))**2)))*(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45)))/5),((5*((N(log(2)/log(10),45))*(N(log(4600)/log(10),45))+(N(log(3)/log(10),45))*(N(log(5000)/log(10),45))+(N(log(4)/log(10),45))*(N(log(5300)/log(10),45))+(N(log(5)/log(10),45))*(N(log(5500)/log(10),45))+(N(log(6)/log(10),45))*(N(log(5700)/log(10),45)))-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(4)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(6)/log(10),45))**2)-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))**2)))"
+              ]
+            },
+            "CAS_intercept_slope": "(3.60530864787731790799221471172843809748332962, 0.194481395529774542876218124520845505362912213)",
+            "method": "Standard-math centred covariance,independently compared with45digit CASnormal-equation sums. Transformed-response least squares is not claimed to minimise original-response SSE;SSE only compares these explicitly defined candidate fits."
+          },
+          "additional_operations": {
+            "independent_fit": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((((N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45))-(((5*((N(log(2)/log(10),45))*(N(log(4600)/log(10),45))+(N(log(3)/log(10),45))*(N(log(5000)/log(10),45))+(N(log(4)/log(10),45))*(N(log(5300)/log(10),45))+(N(log(5)/log(10),45))*(N(log(5500)/log(10),45))+(N(log(6)/log(10),45))*(N(log(5700)/log(10),45)))-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(4)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(6)/log(10),45))**2)-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))**2)))*(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45)))/5),((5*((N(log(2)/log(10),45))*(N(log(4600)/log(10),45))+(N(log(3)/log(10),45))*(N(log(5000)/log(10),45))+(N(log(4)/log(10),45))*(N(log(5300)/log(10),45))+(N(log(5)/log(10),45))*(N(log(5500)/log(10),45))+(N(log(6)/log(10),45))*(N(log(5700)/log(10),45)))-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))*(N(log(4600)/log(10),45)+N(log(5000)/log(10),45)+N(log(5300)/log(10),45)+N(log(5500)/log(10),45)+N(log(5700)/log(10),45)))/(5*((N(log(2)/log(10),45))**2+(N(log(3)/log(10),45))**2+(N(log(4)/log(10),45))**2+(N(log(5)/log(10),45))**2+(N(log(6)/log(10),45))**2)-(N(log(2)/log(10),45)+N(log(3)/log(10),45)+N(log(4)/log(10),45)+N(log(5)/log(10),45)+N(log(6)/log(10),45))**2)))"
+              ]
+            }
+          },
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The source model predicts4000users at the end of week1.",
+          "author_derivation": "Evaluate4000·1^0.2=4000. An independently fitted power curve gives about4030;the difference is fitting uncertainty. This is extrapolation one week before the first observation at t=2.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The fitted power grows without bound,so it cannot remain a literal local-population model indefinitely.",
+          "author_derivation": "Although the growth rate decreases for exponent0.2,it stays positive and the model has no finite upper bound. The finite local population limits sustained extrapolation. The source also notes slowing growth;slowing alone does not impose a finite cap.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Exercise-2C:9",
+      "source_pdf_page": 58,
+      "notes": "Linearise3^y=4^(x+2),give the exact gradient,and find its intersection with y=2xto2decimal places. Cambridge9709Paper2Q2June2007attribution.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O04:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested linearisation,plot,parameter recovery,model prediction and limitation explanation are distinct outputs. Fitted-by-eye constants are not unique exact answers. A raw straight-line warm-up does not automatically assess log linearisation.",
+      "representation": "table",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Cambridge9709Paper2Q2June2007attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Linearise3^y=4^(x+2),give the exact gradient,and find its intersection with y=2xto2decimal places. Cambridge9709Paper2Q2June2007attribution.",
+          "reason": "Taking common logs and applying product/power laws linearises the stated model;no memorised change-of-base formula is asked."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exercise2Ckey explicitly allows variation from fitting lines by eye. Source tables use rounded measurements;Example7log table is2decimal places,Example8log table3decimal places. Q9(ii)asks2decimal places.",
+        "comparison": "Retain data units and axis orientation. A regression provides an independent reproducible comparison,not a requirement that a learner reproduce exact least-squares coefficients from a hand graph. Extrapolations remain conditional on the selected model."
+      },
+      "expected_subpart_labels": [
+        "i-line",
+        "ii-intersection"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-line",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "y=((log4)/(log3))x+2(log4)/(log3),a straight line of exact gradientlog4/log3.",
+          "author_derivation": "Take common logs of3^y=4^(x+2):ylog3=(x+2)log4. Solve the linear equation in y. The resulting quotient arises from the equation,not a request to memorise a general change-of-base law.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-intersection",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(2*log(4)/log(3))/(2-log(4)/log(3))"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "3.42",
+          "method": "Set the independently derived line equal toy=2x,solve the resulting linear equation and round thexcoordinate to2decimal places.",
+          "source_pdf_page": 58,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

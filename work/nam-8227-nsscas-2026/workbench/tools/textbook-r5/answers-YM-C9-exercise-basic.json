@@ -1,0 +1,1446 @@
+{
+  "scope": "Complete441exerciseQ1–10,including actualsourceexponentsandkeydefects.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:1",
+      "source_pdf_page": 441,
+      "notes": "Expand log(5a),log((ab)^2),log(cuberoot(xyz)). SourceQ1(a)keychangesatounrelatedb;correctloga. Positive-factor conventions for the other expansions stay explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Expand log(5a),log((ab)^2),log(cuberoot(xyz)). SourceQ1(a)keychangesatounrelatedb;correctloga. Positive-factor conventions for the other expansions stay explicit.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Expand log(5a),log((ab)^2),log(cuberoot(xyz)). SourceQ1(a)keychangesatounrelatedb;correctloga. Positive-factor conventions for the other expansions stay explicit.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Expand log(5a),log((ab)^2),log(cuberoot(xyz)). SourceQ1(a)keychangesatounrelatedb;correctloga. Positive-factor conventions for the other expansions stay explicit.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "expand(expand_log((log(5*a)/log(10)),force=True))"
+            ]
+          },
+          "printed_key_normalised": "(log(5)+log(b))/log(10)",
+          "method": "Apply product,quotient and power laws to the ORIGINAL expression with a COMMON valid base. The symbolic force-normalisation is warranted ONLY on the explicitly recorded positive-factor comparison branch; it is not a proof that real logarithms of negative factors exist. Preserve the original domain when compressing, and record any broader-domain alternative when expanding. Constants must first be expressed as logs of powers of this same base; no change-of-base learner method is requested.",
+          "original_expression": "log(5*a)/log(10)",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "Originala>0;printedunrelatedbdoesnotbelongtothisexpression.",
+          "source_answer_domain": "Positive factors inside every separately printed logarithm. This comparison branch is explicit; it does not silently replace the original expression domain.",
+          "source_base": "10",
+          "author_expected_normalised": "(log(5)+log(a))/log(10)",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 640,
+          "answer_printed_page": "A54",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-637.png",
+            "sha256": "9b1865eb03de3d0482365e3432eac93eaf11203a6aa4dd26a06840f89536eca1"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "expand(expand_log((log((a*b)**2)/log(10)),force=True))"
+            ]
+          },
+          "printed_key_normalised": "(2*log(a)+2*log(b))/log(10)",
+          "method": "Apply product,quotient and power laws to the ORIGINAL expression with a COMMON valid base. The symbolic force-normalisation is warranted ONLY on the explicitly recorded positive-factor comparison branch; it is not a proof that real logarithms of negative factors exist. Preserve the original domain when compressing, and record any broader-domain alternative when expanding. Constants must first be expressed as logs of powers of this same base; no change-of-base learner method is requested.",
+          "original_expression": "log((a*b)**2)/log(10)",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "Originalab≠0;printedpositive-factorbranchusesa>0,b>0. Full-domain expansion2log|a|+2log|b|.",
+          "source_answer_domain": "Positive factors inside every separately printed logarithm. This comparison branch is explicit; it does not silently replace the original expression domain.",
+          "source_base": "10",
+          "full_original_domain_answer": "2log|a|+2log|b|fornonzeroa,b.",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 640,
+          "answer_printed_page": "A54",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-637.png",
+            "sha256": "9b1865eb03de3d0482365e3432eac93eaf11203a6aa4dd26a06840f89536eca1"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "expand(expand_log((log((x*y*t)**Rational(1,3))/log(10)),force=True))"
+            ]
+          },
+          "printed_key_normalised": "(log(x)+log(y)+log(t))/(3*log(10))",
+          "method": "Apply product,quotient and power laws to the ORIGINAL expression with a COMMON valid base. The symbolic force-normalisation is warranted ONLY on the explicitly recorded positive-factor comparison branch; it is not a proof that real logarithms of negative factors exist. Preserve the original domain when compressing, and record any broader-domain alternative when expanding. Constants must first be expressed as logs of powers of this same base; no change-of-base learner method is requested.",
+          "original_expression": "log((x*y*t)**Rational(1,3))/log(10)",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "Checkersymboltdenotessourcez. Originalxyz>0;printedseparate-logbranchusespositiveindividualfactors.",
+          "source_answer_domain": "Positive factors inside every separately printed logarithm. This comparison branch is explicit; it does not silently replace the original expression domain.",
+          "source_base": "10",
+          "source_symbol_basis": {
+            "t": "originalz"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 640,
+          "answer_printed_page": "A54",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-637.png",
+            "sha256": "9b1865eb03de3d0482365e3432eac93eaf11203a6aa4dd26a06840f89536eca1"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:2",
+      "source_pdf_page": 441,
+      "notes": "Compress three source sums into one logarithm. The base3constant+1becomeslog_3(3),so part(c)hasnumerator3a^4anddenominatorb^20.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Compress three source sums into one logarithm. The base3constant+1becomeslog_3(3),so part(c)hasnumerator3a^4anddenominatorb^20.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Compress three source sums into one logarithm. The base3constant+1becomeslog_3(3),so part(c)hasnumerator3a^4anddenominatorb^20.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Compress three source sums into one logarithm. The base3constant+1becomeslog_3(3),so part(c)hasnumerator3a^4anddenominatorb^20.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "logcombine(expand(((log(3)-log(8))/log(10))*log(10)),force=True)/log(10)"
+            ]
+          },
+          "printed_key_normalised": "log(Rational(3,8))/log(10)",
+          "method": "Apply product,quotient and power laws to the ORIGINAL expression with a COMMON valid base. The symbolic force-normalisation is warranted ONLY on the explicitly recorded positive-factor comparison branch; it is not a proof that real logarithms of negative factors exist. Preserve the original domain when compressing, and record any broader-domain alternative when expanding. Constants must first be expressed as logs of powers of this same base; no change-of-base learner method is requested.",
+          "original_expression": "(log(3)-log(8))/log(10)",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "All source logarithm arguments must be positive; any denominator nonzero; base positive and not1.",
+          "source_answer_domain": "Positive factors inside every separately printed logarithm. This comparison branch is explicit; it does not silently replace the original expression domain.",
+          "source_base": "10",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 640,
+          "answer_printed_page": "A54",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-637.png",
+            "sha256": "9b1865eb03de3d0482365e3432eac93eaf11203a6aa4dd26a06840f89536eca1"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "logcombine(expand((4*(log(3)-log(8))/log(10))*log(10)),force=True)/log(10)"
+            ]
+          },
+          "printed_key_normalised": "log(Rational(3,8)**4)/log(10)",
+          "method": "Apply product,quotient and power laws to the ORIGINAL expression with a COMMON valid base. The symbolic force-normalisation is warranted ONLY on the explicitly recorded positive-factor comparison branch; it is not a proof that real logarithms of negative factors exist. Preserve the original domain when compressing, and record any broader-domain alternative when expanding. Constants must first be expressed as logs of powers of this same base; no change-of-base learner method is requested.",
+          "original_expression": "4*(log(3)-log(8))/log(10)",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "All source logarithm arguments must be positive; any denominator nonzero; base positive and not1.",
+          "source_answer_domain": "Positive factors inside every separately printed logarithm. This comparison branch is explicit; it does not silently replace the original expression domain.",
+          "source_base": "10",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 640,
+          "answer_printed_page": "A54",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-637.png",
+            "sha256": "9b1865eb03de3d0482365e3432eac93eaf11203a6aa4dd26a06840f89536eca1"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "logcombine(expand(((4*log(a)-20*log(b))/log(3)+1)*log(3)),force=True)/log(3)"
+            ]
+          },
+          "printed_key_normalised": "log(3*a**4/b**20)/log(3)",
+          "method": "Apply product,quotient and power laws to the ORIGINAL expression with a COMMON valid base. The symbolic force-normalisation is warranted ONLY on the explicitly recorded positive-factor comparison branch; it is not a proof that real logarithms of negative factors exist. Preserve the original domain when compressing, and record any broader-domain alternative when expanding. Constants must first be expressed as logs of powers of this same base; no change-of-base learner method is requested.",
+          "original_expression": "(4*log(a)-20*log(b))/log(3)+1",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "Originala>0,b>0.",
+          "source_answer_domain": "Positive factors inside every separately printed logarithm. This comparison branch is explicit; it does not silently replace the original expression domain.",
+          "source_base": "3",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 640,
+          "answer_printed_page": "A54",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-637.png",
+            "sha256": "9b1865eb03de3d0482365e3432eac93eaf11203a6aa4dd26a06840f89536eca1"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:3",
+      "source_pdf_page": 441,
+      "notes": "Convert three original logarithmic relations to exponential notation;retain positive nonunitbaseaandpositiveargumentbin the generic relation.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Convert three original logarithmic relations to exponential notation;retain positive nonunitbaseaandpositiveargumentbin the generic relation.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Convert three original logarithmic relations to exponential notation;retain positive nonunitbaseaandpositiveargumentbin the generic relation.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Convert three original logarithmic relations to exponential notation;retain positive nonunitbaseaandpositiveargumentbin the generic relation.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "6²=36",
+          "author_derivation": "Preserve the ORIGINAL base and exchange only the exponent/output roles by the real definition: a^u=v iff log_a(v)=u for a>0,a≠1,v>0. Check the complete written relation,not just its already-given numerical exponent. Generic source parameters retain these domain conditions; no common-base10 assumption is imposed on a different base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_relation": "log_6(36)=2",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D01"
+          ],
+          "response_format": "symbolic",
+          "base_argument_conditions": "Base positive and not1; logarithm argument positive. Exponent real.",
+          "additional_operations": {
+            "original-numerical-relation": {
+              "kind": "identity",
+              "operands": [
+                "Eq(6**2,36)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-numerical-relation": "True"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "14^(−2)=1/196",
+          "author_derivation": "Preserve the ORIGINAL base and exchange only the exponent/output roles by the real definition: a^u=v iff log_a(v)=u for a>0,a≠1,v>0. Check the complete written relation,not just its already-given numerical exponent. Generic source parameters retain these domain conditions; no common-base10 assumption is imposed on a different base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_relation": "log_14(1/196)=−2",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D01"
+          ],
+          "response_format": "symbolic",
+          "base_argument_conditions": "Base positive and not1; logarithm argument positive. Exponent real.",
+          "additional_operations": {
+            "original-numerical-relation": {
+              "kind": "identity",
+              "operands": [
+                "Eq(Rational(14)**(-2),Rational(1,196))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-numerical-relation": "True"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "a^4=b",
+          "author_derivation": "Preserve the ORIGINAL base and exchange only the exponent/output roles by the real definition: a^u=v iff log_a(v)=u for a>0,a≠1,v>0. Check the complete written relation,not just its already-given numerical exponent. Generic source parameters retain these domain conditions; no common-base10 assumption is imposed on a different base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_relation": "log_a(b)=4",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D01"
+          ],
+          "response_format": "symbolic",
+          "base_argument_conditions": "Base positive and not1; logarithm argument positive. Exponent real.",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:4",
+      "source_pdf_page": 441,
+      "notes": "Convert64^(1/2)=8,(1/12)^2=1/144,anda^(−14)=b. Native source andkeyagree−14;do not invent a lost fractional bar from the small preview.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Convert64^(1/2)=8,(1/12)^2=1/144,anda^(−14)=b. Native source andkeyagree−14;do not invent a lost fractional bar from the small preview.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Convert64^(1/2)=8,(1/12)^2=1/144,anda^(−14)=b. Native source andkeyagree−14;do not invent a lost fractional bar from the small preview.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Convert64^(1/2)=8,(1/12)^2=1/144,anda^(−14)=b. Native source andkeyagree−14;do not invent a lost fractional bar from the small preview.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "log_64(8)=1/2",
+          "author_derivation": "Preserve the ORIGINAL base and exchange only the exponent/output roles by the real definition: a^u=v iff log_a(v)=u for a>0,a≠1,v>0. Check the complete written relation,not just its already-given numerical exponent. Generic source parameters retain these domain conditions; no common-base10 assumption is imposed on a different base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_relation": "64^(1/2)=8",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D01"
+          ],
+          "response_format": "symbolic",
+          "base_argument_conditions": "Base positive and not1; logarithm argument positive. Exponent real.",
+          "additional_operations": {
+            "original-numerical-relation": {
+              "kind": "identity",
+              "operands": [
+                "Eq(64**Rational(1,2),8)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-numerical-relation": "True"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "log_(1/12)(1/144)=2",
+          "author_derivation": "Preserve the ORIGINAL base and exchange only the exponent/output roles by the real definition: a^u=v iff log_a(v)=u for a>0,a≠1,v>0. Check the complete written relation,not just its already-given numerical exponent. Generic source parameters retain these domain conditions; no common-base10 assumption is imposed on a different base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_relation": "(1/12)^2=1/144",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D01"
+          ],
+          "response_format": "symbolic",
+          "base_argument_conditions": "Base positive and not1; logarithm argument positive. Exponent real.",
+          "additional_operations": {
+            "original-numerical-relation": {
+              "kind": "identity",
+              "operands": [
+                "Eq(Rational(1,12)**2,Rational(1,144))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-numerical-relation": "True"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "log_a(b)=−14",
+          "author_derivation": "Preserve the ORIGINAL base and exchange only the exponent/output roles by the real definition: a^u=v iff log_a(v)=u for a>0,a≠1,v>0. Check the complete written relation,not just its already-given numerical exponent. Generic source parameters retain these domain conditions; no common-base10 assumption is imposed on a different base.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_relation": "a^(−14)=b",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D01"
+          ],
+          "response_format": "symbolic",
+          "base_argument_conditions": "Base positive and not1; logarithm argument positive. Exponent real.",
+          "source_reading_resolution": "Native source and key both print exponent−14,not−1/4. The apparent fractional-exponent defect from a small contact was CLEARED before registering any defect.",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:5",
+      "source_pdf_page": 441,
+      "notes": "Solve three original exponential equations to3sf. Native(b)exponentis−5x;in(c),substitutionu=3^xgives(u−5)(u+10)=0andonlypositiveu5isadmissible.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Solve three original exponential equations to3sf. Native(b)exponentis−5x;in(c),substitutionu=3^xgives(u−5)(u+10)=0andonlypositiveu5isadmissible.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Solve three original exponential equations to3sf. Native(b)exponentis−5x;in(c),substitutionu=3^xgives(u−5)(u+10)=0andonlypositiveu5isadmissible.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Solve three original exponential equations to3sf. Native(b)exponentis−5x;in(c),substitutionu=3^xgives(u−5)(u+10)=0andonlypositiveu5isadmissible.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "log(Rational(26,5))/(6*log(18))"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "Rational(951,10000)",
+          "method": "Solve the ORIGINAL positive-base exponential equation,retain any positive intermediate root,then apply logarithms and round once to the explicitly requested3sf. Negative roots of an auxiliary quadratic cannot equal a positive exponential.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O03:D01"
+          ],
+          "response_format": "numeric",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "-log(58)/(5*log(8))"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "-Rational(391,1000)",
+          "method": "Solve the ORIGINAL positive-base exponential equation,retain any positive intermediate root,then apply logarithms and round once to the explicitly requested3sf. Negative roots of an auxiliary quadratic cannot equal a positive exponential.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O03:D01"
+          ],
+          "response_format": "numeric",
+          "original_equation": "8^(−5x)−5=53;the native exponenthasanOUTSIDEnegative−5x.",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "log(5)/log(3)"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "Rational(146,100)",
+          "method": "Solve the ORIGINAL positive-base exponential equation,retain any positive intermediate root,then apply logarithms and round once to the explicitly requested3sf. Negative roots of an auxiliary quadratic cannot equal a positive exponential.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O03:D01"
+          ],
+          "response_format": "numeric",
+          "original_equation": "9^x+5(3^x−10)=0",
+          "additional_operations": {
+            "auxiliary-factorisation": {
+              "kind": "identity",
+              "operands": [
+                "expand((x-5)*(x+10))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "auxiliary-factorisation": "x**2+5*x-50"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:6",
+      "source_pdf_page": 441,
+      "notes": "Find inverses oflog_3(x^4),log_6x+5,and5^(x/3). The first needs a domain branch absent from the source;the other originalfunctionsarealreadyone-to-one.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Find inverses oflog_3(x^4),log_6x+5,and5^(x/3). The first needs a domain branch absent from the source;the other originalfunctionsarealreadyone-to-one.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "within",
+          "quoted_value": "Find inverses oflog_3(x^4),log_6x+5,and5^(x/3). The first needs a domain branch absent from the source;the other originalfunctionsarealreadyone-to-one.",
+          "reason": "AtQ6(a)the original full-domain function is not one-to-one;the conditional positive inverse branch is recorded without silently restricting the source. Other items do not request an inverse branch restriction."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Find inverses oflog_3(x^4),log_6x+5,and5^(x/3). The first needs a domain branch absent from the source;the other originalfunctionsarealreadyone-to-one.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "The source positive-branch inverse is3^(x/4),but no single inverse exists on the original full domainx≠0.",
+          "author_derivation": "Originalf(x)=log_3(x^4) is even on its full real domainofnonzero real inputs:f(1)=f(−1)=0. The source states no positive-input restriction. Restrictingtox>0givesinverse3^(x/4);restrictingtox<0gives−3^(x/4). The printed positive root needs its original-domain branch stated.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T3:O03:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "Allnonzeroreals;no sourcepositivityrestriction.",
+          "source_key": "y=fourthroot(3^x)",
+          "additional_operations": {
+            "actual-noninjection": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(log(1**4),log((-1)**4))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "actual-noninjection": "Tuple(0,0)"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(log(y)/log(6)+5-x,y)[0]"
+            ]
+          },
+          "printed_key_normalised": "6**(x-5)",
+          "method": "Swap ORIGINAL input/output inlog_6x+5and solve. Originalx>0rangeR givesinverseinputR,rangepositive.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T3:O03:D02"
+          ],
+          "response_format": "symbolic",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "expand_log(solve(5**(y/3)-x,y)[0],force=True)"
+            ]
+          },
+          "printed_key_normalised": "3*log(x)/log(5)",
+          "method": "Native ORIGINALfunctionis5^(x/3),not5^((x−1)/3). Swapandsolve:inverse3log_5x=log_5(x³),withinverseinputx>0.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T3:O03:D02"
+          ],
+          "response_format": "symbolic",
+          "original_domain": "OriginalinputR;inverseinputx>0.",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:7",
+      "source_pdf_page": 441,
+      "notes": "Sketch the two ORIGINAL output-negated curves−3^xand−log_3x. Keep their very different domains,asymptotesandintercepts;negativeoutputsdo not implynegativeinputs.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Sketch the two ORIGINAL output-negated curves−3^xand−log_3x. Keep their very different domains,asymptotesandintercepts;negativeoutputsdo not implynegativeinputs.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Sketch the two ORIGINAL output-negated curves−3^xand−log_3x. Keep their very different domains,asymptotesandintercepts;negativeoutputsdo not implynegativeinputs.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Sketch the two ORIGINAL output-negated curves−3^xand−log_3x. Keep their very different domains,asymptotesandintercepts;negativeoutputsdo not implynegativeinputs.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "negative-exponential",
+        "negative-logarithm"
+      ],
+      "subparts": [
+        {
+          "subpart": "negative-exponential",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "y=−3^x;domainR;range(−∞,0);y-intercept(0,−1);horizontalasymptotey0;strictlydecreasing;nox-intercept",
+          "author_derivation": "The outside minus reflects3^xinthe x-axis. Its valueisnegativeforallrealinput,including−1at0. The source sketch has the correct curve andlabel.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O02:D02"
+          ],
+          "response_format": "sketch",
+          "credited_features": [
+            "y=−3^x",
+            "domainR",
+            "range(−∞,0)",
+            "y-intercept(0,−1)",
+            "horizontalasymptotey0",
+            "strictlydecreasing",
+            "nox-intercept"
+          ],
+          "criteria_basis": "Author-derived exact original-function features checked on printed key,not official marking rows.",
+          "additional_operations": {
+            "original-exp-axis-point": {
+              "kind": "identity",
+              "operands": [
+                "-3**0"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-exp-axis-point": "-1"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "negative-logarithm",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "y=−log_3x;domainx>0;rangeR;x-intercept(1,0);verticalasymptotex0;strictlydecreasing;noy-intercept",
+          "author_derivation": "The outside minus changes the logarithm output,not the positive-input domain. Its limitat0+is+∞andat∞is−∞. Source sketch agrees.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O02:D02"
+          ],
+          "response_format": "sketch",
+          "credited_features": [
+            "y=−log_3x",
+            "domainx>0",
+            "rangeR",
+            "x-intercept(1,0)",
+            "verticalasymptotex0",
+            "strictlydecreasing",
+            "noy-intercept"
+          ],
+          "criteria_basis": "Author-derived exact original-function features checked on printed key,not official marking rows.",
+          "additional_operations": {
+            "original-log-axis-point": {
+              "kind": "identity",
+              "operands": [
+                "-log(1)/log(3)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-log-axis-point": "0"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:8",
+      "source_pdf_page": 441,
+      "notes": "Plot e^xon0..1withstep0.5,addline5−5x,andreadtheroot. Correctx≈0.626;nativekeycaption1.8iswrongalthoughitsdrawnintersectionisnear.63.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D02",
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Plot e^xon0..1withstep0.5,addline5−5x,andreadtheroot. Correctx≈0.626;nativekeycaption1.8iswrongalthoughitsdrawnintersectionisnear.63.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Plot e^xon0..1withstep0.5,addline5−5x,andreadtheroot. Correctx≈0.626;nativekeycaption1.8iswrongalthoughitsdrawnintersectionisnear.63.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Plot e^xon0..1withstep0.5,addline5−5x,andreadtheroot. Correctx≈0.626;nativekeycaption1.8iswrongalthoughitsdrawnintersectionisnear.63.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "exponential-on-stated-interval",
+        "suitable-straight-line",
+        "approximate-root"
+      ],
+      "subparts": [
+        {
+          "subpart": "exponential-on-stated-interval",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Plot e^x on0≤x≤1 atx0,.5,1;points(0,1),(.5,√e),(1,e);includeclosedendpoints",
+          "author_derivation": "Use the stated0..1interval and0.5step. The key draws a broader mathematicallyvalidcurve;itsunrequestedextensiondoesnotredefine the learner’s original domain.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O02:D02"
+          ],
+          "response_format": "sketch",
+          "credited_features": [
+            "Plot e^x on0≤x≤1 atx0,.5,1",
+            "points(0,1),(.5,√e),(1,e)",
+            "includeclosedendpoints"
+          ],
+          "criteria_basis": "Author-derived exact original-function features checked on printed key,not official marking rows.",
+          "additional_operations": {
+            "original-required-table": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(exp(0),exp(Rational(1,2)),exp(1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-required-table": "Tuple(1,sqrt(E),E)"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "suitable-straight-line",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Liney=5−5x;sharedaxeswiththeexponential;intercept(0,5);zero(1,0);intersectionnear(.626,1.87)",
+          "author_derivation": "Rewrite the ORIGINAL equation as intersection ofe^xand5−5x. The printed graph visually intersects nearx.63,not the caption1.8. The root lies inside the requested0..1interval.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O02:D02"
+          ],
+          "response_format": "sketch",
+          "credited_features": [
+            "Liney=5−5x",
+            "sharedaxeswiththeexponential",
+            "intercept(0,5)",
+            "zero(1,0)",
+            "intersectionnear(.626,1.87)"
+          ],
+          "criteria_basis": "Author-derived exact original-function features checked on printed key,not official marking rows.",
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "approximate-root",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key wrong",
+          "author_conclusion": "x≈0.626,or about0.63by a reasonable graph reading.",
+          "author_derivation": "Independent standard-library bisection ofh(x)=exp(x)+5x−5on[0,1]gives0.6259832407. h′=exp(x)+5>0ensuresuniqueness;h(0)<0,h(1)>0. The native printedcaptionx≈1.8contradicts both the equation and its own graph. No officialgraphreading toleranceis supplied.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D02"
+          ],
+          "response_format": "numeric",
+          "printed_key_display": "x≈1.8",
+          "independent_bisection_result": 0.625983240734048,
+          "additional_operations": {
+            "key-root-positive-residual": {
+              "kind": "identity",
+              "operands": [
+                "exp(Rational(18,10))+5*Rational(18,10)-5>0"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "key-root-positive-residual": "True"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:9",
+      "source_pdf_page": 441,
+      "notes": "Solve three original base10logequations andfilterallargumentdomains. The rationalroots15/4,{1/3,1},{1/4,16}all satisfytheiroriginaldomains.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Solve three original base10logequations andfilterallargumentdomains. The rationalroots15/4,{1/3,1},{1/4,16}all satisfytheiroriginaldomains.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Solve three original base10logequations andfilterallargumentdomains. The rationalroots15/4,{1/3,1},{1/4,16}all satisfytheiroriginaldomains.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Solve three original base10logequations andfilterallargumentdomains. The rationalroots15/4,{1/3,1},{1/4,16}all satisfytheiroriginaldomains.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Intersection(solveset(2*x-10*(x-3),x,domain=S.Reals),Interval.open(3,oo))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(Rational(15,4))",
+          "method": "FIRST impose every ORIGINAL logarithm argument>0 and a positive nonunit base. Combine only common-base logs and use their injectivity to obtain the separately transcribed algebraic condition. Solve that condition,then intersect with the original domain. Check every retained solution in the original arguments; a positive product after compression does not validate two negative separate arguments.",
+          "original_equation": "log(2x)−log(x−3)=1",
+          "algebraic_condition_zero_form": "2*x-10*(x-3)",
+          "original_domain": "Interval.open(3,oo)",
+          "source_variable": "x",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "additional_operations": {
+            "all-algebraic-candidates": {
+              "kind": "identity",
+              "operands": [
+                "solveset(2*x-10*(x-3),x,domain=S.Reals)"
+              ]
+            }
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Intersection(solveset(x**2+12*x-3-10*x**2,x,domain=S.Reals),Interval.open(0,oo))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(Rational(1,3),1)",
+          "method": "FIRST impose every ORIGINAL logarithm argument>0 and a positive nonunit base. Combine only common-base logs and use their injectivity to obtain the separately transcribed algebraic condition. Solve that condition,then intersect with the original domain. Check every retained solution in the original arguments; a positive product after compression does not validate two negative separate arguments.",
+          "original_equation": "log(x²+12x−3)=1+2logx",
+          "algebraic_condition_zero_form": "x**2+12*x-3-10*x**2",
+          "original_domain": "Interval.open(0,oo)",
+          "source_variable": "x",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "additional_operations": {
+            "all-algebraic-candidates": {
+              "kind": "identity",
+              "operands": [
+                "solveset(x**2+12*x-3-10*x**2,x,domain=S.Reals)"
+              ]
+            }
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Intersection(solveset(4*(x+2)**2-81*x,x,domain=S.Reals),Interval.open(0,oo))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(Rational(1,4),16)",
+          "method": "FIRST impose every ORIGINAL logarithm argument>0 and a positive nonunit base. Combine only common-base logs and use their injectivity to obtain the separately transcribed algebraic condition. Solve that condition,then intersect with the original domain. Check every retained solution in the original arguments; a positive product after compression does not validate two negative separate arguments.",
+          "original_equation": "2log(x+2)+log4=logx+4log3",
+          "algebraic_condition_zero_form": "4*(x+2)**2-81*x",
+          "original_domain": "Interval.open(0,oo)",
+          "source_variable": "x",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "additional_operations": {
+            "all-algebraic-candidates": {
+              "kind": "identity",
+              "operands": [
+                "solveset(4*(x+2)**2-81*x,x,domain=S.Reals)"
+              ]
+            }
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C9:Exercise-9:10",
+      "source_pdf_page": 441,
+      "notes": "Use the explicitly requested substitutiony=2^xin2^(x+2)−3=7×2^(x−1). The linear auxiliary rooty6givesxlog_2(6),printed2.58.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Classify each original requested log-law,notation,exponential solve,inverse or graph output directly. Preserve original argument domains. An internal CAS logarithm ratio is an oracle,not an imposed learner change-of-base method. Power substitutions must retain positive exponential values.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "within",
+          "quoted_value": "Use the explicitly requested substitutiony=2^xin2^(x+2)−3=7×2^(x−1). The linear auxiliary rooty6givesxlog_2(6),printed2.58.",
+          "reason": "No learner change-of-base formula is required;solve using the stated log/exponential rules or graph."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Use the explicitly requested substitutiony=2^xin2^(x+2)−3=7×2^(x−1). The linear auxiliary rooty6givesxlog_2(6),printed2.58.",
+          "reason": "No inverse is requested in this item."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Use the explicitly requested substitutiony=2^xin2^(x+2)−3=7×2^(x−1). The linear auxiliary rooty6givesxlog_2(6),printed2.58.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT06",
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Q5explicitly3sf. Q8asks an approximate graphical root without precision. Other algebraic outputs exact unless a later item says otherwise.",
+        "comparison": "No angles. Keep original domains and full real branch restrictions;do not impose2dp/3sf where not asked. Approximate source graph is compared by mathematical features and original equation,not pixel coincidence."
+      },
+      "expected_subpart_labels": [
+        "x"
+      ],
+      "subparts": [
+        {
+          "subpart": "x",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "log(6)/log(2)"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "Rational(258,100)",
+          "method": "Solve the ORIGINAL positive-base exponential equation,retain any positive intermediate root,then apply logarithms and round once to the explicitly requested3sf. Negative roots of an auxiliary quadratic cannot equal a positive exponential.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T2:O03:D01"
+          ],
+          "response_format": "numeric",
+          "requested_precision": "Noexplicitprecisioninthequestion;3sfusedonlytomatchtheprinted2.58display.",
+          "original_equation": "2^(x+2)−3=7×2^(x−1)",
+          "required_method": "Substitutiony=2^x;solve4y−3=(7/2)y,theny6>0andx=log_2(6).",
+          "additional_operations": {
+            "original-substitution-root": {
+              "kind": "identity",
+              "operands": [
+                "4*6-3-Rational(7,2)*6"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-substitution-root": "0"
+          },
+          "source_pdf_page": 441,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-440-source.png",
+            "sha256": "a13d37c8fd211ba8d65a415abafc00b630fb8278aec0502374855588e1458046"
+          },
+          "answer_pdf_page": 641,
+          "answer_printed_page": "A55",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C9-key-641.png",
+            "sha256": "2b5c980addef61ce3714b373cf4208a6539b88797072b6da50b3df57d4ff80fc"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}

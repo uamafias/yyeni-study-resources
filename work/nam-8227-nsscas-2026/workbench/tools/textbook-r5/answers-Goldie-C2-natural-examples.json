@@ -1,0 +1,409 @@
+{
+  "scope": "All Example9–12requested outputs,with exact domains and source precision.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:9",
+      "source_pdf_page": 63,
+      "notes": "For N=2000e^(0.1t),t days since observation began,sketch the model,find the20-day population and solve the10000-insect continuous threshold.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D02",
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The e/ln definitions and graphs are direct when requested; solving a time threshold, rearranging a log equation and filtering a quadratic exponential substitution remain distinct decisions. Direct substitution alone does not establish a separate progression demand.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Worked example without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "For N=2000e^(0.1t),t days since observation began,sketch the model,find the20-day population and solve the10000-insect continuous threshold.",
+          "reason": "Natural inverse identities and power laws suffice; no general change-of-base recall is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Population after20days is nearest whole insect;the threshold key says just over16days. Radioactive mass after1hour is2decimal places,half-life1decimal place. Example12is3significant figures.",
+        "comparison": "Continuous model time is not automatically rounded up to an integer observation. Convert1hour to3600seconds in the given exponent. Physical meaning claims beyond the supplied mathematical model remain unverified."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "On t≥0,sketch N=2000e^(0.1t)starting at(0,2000),increasing with positive curvature and no finite upper bound.",
+          "author_derivation": "At0 the exponential is1. Both first and second derivatives are positive on the physical time domain;the source graph agrees. A negative-time asymptote of the abstract full-real formula is outside the physical viewport.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 63,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 64,
+          "answer_printed_page": 50,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "2000*exp(20/10)"
+            ],
+            "decimal_places": 0
+          },
+          "printed_key_normalised": "14778",
+          "method": "Derive from the original source formula,retain exact values,then round only the requested final result.",
+          "source_pdf_page": 63,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 64,
+          "answer_printed_page": 50,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The continuous threshold time is10ln5≈16.094days,just over16days.",
+          "author_derivation": "Set10000=2000e^(t/10),divide by2000and apply the inverse natural log to gett=10ln5. The source does not ask for a first whole-number day;rounding this up to17would change the question.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "threshold_substitution": {
+              "kind": "identity",
+              "operands": [
+                "2000*exp((10*log(5))/10)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "threshold_substitution": "10000"
+          },
+          "source_pdf_page": 63,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 64,
+          "answer_printed_page": 50,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:10",
+      "source_pdf_page": 64,
+      "notes": "For M=25e^(−0.0012t)grams with t in seconds,sketch decay,state initial mass,find mass after1hour and calculate half-life from its supplied definition.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D02",
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "mapping_rationale": "The e/ln definitions and graphs are direct when requested; solving a time threshold, rearranging a log equation and filtering a quadratic exponential substitution remain distinct decisions. Direct substitution alone does not establish a separate progression demand.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Worked example without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "For M=25e^(−0.0012t)grams with t in seconds,sketch decay,state initial mass,find mass after1hour and calculate half-life from its supplied definition.",
+          "reason": "Natural inverse identities and power laws suffice; no general change-of-base recall is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Population after20days is nearest whole insect;the threshold key says just over16days. Radioactive mass after1hour is2decimal places,half-life1decimal place. Example12is3significant figures.",
+        "comparison": "Continuous model time is not automatically rounded up to an integer observation. Convert1hour to3600seconds in the given exponent. Physical meaning claims beyond the supplied mathematical model remain unverified."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "For t≥0,sketch a decreasing convex curve from(0,25),approaching the horizontal asymptote M=0from above.",
+          "author_derivation": "The original mass model25e^(−0.0012t)is positive,has negative first derivative and positive second derivative. It never reaches0at finite time. Source Figure2.18agrees.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 64,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 64,
+          "answer_printed_page": 50,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "25*exp(0)"
+            ]
+          },
+          "printed_key_normalised": "25",
+          "method": "The initial mass is the value at0seconds,not the remaining mass after an hour.",
+          "units": "g",
+          "printed_key_units": "g",
+          "source_pdf_page": 64,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 64,
+          "answer_printed_page": 50,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "25*exp(-(12/10000)*3600)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "0.33",
+          "method": "The model time is seconds. Convert1hour to3600seconds before substituting;the exact positive mass is about0.3325g,displayed to2decimal places.",
+          "units": "g",
+          "printed_key_units": "g",
+          "source_pdf_page": 64,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 65,
+          "answer_printed_page": 51,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "log(2)/(12/10000)"
+            ],
+            "decimal_places": 1
+          },
+          "printed_key_normalised": "577.6",
+          "method": "The supplied half-life definition requires M=25/2. Divide the original model by25,apply ln to1/2=e^(−0.0012t),and solve for positive time. Do not substitute minutes into a per-second exponent.",
+          "units": "s",
+          "printed_key_units": "s",
+          "source_pdf_page": 64,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 65,
+          "answer_printed_page": 51,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:11",
+      "source_pdf_page": 65,
+      "notes": "Make p the subject of ln p−ln(1−p)=t;retain both positive log arguments and verify the final logistic expression lies in0<p<1.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D02",
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The e/ln definitions and graphs are direct when requested; solving a time threshold, rearranging a log equation and filtering a quadratic exponential substitution remain distinct decisions. Direct substitution alone does not establish a separate progression demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Worked example without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Make p the subject of ln p−ln(1−p)=t;retain both positive log arguments and verify the final logistic expression lies in0<p<1.",
+          "reason": "Natural inverse identities and power laws suffice; no general change-of-base recall is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Population after20days is nearest whole insect;the threshold key says just over16days. Radioactive mass after1hour is2decimal places,half-life1decimal place. Example12is3significant figures.",
+        "comparison": "Continuous model time is not automatically rounded up to an integer observation. Convert1hour to3600seconds in the given exponent. Physical meaning claims beyond the supplied mathematical model remain unverified."
+      },
+      "expected_subpart_labels": [
+        "p"
+      ],
+      "subparts": [
+        {
+          "subpart": "p",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(p-exp(t)*(1-p),p)[0]"
+            ]
+          },
+          "printed_key_normalised": "exp(t)/(1+exp(t))",
+          "method": "Original logs require0<p<1. Combine them into ln(p/(1−p))=t,exponentiate,and solve the resulting linear equation in p. The resulting p=e^t/(1+e^t)lies strictly between0and1for every realt,so it preserves the original domain.",
+          "additional_operations": {
+            "quotient_at_solution": {
+              "kind": "identity",
+              "operands": [
+                "((exp(t)/(1+exp(t)))/(1-exp(t)/(1+exp(t))))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "quotient_at_solution": "exp(t)"
+          },
+          "source_pdf_page": 65,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "answer_pdf_page": 65,
+          "answer_printed_page": 51,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-62.png",
+            "sha256": "97ba5224ff49d178dbd400cd2c47368882caa24e614c0e5ddc449ee7ef172093"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:12",
+      "source_pdf_page": 66,
+      "notes": "Solve ln(x−4)=lnx−4and e^(2x)+e^x=6to3significant figures. The first requiresx>4;the second discards a negative exponential substitution root.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O01:D02",
+        "8227:2020:M2:T2:O02:D01",
+        "8227:2020:M2:T2:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:PRIOR:NSSCO:quadratic"
+      ],
+      "mapping_rationale": "The e/ln definitions and graphs are direct when requested; solving a time threshold, rearranging a log equation and filtering a quadratic exponential substitution remain distinct decisions. Direct substitution alone does not establish a separate progression demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Worked example without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Solve ln(x−4)=lnx−4and e^(2x)+e^x=6to3significant figures. The first requiresx>4;the second discards a negative exponential substitution root.",
+          "reason": "Natural inverse identities and power laws suffice; no general change-of-base recall is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Population after20days is nearest whole insect;the threshold key says just over16days. Radioactive mass after1hour is2decimal places,half-life1decimal place. Example12is3significant figures.",
+        "comparison": "Continuous model time is not automatically rounded up to an integer observation. Convert1hour to3600seconds in the given exponent. Physical meaning claims beyond the supplied mathematical model remain unverified."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "solve(x-4-exp(-4)*x,x)[0]"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "4.07",
+          "method": "Original logarithms require x>4. Exponentiating givesx−4=xe^(−4),hencex=4/(1−e^(−4))>4. Compare only the rounded final value;the exact solution satisfies the original logs.",
+          "source_pdf_page": 66,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-66.png",
+            "sha256": "83a015348e3ef044dc83480c65b6be5b4700e94a632886e22f9fefad8fceae57"
+          },
+          "answer_pdf_page": 66,
+          "answer_printed_page": 52,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-66.png",
+            "sha256": "83a015348e3ef044dc83480c65b6be5b4700e94a632886e22f9fefad8fceae57"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "log(2)"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "0.693",
+          "method": "Letu=e^x>0. Solve u²+u−6=(u−2)(u+3)=0,discard−3,and usex=ln2. The positive exponential-substitution domain is essential.",
+          "additional_operations": {
+            "all_substitution_roots": {
+              "kind": "identity",
+              "operands": [
+                "FiniteSet(*solve(x**2+x-6,x))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "all_substitution_roots": "FiniteSet(-3,2)"
+          },
+          "source_pdf_page": 66,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-66.png",
+            "sha256": "83a015348e3ef044dc83480c65b6be5b4700e94a632886e22f9fefad8fceae57"
+          },
+          "answer_pdf_page": 66,
+          "answer_printed_page": 52,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-66.png",
+            "sha256": "83a015348e3ef044dc83480c65b6be5b4700e94a632886e22f9fefad8fceae57"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

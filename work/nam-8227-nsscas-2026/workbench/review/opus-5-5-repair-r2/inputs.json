@@ -1,0 +1,89 @@
+{
+  "review": "Independent cross-vendor re-review of 8227 analysis repair round 2",
+  "reviewer": "Claude Opus 5.5 (claude-opus-5-5), role REVIEWER",
+  "commissioned_by": "Vitalis (pasted next-step sequence, 2026-11-17); entry point workbench/HANDOVER.md",
+  "date": "2026-11-17",
+  "repository": {
+    "head_commit": "11cd03fe639f9936dd9f83fd04bd6f04d5181676",
+    "branch": "main",
+    "working_tree": "Repair is uncommitted. `git status --short work/nam-8227-nsscas-2026` lists 84 modified/untracked entries; reviewed as found and frozen by the hashes below. Unrelated Geography/Harvester changes are present and were not inspected."
+  },
+  "snapshot": {
+    "current_path": "work/nam-8227-nsscas-2026/workbench/analysis/analysis-snapshot.json",
+    "current_sha256": "85b782f9dc620f0b1697c29cb4a4bdf942f345a66abace60fd7c61b6b6f174ee",
+    "files_verified": "1255/1255 match",
+    "source_files_verified": "435/435 match",
+    "review_files_verified": "6/6 match (round-1 review folder unchanged)",
+    "round1_history_path": "work/nam-8227-nsscas-2026/workbench/analysis/history/analysis-snapshot-r1.json",
+    "round1_history_sha256": "1afe99d597617897cb3bf0489cd3bcbc236624fef05cef53a8aa4a92704a561f (matches)"
+  },
+  "key_input_hashes": {
+    "work/nam-8227-nsscas-2026/workbench/analysis/question-analysis.json": "fdc2deef00cfb549aafe9e3af6d5dc5bbdb7ebe139112e67c85284c3cf36e9b1",
+    "work/nam-8227-nsscas-2026/workbench/analysis/problem-patterns.json": "c4b6f6381c3f06958b49ca555a3fd399dc28060a52facdd4920ca362e7598272",
+    "work/nam-8227-nsscas-2026/workbench/analysis/cambridge-evidence.json": "7372932363ace298443fbfa2996cbd18d4722bbc602d198039ad4e802bd45ab9",
+    "work/nam-8227-nsscas-2026/workbench/analysis/gap-demand-reconciliation.json": "475ffbb28717c10351a5b5c30802bf2381cf74704f56becd7f5b6fb8a5f81e33",
+    "work/nam-8227-nsscas-2026/workbench/analysis/asset-index.json": "dc92b3192b004ba955266d26d16004e4119d9678a2a62eb0970a35d414dcfe61",
+    "work/nam-8227-nsscas-2026/workbench/analysis/demand-dispositions.json": "05fdc208179128173743d77f8d6537c9c68b0fa227652ad39d43aac9b6575292",
+    "work/nam-8227-nsscas-2026/curriculum/grade-descriptions.json": "336b30bd67f6f4d641552900bd83d45b687c9fda85e8c26d06b5089e1b152f5a",
+    "work/nam-8227-nsscas-2026/workbench/checks/repair-r2-report.md": "2bcd9db07eeb5c4c4d96045b11856aeaa9cf1381b3794df388d62ba2b08f0865",
+    "work/nam-8227-nsscas-2026/workbench/HANDOVER.md": "9feab6e9fd04eea9448513e1ffa950af8bdd1dd68fc48b3e87cd358847d8345c",
+    "work/nam-8227-nsscas-2026/workbench/tools/repair_inputs.py": "7b2d1cfb9575dea085469392e80b92fbecea43e90d0cedb516d26b291e998594",
+    "work/nam-8227-nsscas-2026/workbench/tools/demand_coverage.py": "6419cb30849bf5cd4cc94a182752616170f6f8aba8b0bc045aa8c041388357d5",
+    "work/nam-8227-nsscas-2026/workbench/analysis/assets/2024-1-q9-given.png": "ce7c46ca7a9aa2450a135026fa725e6bd287377c6d30788f644c21d5147e039a",
+    "work/nam-8227-nsscas-2026/workbench/analysis/assets/2025-1-q12-given.png": "321e92a344c447c8515dbada321d3025dbc3b0761c218beaec40709af827038c"
+  },
+  "rebuild": {
+    "method": "Disposable copy of work/nam-8227-nsscas-2026 in the reviewer scratchpad; source folders symlinked read-only; author tools run unmodified from the copy root.",
+    "commands": [
+      "python3 work/nam-8227-nsscas-2026/workbench/tools/index_cambridge.py",
+      "python3 work/nam-8227-nsscas-2026/workbench/tools/verify_derivatives.py",
+      "python3 work/nam-8227-nsscas-2026/workbench/tools/run_repair_checks.py"
+    ],
+    "results": {
+      "index_cambridge": "415 local documents indexed; 1573 page/query leads; 0 unusable",
+      "verify_derivatives": "16 layout files / 1,945 pages recomputed identically; 663 OCR page identities checked",
+      "run_repair_checks": "2 rebuilds passed; 83 outputs byte-identical; 2 seeded negative fixtures rejected",
+      "copy_vs_author_tree": "1,254 files compared; 0 differences; author working tree untouched"
+    }
+  },
+  "independent_checks": [
+    "All 250 part annotations read against the extracted question text (and round-1 rendered crops): direct, prior and model links judged per part.",
+    "Coverage function read: demand_coverage.compute takes demands, parts and verified Cambridge items only; no family input.",
+    "All 12 zero-usable demands and the inflexion facet checked against the 250 annotations for any NSSCAS part that should close them; none found.",
+    "All round-1 R13-01 and R13-08 example parts checked for their repaired links.",
+    "All 30 Cambridge items: verbatim text compared symbol-by-symbol with pymupdf renders of the cited pages (31 pages); printed page = PDF page confirmed on every image; selected/omitted parts and marks checked; scope reasons read against 8227 limits.",
+    "Purpose label (gap-fill/variety) recomputed against the 12-gap list.",
+    "All 39 crops (26 NSSCAS givens, 6 response frames, 7 Cambridge givens) viewed on contact sheets; 2 suspect crops re-rendered from source with PDFKit and the author crop box overlaid.",
+    "Mirror watermarks (www.dynamicpapers.com, PAPA CAMBRIDGE) searched for in the 7 Cambridge crops: none present.",
+    "Grade descriptions: every content sentence on syllabus pp19-24 checked for presence in the 46 descriptor fragments; the two grade-floor exceptions read.",
+    "67 groups compared with the round-1 report section 4 recommendations; overlaps counted; learner-visible reference counts computed per group.",
+    "Examination references: printed vs PDF page equality over 250 parts; label format; held-part labels.",
+    "Dependency edges: scan of every part prompt for explicit 'part (x)' references lacking an edge; sketch-question edges read.",
+    "Diagram parameter records: fixed vs constraints comparison over 55 parts.",
+    "Source-defect register (10 entries), assessment-conditions structure (one 2025 cover record), four normalised objectives and four qualifiers spot-checked.",
+    "NSSCAS-to-Cambridge provenance: targeted search of the indexed 9709 text for distinctive NSSCAS wording/values."
+  ],
+  "scratchpad_artifacts": {
+    "root": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad",
+    "r2root": "disposable rebuild copy",
+    "r2_parts.txt": "250-part annotation listing used for the mapping read",
+    "r2cam/item00-29.png": "rendered Cambridge item pages",
+    "r2assets/sheet0-6.png": "crop contact sheets",
+    "r2assets/src/box-q24p1-011.png, box-q25p1-018.png": "PDFKit source renders with author crop boxes"
+  },
+  "environment": {
+    "macos": "26.6.2 (25G82)",
+    "python": "3.13.0",
+    "pypdf": "5.9.0",
+    "PyMuPDF": "2.1",
+    "Pillow": "11.3.0",
+    "sympy": "1.14.0",
+    "swift": "6.1.2 (PDFKit renderer from round 1)"
+  },
+  "not_checked": [
+    "Full solutions of every part and every Cambridge item; mark-scheme pages were not re-read item by item.",
+    "Contents of every assessment-conditions year record, every qualifier and all 60 normalised objectives (spot checks only).",
+    "Textbook samples and OCR beyond the author's derivative verification.",
+    "App code, runtime display, diagram generation or sketch marking."
+  ]
+}

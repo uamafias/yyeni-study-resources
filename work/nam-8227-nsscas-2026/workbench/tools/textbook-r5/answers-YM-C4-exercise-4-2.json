@@ -1,0 +1,1367 @@
+{
+  "scope": "All 11 questions and every explicit response in Exercise 4.2, including source defects and no-interval restriction.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:1",
+      "source_pdf_page": 223,
+      "notes": "Given f(x)=a sin(bx)+c on 0°≤x≤360°, maximum 3, minimum −1, period 120° and initially rising midline 1; a,b,c are positive integers. Find the parameters and the smallest positive zero.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O02:D02",
+        "8227:2020:M1:T6:O06:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "2sin(3x)+1=0, 0°≤x≤360°; n=3",
+          "reason": "The actual input multiplier is the small positive integer 3."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Given f(x)=a sin(bx)+c on 0°≤x≤360°, maximum 3, minimum −1, period 120° and initially rising midline 1; a,b,c are positive integers. Find the parameters and the smallest positive zero.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Given f(x)=a sin(bx)+c on 0°≤x≤360°, maximum 3, minimum −1, period 120° and initially rising midline 1; a,b,c are positive integers. Find the parameters and the smallest positive zero.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple((3-(-1))/2,360/120,(3+(-1))/2)"
+            ]
+          },
+          "printed_key_normalised": "Tuple(2,3,1)",
+          "method": "Read maximum 3, minimum −1, and positive period 120° from the given graph. The explicitly positive integers a,b,c remove the otherwise equivalent simultaneous sign reversal: a=2, b=3, c=1.",
+          "assertions": [
+            {
+              "expression": "2*sin(3*0*pi/180)+1",
+              "expected": "1"
+            }
+          ],
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(180+asin(1/2)*180/pi)/3"
+            ]
+          },
+          "printed_key_normalised": "70",
+          "method": "With 2sin3x+1=0, the first positive phase is 210°, so the first positive x is 70°. Enumerating all roots on the given interval independently confirms the minimum.",
+          "additional_operations": {
+            "all_original_roots": {
+              "kind": "bounded-trig-equation",
+              "operands": [
+                "2*sin(3*(x*pi/180))+1",
+                "0",
+                "360"
+              ]
+            }
+          },
+          "dependency": {
+            "source_part": "a",
+            "role": "Use the graph-derived positive parameters in f(x)=0."
+          },
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:2",
+      "source_pdf_page": 223,
+      "notes": "Sketch 2sinθ and cos2θ on 0≤θ≤π; hence state how many solutions their equality has. Only the count, not numerical root estimates, is requested.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O01:D01",
+        "8227:2020:M1:T6:O02:D03"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Sketch 2sinθ and cos2θ on 0≤θ≤π; hence state how many solutions their equality has. Only the count, not numerical root estimates, is requested.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Sketch 2sinθ and cos2θ on 0≤θ≤π; hence state how many solutions their equality has. Only the count, not numerical root estimates, is requested.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Sketch 2sinθ and cos2θ on 0≤θ≤π; hence state how many solutions their equality has. Only the count, not numerical root estimates, is requested.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a:2sin",
+        "a:cos2",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a:2sin",
+          "operation": {
+            "kind": "trig-features",
+            "family": "sin",
+            "angle_unit": "radian",
+            "operands": [
+              "2",
+              "1",
+              "0",
+              "0",
+              "pi"
+            ],
+            "at": [
+              "0",
+              "pi/2",
+              "pi"
+            ]
+          },
+          "check_mode": "sketch",
+          "method": "Independently derive amplitude from absolute output scale,positive period from angular unit/input multiplier,and exact zeros,extrema,poles and endpoint values from the given function. Compare the specifically transcribed source graph/table features; do not join tangent branches across poles. Global and displayed-interval ranges remain distinct.",
+          "printed_key_features": {
+            "sample_values": "Tuple(0,2,0)",
+            "window_range": "Interval(0,2)"
+          },
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "a:cos2",
+          "operation": {
+            "kind": "trig-features",
+            "family": "cos",
+            "angle_unit": "radian",
+            "operands": [
+              "1",
+              "2",
+              "0",
+              "0",
+              "pi"
+            ],
+            "at": [
+              "0",
+              "pi/2",
+              "pi"
+            ]
+          },
+          "check_mode": "sketch",
+          "method": "Independently derive amplitude from absolute output scale,positive period from angular unit/input multiplier,and exact zeros,extrema,poles and endpoint values from the given function. Compare the specifically transcribed source graph/table features; do not join tangent branches across poles. Global and displayed-interval ranges remain distinct.",
+          "printed_key_features": {
+            "sample_values": "Tuple(1,-1,1)",
+            "window_range": "Interval(-1,1)"
+          },
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "2 solutions",
+          "author_derivation": "The two given interval sketches cross twice. Independent completeness check: set s=sinθ on [0,π]; cos2θ=1−2s² gives 2s²+2s−1=0. Only s=(√3−1)/2 lies in [0,1], and it occurs once in each open half interval, giving exactly two intersections. Numerical roots are not requested.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "exact_root_set": {
+              "kind": "bounded-trig-equation",
+              "operands": [
+                "2*sin(x)-cos(2*x)",
+                "0",
+                "pi"
+              ]
+            }
+          },
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:3",
+      "source_pdf_page": 223,
+      "notes": "(a) Show 3cosx=2sin²x reduces to 2cos²x+3cosx−2=0. (b) Hence solve the original equation: no interval or angle unit is stated, although the key silently gives one degree cycle.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O05:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "(a) Show 3cosx=2sin²x reduces to 2cos²x+3cosx−2=0. (b) Hence solve the original equation: no interval or angle unit is stated, although the key silently gives one degree cycle.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "outside",
+          "quoted_value": "(a) Show 3cosx=2sin²x reduces to 2cos²x+3cosx−2=0. (b) Hence solve the original equation: no interval or angle unit is stated, although the key silently gives one degree cycle.",
+          "reason": "Question 3(b) supplies neither interval nor angle unit; its finite key is conditional and does not answer an unbounded literal equation. A bounded adaptation would be a later planning proposal.",
+          "part_ids": [
+            "b"
+          ]
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "(a) Show 3cosx=2sin²x reduces to 2cos²x+3cosx−2=0. (b) Hence solve the original equation: no interval or angle unit is stated, although the key silently gives one degree cycle.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "trig-identity-residual",
+            "operands": [
+              "3*cos(x)-2*sin(x)**2",
+              "2*cos(x)**2+3*cos(x)-2"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "check_mode": "show/prove",
+          "proof_expressions": [
+            "3*cos(x)-2*sin(x)**2",
+            "2*cos(x)**2+3*cos(x)-2"
+          ],
+          "original_common_domain": "all real x",
+          "review_date": "2026-11-18",
+          "method": "Independently check every stated transformation and substitution. For an equation reduction, retain any original denominator restriction when clearing it; equality of residual expressions is not permission to add original poles to the solution set.",
+          "normalisation_note": "Zero verifies the independently derived expression difference; it is not a verbatim numerical key answer.",
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "The literal task has no finite specified interval or angle unit. If one additionally imposes 0°≤x≤360°, its two roots are 60° and 300°; that condition is absent from the source stem.",
+          "author_derivation": "From (2cosx−1)(cosx+2)=0, only cosx=1/2 is admissible. The printed two angles are valid on a single degree cycle but omit infinitely many literal roots without a supplied interval. Internal diagnostic: degree solutions 60+360k and 300+360k, integer k (or the equivalent radian families). These general forms are outside the prescribed bounded demand, not candidate learner material. Preserve the missing-condition defect rather than supplying it silently.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "admissible_ratio_candidates": {
+              "kind": "real-roots",
+              "operands": [
+                "2*x**2+3*x-2"
+              ]
+            },
+            "conditional_one_cycle_only": {
+              "kind": "bounded-trig-equation",
+              "operands": [
+                "3*cos((x*pi/180))-2*sin((x*pi/180))**2",
+                "0",
+                "360"
+              ]
+            }
+          },
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": "Part (b) cannot establish complete bounded-equation coverage as printed. Retain only the explicit equation-transformation aspect; any bounded repair is a proposal for step 3."
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:4",
+      "source_pdf_page": 223,
+      "notes": "Reduce 4sin⁴x+5=7cos²x to a quadratic in sin²x, then solve on 0≤x≤2π. Reject sin²x=−2; sin²x=1/4 gives all four exact radian roots.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O05:D02",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Reduce 4sin⁴x+5=7cos²x to a quadratic in sin²x, then solve on 0≤x≤2π. Reject sin²x=−2; sin²x=1/4 gives all four exact radian roots.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Reduce 4sin⁴x+5=7cos²x to a quadratic in sin²x, then solve on 0≤x≤2π. Reject sin²x=−2; sin²x=1/4 gives all four exact radian roots.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Reduce 4sin⁴x+5=7cos²x to a quadratic in sin²x, then solve on 0≤x≤2π. Reject sin²x=−2; sin²x=1/4 gives all four exact radian roots.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "trig-identity-residual",
+            "operands": [
+              "4*sin(x)**4+5-7*cos(x)**2",
+              "4*sin(x)**4+7*sin(x)**2-2"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "check_mode": "show/prove",
+          "proof_expressions": [
+            "4*sin(x)**4+5-7*cos(x)**2",
+            "4*sin(x)**4+7*sin(x)**2-2"
+          ],
+          "original_common_domain": "all real x",
+          "review_date": "2026-11-18",
+          "method": "Independently check every stated transformation and substitution. For an equation reduction, retain any original denominator restriction when clearing it; equality of residual expressions is not permission to add original poles to the solution set.",
+          "normalisation_note": "Zero verifies the independently derived expression difference; it is not a verbatim numerical key answer.",
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "4*sin(x)**4+5-7*cos(x)**2",
+              "0",
+              "2*pi"
+            ],
+            "left_open": false,
+            "right_open": false
+          },
+          "source_ratio_branches": [
+            {
+              "function": "sin",
+              "argument": "x",
+              "ratio": "1/2",
+              "power": 1,
+              "angle_unit": "radian"
+            },
+            {
+              "function": "sin",
+              "argument": "x",
+              "ratio": "-1/2",
+              "power": 1,
+              "angle_unit": "radian"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "radian",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_normalised": "FiniteSet(pi/6,5*pi/6,7*pi/6,11*pi/6)",
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:5",
+      "source_pdf_page": 223,
+      "notes": "Sketch and label cosθ and cos3θ on 0≤θ≤2π; then find the largest k for which cosx restricted to [0,k] has an inverse. The key shape is right but its cos3θ label is printed as 3cosθ.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O01:D01",
+        "8227:2020:M1:T6:O02:D03",
+        "8227:2020:M1:T3:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Sketch and label cosθ and cos3θ on 0≤θ≤2π; then find the largest k for which cosx restricted to [0,k] has an inverse. The key shape is right but its cos3θ label is printed as 3cosθ.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "not applicable",
+          "quoted_value": "Sketch and label cosθ and cos3θ on 0≤θ≤2π; then find the largest k for which cosx restricted to [0,k] has an inverse. The key shape is right but its cos3θ label is printed as 3cosθ.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "within",
+          "quoted_value": "g(x)=cosx, 0≤x≤k; largest k for an inverse",
+          "reason": "The largest initial injective interval ends at the first turning point π."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a:cos",
+        "a:cos3",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a:cos",
+          "operation": {
+            "kind": "trig-features",
+            "family": "cos",
+            "angle_unit": "radian",
+            "operands": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "2*pi"
+            ],
+            "at": [
+              "0",
+              "pi",
+              "2*pi"
+            ]
+          },
+          "check_mode": "sketch",
+          "method": "Independently derive amplitude from absolute output scale,positive period from angular unit/input multiplier,and exact zeros,extrema,poles and endpoint values from the given function. Compare the specifically transcribed source graph/table features; do not join tangent branches across poles. Global and displayed-interval ranges remain distinct.",
+          "printed_key_features": {
+            "sample_values": "Tuple(1,-1,1)",
+            "window_range": "Interval(-1,1)"
+          },
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "a:cos3",
+          "operation": {
+            "kind": "trig-features",
+            "family": "cos",
+            "angle_unit": "radian",
+            "operands": [
+              "1",
+              "3",
+              "0",
+              "0",
+              "2*pi"
+            ],
+            "at": [
+              "0",
+              "pi/3",
+              "2*pi/3",
+              "pi",
+              "4*pi/3",
+              "5*pi/3",
+              "2*pi"
+            ]
+          },
+          "check_mode": "sketch",
+          "method": "Independently derive amplitude from absolute output scale,positive period from angular unit/input multiplier,and exact zeros,extrema,poles and endpoint values from the given function. Compare the specifically transcribed source graph/table features; do not join tangent branches across poles. Global and displayed-interval ranges remain distinct.",
+          "printed_key_features": {
+            "sample_values": "Tuple(1,-1,1,-1,1,-1,1)",
+            "amplitude": "1",
+            "period": "2*pi/3"
+          },
+          "question_formula_normalised": "cos(3*x)",
+          "printed_key_formula_normalised": "3*cos(x)",
+          "source_graph_comparison": "The drawn high-frequency curve has amplitude 1 and three cycles, as cos3θ should. The rendered equation label incorrectly says 3cosθ; retain a label defect, not an incorrect curve-shape claim.",
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "first-turning-point-right",
+            "operands": [
+              "cos(x)",
+              "0",
+              "2*pi"
+            ]
+          },
+          "printed_key_normalised": "pi",
+          "method": "Cosine is strictly decreasing from 1 to −1 on [0,π]. Its first interior turning point to the right is π, so increasing k beyond π repeats nearby ordinates and prevents an inverse.",
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:6",
+      "source_pdf_page": 223,
+      "notes": "Solve (a) 3tanx=2/cosx on −90°<x<90°; (b) tan(2y/3)+1=0 on 0°≤y≤360°. The actual second argument multiplier is the simple fraction 2/3.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02",
+        "8227:2020:M1:T6:O05:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Solve (a) 3tanx=2/cosx on −90°<x<90°; (b) tan(2y/3)+1=0 on 0°≤y≤360°. The actual second argument multiplier is the simple fraction 2/3.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Solve (a) 3tanx=2/cosx on −90°<x<90°; (b) tan(2y/3)+1=0 on 0°≤y≤360°. The actual second argument multiplier is the simple fraction 2/3.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Solve (a) 3tanx=2/cosx on −90°<x<90°; (b) tan(2y/3)+1=0 on 0°≤y≤360°. The actual second argument multiplier is the simple fraction 2/3.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "3*tan((x*pi/180))-2/cos((x*pi/180))",
+              "-90",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "source_ratio_branches": [
+            {
+              "function": "sin",
+              "argument": "x",
+              "ratio": "2/3",
+              "power": 1,
+              "angle_unit": "degree"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "degree",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_approximate_values": [
+            "41.8"
+          ],
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "tan(2*(x*pi/180)/3)+1",
+              "0",
+              "360"
+            ],
+            "left_open": false,
+            "right_open": false
+          },
+          "source_ratio_branches": [
+            {
+              "function": "tan",
+              "argument": "2*x/3",
+              "ratio": "-1",
+              "power": 1,
+              "angle_unit": "degree"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "degree",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_normalised": "FiniteSet(405/2)",
+          "source_pdf_page": 223,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:7",
+      "source_pdf_page": 224,
+      "notes": "Prove the stated rational cosine identity, retaining its common domain; hence solve sinθ times that difference =3 on 0°<θ<360°. The original sine-zero poles cannot be solutions.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O05:D01",
+        "8227:2020:M1:T6:O05:D02",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Prove the stated rational cosine identity, retaining its common domain; hence solve sinθ times that difference =3 on 0°<θ<360°. The original sine-zero poles cannot be solutions.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Prove the stated rational cosine identity, retaining its common domain; hence solve sinθ times that difference =3 on 0°<θ<360°. The original sine-zero poles cannot be solutions.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Prove the stated rational cosine identity, retaining its common domain; hence solve sinθ times that difference =3 on 0°<θ<360°. The original sine-zero poles cannot be solutions.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "trig-identity-residual",
+            "operands": [
+              "(1+cos(x))/(1-cos(x))-(1-cos(x))/(1+cos(x))",
+              "4/(sin(x)*tan(x))"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "check_mode": "show/prove",
+          "proof_expressions": [
+            "(1+cos(x))/(1-cos(x))-(1-cos(x))/(1+cos(x))",
+            "4*cos(x)/sin(x)**2",
+            "4/(sin(x)*tan(x))"
+          ],
+          "original_common_domain": "sin(x) != 0 and cos(x) != 0; this retains the domain of both original sides, including the defined tangent",
+          "review_date": "2026-11-18",
+          "method": "Independently check every stated transformation and substitution. For an equation reduction, retain any original denominator restriction when clearing it; equality of residual expressions is not permission to add original poles to the solution set.",
+          "normalisation_note": "Zero verifies the independently derived expression difference; it is not a verbatim numerical key answer.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "sin((x*pi/180))*((1+cos((x*pi/180)))/(1-cos((x*pi/180)))-(1-cos((x*pi/180)))/(1+cos((x*pi/180))))-3",
+              "0",
+              "360"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "source_ratio_branches": [
+            {
+              "function": "tan",
+              "argument": "x",
+              "ratio": "4/3",
+              "power": 1,
+              "angle_unit": "degree"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "degree",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_approximate_values": [
+            "53.1",
+            "233.1"
+          ],
+          "dependency": {
+            "source_part": "a",
+            "role": "Hence use the proved identity, while preserving the original equation denominator conditions."
+          },
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:8",
+      "source_pdf_page": 224,
+      "notes": "Given x=asin(2/5), find cos²x and tan²x exactly. The squared answers do not assess principal-sign selection or a proof.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T3:O02:D05"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Given x=asin(2/5), find cos²x and tan²x exactly. The squared answers do not assess principal-sign selection or a proof.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "not applicable",
+          "quoted_value": "Given x=asin(2/5), find cos²x and tan²x exactly. The squared answers do not assess principal-sign selection or a proof.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Given x=asin(2/5), find cos²x and tan²x exactly. The squared answers do not assess principal-sign selection or a proof.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "1-(2/5)**2"
+            ]
+          },
+          "printed_key_normalised": "21/25",
+          "method": "From x=asin(2/5), sinx=2/5. The identity cos²x=1−sin²x gives 21/25. Because the requested output is squared, no quadrant/sign decision is demonstrated.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(2/5)**2/(1-(2/5)**2)"
+            ]
+          },
+          "printed_key_normalised": "4/21",
+          "method": "Divide the known sin²x by cos²x to get tan²x=4/21. This is exact identity evaluation, not a request to prove an identity.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "direct_demand_aspects": {
+        "8227:2020:M2:T3:O02:D05": "Basic exact evaluation using sin²x+cos²x=1 and tan²x=sin²x/cos²x; this supports one elementary aspect of the broader Module 2 identity demand, not its full compound/double-angle breadth."
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:9",
+      "source_pdf_page": 224,
+      "notes": "Prove (sinx+cosx)(1−sinx cosx)=sin³x+cos³x; then solve the same left side =9sin³x on 0°≤x≤360°. The identity reduces this to cos³x=8sin³x.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O05:D01",
+        "8227:2020:M1:T6:O05:D02",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Prove (sinx+cosx)(1−sinx cosx)=sin³x+cos³x; then solve the same left side =9sin³x on 0°≤x≤360°. The identity reduces this to cos³x=8sin³x.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Prove (sinx+cosx)(1−sinx cosx)=sin³x+cos³x; then solve the same left side =9sin³x on 0°≤x≤360°. The identity reduces this to cos³x=8sin³x.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Prove (sinx+cosx)(1−sinx cosx)=sin³x+cos³x; then solve the same left side =9sin³x on 0°≤x≤360°. The identity reduces this to cos³x=8sin³x.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "trig-identity-residual",
+            "operands": [
+              "(sin(x)+cos(x))*(1-sin(x)*cos(x))",
+              "sin(x)**3+cos(x)**3"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "check_mode": "show/prove",
+          "proof_expressions": [
+            "(sin(x)+cos(x))*(1-sin(x)*cos(x))",
+            "sin(x)+cos(x)-sin(x)**2*cos(x)-sin(x)*cos(x)**2",
+            "sin(x)*(1-cos(x)**2)+cos(x)*(1-sin(x)**2)",
+            "sin(x)**3+cos(x)**3"
+          ],
+          "original_common_domain": "all real x",
+          "review_date": "2026-11-18",
+          "method": "Independently check every stated transformation and substitution. For an equation reduction, retain any original denominator restriction when clearing it; equality of residual expressions is not permission to add original poles to the solution set.",
+          "normalisation_note": "Zero verifies the independently derived expression difference; it is not a verbatim numerical key answer.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "(sin((x*pi/180))+cos((x*pi/180)))*(1-sin((x*pi/180))*cos((x*pi/180)))-9*sin((x*pi/180))**3",
+              "0",
+              "360"
+            ],
+            "left_open": false,
+            "right_open": false
+          },
+          "source_ratio_branches": [
+            {
+              "function": "tan",
+              "argument": "x",
+              "ratio": "1/2",
+              "power": 1,
+              "angle_unit": "degree"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "degree",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_approximate_values": [
+            "26.6",
+            "206.6"
+          ],
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:10",
+      "source_pdf_page": 224,
+      "notes": "Given the tanx and cosx intersection diagram on 0≤x≤π, calculate the left intersection A x-coordinate and both coordinates of right intersection B. The tangent pole at π/2 is excluded.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O02:D02",
+        "8227:2020:M1:T6:O05:D02",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Given the tanx and cosx intersection diagram on 0≤x≤π, calculate the left intersection A x-coordinate and both coordinates of right intersection B. The tangent pole at π/2 is excluded.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "Given the tanx and cosx intersection diagram on 0≤x≤π, calculate the left intersection A x-coordinate and both coordinates of right intersection B. The tangent pole at π/2 is excluded.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "Given the tanx and cosx intersection diagram on 0≤x≤π, calculate the left intersection A x-coordinate and both coordinates of right intersection B. The tangent pole at π/2 is excluded.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b:x",
+        "b:y"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "asin(((sqrt(5)-1)/2))"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "333/500",
+          "method": "At either intersection tanx=cosx, and cosx cannot vanish. Thus sinx=cos²x=1−sin²x. Of the two quadratic roots, only s=(√5−1)/2 is a sine value. The left point A is in (0,π/2), so xA=asin(s). Round to the key three significant figures only after deriving it.",
+          "additional_operations": {
+            "all_original_intersections": {
+              "kind": "bounded-trig-equation",
+              "operands": [
+                "tan(x)-cos(x)",
+                "0",
+                "pi"
+              ]
+            }
+          },
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b:x",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "pi-asin(((sqrt(5)-1)/2))"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "62/25",
+          "method": "The right point B is in (π/2,π), so xB=π−asin(s); round the derived value to three significant figures.",
+          "source_assessed_part_id": "b",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b:y",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "cos(pi-asin(((sqrt(5)-1)/2)))"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "-393/500",
+          "method": "Evaluate the original cosine at the right intersection, so yB is negative. Independently yB²=sinxB=s and yB=−√s. Round only at the end.",
+          "source_assessed_part_id": "b",
+          "assertions": [
+            {
+              "expression": "cos(pi-asin(((sqrt(5)-1)/2)))+sqrt(((sqrt(5)-1)/2))",
+              "expected": "0"
+            }
+          ],
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Exercise-4.2:11",
+      "source_pdf_page": 224,
+      "notes": "For a=sinθ−3cosθ and b=3sinθ+cosθ on 0°≤θ≤360°, (a) show a²+b² is constant and find it; (b) solve 2a=b. Expansion gives invariant 10 and the equation sinθ+7cosθ=0.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O05:D01",
+        "8227:2020:M1:T6:O05:D02",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Only requested results or required methods are assessed. A sketch root count does not ask for a numerical root estimate. Squared-ratio evaluation is not an identity proof. The independent solution method does not invent a separately assessed demand.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "For a=sinθ−3cosθ and b=3sinθ+cosθ on 0°≤θ≤360°, (a) show a²+b² is constant and find it; (b) solve 2a=b. Expansion gives invariant 10 and the equation sinθ+7cosθ=0.",
+          "reason": "Actual bounded-equation argument multipliers are 1, 2, or the simple fraction 2/3; a graph-only cos3θ task is not an equation multiplier restriction."
+        },
+        {
+          "rule_id": "8227:LIMIT02",
+          "status": "within",
+          "quoted_value": "For a=sinθ−3cosθ and b=3sinθ+cosθ on 0°≤θ≤360°, (a) show a²+b² is constant and find it; (b) solve 2a=b. Expansion gives invariant 10 and the equation sinθ+7cosθ=0.",
+          "reason": "The actual finite interval is retained wherever roots are requested; no general solution is introduced into a bounded task."
+        },
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "not applicable",
+          "quoted_value": "For a=sinθ−3cosθ and b=3sinθ+cosθ on 0°≤θ≤360°, (a) show a²+b² is constant and find it; (b) solve 2a=b. Expansion gives invariant 10 and the equation sinθ+7cosθ=0.",
+          "reason": "No inverse function is constructed; question 8 squared outputs do not assess principal-sign selection."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Exercise 4.2, with Basic/Intermediate/Advanced headings, before the separately labelled exam-style section. Difficulty labels alone do not establish examination style.",
+      "precision_angle_check": {
+        "source": "Degrees and radians are stated per question, except the missing interval/unit in 3(b). Decimal key values are compared at their written precision; exact π values remain exact.",
+        "comparison": "Root-count tasks keep their graphical demand even when the author verifies algebraically. Q10 uses radian π axes; coordinate components are rounded independently."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(sin(x)-3*cos(x))**2+(3*sin(x)+cos(x))**2"
+            ]
+          },
+          "printed_key_normalised": "10",
+          "method": "Expand the original two squares: cross terms cancel and the remaining 10(sin²θ+cos²θ) equals 10 for every θ. This establishes the requested invariant, not merely one numerical example.",
+          "check_mode": "show/prove",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "2*(sin((x*pi/180))-3*cos((x*pi/180)))-(3*sin((x*pi/180))+cos((x*pi/180)))",
+              "0",
+              "360"
+            ],
+            "left_open": false,
+            "right_open": false
+          },
+          "source_ratio_branches": [
+            {
+              "function": "tan",
+              "argument": "x",
+              "ratio": "-7",
+              "power": 1,
+              "angle_unit": "degree"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "degree",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_approximate_values": [
+            "98.1",
+            "278.1"
+          ],
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-614-615-full.png",
+            "sha256": "62ce501b963895fd995433640fb00590ce3e1158e2779b274456bdb4fbe9fe35"
+          }
+        }
+      ]
+    }
+  ]
+}

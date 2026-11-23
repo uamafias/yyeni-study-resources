@@ -1,0 +1,907 @@
+{
+  "scope": "Every retained8G2/3/6/9/10/11/12response;prescribed versus extra methods explicit.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:2",
+      "source_pdf_page": 224,
+      "notes": "Find both axis intercepts and hence sketch(2−x)e^(−x),then use the explicitly required parts method for its first-quadrant area. Intercepts/sketch are prescribed;the area result is supporting QA with the original method condition intact.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O05:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Find both axis intercepts and hence sketch(2−x)e^(−x),then use the explicitly required parts method for its first-quadrant area. Intercepts/sketch are prescribed;the area result is supporting QA with the original method condition intact.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Find both axis intercepts and hence sketch(2−x)e^(−x),then use the explicitly required parts method for its first-quadrant area. Intercepts/sketch are prescribed;the area result is supporting QA with the original method condition intact.",
+        "excluded_or_qualified_parts": [
+          "iii:explicit integration-by-parts requirement."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "The retained symbolic results are exact unless an individual response records a printed approximation. No unstated rounding or physical unit is imposed.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-intercepts",
+        "ii-sketch",
+        "iii-area"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-intercepts",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(solve((2-x)*exp(-x),x)[0],((2-x)*exp(-x)).subs(x,0))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(2,2)",
+          "method": "The exponential is strictly positive,so the sole xintercept is(2,0);the yintercept is(0,2). The response stores their two nonzero coordinate values in that order.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-sketch",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Draw the continuous curve through(0,2)and(2,0),decreasing to a minimum(3,−e^(−3)),then increasing towardy=0from below.",
+          "author_derivation": "The derivative is(x−3)e^(−x),so its sign changes only at3. Asx→−∞the curve rises without bound;asx→∞it tends to0from below. The source key shows the intercepts,bounded right-hand minimum and the right asymptotic approach. The requested sketch is of the original full real-domain formula;no artificial endpoint at2is introduced.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff((2-x)*exp(-x),x)"
+              ]
+            },
+            "stationary_ordinate": {
+              "kind": "identity",
+              "operands": [
+                "((2-x)*exp(-x)).subs(x,3)"
+              ]
+            },
+            "right_limit": {
+              "kind": "identity",
+              "operands": [
+                "limit((2-x)*exp(-x),x,oo)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "derivative": "(x-3)*exp(-x)",
+            "stationary_ordinate": "-exp(-3)",
+            "right_limit": "0"
+          },
+          "source_dependency_edges": [
+            {
+              "from": "i-intercepts",
+              "type": "cue",
+              "cue": "Hence sketch",
+              "role": "Use both axis intercepts;source provides no official sketch-award table here."
+            }
+          ],
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii-area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(2-x)*exp(-x)",
+              "0",
+              "2"
+            ]
+          },
+          "printed_key_normalised": "1+exp(-2)",
+          "method": "The bounded first-quadrant region is0≤x≤2. Its exact positive area is1+e^(−2),as independently checked from the original curve. The original explicitly requires integration by parts;that additional method is not erased by retaining the prescribed sketch and intercept parts.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "direct_demand_aspects": [
+        {
+          "demand_id": "8227:2020:M1:T3:O05:D01",
+          "assessed_facet": "iandii:intercepts and full curve sketch;not the forced method iniii."
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:3",
+      "source_pdf_page": 224,
+      "notes": "Sketchxsinxon0..πand shade its positive area,then calculate that area using the required integration-by-parts method. The sketch is prescribed;the method-specific integral is additional.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O05:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Sketchxsinxon0..πand shade its positive area,then calculate that area using the required integration-by-parts method. The sketch is prescribed;the method-specific integral is additional.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Sketchxsinxon0..πand shade its positive area,then calculate that area using the required integration-by-parts method. The sketch is prescribed;the method-specific integral is additional.",
+        "excluded_or_qualified_parts": [
+          "ii:explicit integration by parts."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "The retained symbolic results are exact unless an individual response records a printed approximation. No unstated rounding or physical unit is imposed.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-sketch-shade",
+        "ii-area"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-sketch-shade",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "On0≤x≤π,sketch one positive lobe ofy=xsinxwith zeros at0andπ,and shade the region between the curve and the xaxis.",
+          "author_derivation": "The sine is positive in the open interval,so the whole requested region is above the axis. At0the slope is0;atπit is−π. The derivative sinx+xcosxis positive on(0,π/2). On(π/2,π),its sole zero satisfies tanx=−x,since tanx+xstrictly increases from−∞toπ. Thus the lobe has one maximum. The key depicts that shape without an exact peak coordinate requirement.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoints": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((x*sin(x)).subs(x,0),(x*sin(x)).subs(x,pi))"
+              ]
+            },
+            "endpoint_gradients": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(x*sin(x),x).subs(x,0),diff(x*sin(x),x).subs(x,pi))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoints": "Tuple(0,0)",
+            "endpoint_gradients": "Tuple(0,-pi)"
+          },
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "x*sin(x)",
+              "0",
+              "pi"
+            ]
+          },
+          "printed_key_normalised": "pi",
+          "method": "The positive area equals the proper integral on0..π. Its primitive−xcosx+sinxgivesπ. The source forces integration by parts;the result is checked internally without changing that original method demand.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:6",
+      "source_pdf_page": 224,
+      "notes": "Find the area bounded by the negative xaxis andx√(x+1),first by parts and then by the namedu=x+1substitution. Both outputs equal4/15and are supporting method-boundary evidence.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "prerequisite/supporting context or boundary-method evidence;no direct8227coverage claimed",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "outside",
+          "quoted_value": "(i)using integration by parts;(ii)using the substitutionu=x+1.",
+          "parts": [
+            "required source method"
+          ],
+          "reason": "Both explicit source methods remain additional even though direct linear-power integration can verify the mathematical area."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Find the area bounded by the negative xaxis andx√(x+1),first by parts and then by the namedu=x+1substitution. Both outputs equal4/15and are supporting method-boundary evidence.",
+        "excluded_or_qualified_parts": [
+          "Both source responses force additional methods;the direct linear-power rewrite is an independent author check."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Real interval−1..0;the finite zero at−1is not an integrand pole. The area is exact and positive.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-parts",
+        "ii-named-substitution"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-parts",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "-x*sqrt(x+1)",
+              "-1",
+              "0"
+            ]
+          },
+          "printed_key_normalised": "Rational(4,15)",
+          "method": "The curve is below the xaxis on−1<x<0,so geometric area is minus its signed integral. Rewrite x=(x+1)−1and integrate linear powers to independently obtain4/15. The original explicitly requires integration by parts. Both original method requirements remain additional;the valid direct rewrite does not silently replace them.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-named-substitution",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "-x*sqrt(x+1)",
+              "-1",
+              "0"
+            ]
+          },
+          "printed_key_normalised": "Rational(4,15)",
+          "method": "The curve is below the xaxis on−1<x<0,so geometric area is minus its signed integral. Rewrite x=(x+1)−1and integrate linear powers to independently obtain4/15. The original explicitly requiresu=x+1. Both original method requirements remain additional;the valid direct rewrite does not silently replace them.",
+          "source_pdf_page": 224,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:9",
+      "source_pdf_page": 225,
+      "notes": "The integral condition leads to the printed fixed-point equationx=2+e^(−x/2). Retain its graph/uniqueness proof,2..2.5bracket and supplied iteration with4decimal-place displays and2decimal-place answer;the initial product integration remains extra.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": true,
+      "exam_style": true,
+      "exam_style_basis": "The textbook prints this examination attribution: Cambridge9709Paper3Q9November2008. It was checked on the textbook render;the primary paper was not read here.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "The integral condition leads to the printed fixed-point equationx=2+e^(−x/2). Retain its graph/uniqueness proof,2..2.5bracket and supplied iteration with4decimal-place displays and2decimal-place answer;the initial product integration remains extra.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "The integral condition leads to the printed fixed-point equationx=2+e^(−x/2). Retain its graph/uniqueness proof,2..2.5bracket and supplied iteration with4decimal-place displays and2decimal-place answer;the initial product integration remains extra.",
+        "excluded_or_qualified_parts": [
+          "i:unscaffolded product integration;ii–ivuse its explicitly printed target equation."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Part(iv)requires each iteration to4decimal places andato2decimal places. The full-precision internal trace and final rounding-cell certificate are recorded separately.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-fixed-point-equation",
+        "ii-unique-root-sketch",
+        "iii-bracket",
+        "iv-iteration"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-fixed-point-equation",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "The stated integral condition impliesa=2+e^(−a/2).",
+          "author_derivation": "For supporting QA,∫₀ᵃxe^(x/2)dx=(2a−4)e^(a/2)+4. Setting this to6gives(a−2)e^(a/2)=1,and division by the positive exponential gives the displayed fixed-point equation. Deriving this unscaffolded product integral is extra. The equation itself is explicitly printed as the result to use in later parts.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "candidate_primitive": {
+              "kind": "identity",
+              "operands": [
+                "diff((2*x-4)*exp(x/2),x)-x*exp(x/2)"
+              ]
+            },
+            "fixed_point_rearrangement": {
+              "kind": "identity",
+              "operands": [
+                "((2*x-4)*exp(x/2)+4-6)/(2*exp(x/2))-(x-2-exp(-x/2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "candidate_primitive": "0",
+            "fixed_point_rearrangement": "0"
+          },
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 225,
+          "answer_printed_page": 211,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-unique-root-sketch",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Sketch the increasing liney=xand strictly decreasingy=2+e^(−x/2);they intersect exactly once,between2and2.5.",
+          "author_derivation": "Forx≤2,the exponential curve is strictly above2≥x,so there is no intersection there. Onx>2the line increases and the other curve decreases towardy=2. Their differencex−2−e^(−x/2)has strictly positive derivative1+½e^(−x/2). Its signs at2and2.5are opposite,so continuity gives one intersection and monotonicity gives uniqueness. The source key shows these two graphs,including exponential intercept3.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "exp_intercept": {
+              "kind": "identity",
+              "operands": [
+                "(2+exp(-x/2)).subs(x,0)"
+              ]
+            },
+            "derivative_difference": {
+              "kind": "identity",
+              "operands": [
+                "diff(x-2-exp(-x/2),x)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exp_intercept": "3",
+            "derivative_difference": "1+exp(-x/2)/2"
+          },
+          "source_dependency_edges": [
+            {
+              "from": "i-fixed-point-equation",
+              "type": "cue",
+              "cue": "this equation",
+              "role": "Use the displayed result,without needing to reproduce the extra integral method."
+            }
+          ],
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii-bracket",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "ForF(x)=x−2−e^(−x/2),F(2)=−e^(−1)<0andF(2.5)=½−e^(−5/4)>0;the continuous root lies between2and2.5.",
+          "author_derivation": "Both endpoints are in the full real domain;the sign change and continuity certify a root. Part(ii)provides the separate uniqueness argument. Opposite endpoint signs alone would not prove uniqueness.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((x-2-exp(-x/2)).subs(x,2)),sign((x-2-exp(-x/2)).subs(x,Rational(5,2))))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "Tuple(-1,1)"
+          },
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 225,
+          "answer_printed_page": 211,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv-iteration",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x-2-exp(-x/2)",
+              "2",
+              "5/2"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "2.31",
+          "method": "Execute the explicitly supplied fixed-point relationxₙ₊₁=2+e^(−xₙ/2). The source does not prescribe a start;this trace labels the author startx₀=2. Keep full internal states,display each iterate to4decimal places,and certify the final2decimal-place cell against the original fixed-point residual. A separate bracketed root and Ridder comparison check the final answer.",
+          "iteration_trace": {
+            "formula": "2+exp(-x/2)",
+            "start": "2",
+            "original_equation": "x-2-exp(-x/2)",
+            "original_target_bracket": [
+              "2",
+              "5/2"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "2.0",
+                "display": "2.0000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "2.3678794411714423215955237701614608674458111310317678345078368016974614957448998",
+                "display": "2.3679"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "2.3060705277983554083641152673255876212474421146636999836217876914840849005934089",
+                "display": "2.3061"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "2.3156771503090983083034227291381367303653228570352358363938956139105209714018025",
+                "display": "2.3157"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "2.3141644904962215477628076673621772894999685731765832947353457486822212022824359",
+                "display": "2.3142"
+              },
+              {
+                "index_one_based": 6,
+                "unrounded": "2.3144021923751135797548503656835708418773315649668611749682875112681339703512595",
+                "display": "2.3144"
+              }
+            ],
+            "answer": "2.31",
+            "certified_rounding_cell": [
+              "2.305",
+              "2.315"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_dependency_edges": [
+            {
+              "from": "i-fixed-point-equation",
+              "type": "cue",
+              "cue": "based on the equation in part(i)",
+              "role": "The equation is given explicitly;no new rearrangement need be selected."
+            }
+          ],
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:10",
+      "source_pdf_page": 225,
+      "notes": "Find the maximum input ofe^(−x/2)√(1+2x),then rotate the given left-of-axis regionRabout the xaxis. Retain the maximum directly;the volume result/setup is internally checked with the extra product-integration demand explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O02:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "The textbook prints this examination attribution: Cambridge9709Paper3Q9June2008. It was checked on the textbook render;the primary paper was not read here.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Find the maximum input ofe^(−x/2)√(1+2x),then rotate the given left-of-axis regionRabout the xaxis. Retain the maximum directly;the volume result/setup is internally checked with the extra product-integration demand explicit.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        },
+        {
+          "rule_id": "8227:QUAL06",
+          "status": "within",
+          "parts": [
+            "ii-setup"
+          ],
+          "quoted_value": "Rrotated completely about the xaxis;−1/2≤x≤0.",
+          "reason": "The rotation axis is a coordinate axis. The separate integration-method extension is not an axis restriction."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Find the maximum input ofe^(−x/2)√(1+2x),then rotate the given left-of-axis regionRabout the xaxis. Retain the maximum directly;the volume result/setup is internally checked with the extra product-integration demand explicit.",
+        "excluded_or_qualified_parts": [
+          "ii:unscaffolded polynomial-exponential integration after the prescribed volume setup."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "The retained symbolic results are exact unless an individual response records a printed approximation. No unstated rounding or physical unit is imposed.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-maximum-input",
+        "ii-volume"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-maximum-input",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(diff(exp(-x/2)*sqrt(1+2*x),x),x)[0]"
+            ]
+          },
+          "printed_key_normalised": "Rational(1,2)",
+          "method": "The real domain isx≥−1/2. On its interior,the derivative ise^(−x/2)(1−2x)/(2√(1+2x)),with sole zerox=1/2. It is positive before1/2and negative afterwards. The curve is0at−1/2and tends to0asx→∞,so this point is the global maximum.",
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-volume",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "pi*(1+2*x)*exp(-x)",
+              "-1/2",
+              "0"
+            ]
+          },
+          "printed_key_normalised": "pi*(2*sqrt(E)-3)",
+          "method": "The source regionRlies betweenx=−1/2and0,to the left of the yaxis. Rotating about the xaxis givesπ∫_(−1/2)^0y²dxwithy²=(1+2x)e^(−x). Its exact value isπ(2√e−3). This unscaffolded polynomial-exponential integration is additional,while the volume setup and given geometry remain valuable supporting evidence.",
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:11",
+      "source_pdf_page": 225,
+      "notes": "Forf(x)=3xe^(−2x),evaluatef′(−1/2)exactly and separately integrateffrom−1/2to0. The derivative is directly prescribed;the unscaffolded product integral is retained as supporting QA.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O02:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "The textbook prints this examination attribution: Cambridge9709Paper33Q5November2012. It was checked on the textbook render;the primary paper was not read here.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Forf(x)=3xe^(−2x),evaluatef′(−1/2)exactly and separately integrateffrom−1/2to0. The derivative is directly prescribed;the unscaffolded product integral is retained as supporting QA.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Forf(x)=3xe^(−2x),evaluatef′(−1/2)exactly and separately integrateffrom−1/2to0. The derivative is directly prescribed;the unscaffolded product integral is retained as supporting QA.",
+        "excluded_or_qualified_parts": [
+          "ii:unscaffolded product integration;the source requests a derivative value in(i),not a given primitive for(ii)."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "The retained symbolic results are exact unless an individual response records a printed approximation. No unstated rounding or physical unit is imposed.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-derivative-value",
+        "ii-signed-integral"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-derivative-value",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(3*x*exp(-2*x),x).subs(x,-Rational(1,2))"
+            ]
+          },
+          "printed_key_normalised": "6*E",
+          "method": "Differentiate the original product to3e^(−2x)(1−2x)and only then substitute−1/2. The exact derivative value is6e;there is no implicit or parametric differentiation here.",
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-signed-integral",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "3*x*exp(-2*x)",
+              "-1/2",
+              "0"
+            ]
+          },
+          "printed_key_normalised": "-Rational(3,4)",
+          "method": "The original function is negative on−1/2<x<0,so the requested signed integral is negative. Its exact value is−3/4. The unscaffolded polynomial-exponential primitive is additional;do not replace the signed answer by positive area3/4.",
+          "source_pdf_page": 225,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8G:12",
+      "source_pdf_page": 226,
+      "notes": "Find themx+ctangent to√xlnxatx=1,and then the volume when the given shaded region1..eis rotated about the xaxis. The tangent is prescribed;the volume is internal method-boundary evidence.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "The textbook prints this examination attribution: Cambridge9709Paper32Q9June2012. It was checked on the textbook render;the primary paper was not read here.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Find themx+ctangent to√xlnxatx=1,and then the volume when the given shaded region1..eis rotated about the xaxis. The tangent is prescribed;the volume is internal method-boundary evidence.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        },
+        {
+          "rule_id": "8227:QUAL06",
+          "status": "within",
+          "parts": [
+            "ii-setup"
+          ],
+          "quoted_value": "Rbetween the curve,the xaxis andx=e,rotated about the xaxis.",
+          "reason": "The axis is permitted. Its extra integration method is a separate limitation."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Find themx+ctangent to√xlnxatx=1,and then the volume when the given shaded region1..eis rotated about the xaxis. The tangent is prescribed;the volume is internal method-boundary evidence.",
+        "excluded_or_qualified_parts": [
+          "ii:unscaffolded logarithmic product integration."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "The retained symbolic results are exact unless an individual response records a printed approximation. No unstated rounding or physical unit is imposed.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-tangent",
+        "ii-volume"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-tangent",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "simplify((sqrt(x)*log(x)).subs(x,1)+diff(sqrt(x)*log(x),x).subs(x,1)*(x-1))"
+            ]
+          },
+          "printed_key_normalised": "x-1",
+          "method": "On the original domainx>0,the curve passes through(1,0). Its derivative ln(x)/(2√x)+1/√xhas value1atx=1. Thus the tangent isy=x−1,in the requestedmx+cform.",
+          "source_pdf_page": 226,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-volume",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "pi*x*log(x)**2",
+              "1",
+              "E"
+            ]
+          },
+          "printed_key_normalised": "pi*(E**2-2)/4",
+          "method": "The shaded region is1≤x≤eabove the xaxis,so xaxis rotation givesπ∫₁ᵉxln²x dx. Direct independent integration givesπ(e²−1)/4;the source key incorrectly printsπ(e²−2)/4. The squared logarithm needs extra unscaffolded integration methods;the prescribed tangent in(i)is independent of that demand.",
+          "known_source_defect": "TB-Goldie-C8-8G12-VOLUME-KEY",
+          "author_correct_normalised": "pi*(E**2-1)/4",
+          "additional_operations": {
+            "primitive_derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(pi*x**2*(log(x)**2/2-log(x)/2+Rational(1,4)),x)-pi*x*log(x)**2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "primitive_derivative": "0"
+          },
+          "source_pdf_page": 226,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-224.png",
+            "sha256": "c6e90e879e7a3b319be97e611034352887e9dc355308ecb358f8fa02c301936f"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

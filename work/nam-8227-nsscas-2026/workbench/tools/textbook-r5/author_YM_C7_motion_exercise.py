@@ -1,0 +1,53 @@
+"""YM366–367: remaining motion practice and Exercise7Basic/Intermediate1–6."""
+import json
+import author_YM_C7_opening as h
+from author_YM_C7_opening import W,SRC,SHA,pp,v,reasoning,fig,figures,compute,expression,equivalent,extra,integral
+from author_YM_C7_volume_opening import ev
+from author_Goldie_C5_opening import definite
+h.answers.clear();h.new.clear();h.corrections.clear();figures.clear()
+answers=h.answers;new=h.new;corrections=h.corrections
+MOTION='8227:2020:M1:T9:O04:D03';DM='8227:2020:M1:T8:O03:D04';POINT='8227:2020:M1:T8:O04:D01';NATURE='8227:2020:M1:T8:O04:D02';SKETCH='8227:2020:M1:T3:O05:D01';TANGENT='8227:2020:M1:T8:O03:D01';CONST='8227:2020:M1:T9:O02:D01';CURVE='8227:2020:M1:T9:O02:D02';AREA='8227:2020:M1:T9:O04:D01';VOL='8227:2020:M1:T9:O04:D02';DEF='8227:2020:M1:T9:O03:D01';INT=h.INT
+def val(label,expr,key,kp,direct,method,components=None,units=None,show=False):
+ p=v(label,expr,key,kp,method);p.update(assessed_8227_demand_ids=direct,component_demand_ids=components or [],given_representation='text',response_format='proof/show-that' if show else 'symbolic')
+ if units:p.update(units=units,printed_key_units=units)
+ if show:p['check_mode']='show/prove'
+ return p
+def add(kind,n,page,note,parts,powers,rep='text'):
+ direct=sorted({d for p in parts for d in p.get('assessed_8227_demand_ids',[])})
+ comp=sorted({d for p in parts for d in p.get('component_demand_ids',[])}-set(direct))
+ r=h.add(kind,n,page,note,parts,direct,comp,powers=powers)
+ r.update(representation=rep,sketch_response_required=any(p.get('response_format')=='sketch' for p in parts),mapping_rationale='Requested operations decide coverage,not placement inside the Integration chapter. Given displacement can support derivative-based motion without demanding another integral. Requested sketches retain response features. Source Basic/Intermediate/Advanced labels are textbook progression,not Bloom,official grades or examination provenance.')
+ for p in parts:p['given_representation']=rep
+ return r
+ps=[val('a-equation','10','10',629,[DM],'Choose DOWNWARDpositive,consistent with ORIGINALgivenacceleration+10m/s². The requested equation isdv/dt=10.',units='m/s^2'),val('b-i-v','integrate(10,t)+8','10*t+8',629,[MOTION],'Integrate originalacceleration,thenusev(1)=18togetconstant8. The initialconditionisatt1,notatt0.',[INT,CONST],'m/s'),val('b-ii-initial-v','(10*t+8).subs(t,0)','8',629,[MOTION],'Evaluate the independently recovered functionatt0 to showinitialv8m/s. This depends on the nonzero-time datausedin(b)(i).',units='m/s',show=True),val('c-i-s','integrate(10*t+8,t)','5*t**2+8*t',629,[MOTION],'Measure ORIGINALdisplacementfromthetopoftheshaft;s0=0fixesthesecondconstant. Downwardpositivegivespositive shaftdepth.',[INT,CONST],'m'),val('c-ii-depth','(5*t**2+8*t).subs(t,4)','112',629,[MOTION],'At ORIGINALimpacttime4s,the recovereddownwarddisplacementis112m. Velocity10t+8stayspositiveon0..4,so this isalsopositivedepth.',units='m')]
+ps[0]['author_answer_form']='dv/dt=10m/s²,downwardpositive.'
+r=add('Try-Now-39',1,366,'Downwardthrownball,+10acceleration,v(1)=18,impactafter4s:equation,v(t),showninitialv,s(t),shaftdepth112m.',ps,['0','1','2']);r['connected_part_structure']='Nonzero-timevelocityfixes firstconstant;toppositionfixessecondconstant;impacttimefeedsdepth.'
+ps=[val('a-next-rest','solveset(6*t-t**2/2,t,domain=Interval.open(0,oo))','FiniteSet(12)',629,[MOTION],'From ORIGINALa6−tandrestatt0,integratev6t−t²/2. NEXTrestexcludesinitial0,giving12s.',[INT,CONST],'s'),val('b-OA','integrate(6*t-t**2/2,(t,0,12))','144',629,[MOTION],'v=t(12−t)/2is nonnegativeontheactualjourney0..12. ThereforedistanceOAequalstheintegral144m.',[INT],'m'),val('c-max-speed','(6*t-t**2/2).subs(t,solve(6-t,t)[0])','18',629,[POINT,NATURE],'MaximumSPEEDisrestrictedtoO→A,0..12,wherev≥0. Acceleration0att6gives18m/s;endpointvelocities0andsignedsecondderivative−1confirmmaximum.',[DM],'m/s')]
+add('Try-Now-39',2,366,'Rest-to-restjourneywitha6−t:nextrest12s,distance144m,maxspeed18m/sontheboundedjourney.',ps,['1','2','0'])
+ps=[val('a-i-v','diff(3*t**2/10-t**3/100,t)','3*t/5-3*t**2/100',629,[DM],'Differentiate the ORIGINALgivendisplacement3t²/10−t³/100. No integrationconstant isunknown,because displacementisalreadygiven.',units='m/s'),val('a-ii-a','diff(3*t**2/10-t**3/100,t,2)','Rational(3,5)-3*t/50',629,[DM],'Differentiate ORIGINALdisplacementtwice,orindependentlyrecoveredvelocityonce.',units='m/s^2'),val('b-AT','(3*t**2/10-t**3/100).subs(t,20)','40',629,[DM],'The positive NEXTrestrootofv=3t(20−t)/100is20. v≥0on0..20,so distanceAT=s20−s0=40m. This uses GIVENdisplacement;itdoesnotindependentlyassessfindingadisplacementintegral.',units='m'),val('c-max-v','(3*t/5-3*t**2/100).subs(t,10)','3',629,[POINT,NATURE],'Ontheactualinterval0..20,acceleration3/5−3t/50vanishesatt10. Concavityofv,andendpointvalues0,confirmmaximum3m/s.',[DM],'m/s')]
+p=reasoning('d-sketch','Straight acceleration-time segment a=3/5−3t/50 for0≤t≤20,from(0,3/5)through(10,0)to(20,−3/5). Requestedaxisinterceptsare(0,3/5),(10,0).',
+ 'Use the independently derived ORIGINALacceleration,not the velocityparabola. The slopeis−3/50,verticalunitm/s²,horizontalunitsseconds,andthe explicitdomainisclosed0..20. The sourcekeygraphshows thissegmentandintercepts;noofficialawardtableissupplied.',629,'sketch')
+p.update(assessed_8227_demand_ids=[SKETCH],component_demand_ids=[DM],response_format='sketch',credited_features=['Straightlineofnegative slope−3/50','a-axisintercept(0,3/5)','t-axisintercept(10,0)','Endpoint(20,−3/5),domain0≤t≤20','Correctacceleration/timeaxislabelsandunits'],criteria_basis='Derivedfromequationandcomparedwithprintedkeygraph;notanofficialawardtable.')
+extra(p,'graph-incidences','Tuple((Rational(3,5)-3*t/50).subs(t,0),(Rational(3,5)-3*t/50).subs(t,10),(Rational(3,5)-3*t/50).subs(t,20))','Tuple(Rational(3,5),0,-Rational(3,5))');ps.append(p)
+add('Try-Now-39',3,366,'GIVENbird displacement:derivev/a,travel40mtoitsnextrest,findmaxv,andSKETCHaccelerationwithinterceptsont0..20. Topicplacementdoesnotturnthegivendisplacementevaluationintoanintegrationdemand.',ps,[])
+
+add('Exercise-7',1,367,'SourceBasicLevel:indefiniteintegrals√(3x−1)and(x−2)/x³. Keeporiginalx≥1/3andx≠0respectively,witharbitraryconstants.',[integral('a','sqrt(3*x-1)','2*(3*x-1)**Rational(3,2)/9',630),integral('b','(x-2)/x**3','-1/x+1/x**2',630)],['1/2','−2','−3'])
+ps=[]
+for label,f,lo,hi,key in [('a','1-1/x**3',1,2,'Rational(5,8)'),('b','(3*x-1)**6',1,4,'927954+Rational(3,7)'),('c','1/(3*x+2)**2',0,1,'Rational(1,10)'),('d','(3*x+1)**(-Rational(1,2))',1,5,'Rational(4,3)')]:
+ p=definite(label,f,lo,hi,key,630);p.update(assessed_8227_demand_ids=[DEF],component_demand_ids=[INT],response_format='numeric');ps.append(p)
+add('Exercise-7',2,367,'SourceBasicLevel:fourproperfiniteintegrals. Exactlargeanswerin(b)is927954+3/7,notanunstatedroundeddecimal. Alloriginaldenominatorpoleslieoutsidetheactualbounds.',ps,['0','−3','6','−2','−1/2'])
+ps=[val('stem-gradient','6/3','2',630,[TANGENT],'The ORIGINALtangentthrough(3,6)andtheorigingivesgradient6/3=2. The stemexplicitlyasksSTATETHEGRADIENTbeforeparts(a),(b);do notomitthisrequestedoutput.'),val('a-p','solve(2*3+p-2,p)[0]','-4',630,[TANGENT],'Substitute the SAMEpointabscissa3intotheORIGINALgradientfunction2x+pandequatetotheestablishedtangentgradient2.'),val('b-curve','integrate(2*x-4,x)+9','x**2-4*x+9',630,[CURVE,CONST],'IndependentlyintegrateORIGINALdy/dx=2x+pwithp−4,thenimposecurvepoint(3,6)togetconstant9.',[INT])]
+extra(ps[-1],'point-and-tangent-data','Tuple((x**2-4*x+9).subs(x,3),diff(x**2-4*x+9,x).subs(x,3))','Tuple(6,2)')
+r=add('Exercise-7',3,367,'SourceBasicLevel:explicitstemgradient2,parameterp−4,andfixedcurvefromatangentpassingthroughtheorigin.',ps,['1','0']);r['connected_part_structure']='Stemgradient→p→fixedcurve;allusetheSAMEpoint(3,6).'
+p=val('area','integrate((x-3)**2,(x,0,3))','9',630,[AREA],'The ORIGINALgivenparabolashadesonlyfromy-axisx0totouchingroot3. Integratepositive(x−3)²onthatinterval,notanunboundedwholeparabola.',[DEF,INT],'units^2')
+add('Exercise-7',4,367,'SourceBasicLevel:giveny=(x−3)²shaded0..3hasarea9squareunits.',[p],['2','1','0'],'graph')
+ps=[val('a-area','integrate(6/x**2,(x,1,2))','3',630,[AREA],'AreausesORIGINALpositive6/x²ontheactualnonzerointerval1..2.',[DEF,INT],'units^2'),val('b-volume','pi*integrate((6/x**2)**2,(x,1,2))','21*pi/2',630,[VOL],'Rotate the SAMEregionaboutx;disc radius6/x²squares to36/x⁴. Anareaanswerorunsquaredradiusdoesnotgivethevolume.',[DEF,INT],'units^3')]
+add('Exercise-7',5,367,'SourceIntermediateLevel:TEXT-givenareaandfullx-axisvolumeunder6/x²on1..2. Sameplaneregion,twoexplicitdifferentoutputs.',ps,['−2','−4'])
+ps=[val('a-curve','integrate(16/x**3,x)+12','-8/x**2+12',630,[CURVE,CONST],'IntegrateORIGINAL16/x³andusepoint(1,4)tofixconstant12onthepositivecomponent.',[INT]),val('b-area','integrate(-8/x**2+12,(x,1,2))','8',630,[AREA],'Use the SAMErecoveredcurve,positiveon1..2. Itsareaistheproperintegral8;do notreverttointegratingthegivenderivative16/x³.',[DEF,INT],'units^2')]
+extra(ps[0],'original-derivative-and-point','Tuple(diff(-8/x**2+12,x)-16/x**3,(-8/x**2+12).subs(x,1))','Tuple(0,4)')
+r=add('Exercise-7',6,367,'SourceIntermediateLevel:reconstructcurvefromdy/dxandpoint,thenitsarea. The originalderivativeisNOTtheareaintegrand.',ps,['−3','−2','0']);r['connected_part_structure']='Curvefrom(a)istheactualintegrandin(b).'
+
+fig(100,367,'Exercise7Q4given shifted parabola','y=(x−3)²,labelled(0,9),(3,0),shadingbetweencurveandaxes0..3. Noextra sketchresponse isasked.',[AREA],'graph',[],'Exercise-7:4');figures[-1].update(item_id='8227:TB:YM:C7:Teaching-figure:100',printed_page=pp(367),source_evidence=ev(367),value_level_scope_decisions=[],item_kind='given-figure',parent_item_id='8227:TB:YM:C7:Exercise-7:4')
+pages=[dict(pdf_page=page,printed_page=pp(page),chapter=7,page_status='items enumerated',item_ids=[r['item_id']for r in answers if r['source_pdf_page']==page]+[r['item_id']for r in figures if r['pdf_page']==page],continuation_item_ids=[],source_evidence=ev(page),reader='Codex author',date='2026-11-19',non_item_content='AllTry39Q1–3andExercise7Q1–6enumerated. Try39Q3hasanaskedresponsesketchbutnogivengraphon366. Exercise7Q3hasanexplicitstemgradientoutputinadditionto(a),(b). Basic/Intermediatearesourceprogressionlabels,notBloomorofficialgrades.',scope_screen='Motionwithactualinitialdataandtimebounds;exactproper/indefiniteintegrals,fixedcurves,areasandvolume. Given displacementtasksdonotautomaticallycoverintegration. Alltextbookcontentremainsinternalevidence.')for page in range(366,368)]
+h.pages=pages
+if __name__=='__main__':h.save('motion-exercise','Complete rendered366–367motion/Exercise7Q1–6census;all27requestedresponseschecked.')

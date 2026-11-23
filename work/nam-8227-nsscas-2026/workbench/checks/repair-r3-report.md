@@ -1,0 +1,71 @@
+# Repair round3 — NSSCAS Mathematics8227
+
+17 November2026. AUTHOR: Codex. Owner/final decision-maker: Vitalis. **Focused cross-vendor review pending. Step2 source analysis is not complete because the textbook population/answer work remains open. No step3 PLAN, recipe contract, recipes or runtime generators were created.**
+
+R2 was accepted for its named analysis scope by Opus5.5. This report adds author repairs and new source registers; it is not a new independent acceptance. No commit or push. Both review folders and source PDFs remain read-only. The R2 snapshot was preserved before edits with SHA256 `85b782f9dc620f0b1697c29cb4a4bdf942f345a66abace60fd7c61b6b6f174ee`.
+
+## Finding disposition
+
+| Finding | State | Change / remaining work | Files | Evidence / check |
+|---|---|---|---|---|
+| R2-01 | Author repair complete | Both required diagrams re-cropped; five bleed cases cleaned; containment also corrected other intersecting object boundaries. Asset index now includes all39 crops, not only32 NSSCAS crops. | analysis/assets/; analysis/asset-index.json; tools/check_crop_containment.py | checks/crop-containment.json (39/39); checks/r3/crops-00..04.png; source overlays for2024P1Q9 and2025P1Q12; seeded crop rejection |
+| R2-02 | Deferred to step3 by commissioning prompt | Recipe-branch same-type matching needs reviewed branch demands/response formats. Conservative analysis-group references are not a learner delivery contract. | tools/build_families.py; analysis/problem-patterns.json | No PLAN/contract/recipes created; preserve this finding for step3 |
+| R2-03 | Author repair complete | Eight special-angle additions, four secondary additions and the integration correction. 2021P1Q4(b) directly assesses definite integration1.9.3.1. | tools/repair_inputs.py; analysis/question-analysis.json; analysis/demand-dispositions.json | checks/repair-r3-validation.json; direct links564→576; special angles2→10; thin demands44→42 |
+| R2-04 | Author repair complete | Three missing edges added. Plural graphs resolves to both earlier source parts; explicit part references are scanned individually. Deduce sketch dependency has a recorded override. | tools/build_mapping.py; tools/repair_inputs.py | checks/repair-r3-validation.json; edges76→79, including2023P2Q6a→d,2025P1Q4a→c,2024P2Q11a→c |
+| R2-05 | Author repair complete | Separated and trimmed fixed, variable, relations on55 NSSCAS parts and7 Cambridge diagram items; response-frame requirements separate. | tools/visual_inputs.py; tools/cambridge_inputs.py; analysis/question-analysis.json; analysis/cambridge-evidence.json | checks/repair-r3-validation.json checks all62 non-empty diagram records |
+| R2-06 | Author repair complete | s15/11Q8(iii) relabelled variety; it is not gap-fill. | tools/cambridge_inputs.py; analysis/cambridge-evidence.json | checks/repair-r3-validation.json purpose assertion |
+| R2-07 | Author repair complete | All three held parts have learner_display:false with reasons. Derived-from draft labels are also internal. | tools/build_visual_records.py; analysis/question-analysis.json | Held-reference build fixture must fail with held-reference diagnostic; all held references checked |
+| R2-08 | Bounded author search pass complete; unresolved matches retained | All119 questions submitted to local distinctive-word/value ranking; selected candidates and supplied leads checked. 19 paired-page matches across18 NSSCAS questions. Eight ranked candidates is not eight visually read pages per question. 101 questions remain unresolved. | analysis/nsscas-cambridge-provenance.json/.md; analysis/provenance-search-leads.json; tools/provenance_inputs.py | checks/r3/provenance-01..19.png; source/image hashes and part-specific derived-from links checked; no-match never treated as originality |
+| R13-22 | Author register complete for inspected reports; independent check pending | All2021–2025 Mathematics report sections read. 75 selected convention rules and24 criterion award tables;196 rows including exclusive alternatives. All part/path totals reconcile. 95 questions have no award table. | analysis/marking-conventions.json/.md; tools/convention_inputs.py; tools/award_transcriptions.py | Quote anchors checked against report text;17 rendered award pages inspected; per-part/path tariff assertions; checks/repair-r3-validation.json |
+| R13-23 | PARTIAL — source-analysis completion deferred | 1003 classified source items; full Goldie numbered exercise sets in selected sections and all YM formal/revision sets. All55 sheets in initial164-page visual/gap priority queue inspected. Full Example/Try Now/activity/figure census remains unreconciled;624 heading leads lack linked classified blocks. Further mandatory items and answer checks plus independent10% sample remain required. No stop rule or exhaustive claim. | analysis/textbook-inventory.json/.md; analysis/textbook-reading-r3.json; tools/textbook_inventory_inputs.py; tools/textbook_source_cautions.py | Every catalogued item start has inspected rendered-page evidence; all304 Goldie exercise items reconcile with font census. Candidate evidence is not accepted design evidence; completion method steps1–7 remain the gate |
+
+## Counts and coverage
+
+| Measure | R2 baseline | R3 author state |
+|---|---:|---:|
+| Objectives / demands |60 /138|60 /138|
+| NSSCAS questions / parts / marks |119 /250 /750|119 /250 /750|
+| Direct part-demand links |564|576|
+| Typed dependency edges |76|79|
+| Thin demands (1–2 usable NSSCAS parts) |44|42|
+| Zero usable NSSCAS demands |12|12|
+| Analysis groups (not recipes) |67|67|
+| Verified comparable Cambridge selections |30|30 (provenance pairs are separate)|
+| Source crops indexed |32 NSSCAS;7 Cambridge separately|39 in unified index|
+| Full criterion award-table transcriptions |0|24 questions /196 rows|
+| Examiner convention rules |No systematic register|75 rules /7 retained conflicts|
+| Provenance paired-page records |No register|19 pairs /18 NSSCAS questions|
+| Textbook source items |19 scoped samples (retained separately)|1003 inventory items:304 Goldie /699 YM|
+| Demands with textbook item support |Not measured|136/138 in inspected population|
+
+The twelve-gap NSSCAS list and the separate inflexion facet remain unchanged. Seven direct-demand counts changed:
+
+| Demand | R2 usable parts | R3 usable parts |
+|---|---:|---:|
+| 8227:2020:M1:T6:O03:D01 |2|10|
+| 8227:2020:M1:T8:O02:D02 |2|3|
+| 8227:2020:M1:T9:O01:D02 |10|11|
+| 8227:2020:M1:T9:O03:D01 |16|17|
+| 8227:2020:M2:T3:O02:D01 |4|5|
+| 8227:2020:M2:T3:O02:D03 |4|5|
+| 8227:2020:M2:T5:O01:D01 |6|5|
+
+## Register limits and source judgments
+
+The marking register records source-specific rules, not a universal marking algorithm. General “hence” prose does not erase an explicit SC1 exception. E is normalised to accuracy with establishment still mandatory; DM/DB preserve dependency. Exclusive alternative paths are never added together. Radian mode remains required for2023P2Q7(c); the report degree-mode alternative remains rejected. Paper identity is retained in rule locators and conflict linking. Later rubrics for the95 questions without tables must be labelled derived unless verified official evidence is acquired.
+
+Textbook counts are source items, not unique problem types or certified demand coverage. Repeated textbook/examination questions do not create independent breadth. Textbook originals remain internal (`learner_display:false`). The inventory preserves scope exclusions, partial-scope cases, answer locations/unknowns, and33 items with34 cautions. Some headings are duplicated/continued/OCR-misread, so624 unclassified heading leads are not624 proven unread questions. Both requested syllabus-derived concepts without counted textbook tasks—identity versus equation and radian meaning—have inspected teaching material (YM PDF45 and154); teaching material is not automatically assessed-item coverage.
+
+Goldie selected numbered exercise population is reconciled, including continued question2D14 on PDF69. YM printed127 is duplicated at PDF138/139;139 is not counted again. All13 YM revision/exam-style sections and formal exercise sets were read. The55-sheet priority pass is complete, but its keyword queue cannot establish that every later subpart visual was discovered. Entire-chapter completion stays false. Answer headings discovered by OCR remain explicitly pending image verification; a heading does not prove every answer exists or is correct. Omitted Goldie answer numbers3E3,5B12 and6B2 remain unknown rather than invented.
+
+Representative independent mathematical calculations confirm a false inverse(-2) example (YM PDF119), wrong square-root range (PDF122), wrong inverse-tangent argument in a final line (PDF217), a coordinate typo (PDF298) and10^0.3 printed as1.20 (PDF439). Enlarged renders cleared two suspected problems: PDF118 correctly excludes -1.5, and PDF578 correctly groups the whole numerator1-sin(theta). Neither false alarm remains a source defect. These are author findings for focused review.
+
+Provenance pairs are inferred from distinctive mathematical correspondence, not proof of the examiner’s historical editorial process. The three reviewer-confirmed question leads are included; the repeated May/June2016 row is one shared item across two variants. Only2023P2Q5(b), not its unrelated(a), inherits the matched Cambridge Q6(b);2025P2Q1 maps to Cambridge Q5(a). All39 new part references are internal draft derived-from attributions; PLAN decides learner display. No provenance match closes a curriculum gap automatically.
+
+## Verification and next action
+
+Two rebuilds passed with 99 byte-identical assembly outputs. All four seeded fixtures failed for their specific expected diagnostic (ordered tariff, label alignment, cut text span, learner-displayable held reference), with no changed assembly outputs. Eleven independent source calculation/counterexample checks passed. All39 crops were visually inspected; both required source overlays were inspected against their re-crops.
+
+Reviewer commands were rerun: Cambridge index415 paths /402 distinct hashes /1573 leads /0 unusable; derivative verification16 files /1945 pages and663 OCR identities. Rotated-text warnings are extraction limitations and are retained; rendered-page checking supplies the mathematical/visual evidence. Existing R2 author checks and new R3 checks pass. Hash verification includes both unchanged review folders and source PDFs.
+
+Next: focused cross-vendor check of these repairs/registers, including every new source defect and provenance pair and a seeded10% textbook classification sample. Continue source-analysis completion from `textbook-reading-r3.json`: reconcile the full item/figure population, finish remaining mandatory visual/gap/thin items and answer checks, then establish any legitimate routine stop rule. Only after that work and re-review should step3 create the recipe contract and pilot PLAN. No app/runtime/production acceptance is claimed.

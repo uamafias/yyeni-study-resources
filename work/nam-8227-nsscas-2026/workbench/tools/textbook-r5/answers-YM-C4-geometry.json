@@ -1,0 +1,412 @@
+{
+  "scope": "All three source items and nine requested geometric outputs, PDF 221–222.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C4:Example:56",
+      "source_pdf_page": 221,
+      "notes": "ABC is right-angled at C; D is the midpoint of BC; AD=p>0, angle DAC=30° and BAD=x°. Find AC and BC exactly, show AB=√7 p/2, and show x=atan(2/√3)−30° with the inverse evaluated in degrees.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:PRIOR:NSSCO:right-triangle-trig",
+        "8227:2020:M1:T6:O04:D01"
+      ],
+      "component_demand_roles": {
+        "8227:PRIOR:NSSCO:right-triangle-trig": "Prior right-triangle side ratios and Pythagoras implement the geometry; this supplementary prerequisite never counts as AS objective coverage.",
+        "8227:2020:M1:T6:O04:D01": "The acute geometric angle is written using standard principal arctangent notation. The task does not separately ask the learner to classify inverse ranges or choose between inverse branches, so this is component support only."
+      },
+      "direct_demand_aspects": {
+        "8227:2020:M1:T6:O03:D01": "Exact 30°/60° ratios determine the requested lengths and exact angle-expression ingredients; retain positive length scale and surd answers."
+      },
+      "mapping_rationale": "Exact special-angle geometry is assessed. The requested show-that inverse-angle expressions use elementary acute inverse notation as a component; they do not separately assess principal-range interpretation. Do not add bounded-periodic solving, identity proofs or general modelling merely because the author cross-check uses vectors.",
+      "representation": "diagram",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "within",
+          "quoted_value": "ABC is right-angled at C; D is the midpoint of BC; AD=p>0, angle DAC=30° and BAD=x°. Find AC and BC exactly, show AB=√7 p/2, and show x=atan(2/√3)−30° with the inverse evaluated in degrees.",
+          "reason": "All lengths are positive. Each inverse tangent denotes the acute right-triangle angle fixed by the given diagram; no periodic alternative or negative length is admitted."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "ABC is right-angled at C; D is the midpoint of BC; AD=p>0, angle DAC=30° and BAD=x°. Find AC and BC exactly, show AB=√7 p/2, and show x=atan(2/√3)−30° with the inverse evaluated in degrees.",
+          "reason": "Geometric angle expressions and exact lengths are requested; no bounded periodic equation with an input multiplier is asked."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Example/Try Now; no examination attribution or exam-style label.",
+      "precision_angle_check": {
+        "source": "Example 56 uses degrees; Try 56 question 2 explicitly uses radians. Try 56 question 1 asks an unevaluated inverse expression, with 150° geometry.",
+        "comparison": "Convert all angles before calculation. Do not subtract 30 degrees from a radian arctangent. Exact surd lengths are not rounded; p and x are strictly positive length scales."
+      },
+      "expected_subpart_labels": [
+        "a:AC",
+        "a:BC",
+        "a:AB",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a:AC",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "cos(pi/6)*p"
+            ]
+          },
+          "printed_key_normalised": "sqrt(3)*p/2",
+          "method": "In right triangle ADC, AD=p>0 and angle DAC=30°. Thus AC=p cos30°. The coordinate cross-check scales a unit triangle by positive p.",
+          "source_pdf_page": 221,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 221,
+          "answer_printed_page": 209,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "a:BC",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "2*sin(pi/6)*p"
+            ]
+          },
+          "printed_key_normalised": "p",
+          "method": "DC=p sin30°=p/2, and D is the midpoint of BC. Hence BC=2DC=p.",
+          "source_pdf_page": 221,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 221,
+          "answer_printed_page": 209,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "a:AB",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "sqrt(cos(pi/6)**2+(2*sin(pi/6))**2)*p"
+            ]
+          },
+          "printed_key_normalised": "sqrt(7)*p/2",
+          "method": "Pythagoras in ABC gives AB=p√[(cos30°)²+(2sin30°)²]. Pulling p outside the square root is justified by its positive length meaning, not an unrestricted real-symbol identity.",
+          "check_mode": "show/prove",
+          "source_pdf_page": 221,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 221,
+          "answer_printed_page": 209,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "x = (180/π)atan(2/√3) − 30 degrees",
+          "author_derivation": "The whole acute angle BAC has tan(BAC)=BC/AC=2/√3. Since 30°<BAC<90°, the principal arctangent gives BAC, and x=BAC−30°. Independently use unit-p vectors AD=(√3/2,1/2) and AB=(√3/2,1): their normalized dot product is 5/(2√7). The stated acute angle difference has that same cosine, which uniquely determines x on (0°,90°).",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "angle_degrees": {
+              "kind": "identity",
+              "operands": [
+                "180*(atan(2/sqrt(3))-pi/6)/pi"
+              ]
+            },
+            "independent_vector_cosine": {
+              "kind": "identity",
+              "operands": [
+                "(3/4+1/2)/(sqrt(3/4+1/4)*sqrt(3/4+1))"
+              ]
+            },
+            "angle_cosine_residual": {
+              "kind": "identity",
+              "operands": [
+                "cos(atan(2/sqrt(3))-pi/6)-5/(2*sqrt(7))"
+              ]
+            }
+          },
+          "source_pdf_page": 221,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 221,
+          "answer_printed_page": 209,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Try-Now-56:1",
+      "source_pdf_page": 222,
+      "notes": "In the diagram A,B,X are collinear with AB=4 cm, BC=6 cm, angle ABC=150° and CX perpendicular to ABX. Find exact BX, show the specified principal arctangent for CAB, and show AC=√(52+24√3) cm.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:PRIOR:NSSCO:right-triangle-trig",
+        "8227:2020:M1:T6:O04:D01"
+      ],
+      "component_demand_roles": {
+        "8227:PRIOR:NSSCO:right-triangle-trig": "Prior right-triangle side ratios and Pythagoras implement the geometry; this supplementary prerequisite never counts as AS objective coverage.",
+        "8227:2020:M1:T6:O04:D01": "The acute geometric angle is written using standard principal arctangent notation. The task does not separately ask the learner to classify inverse ranges or choose between inverse branches, so this is component support only."
+      },
+      "direct_demand_aspects": {
+        "8227:2020:M1:T6:O03:D01": "Exact 30°/60° ratios determine the requested lengths and exact angle-expression ingredients; retain positive length scale and surd answers."
+      },
+      "mapping_rationale": "Exact special-angle geometry is assessed. The requested show-that inverse-angle expressions use elementary acute inverse notation as a component; they do not separately assess principal-range interpretation. Do not add bounded-periodic solving, identity proofs or general modelling merely because the author cross-check uses vectors.",
+      "representation": "diagram",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "within",
+          "quoted_value": "In the diagram A,B,X are collinear with AB=4 cm, BC=6 cm, angle ABC=150° and CX perpendicular to ABX. Find exact BX, show the specified principal arctangent for CAB, and show AC=√(52+24√3) cm.",
+          "reason": "All lengths are positive. Each inverse tangent denotes the acute right-triangle angle fixed by the given diagram; no periodic alternative or negative length is admitted."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "In the diagram A,B,X are collinear with AB=4 cm, BC=6 cm, angle ABC=150° and CX perpendicular to ABX. Find exact BX, show the specified principal arctangent for CAB, and show AC=√(52+24√3) cm.",
+          "reason": "Geometric angle expressions and exact lengths are requested; no bounded periodic equation with an input multiplier is asked."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Example/Try Now; no examination attribution or exam-style label.",
+      "precision_angle_check": {
+        "source": "Example 56 uses degrees; Try 56 question 2 explicitly uses radians. Try 56 question 1 asks an unevaluated inverse expression, with 150° geometry.",
+        "comparison": "Convert all angles before calculation. Do not subtract 30 degrees from a radian arctangent. Exact surd lengths are not rounded; p and x are strictly positive length scales."
+      },
+      "expected_subpart_labels": [
+        "a:BX",
+        "a:CAB",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a:BX",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "6*cos(pi-pi*150/180)"
+            ]
+          },
+          "printed_key_normalised": "3*sqrt(3)",
+          "method": "A,B,X are collinear in that order, so angle CBX=180°−150°=30°. Its adjacent side BX=6cos30°=3√3 cm; CX=6sin30°=3 cm is an intermediate, not a separately asked answer.",
+          "source_pdf_page": 222,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-Try56-lengths.png",
+            "sha256": "8b338c677b5950df041c13d9e9612724b3eadb00ae95162703f9424aecd1a169"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "a:CAB",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "angle CAB = atan(3/(4+3√3))",
+          "author_derivation": "The diagram fixes AX=AB+BX=4+3√3 and CX=3, so tan(CAB)=3/(4+3√3). CAB is acute, and its principal arctangent is therefore the requested angle. Retain the unevaluated inverse expression; the source does not request a numerical angle/unit.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "height": {
+              "kind": "identity",
+              "operands": [
+                "6*sin(pi/6)"
+              ]
+            },
+            "tangent_of_CAB": {
+              "kind": "identity",
+              "operands": [
+                "6*sin(pi/6)/(4+6*cos(pi/6))"
+              ]
+            }
+          },
+          "source_pdf_page": 222,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-Try56-lengths.png",
+            "sha256": "8b338c677b5950df041c13d9e9612724b3eadb00ae95162703f9424aecd1a169"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "sqrt((4+6*cos(pi/6))**2+(6*sin(pi/6))**2)"
+            ]
+          },
+          "printed_key_normalised": "sqrt(52+24*sqrt(3))",
+          "method": "Pythagoras in AXC gives AC²=(4+3√3)²+3²=52+24√3, and AC is the positive square root. As an independent route, the cosine rule in ABC with included angle 150° gives 4²+6²−2·4·6cos150°, the same squared length.",
+          "check_mode": "show/prove",
+          "assertions": [
+            {
+              "expression": "4**2+6**2-2*4*6*cos(5*pi/6)",
+              "expected": "52+24*sqrt(3)"
+            }
+          ],
+          "source_pdf_page": 222,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-Try56-lengths.png",
+            "sha256": "8b338c677b5950df041c13d9e9612724b3eadb00ae95162703f9424aecd1a169"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Try-Now-56:2",
+      "source_pdf_page": 222,
+      "notes": "ABC is right-angled at C; M is the midpoint of BC, BM=MC=x>0, angle ABC=π/3 and BAM=θ radians. (a) Find AM in terms of x. (b) Show θ=π/6−atan(1/(2√3)).",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T6:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:PRIOR:NSSCO:right-triangle-trig",
+        "8227:2020:M1:T6:O04:D01"
+      ],
+      "component_demand_roles": {
+        "8227:PRIOR:NSSCO:right-triangle-trig": "Prior right-triangle side ratios and Pythagoras implement the geometry; this supplementary prerequisite never counts as AS objective coverage.",
+        "8227:2020:M1:T6:O04:D01": "The acute geometric angle is written using standard principal arctangent notation. The task does not separately ask the learner to classify inverse ranges or choose between inverse branches, so this is component support only."
+      },
+      "direct_demand_aspects": {
+        "8227:2020:M1:T6:O03:D01": "Exact 30°/60° ratios determine the requested lengths and exact angle-expression ingredients; retain positive length scale and surd answers."
+      },
+      "mapping_rationale": "Exact special-angle geometry is assessed. The requested show-that inverse-angle expressions use elementary acute inverse notation as a component; they do not separately assess principal-range interpretation. Do not add bounded-periodic solving, identity proofs or general modelling merely because the author cross-check uses vectors.",
+      "representation": "diagram",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "within",
+          "quoted_value": "ABC is right-angled at C; M is the midpoint of BC, BM=MC=x>0, angle ABC=π/3 and BAM=θ radians. (a) Find AM in terms of x. (b) Show θ=π/6−atan(1/(2√3)).",
+          "reason": "All lengths are positive. Each inverse tangent denotes the acute right-triangle angle fixed by the given diagram; no periodic alternative or negative length is admitted."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "ABC is right-angled at C; M is the midpoint of BC, BM=MC=x>0, angle ABC=π/3 and BAM=θ radians. (a) Find AM in terms of x. (b) Show θ=π/6−atan(1/(2√3)).",
+          "reason": "Geometric angle expressions and exact lengths are requested; no bounded periodic equation with an input multiplier is asked."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary Example/Try Now; no examination attribution or exam-style label.",
+      "precision_angle_check": {
+        "source": "Example 56 uses degrees; Try 56 question 2 explicitly uses radians. Try 56 question 1 asks an unevaluated inverse expression, with 150° geometry.",
+        "comparison": "Convert all angles before calculation. Do not subtract 30 degrees from a radian arctangent. Exact surd lengths are not rounded; p and x are strictly positive length scales."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "sqrt((2*tan(pi/3))**2+1)*x"
+            ]
+          },
+          "printed_key_normalised": "sqrt(13)*x",
+          "method": "BM=MC=x>0 and angle ABC=π/3. First AC=2x tan(π/3)=2√3x. Then AM=x√[(2tan(π/3))²+1]=√13x. AC is an intermediate, not another requested output. The rendered key root bar covers 13 only, so it agrees.",
+          "source_pdf_page": 222,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-Try56-lengths.png",
+            "sha256": "8b338c677b5950df041c13d9e9612724b3eadb00ae95162703f9424aecd1a169"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "θ = π/6 − atan(1/(2√3)) radians",
+          "author_derivation": "Angle BAC=π/2−π/3=π/6. In right triangle ACM, angle MAC=atan(MC/AC)=atan(1/(2√3)), an acute principal value. Subtract MAC from BAC to get BAM=θ. Independent vectors from A to B and M have normalized dot product 7/(2√13), equal to the cosine of the stated positive acute difference.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "angle_radians": {
+              "kind": "identity",
+              "operands": [
+                "pi/6-atan(1/(2*sqrt(3)))"
+              ]
+            },
+            "vector_cosine": {
+              "kind": "identity",
+              "operands": [
+                "(2+12)/(sqrt(4+12)*sqrt(1+12))"
+              ]
+            },
+            "angle_cosine_residual": {
+              "kind": "identity",
+              "operands": [
+                "cos(pi/6-atan(1/(2*sqrt(3))))-7/(2*sqrt(13))"
+              ]
+            }
+          },
+          "source_pdf_page": 222,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C4-221.png",
+            "sha256": "79dbee8ab89a4a7a431148166ec8750aacfb573c9d3f6ad47517402d94a924e2"
+          },
+          "answer_pdf_page": 614,
+          "answer_printed_page": "A28",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-key-Try56-lengths.png",
+            "sha256": "8b338c677b5950df041c13d9e9612724b3eadb00ae95162703f9424aecd1a169"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

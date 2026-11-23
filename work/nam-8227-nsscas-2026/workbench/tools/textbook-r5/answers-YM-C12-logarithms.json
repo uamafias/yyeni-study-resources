@@ -1,0 +1,926 @@
+{
+  "scope": "Complete534–535reciprocalprimitiveanddomainresponses;polecrossingdefectretained.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C12:Example:6",
+      "source_pdf_page": 534,
+      "notes": "Integrate1/(3x),5/(4x+3),6/(1−6x)ANDstatethevalidityofthechosenordinary-lnformulas. Correctrestrictedbranchesx>0,x>−3/4,x<1/6;fullrealprimitivesretainbothpole-separatedcomponents.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Reciprocal-affine integration directly assesses M2T5O01D01. Polynomial/reciprocal-power terms in the same asked primitive additionally assess M1T9O01D02. An explicitly requested validity interval is retained separately. The source first gives ordinary logarithms on their positive-argument branch;the real primitive with ln|u| also exists separately on the negative branch. This does not allow crossing a pole in a definite integral.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "Integrate1/(3x),5/(4x+3),6/(1−6x)ANDstatethevalidityofthechosenordinary-lnformulas. Correctrestrictedbranchesx>0,x>−3/4,x<1/6;fullrealprimitivesretainbothpole-separatedcomponents.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Integrate1/(3x),5/(4x+3),6/(1−6x)ANDstatethevalidityofthechosenordinary-lnformulas. Correctrestrictedbranchesx>0,x>−3/4,x<1/6;fullrealprimitivesretainbothpole-separatedcomponents.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Integrate1/(3x),5/(4x+3),6/(1−6x)ANDstatethevalidityofthechosenordinary-lnformulas. Correctrestrictedbranchesx>0,x>−3/4,x<1/6;fullrealprimitivesretainbothpole-separatedcomponents.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact logarithmic primitives and finite values;no numerical rounding orangle.",
+        "comparison": "Compare primitive derivatives on original connected real components. Positive-argument ordinary ln is a restricted source branch;use ln|u| for both nonzero components. The severe Example8(b)error is a pole crossing,which absolute-value bars do not repair."
+      },
+      "expected_subpart_labels": [
+        "a-primitive",
+        "a-validity",
+        "b-primitive",
+        "b-validity",
+        "c-primitive",
+        "c-validity"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "1/(3*x)"
+            ]
+          },
+          "printed_key_normalised": "log(x)/3",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "1/(3*x)",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "original_domain": "x≠0",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>0",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 534,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 534,
+          "answer_printed_page": 522,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "a-validity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x>0",
+          "author_derivation": "Theordinarylnargumentmustbepositive.Solvetheactualaffineinequalitywithoutlosingthecoefficientssign. ThisisvalidityofthePRINTEDordinary-lnformula;theoriginalrationalintegrandhasseparatecomponentsx≠0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand_domain": "x≠0",
+          "source_pdf_page": 534,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 534,
+          "answer_printed_page": 522,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "5/(4*x+3)"
+            ]
+          },
+          "printed_key_normalised": "5*log(4*x+3)/4",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "5/(4*x+3)",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "original_domain": "x≠−3/4",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>−3/4",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 534,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 534,
+          "answer_printed_page": 522,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-validity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x>−3/4",
+          "author_derivation": "Theordinarylnargumentmustbepositive.Solvetheactualaffineinequalitywithoutlosingthecoefficientssign. ThisisvalidityofthePRINTEDordinary-lnformula;theoriginalrationalintegrandhasseparatecomponentsx≠−3/4.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand_domain": "x≠−3/4",
+          "source_pdf_page": 534,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 534,
+          "answer_printed_page": 522,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "6/(1-6*x)"
+            ]
+          },
+          "printed_key_normalised": "-log(1-6*x)",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "6/(1-6*x)",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "original_domain": "x≠1/6",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x<1/6",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 534,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 534,
+          "answer_printed_page": 522,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-validity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x<1/6",
+          "author_derivation": "Theordinarylnargumentmustbepositive.Solvetheactualaffineinequalitywithoutlosingthecoefficientssign. ThisisvalidityofthePRINTEDordinary-lnformula;theoriginalrationalintegrandhasseparatecomponentsx≠1/6.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand_domain": "x≠1/6",
+          "source_pdf_page": 534,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 534,
+          "answer_printed_page": 522,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now:6",
+      "source_pdf_page": 535,
+      "notes": "Integrate5/x,1/(3x−1),3/(7−9x),ANDstatetheordinary-lnvalidityintervalforeach. Negativeinner−9requires−1/3andflipsdomaininequality.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Reciprocal-affine integration directly assesses M2T5O01D01. Polynomial/reciprocal-power terms in the same asked primitive additionally assess M1T9O01D02. An explicitly requested validity interval is retained separately. The source first gives ordinary logarithms on their positive-argument branch;the real primitive with ln|u| also exists separately on the negative branch. This does not allow crossing a pole in a definite integral.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "Integrate5/x,1/(3x−1),3/(7−9x),ANDstatetheordinary-lnvalidityintervalforeach. Negativeinner−9requires−1/3andflipsdomaininequality.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Integrate5/x,1/(3x−1),3/(7−9x),ANDstatetheordinary-lnvalidityintervalforeach. Negativeinner−9requires−1/3andflipsdomaininequality.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Integrate5/x,1/(3x−1),3/(7−9x),ANDstatetheordinary-lnvalidityintervalforeach. Negativeinner−9requires−1/3andflipsdomaininequality.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact logarithmic primitives and finite values;no numerical rounding orangle.",
+        "comparison": "Compare primitive derivatives on original connected real components. Positive-argument ordinary ln is a restricted source branch;use ln|u| for both nonzero components. The severe Example8(b)error is a pole crossing,which absolute-value bars do not repair."
+      },
+      "expected_subpart_labels": [
+        "aprimitive",
+        "avalidity",
+        "bprimitive",
+        "bvalidity",
+        "cprimitive",
+        "cvalidity"
+      ],
+      "subparts": [
+        {
+          "subpart": "aprimitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "5/x"
+            ]
+          },
+          "printed_key_normalised": "5*log(x)",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "5/x",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "original_domain": "x≠0",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>0",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "avalidity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x>0",
+          "author_derivation": "Theordinarylnargumentmustbepositive.Solvetheactualaffineinequalitywithoutlosingthecoefficientssign. ThisisvalidityofthePRINTEDordinary-lnformula;theoriginalrationalintegrandhasseparatecomponentsx≠0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand_domain": "x≠0",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "bprimitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "1/(3*x-1)"
+            ]
+          },
+          "printed_key_normalised": "log(3*x-1)/3",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "1/(3*x-1)",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "original_domain": "x≠1/3",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>1/3",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "bvalidity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x>1/3",
+          "author_derivation": "Theordinarylnargumentmustbepositive.Solvetheactualaffineinequalitywithoutlosingthecoefficientssign. ThisisvalidityofthePRINTEDordinary-lnformula;theoriginalrationalintegrandhasseparatecomponentsx≠1/3.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand_domain": "x≠1/3",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "cprimitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "3/(7-9*x)"
+            ]
+          },
+          "printed_key_normalised": "-log(7-9*x)/3",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "3/(7-9*x)",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "original_domain": "x≠7/9",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x<7/9",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "cvalidity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x<7/9",
+          "author_derivation": "Theordinarylnargumentmustbepositive.Solvetheactualaffineinequalitywithoutlosingthecoefficientssign. ThisisvalidityofthePRINTEDordinary-lnformula;theoriginalrationalintegrandhasseparatecomponentsx≠7/9.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand_domain": "x≠7/9",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Example:7",
+      "source_pdf_page": 535,
+      "notes": "ExpandORIGINAL(4−x)²/x²=16/x²−8/x+1beforeintegrating. Restrictedprintedprimitive−16/x−8lnx+x+Cisvalidx>0;fullrealprimitiveusesln|x|onx≠0.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Reciprocal-affine integration directly assesses M2T5O01D01. Polynomial/reciprocal-power terms in the same asked primitive additionally assess M1T9O01D02. An explicitly requested validity interval is retained separately. The source first gives ordinary logarithms on their positive-argument branch;the real primitive with ln|u| also exists separately on the negative branch. This does not allow crossing a pole in a definite integral.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "ExpandORIGINAL(4−x)²/x²=16/x²−8/x+1beforeintegrating. Restrictedprintedprimitive−16/x−8lnx+x+Cisvalidx>0;fullrealprimitiveusesln|x|onx≠0.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "ExpandORIGINAL(4−x)²/x²=16/x²−8/x+1beforeintegrating. Restrictedprintedprimitive−16/x−8lnx+x+Cisvalidx>0;fullrealprimitiveusesln|x|onx≠0.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "Example7expanded16x^(−2)−8x^(−1)+1.",
+          "reason": "ActualM1powertermsn−2and0arerationalandnot−1. Theexplicitn−1termsuseMath2logarithmicintegration;theexcludedpower-formulaexceptionisnotignored."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "ExpandORIGINAL(4−x)²/x²=16/x²−8/x+1beforeintegrating. Restrictedprintedprimitive−16/x−8lnx+x+Cisvalidx>0;fullrealprimitiveusesln|x|onx≠0.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04",
+          "8227:QUAL05"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact logarithmic primitives and finite values;no numerical rounding orangle.",
+        "comparison": "Compare primitive derivatives on original connected real components. Positive-argument ordinary ln is a restricted source branch;use ln|u| for both nonzero components. The severe Example8(b)error is a pole crossing,which absolute-value bars do not repair."
+      },
+      "expected_subpart_labels": [
+        "primitive"
+      ],
+      "subparts": [
+        {
+          "subpart": "primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "(4-x)**2/x**2"
+            ]
+          },
+          "printed_key_normalised": "-16/x-8*log(x)+x",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "(4-x)**2/x**2",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "original_domain": "x≠0",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>0",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 535,
+          "answer_printed_page": 523,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now:7",
+      "source_pdf_page": 535,
+      "notes": "Integratethreeoriginalrationalexpressionsafterdivision/expansion:(3+2/x)²,(x−5)²/x²,(π+7x)/(2x²). Preserveπandthefactor1/2;alloriginaldenominatorsexclude0.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Reciprocal-affine integration directly assesses M2T5O01D01. Polynomial/reciprocal-power terms in the same asked primitive additionally assess M1T9O01D02. An explicitly requested validity interval is retained separately. The source first gives ordinary logarithms on their positive-argument branch;the real primitive with ln|u| also exists separately on the negative branch. This does not allow crossing a pole in a definite integral.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "Integratethreeoriginalrationalexpressionsafterdivision/expansion:(3+2/x)²,(x−5)²/x²,(π+7x)/(2x²). Preserveπandthefactor1/2;alloriginaldenominatorsexclude0.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Integratethreeoriginalrationalexpressionsafterdivision/expansion:(3+2/x)²,(x−5)²/x²,(π+7x)/(2x²). Preserveπandthefactor1/2;alloriginaldenominatorsexclude0.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "Try7(a)9+12/x+4/x²;(b)1−10/x+25/x²;(c)π/(2x²)+7/(2x).",
+          "reason": "ActualM1powertermsn−2and0arerationalandnot−1. Theexplicitn−1termsuseMath2logarithmicintegration;theexcludedpower-formulaexceptionisnotignored."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Integratethreeoriginalrationalexpressionsafterdivision/expansion:(3+2/x)²,(x−5)²/x²,(π+7x)/(2x²). Preserveπandthefactor1/2;alloriginaldenominatorsexclude0.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04",
+          "8227:QUAL05"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact logarithmic primitives and finite values;no numerical rounding orangle.",
+        "comparison": "Compare primitive derivatives on original connected real components. Positive-argument ordinary ln is a restricted source branch;use ln|u| for both nonzero components. The severe Example8(b)error is a pole crossing,which absolute-value bars do not repair."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "(3+2/x)**2"
+            ]
+          },
+          "printed_key_normalised": "9*x+12*log(x)-4/x",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "(3+2/x)**2",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "original_domain": "x≠0",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>0",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "(x-5)**2/x**2"
+            ]
+          },
+          "printed_key_normalised": "x-10*log(x)-25/x",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "(x-5)**2/x**2",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "original_domain": "x≠0",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>0",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "(pi+7*x)/(2*x**2)"
+            ]
+          },
+          "printed_key_normalised": "-pi/(2*x)+7*log(x)/2",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "(pi+7*x)/(2*x**2)",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "original_domain": "x≠0",
+          "author_answer_form": "PrimitiveplusarbitraryCineachconnectednonzero-denominatorcomponent;extendordinarylntoln|u|fornegativearguments.",
+          "author_method": "Independently integrate the separately transcribed original affine exponential,divide by its nonzero inner coefficient,and differentiate the separately transcribed key on the original domain. Expand the quotient in Try1(d)before integrating.",
+          "printed_primitive_domain": "x>0",
+          "source_convention": "Printedordinarylnprimitivecorrectonitsstatedpositive-argumentbranch. AcompleteREALprimitiveusesln|affineargument|onseparatecomponents;constantsmaydiffer. Source534ruleand535noteareinternalconventionevidence,notanofficialmarkingrestriction.",
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Example:8",
+      "source_pdf_page": 535,
+      "notes": "Twofinite-integralworkedexamples:(a)1/(2x+1)on[2,4]isproperwithanswer(1/2)ln(9/5);(b)4/(3−2x)on[1,3]crosses3/2andprinted−ln9isinvalid.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D01",
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Reciprocal-affine integration directly assesses M2T5O01D01. Polynomial/reciprocal-power terms in the same asked primitive additionally assess M1T9O01D02. An explicitly requested validity interval is retained separately. The source first gives ordinary logarithms on their positive-argument branch;the real primitive with ln|u| also exists separately on the negative branch. This does not allow crossing a pole in a definite integral.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "Twofinite-integralworkedexamples:(a)1/(2x+1)on[2,4]isproperwithanswer(1/2)ln(9/5);(b)4/(3−2x)on[1,3]crosses3/2andprinted−ln9isinvalid.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Twofinite-integralworkedexamples:(a)1/(2x+1)on[2,4]isproperwithanswer(1/2)ln(9/5);(b)4/(3−2x)on[1,3]crosses3/2andprinted−ln9isinvalid.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Twofinite-integralworkedexamples:(a)1/(2x+1)on[2,4]isproperwithanswer(1/2)ln(9/5);(b)4/(3−2x)on[1,3]crosses3/2andprinted−ln9isinvalid.",
+        "excluded_or_qualified_parts": [
+          "Part(b)defectivepole-crossingtask;noordinaryfiniteintegralexists. Retaininternaldiagnosis,notvalidexemplarcoverage."
+        ],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact logarithmic primitives and finite values;no numerical rounding orangle.",
+        "comparison": "Compare primitive derivatives on original connected real components. Positive-argument ordinary ln is a restricted source branch;use ln|u| for both nonzero components. The severe Example8(b)error is a pole crossing,which absolute-value bars do not repair."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "1/(2*x+1)",
+              "2",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "log(Rational(9,5))/2",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/(2*x+1)",
+          "original_bounds": [
+            "2",
+            "4"
+          ],
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 535,
+          "answer_printed_page": 523,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key wrong",
+          "author_conclusion": "Divergent ordinary improper integral;no finite value.",
+          "author_derivation": "The ORIGINAL4/(3−2x)hasapolex3/2INSIDE[1,3]. Splitthere. Leftintegralapproaches+infinity;rightapproaches−infinity. Bothmustconvergeseparatelyforanordinaryimproperintegral,soitisundefined. Printed−ln9comesfrominvalidendpointsubtractionacrossthepole. ln|u|doesnotrestorecontinuity;aprincipalvalueisnottherequesteddefiniteintegral.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "explanation",
+          "original_integrand": "4/(3-2*x)",
+          "original_bounds": [
+            "1",
+            "3"
+          ],
+          "original_domain": "x≠3/2;originalintervalcrossesthepole",
+          "printed_key_normalised": "-log(9)",
+          "source_interpretation": "Defectivefinite-integralworkedexemplar;excludedfromvalidtaskcoverage.",
+          "additional_operations": {
+            "left-one-sided-integral": {
+              "kind": "identity",
+              "operands": [
+                "limit(-2*log(2*b),b,0,dir=\"+\")"
+              ]
+            },
+            "right-one-sided-integral": {
+              "kind": "identity",
+              "operands": [
+                "limit(-2*log(3)+2*log(2*b),b,0,dir=\"+\")"
+              ]
+            },
+            "invalid-endpoint-difference": {
+              "kind": "identity",
+              "operands": [
+                "-2*log(Abs(3-2*3))+2*log(Abs(3-2*1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "left-one-sided-integral": "oo",
+            "right-one-sided-integral": "-oo",
+            "invalid-endpoint-difference": "-log(9)"
+          },
+          "source_pdf_page": 535,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 535,
+          "answer_printed_page": 523,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}

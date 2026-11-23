@@ -1,0 +1,84 @@
+{
+  "review": "Focused cross-vendor check of 8227 repair round 3 and step-2 source registers",
+  "reviewer": "Claude Opus 5.5 (claude-opus-5-5), role REVIEWER; four delegated read-only Claude sub-checks, each with discrepancies spot-verified by the reviewer",
+  "commissioned_by": "Vitalis (pasted Codex hand-back, 2026-11-17); entry point workbench/HANDOVER.md and checks/repair-r3-report.md",
+  "date": "2026-11-17",
+  "repository": {
+    "head_commit": "11cd03fe639f9936dd9f83fd04bd6f04d5181676",
+    "branch": "main",
+    "working_tree": "Rounds 2 and 3 uncommitted; `git status --short work/nam-8227-nsscas-2026` lists 125 entries before and after this review. Reviewed as found and frozen by the hashes below."
+  },
+  "snapshot": {
+    "current_path": "work/nam-8227-nsscas-2026/workbench/analysis/analysis-snapshot.json",
+    "current_sha256": "208a33a2027295d09c84f70423b370aa27e5626df289114842181383ce64389d",
+    "files_verified": "1456/1456 match (reviewer's own hash pass, not freeze_analysis.py)",
+    "source_files_verified": "435/435 match",
+    "review_files_verified": "10/10 match (both earlier review folders unchanged)",
+    "r2_history": "analysis/history/analysis-snapshot-r2.json = 85b782f9dc620f0b1697c29cb4a4bdf942f345a66abace60fd7c61b6b6f174ee (matches)",
+    "r1_history": "analysis/history/analysis-snapshot-r1.json = 1afe99d597617897cb3bf0489cd3bcbc236624fef05cef53a8aa4a92704a561f (matches)"
+  },
+  "key_input_hashes": {
+    "analysis/question-analysis.json": "a4117ee033a2bbd33352e88dd9d253023b35b2ddb662d0d4afe139c547c86dc8",
+    "analysis/marking-conventions.json": "2adcb3edefb596a466eba28e8f5329f7f1a922c4969eb951c3feb1710c676547",
+    "analysis/nsscas-cambridge-provenance.json": "6d6c6ec19846e15b3c96775c4e3a6dc0d8bfc5f64d919eab96b5ca2a8be6eab8",
+    "analysis/textbook-inventory.json": "6c395fe4879670dba92b11c99b7b2eea8314f8ae3ded15bcfab543e6af3c3c88",
+    "analysis/textbook-reading-r3.json": "4fb69ad045518de7944a4b91fc584456d2d342aabe16f9a2056920bf5644e979",
+    "analysis/textbook-review-sample.json": "68ec0598b22d1b1783bee9e25ca5e36710871939f5a9e320ff9d45acfcdede09",
+    "analysis/asset-index.json": "70b02d38487b8ccc8fb62bae4e6936c3565c0e4cca6614e8ead346e4422dc97b",
+    "analysis/cambridge-evidence.json": "4338bdd16afa512c24cdcab766de21731d0b2a32fcdeaf3f60ad987be63ee3c3",
+    "analysis/assets/2024-1-q9-given.png": "01a2a4595fa2dc37881c2bd782476be50f6c8edc2c81beed9607bd3519fd3812",
+    "analysis/assets/2025-1-q12-given.png": "abca7454f53e4094b604096bbe4a05d337f3329341cd8b937e9fa31e2bbf290c",
+    "checks/repair-r3-report.md": "328d4476130dae1f9004cbaf896ffde18b8f8c8d4c0c7efc797716a631c0b76b",
+    "checks/crop-containment.json": "16aff735e345e0fb2ea2fde279c09744eda8d1fd9bcbeca102d66f3ed03a12c9",
+    "checks/rebuild-verification.json": "650f4330f0039c120a5708b328a43716d7cfa596c988c5a8b933b7fd0750aa94",
+    "HANDOVER.md": "88601529c9b53bc5681a6a9944aa99c77e695dc7f91dc9713b56529b904531bd",
+    "tools/check_crop_containment.py": "d09c1b0579be007b40ae9d8e80bf010900061bc9ee14c3f5e58360c0c211f715",
+    "tools/build_textbook_progress.py": "fe961e5c33b6e3ce994f54e2bb41935f5cb57e96432fb1b2e4cb8479b5f502a4"
+  },
+  "rebuild": {
+    "method": "Disposable copy of work/nam-8227-nsscas-2026 in the reviewer scratchpad (r3root); source folders, standard/, _harvest and operations symlinked; author tools run unmodified from the copy root.",
+    "first_attempt": "index_cambridge and verify_derivatives passed; run_repair_checks failed in build_textbook_progress.py because checks/r3/goldie-render-manifest.json, provenance-render-manifest.json and ym-revision-render-manifest.json hold 50 absolute paths into the author's machine (finding R3-06).",
+    "second_attempt": "Only those three manifests were re-pointed inside the copy. run_repair_checks: 2 rebuilds passed, 99 outputs byte-identical, 4 seeded negative fixtures rejected. freeze_analysis.py --check then fails only on the three re-pointed manifests (expected).",
+    "copy_vs_author_tree": "1,459 files compared; 3 differences, all the re-pointed manifests; author working tree untouched (125 status entries before and after).",
+    "index_cambridge": "415 documents; 1573 leads; 0 unusable",
+    "verify_derivatives": "16 layout files / 1,945 pages; 663 OCR pages"
+  },
+  "independent_checks": [
+    "R2-01: both repaired crops viewed; all 39 crops viewed on reviewer-built contact sheets; crop boxes diffed against the R2 asset index (29 boxes changed, all tightenings or extensions); asset hashes match index; containment check re-run against the old R2 boxes for 2024 P1 Q9 and 2025 P1 Q12 (both rejected, naming the cut labels).",
+    "R2-03: all 13 commissioned link changes read in question-analysis.json directly_assessed_demand_ids; total 576; seven demand-count changes recomputed.",
+    "R2-04: all three new edges and their cue records read.",
+    "R2-05: 55 NSSCAS and 7 Cambridge diagram records read for distinct fixed/variable/relations; geometry relations recomputed for 2025 P1 Q10, 9709 w16/12 Q6, 2022 P1 Q8.",
+    "R2-06 and R2-07: purpose label and all three held references read; reference relation counts tallied (247 original displayable, 3 original held, 39 derived-from hidden).",
+    "Convention rules: all 75 verbatim excerpts found on the cited page (pypdf, normalised); 30 short-anchor rules read in context; keyword scan of all five report ranges for unregistered marking statements.",
+    "Award tables (delegated, reviewer-verified): all 196 rows against scale-3 PDFKit renders of the 17 pages; tariffs against printed question papers; 7 conflicts; visual coverage scan of every page in the five report ranges. Reviewer re-rendered 2021 PDF243, 2022 PDF302, 2023 PDF337, 2025 PDF358 to confirm.",
+    "Provenance (delegated, reviewer-verified): all 19 pairs rendered on both sides; independent formula-fragment search over 156 Paper 1/2 question papers; 10 new pairs rendered. Reviewer confirmed 015 (template only), N3 and N6 by text.",
+    "Textbook cautions (delegated, reviewer-verified): all 33 caution/defect items, the seven named checks, scope exclusions, both gap demands, three Goldie answer gaps. Reviewer confirmed the YM PDF352 Try Now 27(c) misread on the render.",
+    "Textbook sample (delegated): reviewer-seeded 10% sample (seed opus-5-5-r3-reviewer-2026-11-17, ascending sha256(seed|item_id), 101 items; 9 overlap with the author-prepared sample) classified blind, then compared."
+  ],
+  "scratchpad_artifacts": {
+    "root": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad",
+    "r3root": "disposable rebuild copy",
+    "r3rev/crops/sheet0-6.png": "reviewer contact sheets of all 39 crops",
+    "r3rev/rules-excerpt-check.json": "75 excerpt-on-page results",
+    "r3rev/award/award-check.json": "per-row award-table verdicts, tariff and coverage scan",
+    "r3rev/prov/prov-check.json": "per-match verdicts and 10 new confirmed pairs, with renders in r3rev/prov/img",
+    "r3rev/tbcaution/caution-check.json": "33 caution/defect verdicts",
+    "r3rev/tbsample/": "blind sample classifications and comparison",
+    "r3rev/textbook-sample.json": "reviewer sample definition"
+  },
+  "environment": {
+    "macos": "26.6.2 (25G82)",
+    "python": "3.13.0",
+    "pypdf": "5.9.0",
+    "PyMuPDF": "2.1",
+    "Pillow": "11.3.0",
+    "swift": "6.1.2 (PDFKit renderer)"
+  },
+  "not_checked": [
+    "Content of the ~95 untranscribed award tables beyond confirming they exist.",
+    "Criterion demand alignment and earlier_part_edges on award rows.",
+    "The 900+ textbook items outside the caution set and the 101-item sample, beyond scope spot checks.",
+    "9709 Paper 3, Mechanics, Statistics and pre-2015 papers for provenance; diagram-only provenance.",
+    "App code, runtime display, diagram generation or sketch marking."
+  ]
+}

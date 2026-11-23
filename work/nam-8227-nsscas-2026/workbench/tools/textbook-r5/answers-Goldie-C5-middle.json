@@ -1,0 +1,696 @@
+{
+  "scope": "Both investigations completed as source QA, with excluded/enrichment scope explicit; Examples5–8 complete.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C5:Investigation:1",
+      "source_pdf_page": 142,
+      "notes": "Derive the coefficients of the proposed infinite series for e^x by repeated differentiation at0, identify the factorial pattern, then use x=1 to approximate e. Maclaurin-series derivation is outside prescribed8227scope; record the complete source response without claiming AS-demand coverage.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested integral, area or domain explanation is direct. Teaching formula blocks have teaches links only. Contextual estimation does not become prescribed calculus coverage.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example, activity or boxed prompt; no examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL02",
+          "status": "outside",
+          "quoted_value": "e^x=Σaₙxⁿ, infinite power series; find aₙ by repeated derivatives.",
+          "reason": "Not a positive-integer binomial expansion; it must not enlarge syllabus scope."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Examples1(ii),2,3,4 display 3 significant figures after exact working. No angle quantities in this segment.",
+        "comparison": "Retain exact integration and original domains. A negative signed integral is distinct from positive geometric area."
+      },
+      "expected_subpart_labels": [
+        "a0",
+        "coefficients",
+        "e-eight-dp"
+      ],
+      "subparts": [
+        {
+          "subpart": "a0",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "exp(0)"
+            ]
+          },
+          "printed_key_normalised": "1",
+          "method": "Substitute x=0 into the proposed series. Only its constant term remains.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "coefficients",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "aₙ=1/n! for n≥0; first coefficients are1,1,1/2,1/6,1/24.",
+          "author_derivation": "After n derivatives, substituting0 gives1=n! aₙ, provided the proposed exponential power series is differentiated term by term. This is a source exploration beyond prescribed8227binomial expansion, not a new syllabus requirement. For the finite first coefficients compute successive derivatives of e^x at0 divided by factorials.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "first_coefficients": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(exp(x),x,0).subs(x,0)/factorial(0),diff(exp(x),x,1).subs(x,0)/factorial(1),diff(exp(x),x,2).subs(x,0)/factorial(2),diff(exp(x),x,3).subs(x,0)/factorial(3),diff(exp(x),x,4).subs(x,0)/factorial(4))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "first_coefficients": "Tuple(1,1,1/2,1/6,1/24)"
+          },
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "e-eight-dp",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "1/factorial(0)+1/factorial(1)+1/factorial(2)+1/factorial(3)+1/factorial(4)+1/factorial(5)+1/factorial(6)+1/factorial(7)+1/factorial(8)+1/factorial(9)+1/factorial(10)+1/factorial(11)+1/factorial(12)"
+            ],
+            "decimal_places": 8
+          },
+          "printed_key_normalised": "2.71828183",
+          "method": "Sum through n=12. The remaining positive tail is at most (1/13!)/(1−1/14), since later term ratios do not exceed1/14. Both ends of that rigorous bracket round to2.71828183 at8decimal places.",
+          "additional_operations": {
+            "tail_bracket_upper_rounded": {
+              "kind": "rounded",
+              "operands": [
+                "1/factorial(0)+1/factorial(1)+1/factorial(2)+1/factorial(3)+1/factorial(4)+1/factorial(5)+1/factorial(6)+1/factorial(7)+1/factorial(8)+1/factorial(9)+1/factorial(10)+1/factorial(11)+1/factorial(12)+(1/factorial(13))/(1-1/14)"
+              ],
+              "decimal_places": 8
+            }
+          },
+          "additional_operation_expected": {
+            "tail_bracket_upper_rounded": "2.71828183"
+          },
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "out-of-scope",
+        "basis": "8227 prescribes positive-integer binomial expansions, not Taylor/Maclaurin series. This entire source exploration is retained internally only.",
+        "excluded_or_qualified_parts": [
+          "whole investigation"
+        ],
+        "limits_considered": [
+          "8227:QUAL02"
+        ]
+      },
+      "evidence_role": "excluded source occurrence; complete Maclaurin source QA only; no8227coverage"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Investigation:2",
+      "source_pdf_page": 142,
+      "notes": "Compare100%lump interest after10years with10%annual compounding and20half-yearly5%payments;extend to more equal payments and investigate the limiting ratio. The principal cancels in every ratio. Finite GP models are in scope; the changing-frequency limit is enrichment.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T2:O03:D02",
+        "8227:2020:M1:T2:O03:D03"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested integral, area or domain explanation is direct. Teaching formula blocks have teaches links only. Contextual estimation does not become prescribed calculus coverage.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example, activity or boxed prompt; no examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Compare100%lump interest after10years with10%annual compounding and20half-yearly5%payments;extend to more equal payments and investigate the limiting ratio. The principal cancels in every ratio. Finite GP models are in scope; the changing-frequency limit is enrichment.",
+          "reason": "Proper finite integrals on one continuous domain component, or qualitative source support; no integral through a pole is allowed."
+        },
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Compare100%lump interest after10years with10%annual compounding and20half-yearly5%payments;extend to more equal payments and investigate the limiting ratio. The principal cancels in every ratio. Finite GP models are in scope; the changing-frequency limit is enrichment.",
+          "reason": "Natural logarithms, not a change-of-base task."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Examples1(ii),2,3,4 display 3 significant figures after exact working. No angle quantities in this segment.",
+        "comparison": "Retain exact integration and original domains. A negative signed integral is distinct from positive geometric area."
+      },
+      "expected_subpart_labels": [
+        "A",
+        "B",
+        "C",
+        "1000-instalments",
+        "10000-instalments",
+        "million-instalments",
+        "scheme-choice"
+      ],
+      "subparts": [
+        {
+          "subpart": "A",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "2"
+            ]
+          },
+          "printed_key_normalised": "2",
+          "method": "With n equal payments over the full10years and total nominal interest1, repeated multiplication gives R=(1+1/n)^n. Evaluate independently and compare only at the source written precision. The enlarged answer page states10^6 instalments, not10^5.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "B",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(1+1/10)**10"
+            ],
+            "decimal_places": 3
+          },
+          "printed_key_normalised": "2.594",
+          "method": "With n equal payments over the full10years and total nominal interest1, repeated multiplication gives R=(1+1/n)^n. Evaluate independently and compare only at the source written precision. The enlarged answer page states10^6 instalments, not10^5.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "C",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(1+1/20)**20"
+            ],
+            "decimal_places": 3
+          },
+          "printed_key_normalised": "2.653",
+          "method": "With n equal payments over the full10years and total nominal interest1, repeated multiplication gives R=(1+1/n)^n. Evaluate independently and compare only at the source written precision. The enlarged answer page states10^6 instalments, not10^5.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "1000-instalments",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "Pow(1001/1000,1000,evaluate=False)"
+            ],
+            "decimal_places": 3
+          },
+          "printed_key_normalised": "2.717",
+          "method": "With n equal payments over the full10years and total nominal interest1, repeated multiplication gives R=(1+1/n)^n. Evaluate independently and compare only at the source written precision. The enlarged answer page states10^6 instalments, not10^5.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "10000-instalments",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "Pow(10001/10000,10000,evaluate=False)"
+            ],
+            "decimal_places": 3
+          },
+          "printed_key_normalised": "2.718",
+          "method": "With n equal payments over the full10years and total nominal interest1, repeated multiplication gives R=(1+1/n)^n. Evaluate independently and compare only at the source written precision. The enlarged answer page states10^6 instalments, not10^5.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "million-instalments",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "Pow(1000001/1000000,1000000,evaluate=False)"
+            ],
+            "decimal_places": 5
+          },
+          "printed_key_normalised": "2.71828",
+          "method": "With n equal payments over the full10years and total nominal interest1, repeated multiplication gives R=(1+1/n)^n. Evaluate independently and compare only at the source written precision. The enlarged answer page states10^6 instalments, not10^5.",
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "scheme-choice",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "B pays more than A; half-yearly C pays more than B. For a fixed positive nominal total interest, increasingly frequent equal compounding approaches e times the initial amount.",
+          "author_derivation": "A has ratio2; B is2.5937424601; C≈2.653297705. These finite compound models are geometric-progression applications. The limiting process with changing n is enrichment, not a convergent fixed-ratio GP sum. The printed million-payment result agrees with e to5decimal places.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "continuous_limit": {
+              "kind": "identity",
+              "operands": [
+                "limit((1+1/x)**x,x,oo)"
+              ]
+            },
+            "e_five_dp": {
+              "kind": "rounded",
+              "operands": [
+                "E"
+              ],
+              "decimal_places": 5
+            }
+          },
+          "additional_operation_expected": {
+            "continuous_limit": "E",
+            "e_five_dp": "2.71828"
+          },
+          "source_pdf_page": 142,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Finite compound-growth/GP calculations prescribed; formal continuous-compounding limit is supporting extension.",
+        "excluded_or_qualified_parts": [
+          "formal changing-frequency limit is enrichment, not prescribed fixed-ratio GP convergence"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Example:5",
+      "source_pdf_page": 143,
+      "notes": "Integrate sec²x,sin2x,cos(3x−π) indefinitely. All arguments are radians;retain tangent poles and the linear-argument factors.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested integral, area or domain explanation is direct. Teaching formula blocks have teaches links only. Contextual estimation does not become prescribed calculus coverage.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example, activity or boxed prompt; no examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Integrate sec²x,sin2x,cos(3x−π) indefinitely. All arguments are radians;retain tangent poles and the linear-argument factors.",
+          "reason": "Proper finite integrals on one continuous domain component, or qualitative source support; no integral through a pole is allowed."
+        },
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Integrate sec²x,sin2x,cos(3x−π) indefinitely. All arguments are radians;retain tangent poles and the linear-argument factors.",
+          "reason": "Natural logarithms, not a change-of-base task."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Examples1(ii),2,3,4 display 3 significant figures after exact working. No angle quantities in this segment.",
+        "comparison": "Retain exact integration and original domains. A negative signed integral is distinct from positive geometric area."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "sec(x)**2"
+            ]
+          },
+          "printed_key_normalised": "tan(x)",
+          "method": "Integrate the original source integrand independently. For real logarithmic primitives use ln|u| on each component u≠0; additive constants can differ between disconnected components. Differentiate the resulting real primitive away from zeros/poles.",
+          "author_answer_form": "The listed primitive plus an arbitrary real constant on each connected domain component.",
+          "source_pdf_page": 143,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 143,
+          "answer_printed_page": 129,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "sin(2*x)"
+            ]
+          },
+          "printed_key_normalised": "-cos(2*x)/2",
+          "method": "Integrate the original source integrand independently. For real logarithmic primitives use ln|u| on each component u≠0; additive constants can differ between disconnected components. Differentiate the resulting real primitive away from zeros/poles.",
+          "author_answer_form": "The listed primitive plus an arbitrary real constant on each connected domain component.",
+          "source_pdf_page": 143,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 143,
+          "answer_printed_page": 129,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "cos(3*x-pi)"
+            ]
+          },
+          "printed_key_normalised": "sin(3*x-pi)/3",
+          "method": "Integrate the original source integrand independently. For real logarithmic primitives use ln|u| on each component u≠0; additive constants can differ between disconnected components. Differentiate the resulting real primitive away from zeros/poles.",
+          "author_answer_form": "The listed primitive plus an arbitrary real constant on each connected domain component.",
+          "source_pdf_page": 143,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 143,
+          "answer_printed_page": 129,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Example:6",
+      "source_pdf_page": 143,
+      "notes": "Evaluate the exact proper integral of sin2x−cos4x over[0,π/3]. Retain both linear-argument integration factors and exact special-angle signs.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The requested integral, area or domain explanation is direct. Teaching formula blocks have teaches links only. Contextual estimation does not become prescribed calculus coverage.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example, activity or boxed prompt; no examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Evaluate the exact proper integral of sin2x−cos4x over[0,π/3]. Retain both linear-argument integration factors and exact special-angle signs.",
+          "reason": "Proper finite integrals on one continuous domain component, or qualitative source support; no integral through a pole is allowed."
+        },
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Evaluate the exact proper integral of sin2x−cos4x over[0,π/3]. Retain both linear-argument integration factors and exact special-angle signs.",
+          "reason": "Natural logarithms, not a change-of-base task."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Examples1(ii),2,3,4 display 3 significant figures after exact working. No angle quantities in this segment.",
+        "comparison": "Retain exact integration and original domains. A negative signed integral is distinct from positive geometric area."
+      },
+      "expected_subpart_labels": [
+        "value"
+      ],
+      "subparts": [
+        {
+          "subpart": "value",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "sin(2*x)-cos(4*x)",
+              "0",
+              "pi/3"
+            ]
+          },
+          "printed_key_normalised": "(6+sqrt(3))/8",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "source_pdf_page": 143,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 143,
+          "answer_printed_page": 129,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Example:7",
+      "source_pdf_page": 144,
+      "notes": "Integrate sin²x by choosing the double-angle power reduction sin²x=(1−cos2x)/2. The identity choice is central to the requested integral.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O02:D01",
+        "8227:2020:M2:T5:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T5:O01:D02"
+      ],
+      "mapping_rationale": "The requested integral, area or domain explanation is direct. Teaching formula blocks have teaches links only. Contextual estimation does not become prescribed calculus coverage.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example, activity or boxed prompt; no examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Integrate sin²x by choosing the double-angle power reduction sin²x=(1−cos2x)/2. The identity choice is central to the requested integral.",
+          "reason": "Proper finite integrals on one continuous domain component, or qualitative source support; no integral through a pole is allowed."
+        },
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Integrate sin²x by choosing the double-angle power reduction sin²x=(1−cos2x)/2. The identity choice is central to the requested integral.",
+          "reason": "Natural logarithms, not a change-of-base task."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Examples1(ii),2,3,4 display 3 significant figures after exact working. No angle quantities in this segment.",
+        "comparison": "Retain exact integration and original domains. A negative signed integral is distinct from positive geometric area."
+      },
+      "expected_subpart_labels": [
+        "primitive"
+      ],
+      "subparts": [
+        {
+          "subpart": "primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "sin(x)**2"
+            ]
+          },
+          "printed_key_normalised": "x/2-sin(2*x)/4",
+          "method": "Integrate the original source integrand independently. For real logarithmic primitives use ln|u| on each component u≠0; additive constants can differ between disconnected components. Differentiate the resulting real primitive away from zeros/poles.",
+          "author_answer_form": "The listed primitive plus an arbitrary real constant on each connected domain component.",
+          "additional_operations": {
+            "chosen_identity": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "sin(x)**2",
+                "(1-cos(2*x))/2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "chosen_identity": "0"
+          },
+          "source_pdf_page": 144,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 144,
+          "answer_printed_page": 130,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Example:8",
+      "source_pdf_page": 144,
+      "notes": "Integrate cos⁴x by applying the square-reduction identity twice, first to(cos²x)² and then to cos²2x. The solution continues145. The syllabus allows identities to facilitate integration with cos²x as an example, rather than declaring every higher even power excluded.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O02:D01",
+        "8227:2020:M2:T5:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T5:O01:D02"
+      ],
+      "mapping_rationale": "The requested integral, area or domain explanation is direct. Teaching formula blocks have teaches links only. Contextual estimation does not become prescribed calculus coverage.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked example, activity or boxed prompt; no examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Integrate cos⁴x by applying the square-reduction identity twice, first to(cos²x)² and then to cos²2x. The solution continues145. The syllabus allows identities to facilitate integration with cos²x as an example, rather than declaring every higher even power excluded.",
+          "reason": "Proper finite integrals on one continuous domain component, or qualitative source support; no integral through a pole is allowed."
+        },
+        {
+          "rule_id": "8227:LIMIT06",
+          "status": "not applicable",
+          "quoted_value": "Integrate cos⁴x by applying the square-reduction identity twice, first to(cos²x)² and then to cos²2x. The solution continues145. The syllabus allows identities to facilitate integration with cos²x as an example, rather than declaring every higher even power excluded.",
+          "reason": "Natural logarithms, not a change-of-base task."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Examples1(ii),2,3,4 display 3 significant figures after exact working. No angle quantities in this segment.",
+        "comparison": "Retain exact integration and original domains. A negative signed integral is distinct from positive geometric area."
+      },
+      "expected_subpart_labels": [
+        "primitive"
+      ],
+      "subparts": [
+        {
+          "subpart": "primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "cos(x)**4"
+            ]
+          },
+          "printed_key_normalised": "sin(4*x)/32+sin(2*x)/4+3*x/8",
+          "method": "Integrate the original source integrand independently. For real logarithmic primitives use ln|u| on each component u≠0; additive constants can differ between disconnected components. Differentiate the resulting real primitive away from zeros/poles.",
+          "author_answer_form": "The listed primitive plus an arbitrary real constant on each connected domain component.",
+          "additional_operations": {
+            "repeated_reduction": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "cos(x)**4",
+                "cos(4*x)/8+cos(2*x)/2+3/8"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "repeated_reduction": "0"
+          },
+          "source_pdf_page": 144,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "answer_pdf_page": 145,
+          "answer_printed_page": 131,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-142.png",
+            "sha256": "9e39c30135a3337adc869fd2263ddbd11badbf9b9cb8910dcbf781f1295e19b4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

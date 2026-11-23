@@ -1,0 +1,1730 @@
+{
+  "scope": "Investigation,allfourboxedprompts,worked sequences,andnewActivity6.2complete.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C6:Investigation:1",
+      "source_pdf_page": 166,
+      "notes": "Run and explain three supplied calculator processes:cosine from0in radian mode,repeated square root from any positive value,and repeated√(1+x)from a positive value. Record special starts and preserve real-domain restrictions.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O02:D01",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Run and explain three supplied calculator processes:cosine from0in radian mode,repeated square root from any positive value,and repeated√(1+x)from a positive value. Record special starts and preserve real-domain restrictions.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Starting0and repeatedly applying cosine in radians converges to0.739085…with alternating errors.",
+          "author_derivation": "After the first step,the sequence lies in[cos1,1]. Cosine reverses ordering there and has absolute derivative at mostsin1<1,which supplies an author justification of contraction. The learner’s required explanation can be qualitative from the decreasing graph. Independently solve cosx−x=0on[0,1].",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "independent_root": {
+              "kind": "bracketed-source-root",
+              "operands": [
+                "cos(x)-x",
+                "0",
+                "1"
+              ],
+              "rounding": {
+                "decimal_places": 4
+              }
+            },
+            "iterate_30": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "cos(x)",
+                "0"
+              ],
+              "steps": 30
+            }
+          },
+          "additional_operation_expected": {
+            "independent_root": "0.7391"
+          },
+          "source_pdf_page": 166,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Every positive starting value under repeated square root converges to1;starts above1decrease and those below1increase.",
+          "author_derivation": "Afterksteps the value isa^(1/2^k). Its logarithm is(loga)/2^k→0,so the limit is1. Ifa=1the sequence is constant. The source explicitly says positive;0would instead remain0and negative real starts are undefined.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "above_one_example": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "sqrt(x)",
+                "16"
+              ],
+              "steps": 2
+            },
+            "below_one_example": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "sqrt(x)",
+                "1/16"
+              ],
+              "steps": 2
+            }
+          },
+          "additional_operation_expected": {
+            "above_one_example": "2",
+            "below_one_example": "1/2"
+          },
+          "source_pdf_page": 166,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Repeated x↦√(1+x)from a positive start converges toφ=(1+√5)/2.",
+          "author_derivation": "The positive limit must satisfyL²−L−1=0andL≥0,selectingφrather than the negative quadratic root. Values aboveφdecrease while positive values belowφincrease,remaining on their side. A bounded monotone argument justifies the limit;formal derivative criteria are not required of the learner.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "fixed_point_residual": {
+              "kind": "identity",
+              "operands": [
+                "((1+sqrt(5))/2)**2-(1+sqrt(5))/2-1"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "fixed_point_residual": "0"
+          },
+          "source_pdf_page": 166,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:4",
+      "source_pdf_page": 166,
+      "notes": "Unprompted quadratic example relates polynomial zeros to intersections withy=xafter rearrangement. Both Figure6.6panels have separate figure records.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O03:D02"
+      ],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Unprompted quadratic example relates polynomial zeros to intersections withy=xafter rearrangement. Both Figure6.6panels have separate figure records.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "relation"
+      ],
+      "subparts": [
+        {
+          "subpart": "relation",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "x²−x−2=0andx=x²−2have identical real solutions−1and2.",
+          "author_derivation": "Subtractxfrom both sides of the fixed-point equation to recover the original polynomial. The first graph hasx-axis roots−1,2;the second shows intersections ofy=xandy=x²−2at(−1,−1),(2,2). These are different coordinate representations of the same root values.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "relation_residual": {
+              "kind": "identity",
+              "operands": [
+                "(x**2-2)-x-(x**2-x-2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "relation_residual": "0"
+          },
+          "source_pdf_page": 166,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 166,
+          "answer_printed_page": 152,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting fixed-point representation illustration"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:5",
+      "source_pdf_page": 167,
+      "notes": "Unprompted quintic iterationxₙ₊₁=(xₙ⁵+3)/5fromx₁=1. Check all nine printed values,using full internal values before four-decimal display. The attracting middle root is exactly(√5−1)/2despite the earlier false impossibility claim.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Unprompted quintic iterationxₙ₊₁=(xₙ⁵+3)/5fromx₁=1. Check all nine printed values,using full internal values before four-decimal display. The attracting middle root is exactly(√5−1)/2despite the earlier false impossibility claim.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "x1",
+        "x2",
+        "x3",
+        "x4",
+        "x5",
+        "x6",
+        "x7",
+        "x8",
+        "x9"
+      ],
+      "subparts": [
+        {
+          "subpart": "x1",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 0,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "1",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 0
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x2",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 1,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.8",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 1
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x3",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 2,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6655",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 2
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x4",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 3,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6261",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 3
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x5",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 4,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6192",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 4
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x6",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 5,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6182",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 5
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x7",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 6,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6181",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 6
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x8",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 7,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6180",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 7
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x9",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(x**5+3)/5",
+              "1"
+            ],
+            "steps": 8,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "0.6180",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 8
+            }
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 167,
+          "answer_printed_page": 153,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting supplied-iteration worked sequence"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Prompt:2",
+      "source_pdf_page": 167,
+      "notes": "Find further rearrangements ofx⁵−5x+3=0and decide how many exist. Give a proved infinite family with nonzerondenominator,rather than guessing a finite list.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Find further rearrangements ofx⁵−5x+3=0and decide how many exist. Give a proved infinite family with nonzerondenominator,rather than guessing a finite list.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "family"
+      ],
+      "subparts": [
+        {
+          "subpart": "family",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "For every nonzero realn,x=[x⁵+(n−5)x+3]/nis equivalent to the original quintic,and there are infinitely many distinct rearrangements.",
+          "author_derivation": "Multiply byn≠0and move all terms to one side to recoverx⁵−5x+3=0. Distinct positive integersnproduce distinct polynomial maps because their difference is a nonzero multiple of the original nonzero polynomial. The source also gives the real odd-fifth-root rearrangement;negative arguments require its real branch. Inventing an unbounded family is enrichment beyond interpreting a supplied rearrangement.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "general_relation": {
+              "kind": "identity",
+              "operands": [
+                "(x**5+(n-5)*x+3)-n*x"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "general_relation": "x**5-5*x+3"
+          },
+          "source_pdf_page": 167,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "out-of-scope",
+        "basis": "Open invention of arbitrary rearrangements is extension;8227requires relating a given formula or supplied rearrangement to its equation.",
+        "excluded_or_qualified_parts": [
+          "whole open-ended invention task"
+        ]
+      },
+      "evidence_role": "prerequisite/supporting open rearrangement extension;no direct8227coverage"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Prompt:3",
+      "source_pdf_page": 169,
+      "notes": "Explain why the new endpoint sign check now makes the root-location judgement certain,unlike the finite iteration values alone.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Explain why the new endpoint sign check now makes the root-location judgement certain,unlike the finite iteration values alone.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "certainty"
+      ],
+      "subparts": [
+        {
+          "subpart": "certainty",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The sign bracket[0.61,0.62]certifies a root there;the earlier finite list of iterates alone did not.",
+          "author_derivation": "For continuous f=x⁵−5x+3,f(0.61)>0andf(0.62)<0. This supplies an existence interval independently of apparent stabilisation. A separate graph/count argument identifies which root is being bracketed. Do not infer an error bound just from five printed iterates.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "exact_endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((x**5-5*x+3).subs(x,61/100)),sign((x**5-5*x+3).subs(x,62/100)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exact_endpoint_signs": "Tuple(1,-1)"
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:6",
+      "source_pdf_page": 169,
+      "notes": "Alternative quintic real-fifth-root iteration from1:check all twelve printed prefixes and the different attracting root. The continuation170discusses start0and the negative root.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O02:D02"
+      ],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Alternative quintic real-fifth-root iteration from1:check all twelve printed prefixes and the different attracting root. The continuation170discusses start0and the negative root.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "x1",
+        "x2",
+        "x3",
+        "x4",
+        "x5",
+        "x6",
+        "x7",
+        "x8",
+        "x9",
+        "x10",
+        "x11",
+        "x12",
+        "negative-start"
+      ],
+      "subparts": [
+        {
+          "subpart": "x1",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.000000000000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 0
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x2",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.148698354997035006798626946777927589443850889097797505513711118493603"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.1486",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 1
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x3",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.223659912113539753530530562959763574954398527218886797208601187071602"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2236",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 2
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x4",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.255404169467262067405429589472604121496537981356659074377845674239198"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2554",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 3
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x5",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.267931644301123831799585860975031668025205527141453247863470349967542"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2679",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 4
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x6",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.272742084502323805630517101242508909269675583324195126275350550449683"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2727",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 5
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x7",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.274570082332356899227387584429227738703464399512439260467244451070874"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2745",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 6
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x8",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.275261991803510357779509698822506131563502924120105221071955114780093"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2752",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 7
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x9",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.275523492892120088251191855303295452343605061211883649273378652731011"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2755",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 8
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x10",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.275622269109295176578921130802070169463691660333474044051524499047769"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2756",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 9
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x11",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.275659571667864010525884301967833830645621974992065195658238523664659"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2756",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 10
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x12",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "1.275673657738492624237163459157617803298484384516812305736357709153714"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.2756",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "real_root(5*x-3,5)",
+                "1"
+              ],
+              "steps": 11
+            }
+          },
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 169,
+          "answer_printed_page": 155,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "negative-start",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "With the alternative real-fifth-root formula andx₁=0,the sequence tends to the negative root−1.6180…;from1it tends to the positive outer root1.2756….",
+          "author_derivation": "The source uses an odd real fifth root. A complex principal-power implementation is inappropriate for negative arguments. Verify the two reference roots independently in[−2,−1]and[1,2];a finite numerical sequence is additional evidence,not the proof of a universal basin boundary.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "negative_root": {
+              "kind": "bracketed-source-root",
+              "operands": [
+                "x**5-5*x+3",
+                "-2",
+                "-1"
+              ],
+              "rounding": {
+                "decimal_places": 4
+              }
+            },
+            "positive_root": {
+              "kind": "bracketed-source-root",
+              "operands": [
+                "x**5-5*x+3",
+                "1",
+                "2"
+              ],
+              "rounding": {
+                "decimal_places": 4
+              }
+            }
+          },
+          "additional_operation_expected": {
+            "negative_root": "-1.6180",
+            "positive_root": "1.2757"
+          },
+          "source_precision_note": "Positive root1.275682…has prefix1.2756but rounds to1.2757at4dp.",
+          "source_pdf_page": 169,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-166.png",
+            "sha256": "0a8dd134c425613354f04ddc5f297eb59e7ac71f4872338c35ea90f1b66038ee"
+          },
+          "answer_pdf_page": 170,
+          "answer_printed_page": 156,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting alternative-iteration worked sequence"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Prompt:4",
+      "source_pdf_page": 170,
+      "notes": "If an iteration finds a root but not the requested root,is it a failure? Distinguish equation validity from satisfying the selected interval/target.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O02:D01",
+        "8227:2020:M2:T6:O02:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "If an iteration finds a root but not the requested root,is it a failure? Distinguish equation validity from satisfying the selected interval/target.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "target"
+      ],
+      "subparts": [
+        {
+          "subpart": "target",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "It solves the equation,but fails the task if a specified root or interval was required.",
+          "author_derivation": "A numerical method can converge successfully to a different root. The original target interval,initial value and rearrangement remain part of the problem. Report that distinction and choose a suitable start/rearrangement rather than calling every converged value the intended answer. The source key explicitly discusses appropriate starting points and rearrangements.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 170,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:7",
+      "source_pdf_page": 170,
+      "notes": "The source rearrangesxe^x+x²−1=0asx=(1−xe^x)/xand starts at½. Check its first four rounded iterates;after becoming negative,the sequence cannot approach the positive root.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O02:D02"
+      ],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "The source rearrangesxe^x+x²−1=0asx=(1−xe^x)/xand starts at½. Check its first four rounded iterates;after becoming negative,the sequence cannot approach the positive root.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "x1",
+        "x2",
+        "x3",
+        "x4"
+      ],
+      "subparts": [
+        {
+          "subpart": "x1",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1-x*exp(x))/x",
+              "1/2"
+            ],
+            "steps": 0,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "0.50",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1-x*exp(x))/x",
+                "1/2"
+              ],
+              "steps": 0
+            }
+          },
+          "source_pdf_page": 170,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 170,
+          "answer_printed_page": 156,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x2",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1-x*exp(x))/x",
+              "1/2"
+            ],
+            "steps": 1,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "0.35",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1-x*exp(x))/x",
+                "1/2"
+              ],
+              "steps": 1
+            }
+          },
+          "source_pdf_page": 170,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 170,
+          "answer_printed_page": 156,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x3",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1-x*exp(x))/x",
+              "1/2"
+            ],
+            "steps": 2,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.43",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1-x*exp(x))/x",
+                "1/2"
+              ],
+              "steps": 2
+            }
+          },
+          "source_pdf_page": 170,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 170,
+          "answer_printed_page": 156,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "x4",
+          "operation": {
+            "kind": "supplied-source-iteration",
+            "operands": [
+              "(1-x*exp(x))/x",
+              "1/2"
+            ],
+            "steps": 3,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "-3.46",
+          "method": "Apply the source formula repeatedly from its stated initial value using80-digit internal arithmetic;do not feed rounded displayed iterates back into the recurrence. x₁is the supplied start,so stepscounts actual formula applications.",
+          "additional_operations": {
+            "unrounded_supplied_iterate": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(1-x*exp(x))/x",
+                "1/2"
+              ],
+              "steps": 3
+            }
+          },
+          "source_pdf_page": 170,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 170,
+          "answer_printed_page": 156,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting divergent-iteration illustration"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Prompt:5",
+      "source_pdf_page": 170,
+      "notes": "Use Figure6.10to identify the curve feature causing divergence of the supplied iteration. Preserve qualitative graph interpretation without turning it into a required formal convergence theorem.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O02:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Use Figure6.10to identify the curve feature causing divergence of the supplied iteration. Preserve qualitative graph interpretation without turning it into a required formal convergence theorem.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "curve-feature"
+      ],
+      "subparts": [
+        {
+          "subpart": "curve-feature",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Near the fixed point,the decreasing iteration curve is much steeper in magnitude than the liney=x,so the cobweb jumps expand rather than contract.",
+          "author_derivation": "Read the supplied cobweb asx₁→F(x₁)→F(F(x₁)). Author checkF′=−1/x²−e^xhas large negative magnitude near the positive fixed point. Formal derivative convergence conditions remain excluded knowledge;the learner need only interpret the supplied failure qualitatively. Once a term becomes negative,Fkeeps it negative,so it cannot converge to the requested positive root.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "iteration_curve_derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff((1-x*exp(x))/x,x)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "iteration_curve_derivative": "-1/x**2-exp(x)"
+          },
+          "source_pdf_page": 170,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Recognising that iteration can fail is prescribed;formal derivative convergence conditions in surrounding prose remain extension.",
+        "excluded_or_qualified_parts": [
+          "formal convergence-condition theorem not required"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Activity:2",
+      "source_pdf_page": 171,
+      "notes": "Try the supplied quintic iteration from each endpoint of[−2,−1]and[1,2],and explain the four outcomes using a sketch. This Activity6.2was absent from the previous item population.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O02:D01",
+        "8227:2020:M2:T6:O02:D02",
+        "8227:2020:M2:T6:O04:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Supplied iteration,its fixed-point relation,observed convergence/failure and accuracy are distinct decisions. Unprompted examples teach rather than count as extra assessed questions. Formal derivative convergence conditions are author explanations only,not required8227knowledge.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary source investigation,prompt,activity or worked exposition.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Try the supplied quintic iteration from each endpoint of[−2,−1]and[1,2],and explain the four outcomes using a sketch. This Activity6.2was absent from the previous item population.",
+          "reason": "Interpret supplied sequences and understand possible failure;do not require a formal derivative convergence condition. The open-ended invention prompt has a separate out-of-scope disposition."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cosine iteration explicitly uses radians. Printed finite decimal sequences keep full calculator values internally;ellipses are decimal prefixes. No inference of a guaranteed root bound from stabilising digits alone.",
+        "comparison": "Compare explicit finite iterates at their written precision and verify true roots independently from original equations. Odd fifth roots use the real branch,including negative arguments."
+      },
+      "expected_subpart_labels": [
+        "start-minus2",
+        "start-minus1",
+        "start-plus1",
+        "start-plus2"
+      ],
+      "subparts": [
+        {
+          "subpart": "start-minus2",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Diverges toward−∞.",
+          "author_derivation": "For starts±2,the graph ofF=(x⁵+3)/5lies beyondy=xin the outward direction and there is no further fixed point on that tail. Starts−1and1enter[0,1],then[0.6,0.8],where graph steps approach the middle fixed point. The source key reports the same four cases. Author contraction arguments can justify them but are not added to the learner’s required knowledge.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "first_three_applications": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "-2"
+              ],
+              "steps": 3,
+              "return_sequence": true
+            }
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "start-minus1",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Converges to(√5−1)/2≈0.618.",
+          "author_derivation": "For starts±2,the graph ofF=(x⁵+3)/5lies beyondy=xin the outward direction and there is no further fixed point on that tail. Starts−1and1enter[0,1],then[0.6,0.8],where graph steps approach the middle fixed point. The source key reports the same four cases. Author contraction arguments can justify them but are not added to the learner’s required knowledge.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "first_three_applications": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "-1"
+              ],
+              "steps": 3,
+              "return_sequence": true
+            }
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "start-plus1",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Converges to(√5−1)/2≈0.618.",
+          "author_derivation": "For starts±2,the graph ofF=(x⁵+3)/5lies beyondy=xin the outward direction and there is no further fixed point on that tail. Starts−1and1enter[0,1],then[0.6,0.8],where graph steps approach the middle fixed point. The source key reports the same four cases. Author contraction arguments can justify them but are not added to the learner’s required knowledge.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "first_three_applications": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "1"
+              ],
+              "steps": 3,
+              "return_sequence": true
+            }
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "start-plus2",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Diverges toward+∞.",
+          "author_derivation": "For starts±2,the graph ofF=(x⁵+3)/5lies beyondy=xin the outward direction and there is no further fixed point on that tail. Starts−1and1enter[0,1],then[0.6,0.8],where graph steps approach the middle fixed point. The source key reports the same four cases. Author contraction arguments can justify them but are not added to the learner’s required knowledge.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "first_three_applications": {
+              "kind": "supplied-source-iteration",
+              "operands": [
+                "(x**5+3)/5",
+                "2"
+              ],
+              "steps": 3,
+              "return_sequence": true
+            }
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": {
+        "visual_requirement": "Explain all four outcomes by reference to a sketch of F=(x^5+3)/5, as the source explicitly asks. Figure6.7on167already supplies this curve; a correctly annotated fresh sketch or a clear reference to that supplied map can support the explanation.",
+        "credited_features": [
+          "The map is increasing and meets y=x at approximately−1.618,.618,1.276.",
+          "From−2 successive steps move further left;from2 they move further right, away from the requested outer fixed points.",
+          "From−1 and1 the staircase approaches the middle fixed point.618, which is not either target interval root."
+        ],
+        "not_sufficient": "Four numerical outcome labels alone omit the source requested visual explanation.",
+        "criterion_basis": "Author-derived from the supplied map and source activity, not an official award table."
+      }
+    }
+  ]
+}

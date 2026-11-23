@@ -1,0 +1,993 @@
+{
+  "scope": "All fixed source tasks/expositions onPDF86–89; remaining R-form exercises pending.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C3:Worked-derivation:6",
+      "source_pdf_page": 86,
+      "notes": "Headingless sine R-form derivation for4sinθ+3cosθ, followed by a*sinθ+b*cosθ. The3–4–5 triangle gives R=5 and exact phaseatan(3/4), displayed36.9°; generalisation requires a nonzero coefficient pair.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [
+        "8227:2020:M2:T3:O02:D04",
+        "8227:2020:M2:T3:O02:D02"
+      ],
+      "mapping_rationale": "Only explicit requested forms, extrema, sketches and bounded roots are assessed. Unprompted generalisations are teaching/component evidence. The independently used norm/atan2 or half-angle verification methods do not become additional learner demands.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Headingless sine R-form derivation for4sinθ+3cosθ, followed by a*sinθ+b*cosθ. The3–4–5 triangle gives R=5 and exact phaseatan(3/4), displayed36.9°; generalisation requires a nonzero coefficient pair.",
+          "reason": "The source asks a coefficient form, not a periodic root family."
+        },
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "not applicable",
+          "quoted_value": "Headingless sine R-form derivation for4sinθ+3cosθ, followed by a*sinθ+b*cosθ. The3–4–5 triangle gives R=5 and exact phaseatan(3/4), displayed36.9°; generalisation requires a nonzero coefficient pair.",
+          "reason": "No domain/range output is requested."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Unattributed exposition, Example3.6 or ordinary Exercise3D; no examination attribution on these items.",
+      "precision_angle_check": {
+        "source": "The expositions display36.9°/53.1° approximately. Exercise3D1/3 uses degree phases;3D2 uses exact radian phases. Positive amplitude and each stated phase interval are retained.",
+        "comparison": "A displayed rounded phase is not an exact coefficient identity. Every later root/graph uses exact source coefficients or the unrounded phase; do not carry a printed rounded phase into another answer."
+      },
+      "expected_subpart_labels": [
+        "numerical-form",
+        "general-form"
+      ],
+      "subparts": [
+        {
+          "subpart": "numerical-form",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "4",
+              "3"
+            ],
+            "target": "sin-plus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true,
+            "phase_decimal_places": 1
+          },
+          "printed_key_normalised": "Tuple(5,369/10)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "4",
+                "3"
+              ],
+              "target": "sin-plus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 86,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 86,
+          "answer_printed_page": 72,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "general-form",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "For (a,b)≠(0,0), choose R=√(a²+b²)>0 and a phase with cosα=a/R, sinα=b/R. Then a*sinθ+b*cosθ=R*sin(θ+α).",
+          "author_derivation": "The coefficient vector divided by its nonzero norm lies on the unit circle, so such a phase exists. Sine addition gives R*cosα*sinθ+R*sinα*cosθ, exactly the source expression. The zero vector needs separate treatment because its phase is undefined. The printed numerical36.9° is only a rounded illustration.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "general_identity_on_nonzero_vector": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "sqrt(a**2+b**2)*sin(x+atan2(b,a))",
+                "a*sin(x)+b*cos(x)"
+              ]
+            }
+          },
+          "source_pdf_page": 86,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 86,
+          "answer_printed_page": 72,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting teaching exposition; no invented assessed question"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Worked-derivation:7",
+      "source_pdf_page": 86,
+      "notes": "Cosine alternative introduced at the foot ofPDF86 and developed on87:3cosθ+4sinθ=5cos(θ−atan(4/3)), with53.1°as a rounded display. The generic all-cases note needs nonzero-vector and phase-endpoint qualifications.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [
+        "8227:2020:M2:T3:O02:D04",
+        "8227:2020:M2:T3:O02:D02"
+      ],
+      "mapping_rationale": "Only explicit requested forms, extrema, sketches and bounded roots are assessed. Unprompted generalisations are teaching/component evidence. The independently used norm/atan2 or half-angle verification methods do not become additional learner demands.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Cosine alternative introduced at the foot ofPDF86 and developed on87:3cosθ+4sinθ=5cos(θ−atan(4/3)), with53.1°as a rounded display. The generic all-cases note needs nonzero-vector and phase-endpoint qualifications.",
+          "reason": "The source asks a coefficient form, not a periodic root family."
+        },
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "not applicable",
+          "quoted_value": "Cosine alternative introduced at the foot ofPDF86 and developed on87:3cosθ+4sinθ=5cos(θ−atan(4/3)), with53.1°as a rounded display. The generic all-cases note needs nonzero-vector and phase-endpoint qualifications.",
+          "reason": "No domain/range output is requested."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Unattributed exposition, Example3.6 or ordinary Exercise3D; no examination attribution on these items.",
+      "precision_angle_check": {
+        "source": "The expositions display36.9°/53.1° approximately. Exercise3D1/3 uses degree phases;3D2 uses exact radian phases. Positive amplitude and each stated phase interval are retained.",
+        "comparison": "A displayed rounded phase is not an exact coefficient identity. Every later root/graph uses exact source coefficients or the unrounded phase; do not carry a printed rounded phase into another answer."
+      },
+      "expected_subpart_labels": [
+        "numerical-form",
+        "general-domain"
+      ],
+      "subparts": [
+        {
+          "subpart": "numerical-form",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "4",
+              "3"
+            ],
+            "target": "cos-minus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true,
+            "phase_decimal_places": 1
+          },
+          "printed_key_normalised": "Tuple(5,531/10)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "4",
+                "3"
+              ],
+              "target": "cos-minus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 87,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 87,
+          "answer_printed_page": 73,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "general-domain",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "For a*cosθ+b*sinθ with a nonzero coefficient pair, R=√(a²+b²) and a quadrant-aware phase give a valid cosine form. A phase convention must include one of ±180°; the printed strict interval excludes a valid negative-cosine axis case.",
+          "author_derivation": "The source note says r is always positive and in all cases a phase exists with−180°<α<180°. If a=−1,b=0, coefficient comparison forces cosα=−1,sinα=0, so no phase lies strictly between the two excluded endpoints. A half-closed interval such as(−180°,180°] can represent it; this is an example verification convention, not a recipe-policy decision. If a=b=0, the function is zero and no positive-amplitude representation/unique phase exists. The nonzero-vector identity itself is valid.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "negative_cosine_axis": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "0",
+                "-1"
+              ],
+              "target": "cos-minus",
+              "angle_unit": "radian"
+            },
+            "general_identity_on_nonzero_vector": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "sqrt(a**2+b**2)*cos(x-atan2(b,a))",
+                "a*cos(x)+b*sin(x)"
+              ]
+            }
+          },
+          "source_pdf_page": 87,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 87,
+          "answer_printed_page": 73,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting teaching exposition; no invented assessed question"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Example:6",
+      "source_pdf_page": 87,
+      "notes": "For√3sinθ−cosθ, find the form r*sin(θ−α)with r>0,0<α<π/2; state extrema; sketch on0≤θ≤2π; solve the original expression=1on that interval. The source sketch extends beyond its requested domain.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T3:O02:D04",
+        "8227:2020:M1:T3:O02:D02",
+        "8227:2020:M1:T6:O02:D03",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T3:O02:D02"
+      ],
+      "mapping_rationale": "Only explicit requested forms, extrema, sketches and bounded roots are assessed. Unprompted generalisations are teaching/component evidence. The independently used norm/atan2 or half-angle verification methods do not become additional learner demands.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "For√3sinθ−cosθ, find the form r*sin(θ−α)with r>0,0<α<π/2; state extrema; sketch on0≤θ≤2π; solve the original expression=1on that interval. The source sketch extends beyond its requested domain.",
+          "reason": "Example3.6(iv) has argument multiplier1 and the explicit finite radian interval0≤θ≤2π."
+        },
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "within",
+          "quoted_value": "For√3sinθ−cosθ, find the form r*sin(θ−α)with r>0,0<α<π/2; state extrema; sketch on0≤θ≤2π; solve the original expression=1on that interval. The source sketch extends beyond its requested domain.",
+          "reason": "The simple transformed sine has exact range[−2,2]; the requested sketch interval is retained."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Unattributed exposition, Example3.6 or ordinary Exercise3D; no examination attribution on these items.",
+      "precision_angle_check": {
+        "source": "The expositions display36.9°/53.1° approximately. Exercise3D1/3 uses degree phases;3D2 uses exact radian phases. Positive amplitude and each stated phase interval are retained.",
+        "comparison": "A displayed rounded phase is not an exact coefficient identity. Every later root/graph uses exact source coefficients or the unrounded phase; do not carry a printed rounded phase into another answer."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "sqrt(3)",
+              "-1"
+            ],
+            "target": "sin-minus",
+            "angle_unit": "radian",
+            "phase_bounds": [
+              "0",
+              "pi/2"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "printed_key_normalised": "Tuple(2,pi/6)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "sqrt(3)",
+                "-1"
+              ],
+              "target": "sin-minus",
+              "angle_unit": "radian",
+              "phase_bounds": [
+                "0",
+                "pi/2"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 87,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 88,
+          "answer_printed_page": 74,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(sqrt(sqrt(3)**2+(-1)**2),-sqrt(sqrt(3)**2+(-1)**2))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(2,-2)",
+          "method": "The independently derived amplitude is2. Sine attains1 and−1, so the maximum/minimum are2/−2; they occur within a full original0..2πcycle as well.",
+          "additional_operations": {
+            "exact_original_coefficients_norm": {
+              "kind": "identity",
+              "operands": [
+                "sqrt(sqrt(3)**2+(-1)**2)"
+              ]
+            }
+          },
+          "source_pdf_page": 87,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 88,
+          "answer_printed_page": 74,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "trig-features",
+            "family": "sin",
+            "angle_unit": "radian",
+            "operands": [
+              "2",
+              "1",
+              "0",
+              "0",
+              "2*pi"
+            ],
+            "at": [],
+            "phase_offset": "-pi/6"
+          },
+          "check_mode": "sketch",
+          "method": "Independently derive amplitude from absolute output scale,positive period from angular unit/input multiplier,and exact zeros,extrema,poles and endpoint values from the given function. Compare the specifically transcribed source graph/table features; do not join tangent branches across poles. Global and displayed-interval ranges remain distinct.",
+          "printed_key_features": {
+            "amplitude": "2",
+            "period": "2*pi",
+            "window_range": "Interval(-2,2)"
+          },
+          "author_source_graph_comparison": {
+            "status": "key wrong",
+            "reason": "The source asks a sketch only for0≤θ≤2π, but Figure3.12 explicitly continues beyond2π and labels a third zero13π/6, with an axis tick5π/2. The curve shape is correct for the unrestricted function; its extent does not respect the requested interval.",
+            "observed_features": [
+              "The stem interval is0≤θ≤2π.",
+              "Figure3.12 labels13π/6 as another zero beyond the right boundary.",
+              "The requested graph should stop at(2π,−1); its only interval zeros areπ/6 and7π/6."
+            ]
+          },
+          "source_pdf_page": 87,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 88,
+          "answer_printed_page": 74,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "bounded-trig-equation",
+            "operands": [
+              "sqrt(3)*sin(x)-cos(x)-1",
+              "0",
+              "2*pi"
+            ],
+            "left_open": false,
+            "right_open": false
+          },
+          "source_ratio_branches": [
+            {
+              "function": "sin",
+              "argument": "x-pi/6",
+              "ratio": "1/2",
+              "power": 1,
+              "angle_unit": "radian"
+            }
+          ],
+          "review_date": "2026-11-18",
+          "source_angle_unit": "radian",
+          "method": "Factor or transform the original equation without dividing away a possibly zero factor. Solve every admissible branch in the original interval, reject out-of-range ratios and original poles, and substitute each candidate into the original equation. All exact roots precede any comparison with printed rounded values.",
+          "printed_key_normalised": "FiniteSet(pi/3,pi)",
+          "dependency": {
+            "source_part": "i",
+            "role": "Use the exact R-form while retaining the original0≤θ≤2πinterval; the shifted argument range is−π/6..11π/6."
+          },
+          "source_pdf_page": 87,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 89,
+          "answer_printed_page": 75,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          }
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Exercise-3D:1",
+      "source_pdf_page": 89,
+      "notes": "Express cosθ+sinθ,20cosθ+21sinθ,cosθ+√3sinθ,and√5cosθ+2sinθas r*cos(θ−α),r>0and0°<α<90°; retain the specified positive acute phase.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T3:O02:D04"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T3:O02:D02"
+      ],
+      "mapping_rationale": "Only explicit requested forms, extrema, sketches and bounded roots are assessed. Unprompted generalisations are teaching/component evidence. The independently used norm/atan2 or half-angle verification methods do not become additional learner demands.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Express cosθ+sinθ,20cosθ+21sinθ,cosθ+√3sinθ,and√5cosθ+2sinθas r*cos(θ−α),r>0and0°<α<90°; retain the specified positive acute phase.",
+          "reason": "The source asks a coefficient form, not a periodic root family."
+        },
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "not applicable",
+          "quoted_value": "Express cosθ+sinθ,20cosθ+21sinθ,cosθ+√3sinθ,and√5cosθ+2sinθas r*cos(θ−α),r>0and0°<α<90°; retain the specified positive acute phase.",
+          "reason": "No domain/range output is requested."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Unattributed exposition, Example3.6 or ordinary Exercise3D; no examination attribution on these items.",
+      "precision_angle_check": {
+        "source": "The expositions display36.9°/53.1° approximately. Exercise3D1/3 uses degree phases;3D2 uses exact radian phases. Positive amplitude and each stated phase interval are retained.",
+        "comparison": "A displayed rounded phase is not an exact coefficient identity. Every later root/graph uses exact source coefficients or the unrounded phase; do not carry a printed rounded phase into another answer."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "1",
+              "1"
+            ],
+            "target": "cos-minus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "printed_key_normalised": "Tuple(sqrt(2),45)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "1",
+                "1"
+              ],
+              "target": "cos-minus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 340,
+          "answer_printed_page": 326,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-337.png",
+            "sha256": "16161dc287d9e90c06d81cc8a3e5bf381d66239980812193b16c19fc5d46c9ea"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "21",
+              "20"
+            ],
+            "target": "cos-minus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true,
+            "phase_decimal_places": 1
+          },
+          "printed_key_normalised": "Tuple(29,464/10)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "21",
+                "20"
+              ],
+              "target": "cos-minus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 340,
+          "answer_printed_page": 326,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-337.png",
+            "sha256": "16161dc287d9e90c06d81cc8a3e5bf381d66239980812193b16c19fc5d46c9ea"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "sqrt(3)",
+              "1"
+            ],
+            "target": "cos-minus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "printed_key_normalised": "Tuple(2,60)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "sqrt(3)",
+                "1"
+              ],
+              "target": "cos-minus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 340,
+          "answer_printed_page": 326,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-337.png",
+            "sha256": "16161dc287d9e90c06d81cc8a3e5bf381d66239980812193b16c19fc5d46c9ea"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "2",
+              "sqrt(5)"
+            ],
+            "target": "cos-minus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true,
+            "phase_decimal_places": 1
+          },
+          "printed_key_normalised": "Tuple(3,418/10)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "2",
+                "sqrt(5)"
+              ],
+              "target": "cos-minus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 340,
+          "answer_printed_page": 326,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-337.png",
+            "sha256": "16161dc287d9e90c06d81cc8a3e5bf381d66239980812193b16c19fc5d46c9ea"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Exercise-3D:2",
+      "source_pdf_page": 89,
+      "notes": "Express cosθ−sinθand√3cosθ−sinθas r*cos(θ+α),r>0and0<α<π/2. The plus inside cosine requires a negative original sine coefficient.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T3:O02:D04"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T3:O02:D02"
+      ],
+      "mapping_rationale": "Only explicit requested forms, extrema, sketches and bounded roots are assessed. Unprompted generalisations are teaching/component evidence. The independently used norm/atan2 or half-angle verification methods do not become additional learner demands.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Express cosθ−sinθand√3cosθ−sinθas r*cos(θ+α),r>0and0<α<π/2. The plus inside cosine requires a negative original sine coefficient.",
+          "reason": "The source asks a coefficient form, not a periodic root family."
+        },
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "not applicable",
+          "quoted_value": "Express cosθ−sinθand√3cosθ−sinθas r*cos(θ+α),r>0and0<α<π/2. The plus inside cosine requires a negative original sine coefficient.",
+          "reason": "No domain/range output is requested."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Unattributed exposition, Example3.6 or ordinary Exercise3D; no examination attribution on these items.",
+      "precision_angle_check": {
+        "source": "The expositions display36.9°/53.1° approximately. Exercise3D1/3 uses degree phases;3D2 uses exact radian phases. Positive amplitude and each stated phase interval are retained.",
+        "comparison": "A displayed rounded phase is not an exact coefficient identity. Every later root/graph uses exact source coefficients or the unrounded phase; do not carry a printed rounded phase into another answer."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "-1",
+              "1"
+            ],
+            "target": "cos-plus",
+            "angle_unit": "radian",
+            "phase_bounds": [
+              "0",
+              "pi/2"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "printed_key_normalised": "Tuple(sqrt(2),pi/4)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "-1",
+                "1"
+              ],
+              "target": "cos-plus",
+              "angle_unit": "radian",
+              "phase_bounds": [
+                "0",
+                "pi/2"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 341,
+          "answer_printed_page": 327,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-341.png",
+            "sha256": "3f9f5d271ad83dac11ceedfcbec87feba7a451ba3d525b909e05f7958683dd1b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "-1",
+              "sqrt(3)"
+            ],
+            "target": "cos-plus",
+            "angle_unit": "radian",
+            "phase_bounds": [
+              "0",
+              "pi/2"
+            ],
+            "left_open": true,
+            "right_open": true
+          },
+          "printed_key_normalised": "Tuple(2,pi/6)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "-1",
+                "sqrt(3)"
+              ],
+              "target": "cos-plus",
+              "angle_unit": "radian",
+              "phase_bounds": [
+                "0",
+                "pi/2"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 341,
+          "answer_printed_page": 327,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-341.png",
+            "sha256": "3f9f5d271ad83dac11ceedfcbec87feba7a451ba3d525b909e05f7958683dd1b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Exercise-3D:3",
+      "source_pdf_page": 89,
+      "notes": "Express sinθ+2cosθand2sinθ+√5cosθas r*sin(θ+α),r>0and0°<α<90°. Compare sine/cosine coefficients in the target order, not a memorised reversed ratio.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T3:O02:D04"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T3:O02:D02"
+      ],
+      "mapping_rationale": "Only explicit requested forms, extrema, sketches and bounded roots are assessed. Unprompted generalisations are teaching/component evidence. The independently used norm/atan2 or half-angle verification methods do not become additional learner demands.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Express sinθ+2cosθand2sinθ+√5cosθas r*sin(θ+α),r>0and0°<α<90°. Compare sine/cosine coefficients in the target order, not a memorised reversed ratio.",
+          "reason": "The source asks a coefficient form, not a periodic root family."
+        },
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "not applicable",
+          "quoted_value": "Express sinθ+2cosθand2sinθ+√5cosθas r*sin(θ+α),r>0and0°<α<90°. Compare sine/cosine coefficients in the target order, not a memorised reversed ratio.",
+          "reason": "No domain/range output is requested."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Unattributed exposition, Example3.6 or ordinary Exercise3D; no examination attribution on these items.",
+      "precision_angle_check": {
+        "source": "The expositions display36.9°/53.1° approximately. Exercise3D1/3 uses degree phases;3D2 uses exact radian phases. Positive amplitude and each stated phase interval are retained.",
+        "comparison": "A displayed rounded phase is not an exact coefficient identity. Every later root/graph uses exact source coefficients or the unrounded phase; do not carry a printed rounded phase into another answer."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "1",
+              "2"
+            ],
+            "target": "sin-plus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true,
+            "phase_decimal_places": 1
+          },
+          "printed_key_normalised": "Tuple(sqrt(5),634/10)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "1",
+                "2"
+              ],
+              "target": "sin-plus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 341,
+          "answer_printed_page": 327,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-341.png",
+            "sha256": "3f9f5d271ad83dac11ceedfcbec87feba7a451ba3d525b909e05f7958683dd1b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "r-form-coefficients",
+            "operands": [
+              "2",
+              "sqrt(5)"
+            ],
+            "target": "sin-plus",
+            "angle_unit": "degree",
+            "phase_bounds": [
+              "0",
+              "90"
+            ],
+            "left_open": true,
+            "right_open": true,
+            "phase_decimal_places": 1
+          },
+          "printed_key_normalised": "Tuple(3,482/10)",
+          "method": "Match the coefficients of the original a*sin(t)+b*cos(t) to the specified target. Independently derive positive R by the coefficient norm and phase by a quadrant-aware atan2. Keep exact internal parameters; round only the requested/displayed phase. Verify both coefficient equations, rather than treating a rounded phase as an exact identity.",
+          "additional_operations": {
+            "unrounded_canonical_parameters": {
+              "kind": "r-form-coefficients",
+              "operands": [
+                "2",
+                "sqrt(5)"
+              ],
+              "target": "sin-plus",
+              "angle_unit": "degree",
+              "phase_bounds": [
+                "0",
+                "90"
+              ],
+              "left_open": true,
+              "right_open": true
+            }
+          },
+          "phase_comparison_basis": "Exact phase unless a decimal display is explicitly compared; the unrounded candidate is retained separately for graph/solution checks.",
+          "source_pdf_page": 89,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C3-86.png",
+            "sha256": "341b8948976ee4a1b6387d2abc0bd7e125ff957c8a2d80d633e45a47b34ba7c6"
+          },
+          "answer_pdf_page": 341,
+          "answer_printed_page": 327,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C3-341.png",
+            "sha256": "3f9f5d271ad83dac11ceedfcbec87feba7a451ba3d525b909e05f7958683dd1b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

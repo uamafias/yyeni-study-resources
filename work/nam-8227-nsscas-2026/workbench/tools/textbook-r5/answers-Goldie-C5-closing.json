@@ -1,0 +1,588 @@
+{
+  "scope": "Every guiding investigation subtask answered;author-derived,no printed key.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C5:Problem-solving-investigation:1",
+      "source_pdf_page": 156,
+      "notes": "Investigate Vesna’s three left/right-average/midpoint claims,choose varied examples and technology,collect and organise results,draw the necessary graphs,and explain what makes a numerical-integration rule useful. All source guiding subtasks on156–157are answered;rectangle/midpoint extensions remain distinct from prescribed trapezium evidence.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O03:D01",
+        "8227:2020:M2:T5:O03:D02",
+        "8227:2020:M2:T5:O04:D01",
+        "8227:2020:M2:T5:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "The investigation directly compares trapezium estimates and requires graph/error reasoning. Left/right and midpoint algorithms are comparative extensions,not additional8227methods. Author counterexamples and selected data answer the open investigation;they do not define a required classroom recipe.",
+      "representation": "graph",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Problem-solving investigation,not an exam attribution.",
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Trapezium and simple graph-bias reasoning prescribed;rectangle/midpoint rules and formal convergence/error theorems are comparative enrichment.",
+        "excluded_or_qualified_parts": [
+          "Do not make midpoint/rectangle algorithms or formal convergence theorems mandatory8227content."
+        ]
+      },
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "Compare simple graphs and trapezium over/under bias;the source also asks broader midpoint-rule claims.",
+          "reason": "Retain graph justification without requiring a formal second-derivative/error theorem. Extension methods do not add syllabus scope."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "No mandatory numeric precision;the task asks how outcomes and accuracy should be reported.",
+        "comparison": "Keep17-digit author experiment values with their original formulas and grid;they are numerical evidence,not exact source answers or a universal error bound."
+      },
+      "expected_subpart_labels": [
+        "left-right-claim",
+        "average-identity",
+        "midpoint-counterexample",
+        "specification-and-collection",
+        "processing-sketches-and-reporting",
+        "interpretation-and-other-methods"
+      ],
+      "subparts": [
+        {
+          "subpart": "left-right-claim",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "The claim that both endpoint-rectangle rules always underestimate is false.",
+          "author_derivation": "For increasing f=1+x on[0,1],one left rectangle has area1and one right rectangle has area2,while the integral is3/2. For decreasing f=2−x,the signs reverse. Monotonicity can justify opposite left/right bounds;an arbitrary nonmonotonic curve needs its local shape considered. The source’s provisional learner statements are the propositions to investigate,not errors in a printed answer key.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_page_override": null,
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            345,
+            346
+          ],
+          "source_pdf_page": 156,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-154.png",
+            "sha256": "93ca37efc271f92bda479dcb57485f96de53567a091b3bcecee977dedbb8a05d"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "increasing_example": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((1+x).subs(x,0),(1+x).subs(x,1),integrate(1+x,(x,0,1)))"
+              ]
+            },
+            "decreasing_example": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((2-x).subs(x,0),(2-x).subs(x,1),integrate(2-x,(x,0,1)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "increasing_example": "Tuple(1,2,3/2)",
+            "decreasing_example": "Tuple(2,1,3/2)"
+          }
+        },
+        {
+          "subpart": "average-identity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "For the same partition,the average of left and right rectangle sums equals the trapezium sum exactly.",
+          "author_derivation": "On each interval of widthhᵢ,the average is[hᵢf(xᵢ)+hᵢf(xᵢ₊₁)]/2,the area of that interpolation trapezium. Summing proves the statement,including a nonuniform common partition. For an equal grid this becomes h/2[end ordinates+twice the middle ordinates]. This is an algebraic identity,not a statement that the approximation equals the true integral.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_page_override": null,
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            345,
+            346
+          ],
+          "source_pdf_page": 156,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-154.png",
+            "sha256": "93ca37efc271f92bda479dcb57485f96de53567a091b3bcecee977dedbb8a05d"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "one_segment_average_residual": {
+              "kind": "identity",
+              "operands": [
+                "(c*a+c*b)/2-c*(a+b)/2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "one_segment_average_residual": "0"
+          }
+        },
+        {
+          "subpart": "midpoint-counterexample",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "Midpoint rectangles are not always more accurate than trapezia for every function and every interval count.",
+          "author_derivation": "Use f(x)=2+x⁴−(9/5)x² on[0,1],with one interval. The exact integral and trapezium sum are both8/5. The midpoint value is129/80,so its absolute error is1/80and the trapezium error is0. A linear function also makes both methods exact. This refutes the unrestricted claim without denying midpoint accuracy for many smooth convex/concave examples.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_page_override": null,
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            345,
+            346
+          ],
+          "source_pdf_page": 156,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-154.png",
+            "sha256": "93ca37efc271f92bda479dcb57485f96de53567a091b3bcecee977dedbb8a05d"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "additional_operations": {
+            "counterexample_I_T_M": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(integrate(2+x**4-9*x**2/5,(x,0,1)),((2+x**4-9*x**2/5).subs(x,0)+(2+x**4-9*x**2/5).subs(x,1))/2,(2+x**4-9*x**2/5).subs(x,1/2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "counterexample_I_T_M": "Tuple(8/5,8/5,129/80)"
+          }
+        },
+        {
+          "subpart": "specification-and-collection",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "Use a shared interval[0,1],counts1,2,4,8,16,and convex,concave,mixed-curvature and numerically integrated functions. Retain original formulas,node positions and all four estimates.",
+          "author_derivation": "Choose1+x²,2−x²,the counterexample polynomial,and e^(−x²). Draw each shape first and keep the same node partition for L,R,T,M. Compute signed and absolute errors where the exact integral is available. For e^(−x²),a high-precision independent quadrature supplies an author reference;learners can investigate numerically without a new special-function demand. This answers the source questions on technology,example choice,interval counts and collecting enough varied evidence.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_page_override": null,
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            345,
+            346
+          ],
+          "source_pdf_page": 156,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-154.png",
+            "sha256": "93ca37efc271f92bda479dcb57485f96de53567a091b3bcecee977dedbb8a05d"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "numerical_experiments": [
+            {
+              "function": "1+x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 1,
+              "L": "1.0000000000000000",
+              "R": "2.0000000000000000",
+              "T": "1.5000000000000000",
+              "M": "1.2500000000000000",
+              "reference_integral": "1.3333333333333333",
+              "T_signed_error": "0.16666666666666667",
+              "M_signed_error": "-0.083333333333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "1+x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 2,
+              "L": "1.1250000000000000",
+              "R": "1.6250000000000000",
+              "T": "1.3750000000000000",
+              "M": "1.3125000000000000",
+              "reference_integral": "1.3333333333333333",
+              "T_signed_error": "0.041666666666666667",
+              "M_signed_error": "-0.020833333333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "1+x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 4,
+              "L": "1.2187500000000000",
+              "R": "1.4687500000000000",
+              "T": "1.3437500000000000",
+              "M": "1.3281250000000000",
+              "reference_integral": "1.3333333333333333",
+              "T_signed_error": "0.010416666666666667",
+              "M_signed_error": "-0.0052083333333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "1+x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 8,
+              "L": "1.2734375000000000",
+              "R": "1.3984375000000000",
+              "T": "1.3359375000000000",
+              "M": "1.3320312500000000",
+              "reference_integral": "1.3333333333333333",
+              "T_signed_error": "0.0026041666666666667",
+              "M_signed_error": "-0.0013020833333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "1+x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 16,
+              "L": "1.3027343750000000",
+              "R": "1.3652343750000000",
+              "T": "1.3339843750000000",
+              "M": "1.3330078125000000",
+              "reference_integral": "1.3333333333333333",
+              "T_signed_error": "0.00065104166666666667",
+              "M_signed_error": "-0.00032552083333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2-x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 1,
+              "L": "2.0000000000000000",
+              "R": "1.0000000000000000",
+              "T": "1.5000000000000000",
+              "M": "1.7500000000000000",
+              "reference_integral": "1.6666666666666667",
+              "T_signed_error": "-0.16666666666666667",
+              "M_signed_error": "0.083333333333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2-x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 2,
+              "L": "1.8750000000000000",
+              "R": "1.3750000000000000",
+              "T": "1.6250000000000000",
+              "M": "1.6875000000000000",
+              "reference_integral": "1.6666666666666667",
+              "T_signed_error": "-0.041666666666666667",
+              "M_signed_error": "0.020833333333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2-x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 4,
+              "L": "1.7812500000000000",
+              "R": "1.5312500000000000",
+              "T": "1.6562500000000000",
+              "M": "1.6718750000000000",
+              "reference_integral": "1.6666666666666667",
+              "T_signed_error": "-0.010416666666666667",
+              "M_signed_error": "0.0052083333333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2-x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 8,
+              "L": "1.7265625000000000",
+              "R": "1.6015625000000000",
+              "T": "1.6640625000000000",
+              "M": "1.6679687500000000",
+              "reference_integral": "1.6666666666666667",
+              "T_signed_error": "-0.0026041666666666667",
+              "M_signed_error": "0.0013020833333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2-x**2",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 16,
+              "L": "1.6972656250000000",
+              "R": "1.6347656250000000",
+              "T": "1.6660156250000000",
+              "M": "1.6669921875000000",
+              "reference_integral": "1.6666666666666667",
+              "T_signed_error": "-0.00065104166666666667",
+              "M_signed_error": "0.00032552083333333333",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2+x**4-9*x**2/5",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 1,
+              "L": "2.0000000000000000",
+              "R": "1.2000000000000000",
+              "T": "1.6000000000000000",
+              "M": "1.6125000000000000",
+              "reference_integral": "1.6000000000000000",
+              "T_signed_error": "0",
+              "M_signed_error": "0.012500000000000000",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2+x**4-9*x**2/5",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 2,
+              "L": "1.8062500000000000",
+              "R": "1.4062500000000000",
+              "T": "1.6062500000000000",
+              "M": "1.5976562500000000",
+              "reference_integral": "1.6000000000000000",
+              "T_signed_error": "0.0062500000000000000",
+              "M_signed_error": "-0.0023437500000000000",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2+x**4-9*x**2/5",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 4,
+              "L": "1.7019531250000000",
+              "R": "1.5019531250000000",
+              "T": "1.6019531250000000",
+              "M": "1.5990722656250000",
+              "reference_integral": "1.6000000000000000",
+              "T_signed_error": "0.0019531250000000000",
+              "M_signed_error": "-0.00092773437500000000",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2+x**4-9*x**2/5",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 8,
+              "L": "1.6505126953125000",
+              "R": "1.5505126953125000",
+              "T": "1.6005126953125000",
+              "M": "1.5997467041015625",
+              "reference_integral": "1.6000000000000000",
+              "T_signed_error": "0.00051269531250000000",
+              "M_signed_error": "-0.00025329589843750000",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "2+x**4-9*x**2/5",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 16,
+              "L": "1.6251296997070313",
+              "R": "1.5751296997070313",
+              "T": "1.6001296997070313",
+              "M": "1.5999353408813477",
+              "reference_integral": "1.6000000000000000",
+              "T_signed_error": "0.00012969970703125000",
+              "M_signed_error": "-6.4659118652343750e-5",
+              "reference_kind": "exact elementary integral"
+            },
+            {
+              "function": "exp(-x**2)",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 1,
+              "L": "1.0000000000000000",
+              "R": "0.36787944117144232",
+              "T": "0.68393972058572116",
+              "M": "0.77880078307140487",
+              "reference_integral": "0.74682413281242703",
+              "T_signed_error": "-0.062884412226705865",
+              "M_signed_error": "0.031976650258977843",
+              "reference_kind": "author quadrature cross-check required; special-function expression not learner scope"
+            },
+            {
+              "function": "exp(-x**2)",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 2,
+              "L": "0.88940039153570243",
+              "R": "0.57334011212142359",
+              "T": "0.73137025182856301",
+              "M": "0.75459794377219940",
+              "reference_integral": "0.74682413281242703",
+              "T_signed_error": "-0.015453880983864011",
+              "M_signed_error": "0.0077738109597723725",
+              "reference_kind": "author quadrature cross-check required; special-function expression not learner scope"
+            },
+            {
+              "function": "exp(-x**2)",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 4,
+              "L": "0.82199916765395092",
+              "R": "0.66396902794681150",
+              "T": "0.74298409780038121",
+              "M": "0.74874713189100921",
+              "reference_integral": "0.74682413281242703",
+              "T_signed_error": "-0.0038400350120458192",
+              "M_signed_error": "0.0019229990785821802",
+              "reference_kind": "author quadrature cross-check required; special-function expression not learner scope"
+            },
+            {
+              "function": "exp(-x**2)",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 8,
+              "L": "0.78537314977248006",
+              "R": "0.70635807991891035",
+              "T": "0.74586561484569521",
+              "M": "0.74730357873074789",
+              "reference_integral": "0.74682413281242703",
+              "T_signed_error": "-0.00095851796673181948",
+              "M_signed_error": "0.00047944591832086703",
+              "reference_kind": "author quadrature cross-check required; special-function expression not learner scope"
+            },
+            {
+              "function": "exp(-x**2)",
+              "interval": [
+                "0",
+                "1"
+              ],
+              "strips": 16,
+              "L": "0.76633836425161398",
+              "R": "0.72683082932482912",
+              "T": "0.74658459678822155",
+              "M": "0.74694391251636688",
+              "reference_integral": "0.74682413281242703",
+              "T_signed_error": "-0.00023953602420547622",
+              "M_signed_error": "0.00011977970393985300",
+              "reference_kind": "author quadrature cross-check required; special-function expression not learner scope"
+            }
+          ],
+          "additional_operations": {
+            "Gaussian_reference_integral": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "exp(-x**2)",
+                "0",
+                "1"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "Gaussian_reference_integral": "sqrt(pi)*erf(1)/2"
+          }
+        },
+        {
+          "subpart": "processing-sketches-and-reporting",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "Organise one comparison table per function,show L,R,T,M and signed/absolute error across the five grids,and sketch the corresponding interpolation shapes.",
+          "author_derivation": "For1+x²and2−x²,the curvature signs explain the opposite midpoint/trapezium biases. The mixed-curvature polynomial has a special one-strip cancellation;report it as a counterexample,not a general law. e^(−x²)changes curvature at1/√2on this interval,so a single blanket convexity claim is invalid. Preserve that source graphs illustrate an increasing curve but give no numeric formula to recover. A diagram of that curve alone does not prove a universal accuracy ordering.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_page_override": null,
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            345,
+            346
+          ],
+          "source_pdf_page": 156,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-154.png",
+            "sha256": "93ca37efc271f92bda479dcb57485f96de53567a091b3bcecee977dedbb8a05d"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "required_sketch_features": [
+            "Use the original function and interval for each experiment.",
+            "Align rectangle/trapezium boundaries with the selected grid.",
+            "Mark which heights are left,right or midpoint evaluations.",
+            "Show the mixed-curvature/inflection case rather than drawing every example as globally convex."
+          ]
+        },
+        {
+          "subpart": "interpretation-and-other-methods",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "A useful rule should converge under stated regularity,be practical for available data,and support an honest accuracy estimate;no method is universally best on all finite grids.",
+          "author_derivation": "For continuous f on a closed interval,the rectangle/trapezium sums converge as the maximum strip width tends to0. Where curvature is controlled,the graph supports directional error claims. Finite agreement is not a rigorous bound:5C6already gives two agreeing coarse estimates that miss two humps. Midpoint evaluation needs values between data nodes,which may be unavailable for an experimental table. Other rules such as Simpson may be mentioned as extension,but are not added to the8227prescribed trapezium demand. This answers the source’s requests to define good,identify desirable features and conclude with other methods.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_page_override": null,
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            345,
+            346
+          ],
+          "source_pdf_page": 156,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-154.png",
+            "sha256": "93ca37efc271f92bda479dcb57485f96de53567a091b3bcecee977dedbb8a05d"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "status": "eleven narrow author corrections checked against rendered source;independent repair acceptance pending",
+  "entries": [
+    {
+      "defect_id": "TB-R6-ITERATE-LABELS",
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:7",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [
+        "8227:TB:Goldie:C6:Teaching-figure:16"
+      ],
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "source_pdf_page": 170,
+      "source_printed_page": 156,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "Figure6.10swaps the x1 and x2 abscissa labels.",
+      "correct_answer": "x1=0.5 is the initial point; x2=(1-0.5 exp(0.5))/0.5 is approximately0.3513,so the label at0.5 is x1 and the label near0.35 is x2.",
+      "working": "Evaluate the original supplied map at the stated start. The third iterate is approximately1.43;changing labels does not change the recurrence.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/Goldie-170.png",
+          "sha256": "00cd9c09cf70a30db6d775bb56753f262082990d15242c318f0ad6da8652cc71",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-COSINE-QUADRANT",
+      "item_id": "8227:TB:YM:C4:Teaching-figure:83",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 186,
+      "source_printed_page": 174,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The cosine graph labels the90degree–180degree quadrant as Quadrant3.",
+      "correct_answer": "That interval is Quadrant2;180degree–270degree is Quadrant3.",
+      "working": "The terminal angle definition fixes the quadrants;cosine is negative in bothIIandIII,but that does not make their labels interchangeable.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-186.png",
+          "sha256": "086ba64f29bed2118206c01b3976dacea3ed4b501826114b95e6a1d6516ad4b3",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-NEGATIVE-INFINITY-SIGNS",
+      "item_id": "8227:TB:YM:C7:Teaching-figure:60",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 350,
+      "source_printed_page": 338,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The x<0 rows of the multiplication/division infinity table contain incorrect signs.",
+      "correct_answer": "For a fixed finite negative c:c times positive-infinity tends to negative-infinity;c times negative-infinity tends to positive-infinity;positive-infinity/c tends to negative-infinity;negative-infinity/c tends to positive-infinity.",
+      "working": "Use a fixed negative multiplier/divisor and a real variable tending to each directed infinity. This is limiting shorthand,not arithmetic on an infinite real number.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-350.png",
+          "sha256": "05f8704e2eb97c0c6a21ee9795bc9148ab4fb2ee771eade87a27ef410124d346",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-LOG-SQUARE-DOMAIN",
+      "item_id": "8227:TB:YM:C11:Teaching-figure:36",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 495,
+      "source_printed_page": 483,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The worked expansion ln(x squared)=2ln(x) omits the x>0condition.",
+      "correct_answer": "For real x!=0,use ln(x squared)=2ln(abs(x));the original ln(3x squared) has both positive and negative components. Its derivative2/x remains correct.",
+      "working": "At x=-1,the original logarithm is defined but ln(x) is not real. On either nonzero component the absolute-log derivative is2/x.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-495.png",
+          "sha256": "2b201eabd7a74971c9a04396d2fe0ebe44b881eca3575f322af8f38801c80619",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-R-EXTREMUM-PHASE",
+      "item_id": "8227:TB:YM:C10:Teaching-figure:105",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 474,
+      "source_printed_page": 462,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The summary uses cos(theta+alpha)=plus/minus1as an interchangeable condition for the same sine-phase R-form.",
+      "correct_answer": "For a sin(theta)+b cos(theta)=R sin(theta+alpha),extrema require sin(theta+alpha)=plus/minus1. A cosine alternative needs its own coefficient-matched phase,not the same alpha.",
+      "working": "Counterexample:a=b=1,alpha=45degrees. The maximum is at theta45degrees,where sin(theta+alpha)=1 but cos(theta+alpha)=0.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-474.png",
+          "sha256": "c631fd340042d75a83e1be4182a17d8cf8a76f7a5c4ef5b01ef2e8d127083176",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-STAIRCASE-GRADIENT-RULE",
+      "item_id": "8227:TB:YM:C13:Teaching-figure:54",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 574,
+      "source_printed_page": 562,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The margin note says both graph gradients can be negative for the staircase comparison against y=x.",
+      "correct_answer": "The reference y=x has gradient+1,so both gradients cannot be negative. A positive local map slope can give a staircase pattern;a negative map slope can give alternating/cobweb behaviour. Sign alone is not a convergence test.",
+      "working": "Differentiate the actual reference line and distinguish pattern direction from convergence magnitude. Formal convergence conditions remain outside the required8227scope.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-574.png",
+          "sha256": "8ab31ef218d7e0d6d2ada6b255ff380428779427ed40c6b5bc5910f9a480a1cd",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-CONCAVITY-WORD",
+      "item_id": "8227:TB:YM:C12:Teaching-figure:121",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 555,
+      "source_printed_page": 543,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The solution calls the upward-bending cosecant curve concave without the qualifying upward direction.",
+      "correct_answer": "On pi/4..pi/2,cosec(x) is convex/concave-up and the chord tops lie above it;the trapezium overestimate conclusion is correct.",
+      "working": "Its second derivative is cosec(x)cot(x)^2+cosec(x)^3>0 on that interval. A source terminology error is separate from its correct bias conclusion.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-555.png",
+          "sha256": "b6ed508ae45c19ecb77a67169acb329d4e33b10415a0a00b2bad7ff1f4507874",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-DUPLICATE-LOG-LEGEND",
+      "item_id": "8227:TB:YM:C9:Teaching-figure:58",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 429,
+      "source_printed_page": 417,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The lower four-logarithm plot repeats the legend name g(x);the fourth displayed rule is the intended u(x).",
+      "correct_answer": "Use distinct source names:f=log base(1/2),g=log base(1/10),h=log base(1/1.2),u=log base(1/e)=-ln(x).",
+      "working": "Read the preceding task labels and each displayed denominator. The fourth curve does not share the second curve rule merely because its legend repeats g.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-429.png",
+          "sha256": "0804d9e3134103b0ea72863e5002614f0d501dc115c21f6223b24ea736af796f",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-INCREASING-BASE-HEADER",
+      "item_id": "8227:TB:YM:C9:Teaching-figure:122",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 447,
+      "source_printed_page": 435,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The increasing exponential summary header says a>0.",
+      "correct_answer": "The increasing case requires a>1. For0<a<1,the exponential is decreasing;for a=1,it is constant.",
+      "working": "All displayed increasing examples10,e,2,1.2exceed1;the general header must match those actual cases.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-447.png",
+          "sha256": "c61dded70e962335993b89439e7154e90111139928d4da7eb51a7216b95ad67c",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-AP-WORKING-SIGN",
+      "item_id": "8227:TB:YM:C2:Example:7",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 57,
+      "source_printed_page": 46,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "Part(b)prints13-2(-3)in its final substitution line while reporting the correct terms13,10,7.",
+      "correct_answer": "With a=13,d=-3,the third term is13+2(-3)=7. Correct the working sign;the printed final terms remain correct.",
+      "working": "T8=13+7(-3)=-8andT16=13+15(-3)=-32;the original givens and final terms reconcile.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-57.png",
+          "sha256": "16262518f1d02b69de28934f41aaf022b79409f8117e5ebc830a7785c1d297f2",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    },
+    {
+      "defect_id": "TB-R6-SIGMA-BRACKETS",
+      "item_id": "8227:TB:YM:C2:Example:25",
+      "subpart": "figure/working",
+      "also_affects_item_ids": [],
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "source_pdf_page": 74,
+      "source_printed_page": 63,
+      "answer_pdf_page": null,
+      "answer_printed_page": null,
+      "kind": "printed figure/working/notation error; final answer is a separate check",
+      "issue": "The source prints Sigma3n+2without grouping the whole intended summand.",
+      "correct_answer": "Write sum from n1to4of(3n+2)=5+8+11+14=38. The alternative(sum3n)+2would equal32,so the scope must be explicit.",
+      "working": "Expand both possible readings independently. The source expanded series and final38show its intended grouped summand.",
+      "evidence": [
+        {
+          "path": "work/nam-8227-nsscas-2026/workbench/checks/r6/source/YM-74.png",
+          "sha256": "88eac2aa31e6bc7f047cab4f6f2afe7c2b2bcbbf61e0477b0054eebeccd5babd",
+          "render_scale": 4
+        }
+      ],
+      "date": "2026-11-21",
+      "reviewer": "Codex author; visually checked on the native source render in R6; independent repair check pending",
+      "disposition": "Internal source evidence with explicit correction;do not reuse the defective label,sign,condition or wording.",
+      "learner_display": false
+    }
+  ]
+}

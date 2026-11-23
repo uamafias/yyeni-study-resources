@@ -1,0 +1,615 @@
+{
+  "scope": "Every retained8C7,Examples11/12,8D1and8D3(i)/(ii)response,with original method conditions.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8C:7",
+      "source_pdf_page": 208,
+      "notes": "For y=x/(x²+1)with a given positive maximum and shaded0..pregion,find the maximum input,its area formula,and pwhen the area is1. Only the maximum part is directly prescribed;the nonlinear-log area and its dependent inverse are audited as supporting extension.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O02:D02",
+        "8227:2020:M1:T8:O04:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "The textbook prints this examination attribution: Cambridge9709Paper3Q9June2005. It was checked on the textbook render;the primary paper was not read here.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "For y=x/(x²+1)with a given positive maximum and shaded0..pregion,find the maximum input,its area formula,and pwhen the area is1. Only the maximum part is directly prescribed;the nonlinear-log area and its dependent inverse are audited as supporting extension.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "For y=x/(x²+1)with a given positive maximum and shaded0..pregion,find the maximum input,its area formula,and pwhen the area is1. Only the maximum part is directly prescribed;the nonlinear-log area and its dependent inverse are audited as supporting extension.",
+        "excluded_or_qualified_parts": [
+          "ii:unscaffolded nonlinear-log integration beyond the listed affine forms.",
+          "iii:depends on the unsupplied extension result from(ii);retain its mathematically valid inverse as supporting evidence."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Part(iii)asks3significant figures. The maximum input is exact;no angle variable occurs.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i-max-input",
+        "ii-area-formula",
+        "iii-positive-p"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-max-input",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(diff(x/(x**2+1),x),x)[1]"
+            ]
+          },
+          "printed_key_normalised": "1",
+          "method": "Differentiate the actual rational function. Stationary inputs are−1and1;the positive point1has negative second derivative and is the indicated maximumM. The negative input is a minimum,not a second maximum to report.",
+          "additional_operations": {
+            "all_stationary_inputs": {
+              "kind": "identity",
+              "operands": [
+                "FiniteSet(*solve(diff(x/(x**2+1),x),x))"
+              ]
+            },
+            "curvature_at_candidates": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(x/(x**2+1),x,2).subs(x,-1),diff(x/(x**2+1),x,2).subs(x,1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "all_stationary_inputs": "FiniteSet(-1,1)",
+            "curvature_at_candidates": "Tuple(1/2,-1/2)"
+          },
+          "source_pdf_page": 208,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-area-formula",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(x/(x**2+1),(x,0,p))"
+            ]
+          },
+          "printed_key_normalised": "log(1+p**2)/2",
+          "method": "For internal extension QA,integrate the positive-side shaded function from0top>0. The denominator has no real zero and the exact area is½ln(1+p²). This unscaffolded nonlinear-log recognition is outside the listed affine reciprocal forms;the directly prescribed maximum task is retained separately.",
+          "source_pdf_page": 208,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii-positive-p",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "sqrt(exp(2)-1)"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "2.53",
+          "method": "Conditionally using the area expression from(ii),set½ln(1+p²)=1. The algebra givesp=±√(e²−1),but the positive right-hand region requiresp>0and its diagram placespafterM. The source’s3significant-figure answer2.53agrees. This use is supporting inverse practice because the source does not supply the area formula independently of the extension integral.",
+          "source_pdf_page": 208,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "direct_demand_aspects": [
+        {
+          "demand_id": "8227:2020:M1:T8:O04:D01",
+          "assessed_facet": "i only;classification/product skills used analytically are components."
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Example:11",
+      "source_pdf_page": 209,
+      "notes": "Find∫₀^(π/2)cosxsin²x dxwithout a forced method. An addition/double-angle identity reduces it to linear trig forms,so the source’s optional substitution does not make the original task outside scope.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O02:D01",
+        "8227:2020:M2:T5:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Find∫₀^(π/2)cosxsin²x dxwithout a forced method. An addition/double-angle identity reduces it to linear trig forms,so the source’s optional substitution does not make the original task outside scope.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Find∫₀^(π/2)cosxsin²x dxwithout a forced method. An addition/double-angle identity reduces it to linear trig forms,so the source’s optional substitution does not make the original task outside scope.",
+        "excluded_or_qualified_parts": []
+      },
+      "precision_angle_check": {
+        "source": "Radian bounds0andπ/2;the exact value is1/3.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "integral"
+      ],
+      "subparts": [
+        {
+          "subpart": "integral",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "cos(x)*sin(x)**2",
+              "0",
+              "pi/2"
+            ]
+          },
+          "printed_key_normalised": "1/3",
+          "method": "Derivecos3x=cos(2x+x)=cosx−4cosxsin²xfrom the prescribed addition/double-angle identities. Thuscosxsin²x=(cosx−cos3x)/4,a sum of permitted linear-angle trig terms. Integrate exactly over0..π/2to obtain1/3. The worked book uses an optional substitution;the original Find instruction does not require it.",
+          "additional_operations": {
+            "identity_route": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "cos(x)*sin(x)**2",
+                "(cos(x)-cos(3*x))/4"
+              ]
+            },
+            "linear_route_integral": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "(cos(x)-cos(3*x))/4",
+                "0",
+                "pi/2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "identity_route": "0",
+            "linear_route_integral": "1/3"
+          },
+          "source_pdf_page": 209,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 209,
+          "answer_printed_page": 195,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": {
+        "scope_basis": "SyllabusPDF16/printed13says use trigonometrical relationships such as double-angle formulae,withcos²xas an example rather than an exhaustive list. The exact derived identity demonstrates this particular route;no memorised triple-angle formula or general substitution is required.",
+        "review_limit": "This author scope judgement and its complexity remain for independent review/grade-bound comparison;it does not claim the task occurred in NSSCAS."
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Example:12",
+      "source_pdf_page": 209,
+      "notes": "Find∫cos³x dxwithout a forced method. A derived addition/double-angle identity gives a permitted finite linear-trig route;the book’s reverse-chain/inspection route is an alternative.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O02:D01",
+        "8227:2020:M2:T5:O01:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Find∫cos³x dxwithout a forced method. A derived addition/double-angle identity gives a permitted finite linear-trig route;the book’s reverse-chain/inspection route is an alternative.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Find∫cos³x dxwithout a forced method. A derived addition/double-angle identity gives a permitted finite linear-trig route;the book’s reverse-chain/inspection route is an alternative.",
+        "excluded_or_qualified_parts": []
+      },
+      "precision_angle_check": {
+        "source": "Indefinite radian-angle integration;retain an arbitrary additive constant.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "primitive"
+      ],
+      "subparts": [
+        {
+          "subpart": "primitive",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "cos(x)**3"
+            ]
+          },
+          "printed_key_normalised": "sin(x)-sin(x)**3/3",
+          "method": "Derivecos3x=4cos³x−3cosxfrom addition/double-angle identities. Then integratecos³x=(cos3x+3cosx)/4. The resulting sin3x/12+3sinx/4is equivalent to the source’ssinx−sin³x/3up to an arbitrary constant. The source allows inspection;general substitution is optional.",
+          "answer_equivalence": "up-to-additive-constant",
+          "additional_operations": {
+            "identity_route": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "cos(x)**3",
+                "(cos(3*x)+3*cos(x))/4"
+              ]
+            },
+            "linear_primitive_derivative": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "diff(sin(3*x)/12+3*sin(x)/4,x)",
+                "cos(x)**3"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "identity_route": "0",
+            "linear_primitive_derivative": "0"
+          },
+          "source_pdf_page": 209,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 209,
+          "answer_printed_page": 195,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": {
+        "scope_basis": "Do not interpret the syllabus’ssuchascos²xexample as a ban on this explicitly derived finite trig identity route. The harder identity choice is visible for later grade-bound review."
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8D:1",
+      "source_pdf_page": 211,
+      "notes": "Integrate the stated expressions using the given substitutionorotherwise. Retaini cos3x,ii sin(1−x),iii sinxcos³x,andvi sin2x(1+cos2x)²via permitted linear/finite identity routes. Partsiv/vlead to nonlinear log-trig primitives.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D02",
+        "8227:2020:M2:T5:O02:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Integrate the stated expressions using the given substitutionorotherwise. Retaini cos3x,ii sin(1−x),iii sinxcos³x,andvi sin2x(1+cos2x)²via permitted linear/finite identity routes. Partsiv/vlead to nonlinear log-trig primitives.",
+          "parts": [],
+          "reason": "A geometric shift,proper area or conceptual discussion does not mandate selecting a general integration substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Integrate the stated expressions using the given substitutionorotherwise. Retaini cos3x,ii sin(1−x),iii sinxcos³x,andvi sin2x(1+cos2x)²via permitted linear/finite identity routes. Partsiv/vlead to nonlinear log-trig primitives.",
+        "excluded_or_qualified_parts": [
+          "iv:sinx/(2−cosx)requires a nonlinear-log primitive.",
+          "v:tanxrequires a nonlinear-log primitive."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All angles are radians. Indefinite primitives have arbitrary constants;all four retained integrands are continuous onR.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "vi"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "cos(3*x)"
+            ]
+          },
+          "printed_key_normalised": "sin(3*x)/3",
+          "method": "Reverse differentiation ofsin3xrequires the coefficient1/3. The question expressly permitsorotherwise,so no general substitution is mandatory.",
+          "answer_equivalence": "up-to-additive-constant",
+          "source_pdf_page": 211,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "sin(1-x)"
+            ]
+          },
+          "printed_key_normalised": "cos(1-x)",
+          "method": "The derivative ofcos(1−x)is+sin(1−x);the negative inner derivative cancels the usual minus sign. The question expressly permitsorotherwise,so no general substitution is mandatory.",
+          "answer_equivalence": "up-to-additive-constant",
+          "source_pdf_page": 211,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "sin(x)*cos(x)**3"
+            ]
+          },
+          "printed_key_normalised": "-cos(x)**4/4",
+          "method": "Use permitted identities to rewrite as¼sin2x+⅛sin4x,or the source’s allowed otherwise/inspection route. The derivative of−cos⁴x/4checks the original product. The question expressly permitsorotherwise,so no general substitution is mandatory.",
+          "answer_equivalence": "up-to-additive-constant",
+          "additional_operations": {
+            "identity_route": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "sin(x)*cos(x)**3",
+                "sin(2*x)/4+sin(4*x)/8"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "identity_route": "0"
+          },
+          "source_pdf_page": 211,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "vi",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "sin(2*x)*(1+cos(2*x))**2"
+            ],
+            "integration_algorithm": "manual"
+          },
+          "printed_key_normalised": "-(1+cos(2*x))**3/6",
+          "method": "Expand using double-angle/addition relationships to(5/4)sin2x+sin4x+(1/4)sin6x,then integrate linear terms. This differs from the compact source primitive only by an additive constant. The question expressly permitsorotherwise,so no general substitution is mandatory.",
+          "answer_equivalence": "up-to-additive-constant",
+          "additional_operations": {
+            "identity_route": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "sin(2*x)*(1+cos(2*x))**2",
+                "5*sin(2*x)/4+sin(4*x)+sin(6*x)/4"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "identity_route": "0"
+          },
+          "source_pdf_page": 211,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "direct_demand_aspects": [
+        {
+          "demand_id": "8227:2020:M2:T5:O01:D02",
+          "assessed_facet": "iandii directly;iiiandvi after valid finite identities."
+        },
+        {
+          "demand_id": "8227:2020:M2:T5:O02:D01",
+          "assessed_facet": "iiiandvi have explicit identity routes;this is not a claim that the optional substitutions are mandatory."
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C8:Exercise-8D:3",
+      "source_pdf_page": 211,
+      "notes": "Only(i)/(ii):the original asks suitable substitutions for∫₀^(π/2)cos(2x−π/2)dxand∫₀^(π/4)cosxsin³x dx. Their values have permitted direct/identity routes,but the explicit extra method is retained;remaining parts are outside listed forms.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D02",
+        "8227:2020:M2:T5:O02:D01",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "mapping_rationale": "The explicit learner output is direct only when within prescribed scope. Unnumbered illustrations,photographs and results with an extra mandatory method stay supporting evidence. A method used incidentally inside an excluded inverse-trig task does not create direct coverage.",
+      "evidence_role": "prerequisite/supporting context or boundary-method evidence;no direct8227coverage claimed",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "outside",
+          "quoted_value": "Only(i)/(ii):the original asks suitable substitutions for∫₀^(π/2)cos(2x−π/2)dxand∫₀^(π/4)cosxsin³x dx. Their values have permitted direct/identity routes,but the explicit extra method is retained;remaining parts are outside listed forms.",
+          "parts": [
+            "required source method"
+          ],
+          "reason": "The original requires a general substitution. Audit its mathematical result as supporting/boundary evidence without claiming that this mandatory method is prescribed."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Only(i)/(ii):the original asks suitable substitutions for∫₀^(π/2)cos(2x−π/2)dxand∫₀^(π/4)cosxsin³x dx. Their values have permitted direct/identity routes,but the explicit extra method is retained;remaining parts are outside listed forms.",
+        "excluded_or_qualified_parts": [
+          "Mandatory general substitution is additional;only underlying mathematical content is retained as supporting evidence.",
+          "iii:nonlinear-angle substitution.",
+          "iv:nonlinear exponential-of-tangent primitive.",
+          "v:nonlinear log-of-tangent primitive."
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All displayed bounds are radians;the retained results1and1/16are exact.",
+        "comparison": "Retain original domains and consistent bounds/units. Additive-constant equivalence applies only to indefinite primitives on stated real components;it never changes a fixed-point curve or definite value."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "cos(2*x-pi/2)",
+              "0",
+              "pi/2"
+            ]
+          },
+          "printed_key_normalised": "1",
+          "method": "The enlarged source is∫₀^(π/2)cos(2x−π/2)dx,not the earlier boundary note’s different shift/bounds. Direct affine-trig integration gives[½sin(2x−π/2)]₀^(π/2)=1. The original explicitly asks suitable substitutions,an additional method condition which is not erased.",
+          "source_pdf_page": 211,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "cos(x)*sin(x)**3",
+              "0",
+              "pi/4"
+            ]
+          },
+          "printed_key_normalised": "1/16",
+          "method": "Independently usecosxsin³x=¼sin2x−⅛sin4xfrom permitted identities,then integrate0..π/4to get1/16. The source’s mandatory substitution condition remains additional;the numerical result itself has an in-scope identity route.",
+          "additional_operations": {
+            "identity_route": {
+              "kind": "trig-identity-residual",
+              "operands": [
+                "cos(x)*sin(x)**3",
+                "sin(2*x)/4-sin(4*x)/8"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "identity_route": "0"
+          },
+          "source_pdf_page": 211,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-scope-208.png",
+            "sha256": "bdadcfc0eb58a474643740910952e1cffe04552259078d42bfd0a32b61028041"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 337,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-keys-C8-350.png",
+            "sha256": "56da6cd81ad41bea2c085e628c58e569701f617d09437cdd5aa892484ecd4a7d"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "continuation_pdf_pages": [
+        212
+      ]
+    }
+  ]
+}

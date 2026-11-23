@@ -1,0 +1,953 @@
+{
+ "review": "opus-5-5-repair-r5",
+ "reviewer": "Claude Opus 5.5 (cross-vendor REVIEWER)",
+ "date": "2026-11-21",
+ "commission": "review/opus-5-5-repair-r4/REPAIR-PROMPT.md",
+ "author_entry": "analysis/REVIEW-START-HERE.md",
+ "git_head": "11cd03fe639f9936dd9f83fd04bd6f04d5181676",
+ "git_status_entries_at_start": 258,
+ "snapshot": {
+  "r5": "03cde4e4192d6bcd0bd43ab776d283d9f96b12c7da91f53a656996f214b5022d",
+  "r4_preserved": "f3b682495a66d71f6750e76df7972899eb8cb1a2a4b3f0f87cd15aaef5dccde1",
+  "freeze_check": "tools/freeze_analysis.py --check: all hashes match (4801 files, 436 sources, 19 review files)"
+ },
+ "file_sha256": {
+  "analysis/analysis-snapshot.json": "03cde4e4192d6bcd0bd43ab776d283d9f96b12c7da91f53a656996f214b5022d",
+  "analysis/history/analysis-snapshot-r4.json": "f3b682495a66d71f6750e76df7972899eb8cb1a2a4b3f0f87cd15aaef5dccde1",
+  "analysis/REVIEW-START-HERE.md": "cdac2ef04fe58e6d108ee16ba0a02c30e6a33f5b8ab4f50f5a2e5b9abbd211b9",
+  "HANDOVER.md": "a4ef64a8dc9d941a4e3b196198cbd884fc57ba543a9b43ec61265812f6ce36fe",
+  "STATUS.md": "d5adee28468f383d44a72303043d1f4eb51a3c775fcd59e14d26586a0899dbe4",
+  "checks/repair-r5-report.md": "545f2d24cafd7f9e31368b13f2d11e8be7cd3da3fa3de47585363a61844159c4",
+  "analysis/textbook-inventory.json": "d02af96a30ddad2e2acef51c741da4611afaa95081ed476981abdb69734d00b8",
+  "analysis/textbook-page-census.json": "c2fcbfee86f1dde6b43dd731e94ab74ead82f5578a74483002ba87b75d756f0d",
+  "analysis/textbook-answer-verification-r5.json": "d8549a65ca8b0c61a362e764d6dcade97936753806265640f00268029ec17b5f",
+  "analysis/textbook-families.json": "0b33d373f340b37674a13a3e01785d93a61cae296c45b0020edb267bcd11b774",
+  "analysis/textbook-insights.md": "8fd1e453f616b28ec9a77c59be6256fbd0670f337bcda4acc4b4e03ef7e8dd90",
+  "analysis/textbook-completion-audit-r5.json": "4713cd15abdf2b95a3df444a974cd9d0f43ffaf33536701ed4adcf3d2ea7bb09",
+  "analysis/textbook-synthesis-audit-r5.md": "bd7079f9a3925642065817d8f52d85983846a15dd3932cea67e75bdd8e028875",
+  "analysis/source-defects.json": "4196b31e0a907fa17ad8168a6843a1922d567b41ae74e06c52d2c5beba1daa46",
+  "analysis/marking-conventions.json": "9faec83bc9219b91c4f0cdd5409feae28b6de9634b9ca739e054c56026acae85",
+  "analysis/question-analysis.json": "08e1e2db159dc8f2e27ece84deaac7f56c088c5626d26430d255e5621378e941",
+  "analysis/nsscas-cambridge-provenance.json": "937e2d413579a56b98254ce6e1cad2326bf060d211884c71fb077da5af1eb293",
+  "analysis/provenance-full-screen-r5.json": "fb34da11a75f2f227317b4ad31c2b0c7ad63000ed0e322b277f0da1fc6ede3a8",
+  "analysis/provenance-reading-r5.json": "78b1833c161748e735eb148b600af7f411c18d2726b6257ed42f682fd1d5822f",
+  "analysis/award-repairs-r5.json": "627f1baab7b8c7f720a9b2e15faf93dda7f6fca4614b4e4f8091d748eec51e01",
+  "analysis/textbook-census-method-r5.md": "ac99e60b511954bbc2eec0f4fea2b98fd3c54e7437495087f5a78961abcc9b28",
+  "analysis/textbook-author-completion-r5.json": "3fa857f372496289f120c180b15c513325b37b84630d5715ec4e60c9e6ea585e",
+  "checks/fresh-copy-verification-r5.json": "788632005a5337b33193e93daf6b9adfe4bc04806c89728b7dc186ef65d506f9",
+  "tools/verify_relocated_r5.py": "e3c0062eb8a8fb8a5fea0140ca7e78a30944ccb8c03f41c60754dbc4447c00f0",
+  "tools/run_repair_checks.py": "51b39ff591e48b812d35d4f4e6da717422efdd00ab27fa078fdaaa979f8a23eb",
+  "tools/freeze_analysis.py": "80b61bb1dec13023865a6e4dbdafb6d200fc936bf40f6c6f62da1c4b60448be7"
+ },
+ "independent_checks": {
+  "reviewer_seed": "opus-5-5-r5-reviewer-2026-11-21",
+  "rebuild": {
+   "where": "fresh copy outside the repository (scratchpad r5root; workspace copied, shared inputs symlinked)",
+   "command": "tools/run_repair_checks.py",
+   "result": "2 rebuilds x 273 commands; 143 outputs byte-identical (141 author-compared + 2 completion declarations); 38 seeded negatives rejected; 0 outputs differ from the author checkout",
+   "elapsed_s": 1541
+  },
+  "freeze_check": "all hashes match",
+  "classification_sample": {
+   "method": "per stratum (book x figure/nonfigure): ascending sha256(seed|item_id), first ceil(10%)",
+   "records": 396,
+   "ids": [
+    "8227:TB:Goldie:C8:Exercise-8C:6",
+    "8227:TB:Goldie:C4:Example:13",
+    "8227:TB:Goldie:C2:Exercise-2C:6",
+    "8227:TB:Goldie:C4:Worked-derivation:3",
+    "8227:TB:Goldie:C10:Example:3",
+    "8227:TB:Goldie:C4:Exercise-4E:11",
+    "8227:TB:Goldie:C2:Exercise-2D:6",
+    "8227:TB:Goldie:C6:Worked-illustration:7",
+    "8227:TB:Goldie:C2:Exercise-2B:7",
+    "8227:TB:Goldie:C4:Example:4",
+    "8227:TB:Goldie:C1:Example:15",
+    "8227:TB:Goldie:C6:Exercise-6B:3",
+    "8227:TB:Goldie:C3:Exercise-3D:9",
+    "8227:TB:Goldie:C1:Exercise-1A:13",
+    "8227:TB:Goldie:C7:Exercise-7B:14",
+    "8227:TB:Goldie:C2:Activity:4",
+    "8227:TB:Goldie:C10:Exercise-10C:11",
+    "8227:TB:Goldie:C2:Exercise-2C:9",
+    "8227:TB:Goldie:C4:Example:8",
+    "8227:TB:Goldie:C2:Exercise-2D:3",
+    "8227:TB:Goldie:C4:Example:16",
+    "8227:TB:Goldie:C2:Exercise-2B:14",
+    "8227:TB:Goldie:C1:Example:1",
+    "8227:TB:Goldie:C10:Example:8",
+    "8227:TB:Goldie:C1:Exercise-1B:20",
+    "8227:TB:Goldie:C8:Prompt:3",
+    "8227:TB:Goldie:C6:Exercise-6B:4",
+    "8227:TB:Goldie:C10:Exercise-10A:5",
+    "8227:TB:Goldie:C1:Exercise-1B:23",
+    "8227:TB:Goldie:C4:Exercise-4A:6",
+    "8227:TB:Goldie:C9:Investigation:1",
+    "8227:TB:Goldie:C1:Prompt:1",
+    "8227:TB:Goldie:C3:Exercise-3A:7",
+    "8227:TB:Goldie:C8:Exercise-8B:7",
+    "8227:TB:Goldie:C4:Exercise-4A:2",
+    "8227:TB:Goldie:C3:Worked-derivation:4",
+    "8227:TB:Goldie:C4:Exercise-4D:9",
+    "8227:TB:Goldie:C10:Exercise-10F:10",
+    "8227:TB:Goldie:C3:Exercise-3B:1",
+    "8227:TB:Goldie:C1:Prompt:4",
+    "8227:TB:Goldie:C4:Exercise-4E:7",
+    "8227:TB:Goldie:C7:Exercise-7B:19",
+    "8227:TB:Goldie:C4:Exercise-4B:9",
+    "8227:TB:Goldie:C2:Exercise-2A:4",
+    "8227:TB:Goldie:C2:Exercise-2C:7",
+    "8227:TB:Goldie:C2:Example:5",
+    "8227:TB:Goldie:C4:Example:10",
+    "8227:TB:Goldie:C10:Exercise-10B:4",
+    "8227:TB:Goldie:C10:Activity:1",
+    "8227:TB:Goldie:C6:Activity:1",
+    "8227:TB:Goldie:C4:Exercise-4C:3",
+    "8227:TB:Goldie:C7:Worked-illustration:8",
+    "8227:TB:Goldie:C9:Example:3",
+    "8227:TB:Goldie:C2:Exercise-2A:5",
+    "8227:TB:Goldie:C5:Exercise-5C:11",
+    "8227:TB:Goldie:C8:Exercise-8H:3",
+    "8227:TB:Goldie:C8:Example:2",
+    "8227:TB:Goldie:C1:Exercise-1A:12",
+    "8227:TB:Goldie:C2:Exercise-2D:4",
+    "8227:TB:Goldie:C4:Exercise-4D:4",
+    "8227:TB:Goldie:C5:Exercise-5B:11",
+    "8227:TB:Goldie:C8:Teaching-figure:13",
+    "8227:TB:Goldie:C4:Teaching-figure:7",
+    "8227:TB:Goldie:C8:Teaching-figure:23",
+    "8227:TB:Goldie:C2:Teaching-figure:66",
+    "8227:TB:Goldie:C9:Teaching-figure:1",
+    "8227:TB:Goldie:C10:Teaching-figure:47",
+    "8227:TB:Goldie:C8:Teaching-figure:18",
+    "8227:TB:Goldie:C3:Teaching-figure:11",
+    "8227:TB:Goldie:C1:Teaching-figure:7",
+    "8227:TB:Goldie:C1:Teaching-figure:4",
+    "8227:TB:Goldie:C1:Teaching-figure:15",
+    "8227:TB:Goldie:C10:Teaching-figure:54",
+    "8227:TB:Goldie:C4:Teaching-figure:31",
+    "8227:TB:Goldie:C8:Teaching-figure:20",
+    "8227:TB:Goldie:C5:Teaching-figure:22",
+    "8227:TB:Goldie:C10:Teaching-figure:29",
+    "8227:TB:Goldie:C2:Teaching-figure:32",
+    "8227:TB:Goldie:C11:Teaching-figure:10",
+    "8227:TB:Goldie:C3:Teaching-figure:20",
+    "8227:TB:Goldie:C9:Teaching-figure:14",
+    "8227:TB:Goldie:C5:Teaching-figure:3",
+    "8227:TB:Goldie:C4:Teaching-figure:15",
+    "8227:TB:Goldie:C5:Teaching-figure:31",
+    "8227:TB:Goldie:C8:Teaching-figure:22",
+    "8227:TB:Goldie:C3:Teaching-figure:17",
+    "8227:TB:Goldie:C2:Teaching-figure:54",
+    "8227:TB:Goldie:C10:Teaching-figure:59",
+    "8227:TB:Goldie:C10:Teaching-figure:28",
+    "8227:TB:Goldie:C4:Teaching-figure:45",
+    "8227:TB:Goldie:C2:Teaching-figure:45",
+    "8227:TB:Goldie:C10:Teaching-figure:37",
+    "8227:TB:Goldie:C6:Teaching-figure:5",
+    "8227:TB:Goldie:C6:Teaching-figure:4",
+    "8227:TB:Goldie:C8:Teaching-figure:15",
+    "8227:TB:Goldie:C6:Teaching-figure:18",
+    "8227:TB:YM:C13:Example:11",
+    "8227:TB:YM:C4:Example:43",
+    "8227:TB:YM:C6:Try-Now-11:4",
+    "8227:TB:YM:C8:Try-Now:27",
+    "8227:TB:YM:C4:Example:47",
+    "8227:TB:YM:C4:Try-Now-46:2",
+    "8227:TB:YM:C4:Investigation-basic-trig-graphs:3",
+    "8227:TB:YM:C2:Example:7",
+    "8227:TB:YM:C12:Try-Now:6",
+    "8227:TB:YM:C11:Try-Now:26",
+    "8227:TB:YM:C13:Example:7",
+    "8227:TB:YM:C6:Try-Now-18:1",
+    "8227:TB:YM:C1:Example:23",
+    "8227:TB:YM:C7:Try-Now-22:2",
+    "8227:TB:YM:C6:Example:32",
+    "8227:TB:YM:C7:Example:9",
+    "8227:TB:YM:C7:Try-Now-34:2",
+    "8227:TB:YM:C6:Try-Now-35:3",
+    "8227:TB:YM:C8:Revision-Exercise-8:6",
+    "8227:TB:YM:C13:Try-Now-5:3",
+    "8227:TB:YM:C7:Try-Now:6",
+    "8227:TB:YM:C6:Try-Now-23:4",
+    "8227:TB:YM:C6:Try-Now-13:1",
+    "8227:TB:YM:C6:Try-Now-11:1",
+    "8227:TB:YM:C10:Try-Now:22",
+    "8227:TB:YM:C10:Example:12",
+    "8227:TB:YM:C7:Example:10",
+    "8227:TB:YM:C4:Try-Now:3",
+    "8227:TB:YM:C10:Example:16",
+    "8227:TB:YM:C7:Example:30",
+    "8227:TB:YM:C12:Exercise-12:8",
+    "8227:TB:YM:C13:Exercise-13:1",
+    "8227:TB:YM:C8:Try-Now-11:1",
+    "8227:TB:YM:C2:Try-Now-8:5",
+    "8227:TB:YM:C6:Try-Now-14:1",
+    "8227:TB:YM:C7:Try-Now:26",
+    "8227:TB:YM:C7:Example:17",
+    "8227:TB:YM:C12:Try-Now-21:1",
+    "8227:TB:YM:C8:Try-Now-7:2",
+    "8227:TB:YM:C6:Try-Now-4:1",
+    "8227:TB:YM:C6:Exercise-6:2",
+    "8227:TB:YM:C5:Try-Now-14:1",
+    "8227:TB:YM:C12:Example:5",
+    "8227:TB:YM:C3:Try-Now-9:3",
+    "8227:TB:YM:C2:Example:25",
+    "8227:TB:YM:C4:Try-Now-18:1",
+    "8227:TB:YM:C7:Try-Now-9:4",
+    "8227:TB:YM:C5:Try-Now-10:3",
+    "8227:TB:YM:C11:Revision-Exercise-11:1",
+    "8227:TB:YM:C4:Try-Now:28",
+    "8227:TB:YM:C4:Try-Now-42:3",
+    "8227:TB:YM:C3:Exercise-3.2:4",
+    "8227:TB:YM:C1:Try-Now-16:2",
+    "8227:TB:YM:C6:Try-Now-15:3",
+    "8227:TB:YM:C9:Exercise-9:9",
+    "8227:TB:YM:C1:Try-Now-29:2",
+    "8227:TB:YM:C7:Exercise-7:6",
+    "8227:TB:YM:C10:Try-Now:7",
+    "8227:TB:YM:C1:Exercise-1:1",
+    "8227:TB:YM:C4:Try-Now-45:1",
+    "8227:TB:YM:C1:Example:36",
+    "8227:TB:YM:C6:Try-Now-7:1",
+    "8227:TB:YM:C1:Try-Now:11",
+    "8227:TB:YM:C4:Try-Now-47:2",
+    "8227:TB:YM:C4:Example:29",
+    "8227:TB:YM:C10:Revision-Exercise-10:3",
+    "8227:TB:YM:C4:Example:45",
+    "8227:TB:YM:C1:Try-Now-18:3",
+    "8227:TB:YM:C9:Exercise-9:13",
+    "8227:TB:YM:C8:Example:18",
+    "8227:TB:YM:C11:Revision-Exercise-11:5",
+    "8227:TB:YM:C4:Try-Now-47:6",
+    "8227:TB:YM:C12:Try-Now-16:1",
+    "8227:TB:YM:C4:Example:51",
+    "8227:TB:YM:C11:Try-Now:14",
+    "8227:TB:YM:C12:Revision-Exercise-12:1",
+    "8227:TB:YM:C9:Try-Now-33:1",
+    "8227:TB:YM:C8:Exercise-8:10",
+    "8227:TB:YM:C1:Try-Now-33:2",
+    "8227:TB:YM:C6:Try-Now-24:2",
+    "8227:TB:YM:C10:Example:19",
+    "8227:TB:YM:C4:Example:58",
+    "8227:TB:YM:C11:Example:29",
+    "8227:TB:YM:C1:Try-Now-35:1",
+    "8227:TB:YM:C4:Try-Now-56:2",
+    "8227:TB:YM:C4:Exercise-4.2:8",
+    "8227:TB:YM:C9:Try-Now-5:1",
+    "8227:TB:YM:C10:Exercise-10:5",
+    "8227:TB:YM:C12:Example:14",
+    "8227:TB:YM:C5:Try-Now-9:2",
+    "8227:TB:YM:C2:Try-Now-14:3",
+    "8227:TB:YM:C11:Try-Now-36:2",
+    "8227:TB:YM:C8:Worked-illustration:1",
+    "8227:TB:YM:C2:Try-Now-37:3",
+    "8227:TB:YM:C10:Example:17",
+    "8227:TB:YM:C11:Example:9",
+    "8227:TB:YM:C5:Example:4",
+    "8227:TB:YM:C1:Try-Now-31:1",
+    "8227:TB:YM:C5:Revision-Exercise-5:1",
+    "8227:TB:YM:C6:Try-Now:39",
+    "8227:TB:YM:C3:Try-Now-7:1",
+    "8227:TB:YM:C2:Try-Now-24:4",
+    "8227:TB:YM:C4:Illustration-principal-value:2",
+    "8227:TB:YM:C2:Try-Now-14:2",
+    "8227:TB:YM:C10:Try-Now:18",
+    "8227:TB:YM:C2:Try-Now:21",
+    "8227:TB:YM:C7:Try-Now-18:4",
+    "8227:TB:YM:C2:Exercise-2.2:2",
+    "8227:TB:YM:C9:Exercise-9:12",
+    "8227:TB:YM:C4:Exercise-4.2:4",
+    "8227:TB:YM:C3:Try-Now-4:1",
+    "8227:TB:YM:C4:Example:4",
+    "8227:TB:YM:C4:Try-Now-55:2",
+    "8227:TB:YM:C1:Try-Now-35:4",
+    "8227:TB:YM:C2:Try-Now:22",
+    "8227:TB:YM:C3:Try-Now-4:3",
+    "8227:TB:YM:C6:Try-Now-38:2",
+    "8227:TB:YM:C9:Try-Now-17:2",
+    "8227:TB:YM:C6:Try-Now-23:3",
+    "8227:TB:YM:C9:Try-Now-25:1",
+    "8227:TB:YM:C11:Try-Now-38:2",
+    "8227:TB:YM:C2:Try-Now-2:2",
+    "8227:TB:YM:C6:Try-Now-19:2",
+    "8227:TB:YM:C6:Example:24",
+    "8227:TB:YM:C7:Try-Now-39:3",
+    "8227:TB:YM:C10:Try-Now-16:3",
+    "8227:TB:YM:C8:Example:13",
+    "8227:TB:YM:C3:Try-Now-5:1",
+    "8227:TB:YM:C2:Try-Now-33:5",
+    "8227:TB:YM:C11:Example:30",
+    "8227:TB:YM:C6:Example:6",
+    "8227:TB:YM:C8:Try-Now-11:2",
+    "8227:TB:YM:C9:Try-Now-25:2",
+    "8227:TB:YM:C12:Try-Now-5:1",
+    "8227:TB:YM:C10:Revision-Exercise-10:5",
+    "8227:TB:YM:C11:Try-Now-42:1",
+    "8227:TB:YM:C3:Try-Now-17:2",
+    "8227:TB:YM:C3:Try-Now:16",
+    "8227:TB:YM:C7:Try-Now-18:2",
+    "8227:TB:YM:C4:Try-Now-29:4",
+    "8227:TB:YM:C2:Try-Now-34:1",
+    "8227:TB:YM:C1:Try-Now-29:4",
+    "8227:TB:YM:C7:Exercise-7:2",
+    "8227:TB:YM:C4:Worked-illustration:8",
+    "8227:TB:YM:C8:Try-Now:3",
+    "8227:TB:YM:C12:Revision-Exercise-12:4",
+    "8227:TB:YM:C11:Try-Now-42:2",
+    "8227:TB:YM:C13:Revision-Exercise-13:3",
+    "8227:TB:YM:C10:Example:3",
+    "8227:TB:YM:C9:Try-Now-15:3",
+    "8227:TB:YM:C1:Try-Now-34:2",
+    "8227:TB:YM:C7:Try-Now:14",
+    "8227:TB:YM:C1:Example:31",
+    "8227:TB:YM:C6:Try-Now-25:2",
+    "8227:TB:YM:C5:Try-Now-15:2",
+    "8227:TB:YM:C2:Example:23",
+    "8227:TB:YM:C10:Try-Now:26",
+    "8227:TB:YM:C4:Example:30",
+    "8227:TB:YM:C10:Teaching-figure:102",
+    "8227:TB:YM:C8:Teaching-figure:15",
+    "8227:TB:YM:C4:Teaching-figure:199",
+    "8227:TB:YM:C13:Teaching-figure:78",
+    "8227:TB:YM:C11:Teaching-figure:101",
+    "8227:TB:YM:C6:Teaching-figure:65",
+    "8227:TB:YM:C6:Teaching-figure:66",
+    "8227:TB:YM:C8:Teaching-figure:9",
+    "8227:TB:YM:C5:Teaching-figure:19",
+    "8227:TB:YM:C7:Teaching-figure:62",
+    "8227:TB:YM:C9:Teaching-figure:58",
+    "8227:TB:YM:C6:Teaching-figure:56",
+    "8227:TB:YM:C10:Teaching-figure:68",
+    "8227:TB:YM:C7:Teaching-figure:6",
+    "8227:TB:YM:C2:Teaching-figure:63",
+    "8227:TB:YM:C13:Teaching-figure:54",
+    "8227:TB:YM:C3:Teaching-figure:46",
+    "8227:TB:YM:C10:Teaching-figure:47",
+    "8227:TB:YM:C11:Teaching-figure:89",
+    "8227:TB:YM:C1:Teaching-figure:47",
+    "8227:TB:YM:C11:Teaching-figure:59",
+    "8227:TB:YM:C11:Teaching-figure:110",
+    "8227:TB:YM:C6:Teaching-figure:7",
+    "8227:TB:YM:C6:Teaching-figure:38",
+    "8227:TB:YM:C12:Teaching-figure:9",
+    "8227:TB:YM:C6:Teaching-figure:12",
+    "8227:TB:YM:C12:Teaching-figure:121",
+    "8227:TB:YM:C6:Teaching-figure:43",
+    "8227:TB:YM:C4:Teaching-figure:184",
+    "8227:TB:YM:C10:Teaching-figure:27",
+    "8227:TB:YM:C12:Teaching-figure:70",
+    "8227:TB:YM:C5:Teaching-figure:58",
+    "8227:TB:YM:C2:Teaching-figure:59",
+    "8227:TB:YM:C4:Teaching-figure:104",
+    "8227:TB:YM:C3:Teaching-figure:45",
+    "8227:TB:YM:C9:Teaching-figure:69",
+    "8227:TB:YM:C13:Teaching-figure:32",
+    "8227:TB:YM:C3:Teaching-figure:69",
+    "8227:TB:YM:C4:Teaching-figure:150",
+    "8227:TB:YM:C7:Teaching-figure:94",
+    "8227:TB:YM:C9:Teaching-figure:90",
+    "8227:TB:YM:C7:Teaching-figure:68",
+    "8227:TB:YM:C11:Teaching-figure:138",
+    "8227:TB:YM:C11:Teaching-figure:64",
+    "8227:TB:YM:C11:Teaching-figure:93",
+    "8227:TB:YM:C13:Teaching-figure:45",
+    "8227:TB:YM:C4:Teaching-figure:24",
+    "8227:TB:YM:C12:Teaching-figure:19",
+    "8227:TB:YM:C1:Teaching-figure:12",
+    "8227:TB:YM:C8:Teaching-figure:10",
+    "8227:TB:YM:C6:Teaching-figure:69",
+    "8227:TB:YM:C3:Teaching-figure:20",
+    "8227:TB:YM:C4:Teaching-figure:69",
+    "8227:TB:YM:C4:Teaching-figure:194",
+    "8227:TB:YM:C12:Teaching-figure:114",
+    "8227:TB:YM:C11:Teaching-figure:24",
+    "8227:TB:YM:C1:Teaching-figure:80",
+    "8227:TB:YM:C4:Teaching-figure:134",
+    "8227:TB:YM:C5:Teaching-figure:56",
+    "8227:TB:YM:C7:Teaching-figure:14",
+    "8227:TB:YM:C4:Teaching-figure:181",
+    "8227:TB:YM:C12:Teaching-figure:52",
+    "8227:TB:YM:C12:Teaching-figure:41",
+    "8227:TB:YM:C4:Teaching-figure:158",
+    "8227:TB:YM:C12:Teaching-figure:59",
+    "8227:TB:YM:C9:Teaching-figure:10",
+    "8227:TB:YM:C12:Teaching-figure:90",
+    "8227:TB:YM:C9:Teaching-figure:89",
+    "8227:TB:YM:C2:Teaching-figure:40",
+    "8227:TB:YM:C6:Teaching-figure:68",
+    "8227:TB:YM:C11:Teaching-figure:135",
+    "8227:TB:YM:C7:Teaching-figure:90",
+    "8227:TB:YM:C12:Teaching-figure:66",
+    "8227:TB:YM:C5:Teaching-figure:22",
+    "8227:TB:YM:C10:Teaching-figure:105",
+    "8227:TB:YM:C4:Teaching-figure:123",
+    "8227:TB:YM:C11:Teaching-figure:57",
+    "8227:TB:YM:C5:Teaching-figure:69",
+    "8227:TB:YM:C10:Teaching-figure:77",
+    "8227:TB:YM:C3:Teaching-figure:82",
+    "8227:TB:YM:C12:Teaching-figure:26",
+    "8227:TB:YM:C10:Teaching-figure:76",
+    "8227:TB:YM:C12:Teaching-figure:43",
+    "8227:TB:YM:C4:Teaching-figure:40",
+    "8227:TB:YM:C1:Teaching-figure:13",
+    "8227:TB:YM:C4:Teaching-figure:204",
+    "8227:TB:YM:C4:Teaching-figure:182",
+    "8227:TB:YM:C10:Teaching-figure:91",
+    "8227:TB:YM:C3:Teaching-figure:39",
+    "8227:TB:YM:C11:Teaching-figure:115",
+    "8227:TB:YM:C11:Teaching-figure:41",
+    "8227:TB:YM:C10:Teaching-figure:52",
+    "8227:TB:YM:C3:Teaching-figure:2",
+    "8227:TB:YM:C1:Teaching-figure:17",
+    "8227:TB:YM:C4:Teaching-figure:195",
+    "8227:TB:YM:C10:Teaching-figure:25",
+    "8227:TB:YM:C4:Teaching-figure:49",
+    "8227:TB:YM:C9:Teaching-figure:126",
+    "8227:TB:YM:C10:Teaching-figure:126",
+    "8227:TB:YM:C3:Teaching-figure:25",
+    "8227:TB:YM:C10:Teaching-figure:121",
+    "8227:TB:YM:C7:Teaching-figure:41",
+    "8227:TB:YM:C4:Teaching-figure:83",
+    "8227:TB:YM:C10:Teaching-figure:78",
+    "8227:TB:YM:C4:Teaching-figure:202",
+    "8227:TB:YM:C2:Teaching-figure:65",
+    "8227:TB:YM:C4:Teaching-figure:91",
+    "8227:TB:YM:C8:Teaching-figure:46",
+    "8227:TB:YM:C9:Teaching-figure:77",
+    "8227:TB:YM:C10:Teaching-figure:26",
+    "8227:TB:YM:C8:Teaching-figure:14",
+    "8227:TB:YM:C10:Teaching-figure:65",
+    "8227:TB:YM:C6:Teaching-figure:39",
+    "8227:TB:YM:C8:Teaching-figure:19",
+    "8227:TB:YM:C8:Teaching-figure:63",
+    "8227:TB:YM:C12:Teaching-figure:44",
+    "8227:TB:YM:C7:Teaching-figure:42",
+    "8227:TB:YM:C12:Teaching-figure:77",
+    "8227:TB:YM:C4:Teaching-figure:154",
+    "8227:TB:YM:C12:Teaching-figure:83",
+    "8227:TB:YM:C11:Teaching-figure:36",
+    "8227:TB:YM:C7:Teaching-figure:60",
+    "8227:TB:YM:C3:Teaching-figure:75",
+    "8227:TB:YM:C12:Teaching-figure:78",
+    "8227:TB:YM:C2:Teaching-figure:18",
+    "8227:TB:YM:C7:Teaching-figure:72",
+    "8227:TB:YM:C10:Teaching-figure:39",
+    "8227:TB:YM:C4:Teaching-figure:25",
+    "8227:TB:YM:C4:Teaching-figure:201",
+    "8227:TB:YM:C9:Teaching-figure:59",
+    "8227:TB:YM:C2:Teaching-figure:68",
+    "8227:TB:YM:C9:Teaching-figure:109",
+    "8227:TB:YM:C9:Teaching-figure:22",
+    "8227:TB:YM:C9:Teaching-figure:95",
+    "8227:TB:YM:C7:Teaching-figure:107",
+    "8227:TB:YM:C7:Teaching-figure:113",
+    "8227:TB:YM:C4:Teaching-figure:34",
+    "8227:TB:YM:C12:Teaching-figure:72",
+    "8227:TB:YM:C3:Teaching-figure:7",
+    "8227:TB:YM:C5:Teaching-figure:26",
+    "8227:TB:YM:C4:Teaching-figure:8",
+    "8227:TB:YM:C2:Teaching-figure:34"
+   ],
+   "comparison": {
+    "records": 396,
+    "nonfig": 219,
+    "start_page_agree": 396,
+    "cont_agree": 394,
+    "kind_agree": 376,
+    "repr_agree": 321,
+    "sketch_agree": 217,
+    "assessed_exact": 126,
+    "assessed_links_author": 401,
+    "assessed_links_confirmed": 334,
+    "assessed_links_reviewer": 422,
+    "union_exact": 74,
+    "assessed_in_reviewer_union": 380,
+    "exam_style_agree": 213,
+    "scope_agree": 212,
+    "fig": 177,
+    "fig_teach_exact": 85,
+    "fig_teach_overlap": 156,
+    "fig_teach_links_author": 236,
+    "fig_teach_links_confirmed": 199,
+    "qual_items": 126,
+    "qual_agree": 48
+   },
+   "union_level": {
+    "author_assessed_links_in_reviewer_union": "380/401 (94.8%)",
+    "reviewer_assessed_links_in_author_union": "365/422 (86.5%)",
+    "exact_assessed_set": "126/219 (58%)"
+   }
+  },
+  "answer_sample": {
+   "random_items": [
+    "8227:TB:YM:C1:Try-Now-18:3",
+    "8227:TB:YM:C4:Example:4",
+    "8227:TB:YM:C7:Try-Now:6",
+    "8227:TB:Goldie:C2:Exercise-2C:7",
+    "8227:TB:Goldie:C2:Activity:4",
+    "8227:TB:YM:C12:Exercise-12:8",
+    "8227:TB:YM:C2:Example:7",
+    "8227:TB:YM:C7:Try-Now:14",
+    "8227:TB:YM:C11:Example:30",
+    "8227:TB:YM:C4:Investigation-basic-trig-graphs:3",
+    "8227:TB:Goldie:C7:Worked-illustration:8",
+    "8227:TB:YM:C6:Try-Now-23:4",
+    "8227:TB:Goldie:C8:Exercise-8B:7",
+    "8227:TB:YM:C2:Try-Now-14:3",
+    "8227:TB:Goldie:C4:Exercise-4E:11",
+    "8227:TB:YM:C2:Try-Now-2:2",
+    "8227:TB:YM:C1:Try-Now-35:1",
+    "8227:TB:YM:C6:Try-Now-19:2",
+    "8227:TB:YM:C10:Example:19",
+    "8227:TB:YM:C2:Try-Now-8:5",
+    "8227:TB:YM:C6:Example:24",
+    "8227:TB:YM:C11:Try-Now:26",
+    "8227:TB:YM:C12:Example:14",
+    "8227:TB:YM:C5:Try-Now-10:3",
+    "8227:TB:YM:C9:Try-Now-5:1",
+    "8227:TB:Goldie:C2:Exercise-2A:5",
+    "8227:TB:YM:C2:Try-Now-34:1",
+    "8227:TB:Goldie:C1:Prompt:4",
+    "8227:TB:YM:C2:Try-Now-24:4",
+    "8227:TB:Goldie:C10:Exercise-10C:11",
+    "8227:TB:YM:C11:Example:29",
+    "8227:TB:Goldie:C8:Exercise-8C:6",
+    "8227:TB:YM:C4:Try-Now:28",
+    "8227:TB:YM:C10:Try-Now:7",
+    "8227:TB:YM:C2:Exercise-2.2:2",
+    "8227:TB:YM:C3:Try-Now-7:1",
+    "8227:TB:YM:C1:Try-Now-35:4",
+    "8227:TB:YM:C10:Revision-Exercise-10:3",
+    "8227:TB:YM:C1:Try-Now-31:1",
+    "8227:TB:Goldie:C4:Exercise-4A:6",
+    "8227:TB:Goldie:C10:Exercise-10F:10",
+    "8227:TB:YM:C6:Try-Now-15:3",
+    "8227:TB:YM:C4:Try-Now-47:6",
+    "8227:TB:YM:C4:Example:45",
+    "8227:TB:YM:C3:Try-Now-4:1",
+    "8227:TB:YM:C6:Try-Now-4:1",
+    "8227:TB:YM:C4:Try-Now-55:2",
+    "8227:TB:Goldie:C4:Exercise-4E:7",
+    "8227:TB:Goldie:C1:Example:1",
+    "8227:TB:Goldie:C6:Exercise-6B:4",
+    "8227:TB:YM:C6:Try-Now-11:4",
+    "8227:TB:Goldie:C1:Example:15",
+    "8227:TB:Goldie:C5:Exercise-5B:11",
+    "8227:TB:YM:C8:Try-Now-7:2",
+    "8227:TB:YM:C8:Exercise-8:10",
+    "8227:TB:YM:C10:Example:12",
+    "8227:TB:YM:C10:Example:17",
+    "8227:TB:Goldie:C2:Exercise-2A:4",
+    "8227:TB:Goldie:C9:Investigation:1",
+    "8227:TB:YM:C7:Example:17",
+    "8227:TB:YM:C6:Try-Now-24:2",
+    "8227:TB:Goldie:C8:Exercise-8H:3",
+    "8227:TB:YM:C13:Example:11",
+    "8227:TB:Goldie:C1:Exercise-1B:23",
+    "8227:TB:YM:C3:Try-Now-4:3",
+    "8227:TB:YM:C8:Revision-Exercise-8:6",
+    "8227:TB:YM:C10:Example:16",
+    "8227:TB:YM:C1:Try-Now-29:2",
+    "8227:TB:YM:C11:Revision-Exercise-11:5",
+    "8227:TB:Goldie:C4:Exercise-4B:9"
+   ],
+   "targeted": [
+    [
+     "key wrong",
+     "8227:TB:Goldie:C3:Exercise-3B:9"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C2:Try-Now-20:1"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C10:Try-Now-8:1"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C8:Try-Now:24"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C4:Try-Now-8:1"
+    ],
+    [
+     "key wrong",
+     "8227:TB:Goldie:C4:Example:24"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C13:Try-Now-4:1"
+    ],
+    [
+     "key wrong",
+     "8227:TB:Goldie:C3:Exercise-3D:6"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C4:Try-Now:44"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C3:Try-Now-14:2"
+    ],
+    [
+     "key wrong",
+     "8227:TB:Goldie:C3:Exercise-3A:6"
+    ],
+    [
+     "key wrong",
+     "8227:TB:YM:C4:Try-Now-51:2"
+    ],
+    [
+     "key incomplete",
+     "8227:TB:Goldie:C3:Exercise-3D:12"
+    ],
+    [
+     "key incomplete",
+     "8227:TB:YM:C11:Try-Now:8"
+    ],
+    [
+     "key incomplete",
+     "8227:TB:YM:C3:Example:10"
+    ],
+    [
+     "key incomplete",
+     "8227:TB:YM:C10:Try-Now-16:2"
+    ],
+    [
+     "key incomplete",
+     "8227:TB:Goldie:C3:Exercise-3C:11"
+    ],
+    [
+     "key incomplete",
+     "8227:TB:Goldie:C3:Investigation:Currents"
+    ],
+    [
+     "no key",
+     "8227:TB:YM:C2:Revision-Exercise-2:4"
+    ],
+    [
+     "no key",
+     "8227:TB:YM:C2:Try-Now-46:2"
+    ],
+    [
+     "no key",
+     "8227:TB:Goldie:C2:Activity:1"
+    ],
+    [
+     "no key",
+     "8227:TB:Goldie:C11:Prompt:1"
+    ],
+    [
+     "no key",
+     "8227:TB:Goldie:C1:Prompt:1"
+    ],
+    [
+     "sketch",
+     "8227:TB:YM:C4:Investigation-basic-trig-graphs:1"
+    ],
+    [
+     "sketch",
+     "8227:TB:YM:C8:Try-Now-8:2"
+    ],
+    [
+     "sketch",
+     "8227:TB:YM:C13:Exercise-13:6"
+    ],
+    [
+     "sketch",
+     "8227:TB:YM:C10:Example:2"
+    ],
+    [
+     "sketch",
+     "8227:TB:YM:C4:Worked-illustration:10"
+    ],
+    [
+     "sketch",
+     "8227:TB:YM:C4:Try-Now-12:1"
+    ],
+    [
+     "show/prove",
+     "8227:TB:YM:C13:Try-Now-2:1"
+    ],
+    [
+     "show/prove",
+     "8227:TB:Goldie:C3:Activity:2"
+    ],
+    [
+     "show/prove",
+     "8227:TB:YM:C13:Try-Now-1:1"
+    ],
+    [
+     "show/prove",
+     "8227:TB:YM:C10:Revision-Exercise-10:2"
+    ],
+    [
+     "show/prove",
+     "8227:TB:YM:C11:Try-Now-13:4"
+    ],
+    [
+     "xx",
+     "8227:TB:Goldie:C4:Exercise-4D:7"
+    ]
+   ],
+   "subparts_checked": 270,
+   "reviewer_found_key_defect_items": 21,
+   "author_recorded": 19
+  },
+  "census_sample": {
+   "pages": [
+    [
+     "Goldie",
+     14
+    ],
+    [
+     "Goldie",
+     24
+    ],
+    [
+     "Goldie",
+     43
+    ],
+    [
+     "Goldie",
+     63
+    ],
+    [
+     "Goldie",
+     88
+    ],
+    [
+     "Goldie",
+     94
+    ],
+    [
+     "Goldie",
+     96
+    ],
+    [
+     "Goldie",
+     98
+    ],
+    [
+     "Goldie",
+     133
+    ],
+    [
+     "Goldie",
+     157
+    ],
+    [
+     "Goldie",
+     188
+    ],
+    [
+     "Goldie",
+     213
+    ],
+    [
+     "Goldie",
+     215
+    ],
+    [
+     "Goldie",
+     224
+    ],
+    [
+     "Goldie",
+     294
+    ],
+    [
+     "Goldie",
+     311
+    ],
+    [
+     "Goldie",
+     319
+    ],
+    [
+     "Goldie",
+     333
+    ],
+    [
+     "YM",
+     11
+    ],
+    [
+     "YM",
+     34
+    ],
+    [
+     "YM",
+     101
+    ],
+    [
+     "YM",
+     111
+    ],
+    [
+     "YM",
+     112
+    ],
+    [
+     "YM",
+     127
+    ],
+    [
+     "YM",
+     139
+    ],
+    [
+     "YM",
+     174
+    ],
+    [
+     "YM",
+     200
+    ],
+    [
+     "YM",
+     201
+    ],
+    [
+     "YM",
+     246
+    ],
+    [
+     "YM",
+     258
+    ],
+    [
+     "YM",
+     266
+    ],
+    [
+     "YM",
+     288
+    ],
+    [
+     "YM",
+     291
+    ],
+    [
+     "YM",
+     317
+    ],
+    [
+     "YM",
+     348
+    ],
+    [
+     "YM",
+     354
+    ],
+    [
+     "YM",
+     395
+    ],
+    [
+     "YM",
+     397
+    ],
+    [
+     "YM",
+     421
+    ],
+    [
+     "YM",
+     426
+    ],
+    [
+     "YM",
+     435
+    ],
+    [
+     "YM",
+     447
+    ],
+    [
+     "YM",
+     483
+    ],
+    [
+     "YM",
+     508
+    ],
+    [
+     "YM",
+     533
+    ],
+    [
+     "YM",
+     545
+    ],
+    [
+     "YM",
+     549
+    ],
+    [
+     "YM",
+     580
+    ],
+    [
+     "YM",
+     586
+    ],
+    [
+     "YM",
+     588
+    ],
+    [
+     "YM",
+     590
+    ]
+   ],
+   "result": "no posed item, worked example, activity or continuation missing on 45 envelope pages; 6 boundary pages correctly outside"
+  },
+  "families_insights": {
+   "families": [
+    "8227:TEXTBOOK-FAMILY:explicit-root-arc-investigation",
+    "8227:TEXTBOOK-FAMILY:identity-equation-distinction",
+    "8227:TEXTBOOK-FAMILY:numerical-supplied-map-chain",
+    "8227:TEXTBOOK-FAMILY:parametric-point-plot-support",
+    "8227:TEXTBOOK-FAMILY:derivative-sign-and-monotonicity",
+    "8227:TEXTBOOK-FAMILY:vector-polar-direction-and-drawing",
+    "8227:TEXTBOOK-FAMILY:photo-density-estimation-support",
+    "8227:TEXTBOOK-FAMILY:log-derivative-division-integral-chain",
+    "8227:TEXTBOOK-FAMILY:polynomial-factor-solve",
+    "8227:TEXTBOOK-FAMILY:elementary-exponential-primitives",
+    "8227:TEXTBOOK-FAMILY:modulus-quartic-root-count",
+    "8227:TEXTBOOK-FAMILY:coordinate-symbolic-area-and-locus",
+    "8227:TEXTBOOK-FAMILY:modulus-variable-rhs-equation",
+    "8227:TEXTBOOK-FAMILY:vector-supplied-motion-shared-time",
+    "8227:TEXTBOOK-FAMILY:forced-linear-substitution-boundary",
+    "8227:TEXTBOOK-FAMILY:power-factor-tidying-support",
+    "8227:TEXTBOOK-FAMILY:secant-identity-integral",
+    "8227:TEXTBOOK-FAMILY:mixed-retained-definite-integrals",
+    "8227:TEXTBOOK-FAMILY:natural-log-exponential-values",
+    "8227:TEXTBOOK-FAMILY:logarithm-index-translation"
+   ],
+   "insight_sections": [
+    "Stationary classification,inflexions and geometry-specific optimisation",
+    "Specified-domain sketches,inverse overlays and transformation investigations",
+    "Area boundaries,inverse branches and both coordinate-axis rotations",
+    "Basic-identity proof structures",
+    "Graph intersections,tangency and parameter degeneration",
+    "Exact special angles and connected geometry"
+   ]
+  },
+  "provenance": {
+   "rare_4gram_part_screen": "214 pure 9709 qp files (P1-P3), df<=8; new confirmed part-level pair 2023 P2 Q4(b) <- 9709/22/M/J/20 Q1",
+   "author_screen_recall": "16 of 31 confirmed pairs appear among the author screen candidates"
+  },
+  "delegated": [
+   "5 blind classification agents",
+   "2 answer recomputation agents",
+   "1 blind page-census agent",
+   "1 families/insights agent (non-blind)"
+  ]
+ }
+}

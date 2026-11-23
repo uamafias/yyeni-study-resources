@@ -1,0 +1,1456 @@
+{
+  "scope": "Complete rendered342–345census;original domains and diagram/solution roles retained.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-18:1",
+      "source_pdf_page": 342,
+      "notes": "Two given diagrams ask labelled A/B/C AND total shaded area. The cubic labels three x-roots;the quadratic instead labels one y-intercept and two x-roots. Both shaded sign regions are included.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T1:O02:D02",
+        "8227:2020:M1:T4:O01:D01",
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "3, 2, 1, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Two given diagrams ask labelled A/B/C AND total shaded area. The cubic labels three x-roots;the quadratic instead labels one y-intercept and two x-roots. Both shaded sign regions are included.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-ABC",
+        "a-area",
+        "b-ABC",
+        "b-area"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-ABC",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(Tuple(-1,0),Tuple(1,0),Tuple(2,0))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(Tuple(-1,0),Tuple(1,0),Tuple(2,0))",
+          "method": "Read the ordered labelled roots A,B,C from ORIGINAL factored cubic(x+1)(x−1)(x−2),not from a pixel measurement.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T4:O01:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "all-root-incidences": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(((x+1)*(x-1)*(x-2)).subs(x,-1),((x+1)*(x-1)*(x-2)).subs(x,1),((x+1)*(x-1)*(x-2)).subs(x,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "all-root-incidences": "Tuple(0,0,0)"
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "a-area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(1)*integrate((x+1)*(x-1)*(x-2),(x,-1,1))+(-1)*integrate((x+1)*(x-1)*(x-2),(x,1,2))"
+            ]
+          },
+          "printed_key_normalised": "Rational(37,12)",
+          "method": "Find ORIGINAL zeros,check the curve sign on EACH bounded component,and add positive geometric lobe areas. A signed integral or absolute value of the whole signed integral does not substitute for this split.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "original_function": "(x+1)*(x-1)*(x-2)",
+          "original_signed_segments": [
+            {
+              "lower": "-1",
+              "upper": "1",
+              "area_multiplier": 1
+            },
+            {
+              "lower": "1",
+              "upper": "2",
+              "area_multiplier": -1
+            }
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "signed-component-1": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "(x+1)*(x-1)*(x-2)",
+                "-1",
+                "1"
+              ]
+            },
+            "signed-component-2": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "(x+1)*(x-1)*(x-2)",
+                "1",
+                "2"
+              ]
+            }
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-ABC",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(Tuple(0,(x**2-5*x+4).subs(x,0)),Tuple(solve(x**2-5*x+4,x)[0],0),Tuple(solve(x**2-5*x+4,x)[1],0))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(Tuple(0,4),Tuple(1,0),Tuple(4,0))",
+          "method": "The second graph labels A at its Y-intercept,B/C at left/right roots. Solve the ORIGINAL quadratic and substitute x0 for A;the label roles differ from diagram(a).",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T1:O02:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(1)*integrate(x**2-5*x+4,(x,0,1))+(-1)*integrate(x**2-5*x+4,(x,1,4))"
+            ]
+          },
+          "printed_key_normalised": "Rational(19,3)",
+          "method": "Find ORIGINAL zeros,check the curve sign on EACH bounded component,and add positive geometric lobe areas. A signed integral or absolute value of the whole signed integral does not substitute for this split.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "original_function": "x**2-5*x+4",
+          "original_signed_segments": [
+            {
+              "lower": "0",
+              "upper": "1",
+              "area_multiplier": 1
+            },
+            {
+              "lower": "1",
+              "upper": "4",
+              "area_multiplier": -1
+            }
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "signed-component-1": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "x**2-5*x+4",
+                "0",
+                "1"
+              ]
+            },
+            "signed-component-2": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "x**2-5*x+4",
+                "1",
+                "4"
+              ]
+            }
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-18:2",
+      "source_pdf_page": 342,
+      "notes": "TEXT-given total bounded area of12x(x+1)(2−x). Roots−1,0,2require a sign split;areas5and32sum37. The source suggests sketching as a method,not a separately tariffed response.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "3, 2, 1",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "TEXT-given total bounded area of12x(x+1)(2−x). Roots−1,0,2require a sign split;areas5and32sum37. The source suggests sketching as a method,not a separately tariffed response.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(-1)*integrate(12*x*(x+1)*(2-x),(x,-1,0))+(1)*integrate(12*x*(x+1)*(2-x),(x,0,2))"
+            ]
+          },
+          "printed_key_normalised": "37",
+          "method": "Find ORIGINAL zeros,check the curve sign on EACH bounded component,and add positive geometric lobe areas. A signed integral or absolute value of the whole signed integral does not substitute for this split.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_function": "12*x*(x+1)*(2-x)",
+          "original_signed_segments": [
+            {
+              "lower": "-1",
+              "upper": "0",
+              "area_multiplier": -1
+            },
+            {
+              "lower": "0",
+              "upper": "2",
+              "area_multiplier": 1
+            }
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "signed-component-1": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "12*x*(x+1)*(2-x)",
+                "-1",
+                "0"
+              ]
+            },
+            "signed-component-2": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "12*x*(x+1)*(2-x)",
+                "0",
+                "2"
+              ]
+            }
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-18:3",
+      "source_pdf_page": 342,
+      "notes": "TEXT-given area from−1to4for(x−4)(x−2)(x+1),split at internal root2. Add63/4and16/3rather than cancel signed lobes.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "3, 2, 1, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "TEXT-given area from−1to4for(x−4)(x−2)(x+1),split at internal root2. Add63/4and16/3rather than cancel signed lobes.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(1)*integrate((x-4)*(x-2)*(x+1),(x,-1,2))+(-1)*integrate((x-4)*(x-2)*(x+1),(x,2,4))"
+            ]
+          },
+          "printed_key_normalised": "Rational(253,12)",
+          "method": "Find ORIGINAL zeros,check the curve sign on EACH bounded component,and add positive geometric lobe areas. A signed integral or absolute value of the whole signed integral does not substitute for this split.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_function": "(x-4)*(x-2)*(x+1)",
+          "original_signed_segments": [
+            {
+              "lower": "-1",
+              "upper": "2",
+              "area_multiplier": 1
+            },
+            {
+              "lower": "2",
+              "upper": "4",
+              "area_multiplier": -1
+            }
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "signed-component-1": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "(x-4)*(x-2)*(x+1)",
+                "-1",
+                "2"
+              ]
+            },
+            "signed-component-2": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "(x-4)*(x-2)*(x+1)",
+                "2",
+                "4"
+              ]
+            }
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-18:4",
+      "source_pdf_page": 342,
+      "notes": "TEXT-given quadratic area restricted to x1..3,not the complete bounded lobe1..5. The graph hint does not alter those explicit bounds.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2, 1, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "TEXT-given quadratic area restricted to x1..3,not the complete bounded lobe1..5. The graph hint does not alter those explicit bounds.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(-1)*integrate(x**2-6*x+5,(x,1,3))"
+            ]
+          },
+          "printed_key_normalised": "Rational(16,3)",
+          "method": "Find ORIGINAL zeros,check the curve sign on EACH bounded component,and add positive geometric lobe areas. A signed integral or absolute value of the whole signed integral does not substitute for this split.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_function": "x**2-6*x+5",
+          "original_signed_segments": [
+            {
+              "lower": "1",
+              "upper": "3",
+              "area_multiplier": -1
+            }
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "signed-component-1": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "x**2-6*x+5",
+                "1",
+                "3"
+              ]
+            }
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-18:5",
+      "source_pdf_page": 342,
+      "notes": "Explicit SKETCH-and-area question for4/√x between1and4. Keep its two requested outputs distinct;the source key has an actual response sketch.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O05:D01",
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−1/2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Explicit SKETCH-and-area question for4/√x between1and4. Keep its two requested outputs distinct;the source key has an actual response sketch.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "sketch",
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "sketch",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "For x>0,y=4/√x is positive,decreasing and convex,with asymptotes x0 andy0;passes(1,4),(4,2). Mark the requested area betweenx1and4.",
+          "author_derivation": "The ORIGINAL even root is in a denominator,so the real domain isx>0. Derivative−2x^(−3/2)<0 and second derivative3x^(−5/2)>0. The curve approaches+∞asx→0+and0asx→∞. The printed answer graph shows the positive decreasing branch with the two area bounds;it does not justify extending the graph tox≤0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T3:O05:D01"
+          ],
+          "component_demand_ids": [],
+          "response_format": "sketch",
+          "credited_features": [
+            "Positive decreasing convex branch onx>0",
+            "Vertical asymptotex0 and horizontal asymptotey0",
+            "Points(1,4),(4,2)",
+            "Area boundariesx1,x4"
+          ],
+          "criteria_basis": "Features derived from original equation and compared with printed response sketch;no official award table is supplied.",
+          "additional_operations": {
+            "endpoint-ordinates": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((4/sqrt(x)).subs(x,1),(4/sqrt(x)).subs(x,4))"
+              ]
+            },
+            "shape-at-positive-sample": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(4/sqrt(x),x).subs(x,1),diff(4/sqrt(x),x,2).subs(x,1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint-ordinates": "Tuple(4,2)",
+            "shape-at-positive-sample": "Tuple(-2,3)"
+          },
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text"
+        },
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "4/sqrt(x)",
+              "1",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "8",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "original_integrand": "4/sqrt(x)",
+          "original_bounds": [
+            "1",
+            "4"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 342,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:19",
+      "source_pdf_page": 343,
+      "notes": "Right-hand branch of y=x²,between y1and3and the y-axis. The diagram selectsx=+√y,not the negative branch. Exact area2√3−2/3is displayed2.80to3sf.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1/2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Right-hand branch of y=x²,between y1and3and the y-axis. The diagram selectsx=+√y,not the negative branch. Exact area2√3−2/3is displayed2.80to3sf.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "integrate(sqrt(x),(x,1,3))"
+            ],
+            "significant_figures": 3
+          },
+          "printed_key_normalised": "2.80",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "y",
+          "normalised_variable": "x",
+          "original_integrand": "sqrt(x)",
+          "original_bounds": [
+            "1",
+            "3"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "exact-area": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "sqrt(x)",
+                "1",
+                "3"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exact-area": "2*sqrt(3)-Rational(2,3)"
+          },
+          "source_precision_note": "The inline worked solution chooses3significant figures;the original prompt simply asks area. Record this source convention without inventing a universal rounding rule.",
+          "source_pdf_page": 343,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 343,
+          "answer_printed_page": 331,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-19:1",
+      "source_pdf_page": 343,
+      "notes": "Given x=y(3−y),find the positive region between the curve and y-axis on y0..3. SOURCE y is the strip variable.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2, 1",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Given x=y(3−y),find the positive region between the curve and y-axis on y0..3. SOURCE y is the strip variable.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "x*(3-x)",
+              "0",
+              "3"
+            ]
+          },
+          "printed_key_normalised": "Rational(9,2)",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "y",
+          "normalised_variable": "x",
+          "original_integrand": "x*(3-x)",
+          "original_bounds": [
+            "0",
+            "3"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 343,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-19:2",
+      "source_pdf_page": 343,
+      "notes": "Given y=x³,find the y-axis region between horizontal lines y8and27. Inversex=realcuberooty;all actual bounds are positive. This missing numbered item is recovered.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1/3",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Given y=x³,find the y-axis region between horizontal lines y8and27. Inversex=realcuberooty;all actual bounds are positive. This missing numbered item is recovered.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "x**Rational(1,3)",
+              "8",
+              "27"
+            ]
+          },
+          "printed_key_normalised": "Rational(195,4)",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "y",
+          "normalised_variable": "x",
+          "original_integrand": "x**Rational(1,3)",
+          "original_bounds": [
+            "8",
+            "27"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 343,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-19:3",
+      "source_pdf_page": 343,
+      "notes": "Given y=(x−2)³,shaded with y-axis between y1and8. Correct horizontal width is realcuberooty+2;the translation contributes14to the area.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1/3, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Given y=(x−2)³,shaded with y-axis between y1and8. Correct horizontal width is realcuberooty+2;the translation contributes14to the area.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "x**Rational(1,3)+2",
+              "1",
+              "8"
+            ]
+          },
+          "printed_key_normalised": "Rational(101,4)",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "y",
+          "normalised_variable": "x",
+          "original_integrand": "x**Rational(1,3)+2",
+          "original_bounds": [
+            "1",
+            "8"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 343,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:20",
+      "source_pdf_page": 344,
+      "notes": "Same geometric region and same area asExample16,now demonstrated with horizontal strips x=4−y²,y0..2. It is an alternative representation/method,not another distinct problem type.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Same geometric region and same area asExample16,now demonstrated with horizontal strips x=4−y²,y0..2. It is an alternative representation/method,not another distinct problem type.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "4-x**2",
+              "0",
+              "2"
+            ]
+          },
+          "printed_key_normalised": "Rational(16,3)",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "y",
+          "normalised_variable": "x",
+          "original_integrand": "4-x**2",
+          "original_bounds": [
+            "0",
+            "2"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 344,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 344,
+          "answer_printed_page": 332,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "source_duplicate_of": "8227:TB:YM:C7:Example:16",
+      "duplicate_basis": "The source explicitly identifies the SAME graph/region and same requested numerical area. Horizontal instead of vertical strips supplies an alternative method/representation,not extra problem-type breadth."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-20:1",
+      "source_pdf_page": 344,
+      "notes": "Repeated y=x³/y-axis area between y8and27,identical givens and requested result toTry19Q2;the drawing style differs.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1/3",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Repeated y=x³/y-axis area between y8and27,identical givens and requested result toTry19Q2;the drawing style differs.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "x**Rational(1,3)",
+              "8",
+              "27"
+            ]
+          },
+          "printed_key_normalised": "Rational(195,4)",
+          "method": "Read the actual bounded/shaded region,derive the appropriate strip width and bounds,retain the original inverse BRANCH,and integrate on a continuous real interval. For horizontal strips the SOURCE variable y is consistently renamed x only inside the fixed-source checker. Compare the independently transcribed printed result.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "y",
+          "normalised_variable": "x",
+          "original_integrand": "x**Rational(1,3)",
+          "original_bounds": [
+            "8",
+            "27"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 344,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "source_duplicate_of": "8227:TB:YM:C7:Try-Now-19:2",
+      "duplicate_basis": "Same curve,boundaries and requested area asTry19Q2. Repeated source occurrence,not extra problem-type breadth."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-20:2",
+      "source_pdf_page": 344,
+      "notes": "The source labels the curve y=√(2x−1)but draws/shades a full sideways parabola including negativey. Its finite key3drops the original y≥0condition.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "prerequisite/supporting defective source diagnosis;no valid directly assessed coverage.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "The source labels the curve y=√(2x−1)but draws/shades a full sideways parabola including negativey. Its finite key3drops the original y≥0condition.",
+        "excluded_or_qualified_parts": [
+          "No valid literal bounded-region exemplar:source equation and negative-y diagram conflict."
+        ],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key wrong",
+          "author_conclusion": "The literal y=√(2x−1)has no negative-y branch,so the stated boundaries do not enclose the displayed region. The key3is the area for the DIFFERENT full parabola y²=2x−1 betweeny−1and2.",
+          "author_derivation": "The principal square root requires y≥0. Squaring gives x=(y²+1)/2 ONLY with that condition retained. The diagram wrongly includes y<0;at its lower endpoint(1,−1),the literal equation gives+1,not−1. Integrating(y²+1)/2from−1to2gives3for the full parabola,not for the stated square-root branch. If the lower boundary were changed to0,the actual square-root branch would bound area7/3;that is a different question,not a silent correction.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "response_format": "numeric",
+          "given_representation": "graph",
+          "printed_key_normalised": "3",
+          "source_interpretation": "Defective original equation/diagram pair. Retain internal diagnosis and intended full-parabola interpretation separately;no valid literal area coverage claimed.",
+          "additional_operations": {
+            "source-intended-parabola-area": {
+              "kind": "identity",
+              "operands": [
+                "integrate((x**2+1)/2,(x,-1,2))"
+              ]
+            },
+            "actual-branch-with-CHANGED-lower-bound": {
+              "kind": "identity",
+              "operands": [
+                "integrate((x**2+1)/2,(x,0,2))"
+              ]
+            },
+            "false-negative-branch-point": {
+              "kind": "identity",
+              "operands": [
+                "-1-sqrt(2*1-1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "source-intended-parabola-area": "3",
+            "actual-branch-with-CHANGED-lower-bound": "Rational(7,3)",
+            "false-negative-branch-point": "-2"
+          },
+          "source_pdf_page": 344,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "source_domain_caution": "Do not replace a principal square-root branch with its squared equation without retaining y≥0."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:21",
+      "source_pdf_page": 345,
+      "notes": "Area between parabola−x²+8x−5and line x+1:derive their intersections1,6,then integrate the nonnegative difference,not either individual axis area alone.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T4:O02:D01",
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested area,requested sketch,and separately requested intercepts are direct. Strip integration and inverse rearrangement are components of area unless independently requested. Preserve diagram branch restrictions and distinguish actual response requirements from an optional sketch hint.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2, 1, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Area between parabola−x²+8x−5and line x+1:derive their intersections1,6,then integrate the nonnegative difference,not either individual axis area alone.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "area"
+      ],
+      "subparts": [
+        {
+          "subpart": "area",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "-x**2+7*x-6",
+              "1",
+              "6"
+            ]
+          },
+          "printed_key_normalised": "Rational(125,6)",
+          "method": "Solve ORIGINAL curve-line intersections −x²+8x−5=x+1 to get1,6. The parabola minus the line is(x−1)(6−x)≥0between them. Integrate this UPPER-minus-LOWER vertical width. No absolute-value shortcut or subtraction in the wrong order is allowed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01",
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T4:O02:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "original_integrand": "-x**2+7*x-6",
+          "original_bounds": [
+            "1",
+            "6"
+          ],
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "additional_operations": {
+            "intersection-roots": {
+              "kind": "identity",
+              "operands": [
+                "FiniteSet(*solve((-x**2+8*x-5)-(x+1),x))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "intersection-roots": "FiniteSet(1,6)"
+          },
+          "source_pdf_page": 345,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "answer_pdf_page": 345,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-342-source.png",
+            "sha256": "7210d16b187344e2cbd6e92ae31ebab9a9ca60b798fad17020bc1824e0754408"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    }
+  ]
+}

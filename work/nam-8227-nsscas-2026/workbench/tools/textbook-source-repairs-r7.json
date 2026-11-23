@@ -1,0 +1,1151 @@
+{
+  "schema_version": "8227-source-repairs-r7-v1",
+  "status": "author source repairs complete; integration and independent check required",
+  "date": "2026-11-23",
+  "response_corrections": [
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-17:1",
+      "subpart": "b-tangent-square-integral",
+      "authorisation": "R7 REPAIR-PROMPT.md D.3: correct tan²x transcription and result; no demand relabelling.",
+      "baseline_fields": {
+        "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+        "derived_answer": "-pi/6 + sqrt(3)/2",
+        "derivation_inputs": {
+          "kind": "proper-definite-integral",
+          "operands": [
+            "tan(2*x)**2",
+            "0",
+            "pi/6"
+          ]
+        }
+      },
+      "corrected_fields": {
+        "method": "The original is tan²x on [0, π/6], continuous throughout. Use tan² x = sec² x − 1; independently differentiate tan x − x and evaluate its endpoints. The separate previous sec²(2x) integral does not replace the actual argument x.",
+        "derived_answer": "-pi/6 + sqrt(3)/3",
+        "derivation_inputs": {
+          "kind": "proper-definite-integral",
+          "operands": [
+            "tan(x)**2",
+            "0",
+            "pi/6"
+          ]
+        }
+      },
+      "printed_key_normalised": "sqrt(3)/2-pi/6",
+      "correct_status": "key wrong",
+      "original_integrand": "tan(x)**2",
+      "source_pdf_page": 543,
+      "answer_pdf_page": 651,
+      "source_evidence": "checks/r7/parallel-sources/YM-543.json",
+      "key_evidence": "checks/r7/parallel-sources/YM-651.json",
+      "independent_check": {
+        "method": "Symbolic derivative identity and direct endpoint evaluation, separately70-digit numerical quadrature.",
+        "primitive": "tan(x)-x",
+        "result": "sqrt(3)/3-pi/6",
+        "numerical_quadrature": "0.05375149359132689143204154995537364161474018470760923918944489443267494",
+        "exact_numeric": "0.05375149359132689143204154995537364161474018470760923918944489443267494"
+      },
+      "dependency_correction": "No direct reuse of the prior sec²(2x) finite integral; the argument is x and basic sec²x integration applies.",
+      "baseline_note": "(a) Differentiate tan2x;(b) show sec²2x finite integral, then CHOOSE identity for tan²2x integral;(c) USE supplied double-angle identity for1/(1+cos4x) integral. All bounds0..π/6avoid cos2x zeros.",
+      "baseline_source_note": "(a)Differentiatetan2x;(b)showsec²2xfiniteintegral,thenCHOOSEidentityfortan²2xintegral;(c)USEsupplieddouble-angleidentityfor1/(1+cos4x)integral. Allbounds0..π/6avoidcos2xzeros.",
+      "corrected_note": "Part (a): differentiate tan(2x). Part (b): establish the sec²(2x) integral, then choose an identity to integrate the separately printed tan²x. Its key incorrectly uses the doubled argument. Part (c): use the supplied double-angle identity for the integral of 1/(1+cos(4x)). All bounds are 0 to π/6 radians, avoiding the original poles."
+    }
+  ],
+  "answer_page_repairs": [
+    {
+      "item_id": "8227:TB:YM:C4:Try-Now-50:1",
+      "subparts": [
+        "b"
+      ],
+      "baseline_answer_pdf_page": 613,
+      "answer_pdf_page": 612,
+      "answer_printed_page": "A26",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-612.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-612.png",
+        "render_sha256": "ee698df8a6f93f30f405282afe337688d2568b1a2b123c815e4ed92b24c3ccaf",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 612,
+        "printed_page": "A26",
+        "read_date": "2026-11-23"
+      },
+      "reason": "The right column of native PDF612 completes Try Now50Q1(b), immediately above Q2(a)."
+    },
+    {
+      "item_id": "8227:TB:YM:C13:Try-Now-4:3",
+      "subparts": [
+        "a-positive-P-bracket"
+      ],
+      "baseline_answer_pdf_page": 654,
+      "answer_pdf_page": 653,
+      "answer_printed_page": "A67",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-653.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-653.png",
+        "render_sha256": "fa4f5a71fead2c127d2bc9cebe82aa184486a96c2c726c41a6718d02cb2b875b",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 653,
+        "printed_page": "A67",
+        "read_date": "2026-11-23"
+      },
+      "reason": "Try Now4Q3(a) begins at the bottom-right of PDF653; later subparts continue on654."
+    }
+  ],
+  "page_observation_repairs": [
+    {
+      "book": "YM",
+      "pdf_page": 623,
+      "top_observation": "Left column begins Try Now30Q1 second-derivative tests. The top-right volume64 and maximum continue Try Now32Q2(b),(c), not Try Now33; Try Now33 starts lower in the right column.",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-623.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-623.png",
+        "render_sha256": "da3c51ddedf95c82180820344e041ee0b4aa8f3eb49f1f607770fc844db37717",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 623,
+        "printed_page": "A37",
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "book": "YM",
+      "pdf_page": 634,
+      "top_observation": "Top-left (g)–(i) and Q2/Q3 continue Try Now11, whose heading begins on PDF633. The right column starts Try Now14 polynomial quotients and remainders.",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-634.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-634.png",
+        "render_sha256": "8b8798ffa7af160432e0ffb07fbd5bca732db645e7881d2ec2756aa9b08c787f",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 634,
+        "printed_page": "A48",
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "book": "Goldie",
+      "pdf_page": 352,
+      "top_observation": "Left column starts Exercise8EQ1(i); Activity8.2 begins near its bottom and continues at the middle-column top with part(i)(c) and(ii). Exercise8F starts lower in that middle column, not at its top.",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-352.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-352.png",
+        "render_sha256": "c827ed18b75bb60b006e40b7232896ad81f929c8957016c9d253c85dc7f047d0",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 352,
+        "printed_page": 338,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "book": "Goldie",
+      "pdf_page": 354,
+      "top_observation": "The top-left carries Exercise8HQ1(xiii),(xiv), followed by Q2. Chapter9 then begins across the columns, including retained8227 elementary integration/rates facets alongside additional differential-equation material. Apply the inventory item-level scope; Chapter9 is not wholly out of8227 scope.",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-354.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-354.png",
+        "render_sha256": "b830af905d4559bba730bf5a6bf152c96c631ff9c4a08407de30dfb41a9b744a",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 354,
+        "printed_page": 340,
+        "read_date": "2026-11-23"
+      }
+    }
+  ],
+  "figure_repairs": [
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:22",
+      "item_kind": "teaching-figure",
+      "figure_role": "worked-solution panel",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-257.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-257.png",
+        "render_sha256": "3f5741c18321435bee4a8bd883b36e020f085b1537a28e384fc55dc1326d436d",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 257,
+        "printed_page": 243,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10.",
+      "comparison_media": [
+        "diagram"
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C4:Teaching-figure:13",
+      "item_kind": "given-figure",
+      "figure_role": "question given diagram",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-158.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-158.png",
+        "render_sha256": "54059add182fa6a77f4859347d53e6faf31caa9ad92e92630b0b2f6fba70b944",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 158,
+        "printed_page": 146,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The radius8cm and0.85radian sector diagram is alongside Try Now4 before Example5; it supplies that question’s givens."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:35",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-390.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-390.png",
+        "render_sha256": "25d6f66b97476ff6f2aa942a97c894025092c696cb87bb1bdc585afa1e100c65",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 390,
+        "printed_page": 378,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:38",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-391.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-391.png",
+        "render_sha256": "6749f94cf1c736dfc3b3f1407b27eb8e2735b4bacbaa8ea3042805722478951c",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 391,
+        "printed_page": 379,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:40",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-392.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-392.png",
+        "render_sha256": "86d20af8afa4173bb021b80e747bb8a67e3def2906839be6c25ec6f8e06ce9d5",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 392,
+        "printed_page": 380,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:48",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-397.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-397.png",
+        "render_sha256": "af20b1ea9d283bb0de2f4887bab4e58ac947345f14aa4044ca0c6521a2395be5",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 397,
+        "printed_page": 385,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:51",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-399.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-399.png",
+        "render_sha256": "cd73b35745054abae18027122aeaa98c8309f6f34ce85d61a7d00d69e976e511",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 399,
+        "printed_page": 387,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:54",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-400.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-400.png",
+        "render_sha256": "062b31d9580dc98ecf7fc07c7a8174639c3401c1937c4b572eaa71e0ba6bf190",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 400,
+        "printed_page": 388,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C8:Teaching-figure:59",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-404.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-404.png",
+        "render_sha256": "6a020653a4a0ced2e745772060e3a5a1dcf4b02425e1c49a368c211f08363d89",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 404,
+        "printed_page": 392,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Teaching-figure:26",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-536.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-536.png",
+        "render_sha256": "e017f035c042a4b84075fab6ca645a786226db43049b1beaa70e6a2a3f0903f9",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 536,
+        "printed_page": 524,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:YM:C13:Teaching-figure:70",
+      "figure_record_type": "graphic",
+      "figure_subtype": "spatial polynomial long/synthetic-division layout",
+      "comparison_media": [
+        "diagram"
+      ],
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-581.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-581.png",
+        "render_sha256": "bc70a4eafac8dcb2d61b75a1c56763a0b05819a690eeb8d9a2ba6f967201da72",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 581,
+        "printed_page": 569,
+        "read_date": "2026-11-23"
+      },
+      "reason": "The native worked layout aligns coefficients/powers, intermediate rows and subtraction/remainder positions. Use the same graphic-procedure rule as the Goldie long divisions; a separate prose hint or formula reminder remains text."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:20",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:23",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:29",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:50",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:51",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:11",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:14",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:15",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:16",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C10:Teaching-figure:17",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:34",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:35",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:14",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:3",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:24",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:29",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:31",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    },
+    {
+      "item_id": "8227:TB:YM:C5:Teaching-figure:32",
+      "comparison_media": [
+        "diagram"
+      ],
+      "reason": "The accepted census describes directed vector/position/grid geometry, not a function graph. Squared paper does not change its medium into a function graph; compare with vector diagrams such as2022P1Q11(a) and2024P1Q10."
+    }
+  ],
+  "selected_result_repairs": [
+    {
+      "item_id": "8227:TB:YM:C1:Example:22",
+      "subpart": "a-completed-form",
+      "kind": "required completed-square form",
+      "result": "5*(x + 4/5)**2 - 26/5",
+      "latex": "5 \\left(x + \\frac{4}{5}\\right)^{2} - \\frac{26}{5}",
+      "original_polynomial": "5*x**2 + 8*x - 2",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.png",
+        "render_sha256": "95061d7751f844cabb3b2d0c3ac89ec0c0c388f424ecf04b5576590d58194102",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 32,
+        "printed_page": 21,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Try-Now:22",
+      "subpart": "a-i-form",
+      "kind": "required completed-square form",
+      "result": "3*(x - 1)**2 - 6",
+      "latex": "3 \\left(x - 1\\right)^{2} - 6",
+      "original_polynomial": "3*x**2 - 6*x - 3",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.png",
+        "render_sha256": "95061d7751f844cabb3b2d0c3ac89ec0c0c388f424ecf04b5576590d58194102",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 32,
+        "printed_page": 21,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Try-Now:22",
+      "subpart": "b-i-form",
+      "kind": "required completed-square form",
+      "result": "2*(x - 3/2)**2 - 29/2",
+      "latex": "2 \\left(x - \\frac{3}{2}\\right)^{2} - \\frac{29}{2}",
+      "original_polynomial": "2*x**2 - 6*x - 10",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.png",
+        "render_sha256": "95061d7751f844cabb3b2d0c3ac89ec0c0c388f424ecf04b5576590d58194102",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 32,
+        "printed_page": 21,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Try-Now:22",
+      "subpart": "c-i-form",
+      "kind": "required completed-square form",
+      "result": "2*(x + 7/4)**2 - 169/8",
+      "latex": "2 \\left(x + \\frac{7}{4}\\right)^{2} - \\frac{169}{8}",
+      "original_polynomial": "2*x**2 + 7*x - 15",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.png",
+        "render_sha256": "95061d7751f844cabb3b2d0c3ac89ec0c0c388f424ecf04b5576590d58194102",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 32,
+        "printed_page": 21,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Try-Now:22",
+      "subpart": "d-i-form",
+      "kind": "required completed-square form",
+      "result": "3*(x + 1/3)**2 + 0",
+      "latex": "3 \\left(x + \\frac{1}{3}\\right)^{2} + 0",
+      "original_polynomial": "3*x**2 + 2*x + 1/3",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.png",
+        "render_sha256": "95061d7751f844cabb3b2d0c3ac89ec0c0c388f424ecf04b5576590d58194102",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 32,
+        "printed_page": 21,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Exercise-1:5",
+      "subpart": "a",
+      "kind": "required completed-square form",
+      "result": "25/2 - 2*(x - 3/2)**2",
+      "latex": "\\frac{25}{2} - 2 \\left(x - \\frac{3}{2}\\right)^{2}",
+      "original_polynomial": "-2*x**2 + 6*x + 8",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-47.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-47.png",
+        "render_sha256": "4c9aeb788c14f3c2aa857baca82f3429afae503839e0ec7d252551f8664fed04",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 47,
+        "printed_page": 36,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Exercise-1:9",
+      "subpart": "completed-form",
+      "kind": "required completed-square form",
+      "result": "1*(x - 1)**2 - 4",
+      "latex": "1 \\left(x - 1\\right)^{2} - 4",
+      "original_polynomial": "x**2 - 2*x - 3",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-47.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-47.png",
+        "render_sha256": "4c9aeb788c14f3c2aa857baca82f3429afae503839e0ec7d252551f8664fed04",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 47,
+        "printed_page": 36,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:YM:C1:Revision-Exercise-1:1",
+      "subpart": "b-completed-form",
+      "kind": "required completed-square form",
+      "result": "2*(x - 3/4)**2 - 9/8",
+      "latex": "2 \\left(x - \\frac{3}{4}\\right)^{2} - \\frac{9}{8}",
+      "original_polynomial": "2*x**2 - 3*x",
+      "independent_check": "Expand the completed square and compare every coefficient; vertex is(-b/(2a),c-b²/(4a)).",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-50.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-50.png",
+        "render_sha256": "6f6dc8f304d802af4acad82eb66aa43b7082a3bd7304ad9b5f7a286be8a1b4ba",
+        "source_path": "Y=mc as textbook.pdf",
+        "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+        "pdf_page": 50,
+        "printed_page": 39,
+        "read_date": "2026-11-23"
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Exercise-3D:9",
+      "subpart": "ii",
+      "kind": "extrema with smallest positive attaining angles",
+      "result": {
+        "maximum": "sqrt(3)",
+        "minimum": "-sqrt(3)",
+        "smallest_positive_maximum_angle_degrees": "180*atan(sqrt(2))/pi",
+        "smallest_positive_minimum_angle_degrees": "180+180*atan(sqrt(2))/pi"
+      },
+      "angle_unit": "degree",
+      "phase_degrees_exact": "180*atan(sqrt(2))/pi",
+      "phase_degrees_display": "54.7",
+      "opposite_phase_degrees_display": "234.7",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-90.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-90.png",
+        "render_sha256": "e1a9b159c4b74f5789f8c34cbda22ff66952ce17b249ef49857e3dafc1b96a1c",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 90,
+        "printed_page": 76,
+        "read_date": "2026-11-23"
+      },
+      "key_native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-341.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-341.png",
+        "render_sha256": "403b48ea9832cd234bc89cf4c0026744747cf9758b6996ac77cf953b64f9d247",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 341,
+        "printed_page": 327,
+        "read_date": "2026-11-23"
+      },
+      "independent_check": "Use cosθ+√2sinθ=√3cos(θ−α),α=atan(√2)in degrees. Positive denominator3±√3 reverses reciprocal ordering; the smallest positive maximum/minimum angles swap."
+    },
+    {
+      "item_id": "8227:TB:Goldie:C3:Exercise-3D:9",
+      "subpart": "iv",
+      "kind": "extrema with smallest positive attaining angles",
+      "result": {
+        "maximum": "1/(3-sqrt(3))",
+        "minimum": "1/(3+sqrt(3))",
+        "smallest_positive_maximum_angle_degrees": "180+180*atan(sqrt(2))/pi",
+        "smallest_positive_minimum_angle_degrees": "180*atan(sqrt(2))/pi"
+      },
+      "angle_unit": "degree",
+      "phase_degrees_exact": "180*atan(sqrt(2))/pi",
+      "phase_degrees_display": "54.7",
+      "opposite_phase_degrees_display": "234.7",
+      "native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-90.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-90.png",
+        "render_sha256": "e1a9b159c4b74f5789f8c34cbda22ff66952ce17b249ef49857e3dafc1b96a1c",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 90,
+        "printed_page": 76,
+        "read_date": "2026-11-23"
+      },
+      "key_native": {
+        "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-341.json",
+        "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-341.png",
+        "render_sha256": "403b48ea9832cd234bc89cf4c0026744747cf9758b6996ac77cf953b64f9d247",
+        "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+        "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+        "pdf_page": 341,
+        "printed_page": 327,
+        "read_date": "2026-11-23"
+      },
+      "independent_check": "Use cosθ+√2sinθ=√3cos(θ−α),α=atan(√2)in degrees. Positive denominator3±√3 reverses reciprocal ordering; the smallest positive maximum/minimum angles swap."
+    }
+  ],
+  "native_readings": [
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-543.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-543.png",
+      "render_sha256": "2114e3a47a6c03d85ea9daf70e790dec8cb9a8a80f8a2d139ba348956e82daef",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 543,
+      "printed_page": 531,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-651.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-651.png",
+      "render_sha256": "4d3a859f26d4cd361b9e4ac07d937e3cbaad82264b3634d38d945e97a2971c36",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 651,
+      "printed_page": "A65",
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-174.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-174.png",
+      "render_sha256": "00499248fa97bcd84964bbf15fbc9a2eb34da666f2e6eda4582f9832dcf5865a",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 174,
+      "printed_page": 162,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-122.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-122.png",
+      "render_sha256": "c1973be807ebbcdf5d29a401a925576b609c727fe505af65ff906017ee642dc3",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 122,
+      "printed_page": 111,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-612.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-612.png",
+      "render_sha256": "ee698df8a6f93f30f405282afe337688d2568b1a2b123c815e4ed92b24c3ccaf",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 612,
+      "printed_page": "A26",
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-653.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-653.png",
+      "render_sha256": "fa4f5a71fead2c127d2bc9cebe82aa184486a96c2c726c41a6718d02cb2b875b",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 653,
+      "printed_page": "A67",
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-623.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-623.png",
+      "render_sha256": "da3c51ddedf95c82180820344e041ee0b4aa8f3eb49f1f607770fc844db37717",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 623,
+      "printed_page": "A37",
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-634.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-634.png",
+      "render_sha256": "8b8798ffa7af160432e0ffb07fbd5bca732db645e7881d2ec2756aa9b08c787f",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 634,
+      "printed_page": "A48",
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-158.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-158.png",
+      "render_sha256": "54059add182fa6a77f4859347d53e6faf31caa9ad92e92630b0b2f6fba70b944",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 158,
+      "printed_page": 146,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-390.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-390.png",
+      "render_sha256": "25d6f66b97476ff6f2aa942a97c894025092c696cb87bb1bdc585afa1e100c65",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 390,
+      "printed_page": 378,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-391.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-391.png",
+      "render_sha256": "6749f94cf1c736dfc3b3f1407b27eb8e2735b4bacbaa8ea3042805722478951c",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 391,
+      "printed_page": 379,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-392.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-392.png",
+      "render_sha256": "86d20af8afa4173bb021b80e747bb8a67e3def2906839be6c25ec6f8e06ce9d5",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 392,
+      "printed_page": 380,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-32.png",
+      "render_sha256": "95061d7751f844cabb3b2d0c3ac89ec0c0c388f424ecf04b5576590d58194102",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 32,
+      "printed_page": 21,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-47.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-47.png",
+      "render_sha256": "4c9aeb788c14f3c2aa857baca82f3429afae503839e0ec7d252551f8664fed04",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 47,
+      "printed_page": 36,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-49.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-49.png",
+      "render_sha256": "8d7fef9662dab4e4bd775b93168f7b9aed8d0931a4c29b1fa282c03ed6b1aa09",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 49,
+      "printed_page": 38,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-176.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-176.png",
+      "render_sha256": "dc817e73f9705fd84f0ec09524ef91e01d51d3dd454e560c02316b96b30b0fe8",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 176,
+      "printed_page": 164,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-633.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-633.png",
+      "render_sha256": "23a5d1bd724ff7ef700b00fd842e2425851df3c7b8bcd68ee51381d2c0e2cb10",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 633,
+      "printed_page": "A47",
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-397.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-397.png",
+      "render_sha256": "af20b1ea9d283bb0de2f4887bab4e58ac947345f14aa4044ca0c6521a2395be5",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 397,
+      "printed_page": 385,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-399.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-399.png",
+      "render_sha256": "cd73b35745054abae18027122aeaa98c8309f6f34ce85d61a7d00d69e976e511",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 399,
+      "printed_page": 387,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-400.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-400.png",
+      "render_sha256": "062b31d9580dc98ecf7fc07c7a8174639c3401c1937c4b572eaa71e0ba6bf190",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 400,
+      "printed_page": 388,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-404.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-404.png",
+      "render_sha256": "6a020653a4a0ced2e745772060e3a5a1dcf4b02425e1c49a368c211f08363d89",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 404,
+      "printed_page": 392,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-536.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-536.png",
+      "render_sha256": "e017f035c042a4b84075fab6ca645a786226db43049b1beaa70e6a2a3f0903f9",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 536,
+      "printed_page": 524,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-581.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-581.png",
+      "render_sha256": "bc70a4eafac8dcb2d61b75a1c56763a0b05819a690eeb8d9a2ba6f967201da72",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 581,
+      "printed_page": 569,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-50.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-50.png",
+      "render_sha256": "6f6dc8f304d802af4acad82eb66aa43b7082a3bd7304ad9b5f7a286be8a1b4ba",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 50,
+      "printed_page": 39,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-175.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-175.png",
+      "render_sha256": "6056b3319c737047909a81de1644da43fe1cf55bc999f9c38ced46d1aea5240f",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 175,
+      "printed_page": 163,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-177.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/YM-177.png",
+      "render_sha256": "852b72cc036738e0f297e7b0eb8871f65c071f58519e0cb90dea013f7a6920a8",
+      "source_path": "Y=mc as textbook.pdf",
+      "source_sha256": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+      "pdf_page": 177,
+      "printed_page": 165,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-90.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-90.png",
+      "render_sha256": "e1a9b159c4b74f5789f8c34cbda22ff66952ce17b249ef49857e3dafc1b96a1c",
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "pdf_page": 90,
+      "printed_page": 76,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-341.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-341.png",
+      "render_sha256": "403b48ea9832cd234bc89cf4c0026744747cf9758b6996ac77cf953b64f9d247",
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "pdf_page": 341,
+      "printed_page": 327,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-352.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-352.png",
+      "render_sha256": "c827ed18b75bb60b006e40b7232896ad81f929c8957016c9d253c85dc7f047d0",
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "pdf_page": 352,
+      "printed_page": 338,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-354.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-354.png",
+      "render_sha256": "b830af905d4559bba730bf5a6bf152c96c631ff9c4a08407de30dfb41a9b744a",
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "pdf_page": 354,
+      "printed_page": 340,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-257.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-257.png",
+      "render_sha256": "3f5741c18321435bee4a8bd883b36e020f085b1537a28e384fc55dc1326d436d",
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "pdf_page": 257,
+      "printed_page": 243,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-18.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/Goldie-18.png",
+      "render_sha256": "ce873ab4d54716b119ead6d811468a720bd39a4ce52062bc0fbc379d093d3315",
+      "source_path": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+      "source_sha256": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+      "pdf_page": 18,
+      "printed_page": 4,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2023-2-Q6-p11.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2023-2-Q6-p11.png",
+      "render_sha256": "78b71eb5a8cdc405c9011de4ac11a0b94c63b56195333b2630739ee952350339",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+      "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+      "pdf_page": 11,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2024-2-Q11-p16.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2024-2-Q11-p16.png",
+      "render_sha256": "72170e48969aa87454911ccf43dc5fb9be78fdbe27254966463df6fe195966dd",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-2.pdf",
+      "source_sha256": "e6a254202b531592c5bbd2e20a8d003e1f49ca3bd7d1ca9796990c6e897c6def",
+      "pdf_page": 16,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2024-2-Q11-p17.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2024-2-Q11-p17.png",
+      "render_sha256": "a25103be650da3c01fc020ce7c20e484ca440c7afa2354efce7c60c6029e41ff",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-2.pdf",
+      "source_sha256": "e6a254202b531592c5bbd2e20a8d003e1f49ca3bd7d1ca9796990c6e897c6def",
+      "pdf_page": 17,
+      "read_date": "2026-11-23"
+    },
+    {
+      "metadata_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2025-1-Q4-p6.json",
+      "render_path": "work/nam-8227-nsscas-2026/workbench/checks/r7/parallel-sources/exam-2025-1-Q4-p6.png",
+      "render_sha256": "2d9cedf3ca5e26e62ca7cde5fe3995a27ec28f63a0172fc36a15c4f97decd866",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+      "source_sha256": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+      "pdf_page": 6,
+      "read_date": "2026-11-23"
+    }
+  ],
+  "vector_grid_figure_ids": [
+    "8227:TB:Goldie:C10:Teaching-figure:20",
+    "8227:TB:Goldie:C10:Teaching-figure:22",
+    "8227:TB:Goldie:C10:Teaching-figure:23",
+    "8227:TB:Goldie:C10:Teaching-figure:29",
+    "8227:TB:Goldie:C10:Teaching-figure:50",
+    "8227:TB:Goldie:C10:Teaching-figure:51",
+    "8227:TB:Goldie:C10:Teaching-figure:11",
+    "8227:TB:Goldie:C10:Teaching-figure:14",
+    "8227:TB:Goldie:C10:Teaching-figure:15",
+    "8227:TB:Goldie:C10:Teaching-figure:16",
+    "8227:TB:Goldie:C10:Teaching-figure:17",
+    "8227:TB:YM:C5:Teaching-figure:34",
+    "8227:TB:YM:C5:Teaching-figure:35",
+    "8227:TB:YM:C5:Teaching-figure:14",
+    "8227:TB:YM:C5:Teaching-figure:3",
+    "8227:TB:YM:C5:Teaching-figure:24",
+    "8227:TB:YM:C5:Teaching-figure:29",
+    "8227:TB:YM:C5:Teaching-figure:31",
+    "8227:TB:YM:C5:Teaching-figure:32"
+  ],
+  "long_division_rule": "An actual aligned long/synthetic polynomial-division layout is a graphic procedure in either book. Prose boundary notes, hints and stand-alone division identities remain text callouts. This class does not certify the correctness of the displayed arithmetic.",
+  "own_sketch_readbacks": [
+    {
+      "part_id": "8227:EXAM:2023:P2:Q6:d",
+      "source_sketch_part_ids": [
+        "8227:EXAM:2023:P2:Q6:c"
+      ],
+      "medium": "graph",
+      "reason": "Use your sketch refers to the logarithm graph produced in(c); part(a) is the numerical estimate to be judged.",
+      "native_metadata_paths": [
+        "checks/r7/parallel-sources/exam-2023-2-Q6-p11.json"
+      ]
+    },
+    {
+      "part_id": "8227:EXAM:2024:P2:Q11:c",
+      "source_sketch_part_ids": [
+        "8227:EXAM:2024:P2:Q11:a"
+      ],
+      "medium": "graph",
+      "reason": "Deduce the inequality from the two graphs sketched in(a), with the intersection established in(b).",
+      "native_metadata_paths": [
+        "checks/r7/parallel-sources/exam-2024-2-Q11-p16.json",
+        "checks/r7/parallel-sources/exam-2024-2-Q11-p17.json"
+      ]
+    },
+    {
+      "part_id": "8227:EXAM:2025:P1:Q4:c",
+      "source_sketch_part_ids": [
+        "8227:EXAM:2025:P1:Q4:a",
+        "8227:EXAM:2025:P1:Q4:b"
+      ],
+      "medium": "graph",
+      "reason": "Use your graphs explicitly reads back both learner-produced curve and line sketches.",
+      "native_metadata_paths": [
+        "checks/r7/parallel-sources/exam-2025-1-Q4-p6.json"
+      ]
+    }
+  ],
+  "trig_selected_result_family_id": "8227:TEXTBOOK-FAMILY:trig-formula-restricted-sketch",
+  "counts": {
+    "native_pages_read": 36,
+    "mathematical_response_corrections": 1,
+    "answer_page_repairs": 2,
+    "page_observation_repairs": 4,
+    "figure_patch_records": 29,
+    "long_division_graphic_reclassifications": 9,
+    "vector_grid_medium_repairs": 19,
+    "own_sketch_readback_parts": 3,
+    "required_result_repairs": 10
+  },
+  "answer_page_audit_r6_baseline": {
+    "path": "work/nam-8227-nsscas-2026/workbench/analysis/history/textbook-answer-page-audit-r6.json",
+    "sha256": "e9430f212057f02cc6581a5a8487cda8547d0d4dedef5852b73d9e59cb2807f3"
+  }
+}

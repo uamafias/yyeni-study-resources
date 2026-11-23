@@ -1,0 +1,100 @@
+{
+  "role": "AUTHOR",
+  "scope": "Bounded read-only integration audit of closeout helper, relation/synthesis hooks and final checker; not cross-vendor review.",
+  "checks": {
+    "current_input_files_present": [
+      "textbook-closeout-motion-decisions.json",
+      "textbook-closeout-curve-decisions.json",
+      "textbook-closeout-family-gap-inputs.json"
+    ],
+    "current_relation_selectors_verified": 33,
+    "all_member_selector_families": [
+      {
+        "family_id": "8227:TEXTBOOK-FAMILY:motion-distance-with-reversal",
+        "all_current_member_selectors_agree": true,
+        "members": 1
+      },
+      {
+        "family_id": "8227:TEXTBOOK-FAMILY:motion-vertical-events",
+        "all_current_member_selectors_agree": true,
+        "members": 2
+      },
+      {
+        "family_id": "8227:TEXTBOOK-FAMILY:motion-rest-and-bounded-speed",
+        "all_current_member_selectors_agree": true,
+        "members": 5
+      },
+      {
+        "family_id": "8227:TEXTBOOK-FAMILY:parametric-general-tangent-normal",
+        "all_current_member_selectors_agree": true,
+        "members": 6
+      },
+      {
+        "family_id": "8227:TEXTBOOK-FAMILY:logarithm-graph-domain-properties",
+        "all_current_member_selectors_agree": true,
+        "members": 1
+      },
+      {
+        "family_id": "8227:TEXTBOOK-FAMILY:implicit-linked-normal-curve-sketch",
+        "all_current_member_selectors_agree": true,
+        "members": 1
+      }
+    ],
+    "normalized_readings": 85,
+    "all_normalized_reader_labels_match": true,
+    "selected_positive_exceptions_preserved": true,
+    "superseded_named_rejections_removed": true,
+    "duplicate_reader_reproduction": "reproduced identical uppercase-reader duplicate rejected before normalization",
+    "family_gap_native_demand_exceptions": [
+      {
+        "item_id": "8227:TB:YM:C4:Try-Now-58:1",
+        "declared_exception_equals_actual_missing_demand": true
+      },
+      {
+        "item_id": "8227:TB:YM:C4:Try-Now-58:2",
+        "declared_exception_equals_actual_missing_demand": true
+      },
+      {
+        "item_id": "8227:TB:YM:C11:Try-Now-42:2",
+        "declared_exception_equals_actual_missing_demand": true
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "IA-01",
+      "severity": "low",
+      "locator": "tools/textbook_closeout_r7.py:readings",
+      "finding": "Duplicate reading equality is checked before Codex AUTHOR is normalized to Codex author. Two identical raw reading rows with the same ID and uppercase label fail after the first row has been normalized.",
+      "current_impact": "No current collision: the 27 motion/curve reading IDs are disjoint and normalize correctly. This is a reproduced hardening issue for shared readings across the third input.",
+      "minimal_fix": "Normalize a copied row before comparing it with an existing normalized row."
+    },
+    {
+      "id": "IA-02",
+      "severity": "low",
+      "locator": "tools/build_textbook_synthesis_r5.py:source_inputs producer list after closeout application",
+      "finding": "The synthesis source_inputs array lists the R6/R7 producers but omits textbook_closeout_r7.py and all present closeout authored input JSONs, even though they now alter the family metadata and examination relations.",
+      "current_impact": "The snapshot may still freeze them and the fresh rebuild still executes them; this is missing direct synthesis provenance rather than proof of nondeterminism.",
+      "minimal_fix": "Append the closeout helper and each consumed closeout JSON to source_inputs with their hashes, using the same deterministic file order as documents()."
+    },
+    {
+      "id": "IA-03",
+      "severity": "medium (in-progress integration)",
+      "locator": "tools/textbook_closeout_r7.py:apply_family_metadata / attach_closeout",
+      "finding": "The newly arrived family-gap input declares family_patches, empty_family_dispositions, native_response_demand_exceptions and relation_removals. The helper version read during this audit consumes only relations/readings/gap_patches and prompt policy; these additional declarations are not applied there.",
+      "current_impact": "Until the root completes these hooks, the assigned exact-angle/product demands and native evidence are absent, and a retired false-positive relation may survive if no explicit replacement targets the same key. The final closeout checker should fail rather than permit completion.",
+      "minimal_fix": "Apply the authored family metadata and exact native DD exceptions before relation assembly; explicitly remove the declared superseded relation, including any conflicting positive member exceptions."
+    }
+  ],
+  "limits": [
+    "The third family-gap input arrived during this audit. Its33total raw selectors across all inputs and85normalized readings were checked after arrival; its family metadata/explicit-removal integration was still being completed by root.",
+    "No files outside these audit outputs were changed. No complete builder or pipeline was executed.",
+    "The positive-exception preservation check used the actual attach function with an in-memory normalizer and fixture rows; it is a structural AUTHOR check, not a native-page relation review.",
+    "Findings describe the integration code read in this audit and may already be superseded by root fixes; no independent or cross-vendor review is claimed."
+  ],
+  "input_hashes_at_final_selector_check": {
+    "work/nam-8227-nsscas-2026/workbench/tools/textbook-closeout-motion-decisions.json": "88dd18ac2defb4a6c9267365a708895cc42a1e64b9688015d7381c13681232d2",
+    "work/nam-8227-nsscas-2026/workbench/tools/textbook-closeout-curve-decisions.json": "ed3ce78de018126fd465fb55a5967f03cdfb7a1634c1a1ad4e16d72c8a60773c",
+    "work/nam-8227-nsscas-2026/workbench/tools/textbook-closeout-family-gap-inputs.json": "067de9672e24d486d87ccfad4aa94a35a10f86bae51262cddd2e6c56e978fbd5"
+  }
+}

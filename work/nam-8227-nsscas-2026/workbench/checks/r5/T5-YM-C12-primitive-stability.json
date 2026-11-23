@@ -1,0 +1,46 @@
+{
+  "item_id": "8227:TB:YM:C12:Example:24",
+  "subpart": "a-primitive",
+  "source_input_path": "work/nam-8227-nsscas-2026/workbench/tools/textbook-r5/answers-YM-C12-examstyle.json",
+  "source_input_sha256": "b17a7935a8bbe9ca5ec766e7f9edb4fb8f8ccbf6412902f86e0d5a397c814c65",
+  "original_operation": {
+    "kind": "real-elementary-antiderivative",
+    "operands": [
+      "(sin(x)-cos(x))**2"
+    ],
+    "integration_algorithm": "manual"
+  },
+  "fresh_process_runs": [
+    {
+      "hash_seed": "0",
+      "derived_primitive": "x + cos(x)**2"
+    },
+    {
+      "hash_seed": "1",
+      "derived_primitive": "x + cos(x)**2"
+    },
+    {
+      "hash_seed": "2",
+      "derived_primitive": "x + cos(x)**2"
+    },
+    {
+      "hash_seed": "3",
+      "derived_primitive": "x + cos(x)**2"
+    }
+  ],
+  "constant_shift_checks": [
+    {
+      "earlier_observed_form": "x*sin(x)**2+x*cos(x)**2-sin(x)**2",
+      "canonical_minus_earlier": "1"
+    },
+    {
+      "earlier_observed_form": "x*sin(x)**2+x*cos(x)**2+cos(x)**2",
+      "canonical_minus_earlier": "0"
+    },
+    {
+      "earlier_observed_form": "x+cos(2*x)/2",
+      "canonical_minus_earlier": "1/2"
+    }
+  ],
+  "limits": "Fixed-source author QA for an observed symbolic-representation instability;not runtime variation or educational acceptance."
+}

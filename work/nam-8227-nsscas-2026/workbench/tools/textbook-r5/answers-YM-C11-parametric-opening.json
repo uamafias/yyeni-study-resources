@@ -1,0 +1,1187 @@
+{
+  "scope": "Complete512–515implicitclosureandparametricopening.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C11:Example:31",
+      "source_pdf_page": 512,
+      "notes": "ForORIGINAL2x²+3xy+y²3:(a)tangentat(2,−1)inintegerax+by+c0form5x+4y−6=0;(b)SHOWno realstationarypoint,usingoriginalcurveandFx0jointly.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "ForORIGINAL2x²+3xy+y²3:(a)tangentat(2,−1)inintegerax+by+c0form5x+4y−6=0;(b)SHOWno realstationarypoint,usingoriginalcurveandFx0jointly.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "ForORIGINAL2x²+3xy+y²3:(a)tangentat(2,−1)inintegerax+by+c0form5x+4y−6=0;(b)SHOWno realstationarypoint,usingoriginalcurveandFx0jointly.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "ForORIGINAL2x²+3xy+y²3:(a)tangentat(2,−1)inintegerax+by+c0form5x+4y−6=0;(b)SHOWno realstationarypoint,usingoriginalcurveandFx0jointly.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "a-tangent",
+        "b-no-stationary-point"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-tangent",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "-1+((-diff(2*x**2+3*x*y+y**2-3,x)/diff(2*x**2+3*x*y+y**2-3,y)).subs({x:2,y:-1}))*(x-2)"
+            ]
+          },
+          "printed_key_normalised": "(-5*x+6)/4",
+          "method": "ORIGINAL(2,−1)liesoncurveandFy4nonzero,so slope−5/4. Formtangentandreturnintegerform5x+4y−6=0; commonnonzeroscalarmultiplesvalid.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O03:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_integer_line": "5x+4y−6=0",
+          "additional_operations": {
+            "original-point-incidence": {
+              "kind": "identity",
+              "operands": [
+                "(2*x**2+3*x*y+y**2-3).subs({x:2,y:-1})"
+              ]
+            },
+            "integer-line-incidence": {
+              "kind": "identity",
+              "operands": [
+                "5*2+4*(-1)-6"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-point-incidence": "0",
+            "integer-line-incidence": "0"
+          },
+          "source_pdf_page": 512,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 512,
+          "answer_printed_page": 500,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-no-stationary-point",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "No real stationarypoint.",
+          "author_derivation": "ORIGINALfinitehorizontalconditionFx4x+3y0givesx−3y/4. SubstitutionintoORIGINALcurve gives−y²/8=3,hencey²−24impossibleforrealcoordinates. No finitehorizontalpoint exists;Fy0doesnotcreate a zero gradient.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O03:D01"
+          ],
+          "response_format": "proof/show-that",
+          "additional_operations": {
+            "original-horizontal-substitution": {
+              "kind": "identity",
+              "operands": [
+                "(2*x**2+3*x*y+y**2-3).subs(x,-3*y/4)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-horizontal-substitution": "-y**2/8-3"
+          },
+          "source_pdf_page": 512,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 512,
+          "answer_printed_page": 500,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now-31:1",
+      "source_pdf_page": 512,
+      "notes": "SHOWORIGINALy³+4xy16hasNOstationarypoints. Horizontalnumeratorzeroy0contradictsoriginalcurve;nofakepointcreatedbyderivativealgebra.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "SHOWORIGINALy³+4xy16hasNOstationarypoints. Horizontalnumeratorzeroy0contradictsoriginalcurve;nofakepointcreatedbyderivativealgebra.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "SHOWORIGINALy³+4xy16hasNOstationarypoints. Horizontalnumeratorzeroy0contradictsoriginalcurve;nofakepointcreatedbyderivativealgebra.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "SHOWORIGINALy³+4xy16hasNOstationarypoints. Horizontalnumeratorzeroy0contradictsoriginalcurve;nofakepointcreatedbyderivativealgebra.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "no-stationary-point"
+      ],
+      "subparts": [
+        {
+          "subpart": "no-stationary-point",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "No stationarypoints.",
+          "author_derivation": "ORIGINALy³+4xy16hasFx4y. Finitehorizontalgradientwouldrequirey0,butsubstitutioninORIGINALcurvegives0=16,impossible. A singularorverticalcandidateisnot a stationarypoint.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O03:D01"
+          ],
+          "response_format": "proof/show-that",
+          "additional_operations": {
+            "impossible-original-zero-y": {
+              "kind": "identity",
+              "operands": [
+                "(y**3+4*x*y-16).subs(y,0)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "impossible-original-zero-y": "-16"
+          },
+          "source_pdf_page": 512,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now-31:2",
+      "source_pdf_page": 512,
+      "notes": "FindNORMALtoORIGINAL3lnx+6xy+y²16at(1,2),inintegerax+by+c0form2x−3y+4=0. Originaldomain,pointandslopechecksretained.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O03:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "FindNORMALtoORIGINAL3lnx+6xy+y²16at(1,2),inintegerax+by+c0form2x−3y+4=0. Originaldomain,pointandslopechecksretained.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "FindNORMALtoORIGINAL3lnx+6xy+y²16at(1,2),inintegerax+by+c0form2x−3y+4=0. Originaldomain,pointandslopechecksretained.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "FindNORMALtoORIGINAL3lnx+6xy+y²16at(1,2),inintegerax+by+c0form2x−3y+4=0. Originaldomain,pointandslopechecksretained.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "normal"
+      ],
+      "subparts": [
+        {
+          "subpart": "normal",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "2-1/((-diff(3*log(x)+6*x*y+y**2-16,x)/diff(3*log(x)+6*x*y+y**2-16,y)).subs({x:1,y:2}))*(x-1)"
+            ]
+          },
+          "printed_key_normalised": "2*x/3+Rational(4,3)",
+          "method": "ORIGINALlogdomainx>0;point(1,2)liesoncurve,Fy10nonzero,tangentslope−3/2nonzero. Normalgradient2/3givesintegerline2x−3y+4=0.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O03:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_integer_line": "2x−3y+4=0",
+          "additional_operations": {
+            "original-point-incidence": {
+              "kind": "identity",
+              "operands": [
+                "(3*log(x)+6*x*y+y**2-16).subs({x:1,y:2})"
+              ]
+            },
+            "original-perpendicular-gradients": {
+              "kind": "identity",
+              "operands": [
+                "Rational(2,3)*((-diff(3*log(x)+6*x*y+y**2-16,x)/diff(3*log(x)+6*x*y+y**2-16,y)).subs({x:1,y:2}))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-point-incidence": "0",
+            "original-perpendicular-gradients": "-1"
+          },
+          "source_pdf_page": 512,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:32",
+      "source_pdf_page": 514,
+      "notes": "OriginalX4t³,Yt²−3:finddy/dx1/(6t),t≠0. Theorigin-parameterpoint(0,−3)isacuspwithnonfinitebranchslopes;donotcanceltoinvent afinite t0slope.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "OriginalX4t³,Yt²−3:finddy/dx1/(6t),t≠0. Theorigin-parameterpoint(0,−3)isacuspwithnonfinitebranchslopes;donotcanceltoinvent afinite t0slope.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "OriginalX4t³,Yt²−3:finddy/dx1/(6t),t≠0. Theorigin-parameterpoint(0,−3)isacuspwithnonfinitebranchslopes;donotcanceltoinvent afinite t0slope.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "OriginalX4t³,Yt²−3:finddy/dx1/(6t),t≠0. Theorigin-parameterpoint(0,−3)isacuspwithnonfinitebranchslopes;donotcanceltoinvent afinite t0slope.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "dy-dx"
+      ],
+      "subparts": [
+        {
+          "subpart": "dy-dx",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "4*t**3",
+              "t**2-3"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "1/(6*t)",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "4*t**3",
+            "y": "t**2-3"
+          },
+          "original_parameter_domain": "Allrealt;regularformulaonlyt≠0. Att0bothcoordinatederivatives0;originalcurvehasthe2/3powercusp,nofinitegradient.",
+          "additional_operations": {
+            "original-elimination-at-cusp": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((4*t**3).subs(t,0),(t**2-3).subs(t,0))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-elimination-at-cusp": "Tuple(0,-3)"
+          },
+          "source_pdf_page": 514,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 514,
+          "answer_printed_page": 502,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now:32",
+      "source_pdf_page": 514,
+      "notes": "Two parametricderivatives:Xt²,Y2−5t²gives−5withexplicitstalledt0branchanalysis;X4t,Yt³−4t²−3tgives(3t²−8t−3)/4forallrealt.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Two parametricderivatives:Xt²,Y2−5t²gives−5withexplicitstalledt0branchanalysis;X4t,Yt³−4t²−3tgives(3t²−8t−3)/4forallrealt.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Two parametricderivatives:Xt²,Y2−5t²gives−5withexplicitstalledt0branchanalysis;X4t,Yt³−4t²−3tgives(3t²−8t−3)/4forallrealt.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Two parametricderivatives:Xt²,Y2−5t²gives−5withexplicitstalledt0branchanalysis;X4t,Yt³−4t²−3tgives(3t²−8t−3)/4forallrealt.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "t**2",
+              "2-5*t**2"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "-5",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "t**2",
+            "y": "2-5*t**2"
+          },
+          "original_parameter_domain": "Allrealt;ratioformulaordinaryfort≠0. Att0parameterstalls,buteliminationY2−5X,X≥0givesfiniteone-sidedgeometricgradient−5.",
+          "singular_parameter_analysis": "t0hasdxdt=dydt0,so rawquotient0/0not evaluated. Eliminate parameter: Y2−5X onX≥0,the SAMEstraight half-line tracedtwice. Its tangentlinehasgradient−5includingendpointinone-sidedgeometricconvention;thisisnotanundefinedcusp.",
+          "additional_operations": {
+            "original-elimination-line": {
+              "kind": "identity",
+              "operands": [
+                "simplify((2-5*t**2)-2+5*t**2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-elimination-line": "0"
+          },
+          "source_pdf_page": 514,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "4*t",
+              "t**3-4*t**2-3*t"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "(3*t**2-8*t-3)/4",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "4*t",
+            "y": "t**3-4*t**2-3*t"
+          },
+          "original_parameter_domain": "Allrealt;dX/dt4neverszero.",
+          "source_pdf_page": 514,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:33",
+      "source_pdf_page": 514,
+      "notes": "OriginalXln(1−2t),Y2/t:finddy/dx(1−2t)/t²withoriginalt<1/2,t≠0. Do notextendtherationalfinalformulaoverthelogboundary.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "OriginalXln(1−2t),Y2/t:finddy/dx(1−2t)/t²withoriginalt<1/2,t≠0. Do notextendtherationalfinalformulaoverthelogboundary.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "OriginalXln(1−2t),Y2/t:finddy/dx(1−2t)/t²withoriginalt<1/2,t≠0. Do notextendtherationalfinalformulaoverthelogboundary.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "OriginalXln(1−2t),Y2/t:finddy/dx(1−2t)/t²withoriginalt<1/2,t≠0. Do notextendtherationalfinalformulaoverthelogboundary.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "dy-dx"
+      ],
+      "subparts": [
+        {
+          "subpart": "dy-dx",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "log(1-2*t)",
+              "2/t"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "(1-2*t)/t**2",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "log(1-2*t)",
+            "y": "2/t"
+          },
+          "original_parameter_domain": "t<1/2andt≠0;logpositiveandYdenominatornonzero. dX/dt−2/(1−2t)neverzeroonoriginaldomain.",
+          "source_pdf_page": 514,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 514,
+          "answer_printed_page": 502,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now:33",
+      "source_pdf_page": 514,
+      "notes": "OriginalXln(1−t),Y7/tandX3+√t,Y2lnt. Firstrequires t<1,t≠0;secondt>0andhasfinitepositive dX/dt.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "OriginalXln(1−t),Y7/tandX3+√t,Y2lnt. Firstrequires t<1,t≠0;secondt>0andhasfinitepositive dX/dt.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "OriginalXln(1−t),Y7/tandX3+√t,Y2lnt. Firstrequires t<1,t≠0;secondt>0andhasfinitepositive dX/dt.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "OriginalXln(1−t),Y7/tandX3+√t,Y2lnt. Firstrequires t<1,t≠0;secondt>0andhasfinitepositive dX/dt.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "log(1-t)",
+              "7/t"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "(7-7*t)/t**2",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "log(1-t)",
+            "y": "7/t"
+          },
+          "original_parameter_domain": "t<1,t≠0.",
+          "source_pdf_page": 514,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "3+sqrt(t)",
+              "2*log(t)"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "4/sqrt(t)",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "3+sqrt(t)",
+            "y": "2*log(t)"
+          },
+          "original_parameter_domain": "t>0;originalYlogprevents t0.",
+          "source_pdf_page": 514,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:34",
+      "source_pdf_page": 515,
+      "notes": "OriginalXe^(2t),Yt²e^(−t)−1:SHOWdy/dx=t(2−t)/(2e^(3t)). dX/dt2e^(2t)>0forallrealt.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "OriginalXe^(2t),Yt²e^(−t)−1:SHOWdy/dx=t(2−t)/(2e^(3t)). dX/dt2e^(2t)>0forallrealt.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "OriginalXe^(2t),Yt²e^(−t)−1:SHOWdy/dx=t(2−t)/(2e^(3t)). dX/dt2e^(2t)>0forallrealt.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "OriginalXe^(2t),Yt²e^(−t)−1:SHOWdy/dx=t(2−t)/(2e^(3t)). dX/dt2e^(2t)>0forallrealt.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "shown-derivative"
+      ],
+      "subparts": [
+        {
+          "subpart": "shown-derivative",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "exp(2*t)",
+              "t**2*exp(-t)-1"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "t*(2-t)/(2*exp(3*t))",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "proof/show-that",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "exp(2*t)",
+            "y": "t**2*exp(-t)-1"
+          },
+          "original_parameter_domain": "Allrealt;dX/dtpositive.",
+          "check_mode": "show/prove",
+          "source_pdf_page": 515,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 515,
+          "answer_printed_page": 503,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now:34",
+      "source_pdf_page": 515,
+      "notes": "Four parametricexponential/logderivatives:X1+e^(−t),Ye^t−e^(−t);X2ln(t−3),Y4e^t;Xe^(2t),Y1−2te^t;Xe^(2t),Yt³e^t+3. Secondoriginaldomain t>3,othersallreal.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Four parametricexponential/logderivatives:X1+e^(−t),Ye^t−e^(−t);X2ln(t−3),Y4e^t;Xe^(2t),Y1−2te^t;Xe^(2t),Yt³e^t+3. Secondoriginaldomain t>3,othersallreal.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Four parametricexponential/logderivatives:X1+e^(−t),Ye^t−e^(−t);X2ln(t−3),Y4e^t;Xe^(2t),Y1−2te^t;Xe^(2t),Yt³e^t+3. Secondoriginaldomain t>3,othersallreal.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Four parametricexponential/logderivatives:X1+e^(−t),Ye^t−e^(−t);X2ln(t−3),Y4e^t;Xe^(2t),Y1−2te^t;Xe^(2t),Yt³e^t+3. Secondoriginaldomain t>3,othersallreal.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "1+exp(-t)",
+              "exp(t)-exp(-t)"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "-exp(2*t)-1",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "1+exp(-t)",
+            "y": "exp(t)-exp(-t)"
+          },
+          "original_parameter_domain": "Allrealt;dX/dt−e^(−t)nonzero.",
+          "source_pdf_page": 515,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "2*log(t-3)",
+              "4*exp(t)"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "2*exp(t)*(t-3)",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "2*log(t-3)",
+            "y": "4*exp(t)"
+          },
+          "original_parameter_domain": "t>3.",
+          "source_pdf_page": 515,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "exp(2*t)",
+              "1-2*t*exp(t)"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "-(t+1)/exp(t)",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "exp(2*t)",
+            "y": "1-2*t*exp(t)"
+          },
+          "original_parameter_domain": "Allrealt;dX/dtpositive.",
+          "source_pdf_page": 515,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "exp(2*t)",
+              "t**3*exp(t)+3"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "(t**3+3*t**2)/(2*exp(t))",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "exp(2*t)",
+            "y": "t**3*exp(t)+3"
+          },
+          "original_parameter_domain": "Allrealt;dX/dtpositive.",
+          "source_pdf_page": 515,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 648,
+          "answer_printed_page": "A62",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:35",
+      "source_pdf_page": 515,
+      "notes": "OriginalX1+tanθ,Ysecθ:finddy/dxsinθbutretainORIGINALcosθ≠0. Derivedsecantderivativecanbeobtainedfromreciprocalcosine;notanaddedmandatoryrecallrule.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Implicit line/no-stationary tasks use actualimplicitgeometry. Parametric derivatives apply(dy/dt)/(dx/dt)with the actual parameterandoriginaldomain. A zero dx/dt must be checked before any pointwise finitequotientclaim; elimination/branchanalysis can reveal a finite tangent despite a stalledparameter. Parametricrepresentationteachingaloneisnot anaskedderivative/sketch.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "OriginalX1+tanθ,Ysecθ:finddy/dxsinθbutretainORIGINALcosθ≠0. Derivedsecantderivativecanbeobtainedfromreciprocalcosine;notanaddedmandatoryrecallrule.",
+          "reason": "Actual algebraicpowers are integersor1/2;retainpositive logarguments,nonzerodenominatorsandfiniteoriginalparameterderivatives."
+        },
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "OriginalX1+tanθ,Ysecθ:finddy/dxsinθbutretainORIGINALcosθ≠0. Derivedsecantderivativecanbeobtainedfromreciprocalcosine;notanaddedmandatoryrecallrule.",
+          "reason": "These derivative/geometrytasksdo notask boundedperiodic-equationsets;small-multiplierlimitnotimposedon parametricderivativearguments."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "OriginalX1+tanθ,Ysecθ:finddy/dxsinθbutretainORIGINALcosθ≠0. Derivedsecantderivativecanbeobtainedfromreciprocalcosine;notanaddedmandatoryrecallrule.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10",
+          "8227:QUAL03"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exactderivativesandlineequations. Source512requiresintegerax+by+c0linecoefficients. CircleparameterandExample35θareRADIANS; no physicaltime lawassumed.",
+        "comparison": "Keep parameterdomainanddx/dtnonzeroconditionsbeforecancellation. Parametriczero/zero alone isnot proof of a verticaltangent:analyseoriginalcurvebranch. Integerlinecoefficientsaccept commonnonzeroscalarmultiples."
+      },
+      "expected_subpart_labels": [
+        "dy-dx"
+      ],
+      "subparts": [
+        {
+          "subpart": "dy-dx",
+          "operation": {
+            "kind": "parametric-derivative",
+            "operands": [
+              "1+tan(t)",
+              "sec(t)"
+            ],
+            "variable": "t"
+          },
+          "printed_key_normalised": "sin(t)",
+          "method": "Independentlydifferentiatethe ORIGINALcoordinatefunctionswithrespectto theircommonparameter,thenform(dY/dt)/(dX/dt)where dX/dt≠0. Retain originalrealfunctiondomainandseparateanysingularparametercasebeforecancellation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_parameterisation": {
+            "x": "1+tan(t)",
+            "y": "sec(t)"
+          },
+          "original_parameter_domain": "Originalparameterθradians,checker t=θ;cosθ≠0. Originalx,yundefinedattangent/secantpoles,eventhoughsinθfinite.",
+          "source_parameter": "θ(radians);checkertdenotesθ.",
+          "source_pdf_page": 515,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "answer_pdf_page": 515,
+          "answer_printed_page": 503,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-512-source.png",
+            "sha256": "3dfa0513116a867786a58c272a03f043d25fad7947a1d8e8fc3897069d095961"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,997 @@
+{
+ "review_id": "opus-5-5-step-1-3",
+ "review_kind": "Independent cross-vendor review of Workbench steps 1-3 (source preparation, syllabus/demand mapping, examination-pattern analysis) and the 15 November 2026 framework extensions. Analysis/selection review only; no recipes, generators or learner content exist to review.",
+ "reviewer": {
+  "model": "Claude Opus 5.5 (claude-opus-5-5)",
+  "harness": "Claude Code",
+  "role_brief": "standard/v0.2.0-draft/roles/REVIEWER.md, superseded for Workbench scope/output by workbench/playbook/README.md, quality.md, templates.md",
+  "author_of_reviewed_work": "Codex (per STATUS/analysis-snapshot); reviewer did not author any reviewed input",
+  "delegation": "none"
+ },
+ "review_started_utc": "after the containing commit (2026-11-15T21:26:41Z); exact start not recorded",
+ "review_inputs_frozen_utc": "2026-11-15T22:19:22Z",
+ "repository": {
+  "root": "/Users/professor/Documents/YYeni Study Resources",
+  "commit": "11cd03fe639f9936dd9f83fd04bd6f04d5181676",
+  "commit_subject": "feat(workbench): audit framework and map NSSCAS maths sources",
+  "author_baseline_commit": "d6b8f551a405673f3149910e00ebfb7f1e5312a5",
+  "branch": "main",
+  "working_tree_status_at_start": {
+   "modified_unrelated": [
+    "_harvest/logs/harvest_log.csv (5 uncommitted rows dated 2026-11-01 for JSS Geography; not 8227)"
+   ],
+   "untracked_unrelated": [
+    "_harvest/reports/integrity_2026-11-01.md",
+    "_harvest/reports/integrity_2026-11-01.tsv",
+    "_harvest/reports/run_20261101-095112-869.md",
+    "operations/analysis/geography_jss-gr8-9-syllabus-brief.md",
+    "work/nam-geography_jss-gr8-9-2026/"
+   ],
+   "ignored_in_scope": [
+    "work/nam-8227-nsscas-2026/workbench/tools/__pycache__/ (bytecode; not an input)"
+   ],
+   "reviewed_paths_clean": "git status/diff against HEAD empty for work/nam-8227-nsscas-2026, workbench/, AGENTS.md, TEAM-PLAYBOOK.md, BLOOM-CLASSIFICATION.md, operations/SUBJECT-TRACKER.md, operations/tools/pdf_ocr_macos.swift at start and after review (except the three new review output files)"
+  },
+  "later_edits_mixed_in": "none; only this folder's inputs.json, findings.md and report.md were written"
+ },
+ "frozen_author_manifest": {
+  "path": "work/nam-8227-nsscas-2026/workbench/analysis/analysis-snapshot.json",
+  "expected_sha256": "1afe99d597617897cb3bf0489cd3bcbc236624fef05cef53a8aa4a92704a561f",
+  "actual_sha256": "1afe99d597617897cb3bf0489cd3bcbc236624fef05cef53a8aa4a92704a561f",
+  "file_hashes_verified": "35/35 match",
+  "source_hashes_verified": "20/20 match",
+  "lfs_and_byte_kind": {
+   "real_pdf_magic_bytes": 19,
+   "pdf_named_but_not_pdf": [
+    "Revision Notes/NSSCAS/NSSCAS Mathematics (8227)/y=mx+c AS Level .pdf"
+   ],
+   "note": "The single non-PDF is the documented 1,665-byte HTML/403 file (8227-SRC-016), correctly excluded by the author. No LFS pointer files found; all other 19 PDFs begin with %PDF. git lfs ls-files lists every 8227 source PDF."
+  },
+  "ocr_page_index": {
+   "path": "work/nam-8227-nsscas-2026/workbench/analysis/ocr-validation.json",
+   "page_record_hashes_verified": "663/663 match",
+   "metadata_source_sha256_matches_textbook": true
+  },
+  "per_file_results": {
+   "files": {
+    "BLOOM-CLASSIFICATION.md": {
+     "expected": "1977e56f8b44424b60bf57fefb953271eac3a5161347612b6909e849b6588b3c",
+     "actual": "1977e56f8b44424b60bf57fefb953271eac3a5161347612b6909e849b6588b3c",
+     "status": "OK",
+     "bytes": 3606,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "operations/tools/pdf_ocr_macos.swift": {
+     "expected": "e1b34ebdb79407ea20529c39a60f4eb56940b663e04f2468879172e9c42293b2",
+     "actual": "e1b34ebdb79407ea20529c39a60f4eb56940b663e04f2468879172e9c42293b2",
+     "status": "OK",
+     "bytes": 4358,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/curriculum/objective_registry.json": {
+     "expected": "8768974147e3f610ed1b3f1773e7d5fce643134c09f48841a3cc9b2bdad18bcc",
+     "actual": "8768974147e3f610ed1b3f1773e7d5fce643134c09f48841a3cc9b2bdad18bcc",
+     "status": "OK",
+     "bytes": 62927,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/curriculum/syllabus-exclusions.json": {
+     "expected": "eda03b3bf9379f2128d1593cb8b9bd216e809452f89cebbcf6e1ba2679455745",
+     "actual": "eda03b3bf9379f2128d1593cb8b9bd216e809452f89cebbcf6e1ba2679455745",
+     "status": "OK",
+     "bytes": 7572,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/curriculum/syllabus-facts.json": {
+     "expected": "42219a7cc1c89b51055151a9977f77841c1d53a316df2fa77eec29e47cfc8de8",
+     "actual": "42219a7cc1c89b51055151a9977f77841c1d53a316df2fa77eec29e47cfc8de8",
+     "status": "OK",
+     "bytes": 21050,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/HANDOVER.md": {
+     "expected": "7c8ead02660b6505e7513dc1cf4b63bbb7ddd413b803def1e07f2621a7432999",
+     "actual": "7c8ead02660b6505e7513dc1cf4b63bbb7ddd413b803def1e07f2621a7432999",
+     "status": "OK",
+     "bytes": 2488,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/STATUS.md": {
+     "expected": "2b9bade1f721284ab431f46cd87141c81db8d9d37a43d0463042ced145095662",
+     "actual": "2b9bade1f721284ab431f46cd87141c81db8d9d37a43d0463042ced145095662",
+     "status": "OK",
+     "bytes": 3460,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/REVIEW-START-HERE.md": {
+     "expected": "5bfdc580d8bc9f74a503b3b82242afdd2faf812a04d5f6d983f1ea6c8cb02e5a",
+     "actual": "5bfdc580d8bc9f74a503b3b82242afdd2faf812a04d5f6d983f1ea6c8cb02e5a",
+     "status": "OK",
+     "bytes": 2074,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/acquisition-gaps.md": {
+     "expected": "7c2c6ebfda4c57fedbd6eff00d05aa4ffb0b404bd5f5f49f22f0e163716093ba",
+     "actual": "7c2c6ebfda4c57fedbd6eff00d05aa4ffb0b404bd5f5f49f22f0e163716093ba",
+     "status": "OK",
+     "bytes": 4728,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/analysis-checks.json": {
+     "expected": "e2a62d69a7bdb0695e3f5e931b9ad3d84f3764ee2a99b3d901b8a70390857772",
+     "actual": "e2a62d69a7bdb0695e3f5e931b9ad3d84f3764ee2a99b3d901b8a70390857772",
+     "status": "OK",
+     "bytes": 876,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/corpus-analysis.md": {
+     "expected": "e0754e4c4511b086f167a1c2b76f93220ed0663cb9b6183dec450984c5bf9c50",
+     "actual": "e0754e4c4511b086f167a1c2b76f93220ed0663cb9b6183dec450984c5bf9c50",
+     "status": "OK",
+     "bytes": 12766,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/coverage-matrix.json": {
+     "expected": "8699dbe148da28e7a3a4d87028a11ae6248b435479773ea38f3ec899ebaf7ea8",
+     "actual": "8699dbe148da28e7a3a4d87028a11ae6248b435479773ea38f3ec899ebaf7ea8",
+     "status": "OK",
+     "bytes": 27725,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/coverage-matrix.md": {
+     "expected": "11a3f6590112d3e442347b8a17533c80b655adb4c25d382eef339b1cec215102",
+     "actual": "11a3f6590112d3e442347b8a17533c80b655adb4c25d382eef339b1cec215102",
+     "status": "OK",
+     "bytes": 5808,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/demand-dispositions.json": {
+     "expected": "af50a6acf26832f1832b4994843ff71aece88bc977312e18a5694afd4a899571",
+     "actual": "af50a6acf26832f1832b4994843ff71aece88bc977312e18a5694afd4a899571",
+     "status": "OK",
+     "bytes": 83961,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/demand-registry.json": {
+     "expected": "d1492c3ed3e2d3b79211b5967c25d911572a74c122262058470d771fac7655c0",
+     "actual": "d1492c3ed3e2d3b79211b5967c25d911572a74c122262058470d771fac7655c0",
+     "status": "OK",
+     "bytes": 147766,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/demand-registry.md": {
+     "expected": "4bb5f6bd4adb0b3150c0a3e1cb048e5d859a4cf4b3ea647d7ac02edd01c8913c",
+     "actual": "4bb5f6bd4adb0b3150c0a3e1cb048e5d859a4cf4b3ea647d7ac02edd01c8913c",
+     "status": "OK",
+     "bytes": 10204,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/examiner-difficulties.json": {
+     "expected": "c543e945a23062f436f1e87aa46308f554d897f49d2fbd9187b720a7b03fae56",
+     "actual": "c543e945a23062f436f1e87aa46308f554d897f49d2fbd9187b720a7b03fae56",
+     "status": "OK",
+     "bytes": 14646,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/ocr-validation.json": {
+     "expected": "c62438cd82c3136444a9ea398a598fcc6678f61b11f2dea53df28e1e3176c538",
+     "actual": "c62438cd82c3136444a9ea398a598fcc6678f61b11f2dea53df28e1e3176c538",
+     "status": "OK",
+     "bytes": 60374,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/problem-patterns.json": {
+     "expected": "4c3e799449f3056a5afa27358fac99b5c1d09e17b4d59c1d25ae05c4ae22a492",
+     "actual": "4c3e799449f3056a5afa27358fac99b5c1d09e17b4d59c1d25ae05c4ae22a492",
+     "status": "OK",
+     "bytes": 50982,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/question-analysis.json": {
+     "expected": "d9a7a4986295ae43d7195197b0896c74f4873cc286e62beda4cb0a3cae19bdb1",
+     "actual": "d9a7a4986295ae43d7195197b0896c74f4873cc286e62beda4cb0a3cae19bdb1",
+     "status": "OK",
+     "bytes": 491584,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/question-index.md": {
+     "expected": "88a550e44354de7c0a8b385dd7712355c177e94d19530e28c5b78f3f0cd1b755",
+     "actual": "88a550e44354de7c0a8b385dd7712355c177e94d19530e28c5b78f3f0cd1b755",
+     "status": "OK",
+     "bytes": 12986,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/selection-table.md": {
+     "expected": "b1209c26d0369b1a7116fe0c7a794f5de589fd43dc72150c92aaf3a674bafd83",
+     "actual": "b1209c26d0369b1a7116fe0c7a794f5de589fd43dc72150c92aaf3a674bafd83",
+     "status": "OK",
+     "bytes": 11333,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/source-holdings.json": {
+     "expected": "df45797058230e669ce0c93e02f0c5bf62df32085457f238c2cbe71c56690928",
+     "actual": "df45797058230e669ce0c93e02f0c5bf62df32085457f238c2cbe71c56690928",
+     "status": "OK",
+     "bytes": 16889,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/source-inventory.md": {
+     "expected": "48161339405df319d65f25db5e4001751f6cb485ea4b2cade06cc7c37edf356b",
+     "actual": "48161339405df319d65f25db5e4001751f6cb485ea4b2cade06cc7c37edf356b",
+     "status": "OK",
+     "bytes": 11818,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/syllabus-page-evidence.json": {
+     "expected": "e2575a5bc55a9a01868c1629865ef70bdb2ae49a9c072529058bc008192959fd",
+     "actual": "e2575a5bc55a9a01868c1629865ef70bdb2ae49a9c072529058bc008192959fd",
+     "status": "OK",
+     "bytes": 20366,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/textbook-exercise-index.json": {
+     "expected": "0fa9826d6a3c7e6320be2a94bd9b80b26e64b21294c2d3172a6b0b77b7d42f13",
+     "actual": "0fa9826d6a3c7e6320be2a94bd9b80b26e64b21294c2d3172a6b0b77b7d42f13",
+     "status": "OK",
+     "bytes": 143929,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/textbook-samples.json": {
+     "expected": "4086d65598d110d62716129e5ca1bb49a7e1affdcc364c43b669aa56d473b4c0",
+     "actual": "4086d65598d110d62716129e5ca1bb49a7e1affdcc364c43b669aa56d473b4c0",
+     "status": "OK",
+     "bytes": 15139,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/analysis/textbook-source-map.md": {
+     "expected": "cc5dd166acfaf532e77cb6d9a79a82e107af58f3b12dd0b517a4e47f68a1fb25",
+     "actual": "cc5dd166acfaf532e77cb6d9a79a82e107af58f3b12dd0b517a4e47f68a1fb25",
+     "status": "OK",
+     "bytes": 6106,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/capability-gaps.md": {
+     "expected": "4a59bebe88d48838b51c1a65a3e2ae6b24b5edf70ba0b66a6ef1b476bff23ba4",
+     "actual": "4a59bebe88d48838b51c1a65a3e2ae6b24b5edf70ba0b66a6ef1b476bff23ba4",
+     "status": "OK",
+     "bytes": 1894,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/checks/author-report.md": {
+     "expected": "2ceb7872b940420e103c1db505757c6b2f4190b4aeb9b83a64f7a02603057cb4",
+     "actual": "2ceb7872b940420e103c1db505757c6b2f4190b4aeb9b83a64f7a02603057cb4",
+     "status": "OK",
+     "bytes": 3696,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/tools/analysis_inputs.py": {
+     "expected": "03bbc42532bd61b048d77d462554e3cc1d3b7b3b283e29ab8fbf840f303e0520",
+     "actual": "03bbc42532bd61b048d77d462554e3cc1d3b7b3b283e29ab8fbf840f303e0520",
+     "status": "OK",
+     "bytes": 21023,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/tools/build_analysis.py": {
+     "expected": "a038687f3f190abfb4422ce04370355ebd3ede957deb0e80e580a8f2fecb5829",
+     "actual": "a038687f3f190abfb4422ce04370355ebd3ede957deb0e80e580a8f2fecb5829",
+     "status": "OK",
+     "bytes": 19871,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "work/nam-8227-nsscas-2026/workbench/tools/build_source_addenda.py": {
+     "expected": "ee441018dc9a7b4a24d32f8ec8bdc83a0c6178f45bfb52c3624d3940ecaac8e7",
+     "actual": "ee441018dc9a7b4a24d32f8ec8bdc83a0c6178f45bfb52c3624d3940ecaac8e7",
+     "status": "OK",
+     "bytes": 12487,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "workbench/playbook/quality.md": {
+     "expected": "f810c18c809fc3901c96c2fbca567f90c08f9fb9478433c3d1d72b3aac6bafd9",
+     "actual": "f810c18c809fc3901c96c2fbca567f90c08f9fb9478433c3d1d72b3aac6bafd9",
+     "status": "OK",
+     "bytes": 12005,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "workbench/playbook/textbook-analysis.md": {
+     "expected": "2a7c64794cc319a8c3e4b993522897b12c4f3c439019240e882e569a319eb1cb",
+     "actual": "2a7c64794cc319a8c3e4b993522897b12c4f3c439019240e882e569a319eb1cb",
+     "status": "OK",
+     "bytes": 4447,
+     "pdf_magic": null,
+     "lfs_pointer": false,
+     "tracked": true
+    }
+   },
+   "source_files": {
+    "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf": {
+     "expected": "c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30",
+     "actual": "c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30",
+     "status": "OK",
+     "bytes": 634407,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf": {
+     "expected": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+     "actual": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+     "status": "OK",
+     "bytes": 933646,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf": {
+     "expected": "509e1ad3fda0535ec756842d085384c409dec64284e8b1883a2b96b5976c0e80",
+     "actual": "509e1ad3fda0535ec756842d085384c409dec64284e8b1883a2b96b5976c0e80",
+     "status": "OK",
+     "bytes": 931317,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2022/AS - Mathematics Paper 1 8227-1 - First Proof 24.05.2022.pdf": {
+     "expected": "ebe8254610ba1b5adb6e5e93ca873a6c37aba80876c480e0f2986541f44d09f6",
+     "actual": "ebe8254610ba1b5adb6e5e93ca873a6c37aba80876c480e0f2986541f44d09f6",
+     "status": "OK",
+     "bytes": 958455,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2022/AS - Mathematics Paper 2 8227-2 - First Proof 24.05.2022.pdf": {
+     "expected": "cd338050ac94107384eb1a20b1d9ac1f546ff087b1b996f246c6992c7cd2613a",
+     "actual": "cd338050ac94107384eb1a20b1d9ac1f546ff087b1b996f246c6992c7cd2613a",
+     "status": "OK",
+     "bytes": 944219,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 1 8227-1 - First Proof 10.03.2023.pdf": {
+     "expected": "60846eaf80816c2a24802cf63a6d1b0cfdf53c079c5c5de669c384c04237c411",
+     "actual": "60846eaf80816c2a24802cf63a6d1b0cfdf53c079c5c5de669c384c04237c411",
+     "status": "OK",
+     "bytes": 1225793,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf": {
+     "expected": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+     "actual": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+     "status": "OK",
+     "bytes": 1166993,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-1.pdf": {
+     "expected": "1e2e9eb681c52378d02a01e37aeada2e6d314c7e51693544865a5af88cfbe016",
+     "actual": "1e2e9eb681c52378d02a01e37aeada2e6d314c7e51693544865a5af88cfbe016",
+     "status": "OK",
+     "bytes": 1180462,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-2.pdf": {
+     "expected": "e6a254202b531592c5bbd2e20a8d003e1f49ca3bd7d1ca9796990c6e897c6def",
+     "actual": "e6a254202b531592c5bbd2e20a8d003e1f49ca3bd7d1ca9796990c6e897c6def",
+     "status": "OK",
+     "bytes": 1255428,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf": {
+     "expected": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+     "actual": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+     "status": "OK",
+     "bytes": 1201820,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf": {
+     "expected": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+     "actual": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+     "status": "OK",
+     "bytes": 1209932,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf": {
+     "expected": "1337911772638c18616adc81caba116e2a3d36b670d4e187c4c8c011f97df138",
+     "actual": "1337911772638c18616adc81caba116e2a3d36b670d4e187c4c8c011f97df138",
+     "status": "OK",
+     "bytes": 6282582,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf": {
+     "expected": "8012a5d92edfde9e4bce11fe7864ff88f7246d812ec00d34e8e2377c2c0114be",
+     "actual": "8012a5d92edfde9e4bce11fe7864ff88f7246d812ec00d34e8e2377c2c0114be",
+     "status": "OK",
+     "bytes": 8859742,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "sources/namibia/nsscas/8227-mathematics/support/NIED_NSSCAS-Textbook-Catalogue_2022.pdf": {
+     "expected": "76305af8b8dcb252b0306bdd7dad7a3955aa4186a7351de1354d2b775071c58e",
+     "actual": "76305af8b8dcb252b0306bdd7dad7a3955aa4186a7351de1354d2b775071c58e",
+     "status": "OK",
+     "bytes": 723912,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf": {
+     "expected": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+     "actual": "f030d64259ffe233a7408d2a64dea21c0a04f1ac0426439f5efaea694eb72e85",
+     "status": "OK",
+     "bytes": 29079500,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Revision Notes/NSSCAS/NSSCAS Mathematics (8227)/y=mx+c AS Level .pdf": {
+     "expected": "44e72b649c5f1875b5892c0f97a8f180003bd0d71bc0f17017e2d38c1b5e717c",
+     "actual": "44e72b649c5f1875b5892c0f97a8f180003bd0d71bc0f17017e2d38c1b5e717c",
+     "status": "OK",
+     "bytes": 1665,
+     "pdf_magic": false,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Y=mc as textbook.pdf": {
+     "expected": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+     "actual": "0b44ad3b67b1ea3de90cba780382d77deef347fae683cf6e28677f36c17a724f",
+     "status": "OK",
+     "bytes": 148002847,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Examiner Reports/NSSCAS/2022/NSSCAS_Examiners_Report_2022.pdf": {
+     "expected": "65df0266ead06a3f5bbe88b40753eb9bd29299ad31c6db10c83e6bdeabe7127b",
+     "actual": "65df0266ead06a3f5bbe88b40753eb9bd29299ad31c6db10c83e6bdeabe7127b",
+     "status": "OK",
+     "bytes": 7941106,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf": {
+     "expected": "17bb6d8e14b59b326e9f581daf32557d1f123392496e79ed7c4867c574163feb",
+     "actual": "17bb6d8e14b59b326e9f581daf32557d1f123392496e79ed7c4867c574163feb",
+     "status": "OK",
+     "bytes": 7937966,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    },
+    "Question Banks/Namibian Examiner Reports/NSSCAS/2024/NSSCAS_Examiners_Report_2024.pdf": {
+     "expected": "43f4c45f5440f1db503cb69521e9b36207e99ae3425e43a4e1be422cf8bd930f",
+     "actual": "43f4c45f5440f1db503cb69521e9b36207e99ae3425e43a4e1be422cf8bd930f",
+     "status": "OK",
+     "bytes": 8379317,
+     "pdf_magic": true,
+     "lfs_pointer": false,
+     "tracked": true
+    }
+   }
+  }
+ },
+ "additional_inputs_frozen": {
+  "AGENTS.md": {
+   "sha256": "4b9a351c1e8a9f438d91135c1c036df94058556c85a811e9ce068475a52c5df3",
+   "git_blob_at_HEAD": "c03b746774d6f053bfc205859eeeca464dc65fc8"
+  },
+  "TEAM-PLAYBOOK.md": {
+   "sha256": "4a076b6afba5d5e6180a612b41c7eb032d2ae2ba9aad82b31ceeb2a0ceb2b341",
+   "git_blob_at_HEAD": "2711d7cd41b0f3dc06c88dded07e72203255d61d"
+  },
+  "standard/v0.2.0-draft/roles/REVIEWER.md": {
+   "sha256": "d95632a465902dd12f0de99148c7aeac1225a95b449805703aeb39be36cc76be",
+   "git_blob_at_HEAD": "b587fa35216272ad755bbfb160bb94397b96a504"
+  },
+  "workbench/playbook/README.md": {
+   "sha256": "6549d1e5f4bbba9b6267b240e8008313fb1f16c5a7052c2e03c1ee3348d61d73",
+   "git_blob_at_HEAD": "765e4e31a7dbdb8bca054efd4172af0ec248d674"
+  },
+  "workbench/playbook/templates.md": {
+   "sha256": "7f871e7ce768d2ce10fdcb7f76f015ae7aa9a0d09adecfbb27ee48b335fd96e3",
+   "git_blob_at_HEAD": "8d266c824b8229b23ee9edf88c62abf873f5ebcd"
+  },
+  "workbench/playbook/review/2026-11-15-framework-audit.md": {
+   "sha256": "8830cf25c8c083a14abfd6c95e8fbab98f1a1170cc990a82af646f2e2951381f",
+   "git_blob_at_HEAD": "0022f445e4a1169138e1205d6e4827b653a96bfb"
+  },
+  "operations/SUBJECT-TRACKER.md": {
+   "sha256": "a1e6d07a4f4b0a7ce2b3bbe5db6123e7cafda61caeddea743051cb19a641c629",
+   "git_blob_at_HEAD": "371970de8e7cc372dd592c1645fb923c91e78d56"
+  },
+  "work/nam-8227-nsscas-2026/README.md": {
+   "sha256": "3702267adf58528e2179d0345ce244758edca0ad74c2586859c3903942235f4a",
+   "git_blob_at_HEAD": "d1ff140a27f3d7774db9716581b8943aa50bc329"
+  },
+  "work/nam-8227-nsscas-2026/STATUS.md": {
+   "sha256": "d4c0c5ff62045f6ca7a93d6e0680193e514b0b1a2b2be5b45051e687ff651de8",
+   "git_blob_at_HEAD": "3f77b6362ebe13dbde3950e97a280d20288721b0"
+  },
+  "work/nam-8227-nsscas-2026/workbench/review/opus-5-5-step-1-3/REVIEW-PROMPT.md": {
+   "sha256": "504d3609a5e23e61836e84649d186687b4c345d100ca6c3be15af12242b7f2d4",
+   "git_blob_at_HEAD": "b6665344a01ab8a775e10cd99457437834fb7fc3"
+  },
+  "work/nam-8227-nsscas-2026/workbench/analysis/analysis-snapshot.json": {
+   "sha256": "1afe99d597617897cb3bf0489cd3bcbc236624fef05cef53a8aa4a92704a561f",
+   "git_blob_at_HEAD": "f01a9eb22a1c93834491ae1b379b5f801c6aa5ae"
+  },
+  "_harvest/manifests/nsscas-8227-acquire-2026-11-15.csv": {
+   "sha256": "bc6e243b1d33ec3bfd16428ef48acca46b46afc004c607609ae7913c6a163d6e",
+   "git_blob_at_HEAD": "8bb7e5f884afaff1bcb9a9cbe9e6d7d290fc07dd"
+  },
+  "_harvest/manifests/nsscas-8227-report-gaps-2026-11-15.csv": {
+   "sha256": "50378adbdf6dd78524bcb1f4a0108a4cefe802c1eb3db2b1f9932e83e036c8d0",
+   "git_blob_at_HEAD": "f6eb97700641c4ef7a8090ace2a487c474f00e54"
+  },
+  "_harvest/manifests/nsscas-8227-support-2026-11-15.csv": {
+   "sha256": "caa46ee0b866e68e2bfdb5340b494599a22d2fa9d2e1a3b3c8ae9c203cac4500",
+   "git_blob_at_HEAD": "0aff6e000690de73372a666369366f84c389de0e"
+  },
+  "_harvest/manifests/nsscas-8227-report-leads-2026-11-15.csv": {
+   "sha256": "f529084c0e482f5ee7486ca46cf2f719d12801acb928aa5f7916b89fed9e37c9",
+   "git_blob_at_HEAD": "7787e371cef70592405cae417e64540689e293bc"
+  },
+  "_harvest/manifests/nsscas-8227-reports-discovered-2026-11-15.csv": {
+   "sha256": "ff157a8a55501da2546f5f76748090e6f729be8dd0d1320c405b3ff595ffe9df",
+   "git_blob_at_HEAD": "0684b2d3e480f00383203d039f6c945c257d370d"
+  },
+  "_harvest/reports/integrity_2026-11-15.md": {
+   "sha256": "8f9ff091b6799ab496d9264bccea522296d4eb7456efbf9797c148e37e31253f",
+   "git_blob_at_HEAD": "24c7b4ef6aa859da515d79e9b9a6e44d4240b685"
+  },
+  "_harvest/inbox/8227-official-syllabus-check-2026-11-15.pdf": {
+   "sha256": "c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30",
+   "git_blob_at_HEAD": "ef3f1a49c5309fcceb21e07ed60f6cd7aa3545d6"
+  },
+  "work/namibia-nssco-6131/workbench/analysis/source-inventory.md": {
+   "sha256": "448860e7e68c7a352cd9afb55159913242e648fc74d77aa8b9e24e6f17fe48a6",
+   "git_blob_at_HEAD": "13aae0fd0df589ce622cf49122b012033bf75abd"
+  },
+  "work/namibia-nssco-6131/workbench/analysis/provider-integrity-2026-11-15.json": {
+   "sha256": "cadf7cc6f16bdf4919e93d016ba30264f8284bb2a0ffe322971c916fa86fe294",
+   "git_blob_at_HEAD": "19a06d442d620c7426cbfa7a397f0be2f0a92464"
+  },
+  "_harvest/logs/harvest_log.csv@HEAD": {
+   "sha256": "b3c5b0eaf5ede6100c49427fc160fc34332773ba29aab52241a3e44868c71977",
+   "note": "hash of committed blob; working copy differs by 5 unrelated 2026-11-01 Geography rows"
+  },
+  "work/nam-8227-nsscas-2026/workbench/analysis/extracted/ (directory digest)": {
+   "sha256": "7ab5c6b0b41fd75058ea5a77852c907c693265de31923656c69a3469acd285db",
+   "files": 52,
+   "method": "sha256 over sorted (path, sha256(file)) pairs; reviewer-defined digest"
+  }
+ },
+ "external_app_evidence": {
+  "path": "/Users/professor/conductor/workspaces/yyeni/chiang-mai",
+  "available": true,
+  "HEAD": "0f0832ddedf40010e467f60184ccf56d63384c09 (same revision cited by framework audit)",
+  "working_tree": "dirty (uncommitted modifications to TODO.md and apps/web/__tests__/*Workbench*.test.js observed read-only)",
+  "read_only_spot_checks": [
+   "services/api/workbench_platform/contracts.py validate_instance(): part criteria must reconcile to part marks; no stable part/criterion IDs required",
+   "services/api/workbench_platform/loader.py PUBLIC_FIELDS allowlist (no Bloom/classification field)",
+   "services/api/workbench_platform/presentation.py: public part_id = chr(97 + index) (ordinal)"
+  ],
+  "limits": "Code reading only. No UI, MCP, deployment, visual-grading or persistence behaviour was tested; nothing here proves or disproves delivered capability. The YYeni connector tool names exposed to this session include flashcard/assessment operations but no Workbench-named operation; no connector call was made."
+ },
+ "sources_and_pages_read": {
+  "syllabus": {
+   "document": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "sha256": "c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30",
+   "text_pages_read": "1-33 (all; pypdf 5.9.0), read before papers",
+   "rendered_pages_viewed": [
+    14,
+    18,
+    19,
+    20
+   ],
+   "facts_verified_first_hand": [
+    "cover: 8227, Grade 12, implementation and first examination 2021 (p1)",
+    "publication December 2020, ISBN 978-99945-2-247-7 (p2)",
+    "15 topics, 60 specific objectives by reviewer count (pp7-16)",
+    "single area 'technique with application', 11 abilities, no weights, 'can be assessed in any question in Paper 1 and 2' (p17)",
+    "two compulsory papers, 75 marks, 2 hours, 50% each; calculator/3 s.f./1 d.p./pi notes (p18)",
+    "no command-word table anywhere in pp1-33",
+    "grade descriptions pp19-24 and MF9 formula/notation list pp25-30 (not used by author)"
+   ]
+  },
+  "question_papers": {
+   "documents": "all ten 8227 papers 2021-2025 listed in analysis-snapshot source_files",
+   "text_pages_read": "every page of every paper (pypdf), all 119 questions",
+   "rendered_crops_viewed": {
+    "2021 P1": [
+     7,
+     10,
+     14
+    ],
+    "2021 P2": [
+     4,
+     7,
+     10,
+     11,
+     13,
+     14,
+     15
+    ],
+    "2022 P1": [
+     3,
+     7,
+     13,
+     14,
+     18,
+     19
+    ],
+    "2022 P2": [
+     4,
+     7,
+     10
+    ],
+    "2023 P1": [
+     3,
+     4,
+     10,
+     14,
+     16,
+     18
+    ],
+    "2023 P2": [
+     5,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     15
+    ],
+    "2024 P1": [
+     4,
+     8,
+     11,
+     12,
+     18
+    ],
+    "2024 P2": [
+     5,
+     6,
+     8,
+     10,
+     16
+    ],
+    "2025 P1": [
+     3,
+     4,
+     14,
+     16
+    ],
+    "2025 P2": [
+     3,
+     4,
+     6,
+     7,
+     10,
+     12
+    ]
+   },
+   "formula_list_pages": "text of the supplied 'FORMULAE AND NOTATIONS LIST' compared across all ten papers",
+   "rendered_crop_count": 58
+  },
+  "examiner_reports": {
+   "2021": "PDF pp229-242 text read in full (Mathematics pp231-242), including P2 award tables pp237-238",
+   "2022": "PDF pp301-306 P1 and pp307-314 P2 text read; pp315-316 not read",
+   "2023": "PDF pp319-339 text read in full, including P2 award tables pp331-339",
+   "2024": "PDF pp335-343 (P2 general comments and award tables) read in full; P1 commentary pp325-334 not read",
+   "2025": "award-table scan of pp343-366; commentary read only at pp347, 352, 358, 362 (cited difficulties)",
+   "award_table_scan": "all five Mathematics sections scanned for M1/A1/B1/E1/DM1 award rows by page"
+  },
+  "textbooks": {
+   "y=mx+c (8227-SRC-017)": "rendered and viewed PDF pp50, 54, 109, 155, 235, 250, 268, 326, 378, 409, 450, 484, 530, 550, 560 (all 15 Namibia sample locators); OCR JSON p550 inspected; back cover p663 not re-viewed",
+   "Goldie (8227-SRC-015)": "rendered and viewed PDF pp164, 170 (both sample locators)",
+   "NIED catalogue (8227-SRC-014)": "not re-read; hash verified only"
+  },
+  "author_records_read": [
+   "STATUS.md (subject and Workbench)",
+   "HANDOVER.md",
+   "README.md",
+   "analysis/REVIEW-START-HERE.md",
+   "corpus-analysis.md",
+   "source-inventory.md",
+   "acquisition-gaps.md",
+   "checks/author-report.md",
+   "capability-gaps.md",
+   "source-holdings.json",
+   "syllabus-facts.json",
+   "objective_registry.json",
+   "syllabus-exclusions.json",
+   "syllabus-page-evidence.json (page list)",
+   "demand-registry.json/.md",
+   "demand-dispositions.json",
+   "question-analysis.json (all 119 questions/250 parts)",
+   "question-index.md (via question-analysis)",
+   "problem-patterns.json (all 62)",
+   "selection-table.md",
+   "coverage-matrix.json/.md",
+   "examiner-difficulties.json (all 12)",
+   "textbook-samples.json (all 17)",
+   "textbook-source-map.md",
+   "textbook-exercise-index.json (structure)",
+   "ocr-validation.json",
+   "analysis-checks.json",
+   "tools/analysis_inputs.py",
+   "tools/build_analysis.py",
+   "tools/build_source_addenda.py",
+   "operations/tools/pdf_ocr_macos.swift",
+   "framework audit, textbook-analysis.md, BLOOM-CLASSIFICATION.md, playbook/AGENTS/TEAM-PLAYBOOK/tracker diffs d6b8f551..11cd03fe"
+  ]
+ },
+ "checks_run": [
+  {
+   "check": "snapshot digest and 35 file + 20 source hashes",
+   "method": "scratchpad tools/verify_snapshot.py (sha256 of working tree files; magic bytes)",
+   "result": "all match; one documented HTML non-PDF"
+  },
+  {
+   "check": "OCR page identity",
+   "method": "sha256 of 663 ocr/ymxc/page-*.json vs ocr-validation.json",
+   "result": "663/663 match"
+  },
+  {
+   "check": "objective transcription",
+   "method": "independent pypdf extraction of syllabus; each of 60 quotes searched in its cited page; bullet census by glyph split; reviewer reading of pp7-16 text and pp14/18 images",
+   "result": "60/60 literal and correctly paged; no specific bullet omitted (16 unmatched fragments are general objectives); 13+ quotes carry scrambled mathematics"
+  },
+  {
+   "check": "750-mark reconciliation",
+   "method": "independent ordered comparison of all [n] brackets per paper (pages 2..formula list) with author part-mark sequence",
+   "result": "10/10 papers identical ordered sequences, 250 brackets, 75 each, 750 total (same pypdf text layer; independent code, not an independent text source; visually confirmed on viewed crops)"
+  },
+  {
+   "check": "cross-paper theme count",
+   "method": "primary objective theme per paper from question-analysis.json",
+   "result": "Paper 2: 11 parts/27 marks with primary Mathematics 1 objective; Paper 1: 1 part/1 mark with primary Mathematics 2 objective"
+  },
+  {
+   "check": "dependency cue scan",
+   "method": "regex scan for hence / found in part / using your / in part ( / these values / in the case where, compared with annotated edges, then manual confirmation",
+   "result": "18 questions with explicit cues or award follow-through lack edges (findings R13-03)"
+  },
+  {
+   "check": "visual-response cue scan",
+   "method": "regex scan for sketch/draw/shade/label/use your graph/use the diagram",
+   "result": "all 11 sketch-response parts captured by author; 2 sketch-dependent marking parts and many input-diagram parts not flagged"
+  },
+  {
+   "check": "demand presence scan",
+   "method": "regex scan of all ten papers for specific demands",
+   "result": "no part on increasing/decreasing, inflexion, division by quadratic, segment, unit-vector construction, iteration failure; cubic-from-graph absent by reading"
+  },
+  {
+   "check": "award-excerpt census",
+   "method": "award-row density per report page plus reading",
+   "result": "24 questions have embedded award tables (2021 P2 Q1-Q4; 2023 P2 Q1-Q9; 2024 P2 Q1-Q11); author links 22"
+  },
+  {
+   "check": "examiner-difficulty citations",
+   "method": "anchor search in reviewer's own report extraction",
+   "result": "12/12 found on cited pages"
+  },
+  {
+   "check": "builder reproducibility",
+   "method": "copied work/nam-8227-nsscas-2026 into scratchpad, symlinked Syllabi and Question Banks read-only, ran build_source_addenda.py then build_analysis.py, compared 18 generated outputs",
+   "result": "18/18 byte-identical (pypdf 5.9.0, Python 3.13.0); frozen tree unchanged (git status clean)"
+  },
+  {
+   "check": "tool review",
+   "method": "full reading of the three Python builders and the Swift OCR tool",
+   "result": "see R13-01, R13-21, R13-22"
+  },
+  {
+   "check": "app claim spot-check",
+   "method": "read-only grep of three app files at the cited revision",
+   "result": "FW-07 statements match code; no runtime behaviour tested"
+  }
+ ],
+ "mathematical_sampling": {
+  "scripted_recomputation": {
+   "script": "scratchpad tools/recompute.py (not committed)",
+   "results": {
+    "2022P1Q13": {
+     "c_if_point_used": -12.0,
+     "curve": "y=2x^2-6/x-12",
+     "point_x_in_stated_domain": false
+    },
+    "2023P1Q9": {
+     "2pi/3": 2.0943951023931953,
+     "pi/2": 1.5707963267948966,
+     "in_principal_range": false,
+     "non_principal_reading_x": [
+      1.6929,
+      -1.6929
+     ],
+     "check_asin_of_that_value": 1.0471975511965979
+    },
+    "2023P1Q1b": {
+     "disc_at_p=2": 49,
+     "leading_coeff_at_p=2": 0,
+     "roots_at_p=2": [
+      -1.0
+     ]
+    },
+    "2023P2Q7": {
+     "radian_iterates": [
+      1.580653,
+      1.587356,
+      1.587274,
+      1.587275,
+      1.587275,
+      1.587275,
+      1.587275,
+      1.587275
+     ],
+     "degree_iterates": [
+      0.992361,
+      0.994598,
+      0.994586,
+      0.994586,
+      0.994586,
+      0.994586,
+      0.994586,
+      0.994586
+     ],
+     "F(radian_root)": 0.999998,
+     "F(degree_value_as_radians)": -0.990174,
+     "g(1.3)": -0.25365,
+     "g(1.6)": 0.01299
+    },
+    "TB_p550_Q2": {
+     "M": [
+      1,
+      0.36788
+     ],
+     "trapezium_2_intervals": 0.5032,
+     "exact": 0.594,
+     "f2_sign_on_[0,2)": "negative: f''=(x-2)e^-x",
+     "verdict": "under-estimate"
+    },
+    "2021P1Q6": {
+     "P": [
+      0.0,
+      6.0,
+      0.0
+     ],
+     "AP.OB": 0.0,
+     "P_beyond_B": true
+    },
+    "2023P1Q5c": {
+     "m": [
+      4.4343,
+      3.2324
+     ],
+     "|r|<1": [
+      true,
+      true
+     ]
+    },
+    "2021P2Q4b": {
+     "t": 34.657
+    }
+   }
+  },
+  "reviewer_worked_by_hand_for_role_judgement": "Answers derived during review (not certified, not scripted) for: 2021 P1 Q3-Q6, Q9-Q12; 2021 P2 Q1-Q3, Q5-Q7, Q9(a), Q10-Q12; 2022 P1 Q1-Q14; 2022 P2 Q1, Q3-Q10; 2023 P1 Q1-Q3, Q5, Q6, Q8-Q13; 2023 P2 Q1-Q9; 2024 P1 Q1-Q8, Q10(a), Q11(c), Q12-Q14; 2024 P2 Q1-Q6, Q9-Q11; 2025 P1 Q1-Q3, Q5-Q11; 2025 P2 Q2, Q3, Q6. Not solved: remaining parts (e.g. 2021 P1 Q1, Q2, Q7, Q8; 2022 P2 Q2; 2023 P1 Q4, Q7; 2024 P1 Q9; 2025 P1 Q4, Q12; 2025 P2 Q1, Q4, Q5, Q7-Q12).",
+  "textbook": "p550 Try Now 21 Q2 recomputed (scripted); p484 Example 3 algebra checked by hand; p530 Examples 1-2 checked by hand"
+ },
+ "visual_sampling": "Rendered with PDFKit at 0.9-1.6x into the reviewer scratchpad (not committed). See sources_and_pages_read for exact pages. Mathematics in OCR was not used for any finding.",
+ "unchecked_scope": [
+  "No independent full solution of every question part; solutions above are reviewer working, not an oracle",
+  "No verification that 2021-2023 proof-labelled papers equal final printed papers; no final copies held",
+  "Report commentary not fully read for 2022 pp315-316, 2024 P1 pp325-334, 2025 beyond the four cited pages; the 2025 report contains no award tables",
+  "Award tables were read but not transcribed into criterion-level rules; their internal consistency was checked only where cited in findings",
+  "Textbook: only the 17 sample pages (plus p550 OCR) inspected; 572 OCR heading-lead pages, answer key pages, back cover and contents not re-inspected; no exhaustive exercise classification",
+  "NIED catalogue, Harvester run reports and acquisition URLs not re-fetched (no web access used); identity relied on hashes and author records",
+  "Framework audit claims about the 6131 bank (5,982 parts, 409 recipe IDs, package verify failure, SymPy) not re-run",
+  "App behaviour (UI, MCP, visual grading, persistence) untested; only three code locations read",
+  "Bloom classification: none performed (correctly deferred by author and by policy)",
+  "No copied-wording (Q15) check: no learner-facing text exists"
+ ],
+ "environment": {
+  "os": "macOS 26.6.2 (25G82)",
+  "python": "3.13.0",
+  "pypdf": "5.9.0",
+  "pillow": "11.3.0",
+  "swift": "Apple Swift 6.1.2",
+  "git_lfs": "3.7.1",
+  "network": "none used"
+ },
+ "outputs": [
+  "inputs.json",
+  "findings.md",
+  "report.md"
+ ],
+ "prohibited_actions_not_taken": [
+  "no edits to author inputs, sources, standard/, generator bank, other subjects, app code or pinned checkouts",
+  "no commit, push, publish, import, assignment, paid research or production activation"
+ ]
+}

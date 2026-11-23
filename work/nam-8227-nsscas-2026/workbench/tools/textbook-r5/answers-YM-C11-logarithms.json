@@ -1,0 +1,1497 @@
+{
+  "scope": "Complete495–498natural-logderivativesandgeometry.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C11:Example:14",
+      "source_pdf_page": 495,
+      "notes": "Differentiate ln(3x²)andln(1/√x). Final2/xcorrectonx≠0butthefirstprintedloglawrouteimproperlyuses2lnx;alternativechainroutepreservesnegativeinputs. Secondoriginaldomainx>0.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Differentiate ln(3x²)andln(1/√x). Final2/xcorrectonx≠0butthefirstprintedloglawrouteimproperlyuses2lnx;alternativechainroutepreservesnegativeinputs. Secondoriginaldomainx>0.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate ln(3x²)andln(1/√x). Final2/xcorrectonx≠0butthefirstprintedloglawrouteimproperlyuses2lnx;alternativechainroutepreservesnegativeinputs. Secondoriginaldomainx>0.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(3*x**2),x)"
+            ]
+          },
+          "printed_key_normalised": "2/x",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(3*x**2)",
+          "original_domain": "x≠0;original3x²positiveonbothhalf-lines.",
+          "author_source_working_comparison": {
+            "status": "key wrong",
+            "reason": "Final2/xandthealternativechainroutearecorrect,butthenativefirstworkedrouteprintslnx²=2lnxwithoutrestrictingx>0,losingthevalidnegativehalf-line.",
+            "observed_step": "ln(3x²)=ln3+lnx²=ln3+2lnx.",
+            "correct_step": "ln(3x²)=ln3+2ln|x|forx≠0;orusechainrule6x/(3x²)directly."
+          },
+          "additional_operations": {
+            "original-negative-point-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(log(3*x**2),x).subs(x,-1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-negative-point-derivative": "-2"
+          },
+          "source_pdf_page": 495,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-492-source.png",
+            "sha256": "c09fc1336b848ba4f44400b52236038b7432a7d0dc702b7b2ad4bfb780dc0057"
+          },
+          "answer_pdf_page": 495,
+          "answer_printed_page": 483,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-492-source.png",
+            "sha256": "c09fc1336b848ba4f44400b52236038b7432a7d0dc702b7b2ad4bfb780dc0057"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(1/sqrt(x)),x)"
+            ]
+          },
+          "printed_key_normalised": "-1/(2*x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(1/sqrt(x))",
+          "original_domain": "x>0becauseoforiginaldenominator√xandpositivelogargument.",
+          "source_pdf_page": 495,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-492-source.png",
+            "sha256": "c09fc1336b848ba4f44400b52236038b7432a7d0dc702b7b2ad4bfb780dc0057"
+          },
+          "answer_pdf_page": 495,
+          "answer_printed_page": 483,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-492-source.png",
+            "sha256": "c09fc1336b848ba4f44400b52236038b7432a7d0dc702b7b2ad4bfb780dc0057"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now:14",
+      "source_pdf_page": 496,
+      "notes": "Six originallog derivatives:5lnx,ln(4x³),ln(x^(−2/3)),ln(2x/√x),ln(4/∛x),ln√(5/x⁵). Native confirms NEGATIVE−2/3exponent in(c);only(c)retainsbothhalf-lines underREALpowers.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Six originallog derivatives:5lnx,ln(4x³),ln(x^(−2/3)),ln(2x/√x),ln(4/∛x),ln√(5/x⁵). Native confirms NEGATIVE−2/3exponent in(c);only(c)retainsbothhalf-lines underREALpowers.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Six originallog derivatives:5lnx,ln(4x³),ln(x^(−2/3)),ln(2x/√x),ln(4/∛x),ln√(5/x⁵). Native confirms NEGATIVE−2/3exponent in(c);only(c)retainsbothhalf-lines underREALpowers.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(5*log(x),x)"
+            ]
+          },
+          "printed_key_normalised": "5/x",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "5*log(x)",
+          "original_domain": "x>0.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(4*x**3),x)"
+            ]
+          },
+          "printed_key_normalised": "3/x",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(4*x**3)",
+          "original_domain": "x>0because4x³>0.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(x**(-Rational(2,3))),x)"
+            ]
+          },
+          "printed_key_normalised": "-2/(3*x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(x**(-Rational(2,3)))",
+          "original_domain": "Use realx^(−2/3)>0onx≠0;negativehalf-linevalid.",
+          "additional_operations": {
+            "real-negative-component": {
+              "kind": "identity",
+              "operands": [
+                "diff(log((-x)**(-Rational(2,3))),x).subs(x,-8)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "real-negative-component": "Rational(1,12)"
+          },
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(2*x/sqrt(x)),x)"
+            ]
+          },
+          "printed_key_normalised": "1/(2*x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(2*x/sqrt(x))",
+          "original_domain": "x>0fromoriginalradicaldenominator.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "e",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(4/x**Rational(1,3)),x)"
+            ]
+          },
+          "printed_key_normalised": "-1/(3*x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(4/x**Rational(1,3))",
+          "original_domain": "REALcuberootargument4/∛xpositiveonlyforx>0.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "f",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(sqrt(5/x**5)),x)"
+            ]
+          },
+          "printed_key_normalised": "-5/(2*x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(sqrt(5/x**5))",
+          "original_domain": "x>0becauseoriginal5/x⁵strictlypositivefornonzerologargument.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:15",
+      "source_pdf_page": 496,
+      "notes": "Differentiate ln(3x−4),domainx>4/3,andln√(4−x),domainx<4. Secondhaschainor(1/2)ln(4−x)routes;bothretainthesamerealpositiveargument.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Differentiate ln(3x−4),domainx>4/3,andln√(4−x),domainx<4. Secondhaschainor(1/2)ln(4−x)routes;bothretainthesamerealpositiveargument.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate ln(3x−4),domainx>4/3,andln√(4−x),domainx<4. Secondhaschainor(1/2)ln(4−x)routes;bothretainthesamerealpositiveargument.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(3*x-4),x)"
+            ]
+          },
+          "printed_key_normalised": "3/(3*x-4)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(3*x-4)",
+          "original_domain": "x>4/3.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 496,
+          "answer_printed_page": 484,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(sqrt(4-x)),x)"
+            ]
+          },
+          "printed_key_normalised": "-1/(2*(4-x))",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(sqrt(4-x))",
+          "original_domain": "x<4;endpointexcludedbecause logzero.",
+          "source_pdf_page": 496,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 496,
+          "answer_printed_page": 484,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now:15",
+      "source_pdf_page": 497,
+      "notes": "Six nested/affine natural-log derivatives,including squaredargument(2x+1)²,loglogxandln(5x−lnx). The firstnestedlog requiresx>1; finalargumentispositiveforallx>0. Do notinterpret squaredargumentas squaredlog.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Six nested/affine natural-log derivatives,including squaredargument(2x+1)²,loglogxandln(5x−lnx). The firstnestedlog requiresx>1; finalargumentispositiveforallx>0. Do notinterpret squaredargumentas squaredlog.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Six nested/affine natural-log derivatives,including squaredargument(2x+1)²,loglogxandln(5x−lnx). The firstnestedlog requiresx>1; finalargumentispositiveforallx>0. Do notinterpret squaredargumentas squaredlog.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(2*x-1),x)"
+            ]
+          },
+          "printed_key_normalised": "2/(2*x-1)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(2*x-1)",
+          "original_domain": "x>1/2.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log((2*x+1)**2),x)"
+            ]
+          },
+          "printed_key_normalised": "4/(2*x+1)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log((2*x+1)**2)",
+          "original_domain": "x≠−1/2; squareiswholelogargument,not squareofthelogarithm.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(sqrt(x+7)),x)"
+            ]
+          },
+          "printed_key_normalised": "1/(2*x+14)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(sqrt(x+7))",
+          "original_domain": "x>−7.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(log(x)),x)"
+            ]
+          },
+          "printed_key_normalised": "1/(x*log(x))",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(log(x))",
+          "original_domain": "x>1soinnerlogpositive.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "e",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log((2+sqrt(x))**2),x)"
+            ]
+          },
+          "printed_key_normalised": "1/(2*sqrt(x)+x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log((2+sqrt(x))**2)",
+          "original_domain": "Originalx≥0;finite derivativeusesx>0.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "f",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(5*x-log(x)),x)"
+            ]
+          },
+          "printed_key_normalised": "(5*x-1)/(x*(5*x-log(x)))",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(5*x-log(x))",
+          "original_domain": "x>0;5x−lnxhaspositiveglobalminimum1+ln5atx1/5.",
+          "additional_operations": {
+            "innerargument-minimum": {
+              "kind": "identity",
+              "operands": [
+                "(5*x-log(x)).subs(x,Rational(1,5))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "innerargument-minimum": "1+log(5)"
+          },
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:16",
+      "source_pdf_page": 497,
+      "notes": "Differentiate xln(lnx),ln(3x+2)/x,and ORIGINALimplicitrelatione^y3x²+1. The lastcanfirstbesolvedfor ylogarithmically;itdoesnotask a geometricderivativeapplication.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02",
+        "8227:2020:M2:T4:O02:D01",
+        "8227:2020:M2:T4:O02:D02",
+        "8227:2020:M2:T4:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Differentiate xln(lnx),ln(3x+2)/x,and ORIGINALimplicitrelatione^y3x²+1. The lastcanfirstbesolvedfor ylogarithmically;itdoesnotask a geometricderivativeapplication.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate xln(lnx),ln(3x+2)/x,and ORIGINALimplicitrelatione^y3x²+1. The lastcanfirstbesolvedfor ylogarithmically;itdoesnotask a geometricderivativeapplication.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(x*log(log(x)),x)"
+            ]
+          },
+          "printed_key_normalised": "1/log(x)+log(log(x))",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02",
+            "8227:2020:M2:T4:O02:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "x*log(log(x))",
+          "original_domain": "x>1.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 497,
+          "answer_printed_page": 485,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(3*x+2)/x,x)"
+            ]
+          },
+          "printed_key_normalised": "(3*x-(3*x+2)*log(3*x+2))/(x**2*(3*x+2))",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02",
+            "8227:2020:M2:T4:O02:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(3*x+2)/x",
+          "original_domain": "x>−2/3andx≠0.",
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 497,
+          "answer_printed_page": 485,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(3*x**2+1),x)"
+            ]
+          },
+          "printed_key_normalised": "6*x/(3*x**2+1)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02",
+            "8227:2020:M2:T4:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(3*x**2+1)",
+          "original_domain": "Originale^y=3x²+1hasunique realy=ln(3x²+1)forallrealx.",
+          "original_relation": "e^y=3x²+1",
+          "additional_operations": {
+            "implicit-route-residual": {
+              "kind": "identity",
+              "operands": [
+                "simplify((6*x/exp(log(3*x**2+1)))-6*x/(3*x**2+1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "implicit-route-residual": "0"
+          },
+          "source_pdf_page": 497,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 497,
+          "answer_printed_page": 485,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now:16",
+      "source_pdf_page": 498,
+      "notes": "Differentiate xln(2x−1),ln(2x−1)/(4x+1),ORIGINALe^y3x³−2x,andln[(x−2)(2x+1)/(x(x−5))]. Nativekey(d)wronglychanges numeratorcoefficient2to3. Preservealloriginal logargumentdomains.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02",
+        "8227:2020:M2:T4:O02:D01",
+        "8227:2020:M2:T4:O02:D02",
+        "8227:2020:M2:T4:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Differentiate xln(2x−1),ln(2x−1)/(4x+1),ORIGINALe^y3x³−2x,andln[(x−2)(2x+1)/(x(x−5))]. Nativekey(d)wronglychanges numeratorcoefficient2to3. Preservealloriginal logargumentdomains.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate xln(2x−1),ln(2x−1)/(4x+1),ORIGINALe^y3x³−2x,andln[(x−2)(2x+1)/(x(x−5))]. Nativekey(d)wronglychanges numeratorcoefficient2to3. Preservealloriginal logargumentdomains.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(x*log(2*x-1),x)"
+            ]
+          },
+          "printed_key_normalised": "(4*x**2-2*x+1)/(2*x-1)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02",
+            "8227:2020:M2:T4:O02:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "x*log(2*x-1)",
+          "original_domain": "x>1/2.",
+          "author_expected_normalised": "2*x/(2*x-1)+log(2*x-1)",
+          "source_reading_resolution": "Native key646 prints a rational expression(4x²−2x+1)/(2x−1),which is not the derivative of ORIGINALxln(2x−1). Keep the logarithm term in the correct product derivative.",
+          "additional_operations": {
+            "original-at-one": {
+              "kind": "identity",
+              "operands": [
+                "diff(x*log(2*x-1),x).subs(x,1)"
+              ]
+            },
+            "printed-key-at-one": {
+              "kind": "identity",
+              "operands": [
+                "((4*x**2-2*x+1)/(2*x-1)).subs(x,1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-at-one": "2",
+            "printed-key-at-one": "3"
+          },
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 646,
+          "answer_printed_page": "A60",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(2*x-1)/(4*x+1),x)"
+            ]
+          },
+          "printed_key_normalised": "(8*x+2-4*(2*x-1)*log(2*x-1))/((2*x-1)*(4*x+1)**2)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02",
+            "8227:2020:M2:T4:O02:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(2*x-1)/(4*x+1)",
+          "original_domain": "x>1/2;thisalreadyexcludesdenominatorzero−1/4.",
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 647,
+          "answer_printed_page": "A61",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log(3*x**3-2*x),x)"
+            ]
+          },
+          "printed_key_normalised": "(9*x**2-2)/(3*x**3-2*x)",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02",
+            "8227:2020:M2:T4:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log(3*x**3-2*x)",
+          "original_domain": "Originale^y=3x³−2xrequires3x³−2x>0:−√(2/3)<x<0orx>√(2/3).",
+          "original_relation": "e^y=3x³−2x",
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 647,
+          "answer_printed_page": "A61",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(log((x-2)*(2*x+1)/(x*(x-5))),x)"
+            ]
+          },
+          "printed_key_normalised": "(-12*x**2+4*x-10)/((3*x**2-3*x-2)*(x**2-5*x))",
+          "method": "Differentiate the separately transcribed ORIGINAL real-log function,using innerderivative dividedby original positiveargument. Retain the ORIGINAL functiondomain rather than inferring it from the final rational expression. Algebraic/loglaw alternatives must preserve negativeinputbranches where applicable.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "original_function": "log((x-2)*(2*x+1)/(x*(x-5)))",
+          "original_domain": "Originalquotientpositive:x<−1/2or0<x<2orx>5;zerosandpolesexcluded.",
+          "author_expected_normalised": "(-7*x**2+4*x-10)/((2*x**2-3*x-2)*(x**2-5*x))",
+          "source_reading_resolution": "Native sourcehas(x−2)(2x+1)=2x²−3x−2. Nativekeyinsteaduses3x²−3x−2andcorrespondingwrongnumerator−12x²+4x−10. Preserveactualsourcecoefficient2.",
+          "additional_operations": {
+            "original-derivative-at-one": {
+              "kind": "identity",
+              "operands": [
+                "diff(log((x-2)*(2*x+1)/(x*(x-5))),x).subs(x,1)"
+              ]
+            },
+            "printed-key-at-one": {
+              "kind": "identity",
+              "operands": [
+                "((-12*x**2+4*x-10)/((3*x**2-3*x-2)*(x**2-5*x))).subs(x,1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-derivative-at-one": "-Rational(13,12)",
+            "printed-key-at-one": "-Rational(9,4)"
+          },
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 647,
+          "answer_printed_page": "A61",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Example:17",
+      "source_pdf_page": 498,
+      "notes": "For ORIGINALy=xlnx,findexactstationarycoordinates(1/e,−1/e)AND determinewhethermaximum/minimum. Secondderivativepositive,minimum;originalx>0.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M1:T8:O04:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "For ORIGINALy=xlnx,findexactstationarycoordinates(1/e,−1/e)AND determinewhethermaximum/minimum. Secondderivativepositive,minimum;originalx>0.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "For ORIGINALy=xlnx,findexactstationarycoordinates(1/e,−1/e)AND determinewhethermaximum/minimum. Secondderivativepositive,minimum;originalx>0.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a-stationary-coordinates",
+        "b-nature"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-stationary-coordinates",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(exp(-1),(x*log(x)).subs(x,exp(-1)))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(1/E,-1/E)",
+          "method": "Originaldomainx>0;derivative1+lnxvanishesatx1/e. Evaluate originaly−1/e. Bothcoordinatesexpresslyaskedintermsofe.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O02:D01"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "additional_operations": {
+            "original-stationary-x": {
+              "kind": "identity",
+              "operands": [
+                "solveset(diff(x*log(x),x),x,domain=Interval.open(0,oo))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-stationary-x": "FiniteSet(exp(-1))"
+          },
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 498,
+          "answer_printed_page": 486,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-nature",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Minimum.",
+          "author_derivation": "Originalsecondderivative1/xispositiveeatx1/e,so the exactpointisaminimum.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01"
+          ],
+          "depends_on_source_parts": [
+            "a-stationary-coordinates"
+          ],
+          "response_format": "explanation",
+          "additional_operations": {
+            "positive-original-second-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(x*log(x),x,2).subs(x,exp(-1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "positive-original-second-derivative": "E"
+          },
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 498,
+          "answer_printed_page": 486,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now-17:1",
+      "source_pdf_page": 498,
+      "notes": "For ORIGINAL3ln(2x+9)−2lnx,findstationaryx9andnatureminimum. Nativekeyclearsfalselead:itdoesNOTsayx−9;bothcoefficientandrootarecorrect.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M1:T8:O04:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "For ORIGINAL3ln(2x+9)−2lnx,findstationaryx9andnatureminimum. Nativekeyclearsfalselead:itdoesNOTsayx−9;bothcoefficientandrootarecorrect.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "For ORIGINAL3ln(2x+9)−2lnx,findstationaryx9andnatureminimum. Nativekeyclearsfalselead:itdoesNOTsayx−9;bothcoefficientandrootarecorrect.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "a-stationary-x",
+        "b-nature"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-stationary-x",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solveset(diff(3*log(2*x+9)-2*log(x),x),x,domain=Interval.open(0,oo))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(9)",
+          "method": "Originaldomainx>0. Independentlydifferentiate to(2x−18)/(x(2x+9)),whoseuniqueroot9isvalid. NativekeyprintsPOSITIVE2x−18andx9;theearlierthumbnailminusreadingwasfalse.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 647,
+          "answer_printed_page": "A61",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-nature",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Minimum.",
+          "author_derivation": "Originalsecondderivative−12/(2x+9)²+2/x²equals2/243atx9,strictlypositive. Nativekeyminimumiscorrect.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "depends_on_source_parts": [
+            "a-stationary-x"
+          ],
+          "response_format": "explanation",
+          "additional_operations": {
+            "positive-original-second-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(3*log(2*x+9)-2*log(x),x,2).subs(x,9)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "positive-original-second-derivative": "Rational(2,243)"
+          },
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 647,
+          "answer_printed_page": "A61",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C11:Try-Now-17:2",
+      "source_pdf_page": 498,
+      "notes": "Findgradientof3e^(4x)−6ln(2x+3)atx0,exact8. Originaldomainx>−3/2;no stationarypoint/naturerequest.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O01:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requested log derivatives and explicit stationary/gradient outputs are distinct. Original e^y relations inExample16(c)/Try16(c) genuinely define yimplicitly; logarithmic conversion is a valid alternative route to their firstderivative. No implicit/parametric GEOMETRY demand is attached to explicit stationarycurves. Preserve the ORIGINAL positive-log-argument set before applying loglaws.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Findgradientof3e^(4x)−6ln(2x+3)atx0,exact8. Originaldomainx>−3/2;no stationarypoint/naturerequest.",
+          "reason": "Actual algebraic powers include2,3,−2/3and square/cube roots; real odd-root branches and original logpositive arguments retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Findgradientof3e^(4x)−6ln(2x+3)atx0,exact8. Originaldomainx>−3/2;no stationarypoint/naturerequest.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL10"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "All requested derivatives/coordinates/nature are exact; Example17coordinatesexpressly in termsofe. No angleunits.",
+        "comparison": "A simplified rational derivative does not extend the original function domain. ln(x²)=2ln|x|forx≠0,not2lnxovernegativeinputs. A logarithm of a positive quotient must not be split into nonreal componentlogs."
+      },
+      "expected_subpart_labels": [
+        "gradient"
+      ],
+      "subparts": [
+        {
+          "subpart": "gradient",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(3*exp(4*x)-6*log(2*x+3),x).subs(x,0)"
+            ]
+          },
+          "printed_key_normalised": "8",
+          "method": "Differentiate ORIGINALmixedexponential/logcurveand evaluateadmissiblex0;12−12/3=8.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O01:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T4:O01:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_pdf_page": 498,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-496-source.png",
+            "sha256": "d2bae29f96b12c4628be369b9acd64dbae4450337f63ad19dfa7100a8a6a3996"
+          },
+          "answer_pdf_page": 647,
+          "answer_printed_page": "A61",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C10-key-645.png",
+            "sha256": "c55cb5fe838239de6a09b6de9d8f38461076edf8aa952c9a09c6efc29628eef2"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}

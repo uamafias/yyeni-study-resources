@@ -1,0 +1,141 @@
+{
+ "review": "opus-5-5-repair-r6",
+ "reviewer": "Claude Opus 5.5 (cross-vendor, REVIEWER)",
+ "date": "2026-11-23",
+ "head": "11cd03fe639f9936dd9f83fd04bd6f04d5181676",
+ "git_status_entries_at_start": 301,
+ "snapshot_sha256": "13dcf9f7b0377ff760324e4f0847dd17c7c3be4f21991c547124bb9e5e818464",
+ "file_sha256": {
+  "analysis/analysis-snapshot.json": "13dcf9f7b0377ff760324e4f0847dd17c7c3be4f21991c547124bb9e5e818464",
+  "analysis/textbook-families.json": "0e1cc283339dbd3914e50827cc07fdae7326e60bbf035046638065766fe7b5b3",
+  "analysis/textbook-inventory.json": "48034d85432fd1c91094cc2fe10792ad4ecd776a1af53c7520737b9f984abbed",
+  "analysis/textbook-insights.md": "fc6febb2d685499dc59ad1631e8f1d9932af6a4447ddd45f70e1b0b654326bf9",
+  "analysis/objective-problem-map.json": "c8ee46e210c2d02eff8da7d5a12daeee6f8fe3a63d4f349674fe287213e1e747",
+  "analysis/objective-problem-map.md": "4f3a1f174e0fb123677424916d5d593bd8360c25ce7c1477d0c63b28877b6568",
+  "analysis/textbook-figure-comparisons-r6.json": "0b18b1825a74f75462bd37742d6f06d566faeaa53604f17e87cce8ef70440ebc",
+  "analysis/textbook-answer-page-audit-r6.json": "e9430f212057f02cc6581a5a8487cda8547d0d4dedef5852b73d9e59cb2807f3",
+  "analysis/textbook-exam-candidates-r6.json": "f88cb8c13693c101fefdfe2b87810af63c2bbafdbcf992fb82e575279fc071b9",
+  "analysis/nsscas-cambridge-provenance.json": "06ecea03342d4d3041f7cf3ac37130ee6693af9109db40e9385906d911af4ef7",
+  "analysis/provenance-full-screen-r5.json": "e1e9dfc79c8f1d4022d71bac0450dd179c4a21a023ab08e755360f34d74358e6",
+  "analysis/source-defects.json": "3d9df6d7ba450e308269405932c51c9780059e4b48db1320ee02128502d7ddaf",
+  "analysis/question-analysis.json": "f926fd98e7b56c5801ff284d6213543eebdd839968d8b2877993a599d79c72e3",
+  "analysis/demand-registry.json": "f4cd12a2919d5d50d8e2bdf18039620fb6830a5d267ef831b07e28388bfe3b9d",
+  "tools/textbook-exam-relations-r6.json": "0e07846f59926f8faf0463eb5a181c086c0faa0643ab97e131b382b4fe3351e3",
+  "tools/textbook-figure-repairs-r6.json": "a83f6c589863bda376f2165307b3dd2ac49cbc845dfa08fa7be7c430b73254f9",
+  "tools/textbook-note-spacing-r6.json": "b198868d0aa63833d48cc1079d0eb76c9d9fdcf92038abe23520ca9b911ae765",
+  "tools/textbook-note-spacing-parallel-r6.json": "21b977be612f3acae61375b6605cdef34f6dbc386cbfce208d14b3ff6e9292f6",
+  "tools/textbook-note-spacing-root-r6.json": "efed54f1b08cb6783d84b473f13649b65eab7d64f8638974dfded70d8950aa2d",
+  "tools/textbook-family-prose-parallel-r6.json": "aac27204ee817987949d50a88eb75376779eadf0493b3a3343bbaa1d51c0ca5f",
+  "checks/repair-r6-report.md": "e06cc3b3af97bc77177c905ce1098232c67a4b75920a80ad21328fc8653f6d32",
+  "checks/repair-r6-review-request.md": "394acdbde6d06a95e50c1055bdff2e7e754c7f861d7ff2721d68fb9501ad02fc",
+  "checks/fresh-copy-verification-r6.json": "68d47c7c42c18b61f0236bf638d4049656aed0a27342ed82b31636506ccb1f2b",
+  "review/opus-5-5-repair-r5/REPAIR-PROMPT.md": "628cd85cb9e33c8c2987f4548c94f28a23315f35840e06d7638a9e36ffe8c4d0"
+ },
+ "reviewer_seed": "opus-5-5-r6-reviewer-2026-11-23",
+ "independent_checks": {
+  "rebuild": {
+   "runs": 2,
+   "commands_each": 281,
+   "outputs_byte_identical": 158,
+   "prior_negatives_rejected": 38,
+   "r6_negatives_rejected": {
+    "core": 12,
+    "family_prose": 5,
+    "figures": 5
+   },
+   "analysis_outputs_matching_author": 137,
+   "location": "scratchpad r6root (fresh copy)"
+  },
+  "candidates": {
+   "recomputed": 2675,
+   "decided": 2675,
+   "undecided": 0,
+   "positive_without_read": 0,
+   "summary_mismatches": 0
+  },
+  "blind_pairs": {
+   "n": 100,
+   "strata": {
+    "main same type": 20,
+    "exception same type": 5,
+    "main branch": 25,
+    "exception branch": 5,
+    "rejected cover": 30,
+    "rejected partial": 15
+   },
+   "exact_agreement": 72,
+   "related_vs_unrelated_agreement": 84,
+   "author_positive_confirmed_related": "28/30",
+   "author_same_type_confirmed": "23/25",
+   "author_branch_judged_same_type": "10/30",
+   "author_rejections_judged_related": "14/45 (3 same type, 11 branch)",
+   "nonordered_sampled_related": "5/6",
+   "verified_by_reviewer": [
+    "PAIR-024"
+   ]
+  },
+  "no_textbook_relation_parts": {
+   "total": 31,
+   "syllabus": 22,
+   "prior_or_ability_only": 9,
+   "confirmed_false_gaps": [
+    "2024:P2:Q4:a",
+    "2023:P2:Q3:b.ii"
+   ]
+  },
+  "batch_worded_rejections": 389,
+  "empty_demand_families": 61,
+  "members_with_examined_item_demands_in_them": 41,
+  "families": {
+   "n": 40,
+   "coherence": "32 pass/8 fail",
+   "distinction_basis": "13 pass/12 weak/15 fail",
+   "progression": "25/14/1",
+   "precision": "7/31/2",
+   "doubled_prefix_population": 428,
+   "precision_sentence_shared_by_7plus": 446
+  },
+  "figures": {
+   "type_agreement": "38/40",
+   "role_agreement": "36/40",
+   "positive_medium": "8/8",
+   "negative_medium": "5 correct, 1 partly",
+   "registered_errors": "9/9",
+   "stale_statuses": 0
+  },
+  "notes": {
+   "repaired_readable": "4/30",
+   "unrepaired_readable": "0/10"
+  },
+  "answer_pages": {
+   "inspections_checked": 20,
+   "findings_confirmed": "10/10",
+   "new_wrong_locators": 2
+  },
+  "insights": {
+   "sections": 19,
+   "pass": 16,
+   "minor": 2,
+   "fail": 1
+  },
+  "objective_map": {
+   "demands": 22,
+   "pass": 19,
+   "minor": 3,
+   "header": "consistent"
+  },
+  "provenance": {
+   "pair_037": "recorded correctly",
+   "pair_021": "(d) removed",
+   "recall": "16/32 recorded"
+  },
+  "delegated": [
+   "4 blind pair agents",
+   "1 blind figure classifier",
+   "figure medium/errors",
+   "notes/answer pages",
+   "insights/map",
+   "2 family agents"
+  ]
+ }
+}

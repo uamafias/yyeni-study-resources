@@ -1,0 +1,2676 @@
+{
+  "scope": "All16questions,every actual requested response,and every performed iteration display;author start choices explicit.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:1",
+      "source_pdf_page": 171,
+      "notes": "Bracketx³−x−2between1and2;use suppliedxₙ₊₁=∛(xₙ+2)to3dp. The source leaves the initial value open;the author trace starts1.5.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Bracketx³−x−2between1and2;use suppliedxₙ₊₁=∛(xₙ+2)to3dp. The source leaves the initial value open;the author trace starts1.5.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(1,2).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((x**3-x-2).subs(x,1)),sign((x**3-x-2).subs(x,2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(-1, 1)"
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x**3-x-2",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "1.521",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "real_root(x+2,3)",
+            "start": "3/2",
+            "original_equation": "x**3-x-2",
+            "original_target_bracket": [
+              "1",
+              "2"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.5",
+                "display": "1.5000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.5182944859378312597104047892528348177907269886240555616210708270845886342059425",
+                "display": "1.5183"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.5209352632168919301191147304273878999148142100306204904665785017892302230621338",
+                "display": "1.5209"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.5213156981904800747366856718001591248728604034389045682179483260701878199319546",
+                "display": "1.5213"
+              }
+            ],
+            "answer": "1.521",
+            "certified_rounding_cell": [
+              "1.5205",
+              "1.5215"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:2",
+      "source_pdf_page": 171,
+      "notes": "Show four proposed rearrangements ofx⁴+x−e^x=0. The two principal even-root forms lose the negative original root,so the unqualified source equivalence claim needs a branch qualification.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Show four proposed rearrangements ofx⁴+x−e^x=0. The two principal even-root forms lose the negative original root,so the unqualified source equivalence claim needs a branch qualification.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "x=e^x−x⁴is exactly the original equation rearranged.",
+          "author_derivation": "Forx⁴+x−e^x=0,use real algebra and preserve every inverse-operation condition. All realx;no division or inverse branch introduced.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_common_domain": "All realx;no division or inverse branch introduced.",
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "x=ln(x⁴+x)is equivalent onx⁴+x>0.",
+          "author_derivation": "Forx⁴+x−e^x=0,use real algebra and preserve every inverse-operation condition. Every original solution hasx⁴+x=e^x>0;conversely exponentiating the logarithmic equation recovers the original.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_common_domain": "Every original solution hasx⁴+x=e^x>0;conversely exponentiating the logarithmic equation recovers the original.",
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "x=(e^x−x)^(1/4)selects nonnegativex.",
+          "author_derivation": "Forx⁴+x−e^x=0,use real algebra and preserve every inverse-operation condition. It is not equivalent for the original negative root. The radicand is positive for realx,but a principal fourth root is nonnegative.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_common_domain": "It is not equivalent for the original negative root. The radicand is positive for realx,but a principal fourth root is nonnegative.",
+          "additional_operations": {
+            "negative_original_root_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign(16-2-exp(-2)),sign(1-1-exp(-1)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "negative_original_root_signs": "Tuple(1,-1)"
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "x=√((e^x−x)/x²)selects positivex and excludes0.",
+          "author_derivation": "Forx⁴+x−e^x=0,use real algebra and preserve every inverse-operation condition. Original0isnotaroot,but its negative root is lost by the principal square-root branch;the quotient is undefined at0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_common_domain": "Original0isnotaroot,but its negative root is lost by the principal square-root branch;the quotient is undefined at0.",
+          "additional_operations": {
+            "negative_original_root_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign(16-2-exp(-2)),sign(1-1-exp(-1)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "negative_original_root_signs": "Tuple(1,-1)"
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": {
+        "real_domain": "The original has negative and positive roots;iii/ivare only nonnegative/positive branches.",
+        "warning": "Preserve the existing source caution on principal fourth/square roots;do not silently call them all globally equivalent."
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:3",
+      "source_pdf_page": 171,
+      "notes": "Brackete^(−x)−x+2on[2,3];execute suppliedxₙ₊₁=e^(−xₙ)+2to3dp. Author start2is explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Brackete^(−x)−x+2on[2,3];execute suppliedxₙ₊₁=e^(−xₙ)+2to3dp. Author start2is explicit.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(2,3).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((exp(-x)-x+2).subs(x,2)),sign((exp(-x)-x+2).subs(x,3)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(1, -1)"
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "exp(-x)-x+2",
+              "2",
+              "3"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "2.120",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "exp(-x)+2",
+            "start": "2",
+            "original_equation": "exp(-x)-x+2",
+            "original_target_bracket": [
+              "2",
+              "3"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "2.0",
+                "display": "2.0000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "2.1353352832366126918939994949724844034076315459095758814681588726540733741014877",
+                "display": "2.1353"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "2.1182049515931431459987694901071096913875563289550073155393489568799271878762673",
+                "display": "2.1182"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "2.1202472845936348035084683474560317882271499305248872649803226208189418750021818",
+                "display": "2.1202"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "2.1200019502086217191063906839734352476755313502355802671541864013452062506321086",
+                "display": "2.1200"
+              }
+            ],
+            "answer": "2.120",
+            "certified_rounding_cell": [
+              "2.1195",
+              "2.1205"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:4",
+      "source_pdf_page": 171,
+      "notes": "Brackete^x+x−6on[1,2],prove its supplied logarithmic rearrangement,and iterate from author-chosen1.5to3dp.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Brackete^x+x−6on[1,2],prove its supplied logarithmic rearrangement,and iterate from author-chosen1.5to3dp.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(1,2).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((exp(x)+x-6).subs(x,1)),sign((exp(x)+x-6).subs(x,2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(-1, 1)"
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "x=ln(6−x),withx<6,has the same real solutions ase^x+x−6=0.",
+          "author_derivation": "The original equation givese^x=6−x>0,so the natural log is legitimate. Conversely exponentiate the rearrangement. A denominator or lost branch is not introduced;the positive log argument is essential.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 171,
+          "answer_printed_page": 157,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "exp(x)+x-6",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "1.503",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "log(6-x)",
+            "start": "3/2",
+            "original_equation": "exp(x)+x-6",
+            "original_target_bracket": [
+              "1",
+              "2"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.5",
+                "display": "1.5000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.5040773967762740733732583523868748412194809812852436493487086577815949644675232",
+                "display": "1.5041"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.5031708978577470617268484057832136601047150739143472244986968511318009541016251",
+                "display": "1.5032"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.5033725044296390681684254262755194082777484198940679266607368731137116030805073",
+                "display": "1.5034"
+              }
+            ],
+            "answer": "1.503",
+            "certified_rounding_cell": [
+              "1.5025",
+              "1.5035"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:5",
+      "source_pdf_page": 171,
+      "notes": "Sketch and justify unique intersectione^x=x²+2,choose a rearrangement,then iterate to3dp. Use the valid author choiceln(x²+2),start1.3;the construction part exceeds merely interpreting a supplied form.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "applies_to": "i/ii; iv only with an explicitly supplied map adaptation",
+          "quoted_value": "e^x = x^2 + 2",
+          "reason": "Graphical root reasoning is prescribed. The recorded iv trace is an internal author-map benchmark, not evidence that the original supplies a map."
+        },
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "outside",
+          "applies_to": "iii only",
+          "quoted_value": "Rearrange this equation in the form x = F(x).",
+          "reason": "The original freely asks the learner to invent the rearrangement; LIMIT08 concerns supplied formulae/rearrangements."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Sketchy=e^xandy=x²+2on shared axes with a single positive intersection.",
+          "author_derivation": "The exponential lies below the parabola at0and eventually above it. Forx≤0,e^x≤1<x²+2. The difference derivativee^x−2xis positive everywhere:its minimum is2−2ln2>0. Thus exactly one crossing occurs.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "There is exactly one real root.",
+          "author_derivation": "The original differencee^x−x²−2is strictly increasing and has opposite signs at1and2;its negative-xvalues are negative. The graph and monotonicity prove uniqueness,not just one plotted intersection.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "One usable rearrangement isx=ln(x²+2),with positive logarithm argument for every realx.",
+          "author_derivation": "Exponentiation recovers the original equation. Choosing a new rearrangement is the source’s open construction request;the syllabus specifically requires supplied formulas/rearrangements,so this choice is marked as extension while the subsequent execution still practises the supplied-form skill.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "exp(x)-x**2-2",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "1.319",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "log(x**2+2)",
+            "start": "13/10",
+            "original_equation": "exp(x)-x**2-2",
+            "original_target_bracket": [
+              "1",
+              "2"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.3",
+                "display": "1.3000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.3056264580524358186212709375137305824691886077872545850219957755998219834881705",
+                "display": "1.3056"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.3095916075756184367082725294976324359506108264213379764339117488223771676851556",
+                "display": "1.3096"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.3123868015909649881466786689966836775298052074964063114800202481415939768079561",
+                "display": "1.3124"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "1.3143576385173681173422703129440738434326310086642744963680213252360986850685692",
+                "display": "1.3144"
+              },
+              {
+                "index_one_based": 6,
+                "unrounded": "1.3157474260752921649776360801197848694750923630408222371941368664459533406789923",
+                "display": "1.3157"
+              },
+              {
+                "index_one_based": 7,
+                "unrounded": "1.3167275631535753056740263794289132857893046887697482293439634010786699574319845",
+                "display": "1.3167"
+              },
+              {
+                "index_one_based": 8,
+                "unrounded": "1.3174188422740859265830346783586543514829832471839856147250581929891990672532596",
+                "display": "1.3174"
+              },
+              {
+                "index_one_based": 9,
+                "unrounded": "1.3179064153727838165678239244425494376734686367034092497980725944283878347577418",
+                "display": "1.3179"
+              },
+              {
+                "index_one_based": 10,
+                "unrounded": "1.3182503214070095575721564137146340225540058984008308564600449925729485399979878",
+                "display": "1.3183"
+              },
+              {
+                "index_one_based": 11,
+                "unrounded": "1.3184928983440893121849591288160377510338903459512305650992251597154766371442964",
+                "display": "1.3185"
+              },
+              {
+                "index_one_based": 12,
+                "unrounded": "1.3186640046440191717004059668802205237416542976052644391424907362341000319431242",
+                "display": "1.3187"
+              },
+              {
+                "index_one_based": 13,
+                "unrounded": "1.3187846990830124088955738899494627972071848113001445827257921994457436910365374",
+                "display": "1.3188"
+              }
+            ],
+            "answer": "1.319",
+            "certified_rounding_cell": [
+              "1.3185",
+              "1.3195"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "i/ii assess graphical root reasoning. iii requires an invented map. iv is retained only as an internal benchmark for an adaptation that supplies the author map explicitly.",
+        "excluded_or_qualified_parts": [
+          "iii:open choice of rearrangement is extension",
+          "iv:execution depends on the excluded open choice; an in-scope adaptation must supply its map"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:6",
+      "source_pdf_page": 171,
+      "notes": "Showx²=ln(x+1)has0and one other root;find the second to3dpby iteration. Author choiceF=√ln(1+x),start0.5,keeps the positive branch;start0would stay at the already given root.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "applies_to": "i only",
+          "quoted_value": "x^2 = ln(x + 1)",
+          "reason": "Root existence/count on the actual log domain is prescribed; the second part does not add direct supplied-map iteration coverage."
+        },
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "outside",
+          "applies_to": "ii only",
+          "quoted_value": "Use the method of fixed-point iteration to find the second value to 3 decimal places.",
+          "reason": "The original gives no iteration map. Keep the independently verified author trace internal; a future in-scope adaptation must supply its map."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "One root is0and there is exactly one further positive root.",
+          "author_derivation": "At0both sides are0. For−1<x<0,ln(1+x)<0<x²,so none occur. Forx>0,the residualx²−ln(1+x)initially decreases then increases,because its derivative2x−1/(1+x)strictly increases. Its value at1is positive,so one further positive root lies in(0,1).",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "zero_and_upper_sign": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((x**2-log(1+x)).subs(x,0),sign((x**2-log(1+x)).subs(x,1)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "zero_and_upper_sign": "Tuple(0,1)"
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x**2-log(1+x)",
+              "1/2",
+              "1"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "0.747",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "sqrt(log(1+x))",
+            "start": "1/2",
+            "original_equation": "x**2-log(1+x)",
+            "original_target_bracket": [
+              "1/2",
+              "1"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "0.5",
+                "display": "0.5000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "0.63676142165505314316845091584896918857732050936913678246120007307355354403378525",
+                "display": "0.6368"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "0.701939845405133750195885096347906461306953799086079052279923810664116589972017",
+                "display": "0.7019"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "0.7292247157436056687578599292160025676895891067993775423209599276868191673207395",
+                "display": "0.7292"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "0.74004943542695011985338610664189253966072030128334900378293781344039156135832498",
+                "display": "0.7400"
+              },
+              {
+                "index_one_based": 6,
+                "unrounded": "0.74425366911273069003232895400154382784733562180474802561095120254950163185533989",
+                "display": "0.7443"
+              },
+              {
+                "index_one_based": 7,
+                "unrounded": "0.74587315770343862634885474171610990820064950953451905632678280505839797717920883",
+                "display": "0.7459"
+              },
+              {
+                "index_one_based": 8,
+                "unrounded": "0.74649501499676857055945205577657468447791405727488395336548835759407132968240579",
+                "display": "0.7465"
+              },
+              {
+                "index_one_based": 9,
+                "unrounded": "0.7467335073363437590792620922217771171594461249689754258677327221479145962286652",
+                "display": "0.7467"
+              },
+              {
+                "index_one_based": 10,
+                "unrounded": "0.74682493028261461645597070178028371703187783291883816023307917408570964687813412",
+                "display": "0.7468"
+              }
+            ],
+            "answer": "0.747",
+            "certified_rounding_cell": [
+              "0.7465",
+              "0.7475"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 171,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Only i is retained as original prescribed-demand coverage. ii supplies no map; its numerical solution remains internal benchmark evidence for an adaptation that explicitly supplies the map.",
+        "excluded_or_qualified_parts": [
+          "ii:original supplies no map; author-chosen formula must be supplied in any prescribed-demand adaptation"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:7",
+      "source_pdf_page": 172,
+      "notes": "Sketchliney=xandcosxon[0,π/2],then use iteration to obtain the solution to5dp. Author start1and supplied cosine map are explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Ordinary exercise without examination attribution.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Sketchliney=xandcosxon[0,π/2],then use iteration to obtain the solution to5dp. Author start1and supplied cosine map are explicit.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Sketchy=xincreasing from(0,0)andcosxdecreasing from(0,1)to(π/2,0);they intersect once.",
+          "author_derivation": "On[0,π/2],the differencecosx−xis strictly decreasing with opposite endpoint signs. The unique intersection lies in(0,1). This is a radian graph,not a degree-mode cosine curve.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "cos(x)-x",
+              "0",
+              "1"
+            ],
+            "rounding": {
+              "decimal_places": 5
+            }
+          },
+          "printed_key_normalised": "0.73909",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "cos(x)",
+            "start": "1",
+            "original_equation": "cos(x)-x",
+            "original_target_bracket": [
+              "0",
+              "1"
+            ],
+            "answer_decimal_places": 5,
+            "display_decimal_places": 5,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.0",
+                "display": "1.00000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "0.54030230586813971740093660744297660373231042061792222767009725538110039477447176",
+                "display": "0.54030"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "0.85755321584639341574410627276198979110585842459742448865205545017506321736973496",
+                "display": "0.85755"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "0.65428979049777914997096647132780849662661549547259497921173588427468759387898532",
+                "display": "0.65429"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "0.79348035874256559182605423099028400238078491128858373084939396916765189874154818",
+                "display": "0.79348"
+              },
+              {
+                "index_one_based": 6,
+                "unrounded": "0.70136877362275652447197052705297773034348004644047684387241911454579982819015349",
+                "display": "0.70137"
+              },
+              {
+                "index_one_based": 7,
+                "unrounded": "0.76395968290065422165939741231707253190890369301387717078912034275663136922560873",
+                "display": "0.76396"
+              },
+              {
+                "index_one_based": 8,
+                "unrounded": "0.72210242502670773862054697481127480465243355822165972697459524787278383581823192",
+                "display": "0.72210"
+              },
+              {
+                "index_one_based": 9,
+                "unrounded": "0.75041776176376046666064455087582779319456260782389858158546358807390074406362549",
+                "display": "0.75042"
+              },
+              {
+                "index_one_based": 10,
+                "unrounded": "0.73140404242250985829242687695248252098187449925100577661749020333435551642234688",
+                "display": "0.73140"
+              },
+              {
+                "index_one_based": 11,
+                "unrounded": "0.74423735490055686343348005215113012803357849193782863706363193595658912579183201",
+                "display": "0.74424"
+              },
+              {
+                "index_one_based": 12,
+                "unrounded": "0.73560474043634733069856973640539275748368371319265305703482002624052716775655592",
+                "display": "0.73560"
+              },
+              {
+                "index_one_based": 13,
+                "unrounded": "0.74142508661010920014401902726112299693932404105422560979050250520319904247519866",
+                "display": "0.74143"
+              },
+              {
+                "index_one_based": 14,
+                "unrounded": "0.7375068905132428102058596051754501506478754226552069650411021641235527653137309",
+                "display": "0.73751"
+              },
+              {
+                "index_one_based": 15,
+                "unrounded": "0.7401473355678757595025746791584869655401758213733547119187748957062509024702891",
+                "display": "0.74015"
+              },
+              {
+                "index_one_based": 16,
+                "unrounded": "0.73836920412232321317989257287317426487021175327528111410443204960840802799950907",
+                "display": "0.73837"
+              },
+              {
+                "index_one_based": 17,
+                "unrounded": "0.73956720221225608329244451326078900071058843406029684845109446270573046525357494",
+                "display": "0.73957"
+              },
+              {
+                "index_one_based": 18,
+                "unrounded": "0.73876031987421132882353185995052513338943228116958606207853154948167462423567224",
+                "display": "0.73876"
+              },
+              {
+                "index_one_based": 19,
+                "unrounded": "0.73930389239690582275122271477664496403887415668467168956055091184668319403629287",
+                "display": "0.73930"
+              },
+              {
+                "index_one_based": 20,
+                "unrounded": "0.73893775671534449357804549437232833782398722383022294197346409553075854927716252",
+                "display": "0.73894"
+              },
+              {
+                "index_one_based": 21,
+                "unrounded": "0.73918439977149363862420145390534834597576061994901726079886636442566002257671071",
+                "display": "0.73918"
+              },
+              {
+                "index_one_based": 22,
+                "unrounded": "0.73901826242741223448907740038962003491532345726144180790080671974346993232818377",
+                "display": "0.73902"
+              },
+              {
+                "index_one_based": 23,
+                "unrounded": "0.73913017652967102752054687865439852800610893659114558731563491650069940447888214",
+                "display": "0.73913"
+              },
+              {
+                "index_one_based": 24,
+                "unrounded": "0.73905479074691744239130251794798968220690732407241190883108202642222938869945555",
+                "display": "0.73905"
+              },
+              {
+                "index_one_based": 25,
+                "unrounded": "0.73910557192653618696278449613712945367504226145999368841728575516218880835293898",
+                "display": "0.73911"
+              },
+              {
+                "index_one_based": 26,
+                "unrounded": "0.73907136529894497634106416328487106490885806192560433106032695559335973088075752",
+                "display": "0.73907"
+              },
+              {
+                "index_one_based": 27,
+                "unrounded": "0.73909440737909117522169790411143729461367045868569135935642011784482636949053309",
+                "display": "0.73909"
+              },
+              {
+                "index_one_based": 28,
+                "unrounded": "0.73907888599499210746774094016752602682504598292695855837771152177778294098571489",
+                "display": "0.73908"
+              },
+              {
+                "index_one_based": 29,
+                "unrounded": "0.73908934140339267636385470773874723788487321002156168012067798796698246620682792",
+                "display": "0.73909"
+              },
+              {
+                "index_one_based": 30,
+                "unrounded": "0.73908229852240231098247585809094416385928464728211925132779942734467490217059414",
+                "display": "0.73908"
+              },
+              {
+                "index_one_based": 31,
+                "unrounded": "0.73908704269533223616257165889751707008831113567810409845439144563348457213068265",
+                "display": "0.73909"
+              },
+              {
+                "index_one_based": 32,
+                "unrounded": "0.73908384696500017502771315240700624707085237524926229653282884286446403620631263",
+                "display": "0.73908"
+              },
+              {
+                "index_one_based": 33,
+                "unrounded": "0.73908599964812988476709177523223914046525213781593364786219309047173656417219197",
+                "display": "0.73909"
+              },
+              {
+                "index_one_based": 34,
+                "unrounded": "0.73908454957521266078252180707699006217213539278533421410654177558096842962869866",
+                "display": "0.73908"
+              },
+              {
+                "index_one_based": 35,
+                "unrounded": "0.73908552636192443406485859560442003387078053353387131136242870276599276275661786",
+                "display": "0.73909"
+              },
+              {
+                "index_one_based": 36,
+                "unrounded": "0.73908486838671419852618506451092713739299910506234885375678911957418603480045675",
+                "display": "0.73908"
+              },
+              {
+                "index_one_based": 37,
+                "unrounded": "0.73908531160676191811021136521832492867763264035466227612947682282497338589386514",
+                "display": "0.73909"
+              },
+              {
+                "index_one_based": 38,
+                "unrounded": "0.73908501304842035641889088333232437425805254467785609395441861359630724134022732",
+                "display": "0.73909"
+              }
+            ],
+            "answer": "0.73909",
+            "certified_rounding_cell": [
+              "0.739085",
+              "0.739095"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:8",
+      "source_pdf_page": 172,
+      "notes": "From∫₀ᵃ(3e^(x/2)+1)dx=10,a>0,derive the given logarithmic recurrence;starta₁=2,report every iteration to5dpandfinalato3dp.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D01",
+        "8227:2020:M1:T9:O03:D01",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper21 Q5 June2015. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "From∫₀ᵃ(3e^(x/2)+1)dx=10,a>0,derive the given logarithmic recurrence;starta₁=2,report every iteration to5dpandfinalato3dp.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "The positive constant satisfiesa=2ln((16−a)/6).",
+          "author_derivation": "The original integral is6(e^(a/2)−1)+a. Set it equal10to get6e^(a/2)=16−a>0,so taking natural logs is valid and gives the stated rearrangement. Conversely it restores the integral condition;the originala>0andlogargument must be retained.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "integral_expression": {
+              "kind": "identity",
+              "operands": [
+                "integrate(3*exp(x/2)+1,(x,0,a))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "integral_expression": "6*exp(a/2)+a-6"
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 172,
+          "answer_printed_page": 158,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "6*exp(x/2)+x-16",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "1.732",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "2*log((16-x)/6)",
+            "start": "2",
+            "original_equation": "6*exp(x/2)+x-16",
+            "original_target_bracket": [
+              "1",
+              "2"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 5,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "2.0",
+                "display": "2.00000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.6945957207744072274202150130413080499791883435182234734493916326001711390669206",
+                "display": "1.69460"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.7377558365351680097736015998566953667885310590692312480184047138881540372459084",
+                "display": "1.73776"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.7317126161860441162590583309761227166067775432793826171449691467107145597565883",
+                "display": "1.73171"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "1.7325598798172159121132037107326380074924423280941399188158271692150753392304693",
+                "display": "1.73256"
+              },
+              {
+                "index_one_based": 6,
+                "unrounded": "1.7324411145071249599484259684246540824133427224480530138940683598975513278850465",
+                "display": "1.73244"
+              },
+              {
+                "index_one_based": 7,
+                "unrounded": "1.7324577628777897727050891162909295780900790065479961320298624255828565600706105",
+                "display": "1.73246"
+              }
+            ],
+            "answer": "1.732",
+            "certified_rounding_cell": [
+              "1.7315",
+              "1.7325"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:9",
+      "source_pdf_page": 172,
+      "notes": "The supplied recurrencexₙ₊₁=2xₙ/3+4/xₙ²,x₁=2,is stated to converge toα. Calculateαto2dpwith4dpsteps,then derive its equation and exact value. Source(i)is given setup,not an extra requested response.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O02:D01",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper2 Q2 November2007. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "The supplied recurrencexₙ₊₁=2xₙ/3+4/xₙ²,x₁=2,is stated to converge toα. Calculateαto2dpwith4dpsteps,then derive its equation and exact value. Source(i)is given setup,not an extra requested response.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x**3-12",
+              "2",
+              "3"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "2.29",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "2*x/3+4/x**2",
+            "start": "2",
+            "original_equation": "x**3-12",
+            "original_target_bracket": [
+              "2",
+              "3"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "2.0",
+                "display": "2.0000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "2.3333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                "display": "2.3333"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "2.2902494331065759637188208616780045351473922902494331065759637188208616780045351",
+                "display": "2.2902"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "2.2894287793432135023295553775758797675416494299797057229801918697965304040338701",
+                "display": "2.2894"
+              }
+            ],
+            "answer": "2.29",
+            "certified_rounding_cell": [
+              "2.285",
+              "2.295"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "α³=12,and the real limit isα=∛12.",
+          "author_derivation": "The supplied recurrence isα=2α/3+4/α²at a finite nonzero limit. A limit0cannot satisfy the recurrence because4/x²would diverge. Multiply by3α²to obtainα³=12;the real cube root is unique. This is a conditional fixed-point interpretation,not a separate proof of convergence from all starts.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "fixed_point_equation_residual": {
+              "kind": "identity",
+              "operands": [
+                "factor(3*x**2*(x-(2*x/3+4/x**2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "fixed_point_equation_residual": "x**3-12"
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": {
+        "non_assessed_given_part": "(i)defines the recurrence,initial value and convergence;responses are(ii)and(iii).",
+        "domain": "Every evaluated iterate is nonzero;finite fixed limit cannot be0."
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:10",
+      "source_pdf_page": 172,
+      "notes": "Use graphs to prove uniqueness ofcosx=2−2x,bracket the root on[0.5,1],prove the conditional fixed-point relation,and iterate from0.6to2dpwith4dpsteps.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper2 Q7 November2008. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Use graphs to prove uniqueness ofcosx=2−2x,bracket the root on[0.5,1],prove the conditional fixed-point relation,and iterate from0.6to2dpwith4dpsteps.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Sketchcosxand2−2xon[0,π/2];the first decreases more slowly,so there is exactly one intersection.",
+          "author_derivation": "The differencecosx−2+2xhas derivative2−sinx>0and opposite endpoint signs. This supplies uniqueness beyond merely seeing a plotted crossing.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(1/2,1).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((cos(x)-2+2*x).subs(x,1/2)),sign((cos(x)-2+2*x).subs(x,1)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(-1, 1)"
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 172,
+          "answer_printed_page": 158,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "If the supplied iteration converges in its retained real domain,its limit solves the original equation.",
+          "author_derivation": "Pass to the limit only where the supplied map is continuous and defined. Substitute a common limit on both sides,retain the stated branch/domain,and rearrange to the original residual0. This conditional statement is not a proof that every start converges. Cosine is continuous everywhere;the target root is in[0.5,1].",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "supplied_formula": "1-cos(x)/2",
+          "original_equation": "cos(x)-2+2*x",
+          "original_common_domain": "Cosine is continuous everywhere;the target root is in[0.5,1].",
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 172,
+          "answer_printed_page": 158,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "cos(x)-2+2*x",
+              "1/2",
+              "1"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "0.58",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "1-cos(x)/2",
+            "start": "3/5",
+            "original_equation": "cos(x)-2+2*x",
+            "original_target_bracket": [
+              "1/2",
+              "1"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "0.6",
+                "display": "0.6000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "0.58733219254516085137952375052231198056095448040576480931512511316421535909323847",
+                "display": "0.5873"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "0.58378900777915069351402076637384745033631127001271136372801214629794823450509767",
+                "display": "0.5838"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "0.58280990822012943391039146309795519477315760325751670953856049980208706303689528",
+                "display": "0.5828"
+              }
+            ],
+            "answer": "0.58",
+            "certified_rounding_cell": [
+              "0.575",
+              "0.585"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 172,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:11",
+      "source_pdf_page": 173,
+      "notes": "Giveny=x²cosxon[0,π/2]with maximumM,derive tanx=2/x,bracket its radian root on[1,1.2],then usexₙ₊₁=atan(2/xₙ)to2dpwith4dpsteps. Author start1.1is explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O02:D01"
+      ],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper22 Q7 November2009. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Giveny=x²cosxon[0,π/2]with maximumM,derive tanx=2/x,bracket its radian root on[1,1.2],then usexₙ₊₁=atan(2/xₙ)to2dpwith4dpsteps. Author start1.1is explicit.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "At the interior maximum,tanx=2/x.",
+          "author_derivation": "Differentiatex²cosxto getx(2cosx−xsinx). The named maximum is interior,so0<x<π/2andcosx>0;only on that branch may we divide byxcosx. The endpoint stationary valuex=0is not the named interior maximum.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(x**2*cos(x),x)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "derivative": "2*x*cos(x)-x**2*sin(x)"
+          },
+          "source_pdf_page": 173,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 173,
+          "answer_printed_page": 159,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(1,6/5).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((tan(x)-2/x).subs(x,1)),sign((tan(x)-2/x).subs(x,6/5)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(-1, 1)"
+          },
+          "source_pdf_page": 173,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 173,
+          "answer_printed_page": 159,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "tan(x)-2/x",
+              "1",
+              "6/5"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.08",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "atan(2/x)",
+            "start": "11/10",
+            "original_equation": "tan(x)-2/x",
+            "original_target_bracket": [
+              "1",
+              "6/5"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.1",
+                "display": "1.1000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.0679531158670357919004396623944738863221288846897880794759979443579784671628294",
+                "display": "1.0680"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.0803383538990869704981980507127575423290729951698321756196298900100480834624389",
+                "display": "1.0803"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.0755320901277876591392825870601830944934954338742639990785542891980604934579724",
+                "display": "1.0755"
+              }
+            ],
+            "answer": "1.08",
+            "certified_rounding_cell": [
+              "1.075",
+              "1.085"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 173,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:12",
+      "source_pdf_page": 173,
+      "notes": "Giveny=xe^(2x),find exact minimumM;derive the logarithmic iteration for itsy=20intersection;start1.3,show4dpstepsandfind the root to2dp.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M1:T8:O04:D02",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01",
+        "8227:2020:M2:T4:O02:D01"
+      ],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper2 Q7 June2009. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Giveny=xe^(2x),find exact minimumM;derive the logarithmic iteration for itsy=20intersection;start1.3,show4dpstepsandfind the root to2dp.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(-1/2,(x*exp(2*x)).subs(x,-1/2))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(-1/2,-1/(2*E))",
+          "method": "The original derivativee^(2x)(1+2x)has exactly one zeroat−½;it changes negative to positive. Substitute in the original curve for the exact minimum ordinate.",
+          "assertions": [
+            {
+              "expression": "diff(x*exp(2*x),x).subs(x,-1/2)",
+              "expected": "0"
+            }
+          ],
+          "source_pdf_page": 173,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "The intersection withy=20satisfiesx=½ln(20/x),onx>0.",
+          "author_derivation": "The original equationxe^(2x)=20requires positivex. Divide byxand take natural logs to obtain2x=ln(20/x). Conversely exponentiating withx>0recovers the original. The positive branch is strictly increasing and has a unique intersection.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 173,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 173,
+          "answer_printed_page": 159,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x*exp(2*x)-20",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.35",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "log(20/x)/2",
+            "start": "13/10",
+            "original_equation": "x*exp(2*x)-20",
+            "original_target_bracket": [
+              "1",
+              "2"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.3",
+                "display": "1.3000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.3666840045432499706998637946307931892362175834287970448841451503825370869999947",
+                "display": "1.3667"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.341672451170574926745605729442369920659894030522329325810427335782098180020393",
+                "display": "1.3417"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.3509076699646918841644567664748095150654190695478481817710416451785587800923629",
+                "display": "1.3509"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "1.3474777794531982276745367880497241030825963562280986629599296804118339880911625",
+                "display": "1.3475"
+              }
+            ],
+            "answer": "1.35",
+            "certified_rounding_cell": [
+              "1.345",
+              "1.355"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 173,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-170.png",
+            "sha256": "fe40ca23b2aadb6babd1e9a9a3372060af3aa04deaeef6279604123a4445eb9b"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:13",
+      "source_pdf_page": 174,
+      "notes": "Showuniquelnx=2−x²intersection graphically,bracket on[1.3,1.4],prove the supplied principal-square-root fixed-point implication,and iterate from1.3to2dpwith4dpsteps.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper22 Q6 June2010. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Showuniquelnx=2−x²intersection graphically,bracket on[1.3,1.4],prove the supplied principal-square-root fixed-point implication,and iterate from1.3to2dpwith4dpsteps.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Sketchlnxincreasing and2−x²decreasing onx>0;they meet exactly once.",
+          "author_derivation": "The residuallnx+x²−2has derivative1/x+2x>0on the original log domain,with negative limit near0and positive values eventually. Therefore exactly one real-domain solution exists.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(13/10,7/5).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((log(x)+x**2-2).subs(x,13/10)),sign((log(x)+x**2-2).subs(x,7/5)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(-1, 1)"
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 174,
+          "answer_printed_page": 160,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "If the supplied iteration converges in its retained real domain,its limit solves the original equation.",
+          "author_derivation": "Pass to the limit only where the supplied map is continuous and defined. Substitute a common limit on both sides,retain the stated branch/domain,and rearrange to the original residual0. This conditional statement is not a proof that every start converges. x>0and2−lnx≥0;the principal square root enforces a nonnegative finite limit,which cannot be0because the logarithm then diverges.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "supplied_formula": "sqrt(2-log(x))",
+          "original_equation": "log(x)+x**2-2",
+          "original_common_domain": "x>0and2−lnx≥0;the principal square root enforces a nonnegative finite limit,which cannot be0because the logarithm then diverges.",
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 174,
+          "answer_printed_page": 160,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "log(x)+x**2-2",
+              "13/10",
+              "7/5"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.31",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "sqrt(2-log(x))",
+            "start": "13/10",
+            "original_equation": "log(x)+x**2-2",
+            "original_target_bracket": [
+              "13/10",
+              "7/5"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "1.3",
+                "display": "1.3000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.3181941190630873649651459253327165243009110518294792199601780012491962307464704",
+                "display": "1.3182"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.3129117608249040671904284267823380067484405340716558241098863809196773092114594",
+                "display": "1.3129"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.3144400371198839804817028244607532061464041981128758183840605494769636983636369",
+                "display": "1.3144"
+              }
+            ],
+            "answer": "1.31",
+            "certified_rounding_cell": [
+              "1.305",
+              "1.315"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:14",
+      "source_pdf_page": 174,
+      "notes": "Forx³−8x−13=0,find consecutive-integer bounds and use supplied real cube-root iterationto2dpwith4dpsteps. Author start3is explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper32 Q2 November2009. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Forx³−8x−13=0,find consecutive-integer bounds and use supplied real cube-root iterationto2dpwith4dpsteps. Author start3is explicit.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(3,4)"
+            ]
+          },
+          "printed_key_normalised": "Tuple(3,4)",
+          "method": "The original cubic values at3and4are−10and19,respectively;it is continuous and the question supplies a unique real root.",
+          "assertions": [
+            {
+              "expression": "Tuple((x**3-8*x-13).subs(x,3),(x**3-8*x-13).subs(x,4))",
+              "expected": "Tuple(-10,19)"
+            }
+          ],
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x**3-8*x-13",
+              "3",
+              "4"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "3.43",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "real_root(8*x+13,3)",
+            "start": "3",
+            "original_equation": "x**3-8*x-13",
+            "original_target_bracket": [
+              "3",
+              "4"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "3.0",
+                "display": "3.0000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "3.3322218516459532600954505051851190044096166719500623591329666509804053424388657",
+                "display": "3.3322"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "3.4101706646026870428965072762910413025677965833273502914975322163010665444767824",
+                "display": "3.4102"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "3.4279519634529642822690251572556928327049389726370957619182124518000799458701211",
+                "display": "3.4280"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "3.4319824013522270174308746532456620955249698947143440109223051738367133233262569",
+                "display": "3.4320"
+              }
+            ],
+            "answer": "3.43",
+            "certified_rounding_cell": [
+              "3.425",
+              "3.435"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:15",
+      "source_pdf_page": 174,
+      "notes": "Bracketx³−2x−2on[1,2],prove the rational recurrence’s conditional fixed-point implication,and calculate to2dpwith4dpsteps. Author start2is explicit;avoid denominator zeros.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O03:D01",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper3 Q4 June2009. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Bracketx³−2x−2on[1,2],prove the rational recurrence’s conditional fixed-point implication,and calculate to2dpwith4dpsteps. Author start2is explicit;avoid denominator zeros.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "A root lies in(1,2).",
+          "author_derivation": "The original equation residual is continuous on this interval and has opposite endpoint signs. This proves existence;uniqueness needs its separate graph/monotonicity argument.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((x**3-2*x-2).subs(x,1)),sign((x**3-2*x-2).subs(x,2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "(-1, 1)"
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 174,
+          "answer_printed_page": 160,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "If the supplied iteration converges in its retained real domain,its limit solves the original equation.",
+          "author_derivation": "Pass to the limit only where the supplied map is continuous and defined. Substitute a common limit on both sides,retain the stated branch/domain,and rearrange to the original residual0. This conditional statement is not a proof that every start converges. 3α²−2must remain nonzero at a finite limit;at either denominator zero the numerator is nonzero,so a finite convergent sequence cannot have that limit. Multiplication then recoversα³−2α−2=0.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "supplied_formula": "(2*x**3+2)/(3*x**2-2)",
+          "original_equation": "x**3-2*x-2",
+          "original_common_domain": "3α²−2must remain nonzero at a finite limit;at either denominator zero the numerator is nonzero,so a finite convergent sequence cannot have that limit. Multiplication then recoversα³−2α−2=0.",
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 174,
+          "answer_printed_page": 160,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "x**3-2*x-2",
+              "1",
+              "2"
+            ],
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "1.77",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "(2*x**3+2)/(3*x**2-2)",
+            "start": "2",
+            "original_equation": "x**3-2*x-2",
+            "original_target_bracket": [
+              "1",
+              "2"
+            ],
+            "answer_decimal_places": 2,
+            "display_decimal_places": 4,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "2.0",
+                "display": "2.0000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "1.8",
+                "display": "1.8000"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "1.769948186528497409326424870466321243523316062176165803108808290155440414507772",
+                "display": "1.7699"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "1.7692926629059409349459624803982912087005705650287908933655534905284193252094615",
+                "display": "1.7693"
+              }
+            ],
+            "answer": "1.77",
+            "certified_rounding_cell": [
+              "1.765",
+              "1.775"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Exercise-6B:16",
+      "source_pdf_page": 174,
+      "notes": "Parametricx=1/(2t+1)²,y=√(t+2)has gradient−1at parameterp. Derive the supplied sixth-root relation with its sign/domain constraints;start0.7,show5dpstepsandfindpto3dp.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D02",
+        "8227:2020:M2:T4:O03:D03",
+        "8227:2020:M2:T6:O03:D02",
+        "8227:2020:M2:T6:O04:D01",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Keep graph/root-count,sign bracket,supplied rearrangement,iteration,conditional limit and precision decisions distinct. Explicit curves remain explicit;only16is parametric. Author-selected starts are labelled where the source leaves them open.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": true,
+      "exam_style_basis": "Printed attribution 9709 Paper21 Q6 June2012. Internal lead only;original examination not newly verified.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "within",
+          "quoted_value": "Parametricx=1/(2t+1)²,y=√(t+2)has gradient−1at parameterp. Derive the supplied sixth-root relation with its sign/domain constraints;start0.7,show5dpstepsandfindpto3dp.",
+          "reason": "Execute/interpret the supplied formulas and understand failure;formal derivative convergence conditions are not imposed."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Preserve the explicitly requested final2/3/5decimal places and the4/5decimal intermediate displays. Trig arguments/inverse tangent are radians. Full internal iterates remain unrounded.",
+        "comparison": "Each numeric answer has an independent original-equation root reference. Recorded actual iterations terminate only after an original-equation rounding-cell sign certificate;source-specific uniqueness remains a separate argument."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "p=(p+2)^(1/6)−½,on the branchp>−½.",
+          "author_derivation": "Fromx=(2t+1)^(−2),y=√(t+2),derive dy/dx=−(2t+1)³/[8√(t+2)]. Finite gradient−1requires t>−2andt≠−½,and its sign forces2p+1>0. Thus(2p+1)³=8√(p+2),so p+½=(p+2)^(1/6)with the positive branch. Raising powers without this sign check could add invalid roots.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "original_parametric_derivative": {
+              "kind": "parametric-derivative",
+              "variable": "t",
+              "operands": [
+                "1/(2*t+1)**2",
+                "sqrt(t+2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original_parametric_derivative": "-(2*t+1)**3/(8*sqrt(t+2))"
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 174,
+          "answer_printed_page": 160,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "(2*x+1)**3-8*sqrt(x+2)",
+              "3/5",
+              "4/5"
+            ],
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "0.678",
+          "method": "Run the source recurrence from the stated start,or an explicitly labelled author start if unspecified. Retain each unrounded state and required display;certify the final decimal cell against the original continuous equation and compare an independently bracketed reference.",
+          "iteration_trace": {
+            "formula": "(x+2)**(1/6)-1/2",
+            "start": "7/10",
+            "original_equation": "(2*x+1)**3-8*sqrt(x+2)",
+            "original_target_bracket": [
+              "3/5",
+              "4/5"
+            ],
+            "answer_decimal_places": 3,
+            "display_decimal_places": 5,
+            "records": [
+              {
+                "index_one_based": 1,
+                "unrounded": "0.7",
+                "display": "0.70000"
+              },
+              {
+                "index_one_based": 2,
+                "unrounded": "0.68003247840211316266895490891912747048819760046393965434664408703588987000970546",
+                "display": "0.68003"
+              },
+              {
+                "index_one_based": 3,
+                "unrounded": "0.6785735117981406630220068003731713141555120673941539977670859750326970722288685",
+                "display": "0.67857"
+              },
+              {
+                "index_one_based": 4,
+                "unrounded": "0.67846655478885265814955706176487903656567121926605311561041327753760171374616103",
+                "display": "0.67847"
+              },
+              {
+                "index_one_based": 5,
+                "unrounded": "0.67845871184839381045690288799591103549669754670823443741088556926881598476384769",
+                "display": "0.67846"
+              }
+            ],
+            "answer": "0.678",
+            "certified_rounding_cell": [
+              "0.6775",
+              "0.6785"
+            ],
+            "certificate": "At least three actual applications,two consecutive equal requested displays,and an opposite-sign original-equation bracket strictly inside the selected root interval. Source-specific uniqueness is justified separately;stability alone is not the certificate."
+          },
+          "source_pdf_page": 174,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-174.png",
+            "sha256": "6af2a16581c0a0fe6ea69f98ce02c2b719f5fba7e1d28d857c8303b8a1b396cd"
+          },
+          "answer_pdf_page": 348,
+          "answer_printed_page": 334,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "source_interpretation": {
+        "original_parameter_domain": "t≥−2,t≠−½;finite slope requires t>−2. Gradient−1forcesp>−½.",
+        "key_label_check": "Scale4 confirms the key prints16(ii),matching the exercise. The suspected(iii)label was a small-contact reading error and is cleared."
+      }
+    }
+  ]
+}

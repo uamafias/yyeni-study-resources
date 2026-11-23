@@ -1,0 +1,1128 @@
+{
+  "scope": "All opening tasks/tables/warnings,with author-derived answer absence and source algebraic error explicit.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C6:Prompt:1",
+      "source_pdf_page": 158,
+      "notes": "Suggest other iterative-approximation situations,then decide algebraic versus numerical methods and find a solution of five equations:x²−4x+3,x²+10x+8,x⁵−5x+3,x³−x,e^x−4x. The source’s blanket quintic claim is false;one valid solution per equation is sufficient.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [
+        "8227:2020:M2:T1:O04:D02"
+      ],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01"
+      ],
+      "mapping_rationale": "Rendered158 asks which equations admit algebraic solutions and asks for an accurate or approximate solution. It does not require completing the square, a graphical root estimate or any particular numerical method. Those chosen author methods do not become directly assessed8227demands; the following159graphs supply teaching support only.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "Suggest other iterative-approximation situations,then decide algebraic versus numerical methods and find a solution of five equations:x²−4x+3,x²+10x+8,x⁵−5x+3,x³−x,e^x−4x. The source’s blanket quintic claim is false;one valid solution per equation is sufficient.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "context",
+        "i",
+        "ii",
+        "iii-algebraic-claim",
+        "iv",
+        "v"
+      ],
+      "subparts": [
+        {
+          "subpart": "context",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "Examples include refining a measurement estimate or adjusting a trial numerical solution using feedback.",
+          "author_derivation": "The opening asks for other situations analogous to successive golf attempts. These are possible author examples,not a printed model answer,and do not automatically assess a numerical-equation objective.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            347,
+            348
+          ],
+          "source_pdf_page": 158,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "FiniteSet(*solve(x**2-4*x+3,x))"
+            ]
+          },
+          "method": "Factor(x−1)(x−3)=0. Exact polynomial algebra is available;the prompt requires only a valid solution,not necessarily every root.",
+          "author_check_target_normalised": "FiniteSet(1,3)",
+          "check_mode": "no key",
+          "source_pdf_page": 158,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            347,
+            348
+          ]
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "FiniteSet(*solve(x**2+10*x+8,x))"
+            ]
+          },
+          "method": "Complete the square or use the quadratic formula. The discriminant68is positive;both exact roots are shown for author QA,though one solution satisfies the prompt.",
+          "author_check_target_normalised": "FiniteSet(-5-sqrt(17),-5+sqrt(17))",
+          "check_mode": "no key",
+          "source_pdf_page": 158,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            347,
+            348
+          ]
+        },
+        {
+          "subpart": "iii-algebraic-claim",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key wrong",
+          "author_conclusion": "This quintic does admit algebraic solutions:its factorisation is(x²+x−1)(x³−x²+2x−3),so(−1±√5)/2are exact roots.",
+          "author_derivation": "Expand the proposed integer-coefficient factors and substitute both quadratic roots into the originalx⁵−5x+3. This directly contradicts the printed statement on159that this particular quintic cannot be solved algebraically. A general quintic has no general radical formula,but that fact does not apply to every particular quintic. The remaining cubic can be treated numerically within learner scope;no cubic radical formula is imposed.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "factorisation_residual": {
+              "kind": "identity",
+              "operands": [
+                "expand((x**2+x-1)*(x**3-x**2+2*x-3))-(x**5-5*x+3)"
+              ]
+            },
+            "two_exact_roots": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((x**5-5*x+3).subs(x,(-1+sqrt(5))/2),(x**5-5*x+3).subs(x,(-1-sqrt(5))/2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "factorisation_residual": "0",
+            "two_exact_roots": "Tuple(0,0)"
+          },
+          "source_pdf_page": 158,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 159,
+          "answer_printed_page": 145,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "FiniteSet(*solve(x**3-x,x))"
+            ]
+          },
+          "method": "Factorx(x−1)(x+1). Each root is exact;the full set is author breadth evidence,not an extra learner demand.",
+          "author_check_target_normalised": "FiniteSet(-1,0,1)",
+          "check_mode": "no key",
+          "source_pdf_page": 158,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            347,
+            348
+          ]
+        },
+        {
+          "subpart": "v",
+          "operation": {
+            "kind": "bracketed-source-root",
+            "operands": [
+              "exp(x)-4*x",
+              "0",
+              "1"
+            ],
+            "rounding": {
+              "significant_figures": 3
+            }
+          },
+          "printed_key_normalised": "0.357",
+          "method": "Use the continuous differencee^x−4x on[0,1],with opposite endpoint signs. Independent bisection gives the lower root;round to the source graph label’s3significant figures. Other roots exist,so this does not claim uniqueness.",
+          "source_pdf_page": 158,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 159,
+          "answer_printed_page": 145,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting algebraic-versus-numerical method exploration; no prescribed method-specific coverage"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Example:1",
+      "source_pdf_page": 160,
+      "notes": "Showe^x−x=x²+2has a root between2and3. The worked source gives two valid endpoint-comparison methods,continued161;continuity is necessary in either interpretation.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Actual requested roots or sign brackets are assessed. Unprompted numerical tables and warning examples teach but do not add separately assessed source coverage. Decimal/bisection implementation details are supporting extension rather than a newly prescribed numerical algorithm.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "Showe^x−x=x²+2has a root between2and3. The worked source gives two valid endpoint-comparison methods,continued161;continuity is necessary in either interpretation.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "proof"
+      ],
+      "subparts": [
+        {
+          "subpart": "proof",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "There is at least one root ofe^x−x=x²+2between2and3.",
+          "author_derivation": "Letg=e^x−x²−x−2,continuous on[2,3]. g(2)=e²−8<0andg(3)=e³−14>0,so the intermediate-value argument gives a root. Equivalently compare the original LHSandRHSat both endpoints:the ordering reverses. Neither method by itself claims a unique root.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "endpoint_signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign(exp(2)-8),sign(exp(3)-14))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "endpoint_signs": "Tuple(-1,1)"
+          },
+          "valid_alternative_methods": [
+            "Compare original left/right side endpoint ordering.",
+            "Rearrange to a continuous difference and show its sign change."
+          ],
+          "source_pdf_page": 160,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Prompt:6",
+      "source_pdf_page": 162,
+      "notes": "How many decimal-search steps from0reach0.012,0.385and0.989? The search convention and counted trial lists are explicit. This headingless prompt was absent from the prior inventory.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02"
+      ],
+      "mapping_rationale": "Actual requested roots or sign brackets are assessed. Unprompted numerical tables and warning examples teach but do not add separately assessed source coverage. Decimal/bisection implementation details are supporting extension rather than a newly prescribed numerical algorithm.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "How many decimal-search steps from0reach0.012,0.385and0.989? The search convention and counted trial lists are explicit. This headingless prompt was absent from the prior inventory.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "0.012",
+        "0.385",
+        "0.989"
+      ],
+      "subparts": [
+        {
+          "subpart": "0.012",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "3+2"
+            ]
+          },
+          "printed_key_normalised": "5",
+          "method": "Under the source decimal-search convention,start0is known;count every positive trial,including the two overshoots at coarser decimal levels. Three-place targetabcwith nonzero final digit requiresa+b+c+2trials. The explicit generated trial list separately verifies that count for these three targets.",
+          "decimal_trial_points": [
+            "1/10",
+            "1/100",
+            "1/50",
+            "11/1000",
+            "3/250"
+          ],
+          "source_interpretation": "Illustrates an isolated monotone crossing,with exact hits and no cached duplicate trials. Trailing-zero targets can terminate earlier;the generic digit formula is not extended to them.",
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "0.385",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "16+2"
+            ]
+          },
+          "printed_key_normalised": "18",
+          "method": "Under the source decimal-search convention,start0is known;count every positive trial,including the two overshoots at coarser decimal levels. Three-place targetabcwith nonzero final digit requiresa+b+c+2trials. The explicit generated trial list separately verifies that count for these three targets.",
+          "decimal_trial_points": [
+            "1/10",
+            "1/5",
+            "3/10",
+            "2/5",
+            "31/100",
+            "8/25",
+            "33/100",
+            "17/50",
+            "7/20",
+            "9/25",
+            "37/100",
+            "19/50",
+            "39/100",
+            "381/1000",
+            "191/500",
+            "383/1000",
+            "48/125",
+            "77/200"
+          ],
+          "source_interpretation": "Illustrates an isolated monotone crossing,with exact hits and no cached duplicate trials. Trailing-zero targets can terminate earlier;the generic digit formula is not extended to them.",
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "0.989",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "26+2"
+            ]
+          },
+          "printed_key_normalised": "28",
+          "method": "Under the source decimal-search convention,start0is known;count every positive trial,including the two overshoots at coarser decimal levels. Three-place targetabcwith nonzero final digit requiresa+b+c+2trials. The explicit generated trial list separately verifies that count for these three targets.",
+          "decimal_trial_points": [
+            "1/10",
+            "1/5",
+            "3/10",
+            "2/5",
+            "1/2",
+            "3/5",
+            "7/10",
+            "4/5",
+            "9/10",
+            "1",
+            "91/100",
+            "23/25",
+            "93/100",
+            "47/50",
+            "19/20",
+            "24/25",
+            "97/100",
+            "49/50",
+            "99/100",
+            "981/1000",
+            "491/500",
+            "983/1000",
+            "123/125",
+            "197/200",
+            "493/500",
+            "987/1000",
+            "247/250",
+            "989/1000"
+          ],
+          "source_interpretation": "Illustrates an isolated monotone crossing,with exact hits and no cached duplicate trials. Trailing-zero targets can terminate earlier;the generic digit formula is not extended to them.",
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting decimal-search extension;no separately prescribed algorithm coverage"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Activity:1",
+      "source_pdf_page": 162,
+      "notes": "Investigate bisection counts for1,2,3andndecimal accuracy from a unit interval. Separate absolute-error guarantees from identical rounding of bracket endpoints;no universal digit-count guarantee is inferred from interval width alone.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Actual requested roots or sign brackets are assessed. Unprompted numerical tables and warning examples teach but do not add separately assessed source coverage. Decimal/bisection implementation details are supporting extension rather than a newly prescribed numerical algorithm.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "Investigate bisection counts for1,2,3andndecimal accuracy from a unit interval. Separate absolute-error guarantees from identical rounding of bracket endpoints;no universal digit-count guarantee is inferred from interval width alone.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "absolute-error-model",
+        "rounded-display-model"
+      ],
+      "subparts": [
+        {
+          "subpart": "absolute-error-model",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Afterkhalvings of an interval of length1,the midpoint error is at most2^(−k−1). For tolerance½×10^(−d),k≥ceil(dlog₂10):4,7,10for d=1,2,3.",
+          "author_derivation": "Each bisection divides width by2. Using the midpoint gives half that width as a worst-case absolute error bound. This answers an absolute-error interpretation. It is different from requiring every number in the bracket to round to the same d-decimal display. The source answer itself notes dependence on endpoints and gives examples where four rather than five steps suffice for one decimal.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "midpoint_step_counts": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(ceiling(log(10)/log(2)),ceiling(2*log(10)/log(2)),ceiling(3*log(10)/log(2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "midpoint_step_counts": "Tuple(4,7,10)"
+          },
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "rounded-display-model",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "No finite uniform step count alone guarantees that an arbitrary root’s entire bracket rounds to one d-decimal value;check the actual bracket relative to rounding boundaries.",
+          "author_derivation": "A bracket can remain arbitrarily close to or straddle a half-unit rounding boundary even when very narrow. The source describes this endpoint dependence,including[0.3125,0.375]being inconclusive at one decimal. For a particular root continue until the bracket lies in one rounding cell,or explicitly report a midpoint with its absolute error. Formal bisection step-count analysis is supporting enrichment,not a newly required8227algorithm.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 347,
+          "answer_printed_page": 333,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting bisection step-count investigation;no prescribed algorithm demand",
+      "scope_check": {
+        "status": "out-of-scope",
+        "basis": "The syllabus requires locating roots and supplied iteration,but not a formal bisection step-count algorithm. Retain the investigation internally as accuracy support.",
+        "excluded_or_qualified_parts": [
+          "whole formal step-count investigation"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:1",
+      "source_pdf_page": 161,
+      "notes": "Unprompted decimal search for the middle root ofx⁵−5x+3:all eight tenths and three hundredths table entries,sign bracket and midpoint/error interpretation. This is teaching support rather than another posed problem.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02",
+        "8227:2020:M2:T6:O04:D02"
+      ],
+      "mapping_rationale": "Actual requested roots or sign brackets are assessed. Unprompted numerical tables and warning examples teach but do not add separately assessed source coverage. Decimal/bisection implementation details are supporting extension rather than a newly prescribed numerical algorithm.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "Unprompted decimal search for the middle root ofx⁵−5x+3:all eight tenths and three hundredths table entries,sign bracket and midpoint/error interpretation. This is teaching support rather than another posed problem.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "tenths-0",
+        "tenths-1",
+        "tenths-2",
+        "tenths-3",
+        "tenths-4",
+        "tenths-5",
+        "tenths-6",
+        "tenths-7",
+        "hundredths-0",
+        "hundredths-1",
+        "hundredths-2",
+        "bracket-and-midpoint"
+      ],
+      "subparts": [
+        {
+          "subpart": "tenths-0",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,0/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "3.00",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-1",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,1/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "2.50",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-2",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,2/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "2.00",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-3",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,3/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "1.50",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-4",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,4/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "1.01",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-5",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,5/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "0.53",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-6",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,6/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "0.08",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "tenths-7",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,7/10)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "-0.33",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 161,
+          "answer_printed_page": 147,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "hundredths-0",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,60/100)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "0.08",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "hundredths-1",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,61/100)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "0.03",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "hundredths-2",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,62/100)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "-0.01",
+          "method": "Evaluate the original quintic exactly at this source grid node,then compare the printed2decimal-place table entry.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "bracket-and-midpoint",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The relevant root lies in[0.61,0.62];the midpoint0.615has absolute error at most0.005.",
+          "author_derivation": "The original polynomial is continuous;the endpoint signs are positive and negative. Every point in the bracket lies within half its width of the midpoint. The root’s one-decimal display is0.6;the midpoint’s three written decimals do not themselves mean three-decimal accuracy.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 161,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-158.png",
+            "sha256": "1736ab79faf4f2f86dfa475f9b266e8cbb36f56cd3f87b3325e938572191b589"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting decimal-search worked illustration"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:2",
+      "source_pdf_page": 162,
+      "notes": "Unprompted first three bisection trials for the quintic:½,¾,⅝and the resulting nested brackets. Signs are decided before rounded table display.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D02"
+      ],
+      "mapping_rationale": "Actual requested roots or sign brackets are assessed. Unprompted numerical tables and warning examples teach but do not add separately assessed source coverage. Decimal/bisection implementation details are supporting extension rather than a newly prescribed numerical algorithm.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "Unprompted first three bisection trials for the quintic:½,¾,⅝and the resulting nested brackets. Signs are decided before rounded table display.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "first",
+        "second",
+        "third"
+      ],
+      "subparts": [
+        {
+          "subpart": "first",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,1/2)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "0.53",
+          "method": "Evaluate the true midpoint value without rounding the decision sign;retain the half interval where the continuous original function changes sign.",
+          "resulting_bracket": [
+            "1/2",
+            "1"
+          ],
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "second",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,3/4)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "-0.51",
+          "method": "Evaluate the true midpoint value without rounding the decision sign;retain the half interval where the continuous original function changes sign.",
+          "resulting_bracket": [
+            "1/2",
+            "3/4"
+          ],
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "third",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(x**5-5*x+3).subs(x,5/8)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "-0.03",
+          "method": "Evaluate the true midpoint value without rounding the decision sign;retain the half interval where the continuous original function changes sign.",
+          "resulting_bracket": [
+            "1/2",
+            "5/8"
+          ],
+          "source_pdf_page": 162,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 162,
+          "answer_printed_page": 148,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting bisection worked illustration"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C6:Worked-illustration:3",
+      "source_pdf_page": 163,
+      "notes": "Three unprompted sign-search failure warnings:an even/touching root,three close cubic roots,and the reciprocal discontinuity at2.7continued164. Graphs warn why sign change alone is neither a full root count nor a substitute for continuity.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T6:O01:D01",
+        "8227:2020:M2:T6:O01:D02"
+      ],
+      "mapping_rationale": "Actual requested roots or sign brackets are assessed. Unprompted numerical tables and warning examples teach but do not add separately assessed source coverage. Decimal/bisection implementation details are supporting extension rather than a newly prescribed numerical algorithm.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt,activity,example or teaching illustration.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT08",
+          "status": "not applicable",
+          "quoted_value": "Three unprompted sign-search failure warnings:an even/touching root,three close cubic roots,and the reciprocal discontinuity at2.7continued164. Graphs warn why sign change alone is neither a full root count nor a substitute for continuity.",
+          "reason": "No formal fixed-point convergence condition requested in this opening. Interval continuity and sign changes are distinct from a derivative convergence criterion."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Opening equations ask an accurate or approximate solution without a fixed decimal requirement. Printed graphs have rounded labels;worked sign-search tables display2decimal places.",
+        "comparison": "Do not infer root accuracy from all displayed calculator digits. A bracket gives existence and an error interval;it does not establish uniqueness without a separate argument."
+      },
+      "expected_subpart_labels": [
+        "touching-root",
+        "clustered-roots",
+        "discontinuity"
+      ],
+      "subparts": [
+        {
+          "subpart": "touching-root",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "A tangent/even-multiplicity root need not change sign.",
+          "author_derivation": "For example(x−1)²has a root1but is positive on either side. Figure6.3shows an x-axis touch followed by a later crossing. A sign-change search can miss the touching root. The graph is illustrative,not enough information to recover its exact equation.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "touch_counterexample": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(((x-1)**2).subs(x,0),((x-1)**2).subs(x,1),((x-1)**2).subs(x,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "touch_counterexample": "Tuple(1,0,1)"
+          },
+          "source_pdf_page": 163,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 163,
+          "answer_printed_page": 149,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "clustered-roots",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The cubic has roots0.3,0.7,0.9;one sign bracket[0,1]does not prove there is only one root.",
+          "author_derivation": "Factor the originalx³−1.9x²+1.11x−0.189=(x−0.3)(x−0.7)(x−0.9). f(0)<0,f(1)>0andf(0.5)>0,so bisection can settle on the first root while missing the later pair. A separate graph/root-count argument is needed.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "factorisation": {
+              "kind": "identity",
+              "operands": [
+                "expand((x-3/10)*(x-7/10)*(x-9/10))-(x**3-19*x**2/10+111*x/100-189/1000)"
+              ]
+            },
+            "signs": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign((x**3-19*x**2/10+111*x/100-189/1000).subs(x,0)),sign((x**3-19*x**2/10+111*x/100-189/1000).subs(x,1)),sign((x**3-19*x**2/10+111*x/100-189/1000).subs(x,1/2)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "factorisation": "0",
+            "signs": "Tuple(-1,1,1)"
+          },
+          "source_pdf_page": 163,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 163,
+          "answer_printed_page": 149,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "discontinuity",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "1/(x−2.7)has no root;an apparent opposite-sign bracket across2.7violates continuity.",
+          "author_derivation": "The reciprocal numerator is1and never zero. At2.7the function is undefined,and its opposite one-sided infinities explain the sign reversal. Blind interval subdivision can converge to this pole. Never promote a pole to a root.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "pole_limits": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(limit(1/(x-27/10),x,27/10,dir=\"-\"),limit(1/(x-27/10),x,27/10,dir=\"+\"))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "pole_limits": "Tuple(-oo,oo)"
+          },
+          "source_pdf_page": 163,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "answer_pdf_page": 164,
+          "answer_printed_page": 150,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C6-162.png",
+            "sha256": "a009d9fa994f726c455a8979f15b7c054816f3282ed521f51d267808f4f20c9b"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting sign-search warning illustrations"
+    }
+  ]
+}

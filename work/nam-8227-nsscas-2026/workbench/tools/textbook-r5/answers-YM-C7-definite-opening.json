@@ -1,0 +1,1536 @@
+{
+  "scope": "Complete rendered334–337census;valid integrals independently recomputed,and internal-pole defect diagnosed.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-11:1",
+      "source_pdf_page": 334,
+      "notes": "Recover f from second derivative12/x³ and stationary point(2,10),requiring TWO constants and both constraints.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O02:D01",
+        "8227:2020:M1:T9:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The requested result determines direct coverage: a derivative-only task assesses differentiation; reverse recognition is explicit when recovering y/f from a given derivative. An arbitrary integration constant is not the demand to EVALUATE that constant from an initial condition.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−3, −2, −1",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Recover f from second derivative12/x³ and stationary point(2,10),requiring TWO constants and both constraints.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "curve"
+      ],
+      "subparts": [
+        {
+          "subpart": "curve",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(integrate(12/x**3,x)+Rational(3,2),x)+4"
+            ]
+          },
+          "printed_key_normalised": "6/x+3*x/2+4",
+          "method": "Integrate ORIGINAL fsecond12/x³. Stationary x2 imposes fprime(2)=0 and fixes c1=3/2. Integrate again and impose f(2)=10 to fix c2=4. The given point selects x>0;the negative component has independent constants.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "additional_operations": {
+            "original-second-and-point": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(6/x+3*x/2+4,x,2)-12/x**3,diff(6/x+3*x/2+4,x).subs(x,2),(6/x+3*x/2+4).subs(x,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-second-and-point": "Tuple(0,0,10)"
+          },
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 626,
+          "answer_printed_page": "A40",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-11:2",
+      "source_pdf_page": 334,
+      "notes": "Find first derivative from a second derivative and stationary abscissa,then use a separate curve point to find the stationary ordinate.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O02:D01",
+        "8227:2020:M1:T9:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The requested result determines direct coverage: a derivative-only task assesses differentiation; reverse recognition is explicit when recovering y/f from a given derivative. An arbitrary integration constant is not the demand to EVALUATE that constant from an initial condition.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−3, 0, −2, 1, −1",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Find first derivative from a second derivative and stationary abscissa,then use a separate curve point to find the stationary ordinate.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-derivative",
+        "b-P"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-derivative",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(24/x**3-4,x)+11"
+            ]
+          },
+          "printed_key_normalised": "-12/x**2-4*x+11",
+          "method": "Integrate ORIGINAL ysecond24/x³−4. The supplied stationary abscissa2 gives yprime2=0,so c1=11. No original curve ordinate is given in(a).",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "additional_operations": {
+            "stationary-condition": {
+              "kind": "identity",
+              "operands": [
+                "(-12/x**2-4*x+11).subs(x,2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "stationary-condition": "0"
+          },
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 626,
+          "answer_printed_page": "A40",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-P",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(2,(integrate(-12/x**2-4*x+11,x)-8).subs(x,2))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(2,12)",
+          "method": "Integrate the independently recovered first derivative. Original point(1,13)fixes c2−8. Evaluate the SAME curve at the known stationary abscissa2 to obtain P(2,12).",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "additional_operations": {
+            "given-point": {
+              "kind": "identity",
+              "operands": [
+                "(12/x-2*x**2+11*x-8).subs(x,1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "given-point": "13"
+          },
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 626,
+          "answer_printed_page": "A40",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "connected_part_structure": "First integration and stationary condition in(a)fix the first constant. Point(1,13)in(b)fixes the second."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:12",
+      "source_pdf_page": 334,
+      "notes": "Differentiate1/(x²−5),then HENCE integrate4x/(x²−5)²;the target integrand is−2times the obtained derivative.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O02:D02",
+        "8227:2020:M2:T5:O01:D03"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Part(a)directly asks chain-rule differentiation. Part(b)directly asks reverse recognition from that established derivative,not direct powers of a LINEAR inner expression. The supplied hence structure is retained.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Differentiate1/(x²−5),then HENCE integrate4x/(x²−5)²;the target integrand is−2times the obtained derivative.",
+          "reason": "The source supplies the antiderivative target via an explicit derivative/hence pair;it does not require selecting a general substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate1/(x²−5),then HENCE integrate4x/(x²−5)²;the target integrand is−2times the obtained derivative.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(1/(x**2-5),x)"
+            ]
+          },
+          "printed_key_normalised": "-2*x/(x**2-5)**2",
+          "method": "Differentiate the ORIGINAL given composite using the chain rule,retaining inner derivative and original denominator exclusions.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "component_demand_ids": [],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 334,
+          "answer_printed_page": 322,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "4*x/(x**2-5)**2"
+            ]
+          },
+          "printed_key_normalised": "-2/(x**2-5)",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "4*x/(x**2-5)**2",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D03"
+          ],
+          "original_domain": "Where the original integrand is real and finite; an indefinite primitive is asserted on each open connected component, not across excluded zeros.",
+          "author_answer_form": "The primitive plus an arbitrary real constant on each original real-domain component.",
+          "component_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "given_derivative_function": "1/(x**2-5)",
+          "required_method": "Hence:recognise a constant multiple of the derivative established in(a). No general substitution selection is required.",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 334,
+          "answer_printed_page": 322,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "connected_part_structure": "Typed cue a→b:hence. The exact constant multiple must be reconciled."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-12:1",
+      "source_pdf_page": 334,
+      "notes": "Differentiate1/(4−2x³),then HENCE integrate3x²/(4−2x³)²;the derivative coefficient6requires scale1/2.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O02:D02",
+        "8227:2020:M2:T5:O01:D03"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Part(a)directly asks chain-rule differentiation. Part(b)directly asks reverse recognition from that established derivative,not direct powers of a LINEAR inner expression. The supplied hence structure is retained.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Differentiate1/(4−2x³),then HENCE integrate3x²/(4−2x³)²;the derivative coefficient6requires scale1/2.",
+          "reason": "The source supplies the antiderivative target via an explicit derivative/hence pair;it does not require selecting a general substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate1/(4−2x³),then HENCE integrate3x²/(4−2x³)²;the derivative coefficient6requires scale1/2.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(1/(4-2*x**3),x)"
+            ]
+          },
+          "printed_key_normalised": "6*x**2/(4-2*x**3)**2",
+          "method": "Differentiate the ORIGINAL given composite using the chain rule,retaining inner derivative and original denominator exclusions.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "component_demand_ids": [],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 626,
+          "answer_printed_page": "A40",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "3*x**2/(4-2*x**3)**2"
+            ]
+          },
+          "printed_key_normalised": "1/(2*(4-2*x**3))",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "3*x**2/(4-2*x**3)**2",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D03"
+          ],
+          "original_domain": "Where the original integrand is real and finite; an indefinite primitive is asserted on each open connected component, not across excluded zeros.",
+          "author_answer_form": "The primitive plus an arbitrary real constant on each original real-domain component.",
+          "component_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "given_derivative_function": "1/(4-2*x**3)",
+          "required_method": "Hence:recognise a constant multiple of the derivative established in(a). No general substitution selection is required.",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 626,
+          "answer_printed_page": "A40",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "connected_part_structure": "Typed cue a→b:hence. The exact constant multiple must be reconciled."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-12:2",
+      "source_pdf_page": 334,
+      "notes": "Differentiate(2x²−1)^6,then HENCE integratex(2x²−1)^5;the derivative coefficient24requires scale1/24.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O02:D02",
+        "8227:2020:M2:T5:O01:D03"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Part(a)directly asks chain-rule differentiation. Part(b)directly asks reverse recognition from that established derivative,not direct powers of a LINEAR inner expression. The supplied hence structure is retained.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Differentiate(2x²−1)^6,then HENCE integratex(2x²−1)^5;the derivative coefficient24requires scale1/24.",
+          "reason": "The source supplies the antiderivative target via an explicit derivative/hence pair;it does not require selecting a general substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate(2x²−1)^6,then HENCE integratex(2x²−1)^5;the derivative coefficient24requires scale1/24.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff((2*x**2-1)**6,x)"
+            ]
+          },
+          "printed_key_normalised": "24*x*(2*x**2-1)**5",
+          "method": "Differentiate the ORIGINAL given composite using the chain rule,retaining inner derivative and original denominator exclusions.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "component_demand_ids": [],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "x*(2*x**2-1)**5"
+            ]
+          },
+          "printed_key_normalised": "(2*x**2-1)**6/24",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "x*(2*x**2-1)**5",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D03"
+          ],
+          "original_domain": "Where the original integrand is real and finite; an indefinite primitive is asserted on each open connected component, not across excluded zeros.",
+          "author_answer_form": "The primitive plus an arbitrary real constant on each original real-domain component.",
+          "component_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "given_derivative_function": "(2*x**2-1)**6",
+          "required_method": "Hence:recognise a constant multiple of the derivative established in(a). No general substitution selection is required.",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "connected_part_structure": "Typed cue a→b:hence. The exact constant multiple must be reconciled."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-12:3",
+      "source_pdf_page": 334,
+      "notes": "Differentiate(x²−4x+5)^6,then HENCE integrate2(2x−4)(x²−4x+5)^5;the quadratic(x−2)²+1has no real zero.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O02:D02",
+        "8227:2020:M2:T5:O01:D03"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Part(a)directly asks chain-rule differentiation. Part(b)directly asks reverse recognition from that established derivative,not direct powers of a LINEAR inner expression. The supplied hence structure is retained.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Differentiate(x²−4x+5)^6,then HENCE integrate2(2x−4)(x²−4x+5)^5;the quadratic(x−2)²+1has no real zero.",
+          "reason": "The source supplies the antiderivative target via an explicit derivative/hence pair;it does not require selecting a general substitution."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Differentiate(x²−4x+5)^6,then HENCE integrate2(2x−4)(x²−4x+5)^5;the quadratic(x−2)²+1has no real zero.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff((x**2-4*x+5)**6,x)"
+            ]
+          },
+          "printed_key_normalised": "6*(2*x-4)*(x**2-4*x+5)**5",
+          "method": "Differentiate the ORIGINAL given composite using the chain rule,retaining inner derivative and original denominator exclusions.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "component_demand_ids": [],
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "real-elementary-antiderivative",
+            "operands": [
+              "2*(2*x-4)*(x**2-4*x+5)**5"
+            ]
+          },
+          "printed_key_normalised": "(x**2-4*x+5)**6/3",
+          "method": "Integrate the ORIGINAL integrand after a valid power/index rearrangement. Compare with the separately transcribed printed primitive by differentiating it; an arbitrary additive constant is required on each connected real component. Preserve the original domain, including denominator exclusions. For a source variable t the checker consistently renames t to x; constants are not renamed.",
+          "answer_equivalence": "up-to-additive-constant",
+          "original_integrand": "2*(2*x-4)*(x**2-4*x+5)**5",
+          "source_variable": "x",
+          "normalised_variable": "x",
+          "response_format": "symbolic",
+          "given_representation": "text",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O01:D03"
+          ],
+          "original_domain": "Where the original integrand is real and finite; an indefinite primitive is asserted on each open connected component, not across excluded zeros.",
+          "author_answer_form": "The primitive plus an arbitrary real constant on each original real-domain component.",
+          "component_demand_ids": [
+            "8227:2020:M1:T8:O02:D02"
+          ],
+          "given_derivative_function": "(x**2-4*x+5)**6",
+          "required_method": "Hence:recognise a constant multiple of the derivative established in(a). No general substitution selection is required.",
+          "source_pdf_page": 334,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "connected_part_structure": "Typed cue a→b:hence. The exact constant multiple must be reconciled."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:13",
+      "source_pdf_page": 336,
+      "notes": "Three proper finite integrals:constant3 on[1,5],6√x on[0,4],and(x³−4x)/x⁵ on[2,3]. The rational interval excludes its pole0.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The requested result determines direct coverage: a derivative-only task assesses differentiation; reverse recognition is explicit when recovering y/f from a given derivative. An arbitrary integration constant is not the demand to EVALUATE that constant from an initial condition.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "0, 1/2, −2, −4",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Three proper finite integrals:constant3 on[1,5],6√x on[0,4],and(x³−4x)/x⁵ on[2,3]. The rational interval excludes its pole0.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "3",
+              "1",
+              "5"
+            ]
+          },
+          "printed_key_normalised": "12",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "3",
+          "original_bounds": [
+            "1",
+            "5"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 336,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "6*sqrt(x)",
+              "0",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "32",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "6*sqrt(x)",
+          "original_bounds": [
+            "0",
+            "4"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 336,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(x**3-4*x)/x**5",
+              "2",
+              "3"
+            ]
+          },
+          "printed_key_normalised": "Rational(4,81)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "(x**3-4*x)/x**5",
+          "original_bounds": [
+            "2",
+            "3"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 336,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:13",
+      "source_pdf_page": 336,
+      "notes": "Six proper finite integrals,including a zero lower endpoint with finite square-root powers,nonzero denominator intervals,and2/fourthrootx on[1,16].",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The requested result determines direct coverage: a derivative-only task assesses differentiation; reverse recognition is explicit when recovering y/f from a given derivative. An arbitrary integration constant is not the demand to EVALUATE that constant from an initial condition.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "0, 2, 3/2, 1, −1/4, −2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Six proper finite integrals,including a zero lower endpoint with finite square-root powers,nonzero denominator intervals,and2/fourthrootx on[1,16].",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "2",
+              "1",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "6",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "2",
+          "original_bounds": [
+            "1",
+            "4"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "2*x**2",
+              "1",
+              "3"
+            ]
+          },
+          "printed_key_normalised": "Rational(52,3)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "2*x**2",
+          "original_bounds": [
+            "1",
+            "3"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "2*x**Rational(3,2)",
+              "0",
+              "9"
+            ]
+          },
+          "printed_key_normalised": "Rational(972,5)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "2*x**Rational(3,2)",
+          "original_bounds": [
+            "0",
+            "9"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "3*x-1",
+              "4",
+              "6"
+            ]
+          },
+          "printed_key_normalised": "28",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "3*x-1",
+          "original_bounds": [
+            "4",
+            "6"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "e",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "2/x**Rational(1,4)",
+              "1",
+              "16"
+            ]
+          },
+          "printed_key_normalised": "Rational(56,3)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "2/x**Rational(1,4)",
+          "original_bounds": [
+            "1",
+            "16"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "f",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(2*x**2-6)/x**2",
+              "2",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "Rational(5,2)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "(2*x**2-6)/x**2",
+          "original_bounds": [
+            "2",
+            "4"
+          ],
+          "source_pdf_page": 336,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:14",
+      "source_pdf_page": 337,
+      "notes": "Evaluate two proper integrals:combined reciprocal/root terms on[1,4],and4/√(5−2x)on[−2,2]. Its root denominator never vanishes on the interval.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The requested result determines direct coverage: a derivative-only task assesses differentiation; reverse recognition is explicit when recovering y/f from a given derivative. An arbitrary integration constant is not the demand to EVALUATE that constant from an initial condition.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−3/2, −2, −1/2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Evaluate two proper integrals:combined reciprocal/root terms on[1,4],and4/√(5−2x)on[−2,2]. Its root denominator never vanishes on the interval.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(2/sqrt(x)+1/x)/x",
+              "1",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "Rational(11,4)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "(2/sqrt(x)+1/x)/x",
+          "original_bounds": [
+            "1",
+            "4"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 325,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "4/sqrt(5-2*x)",
+              "-2",
+              "2"
+            ]
+          },
+          "printed_key_normalised": "8",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "4/sqrt(5-2*x)",
+          "original_bounds": [
+            "-2",
+            "2"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 337,
+          "answer_printed_page": 325,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:14",
+      "source_pdf_page": 337,
+      "notes": "Six displayed finite integrals. Five are proper;part(e)crosses a second-order pole and its negative finite key is invalid. Preserve this source defect and both one-sided divergent limits.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "The requested result determines direct coverage: a derivative-only task assesses differentiation; reverse recognition is explicit when recovering y/f from a given derivative. An arbitrary integration constant is not the demand to EVALUATE that constant from an initial condition.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "3/2, 1/2, −2, −3, −4, 5, 3/2, −1/2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Six displayed finite integrals. Five are proper;part(e)crosses a second-order pole and its negative finite key is invalid. Preserve this source defect and both one-sided divergent limits.",
+        "excluded_or_qualified_parts": [
+          "Part(e)is defective as a finite-integral task:internal pole at−2/3. It supplies no valid ordinary definite-integral coverage."
+        ],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "sqrt(x)*(x+2)",
+              "0",
+              "4"
+            ]
+          },
+          "printed_key_normalised": "Rational(352,15)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "sqrt(x)*(x+2)",
+          "original_bounds": [
+            "0",
+            "4"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(x+8)*(3-x)/x**4",
+              "1",
+              "2"
+            ]
+          },
+          "printed_key_normalised": "Rational(37,8)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "(x+8)*(3-x)/x**4",
+          "original_bounds": [
+            "1",
+            "2"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(3*x-2)**5",
+              "-1",
+              "2"
+            ]
+          },
+          "printed_key_normalised": "-Rational(1281,2)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "(3*x-2)**5",
+          "original_bounds": [
+            "-1",
+            "2"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "(x-1)**Rational(3,2)",
+              "1",
+              "2"
+            ]
+          },
+          "printed_key_normalised": "Rational(2,5)",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "(x-1)**Rational(3,2)",
+          "original_bounds": [
+            "1",
+            "2"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "e",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key wrong",
+          "author_conclusion": "The integral diverges to positive infinity;it has no finite proper value. The printed−16/11is invalid endpoint subtraction across x=−2/3.",
+          "author_derivation": "The ORIGINAL integrand4/(3x+2)² is positive and has a second-order pole inside[−1,3]. Split at−2/3. With primitive−4/(3(3x+2)),both one-sided integrals tend to+∞ independently. Finite endpoint subtraction gives−16/11,which cannot equal the integral of a positive function and ignores the internal singularity. This source part cannot be used as an ordinary finite-integral exemplar.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "printed_key_normalised": "-Rational(16,11)",
+          "original_integrand": "4/(3*x+2)**2",
+          "original_bounds": [
+            "-1",
+            "3"
+          ],
+          "original_domain": "x≠−2/3;the specified bounds cross the pole.",
+          "source_interpretation": "Defective finite-integral exercise;retain internal diagnosis,not valid task coverage.",
+          "additional_operations": {
+            "left-improper-limit": {
+              "kind": "identity",
+              "operands": [
+                "limit(-4/(3*(3*(-Rational(2,3)-a)+2))-Rational(4,3),a,0,dir=\"+\")"
+              ]
+            },
+            "right-improper-limit": {
+              "kind": "identity",
+              "operands": [
+                "limit(-Rational(4,33)+4/(3*(3*(-Rational(2,3)+a)+2)),a,0,dir=\"+\")"
+              ]
+            },
+            "invalid-endpoint-subtraction": {
+              "kind": "identity",
+              "operands": [
+                "-Rational(4,33)-Rational(4,3)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "left-improper-limit": "oo",
+            "right-improper-limit": "oo",
+            "invalid-endpoint-subtraction": "-Rational(16,11)"
+          },
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "f",
+          "operation": {
+            "kind": "proper-definite-integral",
+            "operands": [
+              "4/sqrt(1-2*x)",
+              "-4",
+              "0"
+            ]
+          },
+          "printed_key_normalised": "8",
+          "method": "Check continuity on the whole interval before evaluating the original integrand. A primitive endpoint subtraction is not accepted across an original pole.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "4/sqrt(1-2*x)",
+          "original_bounds": [
+            "-4",
+            "0"
+          ],
+          "source_pdf_page": 337,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-334-source.png",
+            "sha256": "0e71535a8b6135c76522aa2f9b1653b6f44d2d94bc9adeb9d17c83ad5fcdc763"
+          },
+          "answer_pdf_page": 627,
+          "answer_printed_page": "A41",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "source_domain_caution": "The key applies the fundamental theorem through a pole in(e). Both one-sided improper integrals diverge+∞;do not classify the endpoint difference as an integral."
+    }
+  ]
+}

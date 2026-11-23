@@ -1,0 +1,622 @@
+{
+  "scope": "Complete550–551biasedestimate/complementaryregionresponses.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-21:1",
+      "source_pdf_page": 550,
+      "notes": "GIVEN2−x²ln(x+1),regionunderpositivecurvebetweenx0and1:(a)four-intervalestimate2dp1.81;(b)justifyunderestimate. GivenfiguredoesNOTputthecurveinterceptat1.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O03:D01",
+        "8227:2020:M2:T5:O03:D02",
+        "8227:2020:M2:T5:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requestedestimate,stationarycoordinatesandjustifiedbiasaredistinct. GIVENgraphsarenotaskedsketches. ForcomplementaryregionB,thegeometricalrectangle-minus-Adecisionisdirectarea;requirednumericruleandbiasarekeptwiththeirdependencies. Thebookscurvatureterminologyisreportedbutchordgeometrydecidesthesign.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "GIVEN2−x²ln(x+1),regionunderpositivecurvebetweenx0and1:(a)four-intervalestimate2dp1.81;(b)justifyunderestimate. GivenfiguredoesNOTputthecurveinterceptat1.",
+          "reason": "Simplecurveshaveonecurvaturedirectiononfiniteintervals;chordpositionjustifiesbias. Secondderivativesareauthorchecks,notrequiredformallearnerproof."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVEN2−x²ln(x+1),regionunderpositivecurvebetweenx0and1:(a)four-intervalestimate2dp1.81;(b)justifyunderestimate. GivenfiguredoesNOTputthecurveinterceptat1.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL11"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Try19:3sf. Example20:2dp. Try20:1dp. Example21:3sf,radiantrigarguments.",
+        "comparison": "Keepunroundedordinatesuntilfinalestimate. YMlabelsupward-bendingcurvesconcaveanddownward-bendingconvex;retainitswordingasevidencebutjustifywithchordposition. Exact/numericintegrationchecksdo notreplace requiredtrapeziumworking."
+      },
+      "expected_subpart_labels": [
+        "a-estimate",
+        "b-bias"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-estimate",
+          "operation": {
+            "kind": "trapezium-rule",
+            "operands": [
+              "2-x**2*log(x+1)",
+              "0",
+              "1"
+            ],
+            "strips": 4,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "Rational(181,100)",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "2-x**2*log(x+1)",
+                "0",
+                "1"
+              ],
+              "strips": 4
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O03:D01",
+            "8227:2020:M2:T5:O03:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "original_integrand": "2-x**2*log(x+1)",
+          "original_bounds": [
+            "0",
+            "1"
+          ],
+          "source_strips": 4,
+          "requested_precision": "2decimalplaces",
+          "source_pdf_page": 550,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 651,
+          "answer_printed_page": "A65",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-bias",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Underestimate:straightchordsbelowthecurve.",
+          "author_derivation": "Originalsecond−2ln(1+x)−(3x²+4x)/(1+x)²≤0on[0,1],strictlynegativeforx>0. TheGIVENverticalboundisx1withpositivecurveordinate2−ln2;thecurveinterceptislater. Acontact-sheetappearanceofazeroat1wascheckedatnativescaleandCLEARED. Sourcekeyunderestimatecorrect;wordconvexisYMdownward-bendingconvention.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O04:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "explanation",
+          "source_curvature_term": "convex (YM downward-bending convention)",
+          "original_interval": "0≤x≤1",
+          "author_method_limitation": "Exactsecondderivativeisanindependentauthorcheck. LearnercanjustifybypositionofstraightchordsrelativetotheGIVENcurve;formalcurvaturecalculusisnotmandated.",
+          "additional_operations": {
+            "original-second-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(2-x**2*log(x+1),x,2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-second-derivative": "-2*log(1+x)-(3*x**2+4*x)/(1+x)**2"
+          },
+          "depends_on_source_parts": [
+            "a-estimate"
+          ],
+          "source_pdf_page": 550,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 651,
+          "answer_printed_page": "A65",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-21:2",
+      "source_pdf_page": 550,
+      "notes": "GIVENxe^(−x),0≤x≤2,maximumM:(a)fullcoordinates(1,1/e);(b)two-intervalestimate2dp0.50;(c)justifyunderestimateon(b),despitewrongsourcecue(a).",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M2:T5:O03:D01",
+        "8227:2020:M2:T5:O03:D02",
+        "8227:2020:M2:T5:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requestedestimate,stationarycoordinatesandjustifiedbiasaredistinct. GIVENgraphsarenotaskedsketches. ForcomplementaryregionB,thegeometricalrectangle-minus-Adecisionisdirectarea;requirednumericruleandbiasarekeptwiththeirdependencies. Thebookscurvatureterminologyisreportedbutchordgeometrydecidesthesign.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "GIVENxe^(−x),0≤x≤2,maximumM:(a)fullcoordinates(1,1/e);(b)two-intervalestimate2dp0.50;(c)justifyunderestimateon(b),despitewrongsourcecue(a).",
+          "reason": "Simplecurveshaveonecurvaturedirectiononfiniteintervals;chordpositionjustifiesbias. Secondderivativesareauthorchecks,notrequiredformallearnerproof."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVENxe^(−x),0≤x≤2,maximumM:(a)fullcoordinates(1,1/e);(b)two-intervalestimate2dp0.50;(c)justifyunderestimateon(b),despitewrongsourcecue(a).",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL11"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Try19:3sf. Example20:2dp. Try20:1dp. Example21:3sf,radiantrigarguments.",
+        "comparison": "Keepunroundedordinatesuntilfinalestimate. YMlabelsupward-bendingcurvesconcaveanddownward-bendingconvex;retainitswordingasevidencebutjustifywithchordposition. Exact/numericintegrationchecksdo notreplace requiredtrapeziumworking."
+      },
+      "expected_subpart_labels": [
+        "a-M-coordinates",
+        "b-estimate",
+        "c-bias"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-M-coordinates",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(1,(x*exp(-x)).subs(x,1))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(1,exp(-1))",
+          "method": "ORIGINAL0≤x≤2,derivativee^−x(1−x),uniqueinteriorzero1. Recoveroriginalordinate1/e;bothcoordinatesasked. Maximumalreadygiven,butindependentsecondat1=−1/everifiesselection.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "complete-original-stationary-x": {
+              "kind": "identity",
+              "operands": [
+                "solveset(diff(x*exp(-x),x),x,domain=Interval(0,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "complete-original-stationary-x": "FiniteSet(1)"
+          },
+          "source_pdf_page": 550,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 651,
+          "answer_printed_page": "A65",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-estimate",
+          "operation": {
+            "kind": "trapezium-rule",
+            "operands": [
+              "x*exp(-x)",
+              "0",
+              "2"
+            ],
+            "strips": 2,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "Rational(1,2)",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "x*exp(-x)",
+                "0",
+                "2"
+              ],
+              "strips": 2
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O03:D01",
+            "8227:2020:M2:T5:O03:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "original_integrand": "x*exp(-x)",
+          "original_bounds": [
+            "0",
+            "2"
+          ],
+          "source_strips": 2,
+          "requested_precision": "2decimalplaces",
+          "printed_key_display": "0.50 units²",
+          "source_pdf_page": 550,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 651,
+          "answer_printed_page": "A65",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "c-bias",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Underestimate:straighttopsbelowthecurve.",
+          "author_derivation": "Originalsecond=e^−x(x−2)≤0on[0,2]. Straightinterpolationchordsliebelowthecurve,sotheestimateisbelowthetruepositiveintegral. Stem(c)mistakenlyreferstointervalinpart(a);theonlyintegralintervalispart(b),0..2. Preserveandspecifythesourcecross-referencecorrection.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O04:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "explanation",
+          "source_curvature_term": "convex (YM downward-bending convention)",
+          "original_interval": "0≤x≤2",
+          "author_method_limitation": "Exactsecondderivativeisanindependentauthorcheck. LearnercanjustifybypositionofstraightchordsrelativetotheGIVENcurve;formalcurvaturecalculusisnotmandated.",
+          "additional_operations": {
+            "original-second-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(x*exp(-x),x,2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-second-derivative": "exp(-x)*(x-2)"
+          },
+          "depends_on_source_parts": [
+            "b-estimate"
+          ],
+          "source_cross_reference_anomaly": "Native550(c)sayspart(a);intendedintegralandintervalarein(b).",
+          "source_pdf_page": 550,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 651,
+          "answer_printed_page": "A65",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Example:22",
+      "source_pdf_page": 551,
+      "notes": "GIVEN√(1+x³),Aunder0..2curve,Bcomplementin2by3rectangle:(a)two-intervalAestimate2dp3.41;(b)DEDUCEB2.59ANDEXPLAINunderestimatebecauseAoverestimate. Whole(b)hasbothoutputs.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01",
+        "8227:2020:M2:T5:O03:D01",
+        "8227:2020:M2:T5:O03:D02",
+        "8227:2020:M2:T5:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requestedestimate,stationarycoordinatesandjustifiedbiasaredistinct. GIVENgraphsarenotaskedsketches. ForcomplementaryregionB,thegeometricalrectangle-minus-Adecisionisdirectarea;requirednumericruleandbiasarekeptwiththeirdependencies. Thebookscurvatureterminologyisreportedbutchordgeometrydecidesthesign.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "GIVEN√(1+x³),Aunder0..2curve,Bcomplementin2by3rectangle:(a)two-intervalAestimate2dp3.41;(b)DEDUCEB2.59ANDEXPLAINunderestimatebecauseAoverestimate. Whole(b)hasbothoutputs.",
+          "reason": "Simplecurveshaveonecurvaturedirectiononfiniteintervals;chordpositionjustifiesbias. Secondderivativesareauthorchecks,notrequiredformallearnerproof."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVEN√(1+x³),Aunder0..2curve,Bcomplementin2by3rectangle:(a)two-intervalAestimate2dp3.41;(b)DEDUCEB2.59ANDEXPLAINunderestimatebecauseAoverestimate. Whole(b)hasbothoutputs.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL11"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Try19:3sf. Example20:2dp. Try20:1dp. Example21:3sf,radiantrigarguments.",
+        "comparison": "Keepunroundedordinatesuntilfinalestimate. YMlabelsupward-bendingcurvesconcaveanddownward-bendingconvex;retainitswordingasevidencebutjustifywithchordposition. Exact/numericintegrationchecksdo notreplace requiredtrapeziumworking."
+      },
+      "expected_subpart_labels": [
+        "a-area-A",
+        "b-area-B",
+        "b-underestimate-reason"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-area-A",
+          "operation": {
+            "kind": "trapezium-rule",
+            "operands": [
+              "sqrt(1+x**3)",
+              "0",
+              "2"
+            ],
+            "strips": 2,
+            "rounding": {
+              "decimal_places": 2
+            }
+          },
+          "printed_key_normalised": "Rational(341,100)",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "sqrt(1+x**3)",
+                "0",
+                "2"
+              ],
+              "strips": 2
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O03:D01",
+            "8227:2020:M2:T5:O03:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "original_integrand": "sqrt(1+x**3)",
+          "original_bounds": [
+            "0",
+            "2"
+          ],
+          "source_strips": 2,
+          "requested_precision": "2decimalplaces",
+          "source_pdf_page": 551,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 551,
+          "answer_printed_page": 539,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-area-B",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "4-sqrt(2)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "Rational(259,100)",
+          "method": "DEDUCEBfromtheORIGINAL2by3rectangleminusUNROUNDEDtrapeziumestimateA2+√2. ThusB4−√2≈2.59to2dp;sourceworkingusesrounded3.41butgivesagreeingfinal2.59. Keepunroundedestimateuntilfinaldisplay.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01",
+            "8227:2020:M2:T5:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "depends_on_source_parts": [
+            "a-area-A"
+          ],
+          "source_precision_requirement": "Only(a)explicitlyasks2dp;workingdisplaysB2.59to2dp.",
+          "source_pdf_page": 551,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 551,
+          "answer_printed_page": 539,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-underestimate-reason",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "BunderestimatedbecauseAoverestimated.",
+          "author_derivation": "Originalfsecond=3x(x³+4)/(4(1+x³)^(3/2))≥0on[0,2]. ThusstraightchordsareabovecurveandT_A>A. Subtractbothfromsamefixedrectangle6:T_B=6−T_A<6−A=B. ThesignREVERSESforcomplementaryregionB;donotcopyAoverestimateintoB. Workinglabelsanswer(c)thoughstemasksitin(b).",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O04:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "explanation",
+          "source_curvature_term": "A upward-bending; B complementary error reverses",
+          "original_interval": "0≤x≤2",
+          "author_method_limitation": "Exactsecondderivativeisanindependentauthorcheck. LearnercanjustifybypositionofstraightchordsrelativetotheGIVENcurve;formalcurvaturecalculusisnotmandated.",
+          "additional_operations": {
+            "original-second-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(sqrt(1+x**3),x,2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-second-derivative": "3*x*(x**3+4)/(4*(1+x**3)**Rational(3,2))"
+          },
+          "depends_on_source_parts": [
+            "a-area-A",
+            "b-area-B"
+          ],
+          "source_pdf_page": 551,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 551,
+          "answer_printed_page": 539,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now:22",
+      "source_pdf_page": 551,
+      "notes": "GIVEN√[1+3cos²(x/2)]on0..π,REQUIREDtwo-intervaltrapeziumestimate3sf4.84. Originalradianmiddleordinate√(5/2)andendpoints2,1retained;noaskedbiasorsketch.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O03:D01",
+        "8227:2020:M2:T5:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Requestedestimate,stationarycoordinatesandjustifiedbiasaredistinct. GIVENgraphsarenotaskedsketches. ForcomplementaryregionB,thegeometricalrectangle-minus-Adecisionisdirectarea;requirednumericruleandbiasarekeptwiththeirdependencies. Thebookscurvatureterminologyisreportedbutchordgeometrydecidesthesign.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "not applicable",
+          "quoted_value": "GIVEN√[1+3cos²(x/2)]on0..π,REQUIREDtwo-intervaltrapeziumestimate3sf4.84. Originalradianmiddleordinate√(5/2)andendpoints2,1retained;noaskedbiasorsketch.",
+          "reason": "Onlyanumericalestimateisasked;noover/underjustificationorsketchresponse."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVEN√[1+3cos²(x/2)]on0..π,REQUIREDtwo-intervaltrapeziumestimate3sf4.84. Originalradianmiddleordinate√(5/2)andendpoints2,1retained;noaskedbiasorsketch.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL11"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Try19:3sf. Example20:2dp. Try20:1dp. Example21:3sf,radiantrigarguments.",
+        "comparison": "Keepunroundedordinatesuntilfinalestimate. YMlabelsupward-bendingcurvesconcaveanddownward-bendingconvex;retainitswordingasevidencebutjustifywithchordposition. Exact/numericintegrationchecksdo notreplace requiredtrapeziumworking."
+      },
+      "expected_subpart_labels": [
+        "estimate"
+      ],
+      "subparts": [
+        {
+          "subpart": "estimate",
+          "operation": {
+            "kind": "trapezium-rule",
+            "operands": [
+              "sqrt(1+3*cos(x/2)**2)",
+              "0",
+              "pi"
+            ],
+            "strips": 2,
+            "rounding": {
+              "significant_figures": 3
+            }
+          },
+          "printed_key_normalised": "Rational(121,25)",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "sqrt(1+3*cos(x/2)**2)",
+                "0",
+                "pi"
+              ],
+              "strips": 2
+            }
+          },
+          "assessed_8227_demand_ids": [
+            "8227:2020:M2:T5:O03:D01",
+            "8227:2020:M2:T5:O03:D02"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "numeric",
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "original_integrand": "sqrt(1+3*cos(x/2)**2)",
+          "original_bounds": [
+            "0",
+            "pi"
+          ],
+          "source_strips": 2,
+          "requested_precision": "3significantfigures",
+          "source_angle_unit": "radians",
+          "additional_operation_expected": {
+            "unrounded_trapezium": "pi*(3+sqrt(10))/4"
+          },
+          "source_pdf_page": 551,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-548-source.png",
+            "sha256": "d798130a6008ffe6ecf84332e5a7c3547db68fbc5df14b1c3fbd7bfdf90f7cde"
+          },
+          "answer_pdf_page": 651,
+          "answer_printed_page": "A65",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}

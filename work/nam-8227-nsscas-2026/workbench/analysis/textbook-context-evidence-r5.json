@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "status": "author source check; independent review pending",
+  "records": [
+    {
+      "evidence_id": "8227:CONTEXT:USGS:earthquake-energy",
+      "source": {
+        "document_id": "8227-SRC-021",
+        "title": "Table-Top Earthquakes",
+        "author": "John C. Lahr",
+        "publisher": "U.S. Geological Survey",
+        "document_identity": "Open-File Report 98-767; paper edition updated March 16, 2011",
+        "year": 1998,
+        "edition": "2011-03-16 update",
+        "path": "sources/namibia/nsscas/8227-mathematics/reference/USGS_Table-Top-Earthquakes_OFR98-767_1998.pdf",
+        "sha256": "e4f958d8f31f23eeef2c8a53b45ce342007e85724e62112e5acb5df1f24f32ea",
+        "bytes": 320374,
+        "byte_kind": "pdf",
+        "role": "supplementary-context-model-verification",
+        "page_count": 12,
+        "source_location": "https://pubs.usgs.gov/of/1998/ofr-98-0767/tabletop.pdf",
+        "acquisition_manifest": "work/nam-8227-nsscas-2026/workbench/tools/textbook-r5/context-source-harvest.csv",
+        "acquisition_run": "20261118-151908-692",
+        "inspection": "Rendered PDF pages1,8,9 read by Codex author on2026-11-18; pages2–7,10–12 not inspected. Harvester verify classC,0corrupt/0image-only.",
+        "extraction_limitation": "The preliminary report expressly disclaims USGS editorial review. Text extraction used for discovery; formula and page labels checked on native PDFKit render. This source supplies a context-model check,not an8227scope or examination standard.",
+        "reuse_status": "Internal source evidence; no learner reproduction commissioned.",
+        "learner_display": false
+      },
+      "locators": [
+        {
+          "pdf_page": 8,
+          "printed_page": 8,
+          "section": "Math / Logarithms",
+          "normalised_formula": "log10(E_J)=1.5*M+4.8"
+        },
+        {
+          "pdf_page": 9,
+          "printed_page": 9,
+          "section": "Magnitude/energy table",
+          "finding": "One-unit magnitude increase gives approximately32times greater energy release."
+        }
+      ],
+      "rendered_evidence": {
+        "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/usgs-earthquake/read-1-8-9.png",
+        "sha256": "6b84d3c58f6a9319e910b4b1f6063c6e395a742c95fe5484f0ef7b8aaa47f011"
+      },
+      "affected_item_ids": [
+        "8227:TB:Goldie:C2:Activity:2",
+        "8227:TB:Goldie:C2:Exercise-2B:13"
+      ],
+      "comparison": "Goldie2B13suppliesM=log10(E_J/63000),which implieslog10(E_J)=M+log10(63000). Its magnitude coefficient1differs from the USGS1.5. The near-matching zero-magnitude reference63000Jdoesnot repair that coefficient. Its key calculations remain mathematically consistent with its supplied model. Activity2.2usesundefinedRichterintensity;do not certify it as energy or equate intensity with magnitude.",
+      "disposition": "Retain original source mathematics conditionally; flag the named scientific-model defect. For a later purpose-authored context,supply and independently verify the selected physical model or label it explicitly hypothetical. Do not change the textbook question in this audit.",
+      "date": "2026-11-18",
+      "learner_display": false
+    }
+  ]
+}

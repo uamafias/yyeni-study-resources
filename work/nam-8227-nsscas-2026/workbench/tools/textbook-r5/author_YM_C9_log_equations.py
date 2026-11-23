@@ -1,0 +1,51 @@
+"""YM415–416: original logarithmic domains, extraneous roots and correlated pairs."""
+import json
+import author_YM_C9_opening as g
+from author_YM_C9_opening import h,W,SRC,SHA,pp,ev,v,fig,figures,extra,compute,expression,equivalent
+g.answers.clear();g.new.clear();g.corrections.clear();figures.clear()
+answers=g.answers;new=g.new;corrections=g.corrections
+LAW='8227:2020:M2:T2:O01:D02'
+def solution(label,poly,domain,key,kp,original,source_variable='x'):
+ p=v(label,'Intersection(solveset('+poly+',x,domain=S.Reals),'+domain+')',key,kp,'FIRST impose every ORIGINAL logarithm argument>0 and a positive nonunit base. Combine only common-base logs and use their injectivity to obtain the separately transcribed algebraic condition. Solve that condition,then intersect with the original domain. Check every retained solution in the original arguments; a positive product after compression does not validate two negative separate arguments.')
+ p.update(original_equation=original,algebraic_condition_zero_form=poly,original_domain=domain,source_variable=source_variable,assessed_8227_demand_ids=[LAW],response_format='symbolic')
+ p.setdefault('additional_operations',{})['all-algebraic-candidates']={'kind':'identity','operands':['solveset('+poly+',x,domain=S.Reals)']}
+ return p
+def add(kind,n,page,note,parts):
+ r=g.add(kind,n,page,note,parts)
+ r['mapping_rationale']='Combining original common-base logarithms and filtering against ALL original argument/base conditions directly assesses application of log laws. Simultaneous algebra is a component. A negative final number can be admissible when every actual argument is positive; rejecting all negative solutions is not a valid rule.'
+ return r
+add('Example',9,415,'Solve log(x−1)+log(x−4)=1. Algebraic candidates−1,6 come from(x−1)(x−4)=10, but ORIGINAL domainx>4 leaves only6.',[solution('x','(x-1)*(x-4)-10','Interval.open(4,oo)','FiniteSet(6)',415,'log_10(x−1)+log_10(x−4)=1')])
+add('Try-Now-9',1,415,'Solve log_4(x+1)=2 and4log(x+4)=8, preserving their original argument domains. Exact results15,96.',[solution('a','x+1-4**2','Interval.open(-1,oo)','FiniteSet(15)',638,'log_4(x+1)=2'),solution('b','x+4-10**2','Interval.open(-4,oo)','FiniteSet(96)',638,'4log_10(x+4)=8')])
+ps=[solution('a','x*(x-8)-9','Interval.open(8,oo)','FiniteSet(9)',638,'log_9(y)+log_9(y−8)=1','y'),solution('b','2*x+3-10*(3*x-1)','Interval.open(Rational(1,3),oo)','FiniteSet(Rational(13,28))',638,'log_10(2y+3)−log_10(3y−1)=1','y'),solution('c','2*x-1-10*(x+1)','Interval.open(Rational(1,2),oo)','S.EmptySet',638,'log_10(2y−1)−log_10(y+1)=1','y'),solution('d','1-x-8*(5+x)','Interval.open(-5,1)','FiniteSet(-Rational(13,3))',638,'log_2(1−y)−log_2(5+y)=3','y')]
+ps[-1]['printed_key_display']='−39/9, equivalent to−13/3.'
+add('Try-Now-9',2,415,'Four original y-equations include a rejected algebraic candidate/no solution and a VALID negative solution−13/3 with both original arguments positive. Preserve exact fractions.',ps)
+add('Example',10,416,'Solve log_2(x−3)+log_2(x−2)=2log_2(x). The only algebraic candidate6/5 violates ORIGINAL x>3, so there is NO real solution.',[solution('solution','(x-3)*(x-2)-x**2','Interval.open(3,oo)','S.EmptySet',416,'log_2(x−3)+log_2(x−2)=2log_2(x)')])
+ps=[solution('a','3*x-30','Interval.open(0,oo)','FiniteSet(10)',638,'log_5x+log_5(3)=log_5(30)'),solution('b','x+11-(5*x+23)*(x+4)','Interval.open(-4,oo)','FiniteSet(-3)',638,'log_2(x+11)−log_2(x+4)=log_2(5x+23)'),solution('c','(2*x-3)*(x+4)-(2*x**2+11)','Interval.open(Rational(3,2),oo)','FiniteSet(Rational(23,5))',638,'log_10(2x−3)+log_10(x+4)=log_10(2x²+11)')]
+add('Try-Now',10,416,'Three log equations with explicit right-hand-side logs. In(b),−3 is valid because arguments8,1,8 are positive; the other algebraic candidate−27/5 fails. In(c), quadratic terms cancel to a linear condition.',ps)
+p=v('ordered-pairs','Intersection(FiniteSet(*solve([x-y-x**2,x+y+8],(x,y),set=True)[1]),ProductSet(Interval.open(0,oo),S.Reals))','FiniteSet(Tuple(4,-12))',416,'From the ORIGINAL base4equations, x−y=x² andx+y+9=1. Original log_4x requiresx>0,so discard pair(−2,−6) and retain(4,−12). Verify positive arguments16,4,1 for the retained pair. The negative y is admissible because it is not itself a logarithm argument.')
+p.update(assessed_8227_demand_ids=[LAW],component_demand_ids=['8227:PRIOR:NSSCO:simultaneous-equations'],response_format='symbolic',original_equations=['log_4(x−y)=2log_4x','log_4(x+y+9)=0'],original_domain='x−y>0,x>0,x+y+9>0.',source_method_warning='In the rejected-pair check,−2−(−6)=4, not source−8. The pair is nevertheless correctly rejected because log_4(−2) is undefined. Do not copy the incorrect left-side arithmetic.')
+extra(p,'correct-pair-original-arguments','Tuple(4-(-12),4,4+(-12)+9)','Tuple(16,4,1)');extra(p,'rejected-pair-actual-left-argument','-2-(-6)','4')
+add('Example',11,416,'Solve two simultaneous logarithmic equations. Preserve correlated pairs and reject the pair with a negative LOG ARGUMENT, while allowing the valid negative y−12. The source check has a separate arithmetic slip but reaches the correct final pair.',[p])
+p=v('a-ordered-pairs','FiniteSet(*solve([x-14*y-8,x-10*(y+1)],(x,y),set=True)[1])','FiniteSet(Tuple(15,Rational(1,2)))',638,'Original log_2(x−14y)=3 givesx−14y8. Original logx−log(y+1)=1 givesx=10(y+1),subject tox>0,y>−1. The unique ordered pair15,1/2 satisfies every original argument condition.')
+p.update(assessed_8227_demand_ids=[LAW],component_demand_ids=['8227:PRIOR:NSSCO:simultaneous-equations'],response_format='symbolic',original_domain='x−14y>0,x>0,y+1>0.')
+extra(p,'actual-original-arguments','Tuple(15-14*Rational(1,2),15,Rational(1,2)+1)','Tuple(8,15,Rational(3,2))')
+q=v('b-ordered-pairs','Intersection(FiniteSet(*solve([x*y-81,y-x**3],(x,y),set=True)[1]),ProductSet(Complement(Interval.open(0,oo),FiniteSet(1)),Interval.open(0,oo)))','FiniteSet(Tuple(3,27))',638,'Use the ORIGINAL variable-base conditionlog_x(y)=3: y=x³ withx>0,x≠1,y>0. Combine withxy81 to getx⁴81. The negative algebraic pair(−3,−27) is not an admissible logarithm base/argument; retain(3,27).')
+q.update(assessed_8227_demand_ids=[LAW,g.LOG],component_demand_ids=['8227:PRIOR:NSSCO:simultaneous-equations'],response_format='symbolic',original_domain='x>0,x≠1,y>0,xy81.')
+extra(q,'original-product-and-power','Tuple(3*27,3**3)','Tuple(81,27)')
+add('Try-Now',11,416,'Two simultaneous systems:common-base logs with a rational pair,and a VARIABLE-BASE logarithm combined withxy81. Original base restrictions rule out the negative algebraic branch in(b).',[p,q])
+refs=[(19,415,'Original-log-domain warning','Check every original argument,not just the argument of a compressed product/quotient. A negative candidatex can still be valid if its actual arguments are positive.',[LAW],'table',None),(20,415,'Example9 two common-base solution methods','Combining logs and comparing with log10lead to the same polynomial and original-domain filter. These are method alternatives within one structure.',[LAW],'table','Example:9'),(21,415,'Example9 original-equation check','Candidate6 gives positive arguments5,2; candidate−1gives−2,−5 and is excluded despite their positive product.',[LAW],'table','Example:9'),(22,415,'Same-base logarithm injectivity rule','Forpositive m,n andvalidbasea,log_a m=log_a n iff m=n. Domain conditions remain required in the original equations.',[LAW],'table',None),(23,416,'Example10 rejected sole candidate','Algebraic6/5 gives negative shifted arguments; no solution remains. The empty result is not a generator failure.',[LAW],'table','Example:10'),(24,416,'Example11 simultaneous equation layout','Retain the SAME x,y in both original equations; substitution yields two correlated algebraic pairs before filtering.',[LAW],'table','Example:11'),(25,416,'Example11 source rejected-pair arithmetic slip','The source writes−2−(−6)=−8 instead of4. Rejection still follows from the different original argument x=−2 being negative; the final pair remains correct.',[LAW],'table','Example:11')]
+for n,page,label,note,teaches,rep,parent in refs:
+ fig(n,page,label,note,teaches,rep,[],parent);figures[-1].update(item_id=f'8227:TB:YM:C9:Teaching-figure:{n}',printed_page=pp(page),source_evidence=ev(page),value_level_scope_decisions=[],item_kind='teaching-figure',parent_item_id='8227:TB:YM:C9:'+parent if parent else None)
+ figures[-1]['mathematical_feature_review']['method']='Read original log subscripts,arguments and all paired candidate checks. Independently solve algebraic conditions and enforce every original argument/base restriction. Arithmetic in a rejected branch is checked separately from a correct final rejection.'
+pages=[dict(pdf_page=page,printed_page=pp(page),chapter=9,page_status='items enumerated',item_ids=[r['item_id']for r in answers if r['source_pdf_page']==page]+[r['item_id']for r in figures if r['pdf_page']==page],continuation_item_ids=[],source_evidence=ev(page),reader='Codex author',date='2026-11-20',non_item_content='AllExamples9–11,Try9Q1–2/Try10/Try11 and seven method/domain panels enumerated. Empty sets,valid negative solutions and variable-base exclusions retained.',scope_screen='Common-base laws and inverse definitions; no learner change-of-base method or e/ln-definition inference.')for page in range(415,417)]
+def save():
+ for name,data in [('answers-YM-C9-log-equations.json',dict(scope='Complete415–416log-equation response population with original-domain filtering.',items=answers)),('census-YM-C9-log-equations.json',dict(book='YM',book_id='8227-SRC-017',chapter=9,source_path=SRC,source_sha256=SHA,scope='Complete415–416page/item/reference census.',new_items=new+figures,corrections=corrections,pages=pages))]:
+  (W/'tools/textbook-r5'/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ for r in answers:
+  for p in r['subparts']:
+   if'operation'in p:assert equivalent(compute(p['operation']),expression(p['printed_key_normalised'])),(r['item_id'],p['subpart'])
+   for name,op in p.get('additional_operations',{}).items():
+    got=compute(op)
+    if name in p.get('additional_operation_expected',{}):assert equivalent(got,expression(p['additional_operation_expected'][name])),(r['item_id'],p['subpart'],name)
+ print(len(answers),'items;',sum(len(r['subparts'])for r in answers),'responses;',len(figures),'references;',len(pages),'pages')
+if __name__=='__main__':save()

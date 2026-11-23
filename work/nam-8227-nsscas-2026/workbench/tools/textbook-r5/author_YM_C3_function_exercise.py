@@ -1,0 +1,51 @@
+"""YM134–135: all Exercise3.1 outputs and coordinate-geometry reference opening."""
+import json
+import author_YM_C3_restricted_composites as h
+from author_YM_C3_opening import W,SRC,SHA,pp,ev,v,reasoning,fig,figures,compute,expression,equivalent
+h.h.prior.answers.clear();h.h.prior.new.clear();figures.clear();h.h.prior.corrections.clear()
+answers=h.h.prior.answers;new=h.h.prior.new;corrections=h.h.prior.corrections
+DOMAIN=h.DOMAIN;RANGE=h.RANGE;INVERSE=h.INVERSE;SKETCH=h.SKETCH;INVSKETCH=h.INVSKETCH;SQUARE=h.SQUARE;ONEONE=h.ONEONE;COMPOSE=h.COMPOSE
+extra=h.extra
+
+ps=[]
+p=h.inv('a','-sqrt(2/x+1)','-sqrt(2/x+1)',601,'Interval.open(0,oo)','Interval.open(-oo,-1)','For original f(t)=2/(t²−1), t<−1, outputs are strictly positive and f is strictly increasing. Solve for t²=1+2/y, then choose the NEGATIVE root because t<−1. Valid inverse input is y>0. The key formula is correct but its appended x!=0 condition is too broad.');extra(p,'original-image','','Interval.open(0,oo)','real-image-range',['2/(x**2-1)','Interval.open(-oo,-1)']);ps.append(p)
+p=v('b','solveset((2/(x**2-1))**2+1-5,x,domain=Interval.open(-oo,-1))','FiniteSet(-sqrt(2))',601,'Original g(t)=t²+1 takes t>0; original f has positive outputs on x<−1, so gf is defined there. Solve the ORIGINAL composite equation and filter by x<−1, giving only−sqrt2. The positive root and branch leading to x0 do not satisfy the original domain.');p['assessed_8227_demand_ids']=[COMPOSE];ps.append(p)
+h.add('Exercise-3.1',1,134,'f=2/(x²−1) for x<−1 and g=x²+1 for x>0: derive the negative-root inverse of f, with inverse input>0, then solve gf(x)=5 on the actual original domain.',ps,[INVERSE,COMPOSE])
+ps=[h.inv('a-inverse','solve(y-(4-5*x),x)[0].subs(y,x)','(4-x)/5',601,'S.Reals','S.Reals','The affine original4−5x has nonzero slope−5 onR. Solve y=4−5t for t; both original/inverse domains areR.')]
+p=v('a-intersection','solve(4-5*x-(4-x)/5,x)[0]','Rational(2,3)',601,'Set the original and independently derived inverse formulas equal. This gives x2/3; substituting back gives y2/3. Check both equations, not only the fixed-point line.');p['canonical_response']='(2/3,2/3)';p['assessed_8227_demand_ids']=['8227:2020:M1:T4:O02:D01'];extra(p,'both-y-values','Tuple(4-5*Rational(2,3),(4-Rational(2,3))/5)','Tuple(Rational(2,3),Rational(2,3))');ps.append(p)
+p=h.h.sketch('b',['Original y=4−5x: slope−5, intercepts (0,4),(4/5,0).','Inverse y=(4−x)/5: slope−1/5, intercepts (0,4/5),(4,0).','Draw both labelled full lines on the same axes, reflected in y=x; intersection(2/3,2/3).'],601,[('intercepts','Tuple(4,solve(4-5*x,x)[0],Rational(4,5),solve((4-x)/5,x)[0])','Tuple(4,Rational(4,5),Rational(4,5),4)')]);p['assessed_8227_demand_ids']=[SKETCH,INVSKETCH];ps.append(p)
+r=h.add('Exercise-3.1',2,134,'For f=4−5x onR, find its inverse and the two graphs’ intersection(2/3,2/3), then sketch both labelled lines with their reflection relationship.',ps,[INVERSE,'8227:2020:M1:T4:O02:D01',SKETCH,INVSKETCH]);r['sketch_response_required']=True
+ps=[h.square('a',2,-8,11,'2*(x-2)**2+3',601),h.image('b','2*x**2-8*x+11','S.Reals','Interval(3,oo)',601)]
+p=reasoning('c','No inverse function on the unrestricted original domainR: f is not one-to-one.','Original f(1)=f(3)=5 at distinct inputs. A quadratic with the whole real domain has two monotone sides, so its inverse relation would not be single-valued. This is the requested explanation, not a missing-source-domain defect.',601,'matches');p['assessed_8227_demand_ids']=[ONEONE];extra(p,'counterexample','Tuple(2*1**2-8*1+11,2*3**2-8*3+11)','Tuple(5,5)');ps.append(p)
+p=h.bound('d','Largest A=2.',601,'For new original g with the same formula on x<=A, the left half-line is injective iff A<=2. Choose largest A2.');p['assessed_8227_demand_ids']=[ONEONE];ps.append(p)
+ps.append(h.inv('e-inverse','2-sqrt((x-3)/2)','2-sqrt((x-3)/2)',601,'Interval(3,oo)','Interval(-oo,2)','With selected A2, original inputs lie on the left side of vertex2, so the inverse takes the minus root. Its input is x>=3 and output<=2.'))
+p=h.bound('e-range','Range of inverse (-infinity,2].',601,'The inverse output set is exactly the original restricted domain x<=2. The book’s y<=2 statement is correct.');p['assessed_8227_demand_ids']=[RANGE];extra(p,'inverse-image','','Interval(-oo,2)','real-image-range',['2-sqrt((x-3)/2)','Interval(3,oo)']);ps.append(p)
+h.add('Exercise-3.1',3,134,'f=2x²−8x+11 onR: complete its square, give range, explain noninjectivity; then restrict g to x<=A, choose largest A2, and find its minus-root inverse and range y<=2.',ps,[SQUARE,RANGE,ONEONE,INVERSE])
+ps=[]
+p=reasoning('a-range','Range [c²+4c,infinity), with the stated injectivity condition forcing c>=−2.','Complete f=(x+2)^2−4. On a right half-line [c,infinity), injectivity requires c>=−2, so the function is increasing from its included left endpointc and the minimum is f(c)=c²+4c. The source explicitly gives one-to-one status, unlike the earlier unset-p range task.',601,'matches');p['assessed_8227_demand_ids']=[RANGE];extra(p,'square','expand((x+2)**2-4)','x**2+4*x');ps.append(p)
+p=h.bound('a-c','Smallest possible c=−2.',601,'Any c<−2 includes points on both sides of the vertex, with repeated outputs. Every c>=−2 stays on the increasing branch.');p['assessed_8227_demand_ids']=[ONEONE];ps.append(p)
+p=reasoning('b-equations','5a+b=11 and (a+b)^2+4(a+b)=21.','With actual c0, f(1)=5 gives gf(1)=5a+b=11. The inner value g(1)=a+b is positive because a,b are positive, so fg(1) is defined and yields the second equation. These are two constraints on one correlated pair.',601,'matches');p['assessed_8227_demand_ids']=[COMPOSE];extra(p,'expanded-second','expand((a+b)**2+4*(a+b))','a**2+2*a*b+b**2+4*a+4*b');ps.append(p)
+p=reasoning('b-solution','a=2,b=1 only, under the stated a>0,b>0 conditions.','From5a+b=11, substitute b=11−5a into the second equation. The algebraic candidate pairs are(2,1) and(9/2,−23/2). The source key retains both, but the latter violates the ORIGINAL positive-b condition. The valid pair also keeps the inner input g(1)>0 for f domain x>=0.',601,'key wrong');p['assessed_8227_demand_ids']=[COMPOSE]
+extra(p,'all-algebraic-candidates','FiniteSet(*solve([5*a+b-11,(a+b)**2+4*(a+b)-21],(a,b)))','FiniteSet(Tuple(2,1),Tuple(Rational(9,2),-Rational(23,2)))');extra(p,'valid-original-values','Tuple(2*5+1,(2+1)**2+4*(2+1))','Tuple(11,21)');ps.append(p)
+h.add('Exercise-3.1',4,134,'f=x²+4x on x>=c is one-to-one: range begins at c²+4c and c>=−2. With c0, g=ax+b on x>=0 and POSITIVE a,b, use gf(1)=11 and fg(1)=21 to retain only a2,b1.',ps,[RANGE,ONEONE,COMPOSE])
+
+LINE='8227:2020:M1:T4:O01:D01'
+refs=[
+ (60,135,'Distance and midpoint reference with labelled displacement diagram','For A(1,1),B(4,3), displacement is(3,2), length sqrt13 and midpoint(5/2,2). General distance uses squared coordinate differences and midpoint uses coordinate averages. These are prerequisite geometric tools supporting later equation tasks, not extra asked source responses.',[LINE],'diagram',[('sqrt((4-1)**2+(3-1)**2)','sqrt(13)'),('Tuple((1+4)/2,(1+3)/2)','Tuple(Rational(5,2),2)')]),
+ (61,135,'Gradient reference and specific two-point graph','The line through A(1,1),B(4,3) has gradient(3−1)/(4−1)=2/3. The quotient presumes distinct x coordinates; vertical lines require a separate equation x=constant.',[LINE],'graph',[('(3-1)/(4-1)','Rational(2,3)')]),
+ (62,135,'Point-gradient and two-point equation worked reference','Both worked routes give y=(2/3)x+1/3 through(1,1),(4,3). Point-gradient form is valid for finite slope; the displayed two-point quotient also requires nonzero relevant denominators. Cross-multiplied line forms handle horizontal/vertical special cases without dividing by zero.',[LINE],'table',[('solve(y-3-Rational(2,3)*(x-4),y)[0]','2*x/3+Rational(1,3)'),('solve(3*(y-1)-2*(x-1),y)[0]','2*x/3+Rational(1,3)')])]
+for n,page,label,note,teaches,rep,checks in refs:
+ fig(n,page,label,note,teaches,rep,checks,None)
+ f=figures[-1];f['item_id']=f['item_id'].replace('Goldie:C5:','YM:C3:');f.update(printed_page=pp(page),source_evidence=ev(page),value_level_scope_decisions=[],item_kind='teaching-figure')
+ if n==60:f['component_demand_ids']=['8227:PRIOR:NSSCO:coordinate-geometry']
+pages=[{'pdf_page':page,'printed_page':pp(page),'chapter':3,'page_status':'items enumerated','item_ids':[r['item_id']for r in answers if r['source_pdf_page']==page]+[r['item_id']for r in figures if r['pdf_page']==page],'continuation_item_ids':[],'source_evidence':ev(page),'reader':'Codex author','date':'2026-11-19','non_item_content':'Every Exercise3.1Q1–4 output is recorded; natural-domain and positive-parameter filtering are explicit. Printed Basic/Intermediate/Advanced labels are source labels, not automatic Bloom or grade classifications.'if page==134 else'Coordinate-geometry prose and every distance/midpoint/gradient/line-equation reference panel are enumerated. No independent learner task is introduced on135. Portraits/decorative page furniture are not mathematical teaching figures.','scope_screen':'Function/inverse/composite and graphical intersection tasks are within scope. Actual branch restrictions apply QUAL08. Coordinate distances/midpoints are supporting prerequisites unless separately asked by a later task.'}for page in[134,135]]
+
+if __name__=='__main__':
+ for name,data in [('answers-YM-C3-function-exercise.json',{'scope':'Every Exercise3.1 requested response.','items':answers}),('census-YM-C3-function-exercise.json',{'book':'YM','book_id':'8227-SRC-017','chapter':3,'source_path':SRC,'source_sha256':SHA,'scope':'Complete134–135 page census.','new_items':new+figures,'corrections':corrections,'pages':pages})]:
+  (W/'tools/textbook-r5'/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ for row in answers:
+  for p in row['subparts']:
+   if 'operation'in p:assert equivalent(compute(p['operation']),expression(p.get('author_expected_normalised',p['printed_key_normalised']))),(row['item_id'],p['subpart'])
+   for name,op in p.get('additional_operations',{}).items():
+    if name in p.get('additional_operation_expected',{}):assert equivalent(compute(op),expression(p['additional_operation_expected'][name])),(row['item_id'],p['subpart'],name)
+ print(len(answers),'items;',sum(len(r['subparts'])for r in answers),'responses;',len(figures),'references/assets;',len(pages),'pages')

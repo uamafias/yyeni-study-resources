@@ -1,0 +1,841 @@
+{
+  "scope": "Complete rendered350–353census;all12improper-limit/classificationresponsesindependentlyrecomputed.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C7:Example:26",
+      "source_pdf_page": 351,
+      "notes": "Evaluate ∫1^∞x^−2dx and determine convergence. Finite cutoffs stay positive and the tail limit gives1.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "Evaluate ∫1^∞x^−2dx and determine convergence. Finite cutoffs stay positive and the tail limit gives1.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−2",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Evaluate ∫1^∞x^−2dx and determine convergence. Finite cutoffs stay positive and the tail limit gives1.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "limit"
+      ],
+      "subparts": [
+        {
+          "subpart": "limit",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/x**2,(x,1,t)),t,oo,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "1",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/x**2",
+          "truncated_bounds": [
+            "1",
+            "t"
+          ],
+          "limiting_endpoint": "oo",
+          "limit_direction": "-",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 351,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 351,
+          "answer_printed_page": 339,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:26",
+      "source_pdf_page": 352,
+      "notes": "Three infinite-interval limits:3/x²from1to∞,2/x³from4to∞,and10/x³from−∞to−2. The last converges to a NEGATIVE signed value−5/4;do not take its absolute value.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "Three infinite-interval limits:3/x²from1to∞,2/x³from4to∞,and10/x³from−∞to−2. The last converges to a NEGATIVE signed value−5/4;do not take its absolute value.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−2, −3",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Three infinite-interval limits:3/x²from1to∞,2/x³from4to∞,and10/x³from−∞to−2. The last converges to a NEGATIVE signed value−5/4;do not take its absolute value.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(3/x**2,(x,1,t)),t,oo,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "3",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "3/x**2",
+          "truncated_bounds": [
+            "1",
+            "t"
+          ],
+          "limiting_endpoint": "oo",
+          "limit_direction": "-",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(2/x**3,(x,4,t)),t,oo,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "Rational(1,16)",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "2/x**3",
+          "truncated_bounds": [
+            "4",
+            "t"
+          ],
+          "limiting_endpoint": "oo",
+          "limit_direction": "-",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(10/x**3,(x,t,-2)),t,-oo,dir=\"+\")"
+            ]
+          },
+          "printed_key_normalised": "-Rational(5,4)",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "10/x**3",
+          "truncated_bounds": [
+            "t",
+            "-2"
+          ],
+          "limiting_endpoint": "-oo",
+          "limit_direction": "+",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:27",
+      "source_pdf_page": 352,
+      "notes": "For ∫−∞^0(3−x)^−1/2dx,the finite LOWER cutoff tends to−∞,not+∞. The integral grows without bound and diverges.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "For ∫−∞^0(3−x)^−1/2dx,the finite LOWER cutoff tends to−∞,not+∞. The integral grows without bound and diverges.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−1/2",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "For ∫−∞^0(3−x)^−1/2dx,the finite LOWER cutoff tends to−∞,not+∞. The integral grows without bound and diverges.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "limit"
+      ],
+      "subparts": [
+        {
+          "subpart": "limit",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/sqrt(3-x),(x,t,0)),t,-oo,dir=\"+\")"
+            ]
+          },
+          "printed_key_normalised": "oo",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/sqrt(3-x)",
+          "truncated_bounds": [
+            "t",
+            "0"
+          ],
+          "limiting_endpoint": "-oo",
+          "limit_direction": "+",
+          "printed_convergence": "divergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 352,
+          "answer_printed_page": 340,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:27",
+      "source_pdf_page": 352,
+      "notes": "Three tail tests:√(6−x)from−∞to1and3/√xfrom4to∞diverge+∞;1/(5−2x)²from10to∞converges1/30. Its original pole5/2is outside every truncated interval.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "Three tail tests:√(6−x)from−∞to1and3/√xfrom4to∞diverge+∞;1/(5−2x)²from10to∞converges1/30. Its original pole5/2is outside every truncated interval.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1/2, −1/2, −2",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Three tail tests:√(6−x)from−∞to1and3/√xfrom4to∞diverge+∞;1/(5−2x)²from10to∞converges1/30. Its original pole5/2is outside every truncated interval.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(sqrt(6-x),(x,t,1)),t,-oo,dir=\"+\")"
+            ]
+          },
+          "printed_key_normalised": "oo",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "sqrt(6-x)",
+          "truncated_bounds": [
+            "t",
+            "1"
+          ],
+          "limiting_endpoint": "-oo",
+          "limit_direction": "+",
+          "printed_convergence": "divergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(3/sqrt(x),(x,4,t)),t,oo,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "oo",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "3/sqrt(x)",
+          "truncated_bounds": [
+            "4",
+            "t"
+          ],
+          "limiting_endpoint": "oo",
+          "limit_direction": "-",
+          "printed_convergence": "divergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/(5-2*x)**2,(x,10,t)),t,oo,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "Rational(1,30)",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/(5-2*x)**2",
+          "truncated_bounds": [
+            "10",
+            "t"
+          ],
+          "limiting_endpoint": "oo",
+          "limit_direction": "-",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 352,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:28",
+      "source_pdf_page": 353,
+      "notes": "Upper-endpoint singularity ∫0³1/√(3−x)dx. Approach3FROMBELOW;the finite limit2√3exists despite the original undefined endpoint.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "Upper-endpoint singularity ∫0³1/√(3−x)dx. Approach3FROMBELOW;the finite limit2√3exists despite the original undefined endpoint.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−1/2",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Upper-endpoint singularity ∫0³1/√(3−x)dx. Approach3FROMBELOW;the finite limit2√3exists despite the original undefined endpoint.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "limit"
+      ],
+      "subparts": [
+        {
+          "subpart": "limit",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/sqrt(3-x),(x,0,t)),t,3,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "2*sqrt(3)",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/sqrt(3-x)",
+          "truncated_bounds": [
+            "0",
+            "t"
+          ],
+          "limiting_endpoint": "3",
+          "limit_direction": "-",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 353,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 341,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:28",
+      "source_pdf_page": 353,
+      "notes": "Two endpoint-root singularities:∫0¹x^−1/2dxuses cutoff0FROMABOVEandconverges2;∫0⁴(4−x)^−1/2dxuses cutoff4FROMBELOWandconverges4.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "Two endpoint-root singularities:∫0¹x^−1/2dxuses cutoff0FROMABOVEandconverges2;∫0⁴(4−x)^−1/2dxuses cutoff4FROMBELOWandconverges4.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−1/2",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Two endpoint-root singularities:∫0¹x^−1/2dxuses cutoff0FROMABOVEandconverges2;∫0⁴(4−x)^−1/2dxuses cutoff4FROMBELOWandconverges4.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/sqrt(x),(x,t,1)),t,0,dir=\"+\")"
+            ]
+          },
+          "printed_key_normalised": "2",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/sqrt(x)",
+          "truncated_bounds": [
+            "t",
+            "1"
+          ],
+          "limiting_endpoint": "0",
+          "limit_direction": "+",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 353,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/sqrt(4-x),(x,0,t)),t,4,dir=\"-\")"
+            ]
+          },
+          "printed_key_normalised": "4",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/sqrt(4-x)",
+          "truncated_bounds": [
+            "0",
+            "t"
+          ],
+          "limiting_endpoint": "4",
+          "limit_direction": "-",
+          "printed_convergence": "convergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_pdf_page": 353,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 628,
+          "answer_printed_page": "A42",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-625.png",
+            "sha256": "12dbec6578bae1fb95645a77f973a0b39d338ed8285ce3ceabf67af9ec2cb205"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:29",
+      "source_pdf_page": 353,
+      "notes": "Lower-endpoint singularity ∫0⁴x^−2dxdiverges+∞. Native source confirms the primitive minus sign is CORRECT;do not register the cleared thumbnail suspicion as a source defect.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Both the improper limiting value and its convergence disposition are requested. Direct coverage is the specific SIMPLE improper-integral demand;finite antiderivative work is a component. Separate endpoint and infinite-interval cases,and preserve negative convergent signed integrals.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "within",
+          "quoted_value": "Lower-endpoint singularity ∫0⁴x^−2dxdiverges+∞. Native source confirms the primitive minus sign is CORRECT;do not register the cleared thumbnail suspicion as a source defect.",
+          "reason": "Actual fixed functions are simple powers/linear-root expressions with one infinite or singular endpoint. Each truncated interval avoids all original internal poles. No principal-value cancellation or general convergence theorem is used."
+        },
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−2",
+          "reason": "Actual integration powers are rational and none is−1;simple linear powers are integrated before taking the appropriate endpoint limit."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Lower-endpoint singularity ∫0⁴x^−2dxdiverges+∞. Native source confirms the primitive minus sign is CORRECT;do not register the cleared thumbnail suspicion as a source defect.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "limit"
+      ],
+      "subparts": [
+        {
+          "subpart": "limit",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(integrate(1/x**2,(x,t,4)),t,0,dir=\"+\")"
+            ]
+          },
+          "printed_key_normalised": "oo",
+          "method": "Start from the ORIGINAL integrand and replace its infinite/singular endpoint with finite t on the ACTUAL real-domain side. Integrate on that proper truncated interval,then take the explicit one-sided limit. Convergence requires a finite real limit;an infinite limit records divergence,not a finite numerical integral. Infinity is not treated as a real number and no division by0is performed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O03:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "numeric",
+          "original_integrand": "1/x**2",
+          "truncated_bounds": [
+            "t",
+            "4"
+          ],
+          "limiting_endpoint": "0",
+          "limit_direction": "+",
+          "printed_convergence": "divergent",
+          "author_convergence_basis": "The independently computed limit is finite real exactly in the convergent cases. Values for divergent cases are directional limit diagnoses,not finite answers.",
+          "source_interpretation": "The book says divergent/doesnotexist,which agrees with the positive infinite limit. A nativecrop confirms its primitive is−1/xand its endpoint subtraction is−1/4+1/t;the apparent missing minus in the thumbnail was a FALSELEAD. The informal source1/0shorthand is replaced here by a one-sided limit.",
+          "source_pdf_page": 353,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "answer_pdf_page": 353,
+          "answer_printed_page": 341,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-350-source.png",
+            "sha256": "49705dabfe793ccac371358a1be5fd011cc4d1293bca5ac2574337487394e478"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    }
+  ]
+}

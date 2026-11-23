@@ -1,0 +1,29 @@
+{
+  "status": "All three integration audit points resolved before fresh-copy proof; canonical author single rebuild passed",
+  "fixes": [
+    {
+      "id": "IA-01",
+      "action": "Normalize reader aliases before duplicate comparison",
+      "file": "tools/textbook_closeout_r7.py"
+    },
+    {
+      "id": "IA-02",
+      "action": "Include consumed close-out module and JSON author inputs in synthesis provenance hashes",
+      "file": "tools/build_textbook_synthesis_r5.py"
+    },
+    {
+      "id": "IA-03",
+      "action": "Apply canonical family demand/disposition/native-exception changes, remove false log relation and stale selected-gap metadata",
+      "files": [
+        "tools/textbook-family-repairs-r7.json",
+        "tools/textbook_closeout_r7.py"
+      ]
+    }
+  ],
+  "evidence": "checks/r7-closeout/single-rebuild-r7-closeout.json",
+  "author_tool_sha256": {
+    "work/nam-8227-nsscas-2026/workbench/tools/textbook_closeout_r7.py": "3dfc043a705314f5a784d560ea4447598fc8f7435bd5cabfcb51a801410a8e35",
+    "work/nam-8227-nsscas-2026/workbench/tools/build_textbook_synthesis_r5.py": "c27c0df1e9fb54da6273ff83a4472e994fa1397100f035aeee7bcb110d522af2",
+    "work/nam-8227-nsscas-2026/workbench/tools/textbook-family-repairs-r7.json": "45aaec4e9495f6a86e62113ab48ea0d3561634f68da5d8bf53fdb50d546020fa"
+  }
+}

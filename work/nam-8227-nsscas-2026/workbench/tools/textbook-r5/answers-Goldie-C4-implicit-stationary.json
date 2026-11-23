@@ -1,0 +1,350 @@
+{
+  "scope": "EveryexplicitpartofExamples17–18,includingthesingular-originqualificationandallfourpoint/gradientchecks.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C4:Example:17",
+      "source_pdf_page": 118,
+      "notes": "Forx³+y³=3xy,differentiateimplicitlyandhencefindanystationarypoints. Thesourceincludesoriginand(∛2,∛4);theoriginneedsanexplicitsingular-branchqualificationbecausebothimplicitpartialsarezero.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D01",
+        "8227:2020:M2:T4:O03:D03",
+        "8227:2020:M1:T8:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O02:D01"
+      ],
+      "mapping_rationale": "Implicit differentiation andthe actual stationary/gradient decisions are assessed. A parametric branch check used by the author to audit a singularity isnot a learner-assessed parametric demand. A node requires branch reasoning beyond setting the implicit numerator tozero.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "not applicable",
+          "quoted_value": "Forx³+y³=3xy,differentiateimplicitlyandhencefindanystationarypoints. Thesourceincludesoriginand(∛2,∛4);theoriginneedsanexplicitsingular-branchqualificationbecausebothimplicitpartialsarezero.",
+          "reason": "Polynomialimplicitcurve,nottrigonometricrootfamilies."
+        },
+        {
+          "rule_id": "8227:LIMIT05",
+          "status": "not applicable",
+          "quoted_value": "Forx³+y³=3xy,differentiateimplicitlyandhencefindanystationarypoints. Thesourceincludesoriginand(∛2,∛4);theoriginneedsanexplicitsingular-branchqualificationbecausebothimplicitpartialsarezero.",
+          "reason": "Thedegree-fourdividendlimitisforpolynomialdivision,notacubicimplicitcurveoradegree-sixsubstitutionequation. No polynomial division is requested."
+        },
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "within",
+          "quoted_value": "Forx³+y³=3xy,differentiateimplicitlyandhencefindanystationarypoints. Thesourceincludesoriginand(∛2,∛4);theoriginneedsanexplicitsingular-branchqualificationbecausebothimplicitpartialsarezero.",
+          "reason": "Actualpowersinthecubicarepositiveintegers."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary worked Example without examination attribution.",
+      "precision_angle_check": {
+        "source": "Exact radicals andradianmultiples ofπ. Four explicit sourcepoints must be checked individually.",
+        "comparison": "KeepFy≠0for a regular implicit slope;whenFx=Fy=0,qualifythebranchratherthanaccept0/0aszero. Degree-sixeliminationdoesnotadd a division-scope exclusion."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "implicit-expression-derivative",
+            "operands": [
+              "x**3+y**3-3*x*y"
+            ]
+          },
+          "printed_key_normalised": "3*x**2+3*y**2*p-3*(x*p+y)",
+          "method": "Treatyasy(x)anddifferentiatetheoriginalcurveequation. Normalisep=dy/dx;thetotalderivativeequationiszero. Thisformalrelationisvalidonalocaldifferentiablebranch,butneednotdetermineaslopeatasingularpoint.",
+          "normalised_notation": {
+            "p": "dy/dx"
+          },
+          "author_answer_form": "3x²+3y²(dy/dx)=3(x(dy/dx)+y).",
+          "source_pdf_page": 118,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 118,
+          "answer_printed_page": 104,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "The regular horizontal-tangent point is(∛2,∛4). The origin also lies on a horizontal-tangent local branch,but it is a node with another vertical-tangent branch;the full curve has no unique dy/dx there.",
+          "author_derivation": "For a regular horizontal tangent,Fx=3x²−3y=0givesy=x². Substitution inF=0givesx³(x³−2)=0. AtB=(∛2,∛4),Fy=3y²−3x=3∛2≠0,sothe horizontal slope isvalid. AtA=(0,0),bothFxandFyvanish;the source necessary condition alone isinsufficient. The rational parametrisationX=3t/(1+t³),Y=3t²/(1+t³)lies onF=0andhas tangentvector(3,0)att=0. Swapping these coordinates gives another local parametrisation with tangentvector(0,3)at the origin. This verifies a horizontal branch there whiledisclosing the singularity omitted by the source explanation.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "elimination_factorisation": {
+              "kind": "identity",
+              "operands": [
+                "factor((x**3+y**3-3*x*y).subs(y,x**2))"
+              ]
+            },
+            "regular_point_curve_residual": {
+              "kind": "identity",
+              "operands": [
+                "(x**3+y**3-3*x*y).subs({x:2**(1/3),y:2**(2/3)})"
+              ]
+            },
+            "regular_Fy": {
+              "kind": "identity",
+              "operands": [
+                "diff(x**3+y**3-3*x*y,y).subs({x:2**(1/3),y:2**(2/3)})"
+              ]
+            },
+            "singular_partial_derivatives": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(x**3+y**3-3*x*y,x).subs({x:0,y:0}),diff(x**3+y**3-3*x*y,y).subs({x:0,y:0}))"
+              ]
+            },
+            "horizontal_branch_curve_residual": {
+              "kind": "identity",
+              "operands": [
+                "cancel((3*x/(1+x**3))**3+(3*x**2/(1+x**3))**3-3*(3*x/(1+x**3))*(3*x**2/(1+x**3)))"
+              ]
+            },
+            "horizontal_branch_tangent_vector": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(3*x/(1+x**3),x).subs(x,0),diff(3*x**2/(1+x**3),x).subs(x,0))"
+              ]
+            },
+            "vertical_branch_tangent_vector": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(3*x**2/(1+x**3),x).subs(x,0),diff(3*x/(1+x**3),x).subs(x,0))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "elimination_factorisation": "x**3*(x**3-2)",
+            "regular_point_curve_residual": "0",
+            "regular_Fy": "3*2**(1/3)",
+            "singular_partial_derivatives": "Tuple(0,0)",
+            "horizontal_branch_curve_residual": "0",
+            "horizontal_branch_tangent_vector": "Tuple(3,0)",
+            "vertical_branch_tangent_vector": "Tuple(0,3)"
+          },
+          "source_pdf_page": 118,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 118,
+          "answer_printed_page": 104,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C4:Example:18",
+      "source_pdf_page": 119,
+      "notes": "Forsinx+siny=1in0≤x,y≤π,usingthegivenclosedcurve:deriveimplicitgradientandallstationarycoordinates;verifyfourstatedπ/6/5π/6pointpairs,findtheirgradients,andconcludethenaturesofthetwostationarypoints.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T4:O03:D01",
+        "8227:2020:M2:T4:O03:D03",
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M1:T8:O04:D02",
+        "8227:2020:M1:T6:O06:D01",
+        "8227:2020:M1:T6:O06:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T4:O01:D01"
+      ],
+      "mapping_rationale": "Implicit differentiation andthe actual stationary/gradient decisions are assessed. A parametric branch check used by the author to audit a singularity isnot a learner-assessed parametric demand. A node requires branch reasoning beyond setting the implicit numerator tozero.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL03",
+          "status": "within",
+          "quoted_value": "Forsinx+siny=1in0≤x,y≤π,usingthegivenclosedcurve:deriveimplicitgradientandallstationarycoordinates;verifyfourstatedπ/6/5π/6pointpairs,findtheirgradients,andconcludethenaturesofthetwostationarypoints.",
+          "reason": "Bothangles arebounded0..πandthetrigargumentshavemultiplier1."
+        },
+        {
+          "rule_id": "8227:LIMIT05",
+          "status": "not applicable",
+          "quoted_value": "Forsinx+siny=1in0≤x,y≤π,usingthegivenclosedcurve:deriveimplicitgradientandallstationarycoordinates;verifyfourstatedπ/6/5π/6pointpairs,findtheirgradients,andconcludethenaturesofthetwostationarypoints.",
+          "reason": "Thedegree-fourdividendlimitisforpolynomialdivision,notacubicimplicitcurveoradegree-sixsubstitutionequation. No polynomial division is requested."
+        },
+        {
+          "rule_id": "8227:QUAL10",
+          "status": "not applicable",
+          "quoted_value": "Forsinx+siny=1in0≤x,y≤π,usingthegivenclosedcurve:deriveimplicitgradientandallstationarycoordinates;verifyfourstatedπ/6/5π/6pointpairs,findtheirgradients,andconcludethenaturesofthetwostationarypoints.",
+          "reason": "Trigimplicitcurve;no rational-power boundary."
+        }
+      ],
+      "exam_style": false,
+      "exam_style_basis": "Ordinary worked Example without examination attribution.",
+      "precision_angle_check": {
+        "source": "Exact radicals andradianmultiples ofπ. Four explicit sourcepoints must be checked individually.",
+        "comparison": "KeepFy≠0for a regular implicit slope;whenFx=Fy=0,qualifythebranchratherthanaccept0/0aszero. Degree-sixeliminationdoesnotadd a division-scope exclusion."
+      },
+      "expected_subpart_labels": [
+        "i-derivative",
+        "i-stationary-points",
+        "ii-point-checks",
+        "ii-gradients",
+        "ii-classification"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-derivative",
+          "operation": {
+            "kind": "implicit-derivative",
+            "operands": [
+              "sin(x)+sin(y)-1"
+            ]
+          },
+          "printed_key_normalised": "-cos(x)/cos(y)",
+          "method": "DifferentiateF=0onaregularbranchandisolateitsfinitegradientwherecosy≠0.",
+          "original_common_domain": "0≤x,y≤π,onF=0wherecosy≠0.",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 119,
+          "answer_printed_page": 105,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "i-stationary-points",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "FiniteSet(Tuple(pi/2,asin(0)),Tuple(pi/2,pi-asin(0)))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(Tuple(pi/2,0),Tuple(pi/2,pi))",
+          "method": "Foraregularhorizontalgradient,cosx=0givesx=π/2astheonlyboundedx. ThenoriginalF=0requiressiny=0,sobothy=0andπareincluded;Fy=±1isnonzeroatboth. Checktheoriginalequation,notmerelythederivativenumerator.",
+          "additional_operations": {
+            "bounded_x_candidates": {
+              "kind": "bounded-trig-equation",
+              "operands": [
+                "cos(x)",
+                "0",
+                "pi"
+              ]
+            },
+            "bounded_y_candidates_after_x": {
+              "kind": "bounded-trig-equation",
+              "operands": [
+                "sin(x)",
+                "0",
+                "pi"
+              ]
+            },
+            "original_and_regular_checks": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((sin(x)+sin(y)-1).subs({x:pi/2,y:0}),(sin(x)+sin(y)-1).subs({x:pi/2,y:pi}),cos(0),cos(pi))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "bounded_x_candidates": "FiniteSet(pi/2)",
+            "bounded_y_candidates_after_x": "FiniteSet(0,pi)",
+            "original_and_regular_checks": "Tuple(0,0,1,-1)"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 119,
+          "answer_printed_page": 105,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-point-checks",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple((sin(x)+sin(y)-1).subs({x:pi/6,y:pi/6}),(sin(x)+sin(y)-1).subs({x:pi/6,y:5*pi/6}),(sin(x)+sin(y)-1).subs({x:5*pi/6,y:pi/6}),(sin(x)+sin(y)-1).subs({x:5*pi/6,y:5*pi/6}))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(0,0,0,0)",
+          "method": "Independently substituteeachofthefourstatedpointpairsintheoriginalequation. Bothsinπ/6andsin5π/6equal1/2,butthecosineshaveoppositesigns.",
+          "check_mode": "show/prove",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 120,
+          "answer_printed_page": 106,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-gradients",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple((-cos(x)/cos(y)).subs({x:pi/6,y:pi/6}),(-cos(x)/cos(y)).subs({x:pi/6,y:5*pi/6}),(-cos(x)/cos(y)).subs({x:5*pi/6,y:pi/6}),(-cos(x)/cos(y)).subs({x:5*pi/6,y:5*pi/6}))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(-1,1,1,-1)",
+          "method": "Computeoriginalpartialderivativesandthefinitegradientateachverifiedpointin thegivenorder. Cosinequadrants,notnumericaldenominatorsalone,determine the signs.",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 120,
+          "answer_printed_page": 106,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-classification",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "(π/2,0)is a minimum and(π/2,π)is a maximum on their local branches.",
+          "author_derivation": "The original boxboundsalreadygive0≤y≤π. Near the lower branch,cosy>0whilecosxchangespositive-to-negativeacrossπ/2;therefore−cosx/cosychangesnegative-to-positive. Near the upper branch,cosy<0so thegradientchangespositive-to-negative. These are local sign arguments,not a claim that four isolated sampledslopesaloneprovearbitrarycurvebehaviour.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "answer_pdf_page": 120,
+          "answer_printed_page": 106,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C4-118.png",
+            "sha256": "ba47c4b0bfaccf4eca7c227eebd4ac44bd0454c05bbfeeb141095cf5e0b6c5ce"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

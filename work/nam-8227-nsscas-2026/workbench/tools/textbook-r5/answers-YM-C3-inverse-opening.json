@@ -1,0 +1,619 @@
+{
+  "scope": "Every119response and printed reference,including explicit invalid-domain/branch defects.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C3:Example:10",
+      "source_pdf_page": 119,
+      "notes": "Find the inverse of√(x−3),then evaluate it at−2. The formula needs domainx≥0; the second requested input lies outside it.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "An inverse is a function on the ORIGINAL image,with values in the original domain. Algebraic swapping/squaring alone does not establish a valid branch or permit inputs outside that image. A noninjective unrestricted original needs an explicit branch restriction before an inverse function is claimed.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "outside",
+          "parts": [
+            "b-invalid-input: no real preimage; source answer7is invalid"
+          ],
+          "quoted_value": "g(x)=sqrt(x−3),with requested inverse input−2; original image[0,∞). ",
+          "reason": "The named source parts lose an essential inverse-domain/one-to-one restriction; retain them as source-defect/boundary evidence,not valid unqualified originals. Other listed parts have explicit natural domains and valid one-to-one rules."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Find the inverse of√(x−3),then evaluate it at−2. The formula needs domainx≥0; the second requested input lies outside it.",
+        "excluded_or_qualified_parts": [
+          "b-invalid-input: no real preimage; source answer7is invalid"
+        ],
+        "limits_considered": [
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact algebraic inverses; no rounding or angle units.",
+        "comparison": "Principal real square roots have nonnegative outputs. Cubic roots are real odd roots for negative arguments. Inverse notation is not a reciprocal,and natural poles/declared branch restrictions remain essential."
+      },
+      "expected_subpart_labels": [
+        "a-inverse-domain",
+        "b-invalid-input"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-inverse-domain",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "g^−1(x)=x²+3,with domainx≥0andimage[3,∞).",
+          "author_derivation": "The originalg(t)=√(t−3)hasdomain[3,∞)andimage[0,∞). Swap input/output only over those sets:the inverse polynomial is restricted tox≥0. The source prints the formula but omits that essential restriction before using a negative inverse input.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_function": "sqrt(x-3)",
+          "original_domain": "Interval(3,oo)",
+          "inverse_formula": "x**2+3",
+          "inverse_domain": "Interval(0,oo)",
+          "additional_operations": {
+            "original-image": {
+              "kind": "real-image-range",
+              "operands": [
+                "sqrt(x-3)",
+                "Interval(3,oo)"
+              ]
+            },
+            "restricted-inverse-image": {
+              "kind": "real-image-range",
+              "operands": [
+                "x**2+3",
+                "Interval(0,oo)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-image": "Interval(0,oo)",
+            "restricted-inverse-image": "Interval(3,oo)"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 119,
+          "answer_printed_page": 108,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "b-invalid-input",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solveset(sqrt(x-3)+2,x,domain=S.Reals)"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(7)",
+          "method": "The requestedg^−1(−2)asks for a real preimage of−2under√(t−3),which has no real solution. The printed7comes from extending the inverse polynomial outside its domain. Checkingg(7)=2,not−2,exposes the invalid inverse input.",
+          "author_expected_normalised": "S.EmptySet",
+          "canonical_response": "Undefined:−2isnotin the originalimage[0,∞).",
+          "additional_operations": {
+            "printed-preimage-countercheck": {
+              "kind": "identity",
+              "operands": [
+                "sqrt(7-3)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "printed-preimage-countercheck": "2"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 119,
+          "answer_printed_page": 108,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        }
+      ],
+      "continuation_pdf_pages": [],
+      "source_interpretation": "Retain the original as defective/internal evidence. A valid newly authored inverse evaluation would require an admissible nonnegative input; no replacement recipe is authored in this round."
+    },
+    {
+      "item_id": "8227:TB:YM:C3:Try-Now-10:1",
+      "source_pdf_page": 119,
+      "notes": "Find an unrestricted affine inverse andevaluate it at an admissible negative argument.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "An inverse is a function on the ORIGINAL image,with values in the original domain. Algebraic swapping/squaring alone does not establish a valid branch or permit inputs outside that image. A noninjective unrestricted original needs an explicit branch restriction before an inverse function is claimed.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "within",
+          "parts": [
+            "a-inverse",
+            "b-at-minus-five"
+          ],
+          "quoted_value": "f(x)=3x+4; evaluateinverse at−5. Nonzero slope3givesone-to-one original onR.",
+          "reason": "The original is injective on its actual real domain; the inverse domain/image and any original poles are retained."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Find an unrestricted affine inverse andevaluate it at an admissible negative argument.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact algebraic inverses; no rounding or angle units.",
+        "comparison": "Principal real square roots have nonnegative outputs. Cubic roots are real odd roots for negative arguments. Inverse notation is not a reciprocal,and natural poles/declared branch restrictions remain essential."
+      },
+      "expected_subpart_labels": [
+        "a-inverse",
+        "b-at-minus-five"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-inverse",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-(3*x+4),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "(x-4)/3",
+          "method": "Solve the ORIGINAL equationy=3t+4for t,then relabel the inverse inputx. Nonzero slope3makes the original injective onR.",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "b-at-minus-five",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(-5-4)/3"
+            ]
+          },
+          "printed_key_normalised": "-3",
+          "method": "The affine inverse hasdomainR,so input−5is admissible; its value is−3. Check the originalf(−3)=−5.",
+          "additional_operations": {
+            "original-forward-check": {
+              "kind": "identity",
+              "operands": [
+                "3*(-3)+4"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-forward-check": "-5"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        }
+      ],
+      "continuation_pdf_pages": []
+    },
+    {
+      "item_id": "8227:TB:YM:C3:Try-Now-10:2",
+      "source_pdf_page": 119,
+      "notes": "Find nine algebraic inverses. The unrestricted quadratic in(c)needs an explicit original branch; affine,cubic andfractional-linear cases retain their natural inverse domains.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "An inverse is a function on the ORIGINAL image,with values in the original domain. Algebraic swapping/squaring alone does not establish a valid branch or permit inputs outside that image. A noninjective unrestricted original needs an explicit branch restriction before an inverse function is claimed.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL08",
+          "status": "outside",
+          "parts": [
+            "c: originalx²+2has no global inverse function onR; key silently chooses the positive branch"
+          ],
+          "quoted_value": "Part(c):h(x)=x²+2withnooriginaldomainrestriction. Other originals are5x,2x³−1,6(x+3),(x+4)/2,x/4−3,(x+1)/x,(x+4)/(2x−5),and(2/3)(4x−5). ",
+          "reason": "The named source parts lose an essential inverse-domain/one-to-one restriction; retain them as source-defect/boundary evidence,not valid unqualified originals. Other listed parts have explicit natural domains and valid one-to-one rules."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Find nine algebraic inverses. The unrestricted quadratic in(c)needs an explicit original branch; affine,cubic andfractional-linear cases retain their natural inverse domains.",
+        "excluded_or_qualified_parts": [
+          "c: originalx²+2has no global inverse function onR; key silently chooses the positive branch"
+        ],
+        "limits_considered": [
+          "8227:QUAL08"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact algebraic inverses; no rounding or angle units.",
+        "comparison": "Principal real square roots have nonnegative outputs. Cubic roots are real odd roots for negative arguments. Inverse notation is not a reciprocal,and natural poles/declared branch restrictions remain essential."
+      },
+      "expected_subpart_labels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i"
+      ],
+      "subparts": [
+        {
+          "subpart": "a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-(5*x),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "x/5",
+          "method": "The slope5isnonzero,so solve the affine equation for its original input; both original andinverse have real domain.",
+          "original_function": "5*x",
+          "inverse_domain": "S.Reals",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "g^−1(x)=realcuberoot((x+1)/2),onallrealx.",
+          "author_derivation": "Solve the originaly=2t³−1by t³=(y+1)/2andthe unique real odd root. The cubic is strictly increasing onR. A principal complex-power interpretation for negative arguments is not the textbook’s real cube-root answer.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "original_function": "2*x**3-1",
+          "inverse_domain": "S.Reals",
+          "additional_operations": {
+            "negative-zero-positive-check": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(2*(-1)**3-1,2*0**3-1,2*1**3-1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "negative-zero-positive-check": "Tuple(-3,-1,1)"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "c",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "No inverse FUNCTION for h(x)=x²+2onits unrestricted natural domainR. Conditional branches need a stated original restriction.",
+          "author_derivation": "The key√(x−2)uses an unstated nonnegative-original-input branch. OnR,h(−1)=h(1)=3,so h isnotone-to-one. Iforiginalx≥0,the inverse is+√(x−2);iforiginalx≤0,it is−√(x−2). Either inverse hasdomain[2,∞),but neither is an inverse for the entire originalRdomain. Keep both conditional options and the missing-source-domain defect explicit.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [],
+          "teaches_8227_demand_ids": [
+            "8227:2020:M1:T3:O03:D01",
+            "8227:2020:M1:T3:O03:D02"
+          ],
+          "conditional_branches": [
+            {
+              "original_domain": "Interval(0,oo)",
+              "inverse": "sqrt(x-2)",
+              "inverse_domain": "Interval(2,oo)"
+            },
+            {
+              "original_domain": "Interval(-oo,0)",
+              "inverse": "-sqrt(x-2)",
+              "inverse_domain": "Interval(2,oo)"
+            }
+          ],
+          "additional_operations": {
+            "noninjective-original": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((-1)**2+2,1**2+2)"
+              ]
+            },
+            "positive-branch-not-global": {
+              "kind": "identity",
+              "operands": [
+                "sqrt(((-1)**2+2)-2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "noninjective-original": "Tuple(3,3)",
+            "positive-branch-not-global": "1"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "d",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-(6*(x+3)),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "x/6-3",
+          "method": "Undo multiplication by6andtranslation by3in reverse order; original/inverse domains areR.",
+          "original_function": "6*(x+3)",
+          "inverse_domain": "S.Reals",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "e",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-((x+4)/2),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "2*x-4",
+          "method": "Undo division by2then addition of4; original/inverse domains areR.",
+          "original_function": "(x+4)/2",
+          "inverse_domain": "S.Reals",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "f",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-(x/4-3),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "4*x+12",
+          "method": "Undo subtraction of3then division by4; distribute the factor4after adding3.",
+          "original_function": "x/4-3",
+          "inverse_domain": "S.Reals",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "g",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-((x+1)/x),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "1/(x-1)",
+          "method": "Originaldomain excludes0anditsimage excludes1. Solve the rational equation,then retain inverse domainx≠1.",
+          "original_function": "(x+1)/x",
+          "inverse_domain": "Complement(S.Reals,FiniteSet(1))",
+          "additional_operations": {
+            "original-natural-domain": {
+              "kind": "real-function-domain",
+              "operands": [
+                "(x+1)/x"
+              ]
+            },
+            "inverse-natural-domain": {
+              "kind": "real-function-domain",
+              "operands": [
+                "1/(x-1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-natural-domain": "Complement(S.Reals,FiniteSet(0))",
+            "inverse-natural-domain": "Complement(S.Reals,FiniteSet(1))"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "h",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-((x+4)/(2*x-5)),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "(4+5*x)/(2*x-1)",
+          "method": "Originaldomain excludes5/2anditsimage excludes1/2. The nonsingular fractional-linear rule is injective on its full natural domain; retain inverse polex1/2.",
+          "original_function": "(x+4)/(2*x-5)",
+          "inverse_domain": "Complement(S.Reals,FiniteSet(Rational(1,2)))",
+          "additional_operations": {
+            "original-natural-domain": {
+              "kind": "real-function-domain",
+              "operands": [
+                "(x+4)/(2*x-5)"
+              ]
+            },
+            "inverse-natural-domain": {
+              "kind": "real-function-domain",
+              "operands": [
+                "(4+5*x)/(2*x-1)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-natural-domain": "Complement(S.Reals,FiniteSet(Rational(5,2)))",
+            "inverse-natural-domain": "Complement(S.Reals,FiniteSet(Rational(1,2)))"
+          },
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        },
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(y-(Rational(2,3)*(4*x-5)),x)[0].subs(y,x)"
+            ]
+          },
+          "printed_key_normalised": "(3*x+10)/8",
+          "method": "The original slope8/3isnonzero; undo its affine operations exactly,with both domainsR.",
+          "original_function": "Rational(2,3)*(4*x-5)",
+          "inverse_domain": "S.Reals",
+          "source_pdf_page": 119,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C3-116-source.png",
+            "sha256": "aebe3120d9988d131ecec5bb5991d13be4e28cdaf239f079b041188eaf0f3ee8"
+          },
+          "answer_pdf_page": 599,
+          "answer_printed_page": "A13",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C2-keys-598-source.png",
+            "sha256": "fee34b289cb918e809291af84ef1c68081a2ece723e495ba674f081894b43771"
+          },
+          "review_date": "2026-11-19",
+          "given_representation": "text",
+          "response_format": "symbolic"
+        }
+      ],
+      "continuation_pdf_pages": [],
+      "source_interpretation": "Part(c)remains held as an unqualified source exemplar until an original branch is stated. The conditional branches are analysis of the source defect,not new recipes or generation domains."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+"""YM140–143: parameter pairs, reflections, area and geometric incidence."""
+import json
+import author_YM_C3_geometry_opening as g
+from author_YM_C3_geometry_opening import W,SRC,SHA,pp,ev,value,line,intersection,rounded,extra,fig,figures,compute,expression,equivalent,LINE,INTERSECT,COORD
+from author_YM_C3_opening import reasoning
+g.prior.answers.clear();g.prior.new.clear();figures.clear();g.prior.corrections.clear()
+answers=g.prior.answers;new=g.prior.new;corrections=g.prior.corrections
+
+ps=[line('a',(7,4),'Rational(3,2)','3*x/2-Rational(13,2)',601),intersection('b','3*x/2-Rational(13,2)','-2*x/3+13','Tuple(9,7)',601)]
+extra(ps[0],'AB-gradient','(2-6)/(10-4)','-Rational(2,3)');extra(ps[1],'parallel-through-given','-Rational(2,3)*(x-3)+11','-2*x/3+13')
+g.add('Try-Now-18',1,140,'A(4,6),B(10,2): find the perpendicular bisector; intersect it with a parallel to AB through(3,11) to find C(9,7).',ps)
+p=value('intersection','solve(2*(x-6)+5,x)[0]','Rational(7,2)',601,'Original endpoints(2,7),(10,3) give midpoint(6,5), AB slope−1/2 and perpendicular-bisector slope2. Set the resulting line y=2x−7 to zero for the x-axis intersection. The required response is the full point(7/2,0).',[LINE,INTERSECT]);p['canonical_response']='(7/2,0)'
+g.add('Try-Now-18',2,140,'Find where the perpendicular bisector of(2,7)and(10,3) meets the x-axis, retaining midpoint and perpendicular slope constraints.',[p])
+system='solve([a**2+b**2-45,a-2*b],(a,b))'
+p=reasoning('positive-intercepts','a=6,b=3.','From original intercepts P(a,0),Q(0,b), squared length gives a²+b²=45 and slope−b/a=−1/2 gives a=2b. Algebraic pairs±(6,3) occur, but original a,b>0 retain only(6,3). Positivity also justifies both denominator divisions.',140,'matches');p.update(response_format='symbolic',assessed_8227_demand_ids=[LINE]);extra(p,'all-pairs',f'FiniteSet(*{system})','FiniteSet(Tuple(-6,-3),Tuple(6,3))')
+g.add('Example',19,140,'The positive-intercept line x/a+y/b=1 has intercept distance sqrt45 and slope−1/2. Form both constraints and retain a6,b3 under positivity.',[p])
+p=value('correlated-pairs','FiniteSet(*solve([(3-a)**2+(b-2)**2-125,b-2-2*(3-a)],(a,b)))','FiniteSet(Tuple(8,-8),Tuple(-2,12))',601,'Use ORIGINAL A(a,2),B(3,b), distance sqrt125 and slope2. Solve squared length and signed gradient relation together. Both pairs have nonzero horizontal separation and satisfy the original length/slope; do not mix a from one with b from the other.',[LINE]);extra(p,'both-gradients','Tuple((-8-2)/(3-8),(12-2)/(3-(-2)))','Tuple(2,2)')
+g.add('Try-Now-19',1,140,'A(a,2),B(3,b) have distance sqrt125 and gradient2. Find BOTH correlated parameter pairs(8,−8),(−2,12).',[p])
+ps=[value('a','2*(a-(-1))+1','2*a+3',601,'The original line AP has slope2 through A(−1,1), so b−1=2(a+1).',[LINE])]
+p=value('b','FiniteSet(*solve([(a+1)**2+(b-1)**2-((10+1)**2+(-1-1)**2),b-(2*a+3)],(a,b)))','FiniteSet(Tuple(-6,-9),Tuple(4,11))',601,'Original AB²=11²+(−2)²=125. Intersect the circle of that squared distance about A with the line b=2a+3. Both points satisfy AP=AB and slope2; squaring is valid for nonnegative Euclidean distances.',[INTERSECT]);ps.append(p)
+g.add('Try-Now-19',2,140,'A(−1,1),P(a,b),slopeAP2: derive b=2a+3; with B(10,−1) and AP=AB, find both positions P(−6,−9),(4,11).',ps)
+p=value('reflected-point','Tuple(-1-2*(2*(-1)+3*3-33)*2/(2**2+3**2),3-2*(2*(-1)+3*3-33)*3/(2**2+3**2))','Tuple(7,15)',141,'Independently use normal vector(2,3) for original mirror2x+3y−33=0. Reflect original P(−1,3) by subtracting twice its signed normal projection. Cross-check midpoint M(3,9) lies on the mirror and displacement PR is normal to it. The source uses perpendicular-line intersection plus vector/midpoint alternatives.',[LINE,INTERSECT]);extra(p,'midpoint-on-mirror','2*((-1+7)/2)+3*((3+15)/2)-33','0');extra(p,'mirror-normal-parallel','(7-(-1))*3-(15-3)*2','0')
+r=g.add('Example',20,141,'Reflect original point(−1,3) in line2x+3y=33 by calculation, obtaining R(7,15), with projection foot/midpoint(3,9).',[p]);r['valid_alternative_methods']=['Perpendicular-line intersection then midpoint recovery.','Signed normal projection formula, with midpoint/mirror and normal-direction checks.'];r['source_interpretation']='These are textbook solution alternatives, not official marking awards.'
+ps=[value('a','Tuple(0,solve(-3*y+12,y)[0])','Tuple(0,4)',601,'P is the y-axis intersection of the ORIGINAL line2x−3y+12=0; set x0, not y0.',[INTERSECT]),line('b',(5,3),'-Rational(3,2)','-3*x/2+Rational(21,2)',601),intersection('c','2*x/3+4','-3*x/2+Rational(21,2)','Tuple(3,6)',601)]
+p=value('d','Tuple(2*3-5,2*6-3)','Tuple(1,9)',601,'Q is the perpendicular foot of R on the mirror PQ, so reflected S=2Q−R. Check that midpoint(R,S)=Q and RS is perpendicular to PQ. The given drawing places S near the y-axis but its exact x is1.',[LINE]);extra(p,'mirror-midpoint','2*((5+1)/2)-3*((3+9)/2)+12','0');ps.append(p)
+for p in ps:p['given_representation']='diagram'
+g.add('Try-Now',20,141,'PQ:2x−3y+12=0 and perpendicular RQ through R(5,3). Find y-axis point P, RQ equation, foot Q(3,6), then reflected S(1,9).',ps,'diagram')
+p=value('a','simplify(Rational(1,2)*(4*t)*(8*t))','16*t**2',142,'The ORIGINAL line has slope−2 through P(3t,2t), hence y=−2x+8t, intercepts(4t,0),(0,8t). Euclidean area is half the product of absolute intercept lengths, equal16t² for either sign of t. The source drawing shows t>0; a nondegenerate triangle requires t!=0.',[LINE]);p['units']=p['printed_key_units']='square units';extra(p,'line-through-P','-2*(x-3*t)+2*t','-2*x+8*t')
+p2=reasoning('b','The midpoint of CP is(t,t), so it lies on y=x.','The perpendicular through P has slope1/2 and equation y=x/2+t/2, so its x-axis intercept is C(−t,0). Midpoint with P(3t,2t) is(t,t), establishing equal coordinates for every t; t0 gives a degenerate original triangle but the coordinate identity still holds.',142,'show/prove');p2.update(response_format='proof/show-that',assessed_8227_demand_ids=[LINE]);extra(p2,'midpoint','Tuple((3*t-t)/2,(2*t+0)/2)','Tuple(t,t)')
+g.add('Example',21,142,'A line of slope−2 through P(3t,2t) meets both axes. Find area AOB=16t², then prove that the midpoint of P and the x-axis foot of the perpendicular through P lies on y=x.',[p,p2])
+ps=[value('a-gradient','(22-(-2))/(15-3)','2',601,'Compute the ORIGINAL A-to-B gradient from coordinates, not the drawn angle. The question then identifies it with2m.',[LINE]),value('a-m','solve(2-2*x,x)[0]','1',601,'Equate the derived gradient2 to2m, retaining the stated positive value m1.',[LINE]),intersection('b','-2*(x-3)-2','x-15+22','Tuple(-1,6)',601),intersection('c','-x/2+Rational(29,2)','x+7','Tuple(5,12)',601)]
+extra(ps[-1],'AB-midpoint','Tuple((3+15)/2,(-2+22)/2)','Tuple(9,10)')
+for p in ps:p['given_representation']='diagram'
+g.add('Try-Now-21',1,143,'Triangle A(3,−2),B(15,22),slopesAB=2m,AC=−2m,BC=m with m>0: find m1,C(−1,6),then D(5,12) where the AB bisector meets BC.',ps,'diagram')
+ps=[line('a',(2,3),'-3','-3*x+9',601),value('b-B','Tuple(0,9)','Tuple(0,9)',601,'Rhombus diagonals are perpendicular bisectors. B lies on the y-axis and on the derived AC bisector y=−3x+9; set x0.',[INTERSECT]),value('b-D','Tuple(2*2-0,2*3-9)','Tuple(4,-3)',601,'Diagonals bisect each other at AC midpoint(2,3), so D=2M−B. This is prerequisite coordinate symmetry. Satifying only the y-axis condition would not determine D.')]
+p=value('c','Rational(1,2)*sqrt((5-(-1))**2+(4-2)**2)*sqrt((4-0)**2+(-3-9)**2)','40',601,'Use half the product of the exact perpendicular diagonal lengths AC=sqrt40 and BD=sqrt160. This is a Euclidean rhombus-area outcome, not a new line-equation demand.');p['units']=p['printed_key_units']='square units';ps.append(p)
+for p in ps:p['given_representation']='diagram'
+g.add('Try-Now-21',2,143,'Rhombus A(−1,2),C(5,4),B on the y-axis: find the AC bisector, B(0,9),D(4,−3), and area40 using perpendicular diagonals.',ps,'diagram')
+ps=[intersection('a','8-x/2','2*x-2','Tuple(4,6)',601),value('b','Tuple(2*4-2,2*6-2)','Tuple(6,10)',601,'Original B(2,2) reflects across AC with foot X(4,6), so D=2X−B=(6,10). Check the midpoint on AC and perpendicular displacement. This construction follows the source symmetry condition, not the drawn scale.',[LINE])]
+p=rounded('c','2*sqrt((16-2)**2+(0-2)**2)+2*sqrt((0-2)**2+(8-2)**2)','40.9',601,'Original AC line gives A(16,0),C(0,8). Reflection makes AD=AB and CD=CB, so perimeter=2AB+2BC=20sqrt2+4sqrt10. Round only the final perimeter to the explicitly requested1decimal place.',dp=1);ps.append(p)
+for p in ps:p['given_representation']='diagram'
+g.add('Try-Now-21',3,143,'A/C are axis intercepts of x+2y=16,B(2,2),BX perpendicular AC. Find foot X(4,6),reflected D(6,10),and perimeter of ABCD to1dp,40.9.',ps,'diagram')
+
+refs=[
+ (67,141,'Example20 normal-foot and reflected point solution','The graph shows original(−1,3),mirror foot(3,9),reflected(7,15) and equal displacement vectors(4,6). The exact relationships are incidence, perpendicularity and equal midpoint distances; the picture is a worked solution.',[LINE,INTERSECT],'Example:20','teaching-figure'),
+ (68,141,'Try20 given perpendicular lines','The given mirror PQ:2x−3y+12=0 and normal RQ throughR(5,3) meet atQ. P is on the y-axis; S is the reflection ofR. Exact S(1,9) is not forced onto the y-axis by the drawing.',[LINE,INTERSECT],'Try-Now:20','given-figure'),
+ (69,142,'Example21 parameterised axes and perpendicular foot diagram','The worked graph displays positive-t interceptsA(4t,0),B(0,8t),P(3t,2t),andC(−t,0). For t<0 the configuration reverses relative to the axes; t0 degenerates the triangle. The algebraic area and midpoint identities remain explicitly qualified.',[LINE],'Example:21','teaching-figure'),
+ (70,143,'Try21Q1 triangle and line gradients','A(3,−2),B(15,22),C unknown, with the three signed gradients2m,−2m,m and positive m. Preserve the signed gradient assignments and the AB bisector-to-BC incidence, not apparent side lengths.',[LINE,INTERSECT],'Try-Now-21:1','given-figure'),
+ (71,143,'Try21Q2 rhombus diagonal graph','Opposite vertices A(−1,2),C(5,4),B on the y-axis. Diagonals are perpendicular and bisect each other, which fixes B/D. The printed half-product diagonal area hint is part of the scaffold.',[LINE,INTERSECT],'Try-Now-21:2','given-figure'),
+ (72,143,'Try21Q3 normal foot and reflection quadrilateral','A/C lie on the two axes and line x+2y=16; B(2,2),normal footX,and reflectedD form the required symmetry. The picture contains handwritten coordinate hints, which are not publisher answer authority.',[LINE,INTERSECT],'Try-Now-21:3','given-figure')]
+for n,page,label,note,teaches,parent,kind in refs:
+ fig(n,page,label,note,teaches,'diagram',[],parent)
+ f=figures[-1];f['item_id']=f['item_id'].replace('Goldie:C5:','YM:C3:');f['parent_item_id']=f['parent_item_id'].replace('Goldie:C5:','YM:C3:')if f['parent_item_id']else None
+ f.update(printed_page=pp(page),source_evidence=ev(page),value_level_scope_decisions=[],item_kind=kind)
+pages=[{'pdf_page':page,'printed_page':pp(page),'chapter':3,'page_status':'items enumerated','item_ids':[r['item_id']for r in answers if r['source_pdf_page']==page]+[r['item_id']for r in figures if r['pdf_page']==page],'continuation_item_ids':[],'source_evidence':ev(page),'reader':'Codex author','date':'2026-11-19','non_item_content':'Every Try18Q1/2,Example19,Try19Q1/2,Example20,Try20,Example21,Try21Q1–3 output and all six mathematical diagrams are enumerated over140–143. Coordinate systems, sign-correlated solutions and source proof/calculation wording remain explicit. Source sketches are not learner sketch tasks.','scope_screen':'Use geometric line/intersection demands for the asked equation/coordinate constraints. Distance, symmetry and polygon area remain prerequisite components; no new reflection/area demand is invented from textbook context. Parameterised triangles require nondegeneracy where a triangle is claimed.'}for page in range(140,144)]
+
+if __name__=='__main__':
+ for name,data in [('answers-YM-C3-geometry-constraints.json',{'scope':'Every140–143 mathematical response.','items':answers}),('census-YM-C3-geometry-constraints.json',{'book':'YM','book_id':'8227-SRC-017','chapter':3,'source_path':SRC,'source_sha256':SHA,'scope':'Complete140–143 page census.','new_items':new+figures,'corrections':corrections,'pages':pages})]:
+  (W/'tools/textbook-r5'/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ for row in answers:
+  for p in row['subparts']:
+   if 'operation'in p:assert equivalent(compute(p['operation']),expression(p.get('author_expected_normalised',p['printed_key_normalised']))),(row['item_id'],p['subpart'])
+   for name,op in p.get('additional_operations',{}).items():assert equivalent(compute(op),expression(p['additional_operation_expected'][name])),(row['item_id'],p['subpart'],name)
+ print(len(answers),'items;',sum(len(r['subparts'])for r in answers),'responses;',len(figures),'references/assets;',len(pages),'pages')

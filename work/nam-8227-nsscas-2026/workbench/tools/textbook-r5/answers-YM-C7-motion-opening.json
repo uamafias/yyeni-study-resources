@@ -1,0 +1,1316 @@
+{
+  "scope": "Complete rendered362–365sphere/cone/motion census;all25responsesandoriginalconditionschecked.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C7:Example:36",
+      "source_pdf_page": 362,
+      "notes": "Quarter circle,P(x,y),truncationx=h:show y²=r²−x²,derive truncated volume,and hence/orotherwise verify the full sphere formula.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T4:O01:D01",
+        "8227:2020:M1:T9:O04:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Quarter circle,P(x,y),truncationx=h:show y²=r²−x²,derive truncated volume,and hence/orotherwise verify the full sphere formula.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-y-squared",
+        "b-i-volume",
+        "b-ii-sphere"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-y-squared",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(x**2+n-r**2,n)[0]"
+            ]
+          },
+          "printed_key_normalised": "r**2-x**2",
+          "method": "The ORIGINAL quarter circle has centreO and radiusr>0. Pythagoras gives x²+y²=r². Checker n denotes the requested y²;solve for n. The shown branch has x,y≥0.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T4:O01:D01"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "graph",
+          "response_format": "proof/show-that",
+          "check_mode": "show/prove",
+          "source_basis": {
+            "n": "original y²"
+          },
+          "source_pdf_page": 362,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 362,
+          "answer_printed_page": 350,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-i-volume",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "pi*integrate(r**2-x**2,(x,0,h))"
+            ]
+          },
+          "printed_key_normalised": "pi*(r**2*h-h**3/3)",
+          "method": "Rotate the ORIGINAL OEDAregion aboutx. Disc radius² isr²−x²,so integrateπ(r²−x²)from0toh. The picture has0<h<r;endpoint h=r is used in the next hemisphere step.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "source_pdf_page": 362,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 362,
+          "answer_printed_page": 350,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-ii-sphere",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "2*pi*integrate(r**2-x**2,(x,0,r))"
+            ]
+          },
+          "printed_key_normalised": "4*pi*r**3/3",
+          "method": "Set the truncationh=rto obtain a HEMISPHERE2πr³/3. Double it to get a whole sphere4πr³/3. A quarter-circle plane region rotated360°does not itself produce a whole sphere.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "proof/show-that",
+          "check_mode": "show/prove",
+          "additional_operations": {
+            "alternative-whole-sphere": {
+              "kind": "identity",
+              "operands": [
+                "pi*integrate(r**2-x**2,(x,-r,r))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "alternative-whole-sphere": "4*pi*r**3/3"
+          },
+          "source_pdf_page": 362,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 362,
+          "answer_printed_page": 350,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "physical_parameter_domain": "r>0;0<h<r for the interior truncation. Boundaryh=r gives the hemisphere for(b)(ii).",
+      "connected_part_structure": "Part(a)squared radius feeds(b)(i);substituteh=rthenDOUBLEin(b)(ii). The source also permits an alternative whole-sphere method."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:36",
+      "source_pdf_page": 362,
+      "notes": "Given cone diagram,h>0,r>0;verify its volume formula THROUGHINTEGRATION using the radius from similar triangles.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Given cone diagram,h>0,r>0;verify its volume formula THROUGHINTEGRATION using the radius from similar triangles.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "volume"
+      ],
+      "subparts": [
+        {
+          "subpart": "volume",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "pi*integrate((r*x/h)**2,(x,0,h))"
+            ]
+          },
+          "printed_key_normalised": "pi*r**2*h/3",
+          "method": "The cone has POSITIVEheighth andbaseradiusr. Its sloping boundary throughOand(h,r)is y=(r/h)x. Fullx-axisdiscs giveπ∫0^h(r*x/h)²dx=πr²h/3. The source requires integration;quoting mensuration alone does not verify the requested method.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "graph",
+          "response_format": "proof/show-that",
+          "check_mode": "show/prove",
+          "source_pdf_page": 362,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "physical_parameter_domain": "h>0,r>0;0≤x≤h."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:37",
+      "source_pdf_page": 363,
+      "notes": "Acceleration5t+3withv0=4ands0=0;recover TWO motion functions with two distinct initial conditions.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1, 2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Acceleration5t+3withv0=4ands0=0;recover TWO motion functions with two distinct initial conditions.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "velocity",
+        "displacement"
+      ],
+      "subparts": [
+        {
+          "subpart": "velocity",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(5*t+3,t)+4"
+            ]
+          },
+          "printed_key_normalised": "5*t**2/2+3*t+4",
+          "method": "Integrate ORIGINAL acceleration5t+3. Actual initialv(0)=4fixes first constant4. Source gives no explicit physical units in this example.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "original-acceleration": {
+              "kind": "identity",
+              "operands": [
+                "diff(5*t**2/2+3*t+4,t)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-acceleration": "5*t+3"
+          },
+          "source_pdf_page": 363,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 363,
+          "answer_printed_page": 351,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "displacement",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(integrate(5*t+3,t)+4,t)"
+            ]
+          },
+          "printed_key_normalised": "5*t**3/6+3*t**2/2+4*t",
+          "method": "Integrate the independently recovered velocity and impose ACTUALs(0)=0. The second constant is0;do not reuse the velocity constant as a displacement constant.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "velocity-and-initial-position": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(diff(5*t**3/6+3*t**2/2+4*t,t),(5*t**3/6+3*t**2/2+4*t).subs(t,0))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "velocity-and-initial-position": "Tuple(5*t**2/2+3*t+4,0)"
+          },
+          "source_pdf_page": 363,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 363,
+          "answer_printed_page": 351,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now:37",
+      "source_pdf_page": 364,
+      "notes": "Acceleration6t+1,initial velocity2m/s,and NONZEROinitialdisplacement1m;recoverv(t),s(t).",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1, 2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Acceleration6t+1,initial velocity2m/s,and NONZEROinitialdisplacement1m;recoverv(t),s(t).",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "velocity",
+        "displacement"
+      ],
+      "subparts": [
+        {
+          "subpart": "velocity",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(6*t+1,t)+2"
+            ]
+          },
+          "printed_key_normalised": "3*t**2+t+2",
+          "method": "Integrate ORIGINALa=6t+1andimposev0=2m/s.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "displacement",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(3*t**2+t+2,t)+1"
+            ]
+          },
+          "printed_key_normalised": "t**3+t**2/2+2*t+1",
+          "method": "Integrate the recovered velocity and impose ORIGINALs0=1m. Do not silently set the particle at the origin.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m",
+          "printed_key_units": "m",
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:38",
+      "source_pdf_page": 364,
+      "notes": "Givenvelocity12t−t²,findinitialv,acceleration,maximumv,distanceinfirst2s,andnextrest. Derivative and integral subparts stay distinct.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O03:D04",
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M1:T8:O04:D02",
+        "8227:2020:M1:T9:O04:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1, 2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Givenvelocity12t−t²,findinitialv,acceleration,maximumv,distanceinfirst2s,andnextrest. Derivative and integral subparts stay distinct.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-initial-v",
+        "b-acceleration",
+        "c-max-v",
+        "d-distance",
+        "e-next-rest"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-initial-v",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(12*t-t**2).subs(t,0)"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "method": "Initial means the explicitly modelledt0;substitute into ORIGINALv=12t−t². This value is not found by integrating again.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 364,
+          "answer_printed_page": 352,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-acceleration",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(12*t-t**2,t)"
+            ]
+          },
+          "printed_key_normalised": "12-2*t",
+          "method": "Acceleration is the derivative of ORIGINALvelocity with respect to time,not its square or its integral.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s^2",
+          "printed_key_units": "m/s^2",
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 364,
+          "answer_printed_page": 352,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c-max-v",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(12*t-t**2).subs(t,solve(diff(12*t-t**2,t),t)[0])"
+            ]
+          },
+          "printed_key_normalised": "36",
+          "method": "Maximise ORIGINALvelocity,not displacement. Its derivative12−2tvanishes att6;second derivative−2<0andconcave parabola give global maximum36fort≥0.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D01",
+            "8227:2020:M1:T8:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "additional_operations": {
+            "maximum-time-and-curvature": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(solve(12-2*t,t)[0],diff(12*t-t**2,t,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "maximum-time-and-curvature": "Tuple(6,-2)"
+          },
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 364,
+          "answer_printed_page": 352,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "d-distance",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(12*t-t**2,(t,0,2))"
+            ]
+          },
+          "printed_key_normalised": "Rational(64,3)",
+          "method": "On ORIGINAL interval0≤t≤2,velocityt(12−t)is nonnegative. Thereforedistanceequals∫0²vdt=64/3m. This equality is justified by the sign;it would fail across a reversal.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m",
+          "printed_key_units": "m",
+          "additional_operations": {
+            "proper-distance-integral": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "12*x-x**2",
+                "0",
+                "2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "proper-distance-integral": "Rational(64,3)"
+          },
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 364,
+          "answer_printed_page": 352,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "e-next-rest",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solveset(12*t-t**2,t,domain=Interval.open(0,oo))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(12)",
+          "method": "Solve ORIGINALv0,but excludeinitialt0because the particle COMESTORESTafter starting. Nextresttime12s;retain the positive-time condition.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "s",
+          "printed_key_units": "s",
+          "source_pdf_page": 364,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 364,
+          "answer_printed_page": 352,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-38:1",
+      "source_pdf_page": 365,
+      "notes": "Busfromrestwitha5−t:recoverv,nextrestD,distanceBD,andmaximumSPEEDduringtheboundedjourneyB→D.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O03:D04",
+        "8227:2020:M1:T8:O04:D01",
+        "8227:2020:M1:T8:O04:D02",
+        "8227:2020:M1:T9:O04:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "1, 2, 0",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Busfromrestwitha5−t:recoverv,nextrestD,distanceBD,andmaximumSPEEDduringtheboundedjourneyB→D.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-v",
+        "b-i-time",
+        "b-ii-BD",
+        "b-iii-max-speed"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-v",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(5-t,t)"
+            ]
+          },
+          "printed_key_normalised": "5*t-t**2/2",
+          "method": "Bus starts at rest att0. Integrate ORIGINALa5−tandfixintegrationconstant0.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-i-time",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solveset(5*t-t**2/2,t,domain=Interval.open(0,oo))"
+            ]
+          },
+          "printed_key_normalised": "FiniteSet(10)",
+          "method": "NEXTrestexcludesinitial0;positive root is10s. This defines the B→Djourney interval.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "s",
+          "printed_key_units": "s",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-ii-BD",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(5*t-t**2/2,(t,0,10))"
+            ]
+          },
+          "printed_key_normalised": "Rational(250,3)",
+          "method": "ORIGINALvelocity t(10−t)/2is nonnegative on0..10,so positive distanceBD equals signed displacement250/3m.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m",
+          "printed_key_units": "m",
+          "additional_operations": {
+            "proper-distance-integral": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "5*x-x**2/2",
+                "0",
+                "10"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "proper-distance-integral": "Rational(250,3)"
+          },
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-iii-max-speed",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(5*t-t**2/2).subs(t,solve(5-t,t)[0])"
+            ]
+          },
+          "printed_key_normalised": "Rational(25,2)",
+          "method": "Restrict to the actual JOURNEY0..10. Velocity is nonnegative there,so speed=v. Maximumatt5hasvalue25/2m/s;endpointvalues0are smaller. Over allunboundedtimethis quadratic model would NOT have a finite maximum absolute speed.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O04:D01",
+            "8227:2020:M1:T8:O04:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "additional_operations": {
+            "journey-endpoints-and-curvature": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((5*t-t**2/2).subs(t,0),(5*t-t**2/2).subs(t,10),diff(5*t-t**2/2,t,2))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "journey-endpoints-and-curvature": "Tuple(0,0,-1)"
+          },
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "original_domain": "Time t≥0;journeyB→D is0≤t≤10. Maximum-speed request is explicitly restricted to this journey.",
+      "connected_part_structure": "Velocity from(a)determines positive rest time in(b)(i),which bounds distance and maximum-speed decisions in(ii),(iii)."
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Try-Now-38:2",
+      "source_pdf_page": 365,
+      "notes": "Rationalvelocity54/(t+3)²:find initial signed acceleration,andpositive distancefromt3to6.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O03:D04",
+        "8227:2020:M1:T9:O04:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "−3, −2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Rationalvelocity54/(t+3)²:find initial signed acceleration,andpositive distancefromt3to6.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-initial-a",
+        "b-distance"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-initial-a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "diff(54/(t+3)**2,t).subs(t,0)"
+            ]
+          },
+          "printed_key_normalised": "-4",
+          "method": "Differentiate ORIGINALvelocity54/(t+3)²,then evaluateatt0. Initialacceleration−4m/s²is signed;do not report its magnitude as acceleration.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s^2",
+          "printed_key_units": "m/s^2",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-distance",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(54/(t+3)**2,(t,3,6))"
+            ]
+          },
+          "printed_key_normalised": "3",
+          "method": "ORIGINALvelocity is positive on3..6andfinite there. Thereforedistanceequals∫3⁶vdt=3m;the pole−3is outside the physicalt≥0domain.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m",
+          "printed_key_units": "m",
+          "additional_operations": {
+            "proper-distance-integral": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "54/(x+3)**2",
+                "3",
+                "6"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "proper-distance-integral": "3"
+          },
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 629,
+          "answer_printed_page": "A43",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-key-629.png",
+            "sha256": "84a1bb5f7be637403737d5b14119e39c379a7168c9ecd5e87393f525f793fa0c"
+          },
+          "review_date": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C7:Example:39",
+      "source_pdf_page": 365,
+      "notes": "Vertically upwardball,constant a−10m/s²,initialv12:equation,v(t),height(t),andtopvelocity/time/height. Keep signedverticalheight distinct from distance.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T8:O03:D04",
+        "8227:2020:M1:T9:O04:D03"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O01:D02",
+        "8227:2020:M1:T9:O02:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Volume proof,integrated motion,derivative-based motion,and requested extrema remain separate direct demands. An arbitrary integration constant is fixed from the ACTUAL initial condition. Distance equals signed displacement only on an interval of nonnegative velocity;speed means|v|. Pure derivative/evaluation/rest subparts do not automatically add integration coverage.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL05",
+          "status": "within",
+          "quoted_value": "0, 1, 2",
+          "reason": "Actual integration exponents are rational and none is−1. Even roots retain their nonnegative real radicands; reciprocal roots exclude zero."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Vertically upwardball,constant a−10m/s²,initialv12:equation,v(t),height(t),andtopvelocity/time/height. Keep signedverticalheight distinct from distance.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:QUAL05"
+        ],
+        "qualifier_applicability_note": "Actual rational integration powers and original real domains recorded; the n=−1 power exception is retained. No general substitution method is required."
+      },
+      "precision_angle_check": {
+        "source": "Exact symbolic answers and arbitrary constants; no angle or rounding requirement in this segment.",
+        "comparison": "Equivalent real primitives are compared up to additive constants only on their original connected domains. Source preferences about double fractions do not create an official marking restriction."
+      },
+      "expected_subpart_labels": [
+        "a-differential-equation",
+        "b-v",
+        "c-height",
+        "d-i-top-v",
+        "d-ii-time",
+        "d-iii-height"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-differential-equation",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "-10"
+            ]
+          },
+          "printed_key_normalised": "-10",
+          "method": "Express ORIGINALconstant signed acceleration asdv/dt=−10m/s². Choose upwardpositive,consistent with initialupwardv12.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s^2",
+          "printed_key_units": "m/s^2",
+          "author_answer_form": "dv/dt=−10m/s².",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 365,
+          "answer_printed_page": 353,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "b-v",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(-10,t)+12"
+            ]
+          },
+          "printed_key_normalised": "12-10*t",
+          "method": "Integrate ORIGINALdv/dt−10andimposev0=12m/s. Show the supplied target by this initial-condition calculation.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "proof/show-that",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "check_mode": "show/prove",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 365,
+          "answer_printed_page": 353,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "c-height",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(12-10*t,t)"
+            ]
+          },
+          "printed_key_normalised": "12*t-5*t**2",
+          "method": "Integratev12−10tandimposeheightaboveO=0att0. This is signed vertical displacement/height,nottotaldistancetravelled.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M1:T9:O01:D02",
+            "8227:2020:M1:T9:O02:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m",
+          "printed_key_units": "m",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 365,
+          "answer_printed_page": 353,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "d-i-top-v",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(12-10*t).subs(t,solve(12-10*t,t)[0])"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "method": "At greatest height,the vertical velocity is0while acceleration remains−10. Zero velocity does not mean zero acceleration.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m/s",
+          "printed_key_units": "m/s",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 365,
+          "answer_printed_page": 353,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "d-ii-time",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "solve(12-10*t,t)[0]"
+            ]
+          },
+          "printed_key_normalised": "Rational(6,5)",
+          "method": "Solve ORIGINALvelocity0,witht≥0. Time to greatestheight6/5s.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T8:O03:D04"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "s",
+          "printed_key_units": "s",
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 365,
+          "answer_printed_page": 353,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        },
+        {
+          "subpart": "d-iii-height",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(12*t-5*t**2).subs(t,Rational(6,5))"
+            ]
+          },
+          "printed_key_normalised": "Rational(36,5)",
+          "method": "Evaluate the SAMEheightfunction at the established top time6/5. Greatestheight36/5=7.2m. The source solution graph labels thisDistance,but the correct ordinate is HEIGHT/displacement.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D03"
+          ],
+          "component_demand_ids": [],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "units": "m",
+          "printed_key_units": "m",
+          "additional_operations": {
+            "maximum-height-curvature": {
+              "kind": "identity",
+              "operands": [
+                "diff(12*t-5*t**2,t,2)"
+              ]
+            },
+            "distance-on-return-is-not-height": {
+              "kind": "identity",
+              "operands": [
+                "integrate(12-10*t,(t,0,Rational(6,5)))-integrate(12-10*t,(t,Rational(6,5),Rational(12,5)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "maximum-height-curvature": "-10",
+            "distance-on-return-is-not-height": "Rational(72,5)"
+          },
+          "source_pdf_page": 365,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "answer_pdf_page": 365,
+          "answer_printed_page": 353,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C7-362-source.png",
+            "sha256": "c324ac64f9a7b00d1a6b17888eca3d883736e5d5fa21b71d1dd659559ae99cbe"
+          },
+          "review_date": "2026-11-19"
+        }
+      ],
+      "original_domain": "t≥0;asked ascent stops at top t6/5. Height model is displacement fromO,not cumulative distance.",
+      "connected_part_structure": "Initialvfixes firstconstant;Osets secondconstant;topv0determines time used in finalheight."
+    }
+  ]
+}

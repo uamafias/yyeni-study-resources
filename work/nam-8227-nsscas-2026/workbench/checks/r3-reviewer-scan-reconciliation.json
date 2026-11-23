@@ -1,0 +1,83 @@
+{
+  "scope": "Author reruns of reproducible reviewer scans; no claim to repeat independent judgement",
+  "review_input": "review/opus-5-5-repair-r2/inputs.json",
+  "review_folders_unchanged": true,
+  "review_files_verified": 10,
+  "reruns": [
+    {
+      "command": "index_cambridge.py",
+      "before": {
+        "local_paths": 415,
+        "distinct_hashes": 402,
+        "page_query_leads": 1573,
+        "unusable": 0
+      },
+      "after": {
+        "local_paths": 415,
+        "distinct_hashes": 402,
+        "page_query_leads": 1573,
+        "unusable": 0
+      },
+      "difference": "none"
+    },
+    {
+      "command": "verify_derivatives.py",
+      "before": {
+        "layout_files": 16,
+        "layout_pages": 1945,
+        "ocr_identities": 663
+      },
+      "after": {
+        "layout_files": 16,
+        "layout_pages": 1945,
+        "ocr_identities": 663
+      },
+      "difference": "none; rotated-text extraction warnings retained, original OCR production settings unknown"
+    },
+    {
+      "command": "check_repair_r2.py",
+      "result": "pass after intentional R3 mapping/crop/reference changes; full ordered tariff/label checks still pass"
+    },
+    {
+      "command": "check_repair_r3.py",
+      "result": "pass; exact requested additions, source register structure, 24 award reconciliations and 11 independent source calculations/counterexamples"
+    }
+  ],
+  "intentional_differences": {
+    "direct_demand_links": [
+      564,
+      576
+    ],
+    "dependency_edges": [
+      76,
+      79
+    ],
+    "thin_demands": [
+      44,
+      42
+    ],
+    "special_angle_parts": [
+      2,
+      10
+    ],
+    "zero_usable_nsscas_demands": [
+      12,
+      12
+    ],
+    "negative_fixture_count": [
+      2,
+      4
+    ],
+    "unified_asset_index": [
+      32,
+      39
+    ],
+    "asset_census": "32 NSSCAS plus7 Cambridge; no new question diagrams invented"
+  },
+  "requires_independent_review": [
+    "Educational correctness of repaired demand/dependency choices",
+    "All new criterion transcriptions and accepted-alternative interpretations",
+    "All19 paired-page provenance correspondences",
+    "Textbook source cautions, scope and independent seeded classification; unfinished populations remain open"
+  ]
+}

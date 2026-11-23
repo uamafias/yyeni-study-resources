@@ -75,7 +75,7 @@ Official reports acquired under `Question Banks/Namibian Examiner Reports/NSSCAS
   p345, Paper 2 p355; Physics begins p365. Selected comments were sampled, not fully mined.
 
 Commentary alone is not a complete marking scheme. However, report award tables
-were located for 22 questions: two in 2021 P2, nine in 2023 P2 and eleven in 2024 P2.
+were located for 24 questions: four in 2021 P2, nine in 2023 P2 and eleven in 2024 P2.
 Exact excerpt pages are linked in `question-analysis.json`. Method/accuracy awards,
 alternatives and follow-through require transcription/reconciliation from those
 actual tables or other schemes; unverified rules remain proposals.
@@ -176,3 +176,13 @@ paid research call, account login or paywall bypass was used.
 Read-only connected Drive searches for 8227, NSSCAS report filenames and the known
 Mathematics folder found existing-source leads, not the missing schemes/reports.
 Search result metadata was not treated as document evidence or source possession.
+
+
+Repair round 2 update, 16 November 2026: SRC-018–020 are third-party mirror
+copies with DNEA covers verified; official-copy equivalence remains unverified.
+Owner decision 5 accepts both commercial books and their OCR in this shared
+repository; no general public textbook reuse licence is inferred. Exact attributed
+examination-question reuse is separately authorised by owner request N2.
+The source register is rebuilt from frozen tools/source_holdings_inputs.json.
+Cambridge evidence and its separate hashes/locators are in cambridge-evidence.json;
+corpus discovery completeness is described in cambridge-corpus-index.json.

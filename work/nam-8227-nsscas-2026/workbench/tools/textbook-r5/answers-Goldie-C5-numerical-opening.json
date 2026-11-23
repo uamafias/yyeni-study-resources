@@ -1,0 +1,702 @@
+{
+  "scope": "Full worked illustration,technology estimates,both boxed prompts and their reasons.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C5:Worked-illustration:1",
+      "source_pdf_page": 147,
+      "notes": "Unprompted y=√(5x−x²)area exposition on[0,4]:derive2/4strip estimates and each constituent trapezium,refine to8/16strips,and use the technology box for32,50,100,1000strips. The graph is a circle arc and every estimate here is below the true area.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T5:O03:D01",
+        "8227:2020:M2:T5:O03:D02",
+        "8227:2020:M2:T5:O04:D02"
+      ],
+      "mapping_rationale": "Unprompted worked-rule exposition teaches rather than adding assessed source coverage. Boxed questions have direct demands only for what they actually ask. Formal curvature is author support,not a mandatory learner method.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked exposition or boxed prompt.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "Unprompted y=√(5x−x²)area exposition on[0,4]:derive2/4strip estimates and each constituent trapezium,refine to8/16strips,and use the technology box for32,50,100,1000strips. The graph is a circle arc and every estimate here is below the true area.",
+          "reason": "Simple graphs and finite trapezium estimates. Geometry supplies the circle-area check;formal derivatives are optional supporting evidence."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exposition rounds2/4strip tables to4decimal places and prints decimal prefixes with ellipses for8/16strips and3decimals in the32/50/100/1000strip technology examples. Keep unrounded nodes before the final display.",
+        "comparison": "Method instructions in an actual exam requiring the trapezium rule take precedence over this book’s general advice to prefer analytic methods. Refinement agreement alone does not certify an error bound."
+      },
+      "expected_subpart_labels": [
+        "two-strips",
+        "four-strips",
+        "eight-strips",
+        "sixteen-strips",
+        "technology32",
+        "technology50",
+        "technology100",
+        "technology1000",
+        "two-A",
+        "two-B",
+        "four-P",
+        "four-Q",
+        "four-R",
+        "four-S"
+      ],
+      "subparts": [
+        {
+          "subpart": "two-strips",
+          "operation": {
+            "kind": "trapezium-rule",
+            "operands": [
+              "sqrt(5*x-x**2)",
+              "0",
+              "4"
+            ],
+            "strips": 2,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "6.8990",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 2
+            }
+          },
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 148,
+          "answer_printed_page": 134,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "four-strips",
+          "operation": {
+            "kind": "trapezium-rule",
+            "operands": [
+              "sqrt(5*x-x**2)",
+              "0",
+              "4"
+            ],
+            "strips": 4,
+            "rounding": {
+              "decimal_places": 4
+            }
+          },
+          "printed_key_normalised": "7.8990",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 4
+            }
+          },
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "eight-strips",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "sqrt(21)/2 + sqrt(6) + 7/2"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "8.2407",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 8
+            }
+          },
+          "key_normalisation_note": "The source prints an ellipsis after this four-decimal prefix;compare truncation,not a claim of rounding to four decimal places.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "sixteen-strips",
+          "operation": {
+            "kind": "decimal-prefix",
+            "operands": [
+              "sqrt(19)/16 + sqrt(51)/16 + 5*sqrt(3)/8 + sqrt(21)/4 + sqrt(91)/8 + sqrt(6)/2 + 3*sqrt(11)/8 + 7/4"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "8.3578",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 16
+            }
+          },
+          "key_normalisation_note": "The source prints an ellipsis after this four-decimal prefix;compare truncation,not a claim of rounding to four decimal places.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "technology32",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "sqrt(5*x-x**2)",
+              "0",
+              "4"
+            ],
+            "strips": 32,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "8.398",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "numeric-trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 32
+            }
+          },
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "technology50",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "sqrt(5*x-x**2)",
+              "0",
+              "4"
+            ],
+            "strips": 50,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "8.409",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "numeric-trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 50
+            }
+          },
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "technology100",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "sqrt(5*x-x**2)",
+              "0",
+              "4"
+            ],
+            "strips": 100,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "8.416",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "numeric-trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 100
+            }
+          },
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "technology1000",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "sqrt(5*x-x**2)",
+              "0",
+              "4"
+            ],
+            "strips": 1000,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "8.420",
+          "method": "Set h=(b−a)/n from the source bounds,calculate every original ordinate,and add the individual trapezia. Round only the final estimate. The key is not an input to the ordinate calculation.",
+          "additional_operations": {
+            "unrounded_trapezium": {
+              "kind": "numeric-trapezium-rule",
+              "operands": [
+                "sqrt(5*x-x**2)",
+                "0",
+                "4"
+              ],
+              "strips": 1000
+            }
+          },
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "two-A",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "sqrt(6)"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "2.4495",
+          "method": "Calculate this individual trapezium from the exact height pair before rounding;do not add already rounded areas as if they were exact.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 148,
+          "answer_printed_page": 134,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "two-B",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "sqrt(6)+2"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "4.4495",
+          "method": "Calculate this individual trapezium from the exact height pair before rounding;do not add already rounded areas as if they were exact.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 148,
+          "answer_printed_page": 134,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "four-P",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "1"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "1.0000",
+          "method": "Calculate this individual trapezium from the exact height pair before rounding;do not add already rounded areas as if they were exact.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "four-Q",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(2+sqrt(6))/2"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "2.2247",
+          "method": "Calculate this individual trapezium from the exact height pair before rounding;do not add already rounded areas as if they were exact.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "four-R",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "sqrt(6)"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "2.4495",
+          "method": "Calculate this individual trapezium from the exact height pair before rounding;do not add already rounded areas as if they were exact.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "four-S",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "(sqrt(6)+2)/2"
+            ],
+            "decimal_places": 4
+          },
+          "printed_key_normalised": "2.2247",
+          "method": "Calculate this individual trapezium from the exact height pair before rounding;do not add already rounded areas as if they were exact.",
+          "source_pdf_page": 147,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "answer_pdf_page": 149,
+          "answer_printed_page": 135,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-146.png",
+            "sha256": "cdd3fafddc549040a55c26853d7e869def97adadbe41c18899c21ce2e0220407"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "evidence_role": "prerequisite/supporting worked teaching illustration; no directly assessed source-question coverage"
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Prompt:3",
+      "source_pdf_page": 150,
+      "notes": "Find the y=√(5x−x²)area on[0,4]without calculus,and assess how close the16-strip estimate is. Use circle geometry rather than assuming numerical agreement proves exactness.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01",
+        "8227:2020:M2:T5:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Unprompted worked-rule exposition teaches rather than adding assessed source coverage. Boxed questions have direct demands only for what they actually ask. Formal curvature is author support,not a mandatory learner method.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked exposition or boxed prompt.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "Find the y=√(5x−x²)area on[0,4]without calculus,and assess how close the16-strip estimate is. Use circle geometry rather than assuming numerical agreement proves exactness.",
+          "reason": "Simple graphs and finite trapezium estimates. Geometry supplies the circle-area check;formal derivatives are optional supporting evidence."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exposition rounds2/4strip tables to4decimal places and prints decimal prefixes with ellipses for8/16strips and3decimals in the32/50/100/1000strip technology examples. Keep unrounded nodes before the final display.",
+        "comparison": "Method instructions in an actual exam requiring the trapezium rule take precedence over this book’s general advice to prefer analytic methods. Refinement agreement alone does not certify an error bound."
+      },
+      "expected_subpart_labels": [
+        "geometry-and-area",
+        "sixteen-strip-error"
+      ],
+      "subparts": [
+        {
+          "subpart": "geometry-and-area",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The curve is an upper circle arc with centre(5/2,0),radius5/2. The required area is3/2+(25/8)(π/2+asin(3/5))≈8.4197.",
+          "author_derivation": "Complete the square:y²+(x−5/2)²=25/4. The region0≤x≤4 combines the left quarter-circle with a sector and right triangle ending at(4,2). The sector sine is(4−5/2)/(5/2)=3/5. Sector/triangle geometry gives the stated expression without requiring an analytic antiderivative.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "circle_identity": {
+              "kind": "identity",
+              "operands": [
+                "expand((5*x-x**2)+(x-5/2)**2)"
+              ]
+            },
+            "area4dp": {
+              "kind": "rounded",
+              "operands": [
+                "3/2+25*(pi/2+asin(3/5))/8"
+              ],
+              "decimal_places": 4
+            }
+          },
+          "additional_operation_expected": {
+            "circle_identity": "25/4",
+            "area4dp": "8.4197"
+          },
+          "source_pdf_page": 150,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-150.png",
+            "sha256": "aa28edd88efd0ae63cd1db20e1a5766af69d15637494973683053e290bbabeec"
+          },
+          "answer_pdf_page": 346,
+          "answer_printed_page": 332,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "sixteen-strip-error",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "100*((3/2+25*(pi/2+asin(3/5))/8)-(sqrt(19)/16 + sqrt(51)/16 + 5*sqrt(3)/8 + sqrt(21)/4 + sqrt(91)/8 + sqrt(6)/2 + 3*sqrt(11)/8 + 7/4))/(3/2+25*(pi/2+asin(3/5))/8)"
+            ],
+            "decimal_places": 1
+          },
+          "printed_key_normalised": "0.7",
+          "method": "Compare the unrounded16-strip estimate with the exact geometric area. Its shortfall is about0.0619area units,or0.7%at the source displayed one decimal percentage precision.",
+          "units": "%",
+          "printed_key_units": "%",
+          "source_pdf_page": 150,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-150.png",
+            "sha256": "aa28edd88efd0ae63cd1db20e1a5766af69d15637494973683053e290bbabeec"
+          },
+          "answer_pdf_page": 346,
+          "answer_printed_page": 332,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C5:Prompt:4",
+      "source_pdf_page": 151,
+      "notes": "Read the three shaded graphs in Figure5.7 and decide trapezium underestimate,overestimate or cannot tell. All three response decisions are recorded;the inflecting middle graph must not inherit a blanket bias.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T5:O04:D02"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Unprompted worked-rule exposition teaches rather than adding assessed source coverage. Boxed questions have direct demands only for what they actually ask. Formal curvature is author support,not a mandatory learner method.",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed worked exposition or boxed prompt.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL11",
+          "status": "within",
+          "quoted_value": "Read the three shaded graphs in Figure5.7 and decide trapezium underestimate,overestimate or cannot tell. All three response decisions are recorded;the inflecting middle graph must not inherit a blanket bias.",
+          "reason": "Simple graphs and finite trapezium estimates. Geometry supplies the circle-area check;formal derivatives are optional supporting evidence."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Exposition rounds2/4strip tables to4decimal places and prints decimal prefixes with ellipses for8/16strips and3decimals in the32/50/100/1000strip technology examples. Keep unrounded nodes before the final display.",
+        "comparison": "Method instructions in an actual exam requiring the trapezium rule take precedence over this book’s general advice to prefer analytic methods. Refinement agreement alone does not certify an error bound."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Underestimate.",
+          "author_derivation": "The first given curve bends down across the shaded interval,so its straight interpolation chords lie below the curve. No formula or formal second derivative is needed.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 151,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-150.png",
+            "sha256": "aa28edd88efd0ae63cd1db20e1a5766af69d15637494973683053e290bbabeec"
+          },
+          "answer_pdf_page": 346,
+          "answer_printed_page": 332,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Cannot tell from the supplied change of curvature alone.",
+          "author_derivation": "The middle curve has an inflexion within the integration region. Some chords can lie below and some above;the net signed area error depends on their sizes. A shape with changing curvature need not have a fixed over/under bias.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 151,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-150.png",
+            "sha256": "aa28edd88efd0ae63cd1db20e1a5766af69d15637494973683053e290bbabeec"
+          },
+          "answer_pdf_page": 346,
+          "answer_printed_page": 332,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Overestimate.",
+          "author_derivation": "The third given decreasing curve bends up across the shaded interval. Its interpolation chords lie above it. Decreasing alone would not determine this sign;curvature relative to chords does.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 151,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C5-150.png",
+            "sha256": "aa28edd88efd0ae63cd1db20e1a5766af69d15637494973683053e290bbabeec"
+          },
+          "answer_pdf_page": 346,
+          "answer_printed_page": 332,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C4-C5-345.png",
+            "sha256": "32b1b778a6a4f1bd1506dad1fcaeb8518017bcbdd919c52a1fd63284bf2904a4"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+"""YM583–585: complete30-mark revision and final teaching summary."""
+from author_YM_C13_late_support import *
+reset()
+AREA='8227:2020:M1:T9:O04:D01';EXPINT='8227:2020:M2:T5:O01:D01';DEF='8227:2020:M1:T9:O03:D01';DIFF='8227:2020:M2:T4:O01:D01';PRODUCT='8227:2020:M2:T4:O02:D01'
+def rev(n,page,note,parts,tariffs,rep='text'):
+    r=add('Revision-Exercise-13',n,page,note,parts,rep)
+    r.update(exam_style=True,exam_style_basis='Explicit Revision Exercise13, total30. Textbook-derived tariffs, not official examiner award rows.',source_part_tariffs=tariffs,source_total_marks=sum(tariffs.values()),source_marks_kind='Printed textbook part totals, not official criterion rows.')
+    return r
+parts=b.sequence_parts('a','(4*x+306/x**4)/5','3',['3.15556','3.14168','3.14155'],5,656,'x**5-306',['3','Rational(16,5)'],'3.142',3,'Stem stipulates3; each-step display precision not specified, key uses5dp. Final3dp3.142. Original recurrence excludes0.',equation_origin='Derived from supplied fixed point as asked inb.')
+p=val('b-fixed-equation','expand(5*x**4*(x-(4*x+306/x**4)/5))','x**5-306',656,[RELATE,REARRANGE],'Finite nonzero limit satisfies5alpha=4alpha+306/alpha⁴; multiply byalpha⁴ to obtainalpha⁵=306. A finite limit0 is incompatible with the reciprocal term.')
+q=val('b-exact-root','real_root(306,5)','real_root(306,5)',656,[RELATE],'Odd fifth power is a bijection overreals; exactalpha is real fifth root306, positive and nonzero. Not equal topi despite nearby decimals.');extra(q,'exact-original-fixed-point','simplify((x-(4*x+306/x**4)/5).subs(x,real_root(306,5)))','0');q['depends_on_source_parts']=['b-fixed-equation'];parts.extend([p,q])
+rev(1,583,'Supplied fourth-reciprocal recurrence, givenstart3, root3dp3.142; then fixed-point equation and exact fifth root306. Key5dp intermediate displays are a choice, not a stem requirement.',parts,{'a':3,'b':2})
+f='log(x)-2+x**2'
+p=a.sketch('a-one-positive-root',['log(x)','2-x**2'],'Domain x>0: ln increasing through(1,0), vertical asymptotex0;2−x² decreasing on positive axis, through(0,2); exactly one crossing between1.3and1.4.','Original difference derivative1/x+2x>0 forx>0, with opposite limiting signs. Negative parabola side does not create negative log-domain roots.',656)
+q=a.bracket('b-sign-bracket',f,'Rational(13,10)','Rational(7,5)','log(Rational(13,10))-Rational(31,100)','log(Rational(7,5))-Rational(1,25)',656,'Original continuous residual negative at1.3 and positive at1.4.');q['depends_on_source_parts']=['a-one-positive-root']
+r=reason('c-conditional-root-relation','A convergent admissible sequence has limit solving ln alpha=2−alpha².','Supplied sqrt(2−ln x) requires0<x<=e². At a positive finite limit, squarealpha=sqrt(2−lnalpha) to obtainalpha²=2−lnalpha. Positive root branch is preserved. Conditional fixed-point proof does not claim convergence from all starts.',656,[RELATE,REARRANGE]);extra(r,'equation-reconstruction','expand(x**2-(2-log(x)))',f)
+parts=[p,q,r]+b.sequence_parts('d','sqrt(2-log(x))','Rational(27,20)',['1.3038','1.3171','1.3132','1.3143'],4,657,f,['Rational(13,10)','Rational(7,5)'],'1.31',2,'Start not specified; source key chooses1.35. Each4dp, final2dp1.31, real log and positive square root.')
+rev(2,583,'ln x=2−x²: choose pair, countone, bracket1.3..1.4, conditional provided-map relation and iterate4dp/final2dp1.31. Key starts1.35; no prescribed start.',parts,{'a':2,'b':2,'c':1,'d':3})
+p=reason('a-differentiated-maximum-relation','tan alpha=2/alpha.','Differentiate ORIGINALx²cosx to2xcosx−x²sinx. At the GIVEN interior maximum0<alpha<pi/2, divide bypositivealpha²cosalpha to obtaintan alpha=2/alpha. The stationary origin is not the interior maximum. Product differentiation is required evidence for the shown relation.',657,[REARRANGE,RELATE],rep='graph');p['component_demand_ids']=[DIFF,PRODUCT];extra(p,'original-derivative','diff(x**2*cos(x),x)','2*x*cos(x)-x**2*sin(x)')
+f='tan(x)-2/x'
+q=a.bracket('b-sign-bracket',f,'1','Rational(6,5)','tan(1)-2','tan(Rational(6,5))-Rational(5,3)',657,'Radian bracket1..1.2 excludes bothzero and tangentpolepi/2.');q['depends_on_source_parts']=['a-differentiated-maximum-relation']
+parts=[p,q]+b.sequence_parts('c','atan(2/x)','Rational(11,10)',['1.0680','1.0803','1.0755'],4,657,f,['1','Rational(6,5)'],'1.08',2,'No start stipulated; source benchmark1.1. Principalatan and first-quadrant maximumbranch retained.')
+row=rev(3,583,'GIVEN x²cosx maximum on0..pi/2: show relation by differentiation, bracket1..1.2radians; suppliedatan map, each4dp and final2dp1.08.',parts,{'a':4,'b':2,'c':3},'graph');row['continuation_pdf_pages']=[584]
+p=val('a-area-R','integrate(1-exp(-x),(x,0,a))','a-1+exp(-a)',657,[AREA,EXPINT,DEF],'Read GIVEN shaded area between topy1 and bottom e^(−x), from0top>0. Integral(1−e^(−x)) givesp−1+e^(−p); parameterp represented by a. Do not take only area under the curve.');p.update(original_integrand='1-exp(-x)',original_bounds=['0','a'],source_parameter='p represented bya')
+q=reason('b-equal-area-fixed-point','p=2−e^(−p).','Set area froma equal1, givingp−1+e^(−p)=1, then rearrange. p>0 from actual right-hand bounded region. This is an area-derived recurrence, not an independent uncontextualised equation.',657,[AREA,REARRANGE],rep='graph');extra(q,'area-equation','expand(x-1+exp(-x)-1)','x-2+exp(-x)');q['depends_on_source_parts']=['a-area-R']
+parts=[p,q]+b.sequence_parts('c','2-exp(-x)','2',['1.8647','1.8451','1.8420','1.8415'],4,657,'x-2+exp(-x)',['1','2'],'1.84',2,'Stem stipulatesp1=2; original positive areabound. Each4dp, final2dp1.84.')
+rev(4,584,'GIVEN area between e^(−x),y1 and verticalx=p>0. Findarea, set1 and show provided map; givenstart2, each4dp and final2dp1.84.',parts,{'a':4,'b':1,'c':3},'graph')
+assert sum(r['source_total_marks']for r in answers)==30
+refs=[
+ (76,583,'Revision3 GIVEN trigonometric maximum','x²cosx on0..pi/2; M interior, not origin; radians.',[REARRANGE],'graph','Revision-Exercise-13:3',True),
+ (77,584,'Revision4 GIVEN region betweenline and exponential','p>0,y1 abovee^(−x),closedfromx0tox=p; widthp,heightvarying1−e^(−x).',[AREA],'graph','Revision-Exercise-13:4',True),
+ (78,585,'Final iteration interpretation summary','A finite fixed point is an intersection ofy=xandy=F(x); finite apparent stabilisation alone is not proof or a universal root errorbound.',[CONVERGE,RELATE],'table',None,False),
+ (79,585,'Iteration-index and stopping procedure table','Source flow records suppliedx1,computeF,current-versus-next decision,continue until adequate accuracy. Usex_(n+1)=F(x_n),notanindex-free universalidentity.',[ITERATE,STOP],'table',None,False)]
+for args in refs:panel(*args)
+pages=census(583,585,{583:'All RevisionQ1–2 andQ3(a), GIVEN maximum graph and printed tariffs. Q3continues584; total exercise30marks reconciled.',584:'RevisionQ3(b)(c) continuation plus allQ4 parts and GIVEN shaded region. Mark totals9and8 respectively; radians and selected original domains checked.',585:'Final summary contains two instructional reference panels and prose only; no unrecorded exercise question. Procedure says accuracy must be adequate, not that any two identical rounded states prove it.'},{584:['8227:TB:YM:C13:Revision-Exercise-13:3']})
+if __name__=='__main__':save('closing',pages)

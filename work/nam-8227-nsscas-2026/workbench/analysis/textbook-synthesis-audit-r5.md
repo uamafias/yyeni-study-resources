@@ -1,0 +1,49 @@
+# Whole-book synthesis audit — NSSCAS Mathematics 8227
+
+Final author audit, 21 November 2026. T1–T6 author work is complete; independent classification and acceptance remain pending. Dated checkpoints below record earlier states and do not override the final completion declaration. Corrections are in the fixed-source author inputs,not inferred from desired family coverage.
+
+| ID | Source and issue | Disposition and evidence | Check |
+|---|---|---|---|
+| T5-AUDIT-001 | Twelve YM C1 items explicitly recover parameters from a root-count condition but lacked M1:T1:O02:D03. | Added the direct link in `author_YM_C1_discriminant.py` (nine items), `author_YM_C1_exercise.py` (Q4,Q15), and `author_YM_C1_closing.py` (Example38(a)). Given-root coefficient recovery remains separate supporting algebra. | The three source builders, answer verifier, inventory and census regenerate; focused R4/R5 checks pass in `checks/r5/T5-first-audit-validation.log`. D03 now has16textbook items. No answer count changed. |
+| T5-AUDIT-002 | Goldie C6 Prompt1 permits algebraic or numerical methods; an author-chosen completed square/graph did not make those methods directly assessed. | Removed direct completion and graph-root demands. Kept source root-search teaching/component support and an explicit mapping rationale in `author_Goldie_C6_opening.py`. Original PDF158 visually reread in the158–161source sheet. | Canonical author builder and dependent checks pass in the same log. No falsely manufactured Goldie standalone completion coverage is used in the synthesis. |
+| T5-AUDIT-003 | Goldie C3 Activity1 asks an acute angle; graph/numerical methods are tips, and the compound-angle route is demonstrated later. | Direct bounded-angle demand; compound-angle method component only. Optional graph is not a required sketch. Source75/77 visually reread in the74–77sheet; rationale retained in `author_Goldie_C3_opening.py`. | Author builder, inventory and R5working checks pass. All original answers remain unchanged. |
+| T5-AUDIT-004 | Eight YM C4 worked teaching rays have graph-feature QA records labelled `sketch`, although the book poses no separate learner sketch for them. | Retained graph checks and `sketch_response_required:false`; added explicit source-illustration response role. Source183–184 reread in the181–184sheet. Numbered nearby sketch examples remain genuine sketch responses. | `author_YM_C4_exact_angles.py` and dependent checks pass. No teaching panel is converted into an assigned-question demand. |
+| T5-AUDIT-005 | Goldie C6 Activity2 requires an explanation referring to a sketch; four numeric iteration outcomes alone are insufficient. | Retained sketch-dependent explanation. Source171 reread in170–173sheet. Recorded intersections, outward/middle-root iteration behaviour and possibility of using earlier Figure6.7. Features are author-derived, not an official award table. | `author_Goldie_C6_iteration_intro.py` and dependent checks pass; four original start/outcome responses are preserved. |
+| T5-AUDIT-006 | A sketch-required flag does not always coincide with an answer status of `sketch`. | Eleven flagged cases were screened. Ten are legitimate: wrong/incomplete/no-key visual answers, or an explanation referring to a sketch. Only GoldieC3Activity1 required the optional-method correction above. Eight further teaching-ray cases are explicitly source-illustration QA. No blanket flag is inferred from answer status. | Item notes and source-response roles are retained; final whole-book role audit remains open. |
+| T5-AUDIT-007 | Modulus interpretation tags could conceal the given-graph→unknown-parameter practice gap. | YM C8Example9/26 derive features from functions being constructed. Their existing interpretation links are not silently removed, but they are not claimed to be the same input direction as NSSCAS2023P2Q2. | `textbook-insights.md`, modulus-graphs-and-input-direction section, cites source items and the examination part. No item retagging from family counts. |
+| T5-AUDIT-008 | Family drafts risked counting optional methods/components as direct demands. | The structural check rejected a remainder-theorem link on exponent recovery, recognition links on AP/GPparameter recovery, interpretation on inverse Sigma sums, and an infinite-sum link on recurring-decimal conversion. Family claims were narrowed to independently mapped direct demands; source item mappings were not altered. | Rebuilt synthesis passes. Recurring-decimal fraction conversion explicitly remains supporting practice because place-value algebra is a valid alternative. |
+
+The eleven sketch-flag cases screened were GoldieC1Exercise1B5,
+GoldieC3Example6, GoldieC2Activity1, GoldieC5Problem-solving-investigation1,
+GoldieC3Activity1, YMC4Try13Q2, YMC4Try15Q1, YMC1Try21Q1,
+YMC1Try33Q2, YMC4Example12 and GoldieC6Activity2. The eight teaching-ray
+records are YMC4Worked-illustration4–11. This list records the author audit,
+not a blind review sample and not independent acceptance.
+
+Next: finish all remaining families and demand insights, complete the remaining
+metadata/qualifier/prose consistency audits, then run the fresh-copy double
+rebuild before T6. Step 3 remains deferred.
+
+
+## Subsequent audited corrections
+
+- **T5-AUDIT-009:** YM C3Try14Q1(b) suppliesfandfgand asks for missingg. Render126reread in `checks/r5/textbooks/YM-C3-124-source.png`;decompositionM1:T3:O04:D02added to that part/item in the canonical author builder. Focused source/answer/inventory/census/R4/R5checks passed in `checks/r5/T5-functions-validation.log`. No numerical answer changed.
+- **T5-AUDIT-010:** The first five-block double rebuild failed on byte differences in answer/inventory/integration records. Six fresh hash-seed scans of all166primitiveoperations isolated YM C12Example24(a):defaultCASalternatedx−sin²xandx+cos²x,which differ by1and both differentiate to the original(sinx−cosx)². Canonicalsourceinput now fixes themanualintegrationalgorithm;it computesx+cos²xfromtheoriginalquestionoperand,independentoftheprintedkey. Fourfreshprocessesagree;constantshiftagainsttheprintedx+cos2x/2is1/2. Guardproof:`checks/r5/T5-YM-C12-primitive-stability.json`. No status/keydefectcountchanged. A new double rebuild must still pass;the failed log is preserved.
+- **T5-AUDIT-011:** GoldieC4Exercise4E8(iii)asks unboundedgeneraltrigonometric solutions and is explicitly outsideLIMIT02. The family assembler now accepts only named exclusions backed by the item’sactual-valueoutside decision and original scope text. It displays this exclusion separately;it doesnot hide it as an in-scopefamily. A forged-exclusion negative fixture fails. Parts(i)/(ii)remain retained and connected.
+
+Current synthesis structural check:208families,1334sourceitems with resolved eligible responses,90/138demand insights in34sections. Remaining843items and48demands are explicit. All four synthesis negative fixtures pass. This is partial author analysis,not independent acceptance or a recipe count.
+
+## Completed synthesis and final qualifier audit
+
+- **T5-AUDIT-012:** Goldie6B5(iii)and6B6(ii)give no iteration map. Canonical actual-value records now mark the original choices outsideLIMIT08;6B6direct links retain only root reasoning. Numeric benchmarks stay internal. Named exclusions validate against source qualifiers.
+- **T5-AUDIT-013:**108missing applicable qualifier annotations were individually supplemented from already-read source values,including27coordinate-axis decisions. The explicit table is `tools/textbook_scope_audit_inputs_r5.py`;it does not infer applicability from families. Every governed direct demand now has its relevantQUAL01–11decision;425applications are checked.
+- **T5-AUDIT-014:** Final response-role audit records20exceptions:11required visual tasks with wrong/incomplete/absent keys,oneGoldie sketch-dependent explanation with matched iteration outcomes,and8teaching-ray QAillustrations without a posed learner sketch. None is converted by answer-status heuristics.
+- **T5-AUDIT-015:** YMExercise12Q4has primitive/log/trapezium parts,no area request. Removed accidental whole-item membership from the area family;each original response is still grouped by its actual requested decision. RevisionExercise12Q4is the separate genuine text-bounded area.
+
+The completed author synthesis has380analysis families,2177eligible sourceitems resolved,5whole-item exclusions and3named part exclusions;zero pending source responses.58insight sections cover138/138demands. The source universe is unchanged:3940records,1758figures,5752answers. `textbook-completion-audit-r5.json/.md`exposes62implicit/parametric-geometry and101logarithm-boundary records for cross-vendor review. The forced-logarithmicx^xexception is explicit. Allthree new completion-audit negatives fail for their expected reason. Full new rebuild andT6stillpending.
+
+- **T5-AUDIT-016:**85new source families had overly conservative textbook-only labels despite explicit partial examination evidence. Added authored source-to-pattern/part comparisons in `tools/textbook-r5/synthesis_examination_links_r5.py`. Every anchor resolves to an included unheld NSSCASpart. Final relations:219structural branches,161textbook-only;no recipe-branch same-type assertion. Full type equivalence is not inferred from a topic/demand tag. Source membership and counts are unchanged. Final proof attempts were deliberately stopped before completion to incorporate this correction;those cancelled logs are not passes.
+
+## Final proof
+
+The isolated fresh-copy proof passed273commands twice,141byte-identical outputs and38seeded error rejections,with all436source files checked. Results matched the author checkout. See `textbook-author-completion-r5.json/.md` and `../checks/fresh-copy-verification-r5.json`. This closes authorT1–T6,not independent acceptance.

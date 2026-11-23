@@ -75,3 +75,11 @@ than relying on the contents alone. Back-cover PDF p663 subsequently confirmed I
 remains unverified. A complete local OCR derivative and 17 selected textbook source
 samples now exist. The original mathematical text layer is only scanner labels,
 and OCR mathematics remains unreliable; use page images for exact transcription.
+
+
+Repair round 2: nineteen scoped samples now include the rendered coordinate-geometry
+and trigonometry sections, PDF141/175. PDF50 Q3/Q5 and TB08 are corrected in
+textbook-samples.json. Follow textbook-completion-method.md for the remaining
+population, visual-item and answer-key analysis. Chapter coverage is not exercise
+completeness or verified objective coverage. Owner decision 5 accepts internal
+shared-repository storage; the original root PDF remains at its existing path.

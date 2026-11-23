@@ -1,0 +1,43 @@
+"""YM561: choosing graph pairs and preserving domains in root-count/bracket proofs."""
+import json
+import author_YM_C13_opening as a
+from author_YM_C13_opening import h,W,SRC,SHA,pp,ev,fig,figures,extra,compute,expression,equivalent,ROOTG,BRACKET
+h.answers.clear();h.new.clear();h.corrections.clear();figures.clear();h.common.base.ev=ev
+answers=h.answers;new=h.new;corrections=h.corrections
+def add(kind,n,page,note,parts):
+ row=a.add(kind,n,page,note,parts)
+ row.update(mapping_rationale='A suitable graph pair must be chosen unless the source already specifies it. Global root count and a local sign bracket are different outputs;the sine/reciprocal task counts roots only in its explicit open radian viewport. Nativewrongkeylabels/arithmeticarepreservedasdefects,notcorrectedbychangingthestem.',precision_angle_check=dict(source='Trigonometricargumentsareradianswherepresent. Endpointsignsareexact;printeddecimalvaluesarecomparisondisplays,notspecifiedrootaccuracy.',comparison='Checkactualadmissibledomainandthewholeaskedviewportbeforecountingroots. Compareunroundedendpointsigns;onebracketdoesnotestablishglobaluniqueness.'))
+ return row
+p=a.sketch('a-two-graph-count',['exp(x)','x+6'],'Sameaxes:e^xpositiveincreasingwith(0,1),asymptotey0;linex+6through(−6,0),(0,6);twointersections,onein(−6,−5)andonein(2,2.1).','Learnerchoosessuitablepairfromoriginale^x−x−6=0. Independentdifferencehassecond e^x>0,uniqueminimumat0withvalue−5,andlimit+infinityatbothends;thereforeexactly2roots. Agraphmustincludethenegativeintersection,notjustthelaterbracket.',561)
+q=a.bracket('b-sign-bracket','exp(x)-x-6','2','Rational(21,10)','exp(2)-8','exp(Rational(21,10))-Rational(81,10)',561,'Originalcontinuousdifferencehasf2≈−.611andf2.1≈+.0662. Thisprovesapositivebracketedroot,notuniquenessglobally;part(a)hasTWOroots.');q['depends_on_source_parts']=['a-two-graph-count']
+add('Example',2,561,'(a)USEtwochosenrootgraphsfore^x−x−6,showTWOroots;(b)VERIFYBYCALCULATIONpositiveonebetween2and2.1. Keepnegativeintersectionandseparateglobalcountfromlocalbracket.',[p,q])
+f='exp(2*x)+x-2'
+p=a.sketch('a-chosen-pair',['exp(2*x)','2-x'],'Sameaxes:e^(2x),intercept(0,1),positiveincreasing;line2−xwithintercepts(0,2),(2,0);ONEintersectionin(0,1/2).','ChoosegraphsfromORIGINAL e^(2x)+x−2=0. Differencehasderivative2e^(2x)+1>0andoppositeinfiniteendlimits,soexactlyoneglobalroot. Nativekey653wronglylabelsits exponential e^x;theoriginalmustremain e^(2x),withitshorizontalstretchandcorrectintersection.',653,'key wrong');p['source_graph_defect']='Nativekeygraphlabely=e^xwrongforstem e^(2x)+x−2. Correctone-rootcountretained;propercurveequationandgraphfeaturesrequired.'
+q=a.bracket('b-sign-bracket',f,0,'Rational(1,2)','-1','exp(1)-Rational(3,2)',653,'Originalf0−1,f1/2=e−3/2≈1.22>0;continuousstrictlyincreasingdifferencegivesuniquerootin(0,1/2).');q['depends_on_source_parts']=['a-chosen-pair']
+add('Try-Now-2',1,561,'(a)BYSKETCHINGsuitablepairshowonlyonerootofe^(2x)+x−2;(b)VERIFYbracket0..1/2. Sourcekeygraphuseswrongexponentiallabel;original2xretained.',[p,q])
+f='1/x-log(x)'
+p=a.sketch('a-chosen-pair',['1/x','log(x)'],'Domainx>0;1/xpositive,decreasing,through(1,1),asymptotesx0andy0;lnxincreasingthrough(1,0),asymptotex0;ONEintersectionbetween1and2.','Originalequationrequiresx>0,notallnonzerox. Reciprocalstrictlydecreasesandlnstrictlyincreases;theirorderingreversesbetween1and2. Alternativepairxlnxand1isvalidonlywithoriginalx>0retained.',653);p['valid_alternative_methods']=['Sketch x ln x and y=1 with original x>0.']
+q=a.bracket('b-sign-bracket',f,1,2,'1','Rational(1,2)-log(2)',653,'Originalcontinuousf1=1,f2=1/2−ln2≈−.193<0. Keeprealnaturallogdomainx>0.');q['depends_on_source_parts']=['a-chosen-pair']
+add('Try-Now-2',2,561,'(a)ASKEDsuitablepairgraphsshowoneadmissiblerootof1/x=lnx;(b)VERIFY1..2. Originalpositivelogdomainandreciprocalasymptoteskept.',[p,q])
+f='sin(x)-1/x**2'
+p=a.sketch('a-bounded-pair',['sin(x)','1/x**2'],'Radianviewport0<x<π/2;sinxincreasesfrom0toward1,while1/x²decreasesfrom+infinitytoward4/π²;ONEintersectionintheaskedviewport.','Originalboundedintervalisessential:outsideitadditionalsineintersectionsmayexist. Within(0,π/2),sinstrictlyincreasingandreciprocalstrictlydecreasing,theirdifferencegoesfromnegativeinfinitytopositive1−4/π². OnlyONEadmissibleintersectioncounted.',653);p['original_viewport']='0<x<π/2,radians'
+q=a.bracket('b-sign-bracket',f,1,'Rational(3,2)','sin(1)-1','sin(Rational(3,2))-Rational(4,9)',653,'Originalf1≈−.159,f1.5≈+.553;entirebracketinsideoriginalradianviewport0..π/2andawayfrompole0.');q['depends_on_source_parts']=['a-bounded-pair']
+add('Try-Now-2',3,561,'(a)ASKEDpairgraphsshowonerootofsinx=1/x²ONLYon0<x<π/2;(b)VERIFYbracket1..1.5. Do notextendone-rootclaimtoallpositiveperiods.',[p,q])
+f='2**x-x-4'
+p=a.sketch('a-chosen-pair',['2**x','x+4'],'Sameaxes:2^xpositiveincreasingthrough(0,1),asymptotey0;linex+4through(−4,0),(0,4);TWOintersections,onenegativeandonepositive.','Originaldifferenceisstrictlyconvex,hasoneglobalminimumnegative,andtendstopositiveinfinityatbothends. Disjointbrackets(−4,−3)and(2,3)eachcontainaroot;strictconvexitygivesatmosttwo. Thusglobalcount2;thenegativeintersectionisnotlost.',653)
+extra(p,'two-disjoint-original-brackets','Tuple(sign(('+f+').subs(x,-4))*sign(('+f+').subs(x,-3)),sign(('+f+').subs(x,2))*sign(('+f+').subs(x,3)))','Tuple(-1,-1)')
+q=a.bracket('b-larger-root',f,'Rational(27,10)','Rational(14,5)','2**Rational(27,10)-Rational(67,10)','2**Rational(14,5)-Rational(34,5)',653,'Originalf2.7≈−.2019808,f2.8≈+.1644045. Nativekeyprints+.0625fortheuppervalue,whichiswrongarithmetic,butpositive-signbracketandlarger-rootconclusionremainright.');q.update(author_comparison_status='key wrong',source_key_endpoint_error=dict(source='f(2.8)=0.0625',correct='2^(14/5)−34/5≈0.164404506',conclusion='Positive endpoint sign and bracket still valid.'),depends_on_source_parts=['a-chosen-pair'])
+add('Try-Now-2',4,561,'(a)ASKEDsuitablepairshowEXACTLYTWOroots2^x=x+4;(b)SHOWBYCALCULATIONlargerroot2.7..2.8. Wrongprintedupperendpointvaluecorrectedwithoutdiscardingvalidrootbracket.',[p,q])
+refs=[(6,561,'Example2 exponential ordinate table','e^xat−6,0,2rounded0.002,1,7.4;actualvaluespositive.',[ROOTG],'table','Example:2'),(7,561,'Example2 linear ordinate table','Originalx+6at−6,0,2gives0,6,8.',[ROOTG],'table','Example:2'),(8,561,'Example2 SOLUTION two-intersection graph','Correctchosenpair e^xandx+6hasnegativeintersectionnear−6andpositiveone2..2.1.',[ROOTG],'graph','Example:2'),(9,561,'Example2 positive bracket working','Originalf2negativeandf2.1positive;onlylocalexistenceprovedbysignchange.',[BRACKET],'table','Example:2')]
+for n,page,label,note,ds,rep,parent in refs:
+ fig(n,page,label,note,ds,rep,[],parent);figures[-1].update(item_id=f'8227:TB:YM:C13:Teaching-figure:{n}',printed_page=pp(page),source_evidence=ev(page),value_level_scope_decisions=[],item_kind='teaching-figure',parent_item_id='8227:TB:YM:C13:'+parent)
+ figures[-1]['mathematical_feature_review']['method']='Readsourcechosengraphfunctions,globalversusboundedviewportcounts,andactualendpointarithmetic. Independentlyconfirmdomains,monotonicity/convexityandoppositesigns. Nativekeyissuesareexplicit;noinaccessiblePDF/OCRclaim.'
+pages=[dict(pdf_page=561,printed_page=pp(561),chapter=13,page_status='items enumerated',item_ids=[r['item_id']for r in answers]+[r['item_id']for r in figures],continuation_item_ids=[],source_evidence=ev(561),reader='Codex author',date='2026-11-20',non_item_content='AllExample2/Try2Q1–4,includingeachgraphcountandcalculatedbracket,andactualworkedtables/solutiongraph/signworkingareenumerated. Trigquestionboundedviewportretained.',scope_screen='Learnerchoosesappropriatetwographdecomposition,thenproveslocalcontinuousbracket. Noformaliterationconvergenceconditionrequired.')]
+def save():
+ for row in answers:
+  for p in row['subparts']:
+   for name,op in p.get('additional_operations',{}).items():
+    if name in p.get('additional_operation_expected',{}):assert equivalent(compute(op),expression(p['additional_operation_expected'][name])),(row['item_id'],p['subpart'],name)
+ for name,data in [('answers-YM-C13-graph-choices.json',dict(scope='Complete561chosen-graphandbracketresponses.',items=answers)),('census-YM-C13-graph-choices.json',dict(book='YM',book_id='8227-SRC-017',chapter=13,source_path=SRC,source_sha256=SHA,scope='Complete561page/item/workedfigurecensus.',new_items=new+figures,corrections=corrections,pages=pages))]:(W/'tools/textbook-r5'/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ print(len(answers),'items;',sum(len(r['subparts'])for r in answers),'responses;',len(figures),'references;',len(pages),'pages')
+if __name__=='__main__':save()

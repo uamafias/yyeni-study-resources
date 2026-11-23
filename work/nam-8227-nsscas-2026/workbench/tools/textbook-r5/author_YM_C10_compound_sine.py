@@ -1,0 +1,67 @@
+"""YM452–455: exact compound-sine decisions,common-domain proofs and unit-circle exposition."""
+import json
+import author_YM_C10_opening as o
+import author_YM_C9_opening as g
+from author_YM_C9_opening import h,W,SRC,SHA,pp,v,fig,figures,extra,compute,expression,equivalent
+from author_YM_C4_trig_graphs import reasoning
+g.answers.clear();g.new.clear();g.corrections.clear();figures.clear()
+answers=g.answers;new=g.new;corrections=g.corrections;ev=o.ev;h.common.base.ev=ev
+COMP=o.COMPOUND;EVAL=o.EXACT;SPECIAL='8227:2020:M1:T6:O03:D01'
+
+def exact(label,original,key,kp,special=False,show=False):
+ p=v(label,original,key,kp,'Start from the ORIGINAL angle/expression. Choose a suitable sum/difference of special angles or recognise the compound-sine pattern in reverse. Evaluate exact sine/cosine values with correct quadrant signs,then simplify/rationalise without a decimal calculator approximation.')
+ p.update(assessed_8227_demand_ids=[COMP,EVAL]+([SPECIAL]if special else[]),component_demand_ids=[]if special else[SPECIAL],response_format='proof/show-that'if show else'numeric',original_expression=original)
+ if show:p['check_mode']='show/prove'
+ return p
+
+def proof(label,lhs,rhs,kp,domain,method):
+ p=v(label,'trigsimp(expand_trig(('+lhs+')-('+rhs+')))','0',kp,method+' The symbolic residual is checked from separately transcribed ORIGINAL left/right expressions. The recorded algebraic reasoning,not numerical samples alone,establishes the identity on its common domain.')
+ p.update(check_mode='show/prove',assessed_8227_demand_ids=[COMP,EVAL],response_format='proof/show-that',original_lhs=lhs,original_rhs=rhs,original_common_domain=domain)
+ return p
+
+def add(kind,n,page,note,parts,new_item=False,direct=True):
+ r=o.add(kind,n,page,note,parts,new_item);r.update(mapping_rationale='Classify the actual compound-angle recognition/expansion,exact evaluation or identity proof. Nonstandard15/75/105degree outputs do not themselves establish the full basic special-angle demand. Direct special-angle links occur where an explicit requested final value is0/30/45/60/90degree-related;underlying special ratios otherwise remain components.',sketch_response_required=False,value_level_scope_decisions=[dict(rule_id='8227:QUAL03',status='not applicable',quoted_value=note,reason='These tasks ask exact values or formal identities,not a complete bounded equation root set. No input multiplier limit is imposed by mistake on an expression/proof.')],scope_check=dict(status='in-scope',basis=note,excluded_or_qualified_parts=[],limits_considered=['8227:QUAL03']),precision_angle_check=dict(source='Degrees and radians explicitly distinguished;all requested outputs exact,with no-calculator conditions onExample5(b)/Try5Q2.',comparison='Retain radicals,quadrant signs and original tangent/quotient domains. A numerical value is not a substitute for visible reasoning in a show/prove task. No rounding is needed.'))
+ if not direct:r.update(evidence_role='prerequisite/supporting worked unit-circle teaching illustration;no separately requested practice response.',teaches_8227_demand_ids=[SPECIAL])
+ return r
+ps=[exact('a','sin(75*pi/180)','(sqrt(2)+sqrt(6))/4',452),exact('b','sin(7*pi/12)','(sqrt(6)+sqrt(2))/4',452)]
+ps[0]['learner_decomposition']='75°=30°+45°';ps[1]['learner_decomposition']='7π/12=π/3+π/4.'
+add('Example',4,452,'Evaluate sin75°and sin(7π/12)exactly using the original sum decompositions. Both give(√6+√2)/4,although the source angles/units differ.',ps)
+ps=[exact('a','sin(105*pi/180)','(sqrt(6)+sqrt(2))/4',642),exact('b','sin(pi/2)','1',642,True),exact('c','sin(5*pi/12)','(sqrt(6)+sqrt(2))/4',642)]
+ps[1]['assessed_8227_demand_ids']=[SPECIAL];ps[1]['method']='The ORIGINAL angleπ/2is a basic unit-circle angle;its sine is1. No compound expansion is needed merely because of the section heading.'
+add('Try-Now',4,452,'Three original exact sines:105°,π/2,5π/12. The middle value directly tests a basic special angle;the others need compound/related-angle reasoning.',ps)
+p=exact('a','sin(pi/12)','(sqrt(6)-sqrt(2))/4',453);p['learner_decomposition']='π/12=π/4−π/6;source note gives equivalentπ/3−π/4.'
+q=exact('b','sin(286*pi/180)*cos(151*pi/180)-cos(286*pi/180)*sin(151*pi/180)','sqrt(2)/2',453,True);q['learner_decomposition']='Recognise sin(286°−151°)=sin135°;the basic/reference angle is45°with positivequadrantII sign.'
+add('Example',5,453,'Exact sin(π/12)uses a difference;the no-calculator286°/151°expression compresses tosin135°. Do not approximate the large individual-angle ratios.',[p,q])
+p=exact('shown-exact-value','sin(pi/3-pi/4)','(sqrt(6)-sqrt(2))/4',643,show=True);p['source_reading_resolution']='Native sourceTry5Q1has subtractionπ/3−π/4;the circled minus is readable. No exponent or plus-sign defect.'
+add('Try-Now-5',1,453,'SHOW the exactsinπ/12value using the explicitly suppliedπ/3−π/4decomposition. Keep the difference sign and the visible method.',[p])
+ps=[]
+for label,A,B,key in [('a',327,267,'sqrt(3)/2'),('b',216,96,'sqrt(3)/2'),('c',187,52,'sqrt(2)/2')]:
+ p=exact(label,f'sin({A}*pi/180)*cos({B}*pi/180)-cos({A}*pi/180)*sin({B}*pi/180)',key,643,True);p['learner_decomposition']=f'Recognise sin({A}°−{B}°)=sin({A-B}°),then exact quadrant/reference-angle evaluation.';ps.append(p)
+add('Try-Now-5',2,453,'Without a calculator,compress three source difference-pattern expressions tosin60°,sin120°,sin135°,then evaluate exactly. Numerical angle changes alone do not create three distinct families.',ps)
+p=proof('identity','sin(a-b)/(cos(a)*cos(b))','tan(a)-tan(b)',454,'cosA≠0andcosB≠0.','Expand ORIGINALsin(A−B),split the quotient under nonzero cosines,then use sin/cos=tan. The source proof keeps one side throughout before reaching the other.')
+add('Example',6,454,'Prove sin(A−B)/(cosAcosB)=tanA−tanB on its original common domain. The sourceworkedline is checked algebraically,not from selected numerical angles.',[p])
+ps=[proof('a','sin(a+b)/(cos(a)*cos(b))','tan(a)+tan(b)',643,'cosP≠0,cosQ≠0;checkera,bdenoteP,Q.','Expand the ORIGINAL sine sum,divide each term bycosPcosQ,andcancel only nonzero factors.'),proof('b','sin(a+b)+sin(a-b)','2*sin(a)*cos(b)',643,'AllrealA,B.','Expand BOTH original compound sines. MixedcosAsinBterms cancel;the two sinAcosBterms add.'),proof('c','sin(a+b)/sin(a-b)','(tan(a)+tan(b))/(tan(a)-tan(b))',643,'sin(A−B)≠0andcosAcosB≠0;equivalently the displayed tangent denominator is nonzero as well.','Follow the sourcehint:rewrite the RIGHT quotient usingtan=sin/cos,multiply numerator/denominator by the nonzero cosAcosB,then recognise the compound sine pair. Do not assert equality at points where only the leftside exists.')]
+add('Try-Now',6,454,'Three actualidentityproofs:sum-over-cosines,double-sine cancellation,andratioofsum/difference. Part(c)has stricter common-domainconditions than the left ratio alone.',ps)
+ps=[]
+for label,expr,key in [('cos150','cos(150*pi/180)','-sqrt(3)/2'),('sin150','sin(150*pi/180)','Rational(1,2)'),('tan150','tan(150*pi/180)','-1/sqrt(3)')]:
+ p=exact(label,expr,key,455,True);p['assessed_8227_demand_ids']=[];p['teaches_8227_demand_ids']=[SPECIAL];ps.append(p)
+add('Worked-illustration',2,455,'Recovered unit-circle e.g.150°:derive cos−√3/2,sin1/2,andtan−1/√3fromquadrantII/referenceangle30°. This unnumbered workedexposition is teaching support,not an extra exam question.',ps,True,False)
+refs=[(16,452,'Example4 degree30/60 right triangle','Sides1,√3,2give the exactsin/cos30/60ratios with correct adjacent/opposite roles.',SPECIAL,'diagram','Example:4'),(17,452,'Example4 degree45 right triangle','Legs1,1andhypotenuse√2give both45ratios1/√2.',SPECIAL,'diagram','Example:4'),(18,452,'Example4a sum/rationalisation working','Expand sin(30+45);the positive radical sum is(√2+√6)/4.',COMP,'table','Example:4'),(19,452,'Example4 radianπ/6/π/3 right triangle','Radian anglelabels correspond to the same1,√3,2geometry;units are not decimaldegreevalues.',SPECIAL,'diagram','Example:4'),(20,452,'Example4 radianπ/4 right triangle','Equalunit legs and√2hypotenuse;π/4is45degrees.',SPECIAL,'diagram','Example:4'),(21,452,'Example4b radian addition working','7π/12=π/3+π/4gives samepositive radical sum as75degrees,by related-angle symmetry.',COMP,'table','Example:4'),(22,453,'Example5 radianπ/6/π/3 right triangle','Use exactsin/cosπ/6andπ/3withoutcalculatorapproximations.',SPECIAL,'diagram','Example:5'),(23,453,'Example5 radianπ/4 right triangle','Equallegs1andhypotenuse√2supply the difference expansion.',SPECIAL,'diagram','Example:5'),(24,453,'Example5a alternative-difference note','π/4−π/6andπ/3−π/4both equalπ/12;different valid decompositions do not create a new assessed family.',COMP,'table','Example:5'),(25,453,'Example5b quadrant135 sign diagram','135degreesisquadrantII,reference45;sinpositive. Direction labels compared with the actual unit-circle signs.',SPECIAL,'diagram','Example:5'),(26,453,'Example5b degree45 triangle','Legs1,1,hypotenuse√2;exactsin45=√2/2.',SPECIAL,'diagram','Example:5'),(27,453,'Example5b reverse-pattern working','sin286cos151−cos286sin151=sin135. Avoid individual decimalratios.',COMP,'table','Example:5'),(28,454,'Example6 one-sided identity working','NonzerocosAcosBpermits splitting/cancellation;reach tanA−tanB.',COMP,'table','Example:6'),(29,454,'Complementary-angle reference panel','sin(90°−θ)=cosθ;cos(90°−θ)=sinθ. The derivation uses degrees consistently.',COMP,'table',None),(30,454,'Cosine-sum derivation from sine difference','Replace firstargumentby90°−A and simplify complements to cos(A+B)=cosAcosB−sinAsinB.',COMP,'table',None),(31,454,'Cosine-difference derivation','Replace Bby−B and retaincosineeven/sineoddparity;the crossproduct sign becomespositive.',COMP,'table',None),(32,454,'Cosine formula pair','cos(A±B)=cosAcosB∓sinAsinB. These teachingresults are not extra exercises.',COMP,'table',None),(33,455,'Full special-angle unit circle','All sixteenlabelled30/45/60multiples checked:coordinateorder(cosθ,sinθ),degree/radianequivalents,quadrantsigns andcardinalpoints. Radius1.',SPECIAL,'diagram',None),(34,455,'Unit-circle coordinate interpretation','Cosineisxcoordinate,sineisycoordinate;the denominatorradiusis1. Coordinateorderisnot(sin,cos).',SPECIAL,'table',None),(35,455,'150degree reference triangle','The1,√3,2triangle suppliespositive30degreemagnitudes;quadrantIIprovidescos/tanminus signs.',SPECIAL,'diagram','Worked-illustration:2'),(36,455,'150degree worked coordinate and tangent ratios','cos150=−√3/2,sin150=1/2,tan150=−1/√3. Equivalentexactrationalisedtangent−√3/3isvalid.',SPECIAL,'table','Worked-illustration:2')]
+for n,page,label,note,d,rep,parent in refs:
+ fig(n,page,label,note,[d],rep,[],parent);figures[-1].update(item_id=f'8227:TB:YM:C10:Teaching-figure:{n}',printed_page=pp(page),source_evidence=ev(page),value_level_scope_decisions=[],item_kind='teaching-figure',parent_item_id='8227:TB:YM:C10:'+parent if parent else None)
+ figures[-1]['mathematical_feature_review']['method']='Read everyoriginaltriangle/anglelabel,quadrantsign,radian/degreeunit,andformula/paritysign. Recompute the parent exact values/proofs from the originals. Unit-circlevalues are verified againstcos/sin,not OCR glyphs.'
+# All labelled unit-circle coordinate values are independently recomputed,includingcardinalzeros.
+circle=next(r for r in figures if r['item_id'].endswith(':33'))
+angles=[0,30,45,60,90,120,135,150,180,210,225,240,270,300,315,330]
+printed=[('1','0'),('sqrt(3)/2','Rational(1,2)'),('sqrt(2)/2','sqrt(2)/2'),('Rational(1,2)','sqrt(3)/2'),('0','1'),('-Rational(1,2)','sqrt(3)/2'),('-sqrt(2)/2','sqrt(2)/2'),('-sqrt(3)/2','Rational(1,2)'),('-1','0'),('-sqrt(3)/2','-Rational(1,2)'),('-sqrt(2)/2','-sqrt(2)/2'),('-Rational(1,2)','-sqrt(3)/2'),('0','-1'),('Rational(1,2)','-sqrt(3)/2'),('sqrt(2)/2','-sqrt(2)/2'),('sqrt(3)/2','-Rational(1,2)')]
+for angle,(xc,yc)in zip(angles,printed):assert equivalent(expression(f'Tuple(cos({angle}*pi/180),sin({angle}*pi/180))'),expression(f'Tuple({xc},{yc})')),angle
+circle['independently_checked_degree_labels']=angles
+pages=[dict(pdf_page=page,printed_page=pp(page),chapter=10,page_status='items enumerated',item_ids=[r['item_id']for r in answers if r['source_pdf_page']==page]+[r['item_id']for r in figures if r['pdf_page']==page],continuation_item_ids=[],source_evidence=ev(page),reader='Codex author',date='2026-11-20',non_item_content='AllExamples4–6,Try4/Try5Q1–2/Try6,theheadingless150degreeworkedillustrationand21reference/solutionpanelsenumerated. All16unitcirclecoordinateschecked.',scope_screen='Exact compound and special-angle work;common-domainconstraintsretainedforidentityproofs. No invented bounded-solve demands.')for page in range(452,456)]
+def save():
+ for name,data in [('answers-YM-C10-compound-sine.json',dict(scope='Complete452–455exact sine compounds,identityproofs and unitcircleworkedvalues.',items=answers)),('census-YM-C10-compound-sine.json',dict(book='YM',book_id='8227-SRC-017',chapter=10,source_path=SRC,source_sha256=SHA,scope='Complete452–455page/item/figurecensus.',new_items=new+figures,corrections=corrections,pages=pages))]:
+  (W/'tools/textbook-r5'/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+ for r in answers:
+  for p in r['subparts']:
+   if'operation'in p:assert equivalent(compute(p['operation']),expression(p.get('author_expected_normalised',p['printed_key_normalised']))),(r['item_id'],p['subpart'])
+ print(len(answers),'items;',sum(len(r['subparts'])for r in answers),'responses;',len(figures),'references;',len(pages),'pages')
+if __name__=='__main__':save()

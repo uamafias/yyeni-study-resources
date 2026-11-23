@@ -1,0 +1,49 @@
+{
+  "families": 500,
+  "memberships": 2385,
+  "nearest_sibling_differences": 500,
+  "units_and_precision": 500,
+  "single_member": 147,
+  "multi_member_ordered": 353,
+  "selected_response_membership_reasons": 2385,
+  "limits": [
+    "This author synthesis reuses previously recorded source-response evidence. It does not claim new page-image reads, new answer verification or independent educational acceptance.",
+    "All accepted item demand links, member identities, selected response labels and source-response pairs are preserved.",
+    "Repeated appearances or changed values alone do not establish a difficulty increase. Progression explicitly records worked-to-unworked withdrawal or the actual added learner decision.",
+    "Textbook evidence remains internal. Family examination relations do not make textbook responses official marking criteria."
+  ],
+  "status": "author prose propagation and identity checked; independent semantic review required",
+  "negative_fixtures": [
+    {
+      "fixture": "missing-nearest-sibling",
+      "result": "rejected",
+      "reason": "missing valid nearest sibling comparison"
+    },
+    {
+      "fixture": "unpropagated-units",
+      "result": "rejected",
+      "reason": "units/precision prose not propagated"
+    },
+    {
+      "fixture": "lost-ordered-progression",
+      "result": "rejected",
+      "reason": "ordered progression differs from author input"
+    },
+    {
+      "fixture": "generic-membership-reason",
+      "result": "rejected",
+      "reason": "member-specific selected response reason absent"
+    },
+    {
+      "fixture": "answer-mathematics-change-during-hash-refresh",
+      "result": "rejected",
+      "reason": "('selected answer mathematics changed after prose authoring', '8227:TB:Goldie:C3:Example:1', 'answer', 'derived_answer')"
+    }
+  ],
+  "distinct_units_and_precision": 477,
+  "distinct_membership_reasons": 2382,
+  "source_input_hash_refreshes": 69,
+  "command": "python3 work/nam-8227-nsscas-2026/workbench/tools/check_textbook_family_prose_parallel_r6.py",
+  "author_input_sha256": "aac27204ee817987949d50a88eb75376779eadf0493b3a3343bbaa1d51c0ca5f",
+  "applier_sha256": "47f98f5b0b896404a5b96d8154b0cb642d32ec3d0cb8f4ea617994783e9e9e6d"
+}

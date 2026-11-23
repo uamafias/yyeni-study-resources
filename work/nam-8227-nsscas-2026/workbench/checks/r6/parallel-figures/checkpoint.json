@@ -1,0 +1,60 @@
+{
+  "status": "author narrow checks pass; independent review required",
+  "date": "2026-11-22",
+  "counts": {
+    "total": 1758,
+    "by_type": {
+      "graphic": 987,
+      "text callout": 771
+    },
+    "by_comparison_status": {
+      "same representation medium not recorded for linked demands in sampled NSSCAS parts": 475,
+      "representation medium observed on linked demand; exact figure not equated": 512,
+      "not a graphic representation; internal text callout": 771
+    },
+    "explicit_not_checked": 1758,
+    "reference_callout_role_repairs": 42
+  },
+  "new_negative_fixtures": [
+    {
+      "fixture": "pending-figure-status",
+      "result": "rejected",
+      "reason": "figure retains pending status"
+    },
+    {
+      "fixture": "unclassified-figure",
+      "result": "rejected",
+      "reason": ""
+    },
+    {
+      "fixture": "content-certification-from-parent",
+      "result": "rejected",
+      "reason": ""
+    },
+    {
+      "fixture": "invented-exam-part",
+      "result": "rejected",
+      "reason": "('figure representation comparison drift', '8227:TB:Goldie:C1:Teaching-figure:1', 'examination_part_ids')"
+    },
+    {
+      "fixture": "textbook-image-learner-display",
+      "result": "rejected",
+      "reason": ""
+    }
+  ],
+  "accepted_item_links_preserved": true,
+  "overlay_idempotent": true,
+  "comparison_index_deterministic": true,
+  "input_sha256": {
+    "tools/apply_textbook_figures_r6.py": "aa8343b252243b89e951523497326e93e67155be207a1528c0f339ac2f591fcb",
+    "tools/textbook-figure-repairs-r6.json": "a83f6c589863bda376f2165307b3dd2ac49cbc845dfa08fa7be7c430b73254f9",
+    "tools/check_textbook_figures_r6.py": "11722c3f15a95c8bc0556f28f52addbd106708fb4f207694f55f92ad2381aa20"
+  },
+  "native_layout_pages": 23,
+  "limitations": [
+    "Taxonomy uses the accepted per-figure census descriptions, not 1758 fresh native reads. The23named native pages resolve ambiguous layout/role cases.",
+    "All1758contentchecks remain explicitly notchecked; known9figuredefects are separately retained. No full content audit is required or claimed.",
+    "Examcomparison is medium+demand only; not an exactfigure/sameproblem match. Figure features and objective map pointers preserve the distinction.",
+    "This checker runs on in-memory copies; canonical inventory and derived comparison output are integrated by the parent builder."
+  ]
+}

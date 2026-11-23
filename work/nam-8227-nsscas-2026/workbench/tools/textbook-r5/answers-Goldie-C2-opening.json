@@ -1,0 +1,619 @@
+{
+  "scope": "Complete opening tasks and Example1response;physical/discrete/base domains explicit.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C2:Prompt:1",
+      "source_pdf_page": 38,
+      "notes": "Under the stated idealised daily-doubling/no-deaths assumptions,find the cell counts after5and10days and an approximate million-cell time. Preserve the day0initial count and the discrete-day interpretation.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T2:O03:D03",
+        "8227:2020:M1:T2:O03:D02",
+        "8227:2020:M2:T2:O03:D02"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Record the actual model term/threshold,graph-intersection or sketch demand. Being in a logarithm chapter does not make ordinary power evaluation a log-law assessment. Global parameter claims retain real-base and variable domains.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed opening prompt,activity or example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "within",
+          "quoted_value": "Under the stated idealised daily-doubling/no-deaths assumptions,find the cell counts after5and10days and an approximate million-cell time. Preserve the day0initial count and the discrete-day interpretation.",
+          "reason": "Simple exponential/monomial graph or contextual domain,with real inputs and explicit physical-time restrictions. General-all-a exploration is separately qualified."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cell counts and elapsed whole days are discrete;cost model time is continuous and nonnegative. Exact intersections/feature formulas are kept before any approximate auxiliary roots.",
+        "comparison": "Do not turn a rounded continuous threshold into an exact discrete count,or infer a full real-domain inequality from an unstated positive-domain graph convention."
+      },
+      "expected_subpart_labels": [
+        "five-days",
+        "ten-days",
+        "million-threshold"
+      ],
+      "subparts": [
+        {
+          "subpart": "five-days",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "2**5"
+            ]
+          },
+          "printed_key_normalised": "32",
+          "method": "One initial cell doubles once per whole day,so the day-ncount is2^n.",
+          "source_pdf_page": 38,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ten-days",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "2**10"
+            ]
+          },
+          "printed_key_normalised": "1024",
+          "method": "Use the same initial day0count and exactly ten doublings.",
+          "source_pdf_page": 38,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "million-threshold",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "ceiling(log(1000000)/log(2))"
+            ]
+          },
+          "printed_key_normalised": "20",
+          "method": "The continuous solution is about19.9316days,but exact daily doubling gives integer counts. Twenty is the first whole day with at least one million;there is no day with exactly1,000,000cells in this idealised model.",
+          "assertions": [
+            {
+              "expression": "Tuple(2**19<1000000,2**20>=1000000)",
+              "expected": "Tuple(True,True)"
+            }
+          ],
+          "source_pdf_page": 38,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "direct_demand_aspects": [
+        {
+          "demand_id": "8227:2020:M1:T2:O03:D02",
+          "assessed_facet": "Geometric term values,not a finite-sum question."
+        },
+        {
+          "demand_id": "8227:2020:M2:T2:O03:D02",
+          "assessed_facet": "First whole-day threshold;does not automatically cover every exponential inequality form."
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Activity:1",
+      "source_pdf_page": 39,
+      "notes": "Read the given2^x/x²intersections and ordering,draw3^x/x³and4^x/x⁴using software if available,and test the two general-a assertions. The positive plotting convention and valid exponential-base domain must be explicit.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O05:D01",
+        "8227:2020:M1:T4:O02:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Record the actual model term/threshold,graph-intersection or sketch demand. Being in a logarithm chapter does not make ordinary power evaluation a log-law assessment. Global parameter claims retain real-base and variable domains.",
+      "representation": "graph",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed opening prompt,activity or example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "within",
+          "quoted_value": "Read the given2^x/x²intersections and ordering,draw3^x/x³and4^x/x⁴using software if available,and test the two general-a assertions. The positive plotting convention and valid exponential-base domain must be explicit.",
+          "reason": "Simple exponential/monomial graph or contextual domain,with real inputs and explicit physical-time restrictions. General-all-a exploration is separately qualified."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cell counts and elapsed whole days are discrete;cost model time is continuous and nonnegative. Exact intersections/feature formulas are kept before any approximate auxiliary roots.",
+        "comparison": "Do not turn a rounded continuous threshold into an exact discrete count,or infer a full real-domain inequality from an unstated positive-domain graph convention."
+      },
+      "expected_subpart_labels": [
+        "i-a",
+        "i-b",
+        "ii-a",
+        "ii-b",
+        "iii-a",
+        "iii-b"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-a",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "Tuple(Tuple(2,2**2),Tuple(4,2**4))"
+            ]
+          },
+          "printed_key_normalised": "Tuple(Tuple(2,4),Tuple(4,16))",
+          "method": "Check both labelled positive-graph intersections in the original2^xandx²,not just their x-coordinates.",
+          "assertions": [
+            {
+              "expression": "Tuple((2**x-x**2).subs(x,2),(2**x-x**2).subs(x,4))",
+              "expected": "Tuple(0,0)"
+            }
+          ],
+          "source_pdf_page": 39,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "i-b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key incomplete",
+          "author_conclusion": "On the intended positive domain,the answer is0<x<2orx>4. On all realx,it isr<x<2orx>4,where r≈−0.766665,and0is included.",
+          "author_derivation": "The source key explicitly gives the positive-domain answer,but the stem does not statex>0. The given figure displays the nonnegative side. On the full real domain,there is a further negative intersection and2^0>0². Record the intended-domain interpretation and the complete real-domain alternative as a question-domain ambiguity,not a silent universal claim.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "negative_intersection": {
+              "kind": "bracketed-source-root",
+              "operands": [
+                "2**x-x**2",
+                "-1",
+                "0"
+              ],
+              "rounding": {
+                "decimal_places": 6
+              }
+            },
+            "zero_comparison": {
+              "kind": "identity",
+              "operands": [
+                "2**0-0**2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "negative_intersection": "-0.766665",
+            "zero_comparison": "1"
+          },
+          "source_pdf_page": 39,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-a",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "For3^xandx³:exponential positive/convex with intercept1;cubic odd with intercept0;two positive intersections,one near2.478and the exact(3,27). No negative intersection.",
+          "author_derivation": "Forx≤0,the cubic is nonpositive and the exponential is positive. For positivex,the intersection condition islnx/x=ln3/3;the left side rises to its unique maximum ateandthen falls,so there are two positive intersections. Check the lower one on[2,2.7]and the exact one3. These are author-derived software-sketch features;the key supplies no separate graphs.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            335,
+            336
+          ],
+          "additional_operations": {
+            "lower_positive_crossing": {
+              "kind": "bracketed-source-root",
+              "operands": [
+                "3**x-x**3",
+                "2",
+                "27/10"
+              ],
+              "rounding": {
+                "decimal_places": 3
+              }
+            },
+            "exact_upper_crossing": {
+              "kind": "identity",
+              "operands": [
+                "3**3-3**3"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "lower_positive_crossing": "2.478",
+            "exact_upper_crossing": "0"
+          },
+          "source_pdf_page": 39,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "no key",
+          "author_conclusion": "For4^xandx⁴:the quartic is even with minimumO;the exponential has intercept1. The full real graph has a negative crossing r≈−0.766665and positive crossings(2,16),(4,256).",
+          "author_derivation": "Both functions are nonnegative,so4^x=x⁴is equivalent to(2^x)²=(x²)²,and hence2^x=x². Reuse the independently checked crossing set;do not omit the negative branch when asking for a full real graph. On the source’s positive plotting convention only the two positive crossings appear.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "key_presence": "no separate key",
+          "inspected_key_pdf_pages": [
+            335,
+            336
+          ],
+          "additional_operations": {
+            "square_equivalence": {
+              "kind": "identity",
+              "operands": [
+                "expand((2**x)**2-(x**2)**2)-(4**x-x**4)"
+              ]
+            },
+            "positive_crossings": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(4**2-2**4,4**4-4**4)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "square_equivalence": "0",
+            "positive_crossings": "Tuple(0,0)"
+          },
+          "source_pdf_page": 39,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": null,
+          "answer_printed_page": null,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii-a",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Yes,for every admissible positive basea,the two expressions agree atx=a:both equala^a.",
+          "author_derivation": "Substitute the same value intoa^xandx^a. Negative bases are not real exponential functions for arbitrary realx,and0^0is not part of the usual definition. Statea>0rather than extending the verbal claim to undefined cases.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 39,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii-b",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "No,not for all admissible positivea. For examplea=½gives(½)^x<√xfor everyx≥1.",
+          "author_derivation": "Forx≥1,(½)^x≤½while√x≥1,so there is no eventual dominance of the exponential in that case. For fixeda>1,the exponential eventually dominates the power,but that conditional statement is different from the source’s all-aquantifier. The source key’sNois correct.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "counterexample_at_one": {
+              "kind": "identity",
+              "operands": [
+                "Tuple((1/2)**1,sqrt(1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "counterexample_at_one": "Tuple(1/2,1)"
+          },
+          "source_pdf_page": 39,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Given/simple graph comparison is relevant;general-all-parameter dominance is supporting exploration and the original inequality domain is ambiguous.",
+        "excluded_or_qualified_parts": [
+          "i-b:state the intended positive domain or the full-real alternative",
+          "iii:general-parameter exploration is supporting breadth,not a new prescribed asymptotic theorem"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Prompt:4",
+      "source_pdf_page": 40,
+      "notes": "Explain how the asymptote and marked point ofa^x/a^(−x)change under vertical/horizontal translations and stretches. Distinguish the image of a marked point from a y-intercept;retain positive-base/nonzero-scale conditions.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O05:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Record the actual model term/threshold,graph-intersection or sketch demand. Being in a logarithm chapter does not make ordinary power evaluation a log-law assessment. Global parameter claims retain real-base and variable domains.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed opening prompt,activity or example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "within",
+          "quoted_value": "Explain how the asymptote and marked point ofa^x/a^(−x)change under vertical/horizontal translations and stretches. Distinguish the image of a marked point from a y-intercept;retain positive-base/nonzero-scale conditions.",
+          "reason": "Simple exponential/monomial graph or contextual domain,with real inputs and explicit physical-time restrictions. General-all-a exploration is separately qualified."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cell counts and elapsed whole days are discrete;cost model time is continuous and nonnegative. Exact intersections/feature formulas are kept before any approximate auxiliary roots.",
+        "comparison": "Do not turn a rounded continuous threshold into an exact discrete count,or infer a full real-domain inequality from an unstated positive-domain graph convention."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "key wrong",
+          "author_conclusion": "A vertical translation bykhas asymptotey=kand y-intercept(0,1+k). The source key’s(0,k)misses the original1.",
+          "author_derivation": "For either original curvea^xora^(−x),the value at0is1. Addingkaddsktothat value. The symbolic base2counterexample has(2^0+k)=1+k,whereas the printed point usesk. The asymptote statement is correct.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "translated_features": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(limit(2**x+k,x,-oo),(2**x+k).subs(x,0))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "translated_features": "Tuple(k,k+1)"
+          },
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "Translating right byhpreserves asymptotey=0and moves the point(0,1)to(h,1);the new y-intercepts area^(−h)anda^hfor the two orientations.",
+          "author_derivation": "Replace xbyx−h. The moved point need not remain on the y-axis. The source key correctly gives the image point(k,1),not a new y-intercept. This distinction prevents a false key-error report.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "A horizontal stretch by positivespreserves the point(0,1)and asymptotey=0;the input becomesx/s.",
+          "author_derivation": "Atx=0,the exponent remains0. A positive finite horizontal scale preserves the corresponding infinite-end limit. A zero scale is not an ordinary stretch,and a negative scale additionally reflects orientation.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iv",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "A vertical stretch by nonzerovhas y-intercept(0,v)and asymptotey=0.",
+          "author_derivation": "Multiply the original function byv. At0,the result isv. A nonzero finite factor preserves a zero asymptotic limit;v<0reflects vertically. The zero-factor constant function is a separate degeneracy,not a renewable ordinary stretch.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 335,
+          "answer_printed_page": 321,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Example:1",
+      "source_pdf_page": 40,
+      "notes": "Given machine costC=10+20·2^(−t),find its initial value,large-time behaviour and a sketch on the physicaldomaint≥0. This is evaluation/graph interpretation,not solving an exponential equation.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T3:O05:D01"
+      ],
+      "component_demand_ids": [],
+      "mapping_rationale": "Record the actual model term/threshold,graph-intersection or sketch demand. Being in a logarithm chapter does not make ordinary power evaluation a log-law assessment. Global parameter claims retain real-base and variable domains.",
+      "representation": "text",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed opening prompt,activity or example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:QUAL07",
+          "status": "within",
+          "quoted_value": "Given machine costC=10+20·2^(−t),find its initial value,large-time behaviour and a sketch on the physicaldomaint≥0. This is evaluation/graph interpretation,not solving an exponential equation.",
+          "reason": "Simple exponential/monomial graph or contextual domain,with real inputs and explicit physical-time restrictions. General-all-a exploration is separately qualified."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Cell counts and elapsed whole days are discrete;cost model time is continuous and nonnegative. Exact intersections/feature formulas are kept before any approximate auxiliary roots.",
+        "comparison": "Do not turn a rounded continuous threshold into an exact discrete count,or infer a full real-domain inequality from an unstated positive-domain graph convention."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "(10+20*2**(-x)).subs(x,0)"
+            ]
+          },
+          "printed_key_normalised": "30",
+          "method": "Evaluate the supplied cost function at the initial time0;the model’s currency is the source dollar sign.",
+          "units": "$",
+          "printed_key_units": "$",
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 41,
+          "answer_printed_page": 27,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "limit(10+20*2**(-x),x,oo)"
+            ]
+          },
+          "printed_key_normalised": "10",
+          "method": "The decaying term tends to0,so the cost approaches the fixed lower level10rather than0.",
+          "units": "$",
+          "printed_key_units": "$",
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 41,
+          "answer_printed_page": 27,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "Fort≥0,sketch a decreasing convex curve fromC=30toward horizontal asymptoteC=10,without reaching it at finite time.",
+          "author_derivation": "The exponential factor2^(−t)is positive and decreasing. The cost curve remains strictly above10;the physical years-after-production domain begins0. The source sketch agrees with the intercept and limiting cost.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 40,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "answer_pdf_page": 41,
+          "answer_printed_page": 27,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-38.png",
+            "sha256": "4b149d7d73befac182af9ee6dfa5021f543f0bf8079ab296fa6866b056ec0c74"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "component_demand_roles": [
+        {
+          "role": "prerequisite integer-index arithmetic and direct formula evaluation",
+          "demand_ids": [],
+          "reason": "No invented8227log-law demand for evaluating a supplied power."
+        }
+      ]
+    }
+  ]
+}

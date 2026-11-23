@@ -1,66 +1,211 @@
-# Objective coverage matrix for Mathematics 8227
+# Demand-based coverage: Mathematics 8227
 
-Part associations do not prove all demands/representations of an objective are covered. No recipes yet exist. Full direct/prerequisite mapping requires independent review.
+Computed only from directly assessed part→demand links. Family membership, prerequisites and context do not create coverage. Held defective parts are shown separately and do not establish usable examination evidence. Links never certify the full range of a demand.
 
-| Objective | Syllabus PDF page | Analyst demand count | Observed links | Coverage state |
-|---|---|---|---|---|
-| 8227:2020:M1:T1:O01 | 8 | 3 | 5 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T1:O02 | 8 | 3 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T1:O03 | 8 | 2 | 2 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T1:O04 | 8 | 3 | 10 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T1:O05 | 8 | 2 | 1 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T1:O06 | 8 | 2 | 2 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T2:O01 | 9 | 3 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T2:O02 | 9 | 2 | 1 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T2:O03 | 9 | 3 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T2:O04 | 9 | 2 | 1 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T2:O05 | 9 | 2 | 5 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T3:O01 | 9 | 3 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T3:O02 | 9 | 2 | 10 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T3:O03 | 9 | 2 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T3:O04 | 9 | 2 | 4 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T3:O05 | 9 | 2 | 2 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T4:O01 | 10 | 1 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T4:O02 | 10 | 2 | 8 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T5:O01 | 10 | 2 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T5:O02 | 10 | 3 | 9 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T6:O01 | 11 | 1 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T6:O02 | 11 | 3 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T6:O03 | 11 | 1 | 1 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T6:O04 | 11 | 1 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T6:O05 | 11 | 2 | 5 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T6:O06 | 11 | 2 | 16 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T7:O01 | 12 | 2 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T7:O02 | 12 | 3 | 6 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T7:O03 | 12 | 3 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T7:O04 | 12 | 2 | 1 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T7:O05 | 12 | 2 | 6 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T8:O01 | 12 | 2 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T8:O02 | 12 | 2 | 3 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T8:O03 | 12 | 4 | 11 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T8:O04 | 12 | 2 | 16 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T9:O01 | 13 | 2 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M1:T9:O02 | 13 | 2 | 3 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T9:O03 | 13 | 2 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M1:T9:O04 | 13 | 3 | 11 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T1:O01 | 14 | 3 | 6 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T1:O02 | 14 | 2 | 3 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T1:O03 | 14 | 3 | 3 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T1:O04 | 14 | 4 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T2:O01 | 14 | 2 | 4 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T2:O02 | 14 | 2 | 6 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T2:O03 | 14 | 2 | 13 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T2:O04 | 14 | 2 | 2 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T3:O01 | 15 | 2 | 5 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T3:O02 | 15 | 5 | 20 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T4:O01 | 15 | 2 | 6 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T4:O02 | 15 | 2 | 7 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T4:O03 | 15 | 3 | 9 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T5:O01 | 16 | 3 | 9 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T5:O02 | 16 | 2 | 8 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T5:O03 | 16 | 2 | 3 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T5:O04 | 16 | 2 | 2 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T6:O01 | 16 | 2 | 6 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T6:O02 | 16 | 2 | 0 | syllabus-required; no direct link established by this pass |
-| 8227:2020:M2:T6:O03 | 16 | 2 | 5 | observed candidate links; not full-demand coverage |
-| 8227:2020:M2:T6:O04 | 16 | 2 | 6 | observed candidate links; not full-demand coverage |
+| Objective | Usable NSSCAS parts | Comparable Cambridge items | Demands without usable NSSCAS parts |
+|---|---|---|---|
+| 8227:2020:M1:T1:O01 | 5 | 1 | 8227:2020:M1:T1:O01:D03 |
+| 8227:2020:M1:T1:O02 | 6 | 3 |  |
+| 8227:2020:M1:T1:O03 | 2 | 0 | 8227:2020:M1:T1:O03:D01 |
+| 8227:2020:M1:T1:O04 | 7 | 1 |  |
+| 8227:2020:M1:T1:O05 | 1 | 0 | 8227:2020:M1:T1:O05:D02 |
+| 8227:2020:M1:T1:O06 | 7 | 1 |  |
+| 8227:2020:M1:T2:O01 | 7 | 0 |  |
+| 8227:2020:M1:T2:O02 | 3 | 0 |  |
+| 8227:2020:M1:T2:O03 | 7 | 0 |  |
+| 8227:2020:M1:T2:O04 | 1 | 0 |  |
+| 8227:2020:M1:T2:O05 | 5 | 0 |  |
+| 8227:2020:M1:T3:O01 | 12 | 1 |  |
+| 8227:2020:M1:T3:O02 | 10 | 0 |  |
+| 8227:2020:M1:T3:O03 | 7 | 1 |  |
+| 8227:2020:M1:T3:O04 | 4 | 0 |  |
+| 8227:2020:M1:T3:O05 | 2 | 0 |  |
+| 8227:2020:M1:T4:O01 | 7 | 0 |  |
+| 8227:2020:M1:T4:O02 | 5 | 6 | 8227:2020:M1:T4:O02:D02 |
+| 8227:2020:M1:T5:O01 | 0 | 1 | 8227:2020:M1:T5:O01:D01; 8227:2020:M1:T5:O01:D02 |
+| 8227:2020:M1:T5:O02 | 6 | 3 | 8227:2020:M1:T5:O02:D03 |
+| 8227:2020:M1:T6:O01 | 2 | 0 |  |
+| 8227:2020:M1:T6:O02 | 7 | 0 |  |
+| 8227:2020:M1:T6:O03 | 10 | 2 |  |
+| 8227:2020:M1:T6:O04 | 0 | 4 | 8227:2020:M1:T6:O04:D01 |
+| 8227:2020:M1:T6:O05 | 7 | 0 |  |
+| 8227:2020:M1:T6:O06 | 14 | 0 |  |
+| 8227:2020:M1:T7:O01 | 2 | 2 |  |
+| 8227:2020:M1:T7:O02 | 7 | 5 |  |
+| 8227:2020:M1:T7:O03 | 6 | 5 | 8227:2020:M1:T7:O03:D01 |
+| 8227:2020:M1:T7:O04 | 7 | 5 |  |
+| 8227:2020:M1:T7:O05 | 6 | 2 |  |
+| 8227:2020:M1:T8:O01 | 7 | 0 |  |
+| 8227:2020:M1:T8:O02 | 12 | 3 |  |
+| 8227:2020:M1:T8:O03 | 10 | 3 | 8227:2020:M1:T8:O03:D02 |
+| 8227:2020:M1:T8:O04 | 11 | 0 |  |
+| 8227:2020:M1:T9:O01 | 11 | 0 |  |
+| 8227:2020:M1:T9:O02 | 3 | 0 |  |
+| 8227:2020:M1:T9:O03 | 17 | 0 |  |
+| 8227:2020:M1:T9:O04 | 11 | 0 |  |
+| 8227:2020:M2:T1:O01 | 6 | 0 |  |
+| 8227:2020:M2:T1:O02 | 4 | 1 |  |
+| 8227:2020:M2:T1:O03 | 2 | 3 | 8227:2020:M2:T1:O03:D02 |
+| 8227:2020:M2:T1:O04 | 7 | 0 |  |
+| 8227:2020:M2:T2:O01 | 9 | 0 |  |
+| 8227:2020:M2:T2:O02 | 7 | 3 |  |
+| 8227:2020:M2:T2:O03 | 11 | 0 |  |
+| 8227:2020:M2:T2:O04 | 2 | 0 |  |
+| 8227:2020:M2:T3:O01 | 10 | 1 |  |
+| 8227:2020:M2:T3:O02 | 22 | 1 |  |
+| 8227:2020:M2:T4:O01 | 11 | 0 |  |
+| 8227:2020:M2:T4:O02 | 7 | 0 |  |
+| 8227:2020:M2:T4:O03 | 9 | 0 |  |
+| 8227:2020:M2:T5:O01 | 15 | 0 |  |
+| 8227:2020:M2:T5:O02 | 8 | 0 |  |
+| 8227:2020:M2:T5:O03 | 3 | 0 |  |
+| 8227:2020:M2:T5:O04 | 3 | 0 |  |
+| 8227:2020:M2:T6:O01 | 5 | 1 |  |
+| 8227:2020:M2:T6:O02 | 5 | 1 | 8227:2020:M2:T6:O02:D02 |
+| 8227:2020:M2:T6:O03 | 5 | 1 |  |
+| 8227:2020:M2:T6:O04 | 6 | 1 |  |
+
+# Demand dispositions
+
+Every prescribed demand has exactly one evidence status. Inflexion remains an unobserved facet even though maxima/minima give the compound D02 an observed status.
+
+| Demand | Status | Usable NSSCAS parts | Held parts | Cambridge items | Decision / reason |
+|---|---|---|---|---|---|
+| 8227:2020:M1:T1:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q1:a; 8227:EXAM:2022:P2:Q4:b; 8227:EXAM:2024:P1:Q6:a; 8227:EXAM:2025:P1:Q7:a |  |  | include: Include prescribed demand: Complete square. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q1:b; 8227:EXAM:2022:P2:Q4:b |  | 8227:CAMBRIDGE:w22:12:6-c | include: Include prescribed demand: Determine vertex. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O01:D03 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:w22:12:6-c | include: Include prescribed demand: Sketch quadratic. No usable NSSCAS part; 1 verified comparable items. |
+| 8227:2020:M1:T1:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q10:a; 8227:EXAM:2021:P1:Q10:b; 8227:EXAM:2022:P1:Q4:answer; 8227:EXAM:2024:P1:Q5:a; 8227:EXAM:2024:P1:Q5:b; 8227:EXAM:2025:P1:Q1:a | 8227:EXAM:2023:P1:Q1:b | 8227:CAMBRIDGE:s16:11:6-a; 8227:CAMBRIDGE:s20:12:6-a; 8227:CAMBRIDGE:w16:12:3-ii | include: Include prescribed demand: Calculate discriminant. Directly assessed in 6 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q10:a; 8227:EXAM:2021:P1:Q10:b; 8227:EXAM:2022:P1:Q4:answer; 8227:EXAM:2024:P1:Q5:a; 8227:EXAM:2024:P1:Q5:b; 8227:EXAM:2025:P1:Q1:a | 8227:EXAM:2023:P1:Q1:b | 8227:CAMBRIDGE:s16:11:6-a; 8227:CAMBRIDGE:s20:12:6-a; 8227:CAMBRIDGE:w16:12:3-ii | include: Include prescribed demand: Interpret nature and number of roots. Directly assessed in 6 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O02:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q10:a; 8227:EXAM:2022:P1:Q4:answer; 8227:EXAM:2024:P1:Q5:a |  | 8227:CAMBRIDGE:s16:11:6-a; 8227:CAMBRIDGE:s20:12:6-a; 8227:CAMBRIDGE:w16:12:3-ii | include: Include prescribed demand: Determine parameter conditions. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O03:D01 | syllabus-derived |  |  |  | include: Include prescribed demand: Distinguish identity from equation. No usable examination item established; retain for syllabus-derived analysis. |
+| 8227:2020:M1:T1:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P1:Q3:answer; 8227:EXAM:2024:P1:Q2:answer |  |  | include: Include prescribed demand: Determine coefficients by identity. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q3:a; 8227:EXAM:2021:P1:Q3:b; 8227:EXAM:2021:P2:Q11:b; 8227:EXAM:2022:P1:Q2:b; 8227:EXAM:2022:P2:Q2:answer; 8227:EXAM:2024:P1:Q1:answer; 8227:EXAM:2025:P1:Q11:b |  | 8227:CAMBRIDGE:w15:11:3 | include: Include prescribed demand: Recognise quadratic substitution. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q3:a; 8227:EXAM:2021:P1:Q3:b; 8227:EXAM:2021:P2:Q11:b; 8227:EXAM:2022:P1:Q2:b; 8227:EXAM:2022:P2:Q2:answer; 8227:EXAM:2024:P1:Q1:answer; 8227:EXAM:2025:P1:Q11:b |  | 8227:CAMBRIDGE:w15:11:3 | include: Include prescribed demand: Solve transformed equation. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O04:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q3:a; 8227:EXAM:2021:P1:Q3:b; 8227:EXAM:2021:P2:Q11:b; 8227:EXAM:2022:P1:Q2:b; 8227:EXAM:2022:P2:Q2:answer; 8227:EXAM:2024:P1:Q1:answer; 8227:EXAM:2025:P1:Q11:b |  | 8227:CAMBRIDGE:w15:11:3 | include: Include prescribed demand: Recover and filter original-variable roots. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O05:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q2:answer |  |  | include: Include prescribed demand: Reconstruct quadratic. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O05:D02 | syllabus-derived |  |  |  | include: Include prescribed demand: Reconstruct cubic from sufficient graph data. No usable examination item established; retain for syllabus-derived analysis. |
+| 8227:2020:M1:T1:O06:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q10:a; 8227:EXAM:2021:P2:Q3:answer; 8227:EXAM:2022:P1:Q4:answer; 8227:EXAM:2023:P1:Q1:a; 8227:EXAM:2024:P1:Q5:a; 8227:EXAM:2024:P2:Q3:answer; 8227:EXAM:2025:P1:Q1:b |  | 8227:CAMBRIDGE:w16:13:4 | include: Include prescribed demand: Find critical values. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T1:O06:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q10:a; 8227:EXAM:2021:P2:Q3:answer; 8227:EXAM:2022:P1:Q4:answer; 8227:EXAM:2023:P1:Q1:a; 8227:EXAM:2024:P1:Q5:a; 8227:EXAM:2024:P2:Q3:answer; 8227:EXAM:2025:P1:Q1:b |  | 8227:CAMBRIDGE:w16:13:4 | include: Include prescribed demand: Determine intervals and endpoint inclusion. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q1:a; 8227:EXAM:2023:P1:Q4:a |  |  | include: Include prescribed demand: Expand positive-integer binomial. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q1:b; 8227:EXAM:2022:P1:Q3:answer; 8227:EXAM:2023:P1:Q4:b; 8227:EXAM:2024:P1:Q3:answer; 8227:EXAM:2025:P1:Q2:answer |  |  | include: Include prescribed demand: Extract chosen coefficient or term. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O01:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q1:b; 8227:EXAM:2022:P1:Q3:answer; 8227:EXAM:2023:P1:Q4:b; 8227:EXAM:2025:P1:Q2:answer |  |  | include: Include prescribed demand: Combine expansions and determine parameters. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q8:b |  |  | include: Include prescribed demand: Recognise AP. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q8:a; 8227:EXAM:2023:P1:Q5:a |  |  | include: Include prescribed demand: Recognise GP. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q8:b; 8227:EXAM:2022:P1:Q5:a; 8227:EXAM:2025:P1:Q5:a; 8227:EXAM:2025:P1:Q5:b |  |  | include: Include prescribed demand: Solve AP terms and sums. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q8:a; 8227:EXAM:2024:P1:Q4:a; 8227:EXAM:2024:P1:Q4:b |  |  | include: Include prescribed demand: Solve GP terms and finite sums. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O03:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q8:a; 8227:EXAM:2021:P1:Q8:b; 8227:EXAM:2024:P1:Q4:a; 8227:EXAM:2024:P1:Q4:b |  |  | include: Include prescribed demand: Model progression context. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q5:b |  |  | include: Include prescribed demand: Interpret Sigma bounds. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q5:b |  |  | include: Include prescribed demand: Evaluate Sigma sum. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O05:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P1:Q5:b; 8227:EXAM:2023:P1:Q5:c |  |  | include: Include prescribed demand: Determine GP convergence. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T2:O05:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q5:b; 8227:EXAM:2023:P1:Q5:c; 8227:EXAM:2024:P1:Q4:c; 8227:EXAM:2025:P1:Q5:a |  |  | include: Include prescribed demand: Calculate convergent sum to infinity. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q9:c.i |  |  | include: Include prescribed demand: Interpret function and notation. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q12:a; 8227:EXAM:2021:P1:Q12:b; 8227:EXAM:2022:P1:Q6:a; 8227:EXAM:2022:P2:Q9:a; 8227:EXAM:2022:P2:Q9:b.ii; 8227:EXAM:2022:P2:Q9:c.ii; 8227:EXAM:2023:P1:Q2:b; 8227:EXAM:2024:P1:Q6:b; 8227:EXAM:2025:P1:Q7:c; 8227:EXAM:2025:P1:Q7:d |  |  | include: Include prescribed demand: Interpret domain and range. Directly assessed in 10 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O01:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2025:P1:Q7:b |  | 8227:CAMBRIDGE:s15:11:8-iii | include: Include prescribed demand: Interpret one-to-one inverse and composite. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q12:a; 8227:EXAM:2021:P1:Q12:b; 8227:EXAM:2022:P1:Q6:a; 8227:EXAM:2022:P2:Q9:a; 8227:EXAM:2022:P2:Q9:c.ii; 8227:EXAM:2023:P1:Q2:b; 8227:EXAM:2025:P1:Q7:d |  |  | include: Include prescribed demand: Determine admissible domain. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q9:b.ii; 8227:EXAM:2024:P1:Q6:b; 8227:EXAM:2025:P1:Q7:c |  |  | include: Include prescribed demand: Determine image range. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2025:P1:Q7:b |  | 8227:CAMBRIDGE:s15:11:8-iii | include: Include prescribed demand: Decide one-to-one status. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q12:b; 8227:EXAM:2022:P1:Q6:b; 8227:EXAM:2022:P2:Q9:b.i; 8227:EXAM:2023:P1:Q2:a; 8227:EXAM:2024:P1:Q6:c; 8227:EXAM:2025:P1:Q7:b; 8227:EXAM:2025:P1:Q7:d |  |  | include: Include prescribed demand: Restrict branch and find inverse. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q9:c.i; 8227:EXAM:2023:P1:Q2:c.i; 8227:EXAM:2023:P1:Q2:c.ii |  |  | include: Include prescribed demand: Form and evaluate composition. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q9:c.ii |  |  | include: Include prescribed demand: Recognise decomposition and admissibility. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O05:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q12:c; 8227:EXAM:2022:P1:Q6:c |  |  | include: Include prescribed demand: Sketch function on specified domain. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T3:O05:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q12:c; 8227:EXAM:2022:P1:Q6:c |  |  | include: Include prescribed demand: Sketch inverse and intercepts. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T4:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q14:a; 8227:EXAM:2022:P1:Q7:answer; 8227:EXAM:2024:P1:Q8:answer; 8227:EXAM:2024:P2:Q11:a; 8227:EXAM:2025:P1:Q12:a; 8227:EXAM:2025:P1:Q12:b; 8227:EXAM:2025:P1:Q4:b |  |  | include: Include prescribed demand: Translate geometric graph information into equation. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T4:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q10:a; 8227:EXAM:2024:P2:Q11:b; 8227:EXAM:2024:P2:Q8:b; 8227:EXAM:2025:P1:Q11:a; 8227:EXAM:2025:P1:Q4:c |  | 8227:CAMBRIDGE:s22:11:7-a; 8227:CAMBRIDGE:s25:11:6-a; 8227:CAMBRIDGE:s25:12:2 | include: Include prescribed demand: Solve graph intersections. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M1:T4:O02:D02 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:s16:11:6-a; 8227:CAMBRIDGE:s20:12:6-a; 8227:CAMBRIDGE:w16:12:3-ii | include: Include prescribed demand: Interpret tangency as repeated root. No usable NSSCAS part; 3 verified comparable items. |
+| 8227:2020:M1:T5:O01:D01 | syllabus-derived |  |  |  | include: Include prescribed demand: Interpret radian. No usable examination item established; retain for syllabus-derived analysis. |
+| 8227:2020:M1:T5:O01:D02 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:s15:13:11-iii | include: Include prescribed demand: Convert degrees and radians. No usable NSSCAS part; 1 verified comparable items. |
+| 8227:2020:M1:T5:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q7:a; 8227:EXAM:2022:P1:Q8:a |  | 8227:CAMBRIDGE:w16:12:6; 8227:CAMBRIDGE:w22:11:5 | include: Include prescribed demand: Use arc length. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T5:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q7:b; 8227:EXAM:2022:P1:Q8:a; 8227:EXAM:2023:P1:Q6:b; 8227:EXAM:2024:P1:Q7:b; 8227:EXAM:2025:P1:Q10:b |  | 8227:CAMBRIDGE:m16:12:9-a; 8227:CAMBRIDGE:w16:12:6; 8227:CAMBRIDGE:w22:11:5 | include: Include prescribed demand: Use sector area. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M1:T5:O02:D03 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:m16:12:9-a; 8227:CAMBRIDGE:w16:12:6; 8227:CAMBRIDGE:w22:11:5 | include: Include prescribed demand: Find circular segment area. No usable NSSCAS part; 3 verified comparable items. |
+| 8227:2020:M1:T6:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2024:P1:Q9:c; 8227:EXAM:2025:P1:Q4:a |  |  | include: Include prescribed demand: Sketch and use basic trig graphs in degrees or radians. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q10:a; 8227:EXAM:2022:P1:Q10:b; 8227:EXAM:2024:P1:Q9:a; 8227:EXAM:2024:P1:Q9:b |  |  | include: Include prescribed demand: Find amplitude and period. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q10:a; 8227:EXAM:2022:P1:Q10:c; 8227:EXAM:2024:P1:Q9:a; 8227:EXAM:2024:P1:Q9:c |  |  | include: Include prescribed demand: Interpret transformed trig graph. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O02:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2025:P1:Q4:a |  |  | include: Include prescribed demand: Sketch transformed trig graph. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q6:b; 8227:EXAM:2022:P1:Q9:b; 8227:EXAM:2022:P2:Q3:a; 8227:EXAM:2022:P2:Q3:b; 8227:EXAM:2023:P2:Q3:a; 8227:EXAM:2023:P2:Q3:b.ii; 8227:EXAM:2024:P1:Q12:b; 8227:EXAM:2024:P2:Q2:answer; 8227:EXAM:2024:P2:Q9:b; 8227:EXAM:2025:P2:Q3:answer |  | 8227:CAMBRIDGE:m16:12:4-a; 8227:CAMBRIDGE:w23:12:2 | include: Include prescribed demand: Evaluate exact special-angle ratios and related angles. Directly assessed in 10 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O04:D01 | comparable-examination-observed (Cambridge 9709) |  | 8227:EXAM:2023:P1:Q9:answer | 8227:CAMBRIDGE:m16:12:4-a; 8227:CAMBRIDGE:w15:11:3; 8227:CAMBRIDGE:w22:13:6; 8227:CAMBRIDGE:w23:12:2 | include: Include prescribed demand: Interpret inverse trig principal values. No usable NSSCAS part; 4 verified comparable items. |
+| 8227:2020:M1:T6:O05:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q5:b; 8227:EXAM:2023:P1:Q8:a; 8227:EXAM:2025:P1:Q6:a |  |  | include: Include prescribed demand: Prove identity with basic identities. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O05:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q9:a; 8227:EXAM:2023:P1:Q8:b; 8227:EXAM:2024:P1:Q12:a; 8227:EXAM:2025:P1:Q6:b |  |  | include: Include prescribed demand: Transform trig equation using basic identities. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O06:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q5:a; 8227:EXAM:2021:P2:Q12:a.ii; 8227:EXAM:2021:P2:Q12:b; 8227:EXAM:2021:P2:Q6:b; 8227:EXAM:2022:P1:Q9:b; 8227:EXAM:2022:P2:Q3:a; 8227:EXAM:2022:P2:Q6:b.i; 8227:EXAM:2023:P1:Q8:b; 8227:EXAM:2023:P2:Q3:a; 8227:EXAM:2024:P1:Q12:b; 8227:EXAM:2024:P2:Q2:answer; 8227:EXAM:2024:P2:Q5:c; 8227:EXAM:2025:P1:Q6:b; 8227:EXAM:2025:P2:Q9:b |  |  | include: Include prescribed demand: Solve bounded trig equations. Directly assessed in 14 usable NSSCAS parts. |
+| 8227:2020:M1:T6:O06:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q5:a; 8227:EXAM:2021:P2:Q12:a.ii; 8227:EXAM:2021:P2:Q12:b; 8227:EXAM:2022:P1:Q9:b; 8227:EXAM:2022:P2:Q3:a; 8227:EXAM:2022:P2:Q6:b.i; 8227:EXAM:2023:P1:Q8:b; 8227:EXAM:2024:P1:Q12:b; 8227:EXAM:2024:P2:Q2:answer; 8227:EXAM:2024:P2:Q5:c; 8227:EXAM:2025:P1:Q6:b; 8227:EXAM:2025:P2:Q9:b |  |  | include: Include prescribed demand: Recover all roots in specified interval. Directly assessed in 12 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2024:P1:Q10:a; 8227:EXAM:2024:P1:Q10:b |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:w15:11:10-i | include: Include prescribed demand: Locate 3D coordinates. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2024:P1:Q10:a |  | 8227:CAMBRIDGE:m16:12:7 | include: Include prescribed demand: Read and write vector notations. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:a; 8227:EXAM:2022:P1:Q11:a; 8227:EXAM:2023:P1:Q7:a.i; 8227:EXAM:2023:P1:Q7:a.ii; 8227:EXAM:2024:P1:Q10:a; 8227:EXAM:2024:P1:Q10:b; 8227:EXAM:2025:P1:Q3:a |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s15:12:9-ii; 8227:CAMBRIDGE:s17:11:2; 8227:CAMBRIDGE:s18:11:7-ii; 8227:CAMBRIDGE:w15:11:10-i | include: Include prescribed demand: Add and subtract vectors. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:a; 8227:EXAM:2022:P1:Q11:a; 8227:EXAM:2024:P1:Q10:a; 8227:EXAM:2025:P1:Q3:a |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s17:11:2; 8227:CAMBRIDGE:s18:11:7-ii; 8227:CAMBRIDGE:w15:11:10-i | include: Include prescribed demand: Scale vector. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O02:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:a; 8227:EXAM:2022:P1:Q11:a; 8227:EXAM:2023:P1:Q7:a.ii |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s15:12:9-ii | include: Include prescribed demand: Interpret geometric vector relation. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O03:D01 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:s15:12:9-ii; 8227:CAMBRIDGE:s17:11:2; 8227:CAMBRIDGE:s18:11:7-ii; 8227:CAMBRIDGE:w15:11:10-i | include: Include prescribed demand: Use unit vector. No usable NSSCAS part; 4 verified comparable items. |
+| 8227:2020:M1:T7:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:a; 8227:EXAM:2023:P1:Q7:a.i; 8227:EXAM:2024:P1:Q10:a; 8227:EXAM:2024:P1:Q10:b |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s17:11:2; 8227:CAMBRIDGE:w15:11:10-i | include: Include prescribed demand: Use displacement vector. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O03:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:a; 8227:EXAM:2022:P1:Q11:a; 8227:EXAM:2023:P1:Q7:a.ii |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s15:12:9-ii; 8227:CAMBRIDGE:s18:11:7-ii | include: Include prescribed demand: Use position vector. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q11:b; 8227:EXAM:2023:P1:Q7:b.i; 8227:EXAM:2024:P1:Q10:c; 8227:EXAM:2025:P1:Q3:b |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s15:12:9-ii; 8227:CAMBRIDGE:s17:11:2; 8227:CAMBRIDGE:s18:11:7-ii; 8227:CAMBRIDGE:w15:11:10-i | include: Include prescribed demand: Calculate magnitude. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:b; 8227:EXAM:2022:P1:Q11:b; 8227:EXAM:2023:P1:Q7:b.ii; 8227:EXAM:2024:P1:Q10:c; 8227:EXAM:2025:P1:Q3:a; 8227:EXAM:2025:P1:Q3:b |  | 8227:CAMBRIDGE:m16:12:7; 8227:CAMBRIDGE:s17:11:2 | include: Include prescribed demand: Calculate scalar product. Directly assessed in 6 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O05:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q11:b; 8227:EXAM:2023:P1:Q7:b.ii; 8227:EXAM:2024:P1:Q10:c; 8227:EXAM:2025:P1:Q3:b |  | 8227:CAMBRIDGE:m16:12:7 | include: Include prescribed demand: Find angle. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M1:T7:O05:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q6:b; 8227:EXAM:2025:P1:Q3:a |  | 8227:CAMBRIDGE:s17:11:2 | include: Include prescribed demand: Establish perpendicularity or solve perpendicularity parameter. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q3:b; 8227:EXAM:2022:P2:Q5:a; 8227:EXAM:2023:P2:Q8:b; 8227:EXAM:2024:P1:Q13:a; 8227:EXAM:2024:P2:Q1:answer; 8227:EXAM:2025:P1:Q8:a |  |  | include: Include prescribed demand: Interpret curve gradient. Directly assessed in 6 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P1:Q11:answer |  |  | include: Include prescribed demand: Use first and second derivative notation. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q11:a; 8227:EXAM:2021:P1:Q11:b; 8227:EXAM:2022:P1:Q12:b; 8227:EXAM:2022:P1:Q7:answer; 8227:EXAM:2022:P1:Q8:b; 8227:EXAM:2023:P1:Q10:a; 8227:EXAM:2023:P1:Q13:b; 8227:EXAM:2024:P1:Q11:c; 8227:EXAM:2025:P1:Q9:b; 8227:EXAM:2025:P2:Q8:answer |  | 8227:CAMBRIDGE:s15:13:8; 8227:CAMBRIDGE:w15:13:3-ii; 8227:CAMBRIDGE:w16:13:4 | include: Include prescribed demand: Differentiate rational powers and linear combinations. Directly assessed in 10 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q12:d; 8227:EXAM:2023:P1:Q11:answer; 8227:EXAM:2025:P2:Q8:answer |  | 8227:CAMBRIDGE:s15:13:8 | include: Include prescribed demand: Differentiate composite using chain rule. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q11:b; 8227:EXAM:2021:P2:Q10:b; 8227:EXAM:2021:P2:Q7:answer; 8227:EXAM:2022:P1:Q7:answer; 8227:EXAM:2024:P1:Q13:a |  |  | include: Include prescribed demand: Find tangent or normal. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O03:D02 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:s15:13:8; 8227:CAMBRIDGE:w15:13:3-ii; 8227:CAMBRIDGE:w16:13:4 | include: Include prescribed demand: Determine increasing and decreasing intervals. No usable NSSCAS part; 3 verified comparable items. |
+| 8227:2020:M1:T8:O03:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q12:b; 8227:EXAM:2025:P2:Q11:c |  |  | include: Include prescribed demand: Solve rate and connected-rate problems. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O03:D04 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P1:Q10:a; 8227:EXAM:2023:P2:Q9:a; 8227:EXAM:2025:P2:Q8:answer |  |  | include: Include prescribed demand: Relate displacement velocity and acceleration. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q11:a; 8227:EXAM:2022:P1:Q8:b; 8227:EXAM:2023:P1:Q10:a; 8227:EXAM:2023:P1:Q10:b; 8227:EXAM:2023:P1:Q13:b; 8227:EXAM:2023:P2:Q5:a; 8227:EXAM:2024:P1:Q11:c; 8227:EXAM:2024:P2:Q10:a; 8227:EXAM:2025:P1:Q9:b |  |  | include: Include prescribed demand: Locate stationary points. Directly assessed in 9 usable NSSCAS parts. |
+| 8227:2020:M1:T8:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q8:b; 8227:EXAM:2024:P2:Q10:b; 8227:EXAM:2025:P1:Q9:c |  |  | include: Include prescribed demand: Classify maximum minimum or inflexion. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q4:a |  |  | include: Include prescribed demand: Recognise reverse differentiation. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q4:a; 8227:EXAM:2021:P1:Q4:b; 8227:EXAM:2021:P1:Q9:a; 8227:EXAM:2022:P1:Q14:b; 8227:EXAM:2023:P1:Q12:answer; 8227:EXAM:2023:P2:Q7:a; 8227:EXAM:2024:P1:Q13:b; 8227:EXAM:2024:P1:Q14:answer; 8227:EXAM:2024:P2:Q5:b; 8227:EXAM:2025:P1:Q11:c; 8227:EXAM:2025:P1:Q8:b | 8227:EXAM:2022:P1:Q13:answer |  | include: Include prescribed demand: Integrate powers of linear expressions and combinations. Directly assessed in 11 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q4:a; 8227:EXAM:2024:P1:Q13:b; 8227:EXAM:2025:P1:Q8:b | 8227:EXAM:2022:P1:Q13:answer |  | include: Include prescribed demand: Determine integration constant. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2024:P1:Q13:b; 8227:EXAM:2025:P1:Q8:b | 8227:EXAM:2022:P1:Q13:answer |  | include: Include prescribed demand: Recover curve through given point. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q4:b; 8227:EXAM:2021:P1:Q9:a; 8227:EXAM:2021:P1:Q9:b; 8227:EXAM:2021:P2:Q2:answer; 8227:EXAM:2021:P2:Q5:b; 8227:EXAM:2022:P1:Q14:b; 8227:EXAM:2022:P2:Q3:c; 8227:EXAM:2022:P2:Q8:answer; 8227:EXAM:2023:P1:Q12:answer; 8227:EXAM:2023:P2:Q5:b; 8227:EXAM:2023:P2:Q7:a; 8227:EXAM:2023:P2:Q9:b; 8227:EXAM:2024:P1:Q14:answer; 8227:EXAM:2024:P2:Q6:a; 8227:EXAM:2024:P2:Q6:b; 8227:EXAM:2025:P1:Q11:c; 8227:EXAM:2025:P2:Q10:b |  |  | include: Include prescribed demand: Evaluate definite integral. Directly assessed in 17 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P1:Q12:answer |  |  | include: Include prescribed demand: Evaluate prescribed simple improper integral. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q9:a; 8227:EXAM:2022:P2:Q3:c; 8227:EXAM:2023:P1:Q12:answer; 8227:EXAM:2024:P1:Q14:answer; 8227:EXAM:2025:P1:Q11:c |  |  | include: Include prescribed demand: Find area between curve and line or two curves. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q9:b; 8227:EXAM:2022:P1:Q14:b; 8227:EXAM:2024:P2:Q6:b |  |  | include: Include prescribed demand: Find volume about either axis. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M1:T9:O04:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P1:Q4:a; 8227:EXAM:2021:P1:Q4:b; 8227:EXAM:2023:P2:Q9:b |  |  | include: Include prescribed demand: Relate displacement velocity acceleration by integration. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q1:a; 8227:EXAM:2025:P2:Q2:answer |  |  | include: Include prescribed demand: Use modulus notation. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q1:a; 8227:EXAM:2022:P2:Q1:b; 8227:EXAM:2024:P2:Q11:b; 8227:EXAM:2025:P2:Q2:answer |  |  | include: Include prescribed demand: Solve modulus equation. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O01:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q3:answer; 8227:EXAM:2024:P2:Q11:c |  |  | include: Include prescribed demand: Solve modulus inequality. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2024:P2:Q11:a; 8227:EXAM:2025:P2:Q12:a |  | 8227:CAMBRIDGE:w24:22:4-a | include: Include prescribed demand: Sketch scaled or shifted modulus. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q2:answer; 8227:EXAM:2024:P2:Q11:c |  |  | include: Include prescribed demand: Interpret modulus graph data. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q1:a; 8227:EXAM:2024:P2:Q5:a |  |  | include: Include prescribed demand: Divide degree-at-most-four polynomial by linear. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O03:D02 | comparable-examination-observed (Cambridge 9709) |  |  | 8227:CAMBRIDGE:m20:22:2-a; 8227:CAMBRIDGE:s16:22:2-i; 8227:CAMBRIDGE:w15:21:6-i | include: Include prescribed demand: Divide by quadratic. No usable NSSCAS part; 3 verified comparable items. |
+| 8227:2020:M2:T1:O03:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q1:a; 8227:EXAM:2024:P2:Q5:a |  | 8227:CAMBRIDGE:m20:22:2-a; 8227:CAMBRIDGE:s16:22:2-i; 8227:CAMBRIDGE:w15:21:6-i | include: Include prescribed demand: Identify quotient and remainder. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q1:a; 8227:EXAM:2022:P2:Q4:a; 8227:EXAM:2025:P2:Q1:answer |  |  | include: Include prescribed demand: Apply remainder theorem. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q1:b; 8227:EXAM:2022:P2:Q4:a; 8227:EXAM:2023:P2:Q1:b; 8227:EXAM:2024:P2:Q5:c; 8227:EXAM:2025:P2:Q1:answer |  |  | include: Include prescribed demand: Apply factor theorem. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O04:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q1:a; 8227:EXAM:2022:P2:Q4:a; 8227:EXAM:2025:P2:Q1:answer |  |  | include: Include prescribed demand: Determine unknown coefficients. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T1:O04:D04 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q1:b; 8227:EXAM:2023:P2:Q1:c; 8227:EXAM:2024:P2:Q5:c |  |  | include: Include prescribed demand: Solve polynomial by factorisation. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q11:a; 8227:EXAM:2022:P2:Q9:b.i; 8227:EXAM:2025:P2:Q2:answer |  |  | include: Include prescribed demand: Link logarithms and indices. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q11:a; 8227:EXAM:2021:P2:Q2:answer; 8227:EXAM:2022:P2:Q8:answer; 8227:EXAM:2023:P2:Q4:b; 8227:EXAM:2023:P2:Q4:c; 8227:EXAM:2023:P2:Q6:b; 8227:EXAM:2024:P2:Q3:answer |  |  | include: Include prescribed demand: Apply log laws without change of base. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P1:Q6:b |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Use exponential and natural log definitions. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q4:a; 8227:EXAM:2022:P1:Q6:b; 8227:EXAM:2022:P1:Q6:c; 8227:EXAM:2023:P2:Q6:c; 8227:EXAM:2024:P2:Q8:a; 8227:EXAM:2025:P2:Q11:a; 8227:EXAM:2025:P2:Q12:a |  | 8227:CAMBRIDGE:w16:22:3-ii; 8227:CAMBRIDGE:w21:22:6; 8227:CAMBRIDGE:w24:22:4-a | include: Include prescribed demand: Interpret inverse relation and graphs. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q11:b; 8227:EXAM:2021:P2:Q4:b; 8227:EXAM:2022:P2:Q1:b; 8227:EXAM:2022:P2:Q2:answer; 8227:EXAM:2023:P2:Q4:b; 8227:EXAM:2023:P2:Q4:c; 8227:EXAM:2024:P1:Q1:answer; 8227:EXAM:2024:P2:Q8:b; 8227:EXAM:2025:P2:Q11:b; 8227:EXAM:2025:P2:Q6:b |  |  | include: Include prescribed demand: Solve exponential equation. Directly assessed in 10 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q4:b; 8227:EXAM:2024:P1:Q4:b |  |  | include: Include prescribed demand: Solve exponential inequality and admissibility. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q4:a; 8227:EXAM:2025:P2:Q6:a |  |  | include: Include prescribed demand: Linearise relationship. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T2:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q4:a; 8227:EXAM:2025:P2:Q6:a |  |  | include: Include prescribed demand: Determine constants from gradient and intercept. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q7:a; 8227:EXAM:2023:P2:Q3:b.i; 8227:EXAM:2024:P1:Q12:a; 8227:EXAM:2024:P2:Q2:answer; 8227:EXAM:2024:P2:Q5:c; 8227:EXAM:2024:P2:Q9:a; 8227:EXAM:2025:P2:Q3:answer; 8227:EXAM:2025:P2:Q4:a; 8227:EXAM:2025:P2:Q9:b |  | 8227:CAMBRIDGE:w22:13:6 | include: Include prescribed demand: Use reciprocal trig relationships. Directly assessed in 9 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2025:P2:Q4:b |  |  | include: Include prescribed demand: Use properties and graphs of all six functions. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q7:a; 8227:EXAM:2023:P2:Q3:b.i; 8227:EXAM:2024:P2:Q9:a; 8227:EXAM:2025:P2:Q10:a; 8227:EXAM:2025:P2:Q7:a |  | 8227:CAMBRIDGE:w22:13:6 | include: Include prescribed demand: Choose and apply Pythagorean reciprocal identity. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q6:a; 8227:EXAM:2023:P2:Q3:a; 8227:EXAM:2024:P2:Q2:answer; 8227:EXAM:2024:P2:Q9:b; 8227:EXAM:2025:P2:Q3:answer |  |  | include: Include prescribed demand: Use compound-angle identity. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O02:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q12:b; 8227:EXAM:2022:P2:Q10:b; 8227:EXAM:2022:P2:Q7:a; 8227:EXAM:2023:P2:Q3:b.i; 8227:EXAM:2025:P2:Q7:a |  |  | include: Include prescribed demand: Use double-angle identity. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O02:D04 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q12:a.i; 8227:EXAM:2022:P2:Q6:a; 8227:EXAM:2022:P2:Q6:b.ii; 8227:EXAM:2025:P2:Q9:a |  |  | include: Include prescribed demand: Convert to R-form. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M2:T3:O02:D05 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q12:a.ii; 8227:EXAM:2021:P2:Q12:b; 8227:EXAM:2021:P2:Q6:a; 8227:EXAM:2021:P2:Q6:b; 8227:EXAM:2022:P2:Q6:b.i; 8227:EXAM:2022:P2:Q6:b.ii; 8227:EXAM:2022:P2:Q7:a; 8227:EXAM:2023:P2:Q3:a; 8227:EXAM:2023:P2:Q3:b.i; 8227:EXAM:2023:P2:Q3:b.ii; 8227:EXAM:2024:P2:Q2:answer; 8227:EXAM:2024:P2:Q9:a; 8227:EXAM:2024:P2:Q9:b; 8227:EXAM:2025:P2:Q3:answer; 8227:EXAM:2025:P2:Q7:a; 8227:EXAM:2025:P2:Q7:b; 8227:EXAM:2025:P2:Q9:b |  | 8227:CAMBRIDGE:w22:13:6 | include: Include prescribed demand: Use identities for exact evaluation simplification or equations. Directly assessed in 17 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q5:a; 8227:EXAM:2022:P2:Q3:b; 8227:EXAM:2023:P2:Q5:a; 8227:EXAM:2023:P2:Q9:a; 8227:EXAM:2024:P2:Q10:a; 8227:EXAM:2025:P2:Q10:a; 8227:EXAM:2025:P2:Q11:c |  |  | include: Include prescribed demand: Differentiate exponential log and trig functions. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2022:P2:Q3:b; 8227:EXAM:2022:P2:Q5:a; 8227:EXAM:2023:P2:Q9:a; 8227:EXAM:2024:P2:Q10:a; 8227:EXAM:2024:P2:Q4:a; 8227:EXAM:2024:P2:Q7:c; 8227:EXAM:2025:P2:Q10:a; 8227:EXAM:2025:P2:Q11:c; 8227:EXAM:2025:P2:Q5:answer |  |  | include: Include prescribed demand: Differentiate composite elementary function. Directly assessed in 9 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q5:a; 8227:EXAM:2022:P2:Q5:a; 8227:EXAM:2023:P2:Q8:a; 8227:EXAM:2024:P2:Q7:c; 8227:EXAM:2025:P2:Q5:answer |  |  | include: Include prescribed demand: Use product rule. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q5:a; 8227:EXAM:2024:P2:Q1:answer |  |  | include: Include prescribed demand: Use quotient rule. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q10:a; 8227:EXAM:2023:P2:Q8:a; 8227:EXAM:2025:P2:Q5:answer |  |  | include: Include prescribed demand: Differentiate implicit curve. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q7:answer; 8227:EXAM:2022:P2:Q10:a; 8227:EXAM:2022:P2:Q10:b; 8227:EXAM:2024:P2:Q7:c |  |  | include: Include prescribed demand: Differentiate parametric curve. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M2:T4:O03:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q10:b; 8227:EXAM:2021:P2:Q7:answer; 8227:EXAM:2022:P2:Q10:a; 8227:EXAM:2022:P2:Q10:b; 8227:EXAM:2023:P2:Q8:b; 8227:EXAM:2024:P2:Q7:c; 8227:EXAM:2025:P2:Q5:answer |  |  | include: Include prescribed demand: Use an implicit or parametric derivative in a geometric demand. Directly assessed in 7 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q2:answer; 8227:EXAM:2021:P2:Q9:a; 8227:EXAM:2022:P2:Q8:answer; 8227:EXAM:2023:P2:Q9:b; 8227:EXAM:2024:P2:Q5:b |  |  | include: Include prescribed demand: Integrate exponential or reciprocal-linear form. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q9:b; 8227:EXAM:2022:P2:Q7:b; 8227:EXAM:2023:P2:Q3:b.iii; 8227:EXAM:2023:P2:Q5:b; 8227:EXAM:2023:P2:Q7:a; 8227:EXAM:2024:P2:Q6:a; 8227:EXAM:2024:P2:Q6:b; 8227:EXAM:2025:P2:Q10:b |  |  | include: Include prescribed demand: Integrate sin cos or sec-squared linear argument. Directly assessed in 8 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O01:D03 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q5:b; 8227:EXAM:2024:P2:Q4:b; 8227:EXAM:2025:P2:Q10:b |  |  | include: Include prescribed demand: Recognise reverse derivative. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q9:b; 8227:EXAM:2022:P2:Q3:c; 8227:EXAM:2022:P2:Q7:b; 8227:EXAM:2023:P2:Q3:b.iii; 8227:EXAM:2023:P2:Q5:b; 8227:EXAM:2024:P2:Q6:a; 8227:EXAM:2024:P2:Q6:b; 8227:EXAM:2025:P2:Q10:b |  |  | include: Include prescribed demand: Choose identity before integration. Directly assessed in 8 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O02:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q9:b; 8227:EXAM:2022:P2:Q3:c; 8227:EXAM:2023:P2:Q5:b; 8227:EXAM:2024:P2:Q6:a |  |  | include: Include prescribed demand: Integrate transformed squared-trig expression. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q6:a; 8227:EXAM:2025:P2:Q4:a |  |  | include: Include prescribed demand: Set trapezium interval and ordinates. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q6:a; 8227:EXAM:2023:P2:Q6:b; 8227:EXAM:2025:P2:Q4:a |  |  | include: Include prescribed demand: Calculate estimate and required precision. Directly assessed in 3 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q6:c; 8227:EXAM:2025:P2:Q4:b |  |  | include: Include prescribed demand: Sketch integrand. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T5:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2023:P2:Q6:d; 8227:EXAM:2025:P2:Q4:b |  |  | include: Include prescribed demand: Justify trapezium overestimate or underestimate. Directly assessed in 2 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O01:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2025:P2:Q12:a |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Estimate root graphically. Directly assessed in 1 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O01:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q8:a; 8227:EXAM:2022:P2:Q5:b; 8227:EXAM:2023:P2:Q7:b; 8227:EXAM:2025:P2:Q12:c |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Bracket root by sign change. Directly assessed in 4 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O02:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q8:c.ii; 8227:EXAM:2022:P2:Q5:c; 8227:EXAM:2023:P2:Q7:c; 8227:EXAM:2024:P2:Q7:b; 8227:EXAM:2025:P2:Q12:d |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Interpret iterative sequence and convergence. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O02:D02 | syllabus-derived |  |  |  | include: Include prescribed demand: Recognise possible failure to converge. No usable examination item established; retain for syllabus-derived analysis. |
+| 8227:2020:M2:T6:O03:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q8:b; 8227:EXAM:2022:P2:Q5:a; 8227:EXAM:2023:P2:Q7:a; 8227:EXAM:2024:P2:Q7:a; 8227:EXAM:2025:P2:Q12:b |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Relate iteration to original equation. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O03:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q8:b; 8227:EXAM:2022:P2:Q5:a; 8227:EXAM:2023:P2:Q7:a; 8227:EXAM:2024:P2:Q7:a; 8227:EXAM:2025:P2:Q12:b |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Derive or verify supplied rearrangement. Directly assessed in 5 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O04:D01 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q8:c.i; 8227:EXAM:2021:P2:Q8:c.ii; 8227:EXAM:2022:P2:Q5:c; 8227:EXAM:2023:P2:Q7:c; 8227:EXAM:2024:P2:Q7:b; 8227:EXAM:2025:P2:Q12:d |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Execute supplied iteration. Directly assessed in 6 usable NSSCAS parts. |
+| 8227:2020:M2:T6:O04:D02 | examination-observed (NSSCAS 8227) | 8227:EXAM:2021:P2:Q8:c.ii; 8227:EXAM:2022:P2:Q5:c; 8227:EXAM:2023:P2:Q7:c; 8227:EXAM:2024:P2:Q7:b; 8227:EXAM:2025:P2:Q12:d |  | 8227:CAMBRIDGE:w21:22:6 | include: Include prescribed demand: Apply stopping and precision requirements. Directly assessed in 5 usable NSSCAS parts. |

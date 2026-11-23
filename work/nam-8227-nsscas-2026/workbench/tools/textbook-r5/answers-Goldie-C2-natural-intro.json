@@ -1,0 +1,538 @@
+{
+  "scope": "EveryPrompt3andActivity4–7subtask,including requested graph/relationship/proofs.",
+  "items": [
+    {
+      "item_id": "8227:TB:Goldie:C2:Prompt:3",
+      "source_pdf_page": 59,
+      "notes": "Explain why the power primitive kx^(n+1)/(n+1)cannot be applied to∫₁³1/x dx:the actual exponent is−1,not a pole inside the interval.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T5:O01:D01",
+        "8227:2020:M1:T9:O03:D01"
+      ],
+      "mapping_rationale": "Numerical exploration and integral-based proofs support the natural-log definition. They do not automatically assess a prescribed antiderivative or a formal substitution method. Requested definition interpretation is direct only where warranted.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt or activity.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Explain why the power primitive kx^(n+1)/(n+1)cannot be applied to∫₁³1/x dx:the actual exponent is−1,not a pole inside the interval.",
+          "reason": "Numerical estimates,definition interpretation or a power-rule exception;no unsupplied general substitution is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Activity4keys1.099,0.693,1.792;Activity7explicitly2decimal places. Formal identities are exact.",
+        "comparison": "Numerical area estimates are approximations;an exact log reference independently checks them. Oriented integrals are required for inputs between0and1,while positive geometric area remains positive."
+      },
+      "expected_subpart_labels": [
+        "power-rule-exception"
+      ],
+      "subparts": [
+        {
+          "subpart": "power-rule-exception",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The integrand isx^(−1),so n+1=0and the displayed power-rule expression would divide by zero.",
+          "author_derivation": "The formula∫kx^n dx=kx^(n+1)/(n+1)+Cexplicitly excludesn=−1. A finite positive area still exists on[1,3],because1/xiscontinuous there. Failure of this formula does not mean no antiderivative or no integral exists.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 59,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Activity:4",
+      "source_pdf_page": 59,
+      "notes": "Numerically estimate∫₁³1/x dx,∫₁²1/x dx,∫₁⁶1/x dxand conjecture their additive relation. No specific numerical method is prescribed.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M1:T9:O03:D01",
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "mapping_rationale": "Numerical exploration and integral-based proofs support the natural-log definition. They do not automatically assess a prescribed antiderivative or a formal substitution method. Requested definition interpretation is direct only where warranted.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt or activity.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Numerically estimate∫₁³1/x dx,∫₁²1/x dx,∫₁⁶1/x dxand conjecture their additive relation. No specific numerical method is prescribed.",
+          "reason": "Numerical estimates,definition interpretation or a power-rule exception;no unsupplied general substitution is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Activity4keys1.099,0.693,1.792;Activity7explicitly2decimal places. Formal identities are exact.",
+        "comparison": "Numerical area estimates are approximations;an exact log reference independently checks them. Oriented integrals are required for inputs between0and1,while positive geometric area remains positive."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii",
+        "relationship"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "1/x",
+              "1",
+              "3"
+            ],
+            "strips": 1000,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "1.099",
+          "method": "Use1000equal-width trapezia on the original continuous reciprocal curve. This is one valid author numerical-area estimate;the source does not require a particular quadrature method or strip count. Compare its final3decimal places to the printed approximate key.",
+          "additional_operations": {
+            "exact_reference": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "1/x",
+                "1",
+                "3"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exact_reference": "log(3)"
+          },
+          "source_pdf_page": 59,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "1/x",
+              "1",
+              "2"
+            ],
+            "strips": 1000,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "0.693",
+          "method": "Use1000equal-width trapezia on the original continuous reciprocal curve. This is one valid author numerical-area estimate;the source does not require a particular quadrature method or strip count. Compare its final3decimal places to the printed approximate key.",
+          "additional_operations": {
+            "exact_reference": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "1/x",
+                "1",
+                "2"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exact_reference": "log(2)"
+          },
+          "source_pdf_page": 59,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "operation": {
+            "kind": "numeric-trapezium-rule",
+            "operands": [
+              "1/x",
+              "1",
+              "6"
+            ],
+            "strips": 1000,
+            "rounding": {
+              "decimal_places": 3
+            }
+          },
+          "printed_key_normalised": "1.792",
+          "method": "Use1000equal-width trapezia on the original continuous reciprocal curve. This is one valid author numerical-area estimate;the source does not require a particular quadrature method or strip count. Compare its final3decimal places to the printed approximate key.",
+          "additional_operations": {
+            "exact_reference": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "1/x",
+                "1",
+                "6"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exact_reference": "log(6)"
+          },
+          "source_pdf_page": 59,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "relationship",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "matches",
+          "author_conclusion": "The first two areas sum to the third: L(3)+L(2)=L(6).",
+          "author_derivation": "The numerical sums1.099+0.693=1.792suggest the relation. The independent exact valuesln3+ln2=ln6confirm this particular equality. Three numerical values alone do not prove the later general product law.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "additional_operations": {
+            "exact_relation": {
+              "kind": "identity",
+              "operands": [
+                "log(3)+log(2)-log(6)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "exact_relation": "0"
+          },
+          "source_pdf_page": 59,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Activity:5",
+      "source_pdf_page": 60,
+      "notes": "Prove the integral-defined logarithm product law using an area partition,a suppliedx=azsubstitution with transformed bounds,and combination of the results. Audit all three subtasks;formal substitution remains extension.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D01",
+        "8227:2020:M2:T2:O01:D02"
+      ],
+      "mapping_rationale": "Numerical exploration and integral-based proofs support the natural-log definition. They do not automatically assess a prescribed antiderivative or a formal substitution method. Requested definition interpretation is direct only where warranted.",
+      "representation": "graph",
+      "sketch_response_required": true,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt or activity.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "outside",
+          "quoted_value": "Prove the integral-defined logarithm product law using an area partition,a suppliedx=azsubstitution with transformed bounds,and combination of the results. Audit all three subtasks;formal substitution remains extension.",
+          "reason": "Formal change-of-variable proofs are extension;retain underlying logarithm/area meaning as supporting evidence."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Activity4keys1.099,0.693,1.792;Activity7explicitly2decimal places. Formal identities are exact.",
+        "comparison": "Numerical area estimates are approximations;an exact log reference independently checks them. Oriented integrals are required for inputs between0and1,while positive geometric area remains positive."
+      },
+      "expected_subpart_labels": [
+        "i-diagram",
+        "ii-transformed-integral",
+        "iii-product-law"
+      ],
+      "subparts": [
+        {
+          "subpart": "i-diagram",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "sketch",
+          "author_conclusion": "For1<aand1<b,partition the shaded[1,ab]area atx=a;the two pieces areL(a)and∫ₐᵃᵇdx/x.",
+          "author_derivation": "Drawy=1/xforpositive inputs,mark1,a,abwith1<a<ab,and distinguish the adjacent regions. Additivity of a proper integral givesL(a)+∫ₐᵃᵇdx/x=L(ab). For other positivea,b,the identity still holds using oriented integrals,but the simple adjacent-positive-area drawing needs the stated ordering.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 60,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii-transformed-integral",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "Withx=azand a>0,dx=adzand the boundsa,abbecome1,b;thus∫ₐᵃᵇdx/x=∫₁ᵇdz/z=L(b).",
+          "author_derivation": "Both differential and limits change together:1/(az)·a dz=dz/z. The right-hand integrand’s dummy variable name is irrelevant. The formal proof uses general substitution,recorded as extension rather than silently prescribed8227content.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 60,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii-product-law",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "L(a)+L(b)=L(ab)forpositivea,b.",
+          "author_derivation": "Combine(i)and(ii). Positivity keeps every interval away from0. Oriented-integral additivity extends the pictureda>1,b>1case to all positivea,b.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 60,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Logarithm and area interpretation are supporting evidence. The formal general substitution proof is outside prescribed integration methods;it is still fully audited internally.",
+        "excluded_or_qualified_parts": [
+          "ii:formalx=azchange ofvariable",
+          "iandiii:conceptual area/log law support,not an additional examination-required proof technique"
+        ]
+      },
+      "source_interpretation": {
+        "diagram_order": "The supplied simple shading interpretation needs1<a<ab. Formal identities can extend to other positive inputs using oriented integrals;the distinction is explicit."
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Activity:6",
+      "source_pdf_page": 60,
+      "notes": "EstablishL(1)=0,the quotient law,and the power law for the integral-definedL. Check positivity,oriented bounds and the separate zero-exponent case,without turning general substitution into required syllabus technique.",
+      "assessed_8227_demand_ids": [],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D01",
+        "8227:2020:M2:T2:O01:D02"
+      ],
+      "mapping_rationale": "Numerical exploration and integral-based proofs support the natural-log definition. They do not automatically assess a prescribed antiderivative or a formal substitution method. Requested definition interpretation is direct only where warranted.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt or activity.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "outside",
+          "quoted_value": "EstablishL(1)=0,the quotient law,and the power law for the integral-definedL. Check positivity,oriented bounds and the separate zero-exponent case,without turning general substitution into required syllabus technique.",
+          "reason": "Formal change-of-variable proofs are extension;retain underlying logarithm/area meaning as supporting evidence."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Activity4keys1.099,0.693,1.792;Activity7explicitly2decimal places. Formal identities are exact.",
+        "comparison": "Numerical area estimates are approximations;an exact log reference independently checks them. Oriented integrals are required for inputs between0and1,while positive geometric area remains positive."
+      },
+      "expected_subpart_labels": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "subparts": [
+        {
+          "subpart": "i",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(1/x,(x,1,1))"
+            ]
+          },
+          "printed_key_normalised": "0",
+          "method": "An integral with equal endpoints is zero,soL(1)=0.",
+          "source_pdf_page": 60,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "ii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "L(a)−L(b)=L(a/b)forpositivea,b.",
+          "author_derivation": "By additivity,L(a)−L(b)=∫ᵦᵃdx/x. Letx=bzwithb>0;then this is∫₁ᵃ⁄ᵇdz/z=L(a/b). Equivalently derive from the product law andL(1)=0. The displayed general substitution is extension.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 60,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        },
+        {
+          "subpart": "iii",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "L(a^n)=nL(a)fora>0and realn,withn=0handled separately.",
+          "author_derivation": "Forn≠0,usex=z^n on positivez:dx=nz^(n−1)dzand(1/x)dx=n dz/z. Bounds1,a^nbecome1,a,including orientation whenn<0. At n=0both sides are0byL(1)=0;do not invoke an invertiblex=z^0substitution.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "source_pdf_page": 60,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope-parts-only",
+        "basis": "Laws/definition support retained;formal integral substitutions are extension.",
+        "excluded_or_qualified_parts": [
+          "iiandiii:formal general substitution proofs"
+        ]
+      }
+    },
+    {
+      "item_id": "8227:TB:Goldie:C2:Activity:7",
+      "source_pdf_page": 61,
+      "notes": "Use calculator area technology and∫₁ᵉ1/x dx=1,with2<e<3,to finde to2decimal places. The defining root is unique because the integrand is positive.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "component_demand_ids": [],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "Numerical exploration and integral-based proofs support the natural-log definition. They do not automatically assess a prescribed antiderivative or a formal substitution method. Requested definition interpretation is direct only where warranted.",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed boxed prompt or activity.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "not applicable",
+          "quoted_value": "Use calculator area technology and∫₁ᵉ1/x dx=1,with2<e<3,to finde to2decimal places. The defining root is unique because the integrand is positive.",
+          "reason": "Numerical estimates,definition interpretation or a power-rule exception;no unsupplied general substitution is required."
+        }
+      ],
+      "precision_angle_check": {
+        "source": "Activity4keys1.099,0.693,1.792;Activity7explicitly2decimal places. Formal identities are exact.",
+        "comparison": "Numerical area estimates are approximations;an exact log reference independently checks them. Oriented integrals are required for inputs between0and1,while positive geometric area remains positive."
+      },
+      "expected_subpart_labels": [
+        "e-2dp"
+      ],
+      "subparts": [
+        {
+          "subpart": "e-2dp",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "exp(1)"
+            ],
+            "decimal_places": 2
+          },
+          "printed_key_normalised": "2.72",
+          "method": "The positive reciprocal area is strictly increasing in its upper endpoint. Solving∫₁ᵃdx/x=1therefore defines the uniquee∈(2,3). Independently evaluate the exact solution,then round to2decimal places;the source allows calculator area technology.",
+          "additional_operations": {
+            "definition": {
+              "kind": "proper-definite-integral",
+              "operands": [
+                "1/x",
+                "1",
+                "exp(1)"
+              ]
+            },
+            "bracket_area_order": {
+              "kind": "identity",
+              "operands": [
+                "Tuple(sign(log(2)-1),sign(log(3)-1))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "definition": "1",
+            "bracket_area_order": "Tuple(-1,1)"
+          },
+          "source_pdf_page": 61,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-C2-58.png",
+            "sha256": "555cbef5f303a7135bd503b8b97ffe23de03ebea580533adf563c0607558014e"
+          },
+          "answer_pdf_page": 338,
+          "answer_printed_page": 324,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/Goldie-key-C2-335.png",
+            "sha256": "76d1c78f79a1344b364fcb0187843ddf73c963d5098ea3dcb9917ff042e1272a"
+          },
+          "review_date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}

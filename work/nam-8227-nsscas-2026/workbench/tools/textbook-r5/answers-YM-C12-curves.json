@@ -1,0 +1,832 @@
+{
+  "scope": "Complete532–533curve/arearesponses.",
+  "items": [
+    {
+      "item_id": "8227:TB:YM:C12:Example:4",
+      "source_pdf_page": 532,
+      "notes": "GivenSECONDderivative2e^(−x),gradient1at0,andpoint(1,2/e+4):recovercurve2e^(−x)+3x+1. Bothconstantsarefixedfromdifferentconditions.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O02:D01",
+        "8227:2020:M1:T9:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "GivenSECONDderivative2e^(−x),gradient1at0,andpoint(1,2/e+4):recovercurve2e^(−x)+3x+1. Bothconstantsarefixedfromdifferentconditions.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "GivenSECONDderivative2e^(−x),gradient1at0,andpoint(1,2/e+4):recovercurve2e^(−x)+3x+1. Bothconstantsarefixedfromdifferentconditions.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GivenSECONDderivative2e^(−x),gradient1at0,andpoint(1,2/e+4):recovercurve2e^(−x)+3x+1. Bothconstantsarefixedfromdifferentconditions.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: GivenSECONDderivative2e^(−x),gradient1at0,andpoint(1,2/e+4):recovercurve2e^(−x)+3x+1. Bothconstantsarefixedfromdifferentconditions.",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "curve"
+      ],
+      "subparts": [
+        {
+          "subpart": "curve",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(-2*exp(-x)+3,x)+1"
+            ]
+          },
+          "printed_key_normalised": "2*exp(-x)+3*x+1",
+          "method": "Integrate the ORIGINAL given derivative;for a second derivative integrate TWICE. Determine each constant from its own ORIGINAL gradient/point condition. Verify the final curve against the original derivative order and all initial data.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D01",
+            "8227:2020:M1:T9:O02:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "original-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(2*exp(-x)+3*x+1,x,2)"
+              ]
+            },
+            "original-point": {
+              "kind": "identity",
+              "operands": [
+                "(2*exp(-x)+3*x+1).subs(x,1)"
+              ]
+            },
+            "original-gradient-at-zero": {
+              "kind": "identity",
+              "operands": [
+                "diff(2*exp(-x)+3*x+1,x).subs(x,0)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-derivative": "2*exp(-x)",
+            "original-point": "2/exp(1)+4",
+            "original-gradient-at-zero": "1"
+          },
+          "source_pdf_page": 532,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 532,
+          "answer_printed_page": 520,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-4:1",
+      "source_pdf_page": 532,
+      "notes": "GivenFIRSTderivative6e^(2x)+2e^(−x)andpoint(0,2):recover3e^(2x)−2e^(−x)+1.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O02:D01",
+        "8227:2020:M1:T9:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "GivenFIRSTderivative6e^(2x)+2e^(−x)andpoint(0,2):recover3e^(2x)−2e^(−x)+1.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "GivenFIRSTderivative6e^(2x)+2e^(−x)andpoint(0,2):recover3e^(2x)−2e^(−x)+1.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GivenFIRSTderivative6e^(2x)+2e^(−x)andpoint(0,2):recover3e^(2x)−2e^(−x)+1.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: GivenFIRSTderivative6e^(2x)+2e^(−x)andpoint(0,2):recover3e^(2x)−2e^(−x)+1.",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "curve"
+      ],
+      "subparts": [
+        {
+          "subpart": "curve",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(6*exp(2*x)+2*exp(-x),x)+1"
+            ]
+          },
+          "printed_key_normalised": "3*exp(2*x)-2*exp(-x)+1",
+          "method": "Integrate the ORIGINAL given derivative;for a second derivative integrate TWICE. Determine each constant from its own ORIGINAL gradient/point condition. Verify the final curve against the original derivative order and all initial data.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D01",
+            "8227:2020:M1:T9:O02:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "original-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(3*exp(2*x)-2*exp(-x)+1,x)"
+              ]
+            },
+            "original-point": {
+              "kind": "identity",
+              "operands": [
+                "(3*exp(2*x)-2*exp(-x)+1).subs(x,0)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-derivative": "6*exp(2*x)+2*exp(-x)",
+            "original-point": "2"
+          },
+          "source_pdf_page": 532,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-4:2",
+      "source_pdf_page": 532,
+      "notes": "Originalfirstderivativee^(2x)−2e^(−x),point(0,1):recovere^(2x)/2+2e^(−x)−3/2. Negativeouterderivativecoefficientdoesnotgiveanegativeprimitivecoefficient.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O02:D01",
+        "8227:2020:M1:T9:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "Originalfirstderivativee^(2x)−2e^(−x),point(0,1):recovere^(2x)/2+2e^(−x)−3/2. Negativeouterderivativecoefficientdoesnotgiveanegativeprimitivecoefficient.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "Originalfirstderivativee^(2x)−2e^(−x),point(0,1):recovere^(2x)/2+2e^(−x)−3/2. Negativeouterderivativecoefficientdoesnotgiveanegativeprimitivecoefficient.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "Originalfirstderivativee^(2x)−2e^(−x),point(0,1):recovere^(2x)/2+2e^(−x)−3/2. Negativeouterderivativecoefficientdoesnotgiveanegativeprimitivecoefficient.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: Originalfirstderivativee^(2x)−2e^(−x),point(0,1):recovere^(2x)/2+2e^(−x)−3/2. Negativeouterderivativecoefficientdoesnotgiveanegativeprimitivecoefficient.",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "curve"
+      ],
+      "subparts": [
+        {
+          "subpart": "curve",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(exp(2*x)-2*exp(-x),x)-Rational(3,2)"
+            ]
+          },
+          "printed_key_normalised": "exp(2*x)/2+2*exp(-x)-Rational(3,2)",
+          "method": "Integrate ORIGINAL e^(2x)−2e^(−x),then use y(0)=1tofixC−3/2. Differentiate recoveredcurveandchecktheoriginalpoint.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D01",
+            "8227:2020:M1:T9:O02:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "original-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(exp(2*x)/2+2*exp(-x)-Rational(3,2),x)"
+              ]
+            },
+            "original-point": {
+              "kind": "identity",
+              "operands": [
+                "(exp(2*x)/2+2*exp(-x)-Rational(3,2)).subs(x,0)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-derivative": "exp(2*x)-2*exp(-x)",
+            "original-point": "1"
+          },
+          "source_pdf_page": 532,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-4:3",
+      "source_pdf_page": 532,
+      "notes": "GivenSECONDderivative20e^(−2x),gradient−8at0,andpoint(1,5/e²):recover5e^(−2x)+2x−2.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O02:D01",
+        "8227:2020:M1:T9:O02:D02"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "text",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "GivenSECONDderivative20e^(−2x),gradient−8at0,andpoint(1,5/e²):recover5e^(−2x)+2x−2.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "GivenSECONDderivative20e^(−2x),gradient−8at0,andpoint(1,5/e²):recover5e^(−2x)+2x−2.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GivenSECONDderivative20e^(−2x),gradient−8at0,andpoint(1,5/e²):recover5e^(−2x)+2x−2.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: GivenSECONDderivative20e^(−2x),gradient−8at0,andpoint(1,5/e²):recover5e^(−2x)+2x−2.",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "curve"
+      ],
+      "subparts": [
+        {
+          "subpart": "curve",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(-10*exp(-2*x)+2,x)-2"
+            ]
+          },
+          "printed_key_normalised": "5*exp(-2*x)+2*x-2",
+          "method": "Integrate the ORIGINAL given derivative;for a second derivative integrate TWICE. Determine each constant from its own ORIGINAL gradient/point condition. Verify the final curve against the original derivative order and all initial data.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O02:D01",
+            "8227:2020:M1:T9:O02:D02"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01"
+          ],
+          "given_representation": "text",
+          "response_format": "symbolic",
+          "additional_operations": {
+            "original-derivative": {
+              "kind": "identity",
+              "operands": [
+                "diff(5*exp(-2*x)+2*x-2,x,2)"
+              ]
+            },
+            "original-point": {
+              "kind": "identity",
+              "operands": [
+                "(5*exp(-2*x)+2*x-2).subs(x,1)"
+              ]
+            },
+            "original-gradient-at-zero": {
+              "kind": "identity",
+              "operands": [
+                "diff(5*exp(-2*x)+2*x-2,x).subs(x,0)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-derivative": "20*exp(-2*x)",
+            "original-point": "5/exp(2)",
+            "original-gradient-at-zero": "-8"
+          },
+          "source_pdf_page": 532,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 650,
+          "answer_printed_page": "A64",
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C11-key-649.png",
+            "sha256": "49686d50afd5f9cc7dced606f24844a2431e62f058972cba733a2050dd4b1e1c"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Example:5",
+      "source_pdf_page": 533,
+      "notes": "GIVENgraphy=e^(2x),shadedregionbetweenx0,xp,y0:(a)area(p);(b)HENCEfindpforarea5,to2sf1.2.",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01",
+        "8227:2020:M2:T2:O02:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O03:D01",
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "GIVENgraphy=e^(2x),shadedregionbetweenx0,xp,y0:(a)area(p);(b)HENCEfindpforarea5,to2sf1.2.",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "GIVENgraphy=e^(2x),shadedregionbetweenx0,xp,y0:(a)area(p);(b)HENCEfindpforarea5,to2sf1.2.",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVENgraphy=e^(2x),shadedregionbetweenx0,xp,y0:(a)area(p);(b)HENCEfindpforarea5,to2sf1.2.",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: GIVENgraphy=e^(2x),shadedregionbetweenx0,xp,y0:(a)area(p);(b)HENCEfindpforarea5,to2sf1.2.",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "a-area",
+        "b-p"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(exp(2*x),(x,0,p))"
+            ]
+          },
+          "printed_key_normalised": "(exp(2*p)-1)/2",
+          "method": "Read ORIGINALGIVENgraph:curvee^(2x),lowerboundaryy0,leftx0,rightxp>0. Positivecurvegivesarea(e^(2p)−1)/2.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "original_integrand": "exp(2*x)",
+          "shaded_interval": [
+            "0",
+            "p"
+          ],
+          "original_parameter_domain": "p>0asshownbythegivenregion",
+          "units": "units^2",
+          "printed_key_units": "units^2",
+          "source_pdf_page": 533,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 533,
+          "answer_printed_page": 521,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-p",
+          "operation": {
+            "kind": "rounded",
+            "operands": [
+              "log(11)/2"
+            ],
+            "significant_figures": 2
+          },
+          "printed_key_normalised": "Rational(6,5)",
+          "method": "SettheORIGINALareaexpressionequal5: e^(2p)=11,sop=ln11/2. Roundonlyfinalp2sf1.2,keepingp>0. Area5isnotthecurveordinate.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01",
+            "8227:2020:M2:T2:O02:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "requested_precision": "2 significant figures",
+          "depends_on_source_parts": [
+            "a-area"
+          ],
+          "additional_operations": {
+            "original-area-equation": {
+              "kind": "identity",
+              "operands": [
+                "((exp(2*p)-1)/2).subs(p,log(11)/2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "original-area-equation": "5"
+          },
+          "source_pdf_page": 533,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 533,
+          "answer_printed_page": 521,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-5:1",
+      "source_pdf_page": 533,
+      "notes": "GIVENgraph8x+e^x/2andpositivea,shadedarea1/2:findareaequation,thenSHOWpositive-rootrearrangementa=√[(2−e^a)/8].",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O03:D01",
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "GIVENgraph8x+e^x/2andpositivea,shadedarea1/2:findareaequation,thenSHOWpositive-rootrearrangementa=√[(2−e^a)/8].",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "GIVENgraph8x+e^x/2andpositivea,shadedarea1/2:findareaequation,thenSHOWpositive-rootrearrangementa=√[(2−e^a)/8].",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVENgraph8x+e^x/2andpositivea,shadedarea1/2:findareaequation,thenSHOWpositive-rootrearrangementa=√[(2−e^a)/8].",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: GIVENgraph8x+e^x/2andpositivea,shadedarea1/2:findareaequation,thenSHOWpositive-rootrearrangementa=√[(2−e^a)/8].",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "equation",
+        "shown-rearrangement"
+      ],
+      "subparts": [
+        {
+          "subpart": "equation",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(8*x+exp(x)/2,(x,0,a))-Rational(1,2)"
+            ]
+          },
+          "printed_key_normalised": "4*a**2+exp(a)/2-1",
+          "method": "OriginalGIVENregionunder8x+e^x/2from0topositivea. Actualarea4a²+(e^a−1)/2equals1/2;equation8a²+e^a−2=0. Bothpositiveaandoriginalshadeboundariesretained.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "original_integrand": "8*x+exp(x)/2",
+          "shaded_interval": [
+            "0",
+            "a"
+          ],
+          "equation_zero_form": true,
+          "source_pdf_page": 533,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 533,
+          "answer_printed_page": 521,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "shown-rearrangement",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "a=sqrt((2−e^a)/8).",
+          "author_derivation": "Fromoriginalareaequation8a²=2−e^a. Sourcea>0selectsthePOSITIVEsquare-rootbranch. Theequationforces2−e^a>0andhence0<a<ln2. Squaringwithoutthatbranchrestrictionwouldintroduceextraneousnegativea.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "proof/show-that",
+          "depends_on_source_parts": [
+            "equation"
+          ],
+          "additional_operations": {
+            "same-zero-form": {
+              "kind": "identity",
+              "operands": [
+                "2*(4*a**2+exp(a)/2-1)-(8*a**2+exp(a)-2)"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "same-zero-form": "0"
+          },
+          "source_pdf_page": 533,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 533,
+          "answer_printed_page": 521,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "item_id": "8227:TB:YM:C12:Try-Now-5:2",
+      "source_pdf_page": 533,
+      "notes": "GIVENe^(−x),y1,xpboundshadeabovecurve:(a)areap+e^(−p)−1;(b)SHOWarea1impliesp2−e^(−p).",
+      "assessed_8227_demand_ids": [
+        "8227:2020:M1:T9:O04:D01"
+      ],
+      "component_demand_ids": [
+        "8227:2020:M1:T9:O03:D01",
+        "8227:2020:M2:T5:O01:D01"
+      ],
+      "teaches_8227_demand_ids": [],
+      "mapping_rationale": "A requested reconstructed curve assesses both fixing integration constants and recovering the curve. Shaded-area tasks directly assess the specific represented region;definite integration/exponential primitives are components unless independently asked. A required equation and its rearranged form retain positive-parameter/logarithm/square-root constraints. No implicit/parametric differentiation is involved.",
+      "evidence_role": "directly related assessed practice",
+      "representation": "graph",
+      "sketch_response_required": false,
+      "exam_style": false,
+      "exam_style_basis": "Unattributed prompt,illustration or worked example.",
+      "value_level_scope_decisions": [
+        {
+          "rule_id": "8227:LIMIT07",
+          "status": "within",
+          "quoted_value": "GIVENe^(−x),y1,xpboundshadeabovecurve:(a)areap+e^(−p)−1;(b)SHOWarea1impliesp2−e^(−p).",
+          "reason": "The actual elementary forms,identities,bounds and conditions are recorded in this item and its parts. No selection of a general integration substitution is prescribed;any internal CAS coordinate is author QA only."
+        },
+        {
+          "rule_id": "8227:QUAL04",
+          "status": "not applicable",
+          "quoted_value": "GIVENe^(−x),y1,xpboundshadeabovecurve:(a)areap+e^(−p)−1;(b)SHOWarea1impliesp2−e^(−p).",
+          "reason": "No valid improper-integral exemplar is prescribed here. Any diagnosed internal-pole source defect is separately excluded;finite endpoints alone do not prove continuity."
+        }
+      ],
+      "scope_check": {
+        "status": "in-scope",
+        "basis": "GIVENe^(−x),y1,xpboundshadeabovecurve:(a)areap+e^(−p)−1;(b)SHOWarea1impliesp2−e^(−p).",
+        "excluded_or_qualified_parts": [],
+        "limits_considered": [
+          "8227:LIMIT07",
+          "8227:QUAL04"
+        ]
+      },
+      "precision_angle_check": {
+        "source": "Exact primitives,integrals or stated relations unless a part or this item explicitly records source precision: GIVENe^(−x),y1,xpboundshadeabovecurve:(a)areap+e^(−p)−1;(b)SHOWarea1impliesp2−e^(−p).",
+        "comparison": "Keep arbitrary constants and original domains. Use exact internal values,then the source precision recorded per part. A rounded key display is distinguished from an explicit source requirement;angle units follow the actual item."
+      },
+      "expected_subpart_labels": [
+        "a-area",
+        "b-shown-relation"
+      ],
+      "subparts": [
+        {
+          "subpart": "a-area",
+          "operation": {
+            "kind": "identity",
+            "operands": [
+              "integrate(1-exp(-x),(x,0,p))"
+            ]
+          },
+          "printed_key_normalised": "p+exp(-p)-1",
+          "method": "OriginalGIVENshadeisBETWEENuppery1andlowere^(−x),fromtheirintersectionx0torightxp>0. Integratetopminusbottom1−e^(−x),notjustthecurve.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "symbolic",
+          "original_integrand": "1-exp(-x)",
+          "shaded_interval": [
+            "0",
+            "p"
+          ],
+          "units": "units^2",
+          "original_parameter_domain": "p>0fromactualgivendiagram",
+          "source_pdf_page": 533,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 533,
+          "answer_printed_page": 521,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        },
+        {
+          "subpart": "b-shown-relation",
+          "verification_mode": "manual-derivation",
+          "author_comparison_status": "show/prove",
+          "author_conclusion": "p=2−e^(−p).",
+          "author_derivation": "Settheindependentlyderivedoriginalarea p+e^(−p)−1equal1andretainpositivep. Rearranginggives p=2−e^(−p);noextra numericalsolveasked.",
+          "method": "Author mathematical reasoning from the original task; explicit source support/absence recorded. This logical comparison is not an automated proof.",
+          "assessed_8227_demand_ids": [
+            "8227:2020:M1:T9:O04:D01"
+          ],
+          "component_demand_ids": [
+            "8227:2020:M2:T5:O01:D01",
+            "8227:2020:M1:T9:O03:D01"
+          ],
+          "given_representation": "graph",
+          "response_format": "proof/show-that",
+          "depends_on_source_parts": [
+            "a-area"
+          ],
+          "additional_operations": {
+            "same-original-area-equation": {
+              "kind": "identity",
+              "operands": [
+                "(p+exp(-p)-2)-(p-(2-exp(-p)))"
+              ]
+            }
+          },
+          "additional_operation_expected": {
+            "same-original-area-equation": "0"
+          },
+          "source_pdf_page": 533,
+          "source_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "answer_pdf_page": 533,
+          "answer_printed_page": 521,
+          "key_evidence": {
+            "path": "work/nam-8227-nsscas-2026/workbench/checks/r5/textbooks/YM-C12-532-source.png",
+            "sha256": "9fd1fe7f54bccb158eacbb386aabaf6c4257be704bf2741e87ef42daabe642eb"
+          },
+          "review_date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}
