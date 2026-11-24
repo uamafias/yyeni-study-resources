@@ -1,0 +1,182 @@
+{
+  "status": "pass",
+  "scope": "Nine repaired paper-design examples; separate point-recovery/area-sum/numerical-integral/Euclidean-cosine-law oracle, not runtime marking acceptance.",
+  "cases": [
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "branch_id": "vertex-intercepts",
+      "case_id": "normal",
+      "result": "pass",
+      "oracle": {
+        "method": "Recover slope from independently supplied vertex and zero, then check every labelled point; no use of c=-ad answer builder.",
+        "coefficients": [
+          "-2",
+          3,
+          4
+        ],
+        "point_residuals": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "branch_id": "vertex-intercepts",
+      "case_id": "varied",
+      "result": "pass",
+      "oracle": {
+        "method": "Recover slope from independently supplied vertex and zero, then check every labelled point; no use of c=-ad answer builder.",
+        "coefficients": [
+          "2",
+          -3,
+          -4
+        ],
+        "point_residuals": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "branch_id": "vertex-intercepts",
+      "case_id": "boundary",
+      "result": "pass",
+      "oracle": {
+        "method": "Recover slope from independently supplied vertex and zero, then check every labelled point; no use of c=-ad answer builder.",
+        "coefficients": [
+          "3",
+          -3,
+          -9
+        ],
+        "point_residuals": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "branch_id": "logarithmic-hence-chain",
+      "case_id": "normal",
+      "result": "pass",
+      "oracle": {
+        "method": "Independent individual trapezium-area sums for original and transformed integrands; numerical quadrature of original integral for bias.",
+        "a_3sf": "3.81",
+        "b_canonical_3sf": "15.2",
+        "b_canonical_path_fixture_strings": [
+          "15.2",
+          "15.24"
+        ],
+        "b_FT_rule": "Evaluate against learner own(a), not this fixture list",
+        "positive_bias_residual": "0.24052707240018211561254685905969914880742430142857198418120289862172736439341313",
+        "asymptote": "x=1",
+        "intercept": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "branch_id": "logarithmic-hence-chain",
+      "case_id": "varied",
+      "result": "pass",
+      "oracle": {
+        "method": "Independent individual trapezium-area sums for original and transformed integrands; numerical quadrature of original integral for bias.",
+        "a_3sf": "11.5",
+        "b_canonical_3sf": "69.0",
+        "b_canonical_path_fixture_strings": [
+          "69.0"
+        ],
+        "b_FT_rule": "Evaluate against learner own(a), not this fixture list",
+        "positive_bias_residual": "0.26987591837470832012120916357662512673949564181773450354164458810140240414107147",
+        "asymptote": "x=3",
+        "intercept": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "branch_id": "logarithmic-hence-chain",
+      "case_id": "boundary",
+      "result": "pass",
+      "oracle": {
+        "method": "Independent individual trapezium-area sums for original and transformed integrands; numerical quadrature of original integral for bias.",
+        "a_3sf": "3.98",
+        "b_canonical_3sf": "7.97",
+        "b_canonical_path_fixture_strings": [
+          "7.96",
+          "7.97"
+        ],
+        "b_FT_rule": "Evaluate against learner own(a), not this fixture list",
+        "positive_bias_residual": "0.064416775605506066056475398220788968991215133304814534510181149516130285556766825",
+        "asymptote": "x=1",
+        "intercept": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "branch_id": "scalar-combination-and-origin-angle",
+      "case_id": "normal",
+      "result": "pass",
+      "oracle": {
+        "method": "Solve perpendicularity by dot coefficient/constant independently; angle by Euclidean A-B distance and cosine law, not the closed dot numerator.",
+        "p": "3/4",
+        "norm_squares": [
+          3,
+          6
+        ],
+        "distance_AB_squared": 5,
+        "angle_1dp": "61.9",
+        "perpendicular_residual": "0"
+      }
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "branch_id": "scalar-combination-and-origin-angle",
+      "case_id": "varied",
+      "result": "pass",
+      "oracle": {
+        "method": "Solve perpendicularity by dot coefficient/constant independently; angle by Euclidean A-B distance and cosine law, not the closed dot numerator.",
+        "p": "-3/4",
+        "norm_squares": [
+          6,
+          11
+        ],
+        "distance_AB_squared": 21,
+        "angle_1dp": "104.3",
+        "perpendicular_residual": "0"
+      }
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "branch_id": "scalar-combination-and-origin-angle",
+      "case_id": "boundary",
+      "result": "pass",
+      "oracle": {
+        "method": "Solve perpendicularity by dot coefficient/constant independently; angle by Euclidean A-B distance and cosine law, not the closed dot numerator.",
+        "p": "-1/4",
+        "norm_squares": [
+          6,
+          3
+        ],
+        "distance_AB_squared": 9,
+        "angle_1dp": "90.0",
+        "perpendicular_residual": "0"
+      }
+    }
+  ]
+}

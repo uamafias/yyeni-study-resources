@@ -1,0 +1,148 @@
+{
+ "checker": "calc",
+ "scope": "E1 diff-only check of the 4 calculus recipes / 7 choices, 1,211 rows (implicit-normal gradient 27 + normal 27; stationary-inflexion two-extrema 540 + flat-classification 256; motion-integration polynomial-chain 137 + exponential-positive 56 + interior-reversal 168): SE-01, SE-02 (calculus part), SE-08, SE-09, SE-10, folded calculus notes, and regression of all calculus maths. SE-11 exposure keys left to another checker.",
+ "method": [
+  "Copied CWB/source, old candidate fcd4b71e07baa07a, new candidate af6f77e940430033 and E0WB/source into SP/work-calc/copies; diff -rq: E1 source == new candidate and E0WB/source == old candidate (apart from catalogue.json/manifest.json). All imports ran from the copies with PYTHONDONTWRITEBYTECODE=1 python3 -B; no file or pycache written in C (find after run: none).",
+  "Generated all 1,211 E0 and 1,211 E1 calculus rows via create_provider().generate_at (rows.json) and diffed every field recursively (rowdiff.py), then classified every prompt/answer/step/alternative/help text change after normalising \\prime to ' (stepdiff.py).",
+  "Copied the Stage-E calc oracle (scratchpad/e/work-calc/oracle.py) to oracle_e1.py, made it notation-agnostic (y'/f'/f'' and y\\prime), checked the instantiated d/dx(C) constant against the stem, checked the new explicit-root formula and its sigma independently, accepted 'second(s)', and reran it on E0 and E1: 1,211 rows, 6,697 worked-step results, 1,336 polynomial evaluations, 54 explicit-root formulas each.",
+  "Recursive string scan (scan.py) over every string of every E1 row (full instance incl. native_marking_memo, marking_memo, grading_contract, criteria, alternatives, practice help) plus learner_projection practice/no-reveal, practice/reveal, test and teacher_projection: 959,997 strings, 92,469 math segments; same scan on E0 for contrast.",
+  "KaTeX 0.16.21 loaded read-only from the app via createRequire: all 4,672 distinct E1 calculus math segments rendered with strict:'error', throwOnError; DOM check that every U+2032 in the 299 derivative segments sits inside msupsub/vlist (397/397 raised). Built before/after HTML (14 patterns incl. show-that prompt, y', 2yy', (..)y', f'(x), f''(x), f''(a), f'(a), d/dx(y^2), d/dx(C), gradient-only prompt, normal-branch gradient prompt, normal prompt, line step, explicit-root formula), rendered PNG with qlmanage and viewed both PNGs; compared with review evidence prime-notation-render.png and Codex e1-calculus-primes-emitted.png.",
+  "SE-02: SymPy comparison of E0 formula (sigma=sign(a+2q) substituted) vs E1 formula for all 54 implicit rows (symbolic + 30-digit numeric at 4 x values); formatter source/formatting.py read and exercised at 0, +-1, +-2, +-1/2, +-3/2, 2/1, '-3/4' with atomic and parenthesised atoms; all calculus call sites have non-empty atomic/parenthesised atoms.",
+  "SE-08: per-row checks on all 27 gradient rows (alternative texts, open_fixture, criteria) and 27 normal rows; criterion identity (id, suffix, marks, type, depends_on, depends_on_any, answer-only, MR09 flag, misread policy, achievement text, dependencies_use) over all 7,264 E0/E1 criteria; reviewed_part compared with only the named stale-qualifier/criterion_id_rule substitutions allowed. Instantiated divided and log-absolute relations verified with SymPy on all 54 implicit rows (equivalent to curve, hold on P's branch, implicit derivative at P equals canonical gradient).",
+  "SE-09: JSON diff E0WB vs CWB authoring/calculus-fixtures.json (51 records); case instances read from calculus-examples.json; shown working recomputed by hand and checked against the rubric.",
+  "SE-10: independent recomputation of all 19 records in authoring/e1-calculus-rounding-fixtures.json from learner-visible stems/prompts of the E1 rows (mpmath 120 dps + Decimal ROUND_HALF_UP / ROUND_HALF_EVEN; SymPy exact legs for interior-reversal); independent enumeration of premature-rounding flips over all 56 exponential rows at 3 and 4 intermediate s.f.; compared with approved planning/d4/motion-design-check.json rounding_flip_fixtures and half_boundary; checked the file is pinned in authoring/stage-e-manifest.json.",
+  "Regression helpers: reran Stage-E fresh_awards.py (19 fresh responses) against a copy of E1 source: output identical to the Stage-E fresh-awards.json; reran marking_compare.py against approved planning/calculus-design.json (sha 3176d311..., matches plan-manifest 4a054832...): 0 mismatches on all 1,211 rows.",
+  "Folded notes: learner-projection string checks for 'second(s)', 3 s.f. phrasing, undefined C/T, long decimals and labels; T in prompts/reasons checked against parameters on all 361 motion rows.",
+  "Scripts: SP/work-calc/{load.py,dump.py,rowdiff.py,stepdiff.py,oracle_e1.py,scan.py,se02.py,se08.py,se10.py,fixdiff.py,render/render.cjs}; outputs oracle-out-e0/e1.txt, scan-e0/e1.txt, rowdiff.txt, render/prime-a.html.png, render/prime-b.html.png, fresh/fresh-out.txt."
+ ],
+ "counts": {
+  "rows_E1": 1211,
+  "rows_E0": 1211,
+  "oracle_E1_findings": 0,
+  "oracle_E0_findings": 16,
+  "worked_step_results_recomputed": 6697,
+  "polynomial_evaluations_recomputed": 1336,
+  "explicit_root_formulas_checked": 54,
+  "divided_and_log_relations_checked": 108,
+  "strings_scanned_E1": 959997,
+  "math_segments_scanned_E1": 92469,
+  "bare_or_any_prime_macro_E1": 0,
+  "bare_prime_E0_contrast": 25478,
+  "unit_coefficient_hits_E1": 0,
+  "unit_coefficient_hits_E0": 32,
+  "operatorname_sign_E1": 0,
+  "operatorname_sign_E0": 108,
+  "distinct_math_segments_katex_strict": 4672,
+  "katex_strict_failures": 0,
+  "derivative_segments_DOM_checked": 299,
+  "primes_raised": 397,
+  "primes_bare": 0,
+  "png_renders_viewed": 2,
+  "patterns_rendered_before_after": 14,
+  "criteria_compared_E0_E1": 7264,
+  "criteria_drift": 0,
+  "private_math_fields_compared": 8638,
+  "private_math_drift_excluding_open_fixture": 0,
+  "reference_answers_compared": 2422,
+  "reference_answer_drift_after_prime_normalisation": 0,
+  "calculus_fixture_records": 51,
+  "fixture_ids_or_scores_changed": 0,
+  "fixture_learner_submissions_changed": 9,
+  "rounding_fixtures_recomputed": 19,
+  "rounding_fixture_mismatches": 0,
+  "independent_exponential_flip_rows": 15,
+  "fresh_awards_regression": "19/19 identical",
+  "design_criteria_mismatches": 0
+ },
+ "items": {
+  "SE-01": {
+   "verdict": "fixed",
+   "evidence": "0 \\prime macros anywhere in any string of the 1,211 E1 rows or their learner/teacher projections (E0: 25,478 bare hits in 850 rows). Primes are now y', f'(x), f''(x). KaTeX 0.16.21 strict renders all 4,672 distinct calculus segments; all 397 primes in 299 derivative segments are inside msupsub (raised). Viewed render PNGs SP/work-calc/render/prime-a.html.png and prime-b.html.png: show-that prompt, y', 2yy', (e^{2x}+2y)y', f'(x), f''(x), f''(-3), f'(-3) all print a raised prime; E0 column shows the baseline 'y/'/'f//' seen in review evidence prime-notation-render.png. Codex's e1-calculus-primes-emitted.png agrees. No \\frac{dy}{dx} occurs in calculus; d/dx(y^2) and d/dx(C) render correctly."
+  },
+  "SE-02": {
+   "verdict": "fixed",
+   "evidence": "Calculus part: 0 unit-coefficient hits (1e^, 1(, 1x/1t/1y, 1\\ln/1\\sqrt, -1x) and 0 \\operatorname{sign} in E1 (E0: 16 rows 1e^{..}, 54 rows sign()). Explicit root now e.g. gradient idx 0 '$y=\\frac{-e^{2x} - \\sqrt{e^{4x} + 80}}{2}$, $\\sigma=-1$.'. For all 54 rows the printed sign equals sign(a+2q) recomputed from stem a and P, the E1 expression is SymPy-identical to the E0 expression with sigma evaluated, passes through P, satisfies the curve, and its derivative at P equals the canonical gradient. formatting.coefficient: 0->'0', +-1->''/'-', fractions/negative fractions -> (-)\\frac{n}{d}atom, no leading '+'; all calculus call sites pass non-empty atomic or parenthesised atoms, and the only E0->E1 behavioural difference of _multiple is value 0, never reached in calculus."
+  },
+  "SE-08": {
+   "verdict": "fixed",
+   "evidence": "All 27 gradient-only rows: explicit-root text 'G1: solve the original quadratic; G2: select the correct local root through P; G3: differentiate that root correctly; G4: show substitution at P; G5: ... CALC-D1-DEV05; this exclusive five-mark route never adds credit' (matches WO implicit-normal:110); divided and log-absolute texts in G1-G5 terms; none mentions S1-S4, target, supplied, back-substitution or 9/9. open_fixture now '...canonical 5/5 ... This is the five-mark branch...'; normal rows keep their S-route text and 9/9 fixture. Instantiated relations verified mathematically (54 rows). Criterion IDs, marks, types, dependencies and achievement text identical to E0 on all 7,264 calculus criteria; gradient part 5 marks, G1-G5."
+  },
+  "SE-09": {
+   "verdict": "fixed",
+   "evidence": "calc:normal:alternative now shows 'At P=(0,-4), substitute m=-6e^0(-4)/(3e^0+2(-4))=24/(-5)=-24/5' for case a=3,k=2,q=-4 (curve 3e^{2x}y+y^2=4): correct (H1 shown, H2 canonical), then normal 5/24 and y+4=(5/24)x. calc:two-extrema:alternative now shows f(-1)=(-1)^3-3(-1)+2=4 and f(1)=1^3-3(1)+2=0 for f=x^3-3x+2: correct (P4 evaluation shown); f'(-2)=9, f'(0)=-3, f'(2)=9 correct. expected_marks/max_marks 9/9 and 6/6 unchanged; all 51 fixture IDs and every non-submission field identical to E0WB."
+  },
+  "SE-10": {
+   "verdict": "fixed",
+   "evidence": "19 declared records recomputed from learner-visible E1 instance data. 15 exponential flips (idx 0,1,5,8,9,11,16,28,35,37,38[4 s.f. intermediate],45,50,51,55): in each the premature result rounds to the rejected value and differs from the true 3 s.f. value; rounded exponentials and 90-dp true distances match; set equals the approved D4 rounding_flip_fixtures and equals my independent enumeration over all 56 rows. Interior-reversal idx 14 and 134: exact distance 233/2 (reference answer $\\frac{233}{2}$ m), half-up 117 accepted, half-even 116 rejected, exact accepted. idx 5 and 125: displacement -265/2 and 265/2, half-up (away from zero) -133/133, half-even -132/132 rejected. Lost suffixes E5 (4/5), R4 or R6 (5/6) are consistent with dependencies (nothing depends on R4/R6). File pinned in stage-e-manifest (sha e4994261...). Original 51 calculus records unchanged in IDs and scores."
+  },
+  "SE-11": {
+   "verdict": "n/a",
+   "evidence": "Out of scope (other checker). Observed only: freshness_required_keys equal E0 exposure_keys on all 1,211 rows; exposure_keys changed length only on the 27 gradient rows."
+  }
+ },
+ "findings": [
+  {
+   "id": "calc-E1-01",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient and 8227:D:SEL:implicit-normal:normal",
+   "domain_index": 0,
+   "locator": "parts[0].accepted_alternatives[0].formula (and native_marking_memo copy); source/groups/calculus.py:163",
+   "expected": "Either the sign applied with no sigma, or the formula written with sigma and sigma=+-1 stated",
+   "actual": "'$y=\\frac{-e^{2x} - \\sqrt{e^{4x} + 80}}{2}$, $\\sigma=-1$.' : sigma is defined but no longer appears in the formula (54 rows). Maths correct; marker-facing only (not in learner or teacher projections).",
+   "evidence": "cd SP/work-calc && PYTHONDONTWRITEBYTECODE=1 python3 -B -c \"import json;d=json.load(open('rows.json'));print(d['e1']['8227:D:SEL:implicit-normal:gradient'][0]['parts'][0]['accepted_alternatives'][0]['formula'])\"",
+   "basis": "SE-02 correction 'print sigma as +-1'; cosmetic",
+   "minimal_correction": "Optional: keep '+\\sigma\\sqrt{...}' with ', \\sigma=-1', or drop the trailing sigma clause."
+  },
+  {
+   "id": "calc-E1-02",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient and 8227:D:SEL:implicit-normal:normal",
+   "domain_index": 0,
+   "locator": "parts[0].accepted_alternatives[1].requirements (and native_marking_memo copy); source/groups/calculus.py:166,170",
+   "expected": "Instantiated relation inside $...$ (as the log-absolute text already is)",
+   "actual": "'Differentiate the valid equivalent relation e^{2x}+y=20/y. ...' : raw TeX braces in prose outside math delimiters, new in E1 (E0 had plain 'ae^(kx)+y=C/y'). 54 rows; marker memo only, not in learner/teacher projections. Relation mathematically valid on all 54 rows.",
+   "evidence": "cd SP/work-calc && PYTHONDONTWRITEBYTECODE=1 python3 -B scan.py e1 | grep -A3 raw_tex_outside_math",
+   "basis": "brief item 2 (broken notation introduced by repair); marker-facing so note",
+   "minimal_correction": "Wrap the instantiated relation in $...$."
+  },
+  {
+   "id": "calc-E1-03",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient and 8227:D:SEL:implicit-normal:normal",
+   "domain_index": 0,
+   "locator": "parts[0].accepted_alternatives[2].requirements; source/groups/calculus.py:167,171",
+   "expected": "Simplified instantiated relation for a=1 (2x=\\ln|20-y^2|-\\ln|y|)",
+   "actual": "'$\\ln 1+2x=\\ln|20-y^2|-\\ln|y|$' on the 16 a=1 rows (idx 0-7 in each branch). Correct (ln 1=0); cosmetic, marker-facing.",
+   "evidence": "same rows.json lookup, accepted_alternatives[2]",
+   "basis": "Q10 presentation polish",
+   "minimal_correction": "Optional: omit the ln a term when a=1."
+  },
+  {
+   "id": "calc-E1-04",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:stationary-inflexion:flat-classification",
+   "domain_index": null,
+   "locator": "authoring/calculus-fixtures.json fixture calc:flat-classification:alternative learner_submission",
+   "expected": "Change named in the E1 report (it names only the two SE-09 scripts)",
+   "actual": "Unnamed change: 'f(1)=-2' became 'f(1)=1^3-3(1)^2+3(1)-3=-2'. Correct for f=x^3-3x^2+3x-3; expected 6/6 unchanged; it strengthens I3 evidence. Six canonical/bare scripts also changed only to mirror the generator (primes, d/dx(4), y+4=(5/24)x, 'where C is the integration constant'). 9 learner_submission fields changed in total (2 SE-09 scripts, this one, 6 notation mirrors); no ID/score field changed.",
+   "evidence": "cd SP/work-calc && PYTHONDONTWRITEBYTECODE=1 python3 -B fixdiff.py",
+   "basis": "brief question 3 (unnamed changes)",
+   "minimal_correction": "None needed; record in the E1 report for completeness."
+  }
+ ],
+ "confirmed": [
+  "Oracle (adapted Stage-E calc oracle) on E1: 0 findings over 1,211 rows, 6,697 worked-step results, 1,336 evaluations, 54 explicit-root formulas (sigma-root identical, through P, on curve, derivative = gradient), 54 d/dx(C) constants equal to the stem C; E0 rerun reproduces the Stage-E 16 '1e^' notation findings and nothing else.",
+  "E0 vs E1 numeric identity row for row: stems, parameters, semantic_fingerprint, domain_index, totals, objectives, demands, Bloom identical on 1,211 rows; private_math identical except the named open_fixture text (8,638 fields); 2,422 reference answers identical after prime normalisation; step counts identical (6,697).",
+  "Every E0->E1 text change in calculus is one of: prime notation; implicit unit coefficient/sign formula; gradient-only alternatives and open_fixture (SE-08); d/dx(C) instantiated; normal line step 'y + |q| = m_perp x' (correct for P=(0,q)); 3 s.f. phrasing in the 54 implicit gradient prompts; 'second' for T=1 (48 prompts); 'boundary conditions' -> 'integration bounds' (56 prompts + 361 help prompts); 'where C is the integration constant' (137); 'Use F(T)' -> 'Use F(<T>)' (137, T matches parameters); label 'Gradient part: same type as' -> 'Same type as' (27); stale owner-pending qualifier/criterion_id_rule text; version fields 0.1.5 / design_rubric_version 0.1.4; exposure_policy/freshness_required_keys (SE-11). Nothing else changed.",
+  "Folded notes: 0 'first 1 seconds' (48 singular, 481 plural, all T-consistent); one 3 s.f. phrasing in calculus ('Give an exact answer or a value correct to 3 significant figures', lower-case after a semicolon in the 27 normal-branch hence prompts); C only appears where defined, no undefined T; no long decimals in calculus learner strings; all 413 displayed calculus labels read 'Same type as ...'; catalogue-native label fixed; none of these introduced a maths or mark change.",
+  "Approved design: 0 mismatches between generated parts/criteria and approved planning/calculus-design.json (hash matches plan-manifest 4a054832...); 7,264 criteria identical E0/E1; Stage-E 19 fresh-response awards reproduce identically on E1.",
+  "Candidate af6f77e940430033 contains no \\prime, '1e^', 'operatorname{sign}' or 'Gradient part:' anywhere; calculus domain file unchanged."
+ ],
+ "not_checked": [
+  "SE-11 exposure keys/freshness behaviour and other runtime/privacy items (other checkers).",
+  "Rendering used KaTeX 0.16.21 renderToString with the app's CSS/fonts in a static HTML page rendered by Quick Look, not the app UI; only 14 before/after patterns were viewed as PNG, the rest were checked structurally (DOM superscript test) and by strict parsing.",
+  "Codex's own scripts (e1-calculus-check.py, check_e1_preservation.py, check_e1_runtime.py, rebuild/freeze checks) were read in part but not rerun; verification here is independent.",
+  "No recogniser exists; SE-09/SE-10 expectations were judged by reading scripts against the rubric, not by marker runs.",
+  "Non-calculus uses of the shared formatter (visual group) not checked."
+ ]
+}

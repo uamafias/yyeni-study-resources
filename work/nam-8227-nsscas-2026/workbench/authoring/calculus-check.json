@@ -1,0 +1,106 @@
+{
+  "status": "pass",
+  "scope": "author checks only; Stage F/G and app acceptance remain separate",
+  "domain_rows_independently_checked": 1211,
+  "branches": [
+    {
+      "branch": "gradient",
+      "rows_checked": 27,
+      "part_semantic_counts": {
+        "gradient": 27
+      },
+      "strict_complete_fresh_bound": 23,
+      "outcomes": {},
+      "invalid_parameter_fixtures_rejected": 3
+    },
+    {
+      "branch": "normal",
+      "rows_checked": 27,
+      "part_semantic_counts": {
+        "show-derivative": 8,
+        "gradient": 27,
+        "normal": 27
+      },
+      "strict_complete_fresh_bound": 8,
+      "outcomes": {},
+      "invalid_parameter_fixtures_rejected": 3
+    },
+    {
+      "branch": "two-extrema",
+      "rows_checked": 540,
+      "part_semantic_counts": {
+        "points": 540,
+        "nature": 30
+      },
+      "strict_complete_fresh_bound": 30,
+      "outcomes": {
+        "minimum": 540,
+        "maximum": 540
+      },
+      "invalid_parameter_fixtures_rejected": 3
+    },
+    {
+      "branch": "flat-classification",
+      "rows_checked": 256,
+      "part_semantic_counts": {
+        "point": 256,
+        "classification": 16
+      },
+      "strict_complete_fresh_bound": 16,
+      "outcomes": {
+        "stationary point of inflexion": 128,
+        "maximum": 64,
+        "minimum": 64
+      },
+      "invalid_parameter_fixtures_rejected": 3
+    },
+    {
+      "branch": "polynomial-chain",
+      "rows_checked": 137,
+      "part_semantic_counts": {
+        "velocity": 35,
+        "distance": 137
+      },
+      "strict_complete_fresh_bound": 35,
+      "outcomes": {},
+      "invalid_parameter_fixtures_rejected": 3
+    },
+    {
+      "branch": "exponential-positive",
+      "rows_checked": 56,
+      "part_semantic_counts": {
+        "acceleration": 14,
+        "distance": 56
+      },
+      "strict_complete_fresh_bound": 14,
+      "outcomes": {},
+      "invalid_parameter_fixtures_rejected": 3
+    },
+    {
+      "branch": "interior-reversal",
+      "rows_checked": 168,
+      "part_semantic_counts": {
+        "distance": 168,
+        "displacement": 168
+      },
+      "strict_complete_fresh_bound": 168,
+      "outcomes": {
+        "sign-change": 144,
+        "no-change": 24
+      },
+      "invalid_parameter_fixtures_rejected": 3
+    }
+  ],
+  "frozen_parameter_examples": 21,
+  "submission_evidence_fixtures": 51,
+  "concrete_script_count_under_stage_e_review": 29,
+  "declarative_record_count_under_stage_e_review": 22,
+  "oracle": "Independent SymPy differentiation/solve/Taylor classification/integration of displayed expanded polynomials, and explicit local quadratic root for implicit derivative. No generator answer function is used by the oracle.",
+  "limitations": [
+    "Submission fixture scores are declared rubric expectations, not evidence that a learner text/photo marker implements them.",
+    "Independent mathematics does not establish cross-vendor educational acceptance or app rendering.",
+    "Competing-misread settlement, implicit C-misread alternative routes and nonconstant stationary coefficient eligibility remain explicit E/F carries."
+  ],
+  "source_sha256": "c8c9e3a836d9b4dfd69565c6b67f773609194be5d8844e27568fa286c926378c",
+  "domain_sha256": "6863be7aa8d9c877f44c5e6adf5d2cbae3a294605a25fef653cfe1b0febc6249"
+}

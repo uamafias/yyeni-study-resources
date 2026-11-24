@@ -1,0 +1,2777 @@
+# D4.1 text errata — NSSCAS Mathematics 8227
+
+24 November 2026. Owner Vitalis; PLANNER Codex. NIED December 2020 syllabus. D4 repairs are independently confirmed; **D4.1 diff-only review and Vitalis exact-manifest approval remain pending. Stage D only.**
+
+## What changed, and what did not
+
+The two remaining authority residues now distinguish the binding OD-6 principle from proposed MR03-OPS-D4 per-datum mechanics. The shared operations add exactly these three clarifications, identically in the source policy, MR03, all nine work-order lines and all 27 policies plus merged/register copies:
+
+> An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes.
+
+> Eligibility is judged at first use for the connected question.
+
+> Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.
+
+The operational rules remain proposed, not an additional owner decision. No ledger algorithm, fixture tag, gross/net score, deduction slot, tariff, criterion type, domain, parameter, canonical answer, Bloom label or recipe/classification version changed. Counts remain **9 recipes /14 choices /42 cases /27 parts /83 branch marks**, Bloom13 Apply /1 Analyse, decks19/20/17, facets38+1 conditional-only and99 demands outside direct pilot scope. Version remains0.1.4; classification remains8227-pilot-design-0.1.1.
+
+## Listed errata and notes
+
+| ID | Before → after | Evidence |
+|---|---|---|
+| D4-S01 | Two body sentences attributing the per-datum unit to OD-6 → explicit OD-6 principle / proposed MR03-OPS-D4 mechanics | vector WO73; implicit exemplar125; exact spans below |
+| D4-S02 | Undefined datum scope and overly broad override → the three exact clauses quoted above; identical propagation | source policy, subject MR03,9WOs,27parts and generated copies |
+| D4-N01 | Absolute render_path → repository-relative path to the identical render/hash | visual-d4-independent-checks.py; two relocated rebuilds |
+| motion-D4-06 | Accidental “D1 D4 changed-scope confirmation” → historical “D1 short check confirmed” | PLAN11 |
+| shared/visual-D4-04 | Undated decision6 → “16 November owner decision 6 (visual demands)” | capability-gaps and recipe-contract |
+| shared-D4-03 / trig-D4-03 | Named stale round/gate/status/receipt labels → current D4/D4.1 labels and D4 receipts | source fields/generators and regenerated records |
+| motion-D4-01 | Bare2/6 outcome → printed-interval R1 decision, T-independent R2 primitive and attempted-primitive/both-bounds R5 rationale | motion WO75 |
+| motion-D4-02 | Unqualified best single/pair156/168 → best visible156/168; derived(d/a,T)162/168 also disclosed | motion WO73 |
+| motion-D4-03 | Version included in exposure key → provenance only; no exposure reset. Old versions named0.1.1–0.1.3 | motion WO25/35 |
+| motion-D4-05 / calc-D4-04 | Copied mixed/proof branch notes → branch-appropriate polynomial, exponential and standalone-gradient notes | policy propagation script and source/merged/register copies |
+| calc-D4-01 | Unqualified C4→5 9/9 → explicitly product route; divided/log-absolute/explicit-root cases remain E/F fixtures | implicit WO148/exemplar151; no new score ruling |
+| visual-D4-02 | Incomplete register anchor → 2023 P2 Q6 AWARD05 citation plus WO95 proposed B2www clause | visual deviation input and regenerated21-row checkpoint |
+| visual-D4-03 / shared-D4-07 | Record-keeping caveats now disclosed | paragraphs below; no mathematical change |
+
+Visual policies retain common operational fields and some generic visual eligibility tails; criterion-specific details remain in the work orders. The old D4 report’s claim of uniformly part-specific tails was too broad. This errata does not invent new part-specific marking rules.
+
+The trapezium strict-unseen summary **3→2 was already corrected in D4**. It was a stale summary correction to match generated-fresh capacity2, with mathematical packing3 separately named. D4.1 leaves the archived D4 value2 unchanged and makes no domain/capacity change.
+
+The product-route C misread can still score9/9 under the existing canonical treatment of an ineligible datum. Other proof routes, datum identity, competing misreads for one mark, ambiguous visual notation and previously named E/F cases remain carried. This text pass does not settle them or claim runtime marker acceptance.
+
+## Verification
+
+The no-score guard passes: 3 canonical designs,2 derived design/register records,18 fixture/domain files,42 distinct canonical examples and70 fixed gross/net ledger records (overlapping records, not70 unique submissions). It rejects5 seeded semantic changes. Only named text/status/path/hash leaves may differ; numeric values, types, array order, tags, score records, versions and mathematical data remain exact. See `planning/d4-1/no-score-change-check.json` and its documented allowlist.
+
+The normal author rebuild passes twice: **18 commands per round,28 byte-identical derived outputs,25 subprocess negative fixtures rejected**, plus5 inline motion-domain and4 inline ledger rejections. Prior independent D4 audits remain historical reviewed evidence, rather than being silently re-labelled current acceptance.
+
+**Two relocated copies pass:** both run the complete design double rebuild and freeze check; all28 derived outputs match the author bytes without path normalisation. The stored source-render path is relative. Exact results: `planning/d4-1/relocated-rebuild-proof.json`.
+
+All analysis/tool/curriculum files and prior reviews/source PDFs remain unchanged, with D0–D4 archives recoverable. D4 manifest71ee10b6388064079137412da8834623b63e7179af7e0b8a280a345f13f1e4bb and all3,497files were copied before editing. The final manifest pins every live checks/plan-* file and D4 recovery. No Stage-E resources, generator, import, learner assignment, publication, commit or push.
+
+## Every before/after change
+
+The following index gives the current file:line for each changed pre-existing candidate file. Expand its complete diff for **every before/after span**; machine-readable spans are also in `planning/d4-1/changes.json`, and the complete patch is `D4-to-D4.1.diff`. Generated repeated text and provenance hashes follow the listed input changes.
+
+| Current path and first changed line | Before/after spans |
+|---|---|
+| `work/nam-8227-nsscas-2026/STATUS.md:2` | 1; full before/after diff 1 below |
+| `work/nam-8227-nsscas-2026/workbench/HANDOVER.md:7` | 4; full before/after diff 2 below |
+| `work/nam-8227-nsscas-2026/workbench/PLAN.md:11` | 1; full before/after diff 3 below |
+| `work/nam-8227-nsscas-2026/workbench/STATUS.md:5` | 3; full before/after diff 4 below |
+| `work/nam-8227-nsscas-2026/workbench/capability-gaps.md:34` | 1; full before/after diff 5 below |
+| `work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-part-register-audit.json:31` | 2; full before/after diff 6 below |
+| `work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-trig-validation.json:2` | 1; full before/after diff 7 below |
+| `work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-implicit-normal.md:125` | 2; full before/after diff 8 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/OWNER-CHECKPOINT.md:1` | 5; full before/after diff 9 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:121` | 28; full before/after diff 10 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/calculus-source-reads.md:65` | 2; full before/after diff 11 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/coverage-plan.json:9869` | 1; full before/after diff 12 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/build-checkpoint.py:18` | 2; full before/after diff 13 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/build-design-records.py:45` | 1; full before/after diff 14 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/coverage-check.json:142` | 1; full before/after diff 15 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/design-rebuild-proof.json:22` | 5; full before/after diff 16 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/deviation-register.json:3` | 3; full before/after diff 17 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/freeze-plan.py:18` | 6; full before/after diff 18 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/given-representation-register.json:35` | 31; full before/after diff 19 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/propagate-misread-policy.py:22` | 2; full before/after diff 20 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/shared-misread-policy.json:7` | 2; full before/after diff 21 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/shared-policy-audit.json:225` | 3; full before/after diff 22 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-check.py:108` | 2; full before/after diff 23 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.json:1045` | 1; full before/after diff 24 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.py:95` | 1; full before/after diff 25 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/d4/visual-deviation-rows.json:7` | 1; full before/after diff 26 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.json:43` | 32; full before/after diff 27 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.md:3` | 1; full before/after diff 28 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:11` | 59; full before/after diff 29 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json:138` | 6; full before/after diff 30 below |
+| `work/nam-8227-nsscas-2026/workbench/planning/visual-design.json:93` | 14; full before/after diff 31 below |
+| `work/nam-8227-nsscas-2026/workbench/recipe-contract.md:162` | 2; full before/after diff 32 below |
+| `work/nam-8227-nsscas-2026/workbench/subject-rules.md:67` | 1; full before/after diff 33 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:128` | 2; full before/after diff 34 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:118` | 1; full before/after diff 35 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:59` | 1; full before/after diff 36 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:25` | 5; full before/after diff 37 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:90` | 1; full before/after diff 38 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-stationary-inflexion.md:102` | 1; full before/after diff 39 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:91` | 2; full before/after diff 40 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md:108` | 1; full before/after diff 41 below |
+| `work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:73` | 2; full before/after diff 42 below |
+
+<details><summary>Diff 1: work/nam-8227-nsscas-2026/STATUS.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/STATUS.md
++++ D4.1/work/nam-8227-nsscas-2026/STATUS.md
+@@ -1,5 +1,5 @@
+ <!-- R7-CLOSEOUT-ACTIVE -->
+-Current: 24 November 2026. PLANNER, owner Vitalis. Stage-D D4 candidate: 9 recipes / 14 choices / 42 paper cases / 27 parts; Bloom 13 Apply / 1 Analyse; decks 19/20/17. D3 mostly confirmed; four D4 repair groups author-checked and awaiting focused Claude confirmation, then Vitalis exact-manifest approval. OD-6 principle binds; MR03-OPS-D4 detailed mechanics are proposed in a separate checkpoint row. Mixed motion168(144/24),28shapes; diversified no-change contexts and explicit lookup limits. Analysis/tools/curriculum unchanged. Evidence: workbench/checks/plan-repair-d4-report.md, planning/CLAUDE-D4-CONFIRM.md, OWNER-CHECKPOINT.md and plan-manifest.json. D0–D3 recoverable. No Stage-E runtime work, import, assignment, commit or push.
++Current: 24 November 2026. PLANNER, owner Vitalis. D4 repairs confirmed; D4.1 text-only errata is author-verified in two relocated copies and awaiting Claude’s diff-only check, then Vitalis exact-manifest approval. Counts9/14/42/27, Bloom13/1, decks19/20/17, all marks/domains/answers and version0.1.4 remain unchanged. OD-6 principle binds; MR03-OPS-D4 mechanics remain proposed. D4 manifest71ee10b6… and3,497files recoverable. Evidence: workbench/checks/plan-errata-d4-1-report.md and planning/CLAUDE-D4-1-CHECK.md. No Stage-E runtime work, commit or push.
+ <!-- /R7-CLOSEOUT-ACTIVE -->
+ 
+ The dated entries below are historical. Current evidence and limits are in the Workbench handover.
+````
+
+</details>
+
+<details><summary>Diff 2: work/nam-8227-nsscas-2026/workbench/HANDOVER.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/HANDOVER.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/HANDOVER.md
+@@ -4,9 +4,9 @@
+ 
+ ## Current gate
+ 
+-Read review/opus-5-5-d3-confirm/{report.md,findings.md,REPAIR-D4-PROMPT.md}, the binding OD-1–6 records, checks/plan-repair-d4-report.md, current PLAN/contract/rules, all nine work orders and 42 examples, planning/OWNER-CHECKPOINT.md and the exact planning/plan-manifest.json.
++Read review/opus-5-5-d3-confirm/{report.md,findings.md,REPAIR-D4-PROMPT.md}, the binding OD-1–6 records, checks/plan-errata-d4-1-report.md, current PLAN/contract/rules, all nine work orders and 42 examples, planning/OWNER-CHECKPOINT.md and the exact planning/plan-manifest.json.
+ 
+-**Next: Claude confirms only D4 using planning/CLAUDE-D4-CONFIRM.md. Then Vitalis approves or revises the exact manifest, counts, gaps, capabilities, exemplars and active proposed adaptations/operations.** No Stage E before explicit approval. Vitalis commits; no commit/push, imports or assignments were made. The accepted nine-recipe selection stays fixed.
++**Next: Claude checks only D4.1 using planning/CLAUDE-D4-1-CHECK.md. Then Vitalis approves or revises the exact manifest, counts, gaps, capabilities, exemplars and active proposed adaptations/operations.** No Stage E before explicit approval. Vitalis commits; no commit/push, imports or assignments were made. The accepted nine-recipe selection stays fixed.
+ 
+ ## Current candidate and authority
+ 
+@@ -14,7 +14,7 @@
+ 
+ OD-6 principle binds: genuine unchanged-object/difficulty question-data misread costs one mark from A/B, all A/B follow through, M/DM usual, own-figure accuracy errors, no concession for changed object/difficulty, feedback names the misread. Source allocation is comparable Cambridge, never a published Namibian rule. **MR03-OPS-D4 operations are proposed**, reviewer-prescribed/planner-adopted, not owner-chosen: per-datum unit, question/criterion ordering, once-only eligibility, whole-question deferred deduction, ledger and gross-before-net dependencies. Approval remains pending in the separate 21st register row.
+ 
+-The first A/B earned on that datum anywhere in question order receives the net penalty; a missing first-part A/B does not make the misread free. Nothing is deducted only when no A/B is earned on that datum anywhere. Dependency/DM/www checks use gross evidence, not the reduced net mark. Ineligible data stay canonical across all later parts. Eligible F.T. overrides ordinary c.a.o./not-F.T.; correct working, named errors and OD-1 remain. Designed no-real outcomes are distinct from destroying a canonical solution.
++The first A/B earned on that datum anywhere in question order receives the net penalty; a missing first-part A/B does not make the misread free. Nothing is deducted only when no A/B is earned on that datum anywhere. Dependency/DM/www checks use gross evidence, not the reduced net mark. Ineligible data stay canonical across all later parts. Eligible F.T. overrides ordinary c.a.o./not-F.T.; correct working, named errors and OD-1 remain. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Designed no-real outcomes are distinct from destroying a canonical solution.
+ 
+ All nine WOs copy the canonical shared line in planning/d4/shared-misread-policy.json; all 27 policies match common fields. planning/d4/misread_ledger.py computes fixed-fixture net bookkeeping from author-justified gross evidence and eligibility. It is not an answer parser or operational marker. Samples: vector sign+wrong resultant4/7; ineligible no-p vector 3/7; exponential 21+wrongfactor2/5; principal negative-target read positive2/3. Fixed-point implicitC4→5 canonical9/9; a3→4 carried through canonical5/9. Motion outcome-changingT3→5 canonical2/6. Normal exponential/vector remain 4/5 and 6/7.
+ 
+@@ -39,3 +39,15 @@
+ Carry named E/F fixtures: stationary coefficient-misread difficulty, degenerate R-form/log/principal cases, redundant modulus label and strip-count eligibility, more-precise vector angles, outcome-private metadata and the prior D2 carryforward list. APP8227-01–08 require runtime/app/local website tests using real reviewed resources. No capability hold or weakened syllabus demand is introduced.
+ 
+ After exact design approval, follow the existing Workbench E/F/G workflow and then local website acceptance before merge/deploy decisions. Package install, school/classroom/lesson availability and deck/learner assignment remain separate later operations requiring explicit targets. No operational activation is authorised here.
++
++## D4.1 text errata — 24 November 2026
++
++Claude confirmed all D4 repair groups. D4.1 changes no score, tariff, domain, canonical answer, fixture tag, bank count or recipe/classification version. It clarifies the proposed mechanics: any earned A/B in a part using the misread datum is eligible for the deduction, even when that criterion’s value is unaffected; eligibility considers the connected question at first use; MR09 supplied-result proofs and OD-1 are never overridden. The two remaining authority residues are corrected.
++
++The C4→5 full-marks fixture is explicitly the product route; divided, log-absolute and explicit-root routes remain E/F fixtures, with no new score ruling. Generic visual policy tails remain shared scope summaries, with criterion details in work orders; this is recorded without claiming they are part-specific. The trapezium strict summary3→2 was already corrected in D4, not changed again in D4.1.
++
++The D4 manifest71ee10b6388064079137412da8834623b63e7179af7e0b8a280a345f13f1e4bb and all3,497files are preserved under planning/history/plan-manifest-d4.json and history/d4-candidate/. Current scripts remain planning/d4/; planning/d4-1/ contains the errata journal, no-score guard and relocation verification. Stored render paths are repository-relative. Previous independent D4 audit receipts are historical reviewed evidence; current D4.1 acceptance comes from the diff-only check, not refreshed old acceptance hashes.
++
++Read planning/CLAUDE-D4-1-CHECK.md after the errata report. Claude checks only D4→D4.1 changed lines, propagated text equality, unchanged scores and the two relocated rebuild/freeze results. Then Vitalis approves the exact manifest. No Stage E, imports, assignment, publication, commit or push.
++
++D4.1 author verification passed in this checkout and two relocated copies: two rounds of18commands in each location,28derived outputs byte-identical with no path normalisation, unchanged-score guard and freeze check passing. All42canonical examples and70stored ledger records preserve their values/tags/order;5semantic corruptions are rejected. See planning/d4-1/relocated-rebuild-proof.json and no-score-change-check.json. Claude diff-only review and Vitalis approval remain pending.
+````
+
+</details>
+
+<details><summary>Diff 3: work/nam-8227-nsscas-2026/workbench/PLAN.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/PLAN.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/PLAN.md
+@@ -8,7 +8,7 @@
+ 
+ The records establish 119 connected questions/250 parts across 2021–2025, 138 content demands, 119 award tables and 821 rows (three explicitly derived completions). D2 corrects31 remaining sentence-polarity errors without retagging accepted textbook item links. The analysis freeze again pins the whole workspace and historical checks, excluding only the explicitly separated Stage-D/review/cache namespaces stated in the snapshot. The plan manifest pins current Stage-D design and candidate archives. Historical snapshots remain immutable and recoverable.
+ 
+-The D1 D4 changed-scope confirmation confirmed the repaired source totals, mathematics and all original step-3 blockers, then requested D2. The D2 confirmation accepted the preceding design with no blocker. OD-6 in `review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md` adopts the comparable-board misread convention. OD-4 and OD-5 in `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md` govern this revision. The D1 manifest `c8914cf96c78367f138058e40ffa62bdc0d9770efa1a6fe787c42b8759a04f22` and all 273 candidate files remain recoverable under `planning/history/`. The next incomplete gate is **Claude's D4 changed-scope confirmation, followed by Vitalis's approval of the plan, counts, gaps, capabilities and exemplars**. Passing author checks is neither independent acceptance nor permission to begin stage E. No runtime resource, generator, import, assignment or app test is produced by this repair.
++The D1 short check confirmed the repaired source totals, mathematics and all original step-3 blockers, then requested D2. The D2 confirmation accepted the preceding design with no blocker. OD-6 in `review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md` adopts the comparable-board misread convention. OD-4 and OD-5 in `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md` govern this revision. The D1 manifest `c8914cf96c78367f138058e40ffa62bdc0d9770efa1a6fe787c42b8759a04f22` and all 273 candidate files remain recoverable under `planning/history/`. The next incomplete gate is **Claude's D4 changed-scope confirmation, followed by Vitalis's approval of the plan, counts, gaps, capabilities and exemplars**. Passing author checks is neither independent acceptance nor permission to begin stage E. No runtime resource, generator, import, assignment or app test is produced by this repair.
+ 
+ ## Proposed scope and computed counts
+````
+
+</details>
+
+<details><summary>Diff 4: work/nam-8227-nsscas-2026/workbench/STATUS.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/STATUS.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/STATUS.md
+@@ -2,7 +2,7 @@
+ 
+ 24 November 2026. Owner Vitalis; PLANNER Codex with three parallel same-vendor assistants. NIED December 2020 syllabus, Grade 12.
+ 
+-**Stage D: D4 repair candidate. Next: Claude confirms only D4 changes, then Vitalis approves the exact manifest.** No Stage E, runtime generator/resource, import or learner assignment is authorised.
++**Stage D: D4 confirmed design with D4.1 text errata. Next: Claude checks only D4.1 changed lines, then Vitalis approves the exact manifest.** No Stage E, runtime generator/resource, import or learner assignment is authorised.
+ 
+ D3 was mostly confirmed, with four should-fix groups and no design blocker. D4 separates the binding OD-6 principle from proposed MR03-OPS-D4 mechanics; applies the shared rule consistently to nine work orders and 27 parts; fixes deferred deductions, gross dependencies, once-only eligibility and designed no-real outcomes; diversifies four no-change motion contexts; and repairs the trapezium factorisation/wrong-law fixture.
+ 
+@@ -12,8 +12,20 @@
+ 
+ Fixed marking expectations now include vector combined misread/wrong resultant 4/7, once-ineligible no-p reuse 3/7, exponential combined misread/wrong factor 2/5 and designed no-real principal sign misread 2/3. Gross evidence remains earned after a net deduction. The owner chose the principle; operational unit/order/ledger/eligibility details await exact-manifest approval in a separate row of the **21-row checkpoint**. Declared evidence and computed ledgers are not an operational learner-response marker.
+ 
+-Read `checks/plan-repair-d4-report.md`, `planning/OWNER-CHECKPOINT.md` and `planning/CLAUDE-D4-CONFIRM.md`. Current builders/checks are under `planning/d4/`. D3 manifest 4667a860… and all 1,708 candidate files remain recoverable with earlier D0/D1/D2 archives. The final manifest pins every live checks/plan-* file. D4 changed no analysis/tools/curriculum, source PDF, review folder, standard, other subject, app or pinned checkout.
++Read `checks/plan-errata-d4-1-report.md`, `planning/OWNER-CHECKPOINT.md` and `planning/CLAUDE-D4-1-CHECK.md`. Current builders/checks are under `planning/d4/`. D3 manifest 4667a860… and all 1,708 candidate files remain recoverable with earlier D0/D1/D2 archives. The final manifest pins every live checks/plan-* file. D4 changed no analysis/tools/curriculum, source PDF, review folder, standard, other subject, app or pinned checkout.
+ 
+ Given representations are explicitly recorded for all 27 parts: 25 text, two function graphs, no unknowns. G09 given geometric diagrams remains untested, not held. Coverage receipt counts, D0 facet differences and deck totals are derived from named design inputs. Textbooks remain internal; exam originals need attribution; held originals never anchor a branch.
+ 
+ Author double derivation, exact mathematics, fixed ledgers, negative fixtures, source/hash preservation and same-vendor independent audits are recorded in the D4 report. Cross-vendor content confirmation, owner approval, runtime/app/local website/MCP and production acceptance remain separate and unrun. No commit or push; Vitalis commits.
++
++## D4.1 text errata — 24 November 2026
++
++Claude confirmed all D4 repair groups. D4.1 changes no score, tariff, domain, canonical answer, fixture tag, bank count or recipe/classification version. It clarifies the proposed mechanics: any earned A/B in a part using the misread datum is eligible for the deduction, even when that criterion’s value is unaffected; eligibility considers the connected question at first use; MR09 supplied-result proofs and OD-1 are never overridden. The two remaining authority residues are corrected.
++
++The C4→5 full-marks fixture is explicitly the product route; divided, log-absolute and explicit-root routes remain E/F fixtures, with no new score ruling. Generic visual policy tails remain shared scope summaries, with criterion details in work orders; this is recorded without claiming they are part-specific. The trapezium strict summary3→2 was already corrected in D4, not changed again in D4.1.
++
++The D4 manifest71ee10b6388064079137412da8834623b63e7179af7e0b8a280a345f13f1e4bb and all3,497files are preserved under planning/history/plan-manifest-d4.json and history/d4-candidate/. Current scripts remain planning/d4/; planning/d4-1/ contains the errata journal, no-score guard and relocation verification. Stored render paths are repository-relative. Previous independent D4 audit receipts are historical reviewed evidence; current D4.1 acceptance comes from the diff-only check, not refreshed old acceptance hashes.
++
++Read planning/CLAUDE-D4-1-CHECK.md after the errata report. Claude checks only D4→D4.1 changed lines, propagated text equality, unchanged scores and the two relocated rebuild/freeze results. Then Vitalis approves the exact manifest. No Stage E, imports, assignment, publication, commit or push.
++
++D4.1 author verification passed in this checkout and two relocated copies: two rounds of18commands in each location,28derived outputs byte-identical with no path normalisation, unchanged-score guard and freeze check passing. All42canonical examples and70stored ledger records preserve their values/tags/order;5semantic corruptions are rejected. See planning/d4-1/relocated-rebuild-proof.json and no-score-change-check.json. Claude diff-only review and Vitalis approval remain pending.
+````
+
+</details>
+
+<details><summary>Diff 5: work/nam-8227-nsscas-2026/workbench/capability-gaps.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/capability-gaps.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/capability-gaps.md
+@@ -31,7 +31,7 @@
+ Workbench operation is exposed by name in the current connected-tool inventory;
+ MCP delivery support remains unverified, not declared absent. No target was selected.
+ 
+-Owner decision6 still includes every visual demand with no capability hold.
++16 November owner decision 6 (visual demands) still includes every visual demand with no capability hold.
+ Correct/partial/alternative/wrong/ambiguous visual grading, diagram consistency,
+ metadata round-trip, authored part IDs, branch progress/no-repeat and school-scoped
+ MCP delivery remain named later acceptance tests. Design approval/disposition of
+````
+
+</details>
+
+<details><summary>Diff 6: work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-part-register-audit.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-part-register-audit.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-part-register-audit.json
+@@ -28,17 +28,17 @@
+   },
+   "original_subtask_guard": "h2sketch original-part only; mathematical packing3, generated-fresh2",
+   "inputs": {
+-    "planning/visual-design.json": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8",
+-    "planning/calculus-design.json": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177",
+-    "planning/trig-model-design.json": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af",
+-    "planning/pilot-design.json": "5f2c8799ad5c617d66004508ea686af3dcb1bc48d3886a4fe741ce4ab4b09457",
+-    "planning/part-evidence-register.json": "456aadeedb5c1e3121aaf437f7b5de1dcc89a32703906fcd258b8c67a5c9e4de",
+-    "planning/coverage-plan.json": "e8e43185232d232c2d908ad2283e1eb85cc824461c41a8bbf011450e08823a2c",
+-    "planning/d4/coverage-check.json": "fb42fef96cd28e34c59c7cf80ca8194d8c92ad85513bbf1daf47855ea3d15750",
+-    "planning/OWNER-CHECKPOINT.md": "37759051f40b3dd8b13cfe4b0752c960a0c6dae8818382fc876039c7b3bd6a7b",
++    "planning/visual-design.json": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7",
++    "planning/calculus-design.json": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3",
++    "planning/trig-model-design.json": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd",
++    "planning/pilot-design.json": "eb8967724f6f4a6ff37129042580f4ed420191a0acaaf6ac05a1cc2ff6a7072b",
++    "planning/part-evidence-register.json": "3efa2bd32ea3ab635f6da7fc44621127b5dbbd8a201541babcb4c3cd41ea4a79",
++    "planning/coverage-plan.json": "899eca3ecbab89a82ccb0278515e0efa64aa0796ca2b2315ec7526053f819fa6",
++    "planning/d4/coverage-check.json": "4d3db5bbf9779887dafa845fe90457eda32200e1f39dae4bb6876eb4de4080d1",
++    "planning/OWNER-CHECKPOINT.md": "21073fd1b4648c0f41900f7876acf960e0002fd85c48dede78ea5d8c67fa8a6c",
+     "app-change-handoff.md": "17ae3afacac72a8524eb8cacf89a8a90cafa215b4db57932e76455bea87339eb",
+-    "subject-rules.md": "da9aa7966e2a47ebfb358e86d25438eec3d5ed1b3324756273eddf07a987d722",
+-    "recipe-contract.md": "0391a599abd015a7c24f8e927b794570b27eefd064442dd8bf669f171da2f7e3"
++    "subject-rules.md": "d2ed6a5978cf814c7b0502b8f7b4b70fbcbd670a3f67e998da4d3d6bdc18a78f",
++    "recipe-contract.md": "1c66a782c0ee93a3a9879bba529524fd07196b58a41a536f4727320fadc1d8d5"
+   },
+   "scope": "All parts compared canonical\u2192merge\u2192register; active input hashes refreshed after final app handoff. This is structural author audit, not independent educational/runtime acceptance."
+ }
+````
+
+</details>
+
+<details><summary>Diff 7: work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-trig-validation.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-trig-validation.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-trig-validation.json
+@@ -1,5 +1,5 @@
+ {
+-  "status": "pass; D3 author-side finite design checks, not independent acceptance/runtime validation",
++  "status": "pass; D4 author-side finite design checks, not independent acceptance/runtime validation",
+   "recipe_version": "0.1.4",
+   "classification_version": "8227-pilot-design-0.1.1",
+   "branches": {
+````
+
+</details>
+
+<details><summary>Diff 8: work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-implicit-normal.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-implicit-normal.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-implicit-normal.md
+@@ -122,7 +122,7 @@
+ 
+ Reject k=1 (the declared composite-chain demand is absent), a+2q=0, q=-a, q=0 outside the chosen domain, and the2025Q5 original tuple. A point not on the curve is invalid. For the negative-constant cases a nearby vertical turn is a later diagram hazard; the pilot omits optional diagrams. No source crop or copied textbook problem accompanies these examples.
+ 
+-An alternative full explicit-quadratic proof/gradient route earns the exclusive mapped cap only with complete valid working; it does not add marks to the implicit route. In the extended branch the hence substitution must use the displayed derivative or their credible expression from the proof; no non-hence SC is invented. A coherent slipped gradient followed by a shown negative reciprocal and a line through P earns N1+N2=2/3, while N3 stays0 unless the canonical exact line is obtained, except for eligible OD-6 genuine question-data misreads under the once-per-datum rule. Multiple attempts, ambiguous handwriting and premature rounding follow D1-MR03/05/07 without fabricated credit.
++An alternative full explicit-quadratic proof/gradient route earns the exclusive mapped cap only with complete valid working; it does not add marks to the implicit route. In the extended branch the hence substitution must use the displayed derivative or their credible expression from the proof; no non-hence SC is invented. A coherent slipped gradient followed by a shown negative reciprocal and a line through P earns N1+N2=2/3, while N3 stays0 unless the canonical exact line is obtained, except for eligible genuine question-data misreads following MR03: the OD-6 MR−1 principle with A/B follow-through under the proposed MR03-OPS-D4 per-datum mechanics. Multiple attempts, ambiguous handwriting and premature rounding follow D1-MR03/05/07 without fabricated credit.
+ 
+ The six paper cases passed the separate oracle in `planning/d4/calculus-exemplar-oracle.json`. Domain audit counts27point tasks on23 curves and8 show-derivative identities; these are not six assigned fresh questions. Partwise no-repeat guards and source attribution remain later app acceptance requirements. Proposed whole Bloom3 for each complete branch; no runtime, grading or app-rendering acceptance is claimed.
+ 
+@@ -148,7 +148,7 @@
+ 
+ ## D4 connected eligibility and net-penalty examples
+ 
+-For $3e^{2x}y+y^2=4$, $P=(0,-4)$, a first-use C4→5 misread makes the point inconsistent with the curve. It is ineligible once for the whole connected question. A perfect derivative proof is nevertheless unchanged because C differentiates to0; using the true displayed derivative for gradient and normal gives **9/9 canonically**, with no MR adjustment.
++For $3e^{2x}y+y^2=4$, $P=(0,-4)$, a first-use C4→5 misread makes the point inconsistent with the curve. It is ineligible once for the whole connected question. A perfect product-route derivative proof is nevertheless unchanged because C differentiates to0; using the true displayed derivative for gradient and normal gives **9/9 canonically**, with no MR adjustment. The divided, log-absolute and explicit-root routes for this ineligible C misread remain separate E/F fixtures; the stated 9/9 covers only the product route.
+ 
+ A first-use a3→4 misread in that same question is also ineligible and remains canonical in later parts. The learner’s derivative is $-8e^{2x}y/(4e^{2x}+2y)$, its substituted gradient is−8, and their normal is $y+4=x/8$. The ordinary rubric gives S1/S3=2, H1=1, N1/N2=2, hence **5/9**. Correct method follow-through does not convert wrong canonical H2/N3 accuracy into MR accuracy.
+````
+
+</details>
+
+<details><summary>Diff 9: work/nam-8227-nsscas-2026/workbench/planning/OWNER-CHECKPOINT.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/OWNER-CHECKPOINT.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/OWNER-CHECKPOINT.md
+@@ -1,8 +1,8 @@
+-# Vitalis’s D4 owner checkpoint — NSSCAS Mathematics 8227
++# Vitalis’s D4.1 owner checkpoint — NSSCAS Mathematics 8227
+ 
+-NIED December 2020 syllabus, Grade 12. Owner Vitalis; PLANNER Codex; 24 November 2026. **Pending: Claude confirms only D4 changes, then Vitalis approves the exact final manifest.** OD-1–6 bind. No Stage E before explicit approval.
++NIED December 2020 syllabus, Grade 12. Owner Vitalis; PLANNER Codex; 24 November 2026. **Pending: Claude checks only D4.1 changed lines, then Vitalis approves the exact final manifest.** OD-1–6 bind. No Stage E before explicit approval.
+ 
+-Read `../checks/plan-repair-d4-report.md`, `../PLAN.md`, the contract and subject rules, nine work orders and 42 worked examples. `plan-manifest.json` pins the candidate. All 1,708 D3 files and earlier D0/D1/D2 candidates are recoverable under history.
++Read `../checks/plan-errata-d4-1-report.md`, `../PLAN.md`, the contract and subject rules, nine work orders and 42 worked examples. `plan-manifest.json` pins the candidate. All 3,497 D4 files and earlier D0/D1/D2/D3 candidates are recoverable under history.
+ 
+ | Matter | Exact D4 candidate and limits | Owner answer |
+ |---|---|---|
+@@ -35,13 +35,13 @@
+ | D1-ADAPT-PI-RANGE3; active proposed; Derived assessment adaptation; Vitalis approval of final manifest pending. | WB8227-principal-inverse / p-decision | Cambridge 9709/12 Feb/March 2016 Q4(a), scheme PDF 4: M1/A1, 2 marks. | Adds an actual-target range/inverse-verification B1 and a neutral solve-or-explain case, fixed 3 marks instead of 2. | The syllabus principal-output property must be demonstrated; forward sine recovery alone is insufficient. The comparable source remains related/internal, not a whole-part same-type badge. |
+ | D1-ADAPT-RF-CLASSES; active proposed; Source-qualified adaptation; Vitalis approval of final manifest pending. | WB8227-trig-rform-equation / b-roots | NSSCAS 2022 P2 Q6(b)(i), report PDF 313 / printed 311: M1 F.T. then dependent M1, first/second quadrants. | Uses complete search in the learner's own shifted interval for wrap, negative and zero targets, preserving their R/alpha F.T.; includes single/no-root own sets and explicit endpoint rejection. The class table describes canonical instances only. | Admitted instances have different transformed root positions. The method evidence must follow the learner's own equation rather than the canonical class. |
+ | D1-INTERPRET-RF-HENCE; source interpretation; Source interpretation retained; whole plan approval pending. | WB8227-trig-rform-equation / b-roots | NSSCAS 2022 P2 Q6(b)(i), paper PDF 8 plain Hence; report PDF 313 has no SC row. | No departure: require the previous R-form result; no SC1 from another question is imported. | The actual source's hence restriction and absent SC are preserved. This is a source interpretation, not an owner exemption. |
+-| D1-TRAP-FT-BRIDGE; owner-accepted DB1 extension; proposed B2 criterion interpretation; OD-5 DB1 extension accepted; D4 b:B2 interpretation and final plan approval pending | WB8227-trapezium-sketch-estimate / d:DB1 (OD-5 settled); b:B2 (D4 proposed clarification) | 2023 P2 Q6 AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358 | Only DB1 is judged against the same own curve; 2023 B1 own-graph F.T. and its verbal/chord standard without compulsory overlay are retained. Separately, the D4 b:B2 clarification applies a wrong-working exclusion (www): correct factorisation retains b:B1, while a visibly wrong-law coincident multiplier loses b:B2. Missing derivation alone does not remove B2 for a correct visible product. | Do not penalise a wrong shape twice. The 2025 combined conclusion/reason F.T. supports the extension accepted by Vitalis in OD-5. The b:B2 clarification is a proposed marking interpretation; it is not attributed to OD-1 or to the OD-5 owner extension. |
++| D1-TRAP-FT-BRIDGE; owner-accepted DB1 extension; proposed B2 criterion interpretation; OD-5 DB1 extension accepted; D4 b:B2 interpretation and final plan approval pending | WB8227-trapezium-sketch-estimate / d:DB1 (OD-5 settled); b:B2 (D4 proposed clarification) | 2023 P2 Q6 AWARD05 (b:B2), AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358 | Only DB1 is judged against the same own curve; 2023 B1 own-graph F.T. and its verbal/chord standard without compulsory overlay are retained. Separately, the D4 b:B2 clarification applies a wrong-working exclusion (www): correct factorisation retains b:B1, while a visibly wrong-law coincident multiplier loses b:B2. Missing derivation alone does not remove B2 for a correct visible product. | Do not penalise a wrong shape twice. The 2025 combined conclusion/reason F.T. supports the extension accepted by Vitalis in OD-5. The b:B2 clarification is a proposed marking interpretation; it is not attributed to OD-1 or to the OD-5 owner extension. |
+ | D1-VEC-A1-VALID-WORK; proposed criterion interpretation; Final plan approval pending | WB8227-vector-geometry / a:A1 | 2025 P1 Q3 AWARD03, report PDF347 | Makes valid prescribed-resultant working a condition of A1, so a named wrong-resultant coincidence earns no accuracy credit. | Preserve genuine M credit while withholding accuracy unsupported by the required vector construction; the official A1 is not falsely quoted as carrying www. |
+ | D1-VEC-DEGREE-STEM; proposed stem-specific adaptation; Final plan approval pending | WB8227-vector-geometry / b:A1 | 2025 P1 Q3 AWARD07, report PDF347; the unit-free source accepts 2.03 radians | The new stem explicitly requires degrees, so a radian-only final answer does not earn the final degree-form A1; genuine working is retained. | The requested response form must match this degree-specific branch contract. |
+ | D2-MOTION-LIVE-CHECK; active proposed marking adaptation; OD-4 direction accepted; exact tariff, domain and rubric pending final manifest approval. | WB8227-motion-integration / interior-reversal:distance R1–R4 / displacement R5–R6 | Textbook-derived branch; calculus anchors: 2021 P1 Q4, report PDF232, and 2023 P2 Q9, report PDF339. OD-4 requires the live decision. | Proposed fixed 4+2 rubric over 144 sign-change and 24 no-change cases. R1 admits a complete constant-sign proof or a coherent root/interval check; R3 needs primitive and bounds, with own-root F.T.; R4 requires www. R5 signed legs must be primitive-based. | The owner accepted the design direction, not this exact tariff. Mark the actual decomposition decision; a false interior root with a coincident no-change total gets 3/4. |
+ | D1-MOTION-QUADRATIC; historical/superseded; Not separately requested for approval. | WB8227-motion-integration / historical version 0.1.1 reversal | D1 proposed 4+2 rubric. | Superseded by D2-MOTION-LIVE-CHECK and its version 0.1.4 domain/rubric. Saved historical versions retain their original bytes. | Keep the history traceable without using a fixed-outcome design as evidence of the current Analyse demand. |
+ | OD-6; binding owner decision: principle only; OD-6 principle settled; exact candidate application still needs confirmation and owner approval. | all nine recipes / all 27 parts; genuine question-data misread principle | Owner OD-6, review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md. NSSCAS 2025 report PDF345 item 4 and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties. | One mark from A/B for a genuine question-data misread with unchanged object and difficulty; all A/B follow through, M/DM judged as usual. Own-figure errors or changed object/difficulty receive ordinary canonical marking. Practice feedback names the misread. | Only this principle is attributed to Vitalis. The detailed unit, order, ledger, eligibility settlements and gross/net mechanics are separated into proposed MR03-OPS-D4. |
+-| MR03-OPS-D4; active proposed operational interpretation; Pending Vitalis approval of the exact manifest; reviewer-prescribed and planner-adopted, not owner-chosen mechanics. | all nine recipes / whole-question, per-datum proposed operational allocation | Reviewer REPAIR-D4-PROMPT sections 1–2 plus planner settlement; not an additional owner decision or published Namibian rule. | Once-only eligibility recorded at first use; ineligible data stay canonical in all later parts. For each eligible datum mark all gross evidence first, then deduct from its first earned A/B in question/criterion order, including a later part. No deduction only when no A/B is earned on that datum anywhere. Gross dependencies/www/DM remain satisfied after the net penalty. Eligible F.T. overrides not-F.T./c.a.o.; correct working, named errors and OD-1 remain. | Prevent a free misread when the first-use part earns no accuracy mark and prevent a penalty cascading through dependencies. Designed no-real outcomes are distinguished from destroying a canonical solution. Unit, ordering, eligibility details and ledger require exact-manifest approval. |
++| MR03-OPS-D4; active proposed operational interpretation; Pending Vitalis approval of the exact manifest; reviewer-prescribed and planner-adopted, not owner-chosen mechanics. | all nine recipes / whole-question, per-datum proposed operational allocation | Reviewer REPAIR-D4-PROMPT sections 1–2 plus planner settlement; not an additional owner decision or published Namibian rule. | Once-only eligibility recorded at first use; ineligible data stay canonical in all later parts. For each eligible datum mark all gross evidence first, then deduct from its first earned A/B in question/criterion order, including a later part. No deduction only when no A/B is earned on that datum anywhere. Gross dependencies/www/DM remain satisfied after the net penalty. Eligible F.T. overrides not-F.T./c.a.o.; correct working, named errors and OD-1 remain. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Prevent a free misread when the first-use part earns no accuracy mark and prevent a penalty cascading through dependencies. Designed no-real outcomes are distinguished from destroying a canonical solution. Unit, ordering, eligibility details and ledger require exact-manifest approval. |
+ | D1-MOD-OD1-LIST; withdrawn erroneous interpretation; No approval requested for the withdrawn rule. | WB8227-modulus-graph-recovery / a:B1–B3 | 2023 P2 Q2, report PDF331: correct values www, including a formula. | Withdrawn list-zero/formula-three distinction. Correct named values and correct formula entries each earn the same B1 www awards. | Apply the official exception consistently to the evidence, regardless of input form. |
+ 
+ The implicit show-that branch remains 4+2+3: no credit for copying a target, no F.T. into the supplied target. Mapped alternatives and invalid logarithm restrictions are part of the proposed marking interpretation. Bare-answer exceptions are qualification/type-specific.
+````
+
+</details>
+
+<details><summary>Diff 10: work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json
+@@ -118,7 +118,7 @@
+                 "WB8227-implicit-normal@0.1.4:gradient:gradient:G4",
+                 "WB8227-implicit-normal@0.1.4:gradient:gradient:G5"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "G1",
+@@ -219,7 +219,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -238,7 +238,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
++                "eligibility_notes": "For this standalone gradient branch, judge the printed curve/point consistency, finite gradient and preserved implicit/exponential chain demand. There is no supplied proof target or later part. Apply connected-question MR03 eligibility and the fixed gradient-only fixtures."
+               },
+               "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction."
+             }
+@@ -283,7 +283,7 @@
+               "demand_sets_equal": true,
+               "response_formats_equal": true,
+               "structure_check": "Native source and D1 branch both unsupplied-gradient task; no show-thatformula supplied in this branch",
+-              "status": "D1 proposed; short check pending"
++              "status": "D4 proposed; D4.1 diff-only check then Vitalis approval pending"
+             }
+           ]
+         },
+@@ -382,7 +382,7 @@
+                 "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+                 "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "S1",
+@@ -485,7 +485,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -564,7 +564,7 @@
+                 "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+                 "WB8227-implicit-normal@0.1.4:normal:gradient:H2"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "H1",
+@@ -616,7 +616,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -672,7 +672,7 @@
+                 "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+                 "WB8227-implicit-normal@0.1.4:normal:normal:N3"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "N1",
+@@ -740,7 +740,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1308,7 +1308,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:points:P3",
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:points:P4"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "P1",
+@@ -1389,7 +1389,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1439,7 +1439,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:nature:C1",
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:nature:C2"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "C1",
+@@ -1492,7 +1492,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1764,7 +1764,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "I1",
+@@ -1857,7 +1857,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1908,7 +1908,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "I4",
+@@ -1973,7 +1973,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -2380,7 +2380,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -2399,7 +2399,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction."
+               }
+             },
+             {
+@@ -2449,7 +2449,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -2468,7 +2468,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction."
+               },
+               "gross_dependency_rule": "S3 tests gross S1/S2 evidence before MR adjustment; eligible misreads override ordinary not-FT."
+             }
+@@ -3539,7 +3539,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -3558,7 +3558,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B."
+               }
+             },
+             {
+@@ -3608,7 +3608,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -3627,7 +3627,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B."
+               }
+             }
+           ],
+@@ -4133,7 +4133,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -4199,7 +4199,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+````
+
+</details>
+
+<details><summary>Diff 11: work/nam-8227-nsscas-2026/workbench/planning/calculus-source-reads.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/calculus-source-reads.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/calculus-source-reads.md
+@@ -62,11 +62,11 @@
+ | Question Banks/Namibian Examiner Reports/NSSCAS/2024/NSSCAS_Examiners_Report_2024.pdf | 335 / 333 | Printed p333 requires visible factorisation or quadratic-formula substitution; a calculator solving cubics does not excuse missing working. No marks for bare answers. |
+ | Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf | 12 / 12 | CompleteQ9contextandgivenAformula read clearlyafterlocalcontrast; diagramwasreadinfullpagerender. EqA=(sqrt3/2)x^2+5184/(sqrt3*x); sourcecclassifiesitsstationaryvalue. |
+ 
+-All five accepted implicit exam members and all four stationary exam members have native-page links in the JSON. Earlier textbook-family/union discovery remains intact. Current checks are `planning/d3/calculus-exemplar-oracle.json` (12 changed cases) and `planning/d3/calculus-domain-audit.json`. Fourteen new internal renders have separate PDF and PNG hashes; the 2025 P1 Q9 stem additionally needed a locally contrast-normalised detail. No source PDF changed, no runtime content created and no independent acceptance inferred.
++All five accepted implicit exam members and all four stationary exam members have native-page links in the JSON. Earlier textbook-family/union discovery remains intact. Current checks are `planning/d4/calculus-exemplar-oracle.json` (12 retained cases) and `planning/d4/calculus-domain-audit.json`. Fourteen new internal renders have separate PDF and PNG hashes; the 2025 P1 Q9 stem additionally needed a locally contrast-normalised detail. No source PDF changed, no runtime content created and no independent acceptance inferred.
+ 
+ ## D3 source and marking clarification — 24 November 2026
+ 
+-The current planner checks are `planning/d3/calculus-design-check.py` and its D3 domain, exemplar and misread receipts. D1/D2 records remain historical source-reading evidence. Syllabus PDF14/printed11 was viewed again: the optional quartic factor-theorem route also needs linear polynomial division and identification of its quotient/zero remainder (`8227:2020:M2:T1:O03:D01/D03`), explicitly prerequisites only. No direct polynomial-division coverage is added.
++The current planner checks are `planning/d4/calculus-design-check.py` and its D4 domain, exemplar and misread receipts. D1/D2 records remain historical source-reading evidence. Syllabus PDF14/printed11 was viewed again: the optional quartic factor-theorem route also needs linear polynomial division and identification of its quotient/zero remainder (`8227:2020:M2:T1:O03:D01/D03`), explicitly prerequisites only. No direct polynomial-division coverage is added.
+ 
+ OD-6 uses the shared D3 native-page read: NSSCAS report2025 PDF345/printed343 item4 (`CONVENTION:108`), plus comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties. The NSSCAS line only prohibits maximum credit after a genuine misread; the one-mark A/B deduction/follow-through convention is Cambridge’s, adopted by Vitalis. It is never described as a Namibian official tariff.
+````
+
+</details>
+
+<details><summary>Diff 12: work/nam-8227-nsscas-2026/workbench/planning/coverage-plan.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/coverage-plan.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/coverage-plan.json
+@@ -9866,10 +9866,10 @@
+     "analysis/demand-dispositions.json": "f48a068ebd587d418aac727e1e7c54efde1fa3571cb2c4583cd07f6a8074a26d",
+     "analysis/problem-patterns.json": "35e873b6195a496a90e1755c60923876f05e7f46797354de6ff94b14f3b1d195",
+     "analysis/question-analysis.json": "f926fd98e7b56c5801ff284d6213543eebdd839968d8b2877993a599d79c72e3",
+-    "planning/visual-design.json": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8",
+-    "planning/calculus-design.json": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177",
+-    "planning/trig-model-design.json": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af",
+-    "planning/d4/given-representation-register.json": "96aece90676c4d266abc01cd8b6c874b17710c36e3e9fe37beedfc7aeb367c55",
++    "planning/visual-design.json": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7",
++    "planning/calculus-design.json": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3",
++    "planning/trig-model-design.json": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd",
++    "planning/d4/given-representation-register.json": "d38f147c8475850f9d2101af8f6098751b9c189715d771c75b92b524b5772015",
+     "planning/d4/deck-compositions.json": "9a5466ef0d53f5106f58bd309815fa2f1f98c6faa0e05d1c486e4d892625821b",
+     "planning/history/d0-candidate/work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json": "8030840af4c76bad0c23dd1672caca25667c18de11bb212d7521b3a2e74064ff",
+     "review/opus-5-5-step-3/check-coverage.json": "fbd903006a6cca59d0a8754f24e5e65f471fe42d1156cdb12605c0877a6f8789",
+````
+
+</details>
+
+<details><summary>Diff 13: work/nam-8227-nsscas-2026/workbench/planning/d4/build-checkpoint.py</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/build-checkpoint.py
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/build-checkpoint.py
+@@ -15,13 +15,16 @@
+  dict(id='OD-6',recipe='all nine recipes',part='all 27 parts; genuine question-data misread principle',official_row='Owner OD-6, review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md. NSSCAS 2025 report PDF345 item 4 and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties.',departure='One mark from A/B for a genuine question-data misread with unchanged object and difficulty; all A/B follow through, M/DM judged as usual. Own-figure errors or changed object/difficulty receive ordinary canonical marking. Practice feedback names the misread.',rationale='Only this principle is attributed to Vitalis. The detailed unit, order, ledger, eligibility settlements and gross/net mechanics are separated into proposed MR03-OPS-D4.',status_class='binding owner decision: principle only',status='OD-6 principle settled; exact candidate application still needs confirmation and owner approval.'),
+  dict(id='MR03-OPS-D4',recipe='all nine recipes',part='whole-question, per-datum proposed operational allocation',official_row='Reviewer REPAIR-D4-PROMPT sections 1–2 plus planner settlement; not an additional owner decision or published Namibian rule.',departure='Once-only eligibility recorded at first use; ineligible data stay canonical in all later parts. For each eligible datum mark all gross evidence first, then deduct from its first earned A/B in question/criterion order, including a later part. No deduction only when no A/B is earned on that datum anywhere. Gross dependencies/www/DM remain satisfied after the net penalty. Eligible F.T. overrides not-F.T./c.a.o.; correct working, named errors and OD-1 remain.',rationale='Prevent a free misread when the first-use part earns no accuracy mark and prevent a penalty cascading through dependencies. Designed no-real outcomes are distinguished from destroying a canonical solution. Unit, ordering, eligibility details and ledger require exact-manifest approval.',status_class='active proposed operational interpretation',status='Pending Vitalis approval of the exact manifest; reviewer-prescribed and planner-adopted, not owner-chosen mechanics.'),
+  dict(id='D1-MOD-OD1-LIST',recipe='WB8227-modulus-graph-recovery',part='a:B1–B3',official_row='2023 P2 Q2, report PDF331: correct values www, including a formula.',departure='Withdrawn list-zero/formula-three distinction. Correct named values and correct formula entries each earn the same B1 www awards.',rationale='Apply the official exception consistently to the evidence, regardless of input form.',status_class='withdrawn erroneous interpretation',status='No approval requested for the withdrawn rule.')]
++clarifications=["An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes.","Eligibility is judged at first use for the connected question.","Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules."]
++for row in rows:
++ if row['id']=='MR03-OPS-D4':row['departure']+=' '+' '.join(clarifications)
+ assert len(rows)==len({x['id']for x in rows})==21
+ for row in rows:
+  for k,v in row.items():
+   if isinstance(v,str):row[k]=v.replace('Apply3','Apply 3').replace('all27','all 27')
+  assert row['status_class']and all(row.get(k)for k in ['departure','rationale','official_row'])
+-(P/'d4/deviation-register.json').write_text(json.dumps(dict(owner='Vitalis',status='D4: Claude changed-scope confirmation then exact-manifest approval pending',entries=rows),indent=2,ensure_ascii=False)+'\n')
+-lines=['# Vitalis’s D4 owner checkpoint — NSSCAS Mathematics 8227','','NIED December 2020 syllabus, Grade 12. Owner Vitalis; PLANNER Codex; 24 November 2026. **Pending: Claude confirms only D4 changes, then Vitalis approves the exact final manifest.** OD-1–6 bind. No Stage E before explicit approval.','','Read `../checks/plan-repair-d4-report.md`, `../PLAN.md`, the contract and subject rules, nine work orders and 42 worked examples. `plan-manifest.json` pins the candidate. All 1,708 D3 files and earlier D0/D1/D2 candidates are recoverable under history.','','| Matter | Exact D4 candidate and limits | Owner answer |','|---|---|---|','| Counts | 9 recipes, 14 choices, 42 paper cases, 27 assessed slots; no runtime instances | Pending Vitalis |','| Bloom | 13 Apply, 1 Analyse; both stationary branches Apply; mixed motion supports its own Analyse demand | Pending exact-rubric acceptance |','| Coverage | 38 unconditional facets plus 1 conditional-only; objectives 26/60 = 25 unconditional plus M1:T6:O03 conditional-only. All 138 demands / 67 groups / 8 supplementary entries accounted; 99 content demands outside pilot | Pending scope acceptance |','| Motion domain and freshness | Polynomial 137 tasks / 35 first-part contexts; exponential 56 / 14; mixed 168 = 144 sign-change + 24 no-change, 28 shapes, minority 1/7. Whole-fresh bounds 35/14/168; preserve model and version-key aliases | Pending exact domain |','| Trapezium | 30 mathematical presentations, 11 contexts, mathematical packing 3; 22 fully generated presentations and strict generated-fresh packing 2. Attributed original subtask remains outside generated freshness | Pending exact handling |','| Decks | 19 / 20 / 17 marks. The symbolic deck’s D0 14→19 is principal 2→3 plus implicit gradient-only 5→extended 9 | Pending compositions |','| Marking | OD-6 principle settled: MR−1 from A/B, A/B follow-through, normal M/DM and feedback. Proposed mechanics are a separate row. R1 valid constant-sign alternative; false-root no-change 3/4; primitive-based R5. See every scoped adaptation below | Pending exact application |','| Capabilities and gaps | APP8227-01–08 acceptance requirements; G09 given geometric diagrams remains untested in this pilot, with no capability hold | Pending acceptance requirements |','| Source policy | Textbook originals internal; NSSCAS/Cambridge originals attributed; held originals never anchors | Existing authority; exact candidate handling pending |','','## Adaptation, interpretation and decision register','','Every row has a status class. Final approval covers all active proposed adaptations and interpretations, regardless of status-class wording, only within their stated scope; settled owner decisions, source interpretations, and historical/withdrawn entries are distinguished. Structured equivalent: `d4/deviation-register.json`. The exact 4+2 motion tariff is proposed; the log domain was reviewer-prescribed, not owner-fixed.','','| ID / status class / state | Recipe and part | Official row or anchor | Departure or interpretation | Rationale |','|---|---|---|---|---|']
++(P/'d4/deviation-register.json').write_text(json.dumps(dict(owner='Vitalis',status='D4.1: Claude diff-only check then exact-manifest approval pending',entries=rows),indent=2,ensure_ascii=False)+'\n')
++lines=['# Vitalis’s D4.1 owner checkpoint — NSSCAS Mathematics 8227','','NIED December 2020 syllabus, Grade 12. Owner Vitalis; PLANNER Codex; 24 November 2026. **Pending: Claude checks only D4.1 changed lines, then Vitalis approves the exact final manifest.** OD-1–6 bind. No Stage E before explicit approval.','','Read `../checks/plan-errata-d4-1-report.md`, `../PLAN.md`, the contract and subject rules, nine work orders and 42 worked examples. `plan-manifest.json` pins the candidate. All 3,497 D4 files and earlier D0/D1/D2/D3 candidates are recoverable under history.','','| Matter | Exact D4 candidate and limits | Owner answer |','|---|---|---|','| Counts | 9 recipes, 14 choices, 42 paper cases, 27 assessed slots; no runtime instances | Pending Vitalis |','| Bloom | 13 Apply, 1 Analyse; both stationary branches Apply; mixed motion supports its own Analyse demand | Pending exact-rubric acceptance |','| Coverage | 38 unconditional facets plus 1 conditional-only; objectives 26/60 = 25 unconditional plus M1:T6:O03 conditional-only. All 138 demands / 67 groups / 8 supplementary entries accounted; 99 content demands outside pilot | Pending scope acceptance |','| Motion domain and freshness | Polynomial 137 tasks / 35 first-part contexts; exponential 56 / 14; mixed 168 = 144 sign-change + 24 no-change, 28 shapes, minority 1/7. Whole-fresh bounds 35/14/168; preserve model and version-key aliases | Pending exact domain |','| Trapezium | 30 mathematical presentations, 11 contexts, mathematical packing 3; 22 fully generated presentations and strict generated-fresh packing 2. Attributed original subtask remains outside generated freshness | Pending exact handling |','| Decks | 19 / 20 / 17 marks. The symbolic deck’s D0 14→19 is principal 2→3 plus implicit gradient-only 5→extended 9 | Pending compositions |','| Marking | OD-6 principle settled: MR−1 from A/B, A/B follow-through, normal M/DM and feedback. Proposed mechanics are a separate row. R1 valid constant-sign alternative; false-root no-change 3/4; primitive-based R5. See every scoped adaptation below | Pending exact application |','| Capabilities and gaps | APP8227-01–08 acceptance requirements; G09 given geometric diagrams remains untested in this pilot, with no capability hold | Pending acceptance requirements |','| Source policy | Textbook originals internal; NSSCAS/Cambridge originals attributed; held originals never anchors | Existing authority; exact candidate handling pending |','','## Adaptation, interpretation and decision register','','Every row has a status class. Final approval covers all active proposed adaptations and interpretations, regardless of status-class wording, only within their stated scope; settled owner decisions, source interpretations, and historical/withdrawn entries are distinguished. Structured equivalent: `d4/deviation-register.json`. The exact 4+2 motion tariff is proposed; the log domain was reviewer-prescribed, not owner-fixed.','','| ID / status class / state | Recipe and part | Official row or anchor | Departure or interpretation | Rationale |','|---|---|---|---|---|']
+ for row in rows:
+  cells=[row['id']+'; '+row['status_class']+'; '+row['status'],row['recipe']+' / '+row['part'],row['official_row'],row['departure'],row['rationale'].replace('Apply3','Apply 3').replace('all27','all 27')]
+  lines.append('| '+' | '.join(str(x).replace('|','\\|').replace('\n',' ')for x in cells)+' |')
+````
+
+</details>
+
+<details><summary>Diff 14: work/nam-8227-nsscas-2026/workbench/planning/d4/build-design-records.py</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/build-design-records.py
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/build-design-records.py
+@@ -42,7 +42,7 @@
+ counts=dict(objectives_with_unconditional_facets=len({x.rsplit(':D',1)[0]for x in unconditional}),objectives_with_conditional_only_facets=len(objs-{x.rsplit(':D',1)[0]for x in unconditional}),recipes=len(recipes),branch_choices=len(choices),paper_exemplar_cases=3*len(choices),assessed_part_slots=len(parts),unconditional_direct_demand_facets=len(unconditional),conditional_only_direct_demand_facets=len(conditional-unconditional),content_demands_with_direct_facets=len(unconditional|conditional),objectives_with_direct_facets=len(objs),content_demands_outside_direct_pilot=138-len(unconditional|conditional),whole_choice_bloom_counts={str(k):v for k,v in sorted(collections.Counter(c['bloom']for c in choices).items())},runtime_recipes=0,runtime_instances=0,approved_choices=0)
+ reg=dict(subject='NSSCAS Mathematics 8227',edition='NIED December 2020',owner='Vitalis',date='2026-11-24',status='D4 proposed; changed-scope confirmation then owner approval',authority='Derived only from the three authored design JSONs; work orders explain criteria and any named source deviations.',parts=parts,limits='Part labels remain proposed. Conditional objective/demand links apply only in the specified case. Source item mappings are unchanged.')
+ dump(P/'part-evidence-register.json',reg)
+-lines=['# Part evidence register — D4','','Each row cites only that part’s criterion IDs. Conditional links are additional and are not inherited by instances that omit the condition. All labels await Claude short check and Vitalis approval.','','| Part | Primary; other direct objectives | Direct demands; conditional | Prerequisites and role | Marks; Bloom; criteria; rationale |','|---|---|---|---|---|']
++lines=['# Part evidence register — D4','','Each row cites only that part’s criterion IDs. Conditional links are additional and are not inherited by instances that omit the condition. All labels await Claude D4.1 diff-only check and Vitalis approval.','','| Part | Primary; other direct objectives | Direct demands; conditional | Prerequisites and role | Marks; Bloom; criteria; rationale |','|---|---|---|---|---|']
+ for p in parts:
+  lines.append('| '+p['qualified_part_id']+' | '+p['primary_objective_id']+'; '+', '.join(p['other_directly_assessed_objective_ids'])+' | '+', '.join(p['directly_assessed_demand_ids'])+('; conditional '+json.dumps(p['conditional_directly_assessed_demand_ids'])if p['conditional_directly_assessed_demand_ids']else'')+' | '+json.dumps(p['prerequisite_demand_ids'],ensure_ascii=False)+' | '+str(p['marks'])+'; '+str(p['proposed_bloom_level'])+'; '+', '.join(p['criterion_ids'])+'; '+p['rationale'].replace('|','\\|')+' |')
+ lines += ['', 'Every part carries OD-6 misread_policy in the JSON; OD-6 principle binds; proposed MR03-OPS-D4 allocates one net deduction to the first earned A/B on the datum anywhere in question order, using gross dependencies. Eligibility persists across all parts. OD-1, correct working and named exclusions remain applicable.']
+````
+
+</details>
+
+<details><summary>Diff 15: work/nam-8227-nsscas-2026/workbench/planning/d4/coverage-check.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/coverage-check.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/coverage-check.json
+@@ -139,10 +139,10 @@
+     "analysis/demand-dispositions.json": "f48a068ebd587d418aac727e1e7c54efde1fa3571cb2c4583cd07f6a8074a26d",
+     "analysis/problem-patterns.json": "35e873b6195a496a90e1755c60923876f05e7f46797354de6ff94b14f3b1d195",
+     "analysis/question-analysis.json": "f926fd98e7b56c5801ff284d6213543eebdd839968d8b2877993a599d79c72e3",
+-    "planning/visual-design.json": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8",
+-    "planning/calculus-design.json": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177",
+-    "planning/trig-model-design.json": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af",
+-    "planning/d4/given-representation-register.json": "96aece90676c4d266abc01cd8b6c874b17710c36e3e9fe37beedfc7aeb367c55",
++    "planning/visual-design.json": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7",
++    "planning/calculus-design.json": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3",
++    "planning/trig-model-design.json": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd",
++    "planning/d4/given-representation-register.json": "d38f147c8475850f9d2101af8f6098751b9c189715d771c75b92b524b5772015",
+     "planning/d4/deck-compositions.json": "9a5466ef0d53f5106f58bd309815fa2f1f98c6faa0e05d1c486e4d892625821b",
+     "planning/history/d0-candidate/work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json": "8030840af4c76bad0c23dd1672caca25667c18de11bb212d7521b3a2e74064ff",
+     "review/opus-5-5-step-3/check-coverage.json": "fbd903006a6cca59d0a8754f24e5e65f471fe42d1156cdb12605c0877a6f8789",
+````
+
+</details>
+
+<details><summary>Diff 16: work/nam-8227-nsscas-2026/workbench/planning/d4/design-rebuild-proof.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/design-rebuild-proof.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/design-rebuild-proof.json
+@@ -19,7 +19,7 @@
+     "planning/d4/visual-rounding-fixtures.json": "849adb7a1ca38d800d656e795c8d6fa3a0e726bb23524ceb6add5abe1e81aebe",
+     "planning/d4/visual-exemplar-oracle.json": "225e8d61c31f666b630718b22891e354567d158fb5cbfcb34c81c8e97aa8a774",
+     "planning/d4/visual-rule-fixtures.json": "4a171fc25e98531e2a8f3c1860f456c2a206b13cd3b1d2ac089e4eafa3e65151",
+-    "planning/d4/visual-d4-independent-checks.json": "f917baf19281b216a49bb82032922e9e5ffa6576be039b47c9f4a35ccc87e2b5",
++    "planning/d4/visual-d4-independent-checks.json": "17c32952b0541746d3e1ec0188163c3e1156ce85b988b884259c88a6619dce6a",
+     "planning/d4/calculus-domain-audit.json": "f1e82f6838bd3510d92024779ef252d8c5258d57afd07781c24daaefede1c193",
+     "planning/d4/calculus-exemplar-oracle.json": "03c5a5550be2b617f7e86ff8b624c7530beb1a3bd4d101096738042b9301fcd2",
+     "planning/d4/calculus-misread-oracle.json": "b794948285a68b08256bcea18c2c087c57dfeb6aa2de1a04b62e6e416970eca4",
+@@ -29,19 +29,19 @@
+     "planning/d4/motion-marking-check.json": "24a6e7e10579fd31460d54cb729680ac8009b103c54d23a1aa04138491bfc8e3",
+     "planning/d4/misread-policy-check.json": "4902390af829b12a51f07f745f4e61c8a68e1cd2b21797d1881fcf1a6975541c",
+     "planning/d4/choice-capacities.json": "1683d3e8253f64f20fd665c63ff4e615626bf12a062c566cc94f88cec23146da",
+-    "planning/d4/given-representation-register.json": "96aece90676c4d266abc01cd8b6c874b17710c36e3e9fe37beedfc7aeb367c55",
++    "planning/d4/given-representation-register.json": "d38f147c8475850f9d2101af8f6098751b9c189715d771c75b92b524b5772015",
+     "planning/d4/given-representation-register.md": "755cdaecd6aed62ad6452124824cc03f0c3cfe16d96bf0822f04d6057867f911",
+-    "planning/d4/coverage-check.json": "fb42fef96cd28e34c59c7cf80ca8194d8c92ad85513bbf1daf47855ea3d15750",
+-    "planning/d4/deviation-register.json": "18c152dfbaa0bee55fa6945ef9b03b3f20a7e708261c334225d50ebcd843c475",
+-    "planning/pilot-design.json": "5f2c8799ad5c617d66004508ea686af3dcb1bc48d3886a4fe741ce4ab4b09457",
+-    "planning/part-evidence-register.json": "456aadeedb5c1e3121aaf437f7b5de1dcc89a32703906fcd258b8c67a5c9e4de",
+-    "planning/part-evidence-register.md": "dc761161ea35f88d34bb3ea6b08f0c13edf0559c95f7f7c02fd49b0ea39e7aa5",
+-    "planning/coverage-plan.json": "e8e43185232d232c2d908ad2283e1eb85cc824461c41a8bbf011450e08823a2c",
++    "planning/d4/coverage-check.json": "4d3db5bbf9779887dafa845fe90457eda32200e1f39dae4bb6876eb4de4080d1",
++    "planning/d4/deviation-register.json": "f93117d410f795a8abe42b711a12b2fcb3c2ba6572a449c17fe62bd5adf72717",
++    "planning/pilot-design.json": "eb8967724f6f4a6ff37129042580f4ed420191a0acaaf6ac05a1cc2ff6a7072b",
++    "planning/part-evidence-register.json": "3efa2bd32ea3ab635f6da7fc44621127b5dbbd8a201541babcb4c3cd41ea4a79",
++    "planning/part-evidence-register.md": "0def6577c7eef48eafdadedbcc3255ce825fc592dd05d629ec2c5a67d076300d",
++    "planning/coverage-plan.json": "899eca3ecbab89a82ccb0278515e0efa64aa0796ca2b2315ec7526053f819fa6",
+     "planning/coverage-plan.md": "a29fc9836b5201e2abb1c6ece1426dc21dc5d35a993ef7a9c9ebc6a88739da97",
+-    "planning/OWNER-CHECKPOINT.md": "37759051f40b3dd8b13cfe4b0752c960a0c6dae8818382fc876039c7b3bd6a7b",
++    "planning/OWNER-CHECKPOINT.md": "21073fd1b4648c0f41900f7876acf960e0002fd85c48dede78ea5d8c67fa8a6c",
+     "exemplars/WB8227-motion-integration.md": "f5f51c597146a2c88a61fd0b5514878a9c3ff9e6e1a2e25debc388e5d161feec",
+-    "checks/plan-repair-d4-trig-validation.json": "e77521b7eb100dea29afcc8ad6ba0e3cce7b4c338b89ac5503ba59d96a8528dc",
+-    "checks/plan-repair-d4-part-register-audit.json": "915793e4ce19e8855313c4db4a7e14521ffb3a5fc9de8013b6c3b5eac2f06ea4",
++    "checks/plan-repair-d4-trig-validation.json": "40d8eb954b0df4bb80933142e3062267657203e430114d28f866c2c3fe770784",
++    "checks/plan-repair-d4-part-register-audit.json": "c777eed5c5e485e071be0c12c4def6195f31c43d6f5d9c96b78ab87e2053c33f",
+     "checks/plan-repair-d4-math-syntax.json": "846559525290b710a74c9554c3f6968c5c987ef0434cc6c68156296d94fc029f"
+   },
+   "seeded_subprocess_rejections": 25,
+````
+
+</details>
+
+<details><summary>Diff 17: work/nam-8227-nsscas-2026/workbench/planning/d4/deviation-register.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/deviation-register.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/deviation-register.json
+@@ -1,6 +1,6 @@
+ {
+   "owner": "Vitalis",
+-  "status": "D4: Claude changed-scope confirmation then exact-manifest approval pending",
++  "status": "D4.1: Claude diff-only check then exact-manifest approval pending",
+   "entries": [
+     {
+       "id": "CALC-D1-DEV01",
+@@ -136,7 +136,7 @@
+       "id": "D1-TRAP-FT-BRIDGE",
+       "recipe": "WB8227-trapezium-sketch-estimate",
+       "part": "d:DB1 (OD-5 settled); b:B2 (D4 proposed clarification)",
+-      "official_row": "2023 P2 Q6 AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358",
++      "official_row": "2023 P2 Q6 AWARD05 (b:B2), AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358",
+       "departure": "Only DB1 is judged against the same own curve; 2023 B1 own-graph F.T. and its verbal/chord standard without compulsory overlay are retained. Separately, the D4 b:B2 clarification applies a wrong-working exclusion (www): correct factorisation retains b:B1, while a visibly wrong-law coincident multiplier loses b:B2. Missing derivation alone does not remove B2 for a correct visible product.",
+       "rationale": "Do not penalise a wrong shape twice. The 2025 combined conclusion/reason F.T. supports the extension accepted by Vitalis in OD-5. The b:B2 clarification is a proposed marking interpretation; it is not attributed to OD-1 or to the OD-5 owner extension.",
+       "status": "OD-5 DB1 extension accepted; D4 b:B2 interpretation and final plan approval pending",
+@@ -197,7 +197,7 @@
+       "recipe": "all nine recipes",
+       "part": "whole-question, per-datum proposed operational allocation",
+       "official_row": "Reviewer REPAIR-D4-PROMPT sections 1–2 plus planner settlement; not an additional owner decision or published Namibian rule.",
+-      "departure": "Once-only eligibility recorded at first use; ineligible data stay canonical in all later parts. For each eligible datum mark all gross evidence first, then deduct from its first earned A/B in question/criterion order, including a later part. No deduction only when no A/B is earned on that datum anywhere. Gross dependencies/www/DM remain satisfied after the net penalty. Eligible F.T. overrides not-F.T./c.a.o.; correct working, named errors and OD-1 remain.",
++      "departure": "Once-only eligibility recorded at first use; ineligible data stay canonical in all later parts. For each eligible datum mark all gross evidence first, then deduct from its first earned A/B in question/criterion order, including a later part. No deduction only when no A/B is earned on that datum anywhere. Gross dependencies/www/DM remain satisfied after the net penalty. Eligible F.T. overrides not-F.T./c.a.o.; correct working, named errors and OD-1 remain. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+       "rationale": "Prevent a free misread when the first-use part earns no accuracy mark and prevent a penalty cascading through dependencies. Designed no-real outcomes are distinguished from destroying a canonical solution. Unit, ordering, eligibility details and ledger require exact-manifest approval.",
+       "status_class": "active proposed operational interpretation",
+       "status": "Pending Vitalis approval of the exact manifest; reviewer-prescribed and planner-adopted, not owner-chosen mechanics."
+````
+
+</details>
+
+<details><summary>Diff 18: work/nam-8227-nsscas-2026/workbench/planning/d4/freeze-plan.py</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/freeze-plan.py
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/freeze-plan.py
+@@ -15,27 +15,27 @@
+  paths +=[W/n for n in ['PLAN.md','recipe-contract.md','subject-rules.md','app-change-handoff.md','capability-gaps.md','STATUS.md','HANDOVER.md','analysis/analysis-snapshot.json','checks/repair-r7-closeout.md','checks/r7-closeout/fresh-copy-proof.json','checks/r7-closeout/final-validation.json']]+[W.parent/'STATUS.md']
+  return {str(p.relative_to(ROOT)):p for p in paths if p.is_file()}
+ args=argparse.ArgumentParser();args.add_argument('--check',action='store_true');args=args.parse_args()
+-baseline=read(W/'checks/plan-repair-d4-baseline.json')
++baseline=read(W/'checks/plan-errata-d4-1-baseline.json')
+ verify(baseline['protected_analysis_tools_curriculum']);verify(baseline['review_hashes'])
+ protected_now={str(p.relative_to(ROOT))for folder in [W/'analysis',W/'tools',W.parent/'curriculum']for p in folder.rglob('*')if p.is_file()and '__pycache__'not in p.parts and p.name!='.DS_Store'}
+ assert protected_now==set(baseline['protected_analysis_tools_curriculum']),('analysis/tool/curriculum inventory changed',protected_now^set(baseline['protected_analysis_tools_curriculum']))
+ a=read(W/'analysis/analysis-snapshot.json')
+ for k in ['files','source_files','review_files']:verify(a[k])
+ recovery={}
+-for n in ['d0','d1','d2','d3']:
++for n in ['d0','d1','d2','d3','d4']:
+  mp=P/f'history/plan-manifest-{n}.json';arc=P/f'history/{n}-candidate';old=read(mp);verify(old['files'],arc)
+  recovery[n+'_recovery']=dict(manifest_path=str(mp.relative_to(ROOT)),manifest_sha256=sha(mp),candidate_path=str(arc.relative_to(ROOT)),verified_files=len(old['files']))
+-assert recovery['d3_recovery']['manifest_sha256']==baseline['manifest_d3_sha256']
++assert recovery['d4_recovery']['manifest_sha256']==baseline['manifest_d4_sha256']
+ if args.check:
+  d=read(TARGET);assert d['schema']=='8227-stage-d-design-manifest-v0.1.4'
+  for k in ['files','source_files','review_files']:verify(d[k])
+  assert set(livepaths())==set(d['files']),('uncovered or stale live Stage-D path',set(livepaths())^set(d['files']))
+  assert digest(d['files'])==d['content_digest']
+  assert d['analysis_snapshot_sha256']==sha(W/'analysis/analysis-snapshot.json')
+- print(json.dumps(dict(status='pass',files=len(d['files']),sources=len(d['source_files']),reviews=len(d['review_files']),live_plan_checks=sum('/checks/plan-'in x for x in d['files']if '/history/'not in x),d3_recovered=1708,manifest_sha256=sha(TARGET)),indent=2));raise SystemExit
++ print(json.dumps(dict(status='pass',files=len(d['files']),sources=len(d['source_files']),reviews=len(d['review_files']),live_plan_checks=sum('/checks/plan-'in x for x in d['files']if '/history/'not in x),d4_recovered=3497,manifest_sha256=sha(TARGET)),indent=2));raise SystemExit
+ preservation=dict(status='pass',analysis_snapshot_sha256=sha(W/'analysis/analysis-snapshot.json'),analysis_frozen_files=len(a['files']),protected_sources=len(a['source_files']),protected_analysis_tools_curriculum=len(baseline['protected_analysis_tools_curriculum']),unchanged_review_files=len(baseline['review_hashes']),analysis_inputs_or_tools_changed=False,source_PDFs_changed=False,all_live_plan_checks_pinned=True,recovery=recovery,scope='Exact D4 start hashes and accepted whole-workspace analysis freeze checked. D4 writes only Stage-D design/check/status namespaces. Existing R7 author+two-fresh-copy/76-negative evidence is preserved, not rerun or re-labelled as new D4 execution.')
+-dump(W/'checks/plan-repair-d4-preservation.json',preservation)
++dump(W/'checks/plan-errata-d4-1-preservation.json',preservation)
+ files={rel:sha(p)for rel,p in sorted(livepaths().items())}
+ counts=read(P/'pilot-design.json')['counts'];assert counts['whole_choice_bloom_counts']=={'3':13,'4':1}
+-d=dict(schema='8227-stage-d-design-manifest-v0.1.4',subject='NSSCAS Mathematics 8227',syllabus_edition='NIED December 2020',owner='Vitalis',date='2026-11-24',role='PLANNER',planner='Codex with three parallel same-vendor assistants',status='D4 author repair complete; Claude changed-scope confirmation then Vitalis exact-manifest approval pending',counts=counts,files=files,source_files=a['source_files'],review_files=baseline['review_hashes'],**recovery,analysis_snapshot_sha256=sha(W/'analysis/analysis-snapshot.json'),analysis_preservation=preservation,owner_checkpoint='OD-1–6 principles bind; MR03-OPS-D4 operations and exact counts/gaps/capabilities/exemplars/adaptations pending Vitalis approval after Claude D4 confirmation',independence='Separate-formula/CAS/quadrature and parallel-assistant checks are author evidence, not cross-vendor or owner acceptance',git_head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),not_created=['Runtime recipes/items','Runtime question generators','Provider install','Imports','Learner assignments','Commit','Push'],next_action='Claude planning/CLAUDE-D4-CONFIRM.md, then Vitalis exact-manifest approval',content_digest=digest(files))
+-dump(TARGET,d);print(json.dumps(dict(status='frozen',files=len(files),d3_recovered=1708,manifest_sha256=sha(TARGET)),indent=2))
++d=dict(schema='8227-stage-d-design-manifest-v0.1.4',subject='NSSCAS Mathematics 8227',syllabus_edition='NIED December 2020',owner='Vitalis',date='2026-11-24',role='PLANNER',planner='Codex with three parallel same-vendor assistants',status='D4.1 text errata complete; Claude diff-only check then Vitalis exact-manifest approval pending',counts=counts,files=files,source_files=a['source_files'],review_files=baseline['review_hashes'],**recovery,analysis_snapshot_sha256=sha(W/'analysis/analysis-snapshot.json'),analysis_preservation=preservation,owner_checkpoint='OD-1–6 principles bind; MR03-OPS-D4 operations and exact counts/gaps/capabilities/exemplars/adaptations pending Vitalis approval after Claude D4 confirmation',independence='Separate-formula/CAS/quadrature and parallel-assistant checks are author evidence, not cross-vendor or owner acceptance',git_head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),not_created=['Runtime recipes/items','Runtime question generators','Provider install','Imports','Learner assignments','Commit','Push'],next_action='Claude planning/CLAUDE-D4-1-CHECK.md, then Vitalis exact-manifest approval',content_digest=digest(files))
++dump(TARGET,d);print(json.dumps(dict(status='frozen',files=len(files),d4_recovered=3497,manifest_sha256=sha(TARGET)),indent=2))
+````
+
+</details>
+
+<details><summary>Diff 19: work/nam-8227-nsscas-2026/workbench/planning/d4/given-representation-register.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/given-representation-register.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/given-representation-register.json
+@@ -32,7 +32,7 @@
+           "quote": "Must read: vertex, both zeros, $y$-intercept, $x/y$ directions, V/inverted-V orientation and the fixed plus-sign convention inside the modulus. Fixed: Cartesian axes, one vertex, straight arms and explicit coordinate labels. Variable: all point values, window, slopes and label offsets. Relations: slopes $-a$ left/$a$ right; symmetry $x=-b$; every point satisfies the same expression. Generate question/solution/reference assets from one tuple. Equal labelled grid units are used in the paper illustrations; no screen measurement is asked. No fixed source crop accompanies incompatible new values."
+         }
+       ],
+-      "work_order_sha256": "7871dd762bf045b78ce14c855efef07674dd176834bc6a3743e8da92032741b4",
++      "work_order_sha256": "4bf6926e51c71b57439c73cfa13198f05423130970551a59706981b8b5155f02",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Labelled function graph with equivalent accessible coordinate text; not a given spatial/geometric diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -63,7 +63,7 @@
+           "quote": "(a,b) are text: must read log base$e$, bounds, shift, interval count, expanded quadratic, factor$k$ and hence/precision instruction. (c) has blank axes only before submission; no supplied answer graph. `response_format`: a/b numeric, c sketch, d explanation. Solution asset fixed: one increasing log branch; variable$h$, window/labels, nodes/chords from(a). Relations: domain$x>h$, asymptote$x=h$, intercept$(h+1,0)$, below-axis branch for$h<x<h+1$, no$y$-intercept; positive decreasing gradient while$y$continues growing without a finite horizontal asymptote. Shading, if used, is exactly between curve and$x$-axis for$h+1\\le x\\le h+1+L$."
+         }
+       ],
+-      "work_order_sha256": "a00af46e0d95e03bffd358b6b25634f5dc229394318a4958a82a64e2e2b9e8ff",
++      "work_order_sha256": "b04fc841b4d834e364f5e60fd207e01d16d5bbe69d6f997bf2ae530b3af981b7",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "No given ordinate table: learners calculate ordinates from the function and bounds. Work-order planning/marking tables are internal, not question givens.",
+       "learner_produced_response_is_not_given": true,
+@@ -94,7 +94,7 @@
+           "quote": "(a,b) are text: must read log base$e$, bounds, shift, interval count, expanded quadratic, factor$k$ and hence/precision instruction. (c) has blank axes only before submission; no supplied answer graph. `response_format`: a/b numeric, c sketch, d explanation. Solution asset fixed: one increasing log branch; variable$h$, window/labels, nodes/chords from(a). Relations: domain$x>h$, asymptote$x=h$, intercept$(h+1,0)$, below-axis branch for$h<x<h+1$, no$y$-intercept; positive decreasing gradient while$y$continues growing without a finite horizontal asymptote. Shading, if used, is exactly between curve and$x$-axis for$h+1\\le x\\le h+1+L$."
+         }
+       ],
+-      "work_order_sha256": "a00af46e0d95e03bffd358b6b25634f5dc229394318a4958a82a64e2e2b9e8ff",
++      "work_order_sha256": "b04fc841b4d834e364f5e60fd207e01d16d5bbe69d6f997bf2ae530b3af981b7",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Uses learner-produced estimate from(a); the previous response is not a supplied graph/table.",
+       "learner_produced_response_is_not_given": true,
+@@ -123,7 +123,7 @@
+           "quote": "(a,b) are text: must read log base$e$, bounds, shift, interval count, expanded quadratic, factor$k$ and hence/precision instruction. (c) has blank axes only before submission; no supplied answer graph. `response_format`: a/b numeric, c sketch, d explanation. Solution asset fixed: one increasing log branch; variable$h$, window/labels, nodes/chords from(a). Relations: domain$x>h$, asymptote$x=h$, intercept$(h+1,0)$, below-axis branch for$h<x<h+1$, no$y$-intercept; positive decreasing gradient while$y$continues growing without a finite horizontal asymptote. Shading, if used, is exactly between curve and$x$-axis for$h+1\\le x\\le h+1+L$."
+         }
+       ],
+-      "work_order_sha256": "a00af46e0d95e03bffd358b6b25634f5dc229394318a4958a82a64e2e2b9e8ff",
++      "work_order_sha256": "b04fc841b4d834e364f5e60fd207e01d16d5bbe69d6f997bf2ae530b3af981b7",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Blank axes are a response frame only, not an informative given graph; the graph is produced by the learner.",
+       "learner_produced_response_is_not_given": true,
+@@ -153,7 +153,7 @@
+           "quote": "(a,b) are text: must read log base$e$, bounds, shift, interval count, expanded quadratic, factor$k$ and hence/precision instruction. (c) has blank axes only before submission; no supplied answer graph. `response_format`: a/b numeric, c sketch, d explanation. Solution asset fixed: one increasing log branch; variable$h$, window/labels, nodes/chords from(a). Relations: domain$x>h$, asymptote$x=h$, intercept$(h+1,0)$, below-axis branch for$h<x<h+1$, no$y$-intercept; positive decreasing gradient while$y$continues growing without a finite horizontal asymptote. Shading, if used, is exactly between curve and$x$-axis for$h+1\\le x\\le h+1+L$."
+         }
+       ],
+-      "work_order_sha256": "a00af46e0d95e03bffd358b6b25634f5dc229394318a4958a82a64e2e2b9e8ff",
++      "work_order_sha256": "b04fc841b4d834e364f5e60fd207e01d16d5bbe69d6f997bf2ae530b3af981b7",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The learner-produced sketch from(c) is a response dependency, not a supplied question diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -190,7 +190,7 @@
+           "quote": "(a) Find$p$ such that $p\\overrightarrow{OA}-\\overrightarrow{OB}$ is perpendicular to$OC$. If not written exactly, give$p$ to **3 significant figures**."
+         }
+       ],
+-      "work_order_sha256": "fe5a1e46e6d098cf58b5aa44bd9fa1f21e704a487c97ad78f4d8353b7e62d659",
++      "work_order_sha256": "7d94777faee0291078db63a9d6abe7091442e97f2575958f761200f2d071bdd9",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Three labelled column vectors are symbolic text, not spatial givens read from a diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -221,7 +221,7 @@
+           "quote": "(b) Use a scalar product to find angle$AOB$ **in degrees, to1 decimal place unless exact**. A pre-labelled degree answer field supplies the unit; exact$60$ or$90$ is accepted without a trailing `.0`."
+         }
+       ],
+-      "work_order_sha256": "fe5a1e46e6d098cf58b5aa44bd9fa1f21e704a487c97ad78f4d8353b7e62d659",
++      "work_order_sha256": "7d94777faee0291078db63a9d6abe7091442e97f2575958f761200f2d071bdd9",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Column vectors remain symbolic text. Part(b) does not use part(a)’s answer.",
+       "learner_produced_response_is_not_given": true,
+@@ -256,7 +256,7 @@
+           "quote": "Gradient-only: 'For the curve [equation], find its gradient at P, showing all working. Give an exact value or a correctly rounded3sf decimal.' One part,5 marks. Differentiate to"
+         }
+       ],
+-      "work_order_sha256": "8201465d42efdda58f3e033bb61de08818d4333a9948821be7ff51c2acb0f1d0",
++      "work_order_sha256": "7570c7940c6a5c5f21622b4179acedd565126d0bdf251da77d005a1bdf866d42",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "No derivative target is supplied in this branch; no given diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -291,7 +291,7 @@
+           "quote": "Extended normal branch: (show-derivative) 'Show that $y'=-ake^{kx}y/(ae^{kx}+2y)$, showing all necessary working' [4]; (gradient) '**Hence**, using your derivative or the displayed formula, find the gradient at P; exact or3sf' [2]; (normal) 'Find the **exact** equation of the normal at P, showing the perpendicular-gradient and line-construction steps' [3]. Total **4+2+3=9**, not4+5+3: the derivative awards are not repeated in the gradient part."
+         }
+       ],
+-      "work_order_sha256": "8201465d42efdda58f3e033bb61de08818d4333a9948821be7ff51c2acb0f1d0",
++      "work_order_sha256": "7570c7940c6a5c5f21622b4179acedd565126d0bdf251da77d005a1bdf866d42",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The supplied symbolic proof target is a given expression; it is not a diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -321,7 +321,7 @@
+           "quote": "Extended normal branch: (show-derivative) 'Show that $y'=-ake^{kx}y/(ae^{kx}+2y)$, showing all necessary working' [4]; (gradient) '**Hence**, using your derivative or the displayed formula, find the gradient at P; exact or3sf' [2]; (normal) 'Find the **exact** equation of the normal at P, showing the perpendicular-gradient and line-construction steps' [3]. Total **4+2+3=9**, not4+5+3: the derivative awards are not repeated in the gradient part."
+         }
+       ],
+-      "work_order_sha256": "8201465d42efdda58f3e033bb61de08818d4333a9948821be7ff51c2acb0f1d0",
++      "work_order_sha256": "7570c7940c6a5c5f21622b4179acedd565126d0bdf251da77d005a1bdf866d42",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "An earlier derivation is learner work; the displayed derivative and point are supplied text.",
+       "learner_produced_response_is_not_given": true,
+@@ -351,7 +351,7 @@
+           "quote": "Extended normal branch: (show-derivative) 'Show that $y'=-ake^{kx}y/(ae^{kx}+2y)$, showing all necessary working' [4]; (gradient) '**Hence**, using your derivative or the displayed formula, find the gradient at P; exact or3sf' [2]; (normal) 'Find the **exact** equation of the normal at P, showing the perpendicular-gradient and line-construction steps' [3]. Total **4+2+3=9**, not4+5+3: the derivative awards are not repeated in the gradient part."
+         }
+       ],
+-      "work_order_sha256": "8201465d42efdda58f3e033bb61de08818d4333a9948821be7ff51c2acb0f1d0",
++      "work_order_sha256": "7570c7940c6a5c5f21622b4179acedd565126d0bdf251da77d005a1bdf866d42",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Previous gradient is a response dependency; no supplied geometric diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -381,7 +381,7 @@
+           "quote": "Two-extrema, unchanged: $f(x)=a[(x-h)^3-3r^2(x-h)]+c$, supplied **expanded**. $a\\in\\{-2,-1,1,2\\}$, $h\\in\\{-2,-1,0,1,2\\}$, $r\\in\\{1,2,3\\}$, $c\\in\\{-4,-3,-2,-1,0,1,2,3,4\\}$. 540 distinct polynomials =60(a,h,r)shapes ×9vertical shifts;270 horizontal mirror pairs. Ask exact coordinates of both stationary points [4], then classify both with sufficient working [2]. All are genuine extrema; no nonstationary inflexion claim follows."
+         }
+       ],
+-      "work_order_sha256": "0486c7126c2eaf2dafaa6661c47ab2e509687dee5b3bfc78146c57a51e93b6b5",
++      "work_order_sha256": "0d933a68785aa227e7c40326b9b77e77096b29f7dd22bf06782b44d8929ce52b",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The shifted/factorised author parameterisation is not supplied as an answer cue.",
+       "learner_produced_response_is_not_given": true,
+@@ -410,7 +410,7 @@
+           "quote": "Two-extrema, unchanged: $f(x)=a[(x-h)^3-3r^2(x-h)]+c$, supplied **expanded**. $a\\in\\{-2,-1,1,2\\}$, $h\\in\\{-2,-1,0,1,2\\}$, $r\\in\\{1,2,3\\}$, $c\\in\\{-4,-3,-2,-1,0,1,2,3,4\\}$. 540 distinct polynomials =60(a,h,r)shapes ×9vertical shifts;270 horizontal mirror pairs. Ask exact coordinates of both stationary points [4], then classify both with sufficient working [2]. All are genuine extrema; no nonstationary inflexion claim follows."
+         }
+       ],
+-      "work_order_sha256": "0486c7126c2eaf2dafaa6661c47ab2e509687dee5b3bfc78146c57a51e93b6b5",
++      "work_order_sha256": "0d933a68785aa227e7c40326b9b77e77096b29f7dd22bf06782b44d8929ce52b",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Earlier point calculations are learner work; a local sign chart/sketch is permitted method evidence, not a given graph.",
+       "learner_produced_response_is_not_given": true,
+@@ -445,7 +445,7 @@
+           "quote": "The flat stem is uncued: 'Find the exact coordinates of every stationary point and classify it as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types.' [point3, classification3]. Do **not** ask whether the second derivative test settles the case or expose n/shape-class labels before the attempt. There are128 inflexions,64 minima and64 maxima. Quartic is an in-scope power, not an unannounced new recipe."
+         }
+       ],
+-      "work_order_sha256": "0486c7126c2eaf2dafaa6661c47ab2e509687dee5b3bfc78146c57a51e93b6b5",
++      "work_order_sha256": "0d933a68785aa227e7c40326b9b77e77096b29f7dd22bf06782b44d8929ce52b",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "No shifted/factorised form or shape-class label is supplied.",
+       "learner_produced_response_is_not_given": true,
+@@ -475,7 +475,7 @@
+           "quote": "The flat stem is uncued: 'Find the exact coordinates of every stationary point and classify it as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types.' [point3, classification3]. Do **not** ask whether the second derivative test settles the case or expose n/shape-class labels before the attempt. There are128 inflexions,64 minima and64 maxima. Quartic is an in-scope power, not an unannounced new recipe."
+         }
+       ],
+-      "work_order_sha256": "0486c7126c2eaf2dafaa6661c47ab2e509687dee5b3bfc78146c57a51e93b6b5",
++      "work_order_sha256": "0d933a68785aa227e7c40326b9b77e77096b29f7dd22bf06782b44d8929ce52b",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The learner may produce a sign chart or local sketch; no answer graph is given.",
+       "learner_produced_response_is_not_given": true,
+@@ -506,7 +506,7 @@
+           "quote": "**Polynomial chain, 6 marks, Apply 3.** Supply acceleration $a(t)=2At+B$ in m/s², initial velocity u in m/s and origin s(0)=0. Ask (velocity) “Find v in terms of t, showing your integration and use of the initial condition”, then (distance) “Find the distance travelled in the first T seconds, in metres, showing your working. Give an exact answer or a value correct to 3 significant figures.” A∈{1,2,3}, B∈{0,1,2}, u∈{1,2,3,4}, T∈{1,2,3,4}; exclude all (3,1,2,T), whose velocity part is the official original, and the differentiate-instead coincidences (3,0,2,2), (3,1,1,2), (3,2,4,1). **137 parameter tasks**, **35 velocity contexts**, **30 amplitude-normalised model shapes**. Canonical $v=At^2+Bt+u>0$; $d=AT^3/3+BT^2/2+uT$."
+         }
+       ],
+-      "work_order_sha256": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
++      "work_order_sha256": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "All givens are prose/equations; optional post-submit solution graphics are not question givens.",
+       "learner_produced_response_is_not_given": true,
+@@ -537,7 +537,7 @@
+           "quote": "**Polynomial chain, 6 marks, Apply 3.** Supply acceleration $a(t)=2At+B$ in m/s², initial velocity u in m/s and origin s(0)=0. Ask (velocity) “Find v in terms of t, showing your integration and use of the initial condition”, then (distance) “Find the distance travelled in the first T seconds, in metres, showing your working. Give an exact answer or a value correct to 3 significant figures.” A∈{1,2,3}, B∈{0,1,2}, u∈{1,2,3,4}, T∈{1,2,3,4}; exclude all (3,1,2,T), whose velocity part is the official original, and the differentiate-instead coincidences (3,0,2,2), (3,1,1,2), (3,2,4,1). **137 parameter tasks**, **35 velocity contexts**, **30 amplitude-normalised model shapes**. Canonical $v=At^2+Bt+u>0$; $d=AT^3/3+BT^2/2+uT$."
+         }
+       ],
+-      "work_order_sha256": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
++      "work_order_sha256": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The velocity found earlier is learner work, with limited linked method credit; no graph/table is supplied.",
+       "learner_produced_response_is_not_given": true,
+@@ -567,7 +567,7 @@
+           "quote": "**Exponential positive, 5 marks, Apply 3.** Supply $v(t)=Ve^{-kt}$, in m/s, and the time interval. Ask (acceleration) for a(t), showing differentiation, then (distance) for travelled length in the first T seconds, in metres, showing integration and both boundary conditions; exact or 3 s.f. V∈{6,12,18,24,30}, k∈{1/4,1/2,1/3}, T∈{1,2,3,4}; exclude all (30,1/2,T), whose acceleration part is the official original. **56 parameter tasks**, **14 acceleration contexts**, **3 amplitude-normalised exponential shapes**, **12 shape/interval tasks**. No k=1, so the chain factor cannot disappear. Canonical $a=-kVe^{-kt}$; $d=(V/k)(1-e^{-kT})$. Parts share a stem, but neither requires the other's answer. No-repeat keys (V,k) and (V,k,T); wholly fresh multipart upper bound 14."
+         }
+       ],
+-      "work_order_sha256": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
++      "work_order_sha256": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The function is supplied as an equation; no diagram is required.",
+       "learner_produced_response_is_not_given": true,
+@@ -598,7 +598,7 @@
+           "quote": "**Exponential positive, 5 marks, Apply 3.** Supply $v(t)=Ve^{-kt}$, in m/s, and the time interval. Ask (acceleration) for a(t), showing differentiation, then (distance) for travelled length in the first T seconds, in metres, showing integration and both boundary conditions; exact or 3 s.f. V∈{6,12,18,24,30}, k∈{1/4,1/2,1/3}, T∈{1,2,3,4}; exclude all (30,1/2,T), whose acceleration part is the official original. **56 parameter tasks**, **14 acceleration contexts**, **3 amplitude-normalised exponential shapes**, **12 shape/interval tasks**. No k=1, so the chain factor cannot disappear. Canonical $a=-kVe^{-kt}$; $d=(V/k)(1-e^{-kT})$. Parts share a stem, but neither requires the other's answer. No-repeat keys (V,k) and (V,k,T); wholly fresh multipart upper bound 14."
+         }
+       ],
+-      "work_order_sha256": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
++      "work_order_sha256": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Shares the given velocity, not the answer to the acceleration part.",
+       "learner_produced_response_is_not_given": true,
+@@ -626,7 +626,7 @@
+         {
+           "work_order_path": "work-orders/WB8227-motion-integration.md",
+           "line": 25,
+-          "quote": "**Sign-aware distance, 6 marks, Analyse 4.** The internal branch ID `interior-reversal` is historical; the public title and stem are outcome-neutral. Version 0.1.4 diversifies the four no-change contexts; old 0.1.1 snapshots must not be reinterpreted. Supply expanded quadratic velocity $v(t)=k(t-r)(t+c)$ on $0\\le t\\le T$, in m/s, with positive direction stated. Ask total distance first, with justified working, then signed displacement. Neither root, direction-change outcome nor rest-time cue is supplied. Both outcomes have the same 4+2 tariff."
++          "quote": "**Sign-aware distance, 6 marks, Analyse 4.** The internal branch ID `interior-reversal` is historical; the public title and stem are outcome-neutral. Version 0.1.4 diversifies the four no-change contexts; old 0.1.1–0.1.3 snapshots retain their saved meanings and must not be reinterpreted. Supply expanded quadratic velocity $v(t)=k(t-r)(t+c)$ on $0\\le t\\le T$, in m/s, with positive direction stated. Ask total distance first, with justified working, then signed displacement. Neither root, direction-change outcome nor rest-time cue is supplied. Both outcomes have the same 4+2 tariff."
+         },
+         {
+           "work_order_path": "work-orders/WB8227-motion-integration.md",
+@@ -634,7 +634,7 @@
+           "quote": "The public choice title is **Distance and displacement from a quadratic velocity**. Both outcomes share $T\\in\\{3,4,5\\}$ and $|k|\\in\\{1,2,3\\}$. Supply only the expanded coefficients $a=k$, $b=k(c-r)$, $d=-krc$ and interval end T. `planning/d4/motion-separation.json` checks every single and pair of these four visible parameters and their coefficient magnitudes: each has an opposite-outcome witness, so none perfectly separates the classes. This does not disallow legitimate endpoint/sign/concavity reasoning. Hidden r and c are not supplied parameters."
+         }
+       ],
+-      "work_order_sha256": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
++      "work_order_sha256": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Hidden r/c roots, case outcome and optional signed-area solution figures are not supplied.",
+       "learner_produced_response_is_not_given": true,
+@@ -662,10 +662,10 @@
+         {
+           "work_order_path": "work-orders/WB8227-motion-integration.md",
+           "line": 25,
+-          "quote": "**Sign-aware distance, 6 marks, Analyse 4.** The internal branch ID `interior-reversal` is historical; the public title and stem are outcome-neutral. Version 0.1.4 diversifies the four no-change contexts; old 0.1.1 snapshots must not be reinterpreted. Supply expanded quadratic velocity $v(t)=k(t-r)(t+c)$ on $0\\le t\\le T$, in m/s, with positive direction stated. Ask total distance first, with justified working, then signed displacement. Neither root, direction-change outcome nor rest-time cue is supplied. Both outcomes have the same 4+2 tariff."
+-        }
+-      ],
+-      "work_order_sha256": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
++          "quote": "**Sign-aware distance, 6 marks, Analyse 4.** The internal branch ID `interior-reversal` is historical; the public title and stem are outcome-neutral. Version 0.1.4 diversifies the four no-change contexts; old 0.1.1–0.1.3 snapshots retain their saved meanings and must not be reinterpreted. Supply expanded quadratic velocity $v(t)=k(t-r)(t+c)$ on $0\\le t\\le T$, in m/s, with positive direction stated. Ask total distance first, with justified working, then signed displacement. Neither root, direction-change outcome nor rest-time cue is supplied. Both outcomes have the same 4+2 tariff."
++        }
++      ],
++      "work_order_sha256": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "A learner may reuse a primitive or signed legs from(a); these are learner responses, not supplied visual data.",
+       "learner_produced_response_is_not_given": true,
+@@ -697,7 +697,7 @@
+           "quote": "Counts:112 grid tuples→102 feasible→90 without endpoint roots→78 primitive D0 tuples→70 after eight rounding exclusions→58 after twelve inverse-ratio collision exclusions. The two new exclusion sets do not overlap. All 58 are finite, real, two-distinct-root tasks strictly inside $0^\\circ<\\theta<360^\\circ$; the diagnostic script checks the wrong ratio numerically, not merely the inequality."
+         }
+       ],
+-      "work_order_sha256": "87bdbf0e5590c79253551af7b79d17e8dc8432821f4db5c29c5cde1e532791af",
++      "work_order_sha256": "c16100ed1616c3e92ce45c0e6076d81708b2f224809eaf3f8de8c88c003eb4ad",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "An equation is supplied; no given graph or diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -728,7 +728,7 @@
+           "quote": "Counts:112 grid tuples→102 feasible→90 without endpoint roots→78 primitive D0 tuples→70 after eight rounding exclusions→58 after twelve inverse-ratio collision exclusions. The two new exclusion sets do not overlap. All 58 are finite, real, two-distinct-root tasks strictly inside $0^\\circ<\\theta<360^\\circ$; the diagnostic script checks the wrong ratio numerically, not merely the inequality."
+         }
+       ],
+-      "work_order_sha256": "87bdbf0e5590c79253551af7b79d17e8dc8432821f4db5c29c5cde1e532791af",
++      "work_order_sha256": "c16100ed1616c3e92ce45c0e6076d81708b2f224809eaf3f8de8c88c003eb4ad",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Earlier R-form is learner work; the canonical class table in the work order is an internal memo, not a supplied question table.",
+       "learner_produced_response_is_not_given": true,
+@@ -759,7 +759,7 @@
+           "quote": "Neutral public stem, every instance, fixed3 marks: “Solve $\\sin^{-1}(kx)=\\theta$, giving an exact solution, or explain why it has no real solution.” Do not disclose “valid” or “obstruction” in the branch name, tariff, title or metadata shown before answering. Radian targets already state their unit. The task does not name the principal-range method or guarantee which conclusion is right. Taking sine is not sufficient: establish compatibility before claiming a solution. A valid inverse-substitution contradiction is a legitimate alternative to an explicit interval comparison."
+         }
+       ],
+-      "work_order_sha256": "07c29e1635e4ccf2c63b4ba4357385f8610900306892381fbb2b49c314b8cb3f",
++      "work_order_sha256": "21a4c810338051834b7586699d8b51e97818a0ec93c308720d0ed273be0319aa",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Optional range picture is post-submit support only; no given diagram or outcome cue.",
+       "learner_produced_response_is_not_given": true,
+@@ -790,7 +790,7 @@
+           "quote": "Given $y=Ae^{px+p}$, $A>0$. Let $L=\\ln A\\in\\{-1,1/2,1,2,3\\}$ and $p\\in\\{-3/4,-1/2,-1/4,1/4,1/2,3/4\\}$. Exact graph labels are $(x_i,u_i)$ on axes $x$ and $\\ln y$, where $x_1\\in\\{1,2,3\\}$, $x_2=x_1+d$ and $d\\in\\{1,2,3\\}$, $u_i=px_i+p+L$. Use exact decimal point labels, so a quarter is displayed as0.25, not an ambiguous measured value. Every stem retains $A>0$ and asks for parameter values, with three-significant-figure non-exact decimals; exact equivalents remain accepted."
+         }
+       ],
+-      "work_order_sha256": "380d6bee55c2dc1f090a842d9b787eec570133001bb2eeac6e56006e1ca01d02",
++      "work_order_sha256": "519703725ea0ac96aab1a7d4146e2fd3a2b04f968ead1c0db7cdff375466c648",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "This is a supplied transformed function graph, with accessible labels; not a spatial/geometric diagram.",
+       "learner_produced_response_is_not_given": true,
+@@ -821,7 +821,7 @@
+           "quote": "Given $y=b^{ca}a^x$, $a>0$, and gradient $m$ on a graph of $\\log_b y$ against $x$. Set $b\\in\\{2,3\\}$, $m\\in\\{2,3\\}$, $c\\in\\{1,3\\}$, $q\\in\\{0,1,4,10,30\\}$; target $y=b^q$, displayed as an unevaluated integer power when large. Exclude $b^m=bm$ and $b^m=m^b$. Only $(b,m)=(2,3)$ and $(3,2)$ remain. The 40 grid tuples reduce to 20 diagnostic full tuples, four model triples $(b,c,m)$ and two exponentiation subdecision contexts $(b,m)$. No target equals the prefactor, so $x=0$ is not an inspection shortcut. Both signs of $x$ occur; large powers need not be calculated."
+         }
+       ],
+-      "work_order_sha256": "380d6bee55c2dc1f090a842d9b787eec570133001bb2eeac6e56006e1ca01d02",
++      "work_order_sha256": "519703725ea0ac96aab1a7d4146e2fd3a2b04f968ead1c0db7cdff375466c648",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "Only a stated plotted-gradient fact is supplied in text; the work order explicitly forbids substituting a fake graph.",
+       "learner_produced_response_is_not_given": true,
+@@ -852,7 +852,7 @@
+           "quote": "Given $y=b^{ca}a^x$, $a>0$, and gradient $m$ on a graph of $\\log_b y$ against $x$. Set $b\\in\\{2,3\\}$, $m\\in\\{2,3\\}$, $c\\in\\{1,3\\}$, $q\\in\\{0,1,4,10,30\\}$; target $y=b^q$, displayed as an unevaluated integer power when large. Exclude $b^m=bm$ and $b^m=m^b$. Only $(b,m)=(2,3)$ and $(3,2)$ remain. The 40 grid tuples reduce to 20 diagnostic full tuples, four model triples $(b,c,m)$ and two exponentiation subdecision contexts $(b,m)$. No target equals the prefactor, so $x=0$ is not an inspection shortcut. Both signs of $x$ occur; large powers need not be calculated."
+         }
+       ],
+-      "work_order_sha256": "380d6bee55c2dc1f090a842d9b787eec570133001bb2eeac6e56006e1ca01d02",
++      "work_order_sha256": "519703725ea0ac96aab1a7d4146e2fd3a2b04f968ead1c0db7cdff375466c648",
+       "classification_basis": "Current work-order declaration plus explicit per-part planner judgement; internal design evidence, not an official syllabus or observed-exam fact.",
+       "interpretation": "The recovered parameter is learner work; no given graph/table is needed in this branch.",
+       "learner_produced_response_is_not_given": true,
+@@ -860,17 +860,17 @@
+     }
+   ],
+   "input_work_orders": {
+-    "work-orders/WB8227-modulus-graph-recovery.md": "7871dd762bf045b78ce14c855efef07674dd176834bc6a3743e8da92032741b4",
+-    "work-orders/WB8227-trapezium-sketch-estimate.md": "a00af46e0d95e03bffd358b6b25634f5dc229394318a4958a82a64e2e2b9e8ff",
+-    "work-orders/WB8227-vector-geometry.md": "fe5a1e46e6d098cf58b5aa44bd9fa1f21e704a487c97ad78f4d8353b7e62d659",
+-    "work-orders/WB8227-implicit-normal.md": "8201465d42efdda58f3e033bb61de08818d4333a9948821be7ff51c2acb0f1d0",
+-    "work-orders/WB8227-stationary-inflexion.md": "0486c7126c2eaf2dafaa6661c47ab2e509687dee5b3bfc78146c57a51e93b6b5",
+-    "work-orders/WB8227-motion-integration.md": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
+-    "work-orders/WB8227-trig-rform-equation.md": "87bdbf0e5590c79253551af7b79d17e8dc8432821f4db5c29c5cde1e532791af",
+-    "work-orders/WB8227-principal-inverse.md": "07c29e1635e4ccf2c63b4ba4357385f8610900306892381fbb2b49c314b8cb3f",
+-    "work-orders/WB8227-log-linear-model.md": "380d6bee55c2dc1f090a842d9b787eec570133001bb2eeac6e56006e1ca01d02"
++    "work-orders/WB8227-modulus-graph-recovery.md": "4bf6926e51c71b57439c73cfa13198f05423130970551a59706981b8b5155f02",
++    "work-orders/WB8227-trapezium-sketch-estimate.md": "b04fc841b4d834e364f5e60fd207e01d16d5bbe69d6f997bf2ae530b3af981b7",
++    "work-orders/WB8227-vector-geometry.md": "7d94777faee0291078db63a9d6abe7091442e97f2575958f761200f2d071bdd9",
++    "work-orders/WB8227-implicit-normal.md": "7570c7940c6a5c5f21622b4179acedd565126d0bdf251da77d005a1bdf866d42",
++    "work-orders/WB8227-stationary-inflexion.md": "0d933a68785aa227e7c40326b9b77e77096b29f7dd22bf06782b44d8929ce52b",
++    "work-orders/WB8227-motion-integration.md": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
++    "work-orders/WB8227-trig-rform-equation.md": "c16100ed1616c3e92ce45c0e6076d81708b2f224809eaf3f8de8c88c003eb4ad",
++    "work-orders/WB8227-principal-inverse.md": "21a4c810338051834b7586699d8b51e97818a0ec93c308720d0ed273be0319aa",
++    "work-orders/WB8227-log-linear-model.md": "519703725ea0ac96aab1a7d4146e2fd3a2b04f968ead1c0db7cdff375466c648"
+   },
+-  "input_pilot_design_sha256": "5f2c8799ad5c617d66004508ea686af3dcb1bc48d3886a4fe741ce4ab4b09457",
++  "input_pilot_design_sha256": "eb8967724f6f4a6ff37129042580f4ed420191a0acaaf6ac05a1cc2ff6a7072b",
+   "counts": {
+     "parts": 27,
+     "known_representations": 27,
+````
+
+</details>
+
+<details><summary>Diff 20: work/nam-8227-nsscas-2026/workbench/planning/d4/propagate-misread-policy.py</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/propagate-misread-policy.py
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/propagate-misread-policy.py
+@@ -19,8 +19,14 @@
+   for b in r['branches']:
+    for q in b['part_specs']:
+     policy=copy.deepcopy(base)
+-    if r['recipe_id']=='WB8227-implicit-normal':
++    if r['recipe_id']=='WB8227-implicit-normal' and b['branch_id'].split(':')[-1]=='gradient':
++     policy['eligibility_notes']='For this standalone gradient branch, judge the printed curve/point consistency, finite gradient and preserved implicit/exponential chain demand. There is no supplied proof target or later part. Apply connected-question MR03 eligibility and the fixed gradient-only fixtures.'
++    elif r['recipe_id']=='WB8227-implicit-normal':
+      policy['eligibility_notes']='Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases.'
++    elif r['recipe_id']=='WB8227-motion-integration' and b['branch_id'].endswith('polynomial-chain'):
++     policy['eligibility_notes']='Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction.'
++    elif r['recipe_id']=='WB8227-motion-integration' and b['branch_id'].endswith('exponential-positive'):
++     policy['eligibility_notes']='Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B.'
+     elif r['recipe_id']=='WB8227-motion-integration':
+      policy['eligibility_notes']='A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty.'
+     elif r['recipe_id']=='WB8227-principal-inverse':
+````
+
+</details>
+
+<details><summary>Diff 21: work/nam-8227-nsscas-2026/workbench/planning/d4/shared-misread-policy.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/shared-misread-policy.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/shared-misread-policy.json
+@@ -4,7 +4,7 @@
+   "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+   "operational_policy_id": "MR03-OPS-D4",
+   "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-  "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++  "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+   "feedback": "Practice feedback names the misread.",
+   "ledger_fields": [
+     "datum_id",
+@@ -23,5 +23,5 @@
+     "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+     "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+   ],
+-  "work_order_line": "**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule."
++  "work_order_line": "**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule."
+ }
+````
+
+</details>
+
+<details><summary>Diff 22: work/nam-8227-nsscas-2026/workbench/planning/d4/shared-policy-audit.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/shared-policy-audit.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/shared-policy-audit.json
+@@ -222,19 +222,19 @@
+     "Question-data no-solution exclusion preserves a designed no-real-solution outcome."
+   ],
+   "input_hashes": {
+-    "subject-rules.md": "da9aa7966e2a47ebfb358e86d25438eec3d5ed1b3324756273eddf07a987d722",
+-    "planning/d4/shared-misread-policy.json": "3f00ec21453bd6a98004441273222f33487a7f2b0a8611251c2e45d80b50c5d0",
++    "subject-rules.md": "d2ed6a5978cf814c7b0502b8f7b4b70fbcbd670a3f67e998da4d3d6bdc18a78f",
++    "planning/d4/shared-misread-policy.json": "bcd3926107d3e400842327803911704ea98d4fcad4061e1cd74a2f18d4cd74e3",
+     "planning/d4/misread_ledger.py": "f6ec1b44a781d469373c33c73dbb82a31e63c81229598fe6346e7694d64f220a",
+-    "work-orders/WB8227-implicit-normal.md": "8201465d42efdda58f3e033bb61de08818d4333a9948821be7ff51c2acb0f1d0",
+-    "work-orders/WB8227-log-linear-model.md": "380d6bee55c2dc1f090a842d9b787eec570133001bb2eeac6e56006e1ca01d02",
+-    "work-orders/WB8227-modulus-graph-recovery.md": "7871dd762bf045b78ce14c855efef07674dd176834bc6a3743e8da92032741b4",
+-    "work-orders/WB8227-motion-integration.md": "c1812cbd225b69bb6a3d48a34a4bf1d806d8b14646322bdf127778b2845bf2b6",
+-    "work-orders/WB8227-principal-inverse.md": "07c29e1635e4ccf2c63b4ba4357385f8610900306892381fbb2b49c314b8cb3f",
+-    "work-orders/WB8227-stationary-inflexion.md": "0486c7126c2eaf2dafaa6661c47ab2e509687dee5b3bfc78146c57a51e93b6b5",
+-    "work-orders/WB8227-trapezium-sketch-estimate.md": "a00af46e0d95e03bffd358b6b25634f5dc229394318a4958a82a64e2e2b9e8ff",
+-    "work-orders/WB8227-trig-rform-equation.md": "87bdbf0e5590c79253551af7b79d17e8dc8432821f4db5c29c5cde1e532791af",
+-    "work-orders/WB8227-vector-geometry.md": "fe5a1e46e6d098cf58b5aa44bd9fa1f21e704a487c97ad78f4d8353b7e62d659",
+-    "exemplars/WB8227-implicit-normal.md": "4926edce38ec6574448219d276ec3b8785a65a4f2973a1355a24f20771ef780c",
++    "work-orders/WB8227-implicit-normal.md": "7570c7940c6a5c5f21622b4179acedd565126d0bdf251da77d005a1bdf866d42",
++    "work-orders/WB8227-log-linear-model.md": "519703725ea0ac96aab1a7d4146e2fd3a2b04f968ead1c0db7cdff375466c648",
++    "work-orders/WB8227-modulus-graph-recovery.md": "4bf6926e51c71b57439c73cfa13198f05423130970551a59706981b8b5155f02",
++    "work-orders/WB8227-motion-integration.md": "7f5ebfea58e678d770e488b28464599078d0d82ecda50a1cc4eb8c5d165469e3",
++    "work-orders/WB8227-principal-inverse.md": "21a4c810338051834b7586699d8b51e97818a0ec93c308720d0ed273be0319aa",
++    "work-orders/WB8227-stationary-inflexion.md": "0d933a68785aa227e7c40326b9b77e77096b29f7dd22bf06782b44d8929ce52b",
++    "work-orders/WB8227-trapezium-sketch-estimate.md": "b04fc841b4d834e364f5e60fd207e01d16d5bbe69d6f997bf2ae530b3af981b7",
++    "work-orders/WB8227-trig-rform-equation.md": "c16100ed1616c3e92ce45c0e6076d81708b2f224809eaf3f8de8c88c003eb4ad",
++    "work-orders/WB8227-vector-geometry.md": "7d94777faee0291078db63a9d6abe7091442e97f2575958f761200f2d071bdd9",
++    "exemplars/WB8227-implicit-normal.md": "65eed723c96c6329411c2587c05d90f777b7509cc28ee7db8fb078803341dbb6",
+     "exemplars/WB8227-log-linear-model.md": "5e90904f1c12dfa8989e6e414c390da03a161ab1f39b969b5e5d64c7840ecc2d",
+     "exemplars/WB8227-modulus-graph-recovery.md": "9057447fee2f9946b827135b67c1ac91e6c7f51325eeb1fd90fe6d749fdf297f",
+     "exemplars/WB8227-motion-integration.md": "f5f51c597146a2c88a61fd0b5514878a9c3ff9e6e1a2e25debc388e5d161feec",
+@@ -243,9 +243,9 @@
+     "exemplars/WB8227-trapezium-sketch-estimate.md": "79a7c4087ff53a9b73a6ec34bd5140dcdb60ec51ad59f5402d9fc6475ea4fa1f",
+     "exemplars/WB8227-trig-rform-equation.md": "9b083c0051929d71e172c8b9aef29933d2d927d73f08ac9acd0e550eb4565e24",
+     "exemplars/WB8227-vector-geometry.md": "a3972ba39bfce0cfa89d7f86716d424868e3007ea4a757500de2afb0bd8327c0",
+-    "planning/visual-design.json": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8",
+-    "planning/calculus-design.json": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177",
+-    "planning/trig-model-design.json": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af"
++    "planning/visual-design.json": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7",
++    "planning/calculus-design.json": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3",
++    "planning/trig-model-design.json": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd"
+   },
+   "limits": "Text and explicit fixed-fixture evidence only; does not prove marker recognition, app behaviour, educational acceptance, or undiscovered semantic edge cases. Final independent review and Vitalis approval remain pending."
+ }
+````
+
+</details>
+
+<details><summary>Diff 23: work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-check.py</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-check.py
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-check.py
+@@ -105,10 +105,10 @@
+    for pk,hk in [('source_path','source_sha256'),('render_path','render_sha256')]:assert hashlib.sha256(Path(entry[pk]).read_bytes()).hexdigest()==entry[hk]
+    pairs.append((entry['source_path'],entry['pdf_page']))
+  fixtures={'rounding':precision(rd),'misread':misreads(),'principal_no_real_rote_only':{'response':'range is [-pi/2,pi/2]; no real solution','actual_target_comparison':False,'awards':{'P-B1':0,'P-M1':0,'P-A1':0},'total':0,'out_of':3},'later_runtime_status':'All acceptance fixtures pending E/F; no runtime generator/marker tested.'}
+- out={'status':'pass; D3 author-side finite design checks, not independent acceptance/runtime validation','recipe_version':'0.1.4','classification_version':'8227-pilot-design-0.1.1','branches':{'degree-cycle':r,'solve-or-explain':p,'graph-intercept':g,'gradient-target':t},'exemplar_checks':cases,'parts':n,'unchanged_domains_checked':domains_unchanged,'source_render_pairs':len(pairs),'unique_source_pages':len(set(pairs)),'D3_retained_rendered_pages':2,'fixture_summary':{'misread_ledgers':len(fixtures['misread']['fixtures']),'recomputed_D3_fixture_rows':fixtures['misread']['recomputed_D3_fixture_rows'],'rounding_counts':fixtures['rounding']['flip_counts'],'no_real_rote_score':'0/3'},'limits':'No domains changed. No generated runtime items, marker, app renderer or independent review acceptance.'}
++ out={'status':'pass; D4 author-side finite design checks, not independent acceptance/runtime validation','recipe_version':'0.1.4','classification_version':'8227-pilot-design-0.1.1','branches':{'degree-cycle':r,'solve-or-explain':p,'graph-intercept':g,'gradient-target':t},'exemplar_checks':cases,'parts':n,'unchanged_domains_checked':domains_unchanged,'source_render_pairs':len(pairs),'unique_source_pages':len(set(pairs)),'D3_retained_rendered_pages':2,'fixture_summary':{'misread_ledgers':len(fixtures['misread']['fixtures']),'recomputed_D3_fixture_rows':fixtures['misread']['recomputed_D3_fixture_rows'],'rounding_counts':fixtures['rounding']['flip_counts'],'no_real_rote_score':'0/3'},'limits':'No domains changed. No generated runtime items, marker, app renderer or independent review acceptance.'}
+  for path,obj in [(W/'planning/d4/trig-d4-fixtures.json',fixtures),(W/'checks/plan-repair-d4-trig-validation.json',out)]:
+   text=dump(obj)
+-  if args.check:assert path.read_text()==text,('stale D3 output',str(path))
++  if args.check:assert path.read_text()==text,('stale D4 output',str(path))
+   else:path.write_text(text)
+  print(dump({'status':'pass','parts':n,'examples':len(cases),'misread_ledgers':len(fixtures['misread']['fixtures']),'recomputed_D3_fixture_rows':fixtures['misread']['recomputed_D3_fixture_rows'],'rounding_counts':fixtures['rounding']['flip_counts']}))
+ if __name__=='__main__':main()
+````
+
+</details>
+
+<details><summary>Diff 24: work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.json
+@@ -1042,7 +1042,7 @@
+     "source_sha256": "17bb6d8e14b59b326e9f581daf32557d1f123392496e79ed7c4867c574163feb",
+     "pdf_page": 337,
+     "printed_page": 335,
+-    "render_path": "/Users/professor/Documents/YYeni Study Resources/work/nam-8227-nsscas-2026/workbench/planning/d1/root-source-pages/2023-337.png",
++    "render_path": "work/nam-8227-nsscas-2026/workbench/planning/d1/root-source-pages/2023-337.png",
+     "render_sha256": "ef6db8f9b0baa47b775861b6489b7602de489a9cd3f668719fd49f586e775ef3",
+     "verification": "D4 visual planner viewed native page render: row04 awards factorised form alone; row05 uses6times own(a). B2 www is separately identified as the proposed D4 clarification, never falsely quoted as the official row04 condition."
+   },
+````
+
+</details>
+
+<details><summary>Diff 25: work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.py</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.py
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.py
+@@ -92,7 +92,7 @@
+   assert remaining and len({r['parameters']['h']for r in remaining})==1
+   exposure.append(dict(example=e['case_id'],remaining_presentations=len(remaining),strict_generated_fresh_packing_after_example=1))
+  source=Path('Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf');render=P/'d1/root-source-pages/2023-337.png'
+- result=dict(status='pass',scope=__doc__.strip(),version='0.1.4',classification_version='8227-pilot-design-0.1.1',visual_part_count=7,domains_unchanged=True,derived_ledgers=ledgers,gross_dependency_fixture=dep,generated_fresh_exposure_checks=exposure,source_read=dict(path=str(source),source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),pdf_page=337,printed_page=335,render_path=str(render),render_sha256=hashlib.sha256(render.read_bytes()).hexdigest(),verification='D4 visual planner viewed native page render: row04 awards factorised form alone; row05 uses6times own(a). B2 www is separately identified as the proposed D4 clarification, never falsely quoted as the official row04 condition.'),eligibility_limits='Modulus redundant-label/orientation conflicts and trapezium strip-count changes remain named E/F eligibility fixtures; no unreviewed judgement is silently settled here.')
++ result=dict(status='pass',scope=__doc__.strip(),version='0.1.4',classification_version='8227-pilot-design-0.1.1',visual_part_count=7,domains_unchanged=True,derived_ledgers=ledgers,gross_dependency_fixture=dep,generated_fresh_exposure_checks=exposure,source_read=dict(path=str(source),source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),pdf_page=337,printed_page=335,render_path=render.relative_to(W.parents[2]).as_posix(),render_sha256=hashlib.sha256(render.read_bytes()).hexdigest(),verification='D4 visual planner viewed native page render: row04 awards factorised form alone; row05 uses6times own(a). B2 www is separately identified as the proposed D4 clarification, never falsely quoted as the official row04 condition.'),eligibility_limits='Modulus redundant-label/orientation conflicts and trapezium strip-count changes remain named E/F eligibility fixtures; no unreviewed judgement is silently settled here.')
+  out=H/'visual-d4-independent-checks.json';text=json.dumps(result,indent=2,ensure_ascii=False)+'\n'
+  if args.check:assert out.read_text()==text,('stale',str(out))
+  else:out.write_text(text)
+````
+
+</details>
+
+<details><summary>Diff 26: work/nam-8227-nsscas-2026/workbench/planning/d4/visual-deviation-rows.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/d4/visual-deviation-rows.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/d4/visual-deviation-rows.json
+@@ -4,7 +4,7 @@
+       "deviation_id": "D1-TRAP-FT-BRIDGE",
+       "recipe": "WB8227-trapezium-sketch-estimate",
+       "part": "d:DB1 (OD-5 settled); b:B2 (D4 proposed clarification)",
+-      "official_row": "2023 P2 Q6 AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358",
++      "official_row": "2023 P2 Q6 AWARD05 (b:B2), AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358",
+       "departure": "Only DB1 is judged against the same own curve; 2023 B1 own-graph F.T. and its verbal/chord standard without compulsory overlay are retained. Separately, the D4 b:B2 clarification applies a wrong-working exclusion (www): correct factorisation retains b:B1, while a visibly wrong-law coincident multiplier loses b:B2. Missing derivation alone does not remove B2 for a correct visible product.",
+       "rationale": "Do not penalise a wrong shape twice. The 2025 combined conclusion/reason F.T. supports the extension accepted by Vitalis in OD-5. The b:B2 clarification is a proposed marking interpretation; it is not attributed to OD-1 or to the OD-5 owner extension.",
+       "approval": "OD-5 DB1 extension accepted; D4 b:B2 interpretation and final plan approval pending",
+````
+
+</details>
+
+<details><summary>Diff 27: work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.json
+@@ -40,7 +40,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -95,7 +95,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -156,7 +156,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -218,7 +218,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -271,7 +271,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -336,7 +336,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -400,7 +400,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -471,26 +471,26 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+-        "feedback": "Practice feedback names the misread.",
+-        "ledger_fields": [
+-          "datum_id",
+-          "canonical_value",
+-          "misread_value",
+-          "eligible",
+-          "eligibility_reason",
+-          "first_use_part",
+-          "gross_awards",
+-          "deducted_part",
+-          "deducted_criterion",
+-          "amount",
+-          "net_awards"
+-        ],
+-        "sources": [
+-          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+-          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+-        ],
+-        "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
++        "feedback": "Practice feedback names the misread.",
++        "ledger_fields": [
++          "datum_id",
++          "canonical_value",
++          "misread_value",
++          "eligible",
++          "eligibility_reason",
++          "first_use_part",
++          "gross_awards",
++          "deducted_part",
++          "deducted_criterion",
++          "amount",
++          "net_awards"
++        ],
++        "sources": [
++          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
++          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
++        ],
++        "eligibility_notes": "For this standalone gradient branch, judge the printed curve/point consistency, finite gradient and preserved implicit/exponential chain demand. There is no supplied proof target or later part. Apply connected-question MR03 eligibility and the fixed gradient-only fixtures."
+       },
+       "classification_version": "8227-pilot-design-0.1.1",
+       "status": "D4 proposal; Claude confirmation then Vitalis approval pending",
+@@ -540,7 +540,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -605,7 +605,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -671,7 +671,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -729,7 +729,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -791,7 +791,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -879,7 +879,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -942,7 +942,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1002,26 +1002,26 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+-        "feedback": "Practice feedback names the misread.",
+-        "ledger_fields": [
+-          "datum_id",
+-          "canonical_value",
+-          "misread_value",
+-          "eligible",
+-          "eligibility_reason",
+-          "first_use_part",
+-          "gross_awards",
+-          "deducted_part",
+-          "deducted_criterion",
+-          "amount",
+-          "net_awards"
+-        ],
+-        "sources": [
+-          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+-          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+-        ],
+-        "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
++        "feedback": "Practice feedback names the misread.",
++        "ledger_fields": [
++          "datum_id",
++          "canonical_value",
++          "misread_value",
++          "eligible",
++          "eligibility_reason",
++          "first_use_part",
++          "gross_awards",
++          "deducted_part",
++          "deducted_criterion",
++          "amount",
++          "net_awards"
++        ],
++        "sources": [
++          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
++          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
++        ],
++        "eligibility_notes": "Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction."
+       },
+       "classification_version": "8227-pilot-design-0.1.1",
+       "status": "D4 proposal; Claude confirmation then Vitalis approval pending",
+@@ -1061,26 +1061,26 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+-        "feedback": "Practice feedback names the misread.",
+-        "ledger_fields": [
+-          "datum_id",
+-          "canonical_value",
+-          "misread_value",
+-          "eligible",
+-          "eligibility_reason",
+-          "first_use_part",
+-          "gross_awards",
+-          "deducted_part",
+-          "deducted_criterion",
+-          "amount",
+-          "net_awards"
+-        ],
+-        "sources": [
+-          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+-          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+-        ],
+-        "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
++        "feedback": "Practice feedback names the misread.",
++        "ledger_fields": [
++          "datum_id",
++          "canonical_value",
++          "misread_value",
++          "eligible",
++          "eligibility_reason",
++          "first_use_part",
++          "gross_awards",
++          "deducted_part",
++          "deducted_criterion",
++          "amount",
++          "net_awards"
++        ],
++        "sources": [
++          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
++          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
++        ],
++        "eligibility_notes": "Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction."
+       },
+       "classification_version": "8227-pilot-design-0.1.1",
+       "status": "D4 proposal; Claude confirmation then Vitalis approval pending",
+@@ -1118,26 +1118,26 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+-        "feedback": "Practice feedback names the misread.",
+-        "ledger_fields": [
+-          "datum_id",
+-          "canonical_value",
+-          "misread_value",
+-          "eligible",
+-          "eligibility_reason",
+-          "first_use_part",
+-          "gross_awards",
+-          "deducted_part",
+-          "deducted_criterion",
+-          "amount",
+-          "net_awards"
+-        ],
+-        "sources": [
+-          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+-          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+-        ],
+-        "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
++        "feedback": "Practice feedback names the misread.",
++        "ledger_fields": [
++          "datum_id",
++          "canonical_value",
++          "misread_value",
++          "eligible",
++          "eligibility_reason",
++          "first_use_part",
++          "gross_awards",
++          "deducted_part",
++          "deducted_criterion",
++          "amount",
++          "net_awards"
++        ],
++        "sources": [
++          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
++          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
++        ],
++        "eligibility_notes": "Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B."
+       },
+       "classification_version": "8227-pilot-design-0.1.1",
+       "status": "D4 proposal; Claude confirmation then Vitalis approval pending",
+@@ -1177,26 +1177,26 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+-        "feedback": "Practice feedback names the misread.",
+-        "ledger_fields": [
+-          "datum_id",
+-          "canonical_value",
+-          "misread_value",
+-          "eligible",
+-          "eligibility_reason",
+-          "first_use_part",
+-          "gross_awards",
+-          "deducted_part",
+-          "deducted_criterion",
+-          "amount",
+-          "net_awards"
+-        ],
+-        "sources": [
+-          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+-          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+-        ],
+-        "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
++        "feedback": "Practice feedback names the misread.",
++        "ledger_fields": [
++          "datum_id",
++          "canonical_value",
++          "misread_value",
++          "eligible",
++          "eligibility_reason",
++          "first_use_part",
++          "gross_awards",
++          "deducted_part",
++          "deducted_criterion",
++          "amount",
++          "net_awards"
++        ],
++        "sources": [
++          "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
++          "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
++        ],
++        "eligibility_notes": "Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B."
+       },
+       "classification_version": "8227-pilot-design-0.1.1",
+       "status": "D4 proposal; Claude confirmation then Vitalis approval pending",
+@@ -1237,7 +1237,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1295,7 +1295,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1354,7 +1354,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1418,7 +1418,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1482,7 +1482,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1548,7 +1548,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1612,7 +1612,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+@@ -1674,7 +1674,7 @@
+         "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+         "operational_policy_id": "MR03-OPS-D4",
+         "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++        "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+         "feedback": "Practice feedback names the misread.",
+         "ledger_fields": [
+           "datum_id",
+````
+
+</details>
+
+<details><summary>Diff 28: work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.md
+@@ -1,6 +1,6 @@
+ # Part evidence register — D4
+ 
+-Each row cites only that part’s criterion IDs. Conditional links are additional and are not inherited by instances that omit the condition. All labels await Claude short check and Vitalis approval.
++Each row cites only that part’s criterion IDs. Conditional links are additional and are not inherited by instances that omit the condition. All labels await Claude D4.1 diff-only check and Vitalis approval.
+ 
+ | Part | Primary; other direct objectives | Direct demands; conditional | Prerequisites and role | Marks; Bloom; criteria; rationale |
+ |---|---|---|---|---|
+````
+
+</details>
+
+<details><summary>Diff 29: work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json
+@@ -8,9 +8,9 @@
+   "status": "D4 design candidate; Claude changed-scope confirmation then Vitalis approval pending",
+   "normalisation": "Derived merge preserves authored branch/part IDs; explicit qualified IDs are independent of display order. Design choice IDs use 8227:D:SEL:<recipe-slug>:<branch>. Not a runtime provider schema.",
+   "inputs": {
+-    "visual-design.json": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8",
+-    "calculus-design.json": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177",
+-    "trig-model-design.json": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af"
++    "visual-design.json": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7",
++    "calculus-design.json": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3",
++    "trig-model-design.json": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd"
+   },
+   "counts": {
+     "objectives_with_unconditional_facets": 25,
+@@ -118,7 +118,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -180,7 +180,7 @@
+             }
+           ],
+           "direct_coverage_limit": "Parameter recovery only; supplied graph does not assess learner sketching.",
+-          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
++          "classification_status": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+           "capacity_analysis": {
+             "raw_domain_count": 108,
+             "admitted_raw_count": 44,
+@@ -189,7 +189,7 @@
+               "a": 44
+             },
+             "strict_all_assessed_parts_unseen_capacity": 44,
+-            "check_path": "planning/d3/visual-domain-checks.json"
++            "check_path": "planning/d4/visual-domain-checks.json"
+           },
+           "qualified_branch_id": "WB8227-modulus-graph-recovery:vertex-intercepts",
+           "choice_id": "8227:D:SEL:modulus-graph-recovery:vertex-intercepts",
+@@ -226,7 +226,7 @@
+       },
+       "version": "0.1.4",
+       "origin_design_input": "planning/visual-design.json",
+-      "origin_design_input_sha256": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8"
++      "origin_design_input_sha256": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7"
+     },
+     {
+       "recipe_id": "WB8227-trapezium-sketch-estimate",
+@@ -279,7 +279,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -372,7 +372,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -464,7 +464,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -554,7 +554,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -740,7 +740,7 @@
+             }
+           ],
+           "direct_coverage_limit": "One concave-down logarithmic chain; not all trapezium functions, over-estimate branches or refinement investigations.",
+-          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
++          "classification_status": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+           "capacity_analysis": {
+             "raw_domain_count": 36,
+             "admitted_raw_count": 30,
+@@ -752,7 +752,7 @@
+               "d": 11
+             },
+             "strict_all_assessed_parts_unseen_capacity": 2,
+-            "check_path": "planning/d3/visual-domain-checks.json",
++            "check_path": "planning/d4/visual-domain-checks.json",
+             "canonical_bias_outcome_classes": 1,
+             "raw_to_semantic_presentation_collisions": 19,
+             "mathematical_all_parts_unseen_packing": 3,
+@@ -845,7 +845,7 @@
+       },
+       "version": "0.1.4",
+       "origin_design_input": "planning/visual-design.json",
+-      "origin_design_input_sha256": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8"
++      "origin_design_input_sha256": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7"
+     },
+     {
+       "recipe_id": "WB8227-vector-geometry",
+@@ -905,7 +905,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -982,7 +982,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1004,7 +1004,7 @@
+                 "eligibility_notes": "An OA misread that removes every p solution is ineligible in both parts: canonical a1/3+b2/4=3/7. An eligible OB sign misread plus wrong resultant retains gross5/7 and deducts the first later B1, net4/7."
+               },
+               "answer_form_policy": "Non-exact angles require visible1decimalplace, including80.0and63.0; naked80or63reject A1 although numericallyequal. Exactly60or90are exempt from trailingzero. Preserve raw entered form in future app.",
+-              "precision_fixture_path": "planning/d3/visual-rounding-fixtures.json",
++              "precision_fixture_path": "planning/d4/visual-rounding-fixtures.json",
+               "qualified_part_id": "WB8227-vector-geometry:scalar-combination-and-origin-angle:b",
+               "local_part_id": "b",
+               "proposed_bloom_level": 3,
+@@ -1071,7 +1071,7 @@
+             }
+           ],
+           "direct_coverage_limit": "No3D coordinate reconstruction, segment division or unit-vector demand; A!=C and p=0/identity wrong-method collisions excluded. Part(a) now matches source direct demands; O02:D03 geometric interpretation is not claimed.",
+-          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
++          "classification_status": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+           "capacity_analysis": {
+             "raw_domain_count": 54,
+             "admitted_raw_count": 30,
+@@ -1081,7 +1081,7 @@
+               "b": 17
+             },
+             "strict_all_assessed_parts_unseen_capacity": 17,
+-            "check_path": "planning/d3/visual-domain-checks.json"
++            "check_path": "planning/d4/visual-domain-checks.json"
+           },
+           "qualified_branch_id": "WB8227-vector-geometry:scalar-combination-and-origin-angle",
+           "choice_id": "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle",
+@@ -1118,7 +1118,7 @@
+       },
+       "version": "0.1.4",
+       "origin_design_input": "planning/visual-design.json",
+-      "origin_design_input_sha256": "2e7fd2542a05cfe4e5f08d1a157d8728b34fadbe9b346861e4dd6732ea663ef8"
++      "origin_design_input_sha256": "1e5b58f91fac7bf29248b16a4dad91d5f78a28e12ced39099e228952b9062dc7"
+     },
+     {
+       "recipe_id": "WB8227-implicit-normal",
+@@ -1232,7 +1232,7 @@
+                 "WB8227-implicit-normal@0.1.4:gradient:gradient:G4",
+                 "WB8227-implicit-normal@0.1.4:gradient:gradient:G5"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "G1",
+@@ -1333,7 +1333,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1352,7 +1352,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
++                "eligibility_notes": "For this standalone gradient branch, judge the printed curve/point consistency, finite gradient and preserved implicit/exponential chain demand. There is no supplied proof target or later part. Apply connected-question MR03 eligibility and the fixed gradient-only fixtures."
+               },
+               "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+               "qualified_part_id": "WB8227-implicit-normal:gradient:gradient",
+@@ -1400,7 +1400,7 @@
+               "demand_sets_equal": true,
+               "response_formats_equal": true,
+               "structure_check": "Native source and D1 branch both unsupplied-gradient task; no show-thatformula supplied in this branch",
+-              "status": "D1 proposed; short check pending"
++              "status": "D4 proposed; D4.1 diff-only check then Vitalis approval pending"
+             }
+           ],
+           "qualified_branch_id": "WB8227-implicit-normal:gradient",
+@@ -1511,7 +1511,7 @@
+                 "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+                 "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "S1",
+@@ -1614,7 +1614,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1696,7 +1696,7 @@
+                 "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+                 "WB8227-implicit-normal@0.1.4:normal:gradient:H2"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "H1",
+@@ -1748,7 +1748,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1807,7 +1807,7 @@
+                 "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+                 "WB8227-implicit-normal@0.1.4:normal:normal:N3"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "N1",
+@@ -1875,7 +1875,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -2368,7 +2368,7 @@
+       },
+       "proposed_version": "0.1.4",
+       "origin_design_input": "planning/calculus-design.json",
+-      "origin_design_input_sha256": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177"
++      "origin_design_input_sha256": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3"
+     },
+     {
+       "recipe_id": "WB8227-stationary-inflexion",
+@@ -2462,7 +2462,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:points:P3",
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:points:P4"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "P1",
+@@ -2543,7 +2543,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -2596,7 +2596,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:nature:C1",
+                 "WB8227-stationary-inflexion@0.1.4:two-extrema:nature:C2"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "C1",
+@@ -2649,7 +2649,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -2937,7 +2937,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "I1",
+@@ -3030,7 +3030,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -3084,7 +3084,7 @@
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+                 "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6"
+               ],
+-              "bloom_status": "D3 proposal; Claude confirmation then Vitalis approval pending",
++              "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+               "classification_version": "8227-pilot-design-0.1.1",
+               "criterion_ids": [
+                 "I4",
+@@ -3149,7 +3149,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -3501,7 +3501,7 @@
+       },
+       "proposed_version": "0.1.4",
+       "origin_design_input": "planning/calculus-design.json",
+-      "origin_design_input_sha256": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177"
++      "origin_design_input_sha256": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3"
+     },
+     {
+       "recipe_id": "WB8227-motion-integration",
+@@ -3574,7 +3574,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -3593,7 +3593,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction."
+               },
+               "qualified_part_id": "WB8227-motion-integration:polynomial-chain:velocity",
+               "local_part_id": "velocity",
+@@ -3647,7 +3647,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -3666,7 +3666,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Polynomial branch: preserve acceleration-to-velocity integration, the initial-condition demand and positive-velocity distance evaluation. Eligibility considers both connected parts; the first earned A/B in a using part is charged under proposed MR03 mechanics, even when its own expression is unaffected. Gross S2 remains evidence for S3 after the net deduction."
+               },
+               "gross_dependency_rule": "S3 tests gross S1/S2 evidence before MR adjustment; eligible misreads override ordinary not-FT.",
+               "qualified_part_id": "WB8227-motion-integration:polynomial-chain:distance",
+@@ -4771,7 +4771,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -4790,7 +4790,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B."
+               },
+               "qualified_part_id": "WB8227-motion-integration:exponential-positive:acceleration",
+               "local_part_id": "acceleration",
+@@ -4844,7 +4844,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -4863,7 +4863,7 @@
+                   "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                   "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                 ],
+-                "eligibility_notes": "A misread that changes the sign-change outcome changes the object and stays canonical throughout. A same-outcome coefficient/value misread can be eligible; use gross R2/S2 evidence for dependent accuracy before the net penalty."
++                "eligibility_notes": "Exponential branch: preserve the nonunit exponential chain factor and positive-velocity differentiation/integration demands across both parts. A zero-rate or otherwise object-changing misread is canonical throughout; named derivative/primitive coefficient exclusions remain. The V-misread fixtures use whole-question deferred deduction when acceleration earns no A/B."
+               },
+               "qualified_part_id": "WB8227-motion-integration:exponential-positive:distance",
+               "local_part_id": "distance",
+@@ -5402,7 +5402,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -5472,7 +5472,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -7159,7 +7159,7 @@
+       "classification_version": "8227-pilot-design-0.1.1",
+       "proposed_version": "0.1.4",
+       "origin_design_input": "planning/calculus-design.json",
+-      "origin_design_input_sha256": "75d02076b6ee0fcce0ac97039740438277d06556d07d14649232a4939e09a177"
++      "origin_design_input_sha256": "3176d3116425abd9bcabcdd1e120d4a01416f4e4393c0be6f35c61b9cd08cea3"
+     },
+     {
+       "recipe_id": "WB8227-trig-rform-equation",
+@@ -7290,7 +7290,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -7468,7 +7468,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -7780,7 +7780,7 @@
+       ],
+       "version": "0.1.4",
+       "origin_design_input": "planning/trig-model-design.json",
+-      "origin_design_input_sha256": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af"
++      "origin_design_input_sha256": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd"
+     },
+     {
+       "recipe_id": "WB8227-principal-inverse",
+@@ -7878,7 +7878,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -8092,7 +8092,7 @@
+       ],
+       "version": "0.1.4",
+       "origin_design_input": "planning/trig-model-design.json",
+-      "origin_design_input_sha256": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af"
++      "origin_design_input_sha256": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd"
+     },
+     {
+       "recipe_id": "WB8227-log-linear-model",
+@@ -8286,7 +8286,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -8581,7 +8581,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -8702,7 +8702,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -9255,10 +9255,10 @@
+       ],
+       "version": "0.1.4",
+       "origin_design_input": "planning/trig-model-design.json",
+-      "origin_design_input_sha256": "4d57bb70515c3ff4833e0436e4a7fd1cc4e2545e83e8961f1af5cd81c142a2af"
++      "origin_design_input_sha256": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd"
+     }
+   ],
+   "capacity_rule": "Raw presentations, task contexts, reasoning/outcome classes and strict fresh bounds are distinct; never sum them as a global bank capacity.",
+   "part_evidence_register": "planning/part-evidence-register.json",
+-  "part_evidence_register_sha256": "456aadeedb5c1e3121aaf437f7b5de1dcc89a32703906fcd258b8c67a5c9e4de"
++  "part_evidence_register_sha256": "3efa2bd32ea3ab635f6da7fc44621127b5dbbd8a201541babcb4c3cd41ea4a79"
+ }
+````
+
+</details>
+
+<details><summary>Diff 30: work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json
+@@ -135,7 +135,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -306,7 +306,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -683,7 +683,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1071,7 +1071,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1347,7 +1347,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -1461,7 +1461,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+````
+
+</details>
+
+<details><summary>Diff 31: work/nam-8227-nsscas-2026/workbench/planning/visual-design.json</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/planning/visual-design.json
++++ D4.1/work/nam-8227-nsscas-2026/workbench/planning/visual-design.json
+@@ -90,7 +90,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -141,7 +141,7 @@
+             }
+           ],
+           "direct_coverage_limit": "Parameter recovery only; supplied graph does not assess learner sketching.",
+-          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
++          "classification_status": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+           "capacity_analysis": {
+             "raw_domain_count": 108,
+             "admitted_raw_count": 44,
+@@ -150,7 +150,7 @@
+               "a": 44
+             },
+             "strict_all_assessed_parts_unseen_capacity": 44,
+-            "check_path": "planning/d3/visual-domain-checks.json"
++            "check_path": "planning/d4/visual-domain-checks.json"
+           }
+         }
+       ],
+@@ -225,7 +225,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -307,7 +307,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -387,7 +387,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -464,7 +464,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -640,7 +640,7 @@
+             }
+           ],
+           "direct_coverage_limit": "One concave-down logarithmic chain; not all trapezium functions, over-estimate branches or refinement investigations.",
+-          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
++          "classification_status": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+           "capacity_analysis": {
+             "raw_domain_count": 36,
+             "admitted_raw_count": 30,
+@@ -652,7 +652,7 @@
+               "d": 11
+             },
+             "strict_all_assessed_parts_unseen_capacity": 2,
+-            "check_path": "planning/d3/visual-domain-checks.json",
++            "check_path": "planning/d4/visual-domain-checks.json",
+             "canonical_bias_outcome_classes": 1,
+             "raw_to_semantic_presentation_collisions": 19,
+             "mathematical_all_parts_unseen_packing": 3,
+@@ -790,7 +790,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -853,7 +853,7 @@
+                 "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                 "operational_policy_id": "MR03-OPS-D4",
+                 "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+-                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
++                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+                 "feedback": "Practice feedback names the misread.",
+                 "ledger_fields": [
+                   "datum_id",
+@@ -875,7 +875,7 @@
+                 "eligibility_notes": "An OA misread that removes every p solution is ineligible in both parts: canonical a1/3+b2/4=3/7. An eligible OB sign misread plus wrong resultant retains gross5/7 and deducts the first later B1, net4/7."
+               },
+               "answer_form_policy": "Non-exact angles require visible1decimalplace, including80.0and63.0; naked80or63reject A1 although numericallyequal. Exactly60or90are exempt from trailingzero. Preserve raw entered form in future app.",
+-              "precision_fixture_path": "planning/d3/visual-rounding-fixtures.json"
++              "precision_fixture_path": "planning/d4/visual-rounding-fixtures.json"
+             }
+           ],
+           "whole_card_bloom": 3,
+@@ -928,7 +928,7 @@
+             }
+           ],
+           "direct_coverage_limit": "No3D coordinate reconstruction, segment division or unit-vector demand; A!=C and p=0/identity wrong-method collisions excluded. Part(a) now matches source direct demands; O02:D03 geometric interpretation is not claimed.",
+-          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
++          "classification_status": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+           "capacity_analysis": {
+             "raw_domain_count": 54,
+             "admitted_raw_count": 30,
+@@ -938,7 +938,7 @@
+               "b": 17
+             },
+             "strict_all_assessed_parts_unseen_capacity": 17,
+-            "check_path": "planning/d3/visual-domain-checks.json"
++            "check_path": "planning/d4/visual-domain-checks.json"
+           }
+         }
+       ],
+````
+
+</details>
+
+<details><summary>Diff 32: work/nam-8227-nsscas-2026/workbench/recipe-contract.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/recipe-contract.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/recipe-contract.md
+@@ -159,7 +159,7 @@
+ criterion, never arbitrary screenshot pixels. Unreadable/ambiguous uploads need
+ clarification/pending grading; accepting a photo alone is not assessment proof.
+ 
+-Vitalis's decision 6 includes these demands without capability holds. The app's
++16 November owner decision 6 (visual demands) includes these demands without capability holds. The app's
+ announced 17 November support is an owner selection decision, separate from runtime
+ verification on the selected checkout. These resources must test correct, partial,
+ alternative, wrong and ambiguous visual responses before release.
+@@ -302,4 +302,4 @@
+ 
+ The owner’s OD-6 principle gives MR−1 from A/B for genuine unchanged-object/difficulty question misreads, A/B follow-through, normal M/DM, ordinary accuracy treatment for own figures, no MR concession for changed object/difficulty, and feedback naming the misread. Comparable Cambridge source provenance is not described as a Namibian published rule.
+ 
+-Proposed operations: decide eligibility once at first use and retain it throughout the question. Mark gross evidence first; take one net deduction per eligible datum from the first A/B earned on it in question order, including a later part when needed. No deduction only if no A/B is earned on that datum anywhere. The deducted slot remains earned for DM, dependencies and www; do not cascade the penalty. Eligible OD-6 F.T. overrides ordinary c.a.o./not-F.T. qualifiers while retaining correct working, named exclusions and OD-1. A designed no-real-solution outcome remains eligible if demand/difficulty are preserved; the no-solution exclusion concerns destroying a solution the canonical question has. See `subject-rules.md` MR03 and the derived fixed-fixture ledgers under `planning/d4/`. These are design expectations, not an answer parser or operational marker.
++Proposed operations: decide eligibility once at first use and retain it throughout the question. Mark gross evidence first; take one net deduction per eligible datum from the first A/B earned on it in question order, including a later part when needed. No deduction only if no A/B is earned on that datum anywhere. The deducted slot remains earned for DM, dependencies and www; do not cascade the penalty. Eligible OD-6 F.T. overrides ordinary c.a.o./not-F.T. qualifiers while retaining correct working, named exclusions and OD-1. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. A designed no-real-solution outcome remains eligible if demand/difficulty are preserved; the no-solution exclusion concerns destroying a solution the canonical question has. See `subject-rules.md` MR03 and the derived fixed-fixture ledgers under `planning/d4/`. These are design expectations, not an answer parser or operational marker.
+````
+
+</details>
+
+<details><summary>Diff 33: work/nam-8227-nsscas-2026/workbench/subject-rules.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/subject-rules.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/subject-rules.md
+@@ -64,7 +64,7 @@
+ |---|---|---|
+ | D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |
+ | D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |
+-| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |
++| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |
+ | D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |
+ | D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |
+ | D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |
+````
+
+</details>
+
+<details><summary>Diff 34: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md
+@@ -125,7 +125,7 @@
+ 
+ ## Shared policy, mode, checks and current stop
+ 
+-`subject-rules.md` **D1-MR01–09** controls answers-only, hence, misread, accuracy, premature rounding, requested units, multiple attempts, official qualifiers and answer-given proof. This work order specifies its per-part application; it does not replace that policy with an invented local exception. **MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule. When exactness is not requested, correct 3sf decimals with the required working can earn A. Exactness is explicit in each stem below where needed. No physical unit is requested for these dimensionless curves, so there is no hidden unit penalty. Mark the first uncancelled coherent attempt under MR07; ask for clarification on illegible signs or ambiguous alternatives.
++`subject-rules.md` **D1-MR01–09** controls answers-only, hence, misread, accuracy, premature rounding, requested units, multiple attempts, official qualifiers and answer-given proof. This work order specifies its per-part application; it does not replace that policy with an invented local exception. **MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule. When exactness is not requested, correct 3sf decimals with the required working can earn A. Exactness is explicit in each stem below where needed. No physical unit is requested for these dimensionless curves, so there is no hidden unit penalty. Mark the first uncancelled coherent attempt under MR07; ask for clarification on illegible signs or ambiguous alternatives.
+ 
+ Practice: offer answer-free reminders and a different-instance example before submission; do not leak the current derivative, normal, point or classification in hints/alt text. For a proof, the displayed target is deliberately part of the question, but its proof is not. After submission reveal the frozen solution and the first evidenced repair. A correct bare value with zero credit receives 'Your value is correct; show the working needed for credit', not a claim that it is wrong. A corrected/partly repeated task is after-feedback practice, not wholly unaided evidence. Another practice instance is permitted without a pass.
+ 
+@@ -145,7 +145,7 @@
+ 
+ **Settled connected fixtures (calc-D3-02):**
+ 
+-- Canonical $3e^{2x}y+y^2=4$, $P=(0,-4)$: read only $C=4$ as $5$ in part (a), then use the actual displayed derivative in (b)/(c). The point is off the misread curve, so eligibility is false at first use and stays false. Since the constant differentiates to zero, a complete proof still establishes the actual target canonically: **4/4 + 2/2 + 3/3 = 9/9**, with no MR adjustment. This is an ordinary-marking coincidence for an ineligible datum, not an eligible misread excused from its penalty.
++- Canonical $3e^{2x}y+y^2=4$, $P=(0,-4)$: read only $C=4$ as $5$ in part (a), then use the actual displayed derivative in (b)/(c). The point is off the misread curve, so eligibility is false at first use and stays false. On the product route, the constant differentiates to zero, so a complete proof still establishes the actual target canonically: **4/4 + 2/2 + 3/3 = 9/9**, with no MR adjustment. This is an ordinary-marking coincidence for an ineligible datum, not an eligible misread excused from its penalty. At E/F, separately check canonical marking of the divided, log-absolute and explicit-root routes for this ineligible C misread; the stated 9/9 fixture covers only the product route.
+ - In the same canonical question, read $a=3$ as $4$ in (a) and carry that derivative forward. The curve/point and supplied target are inconsistent, so use canonical marking throughout. The learner derives $y'=-8e^{2x}y/(4e^{2x}+2y)$, gets $m=-8$ and $m_\perp=1/8$, then $y+4=x/8$. Proof **S1,S3 = 2/4**, gradient **H1 = 1/2**, normal **N1,N2 = 2/3**: **5/9**. H2 and N3 are not revived by reclassifying the datum later. Reading $a$ as $8$ instead makes the denominator zero at P; that singular response is a different ineligible case and does not inherit this finite-gradient fixture.
+ 
+ **Eligible dependency fixture:** gradient-only, read exponent coefficient $k=2$ as $3$, with $a=3,C=4,P=(0,-4)$. The point remains on the curve and the demand is unchanged. Correct working gives $9e^{3x}y+(3e^{3x}+2y)y'=0$ and $m=-36/5$. Gross G1–G5 are all earned. The net penalty is allocated to G2, giving **4/5**, while G2 still satisfies the correct-working dependency of G5. A literal cascade to 3/5 is forbidden by the proposed operating rule.
+````
+
+</details>
+
+<details><summary>Diff 35: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md
+@@ -115,6 +115,6 @@
+ 
+ For the normal case, a learner may write the wrong earlier line $\log_2y=x\log_2a$, then correctly use $\log_2a=3$ and obtain $a=8$. T-B1 fails for the missing prefactor, but T-M1/T-A1 survive. Substituting the target into that same earlier line, $10=3x$, earns U-M1 F.T.; the wrong $x=10/3$ loses canonical U-A1. Total 3/5. If the learner instead wrote the correct earlier line $\log_2y=a+x\log_2a$ and newly dropped $a$ only when substituting in (b), U-M1 fails: this is a new substitution error, not F.T.
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
+ 
+ Domain authority: the narrow gradient-target domain is reviewer-prescribed (step-3 calc2-08), disclosed above; owner approval is pending. It is not owner-fixed.
+````
+
+</details>
+
+<details><summary>Diff 36: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md
+@@ -56,7 +56,7 @@
+ 
+ The D1 list/formula split is withdrawn: the list/formula split was not an owner decision and did not match the official row. All three www conditions and the named-value/formula allowance now have the same meaning as 2023 Q2. This is an official type exception, not a newly approved deviation.
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
+ 
+ ## Samples and Bloom
+````
+
+</details>
+
+<details><summary>Diff 37: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md
+@@ -22,7 +22,7 @@
+ 
+ **Exponential positive, 5 marks, Apply 3.** Supply $v(t)=Ve^{-kt}$, in m/s, and the time interval. Ask (acceleration) for a(t), showing differentiation, then (distance) for travelled length in the first T seconds, in metres, showing integration and both boundary conditions; exact or 3 s.f. V∈{6,12,18,24,30}, k∈{1/4,1/2,1/3}, T∈{1,2,3,4}; exclude all (30,1/2,T), whose acceleration part is the official original. **56 parameter tasks**, **14 acceleration contexts**, **3 amplitude-normalised exponential shapes**, **12 shape/interval tasks**. No k=1, so the chain factor cannot disappear. Canonical $a=-kVe^{-kt}$; $d=(V/k)(1-e^{-kT})$. Parts share a stem, but neither requires the other's answer. No-repeat keys (V,k) and (V,k,T); wholly fresh multipart upper bound 14.
+ 
+-**Sign-aware distance, 6 marks, Analyse 4.** The internal branch ID `interior-reversal` is historical; the public title and stem are outcome-neutral. Version 0.1.4 diversifies the four no-change contexts; old 0.1.1 snapshots must not be reinterpreted. Supply expanded quadratic velocity $v(t)=k(t-r)(t+c)$ on $0\le t\le T$, in m/s, with positive direction stated. Ask total distance first, with justified working, then signed displacement. Neither root, direction-change outcome nor rest-time cue is supplied. Both outcomes have the same 4+2 tariff.
++**Sign-aware distance, 6 marks, Analyse 4.** The internal branch ID `interior-reversal` is historical; the public title and stem are outcome-neutral. Version 0.1.4 diversifies the four no-change contexts; old 0.1.1–0.1.3 snapshots retain their saved meanings and must not be reinterpreted. Supply expanded quadratic velocity $v(t)=k(t-r)(t+c)$ on $0\le t\le T$, in m/s, with positive direction stated. Ask total distance first, with justified working, then signed displacement. Neither root, direction-change outcome nor rest-time cue is supplied. Both outcomes have the same 4+2 tariff.
+ 
+ Reversal inputs: $k\in\{-3,-2,-1,1,2,3\}$, $r\in\{1,2,3,4\}$, $c\in\{1,2,3\}$ and $T\in\{3,4,5\}$, with $0<r<T$ and $2r\ne T$. These give **144** tuples. No-reversal inputs use the same six k values and four $(r,c,T)$ contexts: (4,1,3), (4,3,3), (5,2,4), (6,3,5), giving **24** tuples. The root lies beyond T by 1; no root equals an endpoint. The negative root −c is always outside. The no-change minority is **24/168 = 1/7 (14.29%)**, a bounded planner choice to keep the decision live while concentrating practice on decomposition, not an estimate of exam frequency.
+ 
+@@ -32,7 +32,7 @@
+ 
+ Numeric wrong-method coincidences are disclosed per tuple at marked precision. In no-reversal instances, $|\int v|$ necessarily gives the value, and for positive velocity the signed integral also does; these values do not show that the sign-change decision was checked. An unchecked never-split answer cannot earn R1/R3/R4. A correctly justified no-split integral earns the normal awards. Similarly, a guessed c may coincide with r; it is not evidence of solving v=0. The script records every such collision rather than removing the minority that makes the decision live.
+ 
+-Across branches: 361 raw parameter tasks. Do not add semantic classes across incompatible definitions and call them a bank capacity. App-owned exposure keys also include curriculum, recipe version, branch and output-affecting revisions; an exhausted semantic key must be reported, never bypassed by another seed. Repeated-part practice after feedback may continue with an explicit repeat label; a fresh test requires every assessed part-instance key to be unseen.
++Across branches: 361 raw parameter tasks. Do not add semantic classes across incompatible definitions and call them a bank capacity. App-owned semantic exposure checks retain curriculum, branch and mathematical part/model identity across versions; the recipe version records provenance only and does not reset exposure; an exhausted semantic key must be reported, never bypassed by another seed. Repeated-part practice after feedback may continue with an explicit repeat label; a fresh test requires every assessed part-instance key to be unseen.
+ 
+ ## Marking: D1-MR01–09 apply
+ 
+@@ -53,7 +53,7 @@
+ 
+ Wrong-root sample: a visible one-slip root calculation followed by a coherent interval/sign decision can earn R1. Correct primitive earns R2; evaluating their own one/two legs from that attempted primitive can earn R3 F.T.; an incorrect total loses R4. In a no-change case a one-slip false interior root may still reproduce the canonical total: R4 www is lost, giving **3/4**, not 4/4. A gratuitous interior split after a correct constant-sign justification is harmless and earns 4/4; a vertex/a=0 confusion without that justification earns R2 only (1/4) even when its total coincides. Thus the own-root F.T. is usable (3/4), not blocked by an accuracy-only R1. A root/sign check plus calculator leg values but no attempted primitive earns R1 only, not 3/4. All bare conclusions earn zero.
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule. Exponential V=12 misread as 21, otherwise correct, earns E1/E2 then MR−1 from E1 = 1/2; E3/E4/E5 = 3/3, total **4/5**. Wrong factor −V/k in acceleration earns neither E1 nor E2. A correct primitive followed by evaluating only T earns E3 alone. An exact recurring polynomial distance 40/3, 13⅓, or 13.3 is accepted with working; 13.33 is also within a 3-s.f. accepted numeric interval, whereas a truncated 13 is not. Exact signed answers need no artificial decimal zeros.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule. Exponential V=12 misread as 21, otherwise correct, earns E1/E2 then MR−1 from E1 = 1/2; E3/E4/E5 = 3/3, total **4/5**. Wrong factor −V/k in acceleration earns neither E1 nor E2. A correct primitive followed by evaluating only T earns E3 alone. An exact recurring polynomial distance 40/3, 13⅓, or 13.3 is accepted with working; 13.33 is also within a 3-s.f. accepted numeric interval, whereas a truncated 13 is not. Exact signed answers need no artificial decimal zeros.
+ 
+ Reversal normal: expanded v=2t²−2 on [0,3]. Root 1, negative then positive. F(1)=−4/3, F(3)=12, legs 4/3 and 40/3; distance 44/3, displacement 12. Writing only net displacement as total earns no distance criteria unless separate valid working actually earns R1/R2. The invalid endpoint triangles give 17, not 44/3. Valid alternative: integrate |v| with a justified sign split. A numerical quadrature value without working earns zero; a plotted parabola alone does not demonstrate a cubic primitive. Ambiguous unlabelled “12,44/3” requires clarification; do not guess the parts.
+ 
+@@ -70,8 +70,8 @@
+ 
+ D4 coincidence disclosure: `planning/d4/motion-design-check.json` records exact and marked-precision tuple lists for triangles/trapezia, signed/absolute net, always/never split, wrong-root, vertex/zero-acceleration and harmless interior splits. In a constant-sign interval any interior partition has the same absolute-leg sum; that identity is not evidence of a correct root or sign argument. R4 www prevents the false-root coincidence from gaining full marks.
+ 
+-D4 extended discrimination tests additionally report coefficient ratios, ratio thresholds, d/a, endpoint equality, the vertex relative to T/2, and all 15 tested visible triples containing T. Best single/pair lookup is156/168; best tested triple166/168. No tested heuristic is perfect, but finite-domain memorisation remains possible. Legitimate sign/concavity reasoning remains accepted.
++D4 extended discrimination tests additionally report coefficient ratios, ratio thresholds, d/a, endpoint equality, the vertex relative to T/2, and all 15 tested visible triples containing T. Best visible single/pair lookup is 156/168; the tested derived pair (d/a, T) reaches 162/168; best tested visible triple 166/168. No tested visible feature combination separates the pool perfectly. Fitted rules on derived ratios can separate this finite bank, so R1 still requires a justified decision. Legitimate sign/concavity reasoning remains accepted.
+ 
+-D4 fixed marking cases: vertex-value-only reasoning earns R1=0; it cannot prove constant sign here. A correctly justified harmless partition earns4/4. A one-slip root still outside the interval loses R4 www if the root claim is false (3/4 with the other evidence), unless a separate complete correct sign argument establishes the result. Eligible constant −2→−8 in v=2t²−2 preserves the reversal decision: gross R1–R6=6, deduct R2 only, net5/6; R4 still sees gross R2 as earned. A datum changing the direction-change outcome is ineligible throughout: in the D4 no-change example, T3→5 earns canonical R2 and R5 only,2/6, with no MR concession.
++D4 fixed marking cases: vertex-value-only reasoning earns R1=0; it cannot prove constant sign here. A correctly justified harmless partition earns4/4. A one-slip root still outside the interval loses R4 www if the root claim is false (3/4 with the other evidence), unless a separate complete correct sign argument establishes the result. Eligible constant −2→−8 in v=2t²−2 preserves the reversal decision: gross R1–R6=6, deduct R2 only, net5/6; R4 still sees gross R2 as earned. A datum changing the direction-change outcome is ineligible throughout: in the D4 no-change example, T3→5 earns canonical R2 and R5 only,2/6, with no MR concession. R1 judges the decision against the printed interval and its failure also blocks dependent R3; R2 does not depend on T; R5 retains ordinary method credit for an attempted primitive with both bounds, including evaluated signed legs.
+ 
+ Deferred-penalty example: V12→21 plus the wrong −V/k acceleration coefficient earns neither E1 nor E2. Correct misread-data distance work earns E3/E4/E5; the one net deduction comes from E3, giving2/5. Practice feedback names the copied datum and the separate chain-factor error.
+````
+
+</details>
+
+<details><summary>Diff 38: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md
+@@ -87,7 +87,7 @@
+ 
+ For a no-solution target, a comparison such as $2\pi/3>\pi/2$, followed by “so no real solution”, shows the relevant principal bound and applies it: B1/M1/A1, 3/3, even without spelling out both interval endpoints. A forced-candidate decimal contradiction also earns 3/3 when its precision clearly establishes the mismatch: for $\theta=-3\pi/4$, $kx\approx-0.7071$ is forced by sine, and its principal inverse is about $-0.7854$, far from $-2.3562$. The calculation must identify the forced candidate and the principal inverse; one arbitrary failed decimal guess is not a proof. These are design expectations for later marker fixtures, not a tested runtime marker.
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
+ 
+ Before submission, hide the instance-specific conditional exact-angle demand/objective tags as well as any case label. Showing that O03 is present only on real-solution instances would reveal the outcome. The catalogue may describe the mixed branch; the resolved case metadata is private until submission. This is an E/F/application acceptance requirement.
+````
+
+</details>
+
+<details><summary>Diff 39: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-stationary-inflexion.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-stationary-inflexion.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-stationary-inflexion.md
+@@ -99,7 +99,7 @@
+ 
+ ## Shared policy, mode, checks and current stop
+ 
+-`subject-rules.md` **D1-MR01–09** controls answers-only, hence, misread, accuracy, premature rounding, requested units, multiple attempts, official qualifiers and answer-given proof. This work order specifies its per-part application; it does not replace that policy with an invented local exception. **MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule. When exactness is not requested, correct 3sf decimals with the required working can earn A. Exactness is explicit in each stem below where needed. No physical unit is requested for these dimensionless curves, so there is no hidden unit penalty. Mark the first uncancelled coherent attempt under MR07; ask for clarification on illegible signs or ambiguous alternatives.
++`subject-rules.md` **D1-MR01–09** controls answers-only, hence, misread, accuracy, premature rounding, requested units, multiple attempts, official qualifiers and answer-given proof. This work order specifies its per-part application; it does not replace that policy with an invented local exception. **MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule. When exactness is not requested, correct 3sf decimals with the required working can earn A. Exactness is explicit in each stem below where needed. No physical unit is requested for these dimensionless curves, so there is no hidden unit penalty. Mark the first uncancelled coherent attempt under MR07; ask for clarification on illegible signs or ambiguous alternatives.
+ 
+ Practice: offer answer-free reminders and a different-instance example before submission; do not leak the current derivative, normal, point or classification in hints/alt text. For a proof, the displayed target is deliberately part of the question, but its proof is not. After submission reveal the frozen solution and the first evidenced repair. A correct bare value with zero credit receives 'Your value is correct; show the working needed for credit', not a claim that it is wrong. A corrected/partly repeated task is after-feedback practice, not wholly unaided evidence. Another practice instance is permitted without a pass.
+````
+
+</details>
+
+<details><summary>Diff 40: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md
+@@ -88,11 +88,11 @@
+ 
+ D2 F.T. fixtures include own(a) working values10.84,11.52,11.52 with $2k=4,4,6$: products43.36/43.4,46.08/46.1,69.12/69.1 remain eligible, even where canonical-path fixtures differ. Premature rounding loses a:A1 only if it changes(a)'s required final value; it does not revoke a legitimate later source-sanctioned F.T. mark. Decimal half-up significant-figure rounding is used, not binary rounding at a boundary.
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
+ 
+ ### Qualifier/deviation ledger
+ 
+-2023 Q6 rows01–03 retain positive width, formula-or-otherwise and canonical accuracy. Row04 retains factorised form alone. Row05 retains F.T.; row06 retains exclusive SC1. Rows07–09 retain single-graph exclusion and feature awards; rows10–11 retain own-graph conclusion and dependent reason. No row is passed off as an unchanged official numeric memo for new values.
++2023 Q6 rows01–03 retain positive width, formula-or-otherwise and canonical accuracy. Row04 retains factorised form alone. Row05 retains F.T.; D4 proposes a b:B2 www condition for visibly wrong log-law working (2023 P2 Q6 AWARD05), separately pending in D1-TRAP-FT-BRIDGE; row06 retains exclusive SC1. Rows07–09 retain single-graph exclusion and feature awards; rows10–11 retain own-graph conclusion and dependent reason. No row is passed off as an unchanged official numeric memo for new values.
+ 
+ **`D1-TRAP-FT-BRIDGE`, accepted in OD-5, reworded:** the 2023 same-type Q6(d) row is retained in full. “Must be correct from their graph” is own-graph F.T. for d:B1. The same-type 2023 task needs **no drawn trapeziums**; a clear verbal chord/curve reason is enough. The **only extension** is d:DB1 judged relative to that same own curve, supported by the combined conclusion/reason F.T. mark in 2025 Q4(b). The 2025 drawn-trapezium condition belongs to its differently worded task and is not imported. OD-5 accepts this marking extension; final plan approval remains pending.
+````
+
+</details>
+
+<details><summary>Diff 41: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md
+@@ -105,6 +105,6 @@
+ 
+ Freeze the six class-change tuples and eight $c=a$ endpoint tuples in `planning/d2/trig-d2-fixtures.json`. The fixture file also records every admitted-tuple premature-rounding flip under phase/root angles at 1 d.p., amplitude at 3/4 significant figures, ratio at 3 significant figures and the rounded-amplitude arccos route. Include the four both-2-d.p. half-up ties, including 299.55, and the $(3,1)$ and $(1,3)$ amplitude-at-6-s.f. phase cases. Later accepted-answer generation must use decimal round-half-up; binary banker's rounding is not the specified policy. Earned M/DM remains when premature rounding alone spoils final accuracy. These are design fixtures, not a runtime marker or renderer pass.
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
+ 
+ D3 precision-path clarification: `planning/d2/trig-d2-fixtures.json` remains frozen D2 evidence. Its ratio-at-3-s.f. path has 14 flips with exact phase; the review’s 10 uses the phase carried at its requested 2 d.p. Both are correct for their stated paths. Coupled phase/root recovery from 3-s.f. amplitude has 33 flips with an unrounded phase and 35 after writing that phase to 2 d.p.; isolated phase error with exact root angle has 34. D3 freezes the missing explicit paths and 6-s.f. arcsine case in `planning/d3/trig-d3-fixtures.json`. These are proposed stage-E/F acceptance fixtures; no runtime marker or accepted-answer behavior is established.
+````
+
+</details>
+
+<details><summary>Diff 42: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md</summary>
+
+````diff
+--- D4/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md
++++ D4.1/work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md
+@@ -70,7 +70,7 @@
+ 
+ Total **3+4=7**. Exclusive rearrangements/alternative methods fill the same slots, never add marks. Bilinearity $p(\mathbf u\cdot\mathbf w)=\mathbf v\cdot\mathbf w$ is valid; a reversed ray plus supplementary-angle correction is valid. Cosine rule alone does not meet the explicit scalar-product instruction, though it is a separate author oracle. Source’s2.03rad alternative is recorded: this new stem explicitly requests degrees, so radian-only final retains legitimate working but not the requested degree-form A1; **named deviation `D1-VEC-DEGREE-STEM`**. Exact60°/90° answers need no `.0` or artificial loss. Non-exact values rounding to an integer still need the requested decimal place; their raw response form must survive later input/marking/history conversion.
+ 
+-Answer-only: (a) bare$p$0/3; (b) bare angle0/4 under OD-1/D1-MR01. A visible equation can demonstrate method without prose; an answer alone cannot create B/M/A credit. No source exception is claimed for bare vector results. When exactness is not requested, exact rational or correctly rounded3sf$p$ earns A1 given valid working; an exact terminating decimal is also accepted. Current domain gives no hidden units beyond the stated degree response. Multiple attempts follow D1-MR07; a genuine eligible misread uses OD-6 once-per-datum MR−1 with A/B follow-through, preserving required working.
++Answer-only: (a) bare$p$0/3; (b) bare angle0/4 under OD-1/D1-MR01. A visible equation can demonstrate method without prose; an answer alone cannot create B/M/A credit. No source exception is claimed for bare vector results. When exactness is not requested, exact rational or correctly rounded3sf$p$ earns A1 given valid working; an exact terminating decimal is also accepted. Current domain gives no hidden units beyond the stated degree response. Multiple attempts follow D1-MR07; a genuine eligible misread follows MR03: the OD-6 MR−1 principle with A/B follow-through, under the proposed MR03-OPS-D4 per-datum mechanics, preserving required working.
+ 
+ Qualifier/deviation ledger: source row01 scaled-minus **or** resultant retained; row02 requires dot product **and=0**; row03 keeps valid-result accuracy with OD-1. Rows04–05 retain reversed-dot and one-or-both magnitudes alternatives; row06 retains formal F.T.; row07 retains degree accuracy and explicitly records the stem-specific radian departure above. `D1-VEC-A1-VALID-WORK` makes the correct-resultant dependency operational so named wrong-working coincidences cannot earn A1; it is a disclosed D1 criterion interpretation, not a falsely quoted official “www” label. Preserve independently earned M credit rather than a global wrong-resultant zero.
+ 
+@@ -91,7 +91,7 @@
+ | Misreads$OB$ as$(-2,1,-1)$; coherently gets$p=-1/4$ and angle$118.1^\circ$ |6/7 under OD-6| Correct misread-data work earns a2/3 (a:B1 carries the one MR−1, a:M1/a:A1 earned) and b4/4 with no second penalty. Name the miscopied sign. |
+ | Unreadable sign, angle unit or cancellation |pending| Clarify; retain original; no guessed score or best-attempt selection. |
+ 
+-**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
++**MR03 misread — authority and proposed mechanics.** Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. Sources: NSSCAS 2025 report PDF345 item4 (CONVENTION108) and comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties; the comparable allocation is not a published Namibian rule.
+ 
+ ## Bloom, modes, checks and stop
+````
+
+</details>
+
+**Next:** Claude runs `planning/CLAUDE-D4-1-CHECK.md` as a diff-only check. Then Vitalis approves the exact final manifest.

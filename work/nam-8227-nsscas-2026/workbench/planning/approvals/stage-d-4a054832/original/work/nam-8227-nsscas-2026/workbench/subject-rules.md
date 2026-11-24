@@ -1,0 +1,153 @@
+# Subject binding — NSSCAS Mathematics 8227
+
+Proposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.
+Qualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first
+examination 2021. This binds `recipe-contract.md` to the existing curriculum;
+it does not edit or replace that accepted analysis.
+
+## Assessment authority
+
+Source: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,
+SHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.
+The planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors
+pp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content
+and source identity remain in `curriculum/objective_registry.json`,
+`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.
+Root-native render hashes are recorded in `planning/planner-source-reads.json`.
+
+There is one assessment area, **technique with application**, with eleven
+abilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.
+Any may be assessed on either paper (PDF17/printed14). Both papers are compulsory,
+75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate
+per-ability weights or standalone command-word table are stated. Do not invent
+AO percentage quotas or import the static-card subtype mix. A pilot deck is not
+a 75-mark examination paper and does not certify qualification AO balance.
+
+Mathematics 1 and 2 are content themes, not exclusive paper boundaries. The
+assessment-conditions register documents cross-theme demands on Paper 2 and
+year-specific formula provision. Use the selected year's exact support policy;
+MF9 is notation/formula support, not extra assessed scope. For later pilot tests
+the proposed default is the reduced 2023–2025 formula support, with the chosen
+formula contents frozen and shown before the attempt. Do not offer additional
+formula help during a test or turn practice hints into test support.
+
+## Accuracy, units and methods
+
+The syllabus permits a non-programmable scientific calculator. Unless an exact
+answer or other precision is specified, non-exact answers use three significant
+figures; answers in degrees use one decimal place. Use calculator pi or 3.142
+(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions
+and multiples of pi remain exact where requested. Radian calculus and radian
+integrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.
+
+Question/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using
+logarithms`, diagram consistency and explicit exactness requirements are assessed
+only as stated by the task and memo. A single-question examiner comment is not a
+universal prohibition. Trace source conventions through `analysis/marking-conventions.json`:
+119 question tables, 821 criterion rows including exclusive alternatives; 818
+official rows and three explicit derived completions. Two missing part breakdowns
+and a missing alternative-path end remain disclosed. New/adapted pilot criteria
+are proposed, even when aligned to official method/accuracy evidence.
+
+NSSCO algebra/geometry may be required prerequisites. Record their role, but do
+not count prerequisite manipulation as direct coverage of an AS objective unless
+the task and criteria explicitly assess that AS demand. Content objectives,
+assessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.
+
+## Shared NSSCAS marking rules — owner authority is scoped per row
+
+Vitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.
+
+Native pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.
+
+| Rule ID | Rule applied in every work order | Authority / limits |
+|---|---|---|
+| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |
+| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |
+| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |
+| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |
+| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |
+| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |
+| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |
+| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |
+| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |
+
+Per-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.
+
+Each work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.
+
+## Scope boundaries
+
+The complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.
+Work orders apply them using actual admitted values, not a boilerplate checklist.
+
+| Binding | Consequence for this pilot and later expansion |
+|---|---|
+| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |
+| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |
+| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |
+| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |
+| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |
+| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |
+| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |
+| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |
+| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |
+| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |
+| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |
+| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |
+
+Grade a/c/e descriptions calibrate variation and do not create new objectives
+(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;
+label finite numerical choices as planner-chosen bounded design choices. No claim
+that a number size, mark total or Bloom label automatically equals a school grade.
+Where the assessed skill appears in e/c, those descriptors bound the easiest
+branches; the hardest stay no further than grade a. Implicit differentiation
+appears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support
+the chosen learner decisions; release must verify actual varied/boundary instances.
+
+## Source and rights decisions
+
+Preserve source defects and owner decisions in `analysis/source-defects.json`
+and the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023
+P1 Q9 originals cannot become learner-facing originals or same-type anchors.
+Valid demands remain in scope. A universal quadratic proof must state a≠0;
+the principal-value inverse demand is taught correctly from valid sources.
+
+Textbook items/figures are internal ingredients with `learner_display:false`.
+Their reported answers are checked evidence, not unquestioned truth. Create
+original diagrams and learner wording from the mathematics. Attributed NSSCAS
+and Cambridge exam originals are authorised by Vitalis; no Cambridge source is
+presented as a Namibian original. Per-branch source equality and learner labels
+follow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.
+
+## Learning text and feedback
+
+Use the existing guideline snapshots indexed by
+`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned
+in the planning manifest). Those were local app snapshots, not proof of deployed
+bytes. No forked shared AI instruction is added. Use British spelling, clear
+English, decoded Markdown/LaTeX, separate equations and correct mathematical units.
+Never put mathematical notation inside emphasis or expose provider/internal keys
+as learner copy. Render all later question, help, solution, feedback and history
+surfaces; a tolerant formatter does not establish authoring compliance.
+
+Feedback recognises demonstrated work, names the first evidenced error and offers
+an action/reason/result repair. It distinguishes an ambiguous upload from a wrong
+answer, and the app retains the original attempt. No invented misconception is
+labelled examiner-evidenced. Solutions/support and ordinary practice do not move
+memory boxes; the application owns reliable completed-test progress.
+
+## Current status
+
+These are proposed subject rules for the stage-D owner checkpoint. The accepted
+analysis proves source-level mapping and review, not implemented recipes, Bloom
+approval, generator correctness, visual marking or local website acceptance.
+The next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval
+of the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.
+
+
+D2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.
+
+Authority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.
+
+MR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.

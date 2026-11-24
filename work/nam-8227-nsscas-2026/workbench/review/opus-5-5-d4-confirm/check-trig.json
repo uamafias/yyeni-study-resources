@@ -1,0 +1,539 @@
+{
+ "label": "trig",
+ "scope": [
+  "WB8227-principal-inverse, WB8227-trig-rform-equation, WB8227-log-linear-model: work orders, exemplars, planning/trig-model-design.json, trig parts of pilot-design.json and part-evidence-register.json, each diffed against planning/history/d3-candidate",
+  "planning/d4/trig-d4-check.py, trig-d4-fixtures.json, trig-deviations.json, check-trig-math.mjs, repair-trig-design.py, misread_ledger.py, shared-misread-policy.json; checks/plan-repair-d4-trig-{dispositions.json,dispositions.md,validation.json,syntax.json}; trig rows of checks/plan-repair-d4-report.md",
+  "Baseline: review/opus-5-5-d3-confirm/check-trig.json trig-D3-01..07, findings.md D3-S02 (d)(e)(f) and trig notes"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+   "page": 4,
+   "what": "Native row behind the principal recipe (TM-READ-034): Q4(a) 3x=-sqrt3/2 M1 'Accept -0.866 at this stage'; x=-sqrt3/6 oe A1 [2]. No B mark exists in the official row: P-B1 is the disclosed D1-ADAPT-PI-RANGE3 adaptation, so the OD-6 deduction in the misread fixture falls on an adapted B, which MR03 permits (A or B). sha256 7cfb18fb... matches the source read."
+  },
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+   "page": 3,
+   "what": "Penalties MR-1: deducted from A or B marks when data are genuinely misread and object and difficulty remain unaltered; all A and B marks then become follow-through; own figures = accuracy error. Confirms the c.a.o.-override pointer (CAO is defined on the same page as 'no follow through from a previous error')."
+  },
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_qp_12.pdf",
+   "page": 2,
+   "what": "Q4(a) 'Solve sin^-1(3x) = -1/3 pi, giving the solution in an exact form. [2]' - the excluded original (3,-pi/3); the D4 fixture (3,-3pi/4) is not the original."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2022/NSSCAS_Examiners_Report_2022.pdf",
+   "page": 313,
+   "what": "Printed 311, Q6 R-form table: (b)(i) M1 F.T. their alpha and R; M1 dep 1st/2nd quadrant only; theta=4.9 c.a.o. A1 'can be awarded without M2'; theta=78.7 c.a.o. A1 'A0 if more than 2 answers'. Confirms the b-A1/b-A2 c.a.o. qualifiers that now carry the OD-6 pointer."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 359,
+   "what": "Printed 357, Q6: (a) B1 state or imply line, M1 log3 a = gradient, A1 a=9; (b) M1 F.T. their positive a and y=81, A1 C.A.O. Confirms U-A1 c.a.o. and the excluded original (b,c,m,q)=(3,2,2,4)."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D3-S02(d) / trig-D3-01",
+   "related_agent_ids": [
+    "trig-D3-01"
+   ],
+   "codex_claim": "Designed no-real outcome eligible; (3,-3pi/4) read as (3,3pi/4) gross 3, one net deduction, 2/3; decision flips canonical.",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:90 (MR03 line, byte-equal to shared work_order_line and to subject-rules.md:67 operational text: 'No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible'), :96 (D4 designed-outcome section), exemplars/WB8227-principal-inverse.md:57, trig-model-design.json recipes[1].branches[0].misread_eligibility_notes, trig-d4-fixtures.json:1585. Old clause '(including making the task easier or leaving no solution)' is gone from all three WOs. Own sympy: canonical (3,-3pi/4): -3pi/4<-pi/2, forced candidate -sqrt2/6 with asin = -pi/4 != -3pi/4 -> no real solution. Misread (3,3pi/4): 3pi/4>pi/2, forced sqrt2/6, asin = pi/4 -> no real solution. Same object (decide solvability), same comparison demand, same difficulty -> eligible. Criterion by criterion: P-B1 (bound pi/2 applied to the learner's target, F.T.) 1, P-M1 (out-of-range comparison method on misread data, judged as usual) 1, P-A1 (supported no-real conclusion, F.T.) 1; gross 3; first earned A/B on theta = P-B1 -> net 2/3. Canonical marking of the same script would give 0/3 (no actual-target comparison), so MR treatment is the lenient, OD-6-consistent outcome.",
+   "residual": "none in scope; the learner's misread answer ('no real solution') coincides with the canonical answer and still loses one mark, which is what OD-6/Cambridge MR-1 prescribe."
+  },
+  {
+   "finding_id": "D3-S02(e) / trig-D3-06",
+   "related_agent_ids": [
+    "trig-D3-06"
+   ],
+   "codex_claim": "R-form and log c.a.o. qualifiers yield only to eligible OD-6 A/B follow-through; named method errors not rescued.",
+   "verdict": "repaired",
+   "evidence": "R-form WO:69-70 'A1 c.a.o. (OD-6 eligible-misread F.T. excepted)', :100 same; log WO:13 and :94 same; R-form exemplar:117; JSON b-M2 follow_through (trig-model-design.json recipes[0] b-roots criteria[1]) and log U-A1 qualifier carry 'For an eligible misread only, OD-6 A/B follow-through overrides c.a.o./not-F.T.'; MR03 line in all three WOs. Native rows confirmed c.a.o. on 2022 PDF313 and 2025 PDF359. No trig criterion carries 'not F.T.'. 'unless the actual scheme specifies an order' occurs in no live trig/log file (only in the D3 archive audit and as a banned phrase in planning/d4/shared-policy-audit.py:12).",
+   "residual": "JSON b-A1/b-A2 have no local qualifier field; their c.a.o. lives only in the verbatim official_award_basis.condition and the pointer sits in b-M2.follow_through and the part misread_policy. Adequate; not a finding."
+  },
+  {
+   "finding_id": "D3-S02(f) (trig/log scope)",
+   "related_agent_ids": [
+    "shared-D3-04",
+    "trig-D3-06"
+   ],
+   "codex_claim": "Feedback copied verbatim; old scheme-order exception removed.",
+   "verdict": "repaired",
+   "evidence": "All 6 trig/log part misread_policy objects equal planning/d4/shared-misread-policy.json on every shared key (plus a part eligibility_notes key); 'Practice feedback names the misread.' is in owner_principle and in feedback. The 3 WO MR03 lines (principal :90, R-form :108, log :118) are byte-equal to shared work_order_line and contain the sentence once. pilot-design.json and part-evidence-register.json trig copies equal the source policies.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D3-S02(a,b,c) (trig/log application)",
+   "related_agent_ids": [
+    "trig-D3-01",
+    "trig-D3-02"
+   ],
+   "codex_claim": "14 historical rows recomputed as 13 whole-question ledgers, two new checks, derived ledgers.",
+   "verdict": "repaired",
+   "evidence": "Own ledger code (written from the MR03 text) reproduces all 13 net totals; the 14 historical IDs map one-to-one and every historical total is preserved (6/7, 4/5, 4/5, 2/7, 2/3, 0/3, 2/3, 1, 1, 1, 0); both new fixtures (PI designed no-real 2/3; RF two data 5/7 with slots a-B1 and b-A1) recompute. Own extra case where the deduction must move to a later part (RF a 2->4, R left as sqrt25 and phase truncated 36.86 so a-B1/a-A1 lost, (b) roots 131.603/334.677 -> 131.6/334.7 F.T.): MR03 text gives gross 5, slot b-A1, 4/7.",
+   "residual": "Notes trig-D4-01 (PI-k4 deduction slot) and trig-D4-02 ('whole-question' label on part-scoped ledgers; no trig fixture exercises the later-part move)."
+  },
+  {
+   "finding_id": "D3-S01 / trig-D3-03",
+   "related_agent_ids": [
+    "trig-D3-03"
+   ],
+   "codex_claim": "Owner-approved application tag superseded; only OD-6 principle binding.",
+   "verdict": "repaired",
+   "evidence": "checks/plan-repair-d4-trig-dispositions.json: status_class values are 'proposed operational application', 'qualification interpretation', 'text clarification', 'record repair', 'later E/F fixture'; none says owner approved; the D3 tag is declared superseded (line 37) and the D3 archive (sha 97fb538d..., still 'owner approved' at :22) is unedited as instructed. Every Vitalis/owner mention in the three WOs, exemplars, trig-model-design.json, trig-d4-fixtures.json and planning/d4/trig-deviations.json is either the OD-6 principle text, an 'approval pending' status, or the header 'Owner Vitalis'. Log WO:120 keeps the gradient-target domain as reviewer-prescribed, not owner-fixed.",
+   "residual": "none in trig scope"
+  },
+  {
+   "finding_id": "trig-D3-04",
+   "related_agent_ids": [
+    "trig-D3-04"
+   ],
+   "codex_claim": "Changed example tags the actual comparison [P-B1, P-M1].",
+   "verdict": "repaired",
+   "evidence": "exemplars/WB8227-principal-inverse.md:19 'The principal inverse-sine interval is [-pi/2,pi/2]. The actual target comparison -3pi/4<-pi/2 uses that bound [P-B1, P-M1].' The other B1 tags (:11 '-pi/6 belongs to that interval', :31 'The target is inside') are applied comparisons.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "trig-D3-05",
+   "related_agent_ids": [
+    "trig-D3-05"
+   ],
+   "codex_claim": "Class-table preface canonical; b-M2 judged on own interval.",
+   "verdict": "repaired",
+   "evidence": "work-orders/WB8227-trig-rform-equation.md:46 now reads 'For canonical instances ... the transformed roots lie inside ... The b-M2 award itself is judged on the learner's own shifted interval'; no 'b-M2 requires' remains in the WO, exemplar or JSON.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "trig-D3-07",
+   "related_agent_ids": [
+    "trig-D3-07"
+   ],
+   "codex_claim": "0.1.4 JSON uses D4 labels; corrected locators.",
+   "verdict": "repaired",
+   "evidence": "No status/bloom_review_status/stage string in trig-model-design.json mentions D2 or D3 (only three D1 paper-diagram statuses, historically accurate). Corrected locators verified in current bytes: principal WO:50 (P-B1 row), exemplar:51 (0/3 rote rule), R-form WO:84 (own-interval paragraph); every evidence locator in plan-repair-d4-trig-dispositions.json hits its needle, and its 11 file hashes match.",
+   "residual": "New stale label of the same kind: checks/plan-repair-d4-trig-validation.json:2 says 'pass; D3 author-side finite design checks' (trig-D4-03, note)."
+  },
+  {
+   "finding_id": "trig-D3-02",
+   "related_agent_ids": [
+    "trig-D3-02"
+   ],
+   "codex_claim": "Endpoint/tangent R-form, log q=ca and principal supplementary cases carried to E/F.",
+   "verdict": "repaired",
+   "evidence": "trig-d4-fixtures.json misread.stage_EF_carryforward lists all three; principal JSON changed_decision adds only 'a supplementary-angle coincidence cannot award an unsupported canonical conclusion'. Own check: (2,2pi/3) forced candidate sqrt3/4 equals canonical x of (2,pi/3).",
+   "residual": "Carried forward as later-test, as asked."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "RF exemplar (2,3,1) R, alpha 2dp, roots 1dp",
+   "claimed": "R=['107.6', '319.8']",
+   "computed": "R=sqrt(13), alpha=56.31, roots=['107.6', '319.8']",
+   "ok": true
+  },
+  {
+   "case": "RF exemplar (4,3,-2) R, alpha 2dp, roots 1dp",
+   "claimed": "R=['166.7', '299.6']",
+   "computed": "R=5, alpha=36.87, roots=['166.7', '299.6']",
+   "ok": true
+  },
+  {
+   "case": "RF exemplar (1,4,0) R, alpha 2dp, roots 1dp",
+   "claimed": "R=['104.0', '284.0']",
+   "computed": "R=sqrt(17), alpha=75.96, roots=['104.0', '284.0']",
+   "ok": true
+  },
+  {
+   "case": "RF a 2->4: (4,3,1) roots",
+   "claimed": "131.6, 334.7 (R=5)",
+   "computed": "['131.6', '334.7'], R=5",
+   "ok": true
+  },
+  {
+   "case": "RF a 2->4 and c 1->-1: (4,3,-1) roots",
+   "claimed": "154.7, 311.6",
+   "computed": "['154.7', '311.6']",
+   "ok": true
+  },
+  {
+   "case": "RF inverted ratio on (4,3,1): alpha'=atan(4/3) own roots",
+   "claimed": "115.3, 318.4; alpha' 53.13",
+   "computed": "['115.3', '318.4']; alpha'=53.13",
+   "ok": true
+  },
+  {
+   "case": "RF c 1->9 on (2,3): 9 > sqrt13 so no roots; canonical has two",
+   "claimed": "no roots (ineligible)",
+   "computed": "9>sqrt13=True, canonical roots=['107.6', '319.8'], misread roots=0",
+   "ok": true
+  },
+  {
+   "case": "PI exemplar k=4, theta=-pi/6",
+   "claimed": "-1/8",
+   "computed": "('real', -1/8)",
+   "ok": true
+  },
+  {
+   "case": "PI exemplar k=3, theta=-3*pi/4",
+   "claimed": "none",
+   "computed": "('none', -sqrt(2)/6, -pi/4)",
+   "ok": true
+  },
+  {
+   "case": "PI exemplar k=5, theta=pi/3",
+   "claimed": "sqrt(3)/10",
+   "computed": "('real', sqrt(3)/10)",
+   "ok": true
+  },
+  {
+   "case": "PI canonical (3,-3pi/4)",
+   "claimed": "no real solution; -3pi/4 < -pi/2",
+   "computed": "('none', -sqrt(2)/6, -pi/4); -3pi/4<-pi/2=True",
+   "ok": true
+  },
+  {
+   "case": "PI misread (3,3pi/4)",
+   "claimed": "no real solution; 3pi/4 > pi/2",
+   "computed": "('none', sqrt(2)/6, pi/4); 3pi/4>pi/2=True",
+   "ok": true
+  },
+  {
+   "case": "PI forced-candidate decimals for (3,-3pi/4)",
+   "claimed": "kx~-0.7071, asin~-0.7854 vs -2.3562",
+   "computed": "-0.7071, -0.7854, -2.3562",
+   "ok": true
+  },
+  {
+   "case": "PI k 4->5 misread x",
+   "claimed": "-1/10",
+   "computed": "-1/10",
+   "ok": true
+  },
+  {
+   "case": "PI theta -3pi/4 -> -pi/4 (decision flip)",
+   "claimed": "real x=-sqrt2/6",
+   "computed": "('real', -sqrt(2)/6)",
+   "ok": true
+  },
+  {
+   "case": "PI supplementary (2,2pi/3) forced candidate equals canonical x of (2,pi/3)",
+   "claimed": "coincide",
+   "computed": "('real', sqrt(3)/4), ('none', sqrt(3)/4, pi/3)",
+   "ok": true
+  },
+  {
+   "case": "LOG gradient exemplar (b,c,m,q)=(2,1,3,10)",
+   "claimed": "a=8, x=2/3",
+   "computed": "a=8, x=2/3 (0.667)",
+   "ok": true
+  },
+  {
+   "case": "LOG gradient exemplar (b,c,m,q)=(3,1,2,1)",
+   "claimed": "a=9, x=-4",
+   "computed": "a=9, x=-4 (-4.00)",
+   "ok": true
+  },
+  {
+   "case": "LOG gradient exemplar (b,c,m,q)=(3,3,2,0)",
+   "claimed": "a=9, x=-27/2",
+   "computed": "a=9, x=-27/2 (-13.5)",
+   "ok": true
+  },
+  {
+   "case": "LOG c 1->3 misread: (2,3,3,10)",
+   "claimed": "a=8, x=-14/3",
+   "computed": "a=8, x=-14/3 = -4.67 (3sf)",
+   "ok": true
+  },
+  {
+   "case": "LOG q 10->4 misread: (2,1,3,4)",
+   "claimed": "x=-4/3",
+   "computed": "x=-4/3 = -1.33 (3sf)",
+   "ok": true
+  },
+  {
+   "case": "LOG graph exemplar L=1/2,p=1/2",
+   "claimed": "p=1/2, A=1.65",
+   "computed": "u=(3/2,5/2), p=1/2, A=exp(1/2)=1.65",
+   "ok": true
+  },
+  {
+   "case": "LOG graph exemplar L=2,p=-1/4",
+   "claimed": "p=-1/4, A=7.39",
+   "computed": "u=(5/4,3/4), p=-1/4, A=exp(2)=7.39",
+   "ok": true
+  },
+  {
+   "case": "LOG graph exemplar L=-1,p=-3/4",
+   "claimed": "p=-3/4, A=0.368",
+   "computed": "u=(-5/2,-19/4), p=-3/4, A=exp(-1)=0.368",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): PI-designed-no-real (3,-3pi/4)->(3,3pi/4)",
+   "claimed": "2 net, slots {'theta': 'P-B1'}",
+   "computed": "gross 3, net 2, slots {'theta': 'P-B1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): PI-k4->5, B1 by target comparison only",
+   "claimed": "2 net, slots {'k': 'P-B1'}",
+   "computed": "gross 3, net 2, slots {'k': 'P-A1'}",
+   "ok": false
+  },
+  {
+   "case": "MR03 ledger (own code): PI-k4->5, B1 by inverse check",
+   "claimed": "2 net, slots {'k': 'P-B1'}",
+   "computed": "gross 3, net 2, slots {'k': 'P-B1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): PI flip no-real->real (ineligible, canonical)",
+   "claimed": "0 net, slots {'theta': None}",
+   "computed": "gross 0, net 0, slots {'theta': None}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): RF a 2->4 whole question",
+   "claimed": "6 net, slots {'a': 'a-B1'}",
+   "computed": "gross 7, net 6, slots {'a': 'a-B1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): RF a 2->4 + inverted ratio",
+   "claimed": "2 net, slots {'a': 'a-B1'}",
+   "computed": "gross 3, net 2, slots {'a': 'a-B1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): RF two data a 2->4, c 1->-1",
+   "claimed": "5 net, slots {'a': 'a-B1', 'c': 'b-A1'}",
+   "computed": "gross 7, net 5, slots {'a': 'a-B1', 'c': 'b-A1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): RF c 1->9 ineligible, canonical (b only)",
+   "claimed": "1 net, slots {'c': None}",
+   "computed": "gross 1, net 1, slots {'c': None}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): RF method only, (b) unattempted",
+   "claimed": "1 net, slots {'a': None}",
+   "computed": "gross 1, net 1, slots {'a': None}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): RF a 2->4, a-B1 and a-A1 lost to own errors, (b) all earned",
+   "claimed": "4 net, slots {'a': 'b-A1'}",
+   "computed": "gross 5, net 4, slots {'a': 'b-A1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): LOG c 1->3 whole question",
+   "claimed": "4 net, slots {'c': 'T-B1'}",
+   "computed": "gross 5, net 4, slots {'c': 'T-B1'}",
+   "ok": true
+  },
+  {
+   "case": "MR03 ledger (own code): LOG q 10->4 first use (b)",
+   "claimed": "4 net, slots {'q': 'U-A1'}",
+   "computed": "gross 5, net 4, slots {'q': 'U-A1'}",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "branch": "degree-cycle",
+   "claimed": "112->102->90->78->70->58; classes 6/42/10",
+   "computed": "112->102->90->78->70->58; classes c>b 6, c<b nonzero 42, c=0 10; all 58 have two distinct interior roots (own sign-scan on the original equation)",
+   "notes": "unchanged D3->D4 (no domain/capacity path differs in the JSON diff)"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "claimed": "48 raw, 47 admitted, 12 target keys, 23 distinct real x",
+   "computed": "48, 47, 12, 23",
+   "notes": "unchanged"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "claimed": "40 -> 20, no target equals prefactor",
+   "computed": "40 -> 20; 0 tuples with q = c*b^m",
+   "notes": "unchanged"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "branch": "graph-intercept",
+   "claimed": "30 models / 270 presentations",
+   "computed": "30 / 270",
+   "notes": "unchanged"
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4) read as (3,3pi/4): '3pi/4 > pi/2, so no real solution'",
+   "expected_marks": "2/3 (P-B1 F.T. 1, P-M1 1, P-A1 F.T. 1; gross 3; -1 at P-B1)",
+   "design_gives": "2/3, slot P-B1 (WO:96, exemplar:57, fixture)",
+   "ok": true,
+   "basis": "OD-6; MR03 no-solution clause; Cambridge PDF3"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "same script marked canonically (if it were ineligible)",
+   "expected_marks": "0/3",
+   "design_gives": "not applied (eligible)",
+   "ok": true,
+   "basis": "P-B1/P-M1 need the actual-target comparison"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4) read as (3,-pi/4), worked x=-sqrt2/6",
+   "expected_marks": "0/3 canonical (decision flip, ineligible)",
+   "design_gives": "0/3",
+   "ok": true,
+   "basis": "WO:96, OD-6 changed object"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(4,-pi/6) k read as 5: -pi/6 in range, 5x=-1/2, x=-1/10",
+   "expected_marks": "2/3; slot P-A1 if B1 came only from the target comparison, P-B1 if from the inverse check",
+   "design_gives": "2/3, slot P-B1",
+   "ok": true,
+   "basis": "MR03 'first earned A/B on that datum' (see trig-D4-01)"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "'range is [-pi/2,pi/2]; no real solution' (changed case)",
+   "expected_marks": "0/3",
+   "design_gives": "0/3",
+   "ok": true,
+   "basis": "WO:50,54; exemplar:51"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a+b",
+   "response": "(2,3,1) a read as 4, full coherent work R=5, roots 131.6/334.7",
+   "expected_marks": "6/7, slot a-B1",
+   "design_gives": "6/7, a-B1",
+   "ok": true,
+   "basis": "OD-6; 2022 PDF313 rows"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a+b",
+   "response": "a 2->4 plus inverted tan(alpha)=4/3, own-interval roots 115.3/318.4",
+   "expected_marks": "2/7 (a-B1 only in (a), deducted; b-M1, b-M2)",
+   "design_gives": "2/7",
+   "ok": true,
+   "basis": "named method error not rescued"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a+b",
+   "response": "a 2->4 and c 1->-1, roots 154.7/311.6",
+   "expected_marks": "5/7, slots a-B1 and b-A1",
+   "design_gives": "5/7, a-B1 and b-A1",
+   "ok": true,
+   "basis": "MR03 per-datum"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a+b",
+   "response": "a 2->4, R written sqrt25, phase 36.86 (a-B1, a-A1 lost), roots 131.6/334.7",
+   "expected_marks": "4/7, slot moves to b-A1",
+   "design_gives": "4/7 by MR03 text (no fixture)",
+   "ok": true,
+   "basis": "MR03 'moving to later-use parts'"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "b-roots",
+   "response": "c 1 read as 9 (>sqrt13): reduction only",
+   "expected_marks": "1/4 canonical (removes canonical roots, ineligible)",
+   "design_gives": "1/4",
+   "ok": true,
+   "basis": "MR03 no-solution clause; 2022 PDF313 b-M1 condition"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "part": "t-parameter+t-target",
+   "response": "(2,1,3,10) c read as 3: log2 y=24+3x, a=8, x=-14/3 (-4.67)",
+   "expected_marks": "4/5, slot T-B1",
+   "design_gives": "4/5, T-B1",
+   "ok": true,
+   "basis": "OD-6; 2025 PDF359"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "part": "t-parameter+t-target",
+   "response": "q 10 read as 4: x=-4/3 (-1.33)",
+   "expected_marks": "4/5, slot U-A1",
+   "design_gives": "4/5, U-A1",
+   "ok": true,
+   "basis": "OD-6; U-A1 c.a.o. excepted"
+  }
+ ],
+ "findings": [
+  {
+   "id": "trig-D4-01",
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-check.py:45 (awards('p-decision',PI,['k']) tags P-B1 with datum k); work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-fixtures.json:961 (PI-k4-copied-as5 deducted_criterion P-B1); work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-principal-inverse.md:53 ('Deduct P-B1 once')",
+   "severity": "note",
+   "expected": "MR03 (subject-rules.md:67, WO:90) deducts from 'the first earned A/B on that datum'. When P-B1 is earned by the target comparison -pi/2<-pi/6<pi/2, it does not use k; the first earned A/B on k is then P-A1 (x=-1/10).",
+   "actual": "The fixture tags all three criteria with datum k by fiat and deducts P-B1. The exemplar's learner also shows the inverse check sin^-1(5(-1/10))=-pi/6, which does use k, so P-B1 is defensible for that script, but the fixture records no route.",
+   "evidence": "Own ledger: B1 by target comparison only -> slot P-A1, net 2/3; B1 by inverse check -> slot P-B1, net 2/3. Total identical either way (single 3-mark part).",
+   "repair": "When the fixture is next touched, record which P-B1 route is credited, or state that P-B1 carries datum k only through the inverse-substitution route. No score changes."
+  },
+  {
+   "id": "trig-D4-02",
+   "recipe": "WB8227-trig-rform-equation",
+   "branch": "degree-cycle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-fixtures.json:1182,1234,1470; work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-trig-dispositions.md (\"13 whole-question ledgers\")",
+   "severity": "note",
+   "expected": "'Whole-question ledgers' list every criterion of the 7-mark question, so 'no A/B on this datum anywhere' is visible.",
+   "actual": "Three R-form ledgers are part-scoped: RF-method-only-no-AB-anywhere (tariff 3; '(b)' is only described as 'no later response supplied'), RF-misread-c1-as9-no-solution (tariff 4) and RF-inverted-ratio-is-named-error (tariff 3, no misread). Totals are right. No trig/log fixture exercises the D3-S02(a) case where the deduction must move to a later part.",
+   "evidence": "Ledger tariffs 3/4/3 against question tariff 7. Own later-part case (RF a 2->4, R written sqrt25, phase 36.86, (b) fully F.T.) gives 4/7 under the MR03 text; the design text supports it.",
+   "repair": "Optional: include the unattempted (b) criteria as zero in RF-method-only, and add a later-part-move fixture such as the one above at E/F. Approval impact nil."
+  },
+  {
+   "id": "trig-D4-03",
+   "recipe": "records",
+   "branch": "-",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d4-trig-validation.json:2; work/nam-8227-nsscas-2026/workbench/planning/d4/trig-d4-check.py:108",
+   "severity": "note",
+   "expected": "D4 validation output carries D4 labels (trig-D3-07 repair).",
+   "actual": "'status': 'pass; D3 author-side finite design checks, not independent acceptance/runtime validation' in the D4 output; the --check assertion message also says 'stale D3 output'.",
+   "evidence": "Quoted strings.",
+   "repair": "Relabel to D4 when the receipts are next regenerated."
+  }
+ ],
+ "verified_ok": [
+  "MR03 text: subject-rules.md:67 contains the shared owner_principle and operational_rules strings verbatim; the 3 trig/log WO lines equal shared work_order_line byte-for-byte.",
+  "No-solution clause in principal WO:90 and :96 distinguishes removing a canonical solution from a designed no-real outcome, consistent with MR03 and with JSON same_decision/changed_decision notes; exemplar:53 (no-real->real) and :57 (real->no-real) cover both flip directions as ineligible.",
+  "Authority: only the OD-6 principle is attributed to Vitalis in trig files; MR03-OPS-D4 labelled proposed (policy operational_status, fixtures authority, dispositions status_class, OWNER-CHECKPOINT rows 43/44).",
+  "Regression: trig-model-design.json D3->D4 flattened diff touches only status/version labels, misread_policy, b-M2 follow_through, U-A1 qualifier, principal misread_eligibility_notes and author_checks; no domain, capacity, marks, criterion value or exemplar parameter/answer changed. WO/exemplar diffs are text only.",
+  "All 9 canonical exemplars recompute independently: R-form (2,3,1) sqrt13/56.31/107.6,319.8; (4,3,-2) 5/36.87/166.7,299.6; (1,4,0) sqrt17/75.96/104.0,284.0; principal -1/8, none, sqrt3/10; log gradient 8,2/3 (0.667); 9,-4; 9,-27/2 (-13.5); graph 1.65, 7.39, 0.368.",
+  "pilot-design.json trig recipes equal trig-model-design.json on every common key (recipe, branch and part level; extra pilot keys only), origin_design_input_sha256 4d57bb70... matches the current source; part-evidence-register trig policies equal the source.",
+  "plan-repair-d4-trig-dispositions.json: all 13 evidence locators hit their needles; all 11 recorded file hashes match current bytes.",
+  "Offline KaTeX check (author script run on a scratch copy of the six docs): pass, 474 spans, output identical to checks/plan-repair-d4-trig-syntax.json.",
+  "Native rows rendered: Cambridge 9709/12 m16 ms PDF4 Q4(a) M1/A1 and PDF3 Penalties; qp PDF2 Q4(a); NSSCAS 2022 PDF313 R-form c.a.o. rows; NSSCAS 2025 PDF359 log c.a.o. row."
+ ],
+ "not_checked": [
+  "Runtime marker, generator, renderer: none exist.",
+  "The rounding flip sets (14/10/35/3) were not re-derived in D4 scope; trig-d4-check.py asserts them unchanged from D3 and no domain changed.",
+  "Shared files (subject-rules other rows, recipe-contract, HANDOVER, OWNER-CHECKPOINT beyond rows 43/44 and trig rows 35-37) belong to the shared agent.",
+  "Did not run trig-d4-check.py (it writes into the repository); own independent code used instead."
+ ]
+}

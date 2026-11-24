@@ -1,0 +1,202 @@
+{
+  "status": "pass",
+  "scope": "Read-only independent author-side motion audit; not cross-vendor acceptance/runtime grading",
+  "input_sha256": {
+    "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json": "6eda9743c849bf2c6556df8bdbb14835a678219b11943ef5f0e6b31ca7310558",
+    "work/nam-8227-nsscas-2026/workbench/planning/d2/motion-design-check.py": "485a5ee2851d32dabb12a075b711db4f013ecd98ad5a1d1edbaf872d0ab379b6",
+    "work/nam-8227-nsscas-2026/workbench/planning/d2/motion-design-check.json": "60007af8305dd1139620cb50104e68c4e42b8cecf6b0bc797594dd9a1742595b",
+    "work/nam-8227-nsscas-2026/workbench/planning/d2/motion-cases.json": "08dd1a92c569711cc968390c9712d527f984f5042ff181859d3e458100ade902",
+    "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md": "024a5b4ec7db3feca9dd62722528ecfab6ebc74ba7411c6abdab21b4955471ba",
+    "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md": "f90de07007feb088b24d08f997037ae36e046797329aa2614efc6df577fda469"
+  },
+  "domain_counts": {
+    "polynomial": 137,
+    "exponential": 56,
+    "mixed": 132,
+    "sign_change": 108,
+    "no_sign_change": 24,
+    "no_change_fraction": "2/11",
+    "outside_root_margin": [
+      1,
+      2
+    ]
+  },
+  "semantic_contexts": {
+    "polynomial_velocity": 35,
+    "exponential_acceleration": 14,
+    "mixed_normalised_shapes": 30
+  },
+  "marked_precision_sweep": {
+    "method": "independent exact Fraction/highprecision mpmath with Decimal ROUND_HALF_UP3sf; compared every named error model count to root receipt",
+    "coincidences": {
+      "polynomial-chain": {
+        "zero-lower-bound-omission": 137,
+        "omit-B-term": 47,
+        "half-endpoint-velocity-times-T": 9,
+        "integral-of-a": 3,
+        "velocity-at-T": 3,
+        "acceleration-at-T": 1
+      },
+      "exponential-positive": {},
+      "interior-reversal": {
+        "always-split-at-r": 108,
+        "wrong-positive-root-c": 50,
+        "signed-area-without-decision": 12,
+        "absolute-net-without-decision": 24,
+        "never-split": 24
+      }
+    },
+    "unexpected_undisclosed": 0
+  },
+  "exemplar_oracles": [
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:normal",
+      "result": "pass",
+      "independent_answer": "40/3"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:changed",
+      "result": "pass",
+      "independent_answer": "12"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:boundary",
+      "result": "pass",
+      "independent_answer": "96"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:normal",
+      "result": "pass",
+      "independent_answer": "24 - 24*exp(-1)"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:changed",
+      "result": "pass",
+      "independent_answer": "54 - 54*exp(-1)"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:boundary",
+      "result": "pass",
+      "independent_answer": "120 - 120*exp(-1)"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:normal",
+      "result": "pass",
+      "independent_answer": "44/3"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:changed",
+      "result": "pass",
+      "independent_answer": "37/3"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:boundary",
+      "result": "pass",
+      "independent_answer": "64"
+    }
+  ],
+  "marking_dependencies": {
+    "R1": "solve and interval/sign decision; one slip allowed",
+    "R3": "dependent on R1 and actual attempted primitive with both bounds; credible own-root F.T.",
+    "R4": "dependent on R2 and R3, canonical value only",
+    "R5": "signed full integral or sum signed evaluated legs from(a)",
+    "calculator_only_R1_R2_R3_R4": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "half_boundary": {
+    "distance": "233/2",
+    "three_sf_half_up": "117"
+  },
+  "notes": [
+    "Stale exponential59rescaling note and exact12/96labels were corrected by root before final hash pin."
+  ],
+  "prose_inspection": {
+    "status": "pass",
+    "docs_checked": [
+      "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md",
+      "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md"
+    ],
+    "source_read": "Read both whole current work-order/exemplar docs after root final notification.",
+    "credit_expectations": {
+      "numeric_distance_only": "0/4",
+      "root_decision_plus_calculator_legs_without_primitive": "R1only1/4",
+      "own_root_FT_with_correct_primitive_but_wrong_total": "R1/R2/R3=3/4;R4=0",
+      "polynomial_distance": "S3requiresS1/S2",
+      "coherently_misread_normal_exponential_V21": "E2/E4only2/5;E1/E3/E5fail"
+    },
+    "presentation_fix_verified": "Polynomial12and96nowlabelledexact,notincorrectly3sf.",
+    "cases": "All9proseanswersmatchtheindependentlyrecomputedcaseJSON."
+  },
+  "final_receipt_reconfirmation": {
+    "status": "pass",
+    "reason": "Root reran its unchanged design checker during the final parallel batch. Generated receipt bytes changed; the former root receipt bytes are not retained here, so the exact serialization difference is not asserted. Refreshed only after semantic comparison against the independent prior audit.",
+    "old_root_receipt_sha256": "a1d7c93194452beb08bc2fa7c70508aad39ed36b0e131a5028c7b58362457d55",
+    "new_root_receipt_sha256": "60007af8305dd1139620cb50104e68c4e42b8cecf6b0bc797594dd9a1742595b",
+    "source_canonical_and_checker_hashes_unchanged": true,
+    "case_input_and_prose_hashes_unchanged": true,
+    "branch_counts_and_all_marked_precision_collision_counts_unchanged": true,
+    "all_9_oracles_reconfirmed": [
+      {
+        "case_id": "WB8227-motion-integration:polynomial-chain:normal",
+        "result": "mathematically equivalent",
+        "current_root_answer": "40/3",
+        "independent_audit_answer": "40/3"
+      },
+      {
+        "case_id": "WB8227-motion-integration:polynomial-chain:changed",
+        "result": "mathematically equivalent",
+        "current_root_answer": "12",
+        "independent_audit_answer": "12"
+      },
+      {
+        "case_id": "WB8227-motion-integration:polynomial-chain:boundary",
+        "result": "mathematically equivalent",
+        "current_root_answer": "96",
+        "independent_audit_answer": "96"
+      },
+      {
+        "case_id": "WB8227-motion-integration:exponential-positive:normal",
+        "result": "mathematically equivalent",
+        "current_root_answer": "24 - 24*exp(-1)",
+        "independent_audit_answer": "24 - 24*exp(-1)"
+      },
+      {
+        "case_id": "WB8227-motion-integration:exponential-positive:changed",
+        "result": "mathematically equivalent",
+        "current_root_answer": "54 - 54*exp(-1)",
+        "independent_audit_answer": "54 - 54*exp(-1)"
+      },
+      {
+        "case_id": "WB8227-motion-integration:exponential-positive:boundary",
+        "result": "mathematically equivalent",
+        "current_root_answer": "120 - 120*exp(-1)",
+        "independent_audit_answer": "120 - 120*exp(-1)"
+      },
+      {
+        "case_id": "WB8227-motion-integration:interior-reversal:normal",
+        "result": "mathematically equivalent",
+        "current_root_answer": "44/3",
+        "independent_audit_answer": "44/3"
+      },
+      {
+        "case_id": "WB8227-motion-integration:interior-reversal:changed",
+        "result": "mathematically equivalent",
+        "current_root_answer": "37/3",
+        "independent_audit_answer": "37/3"
+      },
+      {
+        "case_id": "WB8227-motion-integration:interior-reversal:boundary",
+        "result": "mathematically equivalent",
+        "current_root_answer": "64",
+        "independent_audit_answer": "64"
+      }
+    ],
+    "negative_fixture_results": "5/5 rejected",
+    "half_boundary": "116.5 rounds half-up to117 at3sf",
+    "limits": "Bounded receipt reconciliation only; no root source/checker/canonical/prose edit and no blanket hash refresh."
+  }
+}

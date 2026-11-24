@@ -1,0 +1,34 @@
+{
+ "date": "2026-11-24",
+ "method": "Two fresh copies of work/nam-8227-nsscas-2026 (review/opus-5-5-d2-confirm removed) plus the 436 pinned sources and repo-root AGENTS.md, TEAM-PLAYBOOK.md, BLOOM-CLASSIFICATION.md and workbench/playbook files, each run with tools/run_repair_r7_closeout.py --single-rebuild; hashes from run_repair_r7_closeout.hashes().",
+ "copies": [
+  {
+   "copy": 1,
+   "commands": 285,
+   "outputs": 275,
+   "status": "pass"
+  },
+  {
+   "copy": 2,
+   "commands": 285,
+   "outputs": 275,
+   "status": "pass"
+  }
+ ],
+ "author_outputs": 275,
+ "copy1_equals_copy2": true,
+ "copy1_equals_author": true,
+ "differences": [],
+ "negatives": {
+  "run_in": "copy 1",
+  "result": "checkers pass; 38 established subprocess negatives rejected",
+  "note": "Codex's total of 76 also counts in-checker and new guard fixtures; the closeout agent separately seeded lost-negation and over-negation faults (check-closeout.json)."
+ },
+ "freeze_checks": {
+  "author": "pass: 7,771 files, 436 sources, 37 review files",
+  "copy2": "pass: 7,771 / 436 / 37",
+  "copy1": "fails only on checks/r7-closeout/negative-only-r7-closeout.json, which the negatives run in that copy rewrote; the only difference is the temporary absolute path inside a recorded error message",
+  "plan_manifest_check_author": "pass: 809 files, 436 sources, 62 review files, D0/D1 recovery verified",
+  "plan_manifest_check_copy2": "pass"
+ }
+}

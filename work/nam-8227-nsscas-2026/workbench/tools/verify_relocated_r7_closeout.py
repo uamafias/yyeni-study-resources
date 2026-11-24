@@ -26,7 +26,7 @@ FIXTURE_SPECS=[
     ('r7_family','checks/r7/family-negative-validation.json','negative_fixtures',4),
     ('r7_source','checks/r7/parallel-sources/validation.json','negative_fixtures',5),
     ('r7_new','checks/r7/final-validation.json','new_negative_fixtures',4),
-    ('r7_closeout_new','checks/r7-closeout/final-validation.json','new_negative_fixtures',1),
+    ('r7_closeout_new','checks/r7-closeout/final-validation.json','new_negative_fixtures',3),
 ]
 
 
@@ -65,7 +65,7 @@ def fixture_records(wb,negative):
         for row in values:
             assert isinstance(row,dict)and row.get('result')in ['rejected','failed as required'],('fixture lacks explicit failure proof',name,row)
         counts[name]=count;records[name]=rows
-    assert sum(counts.values())==74
+    assert sum(counts.values())==76
     return counts,records
 
 

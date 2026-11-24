@@ -1,0 +1,429 @@
+{
+ "label": "calc2",
+ "scope": [
+  "WB8227-motion-integration: polynomial-chain, exponential-positive, interior-reversal",
+  "WB8227-log-linear-model: graph-intercept, gradient-target"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+   "page": 5,
+   "what": "2021 P1 Q4 native (self-rendered): a=6t+1 m/s^2, initial v 2 m/s, t after passing O; (a) v(t) [3], (b) how far from O after 3 s [3]"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 232,
+   "what": "2021 report Q4 award table (printed 230): M1/A1/A1 (typo 'v=3,t=0' confirmed; v=3t^2+t+2), M1 integrate their (a) >=1 correct term/A1/A1 37.5 m"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 236,
+   "what": "2021 report P2 general comments (printed 234): calculators that differentiate and integrate; 'No marks are awarded if only answers are given'; answers exact where possible"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 15,
+   "what": "2023 P2 Q9 native: v=30e^(-t/2) after leaving fixed point; (a) acceleration [2], (b) distance during first 2 s [3]"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 339,
+   "what": "2023 report Q9 award table (printed 337): (a) B1 v'=-15e^k, B1 v'=k e^(-t/2) k != +-60; (b) B1 primitive, M1 both boundaries 'k != -15, must be convinced it is an integral', A1 37.9; OR constant route B1/M1 c=60/A1"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 6,
+   "what": "2023 P2 Q4(a) native: y=Ae^(px+p), ln y vs x line through (1,1.693),(3,2.693), diagram with axes ln y / x and origin 0; find A and p [5]"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 335,
+   "what": "2023 report Q4(a) award table (printed 333): B1 state or imply, M1 p=gradient, A1, DM1 'substitute a coordinate and simplify to A=e^k where k is a constant', A1 A=e^0.693 or 2.00; simultaneous alternative M1(allow 1 slip)/A1/DM1/A1"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+   "page": 6,
+   "what": "2025 P2 Q6 native: y=3^(2a)a^x, log3 y vs x gradient 2; (a) exact a [3]; (b) hence x when y=81 [2]"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 359,
+   "what": "2025 report Q6 comments and award (printed 357): B1 state/imply line (condone 2a log3 3), M1 state/imply log3 a=gradient, A1 a=9; (b) M1 F.T. their positive a, A1 c.a.o. x=-7, exponential alternative; base-10/ln misuse, a=100 error, a not 1/0/negative"
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 13,
+   "what": "Syllabus M1 Topic 9 Integration objectives (printed 10)"
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 14,
+   "what": "Syllabus M2 Topic 2 log/exponential objectives incl. 'excluding change of base' and linearisation (printed 11)"
+  },
+  {
+   "pdf": "work/nam-8227-nsscas-2026/workbench/planning/calculus-source-pages/YM-368.png",
+   "page": 368,
+   "what": "Planner render (internal textbook) YM Exercise 7 Q7: v=2 m/s at O, a=5-6t, rest t then total distance 0..3; confirms manifest description"
+  },
+  {
+   "pdf": "work/nam-8227-nsscas-2026/workbench/planning/paper-diagram-renders/log-linear-model-sheet.png",
+   "page": 1,
+   "what": "Contact sheet of 3 log-linear paper diagrams; also viewed normal planner render and exemplars/assets boundary PNG; SVG sources read and geometry recomputed"
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "motion polynomial normal a=4t+1,u=3,T=2",
+   "claimed": "v=2t^2+t+3; d=40/3 m",
+   "computed": "v=2t^2+t+3; s(2)=40/3 (sympy, differentiation and |v| integral agree)",
+   "ok": true
+  },
+  {
+   "case": "motion polynomial changed a=2t,u=1,T=3",
+   "claimed": "v=t^2+1; d=12 m",
+   "computed": "v=t^2+1; d=12",
+   "ok": true
+  },
+  {
+   "case": "motion polynomial boundary a=6t+2,u=4,T=4",
+   "claimed": "v=3t^2+2t+4; d=96 m",
+   "computed": "v=3t^2+2t+4; d=96",
+   "ok": true
+  },
+  {
+   "case": "motion exponential normal V=12,k=1/2,T=2",
+   "claimed": "a=-6e^(-t/2); d=24-24/e ~ 15.2 m",
+   "computed": "a=-6e^(-t/2); d=15.1709 -> 15.2",
+   "ok": true
+  },
+  {
+   "case": "motion exponential changed V=18,k=1,T=3",
+   "claimed": "a=-18e^(-t); d=18-18/e^3 ~ 17.1 m",
+   "computed": "a=-18e^(-t); d=17.1038 -> 17.1 (note: a(t) identical to the primitive used in part 2; see calc2-02)",
+   "ok": true
+  },
+  {
+   "case": "motion exponential boundary V=30,k=1/4,T=4",
+   "claimed": "a=-(15/2)e^(-t/4); d=120-120/e ~ 75.9 m",
+   "computed": "a=-7.5e^(-t/4); d=75.8545 -> 75.9",
+   "ok": true
+  },
+  {
+   "case": "motion reversal normal v=2t-2, T=3",
+   "claimed": "rest 1 s; disp 3 m; distance 1+4=5 m",
+   "computed": "rest 1; disp 3; legs 1 and 4; total 5",
+   "ok": true
+  },
+  {
+   "case": "motion reversal changed v=t-2, T=4",
+   "claimed": "rest 2 s; disp 0; distance 2+2=4 m",
+   "computed": "rest 2; disp 0; total 4",
+   "ok": true
+  },
+  {
+   "case": "motion reversal boundary v=3t-9, T=4",
+   "claimed": "rest 3 s; disp -12 m; distance 27/2+3/2=15 m",
+   "computed": "rest 3; disp -12; legs 27/2, 3/2; total 15",
+   "ok": true
+  },
+  {
+   "case": "2021 P1 Q4 source check",
+   "claimed": "report: v=3t^2+t+2, s(3)=37.5 m",
+   "computed": "37.5 (also = admitted polynomial tuple A=3,B=1,u=2,T=3)",
+   "ok": true
+  },
+  {
+   "case": "2023 P2 Q9 source check",
+   "claimed": "report: -15e^(-t/2); 37.9 (37.9272..); common wrong -22.07",
+   "computed": "60(1-e^-1)=37.9272; -60/e=-22.07; also = admitted exponential tuple V=30,k=1/2,T=2",
+   "ok": true
+  },
+  {
+   "case": "log graph normal (1,2),(3,3)",
+   "claimed": "p=1/2, ln A=1, A=e~2.72; misconception A=e^(3/2)",
+   "computed": "p=1/2, lnA=1, A=2.72; intercept 3/2 -> e^1.5=4.48; original-model log ordinates 2,3",
+   "ok": true
+  },
+  {
+   "case": "log graph changed (2,5/4),(4,3/4)",
+   "claimed": "p=-1/4, ln A=2, A~7.39",
+   "computed": "p=-1/4, lnA=2, A=7.39",
+   "ok": true
+  },
+  {
+   "case": "log graph boundary (1,-5/2),(4,-19/4)",
+   "claimed": "p=-3/4, ln A=-1, A~0.368",
+   "computed": "p=-3/4, lnA=-1, A=0.368",
+   "ok": true
+  },
+  {
+   "case": "log gradient normal y=2^a a^x, m=2, y=8",
+   "claimed": "a=4, x=-1/2",
+   "computed": "a=4, x=-1/2; 2^4*4^(-1/2)=8",
+   "ok": true
+  },
+  {
+   "case": "log gradient changed y=3^a a^x, m=1, y=81",
+   "claimed": "a=3, x=1",
+   "computed": "a=3, x=1; 27*3=81",
+   "ok": true
+  },
+  {
+   "case": "log gradient boundary y=3^(2a)a^x, m=2, y=1",
+   "claimed": "a=9, x=-9",
+   "computed": "a=9, x=-9; 3^18*9^-9=1",
+   "ok": true
+  },
+  {
+   "case": "2025 P2 Q6 source check",
+   "claimed": "report a=9, x=-7",
+   "computed": "a=9, x=(4-18)/2=-7; = admitted tuple b=3,c=2,m=2,q=4",
+   "ok": true
+  },
+  {
+   "case": "paper diagram SVG geometry (3 diagrams)",
+   "claimed": "points exactly on line, consistent with labels",
+   "computed": "all labelled points lie on the drawn line; each SVG uses one consistent x and y scale (normal 212.5/137.5 px per unit, changed and boundary consistent); SVG and PNG hashes match design record",
+   "ok": true
+  },
+  {
+   "case": "full-domain truth checks",
+   "claimed": "all admitted instances valid",
+   "computed": "144 polynomial (v>=1 on [0,T], d=s(T)=integral|v|), 60 exponential (closed form = definite integral), 27 reversal (simple interior root r in (0,T), sign change - to +, distance=k(r^2+s^2)/2 > |disp|=k|s^2-r^2|/2), 270 log presentations (two-point recovery returns (L,p); original-model ordinates match), 40 gradient tuples (exact substitution gives b^q)",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "polynomial-chain",
+   "claimed": 144,
+   "computed": 144,
+   "notes": "All 144 tuples distinct, v>=u>=1 so no reversal. 89 distinct distances (30 occurs 4x). 88/144 distances non-integer, 72 recurring (denominator 3 or 6). Includes the exact 2021 P1 Q4 instance (A=3,B=1,u=2,T=3, 37.5 m). All variation is surface numbers; same learner decisions throughout."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "exponential-positive",
+   "claimed": 60,
+   "computed": 60,
+   "notes": "All distinct; v>0. Includes exact 2023 P2 Q9 instance (V=30,k=1/2,T=2). 20/60 have k=1 where a(t) equals the distance primitive (see calc2-02). V only rescales; 10 groups of 3sf answer collisions (e.g. 15.2 three times). 29.4505 (V=30,k=1,T=4) sits close to a 3sf rounding boundary."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "claimed": 27,
+   "computed": 27,
+   "notes": "Every root strictly interior, simple, sign change negative to positive; distance > |displacement| for all 27; no visible-question duplicates or answer-triple collisions. 9/27 have zero displacement; none has positive-then-negative motion."
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "branch": "graph-intercept",
+   "claimed": 30,
+   "computed": 30,
+   "notes": "270 coordinate presentations verified (no duplicate visible point pairs); capacity correctly counted by model. Only 5 distinct A values (e^-1,1,e,e^2,e^3). 28 presentations have a point on the x-axis (ordinate 0), 16 have ordinates of mixed sign, 106 have a negative ordinate. 2023 source (lnA=ln 2) is not in the domain."
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "claimed": 40,
+   "computed": 40,
+   "notes": "All 40 distinct and exact. Includes the exact 2025 P2 Q6 instance (b=3,c=2,m=2,q=4; a=9, x=-7). 4 tuples give x=0 because the target equals the prefactor; 33/40 have negative x. a=b^m coincides with b*m in 30/40 and with m^b in 10/40 (see calc2-08)."
+  }
+ ],
+ "findings": [
+  {
+   "id": "calc2-01",
+   "recipe": "WB8227-motion-integration",
+   "branch": "exponential-positive",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:39-40",
+   "severity": "design-blocking",
+   "expected": "Official 2023 P2 Q9 award (report PDF339/printed337): (a) second B1 for v'=k e^(-t/2) only when k is not +-60, so a learner who integrates instead of differentiating gets 0/2. (b) M1 requires both boundaries substituted into an integral ('k != -15. Must be convinced it is an integral').",
+   "actual": "E2 'B1 unchanged exponential factor exp(-kt)' has no exclusion, so the integrated answer -(V/k)e^(-kt) earns E2 (1/2). E4 'apply BOTH limits or fix s(0)=0' does not require the expression to be an attempted primitive, so substituting limits into v or a could earn E4. The work order (line 13) cites this report but leaves both conditions out.",
+   "evidence": "Native report table PDF339. The report itself says 'Many did not realise differentiation was needed', so this is a common error the memo would over-credit.",
+   "repair": "E2: exponential factor exp(-kt) with coefficient not equal to +-V/k (the integration coefficient). E4: limits or s(0)=0 applied to an attempted primitive of v, not to v or a. Resolve together with calc2-02."
+  },
+  {
+   "id": "calc2-02",
+   "recipe": "WB8227-motion-integration",
+   "branch": "exponential-positive",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:23; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:49-58",
+   "severity": "design-blocking",
+   "expected": "Every admitted instance can tell differentiating v apart from integrating it, because the acceleration part and E3 exist to assess that difference (and the chain factor).",
+   "actual": "For k=1 (20 of 60 tuples, including the 'changed' exemplar V=18,k=1,T=3), d/dt(Ve^-t) = -Ve^-t, which is exactly the primitive. A learner who integrates to get a(t) gets the correct expression and 2/2. A learner who differentiates when asked for distance gets the correct primitive (E3). There is also no visible chain factor, the error the 2023 report names. The official exclusion in calc2-01 cannot be applied consistently while k=1 is admitted.",
+   "evidence": "sympy: for k=1, diff(V*exp(-t)) == integrate(V*exp(-t)) up to the constant, for all V. Exemplar changed: a=-18e^(-t) and distance primitive [-18e^(-t)].",
+   "repair": "Remove k=1 and replace it with another value for which kV != V/k, such as k=1/3 or k=2 (capacity can stay 60). Choose a new 'changed' exemplar."
+  },
+  {
+   "id": "calc2-03",
+   "recipe": "WB8227-motion-integration; WB8227-log-linear-model",
+   "branch": "polynomial-chain; exponential-positive; gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:21,23,67; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:43; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-log-linear-model.md:65-71",
+   "severity": "should-fix",
+   "expected": "Work order line 67: exam originals 'may be shown only with their original attribution, never as generated variants'. A same-type label should point to a different, attributed question, not to an identical generated one.",
+   "actual": "Each admitted domain contains its own cited exam question as an unattributed generated instance. Polynomial (A=3,B=1,u=2,T=3) = 2021 P1 Q4 (37.5 m). Exponential (V=30,k=1/2,T=2) = 2023 P2 Q9 (37.9 m). Gradient-target (b=3,c=2,m=2,q=4) = 2025 P2 Q6 (a=9, x=-7). The gradient-target 'boundary' exemplar's part (a) is 2025 P2 Q6(a) exactly (y=3^(2a)a^x, log3 gradient 2, find a), presented as newly authored.",
+   "evidence": "Native pages 2021 P1 p5, 2023 P2 p15, 2025 P2 p6; exhaustive domain enumeration.",
+   "repair": "Exclude the three source tuples from generation (capacities 143/59/39) or record an explicit owner decision to serve them as attributed originals. Change the boundary exemplar's model, for example b=2,c=2,m=2."
+  },
+  {
+   "id": "calc2-04",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:25,42-43; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json (interior-reversal part_specs)",
+   "severity": "should-fix",
+   "expected": "Direct demand links name what the credited work must show. The branch should need AS integration (M1:T9:O01:D02, O03:D01, O04:D03).",
+   "actual": "v=k(t-r) is linear and the memo gives full credit for velocity triangles (R2, R4 and exemplars). A learner can score 6/6 using only NSSCO area-under-a-v-t-graph geometry, never integrating, yet displacement and distance are linked directly to integrate-powers and evaluate-definite-integral demands. The rest part is linked to M1:T8:O03:D04 (apply differentiation), but solving the linear equation k(t-r)=0 involves no differentiation. The textbook model (YM Ex7 Q7) uses quadratic v from integrating a, so the simplification lowers the demand below the source and the AS exam parts.",
+   "evidence": "Work order line 25 ('simplifies the velocity to a linear function so a geometric independent check exists'); R2/R4 allow triangles; YM-368 page.",
+   "repair": "Either use a velocity that needs integration, for example quadratic v=(t-r)(t+c) with one simple root in (0,T) (the oracle can still check independently), or keep the linear form but move the integration demands to an alternative-method/prerequisite role. Re-link the rest part."
+  },
+  {
+   "id": "calc2-05",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:49; work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.md:27",
+   "severity": "should-fix",
+   "expected": "Per BLOOM-CLASSIFICATION.md, the scaffolding the learner actually faces must support Analyse (4).",
+   "actual": "The distance part comes straight after a part that asks for the rest time and a part that asks for the signed displacement. Finding the reversal point and noticing the sign change are therefore cued. With linear v, R4-R6 become a standard 'split at the given rest time and add two areas' procedure, which is Apply. The branch-maximum 4 depends on this one part.",
+   "evidence": "Exemplar question wording at lines 73, 85, 97 (rest -> displacement -> distance sequence).",
+   "repair": "Either take out the rest-time scaffold, so the learner has to detect the reversal unprompted (with a non-linear v), or label distance Apply 3 and the branch maximum 3. Record the decision for cross-vendor review."
+  },
+  {
+   "id": "calc2-06",
+   "recipe": "WB8227-motion-integration; WB8227-log-linear-model",
+   "branch": "all numeric-answer parts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:38,40,42,43; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:39,49",
+   "severity": "should-fix",
+   "expected": "NSSCAS general rule (report 2021 PDF236 and repeated 2022-2024, CONVENTION:076): 'calculators that can differentiate and integrate ... No marks are awarded if only answers are given'. Any departure should be a disclosed, owner-approved proposal.",
+   "actual": "Numeric answer-only work earns credit: S3 1/3, E5 1/3, R3 1/2, R6 1/3, G-A1+G-A2 2/5, T-A1, U-A1. A scientific calculator with numeric integration produces exactly these distance values, which is the case the reports name. Neither work order cites CONVENTION:076 or says the rule is being departed from (recipe-contract allows criterion-level answer-only rules but requires them to be declared and justified).",
+   "evidence": "Native page 2021 report PDF236 'No marks are awarded if only answers are given'; marking-conventions.json rule 8227:CONVENTION:076 (years 2021-2025).",
+   "repair": "Set numeric-only credit to 0 for the integral and parameter parts, or keep it as an explicit proposed deviation from CONVENTION:076 and add it to owner decision D8227-G06."
+  },
+  {
+   "id": "calc2-07",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "graph-intercept; gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:39,49,55",
+   "severity": "should-fix",
+   "expected": "Adapted criteria either match the official award table or are flagged as deliberate departures. 2023 Q4(a): B1 'state or imply equation'; DM1 'substitute a coordinate and simplify to A=e^k, where k is a constant'. 2025 Q6(a): B1 and M1 'state or imply'.",
+   "actual": "G-M2 requires the substitution to include the extra +p. Under the official DM1, a learner who uses ln y=px+ln A, gets p right and substitutes a point appears to keep DM1 (3/5 officially, 2/5 here). G-B1 is allowed 'only when actually present' and T-B1 needs the 'correct transformed line', while the official wording lets these be implied. The work order (line 15) summarises the official table as 'B1, M1, A1, DM1, A1' without saying where the proposal is stricter.",
+   "evidence": "Native report PDF335 and PDF359 award tables.",
+   "repair": "Either align with the official wording (G-B1/T-B1 'state or imply'; G-M2 for any coherent coordinate substitution, with G-A2 requiring the +p) or label the stricter G-M2/G-B1 as a proposed adaptation with its rationale."
+  },
+  {
+   "id": "calc2-08",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:11,43",
+   "severity": "should-fix",
+   "expected": "The branch's stated decision is to 'exponentiate in the stated log base'. Admitted values should separate a=b^m from common wrong inversions.",
+   "actual": "m in {1,2}, b in {2,3}. For m=1 (20 tuples) a=b, so log_b a=1 needs no real inversion, and a=b*m gives the same value. For b=2,m=2 (10 tuples) a=4=b*m=m^b. Only (b,m)=(3,2), the 2025 source itself, tells b^m apart from b*m. That leaves 30/40 instances where the wrong rule 'a=b*m' earns T-A1 and the right final x.",
+   "evidence": "Exhaustive enumeration: a=b*m coincides in 30/40 tuples and a=m^b in 10/40.",
+   "repair": "Use m in {2,3} (or b in {2,3,5} with m>=2) and loosen the c*a<=18 cap. Only exponent arithmetic is needed, so large prefactors stay unevaluated."
+  },
+  {
+   "id": "calc2-09",
+   "recipe": "WB8227-motion-integration",
+   "branch": "polynomial-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:38,47; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:10",
+   "severity": "should-fix",
+   "expected": "Accepted forms of the final distance are stated, because 88/144 answers are non-integer and 72 are recurring decimals (thirds and sixths). subject-rules: 3 s.f. unless exact is required; the 2021 report prefers exact answers where possible.",
+   "actual": "S3 says only 'canonical distance'. The exemplar gives 40/3 m with no decimal. It is not stated whether 13.3 m earns S3, or whether a prematurely rounded 13.33 does.",
+   "evidence": "Enumeration: denominators {1:56, 2:16, 3:64, 6:8}.",
+   "repair": "S3: exact fraction or 3 s.f. decimal (e.g. 40/3 or 13.3 m), with any 3 s.f.-correct value accepted. Show both forms in the exemplars."
+  },
+  {
+   "id": "calc2-10",
+   "recipe": "WB8227-motion-integration",
+   "branch": "all",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:38,40,41-43,47",
+   "severity": "should-fix",
+   "expected": "One consistent unit rule. Line 47: 'final accuracy award includes the unit when requested; no hidden blanket unit penalty'.",
+   "actual": "S3, E5, R3 and R6 ('with m') and R1 ('with s') require a unit, but no question stem asks for units. Either every final A mark carries a hidden unit penalty or line 47 means the unit is not required. A correct number with no unit gets different marks depending on which line is read.",
+   "evidence": "Exemplar stems (lines 7, 40, 73) do not request units.",
+   "repair": "State it once: either the unit is not required for the A mark unless the stem asks for it, or the stem asks for it ('give your answer in metres'), as the response box rule already allows."
+  },
+  {
+   "id": "calc2-11",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:43",
+   "severity": "note",
+   "expected": "No admitted target collapses the final solve.",
+   "actual": "4 tuples ((2,1,1,2),(2,1,2,4),(2,2,1,4),(3,1,1,3)) have the target equal to the prefactor b^(ca), so x=0 by inspection. 33/40 answers are negative; only 3 are positive.",
+   "evidence": "Enumeration.",
+   "repair": "Optionally exclude q=c*log_b(prefactor) collisions, or accept them knowingly. Consider widening q so positive x is more common."
+  },
+  {
+   "id": "calc2-12",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal; polynomial-chain; exponential-positive",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:21-25",
+   "severity": "note",
+   "expected": "Capacity reflects decision variety.",
+   "actual": "Reversal always starts in the negative direction (v(0)=-kr<0) and 9/27 have zero displacement, so 'displacement is 0' is a pattern learners could pick up. Polynomial (144) and exponential (60) capacities are numeric-surface variation of a single decision (V only rescales the exponential answers). The reversal parameter name s clashes with displacement s(t) and could confuse implementers.",
+   "evidence": "Enumeration.",
+   "repair": "Optionally allow k<0 (positive-then-negative motion) and rename the parameter s. Describe the capacities as surface variation."
+  },
+  {
+   "id": "calc2-13",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "graph-intercept",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:35; work/nam-8227-nsscas-2026/workbench/exemplars/assets/WB8227-log-linear-model-graph-normal.svg; work/nam-8227-nsscas-2026/workbench/checks/plan-paper-diagrams.json",
+   "severity": "later-test",
+   "expected": "Labels never cover the plotted line. Must-read givens hold for every admitted presentation, including points with ordinate 0 and lines that cross the axis.",
+   "actual": "In the normal diagram (a rising line), the white boxes behind the labels '(1, 2)' and '(3, 3)' cover the line, leaving visible gaps next to both points. The planner check says 'no clipping or mathematical inconsistency' and uses template text about 'asymptote and below-curve chords' that these diagrams do not have. 28/270 presentations put a labelled point on the x-axis, which the spec does not cover.",
+   "evidence": "SVG geometry: line y at x=314.5 is 326.1, inside label box y 293-329. Same for the (3,3) box. PNG shows the gaps.",
+   "repair": "Add placement rules (label offset on the side away from the line; no opaque box over the line; treat zero-ordinate points specially) and an automated overlap test at stage E/F."
+  },
+  {
+   "id": "calc2-14",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "graph-intercept",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:33",
+   "severity": "note",
+   "expected": "Recovered constants vary in the way the source does.",
+   "actual": "ln A=L is always an integer, so A is one of 5 values (0.368, 1.00, 2.72, 7.39, 20.1) and learners can spot the pattern. The source had ln A=ln 2 with 3-dp decimal coordinates. The pilot uses fraction labels such as (4, -19/4), which is a different representation from the exam. G-A2 also relies on ln/exp being inverses (M2:T2:O02), which is not listed as a prerequisite.",
+   "evidence": "Enumeration; native 2023 P2 p6.",
+   "repair": "Optionally add non-integer ln A with decimal labels (e.g. ln 2 + integer). List O02 as a prerequisite."
+  },
+  {
+   "id": "calc2-15",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target; graph-intercept",
+   "locator": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-log-linear-model.md:11,29,41,51,61,67",
+   "severity": "note",
+   "expected": "Exemplar wording matches the specified givens and cue edges.",
+   "actual": "The changed and boundary gradient exemplars say 'then find x' without 'Hence', although the design's dependency edge is the cue 'hence' (2025 source uses 'Hence'). 'a is positive' and 'A>0' appear only in the normal stems, though the work order fixes them as givens.",
+   "evidence": "Exemplar text.",
+   "repair": "Use 'Hence' and keep the positivity givens the same across all exemplar stems."
+  },
+  {
+   "id": "calc2-16",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:45-49",
+   "severity": "later-test",
+   "expected": "Valid alternative methods get the declared credit (recipe-contract).",
+   "actual": "The 2025 report says most candidates took ln or log10 of both sides. Converting correctly (gradient = ln a / ln 3) gives a=9. This uses change of base, which the syllabus excludes as an objective, but the mathematics is valid. The memo deals only with the wrong log10 route (a=100) and does not say whether the correct ln route earns T-B1/T-M1.",
+   "evidence": "Native report PDF359 comments.",
+   "repair": "Declare credit for a correct ln/lg route that links properly to the log_b-plotted gradient, and add it to the sample responses."
+  }
+ ],
+ "verified_ok": [
+  "Capacities 144/60/27 and 30 (270 presentations)/40 match exhaustive enumeration; each branch's givens identify its tuple uniquely.",
+  "Polynomial-chain: v>=1>0 on every admitted interval, so distance from O = s(T). Exponential: v>0. Reversal: one simple interior root, real sign change, distance != |displacement| in all 27.",
+  "All 15 exemplar questions and solutions recomputed (sympy/fractions), including 3 s.f. roundings 15.2, 17.1, 75.9, 2.72, 7.39, 0.368. Marks: polynomial 3+3, exponential 2+3, reversal 1+2+3, graph 5, gradient 3+2; criteria counts match.",
+  "2021 P1 Q4 report typo 'v=3' confirmed on native PDF232; the design correctly uses the paper's initial velocity 2.",
+  "Polynomial V1-V3/S1-S3 match the official 2021 M1/A1/A1 + M1/A1/A1 structure. Exponential E3-E5 match the official two exclusive 2023 routes (bounds or constant).",
+  "Gradient-target T-B1/T-M1/T-A1 and U-M1FT/U-A1 match the 2025 award table, including FT only for positive a != 1 and the exponential-law alternative.",
+  "Same-type part references checked on native pages: 2021 P1 Q4(a)->velocity, Q4(b)->distance; 2023 P2 Q9(a)->acceleration, Q9(b)->distance; 2023 P2 Q4(a)->g-parameters; 2025 P2 Q6(a)->t-parameter, Q6(b)->t-target. Givens, response format and scaffold match per part. The reversal branch correctly has no learner exam label. No held original (2022 P1 Q13, 2023 P1 Q1(b), 2023 P1 Q9) is used; all are NSSCAS, so no Cambridge labelling issue; textbook sources stay internal.",
+  "Demand IDs checked against demand-registry and syllabus PDF13/14. Polynomial, exponential and log-linear part links fit what is assessed. Change of base is not required by the gradient-target canonical route (LIMIT06 respected).",
+  "Paper diagrams: axes x and ln y labelled, origin 0 shown, both labelled points lie exactly on the drawn line, consistent scales, negative ordinates visible in the boundary diagram, no hidden A/p in labels or desc. SVG/PNG hashes match the design record.",
+  "Bloom 3 for polynomial, exponential and both log-linear branches is consistent with their criteria."
+ ],
+ "not_checked": [
+  "Textbook family members other than YM Exercise 7 Q7 (YM pp363-366, 372; Goldie log pages) not re-read; the union-discovery candidate lists were not audited.",
+  "Grade descriptor calibration (E:09, C:09, A:09/A:10, A:12, C:11, E:11, E:14): IDs exist and their text fits, but grade-level claims were not independently judged.",
+  "No runtime generation, rendering, LaTeX decoding or app marking (not in scope at stage D).",
+  "2022-2024 report pages repeating CONVENTION:076 were not re-rendered (2021 PDF236 was)."
+ ]
+}

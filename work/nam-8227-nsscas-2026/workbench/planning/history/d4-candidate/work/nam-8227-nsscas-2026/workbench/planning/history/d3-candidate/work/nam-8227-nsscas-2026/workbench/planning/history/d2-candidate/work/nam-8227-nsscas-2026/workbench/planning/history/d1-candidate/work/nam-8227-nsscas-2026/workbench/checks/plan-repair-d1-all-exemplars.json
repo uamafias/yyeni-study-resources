@@ -1,0 +1,524 @@
+{
+  "status": "42/42pass",
+  "independence": "Independently written mathematical oracles relative to answer constructors; same-vendor author evidence, not independent content acceptance.",
+  "groups": {
+    "calculus": [
+      {
+        "case_id": "WB8227-implicit-normal:gradient:normal",
+        "result": "pass",
+        "oracle": "explicit local-root derivative and implicit partials",
+        "expected_answers": {
+          "curve_constant": 4,
+          "gradient": "-24/5",
+          "normal_slope": "5/24",
+          "normal_equation": "y-(-4)=(5/24)*x",
+          "shown_derivative": "-6*exp(2*x)*y/(3*exp(2*x)+2*y)"
+        },
+        "marks": 5
+      },
+      {
+        "case_id": "WB8227-implicit-normal:gradient:changed",
+        "result": "pass",
+        "oracle": "explicit local-root derivative and implicit partials",
+        "expected_answers": {
+          "curve_constant": -2,
+          "gradient": "9",
+          "normal_slope": "-1/9",
+          "normal_equation": "y-(-1)=(-1/9)*x",
+          "shown_derivative": "-9*exp(3*x)*y/(3*exp(3*x)+2*y)"
+        },
+        "marks": 5
+      },
+      {
+        "case_id": "WB8227-implicit-normal:gradient:boundary",
+        "result": "pass",
+        "oracle": "explicit local-root derivative and implicit partials",
+        "expected_answers": {
+          "curve_constant": 5,
+          "gradient": "-10",
+          "normal_slope": "1/10",
+          "normal_equation": "y-(-5)=(1/10)*x",
+          "shown_derivative": "-12*exp(3*x)*y/(4*exp(3*x)+2*y)"
+        },
+        "marks": 5
+      },
+      {
+        "case_id": "WB8227-implicit-normal:normal:normal",
+        "result": "pass",
+        "oracle": "explicit local-root derivative and implicit partials",
+        "expected_answers": {
+          "curve_constant": 4,
+          "gradient": "-24/5",
+          "normal_slope": "5/24",
+          "normal_equation": "y-(-4)=(5/24)*x",
+          "shown_derivative": "-6*exp(2*x)*y/(3*exp(2*x)+2*y)"
+        },
+        "marks": 9
+      },
+      {
+        "case_id": "WB8227-implicit-normal:normal:changed",
+        "result": "pass",
+        "oracle": "explicit local-root derivative and implicit partials",
+        "expected_answers": {
+          "curve_constant": -2,
+          "gradient": "9",
+          "normal_slope": "-1/9",
+          "normal_equation": "y-(-1)=(-1/9)*x",
+          "shown_derivative": "-9*exp(3*x)*y/(3*exp(3*x)+2*y)"
+        },
+        "marks": 9
+      },
+      {
+        "case_id": "WB8227-implicit-normal:normal:boundary",
+        "result": "pass",
+        "oracle": "explicit local-root derivative and implicit partials",
+        "expected_answers": {
+          "curve_constant": 5,
+          "gradient": "-10",
+          "normal_slope": "1/10",
+          "normal_equation": "y-(-5)=(1/10)*x",
+          "shown_derivative": "-12*exp(3*x)*y/(4*exp(3*x)+2*y)"
+        },
+        "marks": 9
+      },
+      {
+        "case_id": "WB8227-stationary-inflexion:two-extrema:normal",
+        "result": "pass",
+        "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+        "expected_answers": {
+          "points": [
+            [
+              -1,
+              4
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "classifications": [
+            "maximum",
+            "minimum"
+          ]
+        },
+        "marks": 6
+      },
+      {
+        "case_id": "WB8227-stationary-inflexion:two-extrema:changed",
+        "result": "pass",
+        "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+        "expected_answers": {
+          "points": [
+            [
+              -1,
+              -16
+            ],
+            [
+              3,
+              16
+            ]
+          ],
+          "classifications": [
+            "minimum",
+            "maximum"
+          ]
+        },
+        "marks": 6
+      },
+      {
+        "case_id": "WB8227-stationary-inflexion:two-extrema:boundary",
+        "result": "pass",
+        "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+        "expected_answers": {
+          "points": [
+            [
+              -5,
+              -104
+            ],
+            [
+              1,
+              112
+            ]
+          ],
+          "classifications": [
+            "minimum",
+            "maximum"
+          ]
+        },
+        "marks": 6
+      },
+      {
+        "case_id": "WB8227-stationary-inflexion:flat-classification:normal",
+        "result": "pass",
+        "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+        "expected_answers": {
+          "point": [
+            1,
+            -2
+          ],
+          "classification": "stationary inflexion",
+          "first_derivative_signs": [
+            "positive",
+            "positive"
+          ],
+          "second_derivative_at_point": 0
+        },
+        "marks": 6
+      },
+      {
+        "case_id": "WB8227-stationary-inflexion:flat-classification:changed",
+        "result": "pass",
+        "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+        "expected_answers": {
+          "point": [
+            -1,
+            2
+          ],
+          "classification": "minimum",
+          "first_derivative_signs": [
+            "negative",
+            "positive"
+          ],
+          "second_derivative_at_point": 0
+        },
+        "marks": 6
+      },
+      {
+        "case_id": "WB8227-stationary-inflexion:flat-classification:boundary",
+        "result": "pass",
+        "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+        "expected_answers": {
+          "point": [
+            2,
+            -4
+          ],
+          "classification": "maximum",
+          "first_derivative_signs": [
+            "positive",
+            "negative"
+          ],
+          "second_derivative_at_point": 0
+        },
+        "marks": 6
+      }
+    ],
+    "motion": [
+      {
+        "case_id": "WB8227-motion-integration:polynomial-chain:normal",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "40/3"
+      },
+      {
+        "case_id": "WB8227-motion-integration:polynomial-chain:changed",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "12"
+      },
+      {
+        "case_id": "WB8227-motion-integration:polynomial-chain:boundary",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "96"
+      },
+      {
+        "case_id": "WB8227-motion-integration:exponential-positive:normal",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "24 - 24*exp(-1)"
+      },
+      {
+        "case_id": "WB8227-motion-integration:exponential-positive:changed",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "54 - 54*exp(-1)"
+      },
+      {
+        "case_id": "WB8227-motion-integration:exponential-positive:boundary",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "120 - 120*exp(-1)"
+      },
+      {
+        "case_id": "WB8227-motion-integration:interior-reversal:normal",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "44/3"
+      },
+      {
+        "case_id": "WB8227-motion-integration:interior-reversal:changed",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "155/6"
+      },
+      {
+        "case_id": "WB8227-motion-integration:interior-reversal:boundary",
+        "status": "pass",
+        "method": "separately implemented symbolic integration/differentiation; exponential/reversal additionally checked by numerical quadrature",
+        "answer": "64"
+      }
+    ],
+    "trig/model": [
+      {
+        "case_id": "WB8227-trig-rform-equation:normal",
+        "branch_id": "degree-cycle",
+        "role": "normal",
+        "marks": 7,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-trig-rform-equation:changed",
+        "branch_id": "degree-cycle",
+        "role": "changed",
+        "marks": 7,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-trig-rform-equation:boundary",
+        "branch_id": "degree-cycle",
+        "role": "boundary",
+        "marks": 7,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-principal-inverse:normal",
+        "branch_id": "solve-or-explain",
+        "role": "normal",
+        "marks": 3,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-principal-inverse:changed",
+        "branch_id": "solve-or-explain",
+        "role": "changed",
+        "marks": 3,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-principal-inverse:boundary",
+        "branch_id": "solve-or-explain",
+        "role": "boundary",
+        "marks": 3,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-log-linear-model:graph:normal",
+        "branch_id": "graph-intercept",
+        "role": "normal",
+        "marks": 5,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-log-linear-model:graph:changed",
+        "branch_id": "graph-intercept",
+        "role": "changed",
+        "marks": 5,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-log-linear-model:graph:boundary",
+        "branch_id": "graph-intercept",
+        "role": "boundary",
+        "marks": 5,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-log-linear-model:gradient:normal",
+        "branch_id": "gradient-target",
+        "role": "normal",
+        "marks": 5,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-log-linear-model:gradient:changed",
+        "branch_id": "gradient-target",
+        "role": "changed",
+        "marks": 5,
+        "result": "pass"
+      },
+      {
+        "case_id": "WB8227-log-linear-model:gradient:boundary",
+        "branch_id": "gradient-target",
+        "role": "boundary",
+        "marks": 5,
+        "result": "pass"
+      }
+    ],
+    "visual": [
+      {
+        "recipe_id": "WB8227-modulus-graph-recovery",
+        "branch_id": "vertex-intercepts",
+        "case_id": "normal",
+        "result": "pass",
+        "oracle": {
+          "method": "Recover slope from independently supplied vertex and zero, then check every labelled point; no use of c=-ad answer builder.",
+          "coefficients": [
+            "-2",
+            3,
+            4
+          ],
+          "point_residuals": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "recipe_id": "WB8227-modulus-graph-recovery",
+        "branch_id": "vertex-intercepts",
+        "case_id": "varied",
+        "result": "pass",
+        "oracle": {
+          "method": "Recover slope from independently supplied vertex and zero, then check every labelled point; no use of c=-ad answer builder.",
+          "coefficients": [
+            "2",
+            -3,
+            -4
+          ],
+          "point_residuals": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "recipe_id": "WB8227-modulus-graph-recovery",
+        "branch_id": "vertex-intercepts",
+        "case_id": "boundary",
+        "result": "pass",
+        "oracle": {
+          "method": "Recover slope from independently supplied vertex and zero, then check every labelled point; no use of c=-ad answer builder.",
+          "coefficients": [
+            "3",
+            -3,
+            -9
+          ],
+          "point_residuals": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "recipe_id": "WB8227-trapezium-sketch-estimate",
+        "branch_id": "logarithmic-hence-chain",
+        "case_id": "normal",
+        "result": "pass",
+        "oracle": {
+          "method": "Independent individual trapezium-area sums for original and transformed integrands; numerical quadrature of original integral for bias.",
+          "a_3sf": "3.81",
+          "b_canonical_3sf": "15.2",
+          "b_accepted_answer_strings": [
+            "15.2",
+            "15.24"
+          ],
+          "positive_bias_residual": "0.24052707240018211561254685905969914880742430142857198418120289862172736439341313",
+          "asymptote": "x=1",
+          "intercept": [
+            2,
+            0
+          ]
+        }
+      },
+      {
+        "recipe_id": "WB8227-trapezium-sketch-estimate",
+        "branch_id": "logarithmic-hence-chain",
+        "case_id": "varied",
+        "result": "pass",
+        "oracle": {
+          "method": "Independent individual trapezium-area sums for original and transformed integrands; numerical quadrature of original integral for bias.",
+          "a_3sf": "11.5",
+          "b_canonical_3sf": "69.0",
+          "b_accepted_answer_strings": [
+            "69.0"
+          ],
+          "positive_bias_residual": "0.26987591837470832012120916357662512673949564181773450354164458810140240414107147",
+          "asymptote": "x=3",
+          "intercept": [
+            4,
+            0
+          ]
+        }
+      },
+      {
+        "recipe_id": "WB8227-trapezium-sketch-estimate",
+        "branch_id": "logarithmic-hence-chain",
+        "case_id": "boundary",
+        "result": "pass",
+        "oracle": {
+          "method": "Independent individual trapezium-area sums for original and transformed integrands; numerical quadrature of original integral for bias.",
+          "a_3sf": "3.98",
+          "b_canonical_3sf": "7.97",
+          "b_accepted_answer_strings": [
+            "7.96",
+            "7.97"
+          ],
+          "positive_bias_residual": "0.064416775605506066056475398220788968991215133304814534510181149516130285556766825",
+          "asymptote": "x=1",
+          "intercept": [
+            2,
+            0
+          ]
+        }
+      },
+      {
+        "recipe_id": "WB8227-vector-geometry",
+        "branch_id": "scalar-combination-and-origin-angle",
+        "case_id": "normal",
+        "result": "pass",
+        "oracle": {
+          "method": "Solve perpendicularity by dot coefficient/constant independently; angle by Euclidean A-B distance and cosine law, not the closed dot numerator.",
+          "p": "3/4",
+          "norm_squares": [
+            3,
+            6
+          ],
+          "distance_AB_squared": 5,
+          "angle_1dp": "61.9",
+          "perpendicular_residual": "0"
+        }
+      },
+      {
+        "recipe_id": "WB8227-vector-geometry",
+        "branch_id": "scalar-combination-and-origin-angle",
+        "case_id": "varied",
+        "result": "pass",
+        "oracle": {
+          "method": "Solve perpendicularity by dot coefficient/constant independently; angle by Euclidean A-B distance and cosine law, not the closed dot numerator.",
+          "p": "-3/4",
+          "norm_squares": [
+            6,
+            11
+          ],
+          "distance_AB_squared": 21,
+          "angle_1dp": "104.3",
+          "perpendicular_residual": "0"
+        }
+      },
+      {
+        "recipe_id": "WB8227-vector-geometry",
+        "branch_id": "scalar-combination-and-origin-angle",
+        "case_id": "boundary",
+        "result": "pass",
+        "oracle": {
+          "method": "Solve perpendicularity by dot coefficient/constant independently; angle by Euclidean A-B distance and cosine law, not the closed dot numerator.",
+          "p": "-1/4",
+          "norm_squares": [
+            6,
+            3
+          ],
+          "distance_AB_squared": 9,
+          "angle_1dp": "90.0",
+          "perpendicular_residual": "0"
+        }
+      }
+    ]
+  },
+  "motion_extra_audit": "Separate planner independently integrated all9motioncases and derived triangle error |k|(tail-r)(tail^2+tail*r+r^2)/6; exactly54excluded/108admitted."
+}

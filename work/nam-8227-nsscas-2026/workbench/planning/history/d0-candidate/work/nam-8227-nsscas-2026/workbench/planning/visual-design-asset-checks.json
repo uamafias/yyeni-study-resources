@@ -1,0 +1,496 @@
+{
+  "subject": "NSSCAS Mathematics 8227 (2020)",
+  "owner": "Vitalis",
+  "stage": "D static design illustrations and independent mathematics check inputs; not runtime item fixtures",
+  "date": "2026-11-23",
+  "exemplar_cases": [
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "branch_id": "vertex-intercepts",
+      "case_id": "normal",
+      "parameters": {
+        "a": -2,
+        "b": 2,
+        "d": 1
+      },
+      "expected_answers": {
+        "a": -2,
+        "b": 2,
+        "c": 2,
+        "vertex": [
+          -2,
+          2
+        ],
+        "zeros": [
+          [
+            -3,
+            0
+          ],
+          [
+            -1,
+            0
+          ]
+        ],
+        "y_intercept": [
+          0,
+          -2
+        ]
+      },
+      "expected_marks": {
+        "a": 3,
+        "total": 3
+      },
+      "asset_path": "exemplars/assets/WB8227-modulus-normal.svg"
+    },
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "branch_id": "vertex-intercepts",
+      "case_id": "varied",
+      "parameters": {
+        "a": 2,
+        "b": -1,
+        "d": 2
+      },
+      "expected_answers": {
+        "a": 2,
+        "b": -1,
+        "c": -4,
+        "vertex": [
+          1,
+          -4
+        ],
+        "zeros": [
+          [
+            -1,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "y_intercept": [
+          0,
+          -2
+        ]
+      },
+      "expected_marks": {
+        "a": 3,
+        "total": 3
+      },
+      "asset_path": "exemplars/assets/WB8227-modulus-varied.svg"
+    },
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "branch_id": "vertex-intercepts",
+      "case_id": "boundary",
+      "parameters": {
+        "a": 3,
+        "b": -3,
+        "d": 3
+      },
+      "expected_answers": {
+        "a": 3,
+        "b": -3,
+        "c": -9,
+        "vertex": [
+          3,
+          -9
+        ],
+        "zeros": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "y_intercept": [
+          0,
+          0
+        ]
+      },
+      "expected_marks": {
+        "a": 3,
+        "total": 3
+      },
+      "asset_path": "exemplars/assets/WB8227-modulus-boundary.svg"
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "branch_id": "logarithmic-hence-chain",
+      "case_id": "normal",
+      "parameters": {
+        "h": 1,
+        "L": 4,
+        "n": 2,
+        "k": 2
+      },
+      "expected_answers": {
+        "a": 3.8066624897703196,
+        "a_3sf": "3.81",
+        "b": 15.226649959081278,
+        "b_3sf": "15.2",
+        "b_from_reported_a": 15.24,
+        "c": {
+          "domain": "x>1",
+          "asymptote": "x=1",
+          "intercept": [
+            2,
+            0
+          ],
+          "shape": "increasing, concave down; both sides of x-intercept; no y-intercept"
+        },
+        "d": "underestimate: every top chord lies below the curve",
+        "independent_integral": 4.047189562170502
+      },
+      "expected_marks": {
+        "a": 3,
+        "b": 2,
+        "c": 3,
+        "d": 2,
+        "total": 10
+      },
+      "asset_path": "exemplars/assets/WB8227-trapezium-normal.svg"
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "branch_id": "logarithmic-hence-chain",
+      "case_id": "varied",
+      "parameters": {
+        "h": 3,
+        "L": 8,
+        "n": 4,
+        "k": 3
+      },
+      "expected_answers": {
+        "a": 11.505145277651266,
+        "a_3sf": "11.5",
+        "b": 69.0308716659076,
+        "b_3sf": "69.0",
+        "b_from_reported_a": 69.0,
+        "c": {
+          "domain": "x>3",
+          "asymptote": "x=3",
+          "intercept": [
+            4,
+            0
+          ],
+          "shape": "increasing, concave down; both sides of x-intercept; no y-intercept"
+        },
+        "d": "underestimate: every top chord lies below the curve",
+        "independent_integral": 11.775021196025975
+      },
+      "expected_marks": {
+        "a": 3,
+        "b": 2,
+        "c": 3,
+        "d": 2,
+        "total": 10
+      },
+      "asset_path": "exemplars/assets/WB8227-trapezium-varied.svg"
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "branch_id": "logarithmic-hence-chain",
+      "case_id": "boundary",
+      "parameters": {
+        "h": 1,
+        "L": 4,
+        "n": 4,
+        "k": 1
+      },
+      "expected_answers": {
+        "a": 3.9827727865649956,
+        "a_3sf": "3.98",
+        "b": 7.965545573129991,
+        "b_3sf": "7.97",
+        "b_from_reported_a": 7.96,
+        "c": {
+          "domain": "x>1",
+          "asymptote": "x=1",
+          "intercept": [
+            2,
+            0
+          ],
+          "shape": "increasing, concave down; both sides of x-intercept; no y-intercept"
+        },
+        "d": "underestimate: every top chord lies below the curve",
+        "independent_integral": 4.047189562170502
+      },
+      "expected_marks": {
+        "a": 3,
+        "b": 2,
+        "c": 3,
+        "d": 2,
+        "total": 10
+      },
+      "asset_path": "exemplars/assets/WB8227-trapezium-boundary.svg"
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "branch_id": "scalar-combination-and-origin-angle",
+      "case_id": "normal",
+      "parameters": {
+        "r": 1,
+        "s": 2,
+        "t": 2
+      },
+      "expected_answers": {
+        "a": "3/4",
+        "b_degrees": 61.87449429794429,
+        "b_1dp": "61.9",
+        "dot_uv": 2,
+        "norm_u_squared": 3,
+        "norm_v_squared": 6,
+        "resultant": [
+          "-5/4",
+          "-1/4",
+          "7/4"
+        ]
+      },
+      "expected_marks": {
+        "a": 3,
+        "b": 4,
+        "total": 7
+      }
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "branch_id": "scalar-combination-and-origin-angle",
+      "case_id": "varied",
+      "parameters": {
+        "r": 2,
+        "s": -3,
+        "t": 1
+      },
+      "expected_answers": {
+        "a": "-3/4",
+        "b_degrees": 104.25175505854007,
+        "b_1dp": "104.3",
+        "dot_uv": -2,
+        "norm_u_squared": 6,
+        "norm_v_squared": 11,
+        "resultant": [
+          "9/4",
+          "-5/2",
+          "1/4"
+        ]
+      },
+      "expected_marks": {
+        "a": 3,
+        "b": 4,
+        "total": 7
+      }
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "branch_id": "scalar-combination-and-origin-angle",
+      "case_id": "boundary",
+      "parameters": {
+        "r": 3,
+        "s": -2,
+        "t": 3
+      },
+      "expected_answers": {
+        "a": "0",
+        "b_degrees": 90.0,
+        "b_1dp": "90.0",
+        "dot_uv": 0,
+        "norm_u_squared": 11,
+        "norm_v_squared": 6,
+        "resultant": [
+          "2",
+          "-1",
+          "1"
+        ]
+      },
+      "expected_marks": {
+        "a": 3,
+        "b": 4,
+        "total": 7
+      }
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "WB8227-modulus-normal",
+      "asset_path": "exemplars/assets/WB8227-modulus-normal.svg",
+      "sha256": "a4387ed874707c59713b5cfc2446a99330298d55cb81c39557f56f04a8dfde20",
+      "parameters": {
+        "a": -2,
+        "b": 2,
+        "c": 2,
+        "d": 1
+      },
+      "must_read": [
+        "vertex coordinates",
+        "both zero coordinates",
+        "y-intercept coordinates",
+        "x/y axes",
+        "V orientation",
+        "unknown coefficient form"
+      ],
+      "render_sha256": "68e8e846e7d05571cc30b82f30372b826f6c20fa2efee371a5a79d0b5533e93e",
+      "render_method": "PyMuPDF SVG page render at Matrix(1.6,1.6)",
+      "visual_inspection": "pass, Codex PLANNER 2026-11-23: final PyMuPDF render inspected; all must-read labels visible, correct orientation/scale/asymptote/intercept/chord placement; no clipping or remaining text/axis collision",
+      "asset_status": "static stage-D paper-design illustration, not delivered runtime asset"
+    },
+    {
+      "asset_id": "WB8227-modulus-varied",
+      "asset_path": "exemplars/assets/WB8227-modulus-varied.svg",
+      "sha256": "44215ed690a6b6e22d8c409ed3712d75c21c63822b7fc15cfb2c04a297d5a36e",
+      "parameters": {
+        "a": 2,
+        "b": -1,
+        "c": -4,
+        "d": 2
+      },
+      "must_read": [
+        "vertex coordinates",
+        "both zero coordinates",
+        "y-intercept coordinates",
+        "x/y axes",
+        "V orientation",
+        "unknown coefficient form"
+      ],
+      "render_sha256": "583136e2d351184fb67838eb5f20c48f7520acd56ddbad40dbbf3595a0ccde7b",
+      "render_method": "PyMuPDF SVG page render at Matrix(1.6,1.6)",
+      "visual_inspection": "pass, Codex PLANNER 2026-11-23: final PyMuPDF render inspected; all must-read labels visible, correct orientation/scale/asymptote/intercept/chord placement; no clipping or remaining text/axis collision",
+      "asset_status": "static stage-D paper-design illustration, not delivered runtime asset"
+    },
+    {
+      "asset_id": "WB8227-modulus-boundary",
+      "asset_path": "exemplars/assets/WB8227-modulus-boundary.svg",
+      "sha256": "9dade603215886a02b46cefde055f467fa1129cb45b847b405da6b739f7ffa8c",
+      "parameters": {
+        "a": 3,
+        "b": -3,
+        "c": -9,
+        "d": 3
+      },
+      "must_read": [
+        "vertex coordinates",
+        "both zero coordinates",
+        "y-intercept coordinates",
+        "x/y axes",
+        "V orientation",
+        "unknown coefficient form"
+      ],
+      "render_sha256": "c363bf4cf93566544bc7857a583e2f8b8829cf106ade404b32830df632ef104e",
+      "render_method": "PyMuPDF SVG page render at Matrix(1.6,1.6)",
+      "visual_inspection": "pass, Codex PLANNER 2026-11-23: final PyMuPDF render inspected; all must-read labels visible, correct orientation/scale/asymptote/intercept/chord placement; no clipping or remaining text/axis collision",
+      "asset_status": "static stage-D paper-design illustration, not delivered runtime asset"
+    },
+    {
+      "asset_id": "WB8227-trapezium-normal",
+      "asset_path": "exemplars/assets/WB8227-trapezium-normal.svg",
+      "sha256": "f3f408c84c1a29d644bd51db5aa8f3ef6087733a4e1bdd6e8ca57c2735dca49b",
+      "parameters": {
+        "h": 1,
+        "L": 4,
+        "n": 2,
+        "k": 2
+      },
+      "must_read": [
+        "x/y axes",
+        "asymptote x=h",
+        "intercept(h+1,0)",
+        "negative and positive curve portions",
+        "integration limits",
+        "strip count",
+        "chord/curve position"
+      ],
+      "render_sha256": "417709ada3291f43c3c27787e247d76e45bb7e62d7f10fad05b4651a2c5f1b42",
+      "render_method": "PyMuPDF SVG page render at Matrix(1.6,1.6)",
+      "visual_inspection": "pass, Codex PLANNER 2026-11-23: final PyMuPDF render inspected; all must-read labels visible, correct orientation/scale/asymptote/intercept/chord placement; no clipping or remaining text/axis collision",
+      "asset_status": "static stage-D paper-design illustration, not delivered runtime asset"
+    },
+    {
+      "asset_id": "WB8227-trapezium-varied",
+      "asset_path": "exemplars/assets/WB8227-trapezium-varied.svg",
+      "sha256": "a63dcb386d17806480a0128d88cf6960c862f4b174c02575c1636b1a30a70a3b",
+      "parameters": {
+        "h": 3,
+        "L": 8,
+        "n": 4,
+        "k": 3
+      },
+      "must_read": [
+        "x/y axes",
+        "asymptote x=h",
+        "intercept(h+1,0)",
+        "negative and positive curve portions",
+        "integration limits",
+        "strip count",
+        "chord/curve position"
+      ],
+      "render_sha256": "33d01e972414f32b7d18e45dfa5a6ae8f98720237a6ec9767ac19f593cdf1ab6",
+      "render_method": "PyMuPDF SVG page render at Matrix(1.6,1.6)",
+      "visual_inspection": "pass, Codex PLANNER 2026-11-23: final PyMuPDF render inspected; all must-read labels visible, correct orientation/scale/asymptote/intercept/chord placement; no clipping or remaining text/axis collision",
+      "asset_status": "static stage-D paper-design illustration, not delivered runtime asset"
+    },
+    {
+      "asset_id": "WB8227-trapezium-boundary",
+      "asset_path": "exemplars/assets/WB8227-trapezium-boundary.svg",
+      "sha256": "a1077df43eb0452ed1f30eea58dc01919c83318b5c5799bc0cbf5165a97ca24c",
+      "parameters": {
+        "h": 1,
+        "L": 4,
+        "n": 4,
+        "k": 1
+      },
+      "must_read": [
+        "x/y axes",
+        "asymptote x=h",
+        "intercept(h+1,0)",
+        "negative and positive curve portions",
+        "integration limits",
+        "strip count",
+        "chord/curve position"
+      ],
+      "render_sha256": "f78841b646e8830da65abe22e6acee155cc1c183233374d81ead38456981d2b1",
+      "render_method": "PyMuPDF SVG page render at Matrix(1.6,1.6)",
+      "visual_inspection": "pass, Codex PLANNER 2026-11-23: final PyMuPDF render inspected; all must-read labels visible, correct orientation/scale/asymptote/intercept/chord placement; no clipping or remaining text/axis collision",
+      "asset_status": "static stage-D paper-design illustration, not delivered runtime asset"
+    }
+  ],
+  "independent_domain_checks": {
+    "modulus": {
+      "tuples": 108,
+      "unique": 108,
+      "source": "inline enumeration; recover d=-c/a; every labelled point has zero residual",
+      "result": "pass",
+      "enumerated_valid_tasks": 108
+    },
+    "trapezium": {
+      "tuples": 36,
+      "unique": 36,
+      "source": "inline enumeration; positive logarithm arguments, independent area sums and analytic integrals for each L/n quadrature",
+      "result": "pass",
+      "enumerated_valid_tasks": 36
+    },
+    "vectors": {
+      "tuples": 54,
+      "unique": 54,
+      "source": "inline enumeration; u·w>0, nonzero required/resultant vectors, angle cosine-law agreement; p0 and A=C explicitly allowed",
+      "result": "pass",
+      "enumerated_valid_tasks": 54,
+      "boundary_distribution": {
+        "parameter_zero": 6,
+        "angle_right": 6,
+        "angle_obtuse": 18,
+        "angle_acute": 30,
+        "coincident_A_C": 18
+      }
+    }
+  },
+  "limitations": [
+    "Only six static paper-design diagrams. No parameterised SVG/instance generator was retained.",
+    "App visual marking, actual browser render, seed determinism, reveal timing and learner history are untested.",
+    "SVG/PNG rendering checks apply to these diagrams only; content approval remains pending."
+  ],
+  "exemplar_recomputation": "All nine cases recomputed with separate recovery/area-sum/Euclidean-distance formulas; expected answers agree. This is planner evidence, not independent cross-vendor acceptance."
+}

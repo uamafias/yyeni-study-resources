@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "script": "work/nam-8227-nsscas-2026/workbench/planning/d1/calculus-design-check.py",
+  "fixtures": [
+    {
+      "fixture": "implicit-chain",
+      "exit_code": 1,
+      "expected": "nonzero; seeded invalid design rejected",
+      "assertion": "AssertionError: D1 implicit chain/domain discrimination failed"
+    },
+    {
+      "fixture": "implicit-original",
+      "exit_code": 1,
+      "expected": "nonzero; seeded invalid design rejected",
+      "assertion": "AssertionError: D1 official original leaked into fresh pool"
+    },
+    {
+      "fixture": "proof-given-answer-credit",
+      "exit_code": 1,
+      "expected": "nonzero; seeded invalid design rejected",
+      "assertion": "AssertionError: D1 no-follow-through into given proof result failed"
+    }
+  ],
+  "positive_output_hashes_before": {
+    "work/nam-8227-nsscas-2026/workbench/planning/d1/calculus-domain-audit.json": "363a7c629aed5fad135c16868b05a85e8765a51c9b973114f359461d243847cd",
+    "work/nam-8227-nsscas-2026/workbench/planning/d1/calculus-exemplar-oracle.json": "e33bc4caf3c4ab337d1a5b48756a6bb95d74f41289055c192a68977d90811e4f"
+  },
+  "positive_output_hashes_after": {
+    "work/nam-8227-nsscas-2026/workbench/planning/d1/calculus-domain-audit.json": "363a7c629aed5fad135c16868b05a85e8765a51c9b973114f359461d243847cd",
+    "work/nam-8227-nsscas-2026/workbench/planning/d1/calculus-exemplar-oracle.json": "e33bc4caf3c4ab337d1a5b48756a6bb95d74f41289055c192a68977d90811e4f"
+  },
+  "positive_outputs_unchanged": true,
+  "scope": "Planner-side design fixtures only; no runtime grading acceptance."
+}

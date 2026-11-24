@@ -1,0 +1,515 @@
+{
+ "label": "calc",
+ "scope": [
+  "WB8227-implicit-normal (gradient; normal: show-derivative/gradient/normal) and WB8227-stationary-inflexion (two-extrema; flat-classification)",
+  "Records: work orders, exemplars, planning/calculus-design.json, planning/pilot-design.json, part-evidence-register.{md,json}, PLAN.md Bloom lines, OWNER-CHECKPOINT Bloom row, plan-manifest counts, deviation-register rows CALC-D1-DEV01..08, CALC-D2-DEV09, CALC-D2-DEV10",
+  "D1 findings: D1-S01, D1-S05, D1-S06, D1-S07, D1-S08; plus vector-contract-D1-09 (N1 wording), calc1-D1-06 (S4 simplified target), calc1-D1-07 (stem 'local')",
+  "Manifest bytes checked: planning/plan-manifest.json sha256 2b9e53a54664e70feb4f0546c1a4967eab2d21bd5d5c2efbed77b57c9d8543f2 (matches pinned value)",
+  "Independent code: SCRATCH/calc/implicit_d2.py -> implicit_out.json; SCRATCH/calc/stationary_d2.py -> stationary_out.json (sympy 1.14). No Codex script was run."
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 359,
+   "what": "Printed 357. 2025 P2 Q5 award table: M1 'Use product rule. Allow one numerical slip for M1'; A1 y(6e^{3x})+2e^{3x}dy/dx; B1 '2y dy/dx and 0 seen'; M1 'Substitute (0,-5) from M1 or B1'; A1 'C.A.O.' for -15/4. Prose: derivative of 15 is 0 and must be stated; substitution before isolating dy/dx allowed. The official question also has P at x=0, so the e-index error coincides there too."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 339,
+   "what": "Printed 337. 2023 P2 Q8(a): M1 A1 'Use of product rule. Allow one slip. Not omission of'; B1 '4 dy/dx and 0 seen'; E1 'Make the subject of the formula and verify the quoted formula'. Q8(b): M1 'Substitute (0, 2) to find the gradient' (no restriction to a correct prior formula), A1 gradient = -4. Q9(a) prose: 'Some candidates failed to realise that the index of an e does not change when it is differentiated'."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 241,
+   "what": "Printed 239. 2021 P2 Q10(b) normal: dy/dx=1/8, m_perp=-8; M1 'Find gradient and the perpendicular gradient. (x,y)=(-1,-1)'; DM1 'Find the equation of the normal using their perpendicular gradient and calculated y value'; A1 'Allow equivalents'. Q10(a) prose warns against working backwards from the quoted answer."
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 9,
+   "what": "Printed 6. M1 Topic 2: 'use the expansion of (a+b)^n, where n is a positive integer' (M1:T2:O01, binomial-cube route)."
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 14,
+   "what": "Printed 11. M2 Topic 1: 'divide a polynomial of degree not exceeding 4, by a linear or quadratic polynomial, and identify the quotient and remainder' (O03) and 'apply the remainder and the factor theorems ... use the factor theorem to solve polynomial equations' (O04)."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D1-S01",
+   "related_agent_ids": [
+    "calc1-D1-01",
+    "calc1-04"
+   ],
+   "codex_claim": "repaired: classification Apply 3; uncued mixed outcomes and domains unchanged",
+   "verdict": "partly-repaired",
+   "evidence": "Apply 3 confirmed in work-orders/WB8227-stationary-inflexion.md:28,38,40; calculus-design.json flat-classification whole_bloom 3 and classification part bloom 3 (D1 had 4 and 4); pilot-design.json same; part-evidence-register.md:21 and .json proposed_bloom_level 3; PLAN.md:28 'Apply 13, Analyse 1' and :54; OWNER-CHECKPOINT.md:10; plan-manifest.json and pilot-design.json counts {3:13,4:1}. JSON diff D1->D2 for both calc recipes shows no domain/exclusion/capacity key changes. The only stem change is 'sufficient local evidence' -> 'sufficient evidence' (calc1-D1-07), which adds no cue. Own enumeration: 256 flat instances with outcomes 128/64/64 and 16 keys, unchanged.",
+   "residual": "exemplars/WB8227-stationary-inflexion.md:111 still says 'Whole Bloom is proposed3 for two-extrema and4 only for the uncued mixed-outcome classification branch, pending the short cross-vendor check'. This is unchanged D1 text and contradicts :115 of the same file (see calc-D2-01). planning/checkpoint-stage-d.json (a D0 file, pinned unchanged) still carries Bloom counts {2:1,3:11,4:3} over 15 choices; this predates D2 (calc-D2-09)."
+  },
+  {
+   "finding_id": "D1-S05",
+   "related_agent_ids": [
+    "calc1-D1-03",
+    "calc1-01"
+   ],
+   "codex_claim": "repaired: e-index error added and disclosed (27/27); G5 A1 www; wrong-index working 3/5; CALC-D2-DEV10",
+   "verdict": "repaired",
+   "evidence": "work-orders/WB8227-implicit-normal.md:63 names the error and discloses 27/27; :89 G5 'A1 www ... from a correct differentiated relation/expression'; calculus-design.json:207 G5 qualifiers; exemplars/WB8227-implicit-normal.md:17,33,49,131; deviation-register CALC-D2-DEV10. Own sympy run: the ke^{(k-1)x} error gives the canonical gradient in 27/27 tuples (the ke^{kx-1} and kxe^{kx-1} variants give 0/27). Marking under the written criteria: wrong-index working reaching the right number gets G1+G3+G4 = 3/5; complete correct working 5/5; bare answer 0/5. The explicit-root route under CALC-D1-DEV05 yields a correct differentiated expression, so G5 www is met and it reaches 5/5; the DEV05 register row also reads 'canonical www gradient'. Rendered PDF359: the official final row is 'A1 C.A.O.' with no www, so DEV10 correctly calls this a departure that adds a www gate. It is a genuine tightening: the official (2,3,-5) question also has P at x=0, so the same coincidence exists there.",
+   "residual": "Note only: the extended branch credits the same coincidence through H1/H2 (calc-D2-04)."
+  },
+  {
+   "finding_id": "D1-S06",
+   "related_agent_ids": [
+    "calc1-D1-04"
+   ],
+   "codex_claim": "repaired: divided-equation and log-absolute proofs mapped onto S1-S4, cap 4, no F.T. into the target (CALC-D2-DEV09)",
+   "verdict": "partly-repaired",
+   "evidence": "work-orders/WB8227-implicit-normal.md:112-116; calculus-design.json:430-440 alternative_criterion_mapping and conditions; exemplars/WB8227-implicit-normal.md:133. Own proofs for the normal exemplar 3e^{2x}y+y^2=4. Divided route: 3e^{2x}+y=4/y; 6e^{2x}+y'=-4y'/y^2; y'=-6e^{2x}y^2/(y^2+4); substituting 4=3e^{2x}y+y^2 gives -6e^{2x}y/(3e^{2x}+2y). Log route: ln3+2x=ln|4-y^2|-ln|y|; 2=-2yy'/(4-y^2)-y'/y; y'=-2y(4-y^2)/(y^2+4), then the same back-substitution gives the target. Both complete proofs mark S1+S2+S3+S4 = 4/4 with the four-mark cap, S4 depending on S1-S3, and no F.T. into the target. sympy confirms both routes reach the target identically for all 27 tuples, and the product and explicit-root routes too. C≠0 makes y≠0 on every curve, and C-y^2=ae^{kx}y≠0.",
+   "residual": "The generic S3 (work order :112; JSON :433, 'any necessary identity/back-substitution justified') puts the back-substitution of C in S3. The worked divided and log routes (:114) put it in S4. A correct differentiation followed by a failed back-substitution therefore scores 3/4 under :114 and 2/4 under :112 and the JSON. The product route's analogous failure scores 3/4 (calc-D2-02)."
+  },
+  {
+   "finding_id": "D1-S07",
+   "related_agent_ids": [
+    "calc1-D1-05",
+    "calc1-D1-06",
+    "vector-contract-D1-09"
+   ],
+   "codex_claim": "repaired: H1 own credible derivative, H2 canonical; N1 labelled perpendicular value, bare line 0; S4 simplified equivalent when equality shown",
+   "verdict": "repaired",
+   "evidence": "H1: work order :42, :94, :118; JSON :502; part-evidence-register.md:16; exemplar :125, :135; stem :75 and exemplars :58/80/102 'using your derivative or the displayed formula'. This matches the rendered 2023 Q8(b) M1 'Substitute (0, 2) to find the gradient', which is unrestricted. Dropped-k own derivative gives -12/5 at P for the normal exemplar, so H1=1 and H2=0, as stated. N1: work order :96; JSON :582; exemplar :135. Against the rendered 2021 PDF241 ('Find gradient and the perpendicular gradient', m_perp=-8 stated), a stated labelled m_perp earns M1 and a bare final line earns 0/3. This settles vector-contract-D1-09, and sample :124 (m=24/5 -> m_perp=-5/24 -> N1/N2 2/3) is consistent. S4: work order :93, :116; JSON S4 qualifier; exemplar :137. The cancellation -12ye^{3x}/(4e^{3x}+2y) = -6ye^{3x}/(2e^{3x}+y) is verified, and 4 of the 8 identities (a=2,4) carry a removable factor 2.",
+   "residual": "Wording only: the exemplar marking rows (:71/93/115) still say 'N1 M1 visible negative reciprocal'. The JSON N1 qualifier omits the requirement that the stated value equal -1/(their m) (calc-D2-05, note)."
+  },
+  {
+   "finding_id": "D1-S08",
+   "related_agent_ids": [
+    "calc1-D1-02",
+    "calc1-15"
+   ],
+   "codex_claim": "repaired: conditional AS prerequisite routes (M1 binomial cube OR M2 factor theorem + factorisation); module dependency explicit; factor-theorem step for 128 instances",
+   "verdict": "repaired",
+   "evidence": "work order :27, :42-44, :69, :84; calculus-design.json:1606-1629 (prerequisite_demand_ids with condition power=4, prerequisite_routes, module_dependency_note); part-evidence-register.md:20; exemplar :117-119. Demand IDs exist in analysis/demand-registry.json: M1:T2:O01:D01 'Expand positive-integer binomial' (PDF9), M2:T1:O04:D02 'Apply factor theorem' and D04 'Solve polynomial by factorisation' (PDF14). Both native syllabus pages were rendered and match. Own enumeration over all 128 quartics: g(h)=0 128/128; exact division by x-h 128/128; quotient discriminant 0 128/128; quotient root h 128/128; single real root 128/128; g/(4a) equals the expansion of (x-h)^3 128/128. All 128 cubic derivatives are perfect-square quadratics. The two quartic exemplar divisions recompute: 4x^2+8x+4 and -8x^2+32x-32, each with discriminant 0 and remainder 0.",
+   "residual": "Note: the stated factor-theorem route divides g by x-h, which is M2:T1:O03:D01 (divide a polynomial by a linear factor). That demand is not listed, and LIMIT05 says polynomial division is 'omitted from this pilot rather than silently covered by calculus' (calc-D2-06)."
+  },
+  {
+   "finding_id": "vector-contract-D1-09",
+   "related_agent_ids": [
+    "vector-contract-D1-09"
+   ],
+   "codex_claim": "folded into D1-S07",
+   "verdict": "repaired",
+   "evidence": "work order :96 now says 'A stated perpendicular-gradient value in working earns M1 without requiring an explicit reciprocal calculation. A bare final line with no gradient working earns no M mark', which agrees with sample :124 and the rendered 2021 PDF241 M1.",
+   "residual": "See calc-D2-05 (note)."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "implicit gradient:normal (3,2,-4)",
+   "claimed": "C=4; y'=-6ye^{2x}/(2y+3e^{2x}); m=-24/5",
+   "computed": "same by the product route, partial-derivative ratio and explicit local root",
+   "ok": true
+  },
+  {
+   "case": "implicit gradient:changed (3,3,-1)",
+   "claimed": "C=-2; y'=-9ye^{3x}/(2y+3e^{3x}); m=9",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "implicit gradient:boundary (4,3,-5)",
+   "claimed": "C=5; y'=-12ye^{3x}/(2y+4e^{3x}); m=-10",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "implicit normal:normal (3,2,-4)",
+   "claimed": "target as above; m=-24/5; m_perp=5/24; y+4=(5/24)x; 4+2+3=9",
+   "computed": "same; m*m_perp=-1",
+   "ok": true
+  },
+  {
+   "case": "implicit normal:changed (3,3,-1)",
+   "claimed": "m=9; m_perp=-1/9; y+1=-(1/9)x",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "implicit normal:boundary (4,3,-5)",
+   "claimed": "m=-10; m_perp=1/10; y+5=(1/10)x",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "stationary two-extrema:normal x^3-3x+2",
+   "claimed": "f'=3(x-1)(x+1); (-1,4) max, (1,0) min; f''=-6,6",
+   "computed": "same; params (1,0,1,2) admitted",
+   "ok": true
+  },
+  {
+   "case": "stationary two-extrema:changed -x^3+3x^2+9x-11",
+   "claimed": "-3(x-3)(x+1); (-1,-16) min, (3,16) max; f''=12,-12",
+   "computed": "same; params (-1,1,2,0)",
+   "ok": true
+  },
+  {
+   "case": "stationary two-extrema:boundary -2x^3-12x^2+30x+96",
+   "claimed": "-6(x-1)(x+5); (-5,-104) min, (1,112) max; f''=36,-36",
+   "computed": "same; params (-2,-2,3,4)",
+   "ok": true
+  },
+  {
+   "case": "stationary flat:normal x^3-3x^2+3x-3",
+   "claimed": "f'=3(x-1)^2; (1,-2) inflexion; f'(0)=f'(2)=3",
+   "computed": "same; f''(1)=0",
+   "ok": true
+  },
+  {
+   "case": "stationary flat:changed x^4+4x^3+6x^2+4x+3",
+   "claimed": "f'=4(x+1)^3; g(-1)=0; quotient 4x^2+8x+4 with discriminant 0; (-1,2) min; f'(-2)=-4, f'(0)=4",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "stationary flat:boundary -2x^4+16x^3-48x^2+64x-36",
+   "claimed": "f'=-8(x-2)^3; g(2)=0; quotient -8x^2+32x-32=-8(x-2)^2; (2,-4) max; f'(1)=8, f'(3)=-8",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "e-index error ke^{(k-1)x}, all 27 tuples",
+   "claimed": "27/27 canonical-gradient coincidences",
+   "computed": "27/27 (other index variants ke^{kx-1} and kxe^{kx-1}: 0/27)",
+   "ok": true
+  },
+  {
+   "case": "e-index error on the normal exemplar",
+   "claimed": "y'=-6e^x y/(3e^{2x}+2y); value -24/5 at P",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "dropped-k own derivative, normal exemplar",
+   "claimed": "-12/5 (H1=1, H2=0)",
+   "computed": "-12/5; dropped-k gives the canonical value in 0/27 tuples",
+   "ok": true
+  },
+  {
+   "case": "divided-relation and log-absolute proofs, all 27 tuples",
+   "claimed": "reach the displayed target",
+   "computed": "27/27 each, as are the product route and the explicit-root route",
+   "ok": true
+  },
+  {
+   "case": "boundary simplified target",
+   "claimed": "-12ye^{3x}/(4e^{3x}+2y) = -6ye^{3x}/(2e^{3x}+y)",
+   "computed": "equal",
+   "ok": true
+  },
+  {
+   "case": "official 2025 P2 Q5 (2,3,-5)",
+   "claimed": "-15/4",
+   "computed": "-15/4",
+   "ok": true
+  },
+  {
+   "case": "official 2023 P2 Q8(b)",
+   "claimed": "-4",
+   "computed": "-4",
+   "ok": true
+  },
+  {
+   "case": "coefficient-slip sample f'=2(x-1)^2",
+   "claimed": "x=1, y=-2; I1=0, I2=1, I3=1",
+   "computed": "root 1, f(1)=-2",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-implicit-normal",
+   "branch": "gradient and normal (shared domain)",
+   "claimed": "40 raw; 27 point-tasks on 23 curves; 8 identities; (2,3,-5) excluded",
+   "computed": "40 raw; 4 excluded by a+2q=0 and 8 by q=-a; 27 admitted; 23 curves (4 with two points: (3,2,-2),(3,3,-2),(4,2,-3),(4,3,-3)); 8 identities; (2,3,-5) not admitted; 19 tuples with C>0 and 8 with C<0",
+   "notes": "Unchanged from D1. Named errors other than the e-index error give the canonical gradient or normal in 0/27 tuples."
+  },
+  {
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "two-extrema",
+   "claimed": "540 polynomials / 30 keys; 108 h=0",
+   "computed": "540 distinct; 30 keys; 108 h=0; all 540 verified by both the Taylor test and the sign test",
+   "notes": "Unchanged from D1."
+  },
+  {
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "flat-classification",
+   "claimed": "360/288/256; 16 keys; 128 inflexions/64 minima/64 maxima; 128 quartic factor-theorem solves",
+   "computed": "360/288/256; 16 keys; 128/64/64; quartic checks 128/128 for each step; f'(h)=y collisions 0; maximum |coefficient| 64",
+   "notes": "Domain unchanged from D1. The 'f''=0 => inflexion' shortcut gives the right name on 128 instances; the degree-and-leading-sign rule predicts the type on 256/256 (this is why the part is Apply)."
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "gradient/gradient",
+   "response": "e-index error (3e^{2x} -> 6e^{x}), product structure, 2yy' and 0 shown, P substituted, -24/5",
+   "expected_marks": "3/5 (G1,G3,G4); G2=0, G5=0 www",
+   "design_gives": "3/5 (work order :63, :89; exemplar :131)",
+   "ok": true,
+   "basis": "D1-S05 repair; CALC-D2-DEV10; rendered PDF359"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "gradient/gradient",
+   "response": "complete correct product route",
+   "expected_marks": "5/5",
+   "design_gives": "5/5",
+   "ok": true,
+   "basis": "2025 P2 Q5 AWARD01-05"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "gradient/gradient",
+   "response": "complete explicit-root route (sigma=sign(a+2q)), correct derivative, substitution, -24/5",
+   "expected_marks": "5/5",
+   "design_gives": "5/5: the G5 www condition is met on an accepted route (JSON :207 'on an accepted route'; DEV05 row 'canonical www gradient')",
+   "ok": true,
+   "basis": "CALC-D1-DEV05; MR08"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "gradient/gradient",
+   "response": "bare -24/5",
+   "expected_marks": "0/5 plus 'your value is correct; show working'",
+   "design_gives": "0/5",
+   "ok": true,
+   "basis": "OD-1; no official answer-only row (PDF359)"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/show-derivative",
+   "response": "divided route complete (3e^{2x}+y=4/y ... back-substitution)",
+   "expected_marks": "4/4",
+   "design_gives": "4/4",
+   "ok": true,
+   "basis": "CALC-D2-DEV09; MR09 same cap"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/show-derivative",
+   "response": "log-absolute route complete (ln3+2x=ln|4-y^2|-ln|y| ...)",
+   "expected_marks": "4/4",
+   "design_gives": "4/4",
+   "ok": true,
+   "basis": "CALC-D2-DEV09"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/show-derivative",
+   "response": "divided route: correct differentiation to y'=-6e^{2x}y^2/(y^2+4), back-substitution omitted or botched, then target copied",
+   "expected_marks": "3/4 (parity with the product route, where a final-algebra failure keeps S1-S3)",
+   "design_gives": "3/4 per work order :114 (back-substitution is S4), but 2/4 per work order :112 and JSON :433 (back-substitution is part of S3)",
+   "ok": false,
+   "basis": "Internal contradiction; MR08/MR09 same cap and dependencies (calc-D2-02)"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/show-derivative",
+   "response": "boundary proof ending at -6ye^{3x}/(2e^{3x}+y) with the cancellation of 2 shown",
+   "expected_marks": "4/4",
+   "design_gives": "4/4",
+   "ok": true,
+   "basis": "work order :93,:116; calc1-D1-06"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/gradient",
+   "response": "failed proof (dropped k), then P substituted into own expression: -12/5",
+   "expected_marks": "H1=1, H2=0",
+   "design_gives": "1/2",
+   "ok": true,
+   "basis": "2023 Q8(b) M1 unrestricted (PDF339)"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/gradient",
+   "response": "failed proof, then the displayed formula used: -24/5",
+   "expected_marks": "2/2, S4 not restored",
+   "design_gives": "2/2",
+   "ok": true,
+   "basis": "work order :95,:118"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/gradient",
+   "response": "e-index error proof (S2=S4=0), then own expression substituted: -24/5 by coincidence",
+   "expected_marks": "Either 2/2 (official (b) A1 has no www; the error is already penalised in S2/S4) or 1/2 (DEV10 logic). The design must say which.",
+   "design_gives": "2/2 by implication ('judged on its own stated criteria', work order :118)",
+   "ok": true,
+   "basis": "Defensible but left implicit; differs from G5 www for the identical computation (calc-D2-04, note)"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/normal",
+   "response": "labelled m_perp=5/24 stated (no reciprocal working), then y+4=(5/24)x",
+   "expected_marks": "3/3",
+   "design_gives": "3/3",
+   "ok": true,
+   "basis": "2021 P2 Q10(b) M1/DM1/A1 (PDF241)"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/normal",
+   "response": "bare correct line only",
+   "expected_marks": "0/3",
+   "design_gives": "0/3",
+   "ok": true,
+   "basis": "OD-1"
+  },
+  {
+   "recipe": "WB8227-implicit-normal",
+   "part": "normal/normal",
+   "response": "labelled 'm_perp = 24/5' (negated instead of the negative reciprocal), line through P",
+   "expected_marks": "N1=0, N2=0 (official M1 needs the perpendicular gradient)",
+   "design_gives": "0 under the work-order criterion 'm_perp=-1/m' (:96). The JSON qualifier (:582), read alone, would credit 'a labelled perpendicular-gradient value'.",
+   "ok": true,
+   "basis": "Wording risk only (calc-D2-05, note)"
+  },
+  {
+   "recipe": "WB8227-stationary-inflexion",
+   "part": "flat/point",
+   "response": "changed quartic: g(-1)=0, division giving 4x^2+8x+4 with discriminant 0, x=-1, f(-1)=2",
+   "expected_marks": "3/3",
+   "design_gives": "3/3 (I2 includes the quartic AS route)",
+   "ok": true,
+   "basis": "2025 P1 Q9(b) M1 'equate to zero and any valid attempt to solve'"
+  },
+  {
+   "recipe": "WB8227-stationary-inflexion",
+   "part": "flat/classification",
+   "response": "first-derivative signs only (f'(-2)=-4, f'(0)=4) giving a minimum",
+   "expected_marks": "3/3, Apply 3",
+   "design_gives": "3/3; Bloom 3",
+   "ok": true,
+   "basis": "OD-4; 2025 PDF351 'any valid method'"
+  }
+ ],
+ "findings": [
+  {
+   "id": "calc-D2-01",
+   "recipe": "WB8227-stationary-inflexion (also WB8227-implicit-normal)",
+   "branch": "flat-classification",
+   "locator": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-stationary-inflexion.md:111 (and :115); work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-implicit-normal.md:127",
+   "severity": "should-fix",
+   "expected": "OD-4 and the D2 claim: stationary classification is Apply 3 in every record. Current check receipts are under planning/d2/.",
+   "actual": "Stationary exemplar :111 still reads 'Whole Bloom is proposed3 for two-extrema and4 only for the uncued mixed-outcome classification branch, pending the short cross-vendor check and Vitalis's approval', and says the cases 'passed planning/d1/calculus-design-check.py'. The new D2 section of the same file (:115) says both classification parts are Apply 3. Implicit exemplar :127 likewise says the cases 'passed the separate oracle in planning/d1/calculus-exemplar-oracle.json', while the work order :136 names the planning/d2 checks as current.",
+   "evidence": "diff of d1-candidate against current: :111 is unchanged D1 text, and the D2 section was appended after it. A grep across current non-history files finds no other stale Analyse-4 claim for stationary.",
+   "repair": "Replace :111 with Apply 3 for both branches under OD-4 and point both exemplar files to the planning/d2 receipts."
+  },
+  {
+   "id": "calc-D2-02",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal / show-derivative",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:112 vs :114; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:433",
+   "severity": "should-fix",
+   "expected": "One allocation of the back-substitution step in the DEV09 alternative routes, giving the same cap and dependencies as the product route (MR08/MR09, D1 repair calc1-D1-04, where back-substitution sat in S4).",
+   "actual": "The generic S3 says 'correctly differentiate its remaining implicit y-terms and treat C as constant, including any justified identity/back-substitution needed by the route' (JSON: 'any necessary identity/back-substitution justified'). The worked divided route at :114 labels the differentiation S1/S2/S3 and the back-substitution of C=ae^{kx}y+y^2 as S4, and the log route says 'the same forward rearrangement/back-substitution earns S4'. A learner who differentiates the divided relation correctly (6e^{2x}+y'=-4y'/y^2) but fails the back-substitution scores 3/4 under :114 and 2/4 under :112/JSON. The product route's analogous final-algebra failure keeps S1-S3 (3/4).",
+   "evidence": "Text as quoted. sympy confirms the un-back-substituted -6e^{2x}y^2/(y^2+4) is not identically equal to the target, so the back-substitution is a required step that must sit in exactly one slot.",
+   "repair": "Remove 'back-substitution' from the generic S3. Keep it in S4, as :114 does and as the D1 suggestion had it. Keep 'justified identity' in S3 only for the explicit-root route (:108)."
+  },
+  {
+   "id": "calc-D2-03",
+   "recipe": "WB8227-stationary-inflexion and WB8227-implicit-normal",
+   "branch": "all",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-stationary-inflexion.md:102; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:128; work/nam-8227-nsscas-2026/workbench/subject-rules.md:67 (MR03 'Each part lists affected awards')",
+   "severity": "should-fix",
+   "expected": "Under the D2 shared misread rule, each part lists its affected awards, as the modulus, trapezium, vector, log, principal and motion work orders now do.",
+   "actual": "The D2 sweep pasted one paragraph into both calculus work orders. Its only example is the implicit gradient-only part ('misreading a in the implicit curve can retain ... G3 and ... G1/G4, but not ... G2 or ... G5'). In the stationary work order this example names another recipe's criteria and no P/C/I allocation is given. The implicit work order allocates only gradient-only, not S1-S4, H1-H2 or N1-N3. The rule is derivable (for example I1/P2 value-bearing fail and I2/P3/C1/I5 survive), but for I4 ('correct two-sided derivative behaviour') it is not stated whether this B is value-bearing.",
+   "evidence": "grep 'Under the shared D2 misread rule' gives identical text at both locators. Other work orders have per-part misread lines (for example vector :94, trapezium :91, modulus :59).",
+   "repair": "Give the stationary work order its own per-part allocation (P2/P4/C2/I1/I3/I6 canonical fail; P1/P3/C1/I2/I5 survive; state I4) and complete the implicit allocation for the extended parts (S2/S4/H2/N3 fail; S1/S3/H1/N1/N2 survive)."
+  },
+  {
+   "id": "calc-D2-04",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal / gradient",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:118 vs :89; :75 stem",
+   "severity": "note",
+   "expected": "A stated outcome for the examiner-named e-index error in the extended branch, consistent with or explicitly distinguished from DEV10.",
+   "actual": "When the e-index expression from a failed proof is substituted at P, it gives the canonical value in 27/27 tuples. The text says this 'cannot repair the proof or gradient-only G5 www, although the separate H1/H2 application is judged on its own stated criteria'. That implies H1=H2=1 (2/2): H2 has no www, and the official 2023 Q8(b) A1 has none either. The same computation scores G4=1, G5=0 in the gradient-only branch. The new stem 'using your derivative or the displayed formula' also invites a learner whose proof failed to use their own expression rather than the correct displayed one.",
+   "evidence": "Own computation: the e-index value equals the canonical value at x=0 for all tuples. Rendered PDF339: the (b) A1 is unqualified.",
+   "repair": "State the outcome explicitly ('H1/H2 = 2/2; the derivative error is already penalised in S2/S4') or apply www to H2. Either is defensible. Optionally keep the official 'Hence' stem wording."
+  },
+  {
+   "id": "calc-D2-05",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal / normal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:582; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:96; exemplars :71/93/115",
+   "severity": "note",
+   "expected": "N1 credits a stated perpendicular gradient only when it equals -1/(their m). The named errors 'negate instead of the negative reciprocal' and 'positive reciprocal' must not earn N1.",
+   "actual": "The JSON qualifier reads 'A labelled perpendicular-gradient value in working is sufficient M1', and the work-order prose sentence is similar. Only the work-order criterion column carries 'm_perp=-1/m'. The exemplar rows still say 'N1 M1 visible negative reciprocal'.",
+   "evidence": "Rendered 2021 PDF241: M1 'Find gradient and the perpendicular gradient'.",
+   "repair": "Add 'equal to -1/(their m)' to the JSON qualifier and the prose sentence. Align the exemplar row wording."
+  },
+  {
+   "id": "calc-D2-06",
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "flat-classification / point",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-stationary-inflexion.md:44; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:1606-1629; work/nam-8227-nsscas-2026/workbench/subject-rules.md:88 (LIMIT05)",
+   "severity": "note",
+   "expected": "The recorded prerequisites match the stated route.",
+   "actual": "The factor-theorem route is described as 'verify g(h)=0, divide g by x-h, then show the remaining quadratic has the same repeated root'. Dividing a cubic by a linear factor is M2:T1:O03:D01 ('Divide degree-at-most-four polynomial by linear', PDF14), which is not listed; only O04:D02/D04 are. LIMIT05 says polynomial division is 'omitted from this pilot rather than silently covered by calculus'. This is not a coverage claim, but the dependency goes unrecorded.",
+   "evidence": "demand-registry.json; rendered syllabus PDF14.",
+   "repair": "Add M2:T1:O03:D01 (and D03 if 'identify quotient' is required) to the factor-theorem route, or describe the route as factorisation by inspection or comparing coefficients."
+  },
+  {
+   "id": "calc-D2-07",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal / show-derivative",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:46 vs :112; part direct demand 8227:2020:M2:T4:O02:D01 'Use product rule'",
+   "severity": "note",
+   "expected": "When a full-credit route does not use a directly assessed facet, the stored path shows that the facet was not demonstrated.",
+   "actual": "Line :46 says this only for the explicit-quadratic route ('Store the demonstrated path rather than fabricating product-rule evidence'). The DEV09 divided and log routes also avoid the product rule but earn 4/4. No path-storage statement covers them.",
+   "evidence": "Registry: M2:T4:O02:D01 = 'Use product rule'. The divided route differentiates ae^{kx}+y-C/y.",
+   "repair": "Extend the :46 sentence to every alternative route (explicit-root, divided, log)."
+  },
+  {
+   "id": "calc-D2-08",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal / show-derivative",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:114; exemplars/WB8227-implicit-normal.md:133; calculus-design.json:438",
+   "severity": "note",
+   "expected": "A clear and fair rule for a log route written without moduli.",
+   "actual": "'An invalid logarithm of negative y is not accepted as this route' leaves the marks unstated. On the 19/27 curves with C>0, the curve has a y>0 branch on which ln y and ln(C-y^2) can be valid, and the formal derivative is identical. On the 8 curves with C<0, y<0 everywhere. This is a judgement call: rejecting the route is mathematically defensible at P, where y<0.",
+   "evidence": "Own enumeration of C signs.",
+   "repair": "State the marks (for example S1 lost, or condone missing moduli as common practice) so E/F marking is deterministic."
+  },
+  {
+   "id": "calc-D2-09",
+   "recipe": "shared record",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/checkpoint-stage-d.json:24-38 (pinned in plan-manifest.json:122)",
+   "severity": "note",
+   "expected": "No current pinned planning record carries superseded Bloom counts.",
+   "actual": "This D0 checkpoint, unchanged since D0 with the same hash in the d0 and d1 history, still states 15 choices and whole_choice_bloom_counts {2:1,3:11,4:3}. Its stage text reads 'owner checkpoint pending'. It predates D2 and is not referenced by STATUS/HANDOVER, but the D2 manifest pins it as a current planning file.",
+   "evidence": "File content; manifest hash ea9eda78...",
+   "repair": "Mark it historical or move it under planning/history/."
+  }
+ ],
+ "verified_ok": [
+  "Manifest bytes match the pinned sha256 2b9e53a5...d8543f2.",
+  "OD-4 Bloom: flat classification Apply 3 in the work order, calculus-design.json, pilot-design.json, the part-evidence register (md and json), PLAN.md:28/54, OWNER-CHECKPOINT.md:10, and the manifest and pilot counts {3:13,4:1}. calculus-design and pilot-design agree field by field for all 8 calculus parts (prerequisites, direct demands, marks, Bloom, alternative mapping, answer-only, criterion qualifiers).",
+  "Domains, exclusions and capacities for both calculus recipes are unchanged from D1 (JSON diff). The flat stem stays uncued; only 'local' was dropped (calc1-D1-07 note applied consistently in the work order, JSON and all 6 stationary exemplar stems).",
+  "The e-index error is named, disclosed (27/27) and handled by G5 www in the work order, JSON, domain audit, exemplar and register. DEV10 reads the official 'A1 C.A.O.' row correctly (rendered PDF359) and names the departure honestly.",
+  "DEV05 explicit-root route still reaches 5/5 under the G5 www gate.",
+  "DEV09 divided and log routes are mathematically valid on every admitted curve (y≠0 because C≠0; C-y^2=ae^{kx}y≠0), and complete proofs earn 4/4 with no F.T. into the target.",
+  "H1 own-derivative rule matches the unrestricted official 2023 Q8(b) M1. The N1 stated-value rule matches the 2021 Q10(b) M1. The S4 simplified-target rule is stated in the work order, JSON and exemplar.",
+  "Quartic prerequisite routes: demand IDs exist and match the syllabus pages. All 128 quartic instances factor as claimed by both routes. The module dependency is explicit and labelled prerequisite, not direct coverage.",
+  "All 12 implicit/stationary exemplars recompute exactly and lie in their admitted domains. The official 2025 Q5 value is -15/4 and the 2023 Q8(b) value is -4.",
+  "Deviation register CALC-D1-DEV01..08, CALC-D2-DEV09 and DEV10 all carry 'explicitly proposed adaptation; Vitalis approval ... pending'. None is labelled owner-binding. The official rows quoted for DEV01/02/03/04/05/09/10 match the rendered PDF339, PDF241 and PDF359. Calculus work orders use OD labels only for genuine owner decisions (OD-1, OD-4).",
+  "The H1 qualifiers ('own-result method follow-through' and 'no unconnected bypass under hence') are consistent with MR02. The answer-only credit is 0 on all 8 calculus parts, with no official exception (PDF359/339/241)."
+ ],
+ "not_checked": [
+  "2025 P1 report PDF351 (DEV07/DEV08 rows) and 2021 P1 report PDF234 (DEV06) were not re-rendered this round. Those rows are unchanged in substance from D1, where the pages were rendered.",
+  "Codex's planning/d2/calculus-design-check.py and its negative fixtures were not executed. Their receipts were read only to locate claims.",
+  "Motion recipe, the Analyse branch and the global 13/1 derivation beyond the calculus records (other agents' scope).",
+  "Cambridge same-type search for the show-that and flat parts. Runtime, app label placement and notation input (E/F)."
+ ]
+}

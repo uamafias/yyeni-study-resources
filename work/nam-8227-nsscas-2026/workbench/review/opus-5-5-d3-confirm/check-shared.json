@@ -1,0 +1,381 @@
+{
+ "label": "shared",
+ "scope": [
+  "OD-6 in shared rules: subject-rules.md MR03 (:67), headings :43/:57, :149/:151; misread lines in all nine work orders; all 27 misread_policy fields in calculus-design.json (14), trig-model-design.json (6), visual-design.json (7) and their pilot-design.json copies (27); exemplar OD-6 samples (slot order and headline scores only); residue grep over live design files",
+  "D2-S13 / D2-S04: planning/OWNER-CHECKPOINT.md 20-row register (spacing, status classes, OD-6 row, withdrawn/historical rows, owner-decision labelling), exact two-way agreement with planning/d3/deviation-register.json, row-by-row D2->D3 register diff, checkpoint-stage-d.json historical marking",
+  "Counts recomputed from planning/pilot-design.json, calculus/trig/visual design JSON, visual-design-asset-checks.json and coverage-plan.json; cross-checked against plan-manifest counts, choice-capacities.json, OWNER-CHECKPOINT, workbench STATUS/HANDOVER, subject STATUS, PLAN",
+  "coverage-D2-04 rounding disposition recomputed with exact fractions",
+  "closeout-D2-01/02/03: manifest pins of all live checks/plan-* (47), content_digest, file/source/review pins, analysis/tools/curriculum hashes vs D3 baseline, D2 manifest and analysis-snapshot pins",
+  "Write scope: D2->D3 diffs of STATUS x2, HANDOVER, PLAN, app-change-handoff, capability-gaps, recipe-contract, subject-rules, OWNER-CHECKPOINT, checkpoint-stage-d.json, coverage-plan.json/.md, visual-design-asset-checks.json, trig-model-source-reads.json/.md, calculus-source-reads.md"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf (sha256 7cfb18fb...)",
+   "page": 3,
+   "what": "Penalties: 'A penalty of MR-1 is deducted from A or B marks when the data of a question or part question are genuinely misread and the object and difficulty of the question remain unaltered. In this case all A and B marks then become follow through marks. MR is not applied when the candidate misreads his own figures - this is regarded as an error in accuracy. An MR-2 penalty may be applied in particular cases if agreed at the coordination meeting.' Nothing on per-datum units, first-use part, which A/B mark is taken, or deferral."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf (sha256 8012a5d9...)",
+   "page": 345,
+   "what": "Printed 343, 8227 Paper 1 general item 4: 'Learners who misread numbers do not score maximum marks even if their method is correct.' No amount stated. Citation in MR03 and all policies correct."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D2-OD6",
+   "related_agent_ids": [
+    "vecrec-D2-01",
+    "vecrec-D2-02",
+    "vecrec-D2-03",
+    "vecrec-D2-06",
+    "vecrec-D2-09",
+    "calc-D2-03",
+    "motion-D2-08",
+    "motion-D2-10"
+   ],
+   "codex_claim": "OD-6 replaces D2-MISREAD-ALLOCATION in subject-rules, 9 WOs, all 27 part policies, samples and the register",
+   "verdict": "repaired",
+   "evidence": "subject-rules.md:67 MR03 states one A/B mark, all A/B F.T., M/DM normal, own-figure = accuracy, object/difficulty change or no solution = no MR, www/named errors/OD-1 not rescued, no borrowing; cites NSSCAS 2025 PDF345 item 4 (CONVENTION:108) and 9709_m16_ms_12 PDF3 Penalties as 'comparable Cambridge board convention ... not a Namibian published allocation' (both pages rendered and read). 27/27 parts carry misread_policy; pilot-design copies equal the source JSON 27/27. Calculus structured lists checked against criterion mark types: every follow_through suffix is A/B, every method suffix is M/DM, full coverage, 0 errors. No WO/JSON policy contains a two-mark penalty, deduction from M/DM, or the withdrawn 'value-bearing A/B tied to correct givens fails' rule. Stationary WO:114 has its own P/C/I allocation; no G-criterion residue. Vector (a) policy (visual-design.json recipes[2] part a) is now its own (a:B1/A1 F.T., a:M1 normal). The motion V=18/V=30 samples now use 81 and 36 (exemplar :81, :97). Residue grep (D2-MISREAD-ALLOCATION, invention/inventing, 3/7, 2/5, blanket/minus-one, value-bearing, structural B, 'canonical givens'): no live hits outside checks/plan-repair-d2-*, planning/d2/* (D2 evidence) and the negative pattern list in planning/d3/shared-policy-audit.py:16.",
+   "residual": "New labelling and coverage defects from the repair: shared-D3-01, shared-D3-02 and shared-D3-03."
+  },
+  {
+   "finding_id": "D2-S04",
+   "related_agent_ids": [
+    "motion-D2-07",
+    "vecrec-D2-04",
+    "trig-D2-03"
+   ],
+   "codex_claim": "OD-4 controls the live decision, not the 4+2 tariff; the log domain is reviewer-prescribed, not owner-fixed",
+   "verdict": "repaired",
+   "evidence": "calculus-design.json and pilot-design.json named_deviation: 'OD-4 requires mixed outcomes and a live direction decision. The exact fixed 4+2 tariff ... are planner proposals, not an owner-fixed rubric'. motion WO:52 'The tariff is not an owner-fixed decision'. log WO:120 'reviewer-prescribed (step-3 calc2-08) ... It is not owner-fixed'. OWNER-CHECKPOINT.md:21 and row :41 ('The owner accepted the design direction, not this exact tariff'). subject-rules.md:151. The D2 receipt (checks/plan-repair-d2-trig-dispositions.json:149) is kept unchanged as history and superseded by checks/plan-repair-d3-trig-dispositions.md:8.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D2-S13",
+   "related_agent_ids": [
+    "vecrec-D2-07",
+    "calc-D2-09"
+   ],
+   "codex_claim": "Readable 20-row register, a status class on every row, an OD-6 row, checkpoint-stage-d.json historical",
+   "verdict": "repaired",
+   "evidence": "OWNER-CHECKPOINT.md:25-44 has 20 rows, each 'ID; status class; state'. Word-run scan of the whole file: the only tokens over 25 letters are IDs or locators ('flat-classification:classification:I4/I5/I6' and similar). No camel-case or alpha-digit-alpha run-togethers. The only letter runs of 13 or more missing from the dictionary are 'differentiated', 'interpretations' and 'presentations'. The Markdown rows equal d3/deviation-register.json entries exactly in both directions (20/20 rows, same order, all five cells; first cell = id; status_class; status). D2->D3: only D2-MISREAD-ALLOCATION -> OD-6 changed IDs. Withdrawn D1-MOD-OD1-LIST and historical D1-MOTION-QUADRATIC stay visible. Only the OD-6 row has the class 'binding owner decision'. D1-TRAP-FT-BRIDGE is 'owner-accepted ... OD-5 accepted'. Every other row is proposed, source interpretation, historical or withdrawn, with approval pending. checkpoint-stage-d.json:44-46 adds record_status 'historical/superseded' and names its D0 figures (15/45/28, Bloom 2/3/4) as historical.",
+   "residual": "The OD-6 row's departure text attributes the operational unit to the owner (shared-D3-01). checkpoint-stage-d.json still has 'current'/'stage' fields worded as current. record_status overrides them: acceptable."
+  },
+  {
+   "finding_id": "vecrec-D2-03",
+   "related_agent_ids": [
+    "vecrec-D2-03"
+   ],
+   "codex_claim": "Headings call only owner-backed rules binding",
+   "verdict": "repaired",
+   "evidence": "subject-rules.md:43 'Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval'; :57 'Shared NSSCAS marking rules — owner authority is scoped per row'; :151 lists OD-1..OD-6 scopes and calls MR02 and MR04-09 source-backed proposals; :149 is consistent.",
+   "residual": "MR03's rule cell, under 'Binding OD-6', also carries the planner's unit details (shared-D3-01)."
+  },
+  {
+   "finding_id": "vecrec-D2-02",
+   "related_agent_ids": [
+    "vecrec-D2-02"
+   ],
+   "codex_claim": "'invention' rationale removed; OD-6 row shows both effects",
+   "verdict": "repaired",
+   "evidence": "No 'invent*' in OWNER-CHECKPOINT, deviation-register or subject-rules MR03. OD-6 row rationale: 'V=12->21 becomes 4/5; vector OB sign misread becomes 6/7'.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "closeout-D2-02",
+   "related_agent_ids": [
+    "closeout-D2-02"
+   ],
+   "codex_claim": "D3 manifest pins every live checks/plan-* file",
+   "verdict": "repaired",
+   "evidence": "plan-manifest.json sha256 4667a860...6354fc7 = brief pin. All 47 live checks/plan-* (8 D0, 11 D1, 15 D2, 13 D3) are in files with matching sha256. All 1708 files, 436 source and 75 review pins match current bytes. Recomputed content_digest = sha256(json.dumps(files, sort_keys=True, separators=(',',':'))) = 75b2e3da...dcf02 = manifest. history/plan-manifest-d2.json sha256 = 2b9e53a5... All 318 D2 live-design pins equal their history/d2-candidate copies.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "closeout-D2-01",
+   "related_agent_ids": [
+    "closeout-D2-01"
+   ],
+   "codex_claim": "Deferred to HANDOVER as later maintenance requiring the full proof",
+   "verdict": "repaired",
+   "evidence": "HANDOVER.md:29-31: 'later tool change requiring full analysis rebuild/fresh copies/negatives'. Tools are unchanged (see closeout-D2-02 hashes), so the guard is still containment-only, as the deferral says.",
+   "residual": "Hardening remains open by design."
+  },
+  {
+   "finding_id": "closeout-D2-03",
+   "related_agent_ids": [
+    "closeout-D2-03"
+   ],
+   "codex_claim": "Deferred to HANDOVER",
+   "verdict": "repaired",
+   "evidence": "HANDOVER.md:32 names the member-table and caveat restoration, or a link to the JSON, as a later tool edit needing the full reproducibility proof.",
+   "residual": "checks/repair-r7-closeout.md:9 overstatement stays until that maintenance."
+  },
+  {
+   "finding_id": "coverage-D2-04",
+   "related_agent_ids": [
+    "coverage-D2-04"
+   ],
+   "codex_claim": "Exact fractions authoritative; binary-float rounded-row sum 720.1 vs decimal half-up 720.5; exact 2162/3 ~ 720.7",
+   "verdict": "repaired",
+   "evidence": "Own recomputation from coverage-plan.json demands[*].examination_weight.equal_split_mark_share. Exact sum 2162/3 = 720.667. Sum of stored rounded_1dp = 720.1, and the stored values equal Python round(float) on 138/138 rows. Exact decimal half-up per row sums to 720.5; it differs on exactly 29/4, 141/20, 21/4 and 25/4. Supplementary 88/3; grand total 750 exactly. Basis text in every row and coverage-plan.md:17 states the convention.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "coverage-D2-03",
+   "related_agent_ids": [
+    "coverage-D2-03"
+   ],
+   "codex_claim": "(not listed in the D3 touched notes)",
+   "verdict": "not-repaired",
+   "evidence": "planning/d3/coverage-check.py:187-189 still hard-codes pilot_part_count=0, facet_changes_from_D0 and representative_deck_change (D3_components 3/7/9). The values are correct by my recomputation.",
+   "residual": "Optional note; no approval impact (shared-D3-07)."
+  },
+  {
+   "finding_id": "coverage-D2-01 / D2-S07 (shared citation part)",
+   "related_agent_ids": [
+    "coverage-D2-01",
+    "coverage-D2-02"
+   ],
+   "codex_claim": "Stationary :111 Apply 3; current D3 receipts cited",
+   "verdict": "partly-repaired",
+   "evidence": "exemplars/WB8227-stationary-inflexion.md:111 'Whole Bloom is Apply3 for both branches under OD-4' and cites planning/d3/calculus-design-check.py. calculus-source-reads.md:65 cites the d3 oracle and audit. exemplars/WB8227-implicit-normal.md:127 cites the d3 oracle. recipe-contract.md:173 and capability-gaps.md:45 name the D3 confirmation gate.",
+   "residual": "Note-level gate wording 'Claude's (focused) short check' remains at work-orders/WB8227-implicit-normal.md:136, WB8227-stationary-inflexion.md:110, WB8227-principal-inverse.md:62, exemplars implicit/stationary :3 and part-evidence-register.md:3 (coverage-D2-02 was itself a note; shared-D3-05)."
+  },
+  {
+   "finding_id": "calc-D2-06 (coverage records)",
+   "related_agent_ids": [
+    "calc-D2-06"
+   ],
+   "codex_claim": "Division demands listed as conditional prerequisites of the factor-theorem route",
+   "verdict": "repaired",
+   "evidence": "pilot-design and calculus-design flat-classification:point prerequisite_routes factor-theorem now include M2:T1:O03:D01/D03. coverage-plan.json adds prerequisite_only_parts for exactly those two rows. They remain 'later' and inside the 99, with no direct-count change.",
+   "residual": "none"
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "recipes / choices / parts / marks",
+   "claimed": "9 / 14 / 27",
+   "computed": "9 / 14 / 27 from pilot-design part_specs; 83 marks; criterion values sum to part marks where criteria are structured; marks_total = sum of part marks for 14/14 choices",
+   "ok": true
+  },
+  {
+   "case": "paper exemplar cases",
+   "claimed": "42",
+   "computed": "calculus exemplar_cases 21 (motion 9, implicit 6, stationary 6) + trig recipes[*].exemplar_cases 3+3+6 = 12 + visual-design-asset-checks exemplar_cases 9 (3/3/3) = 42",
+   "ok": true
+  },
+  {
+   "case": "whole-choice Bloom",
+   "claimed": "13 Apply / 1 Analyse",
+   "computed": "{3:13, 4:1} as max of part proposed_bloom_level; equals proposed_whole_bloom for 14/14; part bloom.level = proposed_bloom_level for 27/27",
+   "ok": true
+  },
+  {
+   "case": "deck marks",
+   "claimed": "19 / 20 / 17",
+   "computed": "PLAN.md:100-102 compositions over computed choice marks: principal 3 + R-form 7 + implicit normal 9 = 19; modulus 3 + vector 7 + trapezium 10 = 20; flat 6 + motion reversal 6 + log graph-intercept 5 = 17. Symbolic D0 decomposition 2+7+5 = 14 -> 3+7+9 = 19",
+   "ok": true
+  },
+  {
+   "case": "direct facets",
+   "claimed": "38 + 1 conditional-only",
+   "computed": "union of directly_assessed_demand_ids = 38; conditional_directly_assessed_demand_ids (principal real-solution) adds {M1:T6:O03:D01} = 39; coverage-plan direct set equals pilot set",
+   "ok": true
+  },
+  {
+   "case": "objectives",
+   "claimed": "25 + 1 conditional-only",
+   "computed": "25 unconditional + {M1:T6:O03} = 26",
+   "ok": true
+  },
+  {
+   "case": "demands outside pilot",
+   "claimed": "99",
+   "computed": "coverage-plan.json: 138 rows; 38 pilot-direct, 1 conditional-only, 99 with neither (disposition counter 38/1/99)",
+   "ok": true
+  },
+  {
+   "case": "count agreement across records",
+   "claimed": "9/14/42/27, Bloom 13/1, decks 19/20/17, 38+1, 25+1, 99",
+   "computed": "Match: plan-manifest counts, pilot-design counts, d3/choice-capacities counts and marks, coverage-plan counts, OWNER-CHECKPOINT.md:9-14, workbench STATUS.md:9, HANDOVER.md:13, subject STATUS.md:2, PLAN.md:127. Motion 168 = 144 + 24, minority 24/168 = 1/7; legacy calculus capacity sum 23+8+30+16+137+56+168 = 438 (calculus-design.json:5922)",
+   "ok": true
+  },
+  {
+   "case": "coverage-D2-04 rounding",
+   "claimed": "binary-float rounded-row sum 720.1; half-up 720.5; exact 2162/3 ~ 720.7",
+   "computed": "720.1 / 720.5 / 2162/3 = 720.667; supplementary 88/3; total 750",
+   "ok": true
+  },
+  {
+   "case": "manifest content digest",
+   "claimed": "75b2e3daef7964c8782566bd7b4a0706b1a64a374034f45b24a32882db2dcf02",
+   "computed": "75b2e3daef7964c8782566bd7b4a0706b1a64a374034f45b24a32882db2dcf02",
+   "ok": true
+  },
+  {
+   "case": "manifest file sha256",
+   "claimed": "4667a86020652f09a8c8b8e7df8612fb08656c1254a5eed20b319e77a6354fc7",
+   "computed": "4667a86020652f09a8c8b8e7df8612fb08656c1254a5eed20b319e77a6354fc7",
+   "ok": true
+  },
+  {
+   "case": "analysis/tools/curriculum unchanged in D3",
+   "claimed": "2346 protected paths unchanged; snapshot 1c8cb96f...",
+   "computed": "Own walk of W/analysis, W/tools (no __pycache__ or .DS_Store) and work/nam-8227-nsscas-2026/curriculum gives 2346 files, the same set as plan-repair-d3-baseline.json, 0 hash differences. 2345/2345 are also pinned and unchanged in analysis/analysis-snapshot.json. The 1 remaining file, analysis-snapshot.json itself, has sha256 1c8cb96f..., equal to the D3 manifest analysis_snapshot_sha256 and the D2 manifest pin. All 8 D2-manifest named_analysis_changes 'after' hashes equal current bytes.",
+   "ok": true
+  },
+  {
+   "case": "OD-6 motion samples (sympy)",
+   "claimed": "V=12->21, 18->81, 30->36: E1 MR-1, 1/2 + 3/3 = 4/5",
+   "computed": "a = -21e^{-t/2}/2, d = 42-42e^{-1}; a = -27e^{-t/3}, d = 243-243e^{-1}; a = -9e^{-t/4}, d = 144-144e^{-1}. E1/E2 are B1 B1, so the first earned A/B is E1: 1/2 + 3/3 = 4/5",
+   "ok": true
+  },
+  {
+   "case": "OD-6 vector sample (sympy)",
+   "claimed": "OB (2,1,-1) misread (-2,1,-1): p=-1/4, 118.1 deg, 6/7",
+   "computed": "p = -1/4; angle 118.1255057 -> 118.1 (half-up); a:B1 first: 2/3 + 4/4 = 6/7. Changed-case no-solution fixture: OA (1,-2,1) gives OA.OC = 0, OB.OC = -3, no p (ineligible)",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "all",
+   "branch": "all",
+   "claimed": "capacity figures quoted in OWNER-CHECKPOINT/STATUS/HANDOVER/PLAN",
+   "computed": "Cross-file agreement only (motion 137/35, 56/14, 168 = 144+24, 28 shapes, bounds 35/14/168; trapezium 30/11/packing 3, generated 22/packing 2) against d3/choice-capacities.json and calculus-design.json",
+   "notes": "Domain re-enumeration is the motion/visual agents' scope."
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "all (OD-6 slot order)",
+   "part": "every worked misread sample",
+   "response": "Genuine question-data misread, otherwise correct",
+   "expected_marks": "MR-1 from the first earned A/B in declared criterion order",
+   "design_gives": "implicit G2 (G1 is M) 4/5; extended H2 8/9; stationary P2 5/6 and I1 5/6; motion E1 4/5; log T-B1 4/5 and U-A1 4/5; principal P-B1 2/3; R-form a-B1 6/7; vector a:B1 6/7; trapezium b:B1 9/10",
+   "ok": true,
+   "basis": "OD-6 + MR03 'earliest eligible earned A/B in declared award order'; mark types from calculus/trig/visual JSON and WO tables"
+  },
+  {
+   "recipe": "WB8227-vector-geometry",
+   "part": "(a)+(b)",
+   "response": "Misreads OB (2,1,-1) as (-2,1,-1) and in (a) uses the named wrong resultant p(OA-OB): dot-zero method only (a:M1), then correct (b) on the misread OB (118.1 deg)",
+   "expected_marks": "OD-6 literal ('costs one mark, deducted from the A or B marks'): 1/3 + 3/4 = 4/7. Design rule: 5/7",
+   "design_gives": "5/7: (a) earns no A/B, so there is no deduction and it is not deferred; (b) 4/4 by F.T. The same as the canonical learner with that named error (5/7, exemplar :57), so the misread costs nothing",
+   "ok": false,
+   "basis": "Judgement call: OD-6 record vs the planner's 'do not transfer a charge to a later part' (subject-rules.md:67; calculus-design if_none; WO lines). See shared-D3-02."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "exponential (a)+(b)",
+   "response": "Misreads V=12 as 21, uses the named wrong factor -V/k in (a) (neither E1 nor E2), then correct distance on V=21",
+   "expected_marks": "OD-6 literal: 0/2 + 2/3 = 2/5. Design: 3/5",
+   "design_gives": "3/5 (0/2 + 3/3 F.T., no deferred deduction). The same as with no misread",
+   "ok": false,
+   "basis": "As above; motion WO:56 'no earned A/B means no deduction'; calculus-design motion if_none 'zero; do not deduct from M/DM or another part'"
+  }
+ ],
+ "findings": [
+  {
+   "id": "shared-D3-01",
+   "recipe": "shared (OD-6)",
+   "branch": "all",
+   "locator": "planning/OWNER-CHECKPOINT.md:43 (and d3/deviation-register.json OD-6 'departure'); OWNER-CHECKPOINT.md:15; HANDOVER.md:17; recipe-contract.md:303; subject-rules.md:67 (rule cell under 'Binding OD-6')",
+   "severity": "should-fix",
+   "expected": "Only what Vitalis decided is attributed to him. The OD-6 record (review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md) fixes: one mark from A/B; all A/B F.T.; M/DM as usual; own figures = accuracy; changed object/difficulty or no solution = no MR; feedback names the misread. The unit (once per datum, in the first-use part), which A/B is taken (earliest in declared order), no deferral or borrowing, and 'two distinct data each cost one mark' came from our REPAIR-D3-PROMPT.md ('Settle and state these') and the planner's settlement. They are proposals pending approval.",
+   "actual": "The OD-6 row is classed 'binding owner decision', and its departure reads 'Owner chose one earned A/B deduction per eligible datum in its first-use part ... Earliest eligible earned A/B in declared order; none earned means no deduction or borrowing. No later-part second deduction.' OWNER-CHECKPOINT:15 'OD-6 settled: one eligible first-use A/B deduction'. HANDOVER:17 'OD-6 is binding: ... one earliest eligible earned A/B deduction at first use per datum'. recipe-contract:303 'OD-6 binds ... with one eligible earned A/B deduction in the datum's first-use part'. Mitigation: the row state says 'application of the rule is part of the pending exact candidate confirmation', and the MR03 authority cell scopes the owner allocation correctly ('MR-1 from A/B, all A/B F.T., own-figure errors excluded').",
+   "evidence": "The Cambridge PDF3 Penalties text (rendered) says nothing on per-datum units, first-use part, slot choice or deferral, and it also allows MR-2 at coordination. The owner record says only 'costs one mark'. This is the same kind of error as D2-S04 (tariff attributed to OD-4), now in the central OD-6 register row. By the brief's literal wording ('non-owner interpretation presented as an owner decision') this is at the margin of design-blocking. I grade it should-fix because the content came from our own prompt, the row state flags application as pending, and approval of the manifest would cover it anyway.",
+   "repair": "Split the OD-6 row and the HANDOVER/contract sentences. Owner (OD-6): MR-1 from A/B, all A/B F.T., M/DM usual, own-figure/changed-object exclusions, feedback names the misread. Proposed operational unit (reviewer-prescribed in REPAIR-D3-PROMPT, planner-settled; approval pending): once per datum at first use, earliest eligible earned A/B, no borrowing or deferral, distinct data one mark each. Mirror this split in the MR03 rule cell."
+  },
+  {
+   "id": "shared-D3-02",
+   "recipe": "shared (OD-6)",
+   "branch": "all",
+   "locator": "subject-rules.md:67 ('If the first-use part earns no A/B, deduct nothing there or later'); calculus-design.json misread_policy.deduction.if_none ('do not transfer a charge to a later part' / motion 'do not deduct from M/DM or another part'); trig/visual policies ('do not defer'); WOs e.g. WB8227-motion-integration.md:56, WB8227-vector-geometry.md:94,108",
+   "severity": "should-fix",
+   "expected": "OD-6: a genuine misread 'costs one mark, deducted from the A or B marks'. A rule under which an eligible misread costs nothing should be shown to Vitalis as a choice.",
+   "actual": "If the first-use part earns no A/B (e.g. because of an unrelated named error), no deduction is made anywhere. Later parts still earn A/B by OD-6 F.T. on the misread value. Vector: OB sign misread + named wrong resultant in (a) gives a:M1 only, then (b) 4/4 F.T. = 5/7, the same as a learner with the same named error and no misread. Motion: V 12->21 + wrong -V/k factor gives 0/2 + 3/3 = 3/5, the same as without the misread. CONVENTION:108 (no maximum) is still met, because every part has at least one A/B criterion (checked over all 27 parts).",
+   "evidence": "Mark types: vector (a) B1/M1/A1, (b) B1/M1/M2/A1 (WO:94); motion E1/E2 B1, E3 B1, E4 M1, E5 A1 (WO:47-48); exemplar vector :57 gives 5/7 for the canonical wrong-resultant learner. Our D3 prompt said 'If there are no A or B marks to deduct from, nothing is deducted'. In these cases later-part A/B marks do exist, so 'do not transfer' is the planner's narrower reading.",
+   "repair": "Put the choice to Vitalis inside the OD-6 approval: either keep part-local no-deferral (state that such misreads can be costless), or take the one mark from the first earned A/B in a later part that uses the same datum. Add the vector 5/7-vs-4/7 fixture either way."
+  },
+  {
+   "id": "shared-D3-03",
+   "recipe": "shared (OD-6)",
+   "branch": "motion, modulus, trapezium, vector + shared rule",
+   "locator": "subject-rules.md:67 (MR03); work-orders/WB8227-motion-integration.md:56; WB8227-modulus-graph-recovery.md:59,84; WB8227-trapezium-sketch-estimate.md:91,141; calculus-design.json motion part_specs[*].misread_policy (6 parts, no feedback field); visual-design.json misread_policy strings (7 parts); app-change-handoff.md:123,133 (APP8227-05)",
+   "severity": "should-fix",
+   "expected": "OD-6 'Practice feedback names the misread' is stated in the binding shared rule and in every part policy, as it is for the other 14 parts.",
+   "actual": "MR03 has no feedback clause (it records a ledger only). 13 of the 27 part policies (motion 6, visual 7) omit it. The motion, modulus and trapezium WO misread lines omit it. The vector WO/exemplar has it only in the fixture row ('Name the miscopied sign'). The implicit/stationary JSON (feedback field), trig strings and the implicit/stationary/log/principal/R-form WOs include it. The APP8227-05 ledger requirements do not mention it.",
+   "evidence": "Own extraction of all 27 misread_policy values and grep of the nine WO misread lines. The general rule subject-rules.md:134 ('names the first evidenced error') covers it in practice, so this is marginal. It is still an incomplete transcription of the owner decision in the rule labelled 'Binding OD-6', and inconsistent across part policies.",
+   "repair": "Add 'Practice feedback names the misread' to MR03 and APP8227-05, and add a feedback field or sentence to the 13 policies and the three WO lines."
+  },
+  {
+   "id": "shared-D3-04",
+   "recipe": "WB8227-trig-rform-equation, WB8227-principal-inverse, WB8227-log-linear-model",
+   "branch": "all",
+   "locator": "trig-model-design.json misread_policy (6 parts); work-orders/WB8227-trig-rform-equation.md:108; WB8227-principal-inverse.md:90; WB8227-log-linear-model.md:118",
+   "severity": "note",
+   "expected": "The same slot rule as MR03 ('earliest eligible earned A/B criterion in declared award order').",
+   "actual": "These policies add '... unless the actual scheme specifies an order'. MR03 has no such exception, and no source scheme for these recipes specifies a misread order.",
+   "evidence": "Textual diff of the four policy templates. All other semantics are identical.",
+   "repair": "Drop the clause, or add it to MR03 with a scope."
+  },
+  {
+   "id": "shared-D3-05",
+   "recipe": "shared",
+   "branch": "-",
+   "locator": "PLAN.md:120; app-change-handoff.md:131; recipe-contract.md:301; work-orders/WB8227-modulus-graph-recovery.md:82; WB8227-implicit-normal.md:136; WB8227-stationary-inflexion.md:110; WB8227-principal-inverse.md:62; exemplars/WB8227-implicit-normal.md:3; exemplars/WB8227-stationary-inflexion.md:3; planning/part-evidence-register.md:3",
+   "severity": "note",
+   "expected": "Current version and gate wording.",
+   "actual": "PLAN.md:120 'plan-manifest.json pins the D2 candidate and D0/D1 recovery paths' (it now pins D3 + D0/D1/D2). Handoff:131 'before admitting a D2 test instance'. Contract:301 'D2 retains ... revisions are0.1.3'. Modulus WO:82 'Claude D3 confirmation of D1'. Several files still say 'Claude's (focused) short check'.",
+   "evidence": "grep of live design files",
+   "repair": "Update when next touched; no approval impact."
+  },
+  {
+   "id": "shared-D3-06",
+   "recipe": "shared",
+   "branch": "-",
+   "locator": "PLAN.md:74",
+   "severity": "note",
+   "expected": "Unambiguous owner-decision references now that OD-6 means the misread decision.",
+   "actual": "'Visual inclusion remains binding under owner decision6' refers to decision 6 of review/opus-5-5-step-1-3/owner-decisions-2026-11-16.md (a real owner decision), not OD-6. It is unchanged since D2 but now collides with OD-6. capability-gaps.md:9 gives the record path and is unambiguous.",
+   "evidence": "owner-decisions-2026-11-16.md:20 row 6 (sketch/diagram inclusion)",
+   "repair": "Write 'owner decision 6 of 16 November (owner-decisions-2026-11-16.md)'."
+  },
+  {
+   "id": "shared-D3-07",
+   "recipe": "shared",
+   "branch": "-",
+   "locator": "planning/d3/coverage-check.py:187-189",
+   "severity": "note",
+   "expected": "coverage-D2-03 (optional): the receipt derives its literals.",
+   "actual": "pilot_part_count=0, facet_changes_from_D0 and representative_deck_change (D3 3/7/9 = 19) are still literals. They are correct by my recomputation.",
+   "evidence": "source read; deck recomputed from choice marks",
+   "repair": "Optional; derive when next touched."
+  }
+ ],
+ "verified_ok": [
+  "MR03 core = OD-6, with correct citations (NSSCAS 2025 PDF345 printed 343 item 4 CONVENTION:108; 9709_m16_ms_12 PDF3 Penalties, labelled comparable board and 'not a Namibian published allocation'). No two-mark penalty; MR-2 is explicitly not adopted. Both native pages rendered and read; file sha256 match the misread_policy_authority records.",
+  "Headings :43 and :57 scope binding authority to owner-backed rules; :149 and :151 are consistent; subject-rules D2->D3 diff touches only OD-6 and gate wording.",
+  "All 27 part misread policies exist. The pilot-design copies are identical to the source JSON. Calculus follow-through/method lists are consistent with criterion mark types (A/B vs M/DM, 0 errors). Every part has at least one A/B criterion, so no misread can reach maximum marks (CONVENTION:108).",
+  "No live residue of the withdrawn allocation (D2-MISREAD-ALLOCATION, 'invention', 3/7, 2/5, value-bearing/structural-B wording) outside D2 evidence files and the negative pattern list.",
+  "Register: 20 rows, each with a status class; Markdown == d3/deviation-register.json in both directions. Only OD-6 is classed 'binding owner decision', and D1-TRAP-FT-BRIDGE is OD-5-backed. Withdrawn and historical rows are visible. Prose labels the 4+2 tariff proposed and the log domain reviewer-prescribed. No owner label anywhere other than OD-1..OD-6 and the genuine 16-Nov decision 6.",
+  "checkpoint-stage-d.json marked historical/superseded with its D0 figures named.",
+  "Counts 9/14/42/27, Bloom 13/1, decks 19/20/17, 38+1 facets, 25+1 objectives, 99 outside: recomputed and in agreement across manifest, pilot-design, choice-capacities, coverage-plan, OWNER-CHECKPOINT, STATUS x2, HANDOVER, PLAN.",
+  "coverage-D2-04 disposition numerically correct (720.1 / 720.5 / 2162/3).",
+  "Manifest: sha 4667a860..., content_digest recomputed equal. All 1708 file, 436 source and 75 review pins match. All 47 live checks/plan-* pinned with correct hashes. D2 manifest archived byte-identical (2b9e53a5...) and the 318 D2 design pins match their archive copies.",
+  "No analysis/tools/curriculum file changed: 2346/2346 equal to the D3 baseline; 2345 also equal to analysis-snapshot pins; snapshot sha 1c8cb96f... equals both manifests; D2 named analysis changes unchanged.",
+  "HANDOVER.md:29-33 records closeout-D2-01 and -03 as deferred maintenance needing the full analysis proof if tools change.",
+  "Write scope: every hunk in STATUS x2, HANDOVER, PLAN, app-change-handoff, capability-gaps, recipe-contract, subject-rules, OWNER-CHECKPOINT, checkpoint-stage-d.json, coverage-plan.json/.md (rounding basis = coverage-D2-04; prerequisites = calc-D2-06; deck key rename; input hashes), visual-design-asset-checks.json (visual-D2-05 leader note), trig-model-source-reads.json/.md (OD-6 source read), calculus-source-reads.md (D2-S07 citations, calc-D2-06/04/05/07/08 notes, OD-6) is attributable to OD-6, D2-S01..S13 or a §D note. No unexplained change found. The register paraphrases (DEV09 ln(y) max 1/4, DEV10 H2 unqualified) trace to calc-D2-08 and calc-D2-04.",
+  "STATUS.md (both) and HANDOVER.md claim no approval and no Stage E start; both say Claude D3 confirmation, then Vitalis approval."
+ ],
+ "not_checked": [
+  "Recipe-level correctness of each misread sample beyond slot order and the headline motion/vector arithmetic (implicit k=2->3 derivative, stationary/log/principal/R-form/trapezium sample arithmetic): recipe agents' scope.",
+  "Motion domain enumeration, separation tests and sweeps; trapezium packing; capacity values beyond cross-file agreement.",
+  "No Codex script run (freeze-plan.py, coverage-check.py, rebuild); the SCRATCH/root1-2 rebuild is another process.",
+  "planning/CLAUDE-D3-CONFIRM.md and checks/plan-repair-d3-*-dispositions (calc/trig/visual) beyond the shared items; part-evidence-register.* and pilot-design.json beyond counts and misread policies.",
+  "Whether Cambridge practice applies MR-1 per datum or per question (the scheme page is silent); treated as an owner choice to surface, not a defect in itself."
+ ]
+}

@@ -1,0 +1,467 @@
+{
+ "label": "closeout",
+ "scope": [
+  "D1-S28 (closeout-D1-01, -02): 31 restored R6 sentences in tools/textbook-relation-decisions-r7.json and propagated outputs",
+  "D1-S29 (closeout-D1-03): polarity guard in tools/check_repair_r7_closeout.py",
+  "D1-S30 (closeout-D1-04): freeze scope in tools/freeze_analysis_r7_closeout.py, analysis/analysis-snapshot.json, checks/plan-repair-d2-preservation.json, complementarity with planning/plan-manifest.json",
+  "closeout-D1-05: checks/r7-closeout/motion-family-reading.* and curve-family-reading.*",
+  "New D2 defects in analysis inputs/tools (D1->D2 diff of the 5 changed tool inputs and 10 changed outputs)"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf",
+   "page": 12,
+   "what": "Q10 3xy-5y-2x^2=6; (a) show dy/dx; (b) normal at x=-1 (record 157 positive sentence true; no slope-to-points search)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+   "page": 5,
+   "what": "Q5 2e^(3x)y+y^2=15, gradient at (0,-5) (record 163 positive sentence true)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2022/AS - Mathematics Paper 2 8227-2 - First Proof 24.05.2022.pdf",
+   "page": 3,
+   "what": "Q2 2e^(2x)-17e^x+8=0, x=a ln2 (record 141: no modulus, so 'does not ask for that two-sided absolute-exponent preimage' is right; positive sentence true)"
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D1-S28",
+   "related_agent_ids": [
+    "closeout-D1-01",
+    "closeout-D1-02"
+   ],
+   "codex_claim": "Corrected exactly 31 R6 sentence inversions (19 positives restored, 12 other-target negatives repaired); decisions/counts/item links unchanged (decisions json:5151)",
+   "verdict": "repaired",
+   "evidence": "Own deep JSON diff of tools/textbook-relation-decisions-r7.json: D1->D2 changes exactly 31 batch_rejection_rewrites records (137-148, 157-163, 331-335, 390-396) and only in restored_r6_comparison_text, rejection_reason and the new d2_polarity_repair tag; no other field or section of the file changed. HEAD->D2: 84 records text-changed (72 D1 + 12), nothing else. Each of the 31 differs from HEAD in exactly one sentence: HEAD's lowercase inverted batch sentence is now negated; the positive 'This exam part asks/requires the learner to ...' sentence is byte-identical to HEAD. Own clause-level polarity scan (negation-token count + core-text match against r6_rejection_reason, subject-normalised): HEAD 84 flips, D1 31 (exactly the 31 records), D2 0 of 403. rejection_reason = D1 reason with restored span substituted, for all 403. All 403 r6_rejection_reason strings are byte-identical to the R6 baseline rows in tools/textbook-exam-relations-r6.json. Ledger analysis/textbook-exam-relations-r7.json vs HEAD: 91 changed rows = 84 text rows + D1 S3-10 rows (2040/2043/2046 motion, 2342 curve check, 2716/2717 exponential-scale) + Richter member row; no relation/exemplar_item_selections/exemplar_member_ids change beyond the accepted D1 BP-09/BP-27/BP-08/decibel changes. All 249 objective-map candidate_decisions and all 2718 family exam_relations match the ledger. None of the 20 distinct D1 wrong sentences survives anywhere in the workspace outside review/ and history folders. Native pages for records 157, 163, 141 confirm polarity.",
+   "residual": "none for S28. closeout-D1-06 (10 records keep 'None of the target tasks/these target questions asks', negation intact) is unchanged; cosmetic note only."
+  },
+  {
+   "finding_id": "D1-S29",
+   "related_agent_ids": [
+    "closeout-D1-03"
+   ],
+   "codex_claim": "Full-text comparison against meaning-preserving R6 subject normalisation; lost- and over-negation seeds rejected (checker:14)",
+   "verdict": "repaired",
+   "evidence": "tools/check_repair_r7_closeout.py:14-26: canonical_r6_restoration maps only 'None of these (other )?targets <verb>' -> 'This exam part does not <verb>' and 'The target instead' -> 'This exam part'; validate_restored_negation asserts whitespace/casefold-normalised equality of the WHOLE restored text with that, plus containment in rejection_reason. Claim accurate. Ran the unmodified checker in SCRATCH/closeout/copy: pass, and final-validation.json / both reading json+md reproduce byte-identical to the repo. Seeds (each in one record, checker re-run): lost negation rec137 (other-targets), rec106 (mid-sentence 'has'), rec157 -> all FAIL; over-negation rec390 ('requires'), rec163 -> FAIL; negation inserted in a different clause (rec0 'The source does not evaluate') -> FAIL; 'None of the target tasks asks' inverted to 'This exam part asks' (rec66) -> FAIL.",
+   "residual": "Guard misses edits outside the restored span (see closeout-D2-01): extra contradictory sentence or 'Relation established' flip in rejection_reason only, a consistent edit of the record's own r6_rejection_reason copy, capitalisation-only regressions, and ledger-only edits (the last is covered by rebuild output hashes instead)."
+  },
+  {
+   "finding_id": "D1-S30",
+   "related_agent_ids": [
+    "closeout-D1-04"
+   ],
+   "codex_claim": "Whole-workspace pinning restored with exact review/Stage-D/cache/self exclusions; historical checks and README included (freeze:20)",
+   "verdict": "repaired",
+   "evidence": "freeze_analysis_r7_closeout.py:20-31 excludes: any path with a 'review' component, __pycache__, .DS_Store, the snapshot itself, 8 named Stage-D/status files, workbench/planning|work-orders|exemplars, and checks/plan-*. Only workbench/review/ has a 'review' component (63 files, 62 + our d2-confirm/inputs.json); nothing else is dropped by it. Own walk of 8,891 subject files: 8,632 pinned (snapshot or plan manifest), 238 __pycache__, 1 ours, 20 pinned by neither (19 live D0/D1 checks/plan-* + plan-manifest.json itself; see closeout-D2-02). All 5,417 non-plan checks files are pinned (r3 156, r4 474, r5 2241, r6 1973, r7 385, r7-closeout 150, repair-r2..r7 23, fresh-copy-verification-r4/r5/r6, etc.); work/nam-8227-nsscas-2026/README.md pinned. HEAD snapshot (= analysis/history/analysis-snapshot-r7-closeout.json, byte-identical, sha 5aaa3bf2) has 7,773 files; minus the 4 status/handover files = 7,769 required, 0 missing from the current snapshot; current snapshot 7,771 = 7,769 + .gitignore + the r7-closeout history snapshot. All 7,771 + 436 + 37 hashes match current repo bytes (own sha256) and freeze --check passes in the scratch copy. No Stage-D path is in the snapshot; the only overlaps with the plan manifest are repair-r7-closeout.md, final-validation.json, fresh-copy-proof.json. plan-manifest.json sha256 2b9e53a5... confirmed.",
+   "residual": "19 live D0/D1 checks/plan-* files are pinned only through archived identical copies (note closeout-D2-02)."
+  },
+  {
+   "finding_id": "closeout-D1-05",
+   "related_agent_ids": [
+    "closeout-D1-05"
+   ],
+   "codex_claim": "Motion/curve reading annotations regenerated from current canonical decisions",
+   "verdict": "repaired",
+   "evidence": "checks/r7-closeout/motion-family-reading.json and curve-family-reading.json now equal tools/textbook-closeout-{motion,curve}-decisions.json plus an annotation_status field (as at HEAD, where they were identical copies). BP-08 structural branch/mixed, BP-09 and BP-27 structural branch/easier, BP-22/BP-38 same type; curve-family-reading.json:393 0.744207 (sympy 0.744207197660). Every relation matches its ledger row (sample_id) in relation, direction and independent_check; differing_decision differs only in whitespace. 0.744018 survives only in history/review copies; no 'same type' for BP-09/27 or 'harder' for BP-08 remains.",
+   "residual": "The regenerated .md files dropped the member-by-member native-reading sections (note closeout-D2-03)."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "Relation totals from analysis/textbook-exam-relations-r7.json (main + member exceptions)",
+   "claimed": "209 same / 912 branch / 1777 rejected; 2718 main",
+   "computed": "2898 rows: same 209, branch 912, rejected 1777; main 2718 (125/833/1760), exceptions 180 (84/79/17)",
+   "ok": true
+  },
+  {
+   "case": "Exam parts with no non-rejected relation (question-analysis.json, 250 parts)",
+   "claimed": "13",
+   "computed": "13 (2022 P1 Q12a, Q13, Q2a; 2023 P1 Q13a, Q6a, Q9; 2023 P2 Q2, Q4c; 2024 P1 Q11a, Q11b, Q7a; 2025 P1 Q10a, Q9a)",
+   "ok": true
+  },
+  {
+   "case": "Demands with same-type practice, own recount from the ledger with the map's family/part demand rule and usable-anchor filter",
+   "claimed": "73",
+   "computed": "73, set-equal to objective-problem-map.json and to HEAD's set",
+   "ok": true
+  },
+  {
+   "case": "Clause-level polarity flips vs R6 (403 batch records)",
+   "claimed": "0 after D2",
+   "computed": "HEAD 84, D1 31 (exactly records 137-148,157-163,331-335,390-396), D2 0",
+   "ok": true
+  },
+  {
+   "case": "r6_rejection_reason vs R6 baseline tools/textbook-exam-relations-r6.json",
+   "claimed": "immutable R6 text",
+   "computed": "403/403 byte-identical",
+   "ok": true
+  },
+  {
+   "case": "rejection_reason template structure",
+   "claimed": "restored text retained in reason",
+   "computed": "403/403 equal '<part_id> asks: <task_excerpt> Source comparison: <restored> Relation not established for the selected textbook response; no absence-of-practice claim follows.'",
+   "ok": true
+  },
+  {
+   "case": "BP-37 2022 P2 Q10(a) gradient at theta=1",
+   "claimed": "0.744207",
+   "computed": "0.744207197660",
+   "ok": true
+  },
+  {
+   "case": "2022 P2 Q2 (record 141 positive sentence)",
+   "claimed": "exact multiples of ln 2",
+   "computed": "x=-ln2, 3ln2",
+   "ok": true
+  },
+  {
+   "case": "2021 P2 Q10(b) (record 157)",
+   "claimed": "recover ordinate at x=-1, normal",
+   "computed": "y=-1, dy/dx=1/8, normal y=-8x-9",
+   "ok": true
+  },
+  {
+   "case": "2025 P2 Q5 (record 163)",
+   "claimed": "gradient at (0,-5)",
+   "computed": "point on curve; dy/dx=-15/4",
+   "ok": true
+  },
+  {
+   "case": "plan-repair-d2-preservation.json counts",
+   "claimed": "7,769 historical paths, 5,417 historical checks, 436 sources, 62 review files, 7,771 frozen",
+   "computed": "7,769 / 5,417 / 436 / 62 (all current hashes match) / 7,771; stage-d baseline 1,947 paths with exactly the 8 named analysis files changed",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [],
+ "marking_tests": [],
+ "seed_tests": [
+  {
+   "seed": "a-lost-negation-rec137-other-targets",
+   "note": "8227:EXAM:2021:P2:Q11:b",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "a2-lost-negation-rec106-has-midsentence",
+   "note": "8227:EXAM:2021:P2:Q4:b",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "a3-lost-negation-rec157",
+   "note": "8227:EXAM:2021:P2:Q10:b",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "b-over-negation-rec390-requires",
+   "note": "8227:EXAM:2021:P1:Q8:a",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "b2-over-negation-rec163",
+   "note": "8227:EXAM:2025:P2:Q5:answer",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "c1-negation-in-source-clause-rec0",
+   "note": "8227:EXAM:2021:P2:Q6:b",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "c2-none-of-the-target-tasks-inverted",
+   "note": "rec66 8227:EXAM:2021:P1:Q9:a",
+   "exit": 1,
+   "detected": true,
+   "error": "AssertionError: restored R6 sentence meaning or polarity changed"
+  },
+  {
+   "seed": "c3-extra-negated-sentence-in-reason-only",
+   "note": "8227:EXAM:2021:P1:Q8:a",
+   "exit": 0,
+   "detected": false,
+   "error": ""
+  },
+  {
+   "seed": "c4-suffix-flip-reason-only",
+   "note": "8227:EXAM:2021:P1:Q8:a",
+   "exit": 0,
+   "detected": false,
+   "error": ""
+  },
+  {
+   "seed": "c6-capitalisation-only",
+   "note": "8227:EXAM:2021:P1:Q8:a",
+   "exit": 0,
+   "detected": false,
+   "error": ""
+  },
+  {
+   "seed": "c5-r6-copy-and-restored-consistently-inverted",
+   "note": "8227:EXAM:2021:P2:Q11:b",
+   "exit": 0,
+   "detected": false,
+   "error": ""
+  },
+  {
+   "seed": "c7-ledger-only-over-negation",
+   "note": "8227:EXAM:2024:P1:Q4:a",
+   "exit": 0,
+   "detected": false,
+   "error": ""
+  }
+ ],
+ "s28_changed_records": [
+  {
+   "record": 137,
+   "part_id": "2021:P2:Q11:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 138,
+   "part_id": "2021:P2:Q4:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 139,
+   "part_id": "2022:P2:Q1:a",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 140,
+   "part_id": "2022:P2:Q1:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 141,
+   "part_id": "2022:P2:Q2:answer",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 142,
+   "part_id": "2023:P2:Q4:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 143,
+   "part_id": "2023:P2:Q4:c",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 144,
+   "part_id": "2024:P1:Q1:answer",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 145,
+   "part_id": "2024:P2:Q11:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 146,
+   "part_id": "2024:P2:Q8:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 147,
+   "part_id": "2025:P2:Q11:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 148,
+   "part_id": "2025:P2:Q6:b",
+   "family": "exponential-absolute-exponent-recovery",
+   "kind": "negative restored: \"This exam part does not ask for that two-sided absolute-exponent preimage.\""
+  },
+  {
+   "record": 157,
+   "part_id": "2021:P2:Q10:b",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 158,
+   "part_id": "2021:P2:Q7:answer",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 159,
+   "part_id": "2022:P2:Q10:a",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 160,
+   "part_id": "2022:P2:Q10:b",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 161,
+   "part_id": "2023:P2:Q8:b",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 162,
+   "part_id": "2024:P2:Q7:c",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 163,
+   "part_id": "2025:P2:Q5:answer",
+   "family": "implicit-prescribed-gradient-points",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 331,
+   "part_id": "2021:P1:Q10:a",
+   "family": "coordinate-projection-ratio",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 332,
+   "part_id": "2024:P2:Q11:b",
+   "family": "coordinate-projection-ratio",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 333,
+   "part_id": "2024:P2:Q8:b",
+   "family": "coordinate-projection-ratio",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 334,
+   "part_id": "2025:P1:Q11:a",
+   "family": "coordinate-projection-ratio",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 335,
+   "part_id": "2025:P1:Q4:c",
+   "family": "coordinate-projection-ratio",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 390,
+   "part_id": "2021:P1:Q8:a",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 391,
+   "part_id": "2021:P1:Q8:b",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 392,
+   "part_id": "2022:P1:Q5:a",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 393,
+   "part_id": "2024:P1:Q4:a",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 394,
+   "part_id": "2024:P1:Q4:b",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 395,
+   "part_id": "2025:P1:Q5:a",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  },
+  {
+   "record": 396,
+   "part_id": "2025:P1:Q5:b",
+   "family": "progression-condition-recovery",
+   "kind": "positive restored (HEAD wording) + D1 batch negation kept"
+  }
+ ],
+ "findings": [
+  {
+   "id": "closeout-D2-01",
+   "recipe": "n/a (analysis guard)",
+   "branch": "n/a",
+   "locator": "tools/check_repair_r7_closeout.py:22-26 (validate_restored_negation), :74-79",
+   "severity": "note",
+   "expected": "The guard rejects any polarity change in the rejection text that propagates to the ledger, families and map.",
+   "actual": "Only restored_r6_comparison_text is compared in full; rejection_reason is checked by containment, and r6_rejection_reason is the record's own copy, not checked against the R6 baseline. In the scratch copy these seeds PASS the checker: (c3) 'This exam part does not require the learner to recognise percentage-growth donations.' appended to rec390 rejection_reason only; (c4) 'Relation not established' -> 'Relation established' in rec390 rejection_reason; (c5) rec137 r6 copy changed to 'The target instead asks for that two-sided ...' with restored/reason changed to 'This exam part asks ...' consistently; (c6) capitalisation-only regression (casefold). Ledger-only edits (c7) also pass but are caught by the rebuild output hashes. Current data are clean by my independent scan, so this is hardening only.",
+   "evidence": "SCRATCH/closeout/seeds/results.json; current data satisfy the stricter rules (403/403 exact template, 403/403 R6 anchor).",
+   "repair": "Assert rejection_reason == f\"{part_id} asks: {task_excerpt} Source comparison: {restored} Relation not established for the selected textbook response; no absence-of-practice claim follows.\" and assert r6_rejection_reason equals the matching row in tools/textbook-exam-relations-r6.json. Both hold for all 403 records today."
+  },
+  {
+   "id": "closeout-D2-02",
+   "recipe": "n/a (freeze complementarity)",
+   "branch": "n/a",
+   "locator": "tools/freeze_analysis_r7_closeout.py:29; planning/d2/freeze-plan.py:43; analysis/analysis-snapshot.json scope",
+   "severity": "note",
+   "expected": "Every subject file outside review/cache/self is hash-pinned by the analysis snapshot or the plan manifest.",
+   "actual": "20 files are pinned by neither: planning/plan-manifest.json (self; its sha is recorded out of band, as expected) and 19 live D0/D1 Stage-D check files: checks/plan-author-checks.json, plan-author-report.md, plan-calculus-root-recomputation.json, plan-implicit-alternative-root-check.json, plan-integration-repairs.json, plan-math-syntax.json, plan-paper-diagrams.json, plan-visual-trig-root-recomputation.json, and plan-repair-d1-{all-exemplars, baseline, calc-dispositions, dispositions, math-syntax, part-register-audit, preservation, report.md, trig-dispositions, trig-validation, visual-dispositions}. The snapshot excludes checks/plan-*; the plan manifest pins only checks/plan-repair-d2*. Their byte-identical archived copies under planning/history/d0-candidate|d1-candidate are pinned by the plan manifest and match plan-manifest-d0/d1.json, so content is recoverable, but an edit to a live copy is detected by neither --check.",
+   "evidence": "Own walk of 8,891 files vs both manifests; sha256 of live vs archived copies (19/19 identical, archived copies pinned).",
+   "repair": "Pin the live checks/plan-* files in the plan manifest (glob 'plan-*' instead of 'plan-repair-d2*'), or say in the snapshot scope that live D0/D1 plan checks are covered only through archived candidate copies."
+  },
+  {
+   "id": "closeout-D2-03",
+   "recipe": "n/a (reading provenance)",
+   "branch": "BP-08/09/22/27/38; BP-15/24/28/31/37/42/43",
+   "locator": "tools/check_repair_r7_closeout.py:29-41 (refresh_reading_records), :120; checks/r7-closeout/motion-family-reading.md, curve-family-reading.md; checks/repair-r7-closeout.md:9",
+   "severity": "note",
+   "expected": "Only the relation annotations are refreshed (closeout-D1-05 asked for a superseded note or regeneration of the relation section).",
+   "actual": "The checker now rewrites the whole .md files from the decisions JSON. The HEAD/D1 .md member-by-member native-reading tables (family, member, PDF/printed page, parts read), the 'Every family member' section and the motion coverage-caveat paragraph are gone (motion 6,180 -> 3,022 bytes; curve 9,402 -> 4,065 bytes). The JSON still holds readings, all_family_members/family_readings and coverage_caveat, so no data is lost, but repair-r7-closeout.md:9 ('The individual reading manifests preserve this coverage caveat') is now true only of the JSON. The checker also writes provenance files; outputs are deterministic and in the rebuild output hashes.",
+   "evidence": "git show HEAD:.../motion-family-reading.md vs current; JSON diff (D2 reading == decisions + annotation_status).",
+   "repair": "Keep the member-reading section in the generated .md (render it from all_family_members/family_readings) or point repair-r7-closeout.md:9 to the JSON."
+  }
+ ],
+ "verified_ok": [
+  "S28: exactly the 31 named records changed D1->D2; only restored text, reason and a provenance tag; decisions, relation types, exemplar selections and every other section of the decisions file unchanged.",
+  "S28: 19 positives now match HEAD word for word; 12 absolute-exponent sentences now negative; 0 polarity flips in 403 records by an independent clause-level scan; R6 copies byte-identical to tools/textbook-exam-relations-r6.json.",
+  "S28 propagation: ledger, textbook-families.json (2718 relations) and objective-problem-map.json (249 candidate decisions) carry the D2 text; map and families input hashes current; none of the D1 wrong sentences remains outside review/history.",
+  "Totals: 209/912/1777, 2718 main, 13 parts without relation, 73 same-type demands (independent recount, set-equal to HEAD).",
+  "S29: guard compares the complete restored statement after subject-only substitution; lost-negation (3 seeds), over-negation (2), different-clause negation and batch-variant inversion all fail the checker in a scratch copy.",
+  "S30: snapshot pins all 7,769 HEAD-snapshot paths outside the stated exclusions, all 5,417 historical checks (r3-r7, repair-r2..r7, fresh-copy r4-r6) and the subject README; 'review' component occurs only in workbench/review; freeze --check passes in the copy (7,771/436/37); all hashes match repo bytes.",
+  "Preservation receipt counts (7,769 / 5,417 / 436 / 62 / 7,771; 1,947 baseline with exactly 8 named analysis changes) recomputed.",
+  "D1->D2 tool input manifest: only 5 files changed (decisions json, check/freeze/report/verify scripts); motion/curve decision inputs unchanged; all 870 tool hashes and 275 output hashes match current bytes.",
+  "Reading manifests reflect current labels and 0.744207; checker re-run in copy reproduces them byte-identically."
+ ],
+ "not_checked": [
+  "Full two-copy rebuild and the 76 negative executions (lead reviewer runs these).",
+  "freeze_analysis_r7_closeout.py non-check (write) mode and verify_relocated_r7_closeout.py were not run.",
+  "Native pages for 28 of the 31 corrected records (3 spot-checked; the other sentences are R6 text accepted earlier).",
+  "D1 ledger bytes are not archived, so D1->D2 ledger changes were inferred from HEAD->D2 plus the D1 check's HEAD->D1 record.",
+  "Whether --check detects newly added unpinned files (it does not by design; unchanged from D1)."
+ ]
+}

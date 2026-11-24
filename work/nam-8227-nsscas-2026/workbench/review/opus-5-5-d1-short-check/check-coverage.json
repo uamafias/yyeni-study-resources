@@ -1,0 +1,356 @@
+{
+ "label": "coverage",
+ "scope": [
+  "PLAN.md counts/deck/gaps; planning/plan-manifest.json counts and 273 file digests (manifest sha256 c8914cf9... matches pinned)",
+  "planning/pilot-design.json vs canonical visual/calculus/trig-model design records vs part-evidence-register.json/.md (27 slots)",
+  "planning/coverage-plan.json/.md (138 demands, 67 groups, 8 supplementary, exam-weight column)",
+  "planning/d1/visual-coverage-check.py (read; --check run on a scratch clone only)",
+  "checks/plan-repair-d1-part-register-audit.json; checks/plan-repair-d1-report.md and -dispositions.json (coverage-01..09, S3-08/S3-09)",
+  "analysis/demand-registry.json, question-analysis.json, problem-patterns.json",
+  "exemplars/*.md case headings; checks/plan-repair-d1-all-exemplars.json group counts",
+  "Step-3 baseline check-coverage.json + private s3/coverage/{freq.py,demand_freq.json,pilot_direct_demands.json}"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 14,
+   "what": "Q8(a) show that dy/dx=... [4]; Q8(b) 'Hence find the gradient ... where the curve crosses the y-axis' [2]. Confirms the D1 normal:gradient 2-mark part mirrors 2023 Q8(b), whose accepted links are M2:T4:O03:D03 + M1:T8:O01:D01 (source of the new 39th facet)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 10,
+   "what": "Q6(a) trapezium rule ln(x-2) 4 intervals [3]; (b) Hence approximate integral of 3ln(x^2-4x+4) [2]: log-law rescaling, so D1 primary M2:T2:O01 is defensible"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 11,
+   "what": "Q6(c) sketch y=ln(x-2), label axis intersections [3]; (d) over/under-estimate from sketch [2]. (c) is a log-graph sketch; accepted source primary M2:T2:O02, D1 primary M2:T5:O04"
+  }
+ ],
+ "dispositions": [
+  {
+   "agent_id": "coverage-01",
+   "prior_severity": "should-fix",
+   "codex_disposition": "Vector D01 replaces uncredited D03; same-type(a) re-decided on equal sets with own reason",
+   "verdict": "repaired",
+   "evidence": "pilot-design/visual-design/register vector a direct = {M1:T7:O02:D01,O02:D02,O04:D02,O05:D02} == question-analysis 8227:EXAM:2025:P1:Q3:a set (code). coverage-plan.md:81 D01 pilot-direct-facets (vector a, 7 parts/17 marks); :83 D03 later (3/9). WO vector-geometry.md:11-13,17,25; a:B1 credits scaling AND subtraction (WO:63). visual-design part-a ref has its own display/comparison reason. Net count effect of the swap is zero.",
+   "residual": "none in scope"
+  },
+  {
+   "agent_id": "coverage-02",
+   "prior_severity": "should-fix",
+   "codex_disposition": "Removed construction claim; all 8 supplementary records have dispositions incl. later ABILITY08",
+   "verdict": "repaired",
+   "evidence": "PLAN.md:15 now 'supplied-model parameter recovery'; PLAN.md:32 'Model construction (ABILITY:08:MODEL) remains later scope'; no other 'modelling' claim in PLAN/OWNER-CHECKPOINT/coverage-plan/report/WOs (grep). coverage-plan non_specific_demands: 8 rows == registry supplementary IDs; 1 later-cross-cutting-model-construction-not-assessed + 7 prior-skill-baseline; ABILITY:08 10 parts/26 marks recomputed exactly; md :242.",
+   "residual": "none"
+  },
+  {
+   "agent_id": "coverage-03",
+   "prior_severity": "should-fix",
+   "codex_disposition": "One 4-mark show-derivative slot, 3 worked examples, extended branch 9 marks; given geometric diagrams 'remain an explicit later untested facet'",
+   "verdict": "repaired",
+   "evidence": "27 slots now include exactly one proof/show-that response (implicit normal:show-derivative, 4 marks, S1-S4); normal branch 4+2+3=9; 3 normal-branch exemplar cases (implicit-normal.md:53,75,97). Show-that half per OD-2 done.",
+   "residual": "The disposition's claim that given geometric diagrams are an 'explicit' later untested facet is not recorded anywhere except the disposition text (see coverage-D1-02)."
+  },
+  {
+   "agent_id": "coverage-04",
+   "prior_severity": "should-fix",
+   "codex_disposition": "Trapezium b/c primaries agree across canonical design, WO and register",
+   "verdict": "repaired",
+   "evidence": "b primary M2:T2:O01, c primary M2:T5:O04 identical in WO trapezium:11-12, visual-design.json, pilot-design.json, register .json and .md:9-10 (code). D0 register had b M2:T5:O03 / c M2:T2:O02 (= accepted 2023 P2 Q6 primaries); Codex aligned all records to the WO values instead.",
+   "residual": "Chosen primaries differ from the accepted source-part primaries without a stated reason (note coverage-D1-06)."
+  },
+  {
+   "agent_id": "coverage-05",
+   "prior_severity": "should-fix",
+   "codex_disposition": "All 27 slots have own criterion-linked rationale without sibling-branch criteria",
+   "verdict": "repaired",
+   "evidence": "27/27 register rationales distinct (code); no rationale cites a criterion from another part or sibling branch (regex scan; only own suffixes, e.g. H1/H2, I4-I6, R1-R4); criterion count == part marks for all 27; D0 interior-reversal:rest removed. 11 slots sampled against WOs (modulus a, trapezium b/d, vector a/b, implicit normal:gradient, flat classification, reversal distance, trig b-roots, principal p-decision, log t-target): criterion IDs, marks and Bloom level agree.",
+   "residual": "Some rationales (modulus a, trapezium a-c, vector b) describe criterion roles without naming IDs in the text; the IDs are in criterion_ids. Acceptable."
+  },
+  {
+   "agent_id": "coverage-06",
+   "prior_severity": "note",
+   "codex_disposition": "JSON retains implicit exponential/power prerequisites stated in WO",
+   "verdict": "repaired",
+   "evidence": "implicit gradient/show-derivative JSON prereqs {M2:T4:O01:D01, M1:T8:O02:D01} == WO implicit-normal.md:31-32. Parsed WO direct+prereq sets for 21 explicitly listed parts (trapezium, vector, modulus text, implicit, stationary, trig, log, principal): all equal JSON. Motion WO lists no IDs (pointer to calculus-design.json, WO:5) and JSON has no motion prereqs.",
+   "residual": "none"
+  },
+  {
+   "agent_id": "coverage-07",
+   "prior_severity": "note",
+   "codex_disposition": "Exam-weight column from direct part links only; 750 denominator; 15 reviewer rows agree; 0.6 aggregate difference disclosed",
+   "verdict": "repaired",
+   "evidence": "Own scan of question-analysis.json: 119 q/250 parts/750 marks/10 papers x 75; all 146 coverage-plan exam_weight blocks (138+8) and all 138 md cells + 8 supplementary md cells equal my recomputation (0 mismatches). examination_scan() reads no family/pattern data; 67 group rows carry no exam-weight fields; D0 family-share figure (163/750) not reused. 15/15 reviewer rows agree. 0.6 difference resolved: step-3 freq.py summed per-demand values already rounded to 1 dp (sum of 138 rounded = 720.1, reproduced from s3 demand_freq.json); exact = 2162/3 = 720.67; all 138 step-3 rows equal current rows exactly, so no link or share-rule change.",
+   "residual": "coverage-plan.md:17 and coverage-plan.json aggregate_difference.explanation say the 0.6 cannot be explained; it now can (rounding). Cited check file planning/d1/visual-coverage-check.json does not exist (coverage-D1-03)."
+  },
+  {
+   "agent_id": "coverage-08",
+   "prior_severity": "note",
+   "codex_disposition": "Renamed deck 'Graphs and vector calculations'; totals 19/20/17",
+   "verdict": "repaired",
+   "evidence": "PLAN.md:99-101; no remaining 'Visual evidence' deck label outside history/review. Totals recomputed per branch: 3+7+9=19, 3+7+10=20, 6+6+5=17.",
+   "residual": "'19 reflects the added proof' is only part of the change: D0 14=2+7+5 -> D1 19=3+7+9; +1 from principal 2->3 marks, +4 from swapping the deck's implicit branch (gradient-only 5 -> extension 4+2+3) (note coverage-D1-07)."
+  },
+  {
+   "agent_id": "coverage-09",
+   "prior_severity": "note",
+   "codex_disposition": "Retained 12/55 parent split; 'added partial-decision crosslinks'",
+   "verdict": "partly-repaired",
+   "evidence": "12/55 split unchanged and correct. 15 later groups now have specific reasons (some name the pilot recipe that does NOT cover them, e.g. product-quotient, coordinate-shapes, constrained-optimisation); 40 keep a templated 'outside the nine selected recipe boundaries' reason, including the three step-3 examples tangent-normal (4/6 demands are pilot facets), definite-integral (4/9), standard-antiderivatives (5/10), and gradient-evaluation ('Use a supplied derivative', 1/1 demand now a pilot facet via implicit normal:gradient).",
+   "residual": "No repair was required; the disposition text overstates the optional crosslinks (note coverage-D1-05)."
+  },
+  {
+   "agent_id": "S3-08",
+   "prior_severity": "should-fix",
+   "codex_disposition": "All 27 part records/primaries/prereqs/criteria/rationales agree; IDs unified; references scoped",
+   "verdict": "repaired",
+   "evidence": "Coverage-scope items: vector D01/D03 (coverage-01), trapezium primaries (coverage-04), register rationales (coverage-05), prerequisites (coverage-06) all verified; canonical/pilot/register field-equal on direct, prereq, conditional, marks, Bloom, primary, format for all 27 parts.",
+   "residual": "ID-scheme (vector-contract-13) and implicit label (calc1-11) are other agents' scope; motion WO still points to JSON for per-part IDs, which the repair text permits."
+  },
+  {
+   "agent_id": "S3-09",
+   "prior_severity": "should-fix",
+   "codex_disposition": "Show-that slot; 42 cases; 39 facets; exam weights; renamed deck 19/20/17; model construction not claimed",
+   "verdict": "repaired",
+   "evidence": "See coverage-02/03/07/08.",
+   "residual": "Wording residuals coverage-D1-01/02/07."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "recipes / branch choices",
+   "claimed": "9 / 14",
+   "computed": "9 / 14 (pilot-design; canonical visual 3 + calculus 7 + trig-model 4)",
+   "ok": true
+  },
+  {
+   "case": "paper exemplar cases",
+   "claimed": "42",
+   "computed": "42 = 14 branches x 3 from exemplar headings (implicit 6, log 6, modulus 3, motion 9, principal 3, stationary 6, trapezium 3, trig 3, vector 3); all-exemplars check groups 12+9+12+9",
+   "ok": true
+  },
+  {
+   "case": "assessed part slots / marks",
+   "claimed": "27",
+   "computed": "27 keys identical in canonical records, pilot-design and register; 0 field mismatches (direct, prereq, conditional, marks, Bloom, primary, format); total 83 marks; criterion count == marks for every part",
+   "ok": true
+  },
+  {
+   "case": "direct demand facets",
+   "claimed": "39 = 38 unconditional + 1 conditional-only",
+   "computed": "38 unconditional + 1 conditional-only (8227:2020:M1:T6:O03:D01, principal p-decision real-solution case) = 39; all in registry",
+   "ok": true
+  },
+  {
+   "case": "D0->D1 facet composition",
+   "claimed": "38 -> 39",
+   "computed": "removed from unconditional: M1:T7:O02:D03, M1:T6:O03:D01 (now conditional); added: M1:T7:O02:D01 (vector a), M1:T8:O01:D01 (new implicit normal:gradient part, mirrors accepted 2023 P2 Q8(b) links)",
+   "ok": true
+  },
+  {
+   "case": "objectives with facets",
+   "claimed": "26 / 60",
+   "computed": "26 only when the conditional-only objective M1:T6:O03 is counted; 25 from unconditional facets (D0 also 25; M1:T6:O03 became conditional, M1:T8:O01 added)",
+   "ok": true
+  },
+  {
+   "case": "content demands outside pilot",
+   "claimed": "99",
+   "computed": "138-39 = 99; coverage-plan dispositions 38 pilot-direct-facets + 1 pilot-conditional-direct-facets + 99 later; 6 prerequisite-only demands (unchanged from D0) are inside the 99",
+   "ok": true
+  },
+  {
+   "case": "planned_direct_parts / conditional_direct_parts vs part specs",
+   "claimed": "agree",
+   "computed": "0 mismatches over 138 rows",
+   "ok": true
+  },
+  {
+   "case": "138 demands / 67 groups / 8 supplementary",
+   "claimed": "all accounted",
+   "computed": "138 unique rows == registry; 67 group ids == problem-patterns.json pattern_ids and demand lists equal (0 mismatches); 12 selected == union of recipes' accepted_selection_ids; 55 later; union of 67 group demand lists covers all 138 content demands plus 6 supplementary IDs; 8 supplementary rows == registry supplementary_demands",
+   "ok": true
+  },
+  {
+   "case": "whole-choice Bloom",
+   "claimed": "Apply 12, Analyse 2",
+   "computed": "{3:12, 4:2}; every branch max taken from its own parts equals stored value; Analyse = flat-classification (classification L4) and interior-reversal (distance L4)",
+   "ok": true
+  },
+  {
+   "case": "deck totals",
+   "claimed": "19 / 20 / 17",
+   "computed": "principal 3 + trig 7 + implicit normal 9 = 19; modulus 3 + vector 7 + trapezium 10 = 20; flat 6 + reversal 6 + log graph 5 = 17. D0 symbolic 2+7+5=14: +1 principal, +4 implicit branch swap (gradient-only 5 -> 4+2+3)",
+   "ok": true
+  },
+  {
+   "case": "exam totals",
+   "claimed": "119 q / 250 parts / 750 marks",
+   "computed": "119 / 250 / 750; 10 papers each 75",
+   "ok": true
+  },
+  {
+   "case": "equal-split share totals",
+   "claimed": "content 2162/3 (720.7) + supplementary 88/3 (29.3) = 750",
+   "computed": "2162/3 + 88/3 = 750 exactly (Fraction)",
+   "ok": true
+  },
+  {
+   "case": "step-3 aggregate 720.1",
+   "claimed": "Codex: not reproducible, unexplained",
+   "computed": "Reproduced: step-3 freq.py stored round(share,1) per demand and summed the 138 rounded values -> 720.1; exact sum 720.667; accumulated rounding residual -0.567. All 138 step-3 rows (parts, usable, marks, 1dp share, papers, years) equal current rows, so no link/rule change. 720.7 is the correct aggregate; 720.1 was our summation artifact.",
+   "ok": true
+  },
+  {
+   "case": "15 reviewer frequency rows",
+   "claimed": "all agree",
+   "computed": "15/15 agree on parts, usable, full marks, 1dp share, papers",
+   "ok": true
+  },
+  {
+   "case": "coverage-plan exam-weight cells",
+   "claimed": "direct links only",
+   "computed": "146 JSON blocks and 146 md cells equal own scan; 0 mismatches",
+   "ok": true
+  },
+  {
+   "case": "pilot equal-split share (informational)",
+   "claimed": "(D0 review: 299.1)",
+   "computed": "D0 38 exact 1496/5 = 299.2; D1 38 unconditional 17959/60 = 299.3; D1 39 incl. conditional 4631/15 = 308.7. Not claimed in D1 records.",
+   "ok": true
+  },
+  {
+   "case": "manifest consistency",
+   "claimed": "counts in plan-manifest == PLAN == OWNER-CHECKPOINT == report == coverage-plan == pilot-design",
+   "computed": "all equal (9/14/42/27/38+1/26/99/Bloom 12-2/decks 19-20-17); 273/273 manifest file digests match current bytes",
+   "ok": true
+  },
+  {
+   "case": "visual-coverage-check.py --check (scratch clone)",
+   "claimed": "pass",
+   "computed": "pass; regenerates coverage-plan.json/.md byte-identical; top-15 comparisons asserted in code",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [],
+ "findings": [
+  {
+   "id": "coverage-D1-01",
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/PLAN.md:24; planning/OWNER-CHECKPOINT.md:13; planning/coverage-plan.md:7; checks/plan-repair-d1-report.md:134",
+   "severity": "should-fix",
+   "expected": "The objective count is split the same way as the demand count, since one objective is reached only through the conditional facet.",
+   "actual": "'26 objectives' is given without qualification. It is 25 from unconditional facets plus M1:T6:O03, which only real-solution principal instances reach. The before/after row '25 -> 26' hides that M1:T6:O03 became conditional and M1:T8:O01 was added.",
+   "evidence": "Own set computation over 27 part records: objectives of unconditional facets = 25; adding the conditional facet's objective = 26.",
+   "repair": "State '26 / 60: 25 unconditional, 1 conditional-only (M1:T6:O03)' in PLAN, OWNER-CHECKPOINT, coverage-plan and the report."
+  },
+  {
+   "id": "coverage-D1-02",
+   "recipe": "pilot selection",
+   "branch": "all",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d1-report.md:111; checks/plan-repair-d1-dispositions.json:1309; PLAN.md:80-91 (gap table)",
+   "severity": "should-fix",
+   "expected": "If given geometric diagrams 'remain an explicit later untested facet', a gap row or coverage record says so.",
+   "actual": "No PLAN gap row, coverage-plan line or capability-gap entry states that given geometric diagrams (28 exam parts) are untested. The claim appears only in the disposition text. PLAN.md:91 lists 'vector diagram' as a topic, not the given-diagram representation.",
+   "evidence": "grep over PLAN, HANDOVER, STATUS, capability-gaps, recipe-contract, planning/*.md, coverage-plan.json, pilot-design.json: only the dispositions file matches.",
+   "repair": "Add one line to the D8227 gap table (e.g. under G02/G07): no pilot part supplies a given geometric diagram; that representation stays untested until a later batch. Or drop the claim from the disposition."
+  },
+  {
+   "id": "coverage-D1-03",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d1-report.md:109,115,117; checks/plan-repair-d1-dispositions.json (coverage-01/07/09 'check')",
+   "severity": "should-fix",
+   "expected": "Cited check evidence exists.",
+   "actual": "planning/d1/visual-coverage-check.json is cited as the check for coverage-01, -07 and -09, but no such file exists. The script prints its result to stdout and writes only coverage-plan.json/.md. Same kind of slip as our own step-3 citation of a missing frequency file.",
+   "evidence": "ls planning/d1; find; script source lines 217-224. On a scratch clone, --check passes.",
+   "repair": "Cite 'planning/d1/visual-coverage-check.py --check' (and coverage-plan.json), or persist the check output to the cited path and pin it."
+  },
+  {
+   "id": "coverage-D1-04",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/coverage-plan.md:17; planning/coverage-plan.json examination_weight_method.reviewer_crosscheck.aggregate_difference.explanation",
+   "severity": "note",
+   "expected": "The aggregate difference is explained where it can be.",
+   "actual": "The text says the 0.6 difference cannot be attributed. It is now explained: step-3's 720.1 is the sum of 138 per-demand values already rounded to 1 dp. The exact content sum is 2162/3 = 720.67, and every one of step-3's 138 rows equals the current rows. Codex's 720.7 is correct. Codex was right not to invent a cause: the step-3 REPAIR-PROMPT.md:154 cited 'check-coverage-demand-frequency.json' in the review folder, which we never placed there. That was the reviewer's error.",
+   "evidence": "s3/coverage/freq.py stores round(c['share'],1); sum over s3 demand_freq.json = 720.1; own Fraction sum = 2162/3.",
+   "repair": "Optional: replace the 'cannot be attributed' sentence with 'step-3 summed 1-dp rounded per-demand shares; exact 2162/3'."
+  },
+  {
+   "id": "coverage-D1-05",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/coverage-plan.md:198,199,206,229; checks/plan-repair-d1-report.md:117",
+   "severity": "note",
+   "expected": "The coverage-09 disposition ('added partial-decision crosslinks') describes what changed.",
+   "actual": "40 of the 55 later groups keep a templated 'outside the nine selected recipe boundaries' reason. These include tangent-normal (4/6 demands are pilot facets), definite-integral (4/9) and standard-antiderivatives (5/10), which step-3 named. Also gradient-evaluation ('Use a supplied derivative'; its only demand, M1:T8:O01:D01, is now directly assessed by the new implicit normal:gradient part, H1/H2: substitute into the displayed derivative). This undercounts; it does not inflate coverage.",
+   "evidence": "Overlap of each later group's direct_demand_ids with the 39 pilot facets, plus a templated-text test.",
+   "repair": "None required. Optionally add 'decision partly exercised by <part>' to tangent-normal, gradient-evaluation, definite-integral and standard-antiderivatives, or reword the disposition."
+  },
+  {
+   "id": "coverage-D1-06",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:11-12,16; planning/visual-design.json; planning/part-evidence-register.md:9-10",
+   "severity": "note",
+   "expected": "If a primary objective departs from the accepted source part, the reason is given.",
+   "actual": "All D1 records now give b primary M2:T2:O01 and c primary M2:T5:O04. Accepted question-analysis for 2023 P2 Q6 has b M2:T5:O03 and c M2:T2:O02, and the D0 register matched that. Both objective sets are unchanged. Native pages show (b) is a log-law rescale (M2:T2:O01 defensible) and (c) is 'Sketch the graph of y = ln(x-2)', which the source's M2:T2:O02 arguably fits better. Consistency is achieved; the direction is unexplained.",
+   "evidence": "2023 P2 pp.10-11 native render; question-analysis primaries; D0 register.",
+   "repair": "Add one sentence justifying the primaries, or adopt the source primaries in all records. Same-type matching is unaffected (it uses demand sets)."
+  },
+  {
+   "id": "coverage-D1-07",
+   "recipe": "deck compositions",
+   "branch": "Symbolic methods",
+   "locator": "work/nam-8227-nsscas-2026/workbench/PLAN.md:99; planning/OWNER-CHECKPOINT.md:15; checks/plan-repair-d1-report.md:116,137",
+   "severity": "note",
+   "expected": "The 14 -> 19 change is explained per branch.",
+   "actual": "The records attribute the 19 to the added proof. Per branch: D0 = principal 2 + trig 7 + implicit gradient-only 5. D1 = principal 3 + trig 7 + implicit normal extension 9. So +1 comes from the unified 3-mark principal part. The +4 comes from swapping the deck's implicit branch (gradient-only 5 to show 4 + gradient 2 + normal 3), not from simply adding 4 marks. The arithmetic is correct.",
+   "evidence": "D0 and D1 pilot-design branch marks.",
+   "repair": "Optional wording: 'principal 2->3 and implicit branch now the 9-mark show-that extension'."
+  },
+  {
+   "id": "coverage-D1-08",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d1-report.md:133-134; PLAN.md:23",
+   "severity": "note",
+   "expected": "The net facet change is named.",
+   "actual": "The 38 unconditional facets are not the D0 38. D03 and M1:T6:O03:D01 (now conditional) left; D01 and M1:T8:O01:D01 joined. The new M1:T8:O01:D01 facet ('Interpret curve gradient') comes from the new 2-mark normal:gradient part. Its tagging matches the accepted links of 2023 P2 Q8(b), confirmed on the native page, so it is honest. The gradient-only part (G4/G5, which also substitutes a point) follows 2025 P2 Q5's links and does not carry it. Neither PLAN nor the report names this addition.",
+   "evidence": "D0/D1 pilot-design facet diff; question-analysis 2023:P2:Q8:b; native 2023 P2 p14.",
+   "repair": "Optional: list the facet swaps in the report's before/after section."
+  },
+  {
+   "id": "coverage-D1-09",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d1-part-register-audit.json inputs",
+   "severity": "note",
+   "expected": "Audit input hashes match the pinned files.",
+   "actual": "The audit records app-change-handoff.md as b3a7f595..., but the current and manifest-pinned file is ecf9fa7a.... All other audit inputs match. The audit's APP8227-05 claim still holds in the current text (app-change-handoff.md:92: 4+2+3, copied target 0, no F.T.).",
+   "evidence": "shasum of the audit's input files.",
+   "repair": "Re-run or re-pin the audit after the last handoff edit."
+  }
+ ],
+ "verified_ok": [
+  "Manifest sha256 c8914cf9...4f22 matches; 273/273 pinned file digests match current bytes; counts in plan-manifest == pilot-design == coverage-plan == PLAN == OWNER-CHECKPOINT == D1 report == own recomputation.",
+  "Canonical design records, pilot-design and part-evidence register (.json and .md) agree field-for-field on all 27 parts.",
+  "Conditional-only facet M1:T6:O03:D01 is honest. Real-solution targets (+-pi/6, +-pi/4, +-pi/3) need exact sin(theta) for the exact-x A1. The decimal ratio is allowed only at M1. The obstruction route's main interval comparison needs no special angle, and the optional contradiction route's exact value is not claimed. It is labelled conditional in every record; the outcome is uncued, about 6/12 targets.",
+  "Vector D01 in / D03 out is reflected in pilot-design, register, coverage-plan rows and counts; the part (a) demand set now equals 2025 P1 Q3(a)'s set.",
+  "No examination weight is derived from families: examination_scan() reads only question-analysis part links, group rows have no weight fields, and no D0 family-share figure is reused.",
+  "'Groups' = the 67 accepted R7 problem-pattern selections (8227:FAMILY:* in analysis/problem-patterns.json, each a problem type with a discriminating decision, exam parts and direct demand list). 12 are the parents of the nine recipes (motion, trig and log each have two). 55 are later scope. Their demand lists cover all 138 content demands plus 6 supplementary IDs.",
+  "Six prerequisite-only demands unchanged from D0 and correctly counted outside; no part lists the same demand as direct and prerequisite.",
+  "Modelling claim removed from PLAN; ABILITY:08 later disposition with 10 parts/26 marks visible outside the 138 denominator.",
+  "visual-coverage-check.py --check passes on a scratch clone (no repository writes)."
+ ],
+ "not_checked": [
+  "Exemplar mathematics, marking criteria/qualifiers, OD-1 marking, capacity/domain enumeration (other agents' scope).",
+  "Same-type labels other than the vector (a) demand-set equality; implicit label placement (calc1-11).",
+  "ID-scheme normalisation across WOs (vector-contract-13) beyond noting motion WO uses a pointer.",
+  "Correctness of accepted question-analysis part-to-demand links (accepted R7 analysis; used as given).",
+  "S3-10/S3-11 analysis residuals."
+ ]
+}

@@ -1,0 +1,832 @@
+{
+ "checker": "trig",
+ "scope": "trig/log group: 8227:D:SEL:trig-rform-equation:degree-cycle (58), principal-inverse:solve-or-explain (47), log-linear-model:graph-intercept (270), log-linear-model:gradient-target (20) = 395 rows; source/groups/trig_log.py, source/domains/trig_log.json, three work orders, trig-log author evidence and F audit.",
+ "method": [
+  "check_math.py: parsed a,b,c / k,theta / graph SVG labels / b,c,m,q from learner-visible prompts, stems and SVG text only; recomputed with mpmath (60 dps) and SymPy: R-form roots by sign-change bracketing + findroot on a*sin+b*cos-c over a 0.05-degree grid (not the generator's phase solver), alpha, R exact, round-half-up from 50-digit strings, distance to rounding boundaries, 2-d.p.-alpha premature-rounding path; principal range/exact x/asin back-check and forced-candidate check; graph p, ln A, A (3 s.f.) from labels, plus SVG pixel geometry (scale consistency, points on line, intercept pixel); gradient a, x via SymPy log solve + model substitution. Exact string comparison of every reference_answer, every worked_steps result and the numbers inside criteria achievements: 395/395, 0 mathematical mismatches.",
+  "Independent enumeration of all four domains from work-order rules: 58, 47 (23 real/24 no-real, (3,-pi/3) excluded), 270 (30 models), 20 -- all equal the admitted sets.",
+  "check_struct.py: criterion ids/order/marks/mark types/depends_on vs catalogue-native part_specs for all 395; answer_only_marks; action/reason/result completeness; practice_help and learner-visible exam references per selection; principal pre-submission learner_projection (prompt masked) identical across all 47; test-mode projection free of answer decimals.",
+  "KaTeX 0.16.21 (app) strict render of all 1111 unique math strings: 0 errors.",
+  "Test-mode generate_fresh simulation to exhaustion: 12/12/30/4 fresh cards, equal to declared strict bounds.",
+  "Read all 26 marking fixtures and adjudicated each against generated criteria + work orders + MR03-OPS-D4.",
+  "Wrote and awarded 33 fresh responses on 14 fresh instances (none share fixture parameters).",
+  "Rendered 9 graph-intercept SVG assets not in the author gallery (idx 6, 8, 33, 47, 62, 75, 120, 132, 260) with app sharp 0.32.6 at 1200x640 (and 600x320), plus 4x origin crops of idx 45, 47, 54, 62; inspected all PNGs by eye in SP/work-trig/png/.",
+  "Exam-reference pages checked in source PDFs with PyMuPDF: 2022 P2 Q6(a),(b)(i) p8; 2023 P2 Q4(a) p6; 2025 P2 Q6(a),(b) p6."
+ ],
+ "counts": {
+  "instances_recomputed": 395,
+  "expectations_read": 26,
+  "fresh_awards": 33,
+  "renders_inspected": 11
+ },
+ "findings": [
+  {
+   "id": "trig-E-01",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "domain_index": 0,
+   "part": "WB8227-principal-inverse:solve-or-explain:p-decision",
+   "criterion": null,
+   "locator": "source/groups/trig_log.py:157 (_principal, no-real branch, first _step result is a plain raw string); generated parts[0].worked_steps[0].result, also in native_marking_memo and marking_memo.grading_guide_answer",
+   "expected": "Revealed solution for 'Solve $\\sin^{-1}(2x)=-\\pi$' uses the instance coefficient, e.g. $-\\frac{\\pi}{2}\\leq\\sin^{-1}(2x)\\leq\\frac{\\pi}{2}$",
+   "actual": "'$-\\frac{\\pi}{2}\\leq\\sin^{-1}(kx)\\leq\\frac{\\pi}{2}$ whenever the inverse is real.' -- undefined template symbol k shown to learners in all 24 no-real instances (k never appears in the question)",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 -B -c \"...P.generate_at('8227:D:SEL:principal-inverse:solve-or-explain',0)['parts'][0]['worked_steps'][0]['result']\" -> $-\\frac{\\pi}{2}\\leq\\sin^{-1}(kx)\\leq\\frac{\\pi}{2}$ whenever the inverse is real.; regex scan of learner_projection(reveal=True) over 395 rows: '(kx)' in 24 rows, all solve-or-explain no-real (SP/work-trig scan). Real-case steps format k correctly.",
+   "source_basis": "WO principal-inverse 'Mathematical solutions use decoded LaTeX'; solution steps must be instance-specific and use only learner-visible notation.",
+   "minimal_correction": "Format the instance coefficient: rf\"$-\\frac{{\\pi}}{{2}}\\leq\\sin^{{-1}}({k}x)\\leq\\frac{{\\pi}}{{2}}$ whenever the inverse is real.\" (or use a generic $\\sin^{-1}u$)."
+  },
+  {
+   "id": "trig-E-02",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:log-linear-model:graph-intercept",
+   "domain_index": 47,
+   "part": "WB8227-log-linear-model:graph-intercept:g-parameters",
+   "criterion": null,
+   "locator": "source/groups/trig_log.py:229 (origin '0' text at origin-24,+29) is never tested by the label-placement/overlap loop at lines 208-221 or layout_checks; question-role SVG asset",
+   "expected": "No label in the question diagram is crossed by the plotted line (WO R3-07: labels offset away from the line; Stage E/F test of label/line/axis intersection on every presentation)",
+   "actual": "The plotted line passes through the origin '0' glyph in 18/270 presentations -- every presentation of the two models with intercept p+ln A=-1/4: (L,p)=(-1,3/4) idx 45-53 and (1/2,-3/4) idx 54-62. The struck '0' reads like a theta/null sign. idx 54 is the authors' own gallery graph-03.",
+   "evidence": "SP/work-trig/zero.py (tight Arial '0' glyph box + 1.5px stroke vs line, all 270): 18 hits listed; visual: SP/work-trig/png/g047-full.png and SP/work-trig/png/origin-crops-45-47-54-62.png (line through '0' in 45, 47, 54; grazing in 62).",
+   "source_basis": "work-orders/WB8227-log-linear-model.md lines 56 (R3-07 label rules) and 102; trig-log-handover claim that labels are tested against the line.",
+   "minimal_correction": "Place the origin label in a quadrant the line does not cross (or test its box against the line and choose an alternative/omit), and add it to layout_checks."
+  },
+  {
+   "id": "trig-E-03",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:log-linear-model:graph-intercept",
+   "domain_index": 132,
+   "part": "WB8227-log-linear-model:graph-intercept:g-parameters",
+   "criterion": null,
+   "locator": "source/groups/trig_log.py:208-221 (_graph_svg candidate offsets; label for the right point may take ox=-tw-24 etc., with no requirement to stay nearer its own point)",
+   "expected": "Each coordinate label sits next to its own plotted point",
+   "actual": "In 12/270 presentations a label is nearer the other point than its own, leaving one dot unlabelled and the other with two labels. idx 132 (L=1,p=-1/4,x1=3,d=1): '(4, -0.25)' sits directly under the dot on the x-axis at (3,0) (box 46px from that dot, 91px from its own), so the axis-crossing dot appears labelled with ordinate -0.25. Others: idx 6, 24, 51, 60, 75, 78, 105, 114, 159, 168, 222.",
+   "evidence": "SP/work-trig/pairing.py (label-box distance to own vs other circle, all 270) -> 12 rows; visual: SP/work-trig/png/g132-full.png, g132-600.png, g006-full.png, g075-full.png.",
+   "source_basis": "WO log-linear R3-07 must-read givens: both exact labelled coordinates and their common straight line; label placement rules (line 56).",
+   "minimal_correction": "Reject candidate placements whose box is nearer the other point than its own (or prefer offsets on the side away from the other point) and record this in layout_checks."
+  },
+  {
+   "id": "trig-N-01",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "domain_index": 28,
+   "part": "WB8227-trig-rform-equation:degree-cycle:b-roots",
+   "criterion": "b-M2",
+   "locator": "source/groups/trig_log.py:109 (worked step 'Search the full shifted interval')",
+   "expected": "Model solution shows the principal value and candidate generation/rejection that b-M2 assesses, e.g. beta=sin^-1(-2/sqrt10)=-39.23 deg (outside), 180-beta=219.23, 360+beta=320.77",
+   "actual": "Result jumps straight to 'z~219.231520 deg and z~320.768480 deg' with no principal value, quadrant reasoning or rejected candidate (all 58 rows).",
+   "evidence": "learner_projection(generate_at(RF,28),reveal=True)['solution'][1]['steps'][1]",
+   "source_basis": "WO R-form D1-ADAPT-RF-CLASSES (wrap/negative/zero classes are the diagnostic point)",
+   "minimal_correction": "Add beta and the two candidate formulas (and any rejected candidate) to the step result."
+  },
+  {
+   "id": "trig-N-02",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:log-linear-model:gradient-target",
+   "domain_index": 17,
+   "part": "WB8227-log-linear-model:gradient-target:t-parameter",
+   "criterion": "T-B1",
+   "locator": "generated T-B1 achievement (trig_log.py:268) and catalogue-native T-B1 qualifier 'provided gradient is mapped to the plotted base'",
+   "expected": "WO table: T-B1 = correct transformed line (ln/lg accepted); gradient mapping is T-M1's condition",
+   "actual": "T-B1 text 'accepted with the plotted-base gradient mapped correctly' makes B1 depend on the M1 condition. Fresh FT-02 (lg route, lg a=2, a=100, U-M1 F.T.) scores 2/5 under the WO, 1/5 under the literal criterion.",
+   "evidence": "fresh_awards FT-02",
+   "source_basis": "work-orders/WB8227-log-linear-model.md lines 88, 92-93",
+   "minimal_correction": "Marker settlement only; approved catalogue wording, not reopened."
+  },
+  {
+   "id": "trig-N-03",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:log-linear-model:graph-intercept",
+   "domain_index": 132,
+   "part": "WB8227-log-linear-model:graph-intercept:g-parameters",
+   "criterion": "G-M2",
+   "locator": "generated G-M2 achievement",
+   "expected": "Decision for a coherent base-10 transformed-line slip",
+   "actual": "'simplification to A=e^{constant}' is silent on A=10^k (fresh FG-03: 3/5 vs 2/5)",
+   "evidence": "fresh_awards FG-03",
+   "source_basis": "WO log-linear line 67/70",
+   "minimal_correction": "Marker settlement fixture."
+  },
+  {
+   "id": "trig-N-04",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "domain_index": 53,
+   "part": "WB8227-trig-rform-equation:degree-cycle:b-roots",
+   "criterion": "b-A1/b-A2",
+   "locator": "generated b-A1/b-A2 'to one decimal place'",
+   "expected": "Explicit rule for over-precise roots",
+   "actual": "a-A1 accepts a more precise value; b-A1/b-A2 and subject-rules accuracy section are silent. (4,3,-2): true 299.5519 -> 299.6; a learner writing 299.55 cannot be decided (fresh FR-08b: 7/7 vs 5/7).",
+   "evidence": "fresh_awards FR-08b; check_math min root boundary gap 0.0192 units at (4,3,-2)",
+   "source_basis": "WO R-form D2/D3 rounding fixtures; subject-rules.md lines 36-41",
+   "minimal_correction": "State over-precision acceptance for b-A in the marker fixture set."
+  },
+  {
+   "id": "trig-N-05",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "domain_index": 42,
+   "part": "WB8227-principal-inverse:solve-or-explain:p-decision",
+   "criterion": null,
+   "locator": "source/provider.py:86-87 (top-level objective_ids/demand_ids merge conditional_direct_*)",
+   "expected": "Outcome-resolving tags private until submission",
+   "actual": "Top-level q['objective_ids']/q['demand_ids'] include 8227:2020:M1:T6:O03(:D01) in all 23 real-solution instances and not in the 24 no-real ones; also in teacher_projection. learner_projection excludes them (pre-submission projection identical across all 47 with prompt masked), so privacy depends on APP8227-01/05 honouring conditional_metadata_visibility.",
+   "evidence": "check_struct.py Counter of (outcome, objective_ids)",
+   "source_basis": "WO principal-inverse line 94",
+   "minimal_correction": "None in content; keep as app-acceptance carry."
+  },
+  {
+   "id": "trig-N-06",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "domain_index": 0,
+   "part": "WB8227-principal-inverse:solve-or-explain:p-decision",
+   "criterion": "P-B1",
+   "locator": "marking fixtures",
+   "expected": "Rule for a legible sign-changed target without restated stem",
+   "actual": "'pi>pi/2 so no real solution' for theta=-pi: eligible-misread (net 2) vs canonical (0) undecidable; fixture PI-ambiguous-sign covers only illegible signs.",
+   "evidence": "fresh_awards FP-08",
+   "source_basis": "MR03-OPS-D4",
+   "minimal_correction": "Add a marker fixture."
+  },
+  {
+   "id": "trig-N-07",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:log-linear-model:graph-intercept",
+   "domain_index": 132,
+   "part": "WB8227-log-linear-model:graph-intercept:g-parameters",
+   "criterion": null,
+   "locator": "trig_log.py:250-252",
+   "expected": "Tidy exact forms",
+   "actual": "Cosmetic: 'A=e^{1}' for ln A=1 (54 rows) and '\\frac{-0.25-(0)}{4-3}' parenthesised zero; mathematically correct.",
+   "evidence": "learner_projection(generate_at(GR,132),reveal=True)",
+   "source_basis": "presentation",
+   "minimal_correction": "Optional."
+  }
+ ],
+ "confirmed": [
+  "Mathematics 395/395: every reference_answer, worked-step number and criterion-embedded value matches independent recomputation; 0 mismatches.",
+  "R-form 58: R exact (surd/perfect-square), acute alpha 2 d.p., exactly two interior roots, no endpoint roots, classes 6 (c>b) / 42 (c<b, c!=0) / 10 (c=0) as declared; 0 root flips when the requested 2-d.p. alpha is reused; nearest 1-d.p. root boundary (4,3,-2) 299.55192 and nearest 2-d.p. alpha boundary atan2=63.434949 both round correctly half-up.",
+  "Principal 47: 23 real (23 distinct exact x, all asin-verified) / 24 no-real (every forced candidate fails); comparisons true; stem, tariff (3), help, refs and pre-submission projection identical across outcomes; no outcome cue in title/stem.",
+  "Graph 270: ln y vs x axes; labels <=2 d.p. exact; p, ln A=L, A=e^L and 3 s.f. (0.368, 1.65, 2.72, 7.39, 20.1) correct; pixel scale consistent, points on line, intercept pixel = p+ln A; no label/line/axis/label crossing for coordinate labels; nothing in title/desc/alt/labels reveals A or p; all in viewport.",
+  "Gradient 20: log_b y vs x with b in {2,3}; a=b^m, x=(q-ca)/m (6 positive, 14 negative, none 0); 3 s.f. values correct; step-3 index check correct.",
+  "Marking data: criterion ids, order, 1-mark tariffs, part totals 3+4 / 3 / 5 / 3+2, DM dependencies (b-M2 on b-M1, G-M2 on G-M1), F.T. flags (b-M1, b-M2, G-M2, U-M1), c.a.o.-except-OD-6 on b-A1/b-A2/U-A1, answer_only_marks 0, Hence restriction with no imported SC all match the WOs, D1-ADAPT-PI-RANGE3, D1-ADAPT-RF-CLASSES, D1-INTERPRET-RF-HENCE and MR03-OPS-D4 (395 rows, 0 drift).",
+  "All 26 author fixtures agree with the rubric (22 decided awards, 4 pending ambiguous); MR03 nets for the three misread fixtures (2, 2, 4) follow MR03-OPS-D4.",
+  "33 fresh responses: 28 scored, 1 pending (ambiguous), 4 undecidable (FR-08b, FP-08, FG-03, FT-02) reported as notes.",
+  "Exam references: R-form and both log branches carry NSSCAS same-type, part-scoped labels whose pages match the source PDFs; principal inverse shows none (Cambridge 9709 related and NSSCAS 2023 P1 Q9 held, both learner_display false). No textbook ref displayed.",
+  "Practice help: one fixed answer-free variant per selection; steps all have action/reason/result.",
+  "KaTeX strict render 1111/1111; test-mode freshness exhausts at 12/12/30/4."
+ ],
+ "not_checked": [
+  "No free-text/photo marker exists; fresh awards are rubric adjudications by this checker only.",
+  "Only 11 of 270 graph presentations inspected visually; whole-set geometry via SVG analysis with an approximate Arial metric model.",
+  "App UI rendering, narrow-screen enlargement and asset delivery not run.",
+  "Examiner-report award pages not re-read; relied on work orders/catalogue for official rows.",
+  "Planning D2/D3 rounding fixture files not re-derived."
+ ],
+ "fresh_awards": [
+  {
+   "id": "FR-01",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 38,
+   "params": {
+    "a": 3,
+    "b": 2,
+    "c": 3
+   },
+   "kind": "correct (c>b class, exact 90.0 root)",
+   "response": "R=sqrt13; Rcos a=3, Rsin a=2, tan a=2/3, a=33.69 deg. sin(t+a)=3/sqrt13; t+a in (33.69,393.69); asin(3/sqrt13)=56.31 so t+a=56.31 or 123.69; t=22.6 or 90.0 deg.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-M2",
+    "b-A1",
+    "b-A2"
+   ],
+   "net": 7,
+   "decidable": true
+  },
+  {
+   "id": "FR-02",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 28,
+   "params": {
+    "a": 3,
+    "b": 1,
+    "c": -2
+   },
+   "kind": "wrong quadrant (sign ignored)",
+   "response": "Correct (a) sqrt10 sin(t+18.43). sin(t+a)=-2/sqrt10; then takes t+a=39.23 or 140.77; t=20.8, 122.3.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1"
+   ],
+   "net": 4,
+   "decidable": true,
+   "why": "b-M2 fails: roots found are of +2/sqrt10, not their own equation; canonical 200.8/302.3 absent."
+  },
+  {
+   "id": "FR-02b",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 28,
+   "params": {
+    "a": 3,
+    "b": 1,
+    "c": -2
+   },
+   "kind": "unwrapped calculator value kept",
+   "response": "Correct (a). sin(t+a)=-2/sqrt10; z=-39.23 or 219.23; t=-57.7 or 200.8.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-A1"
+   ],
+   "net": 5,
+   "decidable": true,
+   "why": "WO: keeps out-of-domain calculator value -> b-M2 fails; 200.8 earns b-A1; b-A2 absent (302.3 missing, extra value)."
+  },
+  {
+   "id": "FR-03",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 53,
+   "params": {
+    "a": 4,
+    "b": 3,
+    "c": -2
+   },
+   "kind": "missing second root",
+   "response": "R=5, tan a=3/4, a=36.87; sin(t+a)=-0.4; t+a=203.58; t=166.7.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-A1"
+   ],
+   "net": 5,
+   "decidable": true
+  },
+  {
+   "id": "FR-04",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 28,
+   "params": {
+    "a": 3,
+    "b": 1,
+    "c": -2
+   },
+   "kind": "degrees/radians (radian phase written as degrees)",
+   "response": "R=sqrt10, tan a=1/3, a=0.32 deg. sin(t+0.32)=-2/sqrt10; interval (0.32,360.32): z=219.23, 320.77; t=218.9, 320.4.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "b-M1",
+    "b-M2"
+   ],
+   "net": 4,
+   "decidable": true,
+   "why": "0.32 deg is a positive acute own phase, so b-M1 F.T. and complete own-interval search b-M2 stand; a-A1, b-A1, b-A2 c.a.o. fail."
+  },
+  {
+   "id": "FR-05",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 9,
+   "params": {
+    "a": 1,
+    "b": 3,
+    "c": 2
+   },
+   "kind": "own-R/alpha follow-through (inverted ratio)",
+   "response": "R=sqrt10, tan a=1/3, a=18.43. sin(t+a)=2/sqrt10, interval (18.43,378.43): z=39.23, 140.77; t=20.8, 122.3.",
+   "award": [
+    "a-B1",
+    "b-M1",
+    "b-M2"
+   ],
+   "net": 3,
+   "decidable": true,
+   "why": "Matches WO D2 example; canonical 69.2/327.7 not reached."
+  },
+  {
+   "id": "FR-06",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 24,
+   "params": {
+    "a": 2,
+    "b": 3,
+    "c": 2
+   },
+   "kind": "own-equation endpoint rejected",
+   "response": "R=sqrt13, tan a=2/3 (inverted), a=33.69. sin(t+a)=2/sqrt13: z=33.69 gives t=0, rejected (strict interval); z=146.31 gives t=112.6.",
+   "award": [
+    "a-B1",
+    "b-M1",
+    "b-M2"
+   ],
+   "net": 3,
+   "decidable": true,
+   "why": "WO D2 endpoint clause; keeping t=0 would drop b-M2 (2/7). Canonical roots 90.0, 337.4."
+  },
+  {
+   "id": "FR-07",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 53,
+   "params": {
+    "a": 4,
+    "b": 3,
+    "c": -2
+   },
+   "kind": "eligible OD-6 misread (c=-2 read as -1; (4,3,-1) admitted, same class)",
+   "response": "Correct (a). sin(t+a)=-1/5; complete search z=191.54, 348.46; t=154.7, 311.6.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-M2",
+    "b-A1",
+    "b-A2"
+   ],
+   "net": 6,
+   "decidable": true,
+   "why": "Gross 7; first earned A/B on datum c (first used in part b) is b-A1 -> net 6/7 under MR03-OPS-D4."
+  },
+  {
+   "id": "FR-08",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 53,
+   "params": {
+    "a": 4,
+    "b": 3,
+    "c": -2
+   },
+   "kind": "rounding boundary (double rounding)",
+   "response": "Correct work; z=336.42 -> t=299.55 -> writes 299.5 and 166.7.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-M2",
+    "b-A1"
+   ],
+   "net": 6,
+   "decidable": true,
+   "why": "True root 299.5519 -> 299.6; b-A2 lost."
+  },
+  {
+   "id": "FR-08b",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 53,
+   "params": {
+    "a": 4,
+    "b": 3,
+    "c": -2
+   },
+   "kind": "over-precise final roots",
+   "response": "Correct work; final t=166.71 and 299.55 deg (2 d.p.).",
+   "award": null,
+   "net": null,
+   "decidable": false,
+   "why": "b-A1/b-A2 say 'to one decimal place'; a-A1 explicitly allows a more precise value but b-A does not; subject-rules accuracy section silent. 7/7 or 5/7."
+  },
+  {
+   "id": "FR-09",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 0,
+   "params": {
+    "a": 1,
+    "b": 2,
+    "c": -2
+   },
+   "kind": "extra coterminal value",
+   "response": "Correct (a) and search; final t=180.0, 233.1, -126.9.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-M2",
+    "b-A1"
+   ],
+   "net": 6,
+   "decidable": true
+  },
+  {
+   "id": "FR-10",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 46,
+   "params": {
+    "a": 4,
+    "b": 1,
+    "c": 0
+   },
+   "kind": "valid alternative (triangle phase; general-solution search)",
+   "response": "R=sqrt17; triangle with sides 4,1: a=asin(1/sqrt17)=14.04. sin(t+a)=0: z=180n, inside (14.04,374.04) only 180, 360; t=166.0, 346.0.",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1",
+    "b-M1",
+    "b-M2",
+    "b-A1",
+    "b-A2"
+   ],
+   "net": 7,
+   "decidable": true
+  },
+  {
+   "id": "FR-11",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 38,
+   "params": {
+    "a": 3,
+    "b": 2,
+    "c": 3
+   },
+   "kind": "non-hence (b)",
+   "response": "Correct (a). (b) squares 3sin t=3-2cos t and solves the quadratic in cos t, never using (a).",
+   "award": [
+    "a-B1",
+    "a-M1",
+    "a-A1"
+   ],
+   "net": 3,
+   "decidable": true,
+   "why": "D1-INTERPRET-RF-HENCE: no SC imported."
+  },
+  {
+   "id": "FR-12",
+   "sel": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "idx": 28,
+   "params": {
+    "a": 3,
+    "b": 1,
+    "c": -2
+   },
+   "kind": "ambiguous",
+   "response": "Second root handwritten '3?2.3'.",
+   "award": null,
+   "net": null,
+   "decidable": true,
+   "why": "Pending clarification per ambiguity_policy."
+  },
+  {
+   "id": "FP-01",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 42,
+   "params": {
+    "k": 5,
+    "theta": "pi/4"
+   },
+   "kind": "partial (decimal final)",
+   "response": "-pi/2<pi/4<pi/2; 5x=sin(pi/4)=0.7071; x=0.1414.",
+   "award": [
+    "P-B1",
+    "P-M1"
+   ],
+   "net": 2,
+   "decidable": true
+  },
+  {
+   "id": "FP-02",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 0,
+   "params": {
+    "k": 2,
+    "theta": "-pi"
+   },
+   "kind": "correct obstruction",
+   "response": "Principal inverse sine is at least -pi/2 and -pi<-pi/2, so no real solution.",
+   "award": [
+    "P-B1",
+    "P-M1",
+    "P-A1"
+   ],
+   "net": 3,
+   "decidable": true
+  },
+  {
+   "id": "FP-03",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 33,
+   "params": {
+    "k": 4,
+    "theta": "3*pi/4"
+   },
+   "kind": "wrong (accepts forward candidate)",
+   "response": "4x=sin(3pi/4)=sqrt2/2, x=sqrt2/8.",
+   "award": [],
+   "net": 0,
+   "decidable": true
+  },
+  {
+   "id": "FP-04",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 37,
+   "params": {
+    "k": 5,
+    "theta": "-2*pi/3"
+   },
+   "kind": "valid alternative (decimal forced-candidate contradiction)",
+   "response": "Sine forces 5x=-0.8660; asin(-0.8660)=-1.0472, not -2.0944; the only candidate fails, so no real solution.",
+   "award": [
+    "P-B1",
+    "P-M1",
+    "P-A1"
+   ],
+   "net": 3,
+   "decidable": true
+  },
+  {
+   "id": "FP-05",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 8,
+   "params": {
+    "k": 2,
+    "theta": "pi/3"
+   },
+   "kind": "ineligible decision-flipping misread (pi/3 read as 2pi/3)",
+   "response": "2pi/3>pi/2 so no real solution.",
+   "award": [],
+   "net": 0,
+   "decidable": true,
+   "why": "Flips real/no-real: ineligible at first use, canonical marking (D4)."
+  },
+  {
+   "id": "FP-06",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 17,
+   "params": {
+    "k": 3,
+    "theta": "pi/6"
+   },
+   "kind": "recurring decimal final",
+   "response": "-pi/2<pi/6<pi/2; 3x=1/2; x=0.1667.",
+   "award": [
+    "P-B1",
+    "P-M1"
+   ],
+   "net": 2,
+   "decidable": true,
+   "why": "D1-MR04: recurring 1/6 must be exact."
+  },
+  {
+   "id": "FP-07",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 18,
+   "params": {
+    "k": 3,
+    "theta": "pi/4"
+   },
+   "kind": "valid alternative (verification by actual principal inverse)",
+   "response": "3x=sin(pi/4)=sqrt2/2, x=sqrt2/6; check asin(3*sqrt2/6)=asin(sqrt2/2)=pi/4, as required; asin is one-to-one so this is the only solution.",
+   "award": [
+    "P-B1",
+    "P-M1",
+    "P-A1"
+   ],
+   "net": 3,
+   "decidable": true
+  },
+  {
+   "id": "FP-08",
+   "sel": "8227:D:SEL:principal-inverse:solve-or-explain",
+   "idx": 0,
+   "params": {
+    "k": 2,
+    "theta": "-pi"
+   },
+   "kind": "ambiguous sign without restated equation",
+   "response": "pi>pi/2 so no real solution.",
+   "award": null,
+   "net": null,
+   "decidable": false,
+   "why": "Legible but sign-changed target with no restated stem: cannot distinguish an eligible OD-6 misread (gross 3, net 2) from canonical work that never compares the actual target (0). Existing fixture PI-ambiguous-sign covers only an illegible sign."
+  },
+  {
+   "id": "FG-01",
+   "sel": "8227:D:SEL:log-linear-model:graph-intercept",
+   "idx": 132,
+   "params": {
+    "L": "1",
+    "p": "-1/4",
+    "x1": 3,
+    "delta_x": 1
+   },
+   "kind": "correct",
+   "response": "ln y=px+p+ln A; p=(-0.25-0)/(4-3)=-1/4; 0=3(-1/4)+(-1/4)+ln A; ln A=1; A=e=2.72.",
+   "award": [
+    "G-B1",
+    "G-M1",
+    "G-A1",
+    "G-M2",
+    "G-A2"
+   ],
+   "net": 5,
+   "decidable": true
+  },
+  {
+   "id": "FG-02",
+   "sel": "8227:D:SEL:log-linear-model:graph-intercept",
+   "idx": 132,
+   "params": {
+    "L": "1",
+    "p": "-1/4",
+    "x1": 3,
+    "delta_x": 1
+   },
+   "kind": "gradient sign slip, coherent follow-through",
+   "response": "ln y=px+p+ln A; p=(0-(-0.25))/(4-3)=0.25; 0=0.75+0.25+ln A; A=e^-1=0.368.",
+   "award": [
+    "G-B1",
+    "G-M1",
+    "G-M2"
+   ],
+   "net": 3,
+   "decidable": true
+  },
+  {
+   "id": "FG-03",
+   "sel": "8227:D:SEL:log-linear-model:graph-intercept",
+   "idx": 132,
+   "params": {
+    "L": "1",
+    "p": "-1/4",
+    "x1": 3,
+    "delta_x": 1
+   },
+   "kind": "axis read as lg y",
+   "response": "lg y=px+p+lg A; p=-1/4; 0=-1+lg A; A=10.",
+   "award": null,
+   "net": null,
+   "decidable": false,
+   "why": "G-B1 fails, G-M1/G-A1 earned; G-M2 says 'simplification to A=e^{constant}' with coherent line slips allowed -- silent whether A=10^k qualifies: 3/5 or 2/5."
+  },
+  {
+   "id": "FG-04",
+   "sel": "8227:D:SEL:log-linear-model:graph-intercept",
+   "idx": 132,
+   "params": {
+    "L": "1",
+    "p": "-1/4",
+    "x1": 3,
+    "delta_x": 1
+   },
+   "kind": "valid alternative (intercept route)",
+   "response": "Gradient p=-1/4; intercept c=0-(-1/4)(3)=3/4; c=p+ln A so ln A=1; A=e.",
+   "award": [
+    "G-B1",
+    "G-M1",
+    "G-A1",
+    "G-M2",
+    "G-A2"
+   ],
+   "net": 5,
+   "decidable": true
+  },
+  {
+   "id": "FG-05",
+   "sel": "8227:D:SEL:log-linear-model:graph-intercept",
+   "idx": 132,
+   "params": {
+    "L": "1",
+    "p": "-1/4",
+    "x1": 3,
+    "delta_x": 1
+   },
+   "kind": "partial (2 s.f.)",
+   "response": "Full correct working, final A=2.7.",
+   "award": [
+    "G-B1",
+    "G-M1",
+    "G-A1",
+    "G-M2"
+   ],
+   "net": 4,
+   "decidable": true
+  },
+  {
+   "id": "FT-01",
+   "sel": "8227:D:SEL:log-linear-model:gradient-target",
+   "idx": 17,
+   "params": {
+    "b": 3,
+    "c": 3,
+    "m": 2,
+    "q": 4
+   },
+   "kind": "correct",
+   "response": "log3 y=3a+x log3 a; log3 a=2; a=9. Hence 4=27+2x; x=-23/2=-11.5.",
+   "award": [
+    "T-B1",
+    "T-M1",
+    "T-A1",
+    "U-M1",
+    "U-A1"
+   ],
+   "net": 5,
+   "decidable": true
+  },
+  {
+   "id": "FT-02",
+   "sel": "8227:D:SEL:log-linear-model:gradient-target",
+   "idx": 17,
+   "params": {
+    "b": 3,
+    "c": 3,
+    "m": 2,
+    "q": 4
+   },
+   "kind": "lg route with unconverted gradient",
+   "response": "lg y=3a lg3+x lg a; lg a=2; a=100. Hence 4 lg3=300 lg3+2x; x=-70.6.",
+   "award": null,
+   "net": null,
+   "decidable": false,
+   "why": "WO table: T-B1 is the correct line (lg accepted); error lies in T-M1 -> T-B1,U-M1 = 2/5. Generated/catalogue T-B1 text adds 'with the plotted-base gradient mapped correctly' -> 1/5."
+  },
+  {
+   "id": "FT-03",
+   "sel": "8227:D:SEL:log-linear-model:gradient-target",
+   "idx": 17,
+   "params": {
+    "b": 3,
+    "c": 3,
+    "m": 2,
+    "q": 4
+   },
+   "kind": "newly dropped prefactor",
+   "response": "(a) log3 y=3a+x log3 a, a=9. (b) 4=2x, x=2.",
+   "award": [
+    "T-B1",
+    "T-M1",
+    "T-A1"
+   ],
+   "net": 3,
+   "decidable": true
+  },
+  {
+   "id": "FT-04",
+   "sel": "8227:D:SEL:log-linear-model:gradient-target",
+   "idx": 17,
+   "params": {
+    "b": 3,
+    "c": 3,
+    "m": 2,
+    "q": 4
+   },
+   "kind": "eligible OD-6 misread (c=3 read as 1; (3,1,2,4) admitted)",
+   "response": "log3 y=a+x log3 a; a=9; 4=9+2x; x=-2.5.",
+   "award": [
+    "T-B1",
+    "T-M1",
+    "T-A1",
+    "U-M1",
+    "U-A1"
+   ],
+   "net": 4,
+   "decidable": true,
+   "why": "Gross 5, deduct first earned A/B on datum c (T-B1)."
+  },
+  {
+   "id": "FT-05",
+   "sel": "8227:D:SEL:log-linear-model:gradient-target",
+   "idx": 17,
+   "params": {
+    "b": 3,
+    "c": 3,
+    "m": 2,
+    "q": 4
+   },
+   "kind": "answer only",
+   "response": "a=9, x=-11.5",
+   "award": [],
+   "net": 0,
+   "decidable": true
+  },
+  {
+   "id": "FT-06",
+   "sel": "8227:D:SEL:log-linear-model:gradient-target",
+   "idx": 17,
+   "params": {
+    "b": 3,
+    "c": 3,
+    "m": 2,
+    "q": 4
+   },
+   "kind": "valid alternative (index laws in b)",
+   "response": "Correct (a). 3^4=3^27 * 9^x=3^(27+2x), so 27+2x=4, x=-11.5.",
+   "award": [
+    "T-B1",
+    "T-M1",
+    "T-A1",
+    "U-M1",
+    "U-A1"
+   ],
+   "net": 5,
+   "decidable": true
+  }
+ ]
+}

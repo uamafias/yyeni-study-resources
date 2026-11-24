@@ -1,0 +1,703 @@
+{
+ "label": "trig",
+ "scope": [
+  "WB8227-principal-inverse (solve-or-explain): WO, exemplar, trig-model-design.json recipe block",
+  "WB8227-trig-rform-equation (degree-cycle): WO, exemplar, JSON, planning/d2/trig-d2-fixtures.json",
+  "WB8227-log-linear-model (graph-intercept, gradient-target): WO, exemplar, JSON",
+  "planning/d2/trig-d2-check.py (read only, not run); checks/plan-repair-d2-trig-validation.json; checks/plan-repair-d2-trig-dispositions.json",
+  "Deviation rows D1-ADAPT-PI-RANGE3, D1-ADAPT-RF-CLASSES, D1-INTERPRET-RF-HENCE (planning/OWNER-CHECKPOINT.md:34-36; planning/d2/deviation-register.json)",
+  "subject-rules.md:67 D1-MR03 as applied to the three work orders",
+  "Manifest pin: plan-manifest.json sha256 2b9e53a5...43f2 verified; all in-scope current files match their pinned hashes"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+   "page": 4,
+   "what": "Q4(a): M1 3x=-sqrt3/2 'Accept -0.866 at this stage'; A1 x=-sqrt3/6 oe (or -3/(6sqrt3), -1/(2sqrt3)); [2]. No range criterion, no answer-only note. Matches the D1-ADAPT-PI-RANGE3 official_row and the WO:13 description."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2022/NSSCAS_Examiners_Report_2022.pdf",
+   "page": 313,
+   "what": "Printed 311. Q6 table: (a) B1 R=3, M1 tan a=sqrt5/2, A1 48.19; (b)(i) M1 F.T. 'Use their a (in degrees) and R and make sin the subject', M1 dep 'Correct use of 1st and 2nd quadrant only', A1 4.9 c.a.o. 'can be awarded without M2', A1 78.7 c.a.o. 'A0 if more than 2 answers'; (b)(ii) B1 F.T. their R, B1 F.T. their -R. No SC row anywhere in Q6."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2022/NSSCAS_Examiners_Report_2022.pdf",
+   "page": 312,
+   "what": "Printed 310. Q6 comments: sqrt9 must be 3; common error tan a=2/sqrt5 (inverted ratio); full display earns angle mark; radians error; (b)(i) two quadrants; general-solution values outside the domain lose an accuracy mark."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2022/AS - Mathematics Paper 2 8227-2 - First Proof 24.05.2022.pdf",
+   "page": 8,
+   "what": "Q6(b) stem: plain 'Hence (i) solve the equation 2sin+sqrt5cos=2.4 for 0<theta<360' - not 'hence or otherwise'."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 359,
+   "what": "Printed 357. Q6 comments: (b) 'one mark for the correct substitution of their a-value and y=81 into their log-equation or the original equation'; a not 1/0/negative. Table: (a) B1 state or imply line (condone 2a log3 3), M1 state or imply log3 a=gradient, A1 a=9; (b) M1 F.T. 'Substitute their positive a=9 and y=81', A1 c.a.o. x=-7; exponential OR route M1 F.T./A1."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D1-S03",
+   "related_agent_ids": [
+    "trig-D1-01"
+   ],
+   "codex_claim": "Real-route P-B1 requires actual target comparison or actual inverse verification; rote interval + forward = 2/3; JSON P-M1 permits forward recovery without B1 evidence.",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:50-51,54,58,86 and work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json:594,602 agree for the real route: rote '[-pi/2,pi/2]' + 4x=-1/2 + x=-1/8 = 2/3; '-pi/2<-pi/6<pi/2' or 'sin^-1(4(-1/8))=-pi/6' completes 3/3; bare 0/3 (OD-1). JSON P-M1 (real) 'show kx=sin(theta)... may earn M1 without the separate B1 range evidence' now matches WO:51 'the separate range comparison belongs to P-B1'. Exemplar :11,:31,:45 consistent. Cambridge scheme PDF4 rendered; PI-RANGE3 row described accurately.",
+   "residual": "New WO/JSON mismatch on the NO-REAL P-B1 column introduced by the same edit (trig-D2-01). Bloom rationale wording now stale (trig-D2-07, note)."
+  },
+  {
+   "finding_id": "D1-S04",
+   "related_agent_ids": [
+    "trig-D1-02",
+    "trig-07"
+   ],
+   "codex_claim": "b-M2 follows their complete transformed root set in their own interval; 6 class-change and 8 c=a endpoint fixtures; one eligible root + endpoint rejection earns method only.",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md:68,100-106; work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json b-M2 what_earns_it/follow_through; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trig-rform-equation.md:115-117; planning/d2/trig-d2-fixtures.json class_change_tuples (6), endpoint_tuples (8), 14 follow_through_fixtures. Own code (half-angle polynomial for canonical roots; coefficient-swap identity R sin(theta+alpha')=b sin+a cos for the inverted-ratio own equation): 58 admitted, class changes exactly (1,3,2),(1,4,2),(2,4,3),(3,1,2),(4,1,2),(4,2,3); c=a endpoint cases exactly (1,2,1),(1,3,1),(1,4,1),(2,1,2),(2,3,2),(3,1,3),(3,2,3),(3,4,3); all 14 fixture root values match to 1e-40. Endpoint rule stated (WO:104, JSON: retain the sole root, reject theta=0; keeping the endpoint loses b-M2). One/no-root own equations stated (WO:104; JSON follow_through: no-real right side needs justification, tangent case needs the single-root set). Under the inverted-ratio error R is unchanged, so own equations have 2 roots (50) or 1 root + endpoint (8); no own root lies within 1 degree of an endpoint otherwise; no single-root 1-dp coincidence with the canonical pair (so b-A1 c.a.o. cannot be earned by the wrong phase).",
+   "residual": "Stale WO:84 still says the DM1 is 'replaced by the explicit class table', contradicting WO:68/100 and the JSON (trig-D2-02)."
+  },
+  {
+   "finding_id": "D1-S13",
+   "related_agent_ids": [
+    "calc2-D1-08"
+   ],
+   "codex_claim": "U-M1 follows consistent substitution into their own earlier line even without the prefactor; a newly dropped prefactor only in (b) gets no U-M1; worked 3/5 sample.",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:93,98,116; JSON U-M1 qualifier (trig-model-design.json:1267); exemplar :77,:85; validation criterion_fixtures LOG-own-earlier-prefactor-omission (T-B1 0,T-M1 1,T-A1 1,U-M1 1,U-A1 0) and LOG-new-prefactor-omission-only-in-b (3,0 -> 3/5). Rendered 2025 report PDF359: M1 F.T. 'Substitute their positive a' and comment 'into their log-equation or the original equation' - the own-line F.T. now matches. Computed: own line log2 y=x log2 a with a=8, target 10 -> 10=3x, x=10/3 vs canonical 2/3 (sympy); 3/5 confirmed. No admitted gradient-target tuple has x(prefactor omitted)=canonical x (0/20).",
+   "residual": "Wording 'their own previously established part-(a) log-line' could be read to exclude a correct log-line first written in (b) (trig-D2-08, note)."
+  },
+  {
+   "finding_id": "D1-S23 (as applied to principal, R-form, log)",
+   "related_agent_ids": [
+    "vector-contract-D1-04"
+   ],
+   "codex_claim": "Root shared misread rule applied to the three work orders.",
+   "verdict": "repaired",
+   "evidence": "Misread lines present: work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:90 (value-bearing actual-target B1 and final A1 do not follow; M1 may survive), work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md:76 (canonical amplitude B1 and affected A do not follow; M/DM and declared own-R/alpha F.T. survive), work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:118 (affected canonical B1 fails; methods survive; U-M1 explicit official F.T.). JSON misread_policy on all 6 parts (e.g. trig-model-design.json:625). All consistent with subject-rules.md:67 (retain M/DM and structural B; value-bearing B/A fail; explicit official F.T. overrides only in scope; no blanket minus-one).",
+   "residual": ""
+  },
+  {
+   "finding_id": "D1-S25 (these three recipes)",
+   "related_agent_ids": [
+    "vector-contract-D1-06",
+    "calc2-D1-12"
+   ],
+   "codex_claim": "One classification string 8227-pilot-design-0.1.1; recipe revision 0.1.2.",
+   "verdict": "repaired",
+   "evidence": "Line 3 of all three WOs and all three exemplars: 'version 0.1.2' and '8227-pilot-design-0.1.1'. trig-model-design.json: proposed_version 0.1.2 on all 3 recipes, top-level version 0.1.2, classification 8227-pilot-design-0.1.1 on all 4 branches and 6 parts; pilot-design.json and part-evidence-register.json (6 parts: version 0.1.2, classification 8227-pilot-design-0.1.1). No '8227-stage-d-d1' string remains outside history/review/D1 receipts. Trig/log criterion IDs carry no @version, so no stale ID suffix.",
+   "residual": "Cross-scope only: motion bloom_rationale text still cites WB8227-motion-integration@0.1.1 criterion IDs (calculus-design.json:2087,2129,3192,3233; also pilot-design.json and part-evidence-register.json, 11 each) while live IDs are @0.1.2 - for the calc agent."
+  },
+  {
+   "finding_id": "D1-ADAPT-PI-RANGE3",
+   "related_agent_ids": [
+    "trig-01",
+    "trig-05"
+   ],
+   "codex_claim": "derived assessment adaptation; owner approval pending",
+   "verdict": "repaired",
+   "evidence": "planning/OWNER-CHECKPOINT.md:34 and d2/deviation-register.json: official_row 'Cambridge 9709/12 Feb-March 2016 Q4(a), scheme PDF4 M1/A1' matches the rendered page (M1 3x=-sqrt3/2 accept -0.866; A1 x=-sqrt3/6; [2]); departure (adds actual-target range/inverse-verification B1 and neutral solve-or-explain case, 3 marks instead of 2) accurately describes WO:48-58. Status is a pending adaptation, not an owner decision.",
+   "residual": ""
+  },
+  {
+   "finding_id": "D1-ADAPT-RF-CLASSES",
+   "related_agent_ids": [
+    "trig-07",
+    "trig-14",
+    "trig-D1-02"
+   ],
+   "codex_claim": "source-qualified adaptation; owner approval pending",
+   "verdict": "repaired",
+   "evidence": "OWNER-CHECKPOINT.md:35 / register: official_row 'M1 FT then dependent M1 first/second quadrants' matches rendered PDF313; departure (complete shifted-interval search, own-R/alpha F.T., single/no-root own sets, endpoint rejection) matches WO:68,100-104 and JSON b-M2 named_adaptation. Pending, not an owner decision.",
+   "residual": "WO:84 description of the same adaptation is stale (trig-D2-02)."
+  },
+  {
+   "finding_id": "D1-INTERPRET-RF-HENCE",
+   "related_agent_ids": [
+    "trig-06"
+   ],
+   "codex_claim": "source interpretation; no departure from official marking",
+   "verdict": "repaired",
+   "evidence": "Rendered 2022 report PDF313: no SC row in Q6; rendered 2022 P2 PDF8: plain 'Hence'. OWNER-CHECKPOINT.md:36 says 'source interpretation; no departure', rationale 'accepted by the short check ... a named interpretation, not an invented owner exemption'. Accurate; not called an owner decision. WO:74 and exemplar :109 give 0 for a non-hence (b) route.",
+   "residual": ""
+  },
+  {
+   "finding_id": "trig-D1-03 (later-test, rounding fixtures)",
+   "related_agent_ids": [
+    "trig-D1-03",
+    "trig-16"
+   ],
+   "codex_claim": "All admitted-tuple rounding paths and four half-up ties frozen; ratio 3sf = 14 not the review's 10.",
+   "verdict": "partly-repaired",
+   "evidence": "trig-d2-fixtures.json: all six recorded flip sets reproduce exactly (tuples and premature 1-dp values) under my own code; 4 ties reproduce. See recomputations for the path reconciliation.",
+   "residual": "Paths with alpha carried at its requested 2-dp part-(a) value are not frozen (R at 4 s.f.: 3 flips; acos route with alpha 2dp: 35; ratio 3 s.f. with alpha 2dp: 10), and the (1,3) 6-s.f. case is recorded only by the non-flipping acos route (trig-D2-04, later-test)."
+  },
+  {
+   "finding_id": "trig-D1-04 (later-test)",
+   "related_agent_ids": [
+    "trig-D1-04"
+   ],
+   "codex_claim": "Conditional tags private until submission; decimal contradiction and implicit comparison fixtures 3/3.",
+   "verdict": "repaired",
+   "evidence": "WO:88,92; JSON conditional_metadata_visibility; exemplar :47; validation criterion_fixtures PI-implicit-outside-bound and PI-decimal-forced-candidate-contradiction. Computed asin(-0.7071)=-0.785389 vs -3pi/4=-2.35619.",
+   "residual": "Exemplar :47 illustrates the implicit comparison with 2pi/3>pi/2 inside the -3pi/4 paragraph (trig-D2-06, note)."
+  },
+  {
+   "finding_id": "trig-D1-05 (note)",
+   "related_agent_ids": [
+    "trig-D1-05"
+   ],
+   "codex_claim": "Locator corrected to exemplar :105.",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trig-rform-equation.md:105 holds the (2,3,3) text; disposition locator line 105.",
+   "residual": ""
+  },
+  {
+   "finding_id": "vector-contract-D1-07 (note, held 2023 P1 Q9 display reason)",
+   "related_agent_ids": [
+    "vector-contract-D1-07"
+   ],
+   "codex_claim": "Held record reason now states its own defect.",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json (principal examination_references[1]) learner_display false; reason 'Held defective NSSCAS 2023 P1 Q9 original: principal-range defect; internal caution only, never a learner exemplar or same-type anchor.'",
+   "residual": ""
+  },
+  {
+   "finding_id": "calc2-D1-07 (note, thin log domain)",
+   "related_agent_ids": [
+    "calc2-D1-07"
+   ],
+   "codex_claim": "Retained the owner-fixed narrow domain.",
+   "verdict": "disposition-wrong",
+   "evidence": "The note itself needed no change (optional repair), and the domain is honestly disclosed (WO:74,80). But work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d2-trig-dispositions.json:149 calls it 'owner-fixed'. No OD fixes it; m in {2,3} came from our step-3 REPAIR-PROMPT.md:74 (calc2-08). D1's equivalent disposition contained no such label.",
+   "residual": "Mislabel (trig-D2-03)."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "R-form domain cascade (own enumeration of WO:40 rules)",
+   "claimed": "112->102->90->78->70->58",
+   "computed": "112->102->90->78->70->58",
+   "ok": true
+  },
+  {
+   "case": "R-form canonical roots, all 58 (half-angle polynomial (b+c)t^2-2at+(c-b)=0 vs R-form route)",
+   "claimed": "two distinct roots strictly inside (0,360) for all 58",
+   "computed": "58/58 two roots, half-angle and R-form agree to 1e-50",
+   "ok": true
+  },
+  {
+   "case": "R-form normal (2,3,1)",
+   "claimed": "R=sqrt13, alpha 56.309932 (56.31), beta 16.102113, transformed 163.897886/376.102113, roots 107.587953/319.792181 -> 107.6/319.8; half-angle 4t^2-4t-2",
+   "computed": "identical; residuals <1e-70; half-angle coefficients [4,-4,-2]; unwrapped coterminal -40.2",
+   "ok": true
+  },
+  {
+   "case": "R-form changed (4,3,-2)",
+   "claimed": "R=5, alpha 36.869897, beta -23.578178, transformed 203.578178/336.421821, roots 166.708280/299.551923 -> 166.7/299.6",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "R-form boundary (1,4,0)",
+   "claimed": "R=sqrt17, alpha 75.963756, transformed 180/360, roots 104.036243/284.036243 -> 104.0/284.0",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "R-form D2 F.T. fixture (1,3,2) inverted ratio",
+   "claimed": "alpha' 18.4349, beta 39.2315, own roots 20.7966/122.3335",
+   "computed": "alpha' 18.43494882, beta 39.23152048, own roots 20.79657166/122.3335307",
+   "ok": true
+  },
+  {
+   "case": "R-form D2 endpoint fixture (1,2,1) inverted ratio",
+   "claimed": "alpha' 26.5651; z=alpha' gives theta=0 (reject); sole own root 126.8699",
+   "computed": "alpha'=beta=26.56505118; own roots {0 (endpoint), 126.8698976}",
+   "ok": true
+  },
+  {
+   "case": "R-form changed rounding (exemplar :119)",
+   "claimed": "alpha 1dp -> 299.5; both-2dp -> 299.55 tie -> half-up 299.6",
+   "computed": "alpha 1dp -> [166.7, 299.5]; both-2dp -> 166.71/299.55 -> half-up 299.6 (decimal half-even also 299.6)",
+   "ok": true
+  },
+  {
+   "case": "R-form rejected (2,3,3), retired (3,4,2)",
+   "claimed": "(2,3,3) endpoint root; (3,4,2) 330.448076 -> 330.4, both-2dp 330.45",
+   "computed": "(2,3,3) roots {0, 67.380135}; (3,4,2) 330.4480761, both-2dp 330.45",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: alpha 1dp, beta exact",
+   "claimed": "Codex 38; D1 38",
+   "computed": "38 (same tuple set and premature values as fixture)",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: beta 1dp, alpha exact",
+   "claimed": "Codex 38",
+   "computed": "38 (same set)",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: R 3 s.f., beta=asin(c/R3), alpha exact or alpha 2dp",
+   "claimed": "Codex 15 (alpha exact); D1 15",
+   "computed": "15 with alpha exact; 15 (same set) with alpha 2dp",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: R 4 s.f.",
+   "claimed": "D1 '3 with R at 4 s.f.' (D1 script path R4 = alpha 2dp); Codex records no R_4sf set (alpha exact)",
+   "computed": "alpha exact: 0 flips; alpha 2dp: 3 flips (1,3,-3),(3,1,-3),(3,1,3). Both figures correct for their paths; the 3 are not frozen in the fixture file.",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: c/R to 3 s.f., alpha exact (Codex ratio_3sf, trig-d2-check.py:62-63)",
+   "claimed": "14",
+   "computed": "14; identical tuple set and premature values to trig-d2-fixtures.json",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: c/R to 3 s.f., alpha at requested 2 dp (D1 'ratio 3sf', D1 scratch script path ratio3sf_a2; check-trig.json trig-09/trig-D1-03 text says only 'c/R at 3 s.f.')",
+   "claimed": "10",
+   "computed": "10; a strict subset of the 14 - the four extra exact-alpha flips are (1,4,+-2),(4,1,+-2), where rounding alpha to 2 dp offsets the ratio error",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: c/R 3 s.f., alpha 2dp, beta then rounded to 2dp",
+   "claimed": "not claimed",
+   "computed": "13",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: alpha=acos(a/R3), beta=asin(c/R3) (coupled; Codex alpha_and_beta_from_R_3sf; D1 R3acos)",
+   "claimed": "33 (both)",
+   "computed": "33 (same set)",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: alpha=acos(a/R3), beta exact (Codex isolated alpha)",
+   "claimed": "34",
+   "computed": "34 (same set)",
+   "ok": true
+  },
+  {
+   "case": "Rounding path: coupled acos route with alpha then written to 2 dp",
+   "claimed": "not claimed",
+   "computed": "35 (adds (1,3,0),(1,4,0))",
+   "ok": true
+  },
+  {
+   "case": "Rounding paths at or above requested precision (alpha 2dp only; alpha 2dp + beta 2dp; alpha 2dp + ratio 4 s.f.)",
+   "claimed": "0 flips",
+   "computed": "0, 0, 0",
+   "ok": true
+  },
+  {
+   "case": "Both-2dp half-up ties",
+   "claimed": "4: (4,2,+-1),(4,3,+-2) incl. 299.55",
+   "computed": "4: 166.35, 346.35, 299.55, 119.55; half-up gives canonical in all four",
+   "ok": true
+  },
+  {
+   "case": "6-s.f. amplitude phase (3,1),(1,3)",
+   "claimed": "fixtures record via acos(a/R6): (3,1) 18.44 vs 18.43; (1,3) 71.57",
+   "computed": "(3,1): acos 18.43507601 -> 18.44 (flip), asin 18.43 (no flip); (1,3): acos 71.56506531 -> 71.57 (no flip), asin(b/R6) 71.56492399 -> 71.56 (flip)",
+   "ok": true
+  },
+  {
+   "case": "Principal grid/admitted/real/obstruction (sympy)",
+   "claimed": "48/47; 12 keys (6+6); 23 distinct real x",
+   "computed": "48/47; 23 real + 24 obstruction; 12 keys 6/6; 23 distinct exact x; 23/23 inverse-consistent; 24/24 forced candidates rejected; 8 obstruction traps at x=0",
+   "ok": true
+  },
+  {
+   "case": "Principal normal (4,-pi/6)",
+   "claimed": "x=-1/8",
+   "computed": "x=-1/8, asin(4x)=-pi/6, -pi/6 inside",
+   "ok": true
+  },
+  {
+   "case": "Principal changed (3,-3pi/4)",
+   "claimed": "no real solution; forced -sqrt2/6 maps to -pi/4",
+   "computed": "forced -sqrt(2)/6, asin(3x)=-pi/4 != -3pi/4",
+   "ok": true
+  },
+  {
+   "case": "Principal boundary (5,pi/3)",
+   "claimed": "x=sqrt3/10; 5x=0.866 M1",
+   "computed": "x=sqrt(3)/10; 5x=0.866025",
+   "ok": true
+  },
+  {
+   "case": "Principal decimal contradiction fixture",
+   "claimed": "asin(-0.7071)~-0.7854 vs -2.3562",
+   "computed": "-0.785389 vs -2.35619",
+   "ok": true
+  },
+  {
+   "case": "Log graph normal (1,1.5),(3,2.5)",
+   "claimed": "p=1/2, lnA=1/2, A=e^(1/2)~1.65",
+   "computed": "identical; both ordinates reproduce exactly",
+   "ok": true
+  },
+  {
+   "case": "Log graph changed (2,1.25),(4,0.75)",
+   "claimed": "p=-1/4, lnA=2, A=e^2~7.39",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "Log graph boundary (1,-2.5),(4,-4.75)",
+   "claimed": "p=-3/4, lnA=-1, A=e^-1~0.368",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "Log graph wrong line ln y=px+lnA (normal)",
+   "claimed": "A=e, 3/5",
+   "computed": "A=e",
+   "ok": true
+  },
+  {
+   "case": "Log gradient normal (b,c,m,q)=(2,1,3,10)",
+   "claimed": "a=8, x=2/3~0.667",
+   "computed": "a=8, x=2/3, direct power check 0",
+   "ok": true
+  },
+  {
+   "case": "Log gradient changed (3,1,2,1)",
+   "claimed": "a=9, x=-4",
+   "computed": "a=9, x=-4",
+   "ok": true
+  },
+  {
+   "case": "Log gradient boundary (3,3,2,0)",
+   "claimed": "a=9, x=-27/2",
+   "computed": "a=9, x=-27/2, 3^27*9^(-27/2)=1",
+   "ok": true
+  },
+  {
+   "case": "Log D2 own-line F.T. fixture",
+   "claimed": "10=3x, x=10/3, total 3/5",
+   "computed": "x=10/3 != 2/3",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "branch": "degree-cycle",
+   "claimed": "58; classes 6/42/10; inverted-ratio class changes 6; c=a endpoint 8",
+   "computed": "58; 6/42/10; 6 (same tuples); 8 (same tuples)",
+   "notes": "Own-equation root counts under inverted ratio: 50 with two roots, 8 with one root plus the theta=0 endpoint. Radian-phase-as-degrees own equations: all 58 have two roots >=0.05 deg from the endpoints. No single 1-dp root coincidence between canonical and inverted-ratio or radian-phase roots."
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "claimed": "48 raw / 47 admitted / 12 keys (6+6) / 23 real numeric",
+   "computed": "48/47/12 (6+6)/23",
+   "notes": "Unchanged by D2; reconfirmed."
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "claimed": "40 -> 20; 4 models; 2 (b,m) contexts; a in {8,9}",
+   "computed": "40 -> 20; 4; 2; {8,9}; no target equals the prefactor; both signs of x; 2025 original and c=2 absent",
+   "notes": "Unchanged by D2."
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "branch": "graph-intercept",
+   "claimed": "30 models / 270 presentations",
+   "computed": "5 L x 6 p = 30; 3 x1 x 3 d = 9 presentations each = 270",
+   "notes": "Unchanged by D2; arithmetic only."
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(4,-pi/6): '[-pi/2,pi/2]' (never applied), 4x=sin(-pi/6)=-1/2, x=-1/8",
+   "expected_marks": "2/3 (B0 M1 A1)",
+   "design_gives": "2/3 (WO:58,86; JSON:594 'rote interval line alone is insufficient'; exemplar:45; fixture PI-rote-interval-plus-forward)",
+   "ok": true,
+   "basis": "D1-S03 repair; OD-1"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(4,-pi/6): -pi/2<-pi/6<pi/2; 4x=-1/2; x=-1/8",
+   "expected_marks": "3/3",
+   "design_gives": "3/3 (WO:50,86; exemplar:45)",
+   "ok": true,
+   "basis": "D1-S03 repair"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(4,-pi/6): 4x=-1/2, x=-1/8, check sin^-1(4(-1/8))=sin^-1(-1/2)=-pi/6",
+   "expected_marks": "3/3",
+   "design_gives": "3/3 (WO:50 inverse verification)",
+   "ok": true,
+   "basis": "D1-S03 repair"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "bare x=-1/8; bare 'no real solution'",
+   "expected_marks": "0/3 each",
+   "design_gives": "0/3 each (WO:58)",
+   "ok": true,
+   "basis": "OD-1; Cambridge PDF4 has no answer-only exception"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4): -3pi/4<-pi/2, so no real solution",
+   "expected_marks": "3/3",
+   "design_gives": "3/3 (WO:88; JSON:594 'bound used in the actual comparison')",
+   "ok": true,
+   "basis": "D2 fixture"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4): 'range of sin^-1 is [-pi/2,pi/2]. No real solution.' (no comparison with the target)",
+   "expected_marks": "one value, stated consistently (0/3 is consistent with the D2 real-route rule)",
+   "design_gives": "1/3 by WO:50 no-real B1 'Correct principal range'; 0/3 by JSON:594 ('used in the actual comparison'), JSON:625 ('A generic range fact alone is not B1') and WO:54",
+   "ok": false,
+   "basis": "Internal consistency (trig-D2-01)"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4): 3x~-0.7071 forced; sin^-1(-0.7071)~-0.7854 != -2.3562; no real solution",
+   "expected_marks": "3/3",
+   "design_gives": "3/3 (WO:88; exemplar:47)",
+   "ok": true,
+   "basis": "D1 trig-D1-04 fixture"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4): forward only 3x=-sqrt2/2, x=-sqrt2/6, stated as the solution",
+   "expected_marks": "0/3",
+   "design_gives": "0/3 (no-real column needs comparison or contradiction; WO:56)",
+   "ok": true,
+   "basis": "Range decision is the assessed fact"
+  },
+  {
+   "recipe": "WB8227-principal-inverse",
+   "part": "p-decision",
+   "response": "(3,-3pi/4) misread as -pi/4: 3x=sin(-pi/4), x=-sqrt2/6, -pi/4 inside",
+   "expected_marks": "1/3 (visible M1 only)",
+   "design_gives": "1/3 (WO:90; JSON:625)",
+   "ok": true,
+   "basis": "subject-rules.md:67 D1-MR03"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a-convert + b-roots",
+   "response": "(1,3,2): R=sqrt10, tan alpha=1/3 (inverted), alpha'=18.43; sin(theta+18.43)=2/sqrt10; complete own set z=39.23,140.77; theta=20.8,122.3",
+   "expected_marks": "3/7: a-B1 only in (a); b-M1 F.T. + b-M2 on own interval; A0 A0",
+   "design_gives": "3/7 (WO:68,100,102; JSON b-M2; exemplar:115)",
+   "ok": true,
+   "basis": "Rendered PDF313 M1 F.T. 'use their alpha' -> M1 dep; D1-S04 repair"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "b-roots",
+   "response": "(1,2,1) inverted ratio: own z=alpha' (theta=0) rejected, z=180-beta kept, theta=126.9",
+   "expected_marks": "b-M1 + b-M2 = 2/4",
+   "design_gives": "2/4 (WO:104; JSON b-M2; fixture bM2_if_complete_with_endpoint_rejected=1)",
+   "ok": true,
+   "basis": "D1-S04 endpoint repair"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "b-roots",
+   "response": "(1,2,1) inverted ratio: keeps theta=0 and 126.9",
+   "expected_marks": "b-M1 only = 1/4",
+   "design_gives": "1/4 (WO:104 'Keeping the endpoint does not'; fixture bM2_if_endpoint_retained=0)",
+   "ok": true,
+   "basis": "D1-S04"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a+b",
+   "response": "(2,3,1): full conversion, reduced equation, only 107.6",
+   "expected_marks": "5/7",
+   "design_gives": "5/7 (WO:82; exemplar:109)",
+   "ok": true,
+   "basis": "PDF313 'A1 can be awarded without M2'"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "a+b",
+   "response": "(2,3,1): correct pair plus uncancelled -40.2",
+   "expected_marks": "6/7",
+   "design_gives": "6/7 (WO:76,82)",
+   "ok": true,
+   "basis": "PDF313 'A0 if more than 2 answers'; PDF312 general-solution comment"
+  },
+  {
+   "recipe": "WB8227-trig-rform-equation",
+   "part": "b-roots",
+   "response": "full correct (a) then a non-hence route in (b)",
+   "expected_marks": "3/7",
+   "design_gives": "3/7 (WO:74,82; exemplar:109)",
+   "ok": true,
+   "basis": "PDF313 no SC row; plain 'Hence' (2022 P2 PDF8)"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "part": "t-parameter + t-target",
+   "response": "(2,1,3,10): own (a) line log2 y=x log2 a (prefactor omitted), log2 a=3, a=8; (b) 10=3x, x=10/3",
+   "expected_marks": "3/5 (T-M1, T-A1, U-M1 F.T.)",
+   "design_gives": "3/5 (WO:98,116; JSON qualifier; exemplar:85)",
+   "ok": true,
+   "basis": "2025 report PDF359 'into their log-equation'"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "part": "t-parameter + t-target",
+   "response": "(2,1,3,10): correct (a) line log2 y=a+x log2 a, a=8; (b) drops a: 10=3x",
+   "expected_marks": "3/5 (no U-M1)",
+   "design_gives": "3/5 (WO:98,116; JSON qualifier 'fresh error')",
+   "ok": true,
+   "basis": "D1-S13 repair as prescribed"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "part": "t-parameter + t-target",
+   "response": "(2,1,3,10): log2 a=3 then a=2*3=6; consistent substitution 10=6+x log2 6",
+   "expected_marks": "3/5 (T-B1, T-M1, U-M1 F.T.)",
+   "design_gives": "3/5 (WO:98)",
+   "ok": true,
+   "basis": "PDF359 M1 F.T. their positive a"
+  },
+  {
+   "recipe": "WB8227-log-linear-model",
+   "part": "t-target",
+   "response": "bare x=2/3",
+   "expected_marks": "0/2",
+   "design_gives": "0/2 (WO:96)",
+   "ok": true,
+   "basis": "OD-1"
+  }
+ ],
+ "findings": [
+  {
+   "id": "trig-D2-01",
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:50 (no-real P-B1 cell) vs :54; work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json:594,625",
+   "severity": "should-fix",
+   "expected": "One P-B1 rule for the no-real route in the WO table and the JSON, as D1-S03 asked for P-B1/P-M1 ('Align the JSON').",
+   "actual": "D2 tightened JSON P-B1 for the no-real case to 'correct inverse bound/property used in the actual comparison' (:594), and the part misread_policy says 'A generic range fact alone is not B1' (:625). WO:54 also says 'P-B1 requires the actual target comparison or actual inverse verification'. But the WO table no-real cell (:50) still reads 'Correct principal range, or the correct principal inverse value used in a contradiction'. So for (3,-3pi/4) the response '[-pi/2,pi/2]; no real solution' (no comparison) gets 1/3 by the WO table and 0/3 by the JSON/WO:54. The WO reading also makes a rote interval worth B1 only when the hidden outcome is no-real, while D2 makes it worth 0 on the real route.",
+   "evidence": "Diff D1->D2: the no-real WO cell was not edited, but the JSON P-B1 was. The exemplar changed case (:19) is unaffected because its interval is then used in the comparison.",
+   "repair": "Reword the WO:50 no-real cell to match the JSON: 'Correct principal bound used in the actual comparison, or the correct principal inverse value used in a contradiction; a range statement not applied to the target earns no B1'. Add the rote-interval + bare-'no' response (0/3) as a fixture."
+  },
+  {
+   "id": "trig-D2-02",
+   "recipe": "WB8227-trig-rform-equation",
+   "branch": "degree-cycle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md:84",
+   "severity": "should-fix",
+   "expected": "The WO's description of D1-ADAPT-RF-CLASSES agrees with the operative b-M2 rule (WO:68,100), the JSON b-M2 named_adaptation and the register row.",
+   "actual": "WO:84 (unchanged D1 text) still says the source DM1 'is replaced by the explicit class table'. WO:68 says b-M2 uses their own R and alpha, 'not the canonical class table'; JSON says 'complete finite-interval search replaces the source first/second-quadrant-only case'; OWNER-CHECKPOINT.md:35 says the same. A marker reading WO:84 could apply the canonical classes to an inverted-ratio response, which is exactly the D1-S04 defect.",
+   "evidence": "Quoted lines; the 6 class-change tuples have different own and canonical root families.",
+   "repair": "Replace the WO:84 sentence with the register wording: complete root search in the learner's own shifted interval (own R and alpha), with the class table describing canonical instances only."
+  },
+  {
+   "id": "trig-D2-03",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d2-trig-dispositions.json:149",
+   "severity": "should-fix",
+   "expected": "Dispositions do not attribute planner or reviewer choices to the owner.",
+   "actual": "The calc2-D1-07 disposition says 'Retained the owner-fixed narrow domain'. No owner decision (OD-1..OD-5) fixes the log domain. m in {2,3} was prescribed by our step-3 REPAIR-PROMPT.md:74 (calc2-08), and Vitalis has not yet approved D1 or D2. The D1 disposition file had no such label.",
+   "evidence": "grep: the only 'owner-fixed' string in the workspace outside history. It is not repeated in OWNER-CHECKPOINT, the register or any work order, and it changes no marking, so this is graded below design-blocking. The label is still the kind of owner attribution this check is meant to catch.",
+   "repair": "Reword to 'Retained the reviewer-prescribed (step-3 calc2-08) narrow domain, disclosed at WO:74,80; owner approval pending'."
+  },
+  {
+   "id": "trig-D2-04",
+   "recipe": "WB8227-trig-rform-equation",
+   "branch": "degree-cycle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trig-rform-equation.md:106; work/nam-8227-nsscas-2026/workbench/planning/d2/trig-d2-fixtures.json premature_rounding_flip_sets, phase_via_R_6sf_cases; trig-d2-check.py:62-63,73-75",
+   "severity": "later-test",
+   "expected": "Fixtures cover the plausible premature-rounding paths, including those where alpha is carried at its requested 2-dp part-(a) value, and the 6-s.f. phase route that actually flips.",
+   "actual": "Every recorded set uses exact alpha except the alpha-1dp path. Missing: R at 4 s.f. with alpha 2dp, 3 flips (1,3,-3),(3,1,-3),(3,1,3), which is the D1 '3 with R at 4 s.f.'. With exact alpha the R_4sf set is empty, so WO:106's 'amplitude at 3/4 significant figures' records no 4-s.f. case. Also missing: the acos route with alpha written to 2 dp (35; adds (1,3,0),(1,4,0)) and ratio 3 s.f. with alpha 2dp (10, a subset of the 14, with its own premature values). For (1,3) the 6-s.f. fixture uses acos(1/3.16228)=71.565065 -> 71.57, which does not flip; the flipping route is asin(3/3.16228)=71.564924 -> 71.56.",
+   "evidence": "Own code trig/rform_d2.py (Decimal half-up on 70-digit mpmath values).",
+   "repair": "At E/F, add the alpha-at-2dp variants and the (1,3) asin route, and state for each path whether alpha is exact or the 2-dp part-(a) value."
+  },
+  {
+   "id": "trig-D2-05",
+   "recipe": "WB8227-trig-rform-equation",
+   "branch": "degree-cycle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d2-report.md:82; work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d2-trig-dispositions.json:231; work/nam-8227-nsscas-2026/workbench/planning/d2/trig-d2-fixtures.json review_comparison",
+   "severity": "note",
+   "expected": "The rounding reconciliation names the path difference.",
+   "actual": "The report says ratio 3 s.f. gives '14 flips by two independent calculations, not the review's 10', and the dispositions say 'review count10 was not reproduced'. Both numbers are correct for different paths. 14 is c/R at 3 s.f. with exact alpha (Codex). 10 is c/R at 3 s.f. with alpha at its requested 2 dp: our D1 scratch path ratio3sf_a2, but check-trig.json (trig-09 residual, trig-D1-03) wrote only 'c/R at 3 s.f.', which is our own documentation gap. The fixture file's own wording ('agreement is not claimed') is accurate. 'Two independent calculations' is not visible in the persisted script: trig-d2-check.py computes the path once with mpmath. The coupled acos/asin-from-R3 path gives 33 for both reviews, and the isolated alpha path gives 34 (Codex).",
+   "evidence": "Recomputations above: 14 (alpha exact) and 10 (alpha 2dp), same tuple and value sets as each side.",
+   "repair": "Optional: reword the report and disposition to 'ratio 3 s.f.: 14 with exact alpha; 10 with alpha at 2 dp (review path)'."
+  },
+  {
+   "id": "trig-D2-06",
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-principal-inverse.md:47",
+   "severity": "note",
+   "expected": "Fixture examples in the -3pi/4 paragraph use that instance.",
+   "actual": "The paragraph headed by sin^-1(3x)=-3pi/4 illustrates the implicit comparison with '2pi/3>pi/2'. The rule is right (WO:88 states it generically), but for this instance the example should be -3pi/4<-pi/2.",
+   "evidence": "Quoted line.",
+   "repair": "Use -3pi/4<-pi/2, or mark the example as a different target."
+  },
+  {
+   "id": "trig-D2-07",
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:28; work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json:581",
+   "severity": "note",
+   "expected": "The Bloom rationale names the criteria as D2 allocates them.",
+   "actual": "It still says 'P-M1 applies it to an uncued target to decide solve or reject'. On the D2 real route the decision evidence is P-B1, and P-M1 is forward recovery (WO:51; JSON:602). Apply 3 is unaffected.",
+   "evidence": "Quoted lines.",
+   "repair": "Say: 'P-B1/P-M1 together make the range decision (B1 the actual-target property, M1 recovery or obstruction), P-A1 completes it'."
+  },
+  {
+   "id": "trig-D2-08",
+   "recipe": "WB8227-log-linear-model",
+   "branch": "gradient-target",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-log-linear-model.md:93; work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json:1267",
+   "severity": "note",
+   "expected": "U-M1 is no narrower than the official 'into their log-equation or the original equation' (2025 PDF359).",
+   "actual": "'their own previously established part-(a) log-line, or the original/exponent equation' could be read to exclude a correct log-line written for the first time in (b), for example when (a) showed only log2 a=3. That is 'their log-equation' officially. The 'exponent equation' clause probably covers it, so this is a reading risk, not a wrong rule.",
+   "evidence": "Rendered PDF359 comment and table.",
+   "repair": "Write 'their log-equation (from (a), or a correct one written in (b)) or the original/exponent equation'. Keep the 'newly dropped prefactor' exclusion."
+  }
+ ],
+ "verified_ok": [
+  "D1-S03: real-route P-B1 requires the actual target compared with [-pi/2,pi/2], or principal-inverse verification. Rote interval + forward + x = 2/3; actual target compared = 3/3; bare = 0/3. JSON P-M1 agrees with the WO (real route).",
+  "D1-S04: b-M2 is judged on the learner's own complete transformed root set in (alpha_their, 360+alpha_their). Endpoint, single-root and no-root behaviour are stated in WO:104 and the JSON. The 6 class changes and 8 c=a endpoints are independently re-enumerated (same tuples), and all 14 fixture root values match.",
+  "D1-S13: U-M1 credits consistent substitution into their own earlier line without the prefactor, and denies a prefactor newly dropped in (b). This matches the 2025 PDF359 'into their log-equation' F.T. The worked 3/5 sample is correct (x=10/3).",
+  "D1-S23 applied: misread lines are present in all three WOs and all six JSON parts, consistent with subject-rules.md:67.",
+  "D1-S25: one classification string and revision 0.1.2 across the three WOs, three exemplars, trig-model-design.json, pilot-design.json and part-evidence-register.json.",
+  "The rows D1-ADAPT-PI-RANGE3, D1-ADAPT-RF-CLASSES and D1-INTERPRET-RF-HENCE are described accurately against rendered pages (Cambridge ms PDF4; 2022 report PDF313/312; 2022 P2 PDF8). None is called an owner decision.",
+  "All 12 paper exemplars (3 R-form, 3 principal, 6 log) recompute exactly. So do the D2 F.T. fixture numbers ((1,3,2), (1,2,1)), the 299.55 tie and the log 10/3 fixture.",
+  "Six recorded rounding flip sets (38/38/15/14/34/33) reproduce exactly, tuple by tuple and value by value. The 4 half-up ties reproduce. Paths at or above requested precision give 0 flips.",
+  "Rounding reconciliation: ratio 3 s.f. gives 14 with exact alpha (Codex) and 10 with alpha at the requested 2 dp (D1). Coupled phase and beta from R3 give 33 for both; isolated alpha from R3 gives 34. R 3 s.f. gives 15 either way. R 4 s.f. gives 0 with exact alpha and 3 with alpha at 2 dp.",
+  "No inverted-ratio or radian-phase own root coincides with a canonical root at 1 dp on any of the 58 tuples, so b-A1 c.a.o. cannot be earned through a wrong phase.",
+  "All in-scope current files match plan-manifest.json (sha256 2b9e53a5...43f2)."
+ ],
+ "not_checked": [
+  "Codex's trig-d2-check.py and check-trig-math.mjs were read, not run. Independent code was used instead (SCRATCH/trig/rform_d2.py, pi_log_d2.py).",
+  "KaTeX/markdown syntax of the D2 text was not re-run.",
+  "2021 PDF236, 2025 PDF355 (general hence rule) and 2025 P2 Q6 / 2023 P2 Q4 native papers were not re-rendered in D2. D1 rendered them, and the text citing them is unchanged.",
+  "Log graph assets and graph-intercept marking are unchanged in D2 and were not re-reviewed beyond exemplar arithmetic.",
+  "Cross-scope pointer, not reviewed: calculus-design.json:2087,2129,3192,3233 (and the pilot-design/part-register copies) cite WB8227-motion-integration@0.1.1 criterion IDs in bloom_rationale, while live IDs are @0.1.2. This is for the calc agent.",
+  "Runtime marker, generator and renderer behaviour (stage E/F)."
+ ]
+}

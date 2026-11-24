@@ -1,0 +1,111 @@
+# Worked exemplar — WB8227-trig-rform-equation, D1
+
+NSSCAS Mathematics 8227, December 2020; Grade 12. Owner Vitalis; PLANNER Codex, 23 November 2026. Proposed version0.1.1, classification8227-stage-d-d1-0.1.1. Original stage-D paper illustrations; no runtime items. D1 repair awaits Claude’s focused short check, then Vitalis approval.
+
+All three cases belong to `degree-cycle`, with 7 marks each. Conversion and the hence-equation remain connected. The new normal and boundary avoid the D0 rounding and inverse-ratio collisions. All current solutions retain guard digits until their requested final accuracy. Show only each question before submission.
+
+## Normal — positive target requiring a wrap
+
+Question: (a) Express $2\sin\theta+3\cos\theta$ as $R\sin(\theta+\alpha)$, with $R>0$ and $0^\circ<\alpha<90^\circ$. Give exact $R$ and $\alpha$ to two decimal places. [3] (b) Hence solve $2\sin\theta+3\cos\theta=1$ for $0^\circ<\theta<360^\circ$, giving the angles to one decimal place. [4]
+
+1. Action: expand the requested shifted sine. Reason: an identity must have matching coefficients. Result:
+   
+
+$$
+R\cos\alpha=2,\qquad R\sin\alpha=3.
+$$
+
+
+2. Action: square/add and divide. Reason: $\sin^2\alpha+\cos^2\alpha=1$ and the requested phase is acute. Result:
+   
+
+$$
+R=\sqrt{13},\quad\alpha=\tan^{-1}\!\left(\frac32\right)=56.309932\ldots^\circ\approx56.31^\circ.
+$$
+
+
+   The amplitude, method and phase earn a-B1/a-M1/a-A1:3 marks.
+3. Action: use that result in the original equation. Reason: the “Hence” instruction requires the prior representation. Result:
+   
+
+$$
+\sin(\theta+\alpha)=\frac1{\sqrt{13}},\quad
+   56.309932\ldots^\circ<\theta+\alpha<416.309932\ldots^\circ.
+$$
+
+
+   The calculator principal value is $\beta=16.102113\ldots^\circ$. Since $0<\beta<\alpha$, it is outside the shifted interval. The correct transformed angles are $180^\circ-\beta=163.897886\ldots^\circ$ and $360^\circ+\beta=376.102113\ldots^\circ$.
+4. Action: subtract the unrounded phase and test the original bounds. Result:
+   
+
+$$
+\theta=107.587953\ldots^\circ\quad\text{or}\quad319.792181\ldots^\circ.
+$$
+
+
+   Final answers: $107.6^\circ$ and $319.8^\circ$. The reduction, shifted two-root search and both accurate roots earn b-M1/b-M2/b-A1/b-A2:4 marks. Total7.
+
+Independent checks use the half-angle polynomial $4t^2-4t-2=0$, where $t=\tan(\theta/2)$, and direct original-equation substitution. It is separate from the phase construction; both unrounded roots give one. The alpha and beta rounding choices do not flip either final root in this normal case.
+
+## Changed — negative target
+
+Question: (a) Express $4\sin\theta+3\cos\theta$ as $R\sin(\theta+\alpha)$ with the same restrictions, exact $R$ and phase to two decimal places. [3] (b) Hence solve $4\sin\theta+3\cos\theta=-2$ for $0^\circ<\theta<360^\circ$, to one decimal place. [4]
+
+Expansion gives $R\cos\alpha=4$ and $R\sin\alpha=3$. Squaring/adding and dividing give
+
+
+$$
+R=5,\qquad\alpha=\tan^{-1}\!\left(\frac34\right)=36.869897\ldots^\circ\approx36.87^\circ.
+$$
+
+
+That earns3 marks. Now use the prior representation:
+
+
+$$
+\sin(\theta+\alpha)=-\frac25,\qquad
+36.869897\ldots^\circ<\theta+\alpha<396.869897\ldots^\circ.
+$$
+
+
+Here $\beta=-23.578178\ldots^\circ$. The transformed angles $180^\circ-\beta=203.578178\ldots^\circ$ and $360^\circ+\beta=336.421821\ldots^\circ$ lie in the shifted interval. Subtracting the phase gives
+
+
+$$
+\theta=166.708280\ldots^\circ\quad\text{or}\quad299.551923\ldots^\circ,
+$$
+
+
+so the final answers are $166.7^\circ$ and $299.6^\circ$. Both substitute to negative two in the original equation; all 4equation marks are earned, total7. The negative target changes the sine-branch selection without changing the Bloom proposal.
+
+## Admitted boundary — zero target, non-symmetric coefficients
+
+Question: (a) Express $\sin\theta+4\cos\theta$ as $R\sin(\theta+\alpha)$ with the same restrictions, exact $R$ and phase to two decimal places. [3] (b) Hence solve $\sin\theta+4\cos\theta=0$ for $0^\circ<\theta<360^\circ$, to one decimal place. [4]
+
+Coefficient matching gives $R\cos\alpha=1$, $R\sin\alpha=4$, so
+
+
+$$
+R=\sqrt{17},\qquad\alpha=\tan^{-1}(4)=75.963756\ldots^\circ\approx75.96^\circ.
+$$
+
+
+These earn3 marks. The reduced equation is $\sin(\theta+\alpha)=0$, with $75.963756\ldots^\circ<\theta+\alpha<435.963756\ldots^\circ$. Only the transformed roots $180^\circ$ and $360^\circ$ lie inside. Hence
+
+
+$$
+\theta=104.036243\ldots^\circ\quad\text{or}\quad284.036243\ldots^\circ,
+$$
+
+
+which give $104.0^\circ$ and $284.0^\circ$ to one decimal place [4 marks]. Direct substitution cancels sine and cosine terms exactly. Total7. Unlike the retired equal-coefficient boundary, the inverted phase ratio does not give the right phase.
+
+## Rejected cases, precision and marking evidence
+
+The in-grid tuple $(2,3,3)$ is rejected because $c=b$ gives an excluded endpoint root. The tuple $(1,1,2)$ fails feasibility. Scalar duplicate $(2,2,0)$ fails primitive normalisation, and all equal-coefficient tuples are now excluded diagnostically: reversing the ratio would otherwise remain invisible. The eight named rounding tuples—including the retired normal $(3,4,2)$—are outside the D1pool and retained only as later negative/rounding fixtures.
+
+For that retired rounding fixture, the exact second root $330.448076\ldots^\circ$ rounds to $330.4^\circ$, but rounding both intermediates to two decimals gives $360+23.58-53.13=330.45$, rounded to $330.5^\circ$. Valid method marks survive; that accuracy mark does not. D1’s new normal avoids this knife edge. Near-two-decimal phase cases remain explicit E/F fixtures.
+
+Under OD-1, a bare correct amplitude/phase earns0/3 and a bare correct root pair earns0/4; feedback recognises correctness and asks for the method. Full conversion plus the correct reduced equation and only $107.6^\circ$ earns5/7. Keeping the unwrapped $-40.2^\circ$ instead of $319.8^\circ$ loses the shifted-two-root method and its missing correct-root accuracy. If the correct pair and uncancelled $-40.2^\circ$ are all submitted, the coterminal outside value counts as an extra and b-A2 is lost. A complete non-hence route earns0for(b) because no R-form SC is printed; another question’s SC1 is not imported. Ambiguous digits request clarification with marking pending.
+
+There are58 diagnostic full tuples,12 conversion prompts,10 phase subdecisions and three root-selection classes; these are not58distinct reasoning types. No-repeat follows both assessed part keys. The independent finite-domain checker, original-equation residuals and actual rounding fixtures are saved separately; no runtime generator or marker has been run.

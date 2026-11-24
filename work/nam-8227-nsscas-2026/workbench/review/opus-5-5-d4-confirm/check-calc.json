@@ -1,0 +1,524 @@
+{
+ "label": "calc",
+ "scope": [
+  "WB8227-stationary-inflexion and WB8227-implicit-normal: work orders, exemplars, calculus-design.json/pilot-design.json/part-evidence-register.json entries, planning/d4/calculus-*.json|py, repair-calculus-owned.py, checks/plan-repair-d4-calc-dispositions.json, MR03 (subject-rules.md:67) and shared-misread-policy.json as applied to these 8 parts; D3->D4 diffs against planning/history/d3-candidate"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+   "page": 3,
+   "what": "Penalties MR-1: deducted from A or B marks when data genuinely misread and object and difficulty unaltered; all A and B become follow-through; own figures = accuracy error. Labelled comparable in the calc files."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D3-S01",
+   "related_agent_ids": [
+    "calc-D3-07"
+   ],
+   "codex_claim": "Calc WOs copy the shared line separating binding OD-6 from proposed MR03-OPS-D4; exemplars label unit/order/ledger proposed",
+   "verdict": "repaired",
+   "evidence": "work-orders/WB8227-implicit-normal.md:128 and WB8227-stationary-inflexion.md:102 contain shared work_order_line byte-for-byte (own check); implicit WO:142 \"disclosed planner interpretations ... not extra owner decisions\"; exemplars implicit:141,:155 and stationary:123 say only the principle is owner-decided; all 8 calc part policies have owner_principle_id OD-6, operational_status \"proposed ... pending Vitalis exact-manifest approval\"; criteria qualifiers now \"apply the proposed MR03 operational ledger, pending exact-manifest approval\". Grep of the 2 WOs, 2 exemplars and the 2 JSON recipes finds no operational rule labelled owner-decided (only the pre-existing \"Visual inclusion remains owner-approved\" at WO:110/:136, unchanged since D3 and outside OD-6).",
+   "residual": "none in calc scope"
+  },
+  {
+   "finding_id": "D3-S02(a)",
+   "related_agent_ids": [
+    "calc-D3-07"
+   ],
+   "codex_claim": "First-use part with no A/B no longer makes the misread free: stationary P1/P3+C1/C2 gross 4/6, net 3/6 via C2",
+   "verdict": "repaired",
+   "evidence": "stationary WO:116,:122; exemplar:129,:131; oracle edge stationary-no-AB-in-first-use-part. Own sympy: base x^3-6x^2+9x+1 is admitted (a=1,h=2,r=1,c=3); slip 6x^2-24x+18 has roots 1,3; misread y 11,7, learner 10,6; P1,P3,C1,C2 gross 4; first A/B on the datum in question order is C2 -> 3/6.",
+   "residual": "\"A/B on that datum\" works only as a part-level rule (C2 types do not depend on the constant); see calc-D4-03 (note)."
+  },
+  {
+   "finding_id": "D3-S02(b)",
+   "related_agent_ids": [
+    "calc-D3-03"
+   ],
+   "codex_claim": "Gross evidence/dependencies/www resolved before net MR; eligible k2->3 G2 deduction leaves G5 earned: 4/5",
+   "verdict": "repaired",
+   "evidence": "implicit WO:140 (bold: \"A deducted G2 or S2 remains earned evidence for G5, S4, DM and www; the deduction does not cascade\"), :151 (4/5, cascade to 3/5 forbidden); stationary WO:116 (\"All dependency and www checks use gross evidence before the net penalty\"); dependency_basis added to all 8 parts in calculus-design.json, identical in pilot-design.json; exemplar implicit:155. Own case 1: G2 deducted, G5 www dependency on gross G2 -> 4/5 (cascade 3/5). Own case 2 (stationary, built): flat x^3-3x^2+3x-3, constant -3 read -2, WO:112 coefficient slip f'=2(x-1)^2, y slip: gross I2,I4,I5,I6=4, deduction falls on I4 whose evidence I5 uses and I6 depends on I5; design text gives 3/6, a literal cascade 1/6.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D3-S02(c) / calc-D3-02",
+   "related_agent_ids": [
+    "calc-D3-02"
+   ],
+   "codex_claim": "C4->5 ineligible once, canonical 9/9; a3->4 ineligible throughout, canonical 5/9 (m=-8, m_perp=1/8); no reopening",
+   "verdict": "repaired",
+   "evidence": "implicit WO:142,:148,:149; exemplar:151,:153; oracle edges. Own criterion-by-criterion marking: (i) product route: C enters only S3 (\"2yy' and zero constant derivative\"); d(5)/dx=0, target and H/N parts are C-free -> 9/9. (ii) a=4: y'=-8e^{2x}y/(4e^{2x}+2y), m=-8, m_perp=1/8, y+4=x/8; P off misread curve, target mismatch; S1(M) S3(B) H1(M) N1(M) N2(DM) earned, S2 S4 H2 N3 lost -> 5/9; the one surviving accuracy mark is S3. Once-only eligibility stated at WO:142 and MR03-OPS, enforced for a single datum_id by misread_ledger.py:25-26.",
+   "residual": "later-test: (i) holds only on the product route (calc-D4-01); the \"fresh datum\" precedent at WO:153 lets the same visual misread re-enter as an eligible datum in (b) (calc-D4-02)."
+  },
+  {
+   "finding_id": "D3-S02(e)",
+   "related_agent_ids": [
+    "calc-D3-05"
+   ],
+   "codex_claim": "Eligible F.T. overrides not-F.T./c.a.o. (shared rule)",
+   "verdict": "repaired",
+   "evidence": "Every calc criterion with c.a.o./no-F.T./canonical wording carries the OD-6-only follow-through pointer in JSON: G5 (\"no final-accuracy F.T.\"), H2, N3 (\"noF.T.\"), C2 (\"C.A.O.\"), P4, I3, I6; stationary WO:90 states the exception explicitly; implicit exemplar:125 states it for N3; shared line at WO:128/:102. S4 keeps \"no follow-through into given answer\" plus the fixed-target sentence, consistent with WO:144 and MR09 (an eligible misread must leave the actual target valid, so the override never reaches S4).",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D3-S02(f)",
+   "related_agent_ids": [],
+   "codex_claim": "Feedback sentence added",
+   "verdict": "repaired",
+   "evidence": "\"Practice feedback names the misread.\" in shared line (WO implicit:128, stationary:102), implicit WO:140, stationary WO:116, and feedback field of all 8 calc part policies (also all 6 motion parts) in calculus-design.json, pilot-design.json and part-evidence-register.json.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "calc-D3-05",
+   "related_agent_ids": [
+    "calc-D3-05"
+   ],
+   "codex_claim": "Proof-target sentence removed from 12 nonproof criteria; kept on show-derivative",
+   "verdict": "repaired",
+   "evidence": "JSON diff D3->D4: sentence removed from G2,G3,G5,H2,N3,P2,P4,C2,I1,I3,I4,I6; retained on S2,S3,S4 only. WO:144 limits it to proof criteria.",
+   "residual": "note calc-D4-04: the gradient-only part's new misread_policy.eligibility_notes carries proof/later-part text."
+  },
+  {
+   "finding_id": "calc-D3-06",
+   "related_agent_ids": [
+    "calc-D3-06"
+   ],
+   "codex_claim": "Locators corrected in subject dispositions",
+   "verdict": "repaired",
+   "evidence": "checks/plan-repair-d4-calc-dispositions.json gives exemplars/WB8227-stationary-inflexion.md:111 (Apply3 sentence, verified) and work-orders/WB8227-implicit-normal.md:112,:114 (S3/S4 alternative-proof paragraphs, verified); root report :130 defers to these. Stationary WO:110 now lists calculus-misread-oracle.json. All 13 hashes in the dispositions file and both owned-recipe object hashes match current bytes.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "calc-D3-04",
+   "related_agent_ids": [
+    "calc-D3-04"
+   ],
+   "codex_claim": "Retained E/F fixture; +3x->+2x canonical 2/6 added",
+   "verdict": "repaired",
+   "evidence": "stationary WO:124 keeps it as an E/F item; no coefficient domain added. Own sympy: x^3-3x^2+2x-3 has stationary x=1+-sqrt(3)/3 (max/min), object changed; canonical I2+I5=2/6.",
+   "residual": "later-test as before (carried)"
+  },
+  {
+   "finding_id": "calc-D3-01",
+   "related_agent_ids": [
+    "calc-D3-01"
+   ],
+   "codex_claim": "Point-on-curve guard stated as disclosed planner interpretation",
+   "verdict": "repaired",
+   "evidence": "implicit WO:142 lists the four eligibility conditions and labels them planner interpretations.",
+   "residual": "note calc-D4-05: our own D3 statement that q misreads always leave P off the curve is inaccurate."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "WB8227-implicit-normal:gradient:normal canonical",
+   "claimed": "C=4, m=-24/5, normal slope 5/24, target -6*exp(2*x)*y/(3*exp(2*x)+2*y)",
+   "computed": "C=4, m=-24/5 (explicit-root -24/5), normal 5/24",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:gradient:changed canonical",
+   "claimed": "C=-2, m=9, normal slope -1/9, target -9*exp(3*x)*y/(3*exp(3*x)+2*y)",
+   "computed": "C=-2, m=9 (explicit-root 9), normal -1/9",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:gradient:boundary canonical",
+   "claimed": "C=5, m=-10, normal slope 1/10, target -12*exp(3*x)*y/(4*exp(3*x)+2*y)",
+   "computed": "C=5, m=-10 (explicit-root -10), normal 1/10",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:normal:normal canonical",
+   "claimed": "C=4, m=-24/5, normal slope 5/24, target -6*exp(2*x)*y/(3*exp(2*x)+2*y)",
+   "computed": "C=4, m=-24/5 (explicit-root -24/5), normal 5/24",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:normal:changed canonical",
+   "claimed": "C=-2, m=9, normal slope -1/9, target -9*exp(3*x)*y/(3*exp(3*x)+2*y)",
+   "computed": "C=-2, m=9 (explicit-root 9), normal -1/9",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:normal:boundary canonical",
+   "claimed": "C=5, m=-10, normal slope 1/10, target -12*exp(3*x)*y/(4*exp(3*x)+2*y)",
+   "computed": "C=5, m=-10 (explicit-root -10), normal 1/10",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:two-extrema:normal canonical",
+   "claimed": "[[-1, 4], [1, 0]] ['maximum', 'minimum'] poly x**3 - 3*x + 2",
+   "computed": "[[-1, 4], [1, 0]] ['maximum', 'minimum']",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:two-extrema:changed canonical",
+   "claimed": "[[-1, -16], [3, 16]] ['minimum', 'maximum'] poly -x**3 + 3*x**2 + 9*x - 11",
+   "computed": "[[-1, -16], [3, 16]] ['minimum', 'maximum']",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:two-extrema:boundary canonical",
+   "claimed": "[[-5, -104], [1, 112]] ['minimum', 'maximum'] poly -2*x**3 - 12*x**2 + 30*x + 96",
+   "computed": "[[-5, -104], [1, 112]] ['minimum', 'maximum']",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:flat-classification:normal canonical",
+   "claimed": "[1, -2] stationary inflexion poly x**3 - 3*x**2 + 3*x - 3",
+   "computed": "[[1, -2]] ['stationary inflexion']; f'(h-1)=3, f'(h+1)=3",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:flat-classification:changed canonical",
+   "claimed": "[-1, 2] minimum poly x**4 + 4*x**3 + 6*x**2 + 4*x + 3",
+   "computed": "[[-1, 2]] ['minimum']; f'(h-1)=-4, f'(h+1)=4",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:flat-classification:boundary canonical",
+   "claimed": "[2, -4] maximum poly -2*x**4 + 16*x**3 - 48*x**2 + 64*x - 36",
+   "computed": "[[2, -4]] ['maximum']; f'(h-1)=8, f'(h+1)=-8",
+   "ok": true
+  },
+  {
+   "case": "implicit C4->5 (a) product route: C enters only S3 (d/dx const = 0); target unchanged",
+   "claimed": "9/9 canonical, ineligible (P off misread curve)",
+   "computed": "P on misread curve=False; product-route derivative equals target=True; canonical gross 9/9",
+   "ok": true
+  },
+  {
+   "case": "implicit a3->4 carried through (a)-(c)",
+   "claimed": "y'=-8e^{2x}y/(4e^{2x}+2y), m=-8, m_perp=1/8, y+4=x/8; S1,S3,H1,N1,N2 = 5/9",
+   "computed": "y'=-4*y*exp(2*x)/(y + 2*exp(2*x)); m=-8; m_perp=1/8; P on misread curve=False; target mismatch=True; canonical total 5/9; surviving accuracy mark: S3 (B1)",
+   "ok": true
+  },
+  {
+   "case": "implicit gradient-only k2->3 (eligible)",
+   "claimed": "m=-36/5; gross 5, net 4/5, deduct G2, G5 kept",
+   "computed": "P on misread curve=True; m=-36/5; net 4/5 deduct G2",
+   "ok": true
+  },
+  {
+   "case": "implicit extended, displayed numerator 6->8 in (b) only",
+   "claimed": "m=-32/5, m_perp=5/32, 8/9, deduct H2",
+   "computed": "m=-32/5, m_perp=5/32, net 8/9, deduct H2",
+   "ok": true
+  },
+  {
+   "case": "implicit gradient-only (1,2,-3) k2->3 + omitted y' in y^2 term",
+   "claimed": "15; 2/5 (deduct G2)",
+   "computed": "C=6, m=15, net 2/5 deduct G2",
+   "ok": true
+  },
+  {
+   "case": "implicit gradient-only a3->2 (P off curve, ineligible)",
+   "claimed": "-8/3; 3/5 canonical",
+   "computed": "m=-8/3; P on curve=False; canonical G1,G3,G4 = 3/5",
+   "ok": true
+  },
+  {
+   "case": "implicit gradient-only k2->1 (easier, ineligible)",
+   "claimed": "-12/5; 3/5",
+   "computed": "m=-12/5",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:gradient:normal misread k->3",
+   "claimed": "-36/5",
+   "computed": "-36/5 (explicit root -36/5); P on curve True",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:gradient:changed misread k->2",
+   "claimed": "6",
+   "computed": "6 (explicit root 6); P on curve True",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:gradient:boundary misread k->2",
+   "claimed": "-20/3",
+   "computed": "-20/3 (explicit root -20/3); P on curve True",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:normal:normal misread displayed numerator 6->8",
+   "claimed": "('-32/5', '5/32')",
+   "computed": "(-32/5, 5/32)",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:normal:changed misread displayed numerator 9->11",
+   "claimed": "('11', '-1/11')",
+   "computed": "(11, -1/11)",
+   "ok": true
+  },
+  {
+   "case": "WB8227-implicit-normal:normal:boundary misread displayed numerator 12->14",
+   "claimed": "('-35/3', '3/35')",
+   "computed": "(-35/3, 3/35)",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:two-extrema:normal misread constant 2->3",
+   "claimed": "[[-1, 5], [1, 1]]",
+   "computed": "[[-1, 5], [1, 1]]",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:two-extrema:changed misread constant -11->-10",
+   "claimed": "[[-1, -15], [3, 17]]",
+   "computed": "[[-1, -15], [3, 17]]",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:two-extrema:boundary misread constant 96->97",
+   "claimed": "[[-5, -103], [1, 113]]",
+   "computed": "[[-5, -103], [1, 113]]",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:flat-classification:normal misread constant -3->-2",
+   "claimed": "[[1, -1]]",
+   "computed": "[[1, -1]]",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:flat-classification:changed misread constant 3->4",
+   "claimed": "[[-1, 3]]",
+   "computed": "[[-1, 3]]",
+   "ok": true
+  },
+  {
+   "case": "WB8227-stationary-inflexion:flat-classification:boundary misread constant -36->-35",
+   "claimed": "[[2, -3]]",
+   "computed": "[[2, -3]]",
+   "ok": true
+  },
+  {
+   "case": "stationary two-extrema +2 read +3",
+   "claimed": "(-1,5),(1,1); 5/6 deduct P2",
+   "computed": "[(-1, 5), (1, 1)]; 5/6 deduct P2",
+   "ok": true
+  },
+  {
+   "case": "stationary flat -3 read -2",
+   "claimed": "(1,-1) inflexion; 5/6 deduct I1",
+   "computed": "roots [1], y=-1, signs 3,3; 5/6 deduct I1",
+   "ok": true
+  },
+  {
+   "case": "stationary deferred-accuracy +1 read +7 with derivative and y slips",
+   "claimed": "gross 4/6, net 3/6 (C2)",
+   "computed": "roots [1, 3]; misread y [11, 7], canonical y [5, 1]; part-level net 3/6 (C2); criterion-level net 4/6 (None)",
+   "ok": true
+  },
+  {
+   "case": "stationary flat +3x read +2x (object changed)",
+   "claimed": "2 irrational extrema; canonical 2/6 (I2,I5)",
+   "computed": "roots [1 - sqrt(3)/3, sqrt(3)/3 + 1] types ['maximum', 'minimum']; canonical I2+I5 = 2/6",
+   "ok": true
+  },
+  {
+   "case": "stationary flat -3 read -2 + WO:112 coefficient slip f'=2(x-1)^2 + y slip (built D3-S02b case)",
+   "claimed": "design rule: deduct first earned A/B on datum (I4), dependencies on gross -> 3/6",
+   "computed": "root [1], learner signs (2, 2) (canonical (3, 3)); gross 4, deduct I4 -> net 3; literal cascade I4->I5->I6 would give 1; criterion-level 'on that datum' gives 4",
+   "ok": true
+  },
+  {
+   "case": "implicit a3->4 in (a) then displayed denominator 3 read 4 in (b) (datum-identity probe)",
+   "claimed": "not stated",
+   "computed": "m=-6, m_perp=1/6, y+4=(1/6)x; fresh-datum reading 6/9, same-datum reading 5/9",
+   "ok": true
+  },
+  {
+   "case": "implicit C4->5, divided route (3e^{2x}+y=5/y)",
+   "claimed": "9/9 stated without route",
+   "computed": "learner y'=-6y^2e^{2x}/(y^2+5) vs canonical /(y^2+4); back-substituting 5=3e^{2x}y+y^2 reaches the target; strict canonical S3/S4 -> 7/9; explicit-root route sqrt(9e^{4x}+20) vs +16 -> as low as 6/9; product route 9/9",
+   "ok": false
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-implicit-normal",
+   "branch": "gradient / normal",
+   "claimed": "40 raw; 27 point tasks; 23 curves; 8 proof identities; strict 23 / 8",
+   "computed": "40 / 27 / 23 / 8 (own enumeration)",
+   "notes": "D3 and D4 domain-audit JSON identical; WO domain line identical; no capacity/marks change in JSON diff"
+  },
+  {
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "two-extrema",
+   "claimed": "540 raw / 60 shapes / 30 classes",
+   "computed": "540 / 60 / 30",
+   "notes": "unchanged"
+  },
+  {
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "flat-classification",
+   "claimed": "256 raw / 16 classes; 128 inflexion, 64 min, 64 max",
+   "computed": "256 / 16; 128/64/64",
+   "notes": "unchanged"
+  },
+  {
+   "recipe": "both",
+   "branch": "all",
+   "claimed": "marks 5; 4+2+3; 4+2; 3+3; all Bloom 3",
+   "computed": "own markdown extraction of WO parts tables equals JSON (marks, Bloom, criterion suffixes) and is byte-identical to D3; JSON D3->D4 diff shows only qualifier text, criterion status, version, recipe status and the new dependency_basis field",
+   "notes": "pilot-design.json copies equal calculus-design.json apart from normalisation keys; origin_design_input_sha256 75d02076... matches calculus-design.json"
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "implicit-normal",
+   "part": "normal (a)-(c)",
+   "response": "C=4 read as 5 in (a), product route, perfect proof; displayed derivative used in (b),(c)",
+   "expected_marks": "9/9 (ineligible, canonical; only S3 touches C and d(5)/dx=0)",
+   "design_gives": "9/9",
+   "ok": true,
+   "basis": "WO :142/:148; criteria S1-S4,H1-H2,N1-N3 (WO :90-:98)"
+  },
+  {
+   "recipe": "implicit-normal",
+   "part": "normal (a) divided route",
+   "response": "C=4 read as 5 in (a), divided route 3e^{2x}+y=5/y -> y'=-6e^{2x}y^2/(y^2+5), back-substitute 5=3e^{2x}y+y^2 -> target; (b),(c) canonical",
+   "expected_marks": "single stated outcome",
+   "design_gives": "unstated: fixture says 9/9 without naming the route; canonical marking of S3/S4 on this route gives about 7/9, a follow-through reading 9/9",
+   "ok": false,
+   "basis": "WO :112-:114 (divided route maps S1-S4), exemplar :133 shows C in 4/y and in the back-substitution; WO :148 \"complete proof still establishes the actual target canonically\""
+  },
+  {
+   "recipe": "implicit-normal",
+   "part": "normal (a)-(c)",
+   "response": "a=3 read as 4 in (a); own derivative carried to (b),(c)",
+   "expected_marks": "5/9: S1(M) S3(B) H1(M) N1(M) N2(DM); S2,S4,H2,N3 = 0",
+   "design_gives": "5/9",
+   "ok": true,
+   "basis": "WO :90-:98 criteria; :142 ineligible-persists; own-working method credit retained"
+  },
+  {
+   "recipe": "implicit-normal",
+   "part": "gradient-only",
+   "response": "k=2 read as 3, complete correct work (m=-36/5)",
+   "expected_marks": "4/5 (G2 deducted; G5 www dependency tested on gross G2)",
+   "design_gives": "4/5; WO :140 bold, :151; JSON dependency_basis; exemplar :155",
+   "ok": true,
+   "basis": "D3-S02(b) net-penalty rule; literal cascade would give 3/5"
+  },
+  {
+   "recipe": "implicit-normal",
+   "part": "(b),(c)",
+   "response": "proof 4/4; displayed numerator 6 read as 8 in (b); FT normal",
+   "expected_marks": "8/9",
+   "design_gives": "8/9 (H2)",
+   "ok": true,
+   "basis": "Ledger slot differs if the displayed formula is treated as first used in (a) (S2) but the total is the same (8/9)"
+  },
+  {
+   "recipe": "stationary-inflexion",
+   "part": "two-extrema points+nature",
+   "response": "+1 read as +7; derivative slip 6x^2-24x+18; y slips 10,6; own-root classification",
+   "expected_marks": "3/6 if \"A/B on that datum\" means any A/B in a part using the polynomial; 4/6 if it means an A/B whose value depends on c (C2 types are c-independent)",
+   "design_gives": "3/6 (C2)",
+   "ok": true,
+   "basis": "MR03-OPS-D4 text \"first earned A/B on that datum\"; WO :116,:120,:122; oracle tags all criteria of the using parts"
+  },
+  {
+   "recipe": "stationary-inflexion",
+   "part": "flat point+classification",
+   "response": "constant -3 read -2; f'=2(x-1)^2 slip; y slip; correct sign classification",
+   "expected_marks": "3/6 (I4 deducted; I5/I6 dependencies on gross)",
+   "design_gives": "3/6 by WO:116 + dependency_basis (part-level reading)",
+   "ok": true,
+   "basis": "D3-S02(b); literal cascade 1/6"
+  },
+  {
+   "recipe": "implicit-normal",
+   "part": "(a)-(c)",
+   "response": "a=3 read 4 in (a); displayed denominator 3 read 4 in (b); FT normal y+4=x/6",
+   "expected_marks": "single outcome",
+   "design_gives": "6/9 (fresh datum, WO:153 precedent) or 5/9 (same datum, WO:142)",
+   "ok": false,
+   "basis": "calc-D4-02"
+  }
+ ],
+ "findings": [
+  {
+   "id": "calc-D4-01",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal (show-derivative alternative routes)",
+   "locator": "work-orders/WB8227-implicit-normal.md:148; exemplars/WB8227-implicit-normal.md:151; planning/d4/calculus-misread-oracle.json edge implicit-C4-to5-proof-only-ineligible-once",
+   "severity": "later-test",
+   "expected": "One stated outcome for a C misread on each accepted proof route (product, divided, log-absolute, explicit-root), or the fixture explicitly limited to the product route.",
+   "actual": "The fixture says \"Since the constant differentiates to zero, a complete proof still establishes the actual target canonically: 9/9\" without naming a route. That is true on the product route only: there C enters just S3 (zero constant derivative). On the mapped divided route (WO:112-114; exemplar:133 shows C as 4/y, -4y'/y^2 and the back-substitution 4=3e^{2x}y+y^2) the C=5 learner writes 3e^{2x}+y=5/y, gets y'=-6e^{2x}y^2/(y^2+5) (canonical y^2+4) and back-substitutes the false 5=3e^{2x}y+y^2 to reach the target.",
+   "evidence": "Own sympy: divided intermediate differs from canonical; after back-substitution it equals the target. Under canonical marking of this ineligible datum S3 (\"correctly differentiate its remaining implicit y-terms\") and S4 (\"S1-S3 all correct\") fail: 7/9. Read as \"correct derivative of their term\", it is 9/9. On the explicit-root route the C=5 root carries sqrt(9e^{4x}+20) against canonical +16, giving as little as 6/9. Product route: 9/9. The same misread therefore costs 0, 2 or 3 marks by route. Eligible treatment would give a route-independent 8/9. That is an owner option, not a defect.",
+   "repair": "Qualify the 9/9 fixture as the product route. Add an E/F fixture stating whether S1-S4 on the divided, log and explicit-root routes are judged against canonical C when a C misread is ineligible."
+  },
+  {
+   "id": "calc-D4-02",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal (b),(c)",
+   "locator": "work-orders/WB8227-implicit-normal.md:142 (\"It cannot become a fresh eligible misread in a later part\") vs :153 (\"This fresh datum is first used in (b)\")",
+   "severity": "later-test",
+   "expected": "The datum identity used by the once-only ledger is defined, so an ineligible misread cannot re-enter as a new eligible datum.",
+   "actual": "The later first-use fixture treats a printed coefficient of the displayed derivative as a datum separate from the curve parameters. Take canonical (3,2,-4) with a=3 read as 4 in (a), which is ineligible (S1,S3 = 2/4). In (b) the learner applies the displayed formula and reads its denominator 3e^{2x} as 4e^{2x}. This gives m=24/(4-8)=-6, m_perp=1/6 and y+4=x/6.",
+   "evidence": "As a fresh datum this passes all four WO:142 conditions: the curve is not misread, P is on the curve, m=-6 is finite and nonzero, the chain is present and the supplied target represents the curve. It is then eligible, scoring 2/4+2/2+3/3-1 = 6/9. As the same datum as a it is canonical, scoring 2/4+1/2+2/3 = 5/9. This is the calc-D3-02(ii) 5/9 versus 6/9 split, reached through a different response.",
+   "repair": "E/F: define datum identity. For example, a displayed-formula number that restates an already-ruled curve parameter inherits that ruling. Add this as a fixture."
+  },
+  {
+   "id": "calc-D4-03",
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "both",
+   "locator": "subject-rules.md:67 and shared-misread-policy.json operational_rules (\"first earned A/B on that datum\"); stationary WO:118,:120,:122; exemplar:125,:127,:131",
+   "severity": "note",
+   "expected": "The deduction-candidate rule names its unit.",
+   "actual": "Every stationary deduction falls on a criterion whose value does not depend on the misread constant: P2 (derivative), I1 (derivative) and C2 (types). WO:120 says \"earliest earned A/B slot of this first-use part\". The oracle tags every criterion of every using part with the datum. \"A/B on that datum\" therefore means \"any A/B in a part that uses the datum\".",
+   "evidence": "A criterion-level implementation (only A/B whose value uses c) would deduct nothing in the WO:122 fixture, giving 4/6 instead of 3/6 and restoring the D3-S02(a) free misread. It would also give 4/6 instead of 3/6 in the built I4 case. The current WO text read as a whole is consistent with the part-level reading, and each stated fixture has one outcome.",
+   "repair": "When next touched, add \"(any A/B in a part that uses that datum)\" to MR03-OPS or the stationary WO line :116."
+  },
+  {
+   "id": "calc-D4-04",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "gradient",
+   "locator": "planning/calculus-design.json gradient-only part misread_policy.eligibility_notes (same text in pilot-design.json and part-evidence-register.json)",
+   "severity": "note",
+   "expected": "calc-D3-05: proof-target text only where a supplied target exists.",
+   "actual": "The gradient-only policy note reads \"Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically ... See the 9/9 and 5/9 D4 fixed-response cases\". The gradient-only branch has no proof, no supplied target and no later parts.",
+   "evidence": "JSON read. The criteria themselves are clean.",
+   "repair": "Wording tidy: give the gradient-only part its own note (point-on-curve, finite gradient, chain demand)."
+  },
+  {
+   "id": "calc-D4-05",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "both",
+   "locator": "review/opus-5-5-d3-confirm/findings.md §D Notes calc-D3-01 (our text); work-orders/WB8227-implicit-normal.md:142 last sentence",
+   "severity": "note",
+   "expected": "An accurate record of which implicit misreads the point-on-curve guard excludes.",
+   "actual": "Our D3 note said the guard makes a, C and q misreads ineligible. For q this is inaccurate. Reading q as the other y-intercept, -a-q, keeps P on the curve in 27/27 tuples. On 4 curves both intercepts are admitted negative points: (3,k,-1) with (3,k,-2), and (4,k,-1) with (4,k,-3). Such a misread passes the D4 conditions and is eligible.",
+   "evidence": "Own survey over q' in -9..9: 27 on-curve, 459 off. a misreads: 0 of 216 on-curve. C misreads: 0 of 1620. k misreads: all on-curve. WO:142 ends \"For a point misread in the normal part ... N3 still needs the canonical line\" without separating an on-curve (eligible) point from an off-curve one. In practice N3 is 0 under either reading for the usual response, because the learner keeps the gradient from the true P.",
+   "repair": "None required for approval. Correct our own record. In E/F, state whether an on-curve point misread in (c) receives N3 follow-through."
+  }
+ ],
+ "verified_ok": [
+  "Implicit C4->5 (product route): only S3 uses C; d(5)/dx=0; P off the misread curve gives ineligible; canonical 9/9 follows from the stated rule. The WO calls this an ordinary-marking coincidence, not an excused misread.",
+  "Implicit a3->4 carried: own derivative -8e^{2x}y/(4e^{2x}+2y), m=-8, m_perp=1/8, y+4=x/8. Method marks S1, H1, N1, N2 survive; accuracy mark S3 survives; S2, S4, H2, N3 fail: 5/9. a->8 is singular at P (8+2(-4)=0).",
+  "Implicit eligible k2->3: P stays on the curve, m=-36/5, gross 5/5, net 4/5 from G2; G5 keeps its gross-G2 dependency. Variant with omitted y' ((1,2,-3), m=15): 2/5.",
+  "Later first-use displayed numerator 6->8: m=-32/5, m_perp=5/32, 8/9 (H2). The total is the same if the datum is treated as first used in (a).",
+  "Stationary +2->+3 two-extrema 5/6 (P2) and flat -3->-2 5/6 (I1) recomputed; deferred fixture 3/6 (C2) recomputed; +3x->+2x object change 2/6.",
+  "All 12 retained misread samples (k->5-k; displayed numerator +2; constant +1) recompute with sympy and an independent explicit-root derivative.",
+  "All 12 canonical exemplars of both recipes recompute (coordinates, types, gradients, normal slopes, show-derivative targets).",
+  "Once-only eligibility for a single datum: WO:142, MR03-OPS, JSON eligibility_notes, misread_ledger.py:25-26 assertion.",
+  "All 14 calculus-design.json parts (8 in scope + 6 motion) carry the 9 shared fields equal to shared-misread-policy.json plus the feedback sentence; pilot-design and part-evidence-register copies equal.",
+  "Stationary exemplar Bloom line :111 changed only d3->d4 path; :115 unchanged. Implicit 4+2+3 (WO:75, JSON marks) unchanged.",
+  "No domain, tariff, capacity, Bloom or criterion-type change in either recipe D3->D4 (JSON structural diff, WO table/domain extraction, domain-audit JSON identical).",
+  "All 13 file hashes and 2 owned-recipe object hashes in plan-repair-d4-calc-dispositions.json match current bytes."
+ ],
+ "not_checked": [
+  "Motion recipe (other agent); trig/visual policies except the shared-field equality.",
+  "Codex scripts were not run; all checks used own code (verify_calc.py, extra_cases.py in SCRATCH/calc).",
+  "repair-calculus-owned.py is a one-shot script not in rebuild-design.py. Its embedded :122 fixture text (+2->+3 normal example) differs from the current WO:122 (+1->+7 on x^3-6x^2+9x+1), so the WO was edited after it ran. The current bytes were checked directly; rebuild provenance is left to the shared agent.",
+  "Runtime marking, rendering, app behaviour."
+ ]
+}

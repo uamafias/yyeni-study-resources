@@ -1,0 +1,105 @@
+{
+  "status": "pass",
+  "seeds": 14,
+  "results": [
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "implicit-chain",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D1 implicit chain/domain discrimination failed"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "implicit-original",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D1 official original leaked into fresh pool"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "proof-given-answer-credit",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D1 no-follow-through into given proof result failed"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "index-error-accuracy-credit",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D4 wrong e-index numerical coincidence earned G5"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "classification-analyse",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D4 stationary classification must be Apply3 under OD4"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "alternative-proof-missing-slot",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D4 valid alternative proof has an unmapped criterion"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "missing-policy",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "KeyError: 'operational_status'"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "no-later-deduction",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: Misread became free because first-use part lacked A/B"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "gross-dependency-cascade",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: ('gross dependency not earned', 'G5', 'G2')"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "eligibility-reopened",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: ineligible datum was re-eligible in a later part"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "proof-target-follow-through",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: ('gross dependency not earned', 'S4', 'S2')"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "back-substitution-in-S3",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: S3 acquired back-substitution"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "normal-positive-reciprocal",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: ('positive-reciprocal-or-negation', 7, 6)"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "invalid-log-full-credit",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: ('gross dependency not earned', 'S4', 'S1')"
+    }
+  ],
+  "scope": "Fixed design validators; no runtime submission marker."
+}

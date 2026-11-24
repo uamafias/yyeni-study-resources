@@ -1,0 +1,295 @@
+{
+ "checker": "visual",
+ "scope": "8227 visual group: modulus-graph-recovery:vertex-intercepts (44), trapezium-sketch-estimate:logarithmic-hence-chain (22 generated; h=2 excluded), vector-geometry:scalar-combination-and-origin-angle (30) = 96 rows",
+ "method": [
+  "work-visual/mathcheck.py: generated all 96 rows via provider.generate_at; parsed learner-visible stem/prompt/SVG text; independently recovered modulus a,b,c from V/L/R/Y (both zeros, Y residual, brute-force uniqueness over integer a,b,c), recomputed trapezium T as sum of actual trapezium areas and J by applying the rule directly to k ln((x-h)^2) at 60-digit mpmath, compared with mp.quad exact integrals (bias), recomputed vector p by Fraction and angle AOB by dot-product and by Euclidean cosine law (agree to 1e-40), Decimal half-up rounding; checked every reference_answer, every criterion value and every number in worked_steps; parsed every SVG (key text, point circles vs equal-unit affine map, path vertices on y=a|x+b|+c, log path on ln(x-h), chord endpoints on curve, asymptote/intercept/end labels, blank-frame content)",
+  "work-visual/overlap.py: glyph-metric (Arial) test of every modulus point label against the 3px graph arms for all 44 question SVGs",
+  "work-visual/fresh.py: exposure keys for all 1702 instances in all selections (cross-selection collisions), per-part distinct counts, exact max packing by search, provider generate_fresh test-mode greedy exhaustion at seeds 0/1/42/2^63-1, test refusal of allow_repeat, practice repeat labelling",
+  "work-visual/projcheck.py: learner_projection practice/test x reveal=False for all 96 (answer/criteria/private/solution leaks), test reveal refusal, solution-asset gating and foreign-asset refusal via asset_for_instance, examination reference labels/scope",
+  "work-visual/crit.py: criterion IDs, mark types, marks, depends_on, qualifiers, FT edges vs WO tables and reviewed_part rows",
+  "Read all three work orders, OWNER-CHECKPOINT rows D1-TRAP-FT-BRIDGE, D1-VEC-A1-VALID-WORK, D1-VEC-DEGREE-STEM, D1-MOD-OD1-LIST, MR03-OPS-D4, authoring/visual/README.md, marking-expectations.json (20), render-inspection.json, f-trig-audits-visual.md",
+  "Rendered 21 SVGs with app sharp 0.32.6 (librsvg 2.57) at density 120 to work-visual/png/ and inspected 20 PNGs with Read: modulus 00,02,04,11,14,19,22,24,26,37,43; trapezium solutions 00,03,08,11,14,16,19; trapezium question frames 00 (h=1,L=4) and 19 (h=3,L=8). Vector branch has no assets."
+ ],
+ "counts": {
+  "instances_recomputed": 96,
+  "expectations_read": 20,
+  "fresh_awards": 16,
+  "renders_inspected": 20
+ },
+ "findings": [
+  {
+   "id": "visual-E-01",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:modulus-graph-recovery:vertex-intercepts",
+   "domain_index": 19,
+   "part": "a",
+   "criterion": "n/a (question asset)",
+   "locator": "source/groups/visual.py:115-118 (_modulus_svg label offsets dy=24 / dx=+8|-10 for zero and y-intercept labels); generated assets[0] question SVG",
+   "expected": "WO modulus 'Question and assets': zero labels placed outside the V with leader lines when needed; axes, points and labels legible. Brief: labels legible and not overlapping.",
+   "actual": "In 35 of 44 question diagrams at least one point-name label (L, R, Y, or merged R/Y, L/Y) is struck through by the 3px blue graph arm, because zero/Y labels are always offset below-right/below-left regardless of which way the arm continues. Worst cases: idx 19 (a=-1,b=2,d=3) L, R and Y all crossed; idx 4 the 'Y' label sits on the arm between the Y and R dots; idx 24 'L/Y' cut by the arm. Clean: idx 26-27, 29, 33-34, 36, 41-43.",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 SP/work-visual/overlap.py -> '35 of 44 instances have a point label crossed by a graph arm' (list in SP/work-visual/overlap.json); visually confirmed in SP/work-visual/png/mod-00,-02,-04,-11,-14,-19,-22,-24,-37-question.png; mod-26 and mod-43 clean.",
+   "source_basis": "work-orders/WB8227-modulus-graph-recovery.md line 41 ('Place zero labels outside the V with leader lines when needed ... Keep axes, points and labels legible'); authoring/visual/render-inspection.json claims labels legible without checking arm collisions.",
+   "minimal_correction": "Place each zero/Y label on the side away from the continuing arm (e.g. a<0: zero labels above-outside the inverted V; Y label on the opposite side of the y-axis from the arm, or a short leader), then re-run a glyph-vs-path collision check over all 44. Exact coordinates in the stem and key are unaffected, so no marking change."
+  },
+  {
+   "id": "visual-E-02",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+   "domain_index": 0,
+   "part": "b (also modulus a reference answer; vector a worked steps)",
+   "criterion": "n/a (learner-facing notation)",
+   "locator": "source/groups/visual.py:193 prompt '{k}\\ln({square})', :210 criterion text, :204 step; :127 modulus formula 'y={a}\\lvert'; :242-243 vector steps '{r}p-1' and '{t}({r}p-1)'",
+   "expected": "Unit coefficients omitted in displayed mathematics: 'J=\\int_2^6\\ln(x^2-2x+1)\\,dx', 'y=-|x-3|+2', 'p-1', '(p+3)+2(p-1)+(p+1)=0'.",
+   "actual": "Trapezium k=1 (8 of 22) question prompt shows '$J=\\int_{2}^{6}1\\ln(x^2-2x+1)\\,dx$' (idx 0,3,5,8,11,14,16,19), also in b:B1 text 'Factorised form $1\\ln((x-1)^2)$' and step '$1\\ln((x-1)^2)=2\\ln(x-1)$'. Modulus a=+-1 (16 of 44) reference answer 'y=-1\\lvert x-3\\rvert+2' (idx 14). Vector r=1 or t=1 (20 of 30) solution steps '\\begin{pmatrix}p+3\\\\1p-1\\\\p+1\\end{pmatrix}' and '(p+3)+2(1p-1)+(p+1)=0' (idx 0) or '(p+3)+1(2p-1)+(p+1)=0' (idx 8).",
+   "evidence": "SP/work-visual/mathcheck.py issue classes notation-b (8), notation-1p (8), notation-1coef (20); re-verified on live bytes: counts mod 16, vec 20, trap 8.",
+   "source_basis": "subject-rules (learning text: clear decoded LaTeX); 2023 P2 Q6(b) original integrand has no explicit unit coefficient; standard mathematical typesetting.",
+   "minimal_correction": "Add a coefficient formatter (1 -> '', -1 -> '-') for k in the (b) prompt/criterion/step, a in the modulus formula, and r,t in the vector steps. Values and marks unchanged."
+  },
+  {
+   "id": "visual-E-03",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+   "domain_index": 0,
+   "part": "d",
+   "criterion": "WB8227-trapezium-sketch-estimate:d:DB1",
+   "locator": "source/groups/visual.py:216 (generated d:DB1 achievement); source/catalogue-native.json trapezium part d reviewed criteria d:DB1 'required'",
+   "expected": "WO d:DB1: '... A clear verbal geometric reason, or a correctly drawn chord/trapezium overlay plus a brief statement referring to it, earns this mark. Unambiguous concavity shorthand can establish the geometry; increasing alone cannot.' Exemplar line 63 repeats the concavity allowance.",
+   "actual": "Runtime d:DB1 achievement: 'Correct top-chord/trapezium position relative to the same own curve; verbal geometric reason or correct overlay with a brief referring statement. Increasing alone is insufficient.' reviewed_part 'required' likewise. Neither encodes the approved concavity-shorthand allowance. Fresh response FA-10 on idx 0 (h,L,n,k)=(1,4,2,1): correct sketch plus '(d) Underestimate, because ln(x-1) is concave down.' scores d 2/2 under the WO but d 1/2 under the runtime text (no chord position stated).",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 -c 'P.generate_at(trapezium,0).parts[3].criteria[1].achievement' (printed above in SP/work-visual run); grep finds 'concavity shorthand' only in work-orders/WB8227-trapezium-sketch-estimate.md:79 and exemplars/WB8227-trapezium-sketch-estimate.md:63, not in source/.",
+   "source_basis": "work-orders/WB8227-trapezium-sketch-estimate.md:79 (d:DB1 row); OWNER-CHECKPOINT D1-TRAP-FT-BRIDGE / OD-5 (DB1 judged against own curve); exemplar line 63.",
+   "minimal_correction": "Append to d:DB1 achievement and reviewed 'required': 'Unambiguous concavity shorthand for the same own curve (e.g. concave down so chords lie below) can establish the geometry.' No tariff change."
+  },
+  {
+   "id": "visual-E-N1",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+   "domain_index": 0,
+   "part": "c/d",
+   "criterion": "asset binding",
+   "locator": "source/groups/visual.py:221 ('part_id':'c' on log-solution)",
+   "expected": "Solution asset bound to every part whose answer it shows",
+   "actual": "log-solution SVG (top chords below curve, caption 'The curve is concave down; the straight top chords lie below it.') is the part (d) answer but target_part_ids=[c] only; learner_projection(reveal=True) also drops target_part_ids from solution_assets (provider-wide). Whole-question reveal means no current leak.",
+   "evidence": "projcheck/dump2 output for idx 0 assets",
+   "source_basis": "WO trapezium assets: solution asset carries nodes/chords from (a) and bias relation",
+   "minimal_correction": "Bind log-solution to parts c and d (or split chord overlay into a d solution asset)."
+  },
+  {
+   "id": "visual-E-N2",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+   "domain_index": 0,
+   "part": "b",
+   "criterion": "b:B1",
+   "locator": "source/groups/visual.py:223 practice_help prompt 2",
+   "expected": "WO: 'Recognition of the square in (b) is not supplied'",
+   "actual": "Practice help asks 'Can you recognise a square in the second integrand?', supplying the fact b:B1 credits. Practice-only, no numeric answer leaked, test mode has no help.",
+   "evidence": "dump2 practice_help",
+   "source_basis": "WO trapezium 'Finite domain...' paragraph",
+   "minimal_correction": "Optional: 'What form does the second integrand take, and which logarithm law might apply?'"
+  },
+  {
+   "id": "visual-E-N3",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle",
+   "domain_index": 0,
+   "part": "b",
+   "criterion": "examination_references[1]",
+   "locator": "source/catalogue-native.json:4770",
+   "expected": "Reason consistent with relation same-type",
+   "actual": "learner_display_reason 'Owner-authorised attributed examination original...' on a same-type generated reference; field is not in learner_projection but is in teacher_projection. Learner label correctly says 'Same type as ...'.",
+   "evidence": "dump.txt vector refs",
+   "source_basis": "brief item 6",
+   "minimal_correction": "Reword reason to the part(b) same-type rationale."
+  },
+  {
+   "id": "visual-E-N4",
+   "severity": "note",
+   "selection_id": "all three",
+   "domain_index": 0,
+   "part": "all",
+   "criterion": "status strings",
+   "locator": "reviewed_part.misread_policy.operational_status, reviewed_part.bloom.status, trapezium b:B2 reviewed qualifiers[2]",
+   "expected": "Approved status (manifest approved 24 Nov)",
+   "actual": "'pending Vitalis exact-manifest approval' / 'D4 proposed clarification; final-manifest approval pending' remain; catalogue design_approval states stored proposal text is historical. A status string inside a qualifiers list could be misread by a qualifier-driven marker.",
+   "evidence": "dump.txt",
+   "source_basis": "OWNER-CHECKPOINT line 3, 53",
+   "minimal_correction": "Carry; move status out of qualifiers when next rebuilt."
+  },
+  {
+   "id": "visual-E-N5",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle",
+   "domain_index": 8,
+   "part": "b",
+   "criterion": "b:A1",
+   "locator": "b:A1 more_precise_answer_policy",
+   "expected": "Decidable award for a more precise final angle",
+   "actual": "(r,s,t)=(2,-3,1)/(2,-3,3): theta=104.25175505...deg, 0.0018deg above the 104.25 boundary. A learner's '104.25' is undecidable (explicit carry), and any app re-rounding of a typed 104.25 to 1 d.p. gives 104.3 half-up but 104.2 banker's. Rounding cos to 3 s.f. (-0.246) gives 104.24 -> 104.2 (premature rounding, correctly A0).",
+   "evidence": "work-visual/fresh_awards.py: vec8_theta 104.251755059, premature 104.2409383",
+   "source_basis": "WO vector rounding section; D1-MR05",
+   "minimal_correction": "F/app decision on more-precise forms; require decimal half-up on raw text if re-rounded."
+  },
+  {
+   "id": "visual-E-N6",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle",
+   "domain_index": 0,
+   "part": "a,b",
+   "criterion": "reviewed_part.criteria",
+   "locator": "source/catalogue-native.json vector part_specs",
+   "expected": "Per-criterion reviewed rows as for modulus/trapezium",
+   "actual": "Vector part_specs carry no 'criteria' rows (modulus/trapezium do), so no catalogue-level ID/type cross-check exists; D1-VEC-DEGREE-STEM is also not named in runtime data (b:A1 text does say 'degrees', so radian-only finals still fail A1). Tariffs/IDs/dependencies verified equal to WO by crit.py.",
+   "evidence": "crit.py: 'vector a reviewed criteria rows 0'",
+   "source_basis": "WO vector criteria table; OWNER-CHECKPOINT D1-VEC-DEGREE-STEM",
+   "minimal_correction": "Optional: add reviewed rows including deviation IDs."
+  },
+  {
+   "id": "visual-E-N7",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+   "domain_index": 14,
+   "part": "c/d",
+   "criterion": "solution asset",
+   "locator": "_axes_svg chords",
+   "expected": "curve/chord relation visible (must_read_givens)",
+   "actual": "For L=4,n=4 (width 1) chords after the first strip are visually indistinguishable from the curve at render size (png/trap-14-solution.png, trap-03); the relation is carried by the caption text. Geometry is exact (chord endpoints on curve to 1e-6).",
+   "evidence": "png/trap-14-solution.png",
+   "source_basis": "WO trapezium assets",
+   "minimal_correction": "Optional light shading of the gap or thicker chord stroke."
+  }
+ ],
+ "fresh_awards": [
+  {
+   "id": "FA-01",
+   "instance": "modulus idx19 (a,b,d)=(-1,2,3); V(-2,3) L(-5,0) R(1,0) Y(0,1)",
+   "response": "y = -|x+2| + 3, no working",
+   "award": "a:B1 1, a:B2 1, a:B3 1 = 3/3 (value -1 unambiguous in formula position; OD-1 exception)",
+   "decidable": true
+  },
+  {
+   "id": "FA-02",
+   "instance": "modulus idx19",
+   "response": "b=-2 (vertex x), c=3; 0=a|1+(-2)|+3 so a=-3",
+   "award": "B1 0, B2 0, B3 1 = 1/3 (independent slots, no F.T.)",
+   "decidable": true
+  },
+  {
+   "id": "FA-03",
+   "instance": "modulus idx19",
+   "response": "Vertex gives b=2,c=3; substitute Y(0,1): 1=a|2|+3, a=-1 (valid alternative point)",
+   "award": "3/3",
+   "decidable": true
+  },
+  {
+   "id": "FA-04",
+   "instance": "modulus idx19",
+   "response": "(-1, 2, 3) unnamed",
+   "award": "pending (WO: ambiguous tuple order pending; named fields settle order)",
+   "decidable": true
+  },
+  {
+   "id": "FA-05",
+   "instance": "trapezium idx21 (3,8,4,3): T=11.5051..., J=69.0308...",
+   "response": "(a) sum of four actual trapezium areas width 2 = 11.5; (b) x^2-6x+9=(x-3)^2, 3ln((x-3)^2)=6ln(x-3), J=6x11.5=69.0; (c) correct branch, dashed x=3 labelled, (4,0) labelled; (d) under: each top edge is a chord below my concave-down curve",
+   "award": "10/10",
+   "decidable": true
+  },
+  {
+   "id": "FA-06",
+   "instance": "trapezium idx20 (3,8,4,2): T=11.5051, J=46.0",
+   "response": "(b) 2ln((x-3)^2)=2^2 ln(x-3)=4ln(x-3), J=4x11.5=46.0 (wrong-law coincidence k^2=2k); rest correct",
+   "award": "b:B1 1 (factorised form seen), b:B2 0 (www) -> 9/10",
+   "decidable": true
+  },
+  {
+   "id": "FA-07",
+   "instance": "trapezium idx13 (3,4,2,3)",
+   "response": "(a) width 2, (2/2)(ln1+ln3+ln5)=2.71 (interior weight missing); (b) 3ln((x-3)^2)=6ln(x-3), J=6x2.71=16.26=16.3; (c),(d) blank",
+   "award": "a 1/3 (B1 only), b 2/2 (B2 F.T. own (a)), c 0, d 0 = 3/10",
+   "decidable": true
+  },
+  {
+   "id": "FA-08",
+   "instance": "trapezium idx5 (1,8,2,1): T=10.832, canonical J=21.7",
+   "response": "(a) 10.8; (b) ln((x-1)^2)=2ln(x-1), J=2x10.8=21.6; (c) concave-UP increasing curve, labelled dashed x=1 and (2,0); (d) over: my trapezium tops lie above my curve",
+   "award": "a3 b2 (21.6 is 2x own reported (a), F.T.) c 0+1+1 d 1+1 (OD-5 own curve) = 9/10",
+   "decidable": true
+  },
+  {
+   "id": "FA-09",
+   "instance": "trapezium idx7 (1,8,2,3)",
+   "response": "Genuinely misreads k=3 as 2: 2ln((x-1)^2)=4ln(x-1), J=4T=43.3; rest correct",
+   "award": "gross b 2/2; MR03-OPS-D4 deducts first earned A/B on datum k = b:B1 -> b 1/2, total 9/10",
+   "decidable": true
+  },
+  {
+   "id": "FA-10",
+   "instance": "trapezium idx0 (1,4,2,1)",
+   "response": "Correct sketch; (d) 'Underestimate, because ln(x-1) is concave down.'",
+   "award": "WO: d 2/2 (concavity shorthand); runtime d:DB1 text: d 1/2 -> conflict, see visual-E-03",
+   "decidable": false
+  },
+  {
+   "id": "FA-11",
+   "instance": "vector idx8 (2,-3,1): p=-3/4, theta=104.2518 deg",
+   "response": "Correct (a); (b) dot -2, |OA|=sqrt6, |OB|=sqrt11, cos=-2/sqrt66, theta=1.82 rad",
+   "award": "a 3/3, b B1 M1 M2 =3, A1 0 (D1-VEC-DEGREE-STEM) = 6/7",
+   "decidable": true
+  },
+  {
+   "id": "FA-12",
+   "instance": "vector idx8",
+   "response": "(b) cos theta = -0.246, theta = 104.2 deg",
+   "award": "b 3/4 (premature rounding loses A1 only)",
+   "decidable": true
+  },
+  {
+   "id": "FA-13",
+   "instance": "vector idx8",
+   "response": "(b) AO.OB = 2 explicitly identified, phi=75.7 deg, angle AOB = 180-75.7 = 104.3 deg",
+   "award": "b 4/4 (reversed-ray alternative with supplementary correction)",
+   "decidable": true
+  },
+  {
+   "id": "FA-14",
+   "instance": "vector idx8",
+   "response": "(b) full method, final 104.25 deg",
+   "award": "b:A1 undecidable (more_precise_answer_policy carry); B1 M1 M2 = 3",
+   "decidable": false
+  },
+  {
+   "id": "FA-15",
+   "instance": "vector idx8",
+   "response": "Genuinely misreads OC=(1,1,-1): resultant (p+3,2p-1,p+1) correct, (p+3)+(2p-1)-(p+1)=0, p=-1/2; (b) fully correct",
+   "award": "gross a 3/3; datum OC first used in (a); deduct a:B1 (first A/B in first-use part even though its value does not use OC) -> a 2/3, b 4/4 = 6/7",
+   "decidable": true
+  },
+  {
+   "id": "FA-16",
+   "instance": "trapezium idx3 (1,4,4,1)",
+   "response": "(d) text 'under, tops below the curve' but the drawn overlay shows chords above the learner's own curve",
+   "award": "rubric does not say whether text or overlay governs DB1; treat as pending clarification",
+   "decidable": false
+  }
+ ],
+ "confirmed": [
+  "All 96 rows: every reference_answer, criterion value and worked-step number agrees with independent recomputation (modulus a,b,c from labelled points; trapezium T by area sum and J by direct rule on k ln((x-h)^2) at 60 digits; vector p by Fraction, angle by dot product and cosine law); 0 mathematical discrepancies.",
+  "Modulus: 44/44 recoveries unique (brute force), all four labelled points on the graph, key text equals stem, circles equal-unit consistent, drawn arms satisfy y=a|x+b|+c, orientation statement correct; 24/44 origin-double cases merged into one label; no vertex on an axis in the domain.",
+  "Trapezium: 22/22 estimates below exact integral; concavity negative; 3 s.f. half-up correct (min margin 0.055 of a unit in last place); no admitted row has T^2 or kT equal to canonical J at 3 s.f.; F.T. values 2k*T3 differ from canonical J in 10 rows (e.g. 7.62 vs 7.61) and are covered by b:B2 F.T. wording; h=2 parameters rejected by build().",
+  "Vector: 30/30 p terminate within 3 s.f.; exact angles only 60 (2 rows) and 90 (4 rows) - no 120/45/135/30/150 in domain; non-exact integer-rounded 80.0 (3,-1,1) and 63.0 (3,3,1),(3,3,2) displayed with trailing zero.",
+  "Tariffs/IDs/types/dependencies/FT edges equal WO tables: modulus 3 (B1/B2/B3 www, answer_only_marks 3 = D1-MOD-OD1-LIST withdrawn split); trapezium 3+2+3+2 (a:A1 dep a:M1; b:B2 FT+www, SC cap 1; d:B1 FT from c; d:DB1 DB dep d:B1, OD-5 authority = D1-TRAP-FT-BRIDGE); vector 3+4 (a:A1 dep a:M1 with valid_resultant_required = D1-VEC-A1-VALID-WORK; b:A1 dep b:M2, degrees = D1-VEC-DEGREE-STEM); MR03-OPS-D4 rules present in every part's misread_policy.",
+  "All 20 marking expectations re-awarded independently against the WOs and agree (modulus 4, vector 8 incl. eligible misread 7/6 and deferred deduction 5/4, trapezium 8 incl. wrong-law coincidence 9, visible-scale-only 9, own concave-up 9, no-sketch 5, three pending).",
+  "Freshness recomputed from generated exposure keys: modulus 44; vector 30/17; trapezium 4/11/2/8; exact max packing 44/17/2 equals declared bounds; provider test-mode greedy runs exhaust at exactly 44/17/2 for seeds 0,1,42,2^63-1; test refuses allow_repeat; practice repeat labelled fresh:false; no visual exposure key collides with any other selection's key.",
+  "Learner projection (96 rows x practice/test): no reference answers, criteria, worked steps, private_math or solution assets before reveal; test has no practice_help; test reveal refused; solution asset refused without reveal and foreign-instance assets refused; all 96 asset hashes resolve to sealed bytes.",
+  "Trapezium question frame (rendered h=1,L=4 and h=3,L=8; all 22 parsed) is blank axes with only x, y, 0 and an instruction - no curve, asymptote, intercept or chord; solution SVG has dashed asymptote x=h labelled, (h+1,0) dot and label, n chords exactly on the curve, end label h+1+L.",
+  "Practice help answer-free (no digits, no values); all worked steps have non-empty action/reason/result.",
+  "Examination references: 7 part-scoped NSSCAS same-type labels ('Same type as NSSCAS Mathematics 8227, ...'), bound to the right part, none labelled original; no Cambridge source presented as Namibian (Cambridge appears only as comparable-board MR03 source); no textbook reference is learner-displayed."
+ ],
+ "not_checked": [
+  "No app/website/history rendering, KaTeX display of the solution or accessibility tree; SVGs rendered with sharp/librsvg only (Arial substitution possible).",
+  "Trapezium solution PNG for idx 05 rendered but not inspected; other 13 trapezium solutions and 33 modulus SVGs checked by parser/glyph script only.",
+  "Source PDFs (2023 P2 Q2/Q6, 2025 P1 Q3, examiner reports) not reopened; WO/owner-register transcription trusted.",
+  "Marking expectations are declared rubric facts; no recogniser exists, nothing was marked automatically.",
+  "Cross-selection key collisions inside implicit-normal (outside scope) observed but not assessed."
+ ]
+}

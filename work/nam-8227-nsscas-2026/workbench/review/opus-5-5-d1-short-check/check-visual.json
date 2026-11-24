@@ -1,0 +1,441 @@
+{
+ "label": "visual",
+ "scope": [
+  "WB8227-modulus-graph-recovery / vertex-intercepts",
+  "WB8227-trapezium-sketch-estimate / logarithmic-hence-chain",
+  "step-3 IDs visual-01..16"
+ ],
+ "manifest_check": "planning/plan-manifest.json sha256 c8914cf96c78367f138058e40ffa62bdc0d9770efa1a6fe787c42b8759a04f22 confirmed; all 97 in-scope manifest entries (modulus/trapezium/visual/subject-rules/plan-repair-d1) match current bytes.",
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 3,
+   "what": "2023 P2 Q2 native: graph of y=a|x+b|+c, vertex (3,2), zeros (2,0),(4,0), y-int (0,-4), coordinates repeated in text; 'Find the values of a, b and c' [3]. File sha256 6e6fa13d... matches."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 331,
+   "what": "Q2 award table: 'a = -2 www B1', 'b = -3 www B1', 'c = 2 www B1'; comment 'Allow all the marks if values are seen in the correct place in the formula'; no method mark and no answer-only exclusion (contrast Q1(b) on the same page: 'B 0, M 0, A 0 for correct 3 brackets without any working'). Prose: parabola theory wrongly applied; b=-4 read as y-intercept. sha256 17bb6d8e... matches."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 10,
+   "what": "2023 P2 Q6(a) trapezium rule four intervals on int_3^11 ln(x-2)dx to 3 s.f. [3]; (b) 'Hence find an approximation to int_3^11 3ln(x^2-4x+4)dx' [2], no precision stated."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 11,
+   "what": "2023 P2 Q6(c) sketch y=ln(x-2), label axis intersections [3] on printed axes; (d) 'Use your sketch to state, with a reason, whether your answer to part (a) is an over-estimate or under-estimate of the exact area' [2]. No instruction to draw trapeziums."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 337,
+   "what": "Q6 prose + award table. (b) B1 3ln(x-2)^2; B1 F.T. '6 x their (a)'; SC1 correct but hence not used. (c) B1 'Correct shape and position in the 1st and 4th quadrants. B0 if more than one graph seen'; B1 correct asymptote; B1 correct x-intercept on graph; prose: both log and exp sketched without labels lost all marks for the question. (d) B1 'Under-estimate' with comment 'Must be correct from their graph'; DB1 'Trapeziums below curve or the curve is concave'. (d) prose: not advisable to refer to convex/concave; 'not acceptable' to cite sloping up/down; easiest is edges of the trapeziums below the curve; 'Reference must be made to both the curve, as well as the trapezium.'"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+   "page": 4,
+   "what": "2025 P2 Q4(a) trapezium 2 intervals on int_{pi/4}^{pi/2} cosec x dx to 3 d.p. [3]; (b) 'Using a sketch of the graph of y = cosec x for 0 < x <= pi/2, explain whether the trapezium rule gives an under-estimate or an over-estimate of the true value of the integral in part (a)' [2]. The sketch is inside (b). File sha256 486afd8b..."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 358,
+   "what": "2025 Q4 prose + award table. (b) [2]: B1 'Correct shape' (cosec sketch); B1 F.T. 'From Their graph' for 'Over-estimate. The edges of the trapeziums are above the curve. The actual trapeziums must be drawn on the curve.' (one mark covers conclusion + chord reason + drawn trapeziums). Prose: draw straight lines between two points on the graph to decide; not advisable to use convex/concave; refer to edge of trapezium above/below the curve. File sha256 8012a5d9..."
+  },
+  {
+   "pdf": "W/exemplars/assets/WB8227-modulus-{normal,varied,boundary}.png + .svg",
+   "page": 0,
+   "what": "Viewed all three; parsed SVG geometry; sha256 of SVG and PNG match visual-design-asset-checks.json."
+  },
+  {
+   "pdf": "W/exemplars/assets/WB8227-trapezium-{normal,varied,boundary}.png + .svg",
+   "page": 0,
+   "what": "Viewed all three; parsed SVG geometry (axes, asymptote, curve, nodes, chords, shading, ticks); sha256 of SVG and PNG match."
+  }
+ ],
+ "dispositions": [
+  {
+   "agent_id": "visual-01",
+   "prior_severity": "design-blocking",
+   "codex_disposition": "repaired",
+   "verdict": "partly-repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:49-53 (B1 www on a:B1/B2/B3; 'www is preserved on every B1'; parabola working withholds the affected coefficient); :61-68 (new normal (-2,3,2), d=2; parabola feedback row 2/3 with a=-1 recomputed); work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-modulus-graph-recovery.md:19-25 (parabola via zero a=-1, via y-int a=-2/3, b-as-y-int gives -2: all recomputed and non-canonical). ER2023 p331 rendered.",
+   "residual": "The www/parabola defect is repaired. The new answer-only rule for this part is not: a bare coefficient list scores 0 while a bare formula scores 3, contrary to the official Q2 rows (see visual-D1-01, design-blocking)."
+  },
+  {
+   "agent_id": "visual-02",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:22-29. Own enumeration (visual/modulus.py): parabola vertex-form via either zero hits exactly the 36 d=1 tuples; via y-intercept exactly the 36 |b|=1 tuples; b=y0 hits the 8 tuples named in step 3; union 64; admitted 44 equals Codex's admitted set; 0 admitted tuples with any named error. Factored-form parabola via vertex (=a/d) and via y-int (=a/(|b|+d)) also never canonical in the 44. b=x_V and c=y0 never coincide.",
+   "residual": "Note only: a standard-form fit y=Ax^2+Bx+C read as a,b,c gives the canonical b in 4 admitted tuples (1,+-2,2),(1,+-3,2) (a and c wrong); www criteria handle it (visual-D1-11)."
+  },
+  {
+   "agent_id": "visual-03",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "partly-repaired",
+   "evidence": "Modulus (-2,-3,1) excluded (d=1). Trapezium (2,8,4,3) excluded (planning/d1/visual-domain-checks.json removed list; my enumeration 36->35).",
+   "residual": "Trapezium (2,8,4,1) and (2,8,4,2) are still admitted and reproduce 2023 Q6(a), (c), (d) verbatim (only the factor in (b) changes); visual-design.json:263-329 says 'no original tuple is in the fresh pool' (visual-D1-05)."
+  },
+  {
+   "agent_id": "visual-04",
+   "prior_severity": "design-blocking",
+   "codex_disposition": "repaired-with-disclosed-adaptation",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:23 (2025 Q4(b) cited, not as same-type), :76-79 (d:B1 B1 F.T. from own sketch even if shape wrong; d:DB1 dependent chord/trapezium position relative to own curve; shape penalised in (c) only; absent sketch d0/2; unreadable pending), :97 (D1-TRAP-FT-BRIDGE), :108-111 (samples 9/10, 5/10, 9/10 recomputed). Native renders ER2023 p337, ER2025 p358, QP2025 p4, QP2023 p10-11.",
+   "residual": "Recommendation: accept the deviation with a wording change (visual-D1-07); add the formal c->d F.T. edge (visual-D1-06)."
+  },
+  {
+   "agent_id": "visual-05",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:71-72 (b:B1 factorised form alone; b:B2 B1 F.T. 2k x their (a)); :106-107 and work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trapezium-sketch-estimate.md:58 (factorised then T squared 9/10; neither 8/10). Matches ER2023 p337 rows.",
+   "residual": "Clarify that a correct 2k ln(x-h) written directly implies the square (visual-D1-09)."
+  },
+  {
+   "agent_id": "visual-06",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:35 (3 s.f. stated in (b)); :83-91. All 35 b_accepted_answer_strings in planning/d1/visual-domain-checks.json equal my sympy/Decimal half-up sets; (8,2,k) and (4,4,1) fixtures named.",
+   "residual": "The closed list conflicts with the F.T. rule for 4-s.f. and prematurely rounded (a) values (visual-D1-03)."
+  },
+  {
+   "agent_id": "visual-07",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:41-52; visual-design.json capacity_analysis. Own enumeration: 35 presentations, 12 (L,n,k) contexts, part keys a4/b12/c3/d12, 23 collisions, 1 bias class; exhaustive search: maximum strict packing 3 (594 distinct 3-packings, none of size 4).",
+   "residual": "none beyond the T^2 collision tuples (visual-D1-02)."
+  },
+  {
+   "agent_id": "visual-08",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:113; visual-design.json part d bloom level 3 citing only d:B1/d:DB1; whole_card_bloom 3; part-evidence-register.json part d proposed_bloom_level 3.",
+   "residual": ""
+  },
+  {
+   "agent_id": "visual-09",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:11-14; visual-design.json primary_objective_id b=M2:T2:O01, c=M2:T5:O04; part-evidence-register.json identical.",
+   "residual": ""
+  },
+  {
+   "agent_id": "visual-10",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:73-75; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trapezium-sketch-estimate.md:65. Checklist present (domain, downward approach without crossing, Q4/Q1, decreasing gradient, no horizontal asymptote, B0 for more than one graph; c:B2 labelled guide or labelled boundary).",
+   "residual": "The checklist ties the shape mark to the exact asymptote x=h, so a shift error loses all three (c) marks (visual-D1-04)."
+  },
+  {
+   "agent_id": "visual-11",
+   "prior_severity": "later-test",
+   "codex_disposition": "later-test-specified; static examples repaired",
+   "verdict": "accepted-deferral",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:39 placement rule; SVGs: every zero label lies outside the V and has a leader; origin label merged once in boundary.",
+   "residual": "WO:39 and the disposition say 'crowded fixtures 4'; the JSON and my enumeration give 8 (visual-D1-08). Leaders cross the y-axis in normal and varied (visual-D1-10)."
+  },
+  {
+   "agent_id": "visual-12",
+   "prior_severity": "note",
+   "codex_disposition": "static-correction-checked; app-test-pending",
+   "verdict": "repaired",
+   "evidence": "Trapezium SVGs use 24 explicit dash segments (visible dashed in PNG); tick '2'/'4' moved right of the curve, no tick/curve collision by geometric test; asset notes are now asset-specific.",
+   "residual": "One asset note is inaccurate (varied modulus 'left-zero leader avoids y-axis crossing'; visual-D1-10)."
+  },
+  {
+   "agent_id": "visual-13",
+   "prior_severity": "note",
+   "codex_disposition": "note-retained-with-limit",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:16 states the (b) O03:D02 link is the estimate/rescaling facet, not a second quadrature, no double count.",
+   "residual": ""
+  },
+  {
+   "agent_id": "visual-14",
+   "prior_severity": "note",
+   "codex_disposition": "note-disclosed",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:26 discloses the added precision/asymptote/geometric-reason scaffolds.",
+   "residual": ""
+  },
+  {
+   "agent_id": "visual-15",
+   "prior_severity": "note",
+   "codex_disposition": "note-and-later-fixture",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:39. Own probe: 2 d.p. ordinates change (a) only for (L,n)=(4,4) (3.985->3.99); 3 d.p. and 4 d.p. never; 3 s.f. ordinates also only (4,4); 2 s.f./1 d.p. change (4,2),(4,4),(8,4); 2 d.p. truncation changes (4,2),(4,4).",
+   "residual": "Premature rounding that leaves (a) correct can still move (b) outside the closed accepted list (visual-D1-03)."
+  },
+  {
+   "agent_id": "visual-16",
+   "prior_severity": "note",
+   "codex_disposition": "note-preserved",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:13 and work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:21 keep the proof/final caveat and record report corroboration.",
+   "residual": ""
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "modulus domain",
+   "claimed": "108 raw -> 44 admitted; 64 removed; 0 remaining named-error successes; original excluded",
+   "computed": "108/64/44; my admitted set == Codex admitted set; d=1 (36) and |b|=1 (36) are exactly the parabola-via-zero and parabola-via-y sets; b=y0 in 8 tuples, 4 not otherwise excluded: (-3,-3,2),(-2,2,3),(2,-2,3),(3,3,2); (-2,-3,1) excluded (d=1); 0 named errors remain",
+   "ok": true
+  },
+  {
+   "case": "modulus origin/crowded fixtures",
+   "claimed": "origin 24; crowded 4 (WO:39, disposition)",
+   "computed": "origin 24; crowded (two labelled points within sqrt2) 8: (+-1,-3,2),(+-1,-2,3),(+-1,2,3),(+-1,3,2); Codex JSON crowded_D1 = 8",
+   "ok": false
+  },
+  {
+   "case": "modulus normal (-2,3,2)",
+   "claimed": "V(-3,4), zeros (-5,0),(-1,0), y-int (0,-2); a=-2,b=3,c=4; slope -4/2=-2; parabola a=-1 (zero), -2/3 (y-int); b-as-y-int -2",
+   "computed": "identical; recovered from points only",
+   "ok": true
+  },
+  {
+   "case": "modulus changed (2,-3,2)",
+   "claimed": "V(3,-4), zeros (1,0),(5,0), y-int (0,2); a=2,b=-3,c=-4; parabola a=1, 2/3",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "modulus boundary (3,-3,3)",
+   "claimed": "V(3,-9), zeros (0,0),(6,0), y-int (0,0); a=3,b=-3,c=-9; parabola a=1",
+   "computed": "identical (both parabola routes give 1)",
+   "ok": true
+  },
+  {
+   "case": "modulus SVGs",
+   "claimed": "values/labels match, zero labels outside V with leaders",
+   "computed": "30 px/unit (normal, varied), 21.43 px/unit (boundary); every dot and arm end lies on y=a|x+b|+c; zero labels outside V with leaders; leaders cross the y-axis in normal ((-1,0) label at x~+0.3) and varied ((1,0) label at x~-0.3)",
+   "ok": true
+  },
+  {
+   "case": "trapezium hence identity, all 36",
+   "claimed": "J ~ 2kT exactly",
+   "computed": "sympy: trapezium sum of k ln(x^2-2hx+h^2) on the same nodes minus 2kT simplifies to 0 for all 36",
+   "ok": true
+  },
+  {
+   "case": "trapezium bias, all 36",
+   "claimed": "underestimate",
+   "computed": "T < (L+1)ln(L+1)-L in all 36",
+   "ok": true
+  },
+  {
+   "case": "trapezium accepted (b) sets, all 35",
+   "claimed": "b_accepted_answer_strings",
+   "computed": "exact match for all 35, e.g. (4,2,1){7.61,7.62}; (4,2,3){22.8,22.86,22.9}; (4,4,1){7.96,7.97}; (4,4,3){23.88,23.9}; (8,2,1){21.6,21.7}; (8,2,3){64.8,65.0}; (8,4,k) single values 23.0/46.0/69.0. Closest canonical J to a 3 s.f. rounding boundary is 7.96554... (0.00055 above 7.965), correctly 7.97 with Decimal half-up",
+   "ok": true
+  },
+  {
+   "case": "trapezium named wrong method 'square T' at 3 s.f.",
+   "claimed": "never produces canonical J (WO:39; JSON remaining_accidental_named_error_successes 0)",
+   "computed": "(h,4,4,2), h=1,2,3: T^2=15.8625... -> 15.9 = canonical 4T=15.9311... -> 15.9. Codex compares unrounded T*T != 2kT. (Squaring the reported 3.98 gives 15.8, not canonical.) kT, (kT)^2, kT^2 never hit",
+   "ok": false
+  },
+  {
+   "case": "trapezium premature rounding into (b)",
+   "claimed": "accepted set lists all accepted values",
+   "computed": "2 d.p. ordinates keep (a) correct but give 4x10.84=43.36->43.4 for (8,2,2), 4x11.52=46.08->46.1 for (8,4,2), 6x11.52=69.12->69.1 for (8,4,3): none in the accepted lists; 4 s.f. canonical 15.23 (normal) rejected while 4 s.f. F.T. product 15.24 accepted",
+   "ok": false
+  },
+  {
+   "case": "trapezium normal (1,4,2,2)",
+   "claimed": "T=3.80666248977 -> 3.81; J=15.2266499591 -> 15.2; {15.2,15.24}; I=5ln5-4=4.04718956217",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "trapezium changed (3,8,4,3)",
+   "claimed": "T=11.50514527765 -> 11.5; J=69.0308716659 -> 69.0; {69.0}; I=9ln9-8=11.7750211960",
+   "computed": "identical (same (a)/(b) values as the official 2023 Q6 published answers)",
+   "ok": true
+  },
+  {
+   "case": "trapezium boundary (1,4,4,1)",
+   "claimed": "T=3.982772786565 -> 3.98; J=7.96554557313 -> 7.97; {7.96,7.97}",
+   "computed": "identical",
+   "ok": true
+  },
+  {
+   "case": "trapezium sample totals",
+   "claimed": "10, 9 (square T after factorising), 8, 9 (wrong concave-up + F.T.), 5 (no sketch), 9 (no reason), SC1 max 9",
+   "computed": "all totals consistent with 3+2+3+2 criteria",
+   "ok": true
+  },
+  {
+   "case": "trapezium SVGs",
+   "claimed": "dashed asymptote x=h, intercept (h+1,0), nodes/chords from (a), chords below curve, shading [h+1,h+1+L], tick clear of curve",
+   "computed": "curve residual vs ln(x-h) <1e-4 units; nodes at 2,4,6 / 4,6,8,10,12 / 2..6 with ordinates ln values to 4 d.p.; every chord midpoint below curve; shading exactly [2,6],[4,12],[2,6]; 24 dash segments; no tick-label/curve overlap; curve stays right of asymptote",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "claimed": "raw 108 -> admitted 44 -> semantic 44; strict unseen 44",
+   "computed": "108 -> 44 -> 44 distinct (a,b,c); strict unseen 44",
+   "notes": "Admitted have d in {2,3}, |b| in {2,3} only; 24 origin-double; 8 crowded (not 4)."
+  },
+  {
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "claimed": "35 presentations, 12 contexts, part keys 4/12/3/12, strict packing 3",
+   "computed": "35, 12, 4/12/3/12, maximum strict packing 3 by exhaustive search (594 3-packings)",
+   "notes": "If (2,8,4,*) is excluded (visual-D1-05): 33, 12, 4/12/3/11, packing 3. If (4,4,2) is also excluded (visual-D1-02): 30, 11, 4/11/3/11, packing 3."
+  }
+ ],
+ "findings": [
+  {
+   "id": "visual-D1-01",
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:55,57,66-67; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-modulus-graph-recovery.md:23,53; work/nam-8227-nsscas-2026/workbench/subject-rules.md:65 (D1-MR01 authority note)",
+   "severity": "design-blocking",
+   "expected": "Official 2023 P2 Q2 (ER PDF331): B1 'a = -2 www', B1 'b = -3 www', B1 'c = 2 www', plus 'Allow all the marks if values are seen in the correct place in the formula'. The rows are answer marks with no method mark and no answer-only exclusion (contrast Q1(b) on the same page). So the official scheme for this type awards correct values without wrong working, and the formula note extends the same award to values written inside the formula. Under OD-1's clause 'unless the official scheme for that question type awards it', the exception covers both presentations.",
+   "actual": "D1 scores a bare correct list 0/3 but a bare correct formula 3/3 (WO:55, :66-67). It records this split as 'D1-MOD-OD1-LIST ... the owner-binding interpretation' (WO:57), but OD-1 contains no such ruling. It also claims that the www conditions and the formula allowance are 'retained exactly in meaning'. In the app (named numeric fields a, b, c, with a formula accepted as equivalent; WO:35), a learner who fills in the requested fields gets 0 and a learner who types y=-2|x+3|+4 gets 3, for identical information.",
+   "evidence": "Own render ER2023 p331; WO lines cited; owner-decisions-2026-11-23.md OD-1 wording.",
+   "repair": "Give Vitalis one coherent rule. (A) Recommended, matching the official row: correct a, b and c with no wrong working earn B1 www each, whether given as named values or in the formula; practice feedback can still ask for the vertex/point reasoning. (B) Strict alternative: a bare list and a bare formula both earn 0, recorded as a named deviation from the official Q2 row. Remove 'owner-binding' from D1-MOD-OD1-LIST until Vitalis rules, then align WO:55-57, :66-67, exemplar :23/:53 and the MR01 authority note."
+  },
+  {
+   "id": "visual-D1-02",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:39; work/nam-8227-nsscas-2026/workbench/planning/d1/visual-domain-checks.py:102; work/nam-8227-nsscas-2026/workbench/planning/d1/visual-domain-checks.json:5212",
+   "severity": "should-fix",
+   "expected": "WO:39 says the domain script checks that the named wrong computations never produce the canonical J. The square-the-estimate error is the report's named error ('(11.5)^2'). The modulus recipe excludes every such accidental success.",
+   "actual": "For (h,L,n,k)=(1|2|3,4,4,2), T=3.98277... and T^2=15.8625..., which rounds to 15.9, the canonical 3 s.f. J (4T=15.9311...). The script asserts T*T != 2kT on unrounded values, so it passes and the JSON reports 0 remaining successes. Codex's own packing witness (2,4,4,2) is one of these tuples.",
+   "evidence": "visual/trap.py and trap2.py (sympy + Decimal half-up).",
+   "repair": "Compare wrong-method results at the marked precision (3 s.f. and the accepted set). Either exclude (L,n,k)=(4,4,2) (35->32 presentations, 12->11 contexts, packing still 3) or disclose it as non-diagnostic for the squaring error and correct WO:39 and the JSON count. Marks are already protected by b:B1/b:B2 method evidence; the defect is the false claim and value-only feedback."
+  },
+  {
+   "id": "visual-D1-03",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:72,83-91; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trapezium-sketch-estimate.md:22,52",
+   "severity": "should-fix",
+   "expected": "b:B2 follows the official 'B1 F.T. 6 x their (a)', so the accepted (b) values must be judged against the learner's own (a) value(s), with one precision policy.",
+   "actual": "The per-instance list is presented as 'all three accepted numerical representations'. It accepts the 4 s.f. F.T. product 15.24 (4x3.81) but not the 4 s.f. canonical 15.23 or 4x3.807=15.228. With 2 d.p. ordinates (the premature rounding the report warns about), (a) stays correct (10.8, 11.5), but 43.36->43.4 (8,2,2), 46.08->46.1 (8,4,2) and 69.12->69.1 (8,4,3) fall outside {43.2,43.3}, {46.0} and {69.0}, though each is 2k times the learner's own (a) working value. An implementer who treats the list as exhaustive would withhold a legitimate F.T. mark.",
+   "evidence": "visual/trap2.py premature-rounding probe.",
+   "repair": "State b:B2 as a rule against the learner's own (a) value as written (final or working value), and keep the list only as canonical-path fixtures. Accept the canonical value given to 3 or more s.f. Add 15.23, 43.36/43.4, 46.08/46.1 and 69.12/69.1 as stage-E fixtures. Premature rounding loses only a:A1, and only when it changes (a)."
+  },
+  {
+   "id": "visual-D1-04",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:73-75; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trapezium-sketch-estimate.md:65",
+   "severity": "should-fix",
+   "expected": "Official 2023 Q6(c) (ER p337): B1 'Correct shape and position in the 1st and 4th quadrants' (B0 if more than one graph), a separate B1 for the correct asymptote and a separate B1 for the x-intercept.",
+   "actual": "c:B1 requires the curve to 'exist only x>h' and to 'approach x=h'. That puts the asymptote's location inside the shape mark. A learner who draws a correct log shape with the wrong shift (for example ln x, asymptote x=0, intercept (1,0), for y=ln(x-2)) loses c:B1, c:B2 and c:B3 (0/3). The official rows give 1/3, for shape and Q1/Q4 position. This new D1 text penalises one error three times.",
+   "evidence": "ER2023 p337 render; WO:73-75.",
+   "repair": "Phrase c:B1 relative to the learner's own drawn vertical asymptote: the curve lies only to its right, approaches it downward without crossing, passes through Q4 and Q1 with decreasing gradient, and has no horizontal asymptote. Credit the location x=h only in c:B2 and (h+1,0) only in c:B3."
+  },
+  {
+   "id": "visual-D1-05",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:30; work/nam-8227-nsscas-2026/workbench/planning/visual-design.json:263,285,307,329; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trapezium-sketch-estimate.md:37",
+   "severity": "should-fix",
+   "expected": "NSSCAS originals may be shown with attribution but never served as generated variants (visual-03 repair intent).",
+   "actual": "Only the exact tuple (2,8,4,3) is excluded. (2,8,4,1) and (2,8,4,2) remain admitted, and their (a), (c) and (d) are verbatim 2023 P2 Q6(a),(c),(d): int_3^11 ln(x-2)dx with four intervals, a sketch of y=ln(x-2), and the same bias question. Only (b)'s factor changes. By D1's own part keys, the original's (a) and (d) contexts are still served. In addition, 8 admitted presentations share the published (a) answer 11.5, and (1|3,8,4,3), including the 'changed' exemplar, share the published (b) answer 69.0. visual-design.json nevertheless says 'no original tuple is in the fresh pool'.",
+   "evidence": "Native QP p10-11 and ER p337; own enumeration.",
+   "repair": "Exclude (h,L,n)=(2,8,4) for every k (35->33; contexts 12; part keys a4/b12/c3/d11; packing 3). Disclose that the (L,n)=(8,4) contexts reproduce the published 2023 values. Optionally move the changed exemplar off (8,4,3)."
+  },
+  {
+   "id": "visual-D1-06",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/visual-design.json:357-361; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:72,76; work/nam-8227-nsscas-2026/workbench/subject-rules.md D1-MR08",
+   "severity": "should-fix",
+   "expected": "d:B1 is now 'B1 F.T.' from the learner's own (c) sketch. MR08 says 'A cue edge is not formal F.T.', and b:B2 has a formal a->b follow-through edge.",
+   "actual": "The c->d dependency is recorded only as type 'cue' ('Use own sketch'), with no follow-through edge for d:B1. Stage E would not see that d is marked against the learner's own graph.",
+   "evidence": "visual-design.json dependencies block.",
+   "repair": "Add {from_part c, to_part d, type follow-through, criterion_id WB8227-trapezium-sketch-estimate:d:B1}, and note that d:DB1 is judged against the same own curve."
+  },
+  {
+   "id": "visual-D1-07",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:76-79,97; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-trapezium-sketch-estimate.md:61-62",
+   "severity": "should-fix",
+   "expected": "What the official rows credit. 2023 Q6(d), the same-type row: B1 'Under-estimate', 'Must be correct from their graph'; DB1 'Trapeziums below curve or the curve is concave'; the prose prefers trapezium-edge-below-curve wording, rejects sloping up/down, and requires reference to both curve and trapezium. No trapeziums need be drawn, because the question asks the learner to 'use your sketch' from (c). 2025 Q4(b), a different task in which the sketch sits inside the explanation part: B1 'Correct shape'; B1 F.T. 'From Their graph' for 'Over-estimate. The edges of the trapeziums are above the curve. The actual trapeziums must be drawn on the curve.' One mark covers conclusion, reason and drawn trapeziums. What D1 credits: d:B1 F.T. for the conclusion supported by the learner's own sketch; d:DB1 for a chord position relative to that curve (concavity shorthand allowed if unambiguous; 'increasing' alone rejected); no overlay required; absent sketch 0; unreadable pending.",
+   "actual": "Assessment: with a correct sketch, D1 equals the 2023 row. Aligning with the 2025 row would withhold credit for the verbal reason the same-type 2023 DB1 explicitly accepts, so it would misjudge learners. With a wrong-shaped sketch, the only extension beyond a strict 2023 reading is that DB1 also follows through to the learner's own curve. 2023 is silent on this, and 2025's single F.T. mark covers conclusion and reason together. With no sketch, all three schemes give 0. The hybrid therefore does not misjudge learners and is a reasonable deviation, but its disclosure misdescribes the departure. Not requiring drawn trapeziums is the 2023 standard, not a departure. Two cases are also undefined: (i) a drawn chord/trapezium overlay on the own sketch with only a brief statement (the 2025 evidence route); (ii) more than one function graph in (c). For case (ii), the 2023 prose says both graphs sketched unlabelled lost all marks for the question, and D1 removes only c:B1 and says nothing about d.",
+   "evidence": "Own renders ER2023 p337, ER2025 p358, QP2025 p4, QP2023 p11.",
+   "repair": "RECOMMENDATION: accept D1-TRAP-FT-BRIDGE with a wording change. (1) Reword it: the same-type 2023 Q6(d) row is retained in full; 'Must be correct from their graph' is read as own-graph F.T. for B1; the only extension is that DB1 is judged against the learner's own curve, supported by 2025 Q4(b), where one F.T. mark covers conclusion and reason; the 2025 drawn-trapezium condition is not adopted because it belongs to a differently worded task. (2) State that a chord/trapezium overlay drawn on the own sketch, with a statement referring to it, also earns DB1. (3) Define the multi-graph case: with no single identifiable own graph, d earns 0 unless one graph is labelled as y=ln(x-h); align c:B2/B3 with the 2023 prose or record the deviation. Vitalis decides."
+  },
+  {
+   "id": "visual-D1-08",
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:39; work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d1-report.md:87; work/nam-8227-nsscas-2026/workbench/checks/plan-repair-d1-visual-dispositions.json (visual-11); work/nam-8227-nsscas-2026/workbench/planning/d1/visual-domain-checks.json:2196",
+   "severity": "should-fix",
+   "expected": "One count of retained crowded-label fixtures across records.",
+   "actual": "The WO, report and disposition say 'D1 retained crowded-label fixtures: 4'. The saved JSON (crowded_D1: 8, eight fixtures listed) and my enumeration give 8: (+-1,-3,2),(+-1,-2,3),(+-1,2,3),(+-1,3,2).",
+   "evidence": "visual/modulus.py.",
+   "repair": "Change 4 to 8 in WO:39, the report and the disposition row."
+  },
+  {
+   "id": "visual-D1-09",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:71",
+   "severity": "should-fix",
+   "expected": "Clear evidence rule for b:B1 when the square is used without being written out.",
+   "actual": "b:B1 requires 'factorised form alone k ln((x-h)^2) seen, or an equivalent correct visible square-rewrite'. A learner who writes '3ln(x^2-6x+9) = 6ln(x-3)' and then 6x11.5 has the efficient correct solution. Whether that learner earns b:B1 (2/2) or only b:B2 (1/2) is ambiguous.",
+   "evidence": "WO:71; ER2023 p337 row '3ln(x-2)^2'.",
+   "repair": "State that a correct 2k ln(x-h) (or the 2k scale correctly derived from the logarithm) implies the square and earns b:B1. Add it as a sample row."
+  },
+  {
+   "id": "visual-D1-10",
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/visual-design-asset-checks.json:349,376; work/nam-8227-nsscas-2026/workbench/exemplars/assets/WB8227-modulus-varied.svg; WB8227-modulus-normal.svg",
+   "severity": "note",
+   "expected": "Inspection notes that match the asset.",
+   "actual": "The varied note says the 'left-zero leader avoids y-axis crossing', but the (1,0) leader runs from x=1 to x=-0.3, across the y-axis at px 290, and the label sits on the negative-x side. In the normal diagram the (-1,0) label sits at x~+0.3, 24 px above the (0,-2) label. All labels are leader-connected and the coordinates are repeated in text, so this is not a design blocker.",
+   "evidence": "SVG geometry parse; PNG view.",
+   "repair": "Correct the note. Add to the placement rule that a zero label stays on its own side of the y-axis where possible, and include this in the stage-E render test."
+  },
+  {
+   "id": "visual-D1-11",
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:22-29",
+   "severity": "note",
+   "expected": "Awareness of other parabola variants.",
+   "actual": "A standard-form fit y=Ax^2+Bx+C through the labels, read as (a,b,c), gives B=2ab/d. That equals the canonical b in 4 admitted tuples (1,+-2,2) and (1,+-3,2); A and C are wrong there. Factored-form variants never hit. The www criteria withhold the mark when the working is shown.",
+   "evidence": "visual/modulus.py extra variants.",
+   "repair": "None required. Optionally list it as a stage-E feedback fixture."
+  }
+ ],
+ "verified_ok": [
+  "All 97 in-scope manifest-listed files match current bytes; manifest sha256 c8914cf9... confirmed.",
+  "Modulus: www restored on a:B1/B2/B3 (WO:49-53); a shown parabola model withholds only the affected coefficient; the new normal (-2,3,2) and changed (2,-3,2) both have d=2 and are admitted; the D0 normal/changed are listed as excluded.",
+  "Modulus domain 108->44 independently reproduced with my own named-error models (parabola via either zero, via y-intercept, b=y0, plus factored-form variants); no named error remains; the original (-2,-3,1) is excluded.",
+  "Modulus exemplars: all coefficients, labels, slopes, wrong-route values (-1, -2/3, 1, 2/3, 1) and the 2/3 partial-credit samples recomputed; the SVG dots and arm ends lie exactly on the model; zero labels are outside the V with leaders; the origin label appears once.",
+  "Trapezium: d:B1 is F.T. from the own sketch; shape errors are penalised only in (c); a clearly absent sketch gives d0/2; unreadable is pending; b:B1 credits the factorised form alone; SC1 is exclusive; bare T and bare J score 0 under OD-1.",
+  "Trapezium 2023 original (2,8,4,3) is excluded; capacity 35/12/4-12-3-12 and strict packing 3 confirmed by exhaustive search.",
+  "Trapezium accepted (b) sets for all 35 tuples match exact Decimal half-up recomputation; 7.9655 knife-edge handled; (8,2,k) fixtures named.",
+  "Trapezium Bloom: all parts and the whole branch Apply 3; (d) rationale cites only d:B1/d:DB1; primary objectives agree across WO, visual-design.json and part-evidence-register.json.",
+  "Trapezium exemplars (normal, changed, boundary): T, J, exact I, accepted sets and sample totals recomputed; SVGs show dashed asymptote x=h, intercept (h+1,0), nodes/chords from the same data below the curve, shading exactly [h+1,h+1+L], and tick labels clear of the curve.",
+  "2025 P2 Q4 is cited as F.T. evidence, not as a same-type label (WO_T:23), which is correct: different function, and the sketch sits inside the part."
+ ],
+ "not_checked": [
+  "Vector-geometry rows in the shared visual disposition file (other agent's scope).",
+  "Textbook family pages; grade descriptor pages; other modulus exam parts (2024 P2 Q11, 2025 P2 Q12).",
+  "Runtime rendering, sketch recognition, no-repeat reservation, seeds (stage E/F).",
+  "Codex's scripts were not run; all checks used reviewer code in SCRATCH/visual/."
+ ]
+}

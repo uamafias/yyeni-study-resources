@@ -1,5 +1,5 @@
 {
-  "status": "Accepted R7 close-out AUTHOR checks pass; Claude confirms at start of step-3 review, no separate review round required",
+  "status": "Accepted R7 plus D2 sentence-polarity repair: author checks pass; D2 focused confirmation pending",
   "pair_redecisions": [
     {
       "sample_id": "BP-08",
@@ -14,8 +14,8 @@
         }
       ],
       "relation": "structural branch",
-      "difficulty_relative_to_exam": "harder",
-      "reason": "The selected part (c) asks total distance on 0..3 after the velocity/rest event have been recovered. It must recognise the interior reversal at 2 and add |integral 0..2v|+|integral 2..3 v|. The target supplies v=30exp(-t/2)>0 and needs only integral 0..2v. This is a harder motion-distance branch because of the sign-change split; the unrelated maximum/velocity-at 3 responses are not compared.",
+      "difficulty_relative_to_exam": "mixed",
+      "reason": "The selected part (c) asks total distance on 0..3 after the velocity/rest event have been recovered. It must recognise the interior reversal at 2 and add |integral 0..2v|+|integral 2..3 v|. The target supplies v=30exp(-t/2)>0 and needs only integral 0..2v. This is a mixed motion-distance branch: the source adds the sign-change split but omits the target exponential primitive; the unrelated maximum/velocity at 3 responses are not compared.",
       "members_read": 1
     },
     {
@@ -31,9 +31,9 @@
           ]
         }
       ],
-      "relation": "same type",
-      "difficulty_relative_to_exam": null,
-      "reason": "Part (c-i) integrates the previously recovered v=10t+8 and fixes s(0)=0 at the shaft top; (c-ii) evaluates that displacement at the stated 4 s to give depth. The target integrates its supplied positive velocity from the start to a stated 2 s. Both give distance with no reversal or event-time solving. The source’s explicit displacement expression is the intermediate indefinite-integral route to the same numeric motion response, not a requirement to solve the unrelated top event in Example 39.",
+      "relation": "structural branch",
+      "difficulty_relative_to_exam": "easier",
+      "reason": "Part (c-i) integrates the previously recovered v=10t+8 and fixes s(0)=0 at the shaft top; (c-ii) evaluates that displacement at the stated 4 s to give depth. The target integrates its supplied positive velocity from the start to a stated 2 s. Both give distance with no reversal or event-time solving. The source’s explicit displacement expression is the intermediate indefinite-integral route to the same numeric motion response, not a requirement to solve the unrelated top event in Example 39. D1 correction: the polynomial power-rule primitive is easier than the target exponential primitive, whose reciprocal chain factor is an assessed ingredient. It is a structural branch, not same type.",
       "members_read": 2
     },
     {
@@ -65,9 +65,9 @@
           ]
         }
       ],
-      "relation": "same type",
-      "difficulty_relative_to_exam": null,
-      "reason": "Selected Example 38(d) asks the distance travelled in the first 2 s from given v=12t-t²; v is nonnegative on 0..2 and its single definite integral gives 64/3 m. The target uses the same fixed interval, given one-signed velocity, motion interpretation and numeric distance response. The source’s acceleration, maximum and next-rest parts are not selected.",
+      "relation": "structural branch",
+      "difficulty_relative_to_exam": "easier",
+      "reason": "Selected Example 38(d) asks the distance travelled in the first 2 s from given v=12t-t²; v is nonnegative on 0..2 and its single definite integral gives 64/3 m. The target uses the same fixed interval, given one-signed velocity, motion interpretation and numeric distance response. The source’s acceleration, maximum and next-rest parts are not selected. D1 correction: the polynomial power-rule primitive is easier than the target exponential primitive, whose reciprocal chain factor is an assessed ingredient. It is a structural branch, not same type.",
       "members_read": 5
     },
     {
@@ -226,9 +226,9 @@
   "after": {
     "main_decisions": 2718,
     "relations_by_kind": {
-      "same type": 211,
+      "same type": 209,
       "rejected": 1777,
-      "structural branch": 910
+      "structural branch": 912
     },
     "parts_without_any_relation": 13,
     "same_type_demands": 73
@@ -253,6 +253,16 @@
       "fixture": "nonordered-related-lead-without-member-level-reason",
       "result": "rejected",
       "reason": "related member subpart lead has no member-level rejection reason"
+    },
+    {
+      "fixture": "restored-r6-negation-lost",
+      "result": "rejected",
+      "reason": "restored R6 sentence meaning or polarity changed"
+    },
+    {
+      "fixture": "restored-r6-positive-sentence-over-negated",
+      "result": "rejected",
+      "reason": "restored R6 sentence meaning or polarity changed"
     }
   ],
   "gap_counts": {

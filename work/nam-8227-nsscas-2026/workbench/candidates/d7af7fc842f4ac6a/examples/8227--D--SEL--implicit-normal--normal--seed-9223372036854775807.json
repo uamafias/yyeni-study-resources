@@ -1,0 +1,1793 @@
+{
+  "stem": "A curve has equation $2e^{2x}y+y^2=3$. The point $P=(0,-3)$ lies on the curve.",
+  "parts": [
+    {
+      "local_part_id": "show-derivative",
+      "prompt": "Show that $y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$ where the denominator is nonzero, showing all necessary working.",
+      "reference_answer": "$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$",
+      "worked_steps": [
+        {
+          "action": "Differentiate the exponential product",
+          "reason": "Both factors depend on x; include the exponential chain factor.",
+          "result": "$4e^{2x}y+2e^{2x}y'$"
+        },
+        {
+          "action": "Differentiate the remaining terms",
+          "reason": "y depends on x; the right-hand side is constant.",
+          "result": "$\\frac{d}{dx}(y^2)=2yy'$, $\\frac{d}{dx}(3)=0$"
+        },
+        {
+          "action": "Collect terms containing the derivative",
+          "reason": "Isolate the requested derivative by forward algebra.",
+          "result": "$(2e^{2x}+2y)y'=-4e^{2x}y$"
+        },
+        {
+          "action": "Divide by the nonzero coefficient",
+          "reason": "The expression is valid on a local branch where the denominator is nonzero.",
+          "result": "$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$"
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+          "marks": 1,
+          "mark_type": "M",
+          "achievement": "Attempt a complete differentiation of the product (or an approved equivalent relation), allowing one numerical slip but no omitted contribution.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "S1",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+          "marks": 1,
+          "mark_type": "A",
+          "achievement": "Correct exponential/product/composite differentiation on the selected valid route.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "S2",
+          "depends_on": [
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1"
+          ],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+          "marks": 1,
+          "mark_type": "B",
+          "achievement": "Correct remaining implicit derivative and constant zero; on the explicit-root route justify the root/y identity.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "S3",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4",
+          "marks": 1,
+          "mark_type": "A",
+          "achievement": "Complete correct forward derivation establishes the supplied target or a demonstrated equivalent; all preceding proof evidence is correct and complete. No follow-through into the supplied result.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": true,
+          "suffix": "S4",
+          "depends_on": [
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3"
+          ],
+          "depends_on_any": []
+        }
+      ],
+      "accepted_alternatives": [
+        {
+          "method": "local explicit quadratic root",
+          "requirements": "Solve the original quadratic for its local y branch, differentiate correctly, substitute P. Alternative fills the same slots, never adds credit.",
+          "formula": "$y=\\frac{-2e^{2x} - \\sqrt{4e^{4x} + 12}}{2}$, $\\sigma=-1$."
+        },
+        {
+          "method": "divided relation",
+          "requirements": "3 is nonzero so y is nonzero; differentiate the equivalent relation 2e^{2x}+y=3/y. Then substitute the original constant relation to establish the supplied target. Missing this step loses S4 only after correct S1/S2/S3."
+        },
+        {
+          "method": "log-absolute relation",
+          "requirements": "Use $\\ln 2+2x=\\ln|3-y^2|-\\ln|y|$ and complete correct substitution of the original constant relation. Real ln(y) is invalid on the negative-y branch; at most independent S3 is possible."
+        }
+      ],
+      "answer_only_credit": 0,
+      "alternative_criterion_mapping": {
+        "local-explicit-quadratic-root": {
+          "S1": "Derive the valid local root",
+          "S2": "Differentiate it correctly",
+          "S3": "Justify the root/y identity",
+          "S4": "Complete forward algebra establishes the supplied target"
+        },
+        "divided-or-log-absolute": {
+          "S1": "Differentiate a valid equivalent relation, all terms attempted",
+          "S2": "Correct exponential/composite derivative",
+          "S3": "Correct remaining implicit derivative and constant treatment",
+          "S4": "Complete correct forward rearrangement/back-substitution establishes the supplied target"
+        }
+      },
+      "proposed_marks": 4,
+      "semantic_key": "[\"implicit-show\",2,2]",
+      "part_id": "WB8227-implicit-normal:normal:show-derivative",
+      "reviewed_part": {
+        "part_id": "show-derivative",
+        "directly_assessed_demand_ids": [
+          "8227:2020:M2:T4:O03:D01",
+          "8227:2020:M2:T4:O02:D01",
+          "8227:2020:M2:T4:O01:D02"
+        ],
+        "directly_assessed_objective_ids": [
+          "8227:2020:M2:T4:O01",
+          "8227:2020:M2:T4:O02",
+          "8227:2020:M2:T4:O03"
+        ],
+        "primary_objective_id": "8227:2020:M2:T4:O03",
+        "other_directly_assessed_objective_ids": [
+          "8227:2020:M2:T4:O01",
+          "8227:2020:M2:T4:O02"
+        ],
+        "prerequisite_demand_ids": [
+          {
+            "demand_id": "8227:2020:M2:T4:O01:D01",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          },
+          {
+            "demand_id": "8227:2020:M1:T8:O02:D01",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          }
+        ],
+        "marks": 4,
+        "bloom": 3,
+        "bloom_rationale": "S1–S3 demonstrate a complete valid differentiation route; S4 requires correct forward algebra establishing the supplied derivative. The routine answer-given derivation warrants Apply, not Evaluate merely because it says show. D3 evidence: WB8227-implicit-normal@0.1.4:normal:show-derivative:S1, WB8227-implicit-normal@0.1.4:normal:show-derivative:S2, WB8227-implicit-normal@0.1.4:normal:show-derivative:S3, WB8227-implicit-normal@0.1.4:normal:show-derivative:S4.",
+        "bloom_criterion_ids": [
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4"
+        ],
+        "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+        "classification_version": "8227-pilot-design-0.1.1",
+        "criterion_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "fully_qualified_criterion_ids": [
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+          "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4"
+        ],
+        "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+        "response_format": "proof/show-that",
+        "answer_only_credit": 0,
+        "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+        "criteria": [
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+            "suffix": "S1",
+            "mark_type": "M",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2023:P2:Q8:AWARD:01"
+            ],
+            "qualifiers": [
+              "allow one slip",
+              "not omission"
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+            "suffix": "S2",
+            "mark_type": "A",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2023:P2:Q8:AWARD:02"
+            ],
+            "qualifiers": [
+              "correct complete product derivative",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger. The fixed supplied proof target is not changed."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+            "suffix": "S3",
+            "mark_type": "B",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2023:P2:Q8:AWARD:03"
+            ],
+            "qualifiers": [
+              "remaining implicit derivative and constant zero",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger. The fixed supplied proof target is not changed."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4",
+            "suffix": "S4",
+            "mark_type": "A",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2023:P2:Q8:AWARD:04"
+            ],
+            "qualifiers": [
+              "source E1 proof terminal, mappedA1",
+              "all preceding proofwork correct and complete",
+              "no follow-through into given answer",
+              "Simplified equivalent target accepted when equality is shown, including common nonzero-factor cancellation.",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger. The fixed supplied proof target is not changed."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          }
+        ],
+        "alternative_criterion_mapping": {
+          "S1": "Valid differentiation attempt on an equivalent relation, every term attempted, allowing one numerical slip but no omitted contribution.",
+          "S2": "Correct derivative of the exponential/composite term in that route.",
+          "S3": "Correct implicit derivatives of the remaining y-terms and treatment of C as constant. No back-substitution in this slot; the explicit-root route alone uses its justified root/y identity here.",
+          "S4": "Complete correct forward rearrangement, including back-substitution of C=ae^(kx)y+y^2 where needed, establishes the fixed supplied target or an explicitly shown equivalent form; S1–S3 correct and complete; no follow-through into a given result."
+        },
+        "alternative_route_conditions": [
+          "C != 0 in every admitted instance implies y != 0 on the curve, permitting divide-by-y.",
+          "Log route uses log absolute values for potentially negative y and C-y^2, never log of a negative real quantity.",
+          "Exclusive mappings fill the same four criteria once; root/product/log/divided paths cannot be summed.",
+          "Every accepted path (product, explicit-root, divided, log-absolute) is stored; do not fabricate product-rule evidence for a path that does not use it.",
+          "At the supplied negative-y branch, real ln(y) without moduli is invalid: S1=0, dependent S2=0 and S4=0; independently correct remaining implicit derivative/constant evidence may earn S3 only, maximum 1/4. Valid ln|y| proofs can earn 4/4."
+        ],
+        "named_deviation_ids": [
+          "CALC-D1-DEV01",
+          "CALC-D1-DEV02",
+          "CALC-D2-DEV09"
+        ],
+        "misread_policy": {
+          "policy_id": "MR03-D4",
+          "owner_principle_id": "OD-6",
+          "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+          "operational_policy_id": "MR03-OPS-D4",
+          "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+          "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+          "feedback": "Practice feedback names the misread.",
+          "ledger_fields": [
+            "datum_id",
+            "canonical_value",
+            "misread_value",
+            "eligible",
+            "eligibility_reason",
+            "first_use_part",
+            "gross_awards",
+            "deducted_part",
+            "deducted_criterion",
+            "amount",
+            "net_awards"
+          ],
+          "sources": [
+            "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+            "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+          ],
+          "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
+        },
+        "alternative_marking_samples": [
+          {
+            "sample": "divided-proof-correct-differentiation-failed-back-substitution",
+            "criterion_awards": {
+              "S1": 1,
+              "S2": 1,
+              "S3": 1,
+              "S4": 0
+            },
+            "score": 3,
+            "total": 4
+          },
+          {
+            "sample": "ln-y-without-moduli-at-supplied-negative-branch",
+            "criterion_awards": {
+              "S1": 0,
+              "S2": 0,
+              "S3": 1,
+              "S4": 0
+            },
+            "score": 1,
+            "total": 4,
+            "condition": "Independently correct S3 evidence is visible; otherwise zero."
+          }
+        ],
+        "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+        "qualified_part_id": "WB8227-implicit-normal:normal:show-derivative"
+      }
+    },
+    {
+      "local_part_id": "gradient",
+      "prompt": "Hence, using your derivative or the displayed formula, find the gradient at P. Show your substitution; give an exact answer or a value correct to 3 significant figures.",
+      "reference_answer": "$-3$",
+      "worked_steps": [
+        {
+          "action": "Substitute the supplied point",
+          "reason": "Use the derivative at P, keeping exact arithmetic.",
+          "result": "$m=-\\frac{(2)(2)(-3)}{2+2(-3)}=-3$"
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+          "marks": 1,
+          "mark_type": "M",
+          "achievement": "Substitute the point into the displayed derivative or a credible derivative from the proof, respecting hence.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "H1",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H2",
+          "marks": 1,
+          "mark_type": "A",
+          "achievement": "Canonical exact or 3 s.f. gradient after valid substitution; no ordinary final-accuracy follow-through.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "H2",
+          "depends_on": [
+            "WB8227-implicit-normal@0.1.4:normal:gradient:H1"
+          ],
+          "depends_on_any": []
+        }
+      ],
+      "accepted_alternatives": [],
+      "answer_only_credit": 0,
+      "proposed_marks": 2,
+      "semantic_key": "[\"implicit-point\",2,2,3,-3]",
+      "part_id": "WB8227-implicit-normal:normal:gradient",
+      "reviewed_part": {
+        "part_id": "gradient",
+        "directly_assessed_demand_ids": [
+          "8227:2020:M2:T4:O03:D03",
+          "8227:2020:M1:T8:O01:D01"
+        ],
+        "directly_assessed_objective_ids": [
+          "8227:2020:M1:T8:O01",
+          "8227:2020:M2:T4:O03"
+        ],
+        "primary_objective_id": "8227:2020:M2:T4:O03",
+        "other_directly_assessed_objective_ids": [
+          "8227:2020:M1:T8:O01"
+        ],
+        "prerequisite_demand_ids": [
+          {
+            "demand_id": "8227:2020:M2:T4:O03:D01",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          },
+          {
+            "demand_id": "8227:2020:M2:T4:O01:D02",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          }
+        ],
+        "marks": 2,
+        "bloom": 3,
+        "bloom_rationale": "H1 substitutes the supplied point into the displayed derivative or their credible derived expression; H2 requires the canonical gradient after that working. This is routine Apply 3, not derivative proof credit again. D3 evidence: WB8227-implicit-normal@0.1.4:normal:gradient:H1, WB8227-implicit-normal@0.1.4:normal:gradient:H2.",
+        "bloom_criterion_ids": [
+          "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+          "WB8227-implicit-normal@0.1.4:normal:gradient:H2"
+        ],
+        "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+        "classification_version": "8227-pilot-design-0.1.1",
+        "criterion_ids": [
+          "H1",
+          "H2"
+        ],
+        "fully_qualified_criterion_ids": [
+          "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+          "WB8227-implicit-normal@0.1.4:normal:gradient:H2"
+        ],
+        "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+        "response_format": "numeric",
+        "answer_only_credit": 0,
+        "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+        "criteria": [
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+            "suffix": "H1",
+            "mark_type": "M",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2023:P2:Q8:AWARD:05"
+            ],
+            "qualifiers": [
+              "M1 substitute P into the displayed derivative OR their credible differentiated expression from the proof; own-result method follow-through allowed",
+              "must use displayed/prior derivative under hence; no unconnected bypass",
+              "point supplied not recovered"
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H2",
+            "suffix": "H2",
+            "mark_type": "A",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2023:P2:Q8:AWARD:06"
+            ],
+            "qualifiers": [
+              "Canonical gradient after eligible H1 working; no final-accuracy follow-through",
+              "may use given correct derivative after failed proof, without restoring proof marks",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          }
+        ],
+        "misread_policy": {
+          "policy_id": "MR03-D4",
+          "owner_principle_id": "OD-6",
+          "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+          "operational_policy_id": "MR03-OPS-D4",
+          "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+          "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+          "feedback": "Practice feedback names the misread.",
+          "ledger_fields": [
+            "datum_id",
+            "canonical_value",
+            "misread_value",
+            "eligible",
+            "eligibility_reason",
+            "first_use_part",
+            "gross_awards",
+            "deducted_part",
+            "deducted_criterion",
+            "amount",
+            "net_awards"
+          ],
+          "sources": [
+            "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+            "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+          ],
+          "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
+        },
+        "marking_clarification": "The known e-index error in the failed proof can still yield the canonical value at x=0: eligible H1 substitution plus that value earns H1/H2=2/2. S2/S4 remain lost; gradient-only G5 has its separate www condition. This is an ordinary numerical coincidence, not OD-6.",
+        "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+        "qualified_part_id": "WB8227-implicit-normal:normal:gradient"
+      }
+    },
+    {
+      "local_part_id": "normal",
+      "prompt": "Find the exact equation of the normal at P. Show the perpendicular-gradient and line-construction steps.",
+      "reference_answer": "$y=\\frac{1}{3}x - 3$",
+      "worked_steps": [
+        {
+          "action": "Find the perpendicular gradient",
+          "reason": "A finite nonzero tangent gradient has perpendicular gradient minus its reciprocal.",
+          "result": "$m_\\perp=-\\frac{1}{-3}=\\frac{1}{3}$"
+        },
+        {
+          "action": "Construct the line through P",
+          "reason": "Use point-gradient form with the perpendicular gradient.",
+          "result": "$y + 3=\\frac{1}{3}x$"
+        },
+        {
+          "action": "Simplify the equation",
+          "reason": "Equivalent exact affine forms describe the same line.",
+          "result": "$y=\\frac{1}{3}x - 3$"
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+          "marks": 1,
+          "mark_type": "M",
+          "achievement": "Show or state a labelled perpendicular gradient equal to minus the reciprocal of their credible finite nonzero tangent gradient.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "N1",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+          "marks": 1,
+          "mark_type": "DM",
+          "achievement": "Construct the line through the supplied point using their perpendicular gradient; limited method follow-through.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "N2",
+          "depends_on": [
+            "WB8227-implicit-normal@0.1.4:normal:normal:N1"
+          ],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N3",
+          "marks": 1,
+          "mark_type": "A",
+          "achievement": "Canonical exact normal in any equivalent line form after visible normal working; ordinary final accuracy is not follow-through.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "N3",
+          "depends_on": [
+            "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+            "WB8227-implicit-normal@0.1.4:normal:normal:N2"
+          ],
+          "depends_on_any": []
+        }
+      ],
+      "accepted_alternatives": [],
+      "answer_only_credit": 0,
+      "proposed_marks": 3,
+      "semantic_key": "[\"implicit-normal\",2,2,3,-3]",
+      "part_id": "WB8227-implicit-normal:normal:normal",
+      "reviewed_part": {
+        "part_id": "normal",
+        "directly_assessed_demand_ids": [
+          "8227:2020:M1:T8:O03:D01",
+          "8227:2020:M2:T4:O03:D03"
+        ],
+        "directly_assessed_objective_ids": [
+          "8227:2020:M1:T8:O03",
+          "8227:2020:M2:T4:O03"
+        ],
+        "primary_objective_id": "8227:2020:M1:T8:O03",
+        "other_directly_assessed_objective_ids": [
+          "8227:2020:M2:T4:O03"
+        ],
+        "prerequisite_demand_ids": [
+          {
+            "demand_id": "8227:2020:M1:T8:O01:D01",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          },
+          {
+            "demand_id": "8227:2020:M2:T4:O03:D01",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          }
+        ],
+        "marks": 3,
+        "bloom": 3,
+        "bloom_rationale": "N1 demonstrates the perpendicular gradient, N2 constructs the line through the given point using it, and N3 is canonical exact line accuracy. These are familiar linked applications. D3 evidence: WB8227-implicit-normal@0.1.4:normal:normal:N1, WB8227-implicit-normal@0.1.4:normal:normal:N2, WB8227-implicit-normal@0.1.4:normal:normal:N3.",
+        "bloom_criterion_ids": [
+          "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+          "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+          "WB8227-implicit-normal@0.1.4:normal:normal:N3"
+        ],
+        "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+        "classification_version": "8227-pilot-design-0.1.1",
+        "criterion_ids": [
+          "N1",
+          "N2",
+          "N3"
+        ],
+        "fully_qualified_criterion_ids": [
+          "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+          "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+          "WB8227-implicit-normal@0.1.4:normal:normal:N3"
+        ],
+        "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+        "response_format": "symbolic",
+        "answer_only_credit": 0,
+        "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+        "criteria": [
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+            "suffix": "N1",
+            "mark_type": "M",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2021:P2:Q10:AWARD:04"
+            ],
+            "qualifiers": [
+              "A labelled perpendicular-gradient value equal to -1/(their m) in working is sufficient M1; an explicit reciprocal calculation is not mandatory. Negation or positive reciprocal is not accepted.",
+              "their credible finite nonzero tangent gradient allowed",
+              "bare final line without gradient working earns no N1"
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+            "suffix": "N2",
+            "mark_type": "DM",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2021:P2:Q10:AWARD:05"
+            ],
+            "qualifiers": [
+              "DM1 depends onN1",
+              "complete line through their point with their perpendicular gradient"
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N3",
+            "suffix": "N3",
+            "mark_type": "A",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2021:P2:Q10:AWARD:06"
+            ],
+            "qualifiers": [
+              "allow equivalents",
+              "canonical exact line; noF.T.",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          }
+        ],
+        "misread_policy": {
+          "policy_id": "MR03-D4",
+          "owner_principle_id": "OD-6",
+          "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+          "operational_policy_id": "MR03-OPS-D4",
+          "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+          "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+          "feedback": "Practice feedback names the misread.",
+          "ledger_fields": [
+            "datum_id",
+            "canonical_value",
+            "misread_value",
+            "eligible",
+            "eligibility_reason",
+            "first_use_part",
+            "gross_awards",
+            "deducted_part",
+            "deducted_criterion",
+            "amount",
+            "net_awards"
+          ],
+          "sources": [
+            "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+            "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+          ],
+          "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
+        },
+        "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+        "qualified_part_id": "WB8227-implicit-normal:normal:normal"
+      }
+    }
+  ],
+  "assets": [],
+  "exposure_keys": [
+    "[\"implicit-curve\",2,2,3]",
+    "[\"implicit-normal\",2,2,3,-3]",
+    "[\"implicit-point\",2,2,3,-3]",
+    "[\"implicit-show\",2,2]"
+  ],
+  "private_math": {
+    "parameters": {
+      "a": 2,
+      "k": 2,
+      "q": -3
+    },
+    "C": 3,
+    "gradient": "-3",
+    "normal_slope": "1/3",
+    "normal_intercept": -3,
+    "derivative_math": {
+      "numerator_coefficient": -4,
+      "exponent_coefficient": 2,
+      "denominator_coefficients": [
+        2,
+        2
+      ]
+    },
+    "misread_eligibility": "Finite AND nonzero gradient required; preserve the supplied point on the curve and the genuine nonunit exponential-chain demand. A supplied proof target remains fixed under MR09.",
+    "nondiagnostic_numeric_collision": "The wrong exponential index derivative coincides at x=0 in every admitted tuple; visible wrong working loses G2/G5, so no diagnosis is inferred from the number alone.",
+    "open_fixture": "Ineligible C misread product route can still score canonical 9/9 because C is never used. Divided/log-absolute/explicit-root routes remain E/F fixtures without a new score ruling."
+  },
+  "practice_help": {
+    "version": 1,
+    "title": "Plan your working",
+    "prompts": [
+      "Which factors depend on x?",
+      "Differentiate before substituting a point.",
+      "For a normal, how is its gradient related to the tangent gradient?"
+    ]
+  },
+  "misread_policy": {
+    "operational_policy_id": "MR03-OPS-D4",
+    "approval": "Vitalis exact Stage-D manifest 4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+    "rule": "Judge gross evidence and dependencies first; an eligible question-data misread costs one earned A/B mark once per datum, in question/criterion order, carrying forward if needed. Never deduct from M/DM. Eligible follow-through does not override MR09 supplied-result proof requirements or OD-1 required working.",
+    "eligibility": "Decide once at first use for the connected question; a changed object/difficulty or own-figure slip remains canonical throughout.",
+    "competing_datum_settlement": "Unresolved E/F carry: competing eligible data sharing an earned mark require an explicit accepted settlement; do not infer a grade from datum list order."
+  },
+  "exposure_policy": "Every required freshness identity must be unseen for wholly fresh use; additionally exposed shared identities are recorded for later branch checks without imposing new fresh requirements on this instance. Version is provenance and never resets exposure. Disclosed repeated-component practice is separate; do not silently switch branches on exhaustion.",
+  "recipe_id": "WB8227-implicit-normal",
+  "branch_id": "normal",
+  "selection_id": "8227:D:SEL:implicit-normal:normal",
+  "recipe_version": "0.1.5",
+  "design_rubric_version": "0.1.4",
+  "parameters": {
+    "a": 2,
+    "k": 2,
+    "q": -3
+  },
+  "proposed_total_marks": 9,
+  "freshness_required_keys": [
+    "[\"implicit-curve\",2,2,3]",
+    "[\"implicit-normal\",2,2,3,-3]",
+    "[\"implicit-point\",2,2,3,-3]",
+    "[\"implicit-show\",2,2]"
+  ],
+  "generator_version": 2,
+  "generator_seed": 9223372036854775807,
+  "domain_index": 10,
+  "source_branch": {
+    "kind": "normal"
+  },
+  "objective_ids": [
+    "8227:2020:M1:T8:O01",
+    "8227:2020:M1:T8:O03",
+    "8227:2020:M2:T4:O01",
+    "8227:2020:M2:T4:O02",
+    "8227:2020:M2:T4:O03"
+  ],
+  "demand_ids": [
+    "8227:2020:M1:T8:O01:D01",
+    "8227:2020:M1:T8:O03:D01",
+    "8227:2020:M2:T4:O01:D02",
+    "8227:2020:M2:T4:O02:D01",
+    "8227:2020:M2:T4:O03:D01",
+    "8227:2020:M2:T4:O03:D03"
+  ],
+  "blooms_level": 3,
+  "classification_version": "8227-pilot-design-0.1.1",
+  "examination_references": [
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2025,
+      "session": null,
+      "paper": "2",
+      "question": "5",
+      "part": null,
+      "printed_page": 5,
+      "pdf_page": 5,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+      "source_sha256": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2025 Paper 2, Question 5, page 5",
+      "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "show-derivative",
+        "gradient",
+        "normal"
+      ],
+      "target_part_ids": [
+        "WB8227-implicit-normal:normal:show-derivative",
+        "WB8227-implicit-normal:normal:gradient",
+        "WB8227-implicit-normal:normal:normal"
+      ]
+    },
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2023,
+      "session": null,
+      "paper": "2",
+      "question": "8",
+      "part": "a",
+      "printed_page": 14,
+      "pdf_page": 14,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+      "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2023 Paper 2, Question 8(a), page 14",
+      "source_part_id": "8227:EXAM:2023:P2:Q8:a",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "show-derivative",
+        "gradient",
+        "normal"
+      ],
+      "target_part_ids": [
+        "WB8227-implicit-normal:normal:show-derivative",
+        "WB8227-implicit-normal:normal:gradient",
+        "WB8227-implicit-normal:normal:normal"
+      ]
+    },
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2023,
+      "session": null,
+      "paper": "2",
+      "question": "8",
+      "part": "b",
+      "printed_page": 14,
+      "pdf_page": 14,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+      "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2023 Paper 2, Question 8(b), page 14",
+      "source_part_id": "8227:EXAM:2023:P2:Q8:b",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "show-derivative",
+        "gradient",
+        "normal"
+      ],
+      "target_part_ids": [
+        "WB8227-implicit-normal:normal:show-derivative",
+        "WB8227-implicit-normal:normal:gradient",
+        "WB8227-implicit-normal:normal:normal"
+      ]
+    },
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2021,
+      "session": null,
+      "paper": "2",
+      "question": "10",
+      "part": "a",
+      "printed_page": 12,
+      "pdf_page": 12,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf",
+      "source_sha256": "509e1ad3fda0535ec756842d085384c409dec64284e8b1883a2b96b5976c0e80",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 2, Question 10(a), page 12",
+      "source_part_id": "8227:EXAM:2021:P2:Q10:a",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "show-derivative",
+        "gradient",
+        "normal"
+      ],
+      "target_part_ids": [
+        "WB8227-implicit-normal:normal:show-derivative",
+        "WB8227-implicit-normal:normal:gradient",
+        "WB8227-implicit-normal:normal:normal"
+      ]
+    },
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2021,
+      "session": null,
+      "paper": "2",
+      "question": "10",
+      "part": "b",
+      "printed_page": 12,
+      "pdf_page": 12,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf",
+      "source_sha256": "509e1ad3fda0535ec756842d085384c409dec64284e8b1883a2b96b5976c0e80",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 2, Question 10(b), page 12",
+      "source_part_id": "8227:EXAM:2021:P2:Q10:b",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "show-derivative",
+        "gradient",
+        "normal"
+      ],
+      "target_part_ids": [
+        "WB8227-implicit-normal:normal:show-derivative",
+        "WB8227-implicit-normal:normal:gradient",
+        "WB8227-implicit-normal:normal:normal"
+      ]
+    },
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2021,
+      "session": null,
+      "paper": "1",
+      "question": "11",
+      "part": "b",
+      "printed_page": 13,
+      "pdf_page": 13,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+      "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 1, Question 11(b), page 13",
+      "source_part_id": "8227:EXAM:2021:P1:Q11:b",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "show-derivative",
+        "gradient",
+        "normal"
+      ],
+      "target_part_ids": [
+        "WB8227-implicit-normal:normal:show-derivative",
+        "WB8227-implicit-normal:normal:gradient",
+        "WB8227-implicit-normal:normal:normal"
+      ]
+    }
+  ],
+  "generation_identity": {
+    "package_id": "namibia-nsscas-8227",
+    "package_version": "0.1.5",
+    "recipe_version": "0.1.5",
+    "selection_id": "8227:D:SEL:implicit-normal:normal",
+    "branch_id": "normal",
+    "seed": 9223372036854775807,
+    "parameters_sha256": "92bbecc7a7bd5ef419b42a8653c62b126f68459e6d19b48fabd3a45c3413c62e",
+    "algorithm": "finite-domain-python-random-v1",
+    "approved_design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec"
+  },
+  "owner_design_approval": {
+    "owner": "Vitalis",
+    "manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+    "runtime_content_review": "pending"
+  },
+  "semantic_fingerprint": "57682014dc80e0690af658fa962231a0abed48320ef055198788b27b8fe7e0c2",
+  "fingerprint": "a6c8cec93d4549a4cf7614996b59c41107ded9aa013da09ddd302f37dae34138",
+  "native_marking_memo": {
+    "schema": "8227-marking-evidence-v1",
+    "recipe_version": "0.1.5",
+    "parts": [
+      {
+        "local_part_id": "show-derivative",
+        "prompt": "Show that $y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$ where the denominator is nonzero, showing all necessary working.",
+        "reference_answer": "$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$",
+        "worked_steps": [
+          {
+            "action": "Differentiate the exponential product",
+            "reason": "Both factors depend on x; include the exponential chain factor.",
+            "result": "$4e^{2x}y+2e^{2x}y'$"
+          },
+          {
+            "action": "Differentiate the remaining terms",
+            "reason": "y depends on x; the right-hand side is constant.",
+            "result": "$\\frac{d}{dx}(y^2)=2yy'$, $\\frac{d}{dx}(3)=0$"
+          },
+          {
+            "action": "Collect terms containing the derivative",
+            "reason": "Isolate the requested derivative by forward algebra.",
+            "result": "$(2e^{2x}+2y)y'=-4e^{2x}y$"
+          },
+          {
+            "action": "Divide by the nonzero coefficient",
+            "reason": "The expression is valid on a local branch where the denominator is nonzero.",
+            "result": "$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$"
+          }
+        ],
+        "criteria": [
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+            "marks": 1,
+            "mark_type": "M",
+            "achievement": "Attempt a complete differentiation of the product (or an approved equivalent relation), allowing one numerical slip but no omitted contribution.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "S1",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+            "marks": 1,
+            "mark_type": "A",
+            "achievement": "Correct exponential/product/composite differentiation on the selected valid route.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "S2",
+            "depends_on": [
+              "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1"
+            ],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+            "marks": 1,
+            "mark_type": "B",
+            "achievement": "Correct remaining implicit derivative and constant zero; on the explicit-root route justify the root/y identity.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "S3",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4",
+            "marks": 1,
+            "mark_type": "A",
+            "achievement": "Complete correct forward derivation establishes the supplied target or a demonstrated equivalent; all preceding proof evidence is correct and complete. No follow-through into the supplied result.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": true,
+            "suffix": "S4",
+            "depends_on": [
+              "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+              "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+              "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3"
+            ],
+            "depends_on_any": []
+          }
+        ],
+        "accepted_alternatives": [
+          {
+            "method": "local explicit quadratic root",
+            "requirements": "Solve the original quadratic for its local y branch, differentiate correctly, substitute P. Alternative fills the same slots, never adds credit.",
+            "formula": "$y=\\frac{-2e^{2x} - \\sqrt{4e^{4x} + 12}}{2}$, $\\sigma=-1$."
+          },
+          {
+            "method": "divided relation",
+            "requirements": "3 is nonzero so y is nonzero; differentiate the equivalent relation 2e^{2x}+y=3/y. Then substitute the original constant relation to establish the supplied target. Missing this step loses S4 only after correct S1/S2/S3."
+          },
+          {
+            "method": "log-absolute relation",
+            "requirements": "Use $\\ln 2+2x=\\ln|3-y^2|-\\ln|y|$ and complete correct substitution of the original constant relation. Real ln(y) is invalid on the negative-y branch; at most independent S3 is possible."
+          }
+        ],
+        "answer_only_credit": 0,
+        "alternative_criterion_mapping": {
+          "local-explicit-quadratic-root": {
+            "S1": "Derive the valid local root",
+            "S2": "Differentiate it correctly",
+            "S3": "Justify the root/y identity",
+            "S4": "Complete forward algebra establishes the supplied target"
+          },
+          "divided-or-log-absolute": {
+            "S1": "Differentiate a valid equivalent relation, all terms attempted",
+            "S2": "Correct exponential/composite derivative",
+            "S3": "Correct remaining implicit derivative and constant treatment",
+            "S4": "Complete correct forward rearrangement/back-substitution establishes the supplied target"
+          }
+        },
+        "proposed_marks": 4,
+        "semantic_key": "[\"implicit-show\",2,2]",
+        "part_id": "WB8227-implicit-normal:normal:show-derivative",
+        "reviewed_part": {
+          "part_id": "show-derivative",
+          "directly_assessed_demand_ids": [
+            "8227:2020:M2:T4:O03:D01",
+            "8227:2020:M2:T4:O02:D01",
+            "8227:2020:M2:T4:O01:D02"
+          ],
+          "directly_assessed_objective_ids": [
+            "8227:2020:M2:T4:O01",
+            "8227:2020:M2:T4:O02",
+            "8227:2020:M2:T4:O03"
+          ],
+          "primary_objective_id": "8227:2020:M2:T4:O03",
+          "other_directly_assessed_objective_ids": [
+            "8227:2020:M2:T4:O01",
+            "8227:2020:M2:T4:O02"
+          ],
+          "prerequisite_demand_ids": [
+            {
+              "demand_id": "8227:2020:M2:T4:O01:D01",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            },
+            {
+              "demand_id": "8227:2020:M1:T8:O02:D01",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            }
+          ],
+          "marks": 4,
+          "bloom": 3,
+          "bloom_rationale": "S1–S3 demonstrate a complete valid differentiation route; S4 requires correct forward algebra establishing the supplied derivative. The routine answer-given derivation warrants Apply, not Evaluate merely because it says show. D3 evidence: WB8227-implicit-normal@0.1.4:normal:show-derivative:S1, WB8227-implicit-normal@0.1.4:normal:show-derivative:S2, WB8227-implicit-normal@0.1.4:normal:show-derivative:S3, WB8227-implicit-normal@0.1.4:normal:show-derivative:S4.",
+          "bloom_criterion_ids": [
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4"
+          ],
+          "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+          "classification_version": "8227-pilot-design-0.1.1",
+          "criterion_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "fully_qualified_criterion_ids": [
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+            "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4"
+          ],
+          "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+          "response_format": "proof/show-that",
+          "answer_only_credit": 0,
+          "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+          "criteria": [
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+              "suffix": "S1",
+              "mark_type": "M",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2023:P2:Q8:AWARD:01"
+              ],
+              "qualifiers": [
+                "allow one slip",
+                "not omission"
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+              "suffix": "S2",
+              "mark_type": "A",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2023:P2:Q8:AWARD:02"
+              ],
+              "qualifiers": [
+                "correct complete product derivative",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger. The fixed supplied proof target is not changed."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+              "suffix": "S3",
+              "mark_type": "B",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2023:P2:Q8:AWARD:03"
+              ],
+              "qualifiers": [
+                "remaining implicit derivative and constant zero",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger. The fixed supplied proof target is not changed."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4",
+              "suffix": "S4",
+              "mark_type": "A",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2023:P2:Q8:AWARD:04"
+              ],
+              "qualifiers": [
+                "source E1 proof terminal, mappedA1",
+                "all preceding proofwork correct and complete",
+                "no follow-through into given answer",
+                "Simplified equivalent target accepted when equality is shown, including common nonzero-factor cancellation.",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger. The fixed supplied proof target is not changed."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            }
+          ],
+          "alternative_criterion_mapping": {
+            "S1": "Valid differentiation attempt on an equivalent relation, every term attempted, allowing one numerical slip but no omitted contribution.",
+            "S2": "Correct derivative of the exponential/composite term in that route.",
+            "S3": "Correct implicit derivatives of the remaining y-terms and treatment of C as constant. No back-substitution in this slot; the explicit-root route alone uses its justified root/y identity here.",
+            "S4": "Complete correct forward rearrangement, including back-substitution of C=ae^(kx)y+y^2 where needed, establishes the fixed supplied target or an explicitly shown equivalent form; S1–S3 correct and complete; no follow-through into a given result."
+          },
+          "alternative_route_conditions": [
+            "C != 0 in every admitted instance implies y != 0 on the curve, permitting divide-by-y.",
+            "Log route uses log absolute values for potentially negative y and C-y^2, never log of a negative real quantity.",
+            "Exclusive mappings fill the same four criteria once; root/product/log/divided paths cannot be summed.",
+            "Every accepted path (product, explicit-root, divided, log-absolute) is stored; do not fabricate product-rule evidence for a path that does not use it.",
+            "At the supplied negative-y branch, real ln(y) without moduli is invalid: S1=0, dependent S2=0 and S4=0; independently correct remaining implicit derivative/constant evidence may earn S3 only, maximum 1/4. Valid ln|y| proofs can earn 4/4."
+          ],
+          "named_deviation_ids": [
+            "CALC-D1-DEV01",
+            "CALC-D1-DEV02",
+            "CALC-D2-DEV09"
+          ],
+          "misread_policy": {
+            "policy_id": "MR03-D4",
+            "owner_principle_id": "OD-6",
+            "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+            "operational_policy_id": "MR03-OPS-D4",
+            "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+            "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+            "feedback": "Practice feedback names the misread.",
+            "ledger_fields": [
+              "datum_id",
+              "canonical_value",
+              "misread_value",
+              "eligible",
+              "eligibility_reason",
+              "first_use_part",
+              "gross_awards",
+              "deducted_part",
+              "deducted_criterion",
+              "amount",
+              "net_awards"
+            ],
+            "sources": [
+              "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+              "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+            ],
+            "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
+          },
+          "alternative_marking_samples": [
+            {
+              "sample": "divided-proof-correct-differentiation-failed-back-substitution",
+              "criterion_awards": {
+                "S1": 1,
+                "S2": 1,
+                "S3": 1,
+                "S4": 0
+              },
+              "score": 3,
+              "total": 4
+            },
+            {
+              "sample": "ln-y-without-moduli-at-supplied-negative-branch",
+              "criterion_awards": {
+                "S1": 0,
+                "S2": 0,
+                "S3": 1,
+                "S4": 0
+              },
+              "score": 1,
+              "total": 4,
+              "condition": "Independently correct S3 evidence is visible; otherwise zero."
+            }
+          ],
+          "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+          "qualified_part_id": "WB8227-implicit-normal:normal:show-derivative"
+        }
+      },
+      {
+        "local_part_id": "gradient",
+        "prompt": "Hence, using your derivative or the displayed formula, find the gradient at P. Show your substitution; give an exact answer or a value correct to 3 significant figures.",
+        "reference_answer": "$-3$",
+        "worked_steps": [
+          {
+            "action": "Substitute the supplied point",
+            "reason": "Use the derivative at P, keeping exact arithmetic.",
+            "result": "$m=-\\frac{(2)(2)(-3)}{2+2(-3)}=-3$"
+          }
+        ],
+        "criteria": [
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+            "marks": 1,
+            "mark_type": "M",
+            "achievement": "Substitute the point into the displayed derivative or a credible derivative from the proof, respecting hence.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "H1",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H2",
+            "marks": 1,
+            "mark_type": "A",
+            "achievement": "Canonical exact or 3 s.f. gradient after valid substitution; no ordinary final-accuracy follow-through.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "H2",
+            "depends_on": [
+              "WB8227-implicit-normal@0.1.4:normal:gradient:H1"
+            ],
+            "depends_on_any": []
+          }
+        ],
+        "accepted_alternatives": [],
+        "answer_only_credit": 0,
+        "proposed_marks": 2,
+        "semantic_key": "[\"implicit-point\",2,2,3,-3]",
+        "part_id": "WB8227-implicit-normal:normal:gradient",
+        "reviewed_part": {
+          "part_id": "gradient",
+          "directly_assessed_demand_ids": [
+            "8227:2020:M2:T4:O03:D03",
+            "8227:2020:M1:T8:O01:D01"
+          ],
+          "directly_assessed_objective_ids": [
+            "8227:2020:M1:T8:O01",
+            "8227:2020:M2:T4:O03"
+          ],
+          "primary_objective_id": "8227:2020:M2:T4:O03",
+          "other_directly_assessed_objective_ids": [
+            "8227:2020:M1:T8:O01"
+          ],
+          "prerequisite_demand_ids": [
+            {
+              "demand_id": "8227:2020:M2:T4:O03:D01",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            },
+            {
+              "demand_id": "8227:2020:M2:T4:O01:D02",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            }
+          ],
+          "marks": 2,
+          "bloom": 3,
+          "bloom_rationale": "H1 substitutes the supplied point into the displayed derivative or their credible derived expression; H2 requires the canonical gradient after that working. This is routine Apply 3, not derivative proof credit again. D3 evidence: WB8227-implicit-normal@0.1.4:normal:gradient:H1, WB8227-implicit-normal@0.1.4:normal:gradient:H2.",
+          "bloom_criterion_ids": [
+            "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+            "WB8227-implicit-normal@0.1.4:normal:gradient:H2"
+          ],
+          "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+          "classification_version": "8227-pilot-design-0.1.1",
+          "criterion_ids": [
+            "H1",
+            "H2"
+          ],
+          "fully_qualified_criterion_ids": [
+            "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+            "WB8227-implicit-normal@0.1.4:normal:gradient:H2"
+          ],
+          "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+          "response_format": "numeric",
+          "answer_only_credit": 0,
+          "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+          "criteria": [
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+              "suffix": "H1",
+              "mark_type": "M",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2023:P2:Q8:AWARD:05"
+              ],
+              "qualifiers": [
+                "M1 substitute P into the displayed derivative OR their credible differentiated expression from the proof; own-result method follow-through allowed",
+                "must use displayed/prior derivative under hence; no unconnected bypass",
+                "point supplied not recovered"
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H2",
+              "suffix": "H2",
+              "mark_type": "A",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2023:P2:Q8:AWARD:06"
+              ],
+              "qualifiers": [
+                "Canonical gradient after eligible H1 working; no final-accuracy follow-through",
+                "may use given correct derivative after failed proof, without restoring proof marks",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            }
+          ],
+          "misread_policy": {
+            "policy_id": "MR03-D4",
+            "owner_principle_id": "OD-6",
+            "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+            "operational_policy_id": "MR03-OPS-D4",
+            "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+            "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+            "feedback": "Practice feedback names the misread.",
+            "ledger_fields": [
+              "datum_id",
+              "canonical_value",
+              "misread_value",
+              "eligible",
+              "eligibility_reason",
+              "first_use_part",
+              "gross_awards",
+              "deducted_part",
+              "deducted_criterion",
+              "amount",
+              "net_awards"
+            ],
+            "sources": [
+              "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+              "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+            ],
+            "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
+          },
+          "marking_clarification": "The known e-index error in the failed proof can still yield the canonical value at x=0: eligible H1 substitution plus that value earns H1/H2=2/2. S2/S4 remain lost; gradient-only G5 has its separate www condition. This is an ordinary numerical coincidence, not OD-6.",
+          "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+          "qualified_part_id": "WB8227-implicit-normal:normal:gradient"
+        }
+      },
+      {
+        "local_part_id": "normal",
+        "prompt": "Find the exact equation of the normal at P. Show the perpendicular-gradient and line-construction steps.",
+        "reference_answer": "$y=\\frac{1}{3}x - 3$",
+        "worked_steps": [
+          {
+            "action": "Find the perpendicular gradient",
+            "reason": "A finite nonzero tangent gradient has perpendicular gradient minus its reciprocal.",
+            "result": "$m_\\perp=-\\frac{1}{-3}=\\frac{1}{3}$"
+          },
+          {
+            "action": "Construct the line through P",
+            "reason": "Use point-gradient form with the perpendicular gradient.",
+            "result": "$y + 3=\\frac{1}{3}x$"
+          },
+          {
+            "action": "Simplify the equation",
+            "reason": "Equivalent exact affine forms describe the same line.",
+            "result": "$y=\\frac{1}{3}x - 3$"
+          }
+        ],
+        "criteria": [
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+            "marks": 1,
+            "mark_type": "M",
+            "achievement": "Show or state a labelled perpendicular gradient equal to minus the reciprocal of their credible finite nonzero tangent gradient.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "N1",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+            "marks": 1,
+            "mark_type": "DM",
+            "achievement": "Construct the line through the supplied point using their perpendicular gradient; limited method follow-through.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "N2",
+            "depends_on": [
+              "WB8227-implicit-normal@0.1.4:normal:normal:N1"
+            ],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N3",
+            "marks": 1,
+            "mark_type": "A",
+            "achievement": "Canonical exact normal in any equivalent line form after visible normal working; ordinary final accuracy is not follow-through.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "N3",
+            "depends_on": [
+              "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+              "WB8227-implicit-normal@0.1.4:normal:normal:N2"
+            ],
+            "depends_on_any": []
+          }
+        ],
+        "accepted_alternatives": [],
+        "answer_only_credit": 0,
+        "proposed_marks": 3,
+        "semantic_key": "[\"implicit-normal\",2,2,3,-3]",
+        "part_id": "WB8227-implicit-normal:normal:normal",
+        "reviewed_part": {
+          "part_id": "normal",
+          "directly_assessed_demand_ids": [
+            "8227:2020:M1:T8:O03:D01",
+            "8227:2020:M2:T4:O03:D03"
+          ],
+          "directly_assessed_objective_ids": [
+            "8227:2020:M1:T8:O03",
+            "8227:2020:M2:T4:O03"
+          ],
+          "primary_objective_id": "8227:2020:M1:T8:O03",
+          "other_directly_assessed_objective_ids": [
+            "8227:2020:M2:T4:O03"
+          ],
+          "prerequisite_demand_ids": [
+            {
+              "demand_id": "8227:2020:M1:T8:O01:D01",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            },
+            {
+              "demand_id": "8227:2020:M2:T4:O03:D01",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            }
+          ],
+          "marks": 3,
+          "bloom": 3,
+          "bloom_rationale": "N1 demonstrates the perpendicular gradient, N2 constructs the line through the given point using it, and N3 is canonical exact line accuracy. These are familiar linked applications. D3 evidence: WB8227-implicit-normal@0.1.4:normal:normal:N1, WB8227-implicit-normal@0.1.4:normal:normal:N2, WB8227-implicit-normal@0.1.4:normal:normal:N3.",
+          "bloom_criterion_ids": [
+            "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+            "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+            "WB8227-implicit-normal@0.1.4:normal:normal:N3"
+          ],
+          "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+          "classification_version": "8227-pilot-design-0.1.1",
+          "criterion_ids": [
+            "N1",
+            "N2",
+            "N3"
+          ],
+          "fully_qualified_criterion_ids": [
+            "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+            "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+            "WB8227-implicit-normal@0.1.4:normal:normal:N3"
+          ],
+          "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+          "response_format": "symbolic",
+          "answer_only_credit": 0,
+          "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+          "criteria": [
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+              "suffix": "N1",
+              "mark_type": "M",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2021:P2:Q10:AWARD:04"
+              ],
+              "qualifiers": [
+                "A labelled perpendicular-gradient value equal to -1/(their m) in working is sufficient M1; an explicit reciprocal calculation is not mandatory. Negation or positive reciprocal is not accepted.",
+                "their credible finite nonzero tangent gradient allowed",
+                "bare final line without gradient working earns no N1"
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+              "suffix": "N2",
+              "mark_type": "DM",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2021:P2:Q10:AWARD:05"
+              ],
+              "qualifiers": [
+                "DM1 depends onN1",
+                "complete line through their point with their perpendicular gradient"
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N3",
+              "suffix": "N3",
+              "mark_type": "A",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2021:P2:Q10:AWARD:06"
+              ],
+              "qualifiers": [
+                "allow equivalents",
+                "canonical exact line; noF.T.",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            }
+          ],
+          "misread_policy": {
+            "policy_id": "MR03-D4",
+            "owner_principle_id": "OD-6",
+            "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+            "operational_policy_id": "MR03-OPS-D4",
+            "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+            "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+            "feedback": "Practice feedback names the misread.",
+            "ledger_fields": [
+              "datum_id",
+              "canonical_value",
+              "misread_value",
+              "eligible",
+              "eligibility_reason",
+              "first_use_part",
+              "gross_awards",
+              "deducted_part",
+              "deducted_criterion",
+              "amount",
+              "net_awards"
+            ],
+            "sources": [
+              "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+              "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+            ],
+            "eligibility_notes": "Retain the proposed fixed-point/curve and supplied-target consistency guard. Once a datum is ineligible in the proof, later gradient/normal parts are marked canonically; differentiating a misread constant to zero does not create a new eligibility decision. See the 9/9 and 5/9 D4 fixed-response cases."
+          },
+          "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+          "qualified_part_id": "WB8227-implicit-normal:normal:normal"
+        }
+      }
+    ],
+    "assets": [],
+    "subject_rules": {
+      "schema": "8227-subject-rules-v1",
+      "curriculum": "NIED NSSCAS Mathematics 8227 December 2020",
+      "design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+      "authority": "Vitalis approved exact Stage-D rubric, including MR03-OPS-D4",
+      "historical_rules_text": "> **Current gate — 24 November 2026:** Claude confirmed D4.1 and Vitalis approved the exact Stage-D manifest `4a054832…17d8ec`, including MR03-OPS-D4. Stage E is active; E/F runtime author checks and cross-vendor content review are next. Earlier pending/next-gate prose below describes the archived Stage-D proposal.\n\n# Subject binding — NSSCAS Mathematics 8227\n\nProposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.\nQualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first\nexamination 2021. This binds `recipe-contract.md` to the existing curriculum;\nit does not edit or replace that accepted analysis.\n\n## Assessment authority\n\nSource: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,\nSHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.\nThe planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors\npp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content\nand source identity remain in `curriculum/objective_registry.json`,\n`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.\nRoot-native render hashes are recorded in `planning/planner-source-reads.json`.\n\nThere is one assessment area, **technique with application**, with eleven\nabilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.\nAny may be assessed on either paper (PDF17/printed14). Both papers are compulsory,\n75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate\nper-ability weights or standalone command-word table are stated. Do not invent\nAO percentage quotas or import the static-card subtype mix. A pilot deck is not\na 75-mark examination paper and does not certify qualification AO balance.\n\nMathematics 1 and 2 are content themes, not exclusive paper boundaries. The\nassessment-conditions register documents cross-theme demands on Paper 2 and\nyear-specific formula provision. Use the selected year's exact support policy;\nMF9 is notation/formula support, not extra assessed scope. For later pilot tests\nthe proposed default is the reduced 2023–2025 formula support, with the chosen\nformula contents frozen and shown before the attempt. Do not offer additional\nformula help during a test or turn practice hints into test support.\n\n## Accuracy, units and methods\n\nThe syllabus permits a non-programmable scientific calculator. Unless an exact\nanswer or other precision is specified, non-exact answers use three significant\nfigures; answers in degrees use one decimal place. Use calculator pi or 3.142\n(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions\nand multiples of pi remain exact where requested. Radian calculus and radian\nintegrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.\n\nQuestion/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using\nlogarithms`, diagram consistency and explicit exactness requirements are assessed\nonly as stated by the task and memo. A single-question examiner comment is not a\nuniversal prohibition. Trace source conventions through `analysis/marking-conventions.json`:\n119 question tables, 821 criterion rows including exclusive alternatives; 818\nofficial rows and three explicit derived completions. Two missing part breakdowns\nand a missing alternative-path end remain disclosed. New/adapted pilot criteria\nare proposed, even when aligned to official method/accuracy evidence.\n\nNSSCO algebra/geometry may be required prerequisites. Record their role, but do\nnot count prerequisite manipulation as direct coverage of an AS objective unless\nthe task and criteria explicitly assess that AS demand. Content objectives,\nassessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.\n\n## Shared NSSCAS marking rules — owner authority is scoped per row\n\nVitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.\n\nNative pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.\n\n| Rule ID | Rule applied in every work order | Authority / limits |\n|---|---|---|\n| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |\n| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |\n| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |\n| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |\n| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |\n| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |\n| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |\n| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |\n| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |\n\nPer-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.\n\nEach work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.\n\n## Scope boundaries\n\nThe complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.\nWork orders apply them using actual admitted values, not a boilerplate checklist.\n\n| Binding | Consequence for this pilot and later expansion |\n|---|---|\n| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |\n| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |\n| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |\n| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |\n| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |\n| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |\n| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |\n| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |\n| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |\n| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |\n| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |\n| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |\n\nGrade a/c/e descriptions calibrate variation and do not create new objectives\n(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;\nlabel finite numerical choices as planner-chosen bounded design choices. No claim\nthat a number size, mark total or Bloom label automatically equals a school grade.\nWhere the assessed skill appears in e/c, those descriptors bound the easiest\nbranches; the hardest stay no further than grade a. Implicit differentiation\nappears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support\nthe chosen learner decisions; release must verify actual varied/boundary instances.\n\n## Source and rights decisions\n\nPreserve source defects and owner decisions in `analysis/source-defects.json`\nand the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023\nP1 Q9 originals cannot become learner-facing originals or same-type anchors.\nValid demands remain in scope. A universal quadratic proof must state a≠0;\nthe principal-value inverse demand is taught correctly from valid sources.\n\nTextbook items/figures are internal ingredients with `learner_display:false`.\nTheir reported answers are checked evidence, not unquestioned truth. Create\noriginal diagrams and learner wording from the mathematics. Attributed NSSCAS\nand Cambridge exam originals are authorised by Vitalis; no Cambridge source is\npresented as a Namibian original. Per-branch source equality and learner labels\nfollow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.\n\n## Learning text and feedback\n\nUse the existing guideline snapshots indexed by\n`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned\nin the planning manifest). Those were local app snapshots, not proof of deployed\nbytes. No forked shared AI instruction is added. Use British spelling, clear\nEnglish, decoded Markdown/LaTeX, separate equations and correct mathematical units.\nNever put mathematical notation inside emphasis or expose provider/internal keys\nas learner copy. Render all later question, help, solution, feedback and history\nsurfaces; a tolerant formatter does not establish authoring compliance.\n\nFeedback recognises demonstrated work, names the first evidenced error and offers\nan action/reason/result repair. It distinguishes an ambiguous upload from a wrong\nanswer, and the app retains the original attempt. No invented misconception is\nlabelled examiner-evidenced. Solutions/support and ordinary practice do not move\nmemory boxes; the application owns reliable completed-test progress.\n\n## Current status\n\nThese are proposed subject rules for the stage-D owner checkpoint. The accepted\nanalysis proves source-level mapping and review, not implemented recipes, Bloom\napproval, generator correctness, visual marking or local website acceptance.\nThe next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval\nof the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.\n\n\nD2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.\n\nAuthority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.\n\nMR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.\n",
+      "mr03": "Approved MR03-OPS-D4: determine eligibility for the connected question at first use of each datum. Genuine unchanged-object/unchanged-difficulty misreads permit A/B follow-through and one A/B deduction per datum; M/DM remain normal. This overrides not-F.T./cao for eligible misreads, but never MR09 supplied-result proof or OD-1 method requirements. Record gross evidence before net deduction; dependencies use gross evidence.",
+      "runtime_marking_limit": "Frozen rubric/evidence only. Raw handwritten, photographed, sketch or free-text responses require trusted application marking orchestration. Competing-datum settlement and alternative implicit routes remain E/F carries.",
+      "d41_notes": {
+        "d41-01": "Implicit gradient finite AND nonzero",
+        "d41-02": "Nonunit exponential chain-factor eligibility guard is approved MR03-OPS-D4",
+        "d41-03": "Exposure keys persist across output-affecting revisions; version is provenance",
+        "d41-04": "Stage E active after exact owner approval",
+        "d41-05": "MR09 limit is adjacent to the eligible-misread override in this runtime summary"
+      }
+    },
+    "marks": 9,
+    "app_adapter_required": true
+  },
+  "marking_memo": {
+    "contract_version": "workbench-exam-guidance-v1",
+    "package_id": "namibia-nsscas-8227",
+    "recipe_id": "WB8227-implicit-normal",
+    "recipe_version": 2,
+    "native_recipe_version": "0.1.5",
+    "question": "A curve has equation $2e^{2x}y+y^2=3$. The point $P=(0,-3)$ lies on the curve.\n\nShow that $y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$ where the denominator is nonzero, showing all necessary working.\n\nHence, using your derivative or the displayed formula, find the gradient at P. Show your substitution; give an exact answer or a value correct to 3 significant figures.\n\nFind the exact equation of the normal at P. Show the perpendicular-gradient and line-construction steps.",
+    "canonical_answer": "$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$\n\n$-3$\n\n$y=\\frac{1}{3}x - 3$",
+    "grading_guide_answer": "Part show-derivative\n$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S1 [1]: Attempt a complete differentiation of the product (or an approved equivalent relation), allowing one numerical slip but no omitted contribution.\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S2 [1]: Correct exponential/product/composite differentiation on the selected valid route.\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S3 [1]: Correct remaining implicit derivative and constant zero; on the explicit-root route justify the root/y identity.\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S4 [1]: Complete correct forward derivation establishes the supplied target or a demonstrated equivalent; all preceding proof evidence is correct and complete. No follow-through into the supplied result.\nDifferentiate the exponential product — Both factors depend on x; include the exponential chain factor. — $4e^{2x}y+2e^{2x}y'$\nDifferentiate the remaining terms — y depends on x; the right-hand side is constant. — $\\frac{d}{dx}(y^2)=2yy'$, $\\frac{d}{dx}(3)=0$\nCollect terms containing the derivative — Isolate the requested derivative by forward algebra. — $(2e^{2x}+2y)y'=-4e^{2x}y$\nDivide by the nonzero coefficient — The expression is valid on a local branch where the denominator is nonzero. — $y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$\n\nPart gradient\n$-3$\nWB8227-implicit-normal@0.1.4:normal:gradient:H1 [1]: Substitute the point into the displayed derivative or a credible derivative from the proof, respecting hence.\nWB8227-implicit-normal@0.1.4:normal:gradient:H2 [1]: Canonical exact or 3 s.f. gradient after valid substitution; no ordinary final-accuracy follow-through.\nSubstitute the supplied point — Use the derivative at P, keeping exact arithmetic. — $m=-\\frac{(2)(2)(-3)}{2+2(-3)}=-3$\n\nPart normal\n$y=\\frac{1}{3}x - 3$\nWB8227-implicit-normal@0.1.4:normal:normal:N1 [1]: Show or state a labelled perpendicular gradient equal to minus the reciprocal of their credible finite nonzero tangent gradient.\nWB8227-implicit-normal@0.1.4:normal:normal:N2 [1]: Construct the line through the supplied point using their perpendicular gradient; limited method follow-through.\nWB8227-implicit-normal@0.1.4:normal:normal:N3 [1]: Canonical exact normal in any equivalent line form after visible normal working; ordinary final accuracy is not follow-through.\nFind the perpendicular gradient — A finite nonzero tangent gradient has perpendicular gradient minus its reciprocal. — $m_\\perp=-\\frac{1}{-3}=\\frac{1}{3}$\nConstruct the line through P — Use point-gradient form with the perpendicular gradient. — $y + 3=\\frac{1}{3}x$\nSimplify the equation — Equivalent exact affine forms describe the same line. — $y=\\frac{1}{3}x - 3$",
+    "subject_rules": {
+      "schema": "8227-subject-rules-v1",
+      "curriculum": "NIED NSSCAS Mathematics 8227 December 2020",
+      "design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+      "authority": "Vitalis approved exact Stage-D rubric, including MR03-OPS-D4",
+      "historical_rules_text": "> **Current gate — 24 November 2026:** Claude confirmed D4.1 and Vitalis approved the exact Stage-D manifest `4a054832…17d8ec`, including MR03-OPS-D4. Stage E is active; E/F runtime author checks and cross-vendor content review are next. Earlier pending/next-gate prose below describes the archived Stage-D proposal.\n\n# Subject binding — NSSCAS Mathematics 8227\n\nProposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.\nQualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first\nexamination 2021. This binds `recipe-contract.md` to the existing curriculum;\nit does not edit or replace that accepted analysis.\n\n## Assessment authority\n\nSource: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,\nSHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.\nThe planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors\npp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content\nand source identity remain in `curriculum/objective_registry.json`,\n`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.\nRoot-native render hashes are recorded in `planning/planner-source-reads.json`.\n\nThere is one assessment area, **technique with application**, with eleven\nabilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.\nAny may be assessed on either paper (PDF17/printed14). Both papers are compulsory,\n75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate\nper-ability weights or standalone command-word table are stated. Do not invent\nAO percentage quotas or import the static-card subtype mix. A pilot deck is not\na 75-mark examination paper and does not certify qualification AO balance.\n\nMathematics 1 and 2 are content themes, not exclusive paper boundaries. The\nassessment-conditions register documents cross-theme demands on Paper 2 and\nyear-specific formula provision. Use the selected year's exact support policy;\nMF9 is notation/formula support, not extra assessed scope. For later pilot tests\nthe proposed default is the reduced 2023–2025 formula support, with the chosen\nformula contents frozen and shown before the attempt. Do not offer additional\nformula help during a test or turn practice hints into test support.\n\n## Accuracy, units and methods\n\nThe syllabus permits a non-programmable scientific calculator. Unless an exact\nanswer or other precision is specified, non-exact answers use three significant\nfigures; answers in degrees use one decimal place. Use calculator pi or 3.142\n(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions\nand multiples of pi remain exact where requested. Radian calculus and radian\nintegrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.\n\nQuestion/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using\nlogarithms`, diagram consistency and explicit exactness requirements are assessed\nonly as stated by the task and memo. A single-question examiner comment is not a\nuniversal prohibition. Trace source conventions through `analysis/marking-conventions.json`:\n119 question tables, 821 criterion rows including exclusive alternatives; 818\nofficial rows and three explicit derived completions. Two missing part breakdowns\nand a missing alternative-path end remain disclosed. New/adapted pilot criteria\nare proposed, even when aligned to official method/accuracy evidence.\n\nNSSCO algebra/geometry may be required prerequisites. Record their role, but do\nnot count prerequisite manipulation as direct coverage of an AS objective unless\nthe task and criteria explicitly assess that AS demand. Content objectives,\nassessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.\n\n## Shared NSSCAS marking rules — owner authority is scoped per row\n\nVitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.\n\nNative pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.\n\n| Rule ID | Rule applied in every work order | Authority / limits |\n|---|---|---|\n| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |\n| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |\n| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |\n| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |\n| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |\n| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |\n| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |\n| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |\n| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |\n\nPer-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.\n\nEach work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.\n\n## Scope boundaries\n\nThe complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.\nWork orders apply them using actual admitted values, not a boilerplate checklist.\n\n| Binding | Consequence for this pilot and later expansion |\n|---|---|\n| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |\n| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |\n| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |\n| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |\n| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |\n| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |\n| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |\n| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |\n| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |\n| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |\n| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |\n| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |\n\nGrade a/c/e descriptions calibrate variation and do not create new objectives\n(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;\nlabel finite numerical choices as planner-chosen bounded design choices. No claim\nthat a number size, mark total or Bloom label automatically equals a school grade.\nWhere the assessed skill appears in e/c, those descriptors bound the easiest\nbranches; the hardest stay no further than grade a. Implicit differentiation\nappears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support\nthe chosen learner decisions; release must verify actual varied/boundary instances.\n\n## Source and rights decisions\n\nPreserve source defects and owner decisions in `analysis/source-defects.json`\nand the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023\nP1 Q9 originals cannot become learner-facing originals or same-type anchors.\nValid demands remain in scope. A universal quadratic proof must state a≠0;\nthe principal-value inverse demand is taught correctly from valid sources.\n\nTextbook items/figures are internal ingredients with `learner_display:false`.\nTheir reported answers are checked evidence, not unquestioned truth. Create\noriginal diagrams and learner wording from the mathematics. Attributed NSSCAS\nand Cambridge exam originals are authorised by Vitalis; no Cambridge source is\npresented as a Namibian original. Per-branch source equality and learner labels\nfollow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.\n\n## Learning text and feedback\n\nUse the existing guideline snapshots indexed by\n`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned\nin the planning manifest). Those were local app snapshots, not proof of deployed\nbytes. No forked shared AI instruction is added. Use British spelling, clear\nEnglish, decoded Markdown/LaTeX, separate equations and correct mathematical units.\nNever put mathematical notation inside emphasis or expose provider/internal keys\nas learner copy. Render all later question, help, solution, feedback and history\nsurfaces; a tolerant formatter does not establish authoring compliance.\n\nFeedback recognises demonstrated work, names the first evidenced error and offers\nan action/reason/result repair. It distinguishes an ambiguous upload from a wrong\nanswer, and the app retains the original attempt. No invented misconception is\nlabelled examiner-evidenced. Solutions/support and ordinary practice do not move\nmemory boxes; the application owns reliable completed-test progress.\n\n## Current status\n\nThese are proposed subject rules for the stage-D owner checkpoint. The accepted\nanalysis proves source-level mapping and review, not implemented recipes, Bloom\napproval, generator correctness, visual marking or local website acceptance.\nThe next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval\nof the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.\n\n\nD2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.\n\nAuthority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.\n\nMR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.\n",
+      "mr03": "Approved MR03-OPS-D4: determine eligibility for the connected question at first use of each datum. Genuine unchanged-object/unchanged-difficulty misreads permit A/B follow-through and one A/B deduction per datum; M/DM remain normal. This overrides not-F.T./cao for eligible misreads, but never MR09 supplied-result proof or OD-1 method requirements. Record gross evidence before net deduction; dependencies use gross evidence.",
+      "runtime_marking_limit": "Frozen rubric/evidence only. Raw handwritten, photographed, sketch or free-text responses require trusted application marking orchestration. Competing-datum settlement and alternative implicit routes remain E/F carries.",
+      "d41_notes": {
+        "d41-01": "Implicit gradient finite AND nonzero",
+        "d41-02": "Nonunit exponential chain-factor eligibility guard is approved MR03-OPS-D4",
+        "d41-03": "Exposure keys persist across output-affecting revisions; version is provenance",
+        "d41-04": "Stage E active after exact owner approval",
+        "d41-05": "MR09 limit is adjacent to the eligible-misread override in this runtime summary"
+      }
+    },
+    "marks": 9,
+    "criteria": [
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+        "criterion": "Attempt a complete differentiation of the product (or an approved equivalent relation), allowing one numerical slip but no omitted contribution.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+        "criterion": "Correct exponential/product/composite differentiation on the selected valid route.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+        "criterion": "Correct remaining implicit derivative and constant zero; on the explicit-root route justify the root/y identity.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4",
+        "criterion": "Complete correct forward derivation establishes the supplied target or a demonstrated equivalent; all preceding proof evidence is correct and complete. No follow-through into the supplied result.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+        "criterion": "Substitute the point into the displayed derivative or a credible derivative from the proof, respecting hence.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H2",
+        "criterion": "Canonical exact or 3 s.f. gradient after valid substitution; no ordinary final-accuracy follow-through.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+        "criterion": "Show or state a labelled perpendicular gradient equal to minus the reciprocal of their credible finite nonzero tangent gradient.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+        "criterion": "Construct the line through the supplied point using their perpendicular gradient; limited method follow-through.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N3",
+        "criterion": "Canonical exact normal in any equivalent line form after visible normal working; ordinary final accuracy is not follow-through.",
+        "marks_available": 1
+      }
+    ],
+    "contract_hash": "03d9dadf91fb96d25b8e3befdeacb009727cab39826320c8979ec2ef124b6164"
+  },
+  "grading_contract": {
+    "schema_version": "workbench-whole-question-v1",
+    "question_fingerprint": "a6c8cec93d4549a4cf7614996b59c41107ded9aa013da09ddd302f37dae34138",
+    "max_marks": 9,
+    "source_marking_contract": {
+      "contract_version": "workbench-exam-guidance-v1",
+      "package_id": "namibia-nsscas-8227",
+      "recipe_id": "WB8227-implicit-normal",
+      "recipe_version": 2,
+      "native_recipe_version": "0.1.5",
+      "question": "A curve has equation $2e^{2x}y+y^2=3$. The point $P=(0,-3)$ lies on the curve.\n\nShow that $y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$ where the denominator is nonzero, showing all necessary working.\n\nHence, using your derivative or the displayed formula, find the gradient at P. Show your substitution; give an exact answer or a value correct to 3 significant figures.\n\nFind the exact equation of the normal at P. Show the perpendicular-gradient and line-construction steps.",
+      "canonical_answer": "$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$\n\n$-3$\n\n$y=\\frac{1}{3}x - 3$",
+      "grading_guide_answer": "Part show-derivative\n$y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S1 [1]: Attempt a complete differentiation of the product (or an approved equivalent relation), allowing one numerical slip but no omitted contribution.\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S2 [1]: Correct exponential/product/composite differentiation on the selected valid route.\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S3 [1]: Correct remaining implicit derivative and constant zero; on the explicit-root route justify the root/y identity.\nWB8227-implicit-normal@0.1.4:normal:show-derivative:S4 [1]: Complete correct forward derivation establishes the supplied target or a demonstrated equivalent; all preceding proof evidence is correct and complete. No follow-through into the supplied result.\nDifferentiate the exponential product — Both factors depend on x; include the exponential chain factor. — $4e^{2x}y+2e^{2x}y'$\nDifferentiate the remaining terms — y depends on x; the right-hand side is constant. — $\\frac{d}{dx}(y^2)=2yy'$, $\\frac{d}{dx}(3)=0$\nCollect terms containing the derivative — Isolate the requested derivative by forward algebra. — $(2e^{2x}+2y)y'=-4e^{2x}y$\nDivide by the nonzero coefficient — The expression is valid on a local branch where the denominator is nonzero. — $y'=-\\frac{4e^{2x}y}{2e^{2x}+2y}$\n\nPart gradient\n$-3$\nWB8227-implicit-normal@0.1.4:normal:gradient:H1 [1]: Substitute the point into the displayed derivative or a credible derivative from the proof, respecting hence.\nWB8227-implicit-normal@0.1.4:normal:gradient:H2 [1]: Canonical exact or 3 s.f. gradient after valid substitution; no ordinary final-accuracy follow-through.\nSubstitute the supplied point — Use the derivative at P, keeping exact arithmetic. — $m=-\\frac{(2)(2)(-3)}{2+2(-3)}=-3$\n\nPart normal\n$y=\\frac{1}{3}x - 3$\nWB8227-implicit-normal@0.1.4:normal:normal:N1 [1]: Show or state a labelled perpendicular gradient equal to minus the reciprocal of their credible finite nonzero tangent gradient.\nWB8227-implicit-normal@0.1.4:normal:normal:N2 [1]: Construct the line through the supplied point using their perpendicular gradient; limited method follow-through.\nWB8227-implicit-normal@0.1.4:normal:normal:N3 [1]: Canonical exact normal in any equivalent line form after visible normal working; ordinary final accuracy is not follow-through.\nFind the perpendicular gradient — A finite nonzero tangent gradient has perpendicular gradient minus its reciprocal. — $m_\\perp=-\\frac{1}{-3}=\\frac{1}{3}$\nConstruct the line through P — Use point-gradient form with the perpendicular gradient. — $y + 3=\\frac{1}{3}x$\nSimplify the equation — Equivalent exact affine forms describe the same line. — $y=\\frac{1}{3}x - 3$",
+      "subject_rules": {
+        "schema": "8227-subject-rules-v1",
+        "curriculum": "NIED NSSCAS Mathematics 8227 December 2020",
+        "design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+        "authority": "Vitalis approved exact Stage-D rubric, including MR03-OPS-D4",
+        "historical_rules_text": "> **Current gate — 24 November 2026:** Claude confirmed D4.1 and Vitalis approved the exact Stage-D manifest `4a054832…17d8ec`, including MR03-OPS-D4. Stage E is active; E/F runtime author checks and cross-vendor content review are next. Earlier pending/next-gate prose below describes the archived Stage-D proposal.\n\n# Subject binding — NSSCAS Mathematics 8227\n\nProposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.\nQualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first\nexamination 2021. This binds `recipe-contract.md` to the existing curriculum;\nit does not edit or replace that accepted analysis.\n\n## Assessment authority\n\nSource: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,\nSHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.\nThe planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors\npp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content\nand source identity remain in `curriculum/objective_registry.json`,\n`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.\nRoot-native render hashes are recorded in `planning/planner-source-reads.json`.\n\nThere is one assessment area, **technique with application**, with eleven\nabilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.\nAny may be assessed on either paper (PDF17/printed14). Both papers are compulsory,\n75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate\nper-ability weights or standalone command-word table are stated. Do not invent\nAO percentage quotas or import the static-card subtype mix. A pilot deck is not\na 75-mark examination paper and does not certify qualification AO balance.\n\nMathematics 1 and 2 are content themes, not exclusive paper boundaries. The\nassessment-conditions register documents cross-theme demands on Paper 2 and\nyear-specific formula provision. Use the selected year's exact support policy;\nMF9 is notation/formula support, not extra assessed scope. For later pilot tests\nthe proposed default is the reduced 2023–2025 formula support, with the chosen\nformula contents frozen and shown before the attempt. Do not offer additional\nformula help during a test or turn practice hints into test support.\n\n## Accuracy, units and methods\n\nThe syllabus permits a non-programmable scientific calculator. Unless an exact\nanswer or other precision is specified, non-exact answers use three significant\nfigures; answers in degrees use one decimal place. Use calculator pi or 3.142\n(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions\nand multiples of pi remain exact where requested. Radian calculus and radian\nintegrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.\n\nQuestion/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using\nlogarithms`, diagram consistency and explicit exactness requirements are assessed\nonly as stated by the task and memo. A single-question examiner comment is not a\nuniversal prohibition. Trace source conventions through `analysis/marking-conventions.json`:\n119 question tables, 821 criterion rows including exclusive alternatives; 818\nofficial rows and three explicit derived completions. Two missing part breakdowns\nand a missing alternative-path end remain disclosed. New/adapted pilot criteria\nare proposed, even when aligned to official method/accuracy evidence.\n\nNSSCO algebra/geometry may be required prerequisites. Record their role, but do\nnot count prerequisite manipulation as direct coverage of an AS objective unless\nthe task and criteria explicitly assess that AS demand. Content objectives,\nassessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.\n\n## Shared NSSCAS marking rules — owner authority is scoped per row\n\nVitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.\n\nNative pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.\n\n| Rule ID | Rule applied in every work order | Authority / limits |\n|---|---|---|\n| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |\n| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |\n| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |\n| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |\n| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |\n| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |\n| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |\n| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |\n| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |\n\nPer-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.\n\nEach work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.\n\n## Scope boundaries\n\nThe complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.\nWork orders apply them using actual admitted values, not a boilerplate checklist.\n\n| Binding | Consequence for this pilot and later expansion |\n|---|---|\n| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |\n| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |\n| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |\n| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |\n| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |\n| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |\n| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |\n| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |\n| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |\n| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |\n| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |\n| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |\n\nGrade a/c/e descriptions calibrate variation and do not create new objectives\n(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;\nlabel finite numerical choices as planner-chosen bounded design choices. No claim\nthat a number size, mark total or Bloom label automatically equals a school grade.\nWhere the assessed skill appears in e/c, those descriptors bound the easiest\nbranches; the hardest stay no further than grade a. Implicit differentiation\nappears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support\nthe chosen learner decisions; release must verify actual varied/boundary instances.\n\n## Source and rights decisions\n\nPreserve source defects and owner decisions in `analysis/source-defects.json`\nand the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023\nP1 Q9 originals cannot become learner-facing originals or same-type anchors.\nValid demands remain in scope. A universal quadratic proof must state a≠0;\nthe principal-value inverse demand is taught correctly from valid sources.\n\nTextbook items/figures are internal ingredients with `learner_display:false`.\nTheir reported answers are checked evidence, not unquestioned truth. Create\noriginal diagrams and learner wording from the mathematics. Attributed NSSCAS\nand Cambridge exam originals are authorised by Vitalis; no Cambridge source is\npresented as a Namibian original. Per-branch source equality and learner labels\nfollow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.\n\n## Learning text and feedback\n\nUse the existing guideline snapshots indexed by\n`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned\nin the planning manifest). Those were local app snapshots, not proof of deployed\nbytes. No forked shared AI instruction is added. Use British spelling, clear\nEnglish, decoded Markdown/LaTeX, separate equations and correct mathematical units.\nNever put mathematical notation inside emphasis or expose provider/internal keys\nas learner copy. Render all later question, help, solution, feedback and history\nsurfaces; a tolerant formatter does not establish authoring compliance.\n\nFeedback recognises demonstrated work, names the first evidenced error and offers\nan action/reason/result repair. It distinguishes an ambiguous upload from a wrong\nanswer, and the app retains the original attempt. No invented misconception is\nlabelled examiner-evidenced. Solutions/support and ordinary practice do not move\nmemory boxes; the application owns reliable completed-test progress.\n\n## Current status\n\nThese are proposed subject rules for the stage-D owner checkpoint. The accepted\nanalysis proves source-level mapping and review, not implemented recipes, Bloom\napproval, generator correctness, visual marking or local website acceptance.\nThe next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval\nof the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.\n\n\nD2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.\n\nAuthority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.\n\nMR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.\n",
+        "mr03": "Approved MR03-OPS-D4: determine eligibility for the connected question at first use of each datum. Genuine unchanged-object/unchanged-difficulty misreads permit A/B follow-through and one A/B deduction per datum; M/DM remain normal. This overrides not-F.T./cao for eligible misreads, but never MR09 supplied-result proof or OD-1 method requirements. Record gross evidence before net deduction; dependencies use gross evidence.",
+        "runtime_marking_limit": "Frozen rubric/evidence only. Raw handwritten, photographed, sketch or free-text responses require trusted application marking orchestration. Competing-datum settlement and alternative implicit routes remain E/F carries.",
+        "d41_notes": {
+          "d41-01": "Implicit gradient finite AND nonzero",
+          "d41-02": "Nonunit exponential chain-factor eligibility guard is approved MR03-OPS-D4",
+          "d41-03": "Exposure keys persist across output-affecting revisions; version is provenance",
+          "d41-04": "Stage E active after exact owner approval",
+          "d41-05": "MR09 limit is adjacent to the eligible-misread override in this runtime summary"
+        }
+      },
+      "marks": 9,
+      "criteria": [
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S1",
+          "criterion": "Attempt a complete differentiation of the product (or an approved equivalent relation), allowing one numerical slip but no omitted contribution.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S2",
+          "criterion": "Correct exponential/product/composite differentiation on the selected valid route.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S3",
+          "criterion": "Correct remaining implicit derivative and constant zero; on the explicit-root route justify the root/y identity.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:show-derivative:S4",
+          "criterion": "Complete correct forward derivation establishes the supplied target or a demonstrated equivalent; all preceding proof evidence is correct and complete. No follow-through into the supplied result.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H1",
+          "criterion": "Substitute the point into the displayed derivative or a credible derivative from the proof, respecting hence.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:gradient:H2",
+          "criterion": "Canonical exact or 3 s.f. gradient after valid substitution; no ordinary final-accuracy follow-through.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N1",
+          "criterion": "Show or state a labelled perpendicular gradient equal to minus the reciprocal of their credible finite nonzero tangent gradient.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N2",
+          "criterion": "Construct the line through the supplied point using their perpendicular gradient; limited method follow-through.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-implicit-normal@0.1.4:normal:normal:N3",
+          "criterion": "Canonical exact normal in any equivalent line form after visible normal working; ordinary final accuracy is not follow-through.",
+          "marks_available": 1
+        }
+      ],
+      "contract_hash": "03d9dadf91fb96d25b8e3befdeacb009727cab39826320c8979ec2ef124b6164"
+    },
+    "contract_hash": "b2dee4f179d77822a58359aa3cc2b7ae435893542c8e99f1e279ff242e18ca2b"
+  },
+  "instance_hash": "976a54b46abf7b55b6e751e5259ee058572f7b80061d10dc008f1b1a512d81a6"
+}

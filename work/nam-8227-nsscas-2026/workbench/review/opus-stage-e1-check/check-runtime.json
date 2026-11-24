@@ -1,0 +1,1797 @@
+{
+ "checker": "runtime",
+ "scope": "E1 diff-only: SE-11 exposure split, SE-12 learner outcome tag + full learner leak scan, SE-13 teacher view, version/transport handling, and an independent E0->E1 diff of all 1,702 generated instances (invariants + classification of every changed field). Frozen copy C only; nothing written inside C.",
+ "method": [
+  "Loaded E0 provider from C/candidates/fcd4b71e07baa07a (native 0.1.4, revision 1) and E1 from CWB/source (byte-identical to candidate af6f77e940430033 for provider/groups/formatting/catalogue/assets/examples) under distinct module names; generated all 1,702 rows from each (generate_at, seed 0). Scripts and outputs: /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime/{common,se11,se12,se13,version,diff_inv,diff_raw,diff_patterns,classify,extra,svgattr,assets_access}.py",
+  "se11.py: required-vs-emitted keys on 1,702 rows; key-string identity of the 27 gradient implicit-show keys with the normal rows; 1,340 generate_fresh(normal, test) calls after each gradient row's emitted keys (300 seeds after idx 0, 40 after each other row); E0 contrast; 336 full fresh walks from empty history (14 choices x 6 seeds x fixed/varying seed, run in both E0 and E1) with a semantics-preserving generate_at memo; normal walk after gradient idx 0.",
+  "se12.py: learner_projection for every row in every supported mode/reveal state (practice, test, practice+reveal = 5,106 payloads; test+reveal raises on all 1,702); recursive key/string scan for interior-reversal, outcome words, held refs (structured + text), paths, 64-hex, verified_by/actor/reviewer/pending words, forbidden keys, solution-asset sha pre-reveal, and answer/step/criterion/private_math strings pre-reveal; 22,833 public-ID round trips through native_identity; 81 foreign-ID rejections; public-alias collision scan; native/teacher/marking ID comparison against E0.",
+  "se13.py: teacher_projection for all 1,702 rows; recursive private-key scan, 64-hex scan, pattern scan (paths, held, Cambridge, actor, pending), structured held/related/non-NSSCAS check; field-by-field comparison of every displayable reference against E0 (1,031 bindings); full non-reference teacher diff E0->E1; residual counts E0 vs E1.",
+  "version.py: describe(); new-candidate manifest (386 files) and old manifest re-hashed; 98 bad-revision calls; E0 examples presented to E1; 42 frozen examples replayed byte-for-byte from the new candidate provider; 1,722 generate(k,2,s) vs E0 generate(k,1,s) index comparisons; generate/generate_at determinism; exposure-key version tokens and normalized_exposure.",
+  "diff_inv.py: own invariant comparison (not Codex's script): parameters, semantic fingerprint, part IDs/order/local IDs, every runtime criterion key except achievement text (9,823 criteria), reviewed_part marks/Bloom/criterion IDs/objectives/demands/response formats/answer-only/dependency fields and reviewed criterion IDs/mark types/values/dependencies, proposed marks, top objective/demand/Bloom/classification, all private_math keys, catalogue bounds/capacities.",
+  "diff_raw.py + classify.py: flattened every row (derived memo/contract/fingerprint/hash copies excluded, then independently re-derived in extra.py) and grouped all changed fields by (choice, path); each group is explained only if a mechanical rule reproduces the E1 value from the E0 value and instance data for EVERY changed row (prime substitution, unit-coefficient/sigma formatter with sign check, instance k, sentence removals, concavity append, R-form principal value/candidates/interval/retained roots recomputed from (a,b,c), trapezium T/J at 9 s.f., T/C substitution, etc.).",
+  "extra.py/svgattr.py: memo/contract/fingerprint/instance_hash re-derivation; SVG element/attribute diff for all 336 changed asset bindings; learner-payload path diff E0->E1 in all modes; candidate file/asset turnover; assets_access.py: 1,858 asset-access checks on 336 asset rows plus 336 replaced E0 asset refs.",
+  "Codex checks: copied C to /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime/copy/ and ran authoring/check_e1_preservation.py, check_e1_runtime.py, check_e1_delta.py there (PYTHONDONTWRITEBYTECODE=1 python3 -B); compared their JSON outputs with the frozen ones in C.",
+  "Read: findings.md SE-11..13, prior check-runtime.json, stage-e-repair-e1-report.md, e1-runtime.json, e1-preservation.json, provider.py (E1) vs candidates/fcd4b71e07baa07a/provider.py (diffed), app-change-handoff.md (diffed against E0WB), REPAIR-E1-PROMPT.md cheap-notes list, WB8227-implicit-normal.md lines 126/148-156."
+ ],
+ "counts": {
+  "instances_generated_E0": 1702,
+  "instances_generated_E1": 1702,
+  "learner_payloads_scanned": 5106,
+  "motion_interior_reversal_payloads": 504,
+  "test_reveal_rejections": 1702,
+  "teacher_payloads_scanned": 1702,
+  "displayable_teacher_ref_bindings_compared": 1031,
+  "public_id_roundtrips": 22833,
+  "foreign_public_ids_rejected": 81,
+  "fresh_normal_calls_after_gradient_exposure": 1340,
+  "full_fresh_walks": 336,
+  "bad_revision_calls": 98,
+  "frozen_examples_replayed": 42,
+  "generate_index_comparisons_vs_E0": 1722,
+  "criteria_compared": 9823,
+  "changed_field_groups": 185,
+  "changed_fields_classified": 24857,
+  "unexplained_changed_fields": 0,
+  "asset_access_checks": 1858,
+  "svg_assets_diffed": 336,
+  "exposure_keys_distinct_E1": 1589,
+  "renders_inspected": 0,
+  "expectations_read": 0,
+  "fresh_awards": 0
+ },
+ "items": {
+  "SE-01": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: every changed field in 850 calculus rows (27+27+540+256) is exactly E0 with \\prime -> ' (plus named notes); no \\prime remains in any E1 instance string (E0: 850 rows). Render not checked here."
+  },
+  "SE-02": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: unit coefficients removed in modulus 16 rows (answer + full_model), vector 20 rows (28 steps), trapezium 8 rows (prompt, b:B1, step), implicit 8 rows x 2 branches (sqrt{1e^...}); sigma printed as its value on 54 formulas with sign equal to E0 sign(arg) and substituted into the formula. Global scan: 0 E1 rows contain 1\\ln, 1e^, 1p, -1\\lvert, =1\\lvert, +1(, \\operatorname{sign} (E0: 8/16/8/8/8/12/54)."
+  },
+  "SE-03": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: all 24 changed p-decision steps are (kx)->(<k>x) with k equal to the instance parameter and to the prompt coefficient; remaining (kx) occurs only in approved reviewed_part S4 text (normal branch)."
+  },
+  "SE-04": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: trapezium (b) and (d) reference answers on 22/22 rows equal E0 minus exactly the two marker-rule sentences; nothing else changed in those fields."
+  },
+  "SE-05": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: 44/44 modulus question SVGs replaced; text contents, curve paths, circles, viewBox unchanged; only text x/y/anchor + new data-point-label attribute and 3-4 added leader lines per SVG; alt/must_read_givens/diagram_parameters unchanged. Geometry/legibility not judged here."
+  },
+  "SE-06": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: 270/270 log-graph question SVGs replaced; only <text> x or x,y attributes moved (383 label moves); paths/circles/lines/texts/viewBox identical; alt/givens/params unchanged. Placement correctness not judged here."
+  },
+  "SE-07": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: d:DB1 achievement (22) and reviewed required row (22) gain exactly the concavity sentence; criterion ID/marks/type/dependencies unchanged. Cosmetic: reviewed row lacks a sentence break before the appended text (see note runtime-E1-N07)."
+  },
+  "SE-08": {
+   "verdict": "n/a",
+   "evidence": "n/a (outside runtime scope; other checkers own content). Part-B diff evidence only: gradient accepted_alternatives requirements (81 fields/27 rows) now in G1-G5 terms with no S1-S4/back-substitution/target wording; open_fixture (27) no longer says 9/9 and now says canonical 5/5 by analogy (note runtime-E1-N08 for the calculus checker). G1-G5 criteria unchanged."
+  },
+  "SE-09": {
+   "verdict": "n/a",
+   "evidence": "Authoring fixture files only; not in generated instances. Codex preservation script (rerun, pass) confirms the 97 original declared scores unchanged."
+  },
+  "SE-10": {
+   "verdict": "n/a",
+   "evidence": "New authoring fixture file only; no generated-instance change attributable to it (0 unexplained fields)."
+  },
+  "SE-11": {
+   "verdict": "fixed",
+   "evidence": "provider.generate_at now sets freshness_required_keys = E0 key list (equal on 1,702/1,702 rows) and exposure_keys = required + [\"implicit-show\",a,k] for the 27 gradient rows only (27/27, key string byte-identical to the normal rows' required key for the same (a,k); never in gradient required keys); generate_fresh tests freshness_required_keys. Repro: gradient idx0 emits [\"implicit-curve\",1,2,20],[\"implicit-point\",1,2,20,-5],[\"implicit-show\",1,2]; normal rows sharing (1,2) are idx 0-3; generate_fresh(normal,s,keys,mode=test) over seeds 0-299 never returns 0-3 (seed 0 -> idx 14); after each of the other 26 gradient rows x 40 seeds, never a row sharing its (a,k): 0 violations in 1,340 calls. E0 provider returned a shared-(a,k) row for 38/300 seeds (e.g. seed 0 -> idx 3). Normal walk from empty history reaches 8 (12/12 walks), gradient 23 (12/12); after gradient idx0, normal walk exhausts at 7 with no excluded row. All other 12 choices reach their unchanged strict bounds (30,16,35,14,168,12,12,30,4,44,2,17) in 12/12 walks each, and every walk's index sequence is identical to the E0 walk with the same seed. Reverse normal->gradient permitted as approved (not flagged). APP8227-06 split is described in app-change-handoff.md \"E1 conversion update\" (store separate freshness_required_keys and exposure_keys; gradient idx0 exposes [\"implicit-show\",1,2]; normal idx3 then not fresh; bounds 8/23; reverse not tightened). Repro: cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se11.py"
+  },
+  "SE-12": {
+   "verdict": "fixed",
+   "evidence": "Supported learner modes: practice, test, practice+reveal (test+reveal raises ValueError on 1,702/1,702; other modes raise). 504/504 motion payloads and 5,106/5,106 payloads overall contain no interior[-_ ]reversal or \"revers\" in any key or value (E0: 504/504 contained it). Public IDs: 8227:D:SEL:motion-integration:quadratic-motion and WB8227-motion-integration:quadratic-motion:{distance,displacement}; motion rows have no assets or exam refs; other 13 choices' public IDs equal native IDs; no alias collision; no native ID contains quadratic-motion. native_identity round-trips 22,833 public IDs (selection, parts in order, solution parts, asset/ref targets) and rejects 81 foreign IDs (other choices' selection/part IDs and malformed aliases). Native/teacher/marking IDs vs E0: selection/branch/recipe/part/local-part/criterion IDs, marking_memo/native memo/contract criterion IDs, teacher selection/branch/part/reviewed criterion IDs identical on 1,702 rows; only teacher ref targets (related refs dropped, SE-13) and trapezium asset targets (named note) differ. Full leak scan of all 5,106 payloads: 0 forbidden keys, 0 practice_help in test, 0 solution-asset sha pre-reveal, 0 unexpected 64-hex (only own question-asset sha; solution sha only after reveal), 0 held/related refs, 0 paths/.pdf/Question Banks/verified/Codex/Claude/Vitalis/pending/review/Cambridge strings; pre-reveal answer/step/criterion strings appear only where inherent in stem/prompt; the two private_math \"hits\" are the words \"exponent\"/\"ordinates\" inside the selection ID and practice help. Outcome-neutral shell: 1 distinct shell per choice. Repro: cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se12.py"
+  },
+  "SE-13": {
+   "verdict": "fixed",
+   "evidence": "All 1,702 teacher_projection payloads: 0 keys source_path/source_sha256/verified_by/reviewer_notes/review_notes/learner_display_reason/comparison_reason; 0 64-hex strings (E0: 7,801); 0 \"Question Banks\" paths (E0: 6,099); 0 held refs (structured and text, incl. 2023 P1 Q9); 0 related refs; 0 non-NSSCAS refs; all 47 principal-inverse views have 0 references (E0: held 2023 P1 Q9 + Cambridge 2016 P12 Q4(a)). Label diff vs E0 over 1,031 displayable bindings: board/syllabus_code/year/session/paper/question/part/printed_page/relation/target_part_id(s)/scope identical; learner_label identical except the 27 gradient rows' \"Gradient part: same type as\" -> \"Same type as\" (named note); 17 distinct displayable labels before and after. Removed fields: source_path, source_sha256, verified_by, learner_display, learner_display_reason, comparison_reason, pdf_page (== printed_page on all 17, so no locator lost), source_part_id, applies_to_part_ids, applies_to_branch. Dropped refs: exactly the 14 related refs. Non-reference teacher diff: owner_design_approval.manifest_sha256 removed; design_rubric_version added; recipe_version 0.1.5; criterion_id_rule text; stale-pending qualifiers; SE-07 required; official_award_basis.source_locator.source_path/source_sha256 removed (pdf/printed page, paper, question, part, report_year kept). Residual pre-existing teacher-visible strings noted in runtime-E1-N01/N02. Repro: cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se13.py"
+  },
+  "VERSION": {
+   "verdict": "fixed",
+   "evidence": "describe(): version/native 0.1.5, transport_revision 2; instances carry recipe_version 0.1.5, generator_version 2, design_rubric_version 0.1.4 (also in generation_identity, native memo, marking memo); all criterion IDs keep @0.1.4. generate(k, r, s) raises ValueError(\"Unsupported transport revision\") for r in {1,0,3,True,2.0,\"2\",None} on all 14 choices (98/98); E0 revision-1 examples fail E1 validate_instance 42/42 and their assets are refused 12/12. Determinism: generate(k,2,s) twice-equal 56/56 (seeds 0,1,42,2^63-1); chosen index equals E0 generate(k,1,s) on 1,722/1,722 (seeds 0-119, 2^32, 123456789, 2^63-1); generation_identity differs from E0 only in package_version/recipe_version/design_rubric_version; instance_hash recomputes 1,722/1,722; global random state untouched; generate == generate_at(k, idx, seed) 42/42. 42/42 frozen examples replay byte-for-byte (json indent 2 + newline) from candidate af6f77e940430033, validate, and hash-recompute; same (selection, seed, index) set as E0. New manifest sha 126850d05311bbb5... with 386 files all matching, none unlisted/missing; old manifest 7022ea50... files all intact. Exposure keys version-free: 1,589 distinct E1 keys, none contains \"@\" or \"0.1.\"; required-key set equals E0 key set; normalized_exposure strips @0.1.1-@0.1.5 before \":\"/end (pattern still narrow, pre-existing runtime-E-08). Repro: cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B version.py"
+  }
+ },
+ "findings": [
+  {
+   "id": "runtime-E1-N01",
+   "severity": "note",
+   "selection_id": "all 14",
+   "domain_index": null,
+   "locator": "teacher_projection(q).parts[].reviewed_part.{bloom_status, bloom_review_status, bloom.status, criteria[].status, misread_policy.operational_status, misread_policy.operational_rules}",
+   "expected": "Teacher view free of review-process annotations and stale approval status (design 4a054832 approved; D4.1 done).",
+   "actual": "12,960 teacher-visible strings still say \"pending\" (e.g. \"D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending\"; \"proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval\"); 2,173 name Claude. Pre-existing: E0 had 19,565 / 6,416; E1 removed only the qualifier variant (folded note visual-E-N4). Not made worse; outside SE-13's named reference scope.",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se13.py  (pattern_examples, E0_teacher_same_residuals)",
+   "basis": "Stage-E note visual-E-N4 (stale pending strings); SE-13 spirit (reviewer notes)",
+   "minimal_correction": "Refresh these status strings to the approved state or add the status keys to _teacher_metadata's private set."
+  },
+  {
+   "id": "runtime-E1-N02",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle (path); all (filename)",
+   "domain_index": 0,
+   "locator": "teacher_projection(q).parts[].reviewed_part.precision_fixture_path; .reviewed_part.misread_policy.sources[]",
+   "expected": "No internal repo paths in teacher metadata.",
+   "actual": "precision_fixture_path = \"planning/d4/visual-rounding-fixtures.json\" on 30/30 vector rows; misread_policy.sources[] = \"Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties\" on 3,087 parts (correctly labelled Cambridge, a filename not a repo path). Identical in E0. The SE-13 named fields (source_path/source_sha256/verified_by, held/related refs) are gone; Codex's report wording \"strips internal source paths ... recursively\" is slightly broader than what the key filter does.",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se13.py",
+   "basis": "SE-13 minimal correction (\"leave out ... paths\"); APP8227-04",
+   "minimal_correction": "Add precision_fixture_path to the private key set; optionally render the misread-policy source as a citation label."
+  },
+  {
+   "id": "runtime-E1-N03",
+   "severity": "note",
+   "selection_id": "17 displayable refs",
+   "domain_index": null,
+   "locator": "provider.display_references allowed fields",
+   "expected": "Displayable labels and safe locators remain.",
+   "actual": "They do. Teachers also lose the non-sensitive same-type rationale comparison_reason and pdf_page; pdf_page equals printed_page on all 17 refs, so no locator information is lost. Consistent with SE-13's \"labels and safe locators only\".",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se13.py (fields_removed_from_displayable_refs)",
+   "basis": "SE-13",
+   "minimal_correction": "None required; optional design choice to keep comparison_reason for teachers."
+  },
+  {
+   "id": "runtime-E1-N04",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": null,
+   "locator": "P.list_recipes()[].id / candidates/af6f77e940430033/catalogue.json id",
+   "expected": "Learner-facing identifiers outcome-neutral.",
+   "actual": "The v1 picker catalogue id is still \"8227:D:SEL:motion-integration:interior-reversal\" (unchanged from E0; title \"Distance and displacement from a quadratic velocity\" is neutral). It is the teacher-picker bridge ID (APP8227-01), not part of learner_projection; the copied app v1 learner_question emits letter part IDs and no selection ID. Not counted against SE-12.",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B -c \"from common import *; print([r['id'] for r in P1.list_recipes()])\"",
+   "basis": "SE-12 scope (learner projection); APP8227-01/02",
+   "minimal_correction": "App carry: never echo the v1 recipe id to learner clients."
+  },
+  {
+   "id": "runtime-E1-N05",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": 0,
+   "locator": "provider.native_identity",
+   "expected": "Mapping resolves public IDs of this question only.",
+   "actual": "As expected; additionally the native interior-reversal IDs themselves are rejected when presented as public IDs (only the alias resolves). By design; app must persist the public->native mapping (handoff says so).",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B se12.py (native_identity_negative)",
+   "basis": "SE-12",
+   "minimal_correction": "None."
+  },
+  {
+   "id": "runtime-E1-N06",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trig-rform-equation:degree-cycle",
+   "domain_index": 2,
+   "locator": "parts[b-roots].worked_steps[1].result (rows 2,7,12,17,22,30,36,41,46,55)",
+   "expected": "Simplified notation (cf. folded \\frac{2}{2} note).",
+   "actual": "E1-introduced principal-value step shows \"\\beta=\\sin^{-1}\\left(\\frac{0}{\\sqrt{5}}\\right)\\approx0.000000^\\circ\" (or \\frac{0}{5}) on the 10 c=0 rows; value correct; learner-visible only after reveal. All 58 R-form steps recomputed: beta, candidates, rejected values, interval (alpha, 360+alpha) and retained roots correct and equal to E0 roots.",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B classify.py (rule_rform_result) ; diff_patterns.py trig",
+   "basis": "Folded R-form note; Q10 notation",
+   "minimal_correction": "Print beta=0 directly when c=0."
+  },
+  {
+   "id": "runtime-E1-N07",
+   "severity": "note",
+   "selection_id": "implicit-normal (both), trapezium",
+   "domain_index": 0,
+   "locator": "parts[].accepted_alternatives[].{requirements,formula}; trapezium parts[a].worked_steps[1].result; parts[d].reviewed_part.criteria[1].required",
+   "expected": "Tidy marker text.",
+   "actual": "E1-introduced cosmetics, none learner-visible pre-submission and none changing a value: \"\\ln 1+2x\" (unsimplified ln 1) in 16 requirement fields (a=1 rows 0-7, both branches); vestigial \", $\\sigma=-1$.\" after sigma was substituted into the formula (54); requirement text mixes $-delimited and bare TeX (e^{2x}+y=20/y); trapezium \"T=\\left(y_0+2y_1+y_{2}\\right)\" keeps redundant brackets when h/2=1; reviewed d:DB1 row reads \"...depends on d:B1 Unambiguous concavity...\" with no sentence break (22).",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B diff_patterns.py implicit-normal 8 ; diff_patterns.py trapezium 12",
+   "basis": "Q10 cosmetic",
+   "minimal_correction": "Optional tidy in a later edit."
+  },
+  {
+   "id": "runtime-E1-N08",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient",
+   "domain_index": 0,
+   "locator": "private_math.open_fixture",
+   "expected": "Correct branch fixture text, no new score.",
+   "actual": "Now: \"The gradient-only product route can retain its canonical 5/5 when an ineligible constant misread never enters the marked derivative/substitution...\" This is an analogy to the approved normal-branch 9/9 (WO-implicit line 150) and full gradient working 5/5 (line 126), not a rubric change; flagged so the calculus checker can confirm it is not a new score ruling.",
+   "evidence": "cd /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime && PYTHONDONTWRITEBYTECODE=1 python3 -B diff_patterns.py implicit-normal",
+   "basis": "SE-08; \"no new scores\" constraint",
+   "minimal_correction": "None if the calculus checker accepts the analogy; else restate as unresolved."
+  }
+ ],
+ "confirmed": [
+  "Codex checks rerun in /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-runtime/copy: check_e1_preservation.py pass (1,702 compared, 27 changed emitted-key rows, 97 scores), check_e1_runtime.py pass (5,106 learner/1,702 teacher payloads, fresh normal idx 14), check_e1_delta.py pass (1,017 baseline, 523 unchanged, 172 changed, 322 replaced assets); all three JSON outputs byte-identical to the frozen ones in C (sha256 212cb93c..., b1bfb51b..., 09b1cb9c...).",
+  "Independent invariants (diff_inv.py): 0 violations on 1,702 rows: parameters/domains, semantic fingerprints, part IDs/order/local IDs, proposed part/total marks, all 9,823 runtime criteria identical in every key except achievement text (84 achievement changes: 54 log e^{1}, 22 SE-07, 8 SE-02), reviewed_part criterion IDs/mark types/values/dependencies/marks/Bloom/objectives/demands, top-level objective/demand/Bloom/classification, catalogue strict bounds/approved/raw capacities. private_math differs only in gradient open_fixture (27, SE-08) and modulus full_model (16, SE-02).",
+  "Classification (classify.py): 185 (choice,path) groups / 24,857 changed fields, 0 unexplained, 0 unmatched. Totals by item: VERSION 12,634; SE-11 4,211; stale-pending qualifiers 2,882; SE-01 1,943; SE-06 1,350 (asset ids/shas); boundary-conditions note 361; SE-05 220; e^{1}/-(0) 183; undefined C/T 328; SE-02 160; SE-08 108; singular second 90; narrow-strip chords 66; R-form note 116; SE-04 44; SE-07 44; SE-03 24; label 27; trapezium help 22; trapezium T 22; asset (d) binding 22.",
+  "Derived copies (extra.py): native_marking_memo parts/assets/rules, marking_memo question/canonical/criteria/meta/hash, grading_contract, fingerprint and instance_hash re-derive on 1,702/1,702; subject-rules unchanged; fingerprint changes occur only where visible prompts/assets changed (implicit 54, poly 34, exp 56, trapezium 8 prompts; log 270, modulus 44 assets).",
+  "Learner payload path diff E0->E1 (all modes) contains only recipe_version, the motion alias, and fields already classified (prompts, help, labels, answers/steps, asset shas).",
+  "Candidate: only formatting.py added; README, asset-index, catalogue-native, catalogue, groups/*, manifest, provenance, provider, recipes changed (recipeVersion 1->2, version map 2->0.1.5 with prior transport recorded, design_rubric_version, qualifiers/criterion_id_rule/required/label); deck-compositions, domains/*, subject-rules, __init__ unchanged; 322 asset files replaced = 270 log + 44 modulus question + 8 trapezium solution SVGs (styling: chord colour + dash only); 4 kept.",
+  "Asset access (assets_access.py): 1,858 checks on 336 asset rows, 0 failures (question pre-reveal ok; solution refused pre-reveal, as question, cross-instance, forged, tampered); 336 replaced E0 asset refs refused by E1; all 358 E1 asset bindings resolve.",
+  "All named mechanical patterns absent from E1 instances: \\prime, \\operatorname{sign}, 1\\ln, 1e^, 1p, -1\\lvert, =1\\lvert, +1(, \\frac{n}{n}, \\sum_{j=1}^{1}, e^{1}, \"1 seconds\", \"boundary conditions\", \"Gradient part:\" (remaining (kx) is approved reviewed S4 text; remaining -(0)^{3} is a valid substitution display in stationary steps; long decimals only in private_math)."
+ ],
+ "part_b_classification": [
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".examination_references[].learner_label",
+   "classified_as": "NOTE uniform \"Same type as\" label",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".exposure_keys[]",
+   "classified_as": "SE-11 (gradient emits implicit-show)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 27,
+   "fields_changed": 54,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".parts[gradient].accepted_alternatives[].formula",
+   "classified_as": "SE-02 unit coefficient + sigma value",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".parts[gradient].accepted_alternatives[].requirements",
+   "classified_as": "SE-08 gradient-only alternatives (G1-G5)",
+   "rows_changed": 27,
+   "fields_changed": 81,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".parts[gradient].prompt",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".parts[gradient].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 27,
+   "fields_changed": 81,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".parts[gradient].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".parts[gradient].worked_steps[].result",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 108,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".private_math.open_fixture",
+   "classified_as": "SE-08 open_fixture branch text",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:gradient",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 27,
+   "fields_changed": 108,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[gradient].prompt",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[gradient].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[gradient].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[normal].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[normal].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[normal].worked_steps[].result",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].accepted_alternatives[].formula",
+   "classified_as": "SE-02 unit coefficient + sigma value",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].accepted_alternatives[].requirements",
+   "classified_as": "NOTE undefined C in normal-branch alternatives",
+   "rows_changed": 27,
+   "fields_changed": 54,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].prompt",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].reference_answer",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 27,
+   "fields_changed": 81,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".parts[show-derivative].worked_steps[].result",
+   "classified_as": "SE-01 prime (+3 s.f. phrasing note; undefined C note)",
+   "rows_changed": 27,
+   "fields_changed": 108,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "implicit-normal:normal",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 27,
+   "fields_changed": 27,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 20,
+   "fields_changed": 20,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 20,
+   "fields_changed": 40,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 20,
+   "fields_changed": 20,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 20,
+   "fields_changed": 20,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 20,
+   "fields_changed": 20,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 20,
+   "fields_changed": 20,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:gradient-target",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 20,
+   "fields_changed": 20,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".assets[].asset_id",
+   "classified_as": "SE-06 log-graph question SVG regenerated",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".assets[].question_diagram.asset_id",
+   "classified_as": "SE-06 log-graph question SVG regenerated",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".assets[].question_diagram.sha256",
+   "classified_as": "SE-06 log-graph question SVG regenerated",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".assets[].reference.asset_id",
+   "classified_as": "SE-06 log-graph question SVG regenerated",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".assets[].reference.sha256",
+   "classified_as": "SE-06 log-graph question SVG regenerated",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".parts[g-parameters].criteria[].achievement",
+   "classified_as": "NOTE e^{1} / -(0)",
+   "rows_changed": 54,
+   "fields_changed": 54,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".parts[g-parameters].reference_answer",
+   "classified_as": "NOTE e^{1} / -(0)",
+   "rows_changed": 54,
+   "fields_changed": 54,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".parts[g-parameters].worked_steps[].result",
+   "classified_as": "NOTE e^{1} / -(0)",
+   "rows_changed": 69,
+   "fields_changed": 75,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "log-linear-model:graph-intercept",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 270,
+   "fields_changed": 270,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".assets[].asset_id",
+   "classified_as": "SE-05 modulus question SVG regenerated",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".assets[].question_diagram.asset_id",
+   "classified_as": "SE-05 modulus question SVG regenerated",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".assets[].question_diagram.sha256",
+   "classified_as": "SE-05 modulus question SVG regenerated",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".assets[].reference.asset_id",
+   "classified_as": "SE-05 modulus question SVG regenerated",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".assets[].reference.sha256",
+   "classified_as": "SE-05 modulus question SVG regenerated",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".parts[a].reference_answer",
+   "classified_as": "SE-02 unit coefficient",
+   "rows_changed": 16,
+   "fields_changed": 16,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".private_math.full_model",
+   "classified_as": "SE-02 unit coefficient",
+   "rows_changed": 16,
+   "fields_changed": 16,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "modulus-graph-recovery:vertex-intercepts",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 44,
+   "fields_changed": 44,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 56,
+   "fields_changed": 112,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".parts[acceleration].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".parts[distance].prompt",
+   "classified_as": "NOTE singular second / integration bounds",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".parts[distance].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".practice_help.prompts[]",
+   "classified_as": "NOTE \"boundary conditions\" -> integration bounds",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:exponential-positive",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 56,
+   "fields_changed": 56,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".parts[displacement].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".parts[distance].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".practice_help.prompts[]",
+   "classified_as": "NOTE \"boundary conditions\" -> integration bounds",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:interior-reversal",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 168,
+   "fields_changed": 168,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 137,
+   "fields_changed": 274,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".parts[distance].prompt",
+   "classified_as": "NOTE singular second / integration bounds",
+   "rows_changed": 34,
+   "fields_changed": 34,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".parts[distance].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".parts[distance].worked_steps[].reason",
+   "classified_as": "NOTE undefined T",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".parts[velocity].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".parts[velocity].worked_steps[].result",
+   "classified_as": "NOTE undefined C",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".practice_help.prompts[]",
+   "classified_as": "NOTE \"boundary conditions\" -> integration bounds",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "motion-integration:polynomial-chain",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 137,
+   "fields_changed": 137,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".parts[p-decision].worked_steps[].result",
+   "classified_as": "SE-03 instance coefficient",
+   "rows_changed": 24,
+   "fields_changed": 24,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "principal-inverse:solve-or-explain",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 47,
+   "fields_changed": 47,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 256,
+   "fields_changed": 512,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".parts[classification].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 256,
+   "fields_changed": 512,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".parts[classification].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".parts[classification].worked_steps[].result",
+   "classified_as": "SE-01 prime",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".parts[point].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 256,
+   "fields_changed": 512,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".parts[point].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".parts[point].worked_steps[].result",
+   "classified_as": "SE-01 prime",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:flat-classification",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 256,
+   "fields_changed": 256,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".exposure_policy",
+   "classified_as": "SE-11 (exposure policy text)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 540,
+   "fields_changed": 1080,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".parts[nature].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".parts[nature].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".parts[nature].worked_steps[].result",
+   "classified_as": "SE-01 prime",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".parts[points].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 540,
+   "fields_changed": 1080,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".parts[points].reviewed_part.criterion_id_rule",
+   "classified_as": "VERSION (criterion-ID rule text)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".parts[points].worked_steps[].result",
+   "classified_as": "SE-01 prime",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "stationary-inflexion:two-extrema",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 540,
+   "fields_changed": 540,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".assets[].asset_id",
+   "classified_as": "NOTE narrow-strip chords (solution SVG regenerated)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".assets[].reference.asset_id",
+   "classified_as": "NOTE narrow-strip chords (solution SVG regenerated)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".assets[].reference.sha256",
+   "classified_as": "NOTE narrow-strip chords (solution SVG regenerated)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".assets[].target_part_ids[]",
+   "classified_as": "NOTE solution asset bound to (c) and (d)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 22,
+   "fields_changed": 88,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[a].worked_steps[].result",
+   "classified_as": "NOTE frac{2}{2}/sum/float noise",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[b].criteria[].achievement",
+   "classified_as": "SE-02 unit coefficient",
+   "rows_changed": 8,
+   "fields_changed": 8,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[b].prompt",
+   "classified_as": "SE-02 unit coefficient",
+   "rows_changed": 8,
+   "fields_changed": 8,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[b].reference_answer",
+   "classified_as": "SE-04 marker rule removed from (b) answer",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[b].reviewed_part.criteria[].qualifiers[]",
+   "classified_as": "NOTE stale pending qualifiers",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[b].worked_steps[].result",
+   "classified_as": "SE-02 unit coefficient / NOTE float noise",
+   "rows_changed": 22,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[d].criteria[].achievement",
+   "classified_as": "SE-07 concavity allowance",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[d].reference_answer",
+   "classified_as": "SE-04 marker rule removed from (d) answer",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".parts[d].reviewed_part.criteria[].required",
+   "classified_as": "SE-07 concavity allowance (reviewed row)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".practice_help.prompts[]",
+   "classified_as": "NOTE answer-free trapezium help",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trapezium-sketch-estimate:logarithmic-hence-chain",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 22,
+   "fields_changed": 22,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 58,
+   "fields_changed": 116,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".parts[b-roots].worked_steps[].reason",
+   "classified_as": "NOTE R-form principal value/candidates (reason)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".parts[b-roots].worked_steps[].result",
+   "classified_as": "NOTE R-form principal value/candidates (result, recomputed)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "trig-rform-equation:degree-cycle",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 58,
+   "fields_changed": 58,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 30,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".freshness_required_keys[]",
+   "classified_as": "SE-11 (new required-key field)",
+   "rows_changed": 30,
+   "fields_changed": 60,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".generation_identity.design_rubric_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 30,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".generation_identity.package_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 30,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".generation_identity.recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 30,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".generator_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 30,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".parts[a].worked_steps[].result",
+   "classified_as": "SE-02 unit coefficient",
+   "rows_changed": 20,
+   "fields_changed": 28,
+   "unexplained_fields": 0
+  },
+  {
+   "choice": "vector-geometry:scalar-combination-and-origin-angle",
+   "path": ".recipe_version",
+   "classified_as": "VERSION (0.1.5 / revision 2 / rubric 0.1.4)",
+   "rows_changed": 30,
+   "fields_changed": 30,
+   "unexplained_fields": 0
+  }
+ ],
+ "se11_walks": {
+  "implicit-normal:gradient": {
+   "approved_bound": 23,
+   "e1_fresh_min": 23,
+   "e1_fresh_max": 23,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "implicit-normal:normal": {
+   "approved_bound": 8,
+   "e1_fresh_min": 8,
+   "e1_fresh_max": 8,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "stationary-inflexion:two-extrema": {
+   "approved_bound": 30,
+   "e1_fresh_min": 30,
+   "e1_fresh_max": 30,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "stationary-inflexion:flat-classification": {
+   "approved_bound": 16,
+   "e1_fresh_min": 16,
+   "e1_fresh_max": 16,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "motion-integration:polynomial-chain": {
+   "approved_bound": 35,
+   "e1_fresh_min": 35,
+   "e1_fresh_max": 35,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "motion-integration:exponential-positive": {
+   "approved_bound": 14,
+   "e1_fresh_min": 14,
+   "e1_fresh_max": 14,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "motion-integration:interior-reversal": {
+   "approved_bound": 168,
+   "e1_fresh_min": 168,
+   "e1_fresh_max": 168,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "trig-rform-equation:degree-cycle": {
+   "approved_bound": 12,
+   "e1_fresh_min": 12,
+   "e1_fresh_max": 12,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "principal-inverse:solve-or-explain": {
+   "approved_bound": 12,
+   "e1_fresh_min": 12,
+   "e1_fresh_max": 12,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "log-linear-model:graph-intercept": {
+   "approved_bound": 30,
+   "e1_fresh_min": 30,
+   "e1_fresh_max": 30,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "log-linear-model:gradient-target": {
+   "approved_bound": 4,
+   "e1_fresh_min": 4,
+   "e1_fresh_max": 4,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "modulus-graph-recovery:vertex-intercepts": {
+   "approved_bound": 44,
+   "e1_fresh_min": 44,
+   "e1_fresh_max": 44,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "trapezium-sketch-estimate:logarithmic-hence-chain": {
+   "approved_bound": 2,
+   "e1_fresh_min": 2,
+   "e1_fresh_max": 2,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  },
+  "vector-geometry:scalar-combination-and-origin-angle": {
+   "approved_bound": 17,
+   "e1_fresh_min": 17,
+   "e1_fresh_max": 17,
+   "walks": 12,
+   "identical_index_sequence_to_E0": true
+  }
+ },
+ "not_checked": [
+  "No renders viewed (SVG/KaTeX); label placement quality of SE-05/06 and prime rendering left to visual/wording checkers.",
+  "Mathematical correctness of SE-08 G1-G5 alternative text, SE-09/SE-10 fixtures and the new 5/5 open_fixture wording judged only structurally (calculus checker).",
+  "No app server, website, v1 app loader run against E1, recogniser, marker, MCP or installation. Copied app learner_question only read, not executed against E1.",
+  "Rebuild/freeze (relocated rebuilds, freeze_stage_e --check) not rerun by this checker.",
+  "generate_fresh memo: walks used a cache of generate_at keyed on (selection, index, seed); determinism of that function was verified separately (version.py)."
+ ]
+}

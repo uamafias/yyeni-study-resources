@@ -1,0 +1,212 @@
+{
+  "schema": "8227-stage-e-trig-log-author-check-v1",
+  "status": "pass",
+  "branches": {
+    "degree-cycle": {
+      "generated_instances": 58,
+      "unique_whole_card_exposure_key_tuples": 58,
+      "subdecision_key_count": 10,
+      "outcomes": {
+        "wrap-or-negative": 42,
+        "zero-target": 10,
+        "above-sine-coefficient": 6
+      },
+      "stable_criterion_ids": [
+        "WB8227-trig-rform-equation:degree-cycle:a-convert:a-A1",
+        "WB8227-trig-rform-equation:degree-cycle:a-convert:a-B1",
+        "WB8227-trig-rform-equation:degree-cycle:a-convert:a-M1",
+        "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A1",
+        "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A2",
+        "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1",
+        "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M2"
+      ],
+      "strict_fresh_upper_bound": 12
+    },
+    "solve-or-explain": {
+      "generated_instances": 47,
+      "unique_whole_card_exposure_key_tuples": 12,
+      "subdecision_key_count": 0,
+      "outcomes": {
+        "no-real": 24,
+        "real": 23
+      },
+      "stable_criterion_ids": [
+        "WB8227-principal-inverse:solve-or-explain:p-decision:P-A1",
+        "WB8227-principal-inverse:solve-or-explain:p-decision:P-B1",
+        "WB8227-principal-inverse:solve-or-explain:p-decision:P-M1"
+      ],
+      "strict_fresh_upper_bound": 12
+    },
+    "graph-intercept": {
+      "generated_instances": 270,
+      "unique_whole_card_exposure_key_tuples": 30,
+      "subdecision_key_count": 0,
+      "outcomes": {
+        "p-negative": 135,
+        "p-positive": 135
+      },
+      "stable_criterion_ids": [
+        "WB8227-log-linear-model:graph-intercept:g-parameters:G-A1",
+        "WB8227-log-linear-model:graph-intercept:g-parameters:G-A2",
+        "WB8227-log-linear-model:graph-intercept:g-parameters:G-B1",
+        "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1",
+        "WB8227-log-linear-model:graph-intercept:g-parameters:G-M2"
+      ],
+      "strict_fresh_upper_bound": 30
+    },
+    "gradient-target": {
+      "generated_instances": 20,
+      "unique_whole_card_exposure_key_tuples": 20,
+      "subdecision_key_count": 2,
+      "outcomes": {
+        "negative-x": 14,
+        "positive-x": 6
+      },
+      "stable_criterion_ids": [
+        "WB8227-log-linear-model:gradient-target:t-parameter:T-A1",
+        "WB8227-log-linear-model:gradient-target:t-parameter:T-B1",
+        "WB8227-log-linear-model:gradient-target:t-parameter:T-M1",
+        "WB8227-log-linear-model:gradient-target:t-target:U-A1",
+        "WB8227-log-linear-model:gradient-target:t-target:U-M1"
+      ],
+      "strict_fresh_upper_bound": 4
+    }
+  },
+  "generated_instances": 395,
+  "rubric_expectation_fixtures": 26,
+  "invalid_domain_negatives_rejected": 11,
+  "invalid_domain_negative_cases": [
+    {
+      "recipe_id": "WB8227-trig-rform-equation",
+      "branch_id": "degree-cycle",
+      "parameters": {
+        "a": 2,
+        "b": 2,
+        "c": 1
+      },
+      "reason": "excluded equal-coefficient diagnostic collision"
+    },
+    {
+      "recipe_id": "WB8227-principal-inverse",
+      "branch_id": "solve-or-explain",
+      "parameters": {
+        "k": 3,
+        "theta": "-pi/3"
+      },
+      "reason": "exact Cambridge original excluded"
+    },
+    {
+      "recipe_id": "WB8227-log-linear-model",
+      "branch_id": "graph-intercept",
+      "parameters": {
+        "L": "0",
+        "p": "1/2",
+        "x1": 1,
+        "delta_x": 2
+      },
+      "reason": "zero-log-amplitude diagnostic collision"
+    },
+    {
+      "recipe_id": "WB8227-log-linear-model",
+      "branch_id": "gradient-target",
+      "parameters": {
+        "b": 2,
+        "c": 1,
+        "m": 2,
+        "q": 10
+      },
+      "reason": "nondiagnostic exponentiation collision"
+    },
+    {
+      "recipe_id": "WB8227-trig-rform-equation",
+      "branch_id": "degree-cycle",
+      "parameters": {
+        "a": 1.0,
+        "b": 2,
+        "c": -2
+      },
+      "reason": "equal-valued float must not replace a canonical integer"
+    },
+    {
+      "recipe_id": "WB8227-trig-rform-equation",
+      "branch_id": "degree-cycle",
+      "parameters": {
+        "a": true,
+        "b": 2,
+        "c": -2
+      },
+      "reason": "equal-valued Boolean must not replace a canonical integer"
+    },
+    {
+      "recipe_id": "WB8227-principal-inverse",
+      "branch_id": "solve-or-explain",
+      "parameters": {
+        "k": 2.0,
+        "theta": "-pi"
+      },
+      "reason": "equal-valued float must not replace a canonical integer"
+    },
+    {
+      "recipe_id": "WB8227-log-linear-model",
+      "branch_id": "graph-intercept",
+      "parameters": {
+        "L": "-1",
+        "p": "-3/4",
+        "x1": 1.0,
+        "delta_x": 1
+      },
+      "reason": "equal-valued float must not replace a canonical integer"
+    },
+    {
+      "recipe_id": "WB8227-log-linear-model",
+      "branch_id": "graph-intercept",
+      "parameters": {
+        "L": "-1",
+        "p": "-3/4",
+        "x1": true,
+        "delta_x": 1
+      },
+      "reason": "equal-valued Boolean must not replace a canonical integer"
+    },
+    {
+      "recipe_id": "WB8227-log-linear-model",
+      "branch_id": "gradient-target",
+      "parameters": {
+        "b": 2.0,
+        "c": 1,
+        "m": 3,
+        "q": 0
+      },
+      "reason": "equal-valued float must not replace a canonical integer"
+    },
+    {
+      "recipe_id": "WB8227-log-linear-model",
+      "branch_id": "gradient-target",
+      "parameters": {
+        "b": 2,
+        "c": true,
+        "m": 3,
+        "q": 0
+      },
+      "reason": "equal-valued Boolean must not replace a canonical integer"
+    }
+  ],
+  "oracle_methods": [
+    "75-digit tangent-half-angle polynomial and direct original-equation substitution",
+    "symbolic principal-inverse consistency and forced-candidate obstruction",
+    "independent simultaneous linear equations and original exponential substitution",
+    "original-base index-law target recomputation",
+    "independent orientation-segment graph-label intersection check"
+  ],
+  "limitations": [
+    "Same-vendor author check, not cross-vendor content acceptance.",
+    "Fixture expected awards validate memo arithmetic/IDs; no free-text, sketch, photo or handwriting marker has been exercised.",
+    "Graph geometry and SVG structure checked for all270; actual app renderer and learner UI not tested.",
+    "No resource registry activation, imports, classroom delivery, learner assignments or production operations."
+  ],
+  "carry_forward": [
+    "R-form endpoint/tangent misread eligibility and canonical routes remain explicit E/F acceptance fixtures.",
+    "Log target misread as prefactor can change difficulty; do not auto-approve MR03 eligibility.",
+    "Competing eligible misread data sharing one earned A/B remain a common-marker settlement-order fixture."
+  ]
+}

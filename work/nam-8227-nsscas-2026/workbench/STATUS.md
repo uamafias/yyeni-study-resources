@@ -1,13 +1,39 @@
-# STATUS — NSSCAS Mathematics 8227 Workbench
+# STATUS — NSSCAS Mathematics 8227 Workbench E1
 
-23 November 2026. Accepted R7 close-out is AUTHOR complete under `review/opus-5-5-repair-r7/REPAIR-PROMPT.md`. Claude accepted R7 and confirms these named corrections at the start of the step-3 review; no separate Claude round is required.
+24 November 2026. Owner Vitalis; AUTHOR Codex with three parallel repair agents.
+NIED December 2020 syllabus, Grade 12.
 
-All twelve kept nonordered rejections were re-decided after reading every member of the six families: four same type and eight structural branches. The three gap records, family-level demands and member-specific comparisons, book-neutral posed-response policy, 403 template annotations, eleven truncated reasons, planning limits and cosmetic spacing are repaired. Accepted item-level assessed/component links remain unchanged.
+**E1 author repairs and checks complete; snapshot frozen. Claude diff-only
+confirmation is next; independent E1 content acceptance is not yet established.**
 
-Validation passed: two independent concurrent fresh-copy builds, 285 commands each, 275 byte-identical outputs matching the unchanged author checkout, and 74 rejected seeded-error executions (including overlapping retained guards and the new best-subpart fixture). All 436 protected source files, 37 review inputs and 870 author tool/input files retain the expected hashes. The final snapshot is `analysis/analysis-snapshot.json`; verify it with `python3 work/nam-8227-nsscas-2026/workbench/tools/freeze_analysis_r7_closeout.py --check` from the repository root.
+Vitalis's exact Stage-D approval remains manifest
+`4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec`,
+content digest `e9cd8f58345364e7b3bb45fadf2bab162571cc4c101df5beff2189a514fd8780`,
+including MR03-OPS-D4. No new owner ruling is needed for E1.
 
-Current analysis: 2,718 main candidate decisions; relation rows including named member exceptions comprise 211 same type, 910 structural branches and 1,777 rejections. Thirteen exam parts have no recorded textbook relation. The 22 targeted gap searches comprise 18 active positive parts, two held internal comparisons and two bounded no-match searches. Seventy-three demands have same-type textbook practice. These are lower-bound analysis counts, not recipe totals or full practice coverage.
+Claude confirmed mathematics across all 1,702 rows and design preservation but
+raised 13 local should-fix items. All 13 are repaired: actual prime rendering,
+coefficient/sign/undefined-symbol text, diagram label geometry, canonical-vs-marker
+answer separation, marking allowance/alternative text, two scripts, rounding
+fixtures, shared proof exposure and safe learner/teacher metadata.
 
-Next: step 3, the recipe contract and the pilot PLAN. Search all family members and the accepted assessed/component union links (R5-03), not only recorded positive relations; templated rejection notes are not comparison evidence. Full details and before/after counts: `checks/repair-r7-closeout.md`. Resume instructions: `HANDOVER.md`.
+Counts unchanged: 9 recipes / 14 choices / 27 parts / 83 branch marks; 1,702 admitted parameter
+rows; 42 seeded examples; 326 unique original assets; Bloom 13 Apply / one Analyse;
+compositions 19/20/17. Fresh bounds and syllabus gaps remain exactly approved.
+Required freshness keys are unchanged; 27 gradient rows additionally expose their
+shared derivative proof. The reverse-direction bound is not tightened.
 
-Three parallel author subagents assisted this close-out; their reads are author evidence, not independent review. No PLAN, recipes, runtime generators, work orders, app changes, imports or learner assignments were created. Nothing committed or pushed; Vitalis commits.
+Native/package 0.1.5 and v1 transport 2 explicitly preserve design/rubric 0.1.4 IDs.
+The reviewed 0.1.4 candidate and all 1,017 baseline files remain recoverable under
+`authoring/history/stage-e-0/` and the old immutable candidate. No attempt exists.
+
+Read [E1 repair report](checks/stage-e-repair-e1-report.md),
+[HANDOVER](HANDOVER.md), [diff-only prompt](authoring/CLAUDE-STAGE-E1-CHECK.md),
+`checks/stage-e/candidate.json`, `authoring/stage-e-manifest.json` and the final
+freeze receipt `checks/stage-e-repair-e1-freeze.json`. Declared scores remain
+expectations; there is no raw-response recogniser in this package.
+
+After Claude confirms E1, local website/app tests are next under Vitalis's scope.
+App edits, actual marking/access/history/MCP/production acceptance remain separate.
+Nothing installed, imported, assigned, published, committed or pushed. Only
+should-fix/design-blocking findings trigger repair; pending rubric notes carry.

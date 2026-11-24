@@ -1,0 +1,737 @@
+{
+ "checker": "calc",
+ "scope": "Calculus group, 7 choices / 1,211 admitted rows: implicit-normal:gradient(27), :normal(27); stationary-inflexion:two-extrema(540), :flat-classification(256); motion-integration:polynomial-chain(137), :exponential-positive(56), :interior-reversal(168). Code sha256 443719795f34a13e…(source/groups/calculus.py), fixtures sha256 661c4929ad96a3bf…",
+ "method": [
+  "SP/work-calc/oracle.py: own LaTeX->SymPy parser over learner-visible stem/prompts only; all 1,211 rows (exhaustive). Implicit: P on curve, implicit derivative (-Fx/Fy) and independent local explicit-root derivative, finite AND nonzero gradient, C!=0, nonunit chain, show-that target equality, normal line. Stationary: parse expanded f, solve f'=0, ordinates, first-derivative-sign nature (incl. flat inflexions/quartic extrema). Motion: integrate a/v, sign analysis, legs, distance vs displacement, mpmath quadrature of |v| as second oracle, exponential integral. Every worked-step result parsed and compared (6,697 steps; 1,336 original-function evaluations). Practice help, pre-reveal learner projection leak scan, exam-reference relation/label/target scan.",
+  "SP/work-calc/marking_compare.py: generated criteria (fully-qualified IDs, mark types, marks, order, part tariffs, totals, answer-only=0, depends_on/depends_on_any) for all 1,211 rows vs planning/calculus-design.json (+ motion official_qualifiers) and the three work-order ledgers; approved originals in planning/approvals/stage-d-4a054832/original diffed against live work orders (only the gate banner differs).",
+  "Read all 51 records in authoring/calculus-fixtures.json; checked every concrete script's mathematics and declared award against criterion text and work order.",
+  "SP/work-calc/fresh_awards.py: 19 fresh responses on newly chosen domain rows (not the exemplar tuples), every number SymPy-verified, awards assigned by me from the generated rubric + approved work order (output SP/work-calc/fresh-awards.json).",
+  "Recomputed motion counts and visible-feature lookup separability from source/domains/calculus.json."
+ ],
+ "counts": {
+  "instances_recomputed": 1211,
+  "worked_steps_checked": 6697,
+  "expectations_read": 51,
+  "fresh_awards": 19,
+  "renders_inspected": 0
+ },
+ "findings": [
+  {
+   "id": "calc-E-01",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient",
+   "domain_index": 0,
+   "part": "gradient",
+   "criterion": "G1-G5 (alternative routes)",
+   "locator": "source/groups/calculus.py:161-166 (shared `alternatives` list attached to the gradient-only part), :178-180 (gradient-only 'equivalent-relation' mapping), :189 (open_fixture); generated q.parts[0].accepted_alternatives[1..2] and q.private_math.open_fixture",
+   "expected": "Gradient-only marking memo uses only G1-G5 and the approved gradient-only alternative (CALC-D1-DEV05 explicit root). Divided/log-absolute equivalent-relation mapping (CALC-D2-DEV09) is approved for show-derivative only; gradient-only has no target and needs no back-substitution.",
+   "actual": "In all 27 gradient-only rows the part's accepted_alternatives say 'back-substitute C to establish the target. Missing back-substitution loses S4 only after correct S1/S2/S3' and 'complete correct back-substitution ... at most independent S3 is possible' - S3/S4 do not exist in this part and there is no target. The same part carries an 'equivalent-relation' G1-G5 mapping not in the deviation register. Concrete consequence (fresh F03, row 9: 2e^{2x}y+y^2=8): a complete correct log-absolute route that substitutes P without back-substitution earns 5/5 under the mapping but fails the alternatives text ('complete correct back-substitution'); the invalid ln y route has no G allocation at all. private_math.open_fixture in gradient-only rows also cites '9/9', the normal-branch total.",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 -B: for i in 0..26 generate_at('8227:D:SEL:implicit-normal:gradient',i); regex [SGHN]\\d in json.dumps(parts[0].accepted_alternatives) minus criterion suffixes -> {S1,S2,S3,S4} in 27/27 rows.",
+   "source_basis": "planning/d4/deviation-register.json CALC-D1-DEV05 (gradient-only explicit root only) and CALC-D2-DEV09 (scope 'show-derivative:equivalent-relation alternatives'); work order WB8227-implicit-normal.md lines 110-116.",
+   "minimal_correction": "Build branch-specific alternatives: gradient-only keeps the explicit-root alternative (DEV05) only; either drop the divided/log-absolute entries and 'equivalent-relation' mapping from gradient-only, or restate them in G terms with no target/back-substitution language and record that allocation for Vitalis. Make open_fixture text branch-specific."
+  },
+  {
+   "id": "calc-E-02",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:implicit-normal:normal",
+   "domain_index": null,
+   "part": "gradient",
+   "criterion": "H1/H2 (and P4 in two-extrema)",
+   "locator": "authoring/calculus-fixtures.json:154 (calc:normal:alternative, expected 9/9) and :231 (calc:two-extrema:alternative, expected 6/6)",
+   "expected": "Concrete expectations declare only awards whose required evidence is in the script. Part (b) prompt: 'Show your substitution'; H1 is the substitution M mark and H2 depends on H1. P4 requires 'evaluation of the original function shown'.",
+   "actual": "calc:normal:alternative part (b) is only 'At P this is -24/5' (no substitution shown, unlike calc:normal:correct which shows m=-(3)(2)(-4)/(3+2(-4))), yet expects 9/9; by the rubric H1=0 and dependent H2=0 -> 7/9 (at best undecidable). calc:two-extrema:alternative states 'original function values 4,0' with no f evaluation yet expects 6/6 - the exact omission the F audit says it repaired in the canonical scripts (f-visual-audits-calculus.md para 3).",
+   "evidence": "grep -n 'At P this is\\|original function values 4,0' authoring/calculus-fixtures.json -> lines 154, 231; generated H1 achievement 'Substitute the point into the displayed derivative...'; P4 achievement calculus.py:86.",
+   "source_basis": "work order WB8227-implicit-normal.md line 96 (H1 M1 substitute P), line 124 (OD-1); WB8227-stationary-inflexion.md P4 row; generated prompt calculus.py:169.",
+   "minimal_correction": "Add the visible substitution (e.g. y'=-6(1)(-4)/(3+2(-4))=-24/5) and f(-1)=(-1)^3-3(-1)+2=4, f(1)=0 to the two scripts so 9/9 and 6/6 stand, or re-declare 7/9 and 5/6."
+  },
+  {
+   "id": "calc-E-03",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": 134,
+   "part": "distance",
+   "criterion": "R4 (also R6, E5)",
+   "locator": "authoring/calculus-fixtures.json (51 records) and authoring/calculus-check.py/json: no rounding-flip or half-boundary expectation",
+   "expected": "Approved work order: 'E/F must retain the exponential early-rounding flip fixtures and the exact 116.5 -> 117 half boundary; exact 233/2 is accepted.'",
+   "actual": "No Stage-E calculus expectation or check carries them. Live instances: interior-reversal rows 14 and 134 (row 134: v=3t^2+3t-18, [0,5]) have distance 233/2 m (3 s.f. half-up 117, banker's 116); rows 5 and 125 have displacement -265/2 and 265/2 (133 vs 132). Exponential flip tuples (e.g. V=6,k=1/4,T=1: 5.31 vs premature 5.30) are recorded only in planning/d4/motion-design-check.json.",
+   "evidence": "grep -rn '116.5\\|233/2\\|rounding_flip\\|half_boundary' authoring/ checks/stage-e -> only unrelated trig hits; Decimal ROUND_HALF_UP vs ROUND_HALF_EVEN over all motion private distance/displacement -> 4 rows listed.",
+   "source_basis": "work-orders/WB8227-motion-integration.md line 71 (live; same text in approved original).",
+   "minimal_correction": "Add declarative expectations: 233/2 m, 116.5 m and 117 m accepted, 116 m rejected (R4); ±133 vs ±132 for R6; the exponential premature-rounding flip cases for E5."
+  },
+  {
+   "id": "calc-E-04",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient|normal",
+   "domain_index": 0,
+   "part": "gradient / show-derivative",
+   "criterion": "accepted_alternatives.formula",
+   "locator": "source/groups/calculus.py:162",
+   "expected": "Clean marker notation: e^{4x}; sigma evaluated to ±1.",
+   "actual": "For a=1 (16 of 54 rows) the explicit-root formula prints '\\sqrt{1e^{4x} + 80}'; all 54 rows print '\\sigma=\\operatorname{sign}(-9)' unevaluated. Mathematics verified correct in 54/54 (root through P, satisfies curve).",
+   "evidence": "oracle.py -> 16 'display: unit coefficient printed as 1e^' findings; e.g. gradient row 0.",
+   "source_basis": "work order motion line 71 'omit unit coefficients' (general notation rule)",
+   "minimal_correction": "Use _multiple(a*a, ...) and print sigma=-1/+1."
+  },
+  {
+   "id": "calc-E-05",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": null,
+   "part": "all",
+   "criterion": "visible cue",
+   "locator": "source/provider.py learner_projection: selection_id and parts[].part_id; source/recipes.json public.id",
+   "expected": "No learner-visible label states the outcome.",
+   "actual": "learner_projection carries 'interior-reversal' in selection_id and part_ids in 168/168 rows; it is false for the 24 no-change rows. Title/stem are neutral and a constant 'reversal' guess gives 144/168, below the accepted 156/168 lookup limit, so no new separability; risk only if the app renders IDs.",
+   "evidence": "oracle counts learner_projection_contains_interior_reversal=168.",
+   "source_basis": "work order motion line 59 (internal historical ID, outcome-neutral public title)",
+   "minimal_correction": "App acceptance: never render selection/part IDs; or alias the public id."
+  },
+  {
+   "id": "calc-E-06",
+   "severity": "note",
+   "selection_id": "(fixtures)",
+   "domain_index": null,
+   "part": "-",
+   "criterion": "35/16 split",
+   "locator": "authoring/calculus-fixtures.json ambiguous records; CALCULUS-HANDOVER.md",
+   "expected": "'35 concrete submitted-script records'.",
+   "actual": "6 of the 7 'ambiguous' records are descriptions ('The overwritten sign/coefficient is illegible; two uncancelled answers remain.'), not scripts; only interior-reversal's is a script. Honest count: 29 learner scripts + 22 declarative/descriptive.",
+   "evidence": "fixture dump SP/work-calc/fixtures-dump.txt",
+   "source_basis": "brief item 3",
+   "minimal_correction": "Relabel or write actual ambiguous scripts."
+  },
+  {
+   "id": "calc-E-07",
+   "severity": "note",
+   "selection_id": "various",
+   "domain_index": null,
+   "part": "various",
+   "criterion": "rubric-undecidable awards",
+   "locator": "SP/work-calc/fresh-awards.json F03, F09, F15, F19",
+   "expected": "Rubric text decides each award.",
+   "actual": "(F15, exponential row 41) k=1/2 read as 1 is correctly ineligible, but E2 'retain the exponential factor ... coefficient not ±V/k' cannot decide whether a changed exponent e^{-t} retains the factor (2/5 vs 1/5). (F09, two-extrema row 82) correct x, ordinates from f': C2 'both canonical types' vs work-order 'a wrong but coherent point can retain C1, not canonical C2' (5/6 vs 4/6). (F19, polynomial row 15) correct 112/3 then final '≈37 m': no ISW rule (6/6 vs 5/6). (F03) see calc-E-01. Also borderline: calc:gradient:alternative G1 'quadratic-solving attempt' is only the stated root; calc:flat-classification:alternative 'f(1)=-2' without substitution under I3.",
+   "evidence": "fresh_awards.py output",
+   "source_basis": "generated achievement texts; work orders",
+   "minimal_correction": "Add one-line clarifications or fixtures for each."
+  },
+  {
+   "id": "calc-E-08",
+   "severity": "note",
+   "selection_id": "polynomial-chain / exponential-positive",
+   "domain_index": null,
+   "part": "catalogue",
+   "criterion": "capacity field",
+   "locator": "source/catalogue-native.json approved_capacity",
+   "expected": "One meaning per field.",
+   "actual": "approved_capacity = strict fresh bound for implicit/stationary (23/8/30/16) but raw tasks for polynomial/exponential (137/56); strict_complete_fresh_upper_bound 35/14 is present separately. Matches approved design 'capacity' values, so not drift.",
+   "evidence": "catalogue dump",
+   "source_basis": "OWNER-CHECKPOINT motion row",
+   "minimal_correction": "App must use strict_complete_fresh_upper_bound for wholly-fresh claims."
+  }
+ ],
+ "confirmed": [
+  "Mathematics exhaustive 1,211/1,211: every reference answer and every worked-step result (6,697 steps, 1,336 f-evaluations) recomputed from learner-visible text with SymPy; 0 mathematical errors.",
+  "Implicit 54 rows: P lies on curve; C!=0; k in {2,3}; gradient finite AND nonzero (d41-01) in 27/27 tuples; explicit-root oracle agrees; show-that target true in 27/27; normal line correct; S4 carries mr09_supplied_result_exclusion and 'No follow-through into the supplied result'; misread_policy rule states MR09/OD-1 limit.",
+  "Stationary: 540 two-extrema have exactly two nondegenerate extrema with correct order/type; 256 flat rows have one stationary point, 128 stationary inflexions / 64 minima / 64 maxima, f''=0 at all; factorisations, f'' values, side-derivative values and sign texts correct.",
+  "Motion: polynomial v>0 on [0,T] in 137/137 so distance=displacement; exponential a and V/k(1-e^{-kT}) correct in 56/56 (k nonunit); interior-reversal 144 sign-change / 24 no-change, no root at an endpoint, -c always outside, leg sums equal quadrature of |v|, displacement correct, decision text and v(0) correct.",
+  "Counts: polynomial 137 / 35 velocity contexts; exponential 56 / 14; mixed 168 = 144 + 24; 28 (r,c,T) shapes; initial directions 84/84; best visible single feature 154/168, best pair (|a|,|d|) 156/168 = accepted limit; prompts, stem template, help, marks and response formats identical across outcomes.",
+  "Marking data: all 7 choices, all rows: criterion IDs, mark types, values, order, part tariffs (5; 4+2+3; 4+2; 3+3; 3+3; 2+3; 4+2), dependencies and answer_only_credit=0 match planning/calculus-design.json and the work-order ledgers; G4 any-of G1|G3, G5<-G4, S4<-S1..S3, N2 DM<-N1, P3 DM<-P1, R3 DM<-R1, R4<-R2,R3, S3(motion)<-S1,S2, E5<-E4. Approved originals of the three work orders differ from live only by the gate banner.",
+  "Owner-preserved items: C4->5 kept as calc:normal:C4-to5-product 9/9, evidence and private_math scope it to the product route and state divided/log-absolute/explicit-root remain unscored E/F fixtures; first-use eligibility and competing-datum settlement present as carries in every item's misread_policy with no score; competing-data fixture has expected_marks null; exponential nonunit-k guard present in private_math.misread_eligibility (MR03-OPS-D4) for all 56; d41 notes present in subject-rules.json.",
+  "Fixtures: all 51 read; 16 declarative scores match work-order fixtures (3/5, 5/9, 4, 3, 3, 3, 3, copied-target 0+2+3, divided 3/4, invalid ln y max 1, coefficient slip 5/6, eligible k 4/5 deduct G2, exponential deferred 2/5 deduct E3, mixed ineligible T 2/6); correct/bare/wrong scripts mathematically correct and 0 for bare/wrong.",
+  "Fresh awards (19, rows 2,7,9,11,15,21,24,35,41,82,89,130,148,190,232,313): correct 5/5, 6/6, 5/5; explicit-root 5/5; invalid ln y 6/9; divided no back-sub 8/9; eligible misreads 8/9 (H2 deducted), 5/6 (P2), 5/6 (R2); ineligible a-misread 3/5; ineligible k->1 2/5 (E2 undecidable); constant-sign R1 6/6; never-split 3/6; f''=0 quartic 3/6; omitted +C 4/6; ambiguous -> clarification.",
+  "Practice help: 3 constant answer-free templates, no digits/expressions; pre-reveal learner projection contains no reference answer (show-that target deliberately displayed); test mode drops help.",
+  "Exam references: same-type labels only on gradient(2025 P2 Q5), polynomial velocity/distance (2021 P1 Q4a/b) and exponential (2023 P2 Q9a/b), each scoped to its single target part; original tuples excluded; related refs learner_display=false; no 'original' relation; no Cambridge source labelled Namibian (only disclaimers)."
+ ],
+ "not_checked": [
+  "No KaTeX/sharp rendering of stems or solutions (renders_inspected 0).",
+  "No native PDF re-read beyond the 2021 P1 Q4 page render; same-type comparability accepted as approved design.",
+  "Awards are my rubric readings of typed scripts; no learner text/photo marker exists or was tested.",
+  "Hygiene: source/__pycache__/__init__.cpython-313.pyc and source/groups/__pycache__/__init__.cpython-313.pyc have mtime 13:40:31 (after the brief). All my imports of source ran with PYTHONDONTWRITEBYTECODE=1 or -B, and none ran at that time; probably another parallel process. Reviewer should check."
+ ],
+ "fresh_awards_detail": [
+  {
+   "id": "F01",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient",
+   "domain_index": 24,
+   "parameters": {
+    "a": 4,
+    "k": 3,
+    "q": -5
+   },
+   "stem": "A curve has equation $4e^{3x}y+y^2=5$. The point $P=(0,-5)$ lies on the curve.",
+   "kind": "correct",
+   "response": "12e^{3x}y+4e^{3x}y'+2yy'=0 (d/dx 5 = 0); at P: 12(-5)+4y'-10y'=0 so y'=-10.",
+   "awards": {
+    "G1": 1,
+    "G2": 1,
+    "G3": 1,
+    "G4": 1,
+    "G5": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 5,
+   "max": 5,
+   "sympy_checks": {
+    "gradient": "-10"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F02",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient",
+   "domain_index": 2,
+   "parameters": {
+    "a": 1,
+    "k": 2,
+    "q": -3
+   },
+   "stem": "A curve has equation $e^{2x}y+y^2=6$. The point $P=(0,-3)$ lies on the curve.",
+   "kind": "alternative explicit-root (CALC-D1-DEV05)",
+   "response": "y^2+e^{2x}y-6=0 so y=(-e^{2x}±sqrt(e^{4x}+24))/2; y(0)=-3 needs the minus root. y'=-e^{2x}-e^{4x}/sqrt(e^{4x}+24); x=0: y'=-1-1/5=-6/5.",
+   "awards": {
+    "G1": 1,
+    "G2": 1,
+    "G3": 1,
+    "G4": 1,
+    "G5": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 5,
+   "max": 5,
+   "sympy_checks": {
+    "on_curve": "0",
+    "y0": "-3",
+    "slope": "-6/5",
+    "implicit": "-6/5"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F03",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient",
+   "domain_index": 9,
+   "parameters": {
+    "a": 2,
+    "k": 2,
+    "q": -4
+   },
+   "stem": "A curve has equation $2e^{2x}y+y^2=8$. The point $P=(0,-4)$ lies on the curve.",
+   "kind": "alternative log-absolute (generated equivalent-relation mapping; not in approved gradient-only design)",
+   "response": "2e^{2x}y=8-y^2, so ln2+2x+ln|y|=ln|8-y^2|; 2+y'/y=-2yy'/(8-y^2); at P: 2-y'/4=-y' so y'=-8/3.",
+   "awards": {
+    "G1": 1,
+    "G2": 1,
+    "G3": 1,
+    "G4": 1,
+    "G5": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 5,
+   "max": 5,
+   "sympy_checks": {
+    "log_route_slope": "[-8/3]",
+    "implicit": "-8/3"
+   },
+   "rubric_note": "Generated gradient-only alternative_criterion_mapping.equivalent-relation awards 5/5; the approved gradient-only design (CALC-D1-DEV05) maps only the explicit-root route; CALC-D2-DEV09 is scoped to show-derivative. Award follows generated text; approval scope is a note."
+  },
+  {
+   "id": "F04",
+   "selection_id": "8227:D:SEL:implicit-normal:normal",
+   "domain_index": 7,
+   "parameters": {
+    "a": 1,
+    "k": 3,
+    "q": -2
+   },
+   "stem": "A curve has equation $e^{3x}y+y^2=2$. The point $P=(0,-2)$ lies on the curve.",
+   "kind": "invalid alternative (ln y on negative branch) then correct later parts",
+   "response": "(a) 3x+ln y=ln(2-y^2); 3+y'/y=-2yy'/(2-y^2); rearranged and back-substituted 2=e^{3x}y+y^2 to reach the target. (b) displayed formula: m=-3(1)(-2)/(1+2(-2))=-2. (c) m_perp=1/2; y+2=(1/2)(x-0), y=x/2-2.",
+   "awards": {
+    "S1": 0,
+    "S2": 0,
+    "S3": 1,
+    "S4": 0,
+    "H1": 1,
+    "H2": 1,
+    "N1": 1,
+    "N2": 1,
+    "N3": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 6,
+   "max": 9,
+   "sympy_checks": {
+    "gradient": "-2",
+    "normal_slope": "1/2"
+   },
+   "rubric_note": "CALC-D2-DEV09 D3 clarification: invalid ln y gives S1/S2/S4=0, independent S3 may survive (max 1/4)."
+  },
+  {
+   "id": "F05",
+   "selection_id": "8227:D:SEL:implicit-normal:normal",
+   "domain_index": 21,
+   "parameters": {
+    "a": 4,
+    "k": 2,
+    "q": -5
+   },
+   "stem": "A curve has equation $4e^{2x}y+y^2=5$. The point $P=(0,-5)$ lies on the curve.",
+   "kind": "alternative-partial (divided route, no back-substitution)",
+   "response": "(a) 4e^{2x}+y=5/y; 8e^{2x}+y'=-5y'/y^2; y'=-8e^{2x}y^2/(y^2+5) \"as required\". (b) own derivative at P: -8(25)/(25+5)=-20/3. (c) m_perp=3/20; y+5=(3/20)x.",
+   "awards": {
+    "S1": 1,
+    "S2": 1,
+    "S3": 1,
+    "S4": 0,
+    "H1": 1,
+    "H2": 1,
+    "N1": 1,
+    "N2": 1,
+    "N3": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 8,
+   "max": 9,
+   "sympy_checks": {
+    "own_derivative_at_P": "-20/3",
+    "oracle": "-20/3"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F06",
+   "selection_id": "8227:D:SEL:implicit-normal:normal",
+   "domain_index": 11,
+   "parameters": {
+    "a": 2,
+    "k": 3,
+    "q": -4
+   },
+   "stem": "A curve has equation $2e^{3x}y+y^2=8$. The point $P=(0,-4)$ lies on the curve.",
+   "kind": "eligible OD-6 misread (displayed numerator 6 read as 8 only in (b))",
+   "response": "(a) complete correct product proof of y'=-6e^{3x}y/(2e^{3x}+2y). (b) m=-8(1)(-4)/(2+2(-4))=-16/3. (c) m_perp=3/16; y+4=(3/16)x.",
+   "awards": {
+    "S1": 1,
+    "S2": 1,
+    "S3": 1,
+    "S4": 1,
+    "H1": 1,
+    "H2": 0,
+    "N1": 1,
+    "N2": 1,
+    "N3": 1
+   },
+   "gross": [
+    "H2"
+   ],
+   "net_deduction": "H2",
+   "total": 8,
+   "max": 9,
+   "sympy_checks": {
+    "misread_slope": "-16/3",
+    "misread_normal_slope": "3/16",
+    "canonical": "-4"
+   },
+   "rubric_note": "Gross 9 (H2,N3 by eligible A F.T.); MR03-OPS-D4 deducts the first earned A/B on the datum = H2. Mirrors approved later-first-use fixture. Repeated printed datum (6 also appears in (a) target) is the carried identity note; no new score invented."
+  },
+  {
+   "id": "F07",
+   "selection_id": "8227:D:SEL:implicit-normal:gradient",
+   "domain_index": 24,
+   "parameters": {
+    "a": 4,
+    "k": 3,
+    "q": -5
+   },
+   "stem": "A curve has equation $4e^{3x}y+y^2=5$. The point $P=(0,-5)$ lies on the curve.",
+   "kind": "ineligible misread (a=4 read as 3; P off misread curve)",
+   "response": "9e^{3x}y+3e^{3x}y'+2yy'=0; at P: -45+3y'-10y'=0, y'=-45/7.",
+   "awards": {
+    "G1": 1,
+    "G2": 0,
+    "G3": 1,
+    "G4": 1,
+    "G5": 0
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 3,
+   "max": 5,
+   "sympy_checks": {
+    "P_on_misread_curve": "10",
+    "misread_slope": "-45/7"
+   },
+   "rubric_note": "Ineligible at first use (point off misread curve) => canonical marking; G1 allows one numerical slip."
+  },
+  {
+   "id": "F08",
+   "selection_id": "8227:D:SEL:stationary-inflexion:two-extrema",
+   "domain_index": 313,
+   "parameters": {
+    "a": 1,
+    "h": -1,
+    "r": 2,
+    "c": 3
+   },
+   "stem": "For the function $f(x)=x^{3} + 3x^{2} - 9x - 8$, answer the following.",
+   "kind": "ambiguous",
+   "response": "f'=3x^2+6x-9=3(x+3)(x-1); x=-3,1; f(-3)=19; f(1)= \"-13\" overwritten with an illegible \"-11\"/\"-13\", both uncancelled. f''(-3)=-12 max, f''(1)=12 min.",
+   "awards": {},
+   "gross": null,
+   "net_deduction": null,
+   "total": null,
+   "max": 6,
+   "sympy_checks": {},
+   "rubric_note": "Clarification required (MR07 unreadable); no score assigned."
+  },
+  {
+   "id": "F09",
+   "selection_id": "8227:D:SEL:stationary-inflexion:two-extrema",
+   "domain_index": 82,
+   "parameters": {
+    "a": -2,
+    "h": 1,
+    "r": 1,
+    "c": -3
+   },
+   "stem": "For the function $f(x)=-2x^{3} + 6x^{2} - 7$, answer the following.",
+   "kind": "partial (ordinates from f' not f)",
+   "response": "f'=-6x^2+12x=-6x(x-2)=0 so x=0,2; y=f'(0)=0, y=f'(2)=0 so (0,0),(2,0). f''=-12x+12: f''(0)=12>0 minimum; f''(2)=-12<0 maximum.",
+   "awards": {
+    "P1": 1,
+    "P2": 1,
+    "P3": 1,
+    "P4": 0,
+    "C1": 1,
+    "C2": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 5,
+   "max": 6,
+   "sympy_checks": {
+    "true_points": "[(0, -7), (2, 1)]"
+   },
+   "rubric_note": "UNDECIDABLE: C2 = \"both canonical types justified by the shown local test\" vs work-order line \"a wrong but coherent point can retain C1, not canonical C2\". Here x is correct, y wrong; text does not say whether C2 needs canonical ordinates. I award C2=1 (types canonical at correct x); 4/6 is equally defensible."
+  },
+  {
+   "id": "F10",
+   "selection_id": "8227:D:SEL:stationary-inflexion:two-extrema",
+   "domain_index": 313,
+   "parameters": {
+    "a": 1,
+    "h": -1,
+    "r": 2,
+    "c": 3
+   },
+   "stem": "For the function $f(x)=x^{3} + 3x^{2} - 9x - 8$, answer the following.",
+   "kind": "eligible OD-6 misread (constant -8 read as -6)",
+   "response": "f=x^3+3x^2-9x-6; f'=3(x+3)(x-1); f(-3)=21, f(1)=-11 so (-3,21),(1,-11); f''(-3)=-12 max, f''(1)=12 min.",
+   "awards": {
+    "P1": 1,
+    "P2": 0,
+    "P3": 1,
+    "P4": 1,
+    "C1": 1,
+    "C2": 1
+   },
+   "gross": [
+    "P2"
+   ],
+   "net_deduction": "P2",
+   "total": 5,
+   "max": 6,
+   "sympy_checks": {
+    "misread_points": "[(-3, 21), (1, -11)]"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F11",
+   "selection_id": "8227:D:SEL:stationary-inflexion:flat-classification",
+   "domain_index": 190,
+   "parameters": {
+    "power": 4,
+    "a": -1,
+    "h": 2,
+    "c": 3
+   },
+   "stem": "For the function $f(x)=-x^{4} + 8x^{3} - 24x^{2} + 32x - 13$, answer the following.",
+   "kind": "correct",
+   "response": "f'=-4x^3+24x^2-48x+32=-4(x-2)^3=0 so x=2; f(2)=-16+64-96+64-13=3, (2,3). f'(1)=4>0, f'(3)=-4<0: positive to negative, so maximum (not inflexion: sign changes).",
+   "awards": {
+    "I1": 1,
+    "I2": 1,
+    "I3": 1,
+    "I4": 1,
+    "I5": 1,
+    "I6": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 6,
+   "max": 6,
+   "sympy_checks": {
+    "factor_ok": "0",
+    "f2": "3",
+    "fp1": "4",
+    "fp3": "-4"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F12",
+   "selection_id": "8227:D:SEL:stationary-inflexion:flat-classification",
+   "domain_index": 232,
+   "parameters": {
+    "power": 4,
+    "a": 2,
+    "h": -1,
+    "c": -4
+   },
+   "stem": "For the function $f(x)=2x^{4} + 8x^{3} + 12x^{2} + 8x - 2$, answer the following.",
+   "kind": "partial / wrong classification",
+   "response": "f'=8x^3+24x^2+24x+8=8(x+1)^3=0, x=-1; f(-1)=2-8+12-8-2=-4 so (-1,-4). f''=24x^2+48x+24, f''(-1)=0 so it is a point of inflexion.",
+   "awards": {
+    "I1": 1,
+    "I2": 1,
+    "I3": 1,
+    "I4": 0,
+    "I5": 0,
+    "I6": 0
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 3,
+   "max": 6,
+   "sympy_checks": {
+    "point": "(-1, -4)",
+    "fpp": "0"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F13",
+   "selection_id": "8227:D:SEL:motion-integration:polynomial-chain",
+   "domain_index": 82,
+   "parameters": {
+    "A": 2,
+    "B": 2,
+    "u": 1,
+    "T": 3
+   },
+   "stem": "A particle moves along a straight line. Its acceleration is $a(t)=4t + 2$ m/s², its initial velocity is $1$ m/s, and its position is $s(0)=0$. Time $t$ is in seconds.",
+   "kind": "partial (initial velocity omitted)",
+   "response": "v=∫(4t+2)dt=2t^2+2t. Distance=∫_0^3(2t^2+2t)dt=[2t^3/3+t^2]_0^3=18+9=27 m.",
+   "awards": {
+    "V1": 1,
+    "V2": 1,
+    "V3": 0,
+    "S1": 1,
+    "S2": 1,
+    "S3": 0
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 4,
+   "max": 6,
+   "sympy_checks": {
+    "own": "27",
+    "canonical": "30"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F14",
+   "selection_id": "8227:D:SEL:motion-integration:exponential-positive",
+   "domain_index": 35,
+   "parameters": {
+    "V": 18,
+    "k": "1/3",
+    "T": 4
+   },
+   "stem": "A particle moves along a straight line with velocity $v(t)=18e^{-\\frac{1}{3}t}$ m/s for $t\\ge0$. Time $t$ is in seconds.",
+   "kind": "correct",
+   "response": "a=18(-1/3)e^{-t/3}=-6e^{-t/3} m/s^2. d=[-54e^{-t/3}]_0^4=54(1-e^{-4/3})≈39.8 m (v>0 throughout).",
+   "awards": {
+    "E1": 1,
+    "E2": 1,
+    "E3": 1,
+    "E4": 1,
+    "E5": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 5,
+   "max": 5,
+   "sympy_checks": {
+    "dist": "54 - 54*exp(-4/3)",
+    "num": "39.7658"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F15",
+   "selection_id": "8227:D:SEL:motion-integration:exponential-positive",
+   "domain_index": 41,
+   "parameters": {
+    "V": 24,
+    "k": "1/2",
+    "T": 2
+   },
+   "stem": "A particle moves along a straight line with velocity $v(t)=24e^{-\\frac{1}{2}t}$ m/s for $t\\ge0$. Time $t$ is in seconds.",
+   "kind": "ineligible misread (k=1/2 read as 1: chain-factor demand removed)",
+   "response": "Read v=24e^{-t}. a=-24e^{-t}. d=[-24e^{-t}]_0^2=24(1-e^{-2})≈20.8 m.",
+   "awards": {
+    "E1": 0,
+    "E2": 1,
+    "E3": 0,
+    "E4": 1,
+    "E5": 0
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 2,
+   "max": 5,
+   "sympy_checks": {
+    "canonical_acc_coeff": "-12",
+    "V_over_k": "48",
+    "their_coeff": "-24"
+   },
+   "rubric_note": "UNDECIDABLE E2: \"retain the exponential factor ... coefficient not ±V/k\" - their factor is e^{-t}, not the printed e^{-t/2}; under canonical marking it is unclear whether a changed exponent \"retains the exponential factor\". E2=1 gives 2/5; E2=0 gives 1/5. E4 earned (attempted primitive coefficient -24 ≠ -kV=-12, both bounds)."
+  },
+  {
+   "id": "F16",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": 148,
+   "parameters": {
+    "k": -2,
+    "r": 4,
+    "c": 1,
+    "T": 3
+   },
+   "stem": "A particle moves along a straight line with velocity $v(t)=-2t^{2} + 6t + 8$ m/s for $0\\le t\\le 3$, with $t$ in seconds. Positive velocity is motion in the positive direction.",
+   "kind": "alternative (constant-sign proof for R1)",
+   "response": "v(0)=8>0, v(3)=8>0 and v is a concave-down quadratic (leading coefficient -2), so on [0,3] v≥min(v(0),v(3))=8>0: no direction change. F=-2t^3/3+3t^2+8t; distance=F(3)-F(0)=33 m. Displacement=F(3)-F(0)=33 m.",
+   "awards": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 6,
+   "max": 6,
+   "sympy_checks": {
+    "v0": "8",
+    "v3": "8",
+    "min_on_interval": "8",
+    "F3": "33"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F17",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": 130,
+   "parameters": {
+    "k": 3,
+    "r": 2,
+    "c": 1,
+    "T": 5
+   },
+   "stem": "A particle moves along a straight line with velocity $v(t)=3t^{2} - 3t - 6$ m/s for $0\\le t\\le 5$, with $t$ in seconds. Positive velocity is motion in the positive direction.",
+   "kind": "eligible OD-6 misread (constant -6 read as -18; reversal decision preserved)",
+   "response": "v=3t^2-3t-18=3(t-3)(t+2); only t=3 in (0,5), sign changes. F=t^3-3t^2/2-18t; |F(3)-F(0)|+|F(5)-F(3)|=40.5+38=78.5 m. Displacement F(5)-F(0)=-2.5 m.",
+   "awards": {
+    "R1": 1,
+    "R2": 0,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1
+   },
+   "gross": [
+    "R2"
+   ],
+   "net_deduction": "R2",
+   "total": 5,
+   "max": 6,
+   "sympy_checks": {
+    "misread_distance": "157/2",
+    "misread_disp": "-5/2",
+    "canonical_distance": "155/2"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F18",
+   "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+   "domain_index": 89,
+   "parameters": {
+    "k": 1,
+    "r": 3,
+    "c": 2,
+    "T": 4
+   },
+   "stem": "A particle moves along a straight line with velocity $v(t)=t^{2} - t - 6$ m/s for $0\\le t\\le 4$, with $t$ in seconds. Positive velocity is motion in the positive direction.",
+   "kind": "partial (unchecked never-split)",
+   "response": "F=t^3/3-t^2/2-6t; distance=|F(4)-F(0)|=32/3 m. Displacement F(4)-F(0)=-32/3 m.",
+   "awards": {
+    "R1": 0,
+    "R2": 1,
+    "R3": 0,
+    "R4": 0,
+    "R5": 1,
+    "R6": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 3,
+   "max": 6,
+   "sympy_checks": {
+    "never_split": "32/3",
+    "canonical": "49/3"
+   },
+   "rubric_note": ""
+  },
+  {
+   "id": "F19",
+   "selection_id": "8227:D:SEL:motion-integration:polynomial-chain",
+   "domain_index": 15,
+   "parameters": {
+    "A": 1,
+    "B": 0,
+    "u": 4,
+    "T": 4
+   },
+   "stem": "A particle moves along a straight line. Its acceleration is $a(t)=2t$ m/s², its initial velocity is $4$ m/s, and its position is $s(0)=0$. Time $t$ is in seconds.",
+   "kind": "ambiguous final form (correct exact then 2 s.f. restatement)",
+   "response": "v=∫2t dt=t^2+C, v(0)=4 so v=t^2+4. d=∫_0^4(t^2+4)dt=64/3+16=112/3 ≈ 37 m (final line \"37 m\").",
+   "awards": {
+    "V1": 1,
+    "V2": 1,
+    "V3": 1,
+    "S1": 1,
+    "S2": 1,
+    "S3": 1
+   },
+   "gross": null,
+   "net_deduction": null,
+   "total": 6,
+   "max": 6,
+   "sympy_checks": {
+    "d": "112/3"
+   },
+   "rubric_note": "UNDECIDABLE S3: MR07 marks the first uncancelled coherent attempt and the premature-rounding rule addresses only rounding before the end; neither the work order nor MR04 states ISW for a later over-rounded restatement of a correct exact value. 6/6 (ISW) or 5/6 (final \"37\" outside accepted 3 s.f. set)."
+  }
+ ]
+}

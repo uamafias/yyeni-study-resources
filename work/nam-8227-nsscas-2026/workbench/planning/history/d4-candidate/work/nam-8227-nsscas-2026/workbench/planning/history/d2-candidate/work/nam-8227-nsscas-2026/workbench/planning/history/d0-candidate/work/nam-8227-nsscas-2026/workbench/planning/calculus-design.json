@@ -1,0 +1,2358 @@
+{
+  "subject": "NSSCAS Mathematics 8227",
+  "syllabus_edition": "December 2020",
+  "owner": "Vitalis",
+  "date": "2026-11-23",
+  "role": "PLANNER",
+  "status": "proposed; stop for owner approval before stage E",
+  "recipes": [
+    {
+      "recipe_id": "WB8227-implicit-normal",
+      "title": "Differentiate an implicit exponential curve and use its gradient",
+      "version": "0.1.0",
+      "selection_ids": [
+        "8227:SEL-D:implicit-exponential-point",
+        "8227:SEL-D:implicit-normal-extension"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2025:P2:Q5:answer",
+        "8227:EXAM:2023:P2:Q8:a",
+        "8227:EXAM:2023:P2:Q8:b"
+      ],
+      "branches": [
+        {
+          "branch_id": "WB8227-implicit-normal:gradient",
+          "selection_id": "8227:SEL-D:implicit-exponential-point",
+          "basis": "examination-observed (NSSCAS 8227)",
+          "capacity": 42,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "gradient",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O01",
+                "8227:2020:M2:T4:O02",
+                "8227:2020:M2:T4:O03"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 5,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "G1",
+                "G2",
+                "G3",
+                "G4",
+                "G5"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.0:gradient:gradient:G1",
+                "WB8227-implicit-normal@0.1.0:gradient:gradient:G2",
+                "WB8227-implicit-normal@0.1.0:gradient:gradient:G3",
+                "WB8227-implicit-normal@0.1.0:gradient:gradient:G4",
+                "WB8227-implicit-normal@0.1.0:gradient:gradient:G5"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [
+            "8227:EXAM:2025:P2:Q5:answer"
+          ],
+          "marks": 5,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "2",
+              "question": "5",
+              "part": null,
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+              "source_sha256": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2025 Paper 2, Question 5, page 5",
+              "applies_to_branch": "WB8227-implicit-normal:gradient",
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "applies_to_part_ids": [
+                "gradient"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            }
+          ],
+          "same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "recipe_part_ids": [
+                "gradient"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "numeric",
+              "recipe_response_format": "numeric",
+              "source_direct_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            }
+          ]
+        },
+        {
+          "branch_id": "WB8227-implicit-normal:normal",
+          "selection_id": "8227:SEL-D:implicit-normal-extension",
+          "basis": "textbook-derived extension of an examination-observed derivative pattern",
+          "capacity": 42,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "gradient",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O01",
+                "8227:2020:M2:T4:O02",
+                "8227:2020:M2:T4:O03"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 5,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "G1",
+                "G2",
+                "G3",
+                "G4",
+                "G5"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.0:normal:gradient:G1",
+                "WB8227-implicit-normal@0.1.0:normal:gradient:G2",
+                "WB8227-implicit-normal@0.1.0:normal:gradient:G3",
+                "WB8227-implicit-normal@0.1.0:normal:gradient:G4",
+                "WB8227-implicit-normal@0.1.0:normal:gradient:G5"
+              ]
+            },
+            {
+              "part_id": "normal",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O03:D01",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O03",
+                "8227:2020:M2:T4:O03"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T4:O03:D01",
+                  "role": "prerequisite; not direct coverage in this part"
+                }
+              ],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "N1",
+                "N2"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.0:normal:normal:N1",
+                "WB8227-implicit-normal@0.1.0:normal:normal:N2"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2025:P2:Q5:answer"
+          ],
+          "same_type_note": "The gradient part alone matches the original; the full branch adds a normal equation, so it has no whole-question same-type learner label.",
+          "marks": 7,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [],
+          "same_type_checks": [],
+          "part_scoped_same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "recipe_part_ids": [
+                "gradient"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "numeric",
+              "recipe_response_format": "numeric",
+              "source_direct_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending",
+              "scope": "gradient part only; normal extension not included"
+            }
+          ],
+          "part_scoped_examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "2",
+              "question": "5",
+              "part": null,
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+              "source_sha256": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2025 Paper 2, Question 5, page 5",
+              "applies_to_branch": "WB8227-implicit-normal:normal",
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "scope": "part",
+              "applies_to_part_ids": [
+                "gradient"
+              ],
+              "comparison_reason": "Gradient part only: same four direct demands, numeric-gradient response and exponential product implicit derivative. Normal line is an added textbook-derived response and has no whole-branch same-type label."
+            }
+          ]
+        }
+      ],
+      "explicit_deferred_facets": [
+        "Trigonometric implicit show-that and recovery of the y-axis point (2023 P2 Q8).",
+        "Parametric derivatives, singular points, implicit horizontal tangents and curve-again intersections."
+      ],
+      "owner": "Vitalis",
+      "status": "proposed; owner approval pending",
+      "work_order_path": "work-orders/WB8227-implicit-normal.md",
+      "exemplar_path": "exemplars/WB8227-implicit-normal.md",
+      "total_capacity": 84,
+      "union_discovery": {
+        "basis": "accepted item-level assessed/component union (R5-03), read from objective-problem-map.json; not relations-only",
+        "demand_ids": [
+          "8227:2020:M1:T8:O03:D01",
+          "8227:2020:M2:T4:O01:D02",
+          "8227:2020:M2:T4:O02:D01",
+          "8227:2020:M2:T4:O03:D01",
+          "8227:2020:M2:T4:O03:D03"
+        ],
+        "candidate_item_count": 249,
+        "candidate_item_ids": [
+          "8227:TB:Goldie:C4:Example:1",
+          "8227:TB:Goldie:C4:Example:11",
+          "8227:TB:Goldie:C4:Example:12",
+          "8227:TB:Goldie:C4:Example:13",
+          "8227:TB:Goldie:C4:Example:15",
+          "8227:TB:Goldie:C4:Example:16",
+          "8227:TB:Goldie:C4:Example:17",
+          "8227:TB:Goldie:C4:Example:18",
+          "8227:TB:Goldie:C4:Example:2",
+          "8227:TB:Goldie:C4:Example:22",
+          "8227:TB:Goldie:C4:Example:23",
+          "8227:TB:Goldie:C4:Example:24",
+          "8227:TB:Goldie:C4:Example:5",
+          "8227:TB:Goldie:C4:Example:6",
+          "8227:TB:Goldie:C4:Example:7",
+          "8227:TB:Goldie:C4:Example:8",
+          "8227:TB:Goldie:C4:Example:9",
+          "8227:TB:Goldie:C4:Exercise-4A:1",
+          "8227:TB:Goldie:C4:Exercise-4A:2",
+          "8227:TB:Goldie:C4:Exercise-4A:3",
+          "8227:TB:Goldie:C4:Exercise-4A:4",
+          "8227:TB:Goldie:C4:Exercise-4A:5",
+          "8227:TB:Goldie:C4:Exercise-4A:8",
+          "8227:TB:Goldie:C4:Exercise-4B:1",
+          "8227:TB:Goldie:C4:Exercise-4B:10",
+          "8227:TB:Goldie:C4:Exercise-4B:11",
+          "8227:TB:Goldie:C4:Exercise-4B:12",
+          "8227:TB:Goldie:C4:Exercise-4B:2",
+          "8227:TB:Goldie:C4:Exercise-4B:3",
+          "8227:TB:Goldie:C4:Exercise-4B:4",
+          "8227:TB:Goldie:C4:Exercise-4B:5",
+          "8227:TB:Goldie:C4:Exercise-4B:7",
+          "8227:TB:Goldie:C4:Exercise-4B:8",
+          "8227:TB:Goldie:C4:Exercise-4C:11",
+          "8227:TB:Goldie:C4:Exercise-4C:12",
+          "8227:TB:Goldie:C4:Exercise-4C:2",
+          "8227:TB:Goldie:C4:Exercise-4C:4",
+          "8227:TB:Goldie:C4:Exercise-4C:5",
+          "8227:TB:Goldie:C4:Exercise-4C:6",
+          "8227:TB:Goldie:C4:Exercise-4C:7",
+          "8227:TB:Goldie:C4:Exercise-4C:8",
+          "8227:TB:Goldie:C4:Exercise-4C:9",
+          "8227:TB:Goldie:C4:Exercise-4D:1",
+          "8227:TB:Goldie:C4:Exercise-4D:10",
+          "8227:TB:Goldie:C4:Exercise-4D:11",
+          "8227:TB:Goldie:C4:Exercise-4D:12",
+          "8227:TB:Goldie:C4:Exercise-4D:2",
+          "8227:TB:Goldie:C4:Exercise-4D:3",
+          "8227:TB:Goldie:C4:Exercise-4D:4",
+          "8227:TB:Goldie:C4:Exercise-4D:5",
+          "8227:TB:Goldie:C4:Exercise-4D:6",
+          "8227:TB:Goldie:C4:Exercise-4D:7",
+          "8227:TB:Goldie:C4:Exercise-4D:8",
+          "8227:TB:Goldie:C4:Exercise-4D:9",
+          "8227:TB:Goldie:C4:Exercise-4E:1",
+          "8227:TB:Goldie:C4:Exercise-4E:10",
+          "8227:TB:Goldie:C4:Exercise-4E:11",
+          "8227:TB:Goldie:C4:Exercise-4E:13",
+          "8227:TB:Goldie:C4:Exercise-4E:15",
+          "8227:TB:Goldie:C4:Exercise-4E:2",
+          "8227:TB:Goldie:C4:Exercise-4E:3",
+          "8227:TB:Goldie:C4:Exercise-4E:4",
+          "8227:TB:Goldie:C4:Exercise-4E:6",
+          "8227:TB:Goldie:C4:Exercise-4E:7",
+          "8227:TB:Goldie:C4:Exercise-4E:8",
+          "8227:TB:Goldie:C4:Exercise-4E:9",
+          "8227:TB:Goldie:C4:Worked-derivation:1",
+          "8227:TB:Goldie:C5:Exercise-5A:8",
+          "8227:TB:Goldie:C5:Exercise-5C:10",
+          "8227:TB:Goldie:C5:Exercise-5C:8",
+          "8227:TB:Goldie:C5:Exercise-5C:9",
+          "8227:TB:Goldie:C6:Exercise-6B:11",
+          "8227:TB:Goldie:C6:Exercise-6B:12",
+          "8227:TB:Goldie:C6:Exercise-6B:16",
+          "8227:TB:Goldie:C8:Activity:2",
+          "8227:TB:Goldie:C8:Exercise-8C:5",
+          "8227:TB:Goldie:C8:Exercise-8D:6",
+          "8227:TB:Goldie:C8:Exercise-8D:7",
+          "8227:TB:Goldie:C8:Exercise-8G:10",
+          "8227:TB:Goldie:C8:Exercise-8G:11",
+          "8227:TB:Goldie:C8:Exercise-8G:12",
+          "8227:TB:Goldie:C8:Exercise-8H:4",
+          "8227:TB:Goldie:C9:Example:9",
+          "8227:TB:YM:C11:Example:1",
+          "8227:TB:YM:C11:Example:10",
+          "8227:TB:YM:C11:Example:11",
+          "8227:TB:YM:C11:Example:12",
+          "8227:TB:YM:C11:Example:13",
+          "8227:TB:YM:C11:Example:14",
+          "8227:TB:YM:C11:Example:15",
+          "8227:TB:YM:C11:Example:16",
+          "8227:TB:YM:C11:Example:17",
+          "8227:TB:YM:C11:Example:18",
+          "8227:TB:YM:C11:Example:19",
+          "8227:TB:YM:C11:Example:2",
+          "8227:TB:YM:C11:Example:20",
+          "8227:TB:YM:C11:Example:21",
+          "8227:TB:YM:C11:Example:22",
+          "8227:TB:YM:C11:Example:23",
+          "8227:TB:YM:C11:Example:24",
+          "8227:TB:YM:C11:Example:25",
+          "8227:TB:YM:C11:Example:26",
+          "8227:TB:YM:C11:Example:27",
+          "8227:TB:YM:C11:Example:28",
+          "8227:TB:YM:C11:Example:29",
+          "8227:TB:YM:C11:Example:3",
+          "8227:TB:YM:C11:Example:30",
+          "8227:TB:YM:C11:Example:31",
+          "8227:TB:YM:C11:Example:32",
+          "8227:TB:YM:C11:Example:33",
+          "8227:TB:YM:C11:Example:34",
+          "8227:TB:YM:C11:Example:35",
+          "8227:TB:YM:C11:Example:36",
+          "8227:TB:YM:C11:Example:37",
+          "8227:TB:YM:C11:Example:38",
+          "8227:TB:YM:C11:Example:39",
+          "8227:TB:YM:C11:Example:4",
+          "8227:TB:YM:C11:Example:40",
+          "8227:TB:YM:C11:Example:41",
+          "8227:TB:YM:C11:Example:42",
+          "8227:TB:YM:C11:Example:5",
+          "8227:TB:YM:C11:Example:8",
+          "8227:TB:YM:C11:Exercise-11:10",
+          "8227:TB:YM:C11:Exercise-11:2",
+          "8227:TB:YM:C11:Exercise-11:3",
+          "8227:TB:YM:C11:Exercise-11:4",
+          "8227:TB:YM:C11:Exercise-11:5",
+          "8227:TB:YM:C11:Exercise-11:6",
+          "8227:TB:YM:C11:Exercise-11:7",
+          "8227:TB:YM:C11:Exercise-11:8",
+          "8227:TB:YM:C11:Exercise-11:9",
+          "8227:TB:YM:C11:Revision-Exercise-11:4",
+          "8227:TB:YM:C11:Revision-Exercise-11:5",
+          "8227:TB:YM:C11:Try-Now-12:1",
+          "8227:TB:YM:C11:Try-Now-12:2",
+          "8227:TB:YM:C11:Try-Now-12:3",
+          "8227:TB:YM:C11:Try-Now-13:1",
+          "8227:TB:YM:C11:Try-Now-13:2",
+          "8227:TB:YM:C11:Try-Now-13:3",
+          "8227:TB:YM:C11:Try-Now-13:4",
+          "8227:TB:YM:C11:Try-Now-17:1",
+          "8227:TB:YM:C11:Try-Now-17:2",
+          "8227:TB:YM:C11:Try-Now-18:1",
+          "8227:TB:YM:C11:Try-Now-18:2",
+          "8227:TB:YM:C11:Try-Now-20:1",
+          "8227:TB:YM:C11:Try-Now-20:2",
+          "8227:TB:YM:C11:Try-Now-21:1",
+          "8227:TB:YM:C11:Try-Now-21:2",
+          "8227:TB:YM:C11:Try-Now-21:3",
+          "8227:TB:YM:C11:Try-Now-22:3",
+          "8227:TB:YM:C11:Try-Now-29:1",
+          "8227:TB:YM:C11:Try-Now-29:2",
+          "8227:TB:YM:C11:Try-Now-29:3",
+          "8227:TB:YM:C11:Try-Now-29:4",
+          "8227:TB:YM:C11:Try-Now-31:1",
+          "8227:TB:YM:C11:Try-Now-31:2",
+          "8227:TB:YM:C11:Try-Now-36:1",
+          "8227:TB:YM:C11:Try-Now-36:2",
+          "8227:TB:YM:C11:Try-Now-37:1",
+          "8227:TB:YM:C11:Try-Now-37:2",
+          "8227:TB:YM:C11:Try-Now-38:1",
+          "8227:TB:YM:C11:Try-Now-38:2",
+          "8227:TB:YM:C11:Try-Now-39:1",
+          "8227:TB:YM:C11:Try-Now-39:2",
+          "8227:TB:YM:C11:Try-Now-39:3",
+          "8227:TB:YM:C11:Try-Now-39:4",
+          "8227:TB:YM:C11:Try-Now-40:1",
+          "8227:TB:YM:C11:Try-Now-40:2",
+          "8227:TB:YM:C11:Try-Now-42:1",
+          "8227:TB:YM:C11:Try-Now-42:2",
+          "8227:TB:YM:C11:Try-Now-4:1",
+          "8227:TB:YM:C11:Try-Now-4:2",
+          "8227:TB:YM:C11:Try-Now-4:3",
+          "8227:TB:YM:C11:Try-Now-4:4",
+          "8227:TB:YM:C11:Try-Now-4:5",
+          "8227:TB:YM:C11:Try-Now-5:1",
+          "8227:TB:YM:C11:Try-Now-5:2",
+          "8227:TB:YM:C11:Try-Now-5:3",
+          "8227:TB:YM:C11:Try-Now-9:4",
+          "8227:TB:YM:C11:Try-Now-9:5",
+          "8227:TB:YM:C11:Try-Now:1",
+          "8227:TB:YM:C11:Try-Now:10",
+          "8227:TB:YM:C11:Try-Now:11",
+          "8227:TB:YM:C11:Try-Now:14",
+          "8227:TB:YM:C11:Try-Now:15",
+          "8227:TB:YM:C11:Try-Now:16",
+          "8227:TB:YM:C11:Try-Now:19",
+          "8227:TB:YM:C11:Try-Now:2",
+          "8227:TB:YM:C11:Try-Now:23",
+          "8227:TB:YM:C11:Try-Now:24",
+          "8227:TB:YM:C11:Try-Now:25",
+          "8227:TB:YM:C11:Try-Now:26",
+          "8227:TB:YM:C11:Try-Now:27",
+          "8227:TB:YM:C11:Try-Now:28",
+          "8227:TB:YM:C11:Try-Now:3",
+          "8227:TB:YM:C11:Try-Now:30",
+          "8227:TB:YM:C11:Try-Now:32",
+          "8227:TB:YM:C11:Try-Now:33",
+          "8227:TB:YM:C11:Try-Now:34",
+          "8227:TB:YM:C11:Try-Now:35",
+          "8227:TB:YM:C11:Try-Now:41",
+          "8227:TB:YM:C11:Try-Now:8",
+          "8227:TB:YM:C12:Try-Now-17:3",
+          "8227:TB:YM:C13:Example:11",
+          "8227:TB:YM:C13:Example:7",
+          "8227:TB:YM:C13:Exercise-13:4",
+          "8227:TB:YM:C13:Revision-Exercise-13:3",
+          "8227:TB:YM:C13:Try-Now-7:1",
+          "8227:TB:YM:C6:Example:11",
+          "8227:TB:YM:C6:Example:12",
+          "8227:TB:YM:C6:Example:13",
+          "8227:TB:YM:C6:Example:14",
+          "8227:TB:YM:C6:Example:15",
+          "8227:TB:YM:C6:Example:36",
+          "8227:TB:YM:C6:Example:37",
+          "8227:TB:YM:C6:Exercise-6:3",
+          "8227:TB:YM:C6:Exercise-6:5",
+          "8227:TB:YM:C6:Exercise-6:7",
+          "8227:TB:YM:C6:Revision-Exercise-6:2",
+          "8227:TB:YM:C6:Try-Now-11:1",
+          "8227:TB:YM:C6:Try-Now-11:2",
+          "8227:TB:YM:C6:Try-Now-11:3",
+          "8227:TB:YM:C6:Try-Now-11:4",
+          "8227:TB:YM:C6:Try-Now-12:1",
+          "8227:TB:YM:C6:Try-Now-12:2",
+          "8227:TB:YM:C6:Try-Now-12:3",
+          "8227:TB:YM:C6:Try-Now-12:4",
+          "8227:TB:YM:C6:Try-Now-13:1",
+          "8227:TB:YM:C6:Try-Now-13:2",
+          "8227:TB:YM:C6:Try-Now-14:1",
+          "8227:TB:YM:C6:Try-Now-14:2",
+          "8227:TB:YM:C6:Try-Now-15:1",
+          "8227:TB:YM:C6:Try-Now-15:2",
+          "8227:TB:YM:C6:Try-Now-15:3",
+          "8227:TB:YM:C6:Try-Now-36:1",
+          "8227:TB:YM:C6:Try-Now-36:2",
+          "8227:TB:YM:C6:Try-Now:37",
+          "8227:TB:YM:C7:Example:10",
+          "8227:TB:YM:C7:Example:40",
+          "8227:TB:YM:C7:Example:41",
+          "8227:TB:YM:C7:Exercise-7:10",
+          "8227:TB:YM:C7:Exercise-7:3",
+          "8227:TB:YM:C7:Try-Now-10:1",
+          "8227:TB:YM:C7:Try-Now-10:2",
+          "8227:TB:YM:C7:Try-Now-22:2",
+          "8227:TB:YM:C7:Try-Now-23:1",
+          "8227:TB:YM:C7:Try-Now-23:2",
+          "8227:TB:YM:C7:Try-Now-41:1",
+          "8227:TB:YM:C7:Try-Now-41:2"
+        ],
+        "adopted_families": [
+          "8227:TEXTBOOK-FAMILY:implicit-linked-normal-curve-sketch",
+          "8227:TEXTBOOK-FAMILY:implicit-given-point-gradient"
+        ],
+        "limits": "Discovery is complete for these exact union predicates; native re-reading is complete for every member of the adopted families, not every other union hit. Unselected union hits remain later-design leads, not proven rejections or absence."
+      },
+      "accepted_selection_ids": [
+        "8227:FAMILY:implicit"
+      ]
+    },
+    {
+      "recipe_id": "WB8227-stationary-inflexion",
+      "title": "Locate and classify stationary points, including an inflexion",
+      "version": "0.1.0",
+      "selection_ids": [
+        "8227:SEL-D:stationary-two-extrema",
+        "8227:SEL-D:stationary-inflexion"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2024:P2:Q10:a",
+        "8227:EXAM:2024:P2:Q10:b"
+      ],
+      "branches": [
+        {
+          "branch_id": "WB8227-stationary-inflexion:two-extrema",
+          "selection_id": "8227:SEL-D:stationary-two-extrema",
+          "basis": "textbook-derived; stationary classification is examination-observed, this polynomial connected pattern is not claimed identical to the log example",
+          "capacity": 540,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "points",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O02:D01",
+                "8227:2020:M1:T8:O04:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O02",
+                "8227:2020:M1:T8:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 4,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "P1",
+                "P2",
+                "P3",
+                "P4"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.0:two-extrema:points:P1",
+                "WB8227-stationary-inflexion@0.1.0:two-extrema:points:P2",
+                "WB8227-stationary-inflexion@0.1.0:two-extrema:points:P3",
+                "WB8227-stationary-inflexion@0.1.0:two-extrema:points:P4"
+              ]
+            },
+            {
+              "part_id": "nature",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O04:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O04"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T8:O01:D02",
+                  "role": "prerequisite; not direct coverage in this part"
+                }
+              ],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "C1",
+                "C2"
+              ],
+              "response_format": "explanation",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.0:two-extrema:nature:C1",
+                "WB8227-stationary-inflexion@0.1.0:two-extrema:nature:C2"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2024:P2:Q10:a",
+            "8227:EXAM:2024:P2:Q10:b"
+          ],
+          "marks": 6,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [],
+          "same_type_checks": []
+        },
+        {
+          "branch_id": "WB8227-stationary-inflexion:stationary-inflexion",
+          "selection_id": "8227:SEL-D:stationary-inflexion",
+          "basis": "syllabus-derived, not NSSCAS-examination-evidenced for the inflexion facet; textbook supported",
+          "capacity": 180,
+          "whole_bloom": 4,
+          "part_specs": [
+            {
+              "part_id": "point",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O02:D01",
+                "8227:2020:M1:T8:O04:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O02",
+                "8227:2020:M1:T8:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "I1",
+                "I2",
+                "I3"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.0:stationary-inflexion:point:I1",
+                "WB8227-stationary-inflexion@0.1.0:stationary-inflexion:point:I2",
+                "WB8227-stationary-inflexion@0.1.0:stationary-inflexion:point:I3"
+              ]
+            },
+            {
+              "part_id": "classification",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O04:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O04"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T8:O01:D02",
+                  "role": "prerequisite; not direct coverage in this part"
+                }
+              ],
+              "marks": 3,
+              "bloom": 4,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "I4",
+                "I5",
+                "I6"
+              ],
+              "response_format": "explanation",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.0:stationary-inflexion:classification:I4",
+                "WB8227-stationary-inflexion@0.1.0:stationary-inflexion:classification:I5",
+                "WB8227-stationary-inflexion@0.1.0:stationary-inflexion:classification:I6"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2024:P2:Q10:b"
+          ],
+          "marks": 6,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [],
+          "same_type_checks": []
+        }
+      ],
+      "explicit_deferred_facets": [
+        "Non-stationary inflexions, optimisation modelling, logarithmic/trigonometric stationary problems and requested full curve sketches."
+      ],
+      "owner": "Vitalis",
+      "status": "proposed; owner approval pending",
+      "work_order_path": "work-orders/WB8227-stationary-inflexion.md",
+      "exemplar_path": "exemplars/WB8227-stationary-inflexion.md",
+      "total_capacity": 720,
+      "union_discovery": {
+        "basis": "accepted item-level assessed/component union (R5-03), read from objective-problem-map.json; not relations-only",
+        "demand_ids": [
+          "8227:2020:M1:T8:O02:D01",
+          "8227:2020:M1:T8:O04:D01",
+          "8227:2020:M1:T8:O04:D02"
+        ],
+        "candidate_item_count": 235,
+        "candidate_item_ids": [
+          "8227:TB:Goldie:C4:Activity:1",
+          "8227:TB:Goldie:C4:Example:1",
+          "8227:TB:Goldie:C4:Example:12",
+          "8227:TB:Goldie:C4:Example:15",
+          "8227:TB:Goldie:C4:Example:16",
+          "8227:TB:Goldie:C4:Example:17",
+          "8227:TB:Goldie:C4:Example:18",
+          "8227:TB:Goldie:C4:Example:2",
+          "8227:TB:Goldie:C4:Example:22",
+          "8227:TB:Goldie:C4:Example:24",
+          "8227:TB:Goldie:C4:Example:3",
+          "8227:TB:Goldie:C4:Example:4",
+          "8227:TB:Goldie:C4:Example:7",
+          "8227:TB:Goldie:C4:Example:9",
+          "8227:TB:Goldie:C4:Exercise-4A:1",
+          "8227:TB:Goldie:C4:Exercise-4A:2",
+          "8227:TB:Goldie:C4:Exercise-4A:3",
+          "8227:TB:Goldie:C4:Exercise-4A:4",
+          "8227:TB:Goldie:C4:Exercise-4A:5",
+          "8227:TB:Goldie:C4:Exercise-4A:6",
+          "8227:TB:Goldie:C4:Exercise-4A:7",
+          "8227:TB:Goldie:C4:Exercise-4A:8",
+          "8227:TB:Goldie:C4:Exercise-4B:1",
+          "8227:TB:Goldie:C4:Exercise-4B:11",
+          "8227:TB:Goldie:C4:Exercise-4B:12",
+          "8227:TB:Goldie:C4:Exercise-4B:2",
+          "8227:TB:Goldie:C4:Exercise-4B:4",
+          "8227:TB:Goldie:C4:Exercise-4B:5",
+          "8227:TB:Goldie:C4:Exercise-4B:6",
+          "8227:TB:Goldie:C4:Exercise-4B:7",
+          "8227:TB:Goldie:C4:Exercise-4B:8",
+          "8227:TB:Goldie:C4:Exercise-4B:9",
+          "8227:TB:Goldie:C4:Exercise-4C:10",
+          "8227:TB:Goldie:C4:Exercise-4C:12",
+          "8227:TB:Goldie:C4:Exercise-4C:13",
+          "8227:TB:Goldie:C4:Exercise-4C:4",
+          "8227:TB:Goldie:C4:Exercise-4C:5",
+          "8227:TB:Goldie:C4:Exercise-4D:1",
+          "8227:TB:Goldie:C4:Exercise-4D:10",
+          "8227:TB:Goldie:C4:Exercise-4D:11",
+          "8227:TB:Goldie:C4:Exercise-4D:12",
+          "8227:TB:Goldie:C4:Exercise-4D:4",
+          "8227:TB:Goldie:C4:Exercise-4D:5",
+          "8227:TB:Goldie:C4:Exercise-4D:7",
+          "8227:TB:Goldie:C4:Exercise-4D:8",
+          "8227:TB:Goldie:C4:Exercise-4E:1",
+          "8227:TB:Goldie:C4:Exercise-4E:5",
+          "8227:TB:Goldie:C4:Exercise-4E:9",
+          "8227:TB:Goldie:C4:Prompt:7",
+          "8227:TB:Goldie:C5:Exercise-5A:4",
+          "8227:TB:Goldie:C5:Exercise-5A:7",
+          "8227:TB:Goldie:C5:Exercise-5C:10",
+          "8227:TB:Goldie:C5:Exercise-5C:8",
+          "8227:TB:Goldie:C5:Exercise-5C:9",
+          "8227:TB:Goldie:C6:Exercise-6A:1",
+          "8227:TB:Goldie:C6:Exercise-6B:11",
+          "8227:TB:Goldie:C6:Exercise-6B:12",
+          "8227:TB:Goldie:C8:Exercise-8C:5",
+          "8227:TB:Goldie:C8:Exercise-8C:7",
+          "8227:TB:Goldie:C8:Exercise-8D:6",
+          "8227:TB:Goldie:C8:Exercise-8D:7",
+          "8227:TB:Goldie:C8:Exercise-8G:10",
+          "8227:TB:Goldie:C8:Exercise-8H:4",
+          "8227:TB:YM:C11:Example:1",
+          "8227:TB:YM:C11:Example:10",
+          "8227:TB:YM:C11:Example:11",
+          "8227:TB:YM:C11:Example:12",
+          "8227:TB:YM:C11:Example:13",
+          "8227:TB:YM:C11:Example:17",
+          "8227:TB:YM:C11:Example:2",
+          "8227:TB:YM:C11:Example:22",
+          "8227:TB:YM:C11:Example:23",
+          "8227:TB:YM:C11:Example:3",
+          "8227:TB:YM:C11:Example:4",
+          "8227:TB:YM:C11:Example:5",
+          "8227:TB:YM:C11:Example:6",
+          "8227:TB:YM:C11:Example:7",
+          "8227:TB:YM:C11:Example:8",
+          "8227:TB:YM:C11:Example:9",
+          "8227:TB:YM:C11:Exercise-11:2",
+          "8227:TB:YM:C11:Exercise-11:3",
+          "8227:TB:YM:C11:Exercise-11:5",
+          "8227:TB:YM:C11:Revision-Exercise-11:3",
+          "8227:TB:YM:C11:Try-Now-12:1",
+          "8227:TB:YM:C11:Try-Now-12:2",
+          "8227:TB:YM:C11:Try-Now-13:1",
+          "8227:TB:YM:C11:Try-Now-13:2",
+          "8227:TB:YM:C11:Try-Now-13:3",
+          "8227:TB:YM:C11:Try-Now-13:4",
+          "8227:TB:YM:C11:Try-Now-17:1",
+          "8227:TB:YM:C11:Try-Now-22:1",
+          "8227:TB:YM:C11:Try-Now-22:2",
+          "8227:TB:YM:C11:Try-Now-22:3",
+          "8227:TB:YM:C11:Try-Now-4:1",
+          "8227:TB:YM:C11:Try-Now-4:2",
+          "8227:TB:YM:C11:Try-Now-4:3",
+          "8227:TB:YM:C11:Try-Now-4:4",
+          "8227:TB:YM:C11:Try-Now-4:5",
+          "8227:TB:YM:C11:Try-Now-5:1",
+          "8227:TB:YM:C11:Try-Now-5:2",
+          "8227:TB:YM:C11:Try-Now-5:3",
+          "8227:TB:YM:C11:Try-Now-9:1",
+          "8227:TB:YM:C11:Try-Now:1",
+          "8227:TB:YM:C11:Try-Now:10",
+          "8227:TB:YM:C11:Try-Now:11",
+          "8227:TB:YM:C11:Try-Now:2",
+          "8227:TB:YM:C11:Try-Now:23",
+          "8227:TB:YM:C11:Try-Now:3",
+          "8227:TB:YM:C11:Try-Now:6",
+          "8227:TB:YM:C11:Try-Now:7",
+          "8227:TB:YM:C11:Try-Now:8",
+          "8227:TB:YM:C11:Worked-illustration:1",
+          "8227:TB:YM:C12:Example:20",
+          "8227:TB:YM:C12:Exercise-12:8",
+          "8227:TB:YM:C12:Try-Now-18:2",
+          "8227:TB:YM:C12:Try-Now-21:2",
+          "8227:TB:YM:C12:Try-Now:20",
+          "8227:TB:YM:C13:Exercise-13:4",
+          "8227:TB:YM:C6:Example:1",
+          "8227:TB:YM:C6:Example:11",
+          "8227:TB:YM:C6:Example:12",
+          "8227:TB:YM:C6:Example:15",
+          "8227:TB:YM:C6:Example:16",
+          "8227:TB:YM:C6:Example:17",
+          "8227:TB:YM:C6:Example:18",
+          "8227:TB:YM:C6:Example:19",
+          "8227:TB:YM:C6:Example:2",
+          "8227:TB:YM:C6:Example:21",
+          "8227:TB:YM:C6:Example:22",
+          "8227:TB:YM:C6:Example:24",
+          "8227:TB:YM:C6:Example:25",
+          "8227:TB:YM:C6:Example:26",
+          "8227:TB:YM:C6:Example:27",
+          "8227:TB:YM:C6:Example:28",
+          "8227:TB:YM:C6:Example:29",
+          "8227:TB:YM:C6:Example:3",
+          "8227:TB:YM:C6:Example:30",
+          "8227:TB:YM:C6:Example:31",
+          "8227:TB:YM:C6:Example:32",
+          "8227:TB:YM:C6:Example:33",
+          "8227:TB:YM:C6:Example:34",
+          "8227:TB:YM:C6:Example:35",
+          "8227:TB:YM:C6:Example:39",
+          "8227:TB:YM:C6:Example:4",
+          "8227:TB:YM:C6:Example:5",
+          "8227:TB:YM:C6:Example:6",
+          "8227:TB:YM:C6:Example:7",
+          "8227:TB:YM:C6:Example:8",
+          "8227:TB:YM:C6:Example:9",
+          "8227:TB:YM:C6:Exercise-6:1",
+          "8227:TB:YM:C6:Exercise-6:2",
+          "8227:TB:YM:C6:Exercise-6:3",
+          "8227:TB:YM:C6:Exercise-6:4",
+          "8227:TB:YM:C6:Exercise-6:5",
+          "8227:TB:YM:C6:Exercise-6:6",
+          "8227:TB:YM:C6:Exercise-6:7",
+          "8227:TB:YM:C6:Exercise-6:8",
+          "8227:TB:YM:C6:Exercise-6:9",
+          "8227:TB:YM:C6:Revision-Exercise-6:3",
+          "8227:TB:YM:C6:Revision-Exercise-6:4",
+          "8227:TB:YM:C6:Revision-Exercise-6:5",
+          "8227:TB:YM:C6:Try-Now-10:1",
+          "8227:TB:YM:C6:Try-Now-11:1",
+          "8227:TB:YM:C6:Try-Now-11:2",
+          "8227:TB:YM:C6:Try-Now-11:3",
+          "8227:TB:YM:C6:Try-Now-11:4",
+          "8227:TB:YM:C6:Try-Now-12:1",
+          "8227:TB:YM:C6:Try-Now-12:2",
+          "8227:TB:YM:C6:Try-Now-12:3",
+          "8227:TB:YM:C6:Try-Now-12:4",
+          "8227:TB:YM:C6:Try-Now-15:3",
+          "8227:TB:YM:C6:Try-Now-16:1",
+          "8227:TB:YM:C6:Try-Now-16:2",
+          "8227:TB:YM:C6:Try-Now-17:1",
+          "8227:TB:YM:C6:Try-Now-17:2",
+          "8227:TB:YM:C6:Try-Now-18:1",
+          "8227:TB:YM:C6:Try-Now-18:2",
+          "8227:TB:YM:C6:Try-Now-19:1",
+          "8227:TB:YM:C6:Try-Now-22:1",
+          "8227:TB:YM:C6:Try-Now-22:2",
+          "8227:TB:YM:C6:Try-Now-23:4",
+          "8227:TB:YM:C6:Try-Now-24:2",
+          "8227:TB:YM:C6:Try-Now-25:1",
+          "8227:TB:YM:C6:Try-Now-25:2",
+          "8227:TB:YM:C6:Try-Now-28:1",
+          "8227:TB:YM:C6:Try-Now-28:2",
+          "8227:TB:YM:C6:Try-Now-29:1",
+          "8227:TB:YM:C6:Try-Now-29:2",
+          "8227:TB:YM:C6:Try-Now-30:1",
+          "8227:TB:YM:C6:Try-Now-30:2",
+          "8227:TB:YM:C6:Try-Now-30:3",
+          "8227:TB:YM:C6:Try-Now-31:1",
+          "8227:TB:YM:C6:Try-Now-31:2",
+          "8227:TB:YM:C6:Try-Now-31:3",
+          "8227:TB:YM:C6:Try-Now-31:4",
+          "8227:TB:YM:C6:Try-Now-32:1",
+          "8227:TB:YM:C6:Try-Now-32:2",
+          "8227:TB:YM:C6:Try-Now-32:3",
+          "8227:TB:YM:C6:Try-Now-34:1",
+          "8227:TB:YM:C6:Try-Now-34:2",
+          "8227:TB:YM:C6:Try-Now-35:1",
+          "8227:TB:YM:C6:Try-Now-35:2",
+          "8227:TB:YM:C6:Try-Now-35:3",
+          "8227:TB:YM:C6:Try-Now-36:1",
+          "8227:TB:YM:C6:Try-Now-36:2",
+          "8227:TB:YM:C6:Try-Now-38:1",
+          "8227:TB:YM:C6:Try-Now-38:2",
+          "8227:TB:YM:C6:Try-Now-3:1",
+          "8227:TB:YM:C6:Try-Now-3:2",
+          "8227:TB:YM:C6:Try-Now-4:1",
+          "8227:TB:YM:C6:Try-Now-4:2",
+          "8227:TB:YM:C6:Try-Now-4:3",
+          "8227:TB:YM:C6:Try-Now-5:1",
+          "8227:TB:YM:C6:Try-Now-5:2",
+          "8227:TB:YM:C6:Try-Now-7:1",
+          "8227:TB:YM:C6:Try-Now-7:2",
+          "8227:TB:YM:C6:Try-Now-9:1",
+          "8227:TB:YM:C6:Try-Now-9:2",
+          "8227:TB:YM:C6:Try-Now:1",
+          "8227:TB:YM:C6:Try-Now:2",
+          "8227:TB:YM:C6:Try-Now:26",
+          "8227:TB:YM:C6:Try-Now:27",
+          "8227:TB:YM:C6:Try-Now:33",
+          "8227:TB:YM:C6:Try-Now:37",
+          "8227:TB:YM:C6:Try-Now:39",
+          "8227:TB:YM:C6:Try-Now:6",
+          "8227:TB:YM:C6:Try-Now:8",
+          "8227:TB:YM:C7:Example:11",
+          "8227:TB:YM:C7:Example:38",
+          "8227:TB:YM:C7:Exercise-7:11",
+          "8227:TB:YM:C7:Revision-Exercise-7:4",
+          "8227:TB:YM:C7:Try-Now-38:1",
+          "8227:TB:YM:C7:Try-Now-39:2",
+          "8227:TB:YM:C7:Try-Now-39:3",
+          "8227:TB:YM:C7:Worked-illustration:2"
+        ],
+        "adopted_families": [
+          "8227:TEXTBOOK-FAMILY:stationary-classify-sketch"
+        ],
+        "limits": "Discovery is complete for these exact union predicates; native re-reading is complete for every member of the adopted families, not every other union hit. Unselected union hits remain later-design leads, not proven rejections or absence."
+      },
+      "accepted_selection_ids": [
+        "8227:FAMILY:stationary-points"
+      ]
+    },
+    {
+      "recipe_id": "WB8227-motion-integration",
+      "title": "Recover motion from acceleration or velocity and distinguish distance from displacement",
+      "version": "0.1.0",
+      "selection_ids": [
+        "8227:SEL-D:motion-polynomial-chain",
+        "8227:SEL-D:motion-exponential-positive",
+        "8227:SEL-D:motion-interior-reversal"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2021:P1:Q4:a",
+        "8227:EXAM:2021:P1:Q4:b",
+        "8227:EXAM:2023:P2:Q9:a",
+        "8227:EXAM:2023:P2:Q9:b"
+      ],
+      "branches": [
+        {
+          "branch_id": "WB8227-motion-integration:polynomial-chain",
+          "selection_id": "8227:SEL-D:motion-polynomial-chain",
+          "basis": "examination-observed (NSSCAS 8227)",
+          "capacity": 144,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "velocity",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D01",
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O02:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O02",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "V1",
+                "V2",
+                "V3"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:polynomial-chain:velocity:V1",
+                "WB8227-motion-integration@0.1.0:polynomial-chain:velocity:V2",
+                "WB8227-motion-integration@0.1.0:polynomial-chain:velocity:V3"
+              ]
+            },
+            {
+              "part_id": "distance",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "S1",
+                "S2",
+                "S3"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:polynomial-chain:distance:S1",
+                "WB8227-motion-integration@0.1.0:polynomial-chain:distance:S2",
+                "WB8227-motion-integration@0.1.0:polynomial-chain:distance:S3"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [
+            "8227:EXAM:2021:P1:Q4:a",
+            "8227:EXAM:2021:P1:Q4:b"
+          ],
+          "marks": 6,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "1",
+              "question": "4",
+              "part": "a",
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+              "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2021 Paper 1, Question 4(a), page 5",
+              "applies_to_branch": "WB8227-motion-integration:polynomial-chain",
+              "source_part_id": "8227:EXAM:2021:P1:Q4:a",
+              "applies_to_part_ids": [
+                "velocity"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "1",
+              "question": "4",
+              "part": "b",
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+              "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2021 Paper 1, Question 4(b), page 5",
+              "applies_to_branch": "WB8227-motion-integration:polynomial-chain",
+              "source_part_id": "8227:EXAM:2021:P1:Q4:b",
+              "applies_to_part_ids": [
+                "distance"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            }
+          ],
+          "same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2021:P1:Q4:a",
+              "recipe_part_ids": [
+                "velocity"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "symbolic",
+              "recipe_response_format": "symbolic",
+              "source_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D01",
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O02:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D01",
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O02:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            },
+            {
+              "source_part_id": "8227:EXAM:2021:P1:Q4:b",
+              "recipe_part_ids": [
+                "distance"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "numeric",
+              "recipe_response_format": "numeric",
+              "source_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O04:D03",
+                "8227:2020:M1:T9:O03:D01"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            }
+          ]
+        },
+        {
+          "branch_id": "WB8227-motion-integration:exponential-positive",
+          "selection_id": "8227:SEL-D:motion-exponential-positive",
+          "basis": "examination-observed (NSSCAS 8227)",
+          "capacity": 60,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "acceleration",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O01:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O03",
+                "8227:2020:M2:T4:O01"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "E1",
+                "E2"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:exponential-positive:acceleration:E1",
+                "WB8227-motion-integration@0.1.0:exponential-positive:acceleration:E2"
+              ]
+            },
+            {
+              "part_id": "distance",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T5:O01:D01",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04",
+                "8227:2020:M2:T5:O01"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "E3",
+                "E4",
+                "E5"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:exponential-positive:distance:E3",
+                "WB8227-motion-integration@0.1.0:exponential-positive:distance:E4",
+                "WB8227-motion-integration@0.1.0:exponential-positive:distance:E5"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [
+            "8227:EXAM:2023:P2:Q9:a",
+            "8227:EXAM:2023:P2:Q9:b"
+          ],
+          "marks": 5,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "9",
+              "part": "a",
+              "printed_page": 15,
+              "pdf_page": 15,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 9(a), page 15",
+              "applies_to_branch": "WB8227-motion-integration:exponential-positive",
+              "source_part_id": "8227:EXAM:2023:P2:Q9:a",
+              "applies_to_part_ids": [
+                "acceleration"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "9",
+              "part": "b",
+              "printed_page": 15,
+              "pdf_page": 15,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 9(b), page 15",
+              "applies_to_branch": "WB8227-motion-integration:exponential-positive",
+              "source_part_id": "8227:EXAM:2023:P2:Q9:b",
+              "applies_to_part_ids": [
+                "distance"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            }
+          ],
+          "same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2023:P2:Q9:a",
+              "recipe_part_ids": [
+                "acceleration"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "symbolic",
+              "recipe_response_format": "symbolic",
+              "source_direct_demand_ids": [
+                "8227:2020:M2:T4:O01:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M2:T4:O01:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            },
+            {
+              "source_part_id": "8227:EXAM:2023:P2:Q9:b",
+              "recipe_part_ids": [
+                "distance"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "numeric",
+              "recipe_response_format": "numeric",
+              "source_direct_demand_ids": [
+                "8227:2020:M2:T5:O01:D01",
+                "8227:2020:M1:T9:O04:D03",
+                "8227:2020:M1:T9:O03:D01"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M2:T5:O01:D01",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            }
+          ]
+        },
+        {
+          "branch_id": "WB8227-motion-integration:interior-reversal",
+          "selection_id": "8227:SEL-D:motion-interior-reversal",
+          "basis": "textbook-derived structural branch; no verified NSSCAS whole-branch same-type reference",
+          "capacity": 27,
+          "whole_bloom": 4,
+          "part_specs": [
+            {
+              "part_id": "rest",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O03"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 1,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "R1"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:interior-reversal:rest:R1"
+              ]
+            },
+            {
+              "part_id": "displacement",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "R2",
+                "R3"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:interior-reversal:displacement:R2",
+                "WB8227-motion-integration@0.1.0:interior-reversal:displacement:R3"
+              ]
+            },
+            {
+              "part_id": "distance",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 4,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "R4",
+                "R5",
+                "R6"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.0:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.0:interior-reversal:distance:R4",
+                "WB8227-motion-integration@0.1.0:interior-reversal:distance:R5",
+                "WB8227-motion-integration@0.1.0:interior-reversal:distance:R6"
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2023:P2:Q9:b"
+          ],
+          "marks": 6,
+          "classification_version": "8227-pilot-bloom-proposal-0.1.0",
+          "examination_references": [],
+          "same_type_checks": []
+        }
+      ],
+      "explicit_deferred_facets": [
+        "Quadratic-velocity multiple reversal, vertical greatest-height event solving, reciprocal-linear velocity, nonzero displacement origin and inverse time recovery."
+      ],
+      "owner": "Vitalis",
+      "status": "proposed; owner approval pending",
+      "work_order_path": "work-orders/WB8227-motion-integration.md",
+      "exemplar_path": "exemplars/WB8227-motion-integration.md",
+      "total_capacity": 231,
+      "union_discovery": {
+        "basis": "accepted item-level assessed/component union (R5-03), read from objective-problem-map.json; not relations-only",
+        "demand_ids": [
+          "8227:2020:M1:T8:O03:D04",
+          "8227:2020:M1:T9:O01:D01",
+          "8227:2020:M1:T9:O01:D02",
+          "8227:2020:M1:T9:O02:D01",
+          "8227:2020:M1:T9:O03:D01",
+          "8227:2020:M1:T9:O04:D03",
+          "8227:2020:M2:T4:O01:D01",
+          "8227:2020:M2:T4:O01:D02",
+          "8227:2020:M2:T5:O01:D01"
+        ],
+        "candidate_item_count": 427,
+        "candidate_item_ids": [
+          "8227:TB:Goldie:C4:Activity:2",
+          "8227:TB:Goldie:C4:Activity:3",
+          "8227:TB:Goldie:C4:Example:10",
+          "8227:TB:Goldie:C4:Example:11",
+          "8227:TB:Goldie:C4:Example:12",
+          "8227:TB:Goldie:C4:Example:13",
+          "8227:TB:Goldie:C4:Example:14",
+          "8227:TB:Goldie:C4:Example:15",
+          "8227:TB:Goldie:C4:Example:18",
+          "8227:TB:Goldie:C4:Example:23",
+          "8227:TB:Goldie:C4:Example:5",
+          "8227:TB:Goldie:C4:Example:6",
+          "8227:TB:Goldie:C4:Example:7",
+          "8227:TB:Goldie:C4:Example:8",
+          "8227:TB:Goldie:C4:Example:9",
+          "8227:TB:Goldie:C4:Exercise-4B:1",
+          "8227:TB:Goldie:C4:Exercise-4B:10",
+          "8227:TB:Goldie:C4:Exercise-4B:11",
+          "8227:TB:Goldie:C4:Exercise-4B:12",
+          "8227:TB:Goldie:C4:Exercise-4B:2",
+          "8227:TB:Goldie:C4:Exercise-4B:3",
+          "8227:TB:Goldie:C4:Exercise-4B:4",
+          "8227:TB:Goldie:C4:Exercise-4B:5",
+          "8227:TB:Goldie:C4:Exercise-4B:6",
+          "8227:TB:Goldie:C4:Exercise-4B:7",
+          "8227:TB:Goldie:C4:Exercise-4B:8",
+          "8227:TB:Goldie:C4:Exercise-4B:9",
+          "8227:TB:Goldie:C4:Exercise-4C:1",
+          "8227:TB:Goldie:C4:Exercise-4C:10",
+          "8227:TB:Goldie:C4:Exercise-4C:11",
+          "8227:TB:Goldie:C4:Exercise-4C:12",
+          "8227:TB:Goldie:C4:Exercise-4C:13",
+          "8227:TB:Goldie:C4:Exercise-4C:2",
+          "8227:TB:Goldie:C4:Exercise-4C:3",
+          "8227:TB:Goldie:C4:Exercise-4C:4",
+          "8227:TB:Goldie:C4:Exercise-4C:5",
+          "8227:TB:Goldie:C4:Exercise-4C:6",
+          "8227:TB:Goldie:C4:Exercise-4C:7",
+          "8227:TB:Goldie:C4:Exercise-4C:8",
+          "8227:TB:Goldie:C4:Exercise-4C:9",
+          "8227:TB:Goldie:C4:Exercise-4D:1",
+          "8227:TB:Goldie:C4:Exercise-4D:2",
+          "8227:TB:Goldie:C4:Exercise-4D:3",
+          "8227:TB:Goldie:C4:Exercise-4D:7",
+          "8227:TB:Goldie:C4:Exercise-4D:9",
+          "8227:TB:Goldie:C4:Exercise-4E:1",
+          "8227:TB:Goldie:C4:Exercise-4E:10",
+          "8227:TB:Goldie:C4:Exercise-4E:11",
+          "8227:TB:Goldie:C4:Exercise-4E:12",
+          "8227:TB:Goldie:C4:Exercise-4E:13",
+          "8227:TB:Goldie:C4:Exercise-4E:14",
+          "8227:TB:Goldie:C4:Exercise-4E:15",
+          "8227:TB:Goldie:C4:Exercise-4E:2",
+          "8227:TB:Goldie:C4:Exercise-4E:8",
+          "8227:TB:Goldie:C4:Exercise-4E:9",
+          "8227:TB:Goldie:C4:Prompt:1",
+          "8227:TB:Goldie:C4:Prompt:5",
+          "8227:TB:Goldie:C4:Prompt:6",
+          "8227:TB:Goldie:C4:Worked-derivation:3",
+          "8227:TB:Goldie:C5:Activity:1",
+          "8227:TB:Goldie:C5:Example:1",
+          "8227:TB:Goldie:C5:Example:2",
+          "8227:TB:Goldie:C5:Example:3",
+          "8227:TB:Goldie:C5:Example:4",
+          "8227:TB:Goldie:C5:Example:6",
+          "8227:TB:Goldie:C5:Exercise-5A:1",
+          "8227:TB:Goldie:C5:Exercise-5A:2",
+          "8227:TB:Goldie:C5:Exercise-5A:3",
+          "8227:TB:Goldie:C5:Exercise-5A:4",
+          "8227:TB:Goldie:C5:Exercise-5A:5",
+          "8227:TB:Goldie:C5:Exercise-5A:6",
+          "8227:TB:Goldie:C5:Exercise-5A:7",
+          "8227:TB:Goldie:C5:Exercise-5A:8",
+          "8227:TB:Goldie:C5:Exercise-5A:9",
+          "8227:TB:Goldie:C5:Exercise-5B:10",
+          "8227:TB:Goldie:C5:Exercise-5B:11",
+          "8227:TB:Goldie:C5:Exercise-5B:12",
+          "8227:TB:Goldie:C5:Exercise-5B:13",
+          "8227:TB:Goldie:C5:Exercise-5B:2",
+          "8227:TB:Goldie:C5:Exercise-5B:3",
+          "8227:TB:Goldie:C5:Exercise-5B:4",
+          "8227:TB:Goldie:C5:Exercise-5B:5",
+          "8227:TB:Goldie:C5:Exercise-5B:6",
+          "8227:TB:Goldie:C5:Exercise-5B:7",
+          "8227:TB:Goldie:C5:Exercise-5B:8",
+          "8227:TB:Goldie:C5:Exercise-5B:9",
+          "8227:TB:Goldie:C5:Exercise-5C:1",
+          "8227:TB:Goldie:C5:Exercise-5C:10",
+          "8227:TB:Goldie:C5:Exercise-5C:11",
+          "8227:TB:Goldie:C5:Exercise-5C:6",
+          "8227:TB:Goldie:C5:Exercise-5C:8",
+          "8227:TB:Goldie:C5:Exercise-5C:9",
+          "8227:TB:Goldie:C6:Exercise-6A:2",
+          "8227:TB:Goldie:C6:Exercise-6B:11",
+          "8227:TB:Goldie:C6:Exercise-6B:12",
+          "8227:TB:Goldie:C6:Exercise-6B:8",
+          "8227:TB:Goldie:C8:Example:11",
+          "8227:TB:Goldie:C8:Exercise-8B:3",
+          "8227:TB:Goldie:C8:Exercise-8B:4",
+          "8227:TB:Goldie:C8:Exercise-8B:5",
+          "8227:TB:Goldie:C8:Exercise-8B:7",
+          "8227:TB:Goldie:C8:Exercise-8C:2",
+          "8227:TB:Goldie:C8:Exercise-8C:5",
+          "8227:TB:Goldie:C8:Exercise-8D:6",
+          "8227:TB:Goldie:C8:Exercise-8D:7",
+          "8227:TB:Goldie:C8:Exercise-8E:3",
+          "8227:TB:Goldie:C8:Exercise-8E:4",
+          "8227:TB:Goldie:C8:Exercise-8G:10",
+          "8227:TB:Goldie:C8:Exercise-8H:1",
+          "8227:TB:Goldie:C8:Exercise-8H:2",
+          "8227:TB:Goldie:C8:Exercise-8H:3",
+          "8227:TB:Goldie:C8:Prompt:2",
+          "8227:TB:Goldie:C9:Example:4",
+          "8227:TB:Goldie:C9:Exercise-9B:1",
+          "8227:TB:Goldie:C9:Exercise-9C:1",
+          "8227:TB:Goldie:C9:Worked-illustration:2",
+          "8227:TB:YM:C11:Example:10",
+          "8227:TB:YM:C11:Example:11",
+          "8227:TB:YM:C11:Example:12",
+          "8227:TB:YM:C11:Example:13",
+          "8227:TB:YM:C11:Example:14",
+          "8227:TB:YM:C11:Example:15",
+          "8227:TB:YM:C11:Example:16",
+          "8227:TB:YM:C11:Example:17",
+          "8227:TB:YM:C11:Example:18",
+          "8227:TB:YM:C11:Example:19",
+          "8227:TB:YM:C11:Example:2",
+          "8227:TB:YM:C11:Example:20",
+          "8227:TB:YM:C11:Example:21",
+          "8227:TB:YM:C11:Example:22",
+          "8227:TB:YM:C11:Example:23",
+          "8227:TB:YM:C11:Example:26",
+          "8227:TB:YM:C11:Example:27",
+          "8227:TB:YM:C11:Example:28",
+          "8227:TB:YM:C11:Example:3",
+          "8227:TB:YM:C11:Example:32",
+          "8227:TB:YM:C11:Example:33",
+          "8227:TB:YM:C11:Example:34",
+          "8227:TB:YM:C11:Example:35",
+          "8227:TB:YM:C11:Example:36",
+          "8227:TB:YM:C11:Example:37",
+          "8227:TB:YM:C11:Example:38",
+          "8227:TB:YM:C11:Example:39",
+          "8227:TB:YM:C11:Example:4",
+          "8227:TB:YM:C11:Example:40",
+          "8227:TB:YM:C11:Example:41",
+          "8227:TB:YM:C11:Example:5",
+          "8227:TB:YM:C11:Example:8",
+          "8227:TB:YM:C11:Exercise-11:1",
+          "8227:TB:YM:C11:Exercise-11:10",
+          "8227:TB:YM:C11:Exercise-11:2",
+          "8227:TB:YM:C11:Exercise-11:3",
+          "8227:TB:YM:C11:Exercise-11:4",
+          "8227:TB:YM:C11:Exercise-11:5",
+          "8227:TB:YM:C11:Exercise-11:8",
+          "8227:TB:YM:C11:Exercise-11:9",
+          "8227:TB:YM:C11:Revision-Exercise-11:1",
+          "8227:TB:YM:C11:Revision-Exercise-11:2",
+          "8227:TB:YM:C11:Revision-Exercise-11:3",
+          "8227:TB:YM:C11:Revision-Exercise-11:5",
+          "8227:TB:YM:C11:Try-Now-12:1",
+          "8227:TB:YM:C11:Try-Now-12:2",
+          "8227:TB:YM:C11:Try-Now-12:3",
+          "8227:TB:YM:C11:Try-Now-13:1",
+          "8227:TB:YM:C11:Try-Now-13:2",
+          "8227:TB:YM:C11:Try-Now-13:3",
+          "8227:TB:YM:C11:Try-Now-13:4",
+          "8227:TB:YM:C11:Try-Now-17:1",
+          "8227:TB:YM:C11:Try-Now-17:2",
+          "8227:TB:YM:C11:Try-Now-18:1",
+          "8227:TB:YM:C11:Try-Now-18:2",
+          "8227:TB:YM:C11:Try-Now-18:3",
+          "8227:TB:YM:C11:Try-Now-20:1",
+          "8227:TB:YM:C11:Try-Now-20:2",
+          "8227:TB:YM:C11:Try-Now-21:1",
+          "8227:TB:YM:C11:Try-Now-21:2",
+          "8227:TB:YM:C11:Try-Now-21:3",
+          "8227:TB:YM:C11:Try-Now-22:1",
+          "8227:TB:YM:C11:Try-Now-22:2",
+          "8227:TB:YM:C11:Try-Now-22:3",
+          "8227:TB:YM:C11:Try-Now-36:1",
+          "8227:TB:YM:C11:Try-Now-36:2",
+          "8227:TB:YM:C11:Try-Now-37:2",
+          "8227:TB:YM:C11:Try-Now-38:1",
+          "8227:TB:YM:C11:Try-Now-38:2",
+          "8227:TB:YM:C11:Try-Now-39:1",
+          "8227:TB:YM:C11:Try-Now-39:2",
+          "8227:TB:YM:C11:Try-Now-39:3",
+          "8227:TB:YM:C11:Try-Now-39:4",
+          "8227:TB:YM:C11:Try-Now-40:1",
+          "8227:TB:YM:C11:Try-Now-40:2",
+          "8227:TB:YM:C11:Try-Now-42:2",
+          "8227:TB:YM:C11:Try-Now-4:1",
+          "8227:TB:YM:C11:Try-Now-4:2",
+          "8227:TB:YM:C11:Try-Now-4:3",
+          "8227:TB:YM:C11:Try-Now-4:4",
+          "8227:TB:YM:C11:Try-Now-4:5",
+          "8227:TB:YM:C11:Try-Now-5:1",
+          "8227:TB:YM:C11:Try-Now-5:2",
+          "8227:TB:YM:C11:Try-Now-5:3",
+          "8227:TB:YM:C11:Try-Now:10",
+          "8227:TB:YM:C11:Try-Now:11",
+          "8227:TB:YM:C11:Try-Now:14",
+          "8227:TB:YM:C11:Try-Now:15",
+          "8227:TB:YM:C11:Try-Now:16",
+          "8227:TB:YM:C11:Try-Now:19",
+          "8227:TB:YM:C11:Try-Now:2",
+          "8227:TB:YM:C11:Try-Now:23",
+          "8227:TB:YM:C11:Try-Now:26",
+          "8227:TB:YM:C11:Try-Now:27",
+          "8227:TB:YM:C11:Try-Now:28",
+          "8227:TB:YM:C11:Try-Now:3",
+          "8227:TB:YM:C11:Try-Now:32",
+          "8227:TB:YM:C11:Try-Now:33",
+          "8227:TB:YM:C11:Try-Now:34",
+          "8227:TB:YM:C11:Try-Now:35",
+          "8227:TB:YM:C11:Try-Now:41",
+          "8227:TB:YM:C11:Try-Now:8",
+          "8227:TB:YM:C12:Example:1",
+          "8227:TB:YM:C12:Example:10",
+          "8227:TB:YM:C12:Example:13",
+          "8227:TB:YM:C12:Example:15",
+          "8227:TB:YM:C12:Example:16",
+          "8227:TB:YM:C12:Example:17",
+          "8227:TB:YM:C12:Example:18",
+          "8227:TB:YM:C12:Example:2",
+          "8227:TB:YM:C12:Example:23",
+          "8227:TB:YM:C12:Example:3",
+          "8227:TB:YM:C12:Example:4",
+          "8227:TB:YM:C12:Example:5",
+          "8227:TB:YM:C12:Example:6",
+          "8227:TB:YM:C12:Example:7",
+          "8227:TB:YM:C12:Example:8",
+          "8227:TB:YM:C12:Example:9",
+          "8227:TB:YM:C12:Exercise-12:1",
+          "8227:TB:YM:C12:Exercise-12:10",
+          "8227:TB:YM:C12:Exercise-12:11",
+          "8227:TB:YM:C12:Exercise-12:2",
+          "8227:TB:YM:C12:Exercise-12:3",
+          "8227:TB:YM:C12:Exercise-12:4",
+          "8227:TB:YM:C12:Exercise-12:5",
+          "8227:TB:YM:C12:Exercise-12:6",
+          "8227:TB:YM:C12:Exercise-12:7",
+          "8227:TB:YM:C12:Exercise-12:8",
+          "8227:TB:YM:C12:Exercise-12:9",
+          "8227:TB:YM:C12:Revision-Exercise-12:1",
+          "8227:TB:YM:C12:Revision-Exercise-12:2",
+          "8227:TB:YM:C12:Revision-Exercise-12:3",
+          "8227:TB:YM:C12:Revision-Exercise-12:4",
+          "8227:TB:YM:C12:Try-Now-10:1",
+          "8227:TB:YM:C12:Try-Now-10:2",
+          "8227:TB:YM:C12:Try-Now-15:1",
+          "8227:TB:YM:C12:Try-Now-15:2",
+          "8227:TB:YM:C12:Try-Now-15:3",
+          "8227:TB:YM:C12:Try-Now-15:4",
+          "8227:TB:YM:C12:Try-Now-16:1",
+          "8227:TB:YM:C12:Try-Now-16:2",
+          "8227:TB:YM:C12:Try-Now-16:3",
+          "8227:TB:YM:C12:Try-Now-17:1",
+          "8227:TB:YM:C12:Try-Now-17:2",
+          "8227:TB:YM:C12:Try-Now-17:3",
+          "8227:TB:YM:C12:Try-Now-18:1",
+          "8227:TB:YM:C12:Try-Now-18:2",
+          "8227:TB:YM:C12:Try-Now-18:3",
+          "8227:TB:YM:C12:Try-Now-23:1",
+          "8227:TB:YM:C12:Try-Now-23:2",
+          "8227:TB:YM:C12:Try-Now-2:1",
+          "8227:TB:YM:C12:Try-Now-2:2",
+          "8227:TB:YM:C12:Try-Now-2:3",
+          "8227:TB:YM:C12:Try-Now-2:4",
+          "8227:TB:YM:C12:Try-Now-3:1",
+          "8227:TB:YM:C12:Try-Now-3:2",
+          "8227:TB:YM:C12:Try-Now-3:3",
+          "8227:TB:YM:C12:Try-Now-4:1",
+          "8227:TB:YM:C12:Try-Now-4:2",
+          "8227:TB:YM:C12:Try-Now-4:3",
+          "8227:TB:YM:C12:Try-Now-5:1",
+          "8227:TB:YM:C12:Try-Now-5:2",
+          "8227:TB:YM:C12:Try-Now:1",
+          "8227:TB:YM:C12:Try-Now:12",
+          "8227:TB:YM:C12:Try-Now:13",
+          "8227:TB:YM:C12:Try-Now:6",
+          "8227:TB:YM:C12:Try-Now:7",
+          "8227:TB:YM:C12:Try-Now:8",
+          "8227:TB:YM:C12:Try-Now:9",
+          "8227:TB:YM:C12:Worked-illustration:1",
+          "8227:TB:YM:C13:Example:7",
+          "8227:TB:YM:C13:Exercise-13:2",
+          "8227:TB:YM:C13:Exercise-13:3",
+          "8227:TB:YM:C13:Exercise-13:4",
+          "8227:TB:YM:C13:Exercise-13:5",
+          "8227:TB:YM:C13:Revision-Exercise-13:3",
+          "8227:TB:YM:C13:Revision-Exercise-13:4",
+          "8227:TB:YM:C13:Try-Now-7:1",
+          "8227:TB:YM:C13:Try-Now-7:2",
+          "8227:TB:YM:C13:Try-Now-9:2",
+          "8227:TB:YM:C6:Example:21",
+          "8227:TB:YM:C6:Try-Now:21",
+          "8227:TB:YM:C7:Example:1",
+          "8227:TB:YM:C7:Example:10",
+          "8227:TB:YM:C7:Example:11",
+          "8227:TB:YM:C7:Example:13",
+          "8227:TB:YM:C7:Example:14",
+          "8227:TB:YM:C7:Example:15",
+          "8227:TB:YM:C7:Example:16",
+          "8227:TB:YM:C7:Example:17",
+          "8227:TB:YM:C7:Example:18",
+          "8227:TB:YM:C7:Example:19",
+          "8227:TB:YM:C7:Example:2",
+          "8227:TB:YM:C7:Example:20",
+          "8227:TB:YM:C7:Example:21",
+          "8227:TB:YM:C7:Example:22",
+          "8227:TB:YM:C7:Example:23",
+          "8227:TB:YM:C7:Example:24",
+          "8227:TB:YM:C7:Example:25",
+          "8227:TB:YM:C7:Example:26",
+          "8227:TB:YM:C7:Example:27",
+          "8227:TB:YM:C7:Example:28",
+          "8227:TB:YM:C7:Example:29",
+          "8227:TB:YM:C7:Example:3",
+          "8227:TB:YM:C7:Example:30",
+          "8227:TB:YM:C7:Example:31",
+          "8227:TB:YM:C7:Example:32",
+          "8227:TB:YM:C7:Example:33",
+          "8227:TB:YM:C7:Example:34",
+          "8227:TB:YM:C7:Example:35",
+          "8227:TB:YM:C7:Example:36",
+          "8227:TB:YM:C7:Example:37",
+          "8227:TB:YM:C7:Example:38",
+          "8227:TB:YM:C7:Example:39",
+          "8227:TB:YM:C7:Example:4",
+          "8227:TB:YM:C7:Example:40",
+          "8227:TB:YM:C7:Example:41",
+          "8227:TB:YM:C7:Example:5",
+          "8227:TB:YM:C7:Example:6",
+          "8227:TB:YM:C7:Example:7",
+          "8227:TB:YM:C7:Example:8",
+          "8227:TB:YM:C7:Example:9",
+          "8227:TB:YM:C7:Exercise-7:1",
+          "8227:TB:YM:C7:Exercise-7:10",
+          "8227:TB:YM:C7:Exercise-7:11",
+          "8227:TB:YM:C7:Exercise-7:2",
+          "8227:TB:YM:C7:Exercise-7:3",
+          "8227:TB:YM:C7:Exercise-7:4",
+          "8227:TB:YM:C7:Exercise-7:5",
+          "8227:TB:YM:C7:Exercise-7:6",
+          "8227:TB:YM:C7:Exercise-7:7",
+          "8227:TB:YM:C7:Exercise-7:8",
+          "8227:TB:YM:C7:Exercise-7:9",
+          "8227:TB:YM:C7:Revision-Exercise-7:1",
+          "8227:TB:YM:C7:Revision-Exercise-7:2",
+          "8227:TB:YM:C7:Revision-Exercise-7:3",
+          "8227:TB:YM:C7:Revision-Exercise-7:4",
+          "8227:TB:YM:C7:Try-Now-10:1",
+          "8227:TB:YM:C7:Try-Now-10:2",
+          "8227:TB:YM:C7:Try-Now-11:1",
+          "8227:TB:YM:C7:Try-Now-11:2",
+          "8227:TB:YM:C7:Try-Now-18:1",
+          "8227:TB:YM:C7:Try-Now-18:2",
+          "8227:TB:YM:C7:Try-Now-18:3",
+          "8227:TB:YM:C7:Try-Now-18:4",
+          "8227:TB:YM:C7:Try-Now-18:5",
+          "8227:TB:YM:C7:Try-Now-19:1",
+          "8227:TB:YM:C7:Try-Now-19:2",
+          "8227:TB:YM:C7:Try-Now-19:3",
+          "8227:TB:YM:C7:Try-Now-20:1",
+          "8227:TB:YM:C7:Try-Now-21:1",
+          "8227:TB:YM:C7:Try-Now-21:2",
+          "8227:TB:YM:C7:Try-Now-22:1",
+          "8227:TB:YM:C7:Try-Now-22:2",
+          "8227:TB:YM:C7:Try-Now-23:1",
+          "8227:TB:YM:C7:Try-Now-23:2",
+          "8227:TB:YM:C7:Try-Now-24:1",
+          "8227:TB:YM:C7:Try-Now-24:2",
+          "8227:TB:YM:C7:Try-Now-25:1",
+          "8227:TB:YM:C7:Try-Now-25:2",
+          "8227:TB:YM:C7:Try-Now-30:1",
+          "8227:TB:YM:C7:Try-Now-30:2",
+          "8227:TB:YM:C7:Try-Now-31:1",
+          "8227:TB:YM:C7:Try-Now-31:2",
+          "8227:TB:YM:C7:Try-Now-32:1",
+          "8227:TB:YM:C7:Try-Now-32:2",
+          "8227:TB:YM:C7:Try-Now-32:3",
+          "8227:TB:YM:C7:Try-Now-33:1",
+          "8227:TB:YM:C7:Try-Now-33:2",
+          "8227:TB:YM:C7:Try-Now-34:1",
+          "8227:TB:YM:C7:Try-Now-34:2",
+          "8227:TB:YM:C7:Try-Now-34:3",
+          "8227:TB:YM:C7:Try-Now-34:4",
+          "8227:TB:YM:C7:Try-Now-35:1",
+          "8227:TB:YM:C7:Try-Now-35:2",
+          "8227:TB:YM:C7:Try-Now-38:1",
+          "8227:TB:YM:C7:Try-Now-38:2",
+          "8227:TB:YM:C7:Try-Now-39:1",
+          "8227:TB:YM:C7:Try-Now-39:2",
+          "8227:TB:YM:C7:Try-Now-39:3",
+          "8227:TB:YM:C7:Try-Now-41:1",
+          "8227:TB:YM:C7:Try-Now-41:2",
+          "8227:TB:YM:C7:Try-Now-5:1",
+          "8227:TB:YM:C7:Try-Now-5:2",
+          "8227:TB:YM:C7:Try-Now-7:1",
+          "8227:TB:YM:C7:Try-Now-7:2",
+          "8227:TB:YM:C7:Try-Now-7:3",
+          "8227:TB:YM:C7:Try-Now-8:1",
+          "8227:TB:YM:C7:Try-Now-8:2",
+          "8227:TB:YM:C7:Try-Now-9:1",
+          "8227:TB:YM:C7:Try-Now-9:2",
+          "8227:TB:YM:C7:Try-Now-9:3",
+          "8227:TB:YM:C7:Try-Now-9:4",
+          "8227:TB:YM:C7:Try-Now:1",
+          "8227:TB:YM:C7:Try-Now:13",
+          "8227:TB:YM:C7:Try-Now:14",
+          "8227:TB:YM:C7:Try-Now:15",
+          "8227:TB:YM:C7:Try-Now:16",
+          "8227:TB:YM:C7:Try-Now:17",
+          "8227:TB:YM:C7:Try-Now:2",
+          "8227:TB:YM:C7:Try-Now:26",
+          "8227:TB:YM:C7:Try-Now:27",
+          "8227:TB:YM:C7:Try-Now:28",
+          "8227:TB:YM:C7:Try-Now:29",
+          "8227:TB:YM:C7:Try-Now:3",
+          "8227:TB:YM:C7:Try-Now:36",
+          "8227:TB:YM:C7:Try-Now:37",
+          "8227:TB:YM:C7:Try-Now:4",
+          "8227:TB:YM:C7:Try-Now:40",
+          "8227:TB:YM:C7:Try-Now:6",
+          "8227:TB:YM:C7:Worked-illustration:1"
+        ],
+        "adopted_families": [
+          "8227:TEXTBOOK-FAMILY:motion-two-integration-conditions",
+          "8227:TEXTBOOK-FAMILY:motion-vertical-events",
+          "8227:TEXTBOOK-FAMILY:motion-rest-and-bounded-speed",
+          "8227:TEXTBOOK-FAMILY:motion-distance-with-reversal",
+          "8227:TEXTBOOK-FAMILY:motion-positive-velocity-interval"
+        ],
+        "limits": "Discovery is complete for these exact union predicates; native re-reading is complete for every member of the adopted families, not every other union hit. Unselected union hits remain later-design leads, not proven rejections or absence."
+      },
+      "accepted_selection_ids": [
+        "8227:FAMILY:motion-integration",
+        "8227:FAMILY:motion-differentiation"
+      ]
+    }
+  ],
+  "counts": {
+    "recipes": 3,
+    "branches": 7,
+    "branch_qualified_capacity": 1035
+  },
+  "rights": "Textbook originals internal learner_display:false. Exemplars are newly authored paper design, not runtime items.",
+  "exemplar_cases": [
+    {
+      "case_id": "WB8227-implicit-normal:gradient:normal",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:gradient",
+      "case_role": "normal",
+      "parameters": {
+        "a": 3,
+        "k": 2,
+        "q": -4
+      },
+      "expected_answers": {
+        "curve_constant": 4,
+        "gradient": "-24/5",
+        "normal_slope": "5/24",
+        "normal_equation": "y-(-4)=(5/24)*x"
+      },
+      "mark_total": 5,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:gradient:changed",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:gradient",
+      "case_role": "changed",
+      "parameters": {
+        "a": 3,
+        "k": 1,
+        "q": -1
+      },
+      "expected_answers": {
+        "curve_constant": -2,
+        "gradient": "3",
+        "normal_slope": "-1/3",
+        "normal_equation": "y-(-1)=(-1/3)*x"
+      },
+      "mark_total": 5,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:gradient:boundary",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:gradient",
+      "case_role": "boundary",
+      "parameters": {
+        "a": 4,
+        "k": 3,
+        "q": -5
+      },
+      "expected_answers": {
+        "curve_constant": 5,
+        "gradient": "-10",
+        "normal_slope": "1/10",
+        "normal_equation": "y-(-5)=(1/10)*x"
+      },
+      "mark_total": 5,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:normal",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:normal",
+      "case_role": "normal",
+      "parameters": {
+        "a": 3,
+        "k": 2,
+        "q": -4
+      },
+      "expected_answers": {
+        "curve_constant": 4,
+        "gradient": "-24/5",
+        "normal_slope": "5/24",
+        "normal_equation": "y-(-4)=(5/24)*x"
+      },
+      "mark_total": 7,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:changed",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:normal",
+      "case_role": "changed",
+      "parameters": {
+        "a": 3,
+        "k": 1,
+        "q": -1
+      },
+      "expected_answers": {
+        "curve_constant": -2,
+        "gradient": "3",
+        "normal_slope": "-1/3",
+        "normal_equation": "y-(-1)=(-1/3)*x"
+      },
+      "mark_total": 7,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:boundary",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:normal",
+      "case_role": "boundary",
+      "parameters": {
+        "a": 4,
+        "k": 3,
+        "q": -5
+      },
+      "expected_answers": {
+        "curve_constant": 5,
+        "gradient": "-10",
+        "normal_slope": "1/10",
+        "normal_equation": "y-(-5)=(1/10)*x"
+      },
+      "mark_total": 7,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:normal",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:two-extrema",
+      "case_role": "normal",
+      "parameters": {
+        "a": 1,
+        "h": 0,
+        "r": 1,
+        "c": 2
+      },
+      "expected_answers": {
+        "points": [
+          [
+            -1,
+            4
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "classifications": [
+          "maximum",
+          "minimum"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:changed",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:two-extrema",
+      "case_role": "changed",
+      "parameters": {
+        "a": -1,
+        "h": 1,
+        "r": 2,
+        "c": 0
+      },
+      "expected_answers": {
+        "points": [
+          [
+            -1,
+            -16
+          ],
+          [
+            3,
+            16
+          ]
+        ],
+        "classifications": [
+          "minimum",
+          "maximum"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:boundary",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:two-extrema",
+      "case_role": "boundary",
+      "parameters": {
+        "a": -2,
+        "h": -2,
+        "r": 3,
+        "c": 4
+      },
+      "expected_answers": {
+        "points": [
+          [
+            -5,
+            -104
+          ],
+          [
+            1,
+            112
+          ]
+        ],
+        "classifications": [
+          "minimum",
+          "maximum"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:stationary-inflexion:normal",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:stationary-inflexion",
+      "case_role": "normal",
+      "parameters": {
+        "a": 1,
+        "h": 1,
+        "c": -2
+      },
+      "expected_answers": {
+        "point": [
+          1,
+          -2
+        ],
+        "classification": "stationary inflexion",
+        "second_derivative_at_point": 0,
+        "concavity_signs": [
+          "negative",
+          "positive"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:stationary-inflexion:changed",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:stationary-inflexion",
+      "case_role": "changed",
+      "parameters": {
+        "a": -1,
+        "h": -2,
+        "c": 3
+      },
+      "expected_answers": {
+        "point": [
+          -2,
+          3
+        ],
+        "classification": "stationary inflexion",
+        "second_derivative_at_point": 0,
+        "concavity_signs": [
+          "positive",
+          "negative"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:stationary-inflexion:boundary",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:stationary-inflexion",
+      "case_role": "boundary",
+      "parameters": {
+        "a": -2,
+        "h": 2,
+        "c": -4
+      },
+      "expected_answers": {
+        "point": [
+          2,
+          -4
+        ],
+        "classification": "stationary inflexion",
+        "second_derivative_at_point": 0,
+        "concavity_signs": [
+          "positive",
+          "negative"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:normal",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:polynomial-chain",
+      "case_role": "normal",
+      "parameters": {
+        "A": 2,
+        "B": 1,
+        "u": 3,
+        "T": 2
+      },
+      "expected_answers": {
+        "velocity": "2*t**2+1*t+3",
+        "distance": "40/3"
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:changed",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:polynomial-chain",
+      "case_role": "changed",
+      "parameters": {
+        "A": 1,
+        "B": 0,
+        "u": 1,
+        "T": 3
+      },
+      "expected_answers": {
+        "velocity": "1*t**2+0*t+1",
+        "distance": "12"
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:boundary",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:polynomial-chain",
+      "case_role": "boundary",
+      "parameters": {
+        "A": 3,
+        "B": 2,
+        "u": 4,
+        "T": 4
+      },
+      "expected_answers": {
+        "velocity": "3*t**2+2*t+4",
+        "distance": "96"
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:normal",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:exponential-positive",
+      "case_role": "normal",
+      "parameters": {
+        "V": 12,
+        "k": "1/2",
+        "T": 2
+      },
+      "expected_answers": {
+        "acceleration": "-6*exp(-t/2)",
+        "distance_exact": "24 - 24*exp(-1)",
+        "distance_3sf": "15.2"
+      },
+      "mark_total": 5,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:changed",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:exponential-positive",
+      "case_role": "changed",
+      "parameters": {
+        "V": 18,
+        "k": "1",
+        "T": 3
+      },
+      "expected_answers": {
+        "acceleration": "-18*exp(-t)",
+        "distance_exact": "18 - 18*exp(-3)",
+        "distance_3sf": "17.1"
+      },
+      "mark_total": 5,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:boundary",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:exponential-positive",
+      "case_role": "boundary",
+      "parameters": {
+        "V": 30,
+        "k": "1/4",
+        "T": 4
+      },
+      "expected_answers": {
+        "acceleration": "-15*exp(-t/4)/2",
+        "distance_exact": "120 - 120*exp(-1)",
+        "distance_3sf": "75.9"
+      },
+      "mark_total": 5,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:normal",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:interior-reversal",
+      "case_role": "normal",
+      "parameters": {
+        "k": 2,
+        "r": 1,
+        "s": 2
+      },
+      "expected_answers": {
+        "T": 3,
+        "rest": 1,
+        "displacement": "3",
+        "distance": "5"
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:changed",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:interior-reversal",
+      "case_role": "changed",
+      "parameters": {
+        "k": 1,
+        "r": 2,
+        "s": 2
+      },
+      "expected_answers": {
+        "T": 4,
+        "rest": 2,
+        "displacement": "0",
+        "distance": "4"
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:boundary",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:interior-reversal",
+      "case_role": "boundary",
+      "parameters": {
+        "k": 3,
+        "r": 3,
+        "s": 1
+      },
+      "expected_answers": {
+        "T": 4,
+        "rest": 3,
+        "displacement": "-12",
+        "distance": "15"
+      },
+      "mark_total": 6,
+      "origin": "newly authored paper-design exemplar; not a runtime item",
+      "planner_independent_check": "pass; explicit quadratic branch / expanded polynomial differentiation / differentiation recovery / signed velocity triangles, as applicable; not independent vendor review"
+    }
+  ]
+}

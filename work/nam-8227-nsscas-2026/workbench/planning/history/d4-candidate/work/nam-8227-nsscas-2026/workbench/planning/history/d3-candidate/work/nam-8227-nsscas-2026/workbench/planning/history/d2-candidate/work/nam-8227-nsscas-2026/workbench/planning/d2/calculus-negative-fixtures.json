@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "fixtures": [
+    {
+      "fixture": "implicit-chain",
+      "result": "rejected",
+      "exit_code": 1,
+      "expected_reason": "D1 implicit chain/domain discrimination failed",
+      "positive_output_hashes_unchanged": true
+    },
+    {
+      "fixture": "implicit-original",
+      "result": "rejected",
+      "exit_code": 1,
+      "expected_reason": "D1 official original leaked into fresh pool",
+      "positive_output_hashes_unchanged": true
+    },
+    {
+      "fixture": "proof-given-answer-credit",
+      "result": "rejected",
+      "exit_code": 1,
+      "expected_reason": "D1 no-follow-through into given proof result failed",
+      "positive_output_hashes_unchanged": true
+    },
+    {
+      "fixture": "index-error-accuracy-credit",
+      "result": "rejected",
+      "exit_code": 1,
+      "expected_reason": "D2 wrong e-index numerical coincidence earned G5",
+      "positive_output_hashes_unchanged": true
+    },
+    {
+      "fixture": "classification-analyse",
+      "result": "rejected",
+      "exit_code": 1,
+      "expected_reason": "D2 stationary classification must be Apply3 under OD4",
+      "positive_output_hashes_unchanged": true
+    },
+    {
+      "fixture": "alternative-proof-missing-slot",
+      "result": "rejected",
+      "exit_code": 1,
+      "expected_reason": "D2 valid alternative proof has an unmapped criterion",
+      "positive_output_hashes_unchanged": true
+    }
+  ],
+  "positive_output_hashes": {
+    "work/nam-8227-nsscas-2026/workbench/planning/d2/calculus-domain-audit.json": "f1e82f6838bd3510d92024779ef252d8c5258d57afd07781c24daaefede1c193",
+    "work/nam-8227-nsscas-2026/workbench/planning/d2/calculus-exemplar-oracle.json": "03c5a5550be2b617f7e86ff8b624c7530beb1a3bd4d101096738042b9301fcd2"
+  },
+  "limit": "Design-only local seeds; not runtime marking/recipe acceptance."
+}

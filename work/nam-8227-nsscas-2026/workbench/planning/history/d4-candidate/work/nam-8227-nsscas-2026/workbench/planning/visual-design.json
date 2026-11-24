@@ -1,0 +1,1000 @@
+{
+  "subject": "NSSCAS Mathematics 8227 (2020)",
+  "owner": "Vitalis",
+  "role": "PLANNER",
+  "date": "2026-11-24",
+  "status": "D4 paper-design proposal; no runtime resources; confirmation then Vitalis approval pending",
+  "recipes": [
+    {
+      "recipe_id": "WB8227-modulus-graph-recovery",
+      "title": "Recover an integer modulus model from its graph",
+      "proposed_version": "0.1.4",
+      "selection_ids": [
+        "8227:D:SEL:modulus-graph-recovery:vertex-intercepts"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2023:P2:Q2:answer"
+      ],
+      "work_order_path": "work-orders/WB8227-modulus-graph-recovery.md",
+      "exemplar_path": "exemplars/WB8227-modulus-graph-recovery.md",
+      "branches": [
+        {
+          "branch_id": "vertex-intercepts",
+          "part_specs": [
+            {
+              "part_id": "a",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T1:O02:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T1:O02"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T1:O01:D01",
+                  "role": "prerequisite, not direct coverage"
+                }
+              ],
+              "marks": 3,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-modulus-graph-recovery:a:B1",
+                  "WB8227-modulus-graph-recovery:a:B2",
+                  "WB8227-modulus-graph-recovery:a:B3"
+                ],
+                "rationale": "Apply familiar modulus-translation/point-substitution rules; three independent coefficient criteria directly assess reconstruction, not creation of a new model."
+              },
+              "response_format": "numeric",
+              "primary_objective_id": "8227:2020:M2:T1:O02",
+              "answer_only_marks": 3,
+              "answer_only_rule": "Official2023P2Q2 B1www each: correct unambiguous named a,b,c OR values in correct formula positions earn up to3without wrong working. Correct coefficient from shown wrong working does not earn its www award. Practice may ask for reasoning without withholding earned credit.",
+              "answer_only_exception": true,
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-modulus-graph-recovery:a:B1",
+                  "mark_type": "B",
+                  "value": 1,
+                  "qualifiers": [
+                    "www"
+                  ],
+                  "required": "Correct canonical a, no wrong working for it; named value or unambiguous formula position accepted",
+                  "source_row": "8227:EXAM:2023:P2:Q2:AWARD:01"
+                },
+                {
+                  "criterion_id": "WB8227-modulus-graph-recovery:a:B2",
+                  "mark_type": "B",
+                  "value": 1,
+                  "qualifiers": [
+                    "www"
+                  ],
+                  "required": "Correct canonical b, no wrong working for it; named value or unambiguous formula position accepted",
+                  "source_row": "8227:EXAM:2023:P2:Q2:AWARD:02"
+                },
+                {
+                  "criterion_id": "WB8227-modulus-graph-recovery:a:B3",
+                  "mark_type": "B",
+                  "value": 1,
+                  "qualifiers": [
+                    "www"
+                  ],
+                  "required": "Correct canonical c, no wrong working for it; named value or unambiguous formula position accepted",
+                  "source_row": "8227:EXAM:2023:P2:Q2:AWARD:03"
+                }
+              ],
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+              }
+            }
+          ],
+          "whole_card_bloom": 3,
+          "capacity": 44,
+          "domain": "a,b in {-3,-2,-1,1,2,3}; d in{1,2,3}; c=-a*d; reject d=1,|b|=1,b=a(|b|-d),and original(-2,-3,1). Full union filter108→44.",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "2",
+              "part": null,
+              "printed_page": 3,
+              "pdf_page": 3,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Part-scoped same-type comparison for this D1 branch; source identity and disposition retained; no original tuple is in the fresh pool.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 2, page 3",
+              "applies_to_part_ids": [
+                "a"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            }
+          ],
+          "direct_coverage_limit": "Parameter recovery only; supplied graph does not assess learner sketching.",
+          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+          "capacity_analysis": {
+            "raw_domain_count": 108,
+            "admitted_raw_count": 44,
+            "semantic_task_count": 44,
+            "part_semantic_counts": {
+              "a": 44
+            },
+            "strict_all_assessed_parts_unseen_capacity": 44,
+            "check_path": "planning/d3/visual-domain-checks.json"
+          }
+        }
+      ],
+      "deferred_facets": [
+        "Equation-to-sketch responses, modulus inequalities and graph comparison are outside this recipe."
+      ],
+      "source_evidence": "planning/visual-source-reads.json",
+      "capability_requirements": [
+        "Consistent parameter-driven given graph with readable must-read labels",
+        "Symbolic or numeric coefficient response, criterion links and frozen graph history"
+      ],
+      "status": "D4 proposed paper design; Claude changed-scope confirmation then Vitalis exact-manifest approval pending",
+      "accepted_selection_ids": [
+        "8227:FAMILY:modulus-reading"
+      ],
+      "selection_parent_mapping": {
+        "design_selection_id": "8227:D:SEL:modulus-graph-recovery:vertex-intercepts",
+        "accepted_selection_ids": [
+          "8227:FAMILY:modulus-reading"
+        ],
+        "relationship": "Narrow pilot branch of accepted C selection; other facets remain visible deferred, not excluded from syllabus."
+      }
+    },
+    {
+      "recipe_id": "WB8227-trapezium-sketch-estimate",
+      "title": "Connect a logarithmic trapezium estimate, sketch and bias",
+      "proposed_version": "0.1.4",
+      "selection_ids": [
+        "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2023:P2:Q6:a",
+        "8227:EXAM:2023:P2:Q6:b",
+        "8227:EXAM:2023:P2:Q6:c",
+        "8227:EXAM:2023:P2:Q6:d"
+      ],
+      "work_order_path": "work-orders/WB8227-trapezium-sketch-estimate.md",
+      "exemplar_path": "exemplars/WB8227-trapezium-sketch-estimate.md",
+      "branches": [
+        {
+          "branch_id": "logarithmic-hence-chain",
+          "part_specs": [
+            {
+              "part_id": "a",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T5:O03:D01",
+                "8227:2020:M2:T5:O03:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T5:O03"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-trapezium-sketch-estimate:a:B1",
+                  "WB8227-trapezium-sketch-estimate:a:M1",
+                  "WB8227-trapezium-sketch-estimate:a:A1"
+                ],
+                "rationale": "Execute the prescribed equal-width quadrature and rounding; width/weight/result criteria."
+              },
+              "response_format": "numeric",
+              "primary_objective_id": "8227:2020:M2:T5:O03",
+              "answer_only_marks": 0,
+              "answer_only_rule": "OD-1/D1-MR01: unsupported terminal numeric answer earns0; preserve any demonstrated working.",
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+              },
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:a:B1",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Positive width L/n, possibly unsimplified or inside formula",
+                  "qualifiers": []
+                },
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:a:M1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "required": "Correct trapezium weights or actual area sum with positive width",
+                  "qualifiers": []
+                },
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:a:A1",
+                  "mark_type": "A",
+                  "value": 1,
+                  "required": "Canonical3sf-correct estimate with required working",
+                  "qualifiers": []
+                }
+              ]
+            },
+            {
+              "part_id": "b",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T5:O03:D02",
+                "8227:2020:M2:T2:O01:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T2:O01",
+                "8227:2020:M2:T5:O03"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T2:O01:D01",
+                  "role": "prerequisite, not direct coverage"
+                }
+              ],
+              "marks": 2,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-trapezium-sketch-estimate:b:B1",
+                  "WB8227-trapezium-sketch-estimate:b:B2"
+                ],
+                "rationale": "Apply factorisation, logarithm law and hence scale; transformation/reuse criteria."
+              },
+              "response_format": "numeric",
+              "primary_objective_id": "8227:2020:M2:T2:O01",
+              "answer_only_marks": 0,
+              "answer_only_rule": "OD-1/D1-MR01: unsupported terminal numeric answer earns0; preserve any demonstrated working.",
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+              },
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:b:B1",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Factorised square k ln((x-h)^2) alone, correct 2k ln(x-h), or 2k scale visibly derived using ln((x-h)^2)=2 ln(x-h); bare J=2kT alone does not earn B1",
+                  "qualifiers": []
+                },
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:b:B2",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Correct visible 2k scale times own(a) final/working value; exact product or any 3sf-correct representation. Visibly wrong log-law reasoning invalidates B2 (www), even when the numeric multiplier coincides. Missing factorisation/log-law derivation alone does not prevent this B2 when the correct visible product is shown; B1 separately assesses that form/derivation.",
+                  "qualifiers": [
+                    "FT",
+                    "www",
+                    "D4 proposed clarification; final-manifest approval pending"
+                  ]
+                }
+              ]
+            },
+            {
+              "part_id": "c",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T2:O02:D02",
+                "8227:2020:M2:T5:O04:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T2:O02",
+                "8227:2020:M2:T5:O04"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T2:O02:D01",
+                  "role": "prerequisite, not direct coverage"
+                }
+              ],
+              "marks": 3,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-trapezium-sketch-estimate:c:B1",
+                  "WB8227-trapezium-sketch-estimate:c:B2",
+                  "WB8227-trapezium-sketch-estimate:c:B3"
+                ],
+                "rationale": "Apply a familiar logarithm transformation to produce shape/asymptote/intercept; three sketch criteria."
+              },
+              "response_format": "sketch",
+              "primary_objective_id": "8227:2020:M2:T5:O04",
+              "answer_only_marks": 3,
+              "answer_only_rule": "A complete correct sketch alone conveys the assessed visual evidence and earns3/3without separate prose. This is an official feature-award exception; unsupported text/numeric answer0.",
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+              },
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:c:B1",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Single log curve with correct shape relative to the boundary it approaches (drawn or implied), not necessarily a drawn asymptote; location separately assessed. Multiple function graphs give B0; unlabelled curves are never selected by shape.",
+                  "qualifiers": []
+                },
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:c:B2",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Canonical x=h asymptote identified on requested sketch",
+                  "qualifiers": []
+                },
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:c:B3",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Canonical(h+1,0) labelled on requested sketch",
+                  "qualifiers": []
+                }
+              ],
+              "response_evidence_marks": 3,
+              "answer_only_exception": true
+            },
+            {
+              "part_id": "d",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T5:O04:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T5:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 2,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-trapezium-sketch-estimate:d:B1",
+                  "WB8227-trapezium-sketch-estimate:d:DB1"
+                ],
+                "rationale": "Apply the fixed logarithmic chord/curve rule to the own-sketch context. Outcome is always underestimate; no Analyse decision is claimed. Only d:B1 and d:DB1 support this part."
+              },
+              "response_format": "explanation",
+              "primary_objective_id": "8227:2020:M2:T5:O04",
+              "answer_only_marks": 1,
+              "answer_only_rule": "Bare bias word without own sketch0; bias word supported by own submitted sketch can earn B1 only. Dependent reason requires verbal geometry or chord/overlay+brief statement.",
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+              },
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:d:B1",
+                  "mark_type": "B",
+                  "value": 1,
+                  "required": "Conclusion correct from own identifiable graph",
+                  "qualifiers": [
+                    "FT"
+                  ]
+                },
+                {
+                  "criterion_id": "WB8227-trapezium-sketch-estimate:d:DB1",
+                  "mark_type": "DB",
+                  "value": 1,
+                  "required": "Chord/trapezium position correct relative to same own curve; verbal reason or drawn chord+brief referringstatement; depends on d:B1",
+                  "qualifiers": [
+                    "depends-on:d:B1",
+                    "OD-5:own-curve-FT"
+                  ]
+                }
+              ],
+              "answer_only_exception": true,
+              "answer_only_condition": "Biasword backed by own identifiable submittedsketch canearn sourceB1; withoutsketch0. DB1needsgeometricreason."
+            }
+          ],
+          "whole_card_bloom": 3,
+          "capacity": 30,
+          "domain": "h in{1,2,3};L in{4,8};n in{2,4};k in{1,2,3};interval[h+1,h+1+L]. Exclude(h,L,n)=(2,8,4) for ALL k (original parts), and(L,n,k)=(4,4,2) for ALL h (squaring collision at marked3sf).36raw→30admitted;11semantic(L,n,k)contexts;part keys4/11/3/11;mathematical packing 3 (includes attributed h=2 sketch); strict generated-fresh packing 2 before exposures, after blocking h=2.",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "6",
+              "part": "a",
+              "printed_page": 10,
+              "pdf_page": 10,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Part-scoped same-type source; exact(h,L,n)=(2,8,4) sourceparts excluded for every k. Shared numerical outcomes under other translations are disclosed; no original is disguised as a generated variant.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 6(a), page 10",
+              "applies_to_part_ids": [
+                "a"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "6",
+              "part": "b",
+              "printed_page": 10,
+              "pdf_page": 10,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Part-scoped same-type source; exact(h,L,n)=(2,8,4) sourceparts excluded for every k. Shared numerical outcomes under other translations are disclosed; no original is disguised as a generated variant.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 6(b), page 10",
+              "applies_to_part_ids": [
+                "b"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "6",
+              "part": "c",
+              "printed_page": 11,
+              "pdf_page": 11,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Part-scoped same-type source; exact(h,L,n)=(2,8,4) sourceparts excluded for every k. Shared numerical outcomes under other translations are disclosed; no original is disguised as a generated variant.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 6(c), page 11",
+              "applies_to_part_ids": [
+                "c"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "6",
+              "part": "d",
+              "printed_page": 11,
+              "pdf_page": 11,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Part-scoped same-type source; exact(h,L,n)=(2,8,4) sourceparts excluded for every k. Shared numerical outcomes under other translations are disclosed; no original is disguised as a generated variant.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 6(d), page 11",
+              "applies_to_part_ids": [
+                "d"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            }
+          ],
+          "dependencies": [
+            {
+              "from_part": "a",
+              "to_part": "b",
+              "type": "cue",
+              "reason": "Hence reuse estimate"
+            },
+            {
+              "from_part": "a",
+              "to_part": "b",
+              "type": "follow-through",
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B2"
+            },
+            {
+              "from_part": "a",
+              "to_part": "d",
+              "type": "cue",
+              "reason": "Assess bias of estimate(a)"
+            },
+            {
+              "from_part": "c",
+              "to_part": "d",
+              "type": "cue",
+              "reason": "Use own sketch"
+            },
+            {
+              "from_part": "c",
+              "to_part": "d",
+              "type": "follow-through",
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:B1",
+              "also_applies_to_criterion_ids": [
+                "WB8227-trapezium-sketch-estimate:d:DB1"
+              ],
+              "reason": "B1 follows own identifiable curve per2023Q6; DB1 follows same own curve under OD-5 bridge"
+            }
+          ],
+          "direct_coverage_limit": "One concave-down logarithmic chain; not all trapezium functions, over-estimate branches or refinement investigations.",
+          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+          "capacity_analysis": {
+            "raw_domain_count": 36,
+            "admitted_raw_count": 30,
+            "semantic_task_count": 11,
+            "part_semantic_counts": {
+              "a": 4,
+              "b": 11,
+              "c": 3,
+              "d": 11
+            },
+            "strict_all_assessed_parts_unseen_capacity": 2,
+            "check_path": "planning/d3/visual-domain-checks.json",
+            "canonical_bias_outcome_classes": 1,
+            "raw_to_semantic_presentation_collisions": 19,
+            "mathematical_all_parts_unseen_packing": 3,
+            "strict_generated_fresh_capacity": 2,
+            "fully_generated_raw_presentations": 22,
+            "fully_generated_part_semantic_counts": {
+              "a": 4,
+              "b": 11,
+              "c": 2,
+              "d": 8
+            },
+            "strict_capacity_definition": "Strict generated-fresh packing, excluding h=2 original sketch; mathematical all-parts packing is separately 3."
+          },
+          "multiple_graph_policy": "Multiple unlabelled function graphs: c0/3 and d0/2 even if one looks like the requested logarithm; never choose by shape. A uniquely explicitly labelled requested curve permits its c:B2/B3 and d evidence to be assessed, but c:B1=0 for multiple function graphs. Axes, drawn/implied asymptote and chord guides are not extra function graphs.",
+          "accepted_answer_rule": "b:B2 follows2k times the learner own(a) value present in final answer or coherent working; canonical-path strings are fixtures, not a closed whitelist. Exact products and3sf-correct renderings accepted. More precision accepted when rounding to3sf agrees with eligible product.",
+          "primary_role_rationale": "Design part(b) makes the square/log-law transformation its principal evidence (M2:T2:O01), with rescaling O03 retained as otherdirect; part(c) primarily supports the numerical-method sketch/bias chain(M2:T5:O04), with log-graph O02 otherdirect. The accepted2023analysis uses primary O03 for(b) and loggraphO02 for(c); no accepted source mapping is retagged.",
+          "original_subtask_policy": {
+            "when": {
+              "h": 2
+            },
+            "part_id": "c",
+            "status": "attributed-original-only,outside-generated-freshness",
+            "blocked_generated_fresh_part_key": [
+              "log-sketch",
+              2
+            ],
+            "examination_reference": {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "6",
+              "part": "c",
+              "printed_page": 11,
+              "pdf_page": 11,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "original",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed original subtask, only for h=2; never called a fresh generated variant or whole-card original.",
+              "learner_label": "NSSCAS Mathematics 8227, 2023 Paper 2, Question 6(c), page 11",
+              "applies_to_part_ids": [
+                "c"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            },
+            "override_same_type_reference": true,
+            "verbatim_text": "Sketch the graph of $y=\\ln(x-2)$.\nLabel any points of intersection of the curve with the axes.",
+            "transcription_status": "Checked on native2023P2 PDF11 contrast-only rendered page duringD2; no paraphrase presented as original",
+            "whole_question_is_original": false,
+            "rule": "A generated-fresh request cannot select h=2. An explicit attributed-original/mixed practice route may show this subtask with its original wording/label; it is not wholly generated-fresh.",
+            "near_copy_disclosure": "Remaining (h,L,n)=(2,8,2) integrals are near-copies of 2023 Q6 with changed strip count (and possibly k); original/mixed practice only because c is the attributed original. No new domain exclusion or freshness reset."
+          },
+          "generated_fresh_exposure_rule": "Packing 2 is before any examples. After one generated worked example using h=1 or h=3 is shown, at most 1 wholly fresh complete task remains (further used a/b/d keys may exhaust it sooner); track all assessed part keys. Mathematical packing 3 is not a generated-fresh promise.",
+          "scale_slip_feedback_fixture": "At k=2, k^2 and k+2 happen to equal 2k=4. The value coincidence alone is not a numerical misconception. Seeing the correct factorised square earns b:B1 (official row04); visibly wrong log-law reasoning then loses b:B2 under its correct-working (www) requirement, even if the numerical scale coincides. The normal fixture therefore earns b1/2, total9/10. This is a feedback fixture and a proposed D4 marking clarification, not an OD-1 penalty. No domain change."
+        }
+      ],
+      "deferred_facets": [
+        "Concave-up/over-estimate and mixed-curvature cases, oscillation/refinement, table-only contexts remain later distinct branches/recipes."
+      ],
+      "source_evidence": "planning/visual-source-reads.json",
+      "capability_requirements": [
+        "Learner sketch capture and criterion-level shape/asymptote/intercept evidence",
+        "Marker links explanation to own sketch and retains numerical follow-through"
+      ],
+      "status": "D4 proposed paper design; Claude changed-scope confirmation then Vitalis exact-manifest approval pending",
+      "accepted_selection_ids": [
+        "8227:FAMILY:trapezium-chain"
+      ],
+      "selection_parent_mapping": {
+        "design_selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+        "accepted_selection_ids": [
+          "8227:FAMILY:trapezium-chain"
+        ],
+        "relationship": "Narrow pilot branch of accepted C selection; other facets remain visible deferred, not excluded from syllabus."
+      }
+    },
+    {
+      "recipe_id": "WB8227-vector-geometry",
+      "title": "Solve perpendicularity and a three-dimensional vector angle",
+      "proposed_version": "0.1.4",
+      "selection_ids": [
+        "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2025:P1:Q3:a",
+        "8227:EXAM:2025:P1:Q3:b"
+      ],
+      "work_order_path": "work-orders/WB8227-vector-geometry.md",
+      "exemplar_path": "exemplars/WB8227-vector-geometry.md",
+      "branches": [
+        {
+          "branch_id": "scalar-combination-and-origin-angle",
+          "part_specs": [
+            {
+              "part_id": "a",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T7:O02:D01",
+                "8227:2020:M1:T7:O02:D02",
+                "8227:2020:M1:T7:O04:D02",
+                "8227:2020:M1:T7:O05:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T7:O02",
+                "8227:2020:M1:T7:O04",
+                "8227:2020:M1:T7:O05"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T7:O01:D02",
+                  "role": "prerequisite, not direct coverage"
+                }
+              ],
+              "marks": 3,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-vector-geometry:a:B1",
+                  "WB8227-vector-geometry:a:M1",
+                  "WB8227-vector-geometry:a:A1"
+                ],
+                "rationale": "Apply scalar multiplication and addition/subtraction to form the prescribed resultant, then the perpendicular dot-product zero test; only a:B1,a:M1,a:A1."
+              },
+              "response_format": "numeric",
+              "primary_objective_id": "8227:2020:M1:T7:O05",
+              "answer_only_marks": 0,
+              "answer_only_rule": "OD-1/D1-MR01: unsupported terminal numeric answer earns0; preserve any demonstrated working.",
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "An OA misread that removes every p solution is ineligible in both parts: canonical a1/3+b2/4=3/7. An eligible OB sign misread plus wrong resultant retains gross5/7 and deducts the first later B1, net4/7."
+              },
+              "setup_form_policy": "Distributed(p,rp,p)-(s,1,-1), combinedcomponents, or correct expanded scalar-product setup earns a:B1. Undistributed p(1,r,1)-(s,1,-1) merely restates prompt and earns B0 unless scaledcomponents are shown."
+            },
+            {
+              "part_id": "b",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T7:O04:D01",
+                "8227:2020:M1:T7:O04:D02",
+                "8227:2020:M1:T7:O05:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T7:O04",
+                "8227:2020:M1:T7:O05"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T7:O01:D02",
+                  "role": "prerequisite, not direct coverage"
+                }
+              ],
+              "marks": 4,
+              "bloom": {
+                "level": 3,
+                "classification_version": "8227-pilot-design-0.1.1",
+                "status": "D4 proposal; changed-scope confirmation then Vitalis approval pending",
+                "criterion_ids": [
+                  "WB8227-vector-geometry:b:B1",
+                  "WB8227-vector-geometry:b:M1",
+                  "WB8227-vector-geometry:b:M2",
+                  "WB8227-vector-geometry:b:A1"
+                ],
+                "rationale": "Apply the explicitly requested scalar-product angle formula to two supplied vectors; dot/magnitude/equation/result criteria."
+              },
+              "response_format": "numeric",
+              "primary_objective_id": "8227:2020:M1:T7:O05",
+              "answer_only_marks": 0,
+              "answer_only_rule": "OD-1/D1-MR01: unsupported terminal numeric answer earns0; preserve any demonstrated working.",
+              "misread_policy": {
+                "policy_id": "MR03-D4",
+                "owner_principle_id": "OD-6",
+                "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+                "operational_policy_id": "MR03-OPS-D4",
+                "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+                "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved.",
+                "feedback": "Practice feedback names the misread.",
+                "ledger_fields": [
+                  "datum_id",
+                  "canonical_value",
+                  "misread_value",
+                  "eligible",
+                  "eligibility_reason",
+                  "first_use_part",
+                  "gross_awards",
+                  "deducted_part",
+                  "deducted_criterion",
+                  "amount",
+                  "net_awards"
+                ],
+                "sources": [
+                  "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+                  "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+                ],
+                "eligibility_notes": "An OA misread that removes every p solution is ineligible in both parts: canonical a1/3+b2/4=3/7. An eligible OB sign misread plus wrong resultant retains gross5/7 and deducts the first later B1, net4/7."
+              },
+              "answer_form_policy": "Non-exact angles require visible1decimalplace, including80.0and63.0; naked80or63reject A1 although numericallyequal. Exactly60or90are exempt from trailingzero. Preserve raw entered form in future app.",
+              "precision_fixture_path": "planning/d3/visual-rounding-fixtures.json"
+            }
+          ],
+          "whole_card_bloom": 3,
+          "capacity": 30,
+          "domain": "OA=(1,r,1), OB=(s,1,-1), OC=(1,t,1); r,t in{1,2,3},s in{-3,-2,-1,1,2,3}; reject r=t,p=0,and3-s+rt-t=0. Raw54→30; part(b)17pairs.",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "1",
+              "question": "3",
+              "part": "a",
+              "printed_page": 4,
+              "pdf_page": 4,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+              "source_sha256": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER D1, native2025report346–347 reread2026-11-23; Claude short check pending",
+              "learner_display": true,
+              "learner_display_reason": "Part(a) specific: corrected D01 add/subtract and D02 scalar-multiply set matches source; same supplied three vectors, scalar difference, perpendicular target and numeric parameter response. D1 native pages346–347 confirm method/scaffold; not inherited from part(b).",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2025 Paper 1, Question 3(a), page 4",
+              "applies_to_part_ids": [
+                "a"
+              ],
+              "comparison_reason": "Direct demand set equals accepted2025P1Q3(a) after correcting D01/D02 mapping; numeric response, supplied-vector type and no dependence on other parts agree."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "1",
+              "question": "3",
+              "part": "b",
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+              "source_sha256": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER, native page read 2026-11-23; design judgement pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2025 Paper 1, Question 3(b), page 5",
+              "applies_to_part_ids": [
+                "b"
+              ],
+              "comparison_reason": "Direct demand set, response format and connected scaffolding match this selected part; native page checked 2026-11-23."
+            }
+          ],
+          "direct_coverage_limit": "No3D coordinate reconstruction, segment division or unit-vector demand; A!=C and p=0/identity wrong-method collisions excluded. Part(a) now matches source direct demands; O02:D03 geometric interpretation is not claimed.",
+          "classification_status": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+          "capacity_analysis": {
+            "raw_domain_count": 54,
+            "admitted_raw_count": 30,
+            "semantic_task_count": 30,
+            "part_semantic_counts": {
+              "a": 30,
+              "b": 17
+            },
+            "strict_all_assessed_parts_unseen_capacity": 17,
+            "check_path": "planning/d3/visual-domain-checks.json"
+          }
+        }
+      ],
+      "deferred_facets": [
+        "Spatial diagram-to-coordinate reconstruction, unit-vector construction, internal/external division, geometric proof and line equations are not covered."
+      ],
+      "source_evidence": "planning/visual-source-reads.json",
+      "capability_requirements": [
+        "Safe column-vector rendering and reliable degree/radian notation",
+        "Method-sensitive scalar-product marking with angle direction and explicit follow-through"
+      ],
+      "status": "D4 proposed paper design; Claude changed-scope confirmation then Vitalis exact-manifest approval pending",
+      "accepted_selection_ids": [
+        "8227:FAMILY:vector-product"
+      ],
+      "selection_parent_mapping": {
+        "design_selection_id": "8227:D:SEL:vector-geometry:scalar-combination-and-origin-angle",
+        "accepted_selection_ids": [
+          "8227:FAMILY:vector-product"
+        ],
+        "relationship": "Narrow pilot branch of accepted C selection; other facets remain visible deferred, not excluded from syllabus."
+      }
+    }
+  ],
+  "counts": {
+    "recipes": 3,
+    "branches": 3,
+    "assessed_parts": 7,
+    "paper_cases": 9
+  },
+  "capacity_limits": "Per-recipe counts remain separate: modulus44 raw/44contexts/fresh44;vector30raw/30contexts/fresh17;trapezium30mathematicalraw/11contexts/mathematicalpacking3, but22fullygeneratedraw/strictgeneratedfreshpacking2 after original-sketch guard. No summedunique-bank capacity.",
+  "exemplar_cases_path": "planning/visual-design-asset-checks.json",
+  "static_design_assets_path": "exemplars/assets/",
+  "misread_policy_authority": {
+    "decision_id": "OD-6",
+    "status_class": "owner decision",
+    "owner": "Vitalis",
+    "record": "review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md",
+    "sources": [
+      {
+        "path": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+        "sha256": "8012a5d92edfde9e4bce11fe7864ff88f7246d812ec00d34e8e2377c2c0114be",
+        "page": 345,
+        "role": "OD-6 authority; native page read is recorded by coordinating PLANNER, not newly claimed by this arithmetic check.",
+        "board": "NSSCAS",
+        "use": "Namibian statement: misreads cannot score maximum; amount unspecified"
+      },
+      {
+        "path": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+        "sha256": "7cfb18fb678100d28ec9c0574be1e4978251a006ac995975c3da5178b65fb127",
+        "page": 3,
+        "role": "OD-6 authority; native page read is recorded by coordinating PLANNER, not newly claimed by this arithmetic check.",
+        "board": "Cambridge International",
+        "use": "Owner-endorsed comparable-board MR−1 with A/B follow-through, not a Namibian convention"
+      }
+    ]
+  },
+  "d4_status": "OD-6 principle binding; MR03-OPS-D4 mechanics proposed pending exact-manifest approval."
+}

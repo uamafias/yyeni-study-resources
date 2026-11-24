@@ -1,0 +1,617 @@
+{
+  "schema": "8227-stage-f-same-vendor-author-audit-v1",
+  "author": "Codex visual-group author, auditing the other calculus group",
+  "date": "2026-11-24",
+  "status": "no open design-blocking or should-fix findings in inspected scope",
+  "independence": "Same-vendor AUTHOR verification only; not cross-vendor Stage-G acceptance. Did not author the calculus group.",
+  "coverage": {
+    "recipes": 3,
+    "branches": 7,
+    "frozen_cases_read": 21,
+    "fixture_records_read": 51,
+    "concrete_submitted_scripts": 35,
+    "declarative_evidence_expectations": 16,
+    "branch_criterion_slots": 43,
+    "own_recomputation_checks": 8,
+    "manual_all_generated_instances_claim": false
+  },
+  "input_sha256": {
+    "source/groups/calculus.py": "443719795f34a13e7a72a570b699cf07d5324e1205bb7ff0d217b4afd815b37c",
+    "authoring/calculus-fixtures.json": "661c4929ad96a3bfbaf706b33e54b35ff995483172b0e132e99daf73ee583792",
+    "authoring/calculus-examples.json": "1f78b3d74bce06819be5a08a37564fa6c5137dca1ba895fe6c15236d42fee9c1",
+    "authoring/calculus-check.py": "facf3356bc4747777abc652b14cdb1118cb03ac1575b9747639235f5e5764e8a",
+    "work-orders/WB8227-implicit-normal.md": "2e51ebb8119ba22dfbe7680623a3aaf951372949c28712c28bf967c06c362880",
+    "work-orders/WB8227-stationary-inflexion.md": "063df0500588326f6a74001b89d4a7783ef515fbceb11f366d2cb98366b644a0",
+    "work-orders/WB8227-motion-integration.md": "34ad6015a67cdcacda136057f3ad7cb0ab5e929fcca2dfc91a401918af327d95"
+  },
+  "closed_findings": [
+    {
+      "id": "F-CALC-01",
+      "severity": "should-fix",
+      "finding": "Two-extrema canonical submitted script omitted f(root) evaluations required by P4.",
+      "resolution": "Calculus author added actual expanded original-function substitutions/evaluations to both stationary-location result fields and regenerated examples/submissions. Readback of the normal actual script confirms f(-1)=4 and f(1)=0.",
+      "closed": true
+    },
+    {
+      "id": "F-CALC-02",
+      "severity": "should-fix reporting accuracy",
+      "finding": "51 fixtures are not 51 actual submitted scripts: 35 have learner_submission, 16 only declarative evidence.",
+      "resolution": "CALCULUS-HANDOVER now explicitly distinguishes 35 concrete scripts and 16 declarative expectations; this audit retains that split.",
+      "closed": true
+    }
+  ],
+  "findings": [],
+  "checks": [
+    {
+      "check": "Two-extrema normal",
+      "result": "Roots −1/1, original ordinates 4/0, second derivative signs −/+.",
+      "status": "pass"
+    },
+    {
+      "check": "Flat normal",
+      "result": "Root 1, ordinate −2; positive first derivative both sides and concavity change support the two valid test routes.",
+      "status": "pass"
+    },
+    {
+      "check": "Implicit canonical, eligible k and ineligible a misreads",
+      "result": "Slopes −24/5, −36/5 and −8; normal slopes 5/24, 5/36 and 1/8. Approved ordinary 5/9 and eligible 4/5 expectations are consistent.",
+      "status": "pass"
+    },
+    {
+      "check": "Polynomial normal",
+      "result": "v=2t²+t+3; distance 40/3.",
+      "status": "pass"
+    },
+    {
+      "check": "Exponential normal and deferred amplitude misread",
+      "result": "Acceleration −6 exp(−t/2), primitive −24 exp(−t/2). V=21 with separate integrated acceleration loses E1/E2; distance gross 3 less one at E3 gives 2.",
+      "status": "pass"
+    },
+    {
+      "check": "Mixed-reversal normal",
+      "result": "Signed legs −4/3 and 40/3; distance 44/3 and displacement 12.",
+      "status": "pass"
+    },
+    {
+      "check": "Mixed no-change interval misread",
+      "result": "Canonical T=3 has no interior root, distance 63/2. T=5 introduces root 4, distance 77/2: ineligible throughout; R2/R5 only gives 2/6.",
+      "status": "pass"
+    },
+    {
+      "check": "C4→5 product route only",
+      "result": "Both constants differentiate to zero; the supplied-target canonical proof is unaffected, followed by canonical gradient/normal: 9/9 retained. No divided/log/explicit-route score inferred.",
+      "status": "consistent with approved fixture"
+    }
+  ],
+  "fixture_audit": [
+    {
+      "fixture_id": "calc:gradient:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:gradient:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:gradient:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:gradient:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:gradient:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:normal:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 9,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:normal:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:normal:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:normal:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:normal:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 9,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:two-extrema:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:two-extrema:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:two-extrema:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:two-extrema:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:two-extrema:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:flat-classification:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:flat-classification:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:flat-classification:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:flat-classification:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:flat-classification:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:polynomial-chain:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:polynomial-chain:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:polynomial-chain:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:polynomial-chain:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:polynomial-chain:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:exponential-positive:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:exponential-positive:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:exponential-positive:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:exponential-positive:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:exponential-positive:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:interior-reversal:correct",
+      "kind": "correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual canonical shown script supplies all required evidence; full tariff is consistent. Two-extrema original-function evaluations are now explicit."
+    },
+    {
+      "fixture_id": "calc:interior-reversal:bare-correct",
+      "kind": "bare-correct",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Correct final values alone earn 0 under the approved OD-1 rule; copying the supplied derivative is no proof."
+    },
+    {
+      "fixture_id": "calc:interior-reversal:wrong",
+      "kind": "wrong",
+      "concrete_script": true,
+      "recorded_expected_marks": 0,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Script explicitly states no relevant working and wrong zero answer; no credit invented."
+    },
+    {
+      "fixture_id": "calc:interior-reversal:ambiguous",
+      "kind": "ambiguous",
+      "concrete_script": true,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Affected evidence unreadable or unlabelled: clarification required and score null, not guessed wrong."
+    },
+    {
+      "fixture_id": "calc:interior-reversal:alternative",
+      "kind": "alternative",
+      "concrete_script": true,
+      "recorded_expected_marks": 6,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent actual script",
+      "assessment": "Actual alternate route mathematically checked; fulfills the same exclusive criterion slots within its approved cap."
+    },
+    {
+      "fixture_id": "calc:gradient:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 3,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "G1/G3/G4 = 3. Wrong exponential-index derivative loses G2 and www G5 despite the x=0 numerical coincidence."
+    },
+    {
+      "fixture_id": "calc:normal:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "S1/S3 + H1 + N1/N2 = 5. Ineligible a misread remains canonical."
+    },
+    {
+      "fixture_id": "calc:two-extrema:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 4,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "P1–P4 only = 4. Classification evidence is not invented."
+    },
+    {
+      "fixture_id": "calc:flat-classification:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 3,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Location = 3. Unsupported second-derivative-zero claim earns no classification marks."
+    },
+    {
+      "fixture_id": "calc:polynomial-chain:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 3,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "V1–V3 only = 3."
+    },
+    {
+      "fixture_id": "calc:exponential-positive:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 3,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Wrong ±V/k derivative excludes E1/E2; valid distance E3–E5 = 3."
+    },
+    {
+      "fixture_id": "calc:interior-reversal:partial",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 3,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Credible own root, primitive and own-leg bounds earn R1/R2/R3; www R4 lost and displacement absent: 3."
+    },
+    {
+      "fixture_id": "calc:normal:copied-target",
+      "kind": "proof",
+      "concrete_script": false,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Proof 0; later displayed-formula substitution 2 plus shown normal 3 gives 5."
+    },
+    {
+      "fixture_id": "calc:normal:divided-missing-backsub",
+      "kind": "alternative-partial",
+      "concrete_script": false,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": 3,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "S1/S2/S3 only = 3 proof marks. S4 needs forward back-substitution."
+    },
+    {
+      "fixture_id": "calc:normal:invalid-ln-y",
+      "kind": "invalid-alternative",
+      "concrete_script": false,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": 1,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Invalid real relation on negative y; maximum S3 alone = 1 if independently shown."
+    },
+    {
+      "fixture_id": "calc:flat:coefficient-slip",
+      "kind": "partial",
+      "concrete_script": false,
+      "recorded_expected_marks": 5,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "I1 accuracy 0; visible solve and canonical point I2/I3 = 2; correct sign classification 3 gives 5."
+    },
+    {
+      "fixture_id": "calc:gradient:eligible-k-misread",
+      "kind": "misread",
+      "concrete_script": false,
+      "recorded_expected_marks": 4,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Gross 5, one A/B deduction from G2 gives 4. Gross G2 still supports G5."
+    },
+    {
+      "fixture_id": "calc:exponential:deferred-misread",
+      "kind": "misread",
+      "concrete_script": false,
+      "recorded_expected_marks": 2,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Acceleration 0; gross distance 3, one eligible V deduction from E3 gives 2."
+    },
+    {
+      "fixture_id": "calc:mixed:ineligible-interval",
+      "kind": "misread",
+      "concrete_script": false,
+      "recorded_expected_marks": 2,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Changed reversal decision: canonical R2 and ordinary R5 only = 2. R3 blocked by R1."
+    },
+    {
+      "fixture_id": "calc:normal:C4-to5-product",
+      "kind": "carry",
+      "concrete_script": false,
+      "recorded_expected_marks": 9,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Product-route-only 9/9 maintained; no extension to other routes."
+    },
+    {
+      "fixture_id": "calc:competing-data",
+      "kind": "carry",
+      "concrete_script": false,
+      "recorded_expected_marks": null,
+      "recorded_expected_proof_marks": null,
+      "recorded_maximum_proof_marks": null,
+      "verdict": "consistent declarative expectation, not a submitted-script test",
+      "assessment": "Unresolved policy carry remains unscored; no datum-list-order settlement."
+    }
+  ],
+  "teaching_and_policy": {
+    "answer_free_support": "All seven branch templates and 21 frozen help payloads inspected. Generic differentiation, point, classification, primitive/sign hints do not give current values/outcomes. App test withholding/reveal remains a separate root/provider check.",
+    "solutions": "Meaningful action/reason/result fields in all 21 cases; stationary original-function evaluations now explicit. Supplied derivative is an intentional question given; its proof stays private.",
+    "dependencies": "S4 requires S1/S2/S3; G4 credible prior G1 or G3; normal N2 depends on N1; motion S3 depends on S1/S2; R3 depends on R1 and R4 depends on R2/R3. Gross awards precede MR net deductions.",
+    "alternatives": "Explicit-root/divided/log-absolute mappings retain exclusive caps. Flat first-derivative and second-derivative-neighbourhood routes are accepted; second derivative zero alone is insufficient. Mixed absolute-velocity/signed-sum routes preserve evidence.",
+    "misreads": "MR09 and OD-1 remain limits. Eligible k2→3 gross credit less one A/B; deferred exponential E3 deduction; ineligible interval remains canonical. C4→5 product 9/9 is not broadened.",
+    "wording_and_attribution": "No textbook original or figure appears in the inspected calculus learner payloads. Original 2025 gradient tuple is excluded from generated domain. Gradient-only same-type reference is approved and part-scoped; normal branch related references stay internal. No claimed fresh native PDF-page reread or complete corpus wording scan in this focused audit; root Q15 wording scan is separate."
+  },
+  "notes_carried": [
+    "Competing-misread allocation remains unresolved and unscored.",
+    "C4→5 divided/log-absolute/explicit-root routes remain E/F carries without a new score ruling.",
+    "Nonconstant stationary-coefficient misread eligibility and printed datum identity remain carry notes, not blanket permissions."
+  ],
+  "limits": [
+    "All 51 expectations were compared with approved work orders and actual dynamic criteria; only 35 contain concrete submitted scripts.",
+    "No actual text/photo/sketch recognizer was run or accepted.",
+    "Template and 21-outcome inspection is not manual inspection of all 1,211 parameter outputs; exhaustive mathematics elsewhere is a separate same-vendor receipt.",
+    "No source PDF, textbook, review folder, app code, other group code, commit, push, import or assignment modified by this audit."
+  ]
+}

@@ -1,0 +1,1780 @@
+[
+  {
+    "recipe_id": "WB8227-modulus-graph-recovery",
+    "branch_id": "vertex-intercepts",
+    "parameters": {
+      "a": -3,
+      "b": -3,
+      "d": 3
+    },
+    "question": {
+      "stem": "The labelled graph has the form $y=a\\lvert x+b\\rvert+c$.\n\nVertex $V=(3,9)$; zeros $L=(0,0)$ and $R=(6,0)$; $y$-intercept $Y=(0,0)$.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Determine $a$, $b$ and $c$. Give named values or the complete formula.",
+          "reference_answer": "$a=-3$, $b=-3$ and $c=9$; equivalently $y=-3\\lvert x-3\\rvert+9$.",
+          "worked_steps": [
+            {
+              "action": "Read the vertex.",
+              "reason": "The vertex of $y=a\\lvert x+b\\rvert+c$ is $(-b,c)$.",
+              "result": "$b=-3$ and $c=9$."
+            },
+            {
+              "action": "Substitute the right-hand zero.",
+              "reason": "At this labelled zero, the modulus argument has absolute value $3$.",
+              "result": "$0=3a+9$, so $a=-3$."
+            },
+            {
+              "action": "Check the other intercept and orientation.",
+              "reason": "Every supplied point must belong to the same graph.",
+              "result": "$a\\lvert b\\rvert+c=0$, agreeing with $Y$; the graph opens downwards."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named a=-3, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            },
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named b=-3, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            },
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B3",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named c=9, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "given-modulus",
+          "role": "question",
+          "part_id": "a",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Modulus graph with exact labelled vertex and intercepts\"><title>Modulus graph with exact labelled vertex and intercepts</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"30.00\" y=\"30.00\" >Labelled modulus graph</text><line x1=\"196.67\" y1=\"280.00\" x2=\"363.33\" y2=\"280.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"230.00\" y1=\"355.00\" x2=\"230.00\" y2=\"55.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"369.33\" y=\"284.00\" >x</text><text x=\"238.00\" y=\"47.00\" >y</text><defs><clipPath id=\"plot\"><rect x=\"48\" y=\"45\" width=\"470\" height=\"325\"/></clipPath></defs><path d=\"M196.667,380.000 L280.000,130.000 L363.333,380.000\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"3\" clip-path=\"url(#plot)\"/><text x=\"545.00\" y=\"70.00\" >Exact coordinates</text><text x=\"545.00\" y=\"110.00\" >V: (3, 9)</text><text x=\"545.00\" y=\"154.00\" >L: (0, 0)</text><text x=\"545.00\" y=\"198.00\" >R: (6, 0)</text><text x=\"545.00\" y=\"242.00\" >Y: (0, 0)</text><circle cx=\"280.000\" cy=\"130.000\" r=\"4.5\" fill=\"#17212b\"/><text x=\"288.00\" y=\"117.00\" text-anchor=\"start\">V</text><circle cx=\"230.000\" cy=\"280.000\" r=\"4.5\" fill=\"#17212b\"/><text x=\"238.00\" y=\"304.00\" text-anchor=\"start\">L/Y</text><circle cx=\"330.000\" cy=\"280.000\" r=\"4.5\" fill=\"#17212b\"/><text x=\"338.00\" y=\"304.00\" text-anchor=\"start\">R</text><text x=\"30.00\" y=\"414.00\" >V is the vertex. L and R are x-intercepts. Y is the y-intercept.</text><text x=\"30.00\" y=\"438.00\" >Use the exact labelled coordinates; screen measurement is unnecessary.</text></g></svg>",
+          "alt": "Vertex V=(3,9); zeros L=(0,0) and R=(6,0); y-intercept Y=(0,0).",
+          "must_read_givens": [
+            "vertex and both zeros",
+            "y-intercept",
+            "axis directions",
+            "V orientation",
+            "plus sign in x+b"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "Cartesian axes",
+              "straight arms",
+              "one vertex"
+            ],
+            "variable": [
+              "vertex",
+              "intercepts",
+              "orientation",
+              "window"
+            ],
+            "relations": [
+              "c=-a*d",
+              "left slope=-a",
+              "right slope=a",
+              "symmetry x=-b"
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Read a modulus graph",
+        "prompts": [
+          "How does the vertex locate the horizontal and vertical shifts?",
+          "Which labelled point could you substitute to find the vertical scale?",
+          "Does the sign of your scale agree with the way the V opens?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"modulus-model\",-3,-3,3]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"modulus-model\",-3,-3,3]"
+      },
+      "private_math": {
+        "coefficients": {
+          "a": -3,
+          "b": -3,
+          "c": 9
+        },
+        "given_points": {
+          "V": [
+            3,
+            9
+          ],
+          "L": [
+            0,
+            0
+          ],
+          "R": [
+            6,
+            0
+          ],
+          "Y": [
+            0,
+            0
+          ]
+        },
+        "full_model": "y=-3\\lvert x-3\\rvert+9"
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-modulus-graph-recovery",
+    "branch_id": "vertex-intercepts",
+    "parameters": {
+      "a": 1,
+      "b": -3,
+      "d": 2
+    },
+    "question": {
+      "stem": "The labelled graph has the form $y=a\\lvert x+b\\rvert+c$.\n\nVertex $V=(3,-2)$; zeros $L=(1,0)$ and $R=(5,0)$; $y$-intercept $Y=(0,1)$.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Determine $a$, $b$ and $c$. Give named values or the complete formula.",
+          "reference_answer": "$a=1$, $b=-3$ and $c=-2$; equivalently $y=1\\lvert x-3\\rvert-2$.",
+          "worked_steps": [
+            {
+              "action": "Read the vertex.",
+              "reason": "The vertex of $y=a\\lvert x+b\\rvert+c$ is $(-b,c)$.",
+              "result": "$b=-3$ and $c=-2$."
+            },
+            {
+              "action": "Substitute the right-hand zero.",
+              "reason": "At this labelled zero, the modulus argument has absolute value $2$.",
+              "result": "$0=2a-2$, so $a=1$."
+            },
+            {
+              "action": "Check the other intercept and orientation.",
+              "reason": "Every supplied point must belong to the same graph.",
+              "result": "$a\\lvert b\\rvert+c=1$, agreeing with $Y$; the graph opens upwards."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named a=1, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            },
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named b=-3, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            },
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B3",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named c=-2, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "given-modulus",
+          "role": "question",
+          "part_id": "a",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Modulus graph with exact labelled vertex and intercepts\"><title>Modulus graph with exact labelled vertex and intercepts</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"30.00\" y=\"30.00\" >Labelled modulus graph</text><line x1=\"87.14\" y1=\"183.57\" x2=\"472.86\" y2=\"183.57\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"172.86\" y1=\"355.00\" x2=\"172.86\" y2=\"55.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"478.86\" y=\"187.57\" >x</text><text x=\"180.86\" y=\"47.00\" >y</text><defs><clipPath id=\"plot\"><rect x=\"48\" y=\"45\" width=\"470\" height=\"325\"/></clipPath></defs><path d=\"M87.143,55.000 L301.429,269.286 L472.857,97.857\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"3\" clip-path=\"url(#plot)\"/><text x=\"545.00\" y=\"70.00\" >Exact coordinates</text><text x=\"545.00\" y=\"110.00\" >V: (3, -2)</text><text x=\"545.00\" y=\"154.00\" >L: (1, 0)</text><text x=\"545.00\" y=\"198.00\" >R: (5, 0)</text><text x=\"545.00\" y=\"242.00\" >Y: (0, 1)</text><circle cx=\"301.429\" cy=\"269.286\" r=\"4.5\" fill=\"#17212b\"/><text x=\"309.43\" y=\"291.29\" text-anchor=\"start\">V</text><circle cx=\"215.714\" cy=\"183.571\" r=\"4.5\" fill=\"#17212b\"/><text x=\"223.71\" y=\"207.57\" text-anchor=\"start\">L</text><circle cx=\"387.143\" cy=\"183.571\" r=\"4.5\" fill=\"#17212b\"/><text x=\"395.14\" y=\"207.57\" text-anchor=\"start\">R</text><circle cx=\"172.857\" cy=\"140.714\" r=\"4.5\" fill=\"#17212b\"/><text x=\"180.86\" y=\"164.71\" text-anchor=\"start\">Y</text><text x=\"30.00\" y=\"414.00\" >V is the vertex. L and R are x-intercepts. Y is the y-intercept.</text><text x=\"30.00\" y=\"438.00\" >Use the exact labelled coordinates; screen measurement is unnecessary.</text></g></svg>",
+          "alt": "Vertex V=(3,-2); zeros L=(1,0) and R=(5,0); y-intercept Y=(0,1).",
+          "must_read_givens": [
+            "vertex and both zeros",
+            "y-intercept",
+            "axis directions",
+            "V orientation",
+            "plus sign in x+b"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "Cartesian axes",
+              "straight arms",
+              "one vertex"
+            ],
+            "variable": [
+              "vertex",
+              "intercepts",
+              "orientation",
+              "window"
+            ],
+            "relations": [
+              "c=-a*d",
+              "left slope=-a",
+              "right slope=a",
+              "symmetry x=-b"
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Read a modulus graph",
+        "prompts": [
+          "How does the vertex locate the horizontal and vertical shifts?",
+          "Which labelled point could you substitute to find the vertical scale?",
+          "Does the sign of your scale agree with the way the V opens?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"modulus-model\",1,-3,2]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"modulus-model\",1,-3,2]"
+      },
+      "private_math": {
+        "coefficients": {
+          "a": 1,
+          "b": -3,
+          "c": -2
+        },
+        "given_points": {
+          "V": [
+            3,
+            -2
+          ],
+          "L": [
+            1,
+            0
+          ],
+          "R": [
+            5,
+            0
+          ],
+          "Y": [
+            0,
+            1
+          ]
+        },
+        "full_model": "y=1\\lvert x-3\\rvert-2"
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-modulus-graph-recovery",
+    "branch_id": "vertex-intercepts",
+    "parameters": {
+      "a": 3,
+      "b": 3,
+      "d": 3
+    },
+    "question": {
+      "stem": "The labelled graph has the form $y=a\\lvert x+b\\rvert+c$.\n\nVertex $V=(-3,-9)$; zeros $L=(-6,0)$ and $R=(0,0)$; $y$-intercept $Y=(0,0)$.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Determine $a$, $b$ and $c$. Give named values or the complete formula.",
+          "reference_answer": "$a=3$, $b=3$ and $c=-9$; equivalently $y=3\\lvert x+3\\rvert-9$.",
+          "worked_steps": [
+            {
+              "action": "Read the vertex.",
+              "reason": "The vertex of $y=a\\lvert x+b\\rvert+c$ is $(-b,c)$.",
+              "result": "$b=3$ and $c=-9$."
+            },
+            {
+              "action": "Substitute the right-hand zero.",
+              "reason": "At this labelled zero, the modulus argument has absolute value $3$.",
+              "result": "$0=3a-9$, so $a=3$."
+            },
+            {
+              "action": "Check the other intercept and orientation.",
+              "reason": "Every supplied point must belong to the same graph.",
+              "result": "$a\\lvert b\\rvert+c=0$, agreeing with $Y$; the graph opens upwards."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named a=3, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            },
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named b=3, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            },
+            {
+              "criterion_id": "WB8227-modulus-graph-recovery:a:B3",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct named c=-9, or that value unambiguously in its formula position, without wrong working for it.",
+              "qualifiers": [
+                "www"
+              ],
+              "answer_only_allowed": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "given-modulus",
+          "role": "question",
+          "part_id": "a",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Modulus graph with exact labelled vertex and intercepts\"><title>Modulus graph with exact labelled vertex and intercepts</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"30.00\" y=\"30.00\" >Labelled modulus graph</text><line x1=\"196.67\" y1=\"130.00\" x2=\"363.33\" y2=\"130.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"330.00\" y1=\"355.00\" x2=\"330.00\" y2=\"55.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"369.33\" y=\"134.00\" >x</text><text x=\"338.00\" y=\"47.00\" >y</text><defs><clipPath id=\"plot\"><rect x=\"48\" y=\"45\" width=\"470\" height=\"325\"/></clipPath></defs><path d=\"M196.667,30.000 L280.000,280.000 L363.333,30.000\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"3\" clip-path=\"url(#plot)\"/><text x=\"545.00\" y=\"70.00\" >Exact coordinates</text><text x=\"545.00\" y=\"110.00\" >V: (-3, -9)</text><text x=\"545.00\" y=\"154.00\" >L: (-6, 0)</text><text x=\"545.00\" y=\"198.00\" >R: (0, 0)</text><text x=\"545.00\" y=\"242.00\" >Y: (0, 0)</text><circle cx=\"280.000\" cy=\"280.000\" r=\"4.5\" fill=\"#17212b\"/><text x=\"270.00\" y=\"302.00\" text-anchor=\"end\">V</text><circle cx=\"230.000\" cy=\"130.000\" r=\"4.5\" fill=\"#17212b\"/><text x=\"220.00\" y=\"154.00\" text-anchor=\"end\">L</text><circle cx=\"330.000\" cy=\"130.000\" r=\"4.5\" fill=\"#17212b\"/><text x=\"338.00\" y=\"154.00\" text-anchor=\"start\">R/Y</text><text x=\"30.00\" y=\"414.00\" >V is the vertex. L and R are x-intercepts. Y is the y-intercept.</text><text x=\"30.00\" y=\"438.00\" >Use the exact labelled coordinates; screen measurement is unnecessary.</text></g></svg>",
+          "alt": "Vertex V=(-3,-9); zeros L=(-6,0) and R=(0,0); y-intercept Y=(0,0).",
+          "must_read_givens": [
+            "vertex and both zeros",
+            "y-intercept",
+            "axis directions",
+            "V orientation",
+            "plus sign in x+b"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "Cartesian axes",
+              "straight arms",
+              "one vertex"
+            ],
+            "variable": [
+              "vertex",
+              "intercepts",
+              "orientation",
+              "window"
+            ],
+            "relations": [
+              "c=-a*d",
+              "left slope=-a",
+              "right slope=a",
+              "symmetry x=-b"
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Read a modulus graph",
+        "prompts": [
+          "How does the vertex locate the horizontal and vertical shifts?",
+          "Which labelled point could you substitute to find the vertical scale?",
+          "Does the sign of your scale agree with the way the V opens?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"modulus-model\",3,3,3]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"modulus-model\",3,3,3]"
+      },
+      "private_math": {
+        "coefficients": {
+          "a": 3,
+          "b": 3,
+          "c": -9
+        },
+        "given_points": {
+          "V": [
+            -3,
+            -9
+          ],
+          "L": [
+            -6,
+            0
+          ],
+          "R": [
+            0,
+            0
+          ],
+          "Y": [
+            0,
+            0
+          ]
+        },
+        "full_model": "y=3\\lvert x+3\\rvert-9"
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-trapezium-sketch-estimate",
+    "branch_id": "logarithmic-hence-chain",
+    "parameters": {
+      "h": 1,
+      "L": 4,
+      "n": 2,
+      "k": 1
+    },
+    "question": {
+      "stem": "Consider $f(x)=\\ln(x-1)$ on its real domain. Show your working for the numerical estimates.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Use 2 equal trapeziums to estimate $I=\\int_{2}^{6}\\ln(x-1)\\,dx$. Give your answer to 3 significant figures.",
+          "reference_answer": "$I \\approx 3.81$.",
+          "worked_steps": [
+            {
+              "action": "Find the width and ordinates.",
+              "reason": "Equal strips have width equal to the interval length divided by the strip count.",
+              "result": "$\\Delta x=4/2=2$; $y_{0}=\\ln(1)$, $y_{1}=\\ln(3)$, $y_{2}=\\ln(5)$."
+            },
+            {
+              "action": "Apply the trapezium weights.",
+              "reason": "Each interior ordinate belongs to two neighbouring trapeziums.",
+              "result": "$T=\\frac{2}{2}\\left(y_0+2\\sum_{j=1}^{1}y_j+y_{2}\\right)=3.8066624897703197\\ldots$."
+            },
+            {
+              "action": "Round only the reported result.",
+              "reason": "Guard digits avoid premature-rounding error.",
+              "result": "$I \\approx 3.81$ to 3 significant figures."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Positive width 2, unsimplified or in the formula."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Correct trapezium weighting or actual sum of trapezium areas using a positive width."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct 3 significant figure result 3.81, with the required valid method.",
+              "depends_on": [
+                "WB8227-trapezium-sketch-estimate:a:M1"
+              ]
+            }
+          ]
+        },
+        {
+          "local_part_id": "b",
+          "prompt": "Hence, showing the transformation, estimate $J=\\int_{2}^{6}1\\ln(x^2-2x+1)\\,dx$. Give your answer to 3 significant figures.",
+          "reference_answer": "$J \\approx 7.61$ using guard digits from (a). Correct 3-significant-figure products of a coherently used own (a) estimate are followed through.",
+          "worked_steps": [
+            {
+              "action": "Recognise the square.",
+              "reason": "The expanded quadratic is a perfect square.",
+              "result": "$x^2-2x+1=(x-1)^2$."
+            },
+            {
+              "action": "Use the logarithm power rule.",
+              "reason": "Throughout the integration interval, $x-1>0$.",
+              "result": "$1\\ln((x-1)^2)=2\\ln(x-1)$."
+            },
+            {
+              "action": "Scale the previous estimate.",
+              "reason": "The same bounds are used, so the factor multiplies the whole estimate.",
+              "result": "$J\\approx 2T=7.6133249795406395\\ldots\\approx 7.61$ (3 significant figures)."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Factorised form $1\\ln((x-1)^2)$ alone, the correct $2\\ln(x-1)$, or a correctly derived 2 scale; the direct expression implies the square."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct visible 2 times the learner own (a) estimate, with no visibly wrong log-law reasoning; exact product or any rendering correct to at least 3 significant figures.",
+              "qualifiers": [
+                "FT",
+                "www"
+              ],
+              "follow_through_from": [
+                "a"
+              ],
+              "alternatives": [
+                {
+                  "exclusive_cap": 1,
+                  "description": "Correct visible non-hence method; maximum with main route, never additive."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "local_part_id": "c",
+          "prompt": "Sketch $y=\\ln(x-1)$, labelling axis intersections and any vertical asymptote.",
+          "reference_answer": "One log branch for $x>1$, tending downwards as $x\\to 1^+$, increasing with decreasing gradient; vertical asymptote $x=1$ and labelled intercept $(2,0)$; no $y$-intercept or finite horizontal asymptote.",
+          "worked_steps": [
+            {
+              "action": "Set the logarithm argument positive.",
+              "reason": "A real logarithm needs a positive argument.",
+              "result": "$x>1$; the approached vertical boundary is $x=1$."
+            },
+            {
+              "action": "Locate the axis intersection.",
+              "reason": "The logarithm equals zero when its argument is one.",
+              "result": "$x-1=1$, so the intercept is $(2,0)$; $x=0$ is outside the domain."
+            },
+            {
+              "action": "Draw the translated logarithm branch.",
+              "reason": "Translation preserves its increasing, concave-down shape.",
+              "result": "The curve lies to the right of $x=1$, falls without bound near that line, and rises without a finite horizontal asymptote."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Single log-shaped function graph relative to its approached boundary: right-hand branch, downwards approach without crossing/touching, rising through below/above-axis regions with decreasing gradient and no finite horizontal asymptote.",
+              "feature_based": true,
+              "multiple_function_graphs": "B0"
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct asymptote x=1 identified on the sketch by a labelled guide or clearly labelled approached boundary; detached text is insufficient.",
+              "feature_based": true
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B3",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct intercept (2,0), labelled on the sketch.",
+              "feature_based": true
+            }
+          ]
+        },
+        {
+          "local_part_id": "d",
+          "prompt": "Use your sketch to decide whether the estimate in part (a) is too large (an overestimate) or too small (an underestimate). Explain how the trapezium top edges sit relative to the curve.",
+          "reference_answer": "Underestimate: the curve is concave down on the interval, so the top chords of the trapeziums lie below the curve. For a clearly different own curve, apply the stated own-graph follow-through rules.",
+          "worked_steps": [
+            {
+              "action": "Compare each top chord with the curve.",
+              "reason": "The logarithm has decreasing gradient on the integration interval.",
+              "result": "Each straight top chord lies below the concave-down curve."
+            },
+            {
+              "action": "Relate the areas.",
+              "reason": "The trapezium tops lie below the graph on the same positive interval.",
+              "result": "The estimated area is smaller than the area under the curve, so it is an underestimate."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Bias conclusion supported by the learner own sketch on (a) interval; concave-up own curve supports over, concave-down supports under. Absent sketch earns no credit; unreadable evidence is pending.",
+              "qualifiers": [
+                "FT"
+              ],
+              "follow_through_from": [
+                "c"
+              ]
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:DB1",
+              "mark_type": "DB",
+              "marks": 1,
+              "achievement": "Correct top-chord/trapezium position relative to the same own curve; verbal geometric reason or correct overlay with a brief referring statement. Increasing alone is insufficient.",
+              "depends_on": [
+                "WB8227-trapezium-sketch-estimate:d:B1"
+              ],
+              "follow_through_from": [
+                "c"
+              ],
+              "authority": "OD-5 own-curve dependent-reason extension"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "sketch-frame",
+          "role": "question",
+          "part_id": "c",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Blank axes for a learner sketch\"><title>Blank axes for a learner sketch</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"25.00\" y=\"28.00\" >Sketch frame</text><line x1=\"55.00\" y1=\"217.42\" x2=\"695.00\" y2=\"217.42\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"109.86\" y1=\"365.00\" x2=\"109.86\" y2=\"60.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"705.00\" y=\"221.42\" >x</text><text x=\"117.86\" y=\"48.00\" >y</text><text x=\"91.86\" y=\"237.42\" >0</text><text x=\"25.00\" y=\"414.00\" >Draw your curve, and label its axis intersections and any vertical asymptote.</text></g></svg>",
+          "alt": "Blank Cartesian axes for your sketch; no function curve is supplied.",
+          "must_read_givens": [
+            "x-axis",
+            "y-axis"
+          ]
+        },
+        {
+          "asset_id": "log-solution",
+          "role": "solution",
+          "part_id": "c",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Logarithmic sketch solution with asymptote, intercept and trapezium chords\"><title>Logarithmic sketch solution with asymptote, intercept and trapezium chords</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"25.00\" y=\"28.00\" >Logarithmic curve and trapezium top chords</text><line x1=\"55.00\" y1=\"217.42\" x2=\"695.00\" y2=\"217.42\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"109.86\" y1=\"365.00\" x2=\"109.86\" y2=\"60.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"705.00\" y=\"221.42\" >x</text><text x=\"117.86\" y=\"48.00\" >y</text><text x=\"91.86\" y=\"237.42\" >0</text><line x1=\"183.00\" y1=\"365.00\" x2=\"183.00\" y2=\"60.00\" stroke=\"#d05030\" stroke-width=\"1.5\" stroke-dasharray=\"7 5\"/><text x=\"191.00\" y=\"78.00\" >x = 1</text><path d=\"M186.642,365.000 L186.737,363.729 L186.835,362.458 L186.935,361.187 L187.038,359.917 L187.144,358.646 L187.252,357.375 L187.363,356.104 L187.478,354.833 L187.595,353.563 L187.715,352.292 L187.838,351.021 L187.965,349.750 L188.095,348.479 L188.228,347.208 L188.365,345.938 L188.506,344.667 L188.650,343.396 L188.797,342.125 L188.949,340.854 L189.105,339.583 L189.265,338.313 L189.429,337.042 L189.597,335.771 L189.769,334.500 L189.947,333.229 L190.128,331.958 L190.315,330.687 L190.506,329.417 L190.703,328.146 L190.904,326.875 L191.111,325.604 L191.323,324.333 L191.541,323.062 L191.765,321.792 L191.994,320.521 L192.230,319.250 L192.471,317.979 L192.719,316.708 L192.973,315.438 L193.234,314.167 L193.502,312.896 L193.777,311.625 L194.059,310.354 L194.348,309.083 L194.645,307.812 L194.950,306.542 L195.263,305.271 L195.584,304.000 L195.913,302.729 L196.251,301.458 L196.598,300.188 L196.954,298.917 L197.319,297.646 L197.694,296.375 L198.078,295.104 L198.473,293.833 L198.878,292.562 L199.293,291.292 L199.720,290.021 L200.157,288.750 L200.606,287.479 L201.067,286.208 L201.540,284.938 L202.025,283.667 L202.523,282.396 L203.034,281.125 L203.558,279.854 L204.096,278.583 L204.648,277.312 L205.215,276.042 L205.796,274.771 L206.392,273.500 L207.005,272.229 L207.633,270.958 L208.277,269.688 L208.939,268.417 L209.618,267.146 L210.314,265.875 L211.029,264.604 L211.763,263.333 L212.515,262.062 L213.288,260.792 L214.081,259.521 L214.894,258.250 L215.729,256.979 L216.585,255.708 L217.464,254.438 L218.366,253.167 L219.291,251.896 L220.241,250.625 L221.216,249.354 L222.216,248.083 L223.242,246.812 L224.295,245.542 L225.376,244.271 L226.485,243.000 L227.623,241.729 L228.791,240.458 L229.989,239.188 L231.219,237.917 L232.481,236.646 L233.776,235.375 L235.104,234.104 L236.468,232.833 L237.867,231.563 L239.303,230.292 L240.776,229.021 L242.288,227.750 L243.840,226.479 L245.432,225.208 L247.066,223.938 L248.743,222.667 L250.463,221.396 L252.229,220.125 L254.040,218.854 L255.899,217.583 L257.807,216.313 L259.765,215.042 L261.774,213.771 L263.835,212.500 L265.951,211.229 L268.122,209.958 L270.349,208.688 L272.635,207.417 L274.981,206.146 L277.388,204.875 L279.858,203.604 L282.393,202.333 L284.994,201.062 L287.663,199.792 L290.402,198.521 L293.213,197.250 L296.097,195.979 L299.057,194.708 L302.094,193.438 L305.211,192.167 L308.409,190.896 L311.691,189.625 L315.059,188.354 L318.515,187.083 L322.061,185.812 L325.700,184.542 L329.435,183.271 L333.267,182.000 L337.200,180.729 L341.235,179.458 L345.376,178.188 L349.625,176.917 L353.986,175.646 L358.461,174.375 L363.052,173.104 L367.764,171.833 L372.600,170.562 L377.561,169.292 L382.653,168.021 L387.878,166.750 L393.240,165.479 L398.742,164.208 L404.387,162.938 L410.181,161.667 L416.126,160.396 L422.227,159.125 L428.488,157.854 L434.912,156.583 L441.505,155.312 L448.270,154.042 L455.212,152.771 L462.336,151.500 L469.646,150.229 L477.147,148.958 L484.845,147.688 L492.745,146.417 L500.850,145.146 L509.169,143.875 L517.704,142.604 L526.464,141.333 L535.452,140.062 L544.676,138.792 L554.141,137.521 L563.853,136.250 L573.820,134.979 L584.048,133.708 L594.543,132.437 L605.313,131.167 L616.365,129.896 L627.706,128.625 L639.344,127.354 L651.287,126.083 L663.542,124.813 L676.118,123.542 L689.023,122.271\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"3\"/><circle cx=\"256.143\" cy=\"217.419\" r=\"4\"/><text x=\"262.14\" y=\"239.42\" >(2, 0)</text><line x1=\"256.14\" y1=\"217.42\" x2=\"402.43\" y2=\"163.37\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"402.43\" y1=\"217.42\" x2=\"402.43\" y2=\"163.37\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><line x1=\"402.43\" y1=\"163.37\" x2=\"548.71\" y2=\"138.25\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"548.71\" y1=\"217.42\" x2=\"548.71\" y2=\"138.25\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><text x=\"548.71\" y=\"241.42\" text-anchor=\"middle\">6</text><text x=\"25.00\" y=\"414.00\" >The curve is concave down; the straight top chords lie below it.</text><text x=\"25.00\" y=\"438.00\" >The function continues to rise; it has no finite horizontal asymptote.</text></g></svg>",
+          "alt": "Logarithmic branch right of x=1, intercept (2,0), with top chords below the curve.",
+          "must_read_givens": [
+            "asymptote",
+            "intercept",
+            "domain side",
+            "integration interval",
+            "strip count",
+            "curve/chord relation"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "one increasing concave-down logarithmic branch"
+            ],
+            "variable": [
+              "shift h",
+              "interval L",
+              "strip count n"
+            ],
+            "relations": [
+              "x>h",
+              "asymptote x=h",
+              "intercept (h+1,0)",
+              "chords below curve"
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Connect an estimate and its graph",
+        "prompts": [
+          "How do the first, interior and last ordinates enter the trapezium rule?",
+          "Can you recognise a square in the second integrand?",
+          "What do a curve and its top chords tell you about an area estimate?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"trapezium-quadrature\",4,2]",
+        "[\"trapezium-hence\",4,2,1]",
+        "[\"log-sketch\",1]",
+        "[\"own-log-chord-context\",1,4,2]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"trapezium-quadrature\",4,2]",
+        "b": "[\"trapezium-hence\",4,2,1]",
+        "c": "[\"log-sketch\",1]",
+        "d": "[\"own-log-chord-context\",1,4,2]"
+      },
+      "private_math": {
+        "width": "2",
+        "ordinates": [
+          "0",
+          "1.0986122886681096913952452369225257046474905578227494517346943336",
+          "1.6094379124341003746007593332261876395256013542685177219126478915"
+        ],
+        "trapezium": "3.8066624897703197573912498070712390488205824699140166253820365587",
+        "a_3sf": "3.81",
+        "b_guard_3sf": "7.61",
+        "b_scale": 2,
+        "exact_integral": "4.0471895621705018730037966661309381976280067713425886095632394575",
+        "bias": "underestimate",
+        "strict_generated_fresh_bound": 2,
+        "original_subtask_guard": "h=2 is excluded from this generated pool. Explicit original/mixed route requires exact source wording and attribution, not implemented here."
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-trapezium-sketch-estimate",
+    "branch_id": "logarithmic-hence-chain",
+    "parameters": {
+      "h": 3,
+      "L": 4,
+      "n": 2,
+      "k": 1
+    },
+    "question": {
+      "stem": "Consider $f(x)=\\ln(x-3)$ on its real domain. Show your working for the numerical estimates.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Use 2 equal trapeziums to estimate $I=\\int_{4}^{8}\\ln(x-3)\\,dx$. Give your answer to 3 significant figures.",
+          "reference_answer": "$I \\approx 3.81$.",
+          "worked_steps": [
+            {
+              "action": "Find the width and ordinates.",
+              "reason": "Equal strips have width equal to the interval length divided by the strip count.",
+              "result": "$\\Delta x=4/2=2$; $y_{0}=\\ln(1)$, $y_{1}=\\ln(3)$, $y_{2}=\\ln(5)$."
+            },
+            {
+              "action": "Apply the trapezium weights.",
+              "reason": "Each interior ordinate belongs to two neighbouring trapeziums.",
+              "result": "$T=\\frac{2}{2}\\left(y_0+2\\sum_{j=1}^{1}y_j+y_{2}\\right)=3.8066624897703197\\ldots$."
+            },
+            {
+              "action": "Round only the reported result.",
+              "reason": "Guard digits avoid premature-rounding error.",
+              "result": "$I \\approx 3.81$ to 3 significant figures."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Positive width 2, unsimplified or in the formula."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Correct trapezium weighting or actual sum of trapezium areas using a positive width."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct 3 significant figure result 3.81, with the required valid method.",
+              "depends_on": [
+                "WB8227-trapezium-sketch-estimate:a:M1"
+              ]
+            }
+          ]
+        },
+        {
+          "local_part_id": "b",
+          "prompt": "Hence, showing the transformation, estimate $J=\\int_{4}^{8}1\\ln(x^2-6x+9)\\,dx$. Give your answer to 3 significant figures.",
+          "reference_answer": "$J \\approx 7.61$ using guard digits from (a). Correct 3-significant-figure products of a coherently used own (a) estimate are followed through.",
+          "worked_steps": [
+            {
+              "action": "Recognise the square.",
+              "reason": "The expanded quadratic is a perfect square.",
+              "result": "$x^2-6x+9=(x-3)^2$."
+            },
+            {
+              "action": "Use the logarithm power rule.",
+              "reason": "Throughout the integration interval, $x-3>0$.",
+              "result": "$1\\ln((x-3)^2)=2\\ln(x-3)$."
+            },
+            {
+              "action": "Scale the previous estimate.",
+              "reason": "The same bounds are used, so the factor multiplies the whole estimate.",
+              "result": "$J\\approx 2T=7.6133249795406395\\ldots\\approx 7.61$ (3 significant figures)."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Factorised form $1\\ln((x-3)^2)$ alone, the correct $2\\ln(x-3)$, or a correctly derived 2 scale; the direct expression implies the square."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct visible 2 times the learner own (a) estimate, with no visibly wrong log-law reasoning; exact product or any rendering correct to at least 3 significant figures.",
+              "qualifiers": [
+                "FT",
+                "www"
+              ],
+              "follow_through_from": [
+                "a"
+              ],
+              "alternatives": [
+                {
+                  "exclusive_cap": 1,
+                  "description": "Correct visible non-hence method; maximum with main route, never additive."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "local_part_id": "c",
+          "prompt": "Sketch $y=\\ln(x-3)$, labelling axis intersections and any vertical asymptote.",
+          "reference_answer": "One log branch for $x>3$, tending downwards as $x\\to 3^+$, increasing with decreasing gradient; vertical asymptote $x=3$ and labelled intercept $(4,0)$; no $y$-intercept or finite horizontal asymptote.",
+          "worked_steps": [
+            {
+              "action": "Set the logarithm argument positive.",
+              "reason": "A real logarithm needs a positive argument.",
+              "result": "$x>3$; the approached vertical boundary is $x=3$."
+            },
+            {
+              "action": "Locate the axis intersection.",
+              "reason": "The logarithm equals zero when its argument is one.",
+              "result": "$x-3=1$, so the intercept is $(4,0)$; $x=0$ is outside the domain."
+            },
+            {
+              "action": "Draw the translated logarithm branch.",
+              "reason": "Translation preserves its increasing, concave-down shape.",
+              "result": "The curve lies to the right of $x=3$, falls without bound near that line, and rises without a finite horizontal asymptote."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Single log-shaped function graph relative to its approached boundary: right-hand branch, downwards approach without crossing/touching, rising through below/above-axis regions with decreasing gradient and no finite horizontal asymptote.",
+              "feature_based": true,
+              "multiple_function_graphs": "B0"
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct asymptote x=3 identified on the sketch by a labelled guide or clearly labelled approached boundary; detached text is insufficient.",
+              "feature_based": true
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B3",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct intercept (4,0), labelled on the sketch.",
+              "feature_based": true
+            }
+          ]
+        },
+        {
+          "local_part_id": "d",
+          "prompt": "Use your sketch to decide whether the estimate in part (a) is too large (an overestimate) or too small (an underestimate). Explain how the trapezium top edges sit relative to the curve.",
+          "reference_answer": "Underestimate: the curve is concave down on the interval, so the top chords of the trapeziums lie below the curve. For a clearly different own curve, apply the stated own-graph follow-through rules.",
+          "worked_steps": [
+            {
+              "action": "Compare each top chord with the curve.",
+              "reason": "The logarithm has decreasing gradient on the integration interval.",
+              "result": "Each straight top chord lies below the concave-down curve."
+            },
+            {
+              "action": "Relate the areas.",
+              "reason": "The trapezium tops lie below the graph on the same positive interval.",
+              "result": "The estimated area is smaller than the area under the curve, so it is an underestimate."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Bias conclusion supported by the learner own sketch on (a) interval; concave-up own curve supports over, concave-down supports under. Absent sketch earns no credit; unreadable evidence is pending.",
+              "qualifiers": [
+                "FT"
+              ],
+              "follow_through_from": [
+                "c"
+              ]
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:DB1",
+              "mark_type": "DB",
+              "marks": 1,
+              "achievement": "Correct top-chord/trapezium position relative to the same own curve; verbal geometric reason or correct overlay with a brief referring statement. Increasing alone is insufficient.",
+              "depends_on": [
+                "WB8227-trapezium-sketch-estimate:d:B1"
+              ],
+              "follow_through_from": [
+                "c"
+              ],
+              "authority": "OD-5 own-curve dependent-reason extension"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "sketch-frame",
+          "role": "question",
+          "part_id": "c",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Blank axes for a learner sketch\"><title>Blank axes for a learner sketch</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"25.00\" y=\"28.00\" >Sketch frame</text><line x1=\"55.00\" y1=\"217.42\" x2=\"695.00\" y2=\"217.42\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"99.65\" y1=\"365.00\" x2=\"99.65\" y2=\"60.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"705.00\" y=\"221.42\" >x</text><text x=\"107.65\" y=\"48.00\" >y</text><text x=\"81.65\" y=\"237.42\" >0</text><text x=\"25.00\" y=\"414.00\" >Draw your curve, and label its axis intersections and any vertical asymptote.</text></g></svg>",
+          "alt": "Blank Cartesian axes for your sketch; no function curve is supplied.",
+          "must_read_givens": [
+            "x-axis",
+            "y-axis"
+          ]
+        },
+        {
+          "asset_id": "log-solution",
+          "role": "solution",
+          "part_id": "c",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Logarithmic sketch solution with asymptote, intercept and trapezium chords\"><title>Logarithmic sketch solution with asymptote, intercept and trapezium chords</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"25.00\" y=\"28.00\" >Logarithmic curve and trapezium top chords</text><line x1=\"55.00\" y1=\"217.42\" x2=\"695.00\" y2=\"217.42\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"99.65\" y1=\"365.00\" x2=\"99.65\" y2=\"60.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"705.00\" y=\"221.42\" >x</text><text x=\"107.65\" y=\"48.00\" >y</text><text x=\"81.65\" y=\"237.42\" >0</text><line x1=\"278.26\" y1=\"365.00\" x2=\"278.26\" y2=\"60.00\" stroke=\"#d05030\" stroke-width=\"1.5\" stroke-dasharray=\"7 5\"/><text x=\"286.26\" y=\"78.00\" >x = 3</text><path d=\"M281.220,365.000 L281.297,363.729 L281.377,362.458 L281.459,361.187 L281.543,359.917 L281.629,358.646 L281.717,357.375 L281.807,356.104 L281.900,354.833 L281.996,353.563 L282.094,352.292 L282.194,351.021 L282.297,349.750 L282.403,348.479 L282.511,347.208 L282.623,345.938 L282.737,344.667 L282.854,343.396 L282.975,342.125 L283.098,340.854 L283.225,339.583 L283.355,338.313 L283.488,337.042 L283.625,335.771 L283.766,334.500 L283.910,333.229 L284.058,331.958 L284.210,330.688 L284.366,329.417 L284.526,328.146 L284.690,326.875 L284.858,325.604 L285.031,324.333 L285.208,323.062 L285.390,321.792 L285.577,320.521 L285.768,319.250 L285.965,317.979 L286.167,316.708 L286.374,315.438 L286.586,314.167 L286.804,312.896 L287.028,311.625 L287.257,310.354 L287.493,309.083 L287.735,307.812 L287.983,306.542 L288.237,305.271 L288.498,304.000 L288.767,302.729 L289.042,301.458 L289.324,300.188 L289.614,298.917 L289.911,297.646 L290.216,296.375 L290.529,295.104 L290.850,293.833 L291.180,292.562 L291.518,291.292 L291.865,290.021 L292.221,288.750 L292.586,287.479 L292.961,286.208 L293.346,284.938 L293.741,283.667 L294.146,282.396 L294.562,281.125 L294.989,279.854 L295.427,278.583 L295.876,277.312 L296.337,276.042 L296.811,274.771 L297.296,273.500 L297.794,272.229 L298.306,270.958 L298.831,269.688 L299.369,268.417 L299.921,267.146 L300.488,265.875 L301.070,264.604 L301.667,263.333 L302.280,262.062 L302.909,260.792 L303.554,259.521 L304.216,258.250 L304.895,256.979 L305.592,255.708 L306.308,254.438 L307.042,253.167 L307.795,251.896 L308.568,250.625 L309.362,249.354 L310.176,248.083 L311.011,246.812 L311.868,245.542 L312.748,244.271 L313.651,243.000 L314.577,241.729 L315.527,240.458 L316.503,239.188 L317.504,237.917 L318.531,236.646 L319.585,235.375 L320.666,234.104 L321.776,232.833 L322.915,231.563 L324.084,230.292 L325.283,229.021 L326.514,227.750 L327.777,226.479 L329.073,225.208 L330.403,223.938 L331.767,222.667 L333.168,221.396 L334.605,220.125 L336.079,218.854 L337.593,217.583 L339.145,216.313 L340.739,215.042 L342.374,213.771 L344.052,212.500 L345.774,211.229 L347.541,209.958 L349.354,208.688 L351.215,207.417 L353.124,206.146 L355.083,204.875 L357.094,203.604 L359.157,202.333 L361.274,201.062 L363.447,199.792 L365.676,198.521 L367.964,197.250 L370.312,195.979 L372.721,194.708 L375.193,193.438 L377.730,192.167 L380.333,190.896 L383.004,189.625 L385.746,188.354 L388.559,187.083 L391.445,185.812 L394.407,184.542 L397.447,183.271 L400.566,182.000 L403.767,180.729 L407.052,179.458 L410.422,178.188 L413.881,176.917 L417.430,175.646 L421.073,174.375 L424.810,173.104 L428.645,171.833 L432.581,170.562 L436.620,169.292 L440.764,168.021 L445.017,166.750 L449.381,165.479 L453.859,164.208 L458.455,162.938 L463.171,161.667 L468.010,160.396 L472.976,159.125 L478.072,157.854 L483.301,156.583 L488.667,155.312 L494.173,154.042 L499.824,152.771 L505.622,151.500 L511.572,150.229 L517.678,148.958 L523.944,147.688 L530.373,146.417 L536.971,145.146 L543.742,143.875 L550.690,142.604 L557.819,141.333 L565.135,140.062 L572.643,138.792 L580.347,137.521 L588.253,136.250 L596.365,134.979 L604.690,133.708 L613.233,132.437 L621.999,131.167 L630.995,129.896 L640.226,128.625 L649.699,127.354 L659.420,126.083 L669.395,124.813 L679.631,123.542 L690.135,122.271\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"3\"/><circle cx=\"337.791\" cy=\"217.419\" r=\"4\"/><text x=\"343.79\" y=\"239.42\" >(4, 0)</text><line x1=\"337.79\" y1=\"217.42\" x2=\"456.86\" y2=\"163.37\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"456.86\" y1=\"217.42\" x2=\"456.86\" y2=\"163.37\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><line x1=\"456.86\" y1=\"163.37\" x2=\"575.93\" y2=\"138.25\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"575.93\" y1=\"217.42\" x2=\"575.93\" y2=\"138.25\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><text x=\"575.93\" y=\"241.42\" text-anchor=\"middle\">8</text><text x=\"25.00\" y=\"414.00\" >The curve is concave down; the straight top chords lie below it.</text><text x=\"25.00\" y=\"438.00\" >The function continues to rise; it has no finite horizontal asymptote.</text></g></svg>",
+          "alt": "Logarithmic branch right of x=3, intercept (4,0), with top chords below the curve.",
+          "must_read_givens": [
+            "asymptote",
+            "intercept",
+            "domain side",
+            "integration interval",
+            "strip count",
+            "curve/chord relation"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "one increasing concave-down logarithmic branch"
+            ],
+            "variable": [
+              "shift h",
+              "interval L",
+              "strip count n"
+            ],
+            "relations": [
+              "x>h",
+              "asymptote x=h",
+              "intercept (h+1,0)",
+              "chords below curve"
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Connect an estimate and its graph",
+        "prompts": [
+          "How do the first, interior and last ordinates enter the trapezium rule?",
+          "Can you recognise a square in the second integrand?",
+          "What do a curve and its top chords tell you about an area estimate?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"trapezium-quadrature\",4,2]",
+        "[\"trapezium-hence\",4,2,1]",
+        "[\"log-sketch\",3]",
+        "[\"own-log-chord-context\",3,4,2]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"trapezium-quadrature\",4,2]",
+        "b": "[\"trapezium-hence\",4,2,1]",
+        "c": "[\"log-sketch\",3]",
+        "d": "[\"own-log-chord-context\",3,4,2]"
+      },
+      "private_math": {
+        "width": "2",
+        "ordinates": [
+          "0",
+          "1.0986122886681096913952452369225257046474905578227494517346943336",
+          "1.6094379124341003746007593332261876395256013542685177219126478915"
+        ],
+        "trapezium": "3.8066624897703197573912498070712390488205824699140166253820365587",
+        "a_3sf": "3.81",
+        "b_guard_3sf": "7.61",
+        "b_scale": 2,
+        "exact_integral": "4.0471895621705018730037966661309381976280067713425886095632394575",
+        "bias": "underestimate",
+        "strict_generated_fresh_bound": 2,
+        "original_subtask_guard": "h=2 is excluded from this generated pool. Explicit original/mixed route requires exact source wording and attribution, not implemented here."
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-trapezium-sketch-estimate",
+    "branch_id": "logarithmic-hence-chain",
+    "parameters": {
+      "h": 3,
+      "L": 8,
+      "n": 4,
+      "k": 3
+    },
+    "question": {
+      "stem": "Consider $f(x)=\\ln(x-3)$ on its real domain. Show your working for the numerical estimates.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Use 4 equal trapeziums to estimate $I=\\int_{4}^{12}\\ln(x-3)\\,dx$. Give your answer to 3 significant figures.",
+          "reference_answer": "$I \\approx 11.5$.",
+          "worked_steps": [
+            {
+              "action": "Find the width and ordinates.",
+              "reason": "Equal strips have width equal to the interval length divided by the strip count.",
+              "result": "$\\Delta x=8/4=2$; $y_{0}=\\ln(1)$, $y_{1}=\\ln(3)$, $y_{2}=\\ln(5)$, $y_{3}=\\ln(7)$, $y_{4}=\\ln(9)$."
+            },
+            {
+              "action": "Apply the trapezium weights.",
+              "reason": "Each interior ordinate belongs to two neighbouring trapeziums.",
+              "result": "$T=\\frac{2}{2}\\left(y_0+2\\sum_{j=1}^{3}y_j+y_{4}\\right)=11.505145277651266\\ldots$."
+            },
+            {
+              "action": "Round only the reported result.",
+              "reason": "Guard digits avoid premature-rounding error.",
+              "result": "$I \\approx 11.5$ to 3 significant figures."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Positive width 2, unsimplified or in the formula."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Correct trapezium weighting or actual sum of trapezium areas using a positive width."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:a:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct 3 significant figure result 11.5, with the required valid method.",
+              "depends_on": [
+                "WB8227-trapezium-sketch-estimate:a:M1"
+              ]
+            }
+          ]
+        },
+        {
+          "local_part_id": "b",
+          "prompt": "Hence, showing the transformation, estimate $J=\\int_{4}^{12}3\\ln(x^2-6x+9)\\,dx$. Give your answer to 3 significant figures.",
+          "reference_answer": "$J \\approx 69.0$ using guard digits from (a). Correct 3-significant-figure products of a coherently used own (a) estimate are followed through.",
+          "worked_steps": [
+            {
+              "action": "Recognise the square.",
+              "reason": "The expanded quadratic is a perfect square.",
+              "result": "$x^2-6x+9=(x-3)^2$."
+            },
+            {
+              "action": "Use the logarithm power rule.",
+              "reason": "Throughout the integration interval, $x-3>0$.",
+              "result": "$3\\ln((x-3)^2)=6\\ln(x-3)$."
+            },
+            {
+              "action": "Scale the previous estimate.",
+              "reason": "The same bounds are used, so the factor multiplies the whole estimate.",
+              "result": "$J\\approx 6T=69.030871665907596\\ldots\\approx 69.0$ (3 significant figures)."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Factorised form $3\\ln((x-3)^2)$ alone, the correct $6\\ln(x-3)$, or a correctly derived 6 scale; the direct expression implies the square."
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:b:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct visible 6 times the learner own (a) estimate, with no visibly wrong log-law reasoning; exact product or any rendering correct to at least 3 significant figures.",
+              "qualifiers": [
+                "FT",
+                "www"
+              ],
+              "follow_through_from": [
+                "a"
+              ],
+              "alternatives": [
+                {
+                  "exclusive_cap": 1,
+                  "description": "Correct visible non-hence method; maximum with main route, never additive."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "local_part_id": "c",
+          "prompt": "Sketch $y=\\ln(x-3)$, labelling axis intersections and any vertical asymptote.",
+          "reference_answer": "One log branch for $x>3$, tending downwards as $x\\to 3^+$, increasing with decreasing gradient; vertical asymptote $x=3$ and labelled intercept $(4,0)$; no $y$-intercept or finite horizontal asymptote.",
+          "worked_steps": [
+            {
+              "action": "Set the logarithm argument positive.",
+              "reason": "A real logarithm needs a positive argument.",
+              "result": "$x>3$; the approached vertical boundary is $x=3$."
+            },
+            {
+              "action": "Locate the axis intersection.",
+              "reason": "The logarithm equals zero when its argument is one.",
+              "result": "$x-3=1$, so the intercept is $(4,0)$; $x=0$ is outside the domain."
+            },
+            {
+              "action": "Draw the translated logarithm branch.",
+              "reason": "Translation preserves its increasing, concave-down shape.",
+              "result": "The curve lies to the right of $x=3$, falls without bound near that line, and rises without a finite horizontal asymptote."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Single log-shaped function graph relative to its approached boundary: right-hand branch, downwards approach without crossing/touching, rising through below/above-axis regions with decreasing gradient and no finite horizontal asymptote.",
+              "feature_based": true,
+              "multiple_function_graphs": "B0"
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B2",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct asymptote x=3 identified on the sketch by a labelled guide or clearly labelled approached boundary; detached text is insufficient.",
+              "feature_based": true
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:c:B3",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct intercept (4,0), labelled on the sketch.",
+              "feature_based": true
+            }
+          ]
+        },
+        {
+          "local_part_id": "d",
+          "prompt": "Use your sketch to decide whether the estimate in part (a) is too large (an overestimate) or too small (an underestimate). Explain how the trapezium top edges sit relative to the curve.",
+          "reference_answer": "Underestimate: the curve is concave down on the interval, so the top chords of the trapeziums lie below the curve. For a clearly different own curve, apply the stated own-graph follow-through rules.",
+          "worked_steps": [
+            {
+              "action": "Compare each top chord with the curve.",
+              "reason": "The logarithm has decreasing gradient on the integration interval.",
+              "result": "Each straight top chord lies below the concave-down curve."
+            },
+            {
+              "action": "Relate the areas.",
+              "reason": "The trapezium tops lie below the graph on the same positive interval.",
+              "result": "The estimated area is smaller than the area under the curve, so it is an underestimate."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Bias conclusion supported by the learner own sketch on (a) interval; concave-up own curve supports over, concave-down supports under. Absent sketch earns no credit; unreadable evidence is pending.",
+              "qualifiers": [
+                "FT"
+              ],
+              "follow_through_from": [
+                "c"
+              ]
+            },
+            {
+              "criterion_id": "WB8227-trapezium-sketch-estimate:d:DB1",
+              "mark_type": "DB",
+              "marks": 1,
+              "achievement": "Correct top-chord/trapezium position relative to the same own curve; verbal geometric reason or correct overlay with a brief referring statement. Increasing alone is insufficient.",
+              "depends_on": [
+                "WB8227-trapezium-sketch-estimate:d:B1"
+              ],
+              "follow_through_from": [
+                "c"
+              ],
+              "authority": "OD-5 own-curve dependent-reason extension"
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "sketch-frame",
+          "role": "question",
+          "part_id": "c",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Blank axes for a learner sketch\"><title>Blank axes for a learner sketch</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"25.00\" y=\"28.00\" >Sketch frame</text><line x1=\"55.00\" y1=\"217.42\" x2=\"695.00\" y2=\"217.42\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"87.54\" y1=\"365.00\" x2=\"87.54\" y2=\"60.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"705.00\" y=\"221.42\" >x</text><text x=\"95.54\" y=\"48.00\" >y</text><text x=\"69.54\" y=\"237.42\" >0</text><text x=\"25.00\" y=\"414.00\" >Draw your curve, and label its axis intersections and any vertical asymptote.</text></g></svg>",
+          "alt": "Blank Cartesian axes for your sketch; no function curve is supplied.",
+          "must_read_givens": [
+            "x-axis",
+            "y-axis"
+          ]
+        },
+        {
+          "asset_id": "log-solution",
+          "role": "solution",
+          "part_id": "c",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"450\" viewBox=\"0 0 760 450\" role=\"img\" aria-label=\"Logarithmic sketch solution with asymptote, intercept and trapezium chords\"><title>Logarithmic sketch solution with asymptote, intercept and trapezium chords</title><rect width=\"100%\" height=\"100%\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" font-size=\"15\" fill=\"#17212b\"><text x=\"25.00\" y=\"28.00\" >Logarithmic curve and trapezium top chords</text><line x1=\"55.00\" y1=\"217.42\" x2=\"695.00\" y2=\"217.42\" stroke=\"#17212b\" stroke-width=\"1.5\" /><line x1=\"87.54\" y1=\"365.00\" x2=\"87.54\" y2=\"60.00\" stroke=\"#17212b\" stroke-width=\"1.5\" /><text x=\"705.00\" y=\"221.42\" >x</text><text x=\"95.54\" y=\"48.00\" >y</text><text x=\"69.54\" y=\"237.42\" >0</text><line x1=\"217.71\" y1=\"365.00\" x2=\"217.71\" y2=\"60.00\" stroke=\"#d05030\" stroke-width=\"1.5\" stroke-dasharray=\"7 5\"/><text x=\"225.71\" y=\"78.00\" >x = 3</text><path d=\"M219.872,365.000 L219.929,363.729 L219.987,362.458 L220.046,361.187 L220.107,359.917 L220.170,358.646 L220.234,357.375 L220.300,356.104 L220.368,354.833 L220.438,353.563 L220.509,352.292 L220.582,351.021 L220.657,349.750 L220.734,348.479 L220.813,347.208 L220.895,345.938 L220.978,344.667 L221.063,343.396 L221.151,342.125 L221.241,340.854 L221.333,339.583 L221.428,338.313 L221.525,337.042 L221.625,335.771 L221.728,334.500 L221.833,333.229 L221.941,331.958 L222.051,330.688 L222.165,329.417 L222.281,328.146 L222.401,326.875 L222.524,325.604 L222.650,324.333 L222.779,323.062 L222.911,321.792 L223.047,320.521 L223.187,319.250 L223.330,317.979 L223.477,316.708 L223.628,315.438 L223.783,314.167 L223.942,312.896 L224.105,311.625 L224.272,310.354 L224.444,309.083 L224.620,307.812 L224.801,306.542 L224.986,305.271 L225.177,304.000 L225.372,302.729 L225.573,301.458 L225.778,300.188 L225.990,298.917 L226.206,297.646 L226.428,296.375 L226.657,295.104 L226.891,293.833 L227.131,292.562 L227.377,291.292 L227.630,290.021 L227.890,288.750 L228.156,287.479 L228.430,286.208 L228.710,284.938 L228.998,283.667 L229.293,282.396 L229.596,281.125 L229.907,279.854 L230.226,278.583 L230.554,277.312 L230.890,276.042 L231.235,274.771 L231.589,273.500 L231.952,272.229 L232.325,270.958 L232.707,269.688 L233.099,268.417 L233.502,267.146 L233.915,265.875 L234.339,264.604 L234.775,263.333 L235.221,262.062 L235.679,260.792 L236.149,259.521 L236.632,258.250 L237.127,256.979 L237.635,255.708 L238.157,254.438 L238.692,253.167 L239.241,251.896 L239.804,250.625 L240.382,249.354 L240.976,248.083 L241.584,246.812 L242.209,245.542 L242.850,244.271 L243.508,243.000 L244.183,241.729 L244.876,240.458 L245.587,239.188 L246.316,237.917 L247.065,236.646 L247.833,235.375 L248.621,234.104 L249.430,232.833 L250.260,231.563 L251.112,230.292 L251.986,229.021 L252.883,227.750 L253.803,226.479 L254.748,225.208 L255.717,223.938 L256.712,222.667 L257.732,221.396 L258.780,220.125 L259.854,218.854 L260.957,217.583 L262.089,216.313 L263.250,215.042 L264.442,213.771 L265.665,212.500 L266.920,211.229 L268.208,209.958 L269.529,208.688 L270.885,207.417 L272.277,206.146 L273.705,204.875 L275.170,203.604 L276.674,202.333 L278.217,201.062 L279.800,199.792 L281.425,198.521 L283.092,197.250 L284.803,195.979 L286.559,194.708 L288.361,193.438 L290.210,192.167 L292.107,190.896 L294.054,189.625 L296.052,188.354 L298.102,187.083 L300.206,185.812 L302.365,184.542 L304.580,183.271 L306.853,182.000 L309.186,180.729 L311.580,179.458 L314.037,178.188 L316.557,176.917 L319.144,175.646 L321.799,174.375 L324.523,173.104 L327.318,171.833 L330.186,170.562 L333.130,169.292 L336.150,168.021 L339.250,166.750 L342.430,165.479 L345.694,164.208 L349.043,162.938 L352.480,161.667 L356.007,160.396 L359.626,159.125 L363.340,157.854 L367.151,156.583 L371.062,155.312 L375.075,154.042 L379.194,152.771 L383.420,151.500 L387.756,150.229 L392.206,148.958 L396.773,147.688 L401.459,146.417 L406.267,145.146 L411.202,143.875 L416.265,142.604 L421.461,141.333 L426.794,140.062 L432.265,138.792 L437.880,137.521 L443.642,136.250 L449.554,134.979 L455.622,133.708 L461.848,132.437 L468.237,131.167 L474.793,129.896 L481.521,128.625 L488.425,127.354 L495.509,126.083 L502.779,124.813 L510.239,123.542 L517.895,122.271 L525.750,121.000 L533.812,119.729 L542.084,118.458 L550.573,117.188 L559.284,115.917 L568.223,114.646 L577.396,113.375 L586.808,112.104 L596.468,110.833 L606.380,109.563 L616.551,108.292 L626.989,107.021 L637.699,105.750 L648.690,104.479 L659.969,103.208 L671.543,101.938 L683.420,100.667\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"3\"/><circle cx=\"261.102\" cy=\"217.419\" r=\"4\"/><text x=\"267.10\" y=\"239.42\" >(4, 0)</text><line x1=\"261.10\" y1=\"217.42\" x2=\"347.88\" y2=\"163.37\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"347.88\" y1=\"217.42\" x2=\"347.88\" y2=\"163.37\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><line x1=\"347.88\" y1=\"163.37\" x2=\"434.66\" y2=\"138.25\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"434.66\" y1=\"217.42\" x2=\"434.66\" y2=\"138.25\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><line x1=\"434.66\" y1=\"138.25\" x2=\"521.44\" y2=\"121.69\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"521.44\" y1=\"217.42\" x2=\"521.44\" y2=\"121.69\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><line x1=\"521.44\" y1=\"121.69\" x2=\"608.22\" y2=\"109.33\" stroke=\"#16835c\" stroke-width=\"1.5\" /><line x1=\"608.22\" y1=\"217.42\" x2=\"608.22\" y2=\"109.33\" stroke=\"#9bbcae\" stroke-width=\"1.5\" /><text x=\"608.22\" y=\"241.42\" text-anchor=\"middle\">12</text><text x=\"25.00\" y=\"414.00\" >The curve is concave down; the straight top chords lie below it.</text><text x=\"25.00\" y=\"438.00\" >The function continues to rise; it has no finite horizontal asymptote.</text></g></svg>",
+          "alt": "Logarithmic branch right of x=3, intercept (4,0), with top chords below the curve.",
+          "must_read_givens": [
+            "asymptote",
+            "intercept",
+            "domain side",
+            "integration interval",
+            "strip count",
+            "curve/chord relation"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "one increasing concave-down logarithmic branch"
+            ],
+            "variable": [
+              "shift h",
+              "interval L",
+              "strip count n"
+            ],
+            "relations": [
+              "x>h",
+              "asymptote x=h",
+              "intercept (h+1,0)",
+              "chords below curve"
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Connect an estimate and its graph",
+        "prompts": [
+          "How do the first, interior and last ordinates enter the trapezium rule?",
+          "Can you recognise a square in the second integrand?",
+          "What do a curve and its top chords tell you about an area estimate?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"trapezium-quadrature\",8,4]",
+        "[\"trapezium-hence\",8,4,3]",
+        "[\"log-sketch\",3]",
+        "[\"own-log-chord-context\",3,8,4]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"trapezium-quadrature\",8,4]",
+        "b": "[\"trapezium-hence\",8,4,3]",
+        "c": "[\"log-sketch\",3]",
+        "d": "[\"own-log-chord-context\",3,8,4]"
+      },
+      "private_math": {
+        "width": "2",
+        "ordinates": [
+          "0",
+          "1.0986122886681096913952452369225257046474905578227494517346943336",
+          "1.6094379124341003746007593332261876395256013542685177219126478915",
+          "1.9459101490553133051053527434431797296370847295818611884593901499",
+          "2.1972245773362193827904904738450514092949811156454989034693886673"
+        ],
+        "trapezium": "11.505145277651266124993205101028837556915334398991755627682853417",
+        "a_3sf": "11.5",
+        "b_guard_3sf": "69.0",
+        "b_scale": 6,
+        "exact_integral": "11.775021196025974445114414264605462683654830040809490131224498006",
+        "bias": "underestimate",
+        "strict_generated_fresh_bound": 2,
+        "original_subtask_guard": "h=2 is excluded from this generated pool. Explicit original/mixed route requires exact source wording and attribution, not implemented here."
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-vector-geometry",
+    "branch_id": "scalar-combination-and-origin-angle",
+    "parameters": {
+      "r": 1,
+      "s": -3,
+      "t": 2
+    },
+    "question": {
+      "stem": "The position vectors of $A$, $B$ and $C$ from $O$ are $\\overrightarrow{OA}=\\begin{pmatrix}1 \\\\ 1 \\\\ 1\\end{pmatrix}$, $\\overrightarrow{OB}=\\begin{pmatrix}-3 \\\\ 1 \\\\ -1\\end{pmatrix}$ and $\\overrightarrow{OC}=\\begin{pmatrix}1 \\\\ 2 \\\\ 1\\end{pmatrix}$.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Find $p$ such that $p\\overrightarrow{OA}-\\overrightarrow{OB}$ is perpendicular to $\\overrightarrow{OC}$. If not written exactly, give $p$ to 3 significant figures.",
+          "reference_answer": "$p=-\\frac{1}{2}$.",
+          "worked_steps": [
+            {
+              "action": "Scale the first vector, then subtract the second.",
+              "reason": "The scalar multiplies only $\\overrightarrow{OA}$.",
+              "result": "$p\\overrightarrow{OA}-\\overrightarrow{OB}=\\begin{pmatrix}p+3\\\\1p-1\\\\p+1\\end{pmatrix}$."
+            },
+            {
+              "action": "Set the scalar product with the third vector to zero.",
+              "reason": "Perpendicular vectors have zero scalar product.",
+              "result": "$(p+3)+2(1p-1)+(p+1)=0$."
+            },
+            {
+              "action": "Solve the linear equation.",
+              "reason": "Collect the terms in $p$ and divide by its nonzero coefficient.",
+              "result": "$4p=-2$, so $p=-\\frac{1}{2}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-vector-geometry:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct distributed scaling and subtraction, combined resultant, or equivalent correct scalar-product expansion; undistributed prompt restatement alone is insufficient."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:a:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Calculate a scalar product with OC and equate to zero; a coherent attempted resultant may retain this method mark."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:a:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct $p=-\\frac{1}{2}$ or 3-significant-figure decimal, with valid specified-resultant working.",
+              "depends_on": [
+                "WB8227-vector-geometry:a:M1"
+              ],
+              "valid_resultant_required": true
+            }
+          ]
+        },
+        {
+          "local_part_id": "b",
+          "prompt": "Use a scalar product to find angle $AOB$ in degrees, to 1 decimal place unless exact.",
+          "reference_answer": "$\\angle AOB=121.5^\\circ$.",
+          "worked_steps": [
+            {
+              "action": "Find the scalar product of the two rays from the origin.",
+              "reason": "Both position vectors start at the angle vertex $O$.",
+              "result": "$\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=-3+1-1=-3$."
+            },
+            {
+              "action": "Find the two magnitudes.",
+              "reason": "The magnitude is the square root of the sum of squared components.",
+              "result": "$|\\overrightarrow{OA}|=\\sqrt{3}$ and $|\\overrightarrow{OB}|=\\sqrt{11}$."
+            },
+            {
+              "action": "Use the scalar-product angle formula.",
+              "reason": "Divide the dot product by the product of the magnitudes, retaining guard digits.",
+              "result": "$\\cos\\theta=\\frac{-3}{\\sqrt{3}\\sqrt{11}}$."
+            },
+            {
+              "action": "Evaluate and report the origin angle.",
+              "reason": "Use degree mode and the requested final accuracy.",
+              "result": "$\\theta=121.5^\\circ$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-vector-geometry:b:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct dot product -3, or its negation explicitly identified as AO dot OB.",
+              "alternatives": [
+                "Reversed ray with supplementary-angle correction."
+              ]
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "One or both magnitudes correct: sqrt(3) and sqrt(11)."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:M2",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Correct scalar-product angle relation using coherent own dot and magnitudes.",
+              "qualifiers": [
+                "FT"
+              ],
+              "follow_through_from": [
+                "b"
+              ]
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct requested angle 121.5 degrees, with scalar-product method and exact 60/90 or correctly rounded 1-decimal-place form. Preserve a trailing zero for nonexact integer-rounded angles.",
+              "depends_on": [
+                "WB8227-vector-geometry:b:M2"
+              ],
+              "more_precise_answer_policy": "Carry: acceptance of more precise final form awaits F/app decision; do not silently reject or award."
+            }
+          ]
+        }
+      ],
+      "assets": [],
+      "practice_help": {
+        "title": "Use the vector directions",
+        "prompts": [
+          "Which vector does the scalar multiply?",
+          "What scalar-product equation expresses perpendicularity?",
+          "Do both rays in your angle calculation begin at O?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"vector-perpendicular\",1,-3,2]",
+        "[\"vector-angle\",1,-3]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"vector-perpendicular\",1,-3,2]",
+        "b": "[\"vector-angle\",1,-3]"
+      },
+      "private_math": {
+        "vectors": {
+          "OA": [
+            1,
+            1,
+            1
+          ],
+          "OB": [
+            -3,
+            1,
+            -1
+          ],
+          "OC": [
+            1,
+            2,
+            1
+          ]
+        },
+        "p_fraction": "-1/2",
+        "dot": -3,
+        "norm_squares": [
+          3,
+          11
+        ],
+        "angle_degrees": "121.48215410529386",
+        "angle_display": "121.5"
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-vector-geometry",
+    "branch_id": "scalar-combination-and-origin-angle",
+    "parameters": {
+      "r": 2,
+      "s": 2,
+      "t": 1
+    },
+    "question": {
+      "stem": "The position vectors of $A$, $B$ and $C$ from $O$ are $\\overrightarrow{OA}=\\begin{pmatrix}1 \\\\ 2 \\\\ 1\\end{pmatrix}$, $\\overrightarrow{OB}=\\begin{pmatrix}2 \\\\ 1 \\\\ -1\\end{pmatrix}$ and $\\overrightarrow{OC}=\\begin{pmatrix}1 \\\\ 1 \\\\ 1\\end{pmatrix}$.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Find $p$ such that $p\\overrightarrow{OA}-\\overrightarrow{OB}$ is perpendicular to $\\overrightarrow{OC}$. If not written exactly, give $p$ to 3 significant figures.",
+          "reference_answer": "$p=\\frac{1}{2}$.",
+          "worked_steps": [
+            {
+              "action": "Scale the first vector, then subtract the second.",
+              "reason": "The scalar multiplies only $\\overrightarrow{OA}$.",
+              "result": "$p\\overrightarrow{OA}-\\overrightarrow{OB}=\\begin{pmatrix}p-2\\\\2p-1\\\\p+1\\end{pmatrix}$."
+            },
+            {
+              "action": "Set the scalar product with the third vector to zero.",
+              "reason": "Perpendicular vectors have zero scalar product.",
+              "result": "$(p-2)+1(2p-1)+(p+1)=0$."
+            },
+            {
+              "action": "Solve the linear equation.",
+              "reason": "Collect the terms in $p$ and divide by its nonzero coefficient.",
+              "result": "$4p=2$, so $p=\\frac{1}{2}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-vector-geometry:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct distributed scaling and subtraction, combined resultant, or equivalent correct scalar-product expansion; undistributed prompt restatement alone is insufficient."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:a:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Calculate a scalar product with OC and equate to zero; a coherent attempted resultant may retain this method mark."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:a:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct $p=\\frac{1}{2}$ or 3-significant-figure decimal, with valid specified-resultant working.",
+              "depends_on": [
+                "WB8227-vector-geometry:a:M1"
+              ],
+              "valid_resultant_required": true
+            }
+          ]
+        },
+        {
+          "local_part_id": "b",
+          "prompt": "Use a scalar product to find angle $AOB$ in degrees, to 1 decimal place unless exact.",
+          "reference_answer": "$\\angle AOB=60^\\circ$.",
+          "worked_steps": [
+            {
+              "action": "Find the scalar product of the two rays from the origin.",
+              "reason": "Both position vectors start at the angle vertex $O$.",
+              "result": "$\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=2+2-1=3$."
+            },
+            {
+              "action": "Find the two magnitudes.",
+              "reason": "The magnitude is the square root of the sum of squared components.",
+              "result": "$|\\overrightarrow{OA}|=\\sqrt{6}$ and $|\\overrightarrow{OB}|=\\sqrt{6}$."
+            },
+            {
+              "action": "Use the scalar-product angle formula.",
+              "reason": "Divide the dot product by the product of the magnitudes, retaining guard digits.",
+              "result": "$\\cos\\theta=\\frac{3}{\\sqrt{6}\\sqrt{6}}$."
+            },
+            {
+              "action": "Evaluate and report the origin angle.",
+              "reason": "Use degree mode and the requested final accuracy.",
+              "result": "$\\theta=60^\\circ$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-vector-geometry:b:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct dot product 3, or its negation explicitly identified as AO dot OB.",
+              "alternatives": [
+                "Reversed ray with supplementary-angle correction."
+              ]
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "One or both magnitudes correct: sqrt(6) and sqrt(6)."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:M2",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Correct scalar-product angle relation using coherent own dot and magnitudes.",
+              "qualifiers": [
+                "FT"
+              ],
+              "follow_through_from": [
+                "b"
+              ]
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct requested angle 60 degrees, with scalar-product method and exact 60/90 or correctly rounded 1-decimal-place form. Preserve a trailing zero for nonexact integer-rounded angles.",
+              "depends_on": [
+                "WB8227-vector-geometry:b:M2"
+              ],
+              "more_precise_answer_policy": "Carry: acceptance of more precise final form awaits F/app decision; do not silently reject or award."
+            }
+          ]
+        }
+      ],
+      "assets": [],
+      "practice_help": {
+        "title": "Use the vector directions",
+        "prompts": [
+          "Which vector does the scalar multiply?",
+          "What scalar-product equation expresses perpendicularity?",
+          "Do both rays in your angle calculation begin at O?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"vector-perpendicular\",2,2,1]",
+        "[\"vector-angle\",2,2]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"vector-perpendicular\",2,2,1]",
+        "b": "[\"vector-angle\",2,2]"
+      },
+      "private_math": {
+        "vectors": {
+          "OA": [
+            1,
+            2,
+            1
+          ],
+          "OB": [
+            2,
+            1,
+            -1
+          ],
+          "OC": [
+            1,
+            1,
+            1
+          ]
+        },
+        "p_fraction": "1/2",
+        "dot": 3,
+        "norm_squares": [
+          6,
+          6
+        ],
+        "angle_degrees": "59.99999999999999",
+        "angle_display": "60"
+      }
+    }
+  },
+  {
+    "recipe_id": "WB8227-vector-geometry",
+    "branch_id": "scalar-combination-and-origin-angle",
+    "parameters": {
+      "r": 3,
+      "s": 3,
+      "t": 2
+    },
+    "question": {
+      "stem": "The position vectors of $A$, $B$ and $C$ from $O$ are $\\overrightarrow{OA}=\\begin{pmatrix}1 \\\\ 3 \\\\ 1\\end{pmatrix}$, $\\overrightarrow{OB}=\\begin{pmatrix}3 \\\\ 1 \\\\ -1\\end{pmatrix}$ and $\\overrightarrow{OC}=\\begin{pmatrix}1 \\\\ 2 \\\\ 1\\end{pmatrix}$.",
+      "parts": [
+        {
+          "local_part_id": "a",
+          "prompt": "Find $p$ such that $p\\overrightarrow{OA}-\\overrightarrow{OB}$ is perpendicular to $\\overrightarrow{OC}$. If not written exactly, give $p$ to 3 significant figures.",
+          "reference_answer": "$p=\\frac{1}{2}$.",
+          "worked_steps": [
+            {
+              "action": "Scale the first vector, then subtract the second.",
+              "reason": "The scalar multiplies only $\\overrightarrow{OA}$.",
+              "result": "$p\\overrightarrow{OA}-\\overrightarrow{OB}=\\begin{pmatrix}p-3\\\\3p-1\\\\p+1\\end{pmatrix}$."
+            },
+            {
+              "action": "Set the scalar product with the third vector to zero.",
+              "reason": "Perpendicular vectors have zero scalar product.",
+              "result": "$(p-3)+2(3p-1)+(p+1)=0$."
+            },
+            {
+              "action": "Solve the linear equation.",
+              "reason": "Collect the terms in $p$ and divide by its nonzero coefficient.",
+              "result": "$8p=4$, so $p=\\frac{1}{2}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-vector-geometry:a:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct distributed scaling and subtraction, combined resultant, or equivalent correct scalar-product expansion; undistributed prompt restatement alone is insufficient."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:a:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Calculate a scalar product with OC and equate to zero; a coherent attempted resultant may retain this method mark."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:a:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct $p=\\frac{1}{2}$ or 3-significant-figure decimal, with valid specified-resultant working.",
+              "depends_on": [
+                "WB8227-vector-geometry:a:M1"
+              ],
+              "valid_resultant_required": true
+            }
+          ]
+        },
+        {
+          "local_part_id": "b",
+          "prompt": "Use a scalar product to find angle $AOB$ in degrees, to 1 decimal place unless exact.",
+          "reference_answer": "$\\angle AOB=63.0^\\circ$.",
+          "worked_steps": [
+            {
+              "action": "Find the scalar product of the two rays from the origin.",
+              "reason": "Both position vectors start at the angle vertex $O$.",
+              "result": "$\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=3+3-1=5$."
+            },
+            {
+              "action": "Find the two magnitudes.",
+              "reason": "The magnitude is the square root of the sum of squared components.",
+              "result": "$|\\overrightarrow{OA}|=\\sqrt{11}$ and $|\\overrightarrow{OB}|=\\sqrt{11}$."
+            },
+            {
+              "action": "Use the scalar-product angle formula.",
+              "reason": "Divide the dot product by the product of the magnitudes, retaining guard digits.",
+              "result": "$\\cos\\theta=\\frac{5}{\\sqrt{11}\\sqrt{11}}$."
+            },
+            {
+              "action": "Evaluate and report the origin angle.",
+              "reason": "Use degree mode and the requested final accuracy.",
+              "result": "$\\theta=63.0^\\circ$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-vector-geometry:b:B1",
+              "mark_type": "B",
+              "marks": 1,
+              "achievement": "Correct dot product 5, or its negation explicitly identified as AO dot OB.",
+              "alternatives": [
+                "Reversed ray with supplementary-angle correction."
+              ]
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:M1",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "One or both magnitudes correct: sqrt(11) and sqrt(11)."
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:M2",
+              "mark_type": "M",
+              "marks": 1,
+              "achievement": "Correct scalar-product angle relation using coherent own dot and magnitudes.",
+              "qualifiers": [
+                "FT"
+              ],
+              "follow_through_from": [
+                "b"
+              ]
+            },
+            {
+              "criterion_id": "WB8227-vector-geometry:b:A1",
+              "mark_type": "A",
+              "marks": 1,
+              "achievement": "Correct requested angle 63.0 degrees, with scalar-product method and exact 60/90 or correctly rounded 1-decimal-place form. Preserve a trailing zero for nonexact integer-rounded angles.",
+              "depends_on": [
+                "WB8227-vector-geometry:b:M2"
+              ],
+              "more_precise_answer_policy": "Carry: acceptance of more precise final form awaits F/app decision; do not silently reject or award."
+            }
+          ]
+        }
+      ],
+      "assets": [],
+      "practice_help": {
+        "title": "Use the vector directions",
+        "prompts": [
+          "Which vector does the scalar multiply?",
+          "What scalar-product equation expresses perpendicularity?",
+          "Do both rays in your angle calculation begin at O?"
+        ]
+      },
+      "exposure_keys": [
+        "[\"vector-perpendicular\",3,3,2]",
+        "[\"vector-angle\",3,3]"
+      ],
+      "part_exposure_keys": {
+        "a": "[\"vector-perpendicular\",3,3,2]",
+        "b": "[\"vector-angle\",3,3]"
+      },
+      "private_math": {
+        "vectors": {
+          "OA": [
+            1,
+            3,
+            1
+          ],
+          "OB": [
+            3,
+            1,
+            -1
+          ],
+          "OC": [
+            1,
+            2,
+            1
+          ]
+        },
+        "p_fraction": "1/2",
+        "dot": 5,
+        "norm_squares": [
+          11,
+          11
+        ],
+        "angle_degrees": "62.96430821058772",
+        "angle_display": "63.0"
+      }
+    }
+  }
+]

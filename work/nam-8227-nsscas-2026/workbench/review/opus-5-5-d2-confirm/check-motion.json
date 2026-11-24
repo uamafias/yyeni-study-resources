@@ -1,0 +1,508 @@
+{
+ "label": "motion",
+ "scope": [
+  "WB8227-motion-integration@0.1.2: polynomial-chain, exponential-positive, interior-reversal (sign-aware distance, mixed outcomes)",
+  "D1 findings: D1-S02, D1-S09, D1-S10, D1-S11, D1-S12, D1-S23 (motion application); D1 baseline evidence review/opus-5-5-d1-short-check/check-calc2.json calc2-D1-01..06, 09..12",
+  "Current bytes: planning/plan-manifest.json sha256 2b9e53a54664e70feb4f0546c1a4967eab2d21bd5d5c2efbed77b57c9d8543f2 matches the brief; 40 in-scope pinned entries (work order, exemplars, calculus/pilot design JSON, subject-rules, motion-design-check/cases, OWNER-CHECKPOINT, deviation register, app-change-handoff, PLAN, part-evidence register) hash-match",
+  "Own code only: SCRATCH/motion/mixed.py, polyexp.py, cases.py (exact Fractions + sympy 1.14 + mpmath quadrature; 3 s.f. decimal half-up). No Codex script was run."
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 232,
+   "what": "2021 P1 Q4(a,b) award table: M1/A1/A1 + M1/A1/A1; (a) row says 'Substitute v=3' although the question gives 2; (b) 'Attempt to integrate their answer to (a)'. Physics-formula and missing-c comments."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 339,
+   "what": "2023 P2 Q9(a,b) award table: (a) B1 v'=-15e^k, B1 v'=k e^(-t/2) with k != +/-60; (b) B1 primitive, M1 both boundaries into k, k != -15, 'must be convinced it is an integral', A1 37.9; alternative c=60 implies d(0)=0. Comment: common wrong answer -22.07 from one boundary."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+   "page": 5,
+   "what": "Q4 stem a=6t+1, initial velocity 2 m/s, (a) velocity [3], (b) how far from O after 3 s [3] -> tuple (A,B,u,T)=(3,1,2,3)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 15,
+   "what": "Q9 stem v=30e^(-t/2), (a) acceleration [2], (b) distance in first 2 s [3] -> tuple (V,k,T)=(30,1/2,2)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 345,
+   "what": "General point 4: 'Learners who misread numbers do not score maximum marks even if their method is correct' (source of D1-MR03)."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D1-S02",
+   "related_agent_ids": [
+    "calc2-D1-05"
+   ],
+   "codex_claim": "OD-4: mixed motion 108 sign-change / 24 no-change, neutral 4+2 tariff, outcome classes renamed, Bloom 13 Apply / 1 Analyse",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:25-31; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4618-4650 (domain_spec, outcome_proportion), semantic_capacity decision_outcome_classes/initial_direction_classes; PLAN.md:28; planning/coverage-plan.md:7; pilot-design.json counts whole_choice_bloom_counts {'3':13,'4':1}. Own enumeration from the stated rules: 162-54=108 reversal + 24 no-reversal = 132, identical to JSON accepted_tuple_keys; every reversal tuple has exactly one interior root r, every no-reversal tuple none; 24/132=2/11; no true root at 0 or T; min root-endpoint gap 1; no-change positive root beyond T by 1 (12) or 2 (12); -c always outside; 30 shapes (18+12); directions 66/66 (sc 54/54, nc 12/12). Outcome classes are now honestly the sign-change decision; directions are a separate field. R1 credits the check. Same 4+2 tariff; expanded stems.",
+   "residual": "New defects in the repaired design: the visible interval end T alone predicts the outcome (motion-D2-01); R1 maps only root-solving, so a rigorous no-root constant-sign argument scores 1/4 (motion-D2-03); one-slip interior root in a no-change case scores 4/4 by the literal criteria (motion-D2-04); title cues the check (motion-D2-09)."
+  },
+  {
+   "finding_id": "D1-S09",
+   "related_agent_ids": [
+    "calc2-D1-01"
+   ],
+   "codex_claim": "Exclude all (3,1,2,T) and (30,1/2,T); 137/56; contexts 35/14",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:19,23; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json domain_spec excluded_original_part_context. Own enumeration: polynomial 144-4-3=137, velocity contexts 35, shapes 30, no (3,1,2,*) admitted; exponential 60-4=56, acceleration contexts 14, shapes 3, shape/interval 12, no (30,1/2,*) admitted; both equal the JSON accepted_tuple_keys. Native pages confirm the originals are (3,1,2,3) and (30,1/2,2). Fresh upper bounds 35/14 stated.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D1-S10",
+   "related_agent_ids": [
+    "calc2-D1-02"
+   ],
+   "codex_claim": "Endpoint triangles 17; true distance 44/3",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:56. Exact: v=2t^2-2 on [0,3], v(0)=-2, v(3)=16, root 1; triangles 1/2*1*2+1/2*2*16=17; true distance 44/3; displacement 12.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D1-S11",
+   "related_agent_ids": [
+    "calc2-D1-03",
+    "calc2-D1-04"
+   ],
+   "codex_claim": "R1 one-slip solve + interval/sign check; R3 attempted primitive + both bounds with own-root F.T.; R4 depends on R2/R3; wrong-root 3/4, root+quadrature 1/4, numeric-only 0/4",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:47,52; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4681-4684; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:114. Marking tests (a)-(e),(g) give the claimed scores on distance; R3 dependent on R1 and R4 dependent on R2 and R3 are both stated; own-root F.T. is now reachable (slip root 2 for (2,1,2,3) gives legs 4/3, 41/3 = 15 vs 59/3 -> R1 R2 R3 = 3/4).",
+   "residual": "The D2 R5 alternative reopens the no-primitive route on displacement: signed sum of calculator legs earns R5+R6 = 2/2 (motion-D2-02). Distance part itself is repaired."
+  },
+  {
+   "finding_id": "D1-S12",
+   "related_agent_ids": [
+    "calc2-D1-06"
+   ],
+   "codex_claim": "Remove 3 differentiate-instead tuples; disclose remaining coincidences; S3 depends on S1/S2",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:19,44,67; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json official_qualifiers S3 'dependent on S1 and S2'; planning/d2/motion-design-check.json polynomial disclosed_value_coincidences. Own sweep over 137 tuples (exact and 3 s.f. half-up), 16 error models: differentiate-instead with both bounds 0 (the excluded (3,0,2,2),(3,1,1,2),(3,2,4,1) are exactly the full-grid collisions); a(T) 1 [(3,2,1,2)], integral of a 3, v(T) 3, 1/2 v(T)T 9, B-term omission 47 (all B=0), zero lower bound 137; omit u 0; suvat ut+1/2a(0)T^2, ut+1/2a(T)T^2, 1/2(u+v(T))T, v(T)T, omit A term, wrong power rule 0. Tuple sets equal Codex's disclosures exactly; the only extra hit (differentiate, upper bound only) is the same value as a(T) and is covered by that disclosure.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D1-S23",
+   "related_agent_ids": [
+    "vector-contract-D1-04"
+   ],
+   "codex_claim": "Shared misread allocation; motion misread now 2/5",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:67 (D1-MR03); work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:54; work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:65. V=12 misread as 21 (k=1/2, T=2): E1 requires -6, learner -21/2 (fails, value-bearing B); E2 learner coefficient -21/2 not +/-24 (structural, retained); E3 requires -24e^(-t/2), learner -42e^(-t/2) (fails); E4 coefficient -42 != -6 (M, retained); E5 15.2 vs 26.5 (fails) -> 2/5, consistent with MR03 and the 2023 row structure.",
+   "residual": "Stale copy 'Misreading V=12 as21' in the V=18 and V=30 exemplars; per-part allocation listed only for exponential parts (motion-D2-08, motion-D2-10)."
+  },
+  {
+   "finding_id": "calc2-D1-09",
+   "related_agent_ids": [
+    "calc2-D1-09"
+   ],
+   "codex_claim": "E/F keeps exponential early-rounding flip fixtures and 116.5 half boundary",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:67; motion-design-check.json rounding_flip_fixtures (15). Own: 14/56 flips with e^(-kT) at 3 s.f., 1 more at 4 s.f. (24,1/4,3: 50.7 vs 50.6); 116.5 = 233/2 at (k,r,c,T)=(+/-3,2,3,5) is the only half tie in all 325 tasks.",
+   "residual": "Carried to E/F as intended; Codex's half_boundary record names only k=+3, both signs share it (trivial)."
+  },
+  {
+   "finding_id": "calc2-D1-10",
+   "related_agent_ids": [
+    "calc2-D1-10"
+   ],
+   "codex_claim": "Stems/solutions omit zero terms, unit coefficients and doubled signs",
+   "verdict": "partly-repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:25,29-31,105,122,139 now print 2t, t^2+1, 2t^2-2, -2t^2+2t+12. work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json exemplar_cases and planning/d2/motion-cases.json still store expected velocity '1*t**2+0*t+1' and '2*t**2+1*t+3'.",
+   "residual": "Internal expected-answer strings unnormalised; later-test only."
+  },
+  {
+   "finding_id": "calc2-D1-11",
+   "related_agent_ids": [
+    "calc2-D1-11"
+   ],
+   "codex_claim": "R5 accepts signed sum of part-(a) legs and reuse of the primitive",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:48; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4685.",
+   "residual": "Over-broad: legs need not be primitive-based (motion-D2-02)."
+  },
+  {
+   "finding_id": "calc2-D1-12",
+   "related_agent_ids": [
+    "calc2-D1-12"
+   ],
+   "codex_claim": "One classification string, recipe revision 0.1.2 IDs",
+   "verdict": "partly-repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:3; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json fully_qualified_criterion_ids all @0.1.2.",
+   "residual": "Four bloom_rationale strings still cite @0.1.1 criterion IDs in four files (motion-D2-06)."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "mixed normal (k,r,c,T)=(2,1,1,3)",
+   "claimed": "v=2t^2-2; roots -1,1; F=2t^3/3-2t; legs -4/3, 40/3; distance 44/3; displacement 12",
+   "computed": "same (sympy, own primitive, mpmath |v| quadrature)",
+   "ok": true
+  },
+  {
+   "case": "mixed changed, no-change (-2,3,2,1)",
+   "claimed": "v=-2t^2+2t+12; roots -2,3 outside [0,1]; F=-2t^3/3+t^2+12t; distance = displacement = 37/3",
+   "computed": "same; v(0)=v(1)=12; admitted (k=-2,T=1,gap=2,c=2)",
+   "ok": true
+  },
+  {
+   "case": "mixed boundary (3,3,3,4)",
+   "claimed": "v=3t^2-27; F=t^3-27t; legs -54, 10; distance 64; displacement -44",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "endpoint triangles for v=2t^2-2 on [0,3]",
+   "claimed": "17 (true 44/3)",
+   "computed": "17; true 44/3",
+   "ok": true
+  },
+  {
+   "case": "polynomial normal/changed/boundary",
+   "claimed": "40/3 (13.3), 12, 96; v=2t^2+t+3, t^2+1, 3t^2+2t+4",
+   "computed": "40/3, 12, 96; all three tuples admitted",
+   "ok": true
+  },
+  {
+   "case": "exponential normal/changed/boundary",
+   "claimed": "a=-6e^(-t/2), -6e^(-t/3), -15/2 e^(-t/4); F=-24e^(-t/2), -54e^(-t/3), -120e^(-t/4); d=24-24/e=15.2, 54-54/e=34.1, 120-120/e=75.9",
+   "computed": "same (sympy diff/integrate, 3 s.f. half-up)",
+   "ok": true
+  },
+  {
+   "case": "exponential misread V=12->21 (normal)",
+   "claimed": "2/5 (E2, E4)",
+   "computed": "2/5",
+   "ok": true
+  },
+  {
+   "case": "half tie",
+   "claimed": "233/2=116.5 -> 117 half-up",
+   "computed": "only tie in all 325 tasks: (+/-3,2,3,5)",
+   "ok": true
+  },
+  {
+   "case": "exponential premature rounding",
+   "claimed": "15 fixtures",
+   "computed": "14 flips at 3 s.f. intermediate + 1 at 4 s.f. = 15",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal (sign-aware distance)",
+   "claimed": "132 = 108 sign-change + 24 no-change (2/11); 30 shapes (18+12); directions 66/66; fresh bound 132; keys (k,r,c,T)",
+   "computed": "132 = 108 + 24, JSON keys equal; 2/11; 30 amplitude/direction shapes (29 if time-scaling is also normalised: (r,c,T)=(2,1,1) and (4,2,2)); directions 66/66; no true root at an endpoint; min root-endpoint gap 1; no-change margins r-T in {1:12, 2:12}; 54 triangle collisions on the 162 grid, all r=tail.",
+   "notes": "Outcome is perfectly separated by the visible T: sign change has T in {3,4,5}, no change T in {1,2}; |k| in {1,3} also implies sign change (motion-D2-01). Coincidences (exact or 3 s.f.): abs-net 24/24 nc, signed integral 12 nc (k=-2), any interior split in nc reproduces the distance (wrong-root 24/24 under a coherent linear-sign slip; vertex/a=0 split 14 nc), never-split/abs-net/triangles/trapezium/one-leg/difference-of-legs/differentiate-instead 0 in sc. Codex's 'wrong-positive-root-c' model splits at c even when c>T, hence its 14 nc vs my 24; substance disclosed at WO:31."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "polynomial-chain",
+   "claimed": "137 tasks, 35 velocity contexts, 30 shapes, fresh bound 35",
+   "computed": "137, 35, 30, 35; JSON keys equal; no (3,1,2,*) and none of (3,0,2,2),(3,1,1,2),(3,2,4,1)",
+   "notes": "Remaining coincidences equal Codex's disclosures tuple-for-tuple (see D1-S12). No exact half ties."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "exponential-positive",
+   "claimed": "56 tasks, 14 acceleration contexts, 3 shapes, 12 shape/interval, fresh bound 14",
+   "computed": "56, 14, 3, 12, 14; JSON keys equal; no (30,1/2,*)",
+   "notes": "No named-error coincidence at 3 s.f. for: omit reciprocal chain factor, multiply by k, differentiate instead (both bounds), omit lower bound (signed/abs), v(T)T, VT, trapezium, a(T), v(T), V/k only."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "all",
+   "claimed": "325 raw parameter tasks",
+   "computed": "137+56+132=325",
+   "notes": "But work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:5164 counts.branch_qualified_capacity still 387 (D1 sum 77+310); current branch capacities sum to 402 (motion-D2-05)."
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "sign-aware distance+displacement (2,1,1,3)",
+   "response": "(a) correct full solution, sign-change: roots -1,1, split at 1, F, legs 4/3 + 40/3 = 44/3; displacement 12",
+   "expected_marks": "6/6",
+   "design_gives": "6/6 (R1-R4, R5-R6)",
+   "ok": true,
+   "basis": "WO:47-48"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "sign-aware distance+displacement (-2,3,2,1)",
+   "response": "(b) correct no-change: roots -2,3 both outside (0,1), one leg F(1)-F(0)=37/3; displacement 37/3",
+   "expected_marks": "6/6",
+   "design_gives": "6/6 (R3 'one leg if no sign change')",
+   "ok": true,
+   "basis": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4683"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (2,1,2,3)",
+   "response": "(c) linear-sign slip gives roots 2,-1; splits at 2; correct primitive; legs 4/3, 41/3, total 15 (true 59/3)",
+   "expected_marks": "3/4",
+   "design_gives": "3/4 (R1 one slip, R2, R3 F.T.; R4 lost)",
+   "ok": true,
+   "basis": "WO:47,52"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance",
+   "response": "(d) correct root work and comparison, legs by calculator quadrature, no primitive",
+   "expected_marks": "1/4",
+   "design_gives": "1/4 (R1 only)",
+   "ok": true,
+   "basis": "WO:47,52"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "displacement",
+   "response": "(d') same learner adds the signed calculator legs from (a) for displacement; no primitive anywhere",
+   "expected_marks": "0/2 (consistent with R3/E4/R5 primitive requirement and 'quadrature values alone')",
+   "design_gives": "2/2 by WO:48/JSON R5 wording ('signed sum of evaluated legs from (a)'); direct whole-interval quadrature gets 0/2",
+   "ok": false,
+   "basis": "WO:47 'Calculator quadrature values alone do not earn it'; motion-D2-02"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance",
+   "response": "(e) numeric-only correct distance",
+   "expected_marks": "0/4",
+   "design_gives": "0/4",
+   "ok": true,
+   "basis": "OD-1 / D1-MR01"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (2,3,1,2)",
+   "response": "(f) no-change; linear-sign slip gives root 1 inside (0,2); splits there; correct primitive; legs -22/3,-22/3 -> 44/3 (canonical)",
+   "expected_marks": "judgement: 4/4 if the harmless split is treated as correct working after an allowed slip; 3/4 if R4 needs correct working (www). Should be stated.",
+   "design_gives": "4/4 by literal criteria (R1 one slip, R3 F.T., R4 canonical total); not addressed by the WO:52 sample",
+   "ok": null,
+   "basis": "motion-D2-04; every coherent one-slip route in all 24 no-change tuples reproduces the canonical distance"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (2,1,1,3)",
+   "response": "(g) sign-change, no check, integrates once: |F(3)-F(0)|=12",
+   "expected_marks": "1/4",
+   "design_gives": "1/4 (R2 only; R1 absent so R3/R4 absent)",
+   "ok": true,
+   "basis": "WO:31,47"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (-2,3,2,1)",
+   "response": "(h) no-change, no check, integrates once (or |net|): 37/3 (coincides in 24/24)",
+   "expected_marks": "1/4 under OD-4 (check must be credited); stricter than official 2021 Q4(b)/2023 Q9(b) positive-v rows, which is the disclosed D2-MOTION-LIVE-CHECK departure",
+   "design_gives": "1/4 (WO:31 'unchecked never-split answer cannot earn R1/R3/R4')",
+   "ok": true,
+   "basis": "OD-4; WO:31"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (-2,3,2,1)",
+   "response": "(i) always-split at r=3 beyond T=1: legs 27 and -44/3 -> 125/3 (true 37/3)",
+   "expected_marks": "1/4 (R2); decision incoherent with own roots",
+   "design_gives": "1/4 (R1 requires a coherent comparison, WO:52); displacement still 2/2 because the signed legs telescope to 37/3",
+   "ok": true,
+   "basis": "WO:47,52"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (-2,3,2,1)",
+   "response": "(j) no-change justified without solving v=0: v(0)=12, v(1)=12, v is a downward parabola so v>0 on [0,1] (or v=-2(t-1/2)^2+12.5>=12); one primitive-based leg 37/3",
+   "expected_marks": "4/4 (rigorous valid method, D1-MR08)",
+   "design_gives": "1/4 (R1 requires solving v=0; R3/R4 depend on it)",
+   "ok": false,
+   "basis": "D1-MR08 'valid methods earn their mapped criteria'; motion-D2-03"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "distance (no-change, vertex inside)",
+   "response": "(k) a=0 confusion: splits at the turning point (r-c)/2; value canonical in 14/24 no-change tuples",
+   "expected_marks": "1/4 (no v=0 solving)",
+   "design_gives": "1/4",
+   "ok": true,
+   "basis": "R1; coincidence not in the disclosed sweep list (note)"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "exponential acceleration+distance (12,1/2,2)",
+   "response": "Misreads V=12 as 21, otherwise correct",
+   "expected_marks": "2/5 under D1-MR03",
+   "design_gives": "2/5 (E2, E4)",
+   "ok": true,
+   "basis": "subject-rules.md:67; 2025 report PDF345 point 4"
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "part": "polynomial distance (3,2,1,2)",
+   "response": "Computes a(T)=14 (equals d=14) with no integration",
+   "expected_marks": "0/3",
+   "design_gives": "0/3 (S3 depends on S1 and S2)",
+   "ok": true,
+   "basis": "WO:44"
+  }
+ ],
+ "findings": [
+  {
+   "id": "motion-D2-01",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal (sign-aware distance)",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:27; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4618-4650; work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:5707-5740",
+   "severity": "should-fix",
+   "expected": "OD-4 makes the direction-change decision live; WO:25 and the Bloom rationale say no outcome cue is supplied, and APP8227-01/05 says no label may leak which method is needed.",
+   "actual": "The interval end T is printed in every stem ('for 0<=t<=T') and on its own separates the outcomes: sign change only with T in {3,4,5} (T=r+tail, r!=tail), no sign change only with T in {1,2}. In addition |k| in {1,3} occurs only in sign-change tuples (72 of 108). A learner can learn 'short interval -> no split' without analysing v.",
+   "evidence": "Own enumeration of the 132 admitted tuples (mixed.py, predictor_T perfect=True; T sets sc [3,4,5], nc [1,2]).",
+   "repair": "Overlap the classes on visible features: e.g. admit no-change tuples with T in {3,4} (r=T+gap) and k in {+/-1,+/-3}, sampled to keep the planned minority; re-run the coincidence sweeps; or disclose the T-separation and its effect on the Analyse claim to Vitalis."
+  },
+  {
+   "id": "motion-D2-02",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:48; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4685; work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:5774; contrast work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:114,131,148",
+   "severity": "should-fix",
+   "expected": "No-primitive calculator work earns no integration method credit (WO:47 'Calculator quadrature values alone do not earn it'; R5's own main route needs an attempted primitive).",
+   "actual": "The new R5 alternative 'signed sum of evaluated legs from (a)' does not require the legs to come from an attempted primitive. A learner with root work and calculator-quadrature legs in (a) adds them signed and earns R5+R6 = 2/2 on displacement (3/6 overall), while a learner who does whole-interval quadrature gets 0/2. The exemplars say 'adding its [the part-(a) primitive's] signed evaluated legs', which is narrower than the WO/JSON.",
+   "evidence": "Rubric text; marking test (d').",
+   "repair": "R5: '... or the signed sum of the legs from (a) evaluated from an attempted primitive with both bounds'. Align WO, both JSON files and the exemplars."
+  },
+  {
+   "id": "motion-D2-03",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:47; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4681; work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:5770",
+   "severity": "should-fix",
+   "expected": "D1-MR08: valid methods earn their mapped criteria.",
+   "actual": "R1 is defined only as solving v=0 then comparing roots/testing signs about them. In every no-change tuple a complete argument exists without solving: both endpoint values have the same sign and the parabola's concavity (k<0: v(0),v(T)>0; k>0: v(0),v(T)<0, convex) keeps v of one sign, or the completed square gives the minimum. Such a fully justified, correct solution gets no R1, so no R3/R4: 1/4.",
+   "evidence": "Own check: sign(v(0))==sign(v(T)) separates the outcomes perfectly in this domain; e.g. (-2,3,2,1): v(0)=v(1)=12, v=-2(t-1/2)^2+12.5. Marking test (j). Judgement at the margin: most learners will factorise, so the impact is small, but the criterion text denies a rigorous method.",
+   "repair": "Add an R1 alternative: a valid complete argument that v keeps one sign on [0,T] (endpoint signs with concavity, or vertex/minimum value), or v=0 solved with comparison; same award, not additive."
+  },
+  {
+   "id": "motion-D2-04",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:31,52",
+   "severity": "note",
+   "expected": "The wrong-root sample covers both outcomes.",
+   "actual": "In a no-change tuple any interior split gives the canonical distance (legs have the same sign). A coherent one-slip root inside (0,T) (linear-sign slip in (+/-2,3|4,1,2)) then earns R1 (slip allowed), R2, R3 F.T. and R4 (canonical total): 4/4 with a false 'v changes sign' claim. WO:52 only covers the sign-change case ('an incorrect total loses R4'). Likewise the a=0/vertex split reproduces the value in 14/24 no-change tuples (protected by R1).",
+   "evidence": "mixed.py slip_effects: linear_sign|nc|wrong_root_split_but_value_canonical = 4; split_at_vertex|nc = 14; cases.py (f).",
+   "repair": "State the intended score (4/4, or 3/4 with R4 www) and add both coincidences to the disclosed mixed sweep."
+  },
+  {
+   "id": "motion-D2-05",
+   "recipe": "WB8227-motion-integration",
+   "branch": "all (calculus record)",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:5164",
+   "severity": "should-fix",
+   "expected": "Record counts match the D2 branches.",
+   "actual": "counts.branch_qualified_capacity = 387, the D1 value (77 implicit/stationary + 310 motion). Current branch capacities 23+8+30+16+137+56+132 = 402.",
+   "evidence": "Own sum over calculus-design.json branches; D1 candidate sums to 387.",
+   "repair": "Set 402 (or derive it), and check any derived receipt that copies this field."
+  },
+  {
+   "id": "motion-D2-06",
+   "recipe": "WB8227-motion-integration",
+   "branch": "polynomial-chain; exponential-positive",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:2087,2129,3192,3233; work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:3093,3139,4236,4281; work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.json:579,611,641,673; work/nam-8227-nsscas-2026/workbench/planning/part-evidence-register.md:22-25",
+   "severity": "should-fix",
+   "expected": "All criterion IDs in the 0.1.2 records use @0.1.2 (calc2-D1-12 / S3-08).",
+   "actual": "The bloom_rationale 'Evidence:' strings for the four polynomial/exponential parts cite WB8227-motion-integration@0.1.1:... criterion IDs, while fully_qualified_criterion_ids and bloom_criterion_ids are @0.1.2. S3 changed meaning in 0.1.2 (now dependent on S1/S2).",
+   "evidence": "grep: 4 occurrences per file, 16 in total.",
+   "repair": "Regenerate the rationales from the @0.1.2 IDs."
+  },
+  {
+   "id": "motion-D2-07",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4689; work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:5778; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:50",
+   "severity": "should-fix",
+   "expected": "Only OD-4's actual content is attributed to the owner; the rubric is a proposal (as OWNER-CHECKPOINT.md:40 correctly says: 'exact rubric/final manifest pending owner approval').",
+   "actual": "named_deviation reads 'D2-MOTION-LIVE-CHECK: owner OD4 permits mixed outcomes and one fixed4+2 rubric'. OD-4 (owner-decisions-2026-11-23-d1.md) says nothing about a tariff or rubric. WO:50 'the owner-authorised OD-4 revision retains one newly authored 4+2 rubric' is acceptable but borderline.",
+   "evidence": "OD-4 text versus the JSON string.",
+   "repair": "'OD-4 requires a live, credited sign-change check; the fixed 4+2 rubric is a proposed design awaiting Vitalis's approval.'"
+  },
+  {
+   "id": "motion-D2-08",
+   "recipe": "WB8227-motion-integration",
+   "branch": "exponential-positive",
+   "locator": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-motion-integration.md:81,97",
+   "severity": "note",
+   "expected": "Each exemplar's misread note uses that exemplar's datum.",
+   "actual": "The V=18 and V=30 exemplars repeat 'Misreading V=12 as21 ... E5:2/5', copied from the V=12 case.",
+   "evidence": "Exemplar text.",
+   "repair": "Use each case's V (or move the sentence to the normal case only)."
+  },
+  {
+   "id": "motion-D2-09",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4690; work/nam-8227-nsscas-2026/workbench/planning/pilot-design.json:5779",
+   "severity": "note",
+   "expected": "WO:50 and the Bloom rationale rest on an 'uncued function and interval'.",
+   "actual": "The learner/teacher display_title 'Check direction change and find travelled distance' is outcome-neutral but tells the learner to check for a direction change, so the decision to check is cued. Judgement call.",
+   "evidence": "JSON display_title and legacy_id_note ('learner/teacher title').",
+   "repair": "Use a strategy-neutral title, e.g. 'Distance and displacement from a quadratic velocity'."
+  },
+  {
+   "id": "motion-D2-10",
+   "recipe": "WB8227-motion-integration",
+   "branch": "polynomial-chain; interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:37,54; work/nam-8227-nsscas-2026/workbench/subject-rules.md:67",
+   "severity": "note",
+   "expected": "D1-MR03: 'Each part lists affected awards.'",
+   "actual": "Motion lists the misread allocation for the exponential parts only. Under MR03, polynomial V2/V3/S3 and mixed R2/R4/R6 are the value-bearing awards that fail; V1/S1/S2 (their-v), R1/R3 (own-root F.T.) and R5 survive. Edge (later-test): E2's exclusion C != +/-V/k uses the given V, so a misread-and-integrated coefficient -42 would pass it.",
+   "evidence": "Rule text; own misread computation.",
+   "repair": "Add one line naming the affected awards for the polynomial and mixed parts; define E2's exclusion with the learner's V."
+  },
+  {
+   "id": "motion-D2-11",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/app-change-handoff.md:131; work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-motion-integration.md:25,33; work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json:4691",
+   "severity": "note",
+   "expected": "Key change (k,r,c,tail) -> (k,r,c,T) mapped without resetting freshness.",
+   "actual": "The mapping (T=r+tail, block the same task in 0.1.2, a version bump cannot reset freshness) is stated in app-change-handoff.md:131 and the report, and it is injective; the no-change tuples (r>T) cannot collide with old keys. The work order itself does not state it, and WO:33 says exposure keys include the recipe version, which read alone implies a reset. No exposure exists yet, so there is no practical risk.",
+   "evidence": "Text; own check that (k,r,c,tail) -> (k,r,c,r+tail) is one-to-one on the 108 tuples.",
+   "repair": "Add a one-line cross-reference to the alias rule in the work order."
+  },
+  {
+   "id": "motion-D2-12",
+   "recipe": "WB8227-motion-integration",
+   "branch": "all",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-design.json exemplar_cases (motion); work/nam-8227-nsscas-2026/workbench/planning/d2/motion-cases.json",
+   "severity": "later-test",
+   "expected": "Normalised expected answers and current provenance.",
+   "actual": "Expected velocity strings remain '1*t**2+0*t+1', '2*t**2+1*t+3' (calc2-D1-10 carry-over); all nine motion cases, including the new D2 no-change case, say 'newly authored D1 paper-design exemplar'.",
+   "evidence": "JSON text.",
+   "repair": "Normalise at E/F; relabel origin D2 for the new case."
+  }
+ ],
+ "verified_ok": [
+  "Mixed domain: 108 + 24 = 132 from the stated rules, equal to JSON accepted_tuple_keys in both calculus-design.json and pilot-design.json (motion records otherwise identical apart from pilot-only derived fields).",
+  "No true root at 0 or T; no-change positive root beyond T by 1 or 2; -c always outside; min root-endpoint gap 1; integer roots, so rounding cannot flip the decision.",
+  "Outcome classes honestly named (sign_change 108 / no_sign_change 24), separate from initial directions 66/66.",
+  "Stems expanded and normalised; same 4+2 tariff and identical part wording for both outcomes; part keys and case tags internal; APP8227-01/05 keeps roots/case tags private until submission.",
+  "R3 depends on R1; R4 depends on R2 and R3; S3 depends on S1 and S2; no-check learner capped at 1/4 on distance in both outcomes, so the check is credited as OD-4 requires.",
+  "Wrong-root 3/4, quadrature-without-primitive 1/4 (distance), numeric-only 0/4, never-split 1/4 all reproduced.",
+  "Displacement R5/R6 correct for both outcomes (no-change: displacement = +/-distance, sign = sign of -k).",
+  "All 9 motion exemplars recompute exactly; triangle value 17.",
+  "Polynomial 137/35/30 and exponential 56/14/3/12 with all (3,1,2,*) and (30,1/2,*) excluded; three differentiate-instead tuples removed; remaining polynomial coincidences equal Codex's disclosures tuple-for-tuple; exponential has none.",
+  "Misread V=21 gives 2/5 under the D2 MR03 allocation, which matches the 2025 PDF345 point 4 limit.",
+  "Bloom 13 Apply / 1 Analyse in PLAN.md:28, coverage-plan.md:7, OWNER-CHECKPOINT.md:10 and pilot counts.",
+  "No stale D1 motion numbers (143/59/108-only/310/36/15/54-54/18) in PLAN.md, OWNER-CHECKPOINT.md, deviation register, app-change-handoff.md, HANDOVER.md, STATUS.md.",
+  "OWNER-CHECKPOINT row D2-MOTION-LIVE-CHECK status is honest ('OD4 design direction accepted; exact rubric/final manifest pending owner approval'); D1-MOTION-QUADRATIC is marked superseded."
+ ],
+ "not_checked": [
+  "Runtime generator, marker, renderer, app or MCP behaviour (none exists).",
+  "Textbook motivating source YM PDF 368 Exercise 7 Q7(c) and the five adopted families were not re-read (unchanged accepted material).",
+  "Codex's scripts were not run; only their JSON outputs were compared with my own.",
+  "Same-vendor limit: one Claude agent; the marking judgements in motion-D2-03/04/09 are at the margin."
+ ]
+}

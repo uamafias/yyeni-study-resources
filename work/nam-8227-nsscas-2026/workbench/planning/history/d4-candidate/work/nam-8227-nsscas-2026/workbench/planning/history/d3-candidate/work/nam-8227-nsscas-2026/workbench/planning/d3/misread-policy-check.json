@@ -1,0 +1,176 @@
+{
+  "status": "pass",
+  "policy": "OD-6",
+  "unit": "once per misread datum in first-use part",
+  "selection": "earliest eligible earned A/B in declared part/award order",
+  "sources": [
+    {
+      "title": "NSSCAS 2025 report",
+      "source_path": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+      "source_sha256": "8012a5d92edfde9e4bce11fe7864ff88f7246d812ec00d34e8e2377c2c0114be",
+      "pdf_page": 345,
+      "printed_page": 343,
+      "authority": "item 4: no maximum after misread; allocation not stated",
+      "verification": "Root inspected native rendered page; comparable Cambridge allocation is adopted by owner, not represented as NSSCAS published allocation"
+    },
+    {
+      "title": "Comparable Cambridge board convention",
+      "source_path": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+      "source_sha256": "7cfb18fb678100d28ec9c0574be1e4978251a006ac995975c3da5178b65fb127",
+      "pdf_page": 3,
+      "printed_page": 3,
+      "authority": "Penalties: genuine unchanged-difficulty question misread, MR-1 from A/B, all A/B FT; own-figure error excluded",
+      "verification": "Root inspected native rendered page; comparable Cambridge allocation is adopted by owner, not represented as NSSCAS published allocation"
+    }
+  ],
+  "motion_exemplar_misreads": [
+    {
+      "case": "exponential V=12 misread as 21",
+      "k": "1/2",
+      "T": 2,
+      "learner_work": {
+        "acceleration": "-21*exp(-t/2)/2",
+        "primitive": "-42*exp(-t/2)",
+        "distance": "42 - 42*exp(-1)"
+      },
+      "eligibility": "Same positive exponential and nonunit chain factor; same object/difficulty; original question V miscopied.",
+      "gross_awards": {
+        "E1": 1,
+        "E2": 1,
+        "E3": 1,
+        "E4": 1,
+        "E5": 1
+      },
+      "deduction": {
+        "datum_id": "V",
+        "first_use_part": "acceleration",
+        "criterion": "E1",
+        "amount": 1
+      },
+      "net_awards": {
+        "E1": 0,
+        "E2": 1,
+        "E3": 1,
+        "E4": 1,
+        "E5": 1
+      },
+      "parts": {
+        "acceleration": "1/2",
+        "distance": "3/3"
+      },
+      "total": "4/5",
+      "later_use": "No second deduction from E3/E5."
+    },
+    {
+      "case": "exponential V=18 misread as 81",
+      "k": "1/3",
+      "T": 3,
+      "learner_work": {
+        "acceleration": "-27*exp(-t/3)",
+        "primitive": "-243*exp(-t/3)",
+        "distance": "243 - 243*exp(-1)"
+      },
+      "eligibility": "Same positive exponential and nonunit chain factor; same object/difficulty; original question V miscopied.",
+      "gross_awards": {
+        "E1": 1,
+        "E2": 1,
+        "E3": 1,
+        "E4": 1,
+        "E5": 1
+      },
+      "deduction": {
+        "datum_id": "V",
+        "first_use_part": "acceleration",
+        "criterion": "E1",
+        "amount": 1
+      },
+      "net_awards": {
+        "E1": 0,
+        "E2": 1,
+        "E3": 1,
+        "E4": 1,
+        "E5": 1
+      },
+      "parts": {
+        "acceleration": "1/2",
+        "distance": "3/3"
+      },
+      "total": "4/5",
+      "later_use": "No second deduction from E3/E5."
+    },
+    {
+      "case": "exponential V=30 misread as 36",
+      "k": "1/4",
+      "T": 4,
+      "learner_work": {
+        "acceleration": "-9*exp(-t/4)",
+        "primitive": "-144*exp(-t/4)",
+        "distance": "144 - 144*exp(-1)"
+      },
+      "eligibility": "Same positive exponential and nonunit chain factor; same object/difficulty; original question V miscopied.",
+      "gross_awards": {
+        "E1": 1,
+        "E2": 1,
+        "E3": 1,
+        "E4": 1,
+        "E5": 1
+      },
+      "deduction": {
+        "datum_id": "V",
+        "first_use_part": "acceleration",
+        "criterion": "E1",
+        "amount": 1
+      },
+      "net_awards": {
+        "E1": 0,
+        "E2": 1,
+        "E3": 1,
+        "E4": 1,
+        "E5": 1
+      },
+      "parts": {
+        "acceleration": "1/2",
+        "distance": "3/3"
+      },
+      "total": "4/5",
+      "later_use": "No second deduction from E3/E5."
+    }
+  ],
+  "edge_fixtures": [
+    {
+      "case": "No A/B earned in first-use part",
+      "earned": {
+        "E4": 1
+      },
+      "MR_deduction": 0,
+      "total": "1 method mark; no negative/borrowed deduction"
+    },
+    {
+      "case": "Own-figure slip after correct derivative/integral",
+      "treatment": "Ordinary accuracy error, no MR; unchanged correct awards survive"
+    },
+    {
+      "case": "k misread as zero",
+      "treatment": "Changes exponential calculus to constant velocity; no MR concession, normal canonical marking"
+    },
+    {
+      "case": "Answer only on misread V",
+      "earned": {},
+      "MR_deduction": 0,
+      "total": "0/5 by OD-1; FT never invents working"
+    },
+    {
+      "case": "Primitive coefficient used as derivative",
+      "treatment": "Named E2 exclusion survives; genuine V misread cannot rescue it"
+    },
+    {
+      "case": "Several uses of one misread V",
+      "treatment": "One first-use ledger entry; no later-part second deduction"
+    },
+    {
+      "case": "Incorrect numerical root on no-change case",
+      "treatment": "Ordinary method slip, not a datum misread: R1/R2/R3=3/4, R4 www lost despite canonical total"
+    }
+  ],
+  "independence": "Separate CAS differentiation and definite integration; scoring is manual fixed-criterion evidence with a small independent deduction check, not runtime marker acceptance."
+}

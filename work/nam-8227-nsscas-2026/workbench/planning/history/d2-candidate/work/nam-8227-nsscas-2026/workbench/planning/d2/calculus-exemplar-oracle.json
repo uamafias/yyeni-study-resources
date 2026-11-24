@@ -1,0 +1,2322 @@
+{
+  "status": "pass",
+  "cases_checked": 12,
+  "checks": [
+    {
+      "case_id": "WB8227-implicit-normal:gradient:normal",
+      "result": "pass",
+      "oracle": "explicit local-root derivative and implicit partials",
+      "expected_answers": {
+        "curve_constant": 4,
+        "gradient": "-24/5",
+        "normal_slope": "5/24",
+        "normal_equation": "y-(-4)=(5/24)*x",
+        "shown_derivative": "-6*exp(2*x)*y/(3*exp(2*x)+2*y)"
+      },
+      "marks": 5
+    },
+    {
+      "case_id": "WB8227-implicit-normal:gradient:changed",
+      "result": "pass",
+      "oracle": "explicit local-root derivative and implicit partials",
+      "expected_answers": {
+        "curve_constant": -2,
+        "gradient": "9",
+        "normal_slope": "-1/9",
+        "normal_equation": "y-(-1)=(-1/9)*x",
+        "shown_derivative": "-9*exp(3*x)*y/(3*exp(3*x)+2*y)"
+      },
+      "marks": 5
+    },
+    {
+      "case_id": "WB8227-implicit-normal:gradient:boundary",
+      "result": "pass",
+      "oracle": "explicit local-root derivative and implicit partials",
+      "expected_answers": {
+        "curve_constant": 5,
+        "gradient": "-10",
+        "normal_slope": "1/10",
+        "normal_equation": "y-(-5)=(1/10)*x",
+        "shown_derivative": "-12*exp(3*x)*y/(4*exp(3*x)+2*y)"
+      },
+      "marks": 5
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:normal",
+      "result": "pass",
+      "oracle": "explicit local-root derivative and implicit partials",
+      "expected_answers": {
+        "curve_constant": 4,
+        "gradient": "-24/5",
+        "normal_slope": "5/24",
+        "normal_equation": "y-(-4)=(5/24)*x",
+        "shown_derivative": "-6*exp(2*x)*y/(3*exp(2*x)+2*y)"
+      },
+      "marks": 9
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:changed",
+      "result": "pass",
+      "oracle": "explicit local-root derivative and implicit partials",
+      "expected_answers": {
+        "curve_constant": -2,
+        "gradient": "9",
+        "normal_slope": "-1/9",
+        "normal_equation": "y-(-1)=(-1/9)*x",
+        "shown_derivative": "-9*exp(3*x)*y/(3*exp(3*x)+2*y)"
+      },
+      "marks": 9
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:boundary",
+      "result": "pass",
+      "oracle": "explicit local-root derivative and implicit partials",
+      "expected_answers": {
+        "curve_constant": 5,
+        "gradient": "-10",
+        "normal_slope": "1/10",
+        "normal_equation": "y-(-5)=(1/10)*x",
+        "shown_derivative": "-12*exp(3*x)*y/(4*exp(3*x)+2*y)"
+      },
+      "marks": 9
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:normal",
+      "result": "pass",
+      "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+      "expected_answers": {
+        "points": [
+          [
+            -1,
+            4
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "classifications": [
+          "maximum",
+          "minimum"
+        ]
+      },
+      "marks": 6
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:changed",
+      "result": "pass",
+      "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+      "expected_answers": {
+        "points": [
+          [
+            -1,
+            -16
+          ],
+          [
+            3,
+            16
+          ]
+        ],
+        "classifications": [
+          "minimum",
+          "maximum"
+        ]
+      },
+      "marks": 6
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:boundary",
+      "result": "pass",
+      "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+      "expected_answers": {
+        "points": [
+          [
+            -5,
+            -104
+          ],
+          [
+            1,
+            112
+          ]
+        ],
+        "classifications": [
+          "minimum",
+          "maximum"
+        ]
+      },
+      "marks": 6
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:flat-classification:normal",
+      "result": "pass",
+      "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+      "expected_answers": {
+        "point": [
+          1,
+          -2
+        ],
+        "classification": "stationary inflexion",
+        "first_derivative_signs": [
+          "positive",
+          "positive"
+        ],
+        "second_derivative_at_point": 0
+      },
+      "marks": 6
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:flat-classification:changed",
+      "result": "pass",
+      "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+      "expected_answers": {
+        "point": [
+          -1,
+          2
+        ],
+        "classification": "minimum",
+        "first_derivative_signs": [
+          "negative",
+          "positive"
+        ],
+        "second_derivative_at_point": 0
+      },
+      "marks": 6
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:flat-classification:boundary",
+      "result": "pass",
+      "oracle": "expanded polynomial solve and first nonzero Taylor derivative",
+      "expected_answers": {
+        "point": [
+          2,
+          -4
+        ],
+        "classification": "maximum",
+        "first_derivative_signs": [
+          "positive",
+          "negative"
+        ],
+        "second_derivative_at_point": 0
+      },
+      "marks": 6
+    }
+  ],
+  "proof_alternative_checks": [
+    {
+      "a": 1,
+      "k": 2,
+      "route": "divided-by-y",
+      "forward_result": "-2*Y**2*exp(2*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-2*Y*exp(2*x)/(2*Y + exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 1,
+      "k": 2,
+      "route": "log-absolute",
+      "forward_result": "-2*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-2*Y*exp(2*x)/(2*Y + exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 1,
+      "k": 2,
+      "route": "simplified-target",
+      "forward_result": "-2*Y*exp(2*x)/(2*Y + exp(2*x))",
+      "target": "-2*Y*exp(2*x)/(2*Y + exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 1,
+      "k": 3,
+      "route": "divided-by-y",
+      "forward_result": "-3*Y**2*exp(3*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-3*Y*exp(3*x)/(2*Y + exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 1,
+      "k": 3,
+      "route": "log-absolute",
+      "forward_result": "-3*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-3*Y*exp(3*x)/(2*Y + exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 1,
+      "k": 3,
+      "route": "simplified-target",
+      "forward_result": "-3*Y*exp(3*x)/(2*Y + exp(3*x))",
+      "target": "-3*Y*exp(3*x)/(2*Y + exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 2,
+      "k": 2,
+      "route": "divided-by-y",
+      "forward_result": "-4*Y**2*exp(2*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-4*Y*exp(2*x)/(2*Y + 2*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 2,
+      "k": 2,
+      "route": "log-absolute",
+      "forward_result": "-2*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-4*Y*exp(2*x)/(2*Y + 2*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 2,
+      "k": 2,
+      "route": "simplified-target",
+      "forward_result": "-2*Y*exp(2*x)/(Y + exp(2*x))",
+      "target": "-4*Y*exp(2*x)/(2*Y + 2*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 2,
+      "k": 3,
+      "route": "divided-by-y",
+      "forward_result": "-6*Y**2*exp(3*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-6*Y*exp(3*x)/(2*Y + 2*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 2,
+      "k": 3,
+      "route": "log-absolute",
+      "forward_result": "-3*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-6*Y*exp(3*x)/(2*Y + 2*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 2,
+      "k": 3,
+      "route": "simplified-target",
+      "forward_result": "-3*Y*exp(3*x)/(Y + exp(3*x))",
+      "target": "-6*Y*exp(3*x)/(2*Y + 2*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 3,
+      "k": 2,
+      "route": "divided-by-y",
+      "forward_result": "-6*Y**2*exp(2*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-6*Y*exp(2*x)/(2*Y + 3*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 3,
+      "k": 2,
+      "route": "log-absolute",
+      "forward_result": "-2*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-6*Y*exp(2*x)/(2*Y + 3*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 3,
+      "k": 2,
+      "route": "simplified-target",
+      "forward_result": "-6*Y*exp(2*x)/(2*Y + 3*exp(2*x))",
+      "target": "-6*Y*exp(2*x)/(2*Y + 3*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 3,
+      "k": 3,
+      "route": "divided-by-y",
+      "forward_result": "-9*Y**2*exp(3*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-9*Y*exp(3*x)/(2*Y + 3*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 3,
+      "k": 3,
+      "route": "log-absolute",
+      "forward_result": "-3*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-9*Y*exp(3*x)/(2*Y + 3*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 3,
+      "k": 3,
+      "route": "simplified-target",
+      "forward_result": "-9*Y*exp(3*x)/(2*Y + 3*exp(3*x))",
+      "target": "-9*Y*exp(3*x)/(2*Y + 3*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 4,
+      "k": 2,
+      "route": "divided-by-y",
+      "forward_result": "-8*Y**2*exp(2*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-8*Y*exp(2*x)/(2*Y + 4*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 4,
+      "k": 2,
+      "route": "log-absolute",
+      "forward_result": "-2*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-8*Y*exp(2*x)/(2*Y + 4*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 4,
+      "k": 2,
+      "route": "simplified-target",
+      "forward_result": "-4*Y*exp(2*x)/(Y + 2*exp(2*x))",
+      "target": "-8*Y*exp(2*x)/(2*Y + 4*exp(2*x))",
+      "result": "pass"
+    },
+    {
+      "a": 4,
+      "k": 3,
+      "route": "divided-by-y",
+      "forward_result": "-12*Y**2*exp(3*x)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-12*Y*exp(3*x)/(2*Y + 4*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 4,
+      "k": 3,
+      "route": "log-absolute",
+      "forward_result": "-3*Y*(C - Y**2)/(C + Y**2)",
+      "back_substitution": "C=ae^(kx)y+y^2",
+      "target": "-12*Y*exp(3*x)/(2*Y + 4*exp(3*x))",
+      "result": "pass"
+    },
+    {
+      "a": 4,
+      "k": 3,
+      "route": "simplified-target",
+      "forward_result": "-6*Y*exp(3*x)/(Y + 2*exp(3*x))",
+      "target": "-12*Y*exp(3*x)/(2*Y + 4*exp(3*x))",
+      "result": "pass"
+    }
+  ],
+  "quartic_factor_theorem_checks": [
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": -4
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": -3
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": -2
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": -1
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": 1
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": 2
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": 3
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -2,
+        "c": 4
+      },
+      "derivative": "-8*x**3 - 48*x**2 - 96*x - 64",
+      "division_quotient": "-8*x**2 - 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": -4
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": -3
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": -2
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": -1
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": 1
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": 2
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": 3
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": -1,
+        "c": 4
+      },
+      "derivative": "-8*x**3 - 24*x**2 - 24*x - 8",
+      "division_quotient": "-8*x**2 - 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": -4
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": -3
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": -2
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": -1
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": 1
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": 2
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": 3
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 1,
+        "c": 4
+      },
+      "derivative": "-8*x**3 + 24*x**2 - 24*x + 8",
+      "division_quotient": "-8*x**2 + 16*x - 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": -4
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": -3
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": -2
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": -1
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": 1
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": 2
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": 3
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": 4
+      },
+      "derivative": "-8*x**3 + 48*x**2 - 96*x + 64",
+      "division_quotient": "-8*x**2 + 32*x - 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": -4
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": -3
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": -2
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": -1
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": 1
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": 2
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": 3
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -2,
+        "c": 4
+      },
+      "derivative": "-4*x**3 - 24*x**2 - 48*x - 32",
+      "division_quotient": "-4*x**2 - 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": -4
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": -3
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": -2
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": -1
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": 1
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": 2
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": 3
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": -1,
+        "c": 4
+      },
+      "derivative": "-4*x**3 - 12*x**2 - 12*x - 4",
+      "division_quotient": "-4*x**2 - 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": -4
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": -3
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": -2
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": -1
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": 1
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": 2
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": 3
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 1,
+        "c": 4
+      },
+      "derivative": "-4*x**3 + 12*x**2 - 12*x + 4",
+      "division_quotient": "-4*x**2 + 8*x - 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": -4
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": -3
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": -2
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": -1
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": 1
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": 2
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": 3
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": -1,
+        "h": 2,
+        "c": 4
+      },
+      "derivative": "-4*x**3 + 24*x**2 - 48*x + 32",
+      "division_quotient": "-4*x**2 + 16*x - 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": -4
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": -3
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": -2
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": -1
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": 1
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": 2
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": 3
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -2,
+        "c": 4
+      },
+      "derivative": "4*x**3 + 24*x**2 + 48*x + 32",
+      "division_quotient": "4*x**2 + 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": -4
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": -3
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": -2
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": -1
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": 1
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": 2
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": 3
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": 4
+      },
+      "derivative": "4*x**3 + 12*x**2 + 12*x + 4",
+      "division_quotient": "4*x**2 + 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": -4
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": -3
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": -2
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": -1
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": 1
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": 2
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": 3
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 1,
+        "c": 4
+      },
+      "derivative": "4*x**3 - 12*x**2 + 12*x - 4",
+      "division_quotient": "4*x**2 - 8*x + 4",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": -4
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": -3
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": -2
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": -1
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": 1
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": 2
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": 3
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": 2,
+        "c": 4
+      },
+      "derivative": "4*x**3 - 24*x**2 + 48*x - 32",
+      "division_quotient": "4*x**2 - 16*x + 16",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": -4
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": -3
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": -2
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": -1
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": 1
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": 2
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": 3
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -2,
+        "c": 4
+      },
+      "derivative": "8*x**3 + 48*x**2 + 96*x + 64",
+      "division_quotient": "8*x**2 + 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": -4
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": -3
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": -2
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": -1
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": 1
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": 2
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": 3
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": -1,
+        "c": 4
+      },
+      "derivative": "8*x**3 + 24*x**2 + 24*x + 8",
+      "division_quotient": "8*x**2 + 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": -1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": -4
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": -3
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": -2
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": -1
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": 1
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": 2
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": 3
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 1,
+        "c": 4
+      },
+      "derivative": "8*x**3 - 24*x**2 + 24*x - 8",
+      "division_quotient": "8*x**2 - 16*x + 8",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 1,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": -4
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": -3
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": -2
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": -1
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": 1
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": 2
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": 3
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    },
+    {
+      "parameters": {
+        "power": 4,
+        "a": 2,
+        "h": 2,
+        "c": 4
+      },
+      "derivative": "8*x**3 - 48*x**2 + 96*x - 64",
+      "division_quotient": "8*x**2 - 32*x + 32",
+      "remainder": 0,
+      "quadratic_discriminant": 0,
+      "only_root": 2,
+      "result": "pass"
+    }
+  ],
+  "marking_sample_expectations": [
+    {
+      "sample": "flat-derivative-coefficient-slip",
+      "branch": "flat-classification",
+      "location_credit": 2,
+      "classification_credit": 3,
+      "total_credit": 5,
+      "evidence": "I1B0,I2M1,I3A1; correct root does not restore a wrong derivative"
+    },
+    {
+      "sample": "bare-gradient",
+      "branch": "gradient",
+      "expected_credit": 0,
+      "evidence": "correct value, no derivative/substitution work"
+    },
+    {
+      "sample": "bare-normal",
+      "branch": "normal",
+      "expected_credit": 0,
+      "evidence": "correct line only; neither perpendicular step nor line-construction method seen"
+    },
+    {
+      "sample": "copied-show-result",
+      "branch": "normal",
+      "expected_credit": 0,
+      "evidence": "provided formula copied, no proof"
+    },
+    {
+      "sample": "wrong-proof-then-given-result",
+      "branch": "normal",
+      "show_credit": 2,
+      "terminal_S4_credit": 0,
+      "evidence": "S1 andS3only; a slip cannot follow through into an answer supplied by the question"
+    },
+    {
+      "sample": "first-derivative-only-cubic",
+      "branch": "flat-classification",
+      "expected_credit": 6,
+      "evidence": "I1/I2/I3stationaryworking plus f_prime(h)=0 and correct same-sign neighbourhood test with inflexion conclusion; no secondderivative required"
+    },
+    {
+      "sample": "first-derivative-only-quartic",
+      "branch": "flat-classification",
+      "expected_credit": 6,
+      "evidence": "I1/I2/I3stationaryworking plus opposite first-derivative signs and justified extremum"
+    },
+    {
+      "sample": "slipped-gradient-correct-perpendicular-and-line",
+      "branch": "normal",
+      "normal_credit": 2,
+      "evidence": "N1,M1andN2,DM1seen; canonicalN3fails"
+    },
+    {
+      "sample": "unsupported-stationary-coordinate-and-type",
+      "branch": "flat-classification",
+      "expected_credit": 0,
+      "evidence": "OD1no derivative/solve/classificationmethod"
+    },
+    {
+      "sample": "wrong-exponential-index-correct-gradient",
+      "branch": "gradient",
+      "G1": 1,
+      "G2": 0,
+      "G3": 1,
+      "G4": 1,
+      "G5": 0,
+      "total_credit": 3,
+      "evidence": "Wrong general derivative; final number coincides at x0 but cannot earn G5www"
+    },
+    {
+      "sample": "valid-divided-relation-proof",
+      "branch": "normal",
+      "proof_credit": 4,
+      "criterion_mapping": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "evidence": "Every differentiated term and the forward back-substitution shown"
+    },
+    {
+      "sample": "valid-log-absolute-proof",
+      "branch": "normal",
+      "proof_credit": 4,
+      "criterion_mapping": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "evidence": "Log absolute values on nonzero factors, correct implicit log derivatives and forward back-substitution"
+    },
+    {
+      "sample": "own-wrong-derivative-substitution",
+      "branch": "normal",
+      "H1": 1,
+      "H2": 0,
+      "evidence": "Credible derivative from the proof used consistently; canonical gradient accuracy fails"
+    },
+    {
+      "sample": "simplified-equivalent-target",
+      "branch": "normal",
+      "proof_credit": 4,
+      "evidence": "Correct full derivation and explicit common-factor equivalence"
+    },
+    {
+      "sample": "stated-perpendicular-gradient",
+      "branch": "normal",
+      "N1": 1,
+      "evidence": "Labelled perpendicular-gradient value in working; bare final line remains0"
+    }
+  ],
+  "limits": "Planner-side independent recomputation and manually specified evidence vectors; not vendor-independent acceptance or a runtime grading implementation."
+}

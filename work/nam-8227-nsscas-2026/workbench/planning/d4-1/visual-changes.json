@@ -1,0 +1,118 @@
+{
+  "scope": "D4.1 listed visual text and portability errata only",
+  "changes": [
+    {
+      "finding_id": "D4-N01",
+      "file": "planning/d4/visual-d4-independent-checks.py",
+      "field": null,
+      "before": "render_path=str(render)",
+      "after": "render_path=render.relative_to(W.parents[2]).as_posix()",
+      "before_line": 95,
+      "after_line": 95
+    },
+    {
+      "finding_id": "visual-D4-02",
+      "file": "planning/d4/visual-deviation-rows.json",
+      "field": "rows/0/official_row",
+      "before": "2023 P2 Q6 AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358",
+      "after": "2023 P2 Q6 AWARD05 (b:B2), AWARD10–11, report PDF337; 2025 P2 Q4 AWARD05, report PDF358",
+      "before_line": 7,
+      "after_line": 7
+    },
+    {
+      "finding_id": "visual-D4-02",
+      "file": "work-orders/WB8227-trapezium-sketch-estimate.md",
+      "field": null,
+      "before": "Row05 retains F.T.; row06 retains exclusive SC1.",
+      "after": "Row05 retains F.T.; D4 proposes a b:B2 www condition for visibly wrong log-law working (2023 P2 Q6 AWARD05), separately pending in D1-TRAP-FT-BRIDGE; row06 retains exclusive SC1.",
+      "before_line": 95,
+      "after_line": 95
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/0/branches/0/classification_status",
+      "before": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+      "after": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+      "before_line": 144,
+      "after_line": 144
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/0/branches/0/capacity_analysis/check_path",
+      "before": "planning/d3/visual-domain-checks.json",
+      "after": "planning/d4/visual-domain-checks.json",
+      "before_line": 153,
+      "after_line": 153
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/1/branches/0/classification_status",
+      "before": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+      "after": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+      "before_line": 144,
+      "after_line": 144
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/1/branches/0/capacity_analysis/check_path",
+      "before": "planning/d3/visual-domain-checks.json",
+      "after": "planning/d4/visual-domain-checks.json",
+      "before_line": 153,
+      "after_line": 153
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/2/branches/0/part_specs/1/precision_fixture_path",
+      "before": "planning/d3/visual-rounding-fixtures.json",
+      "after": "planning/d4/visual-rounding-fixtures.json",
+      "before_line": 878,
+      "after_line": 878
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/2/branches/0/classification_status",
+      "before": "D3 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+      "after": "D4 repaired; classification 8227-pilot-design-0.1.1 unchanged; independent confirmation pending",
+      "before_line": 144,
+      "after_line": 144
+    },
+    {
+      "finding_id": "shared-D4-03",
+      "file": "planning/visual-design.json",
+      "field": "/recipes/2/branches/0/capacity_analysis/check_path",
+      "before": "planning/d3/visual-domain-checks.json",
+      "after": "planning/d4/visual-domain-checks.json",
+      "before_line": 153,
+      "after_line": 153
+    }
+  ],
+  "portability": {
+    "W": "workbench directory resolved from __file__",
+    "repository_root": "W.parents[2]",
+    "render_path": "Repository-relative POSIX path; source/render SHA256 unchanged"
+  },
+  "unchanged": "No score, award, criterion type, answer, fixture datum tag, domain, recipe version or count was edited.",
+  "validation": {
+    "status": "pass",
+    "command": "python3 work/nam-8227-nsscas-2026/workbench/planning/d4/visual-d4-independent-checks.py",
+    "derived_ledgers": 15,
+    "retained_D3_cases": 9,
+    "score_projection_unchanged": true,
+    "generated_output_diff": [
+      {
+        "field": "/source_read/render_path",
+        "before": "/Users/professor/Documents/YYeni Study Resources/work/nam-8227-nsscas-2026/workbench/planning/d1/root-source-pages/2023-337.png",
+        "after": "work/nam-8227-nsscas-2026/workbench/planning/d1/root-source-pages/2023-337.png"
+      }
+    ],
+    "render_path_is_repo_relative": true,
+    "render_hash_verified": true,
+    "relocated_copies": "Root performs the required two-copy rebuild/freeze validation; not claimed by this scoped check."
+  }
+}

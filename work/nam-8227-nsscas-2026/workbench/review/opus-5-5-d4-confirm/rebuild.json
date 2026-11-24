@@ -1,0 +1,53 @@
+{
+ "check": "D4 design rebuild in two fresh copies (Claude reviewer)",
+ "date": "2026-11-24",
+ "script": "work/nam-8227-nsscas-2026/workbench/planning/d4/rebuild-design.py (18 commands x 2 rounds, 25 seeded subprocess negatives + 2 motion negatives, run only inside copies)",
+ "copies": [
+  "scratchpad/d4/root1",
+  "scratchpad/d4/root2"
+ ],
+ "method": "Each copy: cp -cR of the whole 8227 workspace plus the 436 manifest source files and root brief files; review/opus-5-5-d4-confirm removed; __pycache__ removed; PYTHONDONTWRITEBYTECODE=1; empty git repo for git rev-parse.",
+ "rebuild_exit": {
+  "copy1": 0,
+  "copy2": 0
+ },
+ "author_self_check_per_copy": {
+  "status": "pass",
+  "byte_identical_derived_outputs": 28,
+  "seeded_subprocess_rejections": 25,
+  "inline_motion_domain_rejections": 5,
+  "inline_ledger_rejections": 4
+ },
+ "compared_outputs": 51,
+ "compared_files": 11252,
+ "differing_outputs_copy1_vs_author": [
+  "planning/d4/design-rebuild-proof.json",
+  "planning/d4/visual-d4-independent-checks.json"
+ ],
+ "differing_outputs_copy1_vs_copy2": [
+  "planning/d4/design-rebuild-proof.json",
+  "planning/d4/visual-d4-independent-checks.json"
+ ],
+ "differing_files_all_copy1_vs_author": [
+  "planning/d4/design-rebuild-proof.json",
+  "planning/d4/visual-d4-independent-checks.json"
+ ],
+ "cause": "planning/d4/visual-d4-independent-checks.py:95 writes render_path=str(render), an absolute checkout path, into visual-d4-independent-checks.json:1045; design-rebuild-proof.json then differs only through that file hash.",
+ "normalised_result": "After replacing the checkout root by <ROOT>, visual-d4-independent-checks.json is identical in author, copy1 and copy2 (sha256 9c665858...); design-rebuild-proof.json is identical ignoring that one output hash. All other 11,250 workspace files (excluding review/) are byte-identical across author and both copies.",
+ "freeze_check": {
+  "author": "pass (3497 files, 436 sources, 85 reviews, 60 live plan checks, D3 1708 recovered, manifest 71ee10b6...)",
+  "copy1": "fails at first hash check on planning/d4/design-rebuild-proof.json (path-dependent output above)",
+  "copy2": "same as copy1"
+ },
+ "r7_analysis_freeze_author": "pass: all close-out hashes match (7771 files, 436 sources, 37 review files)",
+ "verdict": "Design derivations reproduce in both fresh copies; the only byte difference is a path-dependent provenance string (note D4-N01). No analysis rebuild was required: analysis/tools/curriculum unchanged.",
+ "logs": {
+  "rebuild.log": "cb6a265f7c509fb08bff88655041b0d2093c04406540881af5092b2331e2254d",
+  "pass1.log": "d63b52905aec3a8c786b6e0e5feeffd80f3aad55ecbfb7052bd66badbf1a933a",
+  "pass2.log": "d63b52905aec3a8c786b6e0e5feeffd80f3aad55ecbfb7052bd66badbf1a933a",
+  "freeze-check-author.log": "c129be51f5a91fbe113cb5d21e8223092dabd69f6c97d4e1101cef8533d678fa",
+  "freeze-check-copy1.log": "634099ce1395884333ba09543d3440cb29200e26cfc439da57a02e304da33ee2",
+  "freeze-check-copy2.log": "0a7912cf2e898711ce3ec6bc9f5602776b67dbb8d9511b2a07176b20d003397c",
+  "r7-freeze-check-author.log": "f384b18bfd35a575611694727812a620def4f0a60bebc69591158b7bf552575d"
+ }
+}

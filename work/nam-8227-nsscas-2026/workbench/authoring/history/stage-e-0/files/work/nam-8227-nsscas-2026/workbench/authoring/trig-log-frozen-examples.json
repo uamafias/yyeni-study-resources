@@ -1,0 +1,1769 @@
+[
+  {
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 1,
+      "b": 2,
+      "c": -2
+    },
+    "instance": {
+      "stem": "Angles are in degrees. Show your working in both parts.",
+      "parts": [
+        {
+          "local_part_id": "a-convert",
+          "prompt": "Express $\\sin\\theta+2\\cos\\theta$ as $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $R$ exactly and $\\alpha$ to two decimal places.",
+          "reference_answer": "$\\sqrt{5}\\sin(\\theta+63.43^\\circ)$.",
+          "worked_steps": [
+            {
+              "action": "Expand the requested form.",
+              "reason": "The sine addition formula gives the coefficients of sine and cosine separately.",
+              "result": "$R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\sin\\theta+R\\sin\\alpha\\cos\\theta$. Thus $R\\cos\\alpha=1$ and $R\\sin\\alpha=2$."
+            },
+            {
+              "action": "Find the positive amplitude.",
+              "reason": "Squaring and adding uses the identity $\\cos^2\\alpha+\\sin^2\\alpha=1$.",
+              "result": "$R^2=1^2+2^2=5$, so $R=\\sqrt{5}$."
+            },
+            {
+              "action": "Find the acute phase.",
+              "reason": "Dividing the coefficient equations fixes the ratio in the required order.",
+              "result": "$\\tan\\alpha=\\frac{2}{1}$, hence $\\alpha=63.43^\\circ$ to two decimal places."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-B1",
+              "local_criterion_id": "a-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Positive exact amplitude $R=\\sqrt{5}$ in eligible working. An unsimplified non-square surd is accepted; a perfect square must be evaluated."
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-M1",
+              "local_criterion_id": "a-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Visible correct coefficient comparison, $R\\cos\\alpha=1$ and $R\\sin\\alpha=2$, or equivalent triangle method; $\\tan\\alpha=2/1$."
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-A1",
+              "local_criterion_id": "a-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct acute phase $\\alpha=63.43^\\circ$, or a more precise correct value, with eligible method."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        },
+        {
+          "local_part_id": "b-roots",
+          "prompt": "Hence solve $\\sin\\theta+2\\cos\\theta=-2$ for $0^\\circ<\\theta<360^\\circ$. Give all solutions to one decimal place.",
+          "reference_answer": "$\\theta=180.0^\\circ$ or $\\theta=233.1^\\circ$.",
+          "worked_steps": [
+            {
+              "action": "Use the conversion from part (a).",
+              "reason": "The requested hence method uses the earlier amplitude and phase.",
+              "result": "$\\sin(\\theta+\\alpha)=\\frac{-2}{\\sqrt{5}}$, retaining the unrounded values of $R$ and $\\alpha$."
+            },
+            {
+              "action": "Search the full shifted interval.",
+              "reason": "The restriction on the original angle becomes a shifted interval for $z=\\theta+\\alpha$.",
+              "result": "$\\alpha<z<360^\\circ+\\alpha$. The two retained transformed roots are $z\\approx243.434949^\\circ$ and $z\\approx296.565051^\\circ$."
+            },
+            {
+              "action": "Subtract the phase and check.",
+              "reason": "Only angles inside the original strict interval solving the original equation are retained.",
+              "result": "$\\theta=z-\\alpha$, giving $180.0^\\circ$ and $233.1^\\circ$ to one decimal place."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1",
+              "local_criterion_id": "b-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Hence make sine the subject using their positive amplitude and admissible acute phase: $\\sin(\\theta+\\alpha_{\\rm their})=-2/R_{\\rm their}$.",
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M2",
+              "local_criterion_id": "b-M2",
+              "marks": 1,
+              "mark_type": "DM",
+              "achievement": "Complete transformed-root search in their shifted interval $(\\alpha_{\\rm their},360^\\circ+\\alpha_{\\rm their})$, including explicit rejection of any endpoints. Use their equation, not a memorised canonical quadrant table.",
+              "depends_on": [
+                "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1"
+              ],
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A1",
+              "local_criterion_id": "b-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "One correct original root, $180.0^\\circ$ or $233.1^\\circ$, to one decimal place, with visible hence working. Does not require b-M2.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A2",
+              "local_criterion_id": "b-A2",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "The other correct original root to one decimal place, with visible hence working. Withhold this award if an extra distinct final value is submitted, including an out-of-interval coterminal value.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "practice_help": {
+        "title": "Keep the coefficient order and the interval",
+        "prompts": [
+          "Expand the requested sine form and compare its two coefficients.",
+          "After converting, write down the shifted interval before looking for every root.",
+          "Keep unrounded values in the calculation and round only the requested answers."
+        ]
+      },
+      "assets": [],
+      "exposure_keys": [
+        "8227:rform:conversion:1:2:sin-plus:degrees",
+        "8227:rform:equation:1:2:-2:0-360:hence"
+      ],
+      "subdecision_exposure_keys": [
+        "8227:rform:phase-ratio:2"
+      ],
+      "private_math": {
+        "R_squared": 5,
+        "alpha_degrees": 63.43494882292201,
+        "roots_degrees": [
+          180.0,
+          233.13010235415595
+        ],
+        "transformed_roots": [
+          243.43494882292202,
+          296.565051177078
+        ]
+      },
+      "marking_notes": [
+        "Bare correct conversion or bare correct roots earn zero for the respective part under OD-1.",
+        "A visible non-hence root method earns zero in part (b); no borrowed special-case award.",
+        "Gross dependency awards survive any later MR03-OPS-D4 deduction. Eligible OD-6 misread follow-through does not override OD-1 or MR09.",
+        "Use decimal round-half-up. Premature rounding loses only affected accuracy awards."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 3,
+      "b": 1,
+      "c": -1
+    },
+    "instance": {
+      "stem": "Angles are in degrees. Show your working in both parts.",
+      "parts": [
+        {
+          "local_part_id": "a-convert",
+          "prompt": "Express $3\\sin\\theta+\\cos\\theta$ as $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $R$ exactly and $\\alpha$ to two decimal places.",
+          "reference_answer": "$\\sqrt{10}\\sin(\\theta+18.43^\\circ)$.",
+          "worked_steps": [
+            {
+              "action": "Expand the requested form.",
+              "reason": "The sine addition formula gives the coefficients of sine and cosine separately.",
+              "result": "$R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\sin\\theta+R\\sin\\alpha\\cos\\theta$. Thus $R\\cos\\alpha=3$ and $R\\sin\\alpha=1$."
+            },
+            {
+              "action": "Find the positive amplitude.",
+              "reason": "Squaring and adding uses the identity $\\cos^2\\alpha+\\sin^2\\alpha=1$.",
+              "result": "$R^2=3^2+1^2=10$, so $R=\\sqrt{10}$."
+            },
+            {
+              "action": "Find the acute phase.",
+              "reason": "Dividing the coefficient equations fixes the ratio in the required order.",
+              "result": "$\\tan\\alpha=\\frac{1}{3}$, hence $\\alpha=18.43^\\circ$ to two decimal places."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-B1",
+              "local_criterion_id": "a-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Positive exact amplitude $R=\\sqrt{10}$ in eligible working. An unsimplified non-square surd is accepted; a perfect square must be evaluated."
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-M1",
+              "local_criterion_id": "a-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Visible correct coefficient comparison, $R\\cos\\alpha=3$ and $R\\sin\\alpha=1$, or equivalent triangle method; $\\tan\\alpha=1/3$."
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-A1",
+              "local_criterion_id": "a-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct acute phase $\\alpha=18.43^\\circ$, or a more precise correct value, with eligible method."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        },
+        {
+          "local_part_id": "b-roots",
+          "prompt": "Hence solve $3\\sin\\theta+\\cos\\theta=-1$ for $0^\\circ<\\theta<360^\\circ$. Give all solutions to one decimal place.",
+          "reference_answer": "$\\theta=180.0^\\circ$ or $\\theta=323.1^\\circ$.",
+          "worked_steps": [
+            {
+              "action": "Use the conversion from part (a).",
+              "reason": "The requested hence method uses the earlier amplitude and phase.",
+              "result": "$\\sin(\\theta+\\alpha)=\\frac{-1}{\\sqrt{10}}$, retaining the unrounded values of $R$ and $\\alpha$."
+            },
+            {
+              "action": "Search the full shifted interval.",
+              "reason": "The restriction on the original angle becomes a shifted interval for $z=\\theta+\\alpha$.",
+              "result": "$\\alpha<z<360^\\circ+\\alpha$. The two retained transformed roots are $z\\approx198.434949^\\circ$ and $z\\approx341.565051^\\circ$."
+            },
+            {
+              "action": "Subtract the phase and check.",
+              "reason": "Only angles inside the original strict interval solving the original equation are retained.",
+              "result": "$\\theta=z-\\alpha$, giving $180.0^\\circ$ and $323.1^\\circ$ to one decimal place."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1",
+              "local_criterion_id": "b-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Hence make sine the subject using their positive amplitude and admissible acute phase: $\\sin(\\theta+\\alpha_{\\rm their})=-1/R_{\\rm their}$.",
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M2",
+              "local_criterion_id": "b-M2",
+              "marks": 1,
+              "mark_type": "DM",
+              "achievement": "Complete transformed-root search in their shifted interval $(\\alpha_{\\rm their},360^\\circ+\\alpha_{\\rm their})$, including explicit rejection of any endpoints. Use their equation, not a memorised canonical quadrant table.",
+              "depends_on": [
+                "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1"
+              ],
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A1",
+              "local_criterion_id": "b-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "One correct original root, $180.0^\\circ$ or $323.1^\\circ$, to one decimal place, with visible hence working. Does not require b-M2.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A2",
+              "local_criterion_id": "b-A2",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "The other correct original root to one decimal place, with visible hence working. Withhold this award if an extra distinct final value is submitted, including an out-of-interval coterminal value.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "practice_help": {
+        "title": "Keep the coefficient order and the interval",
+        "prompts": [
+          "Expand the requested sine form and compare its two coefficients.",
+          "After converting, write down the shifted interval before looking for every root.",
+          "Keep unrounded values in the calculation and round only the requested answers."
+        ]
+      },
+      "assets": [],
+      "exposure_keys": [
+        "8227:rform:conversion:3:1:sin-plus:degrees",
+        "8227:rform:equation:3:1:-1:0-360:hence"
+      ],
+      "subdecision_exposure_keys": [
+        "8227:rform:phase-ratio:1/3"
+      ],
+      "private_math": {
+        "R_squared": 10,
+        "alpha_degrees": 18.43494882292201,
+        "roots_degrees": [
+          180.0,
+          323.13010235415595
+        ],
+        "transformed_roots": [
+          198.43494882292202,
+          341.565051177078
+        ]
+      },
+      "marking_notes": [
+        "Bare correct conversion or bare correct roots earn zero for the respective part under OD-1.",
+        "A visible non-hence root method earns zero in part (b); no borrowed special-case award.",
+        "Gross dependency awards survive any later MR03-OPS-D4 deduction. Eligible OD-6 misread follow-through does not override OD-1 or MR09.",
+        "Use decimal round-half-up. Premature rounding loses only affected accuracy awards."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 4,
+      "b": 3,
+      "c": 2
+    },
+    "instance": {
+      "stem": "Angles are in degrees. Show your working in both parts.",
+      "parts": [
+        {
+          "local_part_id": "a-convert",
+          "prompt": "Express $4\\sin\\theta+3\\cos\\theta$ as $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $R$ exactly and $\\alpha$ to two decimal places.",
+          "reference_answer": "$5\\sin(\\theta+36.87^\\circ)$.",
+          "worked_steps": [
+            {
+              "action": "Expand the requested form.",
+              "reason": "The sine addition formula gives the coefficients of sine and cosine separately.",
+              "result": "$R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\sin\\theta+R\\sin\\alpha\\cos\\theta$. Thus $R\\cos\\alpha=4$ and $R\\sin\\alpha=3$."
+            },
+            {
+              "action": "Find the positive amplitude.",
+              "reason": "Squaring and adding uses the identity $\\cos^2\\alpha+\\sin^2\\alpha=1$.",
+              "result": "$R^2=4^2+3^2=25$, so $R=5$."
+            },
+            {
+              "action": "Find the acute phase.",
+              "reason": "Dividing the coefficient equations fixes the ratio in the required order.",
+              "result": "$\\tan\\alpha=\\frac{3}{4}$, hence $\\alpha=36.87^\\circ$ to two decimal places."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-B1",
+              "local_criterion_id": "a-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Positive exact amplitude $R=5$ in eligible working. An unsimplified non-square surd is accepted; a perfect square must be evaluated."
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-M1",
+              "local_criterion_id": "a-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Visible correct coefficient comparison, $R\\cos\\alpha=4$ and $R\\sin\\alpha=3$, or equivalent triangle method; $\\tan\\alpha=3/4$."
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:a-convert:a-A1",
+              "local_criterion_id": "a-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct acute phase $\\alpha=36.87^\\circ$, or a more precise correct value, with eligible method."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        },
+        {
+          "local_part_id": "b-roots",
+          "prompt": "Hence solve $4\\sin\\theta+3\\cos\\theta=2$ for $0^\\circ<\\theta<360^\\circ$. Give all solutions to one decimal place.",
+          "reference_answer": "$\\theta=119.6^\\circ$ or $\\theta=346.7^\\circ$.",
+          "worked_steps": [
+            {
+              "action": "Use the conversion from part (a).",
+              "reason": "The requested hence method uses the earlier amplitude and phase.",
+              "result": "$\\sin(\\theta+\\alpha)=\\frac{2}{5}$, retaining the unrounded values of $R$ and $\\alpha$."
+            },
+            {
+              "action": "Search the full shifted interval.",
+              "reason": "The restriction on the original angle becomes a shifted interval for $z=\\theta+\\alpha$.",
+              "result": "$\\alpha<z<360^\\circ+\\alpha$. The two retained transformed roots are $z\\approx156.421822^\\circ$ and $z\\approx383.578178^\\circ$."
+            },
+            {
+              "action": "Subtract the phase and check.",
+              "reason": "Only angles inside the original strict interval solving the original equation are retained.",
+              "result": "$\\theta=z-\\alpha$, giving $119.6^\\circ$ and $346.7^\\circ$ to one decimal place."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1",
+              "local_criterion_id": "b-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Hence make sine the subject using their positive amplitude and admissible acute phase: $\\sin(\\theta+\\alpha_{\\rm their})=2/R_{\\rm their}$.",
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M2",
+              "local_criterion_id": "b-M2",
+              "marks": 1,
+              "mark_type": "DM",
+              "achievement": "Complete transformed-root search in their shifted interval $(\\alpha_{\\rm their},360^\\circ+\\alpha_{\\rm their})$, including explicit rejection of any endpoints. Use their equation, not a memorised canonical quadrant table.",
+              "depends_on": [
+                "WB8227-trig-rform-equation:degree-cycle:b-roots:b-M1"
+              ],
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A1",
+              "local_criterion_id": "b-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "One correct original root, $119.6^\\circ$ or $346.7^\\circ$, to one decimal place, with visible hence working. Does not require b-M2.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            },
+            {
+              "criterion_id": "WB8227-trig-rform-equation:degree-cycle:b-roots:b-A2",
+              "local_criterion_id": "b-A2",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "The other correct original root to one decimal place, with visible hence working. Withhold this award if an extra distinct final value is submitted, including an out-of-interval coterminal value.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "practice_help": {
+        "title": "Keep the coefficient order and the interval",
+        "prompts": [
+          "Expand the requested sine form and compare its two coefficients.",
+          "After converting, write down the shifted interval before looking for every root.",
+          "Keep unrounded values in the calculation and round only the requested answers."
+        ]
+      },
+      "assets": [],
+      "exposure_keys": [
+        "8227:rform:conversion:4:3:sin-plus:degrees",
+        "8227:rform:equation:4:3:2:0-360:hence"
+      ],
+      "subdecision_exposure_keys": [
+        "8227:rform:phase-ratio:3/4"
+      ],
+      "private_math": {
+        "R_squared": 25,
+        "alpha_degrees": 36.86989764584402,
+        "roots_degrees": [
+          119.55192387595415,
+          346.7082808323578
+        ],
+        "transformed_roots": [
+          156.42182152179817,
+          383.57817847820183
+        ]
+      },
+      "marking_notes": [
+        "Bare correct conversion or bare correct roots earn zero for the respective part under OD-1.",
+        "A visible non-hence root method earns zero in part (b); no borrowed special-case award.",
+        "Gross dependency awards survive any later MR03-OPS-D4 deduction. Eligible OD-6 misread follow-through does not override OD-1 or MR09.",
+        "Use decimal round-half-up. Premature rounding loses only affected accuracy awards."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 2,
+      "theta": "-pi"
+    },
+    "instance": {
+      "stem": "All angles are in radians. Show your working.",
+      "parts": [
+        {
+          "local_part_id": "p-decision",
+          "prompt": "Solve $\\sin^{-1}(2x)=-\\pi$, giving an exact solution, or explain why it has no real solution.",
+          "reference_answer": "There is no real solution.",
+          "worked_steps": [
+            {
+              "action": "Use the principal inverse-sine range.",
+              "reason": "Every real value of an inverse sine is between $-\\pi/2$ and $\\pi/2$, including the endpoints.",
+              "result": "$-\\frac{\\pi}{2}\\leq\\sin^{-1}(kx)\\leq\\frac{\\pi}{2}$ whenever the inverse is real."
+            },
+            {
+              "action": "Compare this question's target with that range.",
+              "reason": "The target has to be an actual value of the principal inverse, not merely have the same forward sine.",
+              "result": "$-\\pi<-\\frac{\\pi}{2}$, outside the principal range."
+            },
+            {
+              "action": "State the consequence.",
+              "reason": "An out-of-range target cannot be the value of a real principal inverse sine.",
+              "result": "There is no real solution."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-B1",
+              "local_criterion_id": "P-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Apply the principal inverse property to the actual target $-\\pi<-\\frac{\\pi}{2}$, or verify/reject a forced candidate by its actual principal inverse. A rote interval statement alone is insufficient."
+            },
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-M1",
+              "local_criterion_id": "P-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "For a real target, show $2x=\\sin(-\\pi)$ (a correct decimal intermediate is allowed). For an out-of-range target, show the applied range obstruction or a complete forced-candidate contradiction."
+            },
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-A1",
+              "local_criterion_id": "P-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "There is no real solution. Supported by eligible reasoning; a real-case final value must be exact. An arbitrary failed guess is not a no-solution proof."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "practice_help": {
+        "title": "Check the inverse relation",
+        "prompts": [
+          "What values can a principal inverse sine take? Apply that fact to the given target.",
+          "If you take sine, check the resulting candidate in the original inverse equation.",
+          "Keep exact values until the final answer."
+        ]
+      },
+      "assets": [],
+      "exposure_keys": [
+        "8227:principal:inverse-sine:-pi:neutral-contract"
+      ],
+      "private_math": {
+        "outcome": "no-real-solution",
+        "theta_pi_coefficient": "-1",
+        "exact_solution": null
+      },
+      "conditional_direct_demand_ids": [],
+      "conditional_direct_objective_ids": [],
+      "conditional_metadata_visibility": "private until submission: resolved exact-angle tags would reveal the outcome",
+      "marking_notes": [
+        "This unified task is syllabus-derived; the comparable Cambridge algebra facet is related, not a same-type label for the whole task.",
+        "Bare correct value or unexplained no-real conclusion earns zero. Actual-target property plus forward recovery are distinct evidence slots.",
+        "A valid forced-candidate contradiction is an accepted full-credit alternative without a separately written interval.",
+        "Designed no-real outcomes can retain OD-6 eligibility when object/difficulty are preserved; flipping real/no-real is ineligible."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 4,
+      "theta": "-pi"
+    },
+    "instance": {
+      "stem": "All angles are in radians. Show your working.",
+      "parts": [
+        {
+          "local_part_id": "p-decision",
+          "prompt": "Solve $\\sin^{-1}(4x)=-\\pi$, giving an exact solution, or explain why it has no real solution.",
+          "reference_answer": "There is no real solution.",
+          "worked_steps": [
+            {
+              "action": "Use the principal inverse-sine range.",
+              "reason": "Every real value of an inverse sine is between $-\\pi/2$ and $\\pi/2$, including the endpoints.",
+              "result": "$-\\frac{\\pi}{2}\\leq\\sin^{-1}(kx)\\leq\\frac{\\pi}{2}$ whenever the inverse is real."
+            },
+            {
+              "action": "Compare this question's target with that range.",
+              "reason": "The target has to be an actual value of the principal inverse, not merely have the same forward sine.",
+              "result": "$-\\pi<-\\frac{\\pi}{2}$, outside the principal range."
+            },
+            {
+              "action": "State the consequence.",
+              "reason": "An out-of-range target cannot be the value of a real principal inverse sine.",
+              "result": "There is no real solution."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-B1",
+              "local_criterion_id": "P-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Apply the principal inverse property to the actual target $-\\pi<-\\frac{\\pi}{2}$, or verify/reject a forced candidate by its actual principal inverse. A rote interval statement alone is insufficient."
+            },
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-M1",
+              "local_criterion_id": "P-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "For a real target, show $4x=\\sin(-\\pi)$ (a correct decimal intermediate is allowed). For an out-of-range target, show the applied range obstruction or a complete forced-candidate contradiction."
+            },
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-A1",
+              "local_criterion_id": "P-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "There is no real solution. Supported by eligible reasoning; a real-case final value must be exact. An arbitrary failed guess is not a no-solution proof."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "practice_help": {
+        "title": "Check the inverse relation",
+        "prompts": [
+          "What values can a principal inverse sine take? Apply that fact to the given target.",
+          "If you take sine, check the resulting candidate in the original inverse equation.",
+          "Keep exact values until the final answer."
+        ]
+      },
+      "assets": [],
+      "exposure_keys": [
+        "8227:principal:inverse-sine:-pi:neutral-contract"
+      ],
+      "private_math": {
+        "outcome": "no-real-solution",
+        "theta_pi_coefficient": "-1",
+        "exact_solution": null
+      },
+      "conditional_direct_demand_ids": [],
+      "conditional_direct_objective_ids": [],
+      "conditional_metadata_visibility": "private until submission: resolved exact-angle tags would reveal the outcome",
+      "marking_notes": [
+        "This unified task is syllabus-derived; the comparable Cambridge algebra facet is related, not a same-type label for the whole task.",
+        "Bare correct value or unexplained no-real conclusion earns zero. Actual-target property plus forward recovery are distinct evidence slots.",
+        "A valid forced-candidate contradiction is an accepted full-credit alternative without a separately written interval.",
+        "Designed no-real outcomes can retain OD-6 eligibility when object/difficulty are preserved; flipping real/no-real is ineligible."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 5,
+      "theta": "pi"
+    },
+    "instance": {
+      "stem": "All angles are in radians. Show your working.",
+      "parts": [
+        {
+          "local_part_id": "p-decision",
+          "prompt": "Solve $\\sin^{-1}(5x)=\\pi$, giving an exact solution, or explain why it has no real solution.",
+          "reference_answer": "There is no real solution.",
+          "worked_steps": [
+            {
+              "action": "Use the principal inverse-sine range.",
+              "reason": "Every real value of an inverse sine is between $-\\pi/2$ and $\\pi/2$, including the endpoints.",
+              "result": "$-\\frac{\\pi}{2}\\leq\\sin^{-1}(kx)\\leq\\frac{\\pi}{2}$ whenever the inverse is real."
+            },
+            {
+              "action": "Compare this question's target with that range.",
+              "reason": "The target has to be an actual value of the principal inverse, not merely have the same forward sine.",
+              "result": "$\\pi>\\frac{\\pi}{2}$, outside the principal range."
+            },
+            {
+              "action": "State the consequence.",
+              "reason": "An out-of-range target cannot be the value of a real principal inverse sine.",
+              "result": "There is no real solution."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-B1",
+              "local_criterion_id": "P-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Apply the principal inverse property to the actual target $\\pi>\\frac{\\pi}{2}$, or verify/reject a forced candidate by its actual principal inverse. A rote interval statement alone is insufficient."
+            },
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-M1",
+              "local_criterion_id": "P-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "For a real target, show $5x=\\sin(\\pi)$ (a correct decimal intermediate is allowed). For an out-of-range target, show the applied range obstruction or a complete forced-candidate contradiction."
+            },
+            {
+              "criterion_id": "WB8227-principal-inverse:solve-or-explain:p-decision:P-A1",
+              "local_criterion_id": "P-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "There is no real solution. Supported by eligible reasoning; a real-case final value must be exact. An arbitrary failed guess is not a no-solution proof."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "practice_help": {
+        "title": "Check the inverse relation",
+        "prompts": [
+          "What values can a principal inverse sine take? Apply that fact to the given target.",
+          "If you take sine, check the resulting candidate in the original inverse equation.",
+          "Keep exact values until the final answer."
+        ]
+      },
+      "assets": [],
+      "exposure_keys": [
+        "8227:principal:inverse-sine:pi:neutral-contract"
+      ],
+      "private_math": {
+        "outcome": "no-real-solution",
+        "theta_pi_coefficient": "1",
+        "exact_solution": null
+      },
+      "conditional_direct_demand_ids": [],
+      "conditional_direct_objective_ids": [],
+      "conditional_metadata_visibility": "private until submission: resolved exact-angle tags would reveal the outcome",
+      "marking_notes": [
+        "This unified task is syllabus-derived; the comparable Cambridge algebra facet is related, not a same-type label for the whole task.",
+        "Bare correct value or unexplained no-real conclusion earns zero. Actual-target property plus forward recovery are distinct evidence slots.",
+        "A valid forced-candidate contradiction is an accepted full-credit alternative without a separately written interval.",
+        "Designed no-real outcomes can retain OD-6 eligibility when object/difficulty are preserved; flipping real/no-real is ineligible."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "-1",
+      "p": "-3/4",
+      "x1": 1,
+      "delta_x": 1
+    },
+    "instance": {
+      "stem": "The variables satisfy $y=Ae^{px+p}$, where $A>0$. The graph of $\\ln y$ against $x$ is shown. Use its exact labelled coordinates; the drawing is schematic.",
+      "parts": [
+        {
+          "local_part_id": "g-parameters",
+          "prompt": "Find $A$ and $p$, giving any non-exact decimal answers to three significant figures. Show your working.",
+          "reference_answer": "$A=e^{-1}\\approx0.368$ and $p=-\\frac{3}{4}$.",
+          "worked_steps": [
+            {
+              "action": "Take natural logarithms.",
+              "reason": "Apply the product and exponent laws before comparing with a line.",
+              "result": "$\\ln y=px+p+\\ln A$."
+            },
+            {
+              "action": "Read the exact coordinates and calculate the gradient.",
+              "reason": "The horizontal variable is x and the vertical variable is ln y, so the slope is p.",
+              "result": "$p=\\frac{-3.25-(-2.5)}{2-1}=-\\frac{3}{4}$."
+            },
+            {
+              "action": "Substitute one point into the complete transformed equation.",
+              "reason": "Both p terms are part of the supplied model; the intercept is p + ln A.",
+              "result": "$-2.5=1\\left(-\\frac{3}{4}\\right)+\\left(-\\frac{3}{4}\\right)+\\ln A$, hence $\\ln A=-1$."
+            },
+            {
+              "action": "Recover the amplitude.",
+              "reason": "The exponential function undoes the natural logarithm; A must be positive.",
+              "result": "$A=e^{-1}\\approx0.368$, with $p=-\\frac{3}{4}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-B1",
+              "local_criterion_id": "G-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Correct transformed line $\\ln y=px+p+\\ln A$, stated or implied by visible coordinate equations. Bare final parameters do not imply it."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1",
+              "local_criterion_id": "G-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Identify p with the gradient and attempt the gradient from the two exact coordinates; a valid simultaneous-equation method occupies the same award."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-A1",
+              "local_criterion_id": "G-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $p=-\\frac{3}{4}$ with eligible working."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-M2",
+              "local_criterion_id": "G-M2",
+              "marks": 1,
+              "mark_type": "DM",
+              "achievement": "Coherent substitution of a coordinate and simplification to $A=e^{\\text{constant}}$. An earlier coherent transformed-line/parameter slip can follow through; do not require the correct +p solely for this method award.",
+              "depends_on": [
+                "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1"
+              ],
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-A2",
+              "local_criterion_id": "G-A2",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $A=e^{-1}$ or $0.368$ to three significant figures, with eligible working. The coupled +p is needed for canonical accuracy."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "log-line",
+          "role": "question",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"640\" viewBox=\"0 0 1200 640\" role=\"img\" aria-labelledby=\"title desc\">\n<title id=\"title\">Straight-line graph of ln y against x</title>\n<desc id=\"desc\">Horizontal axis x; vertical axis ln y. Exact coordinates (1, -2.5) and (2, -3.25). The labelled points are on one straight line. Schematic; use labels, not measurements.</desc>\n<rect width=\"1200\" height=\"640\" fill=\"white\"/>\n<g stroke=\"#202020\" stroke-width=\"2\" fill=\"none\">\n<line x1=\"95.0000\" y1=\"169.9677\" x2=\"1100.0000\" y2=\"169.9677\"/>\n<line x1=\"275.3846\" y1=\"55.0000\" x2=\"275.3846\" y2=\"550.0000\"/>\n</g>\n<line x1=\"95.0000\" y1=\"248.2097\" x2=\"1100.0000\" y2=\"435.0323\" stroke=\"#174777\" stroke-width=\"3\"/>\n<g font-family=\"Arial, sans-serif\" font-size=\"28\" fill=\"#111\"><text x=\"1120\" y=\"176.9677\">x</text><text x=\"253.3846\" y=\"39\">ln y</text><text x=\"251.3846\" y=\"198.9677\">0</text>\n<circle cx=\"533.0769\" cy=\"329.6452\" r=\"5\" fill=\"#174777\"/>\n<text x=\"557.0769\" y=\"277.6452\">(1, -2.5)</text>\n<circle cx=\"790.7692\" cy=\"377.5484\" r=\"5\" fill=\"#174777\"/>\n<text x=\"814.7692\" y=\"325.5484\">(2, -3.25)</text>\n<text x=\"95\" y=\"605\" font-size=\"18\">Schematic graph. Use the exact labelled coordinates, not measurements.</text>\n</g></svg>\n",
+          "alt": "Graph of ln y against x through exact coordinates (1, -2.5), (2, -3.25). Schematic; use labels, not measurements.",
+          "must_read_givens": [
+            "horizontal axis x",
+            "vertical axis ln y",
+            "both exact coordinate labels",
+            "the points lie on the same straight line"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "Cartesian axes",
+              "ln y vertical axis",
+              "schematic; no measuring"
+            ],
+            "variable": {
+              "points": [
+                [
+                  "1",
+                  "-5/2"
+                ],
+                [
+                  "2",
+                  "-13/4"
+                ]
+              ]
+            },
+            "relations": [
+              "u_i=p*x_i+p+ln(A)",
+              "x2>x1",
+              "all exact labels remain visible"
+            ]
+          },
+          "layout_checks": {
+            "label_boxes": [
+              [
+                553.0769230769231,
+                247.64516129032256,
+                718.0769230769231,
+                286.64516129032256
+              ],
+              [
+                810.7692307692307,
+                295.5483870967742,
+                992.7692307692307,
+                334.5483870967742
+              ]
+            ],
+            "labels": [
+              "(1, -2.5)",
+              "(2, -3.25)"
+            ],
+            "line_segment": [
+              [
+                95.0,
+                248.20967741935488
+              ],
+              [
+                1100.0,
+                435.03225806451616
+              ]
+            ],
+            "axes": [
+              [
+                [
+                  95,
+                  169.96774193548384
+                ],
+                [
+                  1100,
+                  169.96774193548384
+                ]
+              ],
+              [
+                [
+                  275.38461538461536,
+                  55
+                ],
+                [
+                  275.38461538461536,
+                  550
+                ]
+              ]
+            ],
+            "viewport": [
+              1200,
+              640
+            ],
+            "exact_points": [
+              [
+                "1",
+                "-5/2"
+              ],
+              [
+                "2",
+                "-13/4"
+              ]
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Read the transformed line",
+        "prompts": [
+          "Write the supplied model using the logarithm shown on the vertical axis.",
+          "Which coefficient is the gradient, and what is contained in the intercept?",
+          "Use one exact labelled coordinate to recover the remaining constant."
+        ]
+      },
+      "exposure_keys": [
+        "8227:log:coupled-model:-1:-3/4:lny-x"
+      ],
+      "private_math": {
+        "L": "-1",
+        "p": "-3/4",
+        "A": 0.36787944117144233,
+        "exact_points": [
+          [
+            "1",
+            "-5/2"
+          ],
+          [
+            "2",
+            "-13/4"
+          ]
+        ]
+      },
+      "marking_notes": [
+        "Correct simultaneous coordinate equations can imply the log-line; both methods share the five-mark cap.",
+        "A coherent missing-offset line can retain gradient and dependent substitution method credit (3/5 when those are the only earned awards).",
+        "Bare final parameters earn zero. An opaque label box must never cover the line; layout coordinates are authoring evidence, not learner answers."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "1",
+      "p": "1/4",
+      "x1": 1,
+      "delta_x": 1
+    },
+    "instance": {
+      "stem": "The variables satisfy $y=Ae^{px+p}$, where $A>0$. The graph of $\\ln y$ against $x$ is shown. Use its exact labelled coordinates; the drawing is schematic.",
+      "parts": [
+        {
+          "local_part_id": "g-parameters",
+          "prompt": "Find $A$ and $p$, giving any non-exact decimal answers to three significant figures. Show your working.",
+          "reference_answer": "$A=e^{1}\\approx2.72$ and $p=\\frac{1}{4}$.",
+          "worked_steps": [
+            {
+              "action": "Take natural logarithms.",
+              "reason": "Apply the product and exponent laws before comparing with a line.",
+              "result": "$\\ln y=px+p+\\ln A$."
+            },
+            {
+              "action": "Read the exact coordinates and calculate the gradient.",
+              "reason": "The horizontal variable is x and the vertical variable is ln y, so the slope is p.",
+              "result": "$p=\\frac{1.75-(1.5)}{2-1}=\\frac{1}{4}$."
+            },
+            {
+              "action": "Substitute one point into the complete transformed equation.",
+              "reason": "Both p terms are part of the supplied model; the intercept is p + ln A.",
+              "result": "$1.5=1\\left(\\frac{1}{4}\\right)+\\left(\\frac{1}{4}\\right)+\\ln A$, hence $\\ln A=1$."
+            },
+            {
+              "action": "Recover the amplitude.",
+              "reason": "The exponential function undoes the natural logarithm; A must be positive.",
+              "result": "$A=e^{1}\\approx2.72$, with $p=\\frac{1}{4}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-B1",
+              "local_criterion_id": "G-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Correct transformed line $\\ln y=px+p+\\ln A$, stated or implied by visible coordinate equations. Bare final parameters do not imply it."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1",
+              "local_criterion_id": "G-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Identify p with the gradient and attempt the gradient from the two exact coordinates; a valid simultaneous-equation method occupies the same award."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-A1",
+              "local_criterion_id": "G-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $p=\\frac{1}{4}$ with eligible working."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-M2",
+              "local_criterion_id": "G-M2",
+              "marks": 1,
+              "mark_type": "DM",
+              "achievement": "Coherent substitution of a coordinate and simplification to $A=e^{\\text{constant}}$. An earlier coherent transformed-line/parameter slip can follow through; do not require the correct +p solely for this method award.",
+              "depends_on": [
+                "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1"
+              ],
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-A2",
+              "local_criterion_id": "G-A2",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $A=e^{1}$ or $2.72$ to three significant figures, with eligible working. The coupled +p is needed for canonical accuracy."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "log-line",
+          "role": "question",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"640\" viewBox=\"0 0 1200 640\" role=\"img\" aria-labelledby=\"title desc\">\n<title id=\"title\">Straight-line graph of ln y against x</title>\n<desc id=\"desc\">Horizontal axis x; vertical axis ln y. Exact coordinates (1, 1.5) and (2, 1.75). The labelled points are on one straight line. Schematic; use labels, not measurements.</desc>\n<rect width=\"1200\" height=\"640\" fill=\"white\"/>\n<g stroke=\"#202020\" stroke-width=\"2\" fill=\"none\">\n<line x1=\"95.0000\" y1=\"392.3009\" x2=\"1100.0000\" y2=\"392.3009\"/>\n<line x1=\"275.3846\" y1=\"55.0000\" x2=\"275.3846\" y2=\"550.0000\"/>\n</g>\n<line x1=\"95.0000\" y1=\"298.1195\" x2=\"1100.0000\" y2=\"212.6991\" stroke=\"#174777\" stroke-width=\"3\"/>\n<g font-family=\"Arial, sans-serif\" font-size=\"28\" fill=\"#111\"><text x=\"1120\" y=\"399.3009\">x</text><text x=\"253.3846\" y=\"39\">ln y</text><text x=\"251.3846\" y=\"421.3009\">0</text>\n<circle cx=\"533.0769\" cy=\"260.8850\" r=\"5\" fill=\"#174777\"/>\n<text x=\"557.0769\" y=\"208.8850\">(1, 1.5)</text>\n<circle cx=\"790.7692\" cy=\"238.9823\" r=\"5\" fill=\"#174777\"/>\n<text x=\"814.7692\" y=\"186.9823\">(2, 1.75)</text>\n<text x=\"95\" y=\"605\" font-size=\"18\">Schematic graph. Use the exact labelled coordinates, not measurements.</text>\n</g></svg>\n",
+          "alt": "Graph of ln y against x through exact coordinates (1, 1.5), (2, 1.75). Schematic; use labels, not measurements.",
+          "must_read_givens": [
+            "horizontal axis x",
+            "vertical axis ln y",
+            "both exact coordinate labels",
+            "the points lie on the same straight line"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "Cartesian axes",
+              "ln y vertical axis",
+              "schematic; no measuring"
+            ],
+            "variable": {
+              "points": [
+                [
+                  "1",
+                  "3/2"
+                ],
+                [
+                  "2",
+                  "7/4"
+                ]
+              ]
+            },
+            "relations": [
+              "u_i=p*x_i+p+ln(A)",
+              "x2>x1",
+              "all exact labels remain visible"
+            ]
+          },
+          "layout_checks": {
+            "label_boxes": [
+              [
+                553.0769230769231,
+                178.88495575221236,
+                701.0769230769231,
+                217.88495575221236
+              ],
+              [
+                810.7692307692307,
+                156.98230088495575,
+                975.7692307692307,
+                195.98230088495575
+              ]
+            ],
+            "labels": [
+              "(1, 1.5)",
+              "(2, 1.75)"
+            ],
+            "line_segment": [
+              [
+                95.0,
+                298.1194690265487
+              ],
+              [
+                1100.0,
+                212.69911504424783
+              ]
+            ],
+            "axes": [
+              [
+                [
+                  95,
+                  392.30088495575217
+                ],
+                [
+                  1100,
+                  392.30088495575217
+                ]
+              ],
+              [
+                [
+                  275.38461538461536,
+                  55
+                ],
+                [
+                  275.38461538461536,
+                  550
+                ]
+              ]
+            ],
+            "viewport": [
+              1200,
+              640
+            ],
+            "exact_points": [
+              [
+                "1",
+                "3/2"
+              ],
+              [
+                "2",
+                "7/4"
+              ]
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Read the transformed line",
+        "prompts": [
+          "Write the supplied model using the logarithm shown on the vertical axis.",
+          "Which coefficient is the gradient, and what is contained in the intercept?",
+          "Use one exact labelled coordinate to recover the remaining constant."
+        ]
+      },
+      "exposure_keys": [
+        "8227:log:coupled-model:1:1/4:lny-x"
+      ],
+      "private_math": {
+        "L": "1",
+        "p": "1/4",
+        "A": 2.718281828459045,
+        "exact_points": [
+          [
+            "1",
+            "3/2"
+          ],
+          [
+            "2",
+            "7/4"
+          ]
+        ]
+      },
+      "marking_notes": [
+        "Correct simultaneous coordinate equations can imply the log-line; both methods share the five-mark cap.",
+        "A coherent missing-offset line can retain gradient and dependent substitution method credit (3/5 when those are the only earned awards).",
+        "Bare final parameters earn zero. An opaque label box must never cover the line; layout coordinates are authoring evidence, not learner answers."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "3",
+      "p": "3/4",
+      "x1": 3,
+      "delta_x": 3
+    },
+    "instance": {
+      "stem": "The variables satisfy $y=Ae^{px+p}$, where $A>0$. The graph of $\\ln y$ against $x$ is shown. Use its exact labelled coordinates; the drawing is schematic.",
+      "parts": [
+        {
+          "local_part_id": "g-parameters",
+          "prompt": "Find $A$ and $p$, giving any non-exact decimal answers to three significant figures. Show your working.",
+          "reference_answer": "$A=e^{3}\\approx20.1$ and $p=\\frac{3}{4}$.",
+          "worked_steps": [
+            {
+              "action": "Take natural logarithms.",
+              "reason": "Apply the product and exponent laws before comparing with a line.",
+              "result": "$\\ln y=px+p+\\ln A$."
+            },
+            {
+              "action": "Read the exact coordinates and calculate the gradient.",
+              "reason": "The horizontal variable is x and the vertical variable is ln y, so the slope is p.",
+              "result": "$p=\\frac{8.25-(6)}{6-3}=\\frac{3}{4}$."
+            },
+            {
+              "action": "Substitute one point into the complete transformed equation.",
+              "reason": "Both p terms are part of the supplied model; the intercept is p + ln A.",
+              "result": "$6=3\\left(\\frac{3}{4}\\right)+\\left(\\frac{3}{4}\\right)+\\ln A$, hence $\\ln A=3$."
+            },
+            {
+              "action": "Recover the amplitude.",
+              "reason": "The exponential function undoes the natural logarithm; A must be positive.",
+              "result": "$A=e^{3}\\approx20.1$, with $p=\\frac{3}{4}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-B1",
+              "local_criterion_id": "G-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Correct transformed line $\\ln y=px+p+\\ln A$, stated or implied by visible coordinate equations. Bare final parameters do not imply it."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1",
+              "local_criterion_id": "G-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Identify p with the gradient and attempt the gradient from the two exact coordinates; a valid simultaneous-equation method occupies the same award."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-A1",
+              "local_criterion_id": "G-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $p=\\frac{3}{4}$ with eligible working."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-M2",
+              "local_criterion_id": "G-M2",
+              "marks": 1,
+              "mark_type": "DM",
+              "achievement": "Coherent substitution of a coordinate and simplification to $A=e^{\\text{constant}}$. An earlier coherent transformed-line/parameter slip can follow through; do not require the correct +p solely for this method award.",
+              "depends_on": [
+                "WB8227-log-linear-model:graph-intercept:g-parameters:G-M1"
+              ],
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:graph-intercept:g-parameters:G-A2",
+              "local_criterion_id": "G-A2",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $A=e^{3}$ or $20.1$ to three significant figures, with eligible working. The coupled +p is needed for canonical accuracy."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "log-line",
+          "role": "question",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"640\" viewBox=\"0 0 1200 640\" role=\"img\" aria-labelledby=\"title desc\">\n<title id=\"title\">Straight-line graph of ln y against x</title>\n<desc id=\"desc\">Horizontal axis x; vertical axis ln y. Exact coordinates (3, 6) and (6, 8.25). The labelled points are on one straight line. Schematic; use labels, not measurements.</desc>\n<rect width=\"1200\" height=\"640\" fill=\"white\"/>\n<g stroke=\"#202020\" stroke-width=\"2\" fill=\"none\">\n<line x1=\"95.0000\" y1=\"480.1176\" x2=\"1100.0000\" y2=\"480.1176\"/>\n<line x1=\"184.0506\" y1=\"55.0000\" x2=\"184.0506\" y2=\"550.0000\"/>\n</g>\n<line x1=\"95.0000\" y1=\"354.9118\" x2=\"1100.0000\" y2=\"124.8824\" stroke=\"#174777\" stroke-width=\"3\"/>\n<g font-family=\"Arial, sans-serif\" font-size=\"28\" fill=\"#111\"><text x=\"1120\" y=\"487.1176\">x</text><text x=\"162.0506\" y=\"39\">ln y</text><text x=\"160.0506\" y=\"509.1176\">0</text>\n<circle cx=\"565.6962\" cy=\"247.1765\" r=\"5\" fill=\"#174777\"/>\n<text x=\"589.6962\" y=\"195.1765\">(3, 6)</text>\n<circle cx=\"947.3418\" cy=\"159.8235\" r=\"5\" fill=\"#174777\"/>\n<text x=\"762.3418\" y=\"107.8235\">(6, 8.25)</text>\n<text x=\"95\" y=\"605\" font-size=\"18\">Schematic graph. Use the exact labelled coordinates, not measurements.</text>\n</g></svg>\n",
+          "alt": "Graph of ln y against x through exact coordinates (3, 6), (6, 8.25). Schematic; use labels, not measurements.",
+          "must_read_givens": [
+            "horizontal axis x",
+            "vertical axis ln y",
+            "both exact coordinate labels",
+            "the points lie on the same straight line"
+          ],
+          "diagram_parameters": {
+            "fixed": [
+              "Cartesian axes",
+              "ln y vertical axis",
+              "schematic; no measuring"
+            ],
+            "variable": {
+              "points": [
+                [
+                  "3",
+                  "6"
+                ],
+                [
+                  "6",
+                  "33/4"
+                ]
+              ]
+            },
+            "relations": [
+              "u_i=p*x_i+p+ln(A)",
+              "x2>x1",
+              "all exact labels remain visible"
+            ]
+          },
+          "layout_checks": {
+            "label_boxes": [
+              [
+                585.6962025316456,
+                165.1764705882353,
+                699.6962025316456,
+                204.1764705882353
+              ],
+              [
+                758.3417721518987,
+                77.8235294117647,
+                923.3417721518987,
+                116.8235294117647
+              ]
+            ],
+            "labels": [
+              "(3, 6)",
+              "(6, 8.25)"
+            ],
+            "line_segment": [
+              [
+                95.0,
+                354.9117647058823
+              ],
+              [
+                1100.0,
+                124.88235294117652
+              ]
+            ],
+            "axes": [
+              [
+                [
+                  95,
+                  480.11764705882354
+                ],
+                [
+                  1100,
+                  480.11764705882354
+                ]
+              ],
+              [
+                [
+                  184.0506329113924,
+                  55
+                ],
+                [
+                  184.0506329113924,
+                  550
+                ]
+              ]
+            ],
+            "viewport": [
+              1200,
+              640
+            ],
+            "exact_points": [
+              [
+                "3",
+                "6"
+              ],
+              [
+                "6",
+                "33/4"
+              ]
+            ]
+          }
+        }
+      ],
+      "practice_help": {
+        "title": "Read the transformed line",
+        "prompts": [
+          "Write the supplied model using the logarithm shown on the vertical axis.",
+          "Which coefficient is the gradient, and what is contained in the intercept?",
+          "Use one exact labelled coordinate to recover the remaining constant."
+        ]
+      },
+      "exposure_keys": [
+        "8227:log:coupled-model:3:3/4:lny-x"
+      ],
+      "private_math": {
+        "L": "3",
+        "p": "3/4",
+        "A": 20.085536923187668,
+        "exact_points": [
+          [
+            "3",
+            "6"
+          ],
+          [
+            "6",
+            "33/4"
+          ]
+        ]
+      },
+      "marking_notes": [
+        "Correct simultaneous coordinate equations can imply the log-line; both methods share the five-mark cap.",
+        "A coherent missing-offset line can retain gradient and dependent substitution method credit (3/5 when those are the only earned awards).",
+        "Bare final parameters earn zero. An opaque label box must never cover the line; layout coordinates are authoring evidence, not learner answers."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 0
+    },
+    "instance": {
+      "stem": "The model is $y=2^{a}a^x$, where $a$ is positive. A graph of $\\log_{2}y$ against $x$ has gradient $3$. Show your working.",
+      "parts": [
+        {
+          "local_part_id": "t-parameter",
+          "prompt": "Find $a$ exactly.",
+          "reference_answer": "$a=8$.",
+          "worked_steps": [
+            {
+              "action": "Take logarithms to the plotted base.",
+              "reason": "The product and exponent laws express the ordinate as a straight-line function of x.",
+              "result": "$\\log_{2}y=a+x\\log_{2}a$."
+            },
+            {
+              "action": "Match the gradient and exponentiate.",
+              "reason": "The coefficient of x is the given gradient.",
+              "result": "$\\log_{2}a=3$, hence $a=2^{3}=8$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-B1",
+              "local_criterion_id": "T-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Correct transformed line $\\log_{2}y=a+x\\log_{2}a$, stated or implied by visible work. Equivalent ln/lg transformations are accepted with the plotted-base gradient mapped correctly."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-M1",
+              "local_criterion_id": "T-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "State or imply $\\log_{2}a=3$, or the equivalent $\\ln a/\\ln 2=3$, from the actual plotted gradient."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-A1",
+              "local_criterion_id": "T-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct exact value $a=8$ with eligible method."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        },
+        {
+          "local_part_id": "t-target",
+          "prompt": "Hence find $x$ when $y=1$. Give an exact answer or a decimal correct to three significant figures.",
+          "reference_answer": "$x=-\\frac{8}{3}$ $\\approx-2.67$.",
+          "worked_steps": [
+            {
+              "action": "Substitute the recovered parameter and the target.",
+              "reason": "The hence method uses the result from part (a) in the same model.",
+              "result": "$0=8+3x$."
+            },
+            {
+              "action": "Solve the resulting linear equation.",
+              "reason": "Subtract the constant term and divide by the nonzero gradient.",
+              "result": "$x=\\frac{0-8}{3}=-\\frac{8}{3}$."
+            },
+            {
+              "action": "Check in the original exponential model.",
+              "reason": "Rewriting all powers to the supplied base checks the target without large decimal calculations.",
+              "result": "$2^{8}\\left(2^{3}\\right)^{-\\frac{8}{3}}=2^{8+3\\left(-\\frac{8}{3}\\right)}=2^{0}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-target:U-M1",
+              "local_criterion_id": "U-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Hence use their positive $a\\ne1$ and this target in their earlier log equation, a correct log equation first written here, or the original/exponent equation. Consistent substitution into an earlier missing-prefactor line follows through; newly dropping a previously retained prefactor does not earn this award.",
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-target:U-A1",
+              "local_criterion_id": "U-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $x=-\\frac{8}{3}$, exact or correctly rounded to three significant figures, with eligible hence working.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "assets": [],
+      "practice_help": {
+        "title": "Match the plotted logarithm",
+        "prompts": [
+          "Transform using the logarithm base stated for the plotted ordinate.",
+          "Match the coefficient of x to the given gradient, then undo that logarithm.",
+          "For the hence part, reuse the parameter you found and retain the whole prefactor."
+        ]
+      },
+      "exposure_keys": [
+        "8227:log:gradient-model:2:1:3",
+        "8227:log:target:2:1:3:0:hence"
+      ],
+      "subdecision_exposure_keys": [
+        "8227:log:exponentiation:2:3"
+      ],
+      "private_math": {
+        "a": 8,
+        "x": "-8/3",
+        "target_exponent": 0,
+        "log_line_intercept": 8
+      },
+      "marking_notes": [
+        "Correct ln/lg routes are alternatives when the gradient is converted to the plotted base; this is not an additional required change-of-base objective.",
+        "A visible non-hence method has no borrowed special-case award. Bare answers earn zero per part.",
+        "A newly dropped prefactor is distinct from consistent follow-through from an earlier missing-prefactor equation.",
+        "Primary parameter-model exposure repeats when only q changes. Version changes do not reset exposure."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 3,
+      "c": 1,
+      "m": 2,
+      "q": 0
+    },
+    "instance": {
+      "stem": "The model is $y=3^{a}a^x$, where $a$ is positive. A graph of $\\log_{3}y$ against $x$ has gradient $2$. Show your working.",
+      "parts": [
+        {
+          "local_part_id": "t-parameter",
+          "prompt": "Find $a$ exactly.",
+          "reference_answer": "$a=9$.",
+          "worked_steps": [
+            {
+              "action": "Take logarithms to the plotted base.",
+              "reason": "The product and exponent laws express the ordinate as a straight-line function of x.",
+              "result": "$\\log_{3}y=a+x\\log_{3}a$."
+            },
+            {
+              "action": "Match the gradient and exponentiate.",
+              "reason": "The coefficient of x is the given gradient.",
+              "result": "$\\log_{3}a=2$, hence $a=3^{2}=9$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-B1",
+              "local_criterion_id": "T-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Correct transformed line $\\log_{3}y=a+x\\log_{3}a$, stated or implied by visible work. Equivalent ln/lg transformations are accepted with the plotted-base gradient mapped correctly."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-M1",
+              "local_criterion_id": "T-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "State or imply $\\log_{3}a=2$, or the equivalent $\\ln a/\\ln 3=2$, from the actual plotted gradient."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-A1",
+              "local_criterion_id": "T-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct exact value $a=9$ with eligible method."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        },
+        {
+          "local_part_id": "t-target",
+          "prompt": "Hence find $x$ when $y=1$. Give an exact answer or a decimal correct to three significant figures.",
+          "reference_answer": "$x=-\\frac{9}{2}$ $\\approx-4.50$.",
+          "worked_steps": [
+            {
+              "action": "Substitute the recovered parameter and the target.",
+              "reason": "The hence method uses the result from part (a) in the same model.",
+              "result": "$0=9+2x$."
+            },
+            {
+              "action": "Solve the resulting linear equation.",
+              "reason": "Subtract the constant term and divide by the nonzero gradient.",
+              "result": "$x=\\frac{0-9}{2}=-\\frac{9}{2}$."
+            },
+            {
+              "action": "Check in the original exponential model.",
+              "reason": "Rewriting all powers to the supplied base checks the target without large decimal calculations.",
+              "result": "$3^{9}\\left(3^{2}\\right)^{-\\frac{9}{2}}=3^{9+2\\left(-\\frac{9}{2}\\right)}=3^{0}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-target:U-M1",
+              "local_criterion_id": "U-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Hence use their positive $a\\ne1$ and this target in their earlier log equation, a correct log equation first written here, or the original/exponent equation. Consistent substitution into an earlier missing-prefactor line follows through; newly dropping a previously retained prefactor does not earn this award.",
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-target:U-A1",
+              "local_criterion_id": "U-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $x=-\\frac{9}{2}$, exact or correctly rounded to three significant figures, with eligible hence working.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "assets": [],
+      "practice_help": {
+        "title": "Match the plotted logarithm",
+        "prompts": [
+          "Transform using the logarithm base stated for the plotted ordinate.",
+          "Match the coefficient of x to the given gradient, then undo that logarithm.",
+          "For the hence part, reuse the parameter you found and retain the whole prefactor."
+        ]
+      },
+      "exposure_keys": [
+        "8227:log:gradient-model:3:1:2",
+        "8227:log:target:3:1:2:0:hence"
+      ],
+      "subdecision_exposure_keys": [
+        "8227:log:exponentiation:3:2"
+      ],
+      "private_math": {
+        "a": 9,
+        "x": "-9/2",
+        "target_exponent": 0,
+        "log_line_intercept": 9
+      },
+      "marking_notes": [
+        "Correct ln/lg routes are alternatives when the gradient is converted to the plotted base; this is not an additional required change-of-base objective.",
+        "A visible non-hence method has no borrowed special-case award. Bare answers earn zero per part.",
+        "A newly dropped prefactor is distinct from consistent follow-through from an earlier missing-prefactor equation.",
+        "Primary parameter-model exposure repeats when only q changes. Version changes do not reset exposure."
+      ]
+    }
+  },
+  {
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 3,
+      "c": 3,
+      "m": 2,
+      "q": 30
+    },
+    "instance": {
+      "stem": "The model is $y=3^{3a}a^x$, where $a$ is positive. A graph of $\\log_{3}y$ against $x$ has gradient $2$. Show your working.",
+      "parts": [
+        {
+          "local_part_id": "t-parameter",
+          "prompt": "Find $a$ exactly.",
+          "reference_answer": "$a=9$.",
+          "worked_steps": [
+            {
+              "action": "Take logarithms to the plotted base.",
+              "reason": "The product and exponent laws express the ordinate as a straight-line function of x.",
+              "result": "$\\log_{3}y=3a+x\\log_{3}a$."
+            },
+            {
+              "action": "Match the gradient and exponentiate.",
+              "reason": "The coefficient of x is the given gradient.",
+              "result": "$\\log_{3}a=2$, hence $a=3^{2}=9$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-B1",
+              "local_criterion_id": "T-B1",
+              "marks": 1,
+              "mark_type": "B",
+              "achievement": "Correct transformed line $\\log_{3}y=3a+x\\log_{3}a$, stated or implied by visible work. Equivalent ln/lg transformations are accepted with the plotted-base gradient mapped correctly."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-M1",
+              "local_criterion_id": "T-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "State or imply $\\log_{3}a=2$, or the equivalent $\\ln a/\\ln 3=2$, from the actual plotted gradient."
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-parameter:T-A1",
+              "local_criterion_id": "T-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct exact value $a=9$ with eligible method."
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        },
+        {
+          "local_part_id": "t-target",
+          "prompt": "Hence find $x$ when $y=3^{30}$. Give an exact answer or a decimal correct to three significant figures.",
+          "reference_answer": "$x=\\frac{3}{2}$ $\\approx1.50$.",
+          "worked_steps": [
+            {
+              "action": "Substitute the recovered parameter and the target.",
+              "reason": "The hence method uses the result from part (a) in the same model.",
+              "result": "$30=27+2x$."
+            },
+            {
+              "action": "Solve the resulting linear equation.",
+              "reason": "Subtract the constant term and divide by the nonzero gradient.",
+              "result": "$x=\\frac{30-27}{2}=\\frac{3}{2}$."
+            },
+            {
+              "action": "Check in the original exponential model.",
+              "reason": "Rewriting all powers to the supplied base checks the target without large decimal calculations.",
+              "result": "$3^{27}\\left(3^{2}\\right)^{\\frac{3}{2}}=3^{27+2\\left(\\frac{3}{2}\\right)}=3^{30}$."
+            }
+          ],
+          "criteria": [
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-target:U-M1",
+              "local_criterion_id": "U-M1",
+              "marks": 1,
+              "mark_type": "M",
+              "achievement": "Hence use their positive $a\\ne1$ and this target in their earlier log equation, a correct log equation first written here, or the original/exponent equation. Consistent substitution into an earlier missing-prefactor line follows through; newly dropping a previously retained prefactor does not earn this award.",
+              "follow_through": true
+            },
+            {
+              "criterion_id": "WB8227-log-linear-model:gradient-target:t-target:U-A1",
+              "local_criterion_id": "U-A1",
+              "marks": 1,
+              "mark_type": "A",
+              "achievement": "Correct $x=\\frac{3}{2}$, exact or correctly rounded to three significant figures, with eligible hence working.",
+              "accuracy": "canonical except an eligible OD-6 misread"
+            }
+          ],
+          "answer_only_marks": 0,
+          "ambiguity_policy": "Pending clarification; never infer an unreadable sign or missing working."
+        }
+      ],
+      "assets": [],
+      "practice_help": {
+        "title": "Match the plotted logarithm",
+        "prompts": [
+          "Transform using the logarithm base stated for the plotted ordinate.",
+          "Match the coefficient of x to the given gradient, then undo that logarithm.",
+          "For the hence part, reuse the parameter you found and retain the whole prefactor."
+        ]
+      },
+      "exposure_keys": [
+        "8227:log:gradient-model:3:3:2",
+        "8227:log:target:3:3:2:30:hence"
+      ],
+      "subdecision_exposure_keys": [
+        "8227:log:exponentiation:3:2"
+      ],
+      "private_math": {
+        "a": 9,
+        "x": "3/2",
+        "target_exponent": 30,
+        "log_line_intercept": 27
+      },
+      "marking_notes": [
+        "Correct ln/lg routes are alternatives when the gradient is converted to the plotted base; this is not an additional required change-of-base objective.",
+        "A visible non-hence method has no borrowed special-case award. Bare answers earn zero per part.",
+        "A newly dropped prefactor is distinct from consistent follow-through from an earlier missing-prefactor equation.",
+        "Primary parameter-model exposure repeats when only q changes. Version changes do not reset exposure."
+      ]
+    }
+  }
+]

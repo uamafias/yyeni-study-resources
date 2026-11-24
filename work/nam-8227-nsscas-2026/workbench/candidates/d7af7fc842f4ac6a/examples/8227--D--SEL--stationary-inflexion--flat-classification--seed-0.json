@@ -1,0 +1,1162 @@
+{
+  "stem": "For the function $f(x)=x^{4} + 8x^{3} + 24x^{2} + 32x + 18$, answer the following.",
+  "parts": [
+    {
+      "local_part_id": "point",
+      "prompt": "Find the exact coordinates of every stationary point, showing all working.",
+      "reference_answer": "$(-2,2)$",
+      "worked_steps": [
+        {
+          "action": "Differentiate the supplied expanded polynomial",
+          "reason": "Stationary points satisfy f prime equal to zero.",
+          "result": "$f'(x)=4x^{3} + 24x^{2} + 48x + 32$"
+        },
+        {
+          "action": "Set the derivative equal to zero and show the repeated factor",
+          "reason": "Recognise the binomial power, or verify and divide out the repeated factor.",
+          "result": "$4(x + 2)^{3}=0$, so $x=-2$"
+        },
+        {
+          "action": "Substitute in the original function",
+          "reason": "Use f, rather than f prime, for the ordinate.",
+          "result": "$f(-2)=(-2)^{4} + 8(-2)^{3} + 24(-2)^{2} + 32(-2) + 18=2$, so the point is $(-2,2)$."
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+          "marks": 1,
+          "mark_type": "B",
+          "achievement": "Correct polynomial derivative, including its coefficient.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "I1",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+          "marks": 1,
+          "mark_type": "M",
+          "achievement": "Set a credible derivative equal to zero and visibly solve its repeated-factor equation; a binomial-cube or valid factor-theorem/division route is accepted.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "I2",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3",
+          "marks": 1,
+          "mark_type": "A",
+          "achievement": "Exact full canonical point after a visible stationary solve and substitution in the original polynomial.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "I3",
+          "depends_on": [
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2"
+          ],
+          "depends_on_any": []
+        }
+      ],
+      "accepted_alternatives": [],
+      "answer_only_credit": 0,
+      "proposed_marks": 3,
+      "semantic_key": "[\"flat-point\",1,8,24,32,18]",
+      "part_id": "WB8227-stationary-inflexion:flat-classification:point",
+      "reviewed_part": {
+        "part_id": "point",
+        "directly_assessed_demand_ids": [
+          "8227:2020:M1:T8:O02:D01",
+          "8227:2020:M1:T8:O04:D01"
+        ],
+        "directly_assessed_objective_ids": [
+          "8227:2020:M1:T8:O02",
+          "8227:2020:M1:T8:O04"
+        ],
+        "primary_objective_id": "8227:2020:M1:T8:O04",
+        "other_directly_assessed_objective_ids": [
+          "8227:2020:M1:T8:O02"
+        ],
+        "prerequisite_demand_ids": [
+          {
+            "demand_id": "8227:2020:M1:T2:O01:D01",
+            "role": "conditional prerequisite for power=4: positive-integer binomial-cube recognition route; alternative to the Module 2 route, not an extra directly assessed facet",
+            "condition": "power=4",
+            "alternative_route": "binomial-cube"
+          },
+          {
+            "demand_id": "8227:2020:M2:T1:O04:D02",
+            "role": "conditional prerequisite for power=4: factor theorem route, alternative to binomial-cube recognition",
+            "condition": "power=4",
+            "alternative_route": "factor-theorem"
+          },
+          {
+            "demand_id": "8227:2020:M2:T1:O04:D04",
+            "role": "conditional prerequisite for power=4: polynomial factorisation after the factor theorem; alternative to binomial-cube recognition",
+            "condition": "power=4",
+            "alternative_route": "factor-theorem"
+          },
+          {
+            "demand_id": "8227:2020:M2:T1:O03:D01",
+            "role": "conditional prerequisite for power=4: linear polynomial division in the factor-theorem route; alternative to binomial-cube recognition, not directly assessed coverage",
+            "condition": "power=4",
+            "alternative_route": "factor-theorem"
+          },
+          {
+            "demand_id": "8227:2020:M2:T1:O03:D03",
+            "role": "conditional prerequisite for power=4: identify quotient and zero remainder in the factor-theorem route; alternative to binomial-cube recognition, not directly assessed coverage",
+            "condition": "power=4",
+            "alternative_route": "factor-theorem"
+          }
+        ],
+        "marks": 3,
+        "bloom": 3,
+        "bloom_rationale": "I1 differentiates; I2 visibly solves the repeated-factor stationary equation; I3 gives the full canonical point. These criteria locate the point and do not assess its nature. D3 evidence: WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1, WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2, WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3.",
+        "bloom_criterion_ids": [
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3"
+        ],
+        "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+        "classification_version": "8227-pilot-design-0.1.1",
+        "criterion_ids": [
+          "I1",
+          "I2",
+          "I3"
+        ],
+        "fully_qualified_criterion_ids": [
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3"
+        ],
+        "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+        "response_format": "symbolic",
+        "answer_only_credit": 0,
+        "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+        "criteria": [
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+            "suffix": "I1",
+            "mark_type": "B",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2025:P1:Q9:AWARD:05"
+            ],
+            "qualifiers": [
+              "correct derivative; coefficient slip losesB1",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+            "suffix": "I2",
+            "mark_type": "M",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2025:P1:Q9:AWARD:06"
+            ],
+            "qualifiers": [
+              "derivative=0 and visible valid solve attempt",
+              "For quartic cases, demonstrate binomial cube recognition OR factor theorem g(h)=0, divide by x-h, and solve/recognise the remaining repeated quadratic."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3",
+            "suffix": "I3",
+            "mark_type": "A",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2025:P1:Q9:AWARD:07"
+            ],
+            "qualifiers": [
+              "canonical full point; visible method",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          }
+        ],
+        "prerequisite_routes": [
+          {
+            "route_id": "binomial-cube",
+            "condition": "power=4",
+            "module_dependencies": [
+              "M1:T2:O01"
+            ],
+            "demand_ids": [
+              "8227:2020:M1:T2:O01:D01"
+            ]
+          },
+          {
+            "route_id": "factor-theorem",
+            "condition": "power=4",
+            "module_dependencies": [
+              "M2:T1:O04",
+              "M2:T1:O03"
+            ],
+            "demand_ids": [
+              "8227:2020:M2:T1:O04:D02",
+              "8227:2020:M2:T1:O04:D04",
+              "8227:2020:M2:T1:O03:D01",
+              "8227:2020:M2:T1:O03:D03"
+            ]
+          }
+        ],
+        "module_dependency_note": "The expanded-quartic branch requires AS algebra, not NSSCO-only algebra. An M1 binomial-cube route is sufficient; selecting the factor-theorem route explicitly requires the M2 polynomial module. This pilot branch is not a claim that M2 methods are assumed in every M1 examination question.",
+        "misread_policy": {
+          "policy_id": "MR03-D4",
+          "owner_principle_id": "OD-6",
+          "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+          "operational_policy_id": "MR03-OPS-D4",
+          "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+          "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+          "feedback": "Practice feedback names the misread.",
+          "ledger_fields": [
+            "datum_id",
+            "canonical_value",
+            "misread_value",
+            "eligible",
+            "eligibility_reason",
+            "first_use_part",
+            "gross_awards",
+            "deducted_part",
+            "deducted_criterion",
+            "amount",
+            "net_awards"
+          ],
+          "sources": [
+            "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+            "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+          ],
+          "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+        },
+        "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+        "qualified_part_id": "WB8227-stationary-inflexion:flat-classification:point"
+      }
+    },
+    {
+      "local_part_id": "classification",
+      "prompt": "Classify each stationary point as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types.",
+      "reference_answer": "Minimum.",
+      "worked_steps": [
+        {
+          "action": "Check the derivative on both sides",
+          "reason": "This polynomial has no other derivative root; a two-sided first-derivative test suffices.",
+          "result": "$f'(-3)=-4$, $f'(-2)=0$, $f'(-1)=4$"
+        },
+        {
+          "action": "Use the local sign behaviour",
+          "reason": "A zero second derivative alone would not settle the type.",
+          "result": "The derivative changes from negative to positive, so the point is a minimum."
+        },
+        {
+          "action": "State the justified type",
+          "reason": "The test rules out the other stationary types.",
+          "result": "$(-2,2)$ is a minimum."
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+          "marks": 1,
+          "mark_type": "B",
+          "achievement": "Correct actual two-sided derivative behaviour, with stated point substitutions or valid power/sign reasoning.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "I4",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+          "marks": 1,
+          "mark_type": "M",
+          "achievement": "Apply a valid local classification test to that evidence, ruling out the other types; limited follow-through from credible prior work.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "I5",
+          "depends_on": [],
+          "depends_on_any": []
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6",
+          "marks": 1,
+          "mark_type": "A",
+          "achievement": "Canonical type justified by the valid test, not merely f second equal to zero.",
+          "dependencies_use": "gross-earned-before-MR03-net-deduction",
+          "answer_only_credit": 0,
+          "misread_policy_id": "MR03-OPS-D4",
+          "mr09_supplied_result_exclusion": false,
+          "suffix": "I6",
+          "depends_on": [
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5"
+          ],
+          "depends_on_any": []
+        }
+      ],
+      "accepted_alternatives": [
+        {
+          "method": "second-derivative neighbourhood, local increments, or higher derivative",
+          "requirements": "A complete valid local argument fills the same slots. f second at the stationary point equal to zero alone earns no classification credit."
+        }
+      ],
+      "answer_only_credit": 0,
+      "proposed_marks": 3,
+      "semantic_key": "[\"flat-shape\",[4,1,-2]]",
+      "part_id": "WB8227-stationary-inflexion:flat-classification:classification",
+      "reviewed_part": {
+        "part_id": "classification",
+        "directly_assessed_demand_ids": [
+          "8227:2020:M1:T8:O04:D02"
+        ],
+        "directly_assessed_objective_ids": [
+          "8227:2020:M1:T8:O04"
+        ],
+        "primary_objective_id": "8227:2020:M1:T8:O04",
+        "other_directly_assessed_objective_ids": [],
+        "prerequisite_demand_ids": [
+          {
+            "demand_id": "8227:2020:M1:T8:O01:D02",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          },
+          {
+            "demand_id": "8227:2020:M1:T8:O02:D01",
+            "role": "prerequisite/support; not separately directly assessed in this part"
+          }
+        ],
+        "marks": 3,
+        "bloom": 3,
+        "bloom_rationale": "I4 records the derivative behaviour, I5 applies a valid taught classification test and I6 gives its justified type. Routine sign testing is Apply 3 under OD-4 even though outcomes vary and the stem does not name the method. D3 evidence: WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4, WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5, WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6.",
+        "bloom_criterion_ids": [
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6"
+        ],
+        "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+        "classification_version": "8227-pilot-design-0.1.1",
+        "criterion_ids": [
+          "I4",
+          "I5",
+          "I6"
+        ],
+        "fully_qualified_criterion_ids": [
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+          "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6"
+        ],
+        "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+        "response_format": "explanation",
+        "answer_only_credit": 0,
+        "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+        "criteria": [
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+            "suffix": "I4",
+            "mark_type": "B",
+            "value": 1,
+            "official_evidence_ids": [],
+            "qualifiers": [
+              "actual two-sided evidence, no unsupported type shortcut",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+            "suffix": "I5",
+            "mark_type": "M",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2025:P1:Q9:AWARD:08"
+            ],
+            "qualifiers": [
+              "any valid method, including first-derivative signs alone",
+              "limited credible F.T."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6",
+            "suffix": "I6",
+            "mark_type": "A",
+            "value": 1,
+            "official_evidence_ids": [
+              "8227:EXAM:2025:P1:Q9:AWARD:09"
+            ],
+            "qualifiers": [
+              "canonical justified type",
+              "depends onI5",
+              "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+            ],
+            "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+          }
+        ],
+        "misread_policy": {
+          "policy_id": "MR03-D4",
+          "owner_principle_id": "OD-6",
+          "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+          "operational_policy_id": "MR03-OPS-D4",
+          "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+          "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+          "feedback": "Practice feedback names the misread.",
+          "ledger_fields": [
+            "datum_id",
+            "canonical_value",
+            "misread_value",
+            "eligible",
+            "eligibility_reason",
+            "first_use_part",
+            "gross_awards",
+            "deducted_part",
+            "deducted_criterion",
+            "amount",
+            "net_awards"
+          ],
+          "sources": [
+            "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+            "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+          ],
+          "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+        },
+        "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+        "qualified_part_id": "WB8227-stationary-inflexion:flat-classification:classification"
+      }
+    }
+  ],
+  "assets": [],
+  "exposure_keys": [
+    "[\"flat-point\",1,8,24,32,18]",
+    "[\"flat-shape\",[4,1,-2]]"
+  ],
+  "private_math": {
+    "parameters": {
+      "power": 4,
+      "a": 1,
+      "h": -2,
+      "c": 2
+    },
+    "polynomial_coefficients": [
+      1,
+      8,
+      24,
+      32,
+      18
+    ],
+    "derivative_coefficients": [
+      4,
+      24,
+      48,
+      32
+    ],
+    "stationary_points": [
+      [
+        -2,
+        2
+      ]
+    ],
+    "types": [
+      "minimum"
+    ],
+    "derivative_sample_values": [
+      -4,
+      0,
+      4
+    ],
+    "classification_key": "[\"flat-shape\",[4,1,-2]]"
+  },
+  "practice_help": {
+    "version": 1,
+    "title": "Plan your working",
+    "prompts": [
+      "Find stationary abscissae from the derivative, then use the original function for their ordinates.",
+      "Which local test justifies the type?",
+      "Show the algebra and the evidence supporting your conclusion."
+    ]
+  },
+  "misread_policy": {
+    "operational_policy_id": "MR03-OPS-D4",
+    "approval": "Vitalis exact Stage-D manifest 4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+    "rule": "Judge gross evidence and dependencies first; an eligible question-data misread costs one earned A/B mark once per datum, in question/criterion order, carrying forward if needed. Never deduct from M/DM. Eligible follow-through does not override MR09 supplied-result proof requirements or OD-1 required working.",
+    "eligibility": "Decide once at first use for the connected question; a changed object/difficulty or own-figure slip remains canonical throughout.",
+    "competing_datum_settlement": "Unresolved E/F carry: competing eligible data sharing an earned mark require an explicit accepted settlement; do not infer a grade from datum list order."
+  },
+  "exposure_policy": "Every required freshness identity must be unseen for wholly fresh use; additionally exposed shared identities are recorded for later branch checks without imposing new fresh requirements on this instance. Version is provenance and never resets exposure. Disclosed repeated-component practice is separate; do not silently switch branches on exhaustion.",
+  "recipe_id": "WB8227-stationary-inflexion",
+  "branch_id": "flat-classification",
+  "selection_id": "8227:D:SEL:stationary-inflexion:flat-classification",
+  "recipe_version": "0.1.5",
+  "design_rubric_version": "0.1.4",
+  "parameters": {
+    "power": 4,
+    "a": 1,
+    "h": -2,
+    "c": 2
+  },
+  "proposed_total_marks": 6,
+  "freshness_required_keys": [
+    "[\"flat-point\",1,8,24,32,18]",
+    "[\"flat-shape\",[4,1,-2]]"
+  ],
+  "generator_version": 2,
+  "generator_seed": 0,
+  "domain_index": 197,
+  "source_branch": {
+    "kind": "flat-classification"
+  },
+  "objective_ids": [
+    "8227:2020:M1:T8:O02",
+    "8227:2020:M1:T8:O04"
+  ],
+  "demand_ids": [
+    "8227:2020:M1:T8:O02:D01",
+    "8227:2020:M1:T8:O04:D01",
+    "8227:2020:M1:T8:O04:D02"
+  ],
+  "blooms_level": 3,
+  "classification_version": "8227-pilot-design-0.1.1",
+  "examination_references": [
+    {
+      "board": "NSSCAS",
+      "syllabus_code": "8227",
+      "year": 2025,
+      "session": null,
+      "paper": "1",
+      "question": "9",
+      "part": "c",
+      "printed_page": 13,
+      "pdf_page": 13,
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+      "source_sha256": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+      "relation": "related",
+      "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+      "learner_display": false,
+      "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+      "learner_label": "NSSCAS Mathematics 8227, 2025 Paper 1, Question 9(c), page 13",
+      "source_part_id": "8227:EXAM:2025:P1:Q9:c",
+      "scope": "part",
+      "applies_to_part_ids": [
+        "point",
+        "classification"
+      ],
+      "target_part_ids": [
+        "WB8227-stationary-inflexion:flat-classification:point",
+        "WB8227-stationary-inflexion:flat-classification:classification"
+      ]
+    }
+  ],
+  "generation_identity": {
+    "package_id": "namibia-nsscas-8227",
+    "package_version": "0.1.5",
+    "recipe_version": "0.1.5",
+    "selection_id": "8227:D:SEL:stationary-inflexion:flat-classification",
+    "branch_id": "flat-classification",
+    "seed": 0,
+    "parameters_sha256": "c664f64bd897027f39842cba5fd21fa038cd4f27abda450e60219f950c952691",
+    "algorithm": "finite-domain-python-random-v1",
+    "approved_design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec"
+  },
+  "owner_design_approval": {
+    "owner": "Vitalis",
+    "manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+    "runtime_content_review": "pending"
+  },
+  "semantic_fingerprint": "682b244c0381e5082c3f8e798ff0b0aebba193358d83fdd18362d6b60640e8b8",
+  "fingerprint": "8780cc0412f968f376fb40a5705429ee3084bb73e55c4d692fdfb3ccb18ffe76",
+  "native_marking_memo": {
+    "schema": "8227-marking-evidence-v1",
+    "recipe_version": "0.1.5",
+    "parts": [
+      {
+        "local_part_id": "point",
+        "prompt": "Find the exact coordinates of every stationary point, showing all working.",
+        "reference_answer": "$(-2,2)$",
+        "worked_steps": [
+          {
+            "action": "Differentiate the supplied expanded polynomial",
+            "reason": "Stationary points satisfy f prime equal to zero.",
+            "result": "$f'(x)=4x^{3} + 24x^{2} + 48x + 32$"
+          },
+          {
+            "action": "Set the derivative equal to zero and show the repeated factor",
+            "reason": "Recognise the binomial power, or verify and divide out the repeated factor.",
+            "result": "$4(x + 2)^{3}=0$, so $x=-2$"
+          },
+          {
+            "action": "Substitute in the original function",
+            "reason": "Use f, rather than f prime, for the ordinate.",
+            "result": "$f(-2)=(-2)^{4} + 8(-2)^{3} + 24(-2)^{2} + 32(-2) + 18=2$, so the point is $(-2,2)$."
+          }
+        ],
+        "criteria": [
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+            "marks": 1,
+            "mark_type": "B",
+            "achievement": "Correct polynomial derivative, including its coefficient.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "I1",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+            "marks": 1,
+            "mark_type": "M",
+            "achievement": "Set a credible derivative equal to zero and visibly solve its repeated-factor equation; a binomial-cube or valid factor-theorem/division route is accepted.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "I2",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3",
+            "marks": 1,
+            "mark_type": "A",
+            "achievement": "Exact full canonical point after a visible stationary solve and substitution in the original polynomial.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "I3",
+            "depends_on": [
+              "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2"
+            ],
+            "depends_on_any": []
+          }
+        ],
+        "accepted_alternatives": [],
+        "answer_only_credit": 0,
+        "proposed_marks": 3,
+        "semantic_key": "[\"flat-point\",1,8,24,32,18]",
+        "part_id": "WB8227-stationary-inflexion:flat-classification:point",
+        "reviewed_part": {
+          "part_id": "point",
+          "directly_assessed_demand_ids": [
+            "8227:2020:M1:T8:O02:D01",
+            "8227:2020:M1:T8:O04:D01"
+          ],
+          "directly_assessed_objective_ids": [
+            "8227:2020:M1:T8:O02",
+            "8227:2020:M1:T8:O04"
+          ],
+          "primary_objective_id": "8227:2020:M1:T8:O04",
+          "other_directly_assessed_objective_ids": [
+            "8227:2020:M1:T8:O02"
+          ],
+          "prerequisite_demand_ids": [
+            {
+              "demand_id": "8227:2020:M1:T2:O01:D01",
+              "role": "conditional prerequisite for power=4: positive-integer binomial-cube recognition route; alternative to the Module 2 route, not an extra directly assessed facet",
+              "condition": "power=4",
+              "alternative_route": "binomial-cube"
+            },
+            {
+              "demand_id": "8227:2020:M2:T1:O04:D02",
+              "role": "conditional prerequisite for power=4: factor theorem route, alternative to binomial-cube recognition",
+              "condition": "power=4",
+              "alternative_route": "factor-theorem"
+            },
+            {
+              "demand_id": "8227:2020:M2:T1:O04:D04",
+              "role": "conditional prerequisite for power=4: polynomial factorisation after the factor theorem; alternative to binomial-cube recognition",
+              "condition": "power=4",
+              "alternative_route": "factor-theorem"
+            },
+            {
+              "demand_id": "8227:2020:M2:T1:O03:D01",
+              "role": "conditional prerequisite for power=4: linear polynomial division in the factor-theorem route; alternative to binomial-cube recognition, not directly assessed coverage",
+              "condition": "power=4",
+              "alternative_route": "factor-theorem"
+            },
+            {
+              "demand_id": "8227:2020:M2:T1:O03:D03",
+              "role": "conditional prerequisite for power=4: identify quotient and zero remainder in the factor-theorem route; alternative to binomial-cube recognition, not directly assessed coverage",
+              "condition": "power=4",
+              "alternative_route": "factor-theorem"
+            }
+          ],
+          "marks": 3,
+          "bloom": 3,
+          "bloom_rationale": "I1 differentiates; I2 visibly solves the repeated-factor stationary equation; I3 gives the full canonical point. These criteria locate the point and do not assess its nature. D3 evidence: WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1, WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2, WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3.",
+          "bloom_criterion_ids": [
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3"
+          ],
+          "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+          "classification_version": "8227-pilot-design-0.1.1",
+          "criterion_ids": [
+            "I1",
+            "I2",
+            "I3"
+          ],
+          "fully_qualified_criterion_ids": [
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3"
+          ],
+          "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+          "response_format": "symbolic",
+          "answer_only_credit": 0,
+          "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+          "criteria": [
+            {
+              "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+              "suffix": "I1",
+              "mark_type": "B",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2025:P1:Q9:AWARD:05"
+              ],
+              "qualifiers": [
+                "correct derivative; coefficient slip losesB1",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+              "suffix": "I2",
+              "mark_type": "M",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2025:P1:Q9:AWARD:06"
+              ],
+              "qualifiers": [
+                "derivative=0 and visible valid solve attempt",
+                "For quartic cases, demonstrate binomial cube recognition OR factor theorem g(h)=0, divide by x-h, and solve/recognise the remaining repeated quadratic."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3",
+              "suffix": "I3",
+              "mark_type": "A",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2025:P1:Q9:AWARD:07"
+              ],
+              "qualifiers": [
+                "canonical full point; visible method",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            }
+          ],
+          "prerequisite_routes": [
+            {
+              "route_id": "binomial-cube",
+              "condition": "power=4",
+              "module_dependencies": [
+                "M1:T2:O01"
+              ],
+              "demand_ids": [
+                "8227:2020:M1:T2:O01:D01"
+              ]
+            },
+            {
+              "route_id": "factor-theorem",
+              "condition": "power=4",
+              "module_dependencies": [
+                "M2:T1:O04",
+                "M2:T1:O03"
+              ],
+              "demand_ids": [
+                "8227:2020:M2:T1:O04:D02",
+                "8227:2020:M2:T1:O04:D04",
+                "8227:2020:M2:T1:O03:D01",
+                "8227:2020:M2:T1:O03:D03"
+              ]
+            }
+          ],
+          "module_dependency_note": "The expanded-quartic branch requires AS algebra, not NSSCO-only algebra. An M1 binomial-cube route is sufficient; selecting the factor-theorem route explicitly requires the M2 polynomial module. This pilot branch is not a claim that M2 methods are assumed in every M1 examination question.",
+          "misread_policy": {
+            "policy_id": "MR03-D4",
+            "owner_principle_id": "OD-6",
+            "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+            "operational_policy_id": "MR03-OPS-D4",
+            "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+            "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+            "feedback": "Practice feedback names the misread.",
+            "ledger_fields": [
+              "datum_id",
+              "canonical_value",
+              "misread_value",
+              "eligible",
+              "eligibility_reason",
+              "first_use_part",
+              "gross_awards",
+              "deducted_part",
+              "deducted_criterion",
+              "amount",
+              "net_awards"
+            ],
+            "sources": [
+              "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+              "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+            ],
+            "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+          },
+          "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+          "qualified_part_id": "WB8227-stationary-inflexion:flat-classification:point"
+        }
+      },
+      {
+        "local_part_id": "classification",
+        "prompt": "Classify each stationary point as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types.",
+        "reference_answer": "Minimum.",
+        "worked_steps": [
+          {
+            "action": "Check the derivative on both sides",
+            "reason": "This polynomial has no other derivative root; a two-sided first-derivative test suffices.",
+            "result": "$f'(-3)=-4$, $f'(-2)=0$, $f'(-1)=4$"
+          },
+          {
+            "action": "Use the local sign behaviour",
+            "reason": "A zero second derivative alone would not settle the type.",
+            "result": "The derivative changes from negative to positive, so the point is a minimum."
+          },
+          {
+            "action": "State the justified type",
+            "reason": "The test rules out the other stationary types.",
+            "result": "$(-2,2)$ is a minimum."
+          }
+        ],
+        "criteria": [
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+            "marks": 1,
+            "mark_type": "B",
+            "achievement": "Correct actual two-sided derivative behaviour, with stated point substitutions or valid power/sign reasoning.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "I4",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+            "marks": 1,
+            "mark_type": "M",
+            "achievement": "Apply a valid local classification test to that evidence, ruling out the other types; limited follow-through from credible prior work.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "I5",
+            "depends_on": [],
+            "depends_on_any": []
+          },
+          {
+            "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6",
+            "marks": 1,
+            "mark_type": "A",
+            "achievement": "Canonical type justified by the valid test, not merely f second equal to zero.",
+            "dependencies_use": "gross-earned-before-MR03-net-deduction",
+            "answer_only_credit": 0,
+            "misread_policy_id": "MR03-OPS-D4",
+            "mr09_supplied_result_exclusion": false,
+            "suffix": "I6",
+            "depends_on": [
+              "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5"
+            ],
+            "depends_on_any": []
+          }
+        ],
+        "accepted_alternatives": [
+          {
+            "method": "second-derivative neighbourhood, local increments, or higher derivative",
+            "requirements": "A complete valid local argument fills the same slots. f second at the stationary point equal to zero alone earns no classification credit."
+          }
+        ],
+        "answer_only_credit": 0,
+        "proposed_marks": 3,
+        "semantic_key": "[\"flat-shape\",[4,1,-2]]",
+        "part_id": "WB8227-stationary-inflexion:flat-classification:classification",
+        "reviewed_part": {
+          "part_id": "classification",
+          "directly_assessed_demand_ids": [
+            "8227:2020:M1:T8:O04:D02"
+          ],
+          "directly_assessed_objective_ids": [
+            "8227:2020:M1:T8:O04"
+          ],
+          "primary_objective_id": "8227:2020:M1:T8:O04",
+          "other_directly_assessed_objective_ids": [],
+          "prerequisite_demand_ids": [
+            {
+              "demand_id": "8227:2020:M1:T8:O01:D02",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            },
+            {
+              "demand_id": "8227:2020:M1:T8:O02:D01",
+              "role": "prerequisite/support; not separately directly assessed in this part"
+            }
+          ],
+          "marks": 3,
+          "bloom": 3,
+          "bloom_rationale": "I4 records the derivative behaviour, I5 applies a valid taught classification test and I6 gives its justified type. Routine sign testing is Apply 3 under OD-4 even though outcomes vary and the stem does not name the method. D3 evidence: WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4, WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5, WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6.",
+          "bloom_criterion_ids": [
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6"
+          ],
+          "bloom_status": "D4 proposal; Claude D4.1 diff-only check then Vitalis approval pending",
+          "classification_version": "8227-pilot-design-0.1.1",
+          "criterion_ids": [
+            "I4",
+            "I5",
+            "I6"
+          ],
+          "fully_qualified_criterion_ids": [
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+            "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6"
+          ],
+          "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+          "response_format": "explanation",
+          "answer_only_credit": 0,
+          "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+          "criteria": [
+            {
+              "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+              "suffix": "I4",
+              "mark_type": "B",
+              "value": 1,
+              "official_evidence_ids": [],
+              "qualifiers": [
+                "actual two-sided evidence, no unsupported type shortcut",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+              "suffix": "I5",
+              "mark_type": "M",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2025:P1:Q9:AWARD:08"
+              ],
+              "qualifiers": [
+                "any valid method, including first-derivative signs alone",
+                "limited credible F.T."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            },
+            {
+              "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6",
+              "suffix": "I6",
+              "mark_type": "A",
+              "value": 1,
+              "official_evidence_ids": [
+                "8227:EXAM:2025:P1:Q9:AWARD:09"
+              ],
+              "qualifiers": [
+                "canonical justified type",
+                "depends onI5",
+                "OD-6 only: eligible genuine question-data misreads permit accuracy follow-through with correct working; apply the owner-approved MR03-OPS-D4 operational ledger."
+              ],
+              "status": "adapted D4 proposal; official qualifiers and declared deviations in work order"
+            }
+          ],
+          "misread_policy": {
+            "policy_id": "MR03-D4",
+            "owner_principle_id": "OD-6",
+            "owner_principle": "Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread.",
+            "operational_policy_id": "MR03-OPS-D4",
+            "operational_status": "proposed; reviewer-prescribed mechanics and planner settlement, pending Vitalis exact-manifest approval",
+            "operational_rules": "Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules.",
+            "feedback": "Practice feedback names the misread.",
+            "ledger_fields": [
+              "datum_id",
+              "canonical_value",
+              "misread_value",
+              "eligible",
+              "eligibility_reason",
+              "first_use_part",
+              "gross_awards",
+              "deducted_part",
+              "deducted_criterion",
+              "amount",
+              "net_awards"
+            ],
+            "sources": [
+              "NSSCAS 2025 report PDF345 item4 / CONVENTION108",
+              "Comparable Cambridge 9709_m16_ms_12.pdf PDF3 Penalties"
+            ],
+            "eligibility_notes": "Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints. Unsettled detailed edge cases remain explicit E/F acceptance fixtures."
+          },
+          "dependency_basis": "Evaluate dependencies, DM and www against the earned gross evidence before the net MR penalty. A deducted A/B criterion remains earned for those purposes; do not cascade the deduction.",
+          "qualified_part_id": "WB8227-stationary-inflexion:flat-classification:classification"
+        }
+      }
+    ],
+    "assets": [],
+    "subject_rules": {
+      "schema": "8227-subject-rules-v1",
+      "curriculum": "NIED NSSCAS Mathematics 8227 December 2020",
+      "design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+      "authority": "Vitalis approved exact Stage-D rubric, including MR03-OPS-D4",
+      "historical_rules_text": "> **Current gate — 24 November 2026:** Claude confirmed D4.1 and Vitalis approved the exact Stage-D manifest `4a054832…17d8ec`, including MR03-OPS-D4. Stage E is active; E/F runtime author checks and cross-vendor content review are next. Earlier pending/next-gate prose below describes the archived Stage-D proposal.\n\n# Subject binding — NSSCAS Mathematics 8227\n\nProposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.\nQualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first\nexamination 2021. This binds `recipe-contract.md` to the existing curriculum;\nit does not edit or replace that accepted analysis.\n\n## Assessment authority\n\nSource: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,\nSHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.\nThe planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors\npp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content\nand source identity remain in `curriculum/objective_registry.json`,\n`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.\nRoot-native render hashes are recorded in `planning/planner-source-reads.json`.\n\nThere is one assessment area, **technique with application**, with eleven\nabilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.\nAny may be assessed on either paper (PDF17/printed14). Both papers are compulsory,\n75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate\nper-ability weights or standalone command-word table are stated. Do not invent\nAO percentage quotas or import the static-card subtype mix. A pilot deck is not\na 75-mark examination paper and does not certify qualification AO balance.\n\nMathematics 1 and 2 are content themes, not exclusive paper boundaries. The\nassessment-conditions register documents cross-theme demands on Paper 2 and\nyear-specific formula provision. Use the selected year's exact support policy;\nMF9 is notation/formula support, not extra assessed scope. For later pilot tests\nthe proposed default is the reduced 2023–2025 formula support, with the chosen\nformula contents frozen and shown before the attempt. Do not offer additional\nformula help during a test or turn practice hints into test support.\n\n## Accuracy, units and methods\n\nThe syllabus permits a non-programmable scientific calculator. Unless an exact\nanswer or other precision is specified, non-exact answers use three significant\nfigures; answers in degrees use one decimal place. Use calculator pi or 3.142\n(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions\nand multiples of pi remain exact where requested. Radian calculus and radian\nintegrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.\n\nQuestion/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using\nlogarithms`, diagram consistency and explicit exactness requirements are assessed\nonly as stated by the task and memo. A single-question examiner comment is not a\nuniversal prohibition. Trace source conventions through `analysis/marking-conventions.json`:\n119 question tables, 821 criterion rows including exclusive alternatives; 818\nofficial rows and three explicit derived completions. Two missing part breakdowns\nand a missing alternative-path end remain disclosed. New/adapted pilot criteria\nare proposed, even when aligned to official method/accuracy evidence.\n\nNSSCO algebra/geometry may be required prerequisites. Record their role, but do\nnot count prerequisite manipulation as direct coverage of an AS objective unless\nthe task and criteria explicitly assess that AS demand. Content objectives,\nassessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.\n\n## Shared NSSCAS marking rules — owner authority is scoped per row\n\nVitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.\n\nNative pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.\n\n| Rule ID | Rule applied in every work order | Authority / limits |\n|---|---|---|\n| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |\n| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |\n| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |\n| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |\n| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |\n| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |\n| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |\n| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |\n| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |\n\nPer-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.\n\nEach work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.\n\n## Scope boundaries\n\nThe complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.\nWork orders apply them using actual admitted values, not a boilerplate checklist.\n\n| Binding | Consequence for this pilot and later expansion |\n|---|---|\n| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |\n| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |\n| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |\n| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |\n| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |\n| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |\n| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |\n| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |\n| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |\n| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |\n| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |\n| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |\n\nGrade a/c/e descriptions calibrate variation and do not create new objectives\n(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;\nlabel finite numerical choices as planner-chosen bounded design choices. No claim\nthat a number size, mark total or Bloom label automatically equals a school grade.\nWhere the assessed skill appears in e/c, those descriptors bound the easiest\nbranches; the hardest stay no further than grade a. Implicit differentiation\nappears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support\nthe chosen learner decisions; release must verify actual varied/boundary instances.\n\n## Source and rights decisions\n\nPreserve source defects and owner decisions in `analysis/source-defects.json`\nand the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023\nP1 Q9 originals cannot become learner-facing originals or same-type anchors.\nValid demands remain in scope. A universal quadratic proof must state a≠0;\nthe principal-value inverse demand is taught correctly from valid sources.\n\nTextbook items/figures are internal ingredients with `learner_display:false`.\nTheir reported answers are checked evidence, not unquestioned truth. Create\noriginal diagrams and learner wording from the mathematics. Attributed NSSCAS\nand Cambridge exam originals are authorised by Vitalis; no Cambridge source is\npresented as a Namibian original. Per-branch source equality and learner labels\nfollow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.\n\n## Learning text and feedback\n\nUse the existing guideline snapshots indexed by\n`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned\nin the planning manifest). Those were local app snapshots, not proof of deployed\nbytes. No forked shared AI instruction is added. Use British spelling, clear\nEnglish, decoded Markdown/LaTeX, separate equations and correct mathematical units.\nNever put mathematical notation inside emphasis or expose provider/internal keys\nas learner copy. Render all later question, help, solution, feedback and history\nsurfaces; a tolerant formatter does not establish authoring compliance.\n\nFeedback recognises demonstrated work, names the first evidenced error and offers\nan action/reason/result repair. It distinguishes an ambiguous upload from a wrong\nanswer, and the app retains the original attempt. No invented misconception is\nlabelled examiner-evidenced. Solutions/support and ordinary practice do not move\nmemory boxes; the application owns reliable completed-test progress.\n\n## Current status\n\nThese are proposed subject rules for the stage-D owner checkpoint. The accepted\nanalysis proves source-level mapping and review, not implemented recipes, Bloom\napproval, generator correctness, visual marking or local website acceptance.\nThe next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval\nof the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.\n\n\nD2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.\n\nAuthority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.\n\nMR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.\n",
+      "mr03": "Approved MR03-OPS-D4: determine eligibility for the connected question at first use of each datum. Genuine unchanged-object/unchanged-difficulty misreads permit A/B follow-through and one A/B deduction per datum; M/DM remain normal. This overrides not-F.T./cao for eligible misreads, but never MR09 supplied-result proof or OD-1 method requirements. Record gross evidence before net deduction; dependencies use gross evidence.",
+      "runtime_marking_limit": "Frozen rubric/evidence only. Raw handwritten, photographed, sketch or free-text responses require trusted application marking orchestration. Competing-datum settlement and alternative implicit routes remain E/F carries.",
+      "d41_notes": {
+        "d41-01": "Implicit gradient finite AND nonzero",
+        "d41-02": "Nonunit exponential chain-factor eligibility guard is approved MR03-OPS-D4",
+        "d41-03": "Exposure keys persist across output-affecting revisions; version is provenance",
+        "d41-04": "Stage E active after exact owner approval",
+        "d41-05": "MR09 limit is adjacent to the eligible-misread override in this runtime summary"
+      }
+    },
+    "marks": 6,
+    "app_adapter_required": true
+  },
+  "marking_memo": {
+    "contract_version": "workbench-exam-guidance-v1",
+    "package_id": "namibia-nsscas-8227",
+    "recipe_id": "WB8227-stationary-inflexion",
+    "recipe_version": 2,
+    "native_recipe_version": "0.1.5",
+    "question": "For the function $f(x)=x^{4} + 8x^{3} + 24x^{2} + 32x + 18$, answer the following.\n\nFind the exact coordinates of every stationary point, showing all working.\n\nClassify each stationary point as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types.",
+    "canonical_answer": "$(-2,2)$\n\nMinimum.",
+    "grading_guide_answer": "Part point\n$(-2,2)$\nWB8227-stationary-inflexion@0.1.4:flat-classification:point:I1 [1]: Correct polynomial derivative, including its coefficient.\nWB8227-stationary-inflexion@0.1.4:flat-classification:point:I2 [1]: Set a credible derivative equal to zero and visibly solve its repeated-factor equation; a binomial-cube or valid factor-theorem/division route is accepted.\nWB8227-stationary-inflexion@0.1.4:flat-classification:point:I3 [1]: Exact full canonical point after a visible stationary solve and substitution in the original polynomial.\nDifferentiate the supplied expanded polynomial — Stationary points satisfy f prime equal to zero. — $f'(x)=4x^{3} + 24x^{2} + 48x + 32$\nSet the derivative equal to zero and show the repeated factor — Recognise the binomial power, or verify and divide out the repeated factor. — $4(x + 2)^{3}=0$, so $x=-2$\nSubstitute in the original function — Use f, rather than f prime, for the ordinate. — $f(-2)=(-2)^{4} + 8(-2)^{3} + 24(-2)^{2} + 32(-2) + 18=2$, so the point is $(-2,2)$.\n\nPart classification\nMinimum.\nWB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4 [1]: Correct actual two-sided derivative behaviour, with stated point substitutions or valid power/sign reasoning.\nWB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5 [1]: Apply a valid local classification test to that evidence, ruling out the other types; limited follow-through from credible prior work.\nWB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6 [1]: Canonical type justified by the valid test, not merely f second equal to zero.\nCheck the derivative on both sides — This polynomial has no other derivative root; a two-sided first-derivative test suffices. — $f'(-3)=-4$, $f'(-2)=0$, $f'(-1)=4$\nUse the local sign behaviour — A zero second derivative alone would not settle the type. — The derivative changes from negative to positive, so the point is a minimum.\nState the justified type — The test rules out the other stationary types. — $(-2,2)$ is a minimum.",
+    "subject_rules": {
+      "schema": "8227-subject-rules-v1",
+      "curriculum": "NIED NSSCAS Mathematics 8227 December 2020",
+      "design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+      "authority": "Vitalis approved exact Stage-D rubric, including MR03-OPS-D4",
+      "historical_rules_text": "> **Current gate — 24 November 2026:** Claude confirmed D4.1 and Vitalis approved the exact Stage-D manifest `4a054832…17d8ec`, including MR03-OPS-D4. Stage E is active; E/F runtime author checks and cross-vendor content review are next. Earlier pending/next-gate prose below describes the archived Stage-D proposal.\n\n# Subject binding — NSSCAS Mathematics 8227\n\nProposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.\nQualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first\nexamination 2021. This binds `recipe-contract.md` to the existing curriculum;\nit does not edit or replace that accepted analysis.\n\n## Assessment authority\n\nSource: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,\nSHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.\nThe planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors\npp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content\nand source identity remain in `curriculum/objective_registry.json`,\n`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.\nRoot-native render hashes are recorded in `planning/planner-source-reads.json`.\n\nThere is one assessment area, **technique with application**, with eleven\nabilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.\nAny may be assessed on either paper (PDF17/printed14). Both papers are compulsory,\n75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate\nper-ability weights or standalone command-word table are stated. Do not invent\nAO percentage quotas or import the static-card subtype mix. A pilot deck is not\na 75-mark examination paper and does not certify qualification AO balance.\n\nMathematics 1 and 2 are content themes, not exclusive paper boundaries. The\nassessment-conditions register documents cross-theme demands on Paper 2 and\nyear-specific formula provision. Use the selected year's exact support policy;\nMF9 is notation/formula support, not extra assessed scope. For later pilot tests\nthe proposed default is the reduced 2023–2025 formula support, with the chosen\nformula contents frozen and shown before the attempt. Do not offer additional\nformula help during a test or turn practice hints into test support.\n\n## Accuracy, units and methods\n\nThe syllabus permits a non-programmable scientific calculator. Unless an exact\nanswer or other precision is specified, non-exact answers use three significant\nfigures; answers in degrees use one decimal place. Use calculator pi or 3.142\n(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions\nand multiples of pi remain exact where requested. Radian calculus and radian\nintegrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.\n\nQuestion/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using\nlogarithms`, diagram consistency and explicit exactness requirements are assessed\nonly as stated by the task and memo. A single-question examiner comment is not a\nuniversal prohibition. Trace source conventions through `analysis/marking-conventions.json`:\n119 question tables, 821 criterion rows including exclusive alternatives; 818\nofficial rows and three explicit derived completions. Two missing part breakdowns\nand a missing alternative-path end remain disclosed. New/adapted pilot criteria\nare proposed, even when aligned to official method/accuracy evidence.\n\nNSSCO algebra/geometry may be required prerequisites. Record their role, but do\nnot count prerequisite manipulation as direct coverage of an AS objective unless\nthe task and criteria explicitly assess that AS demand. Content objectives,\nassessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.\n\n## Shared NSSCAS marking rules — owner authority is scoped per row\n\nVitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.\n\nNative pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.\n\n| Rule ID | Rule applied in every work order | Authority / limits |\n|---|---|---|\n| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |\n| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |\n| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |\n| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |\n| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |\n| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |\n| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |\n| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |\n| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |\n\nPer-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.\n\nEach work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.\n\n## Scope boundaries\n\nThe complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.\nWork orders apply them using actual admitted values, not a boilerplate checklist.\n\n| Binding | Consequence for this pilot and later expansion |\n|---|---|\n| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |\n| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |\n| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |\n| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |\n| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |\n| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |\n| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |\n| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |\n| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |\n| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |\n| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |\n| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |\n\nGrade a/c/e descriptions calibrate variation and do not create new objectives\n(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;\nlabel finite numerical choices as planner-chosen bounded design choices. No claim\nthat a number size, mark total or Bloom label automatically equals a school grade.\nWhere the assessed skill appears in e/c, those descriptors bound the easiest\nbranches; the hardest stay no further than grade a. Implicit differentiation\nappears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support\nthe chosen learner decisions; release must verify actual varied/boundary instances.\n\n## Source and rights decisions\n\nPreserve source defects and owner decisions in `analysis/source-defects.json`\nand the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023\nP1 Q9 originals cannot become learner-facing originals or same-type anchors.\nValid demands remain in scope. A universal quadratic proof must state a≠0;\nthe principal-value inverse demand is taught correctly from valid sources.\n\nTextbook items/figures are internal ingredients with `learner_display:false`.\nTheir reported answers are checked evidence, not unquestioned truth. Create\noriginal diagrams and learner wording from the mathematics. Attributed NSSCAS\nand Cambridge exam originals are authorised by Vitalis; no Cambridge source is\npresented as a Namibian original. Per-branch source equality and learner labels\nfollow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.\n\n## Learning text and feedback\n\nUse the existing guideline snapshots indexed by\n`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned\nin the planning manifest). Those were local app snapshots, not proof of deployed\nbytes. No forked shared AI instruction is added. Use British spelling, clear\nEnglish, decoded Markdown/LaTeX, separate equations and correct mathematical units.\nNever put mathematical notation inside emphasis or expose provider/internal keys\nas learner copy. Render all later question, help, solution, feedback and history\nsurfaces; a tolerant formatter does not establish authoring compliance.\n\nFeedback recognises demonstrated work, names the first evidenced error and offers\nan action/reason/result repair. It distinguishes an ambiguous upload from a wrong\nanswer, and the app retains the original attempt. No invented misconception is\nlabelled examiner-evidenced. Solutions/support and ordinary practice do not move\nmemory boxes; the application owns reliable completed-test progress.\n\n## Current status\n\nThese are proposed subject rules for the stage-D owner checkpoint. The accepted\nanalysis proves source-level mapping and review, not implemented recipes, Bloom\napproval, generator correctness, visual marking or local website acceptance.\nThe next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval\nof the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.\n\n\nD2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.\n\nAuthority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.\n\nMR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.\n",
+      "mr03": "Approved MR03-OPS-D4: determine eligibility for the connected question at first use of each datum. Genuine unchanged-object/unchanged-difficulty misreads permit A/B follow-through and one A/B deduction per datum; M/DM remain normal. This overrides not-F.T./cao for eligible misreads, but never MR09 supplied-result proof or OD-1 method requirements. Record gross evidence before net deduction; dependencies use gross evidence.",
+      "runtime_marking_limit": "Frozen rubric/evidence only. Raw handwritten, photographed, sketch or free-text responses require trusted application marking orchestration. Competing-datum settlement and alternative implicit routes remain E/F carries.",
+      "d41_notes": {
+        "d41-01": "Implicit gradient finite AND nonzero",
+        "d41-02": "Nonunit exponential chain-factor eligibility guard is approved MR03-OPS-D4",
+        "d41-03": "Exposure keys persist across output-affecting revisions; version is provenance",
+        "d41-04": "Stage E active after exact owner approval",
+        "d41-05": "MR09 limit is adjacent to the eligible-misread override in this runtime summary"
+      }
+    },
+    "marks": 6,
+    "criteria": [
+      {
+        "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+        "criterion": "Correct polynomial derivative, including its coefficient.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+        "criterion": "Set a credible derivative equal to zero and visibly solve its repeated-factor equation; a binomial-cube or valid factor-theorem/division route is accepted.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3",
+        "criterion": "Exact full canonical point after a visible stationary solve and substitution in the original polynomial.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+        "criterion": "Correct actual two-sided derivative behaviour, with stated point substitutions or valid power/sign reasoning.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+        "criterion": "Apply a valid local classification test to that evidence, ruling out the other types; limited follow-through from credible prior work.",
+        "marks_available": 1
+      },
+      {
+        "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6",
+        "criterion": "Canonical type justified by the valid test, not merely f second equal to zero.",
+        "marks_available": 1
+      }
+    ],
+    "contract_hash": "7bbc6b5e17fb1a57e5b9fb9d2b79da6550b98ef2f2ae1991872f9670f97c49a7"
+  },
+  "grading_contract": {
+    "schema_version": "workbench-whole-question-v1",
+    "question_fingerprint": "8780cc0412f968f376fb40a5705429ee3084bb73e55c4d692fdfb3ccb18ffe76",
+    "max_marks": 6,
+    "source_marking_contract": {
+      "contract_version": "workbench-exam-guidance-v1",
+      "package_id": "namibia-nsscas-8227",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "recipe_version": 2,
+      "native_recipe_version": "0.1.5",
+      "question": "For the function $f(x)=x^{4} + 8x^{3} + 24x^{2} + 32x + 18$, answer the following.\n\nFind the exact coordinates of every stationary point, showing all working.\n\nClassify each stationary point as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types.",
+      "canonical_answer": "$(-2,2)$\n\nMinimum.",
+      "grading_guide_answer": "Part point\n$(-2,2)$\nWB8227-stationary-inflexion@0.1.4:flat-classification:point:I1 [1]: Correct polynomial derivative, including its coefficient.\nWB8227-stationary-inflexion@0.1.4:flat-classification:point:I2 [1]: Set a credible derivative equal to zero and visibly solve its repeated-factor equation; a binomial-cube or valid factor-theorem/division route is accepted.\nWB8227-stationary-inflexion@0.1.4:flat-classification:point:I3 [1]: Exact full canonical point after a visible stationary solve and substitution in the original polynomial.\nDifferentiate the supplied expanded polynomial — Stationary points satisfy f prime equal to zero. — $f'(x)=4x^{3} + 24x^{2} + 48x + 32$\nSet the derivative equal to zero and show the repeated factor — Recognise the binomial power, or verify and divide out the repeated factor. — $4(x + 2)^{3}=0$, so $x=-2$\nSubstitute in the original function — Use f, rather than f prime, for the ordinate. — $f(-2)=(-2)^{4} + 8(-2)^{3} + 24(-2)^{2} + 32(-2) + 18=2$, so the point is $(-2,2)$.\n\nPart classification\nMinimum.\nWB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4 [1]: Correct actual two-sided derivative behaviour, with stated point substitutions or valid power/sign reasoning.\nWB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5 [1]: Apply a valid local classification test to that evidence, ruling out the other types; limited follow-through from credible prior work.\nWB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6 [1]: Canonical type justified by the valid test, not merely f second equal to zero.\nCheck the derivative on both sides — This polynomial has no other derivative root; a two-sided first-derivative test suffices. — $f'(-3)=-4$, $f'(-2)=0$, $f'(-1)=4$\nUse the local sign behaviour — A zero second derivative alone would not settle the type. — The derivative changes from negative to positive, so the point is a minimum.\nState the justified type — The test rules out the other stationary types. — $(-2,2)$ is a minimum.",
+      "subject_rules": {
+        "schema": "8227-subject-rules-v1",
+        "curriculum": "NIED NSSCAS Mathematics 8227 December 2020",
+        "design_manifest_sha256": "4a0548320dcb9209dcd28e18bd4f6c77423480de6538fcbf1b0f8b6d0e17d8ec",
+        "authority": "Vitalis approved exact Stage-D rubric, including MR03-OPS-D4",
+        "historical_rules_text": "> **Current gate — 24 November 2026:** Claude confirmed D4.1 and Vitalis approved the exact Stage-D manifest `4a054832…17d8ec`, including MR03-OPS-D4. Stage E is active; E/F runtime author checks and cross-vendor content review are next. Earlier pending/next-gate prose below describes the archived Stage-D proposal.\n\n# Subject binding — NSSCAS Mathematics 8227\n\nProposed stage-D binding, 23 November 2026. Owner Vitalis; PLANNER Codex.\nQualification: NSSCAS Mathematics 8227, Grade 12, NIED December 2020, first\nexamination 2021. This binds `recipe-contract.md` to the existing curriculum;\nit does not edit or replace that accepted analysis.\n\n## Assessment authority\n\nSource: `Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf`,\nSHA256 `c53e77d60f8de1410163c4fccbfa1c41ae88479fb9a53e2bd26ef1bcc727fb30`.\nThe planner reread content PDF pp7–16, assessment pp17–18 and grade descriptors\npp19–24; pp17–18 were also inspected as rendered pages. Exact assessed content\nand source identity remain in `curriculum/objective_registry.json`,\n`syllabus-facts.json`, `syllabus-exclusions.json` and `grade-descriptions.json`.\nRoot-native render hashes are recorded in `planning/planner-source-reads.json`.\n\nThere is one assessment area, **technique with application**, with eleven\nabilities (`8227:2020:ABILITY:01`–`11`), not eleven separately weighted AOs.\nAny may be assessed on either paper (PDF17/printed14). Both papers are compulsory,\n75 marks, 120 minutes and 50% each, without choice (PDF18/printed15). No separate\nper-ability weights or standalone command-word table are stated. Do not invent\nAO percentage quotas or import the static-card subtype mix. A pilot deck is not\na 75-mark examination paper and does not certify qualification AO balance.\n\nMathematics 1 and 2 are content themes, not exclusive paper boundaries. The\nassessment-conditions register documents cross-theme demands on Paper 2 and\nyear-specific formula provision. Use the selected year's exact support policy;\nMF9 is notation/formula support, not extra assessed scope. For later pilot tests\nthe proposed default is the reduced 2023–2025 formula support, with the chosen\nformula contents frozen and shown before the attempt. Do not offer additional\nformula help during a test or turn practice hints into test support.\n\n## Accuracy, units and methods\n\nThe syllabus permits a non-programmable scientific calculator. Unless an exact\nanswer or other precision is specified, non-exact answers use three significant\nfigures; answers in degrees use one decimal place. Use calculator pi or 3.142\n(PDF18/printed15). Keep guard digits during calculations. Exact surds, fractions\nand multiples of pi remain exact where requested. Radian calculus and radian\nintegrals must not accept the rejected 2023 P2 Q7(c) degree-mode anomaly.\n\nQuestion/criterion restrictions and the scoped rules below govern marking. Owner-backed rules bind; the remaining operational interpretations await exact-manifest approval. `show`, `hence`, `using\nlogarithms`, diagram consistency and explicit exactness requirements are assessed\nonly as stated by the task and memo. A single-question examiner comment is not a\nuniversal prohibition. Trace source conventions through `analysis/marking-conventions.json`:\n119 question tables, 821 criterion rows including exclusive alternatives; 818\nofficial rows and three explicit derived completions. Two missing part breakdowns\nand a missing alternative-path end remain disclosed. New/adapted pilot criteria\nare proposed, even when aligned to official method/accuracy evidence.\n\nNSSCO algebra/geometry may be required prerequisites. Record their role, but do\nnot count prerequisite manipulation as direct coverage of an AS objective unless\nthe task and criteria explicitly assess that AS demand. Content objectives,\nassessment abilities, Bloom, difficulty, marks and memory-box state remain distinct.\n\n## Shared NSSCAS marking rules — owner authority is scoped per row\n\nVitalis's owner decisions are `review/opus-5-5-step-3/owner-decisions-2026-11-23.md` (23 November 2026). OD-1 is settled: follow the NSSCAS answer-only rule, with only a specific official scheme exception. OD-2 adds one show-that part; OD-3 requires repair, Claude's changed-scope confirmation, then owner approval. These override the D0 locally invented implied-method policies. They do not introduce a generic working penalty for other subjects.\n\nNative pages reread for these rules: 2021 report PDF236/printed234, 2025 PDF345/printed343 and PDF355/printed353; specific hence SC evidence in 2022 PDF301/printed299 and 2023 PDF337/printed335. Exact source/render identities and paths are in `planning/d1/root-source-reads.json`. Conventions refer to `analysis/marking-conventions.json`; quoted report prose remains internal.\n\n| Rule ID | Rule applied in every work order | Authority / limits |\n|---|---|---|\n| D1-MR01: answers only | A bare final answer earns **zero** unless an explicit official scheme for that question type awards it. Do not infer an M/DM mark merely because a number/formula is right. Every part states its answer-only credit and any exception, with the official row and conditions. In practice say the answer is right, request the working and preserve the original; do not pretend the value was wrong or fabricate a misconception. | `8227:CONVENTION:076` and `:002`, 2021 PDF236: “No marks are awarded if only answers are given”; 2025 PDF355 repeats the method emphasis. OD-1 applies this NSSCAS policy to the pilot even where Cambridge supplies comparable evidence. A source's “state or imply” can use evidence in visible working, not a naked answer by default. Modulus's explicit correct-value allowance applies equally to named coefficients and values in a formula, retaining www; practice still asks for the vertex/point reasoning. |\n| D1-MR02: hence | With “hence”, use the supplied/prior result. A different visible method is capped at the **named official special-case award**, if any; otherwise zero for bypassing the required method. With “hence or otherwise”, a valid alternative may earn the normal criteria. An answer-only SC exists only when the actual official row expressly grants it; do not infer one from an unrelated task. | `:006`, 2021 PDF236 and 2025 PDF355; 2022 P1 Q2(b), report PDF301, has answer-based SC1 when the relationship is not seen and y=1/9 is the only solution. 2023 P2 Q6(b), PDF337, has a task-specific SC1 for a correct non-hence route. The native R-form 2022 P2 Q6 table at PDF313 has no SC1; its non-hence route therefore earns zero under the general rule. Analogue SC rows are not inherited by another question type. Do not invent a universal SC1 for every hence task. |\n| D1-MR03: misread | Binding OD-6 principle: a genuine misread of question data with unchanged object and difficulty costs one mark from A/B; all A/B follow through on the misread value and M/DM are judged as usual. Own-figure errors and misreads changing object/difficulty receive ordinary canonical marking. Practice feedback names the misread. **Separate proposed operational interpretation:** Proposed MR03 operational rules, pending Vitalis approval of the exact manifest: decide and record eligibility once at first use; ineligible data remain canonical in every later part. For each eligible misread datum, first mark all gross evidence and dependencies, then deduct one mark from the first earned A/B on that datum in question/criterion order, moving to later-use parts if necessary. Deduct nothing only if no A/B is earned on the datum anywhere. Never deduct from M/DM or make the score negative. The selected criterion remains earned for every DM, dependency and www check; one datum costs at most one net mark. Eligible OD-6 follow-through overrides not-F.T. and c.a.o. restrictions, while correct working, named method exclusions and OD-1 still apply. No-solution exclusion means a misread removes a solution the canonical question has; a designed no-real-solution outcome remains eligible when its demand and difficulty are preserved. An A/B is on a datum when it lies in the datum's first-use part or a later part whose working uses the misread data, whether or not that criterion's own value changes. Eligibility is judged at first use for the connected question. Eligible follow-through never overrides MR09 (no F.T. into a supplied result) or OD-1 answer-only rules. | Only the principle is binding OD-6 (`review/opus-5-5-d2-confirm/owner-decisions-2026-11-24-d2.md`). Unit, order, ledger, detailed eligibility and dependency mechanics are reviewer-prescribed/planner-proposed **MR03-OPS-D4**, pending Vitalis exact-manifest approval. NSSCAS `CONVENTION:108`, 2025 report PDF345 item4 gives the no-maximum principle; comparable Cambridge `9709_m16_ms_12.pdf` PDF3 Penalties supplies the owner-adopted A/B convention, never a published Namibian allocation. D4 fixed-fixture ledger: `planning/d4/misread_ledger.py`. |\n| D1-MR04: exactness and decimals | If exactness is requested, retain exact fractions/surds/equivalent exact terminating decimals as specified by the question's required form. A correct decimal intermediate can earn an M mark if the source permits it, even when final A needs exact form. If exactness is **not** requested, the exact value or correctly rounded three-significant-figure decimal earns the relevant A award, given the required working. Exact 60°/90° need no trailing `.0`. | Syllabus PDF18/printed15; `:003`, 2021 PDF236 and 2025 PDF355 prefer exactness where possible but do not themselves ban a correctly rounded answer. Apply explicit degree1dp or task-specific accuracy. The repair prompt settles this pilot's operational acceptance rule. |\n| D1-MR05: premature rounding | Keep exact values/guard digits until the final result. If premature rounding changes a required final answer, preserve valid M/DM marks and lose the affected canonical A mark, with specific premature-rounding feedback. Do not penalise an early approximation that leaves all required answers correct. | `:004`, 2021 PDF236 and 2025 PDF355. R-form/vector knife-edge fixtures and each trapezium accepted-answer set make the actual consequences explicit. A source-sanctioned reuse of a reported earlier value is separately recorded as F.T., not falsely labelled canonical rounding. |\n| D1-MR06: units | Require a written unit for an award only when the stem/response instruction requests it. A pre-labelled answer box supplies that unit. Otherwise no hidden unit penalty. In physical problems the givens, equations and solutions must still be dimensionally correct. | Task-specific marking instruction in this repair, consistent with the syllabus accuracy/context requirement. New motion stems explicitly request metres for distance/displacement and state units for functions. |\n| D1-MR07: multiple answers | Mark the first uncancelled coherent attempt, not whichever is most favourable; clear cancellation selects the retained attempt. A requested set of roots is one answer, not competing attempts. Apply that part's explicit extra-root/coterminal cap to the entire set. Preserve order/cancellations in uploads and ask for clarification if unreadable. | 2025 PDF345 points1–2 and PDF355; `:017`/`:089` are scoped evidence, not a licence to ignore extra roots. The app must preserve submission order/edits. |\n| D1-MR08: official qualifiers and alternatives | For every adapted row retain www, F.T., DM/dependency, exclusions, state-or-imply, exactness and SC caps; record any departure by named deviation and rationale for Vitalis. Valid methods earn their mapped criteria. Mutually exclusive paths fill the same slots and never add extra marks. A cue edge is not formal F.T. | Actual per-question award rows, not a general topic label or a family template. “state or imply” is evidence-sensitive. Every work order records its source/qualifier mapping and deviations. |\n| D1-MR09: answer-given proof | A show-that part earns marks for complete correct working establishing the supplied result. No marks for copying it or working backwards; no F.T. into a given result. Terminal A depends on preceding work being correct and complete; a valid alternative proof receives the same cap. | 2021 PDF236 (`:005`, `:096`) and 2025 PDF345 point3/PDF355. This binds the new implicit show-that part, with its own criteria and demand/Bloom labels. |\n\nPer-part “answer-only” means the submission gives only that part's conclusion, with no required visible method elsewhere that legitimately establishes its awards. Visible linked earlier working may satisfy a criterion only when the actual question/row permits that reuse. Do not award marks for work guessed by the marker. Correctness feedback and credited evidence are separate: “Your value is correct; show the calculation to earn the method/accuracy credit” is appropriate when OD-1 yields zero.\n\nEach work order includes a qualifier/deviation ledger. Shared rule IDs are references, not substitutes for its exact method, alternative-path and dependency decisions. Any exception is limited to the named part/source type, never copied to all recipes.\n\n## Scope boundaries\n\nThe complete accepted limits/qualifiers stay in `curriculum/syllabus-exclusions.json`.\nWork orders apply them using actual admitted values, not a boilerplate checklist.\n\n| Binding | Consequence for this pilot and later expansion |\n|---|---|\n| LIMIT02 / QUAL03 | Trig equations use specified finite intervals and small integer/simple fractional arguments; no unbounded general-solution bank |\n| LIMIT03 / LIMIT04 | No required first-principles differentiation; product/quotient rules are Mathematics 2 content, not assumed Mathematics 1 methods |\n| LIMIT05 | Polynomial division dividends at most degree4, divisors linear/quadratic; omitted from this pilot rather than silently covered by calculus |\n| LIMIT06 | Change of logarithm base excluded; linearisation uses log laws in a fixed base. The reciprocal-log equation is not a pilot exemplar |\n| LIMIT07 | Reverse differentiation of admitted forms, not compulsory general substitution; no integration-by-parts expansion |\n| LIMIT08 | Numerical root finding may expose failure to converge but not require formal convergence criteria; numerical iteration remains later scope |\n| QUAL01 | Modulus graph coefficients are integers. A fractional-coefficient textbook exercise cannot define the pilot domain |\n| QUAL04 / QUAL05 | Only simple prescribed improper integrals; rational power n≠−1 in Mathematics 1, reciprocal-linear log primitive belongs to Mathematics 2 |\n| QUAL06 | Volumes revolve about a coordinate axis; volumes remain later scope, not covered by distance integration |\n| QUAL07 / QUAL08 / QUAL09 | Simple domain/range and one-to-one inverse restrictions matter; line tangency/repeated-root correspondence is specific, not every normal/tangent task |\n| QUAL10 / QUAL11 | Rational power derivatives permitted; sketch-based trapezium bias accepts geometric chord reasoning and does not require a formal second-derivative test |\n| LIMIT01 / QUAL02 | Positive-integer binomial expansion excludes greatest-term/coefficient-property demands and rational infinite expansions; sequences/series remain explicit later scope |\n\nGrade a/c/e descriptions calibrate variation and do not create new objectives\n(PDF19). Link each branch's easy and hard cases to the recorded descriptor IDs;\nlabel finite numerical choices as planner-chosen bounded design choices. No claim\nthat a number size, mark total or Bloom label automatically equals a school grade.\nWhere the assessed skill appears in e/c, those descriptors bound the easiest\nbranches; the hardest stay no further than grade a. Implicit differentiation\nappears only in grade a (A:14), including its easiest pilot branch. Corpus examples and native source reading support\nthe chosen learner decisions; release must verify actual varied/boundary instances.\n\n## Source and rights decisions\n\nPreserve source defects and owner decisions in `analysis/source-defects.json`\nand the immutable review folders. The held 2022 P1 Q13, 2023 P1 Q1(b) and 2023\nP1 Q9 originals cannot become learner-facing originals or same-type anchors.\nValid demands remain in scope. A universal quadratic proof must state a≠0;\nthe principal-value inverse demand is taught correctly from valid sources.\n\nTextbook items/figures are internal ingredients with `learner_display:false`.\nTheir reported answers are checked evidence, not unquestioned truth. Create\noriginal diagrams and learner wording from the mathematics. Attributed NSSCAS\nand Cambridge exam originals are authorised by Vitalis; no Cambridge source is\npresented as a Namibian original. Per-branch source equality and learner labels\nfollow `recipe-contract.md`; `related` and draft `derived-from` references stay internal.\n\n## Learning text and feedback\n\nUse the existing guideline snapshots indexed by\n`workbench/playbook/guidelines/provenance.json` (7 November 2026, file digests pinned\nin the planning manifest). Those were local app snapshots, not proof of deployed\nbytes. No forked shared AI instruction is added. Use British spelling, clear\nEnglish, decoded Markdown/LaTeX, separate equations and correct mathematical units.\nNever put mathematical notation inside emphasis or expose provider/internal keys\nas learner copy. Render all later question, help, solution, feedback and history\nsurfaces; a tolerant formatter does not establish authoring compliance.\n\nFeedback recognises demonstrated work, names the first evidenced error and offers\nan action/reason/result repair. It distinguishes an ambiguous upload from a wrong\nanswer, and the app retains the original attempt. No invented misconception is\nlabelled examiner-evidenced. Solutions/support and ordinary practice do not move\nmemory boxes; the application owns reliable completed-test progress.\n\n## Current status\n\nThese are proposed subject rules for the stage-D owner checkpoint. The accepted\nanalysis proves source-level mapping and review, not implemented recipes, Bloom\napproval, generator correctness, visual marking or local website acceptance.\nThe next gate is Claude’s focused D4 changed-scope confirmation, then Vitalis’s owner approval\nof the plan, counts, gaps, capabilities and exemplars (OD-3). Stage E does not begin from silence or from passing document checks.\n\n\nD2 owner additions: OD-4 makes the motion sign-change decision live and sets stationary classification Apply; OD-5 accepts the trapezium bridge, with only DB1 extended to the learner’s own curve. See `review/opus-5-5-d1-short-check/owner-decisions-2026-11-23-d1.md`. OD-6 replaces the withdrawn D2 allocation. Its principle binds; detailed MR03-OPS-D4 operations remain proposed, pending confirmation and Vitalis’s exact-manifest approval.\n\nAuthority classes: OD-1 governs answer-only treatment; OD-2 the show-that extension; OD-3 the confirmation/approval gate; OD-4 the live mixed-motion decision and stationary Apply label; OD-5 the accepted trapezium bridge; OD-6 the misread convention. MR02 and MR04–09 contain source-backed, task-specific interpretations and proposed operational details: their source references do not convert every detail into a binding owner decision. The adaptation register classifies each row. The 4+2 mixed-motion tariff is proposed, not dictated by OD-4.\n\nMR03-OPS-D4 is a proposed implementation interpretation, not an additional owner decision. Gross evidence is recorded before a net MR deduction; dependencies never re-test the reduced net award. The first-use ledger fixes eligibility for every use of that datum throughout the question.\n",
+        "mr03": "Approved MR03-OPS-D4: determine eligibility for the connected question at first use of each datum. Genuine unchanged-object/unchanged-difficulty misreads permit A/B follow-through and one A/B deduction per datum; M/DM remain normal. This overrides not-F.T./cao for eligible misreads, but never MR09 supplied-result proof or OD-1 method requirements. Record gross evidence before net deduction; dependencies use gross evidence.",
+        "runtime_marking_limit": "Frozen rubric/evidence only. Raw handwritten, photographed, sketch or free-text responses require trusted application marking orchestration. Competing-datum settlement and alternative implicit routes remain E/F carries.",
+        "d41_notes": {
+          "d41-01": "Implicit gradient finite AND nonzero",
+          "d41-02": "Nonunit exponential chain-factor eligibility guard is approved MR03-OPS-D4",
+          "d41-03": "Exposure keys persist across output-affecting revisions; version is provenance",
+          "d41-04": "Stage E active after exact owner approval",
+          "d41-05": "MR09 limit is adjacent to the eligible-misread override in this runtime summary"
+        }
+      },
+      "marks": 6,
+      "criteria": [
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I1",
+          "criterion": "Correct polynomial derivative, including its coefficient.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I2",
+          "criterion": "Set a credible derivative equal to zero and visibly solve its repeated-factor equation; a binomial-cube or valid factor-theorem/division route is accepted.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:point:I3",
+          "criterion": "Exact full canonical point after a visible stationary solve and substitution in the original polynomial.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I4",
+          "criterion": "Correct actual two-sided derivative behaviour, with stated point substitutions or valid power/sign reasoning.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I5",
+          "criterion": "Apply a valid local classification test to that evidence, ruling out the other types; limited follow-through from credible prior work.",
+          "marks_available": 1
+        },
+        {
+          "criterion_id": "WB8227-stationary-inflexion@0.1.4:flat-classification:classification:I6",
+          "criterion": "Canonical type justified by the valid test, not merely f second equal to zero.",
+          "marks_available": 1
+        }
+      ],
+      "contract_hash": "7bbc6b5e17fb1a57e5b9fb9d2b79da6550b98ef2f2ae1991872f9670f97c49a7"
+    },
+    "contract_hash": "75a7eedb7d711906cf98a63c24c9f63957289fed9c20ad8120d7a43cf1d31ef1"
+  },
+  "instance_hash": "4ac611818c39b8bc49c0dd1cd58f8fcf54d2d178b7a74db5d8d8a52b4c8a1674"
+}

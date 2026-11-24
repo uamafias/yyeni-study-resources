@@ -1,0 +1,312 @@
+{
+ "label": "closeout",
+ "scope": [
+  "S3-10 (closeout-01..06) R7 close-out residuals in the analysis layer",
+  "S3-11 freeze separation",
+  "Relation totals recount and the two same->branch changes"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 238,
+   "what": "2021 P2 Q4(b) award row: B1 2500=5000e^-0.02t, M1, A1 t=34 'Accept: 35'; prose 'complete weeks', trial-and-error not acceptable"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf",
+   "page": 6,
+   "what": "Q4 N=5000e^(-0.02t); (b) number of full weeks before halved [3]"
+  },
+  {
+   "pdf": "sources/namibia/nsscas/8227-mathematics/textbooks/Goldie_Pure-Mathematics-2-and-3_2nd-edition_2018.pdf",
+   "page": 50,
+   "what": "Ex 2B Q14 decibels (i) x^10=10, (ii) 26%, (iii) dB increase for doubling to nearest whole number"
+  },
+  {
+   "pdf": "Goldie (same)",
+   "page": 49,
+   "what": "Ex 2B Q13 Richter strength=log10(E/63000): (ii) energy at 7.4, (iii) ratio 4.2 vs 7.1"
+  },
+  {
+   "pdf": "Goldie (same)",
+   "page": 38,
+   "what": "C2 opening prompt: cell doubling, approx days to a million; 'To answer the question above, you need to use powers of 2'"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-1.pdf",
+   "page": 5,
+   "what": "Q4(b) operation in which pump first extracts less than 10 cm^3"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 15,
+   "what": "Q9 v=30e^(-t/2); (b) distance in first 2 s"
+  },
+  {
+   "pdf": "Y=mc as textbook.pdf",
+   "page": 364,
+   "what": "Try Now 37; Example 38(d) distance first 2 s from v=12t-t^2 (BP-27)"
+  },
+  {
+   "pdf": "Y=mc as textbook.pdf",
+   "page": 365,
+   "what": "Example 39(b) v=12-10t (BP-22); Try Now 38 Q2"
+  },
+  {
+   "pdf": "Y=mc as textbook.pdf",
+   "page": 366,
+   "what": "Try Now 39 Q1(c)(i)(ii) shaft depth after 4 s (BP-09, BP-38)"
+  },
+  {
+   "pdf": "Y=mc as textbook.pdf",
+   "page": 368,
+   "what": "Exercise 7 Q7 a=5-6t, rest, total distance 0..3 (BP-08)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+   "page": 5,
+   "what": "Q4 a=6t+1, v(0)=2; (a) v(t), (b) distance from O after 3 s (BP-22, BP-38)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2022/AS - Mathematics Paper 2 8227-2 - First Proof 24.05.2022.pdf",
+   "page": 12,
+   "what": "Q10 x=4cos2theta+3sin theta, y=5cos theta; (a) gradient at theta=1 (BP-37)"
+  }
+ ],
+ "dispositions": [
+  {
+   "agent_id": "closeout-01",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired (72 negations + capitalisation; lost-negation fixture added)",
+   "verdict": "partly-repaired",
+   "evidence": "Diffed HEAD vs current tools/textbook-relation-decisions-r7.json batch_rejection_rewrites (403 records, keys aligned): 84 records changed. All 72 records whose R6 reason has 'None of these targets asks|requires|requests|credits|uses' now read 'This exam part does not <verb> ...' in restored_r6_comparison_text and rejection_reason; the 11 distinct old inverted sentences are absent (case-insensitive) from decisions, ledger, families, objective map (json/md) and insights. No lowercase 'this exam part' after a full stop remains. BUT the same rewrite negated 19 positive R6 sentences, and 12 other inversions were only capitalised (see closeout-D1-01, -02).",
+   "residual": "31 rejected-row reasons still assert the opposite of the R6 comparison (19 new, 12 residual); propagated to 31 ledger rows, textbook-families.json and 5 objective-map demands. Fixture too narrow to catch either (closeout-D1-03)."
+  },
+  {
+   "agent_id": "closeout-02",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "analysis/textbook-exam-relations-r7.json relations[2717] and tools/textbook-closeout-family-gap-inputs.json:~1206: decibel 2B Q14(iii) row now 'harder', cites 'accepts 34 or 35 (2021 report PDF 238; CONVENTION:009)', self-contradiction removed. Rendered PDF 238: A1 t=34, Accept: 35 confirmed. Direction re-judged on Goldie PDF 50 and 2021 P2 PDF 6: source must build the multiplicative law 10^(n/10)=2 from a verbal scale (scaffolded by (i)), exam gets N=5000e^-0.02t and only forms the halving equation (B1); both take logs and report a whole number, so harder is right. Richter exception (f585478db35f4c64f67e) now rests on different unknown/inverse operation (Goldie PDF 49: (ii) exponentiate log scale for E, (iii) 10^2.9 ratio vs exam logs for t) and explicitly drops the rounding-boundary ground. No 'floor rather than nearest' / 'discrete-time boundary' text remains in analysis/ or tools/ inputs.",
+   "residual": "none (other 2021 P2 Q4(b) easier-branch rows cite the integer full-week reporting as an exam extra; that remains valid and does not claim floor vs nearest)."
+  },
+  {
+   "agent_id": "closeout-03",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "tools/textbook-closeout-motion-decisions.json:110-205 and ledger relations[2040,2043,2046]: BP-09 (Try Now 39 Q1(c), s(4)=112) and BP-27 (Ex 38(d), 64/3) are structural branch easier; BP-08 (Ex 7 Q7(c), total 21/2) is mixed (adds reversal split, lacks exponential primitive). Same rule as BP-24 (absent exponential/product derivative -> easier) and BP-31 (absent exponential chain -> easier). Every non-rejected row for 2023:P2:Q9:b is now a branch (8 rows); no same-type row anywhere admits a missing formula-family ingredient (regex scan). BP-22 (Ex 39(b) vs 2021 P1 Q4(a)) and BP-38 (Try Now 39 Q1(c) vs 2021 P1 Q4(b)) remain same type, polynomial on both sides; only spacing changed in BP-22 text. Objective-map counts unchanged (73 demands with same-type); M1:T9:O04:D03 keeps 4 same-type rows via 2021 P1 Q4.",
+   "residual": "checks/r7-closeout/motion-family-reading.json/.md still record BP-09/BP-27 same type and BP-08 harder (stale reading manifest; note closeout-D1-05)."
+  },
+  {
+   "agent_id": "closeout-04",
+   "prior_severity": "note",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "tools/textbook-closeout-curve-decisions.json:393 and ledger relations[2342]: 0.744207. sympy: dy/dx=-5sin t/(3cos t-8sin 2t) from x=4cos2t+3sin t, y=5cos t (page 12 confirmed), at t=1 = 0.744207197660.",
+   "residual": "checks/r7-closeout/curve-family-reading.json still holds 0.744018 (note closeout-D1-05)."
+  },
+  {
+   "agent_id": "closeout-05",
+   "prior_severity": "note",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "Ledger relations[2716] / family-gap-inputs ~1162: 'its page says to use powers of 2, so trial/powers are valid and logarithms optional'. Goldie PDF 38 reads 'To answer the question above, you need to use powers of 2'. Exam 2024 P1 PDF 5: first operation below 10 cm^3. Direction easier unchanged and still right (2^19<1e6<2^20; exam n=13).",
+   "residual": "none"
+  },
+  {
+   "agent_id": "closeout-06",
+   "prior_severity": "note",
+   "codex_disposition": "deferred harmless note",
+   "verdict": "accepted-deferral",
+   "evidence": "Stage-D files (PLAN.md, planning/*.json, planning/d1, work-orders, exemplars, recipe-contract.md, subject-rules.md) never read rejection_reason/restored_r6_comparison_text/rejection_reason_status; they cite objective-problem-map only for the accepted item-level assessed/component union and exam-part IDs. None of the spacing fragments (displacement0, specified4s, after3s, Example22, term74.24, Goldie3A) occurs in the design ('factor2' hits are unrelated design text). The two 2023 P2 Q3(b)(ii) rows keep correct part-specific R7 rejection_reason; their restored_r6 field holds R6 group text (including a (b)(iii) integration sentence), which the template label correctly flags as non-evidence.",
+   "residual": "Cosmetic only; decisions and design unaffected."
+  },
+  {
+   "agent_id": "S3-11",
+   "prior_severity": "note",
+   "codex_disposition": "optional freeze repair",
+   "verdict": "repaired",
+   "evidence": "tools/freeze_analysis_r7_closeout.py:21-23 now pins analysis/, tools/, curriculum/, checks/r7-closeout/, checks/repair-r7-closeout.md and 7 root playbook docs; STATUS.md x2, HANDOVER.md, capability-gaps.md moved to planning/plan-manifest.json. source_files (436) and review_files (37) identical to the committed snapshot; analysis/history snapshots r1-r7 and the new r7-closeout copy are pinned; all 2503 pins + 436 + 37 match current bytes (own sha256). analysis/history/analysis-snapshot-r7-closeout.json is untracked but byte-identical (sha256 5aaa3bf2...) to HEAD:analysis/analysis-snapshot.json.",
+   "residual": "Exclusion is broader than stated: 5,266 historical checks files (checks/r3..r7, repair-r2..r7 baselines/reports/validations, fresh-copy-verification-r4..r6, award-page renders) and work/.../README.md are now pinned by neither manifest (closeout-D1-04)."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "BP-37 2022 P2 Q10(a) gradient at theta=1",
+   "claimed": "0.744207",
+   "computed": "0.744207197660",
+   "ok": true
+  },
+  {
+   "case": "2021 P2 Q4(b) half-time",
+   "claimed": "official t=34, accept 35",
+   "computed": "t=50 ln2=34.657; floor 34, nearest 35",
+   "ok": true
+  },
+  {
+   "case": "Goldie 2B Q14(iii) decibel doubling",
+   "claimed": "10^(n/10)=2, rounded",
+   "computed": "n=10log10 2=3.0103 -> 3",
+   "ok": true
+  },
+  {
+   "case": "Goldie 2B Q13(ii)(iii) Richter",
+   "claimed": "exponentiate log scale / scale difference",
+   "computed": "E=1.582e12 J; ratio 10^2.9=794.3",
+   "ok": true
+  },
+  {
+   "case": "2024 P1 Q4(a)(b)",
+   "claimed": "r from 74.24/145; first op below 10",
+   "computed": "r^3=64/125, r=4/5; n=13 (12.455, 9.964)",
+   "ok": true
+  },
+  {
+   "case": "Goldie C2 prompt million threshold",
+   "claimed": "powers of 2",
+   "computed": "2^19=524288<1e6<2^20=1048576; log2(1e6)=19.93",
+   "ok": true
+  },
+  {
+   "case": "BP-09 Try Now 39 Q1(c)",
+   "claimed": "v=10t+8, depth at 4 s",
+   "computed": "v(1)=18; s(4)=112",
+   "ok": true
+  },
+  {
+   "case": "BP-27 Ex 38(d)",
+   "claimed": "64/3",
+   "computed": "64/3",
+   "ok": true
+  },
+  {
+   "case": "BP-08 Ex 7 Q7",
+   "claimed": "rest t=2, total 21/2",
+   "computed": "v=2+5t-3t^2, roots 2,-1/3; total 21/2, signed 3/2",
+   "ok": true
+  },
+  {
+   "case": "2023 P2 Q9(b)",
+   "claimed": "60(1-e^-1)",
+   "computed": "37.927",
+   "ok": true
+  },
+  {
+   "case": "BP-22/BP-38 2021 P1 Q4",
+   "claimed": "polynomial on both sides",
+   "computed": "exam v=3t^2+t+2, s(3)=75/2; source v=12-10t",
+   "ok": true
+  },
+  {
+   "case": "Relation totals (all rows)",
+   "claimed": "same 209 / branch 912 / rejected 1777; main 2718",
+   "computed": "2898 rows: same 209, branch 912, rejected 1777; main 2718 = 125/833/1760; exceptions 180 = 84/79/17; textbook-families mirrors ledger exactly (2718/2718 main, 180/180 exceptions)",
+   "ok": true
+  },
+  {
+   "case": "Relation changes HEAD->current (positional diff, 2898 rows)",
+   "claimed": "two same->branch",
+   "computed": "exactly 2 kind changes: relations[2040] BP-09 motion-vertical-events and relations[2043] BP-27 motion-rest-and-bounded-speed, both vs 2023:P2:Q9:b; plus direction changes BP-08 harder->mixed, 2021 P2 Q4(b) decibel mixed->harder",
+   "ok": true
+  },
+  {
+   "case": "Batch reason polarity vs R6 (own sentence-level check, 403 records)",
+   "claimed": "72 negations repaired, no inversions",
+   "computed": "72 repaired; 31 polarity flips remain (records 137-148, 157-163, 331-335, 390-396); Codex validate_restored_negation passes all 403",
+   "ok": false
+  },
+  {
+   "case": "Demands with same-type textbook practice / parts with no relation",
+   "claimed": "73 / 13",
+   "computed": "73 / 13 (objective-map counts identical to HEAD)",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [],
+ "findings": [
+  {
+   "id": "closeout-D1-01",
+   "recipe": "n/a (analysis layer, S3-10 closeout-01)",
+   "branch": "n/a",
+   "locator": "tools/textbook-relation-decisions-r7.json:5556 (batch records 157-163), :9239 (331-335), :10488 (390-396); analysis/textbook-exam-relations-r7.json:49739 etc.; objective-problem-map.json demands M2:T4:O03:D03, M1:T4:O02:D01, M1:T2:O03:D01/D02",
+   "severity": "should-fix",
+   "expected": "Only the batch subject 'None of these targets <verb>' becomes 'This exam part does not <verb>'; the R6 positive sentence 'The target instead asks/requires the learner to X' stays positive ('This exam part asks the learner to X', as at HEAD).",
+   "actual": "D1 negated 19 positive sentences that were correct at HEAD. Examples: 2025 P2 Q5 now reads 'This exam part does not ask the learner to differentiate 2exp(3x)*y+y^2=15 implicitly and evaluate its gradient at the supplied point (0,-5)'; 2024 P1 Q4(a) 'does not require the learner to recover a GP ratio from its first and fourth terms'; 2021 P1 Q8(b) 'does not require the learner to recover an AP donation increment'. Families: implicit-prescribed-gradient-points (7 parts), coordinate-projection-ratio (5), progression-condition-recovery (7). These include stage-D anchor parts (2025 P2 Q5, 2023 P2 Q8(b), 2024 P2 Q7(c)).",
+   "evidence": "Own sentence-polarity diff of r6_rejection_reason vs HEAD and current restored_r6_comparison_text; propagated to 19 ledger rows, textbook-families.json and objective-map candidate_decisions (both rejection_reason and restored_r6_comparison_text). Decisions unchanged (all rejected).",
+   "repair": "Revert those 19 sentences to the HEAD positive form ('This exam part asks/requires the learner to ...'); regenerate ledger, families and map."
+  },
+  {
+   "id": "closeout-D1-02",
+   "recipe": "n/a (analysis layer, S3-10 closeout-01)",
+   "branch": "exponential-absolute-exponent-recovery",
+   "locator": "tools/textbook-relation-decisions-r7.json:5136 (batch records 137-148); analysis/textbook-exam-relations-r7.json:48891 etc.; objective-problem-map.json demand M2:T2:O03:D01",
+   "severity": "should-fix",
+   "expected": "R6 'None of these other targets asks for that two-sided absolute-exponent preimage' becomes 'This exam part does not ask for that two-sided absolute-exponent preimage'.",
+   "actual": "12 rejected rows (2021 P2 Q11(b), 2021 P2 Q4(b), 2022 P2 Q1(a)(b), 2022 P2 Q2, 2023 P2 Q4(b)(c), 2024 P1 Q1, 2024 P2 Q11(b), 2024 P2 Q8(b), 2025 P2 Q11(b), 2025 P2 Q6(b)) read 'This exam part asks for that two-sided absolute-exponent preimage.' D1 only capitalised it. Step 3 counted these 12 among the 84 capitalisation defects, not among the 72 inversions, so they were outside the named count but inside the brief's 'any remaining reason that asserts the opposite'.",
+   "evidence": "Own regex over all 403 R6 reasons for every 'None of (these|the) (other )?target...' variant: 72 'targets <verb>' (fixed), 7 'none of these other targets has' (correct since R7), 12 'None of these other targets asks' (still inverted), 10 'None of the target tasks / these target questions asks' (negation intact, batch phrasing kept).",
+   "repair": "Rewrite the 12 as 'This exam part does not ask for that two-sided absolute-exponent preimage'; regenerate outputs."
+  },
+  {
+   "id": "closeout-D1-03",
+   "recipe": "n/a",
+   "branch": "n/a",
+   "locator": "tools/check_repair_r7_closeout.py:14-19 (validate_restored_negation), :94-96 (fixture)",
+   "severity": "should-fix",
+   "expected": "The guard fails whenever restored text changes the polarity of any R6 sentence.",
+   "actual": "The fixture exists and correctly fails when 'does not ' is stripped from record 10, so it tests lost negation. But the validator only matches 'None of these targets (asks|...)' and only asserts that 'this exam part does not <verb>' appears somewhere. It passes all 403 current records, including the 19 over-negated and 12 still-inverted ones.",
+   "evidence": "Re-implemented the rule in my own code: 0 failures on current data; my sentence-polarity check: 31 flips.",
+   "repair": "Check the restored text sentence by sentence against R6 (identical except for the batch-subject substitution, polarity preserved); cover 'None of these other targets' and 'The target instead'; add an over-negation fixture."
+  },
+  {
+   "id": "closeout-D1-04",
+   "recipe": "n/a (S3-11)",
+   "branch": "n/a",
+   "locator": "tools/freeze_analysis_r7_closeout.py:20-22; analysis/analysis-snapshot.json scope",
+   "severity": "should-fix",
+   "expected": "Only status/handover and stage-D design files leave the analysis freeze, as the snapshot scope states; historical review evidence stays hash-pinned.",
+   "actual": "Pinned files drop from 7,773 to 2,503. Of the 5,271 removed, only 4 (two STATUS.md, HANDOVER.md, capability-gaps.md) are pinned by planning/plan-manifest.json. 5,266 historical checks files are now unpinned, including checks/r3-r7 (e.g. r3 award-page renders, r7 family-negative-validation and parallel-sources natives), repair-r2..r7 baselines/reports/validations and fresh-copy-verification-r4..r6, plus work/.../README.md. 97 of the 275 fresh-proof outputs are unpinned in --check mode, including checks/r7/final-validation.json, which D1 changed. Historical snapshots, item-level links (analysis/), PDFs (436) and reviews (37) remain protected.",
+   "evidence": "Own set difference between analysis/history/analysis-snapshot-r7-closeout.json and analysis/analysis-snapshot.json, cross-checked against plan-manifest files.",
+   "repair": "Pin WB/checks except the stage-D checks/plan-* files (or add the historical checks tree to the plan manifest); make the scope text state exactly what is excluded."
+  },
+  {
+   "id": "closeout-D1-05",
+   "recipe": "n/a",
+   "branch": "BP-08/09/27/37",
+   "locator": "checks/r7-closeout/motion-family-reading.json/.md; checks/r7-closeout/curve-family-reading.json; checks/repair-r7-closeout.md:9",
+   "severity": "note",
+   "expected": "Reading manifests either reflect the D1 labels or are marked historical.",
+   "actual": "motion-family-reading still records BP-08 harder and BP-09/BP-27 same type with the old 'same-type judgement' caveat; curve-family-reading still has 0.744018. repair-r7-closeout.md:9 says 'The individual reading manifests preserve this coverage caveat'. The canonical decisions and outputs are correct; the new freeze pins these stale manifests as analysis provenance.",
+   "evidence": "grep and JSON read of checks/r7-closeout",
+   "repair": "Add a 'superseded by D1 S3-10' note, or regenerate the relation section of the manifests."
+  },
+  {
+   "id": "closeout-D1-06",
+   "recipe": "n/a",
+   "branch": "n/a",
+   "locator": "tools/textbook-relation-decisions-r7.json batch records 66-75",
+   "severity": "note",
+   "expected": "Batch phrasing removed.",
+   "actual": "10 records keep 'None of the target tasks asks ...' / 'None of these target questions asks ...'. The negation is intact (no inversion) and was unchanged since R7.",
+   "evidence": "Own regex scan",
+   "repair": "Cosmetic; fix with closeout-D1-01/02 if text is regenerated."
+  }
+ ],
+ "verified_ok": [
+  "All 72 step-3 inversions are repaired in decisions, ledger, families and objective map; their 11 distinct inverted sentences are absent (case-insensitive) everywhere; no lowercase 'this exam part' after a full stop remains.",
+  "Relation totals recount exactly from the current ledger: 2898 rows = same 209 / branch 912 / rejected 1777; main 2718 (125/833/1760) + 180 exceptions (84/79/17). textbook-families.json mirrors the ledger exactly. checks/r7-closeout/final-validation.json after-counts agree.",
+  "The two same->branch changes are BP-09 and BP-27 vs 2023 P2 Q9(b), both correct on the pages (polynomial power-rule primitive vs exponential primitive with reciprocal chain factor = easier branch).",
+  "The integrand/formula-family rule is now consistent: BP-08 mixed, BP-09/27 easier, BP-24/31 easier; all 8 non-rejected rows for 2023 P2 Q9(b) are branches; BP-22/BP-38 unchanged same type (polynomial both sides).",
+  "2021 P2 Q4(b): official row A1 t=34, Accept 35 confirmed on report PDF 238; decibel branch 'harder' and Richter rejection grounds are correct.",
+  "BP-37 0.744207 recomputed; closeout-05 wording matches Goldie PDF 38.",
+  "Objective-map counts identical to HEAD (73 demands with same-type practice, 13 parts with no relation).",
+  "analysis/history/analysis-snapshot-r7-closeout.json is untracked but byte-identical to the committed HEAD analysis/analysis-snapshot.json (sha256 5aaa3bf2ad9d2b757639b34b51b88b612a42cdbdd8cb12537e5ac11526329f53) and is pinned in the new snapshot.",
+  "New analysis/analysis-snapshot.json (sha256 7131b3b4...): all 2503 files, 436 source PDFs and 37 review files match current bytes; source/review sets identical to the committed snapshot; snapshots r1-r7 pinned; the 22 changed pins are exactly the D1-changed analysis/tools/r7-closeout files.",
+  "Stage-D design files do not consume relation reason prose or template labels (closeout-06 deferral is harmless)."
+ ],
+ "not_checked": [
+  "Fresh-copy rebuilds and the 75 seeded negatives (run separately by the lead reviewer); I did not run any Codex script.",
+  "Text of the 403 batch records beyond polarity against R6 (the R6 comparisons themselves were accepted earlier).",
+  "Whether checks/r6/comparison-progress.json (changed by D1, not in fresh-proof output_hashes) is regenerated deterministically.",
+  "Stage-D design use of BP-09/27 items beyond confirming the design cites them only as family members."
+ ]
+}

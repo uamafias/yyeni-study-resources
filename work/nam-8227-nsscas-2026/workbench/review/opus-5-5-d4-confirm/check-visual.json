@@ -1,0 +1,414 @@
+{
+ "label": "visual",
+ "scope": [
+  "D3-S04 trapezium k=2 fixture (visual-D3-01, visual-D2-04)",
+  "D3-S02 vector half: OB sign misread 6/7, OB misread + wrong resultant 4/7, OA no-p reuse 3/7 (visual-D3-04, vecrec-D2-08)",
+  "D3-S02(f) feedback sentence in the 7 visual policies and 3 visual WO lines (visual-D3-02)",
+  "D3-S01 visual-scope authority wording (visual-D3-03)",
+  "visual misread ledgers (15) and rubric fixtures (16)",
+  "notes: 16 November decision-6 rename (visual-D3-06/shared-D3-06), modulus WO :45 stale wording",
+  "regression: domains, capacities, exemplars, pilot-design copies"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 337,
+   "what": "Printed 335, Q6 award table (sha256 17bb6d8e…, matches source_read in planning/d4/visual-d4-independent-checks.json). Row (b): '3ln(x – 2)²' B 1 | '6 × 11.5 = 69.(0)' 'B 1. ✓' note '6 × their (a)' | 'SC 1: Correct but hence not used'. No www token on either (b) mark. Prose (b): candidates 'failed to apply the log-laws to rewrite the 3 ln(x²–4x+4) to 6 ln(x–2) before the answer to part (a) could be used. Common wrong working seen was (11.5)²'. Render: SCRATCH/renders/visual/er2023-337.png and er2023-337-rowb.png"
+  },
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+   "page": 2,
+   "what": "Mark Scheme Notes: '√ implies that the A or B mark indicated is allowed for work correctly following on from previously incorrect results. Otherwise, A or B marks are given for correct work only. A and B marks are not given for fortuitously \"correct\" answers or results obtained from incorrect working.' Also 'Unless otherwise indicated, marks once gained cannot subsequently be lost, e.g. wrong working following a correct form of answer is ignored.' Render SCRATCH/renders/visual/cam9709-002.png"
+  },
+  {
+   "pdf": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+   "page": 3,
+   "what": "Penalties MR−1 text (sha256 7cfb18fb… matches visual-design.json misread_policy_authority). Render SCRATCH/renders/visual/cam9709-003.png"
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D3-S04",
+   "related_agent_ids": [
+    "visual-D3-01",
+    "visual-D2-04"
+   ],
+   "codex_claim": "Factorised square keeps b:B1; visibly wrong log-law loses b:B2 www incl. k=2 coincidence (b 1/2, 9/10); missing derivation keeps B2 (bare-product 1/2); proposed clarification, not OD-1/OD-5.",
+   "verdict": "repaired",
+   "evidence": "Consistent in every locator: WO trapezium :71 b:B1 (factorised form alone), :72 b:B2 'with no visibly wrong log-law reasoning (www). Missing factorisation/log-law derivation alone does not prevent B2', :85, :110 (2ln((x-1)^2) then J=T^2 → 9/10, B1 kept), :137, :139; exemplar :89, :91; visual-design.json:336 (B1), :343/:345-347 (B2 required + qualifiers FT, www, 'D4 proposed clarification'), :712 fixture; pilot-design.json:401, :408/:412, :812 identical. Old 'b:B1=0 (www/OD-1)' wording gone from all live files (grep). Labelled 'proposed D4 marking clarification, not an OD-1 penalty' (WO :139, exemplar :91, JSON :712) and register row OWNER-CHECKPOINT.md:38 / planning/d4/visual-deviation-rows.json says 'not attributed to OD-1 or to the OD-5 owner extension'. Own scoring: wrong-law k=2 fixture b 1/2 → 9/10; bare product (J=4×3.81 or 6×11.5) b 1/2; factorised + T^2 9/10; k 2→3 with correct law 9/10 (deduct b:B1); k 2→3 bare 6T 8/10 (deduct b:B2). Independent judgement: coherent reading (see marking_tests).",
+   "residual": "Traceability only: the B2 clarification is filed inside the D1-TRAP-FT-BRIDGE (OD-5) register row and is absent from the WO's own qualifier/deviation ledger (visual-D4-02, note)."
+  },
+  {
+   "finding_id": "D3-S02 (vector half + visual policies)",
+   "related_agent_ids": [
+    "visual-D3-04",
+    "vecrec-D2-08",
+    "visual-D3-02"
+   ],
+   "codex_claim": "Seven visual policies and three WO lines share MR03; OB misread 6/7; OB misread + wrong resultant 4/7 (deduction moves to b:B1); OA no-p ineligible throughout 3/7; feedback names the misread.",
+   "verdict": "repaired",
+   "evidence": "All 7 visual misread_policy objects equal the shared policy fields (planning/d4/shared-misread-policy.json) and are identical across visual-design.json, pilot-design.json and part-evidence-register.json; each has feedback 'Practice feedback names the misread.' Exact shared work_order_line present at modulus WO :59, trapezium WO :91, vector WO :94. Own MR03 ledger + vector criteria (WO :63-69): OB→(-2,1,-1): 4p+1=0, p=-1/4, dot -2, 118.1255…→118.1; gross 7, deduct a:B1 → 6/7. OB misread + p(OA-OB'): 5p=0 → a:M1 only; b gross 4; first earned A/B on OB is b:B1 → 4/7 (D3 no-defer rule gave 5/7). OA→(1,-2,1) in changed case: (pOA'-OB)·OC ≡ 3 ≠ 0, no p (canonical p=-3/4) → ineligible; a:M1=1; b: dot -6≠-2 (B1 0), |OA'|=√6=|OA| and √11 (M1 1), M2 1, 137.6≠104.3 (A1 0) → 3/7, no MR. WO :108/:113 and exemplar :66/:71 state exactly these.",
+   "residual": "Part-specific D3 tails were replaced by generic text; vector (a) and (b) policies are now identical (visual-D4-03, note). Author helper types d:DB1 as 'DM' (planning/d4/visual-d4-independent-checks.py:86); no fixture outcome depends on it."
+  },
+  {
+   "finding_id": "D3-S01 (visual scope)",
+   "related_agent_ids": [
+    "visual-D3-03"
+   ],
+   "codex_claim": "Visual texts state only the OD-6 principle as binding; unit/order/ledger/dependency mechanics proposed (MR03-OPS-D4).",
+   "verdict": "repaired",
+   "evidence": "OD-6 sources paragraphs rewritten in all six visual documents (trapezium WO :141, modulus WO :84, vector WO :110, exemplars :93/:59/:68): 'per-datum unit, deduction order, eligibility ledger and gross-before-net dependency mechanics are proposed operational rules … not further owner decisions'. Policies carry operational_status 'proposed … pending Vitalis exact-manifest approval'. Cambridge labelled comparable-board, never Namibian.",
+   "residual": "One unchanged D3 clause at vector WO :73 still says 'uses OD-6 once-per-datum MR−1' (visual-D4-01, note)."
+  },
+  {
+   "finding_id": "Notes: decision-6 rename and modulus :45",
+   "related_agent_ids": [
+    "visual-D3-06",
+    "shared-D3-06"
+   ],
+   "codex_claim": "Renamed to 16 November owner decision 6 (visual demands); modulus blanket-binding wording corrected.",
+   "verdict": "repaired",
+   "evidence": "Trapezium WO :58, modulus WO :39, vector WO :55 now read 'The 16 November owner decision 6 (visual demands)'; PLAN.md:74 '16 November visual-demand decision 6'. Unambiguous against OD-6. Modulus WO :45 now 'D1-MR01–09 apply with their stated authority: OD-backed principles bind; proposed operational details await exact-manifest approval.'",
+   "residual": "Unrenamed 'Owner decision6' at capability-gaps.md:34 and 'Vitalis's decision 6' at recipe-contract.md:162 (not in the D3 locator list; visual-D4-04, note)."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "trapezium normal (1,4,2,2)",
+   "claimed": "T=3.80666248977…→3.81; J=4T=15.2266499591…→15.2; fixtures {15.2,15.24}; I=5ln5-4>T",
+   "computed": "T=3.80666248977032→3.81; J=15.2266499590813→15.2; 4×3.81=15.24→15.2; I=4.0471895621705>T",
+   "ok": true
+  },
+  {
+   "case": "trapezium changed (3,8,4,3)",
+   "claimed": "T=11.50514527765…→11.5; J=6T=69.0308716659…→69.0; I=9ln9-8",
+   "computed": "T=11.5051452776513→11.5; J=69.0308716659076→69.0; 6×11.5=69.0; I=11.775021196026>T",
+   "ok": true
+  },
+  {
+   "case": "trapezium boundary (1,4,4,1)",
+   "claimed": "T=3.982772786565→3.98; J=2T=7.96554557313→7.97; fixtures {7.96,7.97}",
+   "computed": "T=3.982772786565→3.98; J=7.96554557312999→7.97; 2×3.98=7.96",
+   "ok": true
+  },
+  {
+   "case": "trapezium all 30 admitted a_3sf and b_canonical_3sf in planning/d4/visual-domain-checks.json",
+   "claimed": "per-tuple values",
+   "computed": "0 mismatches (own area-sum quadrature, decimal half-up 3 s.f.)",
+   "ok": true
+  },
+  {
+   "case": "k=2 scale coincidence",
+   "claimed": "k^2=k+2=2k=4 at k=2",
+   "computed": "k=1:(1,3,2); k=2:(4,4,4); k=3:(9,5,6). At marked 3 s.f. k^2T and (k+2)T equal 2kT in every k=2 context (4,2,2),(8,2,2),(8,4,2); (4,4,2) also T^2 (excluded)",
+   "ok": true
+  },
+  {
+   "case": "S04 fixture numbers (normal, J=4T after 2^2 law)",
+   "claimed": "numeric 15.2; b 1/2; 9/10",
+   "computed": "4T=15.2266…→15.2; 4×3.81=15.24→15.2; per criteria b:B1 1, b:B2 0 (www) → 9/10",
+   "ok": true
+  },
+  {
+   "case": "k read as 3 in normal",
+   "claimed": "6T=22.8 (or 22.86); b1/2; 9/10",
+   "computed": "6T=22.8399749386→22.8; 6×3.81=22.86 (exact F.T. product); gross b 2, deduct b:B1 → 9/10",
+   "ok": true
+  },
+  {
+   "case": "vector normal (1,2,2)",
+   "claimed": "p=3/4; dot 2; √3,√6; 61.9",
+   "computed": "p=3/4; dot 2; norms² 3,6; 61.8744942979443→61.9",
+   "ok": true
+  },
+  {
+   "case": "vector changed (2,-3,1)",
+   "claimed": "p=-3/4; dot -2; √6,√11; 104.3",
+   "computed": "p=-3/4; dot -2; 104.25175505854→104.3",
+   "ok": true
+  },
+  {
+   "case": "vector boundary (2,-1,1)",
+   "claimed": "p=-1/4; 90°",
+   "computed": "p=-1/4; dot 0; 90.0",
+   "ok": true
+  },
+  {
+   "case": "vector all 30 admitted p and angle_1dp in planning/d4/visual-domain-checks.json",
+   "claimed": "per-tuple values",
+   "computed": "0 mismatches; p=(s+t-1)/(2+rt) for all 30; exact 60°:2, exact 90°:4",
+   "ok": true
+  },
+  {
+   "case": "vector OB sign misread (normal)",
+   "claimed": "p=-1/4, 118.1; 6/7",
+   "computed": "4p+1=0; dot -2; 118.1255…→118.1; gross 7 → deduct a:B1 → 6/7",
+   "ok": true
+  },
+  {
+   "case": "vector OB sign misread + wrong resultant (normal)",
+   "claimed": "a:M1 only; b gross 4; deduct b:B1; 4/7",
+   "computed": "p(OA-OB')=p(3,0,2), ·OC=5p=0 → p=0; a 1/3 gross; b 4/4 gross; first earned A/B on OB is b:B1 → net 4/7 (5/7 under the D3 no-defer rule)",
+   "ok": true
+  },
+  {
+   "case": "vector OA no-p misread (changed)",
+   "claimed": "no p; a:M1 1; b:M1+M2 2; 3/7",
+   "computed": "OA'·OC=0, OB·OC=-3 → 0p=-3; b dot -6, √6 (=canonical |OA|), √11, 137.607954…→137.6 vs canonical 104.3 → 3/7, no MR",
+   "ok": true
+  },
+  {
+   "case": "vector OC (1,2,1)→(1,3,1) (D4-VIS-MR13)",
+   "claimed": "p=4/5; deduct a:A1; 6/7",
+   "computed": "(p-2)+3(p-1)+(p+1)=5p-4=0, p=4/5; a:B1 does not use OC, so first OC A/B is a:A1 → 6/7",
+   "ok": true
+  },
+  {
+   "case": "vector single-component sign misreads leaving no p",
+   "claimed": "(D3) 20/270",
+   "computed": "20/270 over the 30 admitted tuples",
+   "ok": true
+  },
+  {
+   "case": "modulus exemplars normal (-2,3,2) changed (2,-3,2) boundary (3,-3,3)",
+   "claimed": "labels and a,b,c in exemplar (unchanged body)",
+   "computed": "normal V(-3,4) zeros(-5,0),(-1,0) y0(0,-2), a=-2,b=3,c=4; changed V(3,-4) zeros(1,0),(5,0) y0(0,2), a=2,b=-3,c=-4; boundary V(3,-9) zeros(0,0),(6,0) y0(0,0), a=3,b=-3,c=-9; independent recovery fits all labels; parabola routes -1 and -2/3 (normal) non-canonical; exemplar body byte-identical to D3 apart from header/sources line",
+   "ok": true
+  },
+  {
+   "case": "15 visual derived ledgers (planning/d4/visual-d4-independent-checks.json)",
+   "claimed": "MR01 6, MR02 5, MR03 1, MR04 1, MR05 1, MR06 9, MR07 1, MR08 4/5, MR09 0, MR10 4, MR11 3, MR12 8, MR13 6, MR14 8, S04 9",
+   "computed": "Recomputed with own code/criteria: MR01 6/7, MR02 5/7, MR06 9/10, MR07 b 1/2, MR10 4/7, MR11 3/7, MR12 8/10, MR13 6/7, MR14 8/10, S04 9/10 (all 6 D4-new ledgers included); MR03/04/05/08/09 and the d:B1/DB1 gross-dependency fixture (net 1/2, DB1 kept) checked by rule. All agree.",
+   "ok": true
+  },
+  {
+   "case": "16 rubric fixtures (planning/d4/visual-rule-fixtures.json declared_marker_expectations)",
+   "claimed": "totals 3,3,2,2,1,2,0,4,0,1,1,6,4,3,1,1",
+   "computed": "Each checked against WO criteria (modulus :49-:70; trapezium :68-:77, :99, :112-:115; vector :63-:69, :86-:88) and own ledgers; all 16 agree. own(a) arithmetic rows (10) and precision-form rows (2) also agree.",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "claimed": "36→30, 11 contexts, part keys 4/11/3/11, mathematical packing 3; generated-fresh 22, 4/11/2/8, packing 2; 1 after any one example; 0 after normal+changed",
+   "computed": "36→30 (admitted set identical to planning/d4/visual-domain-checks.json), 11, 4/11/3/11, DFS packing 3; fresh 22, 4/11/2/8, packing 2; after normal/changed/boundary 1/1/1; after normal+changed 0",
+   "notes": "visual-design-asset-checks.json strict field corrected 3→2 in D4 (now matches visual-design.json:654-659); text/value consistency fix, not a domain change"
+  },
+  {
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "claimed": "108→44 semantic 44; 24 origin-double",
+   "computed": "108→44 (identical set), 24 with |b|=d; b=y0 rule removes 8 raw",
+   "notes": "unchanged D3→D4"
+  },
+  {
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "claimed": "54→30, 17 part-(b) keys, packing 17",
+   "computed": "54→30 (identical set; exclusions r=t 18, p=0 6, identity 3, union 24), 17 (r,s) keys",
+   "notes": "unchanged D3→D4"
+  }
+ ],
+ "marking_tests": [
+  {
+   "recipe": "trapezium",
+   "part": "b",
+   "response": "Normal (1,4,2,2): '2ln((x-1)^2) = 2^2 ln(x-1) = 4ln(x-1); J = 4T = 15.2', other parts complete",
+   "expected_marks": "b:B1 1 (row 04 factorised form, once gained not lost), b:B2 0 (scale reached by visibly wrong law; fortuitously correct), 9/10",
+   "design_gives": "9/10 (WO :139, exemplar :91, JSON :712, D4-VIS-S04)",
+   "ok": true,
+   "basis": "Independent judgement: COHERENT. Official row (PDF337) awards B1 '3ln(x–2)²' and 'B 1. ✓ 6 × their (a)' with no www token, so the literal row would give 10/10; the D4 www on B2 is a stricter proposed reading, correctly labelled. It matches the comparable Cambridge general note (9709 m16 PDF2): F.T. covers 'work correctly following on from previously incorrect results'; otherwise 'A and B marks are not given for fortuitously \"correct\" answers or results obtained from incorrect working', and 'wrong working following a correct form of answer is ignored' (keeps B1). www penalises shown wrong working, not absent working, so 'wrong law loses B2 / missing derivation keeps B2' is the standard www asymmetry. It also makes the score k-invariant: the same 2^2 or k+2 reasoning already loses B2 at k=1 and k=3 through a wrong product."
+  },
+  {
+   "recipe": "trapezium",
+   "part": "b",
+   "response": "Normal: 'J = 4 × 3.81 = 15.2' only (no factorisation/derivation)",
+   "expected_marks": "b:B1 0, b:B2 1 → b 1/2, 9/10",
+   "design_gives": "b 1/2 (WO :72, :137; D4 report :122)",
+   "ok": true,
+   "basis": "Row 05 B1✓ '6 × their (a)' independent of row 04; D2-S12"
+  },
+  {
+   "recipe": "trapezium",
+   "part": "b",
+   "response": "Changed (3,8,4,3): 'J = 6T = 6(11.5) = 69.0', no log working",
+   "expected_marks": "b 1/2",
+   "design_gives": "1/2 (WO :137, exemplar :89, D4-VIS-MR07, rubric fixture)",
+   "ok": true,
+   "basis": "PDF337 row"
+  },
+  {
+   "recipe": "trapezium",
+   "part": "b",
+   "response": "Normal: shows 2ln((x-1)^2), then J=T^2",
+   "expected_marks": "b 1/2 (B1 kept, wrong scale), 9/10",
+   "design_gives": "9/10 (WO :110)",
+   "ok": true,
+   "basis": "row 04; row 05 needs 2k×own(a)"
+  },
+  {
+   "recipe": "trapezium",
+   "part": "b",
+   "response": "Normal, k=2 read as 3, bare 'J=6T=22.8'",
+   "expected_marks": "gross b:B2 1 (F.T. on misread k); MR deduction falls on b:B2 → b 0/2, 8/10",
+   "design_gives": "8/10 (D4-VIS-MR12)",
+   "ok": true,
+   "basis": "OD-6 principle + MR03-OPS first earned A/B on datum"
+  },
+  {
+   "recipe": "trapezium",
+   "part": "b",
+   "response": "Boundary (1,4,4,1), k=1 read as 2, then '2ln((x-1)^2)=2^2 ln(x-1)', J=4T (scale coincides with misread 2k')",
+   "expected_marks": "gross b:B1 1, b:B2 0 (www); deduct b:B1 → b 0/2, 8/10",
+   "design_gives": "not stated; determined uniquely by WO :72 + MR03",
+   "ok": true,
+   "basis": "own extra probe of www × misread interaction; no contradiction"
+  },
+  {
+   "recipe": "vector",
+   "part": "a+b",
+   "response": "Normal; OB read as (-2,1,-1) throughout; correct work p=-1/4, 118.1",
+   "expected_marks": "6/7 (a:B1 carries MR−1)",
+   "design_gives": "6/7 (WO :91, exemplar :59, D4-VIS-MR01)",
+   "ok": true,
+   "basis": "OD-6; MR03-OPS order"
+  },
+  {
+   "recipe": "vector",
+   "part": "a+b",
+   "response": "Normal; OB read as (-2,1,-1); uses p(OA-OB'), 5p=0, p=0; correct misread-data (b) 118.1",
+   "expected_marks": "a:M1 1; b gross 4; MR−1 on b:B1 (first earned A/B on OB); b:M2 keeps gross dependency → 4/7",
+   "design_gives": "4/7 (WO :113, exemplar :71, D4-VIS-MR10)",
+   "ok": true,
+   "basis": "OD-6 (one mark lost to the misread, one to the named error); MR03-OPS (a),(b)"
+  },
+  {
+   "recipe": "vector",
+   "part": "a+b",
+   "response": "Changed; OA read as (1,-2,1) in (a) and (b)",
+   "expected_marks": "ineligible at first use (no p, canonical has p=-3/4): a 1/3 (M1), b 2/4 (M1,M2) → 3/7, no MR",
+   "design_gives": "3/7 (WO :108, exemplar :66, policy eligibility_notes, D4-VIS-MR11)",
+   "ok": true,
+   "basis": "Eligibility: the misread makes OA'·OC=0, so (pOA'-OB)·OC=3 for every p; the requested object (the unique p) no longer exists, i.e. object/difficulty changed under the binding principle and the MR03-OPS no-solution clause ('removes a solution the canonical question has'). Ledger reason in the JSON says exactly this. Carrying ineligibility into (b) is the prescribed once-only rule (c), applied correctly."
+  },
+  {
+   "recipe": "vector",
+   "part": "a",
+   "response": "Normal; OC read as (1,3,1); correct method p=4/5; (b) correct",
+   "expected_marks": "6/7, deduction at a:A1 (a:B1 does not use OC)",
+   "design_gives": "6/7 (D4-VIS-MR13)",
+   "ok": true,
+   "basis": "MR03-OPS first earned A/B on that datum"
+  },
+  {
+   "recipe": "vector",
+   "part": "b",
+   "response": "Normal; correct question data; learner miscopies own dot as -2",
+   "expected_marks": "own-figure accuracy: b:B1 0, b:A1 0 → 5/7",
+   "design_gives": "5/7 (D4-VIS-MR02)",
+   "ok": true,
+   "basis": "OD-6 own-figure exclusion"
+  },
+  {
+   "recipe": "modulus",
+   "part": "a",
+   "response": "Normal; vertex x-label -3 read as 3; b=-3, c=4, a=-1 from (-1,0)",
+   "expected_marks": "no V fits the misread labels → canonical, c only → 1/3",
+   "design_gives": "1/3 under D4 no-solution clause (determinate)",
+   "ok": true,
+   "basis": "MR03 no-solution exclusion"
+  }
+ ],
+ "findings": [
+  {
+   "id": "visual-D4-01",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:73 (unchanged from D3)",
+   "severity": "note",
+   "expected": "Only the OD-6 principle is credited to the owner; the per-datum unit is MR03-OPS-D4, proposed (as the same WO says at :94 and :110).",
+   "actual": ":73 'Multiple attempts follow D1-MR07; a genuine eligible misread uses OD-6 once-per-datum MR−1 with A/B follow-through, preserving required working.' This credits the once-per-datum unit to OD-6, while :110 says 'The per-datum unit … are proposed operational rules in MR03 … not further owner decisions.'",
+   "evidence": "grep 'once-per-datum' over the visual WOs/exemplars: only this line. The Cambridge PDF3 text has no per-datum unit. Margin: the clause is incidental and the WO's own MR03 paragraph and sources paragraph settle the authority, so no marking outcome changes. Under the D3-S01 standard it could be graded should-fix; I grade it note because nothing is labelled 'owner decision' or 'binding'.",
+   "repair": "Reword to 'a genuine eligible misread follows MR03: the OD-6 MR−1 principle with A/B follow-through, under the proposed MR03-OPS-D4 per-datum mechanics, preserving required working.'"
+  },
+  {
+   "id": "visual-D4-02",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/OWNER-CHECKPOINT.md:38; planning/d4/visual-deviation-rows.json:4-11; work-orders/WB8227-trapezium-sketch-estimate.md:95, :97",
+   "severity": "note",
+   "expected": "The new b:B2 www (a departure from official row 05, which has no www) is recorded as its own named deviation, citing 2023 P2 Q6 AWARD05, and the WO's qualifier/deviation ledger mentions it (D1-MR08).",
+   "actual": "It is filed inside the D1-TRAP-FT-BRIDGE row, whose official_row cell cites only '2023 P2 Q6 AWARD10–11 … 2025 P2 Q4 AWARD05' (not 2023 AWARD05). WO :95 still says 'Row05 retains F.T.' with no mention of the added www, and WO :97 describes D1-TRAP-FT-BRIDGE as 'accepted in OD-5 … The only extension is d:DB1'. The row's status cell correctly separates the parts ('OD-5 DB1 extension accepted; D4 b:B2 interpretation and final plan approval pending'), and it says the clarification is not attributed to OD-1 or OD-5.",
+   "evidence": "Native PDF337 row (b): B1 '3ln(x–2)²'; 'B 1. ✓' '6 × their (a)'; SC1. No www. The labels are correct, so nothing is misattributed. The same deviation ID now means two things with different approval states, and the WO ledger is incomplete.",
+   "repair": "Give the B2 clarification its own deviation ID, or at least cite 2023 P2 Q6 AWARD05 in the row and add one clause at WO :95 ('Row05 retains F.T.; D4 proposes a www condition, see register'). Optionally cite the comparable Cambridge 9709 m16 PDF2 general note ('A and B marks are not given for fortuitously \"correct\" answers or results obtained from incorrect working') as its rationale, labelled comparable-board."
+  },
+  {
+   "id": "visual-D4-03",
+   "recipe": "all three visual recipes",
+   "branch": "all",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/visual-design.json:87-113, :222-248, :304-330, :384-410, :461-487, :787-813, :850-876 (eligibility_notes); checks/plan-repair-d4-report.md:28",
+   "severity": "note",
+   "expected": "Report :28: 'all 27 part policies carry matching common fields, with part-specific scope notes'.",
+   "actual": "The D3 part-specific tails were replaced, not carried over. Modulus a and trapezium a–d have the generic placeholder 'Apply the once-only whole-question eligibility record and the part-specific mathematical/source constraints…'. Vector a and b policies are byte-identical, so the vecrec-D2-06 a/b distinction is gone. The trapezium/modulus/vector WO misread lines likewise lost their per-part sentences (e.g. D3 trapezium :91 '(d) own-graph B1 and dependent same-curve DB1 retain OD-5').",
+   "evidence": "Own JSON scan: 7/7 visual policies match the shared fields; vector a==b True. No outcome changes: the generic rule ('all A/B follow through … M/DM as usual … correct working, named method exclusions and OD-1 still apply') plus the criteria tables reproduce every visual fixture (see recomputations). The report wording overstates the visual parts only.",
+   "repair": "Either restore one-line part notes (e.g. vector a: 'a:B1/a:A1 follow through; dot-zero a:M1 judged normally'), or change report :28 to 'part-specific notes where needed'."
+  },
+  {
+   "id": "visual-D4-04",
+   "recipe": "visual capability references",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/capability-gaps.md:34; recipe-contract.md:162",
+   "severity": "note",
+   "expected": "No bare 'decision 6' remains in the current design files now that OD-6 means the misread rule.",
+   "actual": "capability-gaps.md:34 'Owner decision6 still includes every visual demand with no capability hold.'; recipe-contract.md:162 'Vitalis's decision 6 includes these demands without capability holds.' Both files were changed in D4, but these lines were not. capability-gaps.md:9 names the 16 November record nearby.",
+   "evidence": "grep -E 'decision ?6' over live files (excluding history/review/analysis/tools). The three visual WOs and PLAN.md:74 are fixed. These two locators were not in the D3 note's list, and the context (visual capability) makes them readable.",
+   "repair": "Write '16 November owner decision 6 (visual demands)' at both lines."
+  },
+  {
+   "id": "visual-D4-05",
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:67 (D4 MR03) vs D3 copy planning/history/d3-candidate/…/subject-rules.md:67; work-orders/WB8227-modulus-graph-recovery.md:55, :59",
+   "severity": "later-test",
+   "expected": "An explicit guard that a misread cannot rescue answer-only work. This matters for modulus, where the official exception gives B1 www to bare correct named values.",
+   "actual": "D3 MR03 said 'no MR deduction rescues answer-only work or a supplied-result proof', and D3 relied on it for the modulus bare misread-consistent values case (1/3). D4 MR03 keeps only 'correct working, named method exclusions and OD-1 still apply'.",
+   "evidence": "D3 visual marking test: bare 'a=2, b=3, c=-4' (consistent with a vertex-height misread) → 1/3 citing that clause. Under D4, 'OD-1 still apply' plus 'genuine misread' still points to 1/3, because there is no visible evidence of a misread, but the explicit guard is gone. Shared-rule scope; flagged here for its modulus consequence.",
+   "repair": "Stage E/F fixture: modulus bare values consistent with a label misread score canonically (1/3), with no MR follow-through. Optionally restore the D3 sentence in MR03."
+  },
+  {
+   "id": "visual-D4-06",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-trapezium-sketch-estimate.md:72, :119, :139",
+   "severity": "later-test",
+   "expected": "At k=2, the b:B2 www decision depends on telling a written '2²ln(x−1)' (wrong) from '2·2 ln(x−1)' or '2×2 ln(x−1)' (correct). The E/F marker needs a benefit-of-doubt/pending rule for this.",
+   "actual": "The design covers clear wrong-law working (www) and unreadable uploads (pending, :119). There is no fixture for a legible but ambiguous superscript versus product at k=2, where both readings give the same number.",
+   "evidence": "In all 8 admitted k=2 presentations the wrong and correct scales coincide (own computation). The comparable Cambridge PDF2 note allows the benefit of the doubt when genuinely in doubt.",
+   "repair": "Add an E/F fixture: an ambiguous '2 2 ln(x−1)' notation at k=2 is either pending clarification or benefit of the doubt (B2 kept). State which."
+  }
+ ],
+ "verified_ok": [
+  "Native row 04/05 read: B1 for '3ln(x–2)²' alone and 'B 1. ✓ 6 × their (a)'; the design keeps B1 for the factorised square in every location and adds the B2 www only as a labelled proposed clarification. No live file still says b:B1=0 or cites OD-1/OD-5 for it.",
+  "The 'wrong law loses B2 / missing derivation keeps B2' reading is coherent: standard www semantics, the comparable Cambridge PDF2 'fortuitously correct' rule and 'marks once gained cannot be lost' rule, and k-invariant scoring.",
+  "Vector 6/7, 4/7 and 3/7 recomputed criterion by criterion from WO :63-69 with my own MR03 ledger; the eligibility reasoning for the no-p case is consistent with the binding principle and the MR03-OPS no-solution clause.",
+  "All 7 visual misread_policy objects equal the shared MR03-D4 fields (owner_principle, operational_rules, status 'proposed', feedback, ledger_fields, sources) and are identical across visual-design.json, pilot-design.json and part-evidence-register.json. All carry 'Practice feedback names the misread.' (the D3 gap was 7/7).",
+  "The exact shared MR03 line is present at modulus WO :59, trapezium WO :91 and vector WO :94; no stale D3 phrasing ('do not defer', 'first-use part (earliest', 'never deferred') remains in live visual files.",
+  "15/15 ledgers and 16/16 rubric fixtures agree with my own scoring; the 6 D4-new ledgers (MR10–MR14, S04) were all recomputed.",
+  "Pilot-design copies: every key shared with visual-design.json is equal for all three visual recipes (pilot adds only derived fields); origin_design_input_sha256 2e7fd254… equals the current visual-design.json.",
+  "No tariff, criterion set or domain changed D3→D4: the visual-design.json diff is status/version text, misread_policy, b:B2 required text + qualifiers (FT,www,D4-proposed) and the scale-slip fixture text. Domain-check JSON differs only in its version string; exemplar oracle and rounding fixtures are byte-identical; the admitted sets equal my enumeration (30/44/30).",
+  "Exemplars recompute at marked precision: trapezium 3.81/15.2, 11.5/69.0, 3.98/7.97 (3 s.f. half-up); vector 61.9, 104.3, 90; modulus coefficients and all labels.",
+  "Cambridge is labelled a comparable board, never Namibian, in all six visual documents; the source hashes of the NSSCAS 2025 report and 9709_m16_ms_12.pdf match visual-design.json.",
+  "The live plan-manifest pins match the current bytes of the visual WOs, exemplars, visual/pilot design JSON, part register, subject-rules, shared policy, visual D4 checks and dispositions (manifest sha256 71ee10b6…). The visual D4 disposition file_hashes match the current files.",
+  "Modulus WO :45 stale 'bind every row' is fixed; the decision-6 rename in the three visual WOs is unambiguous.",
+  "visual-D3-05 (modulus redundant-label and trapezium strip-count eligibility) is carried as a named E/F fixture (visual-d4-independent-checks.json eligibility_limits; report :132), not silently settled."
+ ],
+ "not_checked": [
+  "Codex's scripts were not run (repair-visual.py, build-visual-dispositions.py, visual-*.py); misread_ledger.py was read but not imported. All checks used my own code: SCRATCH/visual/recompute.py, ledgers.py, policies.py.",
+  "Shared MR03 wording and register rows beyond their visual consequences; calculus, trig and motion misread lines (other agents).",
+  "Static SVG/PNG assets were not re-viewed. They are outside the D3→D4 changed-file list, so their bytes are unchanged.",
+  "Runtime marking, rendering, generation, app/MCP (none exists).",
+  "The E/F eligibility edge cases for modulus redundant labels and trapezium strip count (deliberately left open by D4)."
+ ]
+}

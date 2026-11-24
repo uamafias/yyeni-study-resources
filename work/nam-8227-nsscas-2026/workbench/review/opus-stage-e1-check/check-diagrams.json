@@ -1,0 +1,222 @@
+{
+ "checker": "diagrams",
+ "scope": "Generated diagram SVG bytes and geometry, E0 (old candidate fcd4b71e07baa07a == E0WB source/assets) vs E1 (live CWB/source/assets and new candidate af6f77e940430033): SE-05 modulus labels (44), SE-06 log-graph labels and origin 0 (270), all other changed assets (trapezium solutions), diagram data vs parameters, candidate asset consistency. Text/maths outside diagrams not checked.",
+ "method": [
+  "Enumerated every instance of every choice in E1 source and E0 old candidate via provider.generate_at; mapped 358 asset refs -> 326 distinct SHA-named SVGs per side (270 log, 44 modulus, 4 trapezium question, 8 trapezium solution) [work-diagrams/dg_enum.py]",
+  "Own geometry test written from scratch (no generator or Codex checker code): xml parse of emitted SVG; two label boxes per text: conservative (width max(0.6 em x chars, Arial advance), height baseline-0.76em..+0.22em, anchor-aware) and ink (FreeType Arial.ttf glyph bbox measured with PIL at 20x); clearances via orientation-test segment/box intersection and point/segment distances minus half stroke width; modulus arms clipped to the plot clipPath [geom.py]",
+  "SE-05: check_modulus.py on 44 E0 + 44 E1: label boxes vs arms, axes, dots, other labels/key text, foreign leaders; nearest-dot association (box-to-point); leader joining; outside-the-V and y-axis-side tests; data refit (equal-unit affine map of the 4 parameter points onto circles, axes crossing, path vertices on y=a|x+b|+c, coordinate key == parameters)",
+  "SE-05 render cross-check: pixel_mod.py recolours point labels red, renders 88 SVGs with qlmanage (2.1x), measures pixel gap to blue arm ink and dark ink",
+  "SE-06: check_log.py on 270 E0 + 270 E1: coordinate-label box-to-dot distance own vs other (box and centre), boxes vs line, axes, both dots, origin 0, other label, axis text, viewport; origin 0 box vs line/axes/dots; data refit (labels == (x, p x+p+L) exactly, dots proportional to coordinates about the axes crossing, line endpoints on the model, dots on the line); log_extra.py for origin-0 placement and association ratios",
+  "SE-06 render cross-check: pixel_log.py recolours origin 0 red and coordinate labels green, renders 540 graphs through an HTML wrapper with qlmanage (1.57x), measures pixel gaps to line/dots and axes",
+  "Rendered and viewed: E1 modulus 4, 19, 35, 30, 8 (3 worst by conservative margin), 5, 37, 24 plus E0 5, 37; E1 log 45-62 and 132 (contact sheets), 117, 120, 165, 212, 64, 158, 78 and E0 132/45/120 side-by-side; idx 120, 165, 117, 78 full size; all 8 trapezium solution SVGs E0 vs E1 plus 3x zoom of width-1 strips",
+  "diff_assets.py: element-level E0->E1 diff of all 358 instance assets, metadata (params, diagram_parameters, must_read_givens, alt, target_part_ids) diff, trapezium data recomputation for all 22 question + 22 solution SVGs on both sides",
+  "resolve.py: every asset ref resolved through asset_for_instance in source and in candidate af6f77e940430033 (solution role checked blocked before reveal); candidate manifest hashes recomputed for all 386 files",
+  "All runs: PYTHONDONTWRITEBYTECODE=1 python3 -B from SP/work-diagrams; nothing written inside C (no __pycache__ found)"
+ ],
+ "counts": {
+  "svg_assets_per_side": 326,
+  "asset_refs_per_side": 358,
+  "changed_assets": {
+   "log-linear-model:question": 270,
+   "modulus-graph-recovery:question": 44,
+   "trapezium-sketch-estimate:solution": 8
+  },
+  "unchanged_assets": {
+   "trapezium-sketch-estimate:question": 4
+  },
+  "changed_total": 322,
+  "modulus": {
+   "e0_label_box_crossed_by_arm": 35,
+   "e1_label_box_crossed_by_arm": 0,
+   "e1_any_label_overlap_conservative": 0,
+   "e1_any_label_overlap_ink": 0,
+   "e1_labels_nearest_own_dot": "152/152",
+   "e1_labels_joined_by_leader": "152/152",
+   "e1_min_conservative_clearance_px": 5.06,
+   "e1_min_ink_clearance_px": 5.06,
+   "e1_min_label_assoc_margin_px": 20.1,
+   "e1_pixel_min_gap_to_arm_render_px": ">12 (all 44)",
+   "e0_pixel_label_touching_arm": 32,
+   "e0_pixel_label_within_2_5px_of_arm": 3,
+   "e1_zero_labels_inside_V": 2,
+   "e0_zero_labels_inside_V": 33,
+   "e1_data_issues": 0
+  },
+  "log": {
+   "e0_wrong_association_ink_box": 12,
+   "e0_origin_struck": 18,
+   "e0_union": 28,
+   "e0_wrong_association_conservative_box": 25,
+   "e0_origin_struck_conservative": 19,
+   "e1_wrong_association_box_ink": 0,
+   "e1_wrong_association_box_conservative": 0,
+   "e1_centre_nearer_other_dot_ink": 1,
+   "e1_origin_struck": 0,
+   "e1_label_overlaps_any": 0,
+   "e1_min_clearance_conservative_px": 3.61,
+   "e1_min_clearance_ink_px": 4.19,
+   "e1_pixel_origin_touching_line": 0,
+   "e0_pixel_origin_touching_line": 18,
+   "e1_data_issues": 0,
+   "e1_rows_with_coordinate_label_moved": 103,
+   "e1_rows_with_origin_moved": 270
+  },
+  "trapezium": {
+   "solution_svgs_changed": 8,
+   "chord_lines_restyled": 64,
+   "geometry_changes": 0,
+   "data_checks_passed": "88/88",
+   "binding_change": "solution asset c -> c,d on 22/22 instances"
+  },
+  "candidate_af6f": {
+   "asset_files": 326,
+   "byte_identical_to_source_assets": 326,
+   "manifest_files": 386,
+   "manifest_hash_mismatches": 0,
+   "asset_refs_resolved": 358
+  }
+ },
+ "items": {
+  "SE-05": {
+   "verdict": "fixed",
+   "evidence": "Own test reproduces E0 defect exactly: 35/44 E0 SVGs have a point-label box crossed by an arm (idx 0-25, 28, 30-32, 35, 37-40; includes 4 and 19); pixel render confirms 32 touching + 3 grazing (idx 5, 37, 40 within 2-5 render px). E1: 0/44 with any overlap of a label (conservative or ink box) with an arm, axis, dot, other label, key text or foreign leader; minimum clearance 5.06 px (idx 35); pixel gap from label ink to arm/axes/dots >12 render px (>5.7 SVG px) in all 44. All 152 labels are nearest their own dot (min margin 20.1 px) and all 152 have a 10-18 px leader starting at their own dot, ending 2.8-3.5 px short of the label, crossing no arm, axis or other label. Rendered idx 4, 19, 35, 30, 8 (and 5, 37, 24): every label sits clear of the arms on the open side, leaders read unambiguously. Data unchanged: key == parameters, dots/path recomputed on all 44. Residual note: zero labels inside the V in idx 5 (R) and 37 (L) (see diagrams-E1-02)."
+  },
+  "SE-06": {
+   "verdict": "partly-fixed",
+   "evidence": "Own test reproduces E0 exactly with real-glyph boxes: 12 wrong associations (6, 24, 51, 60, 75, 78, 105, 114, 132, 159, 168, 222) + 18 struck origin labels (45-62) = 28 distinct rows; pixel render confirms the same 18. E1: 0/270 labels nearer the wrong dot by box-to-point distance (both box models); 0/270 origin 0 struck by line or axes (vector and pixel); 0 label overlaps with line, dots, axes, origin 0, other label, axis text; all inside the viewport; data unchanged. idx 132 now has (4, -0.25) under its own dot; idx 45-62 origin 0 clear. BUT idx 120 (unchanged from E0, not in the named 12) keeps '(3, -1)' equidistant from both dots (centre 118.9 own vs 118.7 other; box 79.4 vs 82.7), sitting in the gap below the segment: it fails the centre-distance half of Codex's own stated rule when measured on real glyphs, because the generator sizes labels at 17 px/char (127 px) against a real Arial advance of 74.6 px. See diagrams-E1-01."
+  },
+  "SE-01": {
+   "verdict": "n/a",
+   "evidence": "outside diagram scope"
+  },
+  "SE-02": {
+   "verdict": "n/a",
+   "evidence": "outside diagram scope (no diagram text changed except label positions)"
+  },
+  "SE-03": {
+   "verdict": "n/a",
+   "evidence": "outside diagram scope"
+  },
+  "SE-04": {
+   "verdict": "n/a",
+   "evidence": "outside diagram scope"
+  },
+  "SE-07": {
+   "verdict": "n/a",
+   "evidence": "outside diagram scope"
+  },
+  "SE-08": {
+   "verdict": "n/a",
+   "evidence": "outside scope"
+  },
+  "SE-09": {
+   "verdict": "n/a",
+   "evidence": "outside scope"
+  },
+  "SE-10": {
+   "verdict": "n/a",
+   "evidence": "outside scope"
+  },
+  "SE-11": {
+   "verdict": "n/a",
+   "evidence": "outside scope"
+  },
+  "SE-12": {
+   "verdict": "n/a",
+   "evidence": "outside scope (learner asset refs are SHA-only; unaffected)"
+  },
+  "SE-13": {
+   "verdict": "n/a",
+   "evidence": "outside scope"
+  },
+  "note visual-E-N1 (trapezium solution binding)": {
+   "verdict": "fixed",
+   "evidence": "All 22 trapezium solution assets now target parts c and d (was c only); solution asset still blocked before reveal in asset_for_instance (22/22) and absent from unrevealed learner projection."
+  },
+  "note visual-E-N7 (narrow-strip chords)": {
+   "verdict": "partly-fixed (note only)",
+   "evidence": "Style-only change: 64 chord lines in 8 SVGs #16835c solid -> #087f55 dashed '6 3'; chord geometry byte-identical. First strip chord now clearly visible; on width-1 strips (L=4, n=4) chords 2-4 still lie within the 3 px curve stroke at native size, visible as dashes only when zoomed."
+  }
+ },
+ "findings": [
+  {
+   "id": "diagrams-E1-01",
+   "severity": "should-fix",
+   "selection_id": "8227:D:SEL:log-linear-model:graph-intercept",
+   "domain_index": 120,
+   "locator": "source/assets/9d56105ce982a7d55c985f4b2d60e480437f4d5e28d50fc4753a5a5e2f85a407.svg line 14 '<text x=\"702.8776\" y=\"395.6364\">(3, -1)</text>' (same bytes in candidates/af6f77e940430033/assets/); placement rule source/groups/trig_log.py _graph_svg (tw=17*len(label)+8; _belongs_to_point)",
+   "expected": "SE-06 rule 'reject a label position that sits nearer the other point than its own'; Codex's stated rule: label closer to its own dot by both rectangle and centre distance. The '(3, -1)' label should sit clearly beside its own dot (853.9, 353.6).",
+   "actual": "Real Arial glyph box [702.9, 375.2, 777.5, 401.5]: centre-to-dot 118.9 own vs 118.7 other (nearer the WRONG dot (2, -0.5) at (648.8, 312.7)); box-to-dot 79.4 own vs 82.7 other (4% margin). Render (render/i120/full-120.png): '(3, -1)' sits below the segment midway between the dots, and '(2, -0.5)' sits above the x-axis, also in the gap between the dots, so neither label is beside its dot; proximity cannot tell a learner which dot '(3, -1)' labels, and by centre it points marginally to the wrong one. The layout is byte-identical in E0 (pre-existing, not among the review's 12, which used box distance only); the generator passes it because its 17 px/char box (127 px) is 1.7x the real advance (74.6 px) and extends towards the own dot. Mathematical impact nil (the gradient from two labelled points is order-independent), but the labels are must-read givens (WO:56) and this is the SE-06 defect class. Same pattern, tighter but not tied: idx 165 '(3, -1)' (centre 118.9 vs 125.4, box 79.4 vs 90.6) and idx 117 '(2, -0.5)' (centre 140.4 vs 145.3, box 89.7 vs 98.3); on their own these are notes, but one fix clears all three.",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 -B /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/repro_idx120.py ; full sweep: PYTHONDONTWRITEBYTECODE=1 python3 -B /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/check_log.py (E1 ink 'centre nearer other' = [120]; smallest ink box margins 120: 3.3 px, 117: 8.6 px, 165: 11.2 px); renders /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/i120/full-120.png, full-165.png, full-117.png",
+   "basis": "SE-06 minimal correction (findings.md:54); approved log WO:56 exact labelled coordinates are must-read givens; Codex e1-trig-report.md SE-06 row claim",
+   "minimal_correction": "In _graph_svg measure label width from real glyph advances (Arial 28 px is about 0.56 em for digits; or 0.6 em/char anchored at the text start) instead of 17 px/char, and require a clear margin (for example own box/centre distance <= 0.8 x other, or prefer offsets beside the own dot). Regenerate the affected graph assets only; idx 117, 120, 165 then move. No data, score or ID change."
+  },
+  {
+   "id": "diagrams-E1-02",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:modulus-graph-recovery:vertex-intercepts",
+   "domain_index": 5,
+   "locator": "E1 assets b82c77cfa256b027...8308.svg (idx 5, label R) and beb081877d163a3c...73ed.svg (idx 37, label L)",
+   "expected": "WO:41 'Place zero labels outside the V with leader lines when needed'",
+   "actual": "In idx 5 (a=-3, b=3, d=2) the R label is below the axis between the arms (inside the inverted V); in idx 37 (a=3, b=-3, d=2) the L label is above the axis between the arms (inside the V). Both have their own 10-18 px leader, are nearest their own dot (no ambiguity) and touch nothing; both sit where an outside position is blocked by the nearby y-axis/Y point. E0 had 33/44 rows with a zero label inside the V, so this is improved, not worsened.",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 -B /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/check_modulus.py ; renders /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/mod/sheet-1.png (e1-mod-05) and sheet-2.png (e1-mod-37)",
+   "basis": "approved modulus WO:41",
+   "minimal_correction": "Optional: allow a longer leader so these two labels reach the outside region."
+  },
+  {
+   "id": "diagrams-E1-03",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:log-linear-model:graph-intercept",
+   "domain_index": 45,
+   "locator": "origin '0' text in all 270 E1 log SVGs",
+   "expected": "origin label clear of line/axes and reading as the origin",
+   "actual": "Every origin 0 moved (all 270 SVGs). It is now clear in all 270, but sits further from the origin: ink-box distance 26.2 px by default (E0 <= 12.2 px), 43.8-46.0 px in idx 45-49, 51, 54-61, and in 17 rows (45-49, 51, 54-62, 68, 70) its box is nearer the line's x-intercept than the origin (E0: 2 rows). Viewed idx 45-62: it still reads as the origin label.",
+   "evidence": "PYTHONDONTWRITEBYTECODE=1 python3 -B /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/log_extra.py ; /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/log/p-e1-0..3.html.png",
+   "basis": "SE-06 origin-label correction",
+   "minimal_correction": "none required"
+  },
+  {
+   "id": "diagrams-E1-04",
+   "severity": "note",
+   "selection_id": "8227:D:SEL:trapezium-sketch-estimate:logarithmic-hence-chain",
+   "domain_index": 3,
+   "locator": "trapezium solution SVGs (8 distinct), chord <line> elements",
+   "expected": "clearer narrow-strip chords (visual-E-N7)",
+   "actual": "Only the chord style changed (64 lines: colour #16835c -> #087f55, add stroke-dasharray '6 3'); all coordinates byte-identical. On width-1 strips (h=1 or 3, L=4, n=4; e.g. idx 3) chords 2-4 still lie within the 3 px curve stroke at native size. Chords now share the dashed convention with the red '7 5' asymptote; colour and slope keep them distinct.",
+   "evidence": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/diff-assets.json element_diff_kinds; /private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/trap/t-0.html.png and zoom-chords.png",
+   "basis": "visual-E-N7 note",
+   "minimal_correction": "none required"
+  }
+ ],
+ "confirmed": [
+  "Asset universe: 326 SVG files per side, all referenced, asset-index.json 326 entries keyed by true SHA-256 (318 question, 8 solution); 322 changed (270 log, 44 modulus, 8 trapezium solution), 4 trapezium question frames byte-identical",
+  "Every changed asset belongs to a named repair: modulus = SE-05 (only point-label text positions/anchors changed + 152 leader lines added); log = SE-06 (only origin 0 position in 270 and 113 coordinate-label positions in 103 SVGs; label text, desc, axes, line, dots unchanged); trapezium solution = visual-E-N7 note (chord style only). No other element, alt text, must-read givens or diagram_parameters changed; only metadata change is the trapezium solution binding c -> c,d (visual-E-N1), 22/22",
+  "Diagram data recomputed from parameters, E0 and E1: modulus 44/44 (key == V(-b,-ad), L(-b-d,0), R(-b+d,0), Y(0,a|b|-ad); dots fit one equal-unit map with residual < 0.01 px; axes cross at fitted origin; path corner = V and vertices on y=a|x+b|+c); log 270/270 (labels exactly (x_i, p x_i + p + L) as decimals; dots proportional about the axes crossing; line endpoints on the model; dots on the line); trapezium 44/44 per side (asymptote dashed at x=h, curve on ln(x-h) within 0.01, intercept dot and '(h+1, 0)', n chords at nodes h+1+jL/n with ordinates ln(x-h), chords below curve, last vertical and end label at h+1+L)",
+  "SE-05 E1: 0/44 overlaps; 152/152 labels nearest own dot and joined by leaders; leaders cross no arm, axis or other label; pixel render gap > 12 render px in all 44; E0 test catches 35/44 including idx 4 and 19",
+  "SE-06 E1: 0/270 wrong association by box-to-point distance (ink and conservative); 0/270 origin struck (vector and pixel); E0 test catches exactly 12 + 18 = 28 distinct rows including 132 and 45",
+  "Candidate af6f77e940430033: 326 asset files byte-identical to source/assets, filenames equal SHA-256, asset-index.json/provider.py/groups identical to source; all 386 manifest hashes match; manifest sha256 126850d0...61de matches checks/stage-e/candidate.json and the repair report; 358/358 asset refs resolve through asset_for_instance in both source and candidate; solution role refused before reveal 22/22; no unrevealed learner projection carries a solution asset"
+ ],
+ "not_checked": [
+  "Actual app/web rendering; qlmanage (WebKit) thumbnails and FreeType Arial metrics stand in for the runtime renderer",
+  "Text and maths outside the SVGs (stems, steps, criteria, alt text wording) - other checkers",
+  "Vector-geometry recipe has no diagrams; trapezium question frames unchanged and only data-checked",
+  "Codex's own checkers (e1-visual-check.py, e1-trig-check.py) were not rerun or reused; this test is independent",
+  "Accessibility rendering of desc/alt beyond confirming the bytes are unchanged"
+ ],
+ "artifacts": {
+  "work_dir": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams",
+  "modulus_geometry": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/modulus-geom.json",
+  "log_geometry": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/log-geom.json",
+  "log_extra": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/log-extra.json",
+  "pixel_modulus": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/pixel-modulus.json",
+  "pixel_log": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/pixel-log.json",
+  "asset_diff": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/diff-assets.json",
+  "resolve": "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/resolve.json",
+  "renders": [
+   "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/mod",
+   "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/log",
+   "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/i120",
+   "/private/tmp/claude-501/-Users-professor-Documents-YYeni-Study-Resources/0bce7c20-97ba-4569-bdd3-060410c88269/scratchpad/e1/work-diagrams/render/trap"
+  ]
+ }
+}

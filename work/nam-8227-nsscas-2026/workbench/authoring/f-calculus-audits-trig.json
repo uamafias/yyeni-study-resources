@@ -1,0 +1,696 @@
+{
+  "schema": "8227-stage-f-other-group-author-audit-v1",
+  "date": "2026-11-24",
+  "auditor": "Codex calculus author auditing trig/log group; same-vendor author verification, not Stage-G independent acceptance",
+  "status": "pass named resource-author scope",
+  "counts": {
+    "generated_rows_mathematically_checked": 395,
+    "branches": {
+      "degree-cycle": 58,
+      "solve-or-explain": 47,
+      "graph-intercept": 270,
+      "gradient-target": 20
+    },
+    "submission_expectations_checked": 26,
+    "pending_clarification_fixtures": 4,
+    "native_source_and_award_page_images_read": 8,
+    "graph_pngs_visually_read": 3,
+    "principal_outcomes": {
+      "no-real": 24,
+      "real": 23
+    }
+  },
+  "input_sha256": {
+    "source/groups/trig_log.py": "a1e56857e0b08cb77ec5dfd78361f7413daf142e6378e09dc209777810b36709",
+    "source/domains/trig_log.json": "66865ee51662fa4014310461e86e188172e02c53a8764969e94e9a2baa5870c8",
+    "authoring/trig-log-marking-fixtures.json": "4940578b20517547730e071ecbc6fe79fc1f49f9469fa915ad35beb022825599",
+    "work-orders/WB8227-principal-inverse.md": "f5864d4130af219d8cba6c4e6c975095f479db796c94efb01bcc2a0fc646bc47",
+    "work-orders/WB8227-trig-rform-equation.md": "5b346b4e45995f08215395d32650bbfa74819eff3c57bec2114d147ea516cdea",
+    "work-orders/WB8227-log-linear-model.md": "9b2618152a11c2404f67f691bd7880d5308bf356fbaf4b7328d5f093165a64ac",
+    "planning/trig-model-design.json": "5f66c76a7fae184e0c7339fca8797323df3e91a53fb70367faaeded2cdbf01dd"
+  },
+  "findings": [],
+  "fixture_adjudications": [
+    {
+      "fixture_id": "PI-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "P-B1",
+        "P-M1",
+        "P-A1"
+      ],
+      "independently_expected_net_marks": 3,
+      "reason": "Actual target comparison, exact forward sine recovery and exact unknown all shown."
+    },
+    {
+      "fixture_id": "PI-no-applied-range",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "P-M1",
+        "P-A1"
+      ],
+      "independently_expected_net_marks": 2,
+      "reason": "Rote range line is not applied to the target: no B1. Forward method and exact solution survive."
+    },
+    {
+      "fixture_id": "PI-bare-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": 0,
+      "reason": "OD-1: bare exact value has no demonstrated inverse reasoning."
+    },
+    {
+      "fixture_id": "PI-wrong-accepts-forward-candidate",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": 0,
+      "reason": "For this outside target, forward sine alone neither proves obstruction nor verifies a valid inverse solution."
+    },
+    {
+      "fixture_id": "PI-forced-contradiction",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "P-B1",
+        "P-M1",
+        "P-A1"
+      ],
+      "independently_expected_net_marks": 3,
+      "reason": "Sine forces the sole candidate; its actual principal inverse differs from the target. Complete accepted contradiction."
+    },
+    {
+      "fixture_id": "PI-ambiguous-sign",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": null,
+      "reason": "Unreadable sign remains pending clarification; no guessed zero grade."
+    },
+    {
+      "fixture_id": "RF-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "a-B1",
+        "a-M1",
+        "a-A1",
+        "b-M1",
+        "b-M2",
+        "b-A1",
+        "b-A2"
+      ],
+      "independently_expected_net_marks": 7,
+      "reason": "Amplitude sqrt13 and acute phase atan(3/2) correct; complete stated shifted-root search yields107.6 and319.8degrees."
+    },
+    {
+      "fixture_id": "RF-only-one-original-root",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "a-B1",
+        "a-M1",
+        "a-A1",
+        "b-M1",
+        "b-A1"
+      ],
+      "independently_expected_net_marks": 5,
+      "reason": "One correct original root may earn its A1 without M2; complete-set method and other-root award absent."
+    },
+    {
+      "fixture_id": "RF-extra-final-angle",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "a-B1",
+        "a-M1",
+        "a-A1",
+        "b-M1",
+        "b-M2",
+        "b-A1"
+      ],
+      "independently_expected_net_marks": 6,
+      "reason": "An uncancelled extra distinct coterminal final value loses second-root A2 only; completed method survives."
+    },
+    {
+      "fixture_id": "RF-non-hence",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "a-B1",
+        "a-M1",
+        "a-A1"
+      ],
+      "independently_expected_net_marks": 3,
+      "reason": "Independent tangent-half-angle route does not meet restricted hence part; no borrowed SC from other types."
+    },
+    {
+      "fixture_id": "RF-bare-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": 0,
+      "reason": "OD-1 applies separately to both parts; correct unworked conversion/root values earn0."
+    },
+    {
+      "fixture_id": "RF-ambiguous-root",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": null,
+      "reason": "Illegible final root remains pending clarification, not an assumed wrong value."
+    },
+    {
+      "fixture_id": "GRAPH-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "G-B1",
+        "G-M1",
+        "G-A1",
+        "G-M2",
+        "G-A2"
+      ],
+      "independently_expected_net_marks": 5,
+      "reason": "Correct log line, slope(2.5-1.5)/(3-1)=1/2, coordinate substitution lnA=1/2 and A=exp(1/2)."
+    },
+    {
+      "fixture_id": "GRAPH-omits-offset",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "G-M1",
+        "G-A1",
+        "G-M2"
+      ],
+      "independently_expected_net_marks": 3,
+      "reason": "Wrong transformed line loses B1; correct gradient and coherent dependent substitution retain M1/A1/DM1, while A=e is noncanonical."
+    },
+    {
+      "fixture_id": "GRAPH-simultaneous",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "G-B1",
+        "G-M1",
+        "G-A1",
+        "G-M2",
+        "G-A2"
+      ],
+      "independently_expected_net_marks": 5,
+      "reason": "Coordinate equations imply correct line and solve p=1/2, lnA=1/2; accepted exclusive five-slot alternative."
+    },
+    {
+      "fixture_id": "GRAPH-wrong-parameter-reading",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": 0,
+      "reason": "Coordinate reading as unknown parameters without log-line working supplies no criterion evidence."
+    },
+    {
+      "fixture_id": "GRAPH-ambiguous-coordinate",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": null,
+      "reason": "Ambiguous copied ordinate requires clarification before deciding misread or arithmetic."
+    },
+    {
+      "fixture_id": "TARGET-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "T-B1",
+        "T-M1",
+        "T-A1",
+        "U-M1",
+        "U-A1"
+      ],
+      "independently_expected_net_marks": 5,
+      "reason": "Base2 gradient gives log2a=3,a=8; hence10=8+3x gives exact2/3."
+    },
+    {
+      "fixture_id": "TARGET-consistent-earlier-omission",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "T-M1",
+        "T-A1",
+        "U-M1"
+      ],
+      "independently_expected_net_marks": 3,
+      "reason": "Earlier missing-prefactor equation loses B1 but gradient and a survive; consistent reuse permits U-M1 FT, not canonical U-A1."
+    },
+    {
+      "fixture_id": "TARGET-new-prefactor-omission",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "T-B1",
+        "T-M1",
+        "T-A1"
+      ],
+      "independently_expected_net_marks": 3,
+      "reason": "Correct earlier model followed by a newly dropped prefactor is a new substitution error, not FT."
+    },
+    {
+      "fixture_id": "TARGET-ln-alternative",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "T-B1",
+        "T-M1",
+        "T-A1",
+        "U-M1",
+        "U-A1"
+      ],
+      "independently_expected_net_marks": 5,
+      "reason": "ln route correctly divides its slope by ln2 to match plotted base; exact a and target x follow. No extra change-of-base coverage claimed."
+    },
+    {
+      "fixture_id": "TARGET-bare-correct",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": 0,
+      "reason": "OD-1: bare a and x have no method evidence in either part."
+    },
+    {
+      "fixture_id": "TARGET-ambiguous-prefactor",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [],
+      "independently_expected_net_marks": null,
+      "reason": "Need the earlier visible line to distinguish valid consistent FT from a new substitution omission."
+    },
+    {
+      "fixture_id": "PI-eligible-scaling-misread",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "P-B1",
+        "P-M1",
+        "P-A1"
+      ],
+      "independently_expected_net_marks": 2,
+      "reason": "k4read5 preserves exact principal-range/recovery demand. Gross3, first earned A/B in first-use part P-B1 deducts once, even though range criterion value unaffected."
+    },
+    {
+      "fixture_id": "PI-designed-no-real-sign-misread",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "P-B1",
+        "P-M1",
+        "P-A1"
+      ],
+      "independently_expected_net_marks": 2,
+      "reason": "Target sign misread retains the designed no-real outcome and range difficulty: gross3 then one MR03 deduction from P-B1."
+    },
+    {
+      "fixture_id": "TARGET-prefactor-misread",
+      "verdict": "agrees",
+      "independently_expected_gross_ids": [
+        "T-B1",
+        "T-M1",
+        "T-A1",
+        "U-M1",
+        "U-A1"
+      ],
+      "independently_expected_net_marks": 4,
+      "reason": "c1read3 preserves supplied-model demand. a remains8, x=(10-24)/3=-14/3; gross5 under eligible FT, deduct earliest T-B1 once."
+    }
+  ],
+  "sample_output_receipts": [
+    {
+      "branch_id": "degree-cycle",
+      "index": 0,
+      "parameters": {
+        "a": 1,
+        "b": 2,
+        "c": -2
+      },
+      "stem": "Angles are in degrees. Show your working in both parts.",
+      "part_prompts": [
+        "Express $\\sin\\theta+2\\cos\\theta$ as $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $R$ exactly and $\\alpha$ to two decimal places.",
+        "Hence solve $\\sin\\theta+2\\cos\\theta=-2$ for $0^\\circ<\\theta<360^\\circ$. Give all solutions to one decimal place."
+      ],
+      "canonical_answers": [
+        "$\\sqrt{5}\\sin(\\theta+63.43^\\circ)$.",
+        "$\\theta=180.0^\\circ$ or $\\theta=233.1^\\circ$."
+      ],
+      "help": {
+        "title": "Keep the coefficient order and the interval",
+        "prompts": [
+          "Expand the requested sine form and compare its two coefficients.",
+          "After converting, write down the shifted interval before looking for every root.",
+          "Keep unrounded values in the calculation and round only the requested answers."
+        ]
+      }
+    },
+    {
+      "branch_id": "degree-cycle",
+      "index": 29,
+      "parameters": {
+        "a": 3,
+        "b": 1,
+        "c": -1
+      },
+      "stem": "Angles are in degrees. Show your working in both parts.",
+      "part_prompts": [
+        "Express $3\\sin\\theta+\\cos\\theta$ as $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $R$ exactly and $\\alpha$ to two decimal places.",
+        "Hence solve $3\\sin\\theta+\\cos\\theta=-1$ for $0^\\circ<\\theta<360^\\circ$. Give all solutions to one decimal place."
+      ],
+      "canonical_answers": [
+        "$\\sqrt{10}\\sin(\\theta+18.43^\\circ)$.",
+        "$\\theta=180.0^\\circ$ or $\\theta=323.1^\\circ$."
+      ],
+      "help": {
+        "title": "Keep the coefficient order and the interval",
+        "prompts": [
+          "Expand the requested sine form and compare its two coefficients.",
+          "After converting, write down the shifted interval before looking for every root.",
+          "Keep unrounded values in the calculation and round only the requested answers."
+        ]
+      }
+    },
+    {
+      "branch_id": "degree-cycle",
+      "index": 57,
+      "parameters": {
+        "a": 4,
+        "b": 3,
+        "c": 2
+      },
+      "stem": "Angles are in degrees. Show your working in both parts.",
+      "part_prompts": [
+        "Express $4\\sin\\theta+3\\cos\\theta$ as $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $R$ exactly and $\\alpha$ to two decimal places.",
+        "Hence solve $4\\sin\\theta+3\\cos\\theta=2$ for $0^\\circ<\\theta<360^\\circ$. Give all solutions to one decimal place."
+      ],
+      "canonical_answers": [
+        "$5\\sin(\\theta+36.87^\\circ)$.",
+        "$\\theta=119.6^\\circ$ or $\\theta=346.7^\\circ$."
+      ],
+      "help": {
+        "title": "Keep the coefficient order and the interval",
+        "prompts": [
+          "Expand the requested sine form and compare its two coefficients.",
+          "After converting, write down the shifted interval before looking for every root.",
+          "Keep unrounded values in the calculation and round only the requested answers."
+        ]
+      }
+    },
+    {
+      "branch_id": "solve-or-explain",
+      "index": 0,
+      "parameters": {
+        "k": 2,
+        "theta": "-pi"
+      },
+      "stem": "All angles are in radians. Show your working.",
+      "part_prompts": [
+        "Solve $\\sin^{-1}(2x)=-\\pi$, giving an exact solution, or explain why it has no real solution."
+      ],
+      "canonical_answers": [
+        "There is no real solution."
+      ],
+      "help": {
+        "title": "Check the inverse relation",
+        "prompts": [
+          "What values can a principal inverse sine take? Apply that fact to the given target.",
+          "If you take sine, check the resulting candidate in the original inverse equation.",
+          "Keep exact values until the final answer."
+        ]
+      }
+    },
+    {
+      "branch_id": "solve-or-explain",
+      "index": 23,
+      "parameters": {
+        "k": 4,
+        "theta": "-pi"
+      },
+      "stem": "All angles are in radians. Show your working.",
+      "part_prompts": [
+        "Solve $\\sin^{-1}(4x)=-\\pi$, giving an exact solution, or explain why it has no real solution."
+      ],
+      "canonical_answers": [
+        "There is no real solution."
+      ],
+      "help": {
+        "title": "Check the inverse relation",
+        "prompts": [
+          "What values can a principal inverse sine take? Apply that fact to the given target.",
+          "If you take sine, check the resulting candidate in the original inverse equation.",
+          "Keep exact values until the final answer."
+        ]
+      }
+    },
+    {
+      "branch_id": "solve-or-explain",
+      "index": 46,
+      "parameters": {
+        "k": 5,
+        "theta": "pi"
+      },
+      "stem": "All angles are in radians. Show your working.",
+      "part_prompts": [
+        "Solve $\\sin^{-1}(5x)=\\pi$, giving an exact solution, or explain why it has no real solution."
+      ],
+      "canonical_answers": [
+        "There is no real solution."
+      ],
+      "help": {
+        "title": "Check the inverse relation",
+        "prompts": [
+          "What values can a principal inverse sine take? Apply that fact to the given target.",
+          "If you take sine, check the resulting candidate in the original inverse equation.",
+          "Keep exact values until the final answer."
+        ]
+      }
+    },
+    {
+      "branch_id": "graph-intercept",
+      "index": 0,
+      "parameters": {
+        "L": "-1",
+        "p": "-3/4",
+        "x1": 1,
+        "delta_x": 1
+      },
+      "stem": "The variables satisfy $y=Ae^{px+p}$, where $A>0$. The graph of $\\ln y$ against $x$ is shown. Use its exact labelled coordinates; the drawing is schematic.",
+      "part_prompts": [
+        "Find $A$ and $p$, giving any non-exact decimal answers to three significant figures. Show your working."
+      ],
+      "canonical_answers": [
+        "$A=e^{-1}\\approx0.368$ and $p=-\\frac{3}{4}$."
+      ],
+      "help": {
+        "title": "Read the transformed line",
+        "prompts": [
+          "Write the supplied model using the logarithm shown on the vertical axis.",
+          "Which coefficient is the gradient, and what is contained in the intercept?",
+          "Use one exact labelled coordinate to recover the remaining constant."
+        ]
+      }
+    },
+    {
+      "branch_id": "graph-intercept",
+      "index": 135,
+      "parameters": {
+        "L": "1",
+        "p": "1/4",
+        "x1": 1,
+        "delta_x": 1
+      },
+      "stem": "The variables satisfy $y=Ae^{px+p}$, where $A>0$. The graph of $\\ln y$ against $x$ is shown. Use its exact labelled coordinates; the drawing is schematic.",
+      "part_prompts": [
+        "Find $A$ and $p$, giving any non-exact decimal answers to three significant figures. Show your working."
+      ],
+      "canonical_answers": [
+        "$A=e^{1}\\approx2.72$ and $p=\\frac{1}{4}$."
+      ],
+      "help": {
+        "title": "Read the transformed line",
+        "prompts": [
+          "Write the supplied model using the logarithm shown on the vertical axis.",
+          "Which coefficient is the gradient, and what is contained in the intercept?",
+          "Use one exact labelled coordinate to recover the remaining constant."
+        ]
+      }
+    },
+    {
+      "branch_id": "graph-intercept",
+      "index": 269,
+      "parameters": {
+        "L": "3",
+        "p": "3/4",
+        "x1": 3,
+        "delta_x": 3
+      },
+      "stem": "The variables satisfy $y=Ae^{px+p}$, where $A>0$. The graph of $\\ln y$ against $x$ is shown. Use its exact labelled coordinates; the drawing is schematic.",
+      "part_prompts": [
+        "Find $A$ and $p$, giving any non-exact decimal answers to three significant figures. Show your working."
+      ],
+      "canonical_answers": [
+        "$A=e^{3}\\approx20.1$ and $p=\\frac{3}{4}$."
+      ],
+      "help": {
+        "title": "Read the transformed line",
+        "prompts": [
+          "Write the supplied model using the logarithm shown on the vertical axis.",
+          "Which coefficient is the gradient, and what is contained in the intercept?",
+          "Use one exact labelled coordinate to recover the remaining constant."
+        ]
+      }
+    },
+    {
+      "branch_id": "gradient-target",
+      "index": 0,
+      "parameters": {
+        "b": 2,
+        "c": 1,
+        "m": 3,
+        "q": 0
+      },
+      "stem": "The model is $y=2^{a}a^x$, where $a$ is positive. A graph of $\\log_{2}y$ against $x$ has gradient $3$. Show your working.",
+      "part_prompts": [
+        "Find $a$ exactly.",
+        "Hence find $x$ when $y=1$. Give an exact answer or a decimal correct to three significant figures."
+      ],
+      "canonical_answers": [
+        "$a=8$.",
+        "$x=-\\frac{8}{3}$ $\\approx-2.67$."
+      ],
+      "help": {
+        "title": "Match the plotted logarithm",
+        "prompts": [
+          "Transform using the logarithm base stated for the plotted ordinate.",
+          "Match the coefficient of x to the given gradient, then undo that logarithm.",
+          "For the hence part, reuse the parameter you found and retain the whole prefactor."
+        ]
+      }
+    },
+    {
+      "branch_id": "gradient-target",
+      "index": 10,
+      "parameters": {
+        "b": 3,
+        "c": 1,
+        "m": 2,
+        "q": 0
+      },
+      "stem": "The model is $y=3^{a}a^x$, where $a$ is positive. A graph of $\\log_{3}y$ against $x$ has gradient $2$. Show your working.",
+      "part_prompts": [
+        "Find $a$ exactly.",
+        "Hence find $x$ when $y=1$. Give an exact answer or a decimal correct to three significant figures."
+      ],
+      "canonical_answers": [
+        "$a=9$.",
+        "$x=-\\frac{9}{2}$ $\\approx-4.50$."
+      ],
+      "help": {
+        "title": "Match the plotted logarithm",
+        "prompts": [
+          "Transform using the logarithm base stated for the plotted ordinate.",
+          "Match the coefficient of x to the given gradient, then undo that logarithm.",
+          "For the hence part, reuse the parameter you found and retain the whole prefactor."
+        ]
+      }
+    },
+    {
+      "branch_id": "gradient-target",
+      "index": 19,
+      "parameters": {
+        "b": 3,
+        "c": 3,
+        "m": 2,
+        "q": 30
+      },
+      "stem": "The model is $y=3^{3a}a^x$, where $a$ is positive. A graph of $\\log_{3}y$ against $x$ has gradient $2$. Show your working.",
+      "part_prompts": [
+        "Find $a$ exactly.",
+        "Hence find $x$ when $y=3^{30}$. Give an exact answer or a decimal correct to three significant figures."
+      ],
+      "canonical_answers": [
+        "$a=9$.",
+        "$x=\\frac{3}{2}$ $\\approx1.50$."
+      ],
+      "help": {
+        "title": "Match the plotted logarithm",
+        "prompts": [
+          "Transform using the logarithm base stated for the plotted ordinate.",
+          "Match the coefficient of x to the given gradient, then undo that logarithm.",
+          "For the hence part, reuse the parameter you found and retain the whole prefactor."
+        ]
+      }
+    }
+  ],
+  "source_visual_reads": [
+    {
+      "reading_id": "TM-READ-030",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2022/AS - Mathematics Paper 2 8227-2 - First Proof 24.05.2022.pdf",
+      "source_sha256": "cd338050ac94107384eb1a20b1d9ac1f546ff087b1b996f246c6992c7cd2613a",
+      "pdf_page": 8,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-030.png",
+      "render_sha256": "6c16e142056abc6a029388c0774bb6c7311a7d7d409247c70bc010dcae119153",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-031",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+      "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+      "pdf_page": 6,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-031.png",
+      "render_sha256": "90861e2a3acf2bd0a96c2204de122478d52c77bd43947d725e2d6927dea33605",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-032",
+      "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+      "source_sha256": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+      "pdf_page": 6,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-032.png",
+      "render_sha256": "3d4931bbd6a341744aba204256a0a98266d0be22ae75bbd4a48beed81e093956",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-033",
+      "source_path": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_qp_12.pdf",
+      "source_sha256": "52cd2f648b231f988dc03abf0366977f35592e9e39b8f51c877f0ba2a0e2bbe8",
+      "pdf_page": 2,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-033.png",
+      "render_sha256": "2176282ce84d5773fe575f53160e7ee05b14c5b79a1e723b6d1d73e5495883a8",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-034",
+      "source_path": "Question Banks/Cambridge Curricula/Cambridge AS and A Level/Mathematics (9709)/Pure Mathematics 1/2016/March (Variant 2)/9709_m16_ms_12.pdf",
+      "source_sha256": "7cfb18fb678100d28ec9c0574be1e4978251a006ac995975c3da5178b65fb127",
+      "pdf_page": 4,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-034.png",
+      "render_sha256": "ef12523b0e3cb64fd180eb340ffe3f236db4570ba27caa6966716ce91cc78351",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-035",
+      "source_path": "Question Banks/Namibian Examiner Reports/NSSCAS/2022/NSSCAS_Examiners_Report_2022.pdf",
+      "source_sha256": "65df0266ead06a3f5bbe88b40753eb9bd29299ad31c6db10c83e6bdeabe7127b",
+      "pdf_page": 313,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-035.png",
+      "render_sha256": "ba25e796e7f6abe4012b01594b65a760f993a5cfc91bac9b019d29491b645eed",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-036",
+      "source_path": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+      "source_sha256": "17bb6d8e14b59b326e9f581daf32557d1f123392496e79ed7c4867c574163feb",
+      "pdf_page": 335,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-036.png",
+      "render_sha256": "0188ea741f2d1f157fb0a17736f6b0efbd6e63924f6bed721c40bcf17f5520cb",
+      "visual_read_in_this_audit": true
+    },
+    {
+      "reading_id": "TM-READ-037",
+      "source_path": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+      "source_sha256": "8012a5d92edfde9e4bce11fe7864ff88f7246d812ec00d34e8e2377c2c0114be",
+      "pdf_page": 359,
+      "render_path": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-source-renders/TM-READ-037.png",
+      "render_sha256": "e1ec6496a6230148f4187d9f19a5d8fcdcb7c413664690980b16729e1c29689d",
+      "visual_read_in_this_audit": true
+    }
+  ],
+  "graph_visual_reads": [
+    "authoring/trig-log-gallery/graph-00.png",
+    "authoring/trig-log-gallery/graph-04.png",
+    "authoring/trig-log-gallery/graph-08.png"
+  ],
+  "help_assessment": "One generic help text per branch across the complete admitted domain; no numerical answers, resolved real/no-real outcome, recovered A/p/a/x or private classification appears in help. Method prompts are permitted practice scaffolding, withheld in tests by provider.",
+  "source_reuse_assessment": "Read native four question pages and matching four award pages. The generated R-form coefficients are integers and cannot equal sqrt5 anchor; graph coordinates are exact quarters/halves and cannot equal1.693/2.693 original; gradient c2 original is excluded (only1/3); Cambridge3x=-pi/3 excluded. No whole original question or textbook artwork is emitted by this module. Generated NSSCAS adaptations carry part-targeted same-type references in approved/native metadata; principal broader task has no misleading Cambridge same-type label.",
+  "scope_limits": [
+    "Several fixture scripts are abbreviated natural-language descriptions of the working asserted present; these check rubric expectations conditional on that stated evidence, not a handwriting/OCR or unconstrained-response recognizer.",
+    "All26 declared award/score expectations were independently read and adjudicated; no application marking model was called.",
+    "Template/source inspection and four native question comparisons do not prove absence of matching wording anywhere in every textbook/corpus page. No textbook verbatim reuse was observed in the generator.",
+    "Visual graph inspection sampled3 existing PNGs; this audit does not independently certify all270 raster layouts or a signed-in app.",
+    "Stage-G cross-vendor review, app/local website, imports and release acceptance remain separate."
+  ]
+}

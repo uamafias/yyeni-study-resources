@@ -1,0 +1,40 @@
+{
+ "check": "D4.1 relocated two-copy rebuild (Claude reviewer)",
+ "date": "2026-11-24",
+ "script": "work/nam-8227-nsscas-2026/workbench/planning/d4/rebuild-design.py then planning/d4/freeze-plan.py --check, run only inside copies at scratchpad/d41/root1 and root2 (different absolute paths from the author checkout)",
+ "method": "cp -cR of the whole 8227 workspace plus 436 manifest sources and root brief files; review/opus-5-5-d4-1-check removed; __pycache__ removed; PYTHONDONTWRITEBYTECODE=1. Raw sha256 comparison, no path normalisation.",
+ "rebuild_exit": {
+  "copy1": 0,
+  "copy2": 0
+ },
+ "freeze_check": {
+  "author": "pass",
+  "copy1": "pass",
+  "copy2": "pass"
+ },
+ "freeze_summary": "7008 files, 436 sources, 95 reviews, 63 live plan checks, D4 3497 recovered, manifest 4a054832...",
+ "per_copy_author_self_check": {
+  "byte_identical_derived_outputs": 28,
+  "seeded_subprocess_rejections": 25,
+  "inline_motion_domain_rejections": 5,
+  "inline_ledger_rejections": 4
+ },
+ "compared_files": 14763,
+ "copy1_equals_author": true,
+ "copy2_equals_author": true,
+ "copy1_equals_copy2": true,
+ "r7_analysis_freeze_author": "pass (7771 files, 436 sources, 37 review files)",
+ "no_score_guard_in_copy1": "planning/d4-1/no-score-change-check.py: pass; 3 canonical + 2 derived design files, 18 fixture/domain files, 42 examples, 70 ledgers, 5 semantic seeds rejected",
+ "fixture_files_unchanged": "25 of 33 planning/d4 JSON files byte-identical to D4, including every misread/marking/exemplar oracle, motion separation, capacities and key delta",
+ "verdict": "D4-N01 repaired: rebuild and freeze are portable; all files byte-identical across author and both relocated copies without normalisation.",
+ "logs": {
+  "rebuild.log": "ba02effc4d5822c34ac1d6d5e5131014dfac3de767204851054f5dc2b466a176",
+  "pass1.log": "d63b52905aec3a8c786b6e0e5feeffd80f3aad55ecbfb7052bd66badbf1a933a",
+  "pass2.log": "d63b52905aec3a8c786b6e0e5feeffd80f3aad55ecbfb7052bd66badbf1a933a",
+  "freeze-check-author.log": "69d43fe6a999d20c58d84c20de223a415f976f15f009d58909923cc6574c03d7",
+  "freeze-check-copy1.log": "69d43fe6a999d20c58d84c20de223a415f976f15f009d58909923cc6574c03d7",
+  "freeze-check-copy2.log": "69d43fe6a999d20c58d84c20de223a415f976f15f009d58909923cc6574c03d7",
+  "r7-freeze-check-author.log": "f384b18bfd35a575611694727812a620def4f0a60bebc69591158b7bf552575d",
+  "no-score-copy1.log": "c464de1c74b1345db315d2eadbddb2fad63b90d8ae2c29c023e49092bd5505cd"
+ }
+}

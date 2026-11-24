@@ -1,5 +1,20 @@
+# Workbench E1 update — 24 November 2026
+
+The Stage-E cross-vendor review confirmed mathematics/design and requested 13 local
+repairs. E1 author repairs are implemented with native 0.1.5/transport 2 and unchanged
+approved 0.1.4 rubric IDs, domains, bounds and scores. Claude's diff-only E1 check
+is next, followed by scoped local website/app testing. See [Workbench STATUS](workbench/STATUS.md),
+[E1 report](workbench/checks/stage-e-repair-e1-report.md) and [handover](workbench/HANDOVER.md).
+No installation, import, assignment, commit or push. Earlier records below are historical.
+
+# Workbench update — 24 November 2026
+
+Vitalis approved the exact Stage-D manifest `4a054832…17d8ec` and MR03-OPS-D4. Stage E now has nine authored recipes/14choices, with independent recomputation across1,702admitted branch rows. Named F resource author checks are supplied; next is cross-vendor G review. Resources are candidate-only; no installation, app/production acceptance, import or assignment. See [Workbench STATUS](workbench/STATUS.md), [author report](workbench/checks/author-report.md) and [HANDOVER](workbench/HANDOVER.md). No commit or push.
+
+The earlier subject record below is retained as historical context; its Workbench pending-approval prose is superseded by this update.
+
 <!-- R7-CLOSEOUT-ACTIVE -->
-Accepted R7 close-out AUTHOR complete, 23 November 2026. All twelve best-member decisions, gap/family corrections, template annotations and planning limits are saved. Two independent fresh-copy builds passed (285 commands each, 275 matching outputs); all 74 seeded-error executions rejected their seeds. Final snapshot and reproducibility records are saved. Next: step 3, recipe contract and pilot PLAN; Claude confirms this close-out during its review, with no separate review round. No step-3 outputs, commit or push. See workbench/STATUS.md, HANDOVER.md and checks/repair-r7-closeout.md.
+Current: 24 November 2026. PLANNER, owner Vitalis. D4 repairs confirmed; D4.1 text-only errata is author-verified in two relocated copies and awaiting Claude’s diff-only check, then Vitalis exact-manifest approval. Counts9/14/42/27, Bloom13/1, decks19/20/17, all marks/domains/answers and version0.1.4 remain unchanged. OD-6 principle binds; MR03-OPS-D4 mechanics remain proposed. D4 manifest71ee10b6… and3,497files recoverable. Evidence: workbench/checks/plan-errata-d4-1-report.md and planning/CLAUDE-D4-1-CHECK.md. No Stage-E runtime work, commit or push.
 <!-- /R7-CLOSEOUT-ACTIVE -->
 
 The dated entries below are historical. Current evidence and limits are in the Workbench handover.

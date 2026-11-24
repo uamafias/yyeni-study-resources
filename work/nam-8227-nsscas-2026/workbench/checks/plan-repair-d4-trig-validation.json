@@ -1,0 +1,1276 @@
+{
+  "status": "pass; D4 author-side finite design checks, not independent acceptance/runtime validation",
+  "recipe_version": "0.1.4",
+  "classification_version": "8227-pilot-design-0.1.1",
+  "branches": {
+    "degree-cycle": {
+      "raw_counts": {
+        "grid": 112,
+        "feasible": 102,
+        "endpoint_filtered": 90,
+        "primitive_D0": 78,
+        "rounding_filtered": 70,
+        "diagnostic_D1": 58
+      },
+      "removed_rounding_tuples": [
+        [
+          1,
+          4,
+          -3
+        ],
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          2,
+          4,
+          -1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          3,
+          4,
+          -2
+        ],
+        [
+          3,
+          4,
+          2
+        ],
+        [
+          4,
+          1,
+          -3
+        ],
+        [
+          4,
+          1,
+          3
+        ]
+      ],
+      "removed_inverse_ratio_tuples": [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          -1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          -2
+        ],
+        [
+          3,
+          3,
+          -1
+        ],
+        [
+          3,
+          3,
+          1
+        ],
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          -3
+        ],
+        [
+          4,
+          4,
+          -1
+        ],
+        [
+          4,
+          4,
+          1
+        ],
+        [
+          4,
+          4,
+          3
+        ]
+      ],
+      "removal_sets_disjoint": true,
+      "part_semantic_capacities": {
+        "a_convert_prompts": 12,
+        "a_phase_ratio_classes": 10,
+        "b_root_equations": 58
+      },
+      "root_classes": {
+        "nonzero c<b": 42,
+        "c=0": 10,
+        "c>b": 6
+      },
+      "root_subclasses": {
+        "negative sine": 28,
+        "c=0": 10,
+        "positive wrap": 14,
+        "c>b": 6
+      },
+      "named_errors_tested": [
+        "inverted_phase_ratio",
+        "radian_numeric_phase_reported_as_degrees",
+        "amplitude_sum",
+        "amplitude_difference_of_squares",
+        "principal_root_only",
+        "forget_phase_subtraction",
+        "second_root_180_minus_final_first"
+      ],
+      "canonical_response_collisions_remaining": {},
+      "independent_half_angle_oracle": "58/58agree",
+      "max_original_residual": "6.9578506425321453280700588738382125450885745123632149830513235965713752320400413e-80",
+      "rounding_exclusion_fixtures": [
+        {
+          "tuple": [
+            1,
+            4,
+            -3
+          ],
+          "exact_roots": [
+            "150.72238680964342738971603901293555870035196114643318388761916558166389609065263",
+            "237.35010012620952977606860130539128994159690161472934870905495122085520555869692"
+          ],
+          "canonical_1dp": [
+            "150.7",
+            "237.4"
+          ],
+          "using_both_2dp_angles": [
+            "150.73",
+            "237.35"
+          ],
+          "both_2dp_final": [
+            "150.7",
+            "237.4"
+          ],
+          "changed_root": false,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            1,
+            4,
+            3
+          ],
+          "exact_roots": [
+            "57.350100126209529776068601305391289941596901614729348709054951220855205558696921",
+            "330.72238680964342738971603901293555870035196114643318388761916558166389609065263"
+          ],
+          "canonical_1dp": [
+            "57.4",
+            "330.7"
+          ],
+          "using_both_2dp_angles": [
+            "57.35",
+            "330.73"
+          ],
+          "both_2dp_final": [
+            "57.4",
+            "330.7"
+          ],
+          "changed_root": false,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            2,
+            4,
+            -1
+          ],
+          "exact_roots": [
+            "129.48601755866155371915696335020830936514958229041223486511804121021548641321794",
+            "283.64408479549442498398742409069827997725884630887820719085399142036064522975154"
+          ],
+          "canonical_1dp": [
+            "129.5",
+            "283.6"
+          ],
+          "using_both_2dp_angles": [
+            "129.49",
+            "283.65"
+          ],
+          "both_2dp_final": [
+            "129.5",
+            "283.7"
+          ],
+          "changed_root": true,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            2,
+            4,
+            1
+          ],
+          "exact_roots": [
+            "103.64408479549442498398742409069827997725884630887820719085399142036064522975154",
+            "309.48601755866155371915696335020830936514958229041223486511804121021548641321794"
+          ],
+          "canonical_1dp": [
+            "103.6",
+            "309.5"
+          ],
+          "using_both_2dp_angles": [
+            "103.65",
+            "309.49"
+          ],
+          "both_2dp_final": [
+            "103.7",
+            "309.5"
+          ],
+          "changed_root": true,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            3,
+            4,
+            -2
+          ],
+          "exact_roots": [
+            "150.44807612404585240087811197892083801974119643087314702334815572371375125262844",
+            "283.29171916764219019283311313926598329544194637054596886470777901513398546143259"
+          ],
+          "canonical_1dp": [
+            "150.4",
+            "283.3"
+          ],
+          "using_both_2dp_angles": [
+            "150.45",
+            "283.29"
+          ],
+          "both_2dp_final": [
+            "150.5",
+            "283.3"
+          ],
+          "changed_root": true,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            3,
+            4,
+            2
+          ],
+          "exact_roots": [
+            "103.29171916764219019283311313926598329544194637054596886470777901513398546143259",
+            "330.44807612404585240087811197892083801974119643087314702334815572371375125262844"
+          ],
+          "canonical_1dp": [
+            "103.3",
+            "330.4"
+          ],
+          "using_both_2dp_angles": [
+            "103.29",
+            "330.45"
+          ],
+          "both_2dp_final": [
+            "103.3",
+            "330.5"
+          ],
+          "changed_root": true,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            4,
+            1,
+            -3
+          ],
+          "exact_roots": [
+            "212.64989987379047022393139869460871005840309838527065129094504877914479444130308",
+            "299.27761319035657261028396098706444129964803885356681611238083441833610390934737"
+          ],
+          "canonical_1dp": [
+            "212.6",
+            "299.3"
+          ],
+          "using_both_2dp_angles": [
+            "212.65",
+            "299.27"
+          ],
+          "both_2dp_final": [
+            "212.7",
+            "299.3"
+          ],
+          "changed_root": true,
+          "admitted_D1": false
+        },
+        {
+          "tuple": [
+            4,
+            1,
+            3
+          ],
+          "exact_roots": [
+            "32.649899873790470223931398694608710058403098385270651290945048779144794441303079",
+            "119.27761319035657261028396098706444129964803885356681611238083441833610390934737"
+          ],
+          "canonical_1dp": [
+            "32.6",
+            "119.3"
+          ],
+          "using_both_2dp_angles": [
+            "32.65",
+            "119.27"
+          ],
+          "both_2dp_final": [
+            "32.7",
+            "119.3"
+          ],
+          "changed_root": true,
+          "admitted_D1": false
+        }
+      ],
+      "near_2dp_phase_fixtures": [
+        {
+          "a": 1,
+          "b": 2,
+          "canonical_alpha": "63.434948822922010648427806279546705328795785700354778972013983684711934178515259",
+          "canonical_2dp": "63.43",
+          "rounded_R_5sf": "2.2361",
+          "alpha_via_rounded_R": "63.435359079803895620589105683360618152562994903359704514285104893759090075074733",
+          "alpha_2dp_via_rounded_R": "63.44",
+          "stage_EF_marker_fixture_not_runtime_pass": true
+        },
+        {
+          "a": 2,
+          "b": 1,
+          "canonical_alpha": "26.565051177077989351572193720453294671204214299645221027986016315288065821484741",
+          "canonical_2dp": "26.57",
+          "rounded_R_5sf": "2.2361",
+          "alpha_via_rounded_R": "26.566692160544622846609585483931273624465533441714961322598109667421160554730582",
+          "alpha_2dp_via_rounded_R": "26.57",
+          "stage_EF_marker_fixture_not_runtime_pass": true
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "canonical_alpha": "71.565051177077989351572193720453294671204214299645221027986016315288065821484741",
+          "canonical_2dp": "71.57",
+          "rounded_R_5sf": "3.1623",
+          "alpha_via_rounded_R": "71.565186097606776230583796633133139861198355221988312615845462204923551878513524",
+          "alpha_2dp_via_rounded_R": "71.57",
+          "stage_EF_marker_fixture_not_runtime_pass": true
+        },
+        {
+          "a": 3,
+          "b": 1,
+          "canonical_alpha": "18.434948822922010648427806279546705328795785700354778972013983684711934178515259",
+          "canonical_2dp": "18.43",
+          "rounded_R_5sf": "3.1623",
+          "alpha_via_rounded_R": "18.436163069558182083117057353579371811443329018618872377379821907280408785028933",
+          "alpha_2dp_via_rounded_R": "18.44",
+          "stage_EF_marker_fixture_not_runtime_pass": true
+        },
+        {
+          "a": 2,
+          "b": 4,
+          "canonical_alpha": "63.434948822922010648427806279546705328795785700354778972013983684711934178515259",
+          "canonical_2dp": "63.43",
+          "rounded_R_5sf": "4.4721",
+          "alpha_via_rounded_R": "63.434718498041234923890303730730447747909876012046253309827667875221060263393217",
+          "alpha_2dp_via_rounded_R": "63.43",
+          "stage_EF_marker_fixture_not_runtime_pass": true
+        },
+        {
+          "a": 4,
+          "b": 2,
+          "canonical_alpha": "26.565051177077989351572193720453294671204214299645221027986016315288065821484741",
+          "canonical_2dp": "26.57",
+          "rounded_R_5sf": "4.4721",
+          "alpha_via_rounded_R": "26.564129863666062674559519629875457526393821564537105239257392868749723991822909",
+          "alpha_2dp_via_rounded_R": "26.56",
+          "stage_EF_marker_fixture_not_runtime_pass": true
+        }
+      ]
+    },
+    "solve-or-explain": {
+      "one_uncued_branch": true,
+      "public_marks_every_outcome": 3,
+      "raw_grid": 48,
+      "original_equation_excluded": {
+        "k": 3,
+        "theta": "-pi/3",
+        "source": "9709/12/F/M/2016Q4(a)"
+      },
+      "raw_admitted": 47,
+      "semantic_target_keys": 12,
+      "valid_target_keys": 6,
+      "invalid_target_keys": 6,
+      "valid_numeric_variants": 23,
+      "obstruction_raw_variants": 24,
+      "named_error": "take sine and accept candidate without checking the principal inverse",
+      "value_level_error_coincidences": [
+        {
+          "k": 2,
+          "theta": "-pi/3",
+          "forward_only_candidate": "-sqrt(3)/4",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 2,
+          "theta": "-pi/4",
+          "forward_only_candidate": "-sqrt(2)/4",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 2,
+          "theta": "-pi/6",
+          "forward_only_candidate": "-1/4",
+          "actual_principal_inverse": "-pi/6"
+        },
+        {
+          "k": 2,
+          "theta": "pi/6",
+          "forward_only_candidate": "1/4",
+          "actual_principal_inverse": "pi/6"
+        },
+        {
+          "k": 2,
+          "theta": "pi/4",
+          "forward_only_candidate": "sqrt(2)/4",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 2,
+          "theta": "pi/3",
+          "forward_only_candidate": "sqrt(3)/4",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 3,
+          "theta": "-pi/4",
+          "forward_only_candidate": "-sqrt(2)/6",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 3,
+          "theta": "-pi/6",
+          "forward_only_candidate": "-1/6",
+          "actual_principal_inverse": "-pi/6"
+        },
+        {
+          "k": 3,
+          "theta": "pi/6",
+          "forward_only_candidate": "1/6",
+          "actual_principal_inverse": "pi/6"
+        },
+        {
+          "k": 3,
+          "theta": "pi/4",
+          "forward_only_candidate": "sqrt(2)/6",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 3,
+          "theta": "pi/3",
+          "forward_only_candidate": "sqrt(3)/6",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 4,
+          "theta": "-pi/3",
+          "forward_only_candidate": "-sqrt(3)/8",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 4,
+          "theta": "-pi/4",
+          "forward_only_candidate": "-sqrt(2)/8",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 4,
+          "theta": "-pi/6",
+          "forward_only_candidate": "-1/8",
+          "actual_principal_inverse": "-pi/6"
+        },
+        {
+          "k": 4,
+          "theta": "pi/6",
+          "forward_only_candidate": "1/8",
+          "actual_principal_inverse": "pi/6"
+        },
+        {
+          "k": 4,
+          "theta": "pi/4",
+          "forward_only_candidate": "sqrt(2)/8",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 4,
+          "theta": "pi/3",
+          "forward_only_candidate": "sqrt(3)/8",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 5,
+          "theta": "-pi/3",
+          "forward_only_candidate": "-sqrt(3)/10",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 5,
+          "theta": "-pi/4",
+          "forward_only_candidate": "-sqrt(2)/10",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 5,
+          "theta": "-pi/6",
+          "forward_only_candidate": "-1/10",
+          "actual_principal_inverse": "-pi/6"
+        },
+        {
+          "k": 5,
+          "theta": "pi/6",
+          "forward_only_candidate": "1/10",
+          "actual_principal_inverse": "pi/6"
+        },
+        {
+          "k": 5,
+          "theta": "pi/4",
+          "forward_only_candidate": "sqrt(2)/10",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 5,
+          "theta": "pi/3",
+          "forward_only_candidate": "sqrt(3)/10",
+          "actual_principal_inverse": "pi/3"
+        }
+      ],
+      "error_rejected_by_inverse_consistency": [
+        {
+          "k": 2,
+          "theta": "-pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 2,
+          "theta": "-3*pi/4",
+          "forward_only_candidate": "-sqrt(2)/4",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 2,
+          "theta": "-2*pi/3",
+          "forward_only_candidate": "-sqrt(3)/4",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 2,
+          "theta": "2*pi/3",
+          "forward_only_candidate": "sqrt(3)/4",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 2,
+          "theta": "3*pi/4",
+          "forward_only_candidate": "sqrt(2)/4",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 2,
+          "theta": "pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 3,
+          "theta": "-pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 3,
+          "theta": "-3*pi/4",
+          "forward_only_candidate": "-sqrt(2)/6",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 3,
+          "theta": "-2*pi/3",
+          "forward_only_candidate": "-sqrt(3)/6",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 3,
+          "theta": "2*pi/3",
+          "forward_only_candidate": "sqrt(3)/6",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 3,
+          "theta": "3*pi/4",
+          "forward_only_candidate": "sqrt(2)/6",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 3,
+          "theta": "pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 4,
+          "theta": "-pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 4,
+          "theta": "-3*pi/4",
+          "forward_only_candidate": "-sqrt(2)/8",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 4,
+          "theta": "-2*pi/3",
+          "forward_only_candidate": "-sqrt(3)/8",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 4,
+          "theta": "2*pi/3",
+          "forward_only_candidate": "sqrt(3)/8",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 4,
+          "theta": "3*pi/4",
+          "forward_only_candidate": "sqrt(2)/8",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 4,
+          "theta": "pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 5,
+          "theta": "-pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        },
+        {
+          "k": 5,
+          "theta": "-3*pi/4",
+          "forward_only_candidate": "-sqrt(2)/10",
+          "actual_principal_inverse": "-pi/4"
+        },
+        {
+          "k": 5,
+          "theta": "-2*pi/3",
+          "forward_only_candidate": "-sqrt(3)/10",
+          "actual_principal_inverse": "-pi/3"
+        },
+        {
+          "k": 5,
+          "theta": "2*pi/3",
+          "forward_only_candidate": "sqrt(3)/10",
+          "actual_principal_inverse": "pi/3"
+        },
+        {
+          "k": 5,
+          "theta": "3*pi/4",
+          "forward_only_candidate": "sqrt(2)/10",
+          "actual_principal_inverse": "pi/4"
+        },
+        {
+          "k": 5,
+          "theta": "pi",
+          "forward_only_candidate": "0",
+          "actual_principal_inverse": "0"
+        }
+      ],
+      "discrimination_limit": "23valid numeric variants are non-diagnostic for the range misconception by value alone; forward-only working lacks P-B1 and cannot earn full3. Invalidtargets expose the error. Do not claim0value-levelcollisions.",
+      "unexplained_bare_conclusions_expected_credit": 0,
+      "valid_substitution_contradiction_expected_credit": 3,
+      "fixture_scope": "Manual design-credit expectations; no runtime marker executed"
+    },
+    "graph-intercept": {
+      "D0_models": 30,
+      "D1_models": 30,
+      "D1_presentations": 270,
+      "recovered_amplitude_values": 5,
+      "gradient_values": 6,
+      "removed_L0_models": 6,
+      "removed_L0_presentations": 54,
+      "replaced_by_L_half_models": 6,
+      "old_wrong_product_log_collisions": [
+        [
+          "-3/4",
+          1,
+          1
+        ],
+        [
+          "-3/4",
+          1,
+          2
+        ],
+        [
+          "-3/4",
+          1,
+          3
+        ],
+        [
+          "-3/4",
+          2,
+          1
+        ],
+        [
+          "-3/4",
+          2,
+          2
+        ],
+        [
+          "-3/4",
+          2,
+          3
+        ],
+        [
+          "-3/4",
+          3,
+          1
+        ],
+        [
+          "-3/4",
+          3,
+          2
+        ],
+        [
+          "-3/4",
+          3,
+          3
+        ],
+        [
+          "-1/2",
+          1,
+          1
+        ],
+        [
+          "-1/2",
+          1,
+          2
+        ],
+        [
+          "-1/2",
+          1,
+          3
+        ],
+        [
+          "-1/2",
+          2,
+          1
+        ],
+        [
+          "-1/2",
+          2,
+          2
+        ],
+        [
+          "-1/2",
+          2,
+          3
+        ],
+        [
+          "-1/2",
+          3,
+          1
+        ],
+        [
+          "-1/2",
+          3,
+          2
+        ],
+        [
+          "-1/2",
+          3,
+          3
+        ],
+        [
+          "-1/4",
+          1,
+          1
+        ],
+        [
+          "-1/4",
+          1,
+          2
+        ],
+        [
+          "-1/4",
+          1,
+          3
+        ],
+        [
+          "-1/4",
+          2,
+          1
+        ],
+        [
+          "-1/4",
+          2,
+          2
+        ],
+        [
+          "-1/4",
+          2,
+          3
+        ],
+        [
+          "-1/4",
+          3,
+          1
+        ],
+        [
+          "-1/4",
+          3,
+          2
+        ],
+        [
+          "-1/4",
+          3,
+          3
+        ],
+        [
+          "1/4",
+          1,
+          1
+        ],
+        [
+          "1/4",
+          1,
+          2
+        ],
+        [
+          "1/4",
+          1,
+          3
+        ],
+        [
+          "1/4",
+          2,
+          1
+        ],
+        [
+          "1/4",
+          2,
+          2
+        ],
+        [
+          "1/4",
+          2,
+          3
+        ],
+        [
+          "1/4",
+          3,
+          1
+        ],
+        [
+          "1/4",
+          3,
+          2
+        ],
+        [
+          "1/4",
+          3,
+          3
+        ],
+        [
+          "1/2",
+          1,
+          1
+        ],
+        [
+          "1/2",
+          1,
+          2
+        ],
+        [
+          "1/2",
+          1,
+          3
+        ],
+        [
+          "1/2",
+          2,
+          1
+        ],
+        [
+          "1/2",
+          2,
+          2
+        ],
+        [
+          "1/2",
+          2,
+          3
+        ],
+        [
+          "1/2",
+          3,
+          1
+        ],
+        [
+          "1/2",
+          3,
+          2
+        ],
+        [
+          "1/2",
+          3,
+          3
+        ],
+        [
+          "3/4",
+          1,
+          1
+        ],
+        [
+          "3/4",
+          1,
+          2
+        ],
+        [
+          "3/4",
+          1,
+          3
+        ],
+        [
+          "3/4",
+          2,
+          1
+        ],
+        [
+          "3/4",
+          2,
+          2
+        ],
+        [
+          "3/4",
+          2,
+          3
+        ],
+        [
+          "3/4",
+          3,
+          1
+        ],
+        [
+          "3/4",
+          3,
+          2
+        ],
+        [
+          "3/4",
+          3,
+          3
+        ]
+      ],
+      "named_errors_tested": [
+        "omit_offset",
+        "first_ordinate_as_intercept",
+        "extra_log_of_already_log_ordinate",
+        "wrong_product_log_model",
+        "wrong_base_antilog",
+        "invert_gradient"
+      ],
+      "canonical_full_parameter_collisions_remaining": {},
+      "extra_log_method_undefined_for_presentations": 120,
+      "presentations_with_zero_ordinate": 31,
+      "presentations_with_mixed_sign_ordinates": 16,
+      "raw_to_semantic_rule": "All9point-pair presentations for one(L,p) share a parameter-part exposure key."
+    },
+    "gradient-target": {
+      "new_grid": 40,
+      "removed_multiplication_coincidences": [
+        [
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          1,
+          2,
+          10
+        ],
+        [
+          2,
+          1,
+          2,
+          30
+        ],
+        [
+          2,
+          3,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          2,
+          10
+        ],
+        [
+          2,
+          3,
+          2,
+          30
+        ]
+      ],
+      "removed_reversed_exponent_coincidences_after_multiply_filter": [
+        [
+          3,
+          1,
+          3,
+          0
+        ],
+        [
+          3,
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          1,
+          3,
+          4
+        ],
+        [
+          3,
+          1,
+          3,
+          10
+        ],
+        [
+          3,
+          1,
+          3,
+          30
+        ],
+        [
+          3,
+          3,
+          3,
+          0
+        ],
+        [
+          3,
+          3,
+          3,
+          1
+        ],
+        [
+          3,
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          3,
+          3,
+          10
+        ],
+        [
+          3,
+          3,
+          3,
+          30
+        ]
+      ],
+      "diagnostic_full_tuples": 20,
+      "parameter_model_keys": 4,
+      "exponentiation_subdecision_keys": 2,
+      "target_equation_tasks": 20,
+      "distinct_x_outcomes": 20,
+      "positive_x": 6,
+      "negative_x": 14,
+      "zero_x": 0,
+      "max_symbolic_prefactor_exponent": 27,
+      "original_tuple_excluded": [
+        3,
+        2,
+        2,
+        4
+      ],
+      "original_parameter_subpart_excluded": "No c2 triple is admitted; sourcepart(a) cannot be recycled with another target.",
+      "named_errors_tested": [
+        "multiply_base_gradient",
+        "reverse_exponent",
+        "wrong_base10",
+        "wrong_natural_base_without_plot_conversion",
+        "omit_prefactor",
+        "inspection_zero"
+      ],
+      "canonical_collisions_remaining": {}
+    }
+  },
+  "exemplar_checks": [
+    {
+      "case_id": "WB8227-trig-rform-equation:normal",
+      "branch_id": "degree-cycle",
+      "role": "normal",
+      "marks": 7,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-trig-rform-equation:changed",
+      "branch_id": "degree-cycle",
+      "role": "changed",
+      "marks": 7,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-trig-rform-equation:boundary",
+      "branch_id": "degree-cycle",
+      "role": "boundary",
+      "marks": 7,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-principal-inverse:normal",
+      "branch_id": "solve-or-explain",
+      "role": "normal",
+      "marks": 3,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-principal-inverse:changed",
+      "branch_id": "solve-or-explain",
+      "role": "changed",
+      "marks": 3,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-principal-inverse:boundary",
+      "branch_id": "solve-or-explain",
+      "role": "boundary",
+      "marks": 3,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-log-linear-model:graph:normal",
+      "branch_id": "graph-intercept",
+      "role": "normal",
+      "marks": 5,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-log-linear-model:graph:changed",
+      "branch_id": "graph-intercept",
+      "role": "changed",
+      "marks": 5,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-log-linear-model:graph:boundary",
+      "branch_id": "graph-intercept",
+      "role": "boundary",
+      "marks": 5,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-log-linear-model:gradient:normal",
+      "branch_id": "gradient-target",
+      "role": "normal",
+      "marks": 5,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-log-linear-model:gradient:changed",
+      "branch_id": "gradient-target",
+      "role": "changed",
+      "marks": 5,
+      "result": "pass"
+    },
+    {
+      "case_id": "WB8227-log-linear-model:gradient:boundary",
+      "branch_id": "gradient-target",
+      "role": "boundary",
+      "marks": 5,
+      "result": "pass"
+    }
+  ],
+  "parts": 6,
+  "unchanged_domains_checked": [
+    "degree-cycle",
+    "solve-or-explain",
+    "graph-intercept",
+    "gradient-target"
+  ],
+  "source_render_pairs": 56,
+  "unique_source_pages": 48,
+  "D3_retained_rendered_pages": 2,
+  "fixture_summary": {
+    "misread_ledgers": 13,
+    "recomputed_D3_fixture_rows": 14,
+    "rounding_counts": {
+      "R_4sf_alpha_2dp": 3,
+      "ratio_3sf_alpha_exact": 14,
+      "ratio_3sf_alpha_2dp": 10,
+      "coupled_acos_R_3sf_alpha_2dp": 35
+    },
+    "no_real_rote_score": "0/3"
+  },
+  "limits": "No domains changed. No generated runtime items, marker, app renderer or independent review acceptance."
+}

@@ -1,0 +1,301 @@
+{
+ "label": "coverage",
+ "scope": [
+  "Counts (9/14/42/27, 83 marks), whole-choice Bloom, deck totals and D0->D2 deck decomposition, recomputed from canonical visual/calculus/trig-model design JSON, pilot-design.json and part-evidence-register.json/.md",
+  "Cross-file count agreement: plan-manifest.json counts, PLAN.md, OWNER-CHECKPOINT.md, checks/plan-repair-d2-report.md, coverage-plan.json/.md, workbench STATUS.md/HANDOVER.md, subject STATUS.md, app-change-handoff.md, planning/d2/choice-capacities.json",
+  "Coverage: 38+1 facets, 26/60 objectives (25+1), 99 outside, 138/67/8 accounting, facet swaps, recomputed from analysis/demand-registry.json + design part links (no family data)",
+  "Exam weights: all 138 rows of coverage-plan.json vs review/opus-5-5-d1-short-check/check-coverage-demand-frequency-step3.json and an own rescan of analysis/question-analysis.json; 2162/3, 88/3, 720.1",
+  "G09 given-geometric-diagram count (corpus records + PyMuPDF figure scan of all 119 question pages + native renders) and zero supplied-geometry pilot parts",
+  "Receipts: planning/d2/coverage-check.json (pinned, inputs, reproducibility in a scratch clone) and checks/plan-repair-d2-part-register-audit.json hashes",
+  "app-change-handoff.md APP8227-01..08 D2 additions vs design records (motion outcome privacy, key migration, trapezium original-subtask guard)",
+  "Stale D1-number sweep of active design files (not history/, not review/)",
+  "D1 findings D1-S26, D1-S27 and the count/Bloom consequences of OD-4 (D1-S01, D1-S02)"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 4,
+   "what": "2025 P1 Q3 (vector; same-type source of the pilot vector recipe): column vectors only, no supplied figure. The 12 oblique strokes the drawing scan found are arrow heads over OA/OB/OC, so given_representation=text is correct."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 18,
+   "what": "2025 P1 Q12 rhombus ABCD with A(-1,3), C(7,7), B on the y-axis: a supplied geometric figure, one of the 28 G09 parts (Q12 a,b)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-1.pdf",
+   "page": 10,
+   "what": "2024 P1 Q8 perpendicular lines AC, BD, reflection D of B: a supplied geometric figure (G09 part Q8:answer)."
+  }
+ ],
+ "dispositions": [
+  {
+   "finding_id": "D1-S26",
+   "related_agent_ids": [
+    "coverage-D1-01",
+    "coverage-D1-07",
+    "coverage-D1-08"
+   ],
+   "codex_claim": "Objectives 26/60 = 25 unconditional + 1 conditional-only (M1:T6:O03). Names the M1:T8:O01:D01 addition and the vector facet swap. Deck 14->19 decomposed as principal 2->3 plus implicit 5->9 branch swap.",
+   "verdict": "repaired",
+   "evidence": "Own set computation over the 27 part records: 25 objectives from 38 unconditional facets plus M1:T6:O03 from the single conditional-only facet M1:T6:O03:D01 = 26 of 60 registry objectives. Split stated at PLAN.md:24, OWNER-CHECKPOINT.md:11, coverage-plan.md:5, STATUS.md:9, HANDOVER.md:13, ../STATUS.md:2, report :52, manifest counts objectives_with_unconditional_facets=25 / conditional_only=1. M1:T8:O01:D01 named at PLAN.md:125, coverage-plan.md:21, report :66, HANDOVER.md:13. Own D0->D2 diff of unconditional facets: +M1:T7:O02:D01 and +M1:T8:O01:D01; -M1:T7:O02:D03 and -M1:T6:O03:D01, which moved to conditional-only. This equals coverage-plan.json facet_changes_from_D0. Deck: D0 pilot-design gives principal admissible-linear 2 + trig 7 + implicit gradient 5 = 14; D2 gives 3 + 7 + (4+2+3) = 19. This matches PLAN.md:125, OWNER-CHECKPOINT.md:13, coverage-plan.md:27 and report :66.",
+   "residual": "none"
+  },
+  {
+   "finding_id": "D1-S27",
+   "related_agent_ids": [
+    "coverage-D1-02",
+    "coverage-D1-03",
+    "coverage-D1-04",
+    "coverage-D1-09"
+   ],
+   "codex_claim": "Coverage receipt persisted and citations current. G09 records 28 given-geometric-diagram exam parts and zero pilot parts. Exact 720.7 vs rounded 720.1 reconciled. Final 27-part audit hashes refreshed after the app handoff.",
+   "verdict": "repaired",
+   "evidence": "(1) planning/d2/coverage-check.json exists and is pinned in plan-manifest.json (manifest sha 2b9e53a5... verified; 809/809 pinned files, 436 sources and 62 review files match). Its 9 input hashes match current bytes. Re-running coverage-check.py --check in a scratch APFS clone passed and regenerated coverage-check.json, coverage-plan.json and coverage-plan.md byte-identical. The missing planning/d1/visual-coverage-check.json is no longer cited by any active file; only D1 history artifacts still cite it. (2) G09 gap row is at PLAN.md:90, coverage-plan.md:25 (plus JSON representation_gaps), capability-gaps.md:50, app-change-handoff.md:127, STATUS.md:15 and HANDOVER.md:23. Own count = 28; see recomputations. (3) coverage-plan.md:17 now gives the rounding explanation; own sum reproduces it (see recomputations). (4) checks/plan-repair-d2-part-register-audit.json: all 11 input hashes, including app-change-handoff.md 52a31bdf..., match current bytes and the manifest pins.",
+   "residual": "The receipt hard-codes pilot_part_count=0, deck_change and facet_changes as literals (coverage-D2-03). The 1-dp share column rounds 4 exact ties with binary-float rounding (coverage-D2-04). Both are notes."
+  },
+  {
+   "finding_id": "D1-S01",
+   "related_agent_ids": [
+    "calc1-D1-01"
+   ],
+   "codex_claim": "Routine stationary classification is Apply 3 under OD-4; mixed outcomes unchanged.",
+   "verdict": "repaired",
+   "evidence": "Scope: count/Bloom consequence only. flat-classification:classification has bloom 3 in calculus-design.json, pilot-design.json, part-evidence-register.json and .md (row 21), with rationale citing I4-I6. Branch whole_bloom is 3. WO stationary :38,:40 say Apply 3. PLAN.md:28,54, coverage-plan.md:7 and OWNER-CHECKPOINT.md:10 agree. D1->D2 part diff: the only Bloom change across the 27 parts is classification 4->3.",
+   "residual": "One active exemplar sentence still states the old label: exemplars/WB8227-stationary-inflexion.md:111 says 'Whole Bloom is proposed 3 for two-extrema and 4 only for the uncued mixed-outcome classification branch', which contradicts :115 of the same file (coverage-D2-01)."
+  },
+  {
+   "finding_id": "D1-S02",
+   "related_agent_ids": [
+    "calc2-D1-05"
+   ],
+   "codex_claim": "Mixed motion is 108 sign-change / 24 no-change with one neutral 4+2 tariff. Outcome classes renamed. Bloom 13 Apply / 1 Analyse.",
+   "verdict": "repaired",
+   "evidence": "Scope: count/Bloom/capacity consequence. Own classification of the 132 accepted_tuple_keys: 0<r<T gives 108 and r>T gives 24 (gap {1,2}, k {-2,2}, T {1,2}). No root lies at an endpoint. 24/132 = 2/11 = 18.18%. Normalised shapes are 18 reversal (r,c,tail with r!=tail) + 12 outside-root (T,gap,c) = 30. decision_outcome_classes are now sign_change 108 / no_sign_change 24, with initial_direction_classes 66/66 kept separately. The whole-choice Bloom maximum from parts gives {3:13, 4:1}; the only level-4 part is interior-reversal:distance. Counts agree in PLAN.md:28,45, OWNER-CHECKPOINT.md:10,12, STATUS.md:9,11, HANDOVER.md:13,17, report :50,56-57, manifest and coverage-plan. The no-change example k=-2,r=3,c=2,T=1 has roots {-2,3} and displacement = distance = 37/3 (sympy).",
+   "residual": "Whether R1/R3 genuinely support Analyse 4 is the motion agent's scope; not judged here."
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "recipes / choices / parts / marks",
+   "claimed": "9 / 14 / 27",
+   "computed": "9 / 14 / 27, total 83 marks. Part keys are identical in the canonical JSONs, pilot-design and register; 0 field mismatches on direct, conditional, prerequisite, marks, Bloom, primary and format. Motion canonical uses primary_assessed_objective_id, which is a field-name difference only and unchanged since D1. Register .md: 27 rows equal the JSON on marks, Bloom, primary and direct.",
+   "ok": true
+  },
+  {
+   "case": "paper exemplar cases",
+   "claimed": "42",
+   "computed": "42 = calculus exemplar_cases 21 (implicit 6, stationary 6, motion 9) + trig-model 12 (R-form 3, principal 3, log 6) + visual-design-asset-checks 9 (modulus 3, trapezium 3, vector 3). Exemplar .md case headings give the same per-recipe counts.",
+   "ok": true
+  },
+  {
+   "case": "whole-choice Bloom",
+   "claimed": "Apply 13 / Analyse 1",
+   "computed": "{3:13, 4:1} from per-part maxima. The stored whole_bloom / proposed_whole_bloom equals the part maximum for all 14 choices. Analyse = motion interior-reversal only (distance part L4).",
+   "ok": true
+  },
+  {
+   "case": "deck totals",
+   "claimed": "19 / 20 / 17",
+   "computed": "principal 3 + R-form 7 + implicit normal 9 = 19; modulus 3 + vector 7 + trapezium 10 = 20; flat 6 + motion reversal 6 + log graph-intercept 5 = 17",
+   "ok": true
+  },
+  {
+   "case": "D0->D2 symbolic deck decomposition",
+   "claimed": "14 = 2+7+5 -> 19 = 3+7+9",
+   "computed": "D0 pilot-design: principal admissible-linear 2, R-form 7, implicit gradient 5 = 14. D2: 3 + 7 + 9 = 19.",
+   "ok": true
+  },
+  {
+   "case": "direct facets",
+   "claimed": "38 unconditional + 1 conditional-only",
+   "computed": "38 + {8227:2020:M1:T6:O03:D01}. All linked IDs are in the registry.",
+   "ok": true
+  },
+  {
+   "case": "objectives",
+   "claimed": "26/60 = 25 unconditional + M1:T6:O03",
+   "computed": "25 + {8227:2020:M1:T6:O03}; registry has 60 objectives",
+   "ok": true
+  },
+  {
+   "case": "outside pilot",
+   "claimed": "99",
+   "computed": "138 - 39 = 99. Prerequisite-only demands are now 9 (D1: 6). The S08 quartic route adds M1:T2:O01:D01, M2:T1:O04:D02 and M2:T1:O04:D04 as power=4 conditional prerequisites of flat-classification:point. All are inside the 99, and no text claims a prerequisite-only count.",
+   "ok": true
+  },
+  {
+   "case": "D0->D2 facet swaps",
+   "claimed": "+O02:D01, +M1:T8:O01:D01; -O02:D03, -M1:T6:O03:D01 (to conditional)",
+   "computed": "identical from D0 and D2 pilot-design part records; D1->D2 unconditional and conditional sets unchanged",
+   "ok": true
+  },
+  {
+   "case": "coverage-plan 138 rows",
+   "claimed": "planned_direct/conditional/prerequisite parts and dispositions match design",
+   "computed": "0 mismatches over 138 rows. Dispositions: 38 pilot-direct-facets, 1 pilot-conditional-direct-facets, 99 later.",
+   "ok": true
+  },
+  {
+   "case": "67 groups / 8 supplementary",
+   "claimed": "all accounted",
+   "computed": "67 selection IDs = problem-patterns pattern_ids, with direct demand lists equal (0 mismatches). 12 selected = union of recipe accepted_selection_ids; 55 later. The union of group demands covers all 138 + 6 supplementary IDs. 8 non_specific rows = registry supplementary_demands (1 later model-construction + 7 prior-skill).",
+   "ok": true
+  },
+  {
+   "case": "exam totals",
+   "claimed": "119 q / 250 parts / 750 marks",
+   "computed": "119 / 250 / 750; 10 papers x 75; held parts 2022 P1 Q13, 2023 P1 Q1(b), 2023 P1 Q9",
+   "ok": true
+  },
+  {
+   "case": "138 frequency rows",
+   "claimed": "all agree with our step-3 table",
+   "computed": "coverage-plan.json examination_weight (parts, usable, full marks, rounded_1dp share, papers, years) equals our check-coverage-demand-frequency-step3.json on 138/138 rows. The own rescan matches exactly on parts, usable, marks, papers, years and exact fraction share (0 mismatches on the exact numerator/denominator). Under decimal half-up rounding, 4 rows differ by 0.1 at exact ties (coverage-D2-04). The 15 stored step-3 top rows agree 15/15. The coverage-plan.md table cells (138 + 8 supplementary) equal the JSON.",
+   "ok": true
+  },
+  {
+   "case": "equal-split totals",
+   "claimed": "content 2162/3 (720.7) + supplementary 88/3 (29.3) = 750",
+   "computed": "Fraction sums: 2162/3 + 88/3 = 750 exactly",
+   "ok": true
+  },
+  {
+   "case": "720.1 explanation",
+   "claimed": "720.1 = sum of 138 shares already rounded to 1 dp",
+   "computed": "The sum of our table's 138 rounded values is exactly 720.1 (Decimal). The exact total is 720.667. The explanation holds for the rounding convention both tables used (Python float round). With decimal half-up, the rounded rows would sum to 720.5.",
+   "ok": true
+  },
+  {
+   "case": "G09 count",
+   "claimed": "28 given-geometric-diagram exam parts; 0 pilot parts",
+   "computed": "28. Method: (1) in analysis/question-analysis.json the given_representation.kind counts over 250 parts are text 195, graph 27, diagram 28. The 28 lie in 13 Paper-1 questions (2021 Q7; 2022 Q8, Q11, Q12; 2023 Q6, Q13; 2024 Q7, Q8, Q10, Q11; 2025 Q9, Q10, Q12), and all must_read texts describe geometric figures (sectors, cone, tin, prism, pyramid, rhombus, reflection, touching circles, vector traversal). The 27 graph parts are function graphs. (2) Every non-text part has a '*-given' diagram asset and no text part has one. (3) A PyMuPDF vector-drawing scan of all pages of all 119 questions found no curve or oblique figure larger than 40 pt in any text-only question; text questions contain only vector arrow heads, radical signs, fraction bars and blank response-frame axes (2021 P1 Q12c, 2021 P2 Q4a, 2023 P2 Q6c, 2024 P2 Q8a/Q11a, 2025 P2 Q11a). (4) Native renders: 2025 P1 p4 (text vectors), p18 (rhombus), 2024 P1 p10 (reflection figure). Pilot side: the WOs and design records give modulus=graph, log graph-intercept=graph, trapezium (a,b) text with (c) blank axes only, vector=text (WO:53), motion/implicit/principal text, and R-form/stationary symbolic, so 0 supplied geometric figures.",
+   "ok": true
+  },
+  {
+   "case": "part-register audit hashes",
+   "claimed": "refreshed after final app-handoff edits",
+   "computed": "All 11 inputs match current bytes and manifest pins (app-change-handoff.md 52a31bdf..., OWNER-CHECKPOINT 76965445..., coverage-check.json bfc47d94..., pilot-design cf6a8abc..., register aadef1ba...). pilot-design.part_evidence_register_sha256 and pilot-design.inputs match.",
+   "ok": true
+  },
+  {
+   "case": "coverage-check.py --check reproducibility",
+   "claimed": "pass",
+   "computed": "pass in a scratch clone (deleted after); coverage-check.json, coverage-plan.json and coverage-plan.md are byte-identical to the checkout. Reviewer-row agreement is asserted in code (lines 156, 164, 167), not merely labelled.",
+   "ok": true
+  },
+  {
+   "case": "motion key migration",
+   "claimed": "(k,r,c,tail) -> (k,r,c,T), T=r+tail; polynomial (A,B,u) and exponential (V,k) keys keep their meaning",
+   "computed": "All 108 D1 reversal tuples map with T=r+tail exactly onto the D2 sign-change subset (mapped == {0<r<T}). The velocity formula k(t-r)(t+c) is unchanged. Polynomial keys velocity [A,B,u] / distance [A,B,u,T] and exponential keys [V,k] / [V,k,T] are unchanged D1->D2.",
+   "ok": true
+  },
+  {
+   "case": "report before/after table",
+   "claimed": "143/36->137/35; 59/15->56/14; 108/18->132/30; 35/12/3->30/11/3; 22/2",
+   "computed": "D1 calculus-design: 143/36 and 59/15; D2: 137/35 and 56/14. Reversal 108/18 -> 132/30. Trapezium (own enumeration) 36 raw -> 30 admitted, 11 (L,n,k) contexts; part keys 4/11/3/11, packing 3; h!=2 route 22 presentations, keys 4/11/2/8, packing 2. D1 was 35/12 (36 minus the single original tuple).",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "claimed": "132 = 108 sign-change + 24 no-change; 30 normalised shapes; minority 2/11",
+   "computed": "132 = 108 + 24; shapes 18 + 12 = 30; 24/132 = 2/11 = 18.18%; no endpoint roots; the D1 tuples map exactly onto the 108",
+   "notes": "Count consequence of OD-4 only. Marking/discrimination is the motion agent's scope."
+  },
+  {
+   "recipe": "WB8227-motion-integration",
+   "branch": "polynomial-chain / exponential-positive",
+   "claimed": "137/35 and 56/14",
+   "computed": "Agree with D2 calculus-design semantic_capacity, choice-capacities.json, PLAN.md:45, STATUS.md:11, HANDOVER.md:17 and report :54-55; D1 values 143/36 and 59/15 confirmed from history",
+   "notes": "Domain re-enumeration left to the motion agent."
+  },
+  {
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "claimed": "30 mathematical / 11 contexts / packing 3; 22 generated / packing 2",
+   "computed": "36 -> 30 (exclude (2,8,4,*) and (*,4,4,2), disjoint); 11 contexts; generated route h in {1,3}: 24 - 2 = 22; part-key counts 4/11/3/11 and 4/11/2/8; packing 3 and 2",
+   "notes": "Part-key definitions (a=(L,n), b=(L,n,k), c=h, d=(h,L,n)) are inferred. They reproduce the recorded counts exactly; the handoff's blocked key ['log-sketch',2] matches visual-design original_subtask_policy."
+  }
+ ],
+ "marking_tests": [],
+ "findings": [
+  {
+   "id": "coverage-D2-01",
+   "recipe": "WB8227-stationary-inflexion",
+   "branch": "flat-classification",
+   "locator": "work/nam-8227-nsscas-2026/workbench/exemplars/WB8227-stationary-inflexion.md:111",
+   "severity": "should-fix",
+   "expected": "After OD-4, every active record states that the flat-classification branch is Apply 3. The exemplar document is part of the 42 worked examples Vitalis approves.",
+   "actual": "Line 111 (carried over unchanged from D1) reads: 'Whole Bloom is proposed3 for two-extrema and4 only for the uncued mixed-outcome classification branch, pending the short cross-vendor check and Vitalis's approval.' Line 115 of the same file then says 'Both classification parts are Apply3 under OD-4'. The same line also cites the D1 checker planning/d1/calculus-design-check.py as the passing check.",
+   "evidence": "Text of :111 vs :115. calculus-design.json flat-classification whole_bloom=3 and classification part bloom=3. WO stationary :38,:40. PLAN.md:28,54. A regex sweep missed it because it reads 'and4' with no 'Analyse'; it was found by a line-level Bloom/classification scan of all active .md files. This is the only such residue: all other hits are D2-consistent.",
+   "repair": "Replace :111's Bloom sentence with the D2 statement (both branches Apply 3 under OD-4; the motion reversal is the only Analyse choice) and cite planning/d2/calculus-design-check.py."
+  },
+  {
+   "id": "coverage-D2-02",
+   "recipe": "records",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/calculus-source-reads.md:65; exemplars/WB8227-implicit-normal.md:3,127; planning/part-evidence-register.md:3; recipe-contract.md:173; capability-gaps.md:45; work-orders/WB8227-implicit-normal.md:136; work-orders/WB8227-stationary-inflexion.md:110",
+   "severity": "note",
+   "expected": "Active D2 records cite the D2 receipts and the D2 gate (changed-scope confirmation).",
+   "actual": "calculus-source-reads.md:65 says 'Current checks are planning/d1/calculus-exemplar-oracle.json ... and planning/d1/calculus-domain-audit.json'. D2 versions exist in planning/d2/, and the D1 audit lacks the D2 e-index and quartic factor-theorem checks. implicit-normal exemplar :127 cites the D1 oracle. Several active files still name the next gate as 'Claude's (focused) short check'.",
+   "evidence": "Python scan of active files for planning/d1/ and for 'short check'. Render paths under planning/d1/*-source-pages are legitimate retained evidence and are not counted.",
+   "repair": "Point these citations at planning/d2/calculus-exemplar-oracle.json and calculus-domain-audit.json, and update the gate wording when those files are next touched. Same kind of slip as D1-S27's citation fix."
+  },
+  {
+   "id": "coverage-D2-03",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/d2/coverage-check.py:187-189; planning/d2/coverage-check.json representation_gap.pilot_part_count, deck_change, facet_changes",
+   "severity": "note",
+   "expected": "A persisted check receipt derives the values it reports.",
+   "actual": "G09 exam_part_count is derived and asserted (=28). pilot_part_count=0, facet_changes_from_D0 and representative_deck_change are hard-coded literals, so the receipt does not itself evidence the zero-pilot claim or the deck decomposition.",
+   "evidence": "Script source in a scratch clone. I independently verified all three values (see recomputations), so the claims are true.",
+   "repair": "Optional: derive pilot_part_count from design given_representation fields, and derive the deck components from choice marks, so a future edit cannot leave the receipt stale."
+  },
+  {
+   "id": "coverage-D2-04",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/d2/coverage-check.py:49; planning/coverage-plan.json demands[*].examination_weight.equal_split_mark_share.rounded_1dp; planning/coverage-plan.md:17",
+   "severity": "note",
+   "expected": "The 1-dp share uses the subject's decimal half-up convention, or states its tie rule.",
+   "actual": "rounded_1dp = round(float(share),1). The exact ties 29/4 (M1:T7:O04:D02), 141/20 (M1:T8:O01:D01), 21/4 (M2:T3:O02:D03) and 25/4 (M2:T4:O03:D01) show as 7.2, 7.0, 5.2 and 6.2; half-up gives 7.3, 7.1, 5.3 and 6.3. Our step-3 table used the same Python rounding, so 'all 138 agree' and the '720.1 = sum of rounded rows' explanation are correct under that convention. Under half-up the rounded rows would sum to 720.5.",
+   "evidence": "Exact numerator/denominator stored in coverage-plan.json; Decimal half-up vs float round in own code.",
+   "repair": "None required: the column is informational and the exact fractions are stored. Optionally state 'rounded with binary-float round; exact fraction authoritative'."
+  },
+  {
+   "id": "coverage-D2-05",
+   "recipe": "WB8227-motion-integration",
+   "branch": "interior-reversal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/app-change-handoff.md:32,125; planning/calculus-design.json:4690-4691 (display_title, legacy_id_note)",
+   "severity": "later-test",
+   "expected": "An acceptance fixture proves the outcome-cueing internal ID never reaches the learner before submission.",
+   "actual": "APP8227-01 safe metadata carries 'fixed branch/choice'. The choice and selection ID string is 8227:D:SEL:motion-integration:interior-reversal, which suggests an interior reversal in a pool where 2/11 instances have none. handoff:125 states the rule ('internal historical branch ID is not learner copy ... do not leak which method is needed through metadata or labels'), but its listed tests cover only R1/R3/R4 marking.",
+   "evidence": "handoff :32 and :125. The display_title 'Check direction change and find travelled distance' is outcome-neutral, and the direct demands and Bloom are the same for both outcomes, so the metadata is otherwise neutral.",
+   "repair": "At E/F or local acceptance, add a fixture asserting that learner-visible pre-submit payloads, practice/test views and pre-submission history contain no 'interior-reversal' or case tag."
+  }
+ ],
+ "verified_ok": [
+  "Manifest sha256 2b9e53a5...43f2 matches the pinned value. 809/809 pinned design files, 436 source and 62 review hashes match current bytes. demand-registry, question-analysis and problem-patterns are pinned by analysis/analysis-snapshot.json and match.",
+  "Counts agree in plan-manifest.json, pilot-design.json, part-register-audit, choice-capacities.json, coverage-plan.json/.md, coverage-check.json, PLAN.md, OWNER-CHECKPOINT.md, the D2 report, workbench STATUS/HANDOVER, subject STATUS and app-change-handoff.md: 9/14/42/27, 38+1 facets, 26/60 = 25+1, 99, 12/55 of 67, 138/67/8, Bloom 13/1, decks 19/20/17. Choice marks and Bloom in choice-capacities.json equal my per-part recomputation for all 14 choices.",
+  "Vector D03->D01 swap is reflected in the part (a) direct set and in coverage-plan rows :91 (D01 pilot) and :93 (D03 later). M1:T6:O03:D01 is conditional-only [real-solution] at coverage-plan.md:83. M1:T8:O01:D01 is directly assessed only by implicit normal:gradient (:101). Motion demands are generic integration actions, so the 24 no-change instances need no conditional tagging.",
+  "Coverage is computed from part links only. examination_scan() reads question-analysis part links; group rows carry dispositions and no weights.",
+  "D1 note coverage-D1-05: D2 added decision_partly_exercised_by and overlap counts for exactly the four groups named (gradient-evaluation 1/1, tangent-normal 4/6, definite-integral 4/9, standard-antiderivatives 5/10), and I recomputed these. 29 other later groups with facet overlap keep template reasons. That undercounts and does not inflate, so no action is needed.",
+  "D1 note coverage-D1-06: visual-design trapezium primary_role_rationale now explains the b/c primaries vs the accepted 2023 source primaries.",
+  "app-change-handoff.md D2 additions are consistent with the design records. Motion outcome privacy (title, case tags and roots private until submission; :125) matches calculus-design display_title/legacy_id_note and trig conditional_metadata_visibility. Key change and freshness mapping (:131) verified exactly. The trapezium original-subtask guard (:126) matches visual-design original_subtask_policy (h=2, part c only, blocked ['log-sketch',2], whole_question_is_original=false, 30/11/3 vs 22/2). G09 is noted (:127). The JSON examples are updated to 0.1.2, and no D1-era count remains (:90 '14 choices, 27 slots, 42 cases' is still true).",
+  "Stale-number sweep over 80 active files (PLAN/STATUS/HANDOVER/subject STATUS/handoff/capability-gaps/contract/subject-rules/planning *.md,*.json/work-orders/exemplars/D2 report/planning/d2/*.json/checks/plan-repair-d2-*). No 12/2 Bloom, 143/36, 59/15, 108/18, 35/12/3, '18' endpoint triangle or 8227-stage-d-d1 string remains outside the report's explicit D1->D2 before/after table (:50-58). The other hits are unrelated (angles 143.1 deg, 7.59, line numbers). All classification_version strings are 8227-pilot-design-0.1.1. D1-MOD-OD1-LIST appears only as withdrawn (OWNER-CHECKPOINT:43, deviation-register, visual-dispositions removed_deviations). The one stale classification-Bloom residue is coverage-D2-01.",
+  "No active file references planning/d1/visual-coverage-check.json (the missing D1 citation).",
+  "PLAN.md:54 '54 triangle-method coincidences from the reversal subset' is still correct: r=tail is excluded only in the sign-change subset."
+ ],
+ "not_checked": [
+  "Whether interior-reversal R1/R3 criteria genuinely support Analyse 4 (motion agent's scope); I checked only the count and label consequences.",
+  "Marking, criteria, OD-1 answer-only rules, discrimination sweeps and exemplar mathematics, apart from the one motion no-change example (other agents' scope).",
+  "Re-enumeration of the motion polynomial/exponential domains (I checked only that the counts are consistent with records and D1 history), plus the 116.5->117 / 233/2 boundary cited in handoff :129.",
+  "Correctness of accepted question-analysis part->demand links and given_representation tags beyond the G09 scan (accepted R7 analysis, used as given).",
+  "Deviation register content (S24), R7 close-out sentences (S28-S30), the trig 14-vs-10 flip difference.",
+  "Pinned-but-unchanged planning/d1/* receipts as historical evidence (not re-verified)."
+ ]
+}

@@ -1,0 +1,727 @@
+{
+ "label": "vector-contract",
+ "scope": [
+  "WB8227-vector-geometry / scalar-combination-and-origin-angle: work order, exemplar, visual-design.json vector section, planning/d1/visual-rounding-fixtures.json, planning/d1/visual-domain-checks.json (vector branch)",
+  "subject-rules.md D1-MR01..09 (lines 57-77), recipe-contract.md, app-change-handoff.md",
+  "OD-1 sweep across all nine work orders (27 part slots) plus their exemplars and the structured design JSONs",
+  "MR02-MR08 consistency across work orders; convention locators :076 :002 :006 :108 :003 :004 :005 :096 against analysis/marking-conventions.json and native pages",
+  "Same-type references for all nine recipes (per part/per branch, held-original screen) with native spot checks",
+  "Dispositions vector-contract-01..16; manifest sha256 c8914cf9... confirmed for current bytes"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 4,
+   "what": "Q3 stem + (a): OA=(-3,4,2), OB=(3,-1,2), OC=(5,-3,6); 'Find the value of the constant p for which pOA-OB is perpendicular to OC' [3]; printed page 4. No scaffold; numeric p. Confirms part-(a) same-type label on form/givens/scaffold."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 5,
+   "what": "Q3(b) 'Use a scalar product to find angle AOB.' [4]; printed page 5."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 346,
+   "what": "printed 344: Q3(a) poorly answered; most 'did not go beyond the step of introducing p in the vectors ... ended at p(-3,4,2)-(3,-1,2)' (p NOT distributed); others p(OA-OB)=p(-6,5,0)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 347,
+   "what": "printed 345: Q3 award table B1 '(-3p,4p,2p)-(3,-1,2) or (-3p-3,4p+1,2p-2)', M1 'Calculating scalar product and =0', A1 p=-2; (b) B1 dot accept AO.OB=9, M1 one or both magnitudes, M1 FT, A1 116.5 (1dp) accept 2.03 rad. Prose: AO.OB gives 63.5, 'could not obtain full marks'; 'round their angles in degrees to 1 decimal place and not round the answer to the nearest whole number'."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 345,
+   "what": "printed 343 P1 general: item 1 first answer seen marked; item 2 additional-page/cross-out; item 3 show/prove all steps, 'mark what the candidate has written down, not what is implied'; item 4 'Learners who misread numbers do not score maximum marks even if their method is correct' (CONVENTION:108)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 355,
+   "what": "printed 353 P2 general: method emphasis/complete methods; work at original question marked; exact where possible (sqrt29); round only final; s.f. vs d.p.; may NOT work backwards; HENCE -> no marks if previous not used; degrees/radians."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 236,
+   "what": "printed 234 P2 general: 'Complete methods should be shown at all times' (:002); exact where possible (:003); round only final (:004); 'No marks are awarded if only answers are given' in calculator context (:076); 'SHOWN is NOT acceptable' (:096); may NOT work backwards (:005); HENCE rule, none read 'hence or otherwise' (:006)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 331,
+   "what": "printed 329 Q2 modulus: 'a=-2 www B1, b=-3 www B1, c=2 www B1; Allow all the marks if values are seen in the correct place in the formula'. Same table Q1(b) explicitly says 'B0, M0, A0 for correct 3 brackets without any working' - the scheme denies bare answers where intended; Q2 does not."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2023/NSSCAS_Examiners_Report_2023.pdf",
+   "page": 337,
+   "what": "printed 335 Q6: (a) B1 h, M1, A1; (b) B1 3ln(x-2)^2, B1FT 6x their (a), 'SC1: Correct but hence not used'; (c) B1 shape (B0 if more than one graph), B1 asymptote, B1 intercept; (d) B1 Under-estimate 'Must be correct from their graph', DB1 trapeziums below curve or concave."
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2022/NSSCAS_Examiners_Report_2022.pdf",
+   "page": 301,
+   "what": "printed 299 P1 Q2(b): M1FT realizing relationship, A1; 'SC 1 if relationship is not seen and y=1/9 is only solution', 'A0 if 2 solutions given'."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 3,
+   "what": "Q2 modulus graph y=a|x+b|+c with vertex (3,2), zeros (2,0),(4,0), y-intercept (0,-4); 'Find the values of a, b and c' [3]. Matches modulus part-a same-type label."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 10,
+   "what": "Q6(a) trapezium rule four intervals on int_3^11 ln(x-2) to 3 s.f. [3]; (b) 'Hence find an approximation to int_3^11 3ln(x^2-4x+4)' [2]. Matches trapezium a/b labels."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+   "page": 11,
+   "what": "Q6(c) sketch y=ln(x-2), label axis intersections [3]; (d) use your sketch, with a reason, over/under-estimate [2]. Matches trapezium c/d labels (design adds asymptote/reason scaffolds, disclosed)."
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+   "page": 6,
+   "what": "Q6 y=3^(2a) a^x, log_3 y vs x gradient 2; (a) exact a [3]; (b) Hence x when y=81 [2]. Matches log-linear gradient-target t-parameter/t-target labels."
+  }
+ ],
+ "dispositions": [
+  {
+   "agent_id": "vector-contract-01",
+   "prior_severity": "design-blocking",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:29 stem 'If not written exactly, give p to 3 significant figures'; :65 a:A1 exact or 3sf; :30 and :69 exact 60/90 accepted without .0; exemplar :5; subject-rules.md:68 MR04. Own enumeration: every admitted p has denominator in {2,4,5,8} (r=t removal deleted denominators 3,6,11), so all 30 admitted p are terminating decimals with <=3 s.f.",
+   "residual": "Three admitted non-exact angles round to x.0 (see vector-contract-D1-02): rule for '80' / '63' is unstated."
+  },
+  {
+   "agent_id": "vector-contract-02",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "WO:11,14; visual-design.json:420-425 part a direct = {O02:D01,O02:D02,O04:D02,O05:D02}, equal to analysis/question-analysis.json 8227:EXAM:2025:P1:Q3:a; D03 absent; coverage-plan.md:81 D01 pilot-direct, :83 D03 later scope; part-evidence-register.md:12 agrees. Label re-decided: native PDF4 has same three supplied column vectors, same 'pOA-OB perpendicular to OC' prompt, numeric p, no scaffold. (a) has its own display/comparison reason (visual-design.json:506,511).",
+   "residual": "None material; (a) 'verified_by' cites report pp346-347 rather than paper p4 (page 4 independently confirmed here)."
+  },
+  {
+   "agent_id": "vector-contract-03",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "WO:34 excludes r=t (18); own enumeration: all 30 admitted have A,B,C,O distinct; new boundary (2,-1,1) admitted, p=-1/4, OA.OB=0 -> 90 deg, resultant (3/4,-3/2,3/4).OC=0, |A-B|^2=9. Old (3,-2,3) excluded (A=C, p=0).",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-04",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "WO:44-49 and visual-design.json capacity_analysis: raw 54 / admitted 30 / part a 30 / part b 17 / strict 17; own code identical (17 (r,s) pairs, 13 repeated b presentations, max packing 17). Calibration vs source magnitude 6 recorded (WO:38).",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-05",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "WO:35-36 exclude p=0 (6) and identity 3-s+rt-t=0 (3: (1,3,t)); own code: wrong p(u-v).w=0 gives p=0 (never canonical) in all 30 admitted; a:A1 tied to valid resultant (WO:65, D1-VEC-A1-VALID-WORK :75); sample WO:87 / exemplar:56 5/7 consistent with official M1 'scalar product and =0'.",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-06",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "WO:63 a:B1 accepts (p,rp,p)-(s,1,-1) uncombined, matching rendered PDF347 B1 '(-3p,4p,2p)-(3,-1,2) or ...'.",
+   "residual": "Undistributed p(1,r,1)-(s,1,-1) - the report's most common stopping point - is not addressed and WO:20 mis-describes it as 'the scaled vector minus OB' (vector-contract-D1-03)."
+  },
+  {
+   "agent_id": "vector-contract-07",
+   "prior_severity": "should-fix",
+   "codex_disposition": "repaired-and-frozen-fixtures",
+   "verdict": "repaired",
+   "evidence": "visual-rounding-fixtures.json: all 15 recomputed with Decimal half-up from 50-digit values: canonical, norms-3sf, cos-3sf and combined routes match exactly; 9 admitted / 6 filtered with correct reasons ((1,-2,1),(1,2,1),(2,-3,2),(2,1,2),(3,3,3) A=C; (1,-2,3) p=0). WO:79 premature-rounding rule keeps B/M, A0 only when final digit changes; sample WO:89 6/7 (61.84 -> 61.8). Extra routes (product of norms to 3sf; 2dp-then-1dp double rounding) add no further sensitive admitted tuple.",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-08",
+   "prior_severity": "note",
+   "codex_disposition": "repaired",
+   "verdict": "repaired",
+   "evidence": "visual-design.json:506 (a) has its own reason, no longer copied from (b).",
+   "residual": "Same copied-reason pattern now appears on the held 2023 P1 Q9 related reference in trig-model-design.json:717 (note D1-07)."
+  },
+  {
+   "agent_id": "vector-contract-09",
+   "prior_severity": "should-fix",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "repaired",
+   "evidence": "subject-rules.md:65 MR01 with :076/:002 locators (verified on rendered 2021 PDF236, 2025 PDF355). All nine WOs state per-part answer-only credit (see od1_sweep); principal-inverse bare x now 0/3 (WO:58).",
+   "residual": "Modulus repair introduced a new contradiction: bare coefficient list 0/3 vs official B1 www value rows (vector-contract-D1-01)."
+  },
+  {
+   "agent_id": "vector-contract-10",
+   "prior_severity": "should-fix",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "partly-repaired",
+   "evidence": "subject-rules.md:67 MR03 (:108 verified on 2025 PDF345 item 4); vector sample WO:90 3/7 recomputed (p=-1/4, 118.1).",
+   "residual": "Applied inconsistently: motion WO:48 retains value-bearing E3 on misread V while failing E1; vector fails value-bearing a:B1/b:B1. Principal, modulus and trapezium WOs name no affected award as MR03 requires (vector-contract-D1-04)."
+  },
+  {
+   "agent_id": "vector-contract-11",
+   "prior_severity": "should-fix",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "repaired",
+   "evidence": "subject-rules.md:68 MR04 states exact-or-3sf when exactness not requested; applied in vector, implicit, motion, log-linear stems; exact requested in principal/normal/R where stated.",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-12",
+   "prior_severity": "note",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "repaired",
+   "evidence": "subject-rules.md:71 MR07 first uncancelled coherent attempt (2025 PDF345 items 1-2, PDF355 verified); vector WO:73 and exemplar:59 apply it; R-form extra-root cap WO:76.",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-13",
+   "prior_severity": "should-fix",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "partly-repaired",
+   "evidence": "Selection IDs now uniformly 8227:D:SEL:<recipe>:<branch> in all nine WOs; calculus WOs name accepted parents; implicit/stationary list per-part IDs.",
+   "residual": "Two classification-version strings: principal/trig/log WOs line 3 and trig-model-design.json (13 occurrences) say 8227-stage-d-d1-0.1.1; pilot-design.json bloom fields and part-evidence-register say 8227-pilot-design-0.1.1 for the same parts (vector-contract-D1-06). Motion WO:5 still only points to calculus-design.json for per-part IDs (allowed by the repair's 'or a per-part pointer')."
+  },
+  {
+   "agent_id": "vector-contract-14",
+   "prior_severity": "later-test",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "accepted-deferral",
+   "evidence": "app-change-handoff.md:117 adds column-vector/sign/degree/exact 60-90/history notation fixture; runtime test correctly left unrun.",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-15",
+   "prior_severity": "note",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "repaired",
+   "evidence": "planning/OWNER-CHECKPOINT.md:23 'All design-blocking and should-fix step-3 findings are dispositioned in the D1 report before authoring affected recipes.'",
+   "residual": ""
+  },
+  {
+   "agent_id": "vector-contract-16",
+   "prior_severity": "note",
+   "codex_disposition": "author repaired/recorded",
+   "verdict": "repaired",
+   "evidence": "recipe-contract.md:18 links owner-decisions-2026-11-16.md N2 item 5 (line 45 verified: verbatim NSSCAS/Cambridge with attribution).",
+   "residual": ""
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "Vector raw domain and exclusions (direct vector code, sympy exact)",
+   "claimed": "54 raw; r=t 18; p=0 6; identity 3; union 24; 30 admitted",
+   "computed": "54; A=C 18; p=0 6 [(1,-2,3),(1,-1,2),(2,-2,3),(2,-1,2),(3,-2,3),(3,-1,2)]; identity 3 [(1,3,1),(1,3,2),(1,3,3)]; union 24; admitted 30",
+   "ok": true
+  },
+  {
+   "case": "Vector part keys",
+   "claimed": "part a 30, part b 17, 13 repeated b presentations, strict unseen 17",
+   "computed": "30 distinct triples (17 distinct p values); 17 (r,s) pairs; 30-17=13; max packing 17",
+   "ok": true
+  },
+  {
+   "case": "Vector distinctness / degeneracy",
+   "claimed": "A,B,C distinct; no zero resultant; no parallel OA,OB; unique p",
+   "computed": "all 30 admitted have O,A,B,C distinct; resultant never zero; cross(OA,OB) never zero; 2+rt in {4,5,8}",
+   "ok": true
+  },
+  {
+   "case": "Wrong p(OA-OB) over admitted domain",
+   "claimed": "never canonical p; no identity",
+   "computed": "coefficient 3-s+rt-t nonzero for all 30 -> wrong p=0, canonical p nonzero in all 30",
+   "ok": true
+  },
+  {
+   "case": "Other resultant errors over admitted domain",
+   "claimed": "(not claimed)",
+   "computed": "OA-pOB, pOA+OB, p(OA+OB), pOB-OA: 0 canonical coincidences; dotting with OA instead of OC coincides at (2,2,1),(2,2,3) (p=1/2) - not an examiner-named error",
+   "ok": true
+  },
+  {
+   "case": "New boundary (2,-1,1)",
+   "claimed": "p=-1/4, angle 90",
+   "computed": "p=-1/4; resultant (3/4,-3/2,3/4), .OC=0; OA.OB=0; |A-B|^2=9; cosine law 0",
+   "ok": true
+  },
+  {
+   "case": "Normal exemplar (1,2,2)",
+   "claimed": "p=3/4; resultant (-5/4,-1/4,7/4); dot 2; norms sqrt3,sqrt6; 61.874494 -> 61.9; |A-B|^2=5",
+   "computed": "identical; reversed ray 118.1",
+   "ok": true
+  },
+  {
+   "case": "Changed exemplar (2,-3,1)",
+   "claimed": "p=-3/4; resultant (9/4,-5/2,1/4); dot -2; sqrt6,sqrt11; 104.251755 -> 104.3; |A-B|^2=21; premature norms 104.2",
+   "computed": "identical; norms 2.45,3.32 -> 104.234 -> 104.2",
+   "ok": true
+  },
+  {
+   "case": "Exact angles admitted",
+   "claimed": "two exact 60, four exact 90",
+   "computed": "60: (2,2,1),(2,2,3); 90: (2,-1,1),(2,-1,3),(3,-2,1),(3,-2,2)",
+   "ok": true
+  },
+  {
+   "case": "15 rounding fixtures (canonical / norms3sf / cos3sf / combined)",
+   "claimed": "values and route lists in visual-rounding-fixtures.json; 9 admitted, 6 filtered",
+   "computed": "all 15 x 4 values and route lists match; admitted set and exclusion reasons match",
+   "ok": true
+  },
+  {
+   "case": "Additional premature-rounding routes",
+   "claimed": "(15 D0-sensitive tuples)",
+   "computed": "product |OA||OB| to 3sf and 2dp-then-1dp rounding change no further admitted tuple",
+   "ok": true
+  },
+  {
+   "case": "Sample: premature norms 1.73, 2.45 (normal)",
+   "claimed": "61.8 deg, 6/7",
+   "computed": "61.84 -> 61.8; B1/M1/M2 kept, A0 -> 6/7",
+   "ok": true
+  },
+  {
+   "case": "Sample: p(OA-OB) on normal",
+   "claimed": "p=0, 5/7",
+   "computed": "p(-1,0,2).(1,2,1)=p -> p=0; a:M1 only +4 = 5/7",
+   "ok": true
+  },
+  {
+   "case": "Sample: misread OB=(-2,1,-1) on normal",
+   "claimed": "p=-1/4, 118.1, 3/7",
+   "computed": "resultant (p+2,p-1,p+1), 4p+1=0, p=-1/4; dot -2, |OB'|=sqrt6 -> 118.1255 -> 118.1; a:M1+b:M1+b:M2 = 3/7 consistent with MR03 wording",
+   "ok": true
+  },
+  {
+   "case": "Source 2025 P1 Q3",
+   "claimed": "p=-2; 116.5 deg; 2.03 rad; reversed 63.5",
+   "computed": "p=-2; 116.5298; 2.034 rad; 63.47",
+   "ok": true
+  },
+  {
+   "case": "Admitted p accuracy",
+   "claimed": "exact or 3 s.f.",
+   "computed": "denominators {2,4,5,8}: all 17 distinct p are terminating decimals with <=3 s.f.; the 3 s.f. clause never triggers",
+   "ok": true
+  },
+  {
+   "case": "Non-exact angles that round to x.0",
+   "claimed": "(not addressed)",
+   "computed": "(3,-1,1) 79.975 -> 80.0; (3,3,1),(3,3,2) 62.964 -> 63.0",
+   "ok": false
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "claimed": "54 raw -> 30 admitted; part a 30; part b 17; strict unseen 17",
+   "computed": "54 -> 30; a 30; b 17; strict 17",
+   "notes": "Acute/right/obtuse 17/4/9; p positive 18 / negative 12; 17 distinct p; exact 60 x2, 90 x4; 9 admitted rounding-sensitive tuples; changed exemplar 0.0018 deg from a 1dp boundary."
+  }
+ ],
+ "od1_sweep": [
+  {
+   "recipe": "principal-inverse",
+   "branch": "solve-or-explain",
+   "part": "p-decision",
+   "marks": 3,
+   "answer_only": "explicit 0/3 (bare x and bare 'no real solution'); WO:58",
+   "exception": "none claimed",
+   "ok": true
+  },
+  {
+   "recipe": "trig-rform-equation",
+   "branch": "degree-cycle",
+   "part": "a-convert",
+   "marks": 3,
+   "answer_only": "explicit 0/3, incl. bare full R-form; WO:72",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "trig-rform-equation",
+   "branch": "degree-cycle",
+   "part": "b-roots",
+   "marks": 4,
+   "answer_only": "explicit 0/4; non-hence visible method 0 (no SC in 2022 table); WO:72-74",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "log-linear-model",
+   "branch": "graph-intercept",
+   "part": "g-parameters",
+   "marks": 5,
+   "answer_only": "explicit 0; state-or-imply needs visible work; WO:70",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "log-linear-model",
+   "branch": "gradient-target",
+   "part": "t-parameter",
+   "marks": 3,
+   "answer_only": "explicit 0/3; WO:96",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "log-linear-model",
+   "branch": "gradient-target",
+   "part": "t-target",
+   "marks": 2,
+   "answer_only": "explicit 0/2; WO:96",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "implicit-normal",
+   "branch": "gradient",
+   "part": "gradient",
+   "marks": 5,
+   "answer_only": "explicit 0/5; WO:112",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "implicit-normal",
+   "branch": "normal",
+   "part": "show-derivative",
+   "marks": 4,
+   "answer_only": "copied target 0/4; WO:93,112",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "implicit-normal",
+   "branch": "normal",
+   "part": "gradient",
+   "marks": 2,
+   "answer_only": "0/2; hence bypass 0; WO:94,112",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "implicit-normal",
+   "branch": "normal",
+   "part": "normal",
+   "marks": 3,
+   "answer_only": "0/3; WO:112",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "stationary-inflexion",
+   "branch": "two-extrema",
+   "part": "points",
+   "marks": 4,
+   "answer_only": "0/4; WO:86",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "stationary-inflexion",
+   "branch": "two-extrema",
+   "part": "nature",
+   "marks": 2,
+   "answer_only": "0/2; WO:86",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "stationary-inflexion",
+   "branch": "flat-classification",
+   "part": "point",
+   "marks": 3,
+   "answer_only": "0/3; WO:86",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "stationary-inflexion",
+   "branch": "flat-classification",
+   "part": "classification",
+   "marks": 3,
+   "answer_only": "0/3; WO:86",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "motion-integration",
+   "branch": "polynomial-chain",
+   "part": "velocity / distance",
+   "marks": "3 / 3",
+   "answer_only": "'Every part has answer-only maximum zero' WO:33",
+   "exception": "none (E4 'correct constant may imply zero-time substitution' is the official 2023 P2 Q9 row and requires visible working)",
+   "ok": true
+  },
+  {
+   "recipe": "motion-integration",
+   "branch": "exponential-positive",
+   "part": "acceleration / distance",
+   "marks": "2 / 3",
+   "answer_only": "0 (WO:33)",
+   "exception": "as above",
+   "ok": true
+  },
+  {
+   "recipe": "motion-integration",
+   "branch": "interior-reversal",
+   "part": "distance / displacement",
+   "marks": "4 / 2",
+   "answer_only": "0 (WO:33)",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "part": "a",
+   "marks": 3,
+   "answer_only": "bare coefficient list 0/3; bare complete formula 3/3 'provided www'; WO:55",
+   "exception": "cites official 2023 P2 Q2 row (report PDF331) - but that row's B1 www value marks award correct values, list or formula; WO criterion table :49-51 also awards them. Contradiction -> vector-contract-D1-01",
+   "ok": false
+  },
+  {
+   "recipe": "trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "part": "a",
+   "marks": 3,
+   "answer_only": "0/3; WO:81",
+   "exception": "none",
+   "ok": true
+  },
+  {
+   "recipe": "trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "part": "b",
+   "marks": 2,
+   "answer_only": "0/2; visible non-hence method capped SC1; WO:81",
+   "exception": "SC1 cites official 2023 P2 Q6 row 06 (PDF337 'SC1: Correct but hence not used')",
+   "ok": true
+  },
+  {
+   "recipe": "trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "part": "c",
+   "marks": 3,
+   "answer_only": "sketch features can earn 3/3 without prose (the sketch is the assessed work); WO:81",
+   "exception": "rows 07-09 feature awards (WO:95); verified PDF337",
+   "ok": true
+  },
+  {
+   "recipe": "trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "part": "d",
+   "marks": 2,
+   "answer_only": "bias word with own sketch earns d:B1 only; no sketch 0; WO:81,110",
+   "exception": "row 10 'Must be correct from their graph' (PDF337 verified) + 2025 Q4(b) own-graph F.T.",
+   "ok": true
+  },
+  {
+   "recipe": "vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "part": "a",
+   "marks": 3,
+   "answer_only": "0/3; WO:73",
+   "exception": "none claimed",
+   "ok": true
+  },
+  {
+   "recipe": "vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "part": "b",
+   "marks": 4,
+   "answer_only": "0/4; WO:73",
+   "exception": "none claimed",
+   "ok": true
+  }
+ ],
+ "same_type_checks": [
+  {
+   "recipe": "vector-geometry",
+   "ref": "2025 P1 Q3(a) p4 -> part a",
+   "native": "rendered; same givens/prompt/response/no scaffold; demand set equals question-analysis",
+   "ok": true
+  },
+  {
+   "recipe": "vector-geometry",
+   "ref": "2025 P1 Q3(b) p5 -> part b",
+   "native": "rendered; 'Use a scalar product to find angle AOB'",
+   "ok": true
+  },
+  {
+   "recipe": "modulus-graph-recovery",
+   "ref": "2023 P2 Q2 p3 -> part a",
+   "native": "rendered; same graph-to-coefficients task",
+   "ok": true
+  },
+  {
+   "recipe": "trapezium-sketch-estimate",
+   "ref": "2023 P2 Q6(a)(b) p10, (c)(d) p11 -> parts a-d",
+   "native": "rendered; per-part match; design adds disclosed mild scaffolds",
+   "ok": true
+  },
+  {
+   "recipe": "log-linear-model",
+   "ref": "2025 P2 Q6(a)(b) p6 -> t-parameter, t-target",
+   "native": "rendered; y=3^(2a)a^x, log_3 y gradient 2; exact a; Hence x",
+   "ok": true
+  },
+  {
+   "recipe": "all nine",
+   "ref": "31 references in visual/calculus/trig-model design JSONs",
+   "native": "every reference has applies_to_part_ids or target_part_id; same-type labels are part-scoped; no reference to 2022 P1 Q13 or 2023 P1 Q1(b); 2023 P1 Q9 appears only as related, learner_display false, in principal-inverse",
+   "ok": true
+  }
+ ],
+ "findings": [
+  {
+   "id": "vector-contract-D1-01",
+   "recipe": "WB8227-modulus-graph-recovery",
+   "branch": "vertex-intercepts",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-modulus-graph-recovery.md:49-51,55,57; exemplars/WB8227-modulus-graph-recovery.md:23,66",
+   "severity": "design-blocking",
+   "expected": "OD-1: a bare answer earns zero unless the official scheme for that question type awards it. The official 2023 P2 Q2 row (report PDF331, rendered) awards 'a=-2 www B1, b=-3 www B1, c=2 www B1' - value marks without wrong working - and additionally 'Allow all the marks if values are seen in the correct place in the formula'. The same page shows the board writes 'B0, M0, A0 ... without any working' where it means to deny bare answers (Q1(b)); it does not for Q2. The WO's own criteria (B1 www 'Correct signed a, without wrong working for it') likewise award a correct value with no wrong working.",
+   "actual": "Answer-only rule (WO:55) gives a bare coefficient list 0/3 but a bare complete formula 3/3, and labels the split 'owner-binding interpretation' D1-MOD-OD1-LIST (WO:57). OD-1 contains no such ruling, and OWNER-CHECKPOINT.md:14 does not surface it. The declared response_format is 'numeric named coefficients' (WO:7,35), so the default fully correct response scores 0/3 while the same information typed as a formula scores 3/3; the answer-only line contradicts the criterion table.",
+   "evidence": "Rendered 2023 report PDF331/printed329; WO text.",
+   "repair": "Either (i) apply the official Q2 exception to correct values in any unambiguous form (list or formula), www, 3/3 - consistent with OD-1 and the criterion table; or (ii) put the list-vs-formula split to Vitalis as an explicit named deviation and, if accepted, rewrite a:B1-B3 to require visible working for list responses. Drop the 'owner-binding' label until Vitalis has ruled."
+  },
+  {
+   "id": "vector-contract-D1-02",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:30,69; planning/d1/visual-rounding-fixtures.json",
+   "severity": "should-fix",
+   "expected": "Accepted-answer sets for every admitted angle are unambiguous. 2025 report PDF347 says angles must be to 1 dp, 'not round the answer to the nearest whole number'.",
+   "actual": "D1 accepts exact 60/90 without '.0' but otherwise requires a 1 dp value. Three admitted non-exact angles round to x.0: (3,-1,1) 79.975 -> 80.0 and (3,3,1),(3,3,2) 62.964 -> 63.0. Whether '80' or '63' (nearest whole number, numerically equal to the memo) earns b:A1 is unstated, and a numeric comparator would accept them, contrary to the report. These tuples are not in the frozen fixture set.",
+   "evidence": "Own 50-digit enumeration.",
+   "repair": "State that for non-exact angles b:A1 needs the 1 dp form (80.0, 63.0), and freeze these three tuples with accepted/rejected strings alongside the 15 rounding fixtures."
+  },
+  {
+   "id": "vector-contract-D1-03",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:20,63,86",
+   "severity": "should-fix",
+   "expected": "The source description and a:B1 handle the report's most common stopping point. Rendered PDF346: most candidates 'did not go beyond the step of introducing p ... ended at p(-3,4,2)-(3,-1,2)' (p not distributed), while the official B1 shows the distributed (-3p,4p,2p)-(3,-1,2).",
+   "actual": "WO:20 says the report describes 'stopping at the scaled vector minus OB', and the 5/7 sample (WO:86) credits a:B1 for that, so an implementer may credit the undistributed restatement p(1,r,1)-(s,1,-1). a:B1 (WO:63) shows only the distributed form and is silent on the undistributed one.",
+   "evidence": "Rendered 2025 report PDF346-347.",
+   "repair": "Correct WO:20, and state explicitly whether the undistributed restatement p(1,r,1)-(s,1,-1) earns a:B1. The official B1 wording supports B0 unless the scaled components are shown. Add it as a sample row."
+  },
+  {
+   "id": "vector-contract-D1-04",
+   "recipe": "shared (MR03)",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:67; work-orders/WB8227-motion-integration.md:48; work-orders/WB8227-vector-geometry.md:90; work-orders/WB8227-principal-inverse.md, WB8227-modulus-graph-recovery.md, WB8227-trapezium-sketch-estimate.md (no misread statement)",
+   "severity": "should-fix",
+   "expected": "MR03: 'Canonical accuracy tied to the misread data fails ... Each part names the affected accuracy/read award', applied the same way in every recipe.",
+   "actual": "Vector (V=normal, OB sign misread) fails the value-bearing B marks a:B1 and b:B1 (3/7). Motion (V=12 misread as 21) fails value-bearing E1 (-kV) but retains value-bearing E3 (primitive -(V/k)e^(-kt), i.e. -42e^(-t/2) instead of -24e^(-t/2)): inconsistent inside motion and against vector. Principal-inverse, modulus and trapezium name no affected award; implicit, stationary, log-linear and R-form give only the generic sentence.",
+   "evidence": "Text comparison; motion normal exponential parameters V=12, k=1/2 (exemplar:54).",
+   "repair": "Decide once whether value-bearing B marks follow coherently misread data. Apply the decision to vector a:B1/b:B1 and motion E1/E3, and add a one-line per-part misread statement to the three silent work orders."
+  },
+  {
+   "id": "vector-contract-D1-05",
+   "recipe": "shared (MR08 / owner checkpoint)",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/OWNER-CHECKPOINT.md:14; work-orders/*.md",
+   "severity": "should-fix",
+   "expected": "MR08: every departure is recorded as a named deviation 'for Vitalis'; the checkpoint lets him approve each one.",
+   "actual": "There are 16 named deviations in the work orders: CALC-D1-DEV01-08, D1-ADAPT-PI-RANGE3, D1-ADAPT-RF-CLASSES, D1-INTERPRET-RF-HENCE, D1-MOD-OD1-LIST, D1-MOTION-QUADRATIC, D1-TRAP-FT-BRIDGE, D1-VEC-A1-VALID-WORK and D1-VEC-DEGREE-STEM. OWNER-CHECKPOINT names only D1-TRAP-FT-BRIDGE and the motion rubric, and neither the D1 report nor PLAN lists the rest.",
+   "evidence": "grep across work-orders, OWNER-CHECKPOINT.md, PLAN.md, checks/plan-repair-d1-report.md.",
+   "repair": "Add a consolidated deviation register (ID, recipe/part, official row, departure, rationale) to OWNER-CHECKPOINT so the approval records which deviations were accepted."
+  },
+  {
+   "id": "vector-contract-D1-06",
+   "recipe": "WB8227-principal-inverse, WB8227-trig-rform-equation, WB8227-log-linear-model",
+   "branch": "all",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-principal-inverse.md:3, WB8227-trig-rform-equation.md:3, WB8227-log-linear-model.md:3; planning/trig-model-design.json:129,271,408...; planning/pilot-design.json:6362,6382,6402 vs bloom.classification_version",
+   "severity": "should-fix",
+   "expected": "One classification version per part (vector-contract-13 repair).",
+   "actual": "These three WOs and trig-model-design.json use 8227-stage-d-d1-0.1.1. pilot-design.json bloom fields and part-evidence-register use 8227-pilot-design-0.1.1 for the same parts, and pilot-design.json carries both strings.",
+   "evidence": "grep counts: trig-model-design 13 x stage-d-d1, 0 x pilot; pilot-design 3 x stage-d-d1, 49 x pilot.",
+   "repair": "Normalise to 8227-pilot-design-0.1.1 (used by the other six recipes and the register)."
+  },
+  {
+   "id": "vector-contract-D1-07",
+   "recipe": "WB8227-principal-inverse",
+   "branch": "solve-or-explain",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/trig-model-design.json:717",
+   "severity": "note",
+   "expected": "The held 2023 P1 Q9 related reference carries its own display reason (held/defective original).",
+   "actual": "Its learner_display_reason is copied from the Cambridge reference ('... the whole 3mark part is not the 2mark Cambridge task'). This is the same pattern as vector-contract-08. learner_display is correctly false, and comparison_reason correctly says 'Defective held source'.",
+   "evidence": "JSON read.",
+   "repair": "Give it a held-original reason."
+  },
+  {
+   "id": "vector-contract-D1-08",
+   "recipe": "shared (MR02 citation)",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:66",
+   "severity": "note",
+   "expected": "SC examples are characterised as on the native page.",
+   "actual": "MR02 cites 2022 P1 Q2(b) PDF301 as a capped 'different visible method' SC1 and says 'A naked answer does not acquire SC method credit'. The native row (rendered) gives 'SC 1 if relationship is not seen and y=1/9 is only solution', which is answer-based rather than visible-method based. No pilot recipe inherits it, so the impact is nil.",
+   "evidence": "Rendered 2022 report PDF301/printed299.",
+   "repair": "Describe that row accurately, or cite only 2023 P2 Q6(b) as the visible-method SC example."
+  },
+  {
+   "id": "vector-contract-D1-09",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "normal",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-implicit-normal.md:96,114",
+   "severity": "note",
+   "expected": "N1 matches official 2021 P2 Q10 AWARD:04 ('perpendicular gradient = -8' seen earns M1) and the WO's own sample.",
+   "actual": "N1 says a 'bare negative-reciprocal value without the step shown earns no M mark', yet the sample at :114 credits N1 for 'a clearly shown m_perp=-5/24'. As worded it could deny M1 for a stated perpendicular gradient, which the official row credits.",
+   "evidence": "marking-conventions.json 8227:EXAM:2021:P2:Q10:AWARD:04.",
+   "repair": "Clarify that a stated perpendicular-gradient value in working earns N1; only a bare final line with no gradient shown gets 0. Refer this to the calc reviewer."
+  },
+  {
+   "id": "vector-contract-D1-10",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:38-40",
+   "severity": "note",
+   "expected": "(observation)",
+   "actual": "Every admitted p is a terminating decimal with at most 3 s.f., so the stem's 3 s.f. clause never triggers. The non-named error of dotting the resultant with OA instead of OC returns the canonical p=1/2 at (2,2,1) and (2,2,3). It is not examiner-evidenced and needs no exclusion, but it can serve as a later-test fixture.",
+   "evidence": "Own enumeration.",
+   "repair": "Optional: note both in the domain audit."
+  },
+  {
+   "id": "vector-contract-D1-11",
+   "recipe": "shared (structured design records)",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/visual-design.json (modulus, trapezium, vector part_specs); work-orders/WB8227-principal-inverse.md:74, WB8227-trig-rform-equation.md:88, WB8227-log-linear-model.md:104",
+   "severity": "note",
+   "expected": "Consistent structured carriage of answer-only rules and exceptions.",
+   "actual": "Six recipes carry answer_only_* fields in their JSON. The three visual recipes carry no criteria or answer-only fields, including the only official answer-only exception (modulus formula). The WO markdown is canonical at stage D (recipe-contract.md:84), so this is acceptable for now. Separately, three WOs refer to 'the local qualifier/deviation ledger below' where none follows.",
+   "evidence": "JSON key scan.",
+   "repair": "Carry answer-only and exception fields for the visual recipes when the builder becomes authoritative; fix the 'below' boilerplate."
+  }
+ ],
+ "verified_ok": [
+  "Manifest planning/plan-manifest.json sha256 c8914cf96c78367f138058e40ffa62bdc0d9770efa1a6fe787c42b8759a04f22 matches the current bytes.",
+  "Vector: O02:D01 in and O02:D03 out of part (a); the set equals accepted 2025 P1 Q3(a). The part (a) same-type label, re-decided on form/givens/scaffold, holds against rendered paper p4. (a) and (b) each have their own reason.",
+  "Vector: 54 -> 30, a 30 / b 17 keys, r=t excluded, all named points distinct, p=0 and wrong-method identity excluded, boundary (2,-1,1) p=-1/4 and 90 deg: all recomputed independently.",
+  "All 15 rounding fixtures recomputed (canonical, norms, cos and combined routes; 9 admitted / 6 filtered with correct reasons). The premature-rounding rule keeps B/M marks and gives A0 only when the final digit changes.",
+  "The stem accepts exact p or a correct 3 s.f. p; exact 60/90 earn b:A1 without '.0' (WO:29-30,65,69; exemplar:5,44; MR04).",
+  "a:B1 accepts the distributed scaled vector minus OB, as the official alternative does (rendered PDF347).",
+  "All three vector exemplars and all six sample credits (7/7, 5/7, 5/7, 6/7, 6/7, 3/7) recompute and agree with the stated criteria.",
+  "OD-1 sweep: all 27 part slots in the nine WOs state answer-only credit explicitly. 25 are 0. The trapezium (b) SC1, (c) sketch features and (d) own-graph statement each cite a specific official row (2023 PDF337, rendered). Only the modulus list/formula split conflicts (D1-01).",
+  "No leftover D0 'implied method' language in any WO or exemplar. The remaining 'state or imply' (log-linear) and 'can be implied if c seen' (motion E4) are official row qualifiers explicitly bounded to visible working.",
+  "MR02 hence applied consistently: R-form (b) 0 for non-hence (no SC row), implicit extended gradient 0, trapezium (b) SC1 from its own official row, log-linear 'do not transfer another SC1'. MR04/MR05/MR06/MR07/MR09 are applied without contradiction in the nine WOs.",
+  "Convention locators verified against marking-conventions.json and rendered pages: :076, :002, :003, :004, :005, :006 and :096 are at 2021 PDF236/printed234; :108 is at 2025 PDF345/printed343 item 4. 2025 PDF355 repeats the method, exact-where-possible, round-final, no-working-backwards and HENCE rules. 2025 PDF345 items 1-3 support MR07/MR09.",
+  "Same-type references: all 31 are per part/per branch (applies_to_part_ids or target_part_id). None is a held original; 2023 P1 Q9 is related-only with learner_display false. Six labels were spot-checked on native pages: vector (a), vector (b), modulus, trapezium a-d, log-linear gradient-target (a) and (b).",
+  "vector-contract-14/15/16 locators verified: app-change-handoff.md:117, OWNER-CHECKPOINT.md:23 and recipe-contract.md:18 -> owner-decisions-2026-11-16.md N2 item 5."
+ ],
+ "not_checked": [
+  "Codex scripts (visual-domain-checks.py, visual-exemplar-oracle.py) were not run; independent reviewer code was used instead.",
+  "Mathematics, domains and exemplars of the other eight recipes beyond the OD-1/MR sweep (other agents' scope).",
+  "R-form 2022 report PDF313 'no SC1' claim and calculus/trig native award tables beyond the pages listed.",
+  "Native pages for the implicit, motion, stationary and R-form same-type references. Their part scoping was checked in JSON only.",
+  "Runtime app input/rendering (vector notation fixture), which is correctly deferred."
+ ]
+}

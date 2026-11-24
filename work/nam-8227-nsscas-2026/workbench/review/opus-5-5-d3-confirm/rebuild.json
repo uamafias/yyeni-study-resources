@@ -1,0 +1,128 @@
+{
+ "what": "planning/d3/rebuild-design.py run in two fresh temporary copies (repo layout reproduced: work/nam-8227-nsscas-2026 + 436 manifest source files + root briefs; git-initialised; __pycache__ removed; PYTHONDONTWRITEBYTECODE=1). Author checkout not written.",
+ "copies": [
+  {
+   "copy": 1,
+   "rebuild_exit": 0,
+   "rounds": 2,
+   "commands_per_round": 16,
+   "byte_identical_outputs_within_copy": 43,
+   "seeded_subprocess_rejections": 19,
+   "inline_motion_domain_rejections": 5,
+   "freeze_plan_check": "pass"
+  },
+  {
+   "copy": 2,
+   "rebuild_exit": 0,
+   "rounds": 2,
+   "commands_per_round": 16,
+   "byte_identical_outputs_within_copy": 43,
+   "seeded_subprocess_rejections": 19,
+   "inline_motion_domain_rejections": 5,
+   "freeze_plan_check": "pass"
+  }
+ ],
+ "design_outputs_compared": {
+  "count": 45,
+  "copy1_eq_copy2": true,
+  "copy1_eq_author": true
+ },
+ "whole_workbench_after_rebuild": {
+  "files": 9463,
+  "copy1_eq_copy2": true,
+  "copy1_eq_author": true,
+  "note": "every workbench file (excl. review/ and __pycache__) after the copy rebuilds is byte-identical to the author checkout, so the rebuild regenerates exactly the pinned D3 outputs, OWNER-CHECKPOINT and motion exemplar included"
+ },
+ "negative_seeds": [
+  [
+   "calculus-design-check.py",
+   "implicit-chain"
+  ],
+  [
+   "calculus-design-check.py",
+   "implicit-original"
+  ],
+  [
+   "calculus-design-check.py",
+   "proof-given-answer-credit"
+  ],
+  [
+   "calculus-design-check.py",
+   "index-error-accuracy-credit"
+  ],
+  [
+   "calculus-design-check.py",
+   "classification-analyse"
+  ],
+  [
+   "calculus-design-check.py",
+   "alternative-proof-missing-slot"
+  ],
+  [
+   "calculus-misread-check.py",
+   "missing-policy"
+  ],
+  [
+   "calculus-misread-check.py",
+   "double-deduction"
+  ],
+  [
+   "calculus-misread-check.py",
+   "no-accuracy-negative-total"
+  ],
+  [
+   "calculus-misread-check.py",
+   "proof-target-follow-through"
+  ],
+  [
+   "calculus-misread-check.py",
+   "back-substitution-in-S3"
+  ],
+  [
+   "calculus-misread-check.py",
+   "normal-positive-reciprocal"
+  ],
+  [
+   "calculus-misread-check.py",
+   "invalid-log-full-credit"
+  ],
+  [
+   "visual-domain-checks.py",
+   "modulus-parabola"
+  ],
+  [
+   "visual-domain-checks.py",
+   "vector-wrong-resultant"
+  ],
+  [
+   "visual-domain-checks.py",
+   "trapezium-original"
+  ],
+  [
+   "visual-domain-checks.py",
+   "trapezium-original-part"
+  ],
+  [
+   "visual-domain-checks.py",
+   "trapezium-original-sketch"
+  ],
+  [
+   "visual-domain-checks.py",
+   "trapezium-precision-collision"
+  ]
+ ],
+ "author_checks": {
+  "freeze_plan_d3_check": {
+   "status": "pass",
+   "files": 1708,
+   "sources": 436,
+   "reviews": 75,
+   "live_plan_checks": 47,
+   "d2_recovered": 809,
+   "manifest_sha256": "4667a86020652f09a8c8b8e7df8612fb08656c1254a5eed20b319e77a6354fc7"
+  },
+  "r7_analysis_freeze_check": "pass: all close-out hashes match; 7771 files, 436 sources, 37 review files"
+ },
+ "not_rerun": "The accepted R7 analysis author+two-fresh-copy/76-negative proof was not rerun: analysis/tools/curriculum bytes are unchanged (freeze checks above), as CLAUDE-D3-CONFIRM allows.",
+ "limits": "Design-only rebuild; the scripts are the author team's own checks. Reproduction shows determinism and that pinned bytes are what the scripts produce, not that the scripts check the right things."
+}

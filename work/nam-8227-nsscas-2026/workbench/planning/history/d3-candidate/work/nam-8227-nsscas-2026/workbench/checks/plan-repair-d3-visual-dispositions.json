@@ -1,0 +1,189 @@
+{
+  "scope": "D3 visual planner repair only; not runtime authoring or independent content acceptance",
+  "status": "pass",
+  "dispositions": [
+    {
+      "finding_id": "D2-OD6",
+      "status": "repaired in visual scope",
+      "change": "Seven per-part policies, three work orders and their exemplars use owner-endorsed once-per-datum MR−1 with A/B follow-through; vector sign sample is 6/7; no-solution, own-figure, no-A/B, later-part and OD-1/www constraints retained.",
+      "evidence": [
+        {
+          "path": "planning/visual-design.json",
+          "line": 87,
+          "match": "\"misread_policy\""
+        },
+        {
+          "path": "work-orders/WB8227-vector-geometry.md",
+          "line": 91,
+          "match": "6/7 under OD-6"
+        },
+        {
+          "path": "exemplars/WB8227-vector-geometry.md",
+          "line": 59,
+          "match": "under OD-6 correct working"
+        }
+      ],
+      "checks": [
+        "planning/d3/visual-d3-independent-checks.py --check",
+        "planning/d3/visual-rule-fixtures.py"
+      ]
+    },
+    {
+      "finding_id": "D2-S11",
+      "status": "repaired",
+      "change": "Strict canonical field and all freshness wording state generated-fresh packing 2; mathematical packing 3 retains separately labelled witness. After one generated worked example, at most one complete task remains wholly fresh. No domain amendment.",
+      "evidence": [
+        {
+          "path": "planning/visual-design.json",
+          "line": 535,
+          "match": "\"strict_capacity_definition\""
+        },
+        {
+          "path": "work-orders/WB8227-trapezium-sketch-estimate.md",
+          "line": 52,
+          "match": "mathematical all-part-key packing"
+        },
+        {
+          "path": "exemplars/WB8227-trapezium-sketch-estimate.md",
+          "line": 71,
+          "match": "Mathematical all-part-key packing"
+        }
+      ],
+      "checks": [
+        "planning/d3/visual-domain-checks.py --check",
+        "planning/d3/visual-d3-independent-checks.py --check"
+      ]
+    },
+    {
+      "finding_id": "D2-S12",
+      "status": "repaired",
+      "change": "2k scale must be visibly derived from log power law for b:B1; bare J=6T sample explicitly earns b1/2 (B2 only).",
+      "evidence": [
+        {
+          "path": "work-orders/WB8227-trapezium-sketch-estimate.md",
+          "line": 71,
+          "match": "visibly derived from the log law"
+        },
+        {
+          "path": "exemplars/WB8227-trapezium-sketch-estimate.md",
+          "line": 89,
+          "match": "writing only $J=6T"
+        }
+      ],
+      "checks": [
+        "planning/d3/visual-rule-fixtures.py",
+        "planning/d3/visual-d3-independent-checks.py --check"
+      ]
+    },
+    {
+      "finding_id": "D2-S13",
+      "status": "owned row fixes supplied to coordinating planner",
+      "change": "Three owned deviation rows now have readable spacing and explicit status_class, including both proposed vector rows. Parent owns merged owner register.",
+      "evidence": [
+        {
+          "path": "planning/d3/visual-deviation-rows.json",
+          "line": 21,
+          "match": "proposed criterion interpretation"
+        }
+      ],
+      "checks": [
+        "Parent register regeneration and equality check required."
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "finding_id": "visual-D2-03",
+      "status": "disclosed",
+      "change": "(2,8,2,k) near-copy integrals explicitly retained in attributed original/mixed route; no domain change."
+    },
+    {
+      "finding_id": "visual-D2-04",
+      "status": "feedback fixture added",
+      "change": "At k=2, k^2=k+2=2k; do not infer a misconception from number alone. Visible wrong log reasoning loses B1; correct own(a) scale product can retain B2."
+    },
+    {
+      "finding_id": "visual-D2-05",
+      "status": "corrected",
+      "change": "Normal and varied modulus leaders cross y-axis; unchanged asset bytes, corrected inspection claim."
+    },
+    {
+      "finding_id": "visual-D2-06",
+      "status": "clarified",
+      "change": "Never choose between unlabelled graphs by shape; c:B1 uses boundary approached, drawn or implied."
+    },
+    {
+      "finding_id": "visual-D2-07",
+      "status": "repaired",
+      "change": "Generated-fresh capacity after each one of three worked examples independently checked as 1."
+    },
+    {
+      "finding_id": "vecrec-D2-06",
+      "status": "repaired under OD-6",
+      "change": "Vector a policy explicitly concerns resultant B1, dot-zero M1 and p A1, not magnitudes/angle."
+    },
+    {
+      "finding_id": "vecrec-D2-08",
+      "status": "no-solution fixture added; more-precise answer remains E/F decision",
+      "change": "OA=(1,-2,1) leaves no p, ordinary canonical a:M1 only for zero-dot setup. 79.98-degree form remains explicitly unaccepted/unrejected at stage D."
+    }
+  ],
+  "counts_before_after": {
+    "visual_recipes": [
+      3,
+      3
+    ],
+    "visual_parts": [
+      7,
+      7
+    ],
+    "paper_cases": [
+      9,
+      9
+    ],
+    "modulus_admitted": [
+      44,
+      44
+    ],
+    "vector_admitted": [
+      30,
+      30
+    ],
+    "trapezium_admitted": [
+      30,
+      30
+    ],
+    "trapezium_math_packing": [
+      3,
+      3
+    ],
+    "trapezium_generated_fresh_packing": [
+      2,
+      2
+    ],
+    "trapezium_strict_field": [
+      3,
+      2
+    ],
+    "domain_admitted_and_removed_rows_identical": true,
+    "versions": [
+      "0.1.2",
+      "0.1.3"
+    ],
+    "classification_identity": "8227-pilot-design-0.1.1 unchanged",
+    "new_or_changed_sample_recomputations": 3,
+    "synthetic_credit_ledgers": 9,
+    "all_paper_example_recomputations": 9,
+    "seeded_negatives_rejected": 6,
+    "markdown_files": 6,
+    "strict_math_spans": 492
+  },
+  "checks": [
+    "planning/d3/visual-domain-checks.py --check",
+    "planning/d3/visual-exemplar-oracle.py --check",
+    "planning/d3/visual-rule-fixtures.py",
+    "planning/d3/visual-d3-independent-checks.py --check",
+    "node planning/d3/visual-check-math.mjs"
+  ],
+  "limitations": "Synthetic credit bookkeeping is not a learner-response/vision marker. No actual app, generator, runtime marking, imports or production acceptance. Parent reads and records native OD-6 authority pages. No source PDF, domain, analysis, curriculum, review or historical D2 artifact changed."
+}

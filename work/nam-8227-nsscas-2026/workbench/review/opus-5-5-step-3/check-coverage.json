@@ -1,0 +1,428 @@
+{
+ "label": "coverage",
+ "scope": [
+  "PLAN.md counts table, recipe table, gaps table, deck compositions",
+  "planning/pilot-design.json vs visual/calculus/trig-model design records",
+  "planning/coverage-plan.json/.md (138 demands, 67 selections, 8 supplementary)",
+  "planning/part-evidence-register.json/.md (28 slots)",
+  "planning/plan-manifest.json (195 file hashes)",
+  "nine work-orders: per-part direct/prerequisite demand IDs and primary objectives",
+  "analysis/demand-registry.json, demand-dispositions.json, selection-table.md, problem-patterns.json (67 groups), question-analysis.json (119 questions/250 parts/750 marks), objective-problem-map.json, cambridge-evidence.json",
+  "Held-original screen across PLAN, planning, work-orders, exemplars, subject-rules",
+  "Exam-weight analysis 2021-2025 by demand, objective, family and response format"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 4,
+   "what": "Q3(a) find p for which pOA - OB is perpendicular to OC (source for vector part a; subtraction is asked)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 347,
+   "what": "Q3 award table: B1 for the subtracted vector pOA-OB components, M1 dot=0, A1; (b) B1/M1/M1ft/A1"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 12,
+   "what": "Q9(a) show-that model construction from a given prism diagram (ABILITY:08 + show-that, 4 marks) - representative of the excluded constrained-optimisation staple"
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "recipes / work orders / exemplar docs",
+   "claimed": "9/9/9",
+   "computed": "9/9/9 (pilot-design recipes; 9 WO files; 9 exemplar files)",
+   "ok": true
+  },
+  {
+   "case": "branch choices",
+   "claimed": "15",
+   "computed": "15 (pilot-design; canonical records 3+7+5)",
+   "ok": true
+  },
+  {
+   "case": "paper exemplar cases",
+   "claimed": "45",
+   "computed": "45 = 15 branches x {normal,changed,boundary} counted from exemplar headings (implicit 6, log 6, modulus 3, motion 9, principal 6, stationary 6, trapezium 3, trig 3, vector 3)",
+   "ok": true
+  },
+  {
+   "case": "assessed part slots",
+   "claimed": "28",
+   "computed": "28 (pilot-design = canonical design records = part-evidence register; per-part direct/prereq/marks identical across all three)",
+   "ok": true
+  },
+  {
+   "case": "demands with named direct facets",
+   "claimed": "38/138",
+   "computed": "38, all present in demand-registry; coverage-plan planned_direct_parts per demand == pilot-design part links (0 mismatches, marks match)",
+   "ok": true
+  },
+  {
+   "case": "objectives with facets",
+   "claimed": "25/60",
+   "computed": "25 of 60 registry objectives",
+   "ok": true
+  },
+  {
+   "case": "demands outside pilot",
+   "claimed": "100",
+   "computed": "100 'later-syllabus-scope-not-excluded'; 6 prerequisite-only demands correctly in this 100",
+   "ok": true
+  },
+  {
+   "case": "accepted analysis groups",
+   "claimed": "12 pilot / 55 later, 67 accounted",
+   "computed": "67 in selection-table == problem-patterns == coverage-plan; 12 pilot-subset-only == the 12 accepted_selection_ids on recipes; 55 later; demand lists identical to selection-table",
+   "ok": true
+  },
+  {
+   "case": "whole-choice Bloom",
+   "claimed": "1 Understand / 11 Apply / 3 Analyse",
+   "computed": "{2:1, 3:11, 4:3}; every branch whole level == max of its own part levels",
+   "ok": true
+  },
+  {
+   "case": "deck composition totals",
+   "claimed": "14 / 20 / 17",
+   "computed": "2+7+5=14; 3+7+10=20; 6+6+5=17; one branch per recipe, all 9 recipes used once",
+   "ok": true
+  },
+  {
+   "case": "PLAN branch capacities vs records",
+   "claimed": "24,24,78,42,42,30,40,108,54,36,540,180,144,60,27",
+   "computed": "identical in pilot-design; simple products re-done (108,54,540,180,144,60,27; implicit 42 by enumeration). Other domains not enumerated (recipe reviewers' scope)",
+   "ok": true
+  },
+  {
+   "case": "plan-manifest file digests",
+   "claimed": "195 files frozen",
+   "computed": "195/195 sha256 match current bytes",
+   "ok": true
+  },
+  {
+   "case": "accepted demand dispositions",
+   "claimed": "all 138 include",
+   "computed": "138 rows; disposition/status/action/objective identical to coverage-plan; observed_part_links == question-analysis part links for all 138",
+   "ok": true
+  },
+  {
+   "case": "exam totals 2021-2025",
+   "claimed": "119 questions / 250 parts",
+   "computed": "119/250; 750 marks = 10 papers x 75; 3 held parts",
+   "ok": true
+  }
+ ],
+ "capacity_checks": [],
+ "exam_weight": {
+  "method": "question-analysis.json direct demand links, 250 parts / 750 printed marks; marks_share splits each part's marks equally over its direct demands; part counts include the 3 held parts (difference noted in usable_parts).",
+  "pilot_share": "38 pilot demands carry 299.1 of 720.1 demand-attributed mark share (41.5%); the 12 pilot groups carry 163 of 750 family-share marks (21.7%). Facet-level only: no row claims full demand coverage.",
+  "top15_by_mark_share": [
+   {
+    "rank": 1,
+    "demand_id": "8227:2020:M1:T9:O03:D01",
+    "action": "Evaluate definite integral",
+    "exam_parts": 17,
+    "usable_parts": 17,
+    "marks_full": 72,
+    "marks_share_split": 21.9,
+    "papers_of_10": 10,
+    "in_pilot": true,
+    "pilot_facet_or_family": "motion distance/displacement parts only (polynomial, exponential, linear reversal); exam use is mostly integral-area/definite-integral"
+   },
+   {
+    "rank": 2,
+    "demand_id": "8227:2020:M2:T3:O02:D05",
+    "action": "Use identities for exact evaluation simplification or equations",
+    "exam_parts": 17,
+    "usable_parts": 17,
+    "marks_full": 60,
+    "marks_share_split": 20.3,
+    "papers_of_10": 5,
+    "in_pilot": true,
+    "pilot_facet_or_family": "R-form b-roots only; 13 of 17 exam parts use double/compound/reciprocal identities (advanced-trig-solve, bounded-trig)"
+   },
+   {
+    "rank": 3,
+    "demand_id": "8227:2020:M1:T8:O02:D01",
+    "action": "Differentiate rational powers and linear combinations",
+    "exam_parts": 10,
+    "usable_parts": 10,
+    "marks_full": 38,
+    "marks_share_split": 16.0,
+    "papers_of_10": 6,
+    "in_pilot": true,
+    "pilot_facet_or_family": "stationary-inflexion points parts (cubics)"
+   },
+   {
+    "rank": 4,
+    "demand_id": "8227:2020:M2:T2:O03:D01",
+    "action": "Solve exponential equation",
+    "exam_parts": 10,
+    "usable_parts": 10,
+    "marks_full": 32,
+    "marks_share_split": 15.5,
+    "papers_of_10": 6,
+    "in_pilot": true,
+    "pilot_facet_or_family": "log-linear t-target (2 marks)"
+   },
+   {
+    "rank": 5,
+    "demand_id": "8227:2020:M1:T6:O06:D01",
+    "action": "Solve bounded trig equations",
+    "exam_parts": 14,
+    "usable_parts": 14,
+    "marks_full": 51,
+    "marks_share_split": 14.8,
+    "papers_of_10": 10,
+    "in_pilot": true,
+    "pilot_facet_or_family": "R-form b-roots only; bounded-trig family (all 10 papers) otherwise later"
+   },
+   {
+    "rank": 6,
+    "demand_id": "8227:2020:M1:T5:O02:D02",
+    "action": "Use sector area",
+    "exam_parts": 5,
+    "usable_parts": 5,
+    "marks_full": 17,
+    "marks_share_split": 14.3,
+    "papers_of_10": 5,
+    "in_pilot": false,
+    "pilot_facet_or_family": "OUT: circular-contact/circular-symbolic (sector area), 5 parts all 5 years"
+   },
+   {
+    "rank": 7,
+    "demand_id": "8227:2020:M1:T8:O04:D01",
+    "action": "Locate stationary points",
+    "exam_parts": 9,
+    "usable_parts": 9,
+    "marks_full": 31,
+    "marks_share_split": 13.8,
+    "papers_of_10": 7,
+    "in_pilot": true,
+    "pilot_facet_or_family": "stationary-inflexion points parts"
+   },
+   {
+    "rank": 8,
+    "demand_id": "8227:2020:M1:T9:O01:D02",
+    "action": "Integrate powers of linear expressions and combinations",
+    "exam_parts": 12,
+    "usable_parts": 11,
+    "marks_full": 43,
+    "marks_share_split": 13.7,
+    "papers_of_10": 7,
+    "in_pilot": true,
+    "pilot_facet_or_family": "motion polynomial/linear parts"
+   },
+   {
+    "rank": 9,
+    "demand_id": "8227:2020:M1:T6:O06:D02",
+    "action": "Recover all roots in specified interval",
+    "exam_parts": 12,
+    "usable_parts": 12,
+    "marks_full": 45,
+    "marks_share_split": 13.2,
+    "papers_of_10": 9,
+    "in_pilot": true,
+    "pilot_facet_or_family": "R-form b-roots only"
+   },
+   {
+    "rank": 10,
+    "demand_id": "8227:2020:M2:T2:O02:D02",
+    "action": "Interpret inverse relation and graphs",
+    "exam_parts": 7,
+    "usable_parts": 7,
+    "marks_full": 20,
+    "marks_share_split": 12.5,
+    "papers_of_10": 5,
+    "in_pilot": true,
+    "pilot_facet_or_family": "trapezium (c) ln sketch only; exponential-sketch family later"
+   },
+   {
+    "rank": 11,
+    "demand_id": "8227:2020:M2:T4:O01:D02",
+    "action": "Differentiate composite elementary function",
+    "exam_parts": 9,
+    "usable_parts": 9,
+    "marks_full": 33,
+    "marks_share_split": 11.2,
+    "papers_of_10": 4,
+    "in_pilot": true,
+    "pilot_facet_or_family": "implicit gradient; motion exponential acceleration"
+   },
+   {
+    "rank": 12,
+    "demand_id": "8227:2020:M2:T5:O02:D01",
+    "action": "Choose identity before integration",
+    "exam_parts": 8,
+    "usable_parts": 8,
+    "marks_full": 37,
+    "marks_share_split": 11.1,
+    "papers_of_10": 5,
+    "in_pilot": false,
+    "pilot_facet_or_family": "OUT: trig-integration (identity before integration)"
+   },
+   {
+    "rank": 13,
+    "demand_id": "8227:2020:M1:T4:O01:D01",
+    "action": "Translate geometric graph information into equation",
+    "exam_parts": 7,
+    "usable_parts": 7,
+    "marks_full": 20,
+    "marks_share_split": 10.8,
+    "papers_of_10": 4,
+    "in_pilot": false,
+    "pilot_facet_or_family": "OUT: line-curve/coordinate-shapes"
+   },
+   {
+    "rank": 14,
+    "demand_id": "8227:2020:M2:T5:O01:D02",
+    "action": "Integrate sin cos or sec-squared linear argument",
+    "exam_parts": 8,
+    "usable_parts": 8,
+    "marks_full": 36,
+    "marks_share_split": 10.6,
+    "papers_of_10": 5,
+    "in_pilot": false,
+    "pilot_facet_or_family": "OUT: trig-integration/standard-antiderivatives"
+   },
+   {
+    "rank": 15,
+    "demand_id": "8227:2020:M2:T2:O01:D02",
+    "action": "Apply log laws without change of base",
+    "exam_parts": 7,
+    "usable_parts": 7,
+    "marks_full": 26,
+    "marks_share_split": 10.5,
+    "papers_of_10": 4,
+    "in_pilot": true,
+    "pilot_facet_or_family": "trapezium (b) hence step"
+   }
+  ],
+  "top15_summary": "11 of 15 in pilot as named facets; out: sector area (#6), identity before integration (#12), graph info to line equation (#13), trig linear-argument integration (#14). By part count, domain/range (M1:T3:O01:D02, 10 parts) and reciprocal trig (M2:T3:O01:D01, 9 parts) also enter the top 15 and are out.",
+  "heaviest_excluded_groups": "function-analysis (#1 by marks, 20 parts, all 5 years), numerical-method-chain (#3, 16 parts, all 5 years), constrained-optimisation (#4, 10 parts, 4 of 5 years P1), quadratic-substitution (#5), binomial-selection (#8), product-quotient (#9), trig-integration (#10)",
+  "response_formats": "exam: numeric 115, symbolic 74, proof/show-that 44 (131/750 marks, every year), sketch 11, explanation 6; pilot: numeric 15, symbolic 8, explanation 4, sketch 1, show-that 0. Given representation exam: text 195, diagram 28, graph 27; pilot: graph in 2 branches, no given geometric diagram."
+ },
+ "findings": [
+  {
+   "id": "coverage-01",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "planning/visual-design.json:393; planning/pilot-design.json (vector part a); work-orders/WB8227-vector-geometry.md:13,32",
+   "severity": "should-fix",
+   "expected": "Part (a) direct set includes 8227:2020:M1:T7:O02:D01 'Add and subtract vectors' (registry text; syllabus bullet 'perform addition and subtraction of vectors'), because criterion a:B1 credits the subtracted vector (p-s, rp-1, p+1) exactly as the official 2025 Q3(a) B1 credits pOA-OB.",
+   "actual": "Recipe lists O02:D03 'Interpret geometric vector relation' instead of D01, and the work order withholds the 2025 P1 Q3(a) same-type label because the source 'additionally includes M1:T7:O02:D01 (addition)'. D01 is add AND subtract; perpendicularity is already O05:D02, so D03 has no separate criterion.",
+   "evidence": "Native 2025 8227-1 p4 asks pOA - OB; report 2025 p347 B1 = components of pOA - OB. demand-registry D01 learner_action 'Add and subtract vectors'.",
+   "repair": "Replace D03 with D01 in part (a) (or justify D03 with its own criterion). Counts stay 38/25 but coverage-plan rows for D01/D03 change. Then re-judge the (a) same-type label on the equal demand sets; do not retag the accepted item."
+  },
+  {
+   "id": "coverage-02",
+   "recipe": "pilot selection",
+   "branch": "all",
+   "locator": "PLAN.md:15; planning/coverage-plan.json:4894 (non_specific_demands)",
+   "severity": "should-fix",
+   "expected": "If the pilot claims to combine 'modelling' demands, the syllabus modelling ability (8227:2020:ABILITY:08:MODEL, construct a model from geometric/contextual constraints) is exercised, or its absence is stated; every supplementary record carries a pilot disposition.",
+   "actual": "No pilot part carries ABILITY:08. Log-linear 'model' recovers parameters of a supplied model form. ABILITY:08 is directly tagged on 10 exam parts / 26 marks, Paper 1 in all five years (mostly show-that). The 8 non_specific_demands in coverage-plan have only id/scope, no pilot_disposition, so the 138-row accounting cannot show this omission.",
+   "evidence": "question-analysis: ABILITY:08:MODEL on 2021 P1 Q7a, 2022 P1 Q8a/Q12a, 2023 P1 Q6a/Q13a, 2024 P1 Q7a/Q11a/Q11b, 2025 P1 Q9a/Q10a. Native 2025 P1 p12 Q9(a) 'Express h ... show that A = ...' [4].",
+   "repair": "Either reword PLAN line 15 (e.g. 'transformed-model parameter recovery') and give ABILITY:08 and the 7 PRIOR records explicit later-scope dispositions, or add a branch that constructs a model from a given diagram (it could reuse the stationary two-extrema logic)."
+  },
+  {
+   "id": "coverage-03",
+   "recipe": "pilot selection",
+   "branch": "all",
+   "locator": "PLAN.md:15,34; recipe-contract.md:74",
+   "severity": "should-fix",
+   "expected": "A framework pilot meant to prove 'contract/marking/visual/branch boundaries' either covers the show-that (answer-given) marking contract or explicitly records it as an untested contract feature.",
+   "actual": "0 of 28 pilot parts are proof/show-that, against 44 of 250 exam parts and 131 of 750 marks (17.5%), every year. That contract (all credit on working; answer-only earns nothing; a given result can be used in later parts) is listed in recipe-contract.md:74 but is untested by the pilot. The 55 later groups all carry one templated reason, 'Not needed to prove the selected pilot contracts', which is exactly what is in doubt here. Given geometric diagrams (28 exam parts) are also absent.",
+   "evidence": "question-analysis response_format counts; pilot-design response_format counts {numeric 15, symbolic 8, explanation 4, sketch 1}.",
+   "repair": "Owner chooses: add one show-that branch (e.g. a constrained-optimisation 'show that A=...' then optimise, or a trig identity show-that reused in a bounded equation), or add a gap row (D8227-G0x) stating that show-that marking and given geometric diagrams stay untested until a later batch."
+  },
+  {
+   "id": "coverage-04",
+   "recipe": "WB8227-trapezium-sketch-estimate",
+   "branch": "logarithmic-hence-chain",
+   "locator": "work-orders/WB8227-trapezium-sketch-estimate.md:14-15",
+   "severity": "should-fix",
+   "expected": "Primary objective column matches pilot-design, the part-evidence register and the accepted source part (2023 P2 Q6): (b) M2:T5:O03, (c) M2:T2:O02.",
+   "actual": "Work order table gives (b) primary M2:T2:O01 and (c) primary M2:T5:O04, which are the 'other' objectives in the JSON/register.",
+   "evidence": "pilot-design/part-evidence-register b: primary M2:T5:O03, other M2:T2:O01; c: primary M2:T2:O02, other M2:T5:O04; question-analysis 2023:P2:Q6:b/c identical to JSON.",
+   "repair": "Correct the two cells in the work-order table, or state the register as sole authority and remove the column."
+  },
+  {
+   "id": "coverage-05",
+   "recipe": "WB8227-implicit-normal, WB8227-stationary-inflexion, WB8227-motion-integration, WB8227-vector-geometry",
+   "branch": "multiple",
+   "locator": "planning/part-evidence-register.json:230,260,289 (and stationary/motion/vector rationale fields); planning/part-evidence-register.md:14-19,21-26; PLAN.md:32",
+   "severity": "should-fix",
+   "expected": "Each of the 28 slots has its own criterion-linked Bloom rationale (PLAN.md:32: 'All 28 ... criterion-linked proposals').",
+   "actual": "14 of 28 slots reuse a recipe-level rationale. The gradient-only branch's single part cites the normal branch's N1/N2. The two-extrema parts cite 'P/I/C' criteria, which include the inflexion branch's I criteria. All six motion Apply slots share 'V/S/E/R ... signed-definite-integral'; interior-reversal:rest (1 mark, v=k(t-r)=0 so t=r) is labelled Apply 3 by text that describes integration. Levels and branch maxima are still computed correctly.",
+   "evidence": "Grouping register parts by identical rationale gives groups of 2 (vector), 3 (implicit), 3 (stationary) and 6 (motion).",
+   "repair": "Write a per-part rationale that cites only that part's criterion IDs, and re-judge interior-reversal:rest (Understand 2 is arguable; the branch maximum stays 4)."
+  },
+  {
+   "id": "coverage-06",
+   "recipe": "WB8227-implicit-normal",
+   "branch": "gradient / normal",
+   "locator": "work-orders/WB8227-implicit-normal.md:33; planning/pilot-design.json implicit gradient part prerequisite_demand_ids=[]",
+   "severity": "note",
+   "expected": "Prerequisite links stated in the work order are recorded in the JSON part specs.",
+   "actual": "The work order says M2:T4:O01:D01 (exponential derivative) is a prerequisite for the gradient part. The JSON records no prerequisite there, and the same e^(kx) derivative is tagged direct (D01+D02) in motion exponential-positive:acceleration. The tagging follows each accepted source's granularity. Counts are unaffected because D01 is direct elsewhere.",
+   "evidence": "pilot-design part specs; coverage-plan prerequisite_only_parts lists 8 demands, none for implicit gradient.",
+   "repair": "Add the prerequisite link to the JSON, or drop the sentence from the work order."
+  },
+  {
+   "id": "coverage-07",
+   "recipe": "pilot selection",
+   "branch": "all",
+   "locator": "PLAN.md:89; planning/coverage-plan.json accepted_selection_dispositions (55 x templated reason)",
+   "severity": "note",
+   "expected": "The owner can see exam weight when choosing scope.",
+   "actual": "The heaviest examined groups are later scope with only the templated reason: function-analysis (20 parts, 39 share-marks, every year), numerical-method-chain (16 parts, every year), constrained-optimisation (10 parts, 4 of 5 P1 papers), quadratic-substitution, binomial, product-quotient, trig-integration. The only group present in all 10 papers (bounded-trig) enters the pilot only through the R-form route. 11 of the top-15 demands are pilot facets, but several only as narrow facets (e.g. M2:T3:O02:D05 only via R-form; 13 of its 17 exam parts use other identities). PLAN.md:89 does list these areas as retained, so nothing is hidden.",
+   "evidence": "exam_weight block in this file; SCRATCH/coverage/demand_freq.json, objective_freq.json",
+   "repair": "Add an exam-weight column (parts, marks, papers) to coverage-plan.md so Vitalis's scope choice is informed. No change of selection is required by this review."
+  },
+  {
+   "id": "coverage-08",
+   "recipe": "deck compositions",
+   "branch": "vector scalar-combination-and-origin-angle",
+   "locator": "PLAN.md:98",
+   "severity": "note",
+   "expected": "The 'Visual evidence' composition contains visual tasks.",
+   "actual": "It includes the vector branch, whose givens are text-only (work order line 48: 'No input figure is necessary'). Visual demands in the pilot are modulus (given graph), log graph-intercept (given graph, not in this deck) and trapezium (c) (learner sketch).",
+   "evidence": "work-orders/WB8227-vector-geometry.md:48",
+   "repair": "Rename the composition or swap in log graph-intercept."
+  },
+  {
+   "id": "coverage-09",
+   "recipe": "accounting",
+   "branch": "n/a",
+   "locator": "planning/coverage-plan.json accepted_selection_dispositions",
+   "severity": "note",
+   "expected": "Pilot/later group status reflects which decisions the pilot exercises.",
+   "actual": "The 12/55 split follows declared recipe parentage, not decision overlap. Several later groups have their decision exercised: tangent-normal (forward normal at a point) by implicit normal:normal; definite-integral and standard-antiderivatives by the motion parts. This undercounts and is not an inflated claim.",
+   "evidence": "demand overlap between later-group demand lists and pilot parts (e.g. tangent-normal 3/6 demands, product-quotient 8/14).",
+   "repair": "None required. Optionally add a 'decision partly exercised by' cross-reference."
+  }
+ ],
+ "verified_ok": [
+  "Every PLAN.md count recomputed from the JSON records; all match (9/15/45/28/38/25/100/12+55/Bloom 1-11-3).",
+  "pilot-design.json is a faithful merge: all 28 parts' direct demands, prerequisites and marks equal visual/calculus/trig-model design records.",
+  "All 138 demands appear exactly once in coverage-plan.json and .md (38 pilot-direct-facets, 100 later); accepted disposition/status match demand-dispositions.json; full_demand_coverage_claimed and implemented_coverage false on every row; no prose calls a partial facet 'covered'.",
+  "Every one of the 38 'direct facet' demands is a direct demand on at least one work-order part; planned_direct_parts agree exactly with part specs.",
+  "No part lists the same demand as both direct and prerequisite. The two demands that are prerequisite in one part and direct in another (M2:T2:O01:D02, M2:T4:O03:D01) are legitimately part-scoped.",
+  "Work-order tables for modulus, trapezium, vector, log-linear, principal and R-form agree with JSON direct and prerequisite sets. Implicit, motion and stationary defer to calculus-design.json, which matches.",
+  "Recipe direct demand sets equal the accepted source-part sets for all 17 same-type part references; the one inequality (vector a) is correctly kept internal, though for the wrong reason (coverage-01).",
+  "67 accepted groups: selection-table == problem-patterns == coverage-plan; 12 pilot-subset-only exactly equal the recipes' accepted_selection_ids; the 55 later groups are all visible with next actions.",
+  "Held originals: 2023 P1 Q9 appears only as an internal 'related' ref (learner_display false, label null) on range-obstruction. 2022 P1 Q13 and 2023 P1 Q1(b) appear only as held markers on later groups (curve-recovery, root-proofs). None is used in any same-type label, deck composition or exemplar.",
+  "Part-evidence register: 28 unique slots == pilot-design; each has a primary objective, other objectives consistent with its direct demands, branch-scoped criterion IDs and a Bloom level; branch maxima are computed per branch (15/15 correct).",
+  "question-analysis exam part counts per demand == objective-problem-map nsscas_exam_parts (0 mismatches).",
+  "plan-manifest 195 file digests match current bytes."
+ ],
+ "not_checked": [
+  "Exemplar mathematics, marking criteria and domain enumeration beyond simple products (recipe reviewers' scope).",
+  "Same-type judgements on native pages other than 2025 P1 Q3 (recipe reviewers' scope).",
+  "Correctness of the accepted question-analysis part-to-demand links themselves (accepted R7 analysis; used as given for exam weight).",
+  "Textbook family counts and relation lower bounds."
+ ]
+}

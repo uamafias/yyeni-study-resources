@@ -1,0 +1,98 @@
+{
+  "status": "pass",
+  "seeds": 13,
+  "results": [
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "implicit-chain",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D1 implicit chain/domain discrimination failed"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "implicit-original",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D1 official original leaked into fresh pool"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "proof-given-answer-credit",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D1 no-follow-through into given proof result failed"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "index-error-accuracy-credit",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D2 wrong e-index numerical coincidence earned G5"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "classification-analyse",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D2 stationary classification must be Apply3 under OD4"
+    },
+    {
+      "script": "calculus-design-check.py",
+      "negative_fixture": "alternative-proof-missing-slot",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: D2 valid alternative proof has an unmapped criterion"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "missing-policy",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "KeyError: 'misread_policy'"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "double-deduction",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: A datum was charged again in a later part"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "no-accuracy-negative-total",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: No A/B earned but MR deducted a mark"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "proof-target-follow-through",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: Misread proof target received S4"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "back-substitution-in-S3",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: Back-substitution moved out of S4"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "normal-positive-reciprocal",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: Invalid perpendicular gradient earned N1"
+    },
+    {
+      "script": "calculus-misread-check.py",
+      "negative_fixture": "invalid-log-full-credit",
+      "status": "rejected",
+      "exit_code": 1,
+      "diagnostic": "AssertionError: Invalid logarithm route received full credit"
+    }
+  ],
+  "scope": "D3 planner contracts and evidence expectations, no runtime marker tested."
+}

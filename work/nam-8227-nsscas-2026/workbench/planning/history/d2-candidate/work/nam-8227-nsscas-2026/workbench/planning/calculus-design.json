@@ -1,0 +1,5677 @@
+{
+  "subject": "NSSCAS Mathematics 8227",
+  "syllabus_edition": "December 2020",
+  "owner": "Vitalis",
+  "date": "2026-11-23",
+  "role": "PLANNER",
+  "status": "proposed; stop for owner approval before stage E",
+  "recipes": [
+    {
+      "recipe_id": "WB8227-implicit-normal",
+      "title": "Establish and apply an implicit derivative, gradient and normal",
+      "version": "0.1.2",
+      "selection_ids": [
+        "8227:D:SEL:implicit-normal:gradient",
+        "8227:D:SEL:implicit-normal:normal"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2025:P2:Q5:answer",
+        "8227:EXAM:2023:P2:Q8:a",
+        "8227:EXAM:2023:P2:Q8:b",
+        "8227:EXAM:2021:P2:Q10:a",
+        "8227:EXAM:2021:P2:Q10:b",
+        "8227:EXAM:2021:P1:Q11:b"
+      ],
+      "branches": [
+        {
+          "branch_id": "WB8227-implicit-normal:gradient",
+          "selection_id": "8227:D:SEL:implicit-normal:gradient",
+          "basis": "examination-observed (NSSCAS 8227)",
+          "capacity": 23,
+          "raw_capacity": 27,
+          "capacity_unit": "strict curve-no-repeat fresh bound;27admitted point-tasks/23curves",
+          "part_semantic_capacities": {
+            "gradient": 27
+          },
+          "strict_complete_fresh_bound": 23,
+          "domain": {
+            "type": "finite-cartesian-with-exclusions",
+            "parameters": {
+              "a": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "k": [
+                2,
+                3
+              ],
+              "q": [
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ]
+            },
+            "exclusions": [
+              {
+                "rule": "a+2*q==0",
+                "reason": "finite gradient required"
+              },
+              {
+                "rule": "q==-a",
+                "reason": "zero constant permits unintended factorisation"
+              },
+              {
+                "tuple": [
+                  2,
+                  3,
+                  -5
+                ],
+                "reason": "2025P2Q5 attributed original excluded from fresh pool"
+              }
+            ],
+            "raw_cartesian_count": 40,
+            "admitted_point_tasks": 27,
+            "distinct_curves": 23
+          },
+          "whole_bloom": 3,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "part_specs": [
+            {
+              "part_id": "gradient",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O01",
+                "8227:2020:M2:T4:O02",
+                "8227:2020:M2:T4:O03"
+              ],
+              "primary_objective_id": "8227:2020:M2:T4:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O01",
+                "8227:2020:M2:T4:O02"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T4:O01:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                },
+                {
+                  "demand_id": "8227:2020:M1:T8:O02:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                }
+              ],
+              "marks": 5,
+              "bloom": 3,
+              "bloom_rationale": "G1–G3 demonstrate a valid derivative route; G4 applies the supplied point and G5 is canonical gradient accuracy without wrong derivative working. This is routine Apply 3; a correct value alone does not demonstrate differentiation.",
+              "bloom_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G1",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G2",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G3",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G4",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G5"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "G1",
+                "G2",
+                "G3",
+                "G4",
+                "G5"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G1",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G2",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G3",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G4",
+                "WB8227-implicit-normal@0.1.2:gradient:gradient:G5"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "numeric",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:gradient:gradient:G1",
+                  "suffix": "G1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P2:Q5:AWARD:01"
+                  ],
+                  "qualifiers": [
+                    "allow one numerical slip",
+                    "not omission of factor"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:gradient:gradient:G2",
+                  "suffix": "G2",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P2:Q5:AWARD:02"
+                  ],
+                  "qualifiers": [
+                    "depends on valid G1"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:gradient:gradient:G3",
+                  "suffix": "G3",
+                  "mark_type": "B",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P2:Q5:AWARD:03"
+                  ],
+                  "qualifiers": [
+                    "2*y*dy/dx and0seen"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:gradient:gradient:G4",
+                  "suffix": "G4",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P2:Q5:AWARD:04"
+                  ],
+                  "qualifiers": [
+                    "from at least G1 orG3",
+                    "substitution before isolation permitted"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:gradient:gradient:G5",
+                  "suffix": "G5",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P2:Q5:AWARD:05"
+                  ],
+                  "qualifiers": [
+                    "A1 www: canonical gradient from a correct differentiated relation/expression on an accepted route; early substitution allowed",
+                    "requires credible G4 substitution working; no final-accuracy F.T.",
+                    "wrong e-index coincides at x=0 but cannot earn G5"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order",
+                  "named_deviation_id": "CALC-D2-DEV10"
+                }
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [
+            "8227:EXAM:2025:P2:Q5:answer"
+          ],
+          "marks": 5,
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "2",
+              "question": "5",
+              "part": null,
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+              "source_sha256": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER D1, native page; k2/3andoriginaltupleexclusion checked; Claude shortcheck pending",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Gradient part: same type as NSSCAS Mathematics 8227, 2025 Paper 2, Question 5, page 5",
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "scope": "part",
+              "applies_to_part_ids": [
+                "gradient"
+              ],
+              "applies_to_branch": "WB8227-implicit-normal:gradient",
+              "comparison_reason": "Unsupplied implicit exponential curve+point gradient retains the same four direct demands,numericresponse,and5markmethodstructure. k>=2preserveschain demand."
+            }
+          ],
+          "same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "recipe_part_ids": [
+                "gradient"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "structure_check": "Native source and D1 branch both unsupplied-gradient task; no show-thatformula supplied in this branch",
+              "status": "D1 proposed; short check pending"
+            }
+          ]
+        },
+        {
+          "branch_id": "WB8227-implicit-normal:normal",
+          "selection_id": "8227:D:SEL:implicit-normal:normal",
+          "basis": "examination-observed implicit show-that/normal facets with an explicitly adapted connected exponential branch",
+          "capacity": 8,
+          "raw_capacity": 27,
+          "capacity_unit": "complete-fresh upperbound after allpartkeys, limited by8show-that derivative identities;27point-tasks/23curves",
+          "part_semantic_capacities": {
+            "show-derivative": 8,
+            "gradient": 27,
+            "normal": 27
+          },
+          "strict_complete_fresh_bound": 8,
+          "domain": {
+            "type": "finite-cartesian-with-exclusions",
+            "parameters": {
+              "a": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "k": [
+                2,
+                3
+              ],
+              "q": [
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ]
+            },
+            "exclusions": [
+              {
+                "rule": "a+2*q==0",
+                "reason": "finite gradient required"
+              },
+              {
+                "rule": "q==-a",
+                "reason": "zero constant permits unintended factorisation"
+              },
+              {
+                "tuple": [
+                  2,
+                  3,
+                  -5
+                ],
+                "reason": "2025P2Q5 attributed original excluded from fresh pool"
+              }
+            ],
+            "raw_cartesian_count": 40,
+            "admitted_point_tasks": 27,
+            "distinct_curves": 23
+          },
+          "whole_bloom": 3,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "part_specs": [
+            {
+              "part_id": "show-derivative",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O03:D01",
+                "8227:2020:M2:T4:O02:D01",
+                "8227:2020:M2:T4:O01:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O01",
+                "8227:2020:M2:T4:O02",
+                "8227:2020:M2:T4:O03"
+              ],
+              "primary_objective_id": "8227:2020:M2:T4:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O01",
+                "8227:2020:M2:T4:O02"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T4:O01:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                },
+                {
+                  "demand_id": "8227:2020:M1:T8:O02:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                }
+              ],
+              "marks": 4,
+              "bloom": 3,
+              "bloom_rationale": "S1–S3 demonstrate a complete valid differentiation route; S4 requires correct forward algebra establishing the supplied derivative. The routine answer-given derivation warrants Apply, not Evaluate merely because it says show.",
+              "bloom_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S1",
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S2",
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S3",
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S4"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S1",
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S2",
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S3",
+                "WB8227-implicit-normal@0.1.2:normal:show-derivative:S4"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "proof/show-that",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:show-derivative:S1",
+                  "suffix": "S1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2023:P2:Q8:AWARD:01"
+                  ],
+                  "qualifiers": [
+                    "allow one slip",
+                    "not omission"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:show-derivative:S2",
+                  "suffix": "S2",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2023:P2:Q8:AWARD:02"
+                  ],
+                  "qualifiers": [
+                    "correct complete product derivative"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:show-derivative:S3",
+                  "suffix": "S3",
+                  "mark_type": "B",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2023:P2:Q8:AWARD:03"
+                  ],
+                  "qualifiers": [
+                    "remaining implicit derivative and constant zero"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:show-derivative:S4",
+                  "suffix": "S4",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2023:P2:Q8:AWARD:04"
+                  ],
+                  "qualifiers": [
+                    "source E1 proof terminal, mappedA1",
+                    "all preceding proofwork correct and complete",
+                    "no follow-through into given answer",
+                    "Simplified equivalent target accepted when equality is shown, including common nonzero-factor cancellation."
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ],
+              "alternative_criterion_mapping": {
+                "S1": "Valid differentiation attempt on an equivalent relation, every term attempted, allowing one numerical slip but no omitted contribution.",
+                "S2": "Correct derivative of the exponential/composite term in that route.",
+                "S3": "Correct implicit derivatives of remaining y-terms and correct treatment of the constant; any necessary identity/back-substitution justified.",
+                "S4": "Complete correct forward algebra establishes the supplied target or an explicitly shown equivalent form; all S1–S3 correct and complete; no follow-through into a given result."
+              },
+              "alternative_route_conditions": [
+                "C != 0 in every admitted instance implies y != 0 on the curve, permitting divide-by-y.",
+                "Log route uses log absolute values for potentially negative y and C-y^2, never log of a negative real quantity.",
+                "Exclusive mappings fill the same four criteria once; root/product/log/divided paths cannot be summed."
+              ],
+              "named_deviation_ids": [
+                "CALC-D1-DEV01",
+                "CALC-D1-DEV02",
+                "CALC-D2-DEV09"
+              ]
+            },
+            {
+              "part_id": "gradient",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O03:D03",
+                "8227:2020:M1:T8:O01:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O01",
+                "8227:2020:M2:T4:O03"
+              ],
+              "primary_objective_id": "8227:2020:M2:T4:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O01"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M2:T4:O03:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                },
+                {
+                  "demand_id": "8227:2020:M2:T4:O01:D02",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                }
+              ],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_rationale": "H1 substitutes the supplied point into the displayed derivative or their credible derived expression; H2 requires the canonical gradient after that working. This is routine Apply 3, not derivative proof credit again.",
+              "bloom_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:normal:gradient:H1",
+                "WB8227-implicit-normal@0.1.2:normal:gradient:H2"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "H1",
+                "H2"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:normal:gradient:H1",
+                "WB8227-implicit-normal@0.1.2:normal:gradient:H2"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "numeric",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:gradient:H1",
+                  "suffix": "H1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2023:P2:Q8:AWARD:05"
+                  ],
+                  "qualifiers": [
+                    "M1 substitute P into the displayed derivative OR their credible differentiated expression from the proof; own-result method follow-through allowed",
+                    "must use displayed/prior derivative under hence; no unconnected bypass",
+                    "point supplied not recovered"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:gradient:H2",
+                  "suffix": "H2",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2023:P2:Q8:AWARD:06"
+                  ],
+                  "qualifiers": [
+                    "Canonical gradient after eligible H1 working; no final-accuracy follow-through",
+                    "may use given correct derivative after failed proof, without restoring proof marks"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ]
+            },
+            {
+              "part_id": "normal",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O03:D01",
+                "8227:2020:M2:T4:O03:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O03",
+                "8227:2020:M2:T4:O03"
+              ],
+              "primary_objective_id": "8227:2020:M1:T8:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M2:T4:O03"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T8:O01:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                },
+                {
+                  "demand_id": "8227:2020:M2:T4:O03:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                }
+              ],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_rationale": "N1 demonstrates the perpendicular gradient, N2 constructs the line through the given point using it, and N3 is canonical exact line accuracy. These are familiar linked applications.",
+              "bloom_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:normal:normal:N1",
+                "WB8227-implicit-normal@0.1.2:normal:normal:N2",
+                "WB8227-implicit-normal@0.1.2:normal:normal:N3"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "N1",
+                "N2",
+                "N3"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-implicit-normal@0.1.2:normal:normal:N1",
+                "WB8227-implicit-normal@0.1.2:normal:normal:N2",
+                "WB8227-implicit-normal@0.1.2:normal:normal:N3"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "symbolic",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:normal:N1",
+                  "suffix": "N1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P2:Q10:AWARD:04"
+                  ],
+                  "qualifiers": [
+                    "A labelled perpendicular-gradient value in working is sufficient M1; an explicit -1/m calculation is not mandatory",
+                    "their credible finite nonzero tangent gradient allowed",
+                    "bare final line without gradient working earns no N1"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:normal:N2",
+                  "suffix": "N2",
+                  "mark_type": "DM",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P2:Q10:AWARD:05"
+                  ],
+                  "qualifiers": [
+                    "DM1 depends onN1",
+                    "complete line through their point with their perpendicular gradient"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-implicit-normal@0.1.2:normal:normal:N3",
+                  "suffix": "N3",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P2:Q10:AWARD:06"
+                  ],
+                  "qualifiers": [
+                    "allow equivalents",
+                    "canonical exact line; noF.T."
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2025:P2:Q5:answer",
+            "8227:EXAM:2023:P2:Q8:a",
+            "8227:EXAM:2023:P2:Q8:b",
+            "8227:EXAM:2021:P2:Q10:a",
+            "8227:EXAM:2021:P2:Q10:b",
+            "8227:EXAM:2021:P1:Q11:b"
+          ],
+          "same_type_note": "The D1 show-that part provides the derivative, so its following2-mark substitution is not the5-mark unsupplied-gradient task. No sibling badge inherited.",
+          "marks": 9,
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "2",
+              "question": "5",
+              "part": null,
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-2.pdf",
+              "source_sha256": "486afd8b31b7328b8b2ce0c17d2d56e619ba92842b68109df51ffea7c0199897",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2025 Paper 2, Question 5, page 5",
+              "source_part_id": "8227:EXAM:2025:P2:Q5:answer",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "show-derivative",
+                "gradient",
+                "normal"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "8",
+              "part": "a",
+              "printed_page": 14,
+              "pdf_page": 14,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2023 Paper 2, Question 8(a), page 14",
+              "source_part_id": "8227:EXAM:2023:P2:Q8:a",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "show-derivative",
+                "gradient",
+                "normal"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "8",
+              "part": "b",
+              "printed_page": 14,
+              "pdf_page": 14,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2023 Paper 2, Question 8(b), page 14",
+              "source_part_id": "8227:EXAM:2023:P2:Q8:b",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "show-derivative",
+                "gradient",
+                "normal"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "2",
+              "question": "10",
+              "part": "a",
+              "printed_page": 12,
+              "pdf_page": 12,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf",
+              "source_sha256": "509e1ad3fda0535ec756842d085384c409dec64284e8b1883a2b96b5976c0e80",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 2, Question 10(a), page 12",
+              "source_part_id": "8227:EXAM:2021:P2:Q10:a",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "show-derivative",
+                "gradient",
+                "normal"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "2",
+              "question": "10",
+              "part": "b",
+              "printed_page": 12,
+              "pdf_page": 12,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 2 8227-2 First Proof 26.05.2021.pdf",
+              "source_sha256": "509e1ad3fda0535ec756842d085384c409dec64284e8b1883a2b96b5976c0e80",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 2, Question 10(b), page 12",
+              "source_part_id": "8227:EXAM:2021:P2:Q10:b",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "show-derivative",
+                "gradient",
+                "normal"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "1",
+              "question": "11",
+              "part": "b",
+              "printed_page": 13,
+              "pdf_page": 13,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+              "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 1, Question 11(b), page 13",
+              "source_part_id": "8227:EXAM:2021:P1:Q11:b",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "show-derivative",
+                "gradient",
+                "normal"
+              ]
+            }
+          ],
+          "same_type_checks": []
+        }
+      ],
+      "explicit_deferred_facets": [
+        "Trigonometric implicit show-that and recovery of the y-axis point (2023 P2 Q8).",
+        "Parametric derivatives, singular points, implicit horizontal tangents and curve-again intersections."
+      ],
+      "owner": "Vitalis",
+      "status": "D2 repaired paper design; Claude confirmation then Vitalis approval pending",
+      "work_order_path": "work-orders/WB8227-implicit-normal.md",
+      "exemplar_path": "exemplars/WB8227-implicit-normal.md",
+      "total_capacity": null,
+      "union_discovery": {
+        "basis": "accepted item-level assessed/component union (R5-03), read from objective-problem-map.json; not relations-only",
+        "demand_ids": [
+          "8227:2020:M1:T8:O03:D01",
+          "8227:2020:M2:T4:O01:D02",
+          "8227:2020:M2:T4:O02:D01",
+          "8227:2020:M2:T4:O03:D01",
+          "8227:2020:M2:T4:O03:D03"
+        ],
+        "candidate_item_count": 249,
+        "candidate_item_ids": [
+          "8227:TB:Goldie:C4:Example:1",
+          "8227:TB:Goldie:C4:Example:11",
+          "8227:TB:Goldie:C4:Example:12",
+          "8227:TB:Goldie:C4:Example:13",
+          "8227:TB:Goldie:C4:Example:15",
+          "8227:TB:Goldie:C4:Example:16",
+          "8227:TB:Goldie:C4:Example:17",
+          "8227:TB:Goldie:C4:Example:18",
+          "8227:TB:Goldie:C4:Example:2",
+          "8227:TB:Goldie:C4:Example:22",
+          "8227:TB:Goldie:C4:Example:23",
+          "8227:TB:Goldie:C4:Example:24",
+          "8227:TB:Goldie:C4:Example:5",
+          "8227:TB:Goldie:C4:Example:6",
+          "8227:TB:Goldie:C4:Example:7",
+          "8227:TB:Goldie:C4:Example:8",
+          "8227:TB:Goldie:C4:Example:9",
+          "8227:TB:Goldie:C4:Exercise-4A:1",
+          "8227:TB:Goldie:C4:Exercise-4A:2",
+          "8227:TB:Goldie:C4:Exercise-4A:3",
+          "8227:TB:Goldie:C4:Exercise-4A:4",
+          "8227:TB:Goldie:C4:Exercise-4A:5",
+          "8227:TB:Goldie:C4:Exercise-4A:8",
+          "8227:TB:Goldie:C4:Exercise-4B:1",
+          "8227:TB:Goldie:C4:Exercise-4B:10",
+          "8227:TB:Goldie:C4:Exercise-4B:11",
+          "8227:TB:Goldie:C4:Exercise-4B:12",
+          "8227:TB:Goldie:C4:Exercise-4B:2",
+          "8227:TB:Goldie:C4:Exercise-4B:3",
+          "8227:TB:Goldie:C4:Exercise-4B:4",
+          "8227:TB:Goldie:C4:Exercise-4B:5",
+          "8227:TB:Goldie:C4:Exercise-4B:7",
+          "8227:TB:Goldie:C4:Exercise-4B:8",
+          "8227:TB:Goldie:C4:Exercise-4C:11",
+          "8227:TB:Goldie:C4:Exercise-4C:12",
+          "8227:TB:Goldie:C4:Exercise-4C:2",
+          "8227:TB:Goldie:C4:Exercise-4C:4",
+          "8227:TB:Goldie:C4:Exercise-4C:5",
+          "8227:TB:Goldie:C4:Exercise-4C:6",
+          "8227:TB:Goldie:C4:Exercise-4C:7",
+          "8227:TB:Goldie:C4:Exercise-4C:8",
+          "8227:TB:Goldie:C4:Exercise-4C:9",
+          "8227:TB:Goldie:C4:Exercise-4D:1",
+          "8227:TB:Goldie:C4:Exercise-4D:10",
+          "8227:TB:Goldie:C4:Exercise-4D:11",
+          "8227:TB:Goldie:C4:Exercise-4D:12",
+          "8227:TB:Goldie:C4:Exercise-4D:2",
+          "8227:TB:Goldie:C4:Exercise-4D:3",
+          "8227:TB:Goldie:C4:Exercise-4D:4",
+          "8227:TB:Goldie:C4:Exercise-4D:5",
+          "8227:TB:Goldie:C4:Exercise-4D:6",
+          "8227:TB:Goldie:C4:Exercise-4D:7",
+          "8227:TB:Goldie:C4:Exercise-4D:8",
+          "8227:TB:Goldie:C4:Exercise-4D:9",
+          "8227:TB:Goldie:C4:Exercise-4E:1",
+          "8227:TB:Goldie:C4:Exercise-4E:10",
+          "8227:TB:Goldie:C4:Exercise-4E:11",
+          "8227:TB:Goldie:C4:Exercise-4E:13",
+          "8227:TB:Goldie:C4:Exercise-4E:15",
+          "8227:TB:Goldie:C4:Exercise-4E:2",
+          "8227:TB:Goldie:C4:Exercise-4E:3",
+          "8227:TB:Goldie:C4:Exercise-4E:4",
+          "8227:TB:Goldie:C4:Exercise-4E:6",
+          "8227:TB:Goldie:C4:Exercise-4E:7",
+          "8227:TB:Goldie:C4:Exercise-4E:8",
+          "8227:TB:Goldie:C4:Exercise-4E:9",
+          "8227:TB:Goldie:C4:Worked-derivation:1",
+          "8227:TB:Goldie:C5:Exercise-5A:8",
+          "8227:TB:Goldie:C5:Exercise-5C:10",
+          "8227:TB:Goldie:C5:Exercise-5C:8",
+          "8227:TB:Goldie:C5:Exercise-5C:9",
+          "8227:TB:Goldie:C6:Exercise-6B:11",
+          "8227:TB:Goldie:C6:Exercise-6B:12",
+          "8227:TB:Goldie:C6:Exercise-6B:16",
+          "8227:TB:Goldie:C8:Activity:2",
+          "8227:TB:Goldie:C8:Exercise-8C:5",
+          "8227:TB:Goldie:C8:Exercise-8D:6",
+          "8227:TB:Goldie:C8:Exercise-8D:7",
+          "8227:TB:Goldie:C8:Exercise-8G:10",
+          "8227:TB:Goldie:C8:Exercise-8G:11",
+          "8227:TB:Goldie:C8:Exercise-8G:12",
+          "8227:TB:Goldie:C8:Exercise-8H:4",
+          "8227:TB:Goldie:C9:Example:9",
+          "8227:TB:YM:C11:Example:1",
+          "8227:TB:YM:C11:Example:10",
+          "8227:TB:YM:C11:Example:11",
+          "8227:TB:YM:C11:Example:12",
+          "8227:TB:YM:C11:Example:13",
+          "8227:TB:YM:C11:Example:14",
+          "8227:TB:YM:C11:Example:15",
+          "8227:TB:YM:C11:Example:16",
+          "8227:TB:YM:C11:Example:17",
+          "8227:TB:YM:C11:Example:18",
+          "8227:TB:YM:C11:Example:19",
+          "8227:TB:YM:C11:Example:2",
+          "8227:TB:YM:C11:Example:20",
+          "8227:TB:YM:C11:Example:21",
+          "8227:TB:YM:C11:Example:22",
+          "8227:TB:YM:C11:Example:23",
+          "8227:TB:YM:C11:Example:24",
+          "8227:TB:YM:C11:Example:25",
+          "8227:TB:YM:C11:Example:26",
+          "8227:TB:YM:C11:Example:27",
+          "8227:TB:YM:C11:Example:28",
+          "8227:TB:YM:C11:Example:29",
+          "8227:TB:YM:C11:Example:3",
+          "8227:TB:YM:C11:Example:30",
+          "8227:TB:YM:C11:Example:31",
+          "8227:TB:YM:C11:Example:32",
+          "8227:TB:YM:C11:Example:33",
+          "8227:TB:YM:C11:Example:34",
+          "8227:TB:YM:C11:Example:35",
+          "8227:TB:YM:C11:Example:36",
+          "8227:TB:YM:C11:Example:37",
+          "8227:TB:YM:C11:Example:38",
+          "8227:TB:YM:C11:Example:39",
+          "8227:TB:YM:C11:Example:4",
+          "8227:TB:YM:C11:Example:40",
+          "8227:TB:YM:C11:Example:41",
+          "8227:TB:YM:C11:Example:42",
+          "8227:TB:YM:C11:Example:5",
+          "8227:TB:YM:C11:Example:8",
+          "8227:TB:YM:C11:Exercise-11:10",
+          "8227:TB:YM:C11:Exercise-11:2",
+          "8227:TB:YM:C11:Exercise-11:3",
+          "8227:TB:YM:C11:Exercise-11:4",
+          "8227:TB:YM:C11:Exercise-11:5",
+          "8227:TB:YM:C11:Exercise-11:6",
+          "8227:TB:YM:C11:Exercise-11:7",
+          "8227:TB:YM:C11:Exercise-11:8",
+          "8227:TB:YM:C11:Exercise-11:9",
+          "8227:TB:YM:C11:Revision-Exercise-11:4",
+          "8227:TB:YM:C11:Revision-Exercise-11:5",
+          "8227:TB:YM:C11:Try-Now-12:1",
+          "8227:TB:YM:C11:Try-Now-12:2",
+          "8227:TB:YM:C11:Try-Now-12:3",
+          "8227:TB:YM:C11:Try-Now-13:1",
+          "8227:TB:YM:C11:Try-Now-13:2",
+          "8227:TB:YM:C11:Try-Now-13:3",
+          "8227:TB:YM:C11:Try-Now-13:4",
+          "8227:TB:YM:C11:Try-Now-17:1",
+          "8227:TB:YM:C11:Try-Now-17:2",
+          "8227:TB:YM:C11:Try-Now-18:1",
+          "8227:TB:YM:C11:Try-Now-18:2",
+          "8227:TB:YM:C11:Try-Now-20:1",
+          "8227:TB:YM:C11:Try-Now-20:2",
+          "8227:TB:YM:C11:Try-Now-21:1",
+          "8227:TB:YM:C11:Try-Now-21:2",
+          "8227:TB:YM:C11:Try-Now-21:3",
+          "8227:TB:YM:C11:Try-Now-22:3",
+          "8227:TB:YM:C11:Try-Now-29:1",
+          "8227:TB:YM:C11:Try-Now-29:2",
+          "8227:TB:YM:C11:Try-Now-29:3",
+          "8227:TB:YM:C11:Try-Now-29:4",
+          "8227:TB:YM:C11:Try-Now-31:1",
+          "8227:TB:YM:C11:Try-Now-31:2",
+          "8227:TB:YM:C11:Try-Now-36:1",
+          "8227:TB:YM:C11:Try-Now-36:2",
+          "8227:TB:YM:C11:Try-Now-37:1",
+          "8227:TB:YM:C11:Try-Now-37:2",
+          "8227:TB:YM:C11:Try-Now-38:1",
+          "8227:TB:YM:C11:Try-Now-38:2",
+          "8227:TB:YM:C11:Try-Now-39:1",
+          "8227:TB:YM:C11:Try-Now-39:2",
+          "8227:TB:YM:C11:Try-Now-39:3",
+          "8227:TB:YM:C11:Try-Now-39:4",
+          "8227:TB:YM:C11:Try-Now-40:1",
+          "8227:TB:YM:C11:Try-Now-40:2",
+          "8227:TB:YM:C11:Try-Now-42:1",
+          "8227:TB:YM:C11:Try-Now-42:2",
+          "8227:TB:YM:C11:Try-Now-4:1",
+          "8227:TB:YM:C11:Try-Now-4:2",
+          "8227:TB:YM:C11:Try-Now-4:3",
+          "8227:TB:YM:C11:Try-Now-4:4",
+          "8227:TB:YM:C11:Try-Now-4:5",
+          "8227:TB:YM:C11:Try-Now-5:1",
+          "8227:TB:YM:C11:Try-Now-5:2",
+          "8227:TB:YM:C11:Try-Now-5:3",
+          "8227:TB:YM:C11:Try-Now-9:4",
+          "8227:TB:YM:C11:Try-Now-9:5",
+          "8227:TB:YM:C11:Try-Now:1",
+          "8227:TB:YM:C11:Try-Now:10",
+          "8227:TB:YM:C11:Try-Now:11",
+          "8227:TB:YM:C11:Try-Now:14",
+          "8227:TB:YM:C11:Try-Now:15",
+          "8227:TB:YM:C11:Try-Now:16",
+          "8227:TB:YM:C11:Try-Now:19",
+          "8227:TB:YM:C11:Try-Now:2",
+          "8227:TB:YM:C11:Try-Now:23",
+          "8227:TB:YM:C11:Try-Now:24",
+          "8227:TB:YM:C11:Try-Now:25",
+          "8227:TB:YM:C11:Try-Now:26",
+          "8227:TB:YM:C11:Try-Now:27",
+          "8227:TB:YM:C11:Try-Now:28",
+          "8227:TB:YM:C11:Try-Now:3",
+          "8227:TB:YM:C11:Try-Now:30",
+          "8227:TB:YM:C11:Try-Now:32",
+          "8227:TB:YM:C11:Try-Now:33",
+          "8227:TB:YM:C11:Try-Now:34",
+          "8227:TB:YM:C11:Try-Now:35",
+          "8227:TB:YM:C11:Try-Now:41",
+          "8227:TB:YM:C11:Try-Now:8",
+          "8227:TB:YM:C12:Try-Now-17:3",
+          "8227:TB:YM:C13:Example:11",
+          "8227:TB:YM:C13:Example:7",
+          "8227:TB:YM:C13:Exercise-13:4",
+          "8227:TB:YM:C13:Revision-Exercise-13:3",
+          "8227:TB:YM:C13:Try-Now-7:1",
+          "8227:TB:YM:C6:Example:11",
+          "8227:TB:YM:C6:Example:12",
+          "8227:TB:YM:C6:Example:13",
+          "8227:TB:YM:C6:Example:14",
+          "8227:TB:YM:C6:Example:15",
+          "8227:TB:YM:C6:Example:36",
+          "8227:TB:YM:C6:Example:37",
+          "8227:TB:YM:C6:Exercise-6:3",
+          "8227:TB:YM:C6:Exercise-6:5",
+          "8227:TB:YM:C6:Exercise-6:7",
+          "8227:TB:YM:C6:Revision-Exercise-6:2",
+          "8227:TB:YM:C6:Try-Now-11:1",
+          "8227:TB:YM:C6:Try-Now-11:2",
+          "8227:TB:YM:C6:Try-Now-11:3",
+          "8227:TB:YM:C6:Try-Now-11:4",
+          "8227:TB:YM:C6:Try-Now-12:1",
+          "8227:TB:YM:C6:Try-Now-12:2",
+          "8227:TB:YM:C6:Try-Now-12:3",
+          "8227:TB:YM:C6:Try-Now-12:4",
+          "8227:TB:YM:C6:Try-Now-13:1",
+          "8227:TB:YM:C6:Try-Now-13:2",
+          "8227:TB:YM:C6:Try-Now-14:1",
+          "8227:TB:YM:C6:Try-Now-14:2",
+          "8227:TB:YM:C6:Try-Now-15:1",
+          "8227:TB:YM:C6:Try-Now-15:2",
+          "8227:TB:YM:C6:Try-Now-15:3",
+          "8227:TB:YM:C6:Try-Now-36:1",
+          "8227:TB:YM:C6:Try-Now-36:2",
+          "8227:TB:YM:C6:Try-Now:37",
+          "8227:TB:YM:C7:Example:10",
+          "8227:TB:YM:C7:Example:40",
+          "8227:TB:YM:C7:Example:41",
+          "8227:TB:YM:C7:Exercise-7:10",
+          "8227:TB:YM:C7:Exercise-7:3",
+          "8227:TB:YM:C7:Try-Now-10:1",
+          "8227:TB:YM:C7:Try-Now-10:2",
+          "8227:TB:YM:C7:Try-Now-22:2",
+          "8227:TB:YM:C7:Try-Now-23:1",
+          "8227:TB:YM:C7:Try-Now-23:2",
+          "8227:TB:YM:C7:Try-Now-41:1",
+          "8227:TB:YM:C7:Try-Now-41:2"
+        ],
+        "adopted_families": [
+          "8227:TEXTBOOK-FAMILY:implicit-linked-normal-curve-sketch",
+          "8227:TEXTBOOK-FAMILY:implicit-given-point-gradient"
+        ],
+        "limits": "Discovery is complete for these exact union predicates; native re-reading is complete for every member of the adopted families, not every other union hit. Unselected union hits remain later-design leads, not proven rejections or absence."
+      },
+      "accepted_selection_ids": [
+        "8227:FAMILY:implicit"
+      ],
+      "capacity_note": "D0 corrected to42point tasks on36curves; D1 has27point tasks on23curves. Strict complete-fresh upper bounds differ by branch and part-semantic guards; not54or46unique bank items.",
+      "selection_id_migration": {
+        "8227:SEL-D:implicit-exponential-point": "8227:D:SEL:implicit-normal:gradient",
+        "8227:SEL-D:implicit-normal-extension": "8227:D:SEL:implicit-normal:normal"
+      },
+      "proposed_version": "0.1.2"
+    },
+    {
+      "recipe_id": "WB8227-stationary-inflexion",
+      "title": "Locate stationary points and discriminate extrema from flat inflexions",
+      "version": "0.1.2",
+      "selection_ids": [
+        "8227:D:SEL:stationary-inflexion:two-extrema",
+        "8227:D:SEL:stationary-inflexion:flat-classification"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2021:P1:Q11:a",
+        "8227:EXAM:2023:P2:Q5:a",
+        "8227:EXAM:2024:P2:Q10:a",
+        "8227:EXAM:2024:P2:Q10:b",
+        "8227:EXAM:2025:P1:Q9:c"
+      ],
+      "branches": [
+        {
+          "branch_id": "WB8227-stationary-inflexion:two-extrema",
+          "selection_id": "8227:D:SEL:stationary-inflexion:two-extrema",
+          "basis": "textbook-derived polynomial pattern; NSSCAS stationary method/marking observed, no exact whole-branch exam match claimed",
+          "capacity": 30,
+          "raw_capacity": 540,
+          "capacity_unit": "mirror/vertical-shift shape classes for classification;540raw polynomials",
+          "part_semantic_capacities": {
+            "points": 540,
+            "nature": 30
+          },
+          "strict_complete_fresh_bound": 30,
+          "domain": {
+            "type": "finite-cartesian",
+            "parameters": {
+              "a": [
+                -2,
+                -1,
+                1,
+                2
+              ],
+              "h": [
+                -2,
+                -1,
+                0,
+                1,
+                2
+              ],
+              "r": [
+                1,
+                2,
+                3
+              ],
+              "c": [
+                -4,
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "formula": "a*((x-h)**3-3*r**2*(x-h))+c",
+            "canonical_presentation": "expanded polynomial",
+            "raw_cartesian_count": 540
+          },
+          "whole_bloom": 3,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "part_specs": [
+            {
+              "part_id": "points",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O02:D01",
+                "8227:2020:M1:T8:O04:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O02",
+                "8227:2020:M1:T8:O04"
+              ],
+              "primary_objective_id": "8227:2020:M1:T8:O04",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O02"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 4,
+              "bloom": 3,
+              "bloom_rationale": "P1/P2 differentiate the supplied expanded polynomial; P3 visibly factorises or substitutes in the quadratic formula after f′=0; P4 gives both complete coordinates. These are procedural location steps, not classification evidence.",
+              "bloom_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P1",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P2",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P3",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P4"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "P1",
+                "P2",
+                "P3",
+                "P4"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P1",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P2",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P3",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P4"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "symbolic",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P1",
+                  "suffix": "P1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P1:Q11:AWARD:01"
+                  ],
+                  "qualifiers": [
+                    "attempt differentiation"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P2",
+                  "suffix": "P2",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P1:Q11:AWARD:02"
+                  ],
+                  "qualifiers": [
+                    "correct differentiation"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P3",
+                  "suffix": "P3",
+                  "mark_type": "DM",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P1:Q11:AWARD:03"
+                  ],
+                  "qualifiers": [
+                    "DM1 derivative=0 and visible factor/formula solve"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:two-extrema:points:P4",
+                  "suffix": "P4",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2021:P1:Q11:AWARD:04"
+                  ],
+                  "qualifiers": [
+                    "both full canonical coordinates",
+                    "visible method"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ]
+            },
+            {
+              "part_id": "nature",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O04:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O04"
+              ],
+              "primary_objective_id": "8227:2020:M1:T8:O04",
+              "other_directly_assessed_objective_ids": [],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T8:O01:D02",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                },
+                {
+                  "demand_id": "8227:2020:M1:T8:O02:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                }
+              ],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_rationale": "C1 applies a valid local sign/second-derivative test at both stationary points; C2 gives the canonical types. This routine two-extrema classification is Apply.",
+              "bloom_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:nature:C1",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:nature:C2"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "C1",
+                "C2"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:nature:C1",
+                "WB8227-stationary-inflexion@0.1.2:two-extrema:nature:C2"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "explanation",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:two-extrema:nature:C1",
+                  "suffix": "C1",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2024:P2:Q10:AWARD:05",
+                    "8227:EXAM:2025:P1:Q9:AWARD:08"
+                  ],
+                  "qualifiers": [
+                    "F.T. their derivative/credible point",
+                    "any valid local method",
+                    "substitution/sign argument shown"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:two-extrema:nature:C2",
+                  "suffix": "C2",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2024:P2:Q10:AWARD:06"
+                  ],
+                  "qualifiers": [
+                    "C.A.O.",
+                    "test and conclude"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2021:P1:Q11:a",
+            "8227:EXAM:2023:P2:Q5:a",
+            "8227:EXAM:2024:P2:Q10:a",
+            "8227:EXAM:2024:P2:Q10:b",
+            "8227:EXAM:2025:P1:Q9:c"
+          ],
+          "marks": 6,
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "1",
+              "question": "11",
+              "part": "a",
+              "printed_page": 13,
+              "pdf_page": 13,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+              "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2021 Paper 1, Question 11(a), page 13",
+              "source_part_id": "8227:EXAM:2021:P1:Q11:a",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "points",
+                "nature"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "5",
+              "part": "a",
+              "printed_page": 8,
+              "pdf_page": 8,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2023 Paper 2, Question 5(a), page 8",
+              "source_part_id": "8227:EXAM:2023:P2:Q5:a",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "points",
+                "nature"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2024,
+              "session": null,
+              "paper": "2",
+              "question": "10",
+              "part": "a",
+              "printed_page": 15,
+              "pdf_page": 15,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-2.pdf",
+              "source_sha256": "e6a254202b531592c5bbd2e20a8d003e1f49ca3bd7d1ca9796990c6e897c6def",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2024 Paper 2, Question 10(a), page 15",
+              "source_part_id": "8227:EXAM:2024:P2:Q10:a",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "points",
+                "nature"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2024,
+              "session": null,
+              "paper": "2",
+              "question": "10",
+              "part": "b",
+              "printed_page": 15,
+              "pdf_page": 15,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2024/8227-2.pdf",
+              "source_sha256": "e6a254202b531592c5bbd2e20a8d003e1f49ca3bd7d1ca9796990c6e897c6def",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2024 Paper 2, Question 10(b), page 15",
+              "source_part_id": "8227:EXAM:2024:P2:Q10:b",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "points",
+                "nature"
+              ]
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "1",
+              "question": "9",
+              "part": "c",
+              "printed_page": 13,
+              "pdf_page": 13,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+              "source_sha256": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2025 Paper 1, Question 9(c), page 13",
+              "source_part_id": "8227:EXAM:2025:P1:Q9:c",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "points",
+                "nature"
+              ]
+            }
+          ],
+          "same_type_checks": []
+        },
+        {
+          "branch_id": "WB8227-stationary-inflexion:flat-classification",
+          "selection_id": "8227:D:SEL:stationary-inflexion:flat-classification",
+          "basis": "syllabus-derived mixed cubic/quartic branch; extrema methods exam-observed and stationary inflexion textbook-supported; no whole-branch exam label",
+          "capacity": 16,
+          "raw_capacity": 256,
+          "capacity_unit": "mirror/vertical-shift shape classes for classification;256raw polynomials",
+          "part_semantic_capacities": {
+            "point": 256,
+            "classification": 16
+          },
+          "strict_complete_fresh_bound": 16,
+          "domain": {
+            "type": "finite-cartesian-with-exclusions",
+            "parameters": {
+              "power": [
+                3,
+                4
+              ],
+              "a": [
+                -2,
+                -1,
+                1,
+                2
+              ],
+              "h": [
+                -2,
+                -1,
+                1,
+                2
+              ],
+              "c": [
+                -4,
+                -3,
+                -2,
+                -1,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "formula": "a*(x-h)**power+c",
+            "canonical_presentation": "expanded polynomial; no method hint",
+            "raw_cartesian_count": 256,
+            "admitted_polynomials": 256,
+            "exclusions": [
+              {
+                "rule": "h==0",
+                "reason": "avoid trivial untranslated stationary equation; out of chosen domain, not mathematically invalid"
+              },
+              {
+                "rule": "c==0",
+                "reason": "wrong derivative-for-y substitution would give the canonical y0"
+              }
+            ],
+            "before_c0_discrimination_exclusion_count": 288
+          },
+          "whole_bloom": 3,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "part_specs": [
+            {
+              "part_id": "point",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O02:D01",
+                "8227:2020:M1:T8:O04:D01"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O02",
+                "8227:2020:M1:T8:O04"
+              ],
+              "primary_objective_id": "8227:2020:M1:T8:O04",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O02"
+              ],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T2:O01:D01",
+                  "role": "conditional prerequisite for power=4: positive-integer binomial-cube recognition route; alternative to the Module 2 route, not an extra directly assessed facet",
+                  "condition": "power=4",
+                  "alternative_route": "binomial-cube"
+                },
+                {
+                  "demand_id": "8227:2020:M2:T1:O04:D02",
+                  "role": "conditional prerequisite for power=4: factor theorem route, alternative to binomial-cube recognition",
+                  "condition": "power=4",
+                  "alternative_route": "factor-theorem"
+                },
+                {
+                  "demand_id": "8227:2020:M2:T1:O04:D04",
+                  "role": "conditional prerequisite for power=4: polynomial factorisation after the factor theorem; alternative to binomial-cube recognition",
+                  "condition": "power=4",
+                  "alternative_route": "factor-theorem"
+                }
+              ],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_rationale": "I1 differentiates; I2 visibly solves the repeated-factor stationary equation; I3 gives the full canonical point. These criteria locate the point and do not assess its nature.",
+              "bloom_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I1",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I2",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I3"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "I1",
+                "I2",
+                "I3"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I1",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I2",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I3"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "symbolic",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I1",
+                  "suffix": "I1",
+                  "mark_type": "B",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P1:Q9:AWARD:05"
+                  ],
+                  "qualifiers": [
+                    "correct derivative; coefficient slip losesB1"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I2",
+                  "suffix": "I2",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P1:Q9:AWARD:06"
+                  ],
+                  "qualifiers": [
+                    "derivative=0 and visible valid solve attempt",
+                    "For quartic cases, demonstrate binomial cube recognition OR factor theorem g(h)=0, divide by x-h, and solve/recognise the remaining repeated quadratic."
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:flat-classification:point:I3",
+                  "suffix": "I3",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P1:Q9:AWARD:07"
+                  ],
+                  "qualifiers": [
+                    "canonical full point; visible method"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ],
+              "prerequisite_routes": [
+                {
+                  "route_id": "binomial-cube",
+                  "condition": "power=4",
+                  "module_dependencies": [
+                    "M1:T2:O01"
+                  ],
+                  "demand_ids": [
+                    "8227:2020:M1:T2:O01:D01"
+                  ]
+                },
+                {
+                  "route_id": "factor-theorem",
+                  "condition": "power=4",
+                  "module_dependencies": [
+                    "M2:T1:O04"
+                  ],
+                  "demand_ids": [
+                    "8227:2020:M2:T1:O04:D02",
+                    "8227:2020:M2:T1:O04:D04"
+                  ]
+                }
+              ],
+              "module_dependency_note": "The expanded-quartic branch requires AS algebra, not NSSCO-only algebra. An M1 binomial-cube route is sufficient; selecting the factor-theorem route explicitly requires the M2 polynomial module. This pilot branch is not a claim that M2 methods are assumed in every M1 examination question."
+            },
+            {
+              "part_id": "classification",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T8:O04:D02"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O04"
+              ],
+              "primary_objective_id": "8227:2020:M1:T8:O04",
+              "other_directly_assessed_objective_ids": [],
+              "prerequisite_demand_ids": [
+                {
+                  "demand_id": "8227:2020:M1:T8:O01:D02",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                },
+                {
+                  "demand_id": "8227:2020:M1:T8:O02:D01",
+                  "role": "prerequisite/support; not separately directly assessed in this part"
+                }
+              ],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_rationale": "I4 records the derivative behaviour, I5 applies a valid taught classification test and I6 gives its justified type. Routine sign testing is Apply 3 under OD-4 even though outcomes vary and the stem does not name the method.",
+              "bloom_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I4",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I5",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I6"
+              ],
+              "bloom_status": "D2 proposal; Claude confirmation then Vitalis approval pending",
+              "classification_version": "8227-pilot-design-0.1.1",
+              "criterion_ids": [
+                "I4",
+                "I5",
+                "I6"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I4",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I5",
+                "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I6"
+              ],
+              "criterion_id_rule": "recipe_id@version:branch_short:part_id:criterion_suffix",
+              "response_format": "explanation",
+              "answer_only_credit": 0,
+              "answer_only_rule": "OD1 / D1-MR01; no official question-type exception identified",
+              "criteria": [
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I4",
+                  "suffix": "I4",
+                  "mark_type": "B",
+                  "value": 1,
+                  "official_evidence_ids": [],
+                  "qualifiers": [
+                    "actual two-sided evidence, no unsupported type shortcut"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I5",
+                  "suffix": "I5",
+                  "mark_type": "M",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P1:Q9:AWARD:08"
+                  ],
+                  "qualifiers": [
+                    "any valid method, including first-derivative signs alone",
+                    "limited credible F.T."
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                },
+                {
+                  "criterion_id": "WB8227-stationary-inflexion@0.1.2:flat-classification:classification:I6",
+                  "suffix": "I6",
+                  "mark_type": "A",
+                  "value": 1,
+                  "official_evidence_ids": [
+                    "8227:EXAM:2025:P1:Q9:AWARD:09"
+                  ],
+                  "qualifiers": [
+                    "canonical justified type",
+                    "depends onI5"
+                  ],
+                  "status": "adapted D2 proposal; official qualifiers and declared deviations in work order"
+                }
+              ]
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2025:P1:Q9:c"
+          ],
+          "assessment_prompt": "Find the exact coordinates of every stationary point and classify it as a maximum, minimum or stationary point of inflexion. Give sufficient evidence to justify the type and rule out the other types; do not name a method in the prompt.",
+          "marks": 6,
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2025,
+              "session": null,
+              "paper": "1",
+              "question": "9",
+              "part": "c",
+              "printed_page": 13,
+              "pdf_page": 13,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+              "source_sha256": "9b8c39c4f0001ff266f943ff0d01d6681ac88f42f2b90dbab162844e858ae816",
+              "relation": "related",
+              "verified_by": "Codex PLANNER D1 native read,2026-11-23; short check pending",
+              "learner_display": false,
+              "learner_display_reason": "Related method/marking evidence only; changed function,givens,scaffolding or response precludes a same-type label",
+              "learner_label": "NSSCAS Mathematics 8227, 2025 Paper 1, Question 9(c), page 13",
+              "source_part_id": "8227:EXAM:2025:P1:Q9:c",
+              "scope": "internal evidence",
+              "applies_to_part_ids": [
+                "point",
+                "classification"
+              ]
+            }
+          ],
+          "same_type_checks": []
+        }
+      ],
+      "explicit_deferred_facets": [
+        "Non-stationary inflexions, optimisation modelling, logarithmic/trigonometric stationary problems and requested full curve sketches."
+      ],
+      "owner": "Vitalis",
+      "status": "D2 repaired paper design; Claude confirmation then Vitalis approval pending",
+      "work_order_path": "work-orders/WB8227-stationary-inflexion.md",
+      "exemplar_path": "exemplars/WB8227-stationary-inflexion.md",
+      "total_capacity": null,
+      "union_discovery": {
+        "basis": "accepted item-level assessed/component union (R5-03), read from objective-problem-map.json; not relations-only",
+        "demand_ids": [
+          "8227:2020:M1:T8:O02:D01",
+          "8227:2020:M1:T8:O04:D01",
+          "8227:2020:M1:T8:O04:D02"
+        ],
+        "candidate_item_count": 235,
+        "candidate_item_ids": [
+          "8227:TB:Goldie:C4:Activity:1",
+          "8227:TB:Goldie:C4:Example:1",
+          "8227:TB:Goldie:C4:Example:12",
+          "8227:TB:Goldie:C4:Example:15",
+          "8227:TB:Goldie:C4:Example:16",
+          "8227:TB:Goldie:C4:Example:17",
+          "8227:TB:Goldie:C4:Example:18",
+          "8227:TB:Goldie:C4:Example:2",
+          "8227:TB:Goldie:C4:Example:22",
+          "8227:TB:Goldie:C4:Example:24",
+          "8227:TB:Goldie:C4:Example:3",
+          "8227:TB:Goldie:C4:Example:4",
+          "8227:TB:Goldie:C4:Example:7",
+          "8227:TB:Goldie:C4:Example:9",
+          "8227:TB:Goldie:C4:Exercise-4A:1",
+          "8227:TB:Goldie:C4:Exercise-4A:2",
+          "8227:TB:Goldie:C4:Exercise-4A:3",
+          "8227:TB:Goldie:C4:Exercise-4A:4",
+          "8227:TB:Goldie:C4:Exercise-4A:5",
+          "8227:TB:Goldie:C4:Exercise-4A:6",
+          "8227:TB:Goldie:C4:Exercise-4A:7",
+          "8227:TB:Goldie:C4:Exercise-4A:8",
+          "8227:TB:Goldie:C4:Exercise-4B:1",
+          "8227:TB:Goldie:C4:Exercise-4B:11",
+          "8227:TB:Goldie:C4:Exercise-4B:12",
+          "8227:TB:Goldie:C4:Exercise-4B:2",
+          "8227:TB:Goldie:C4:Exercise-4B:4",
+          "8227:TB:Goldie:C4:Exercise-4B:5",
+          "8227:TB:Goldie:C4:Exercise-4B:6",
+          "8227:TB:Goldie:C4:Exercise-4B:7",
+          "8227:TB:Goldie:C4:Exercise-4B:8",
+          "8227:TB:Goldie:C4:Exercise-4B:9",
+          "8227:TB:Goldie:C4:Exercise-4C:10",
+          "8227:TB:Goldie:C4:Exercise-4C:12",
+          "8227:TB:Goldie:C4:Exercise-4C:13",
+          "8227:TB:Goldie:C4:Exercise-4C:4",
+          "8227:TB:Goldie:C4:Exercise-4C:5",
+          "8227:TB:Goldie:C4:Exercise-4D:1",
+          "8227:TB:Goldie:C4:Exercise-4D:10",
+          "8227:TB:Goldie:C4:Exercise-4D:11",
+          "8227:TB:Goldie:C4:Exercise-4D:12",
+          "8227:TB:Goldie:C4:Exercise-4D:4",
+          "8227:TB:Goldie:C4:Exercise-4D:5",
+          "8227:TB:Goldie:C4:Exercise-4D:7",
+          "8227:TB:Goldie:C4:Exercise-4D:8",
+          "8227:TB:Goldie:C4:Exercise-4E:1",
+          "8227:TB:Goldie:C4:Exercise-4E:5",
+          "8227:TB:Goldie:C4:Exercise-4E:9",
+          "8227:TB:Goldie:C4:Prompt:7",
+          "8227:TB:Goldie:C5:Exercise-5A:4",
+          "8227:TB:Goldie:C5:Exercise-5A:7",
+          "8227:TB:Goldie:C5:Exercise-5C:10",
+          "8227:TB:Goldie:C5:Exercise-5C:8",
+          "8227:TB:Goldie:C5:Exercise-5C:9",
+          "8227:TB:Goldie:C6:Exercise-6A:1",
+          "8227:TB:Goldie:C6:Exercise-6B:11",
+          "8227:TB:Goldie:C6:Exercise-6B:12",
+          "8227:TB:Goldie:C8:Exercise-8C:5",
+          "8227:TB:Goldie:C8:Exercise-8C:7",
+          "8227:TB:Goldie:C8:Exercise-8D:6",
+          "8227:TB:Goldie:C8:Exercise-8D:7",
+          "8227:TB:Goldie:C8:Exercise-8G:10",
+          "8227:TB:Goldie:C8:Exercise-8H:4",
+          "8227:TB:YM:C11:Example:1",
+          "8227:TB:YM:C11:Example:10",
+          "8227:TB:YM:C11:Example:11",
+          "8227:TB:YM:C11:Example:12",
+          "8227:TB:YM:C11:Example:13",
+          "8227:TB:YM:C11:Example:17",
+          "8227:TB:YM:C11:Example:2",
+          "8227:TB:YM:C11:Example:22",
+          "8227:TB:YM:C11:Example:23",
+          "8227:TB:YM:C11:Example:3",
+          "8227:TB:YM:C11:Example:4",
+          "8227:TB:YM:C11:Example:5",
+          "8227:TB:YM:C11:Example:6",
+          "8227:TB:YM:C11:Example:7",
+          "8227:TB:YM:C11:Example:8",
+          "8227:TB:YM:C11:Example:9",
+          "8227:TB:YM:C11:Exercise-11:2",
+          "8227:TB:YM:C11:Exercise-11:3",
+          "8227:TB:YM:C11:Exercise-11:5",
+          "8227:TB:YM:C11:Revision-Exercise-11:3",
+          "8227:TB:YM:C11:Try-Now-12:1",
+          "8227:TB:YM:C11:Try-Now-12:2",
+          "8227:TB:YM:C11:Try-Now-13:1",
+          "8227:TB:YM:C11:Try-Now-13:2",
+          "8227:TB:YM:C11:Try-Now-13:3",
+          "8227:TB:YM:C11:Try-Now-13:4",
+          "8227:TB:YM:C11:Try-Now-17:1",
+          "8227:TB:YM:C11:Try-Now-22:1",
+          "8227:TB:YM:C11:Try-Now-22:2",
+          "8227:TB:YM:C11:Try-Now-22:3",
+          "8227:TB:YM:C11:Try-Now-4:1",
+          "8227:TB:YM:C11:Try-Now-4:2",
+          "8227:TB:YM:C11:Try-Now-4:3",
+          "8227:TB:YM:C11:Try-Now-4:4",
+          "8227:TB:YM:C11:Try-Now-4:5",
+          "8227:TB:YM:C11:Try-Now-5:1",
+          "8227:TB:YM:C11:Try-Now-5:2",
+          "8227:TB:YM:C11:Try-Now-5:3",
+          "8227:TB:YM:C11:Try-Now-9:1",
+          "8227:TB:YM:C11:Try-Now:1",
+          "8227:TB:YM:C11:Try-Now:10",
+          "8227:TB:YM:C11:Try-Now:11",
+          "8227:TB:YM:C11:Try-Now:2",
+          "8227:TB:YM:C11:Try-Now:23",
+          "8227:TB:YM:C11:Try-Now:3",
+          "8227:TB:YM:C11:Try-Now:6",
+          "8227:TB:YM:C11:Try-Now:7",
+          "8227:TB:YM:C11:Try-Now:8",
+          "8227:TB:YM:C11:Worked-illustration:1",
+          "8227:TB:YM:C12:Example:20",
+          "8227:TB:YM:C12:Exercise-12:8",
+          "8227:TB:YM:C12:Try-Now-18:2",
+          "8227:TB:YM:C12:Try-Now-21:2",
+          "8227:TB:YM:C12:Try-Now:20",
+          "8227:TB:YM:C13:Exercise-13:4",
+          "8227:TB:YM:C6:Example:1",
+          "8227:TB:YM:C6:Example:11",
+          "8227:TB:YM:C6:Example:12",
+          "8227:TB:YM:C6:Example:15",
+          "8227:TB:YM:C6:Example:16",
+          "8227:TB:YM:C6:Example:17",
+          "8227:TB:YM:C6:Example:18",
+          "8227:TB:YM:C6:Example:19",
+          "8227:TB:YM:C6:Example:2",
+          "8227:TB:YM:C6:Example:21",
+          "8227:TB:YM:C6:Example:22",
+          "8227:TB:YM:C6:Example:24",
+          "8227:TB:YM:C6:Example:25",
+          "8227:TB:YM:C6:Example:26",
+          "8227:TB:YM:C6:Example:27",
+          "8227:TB:YM:C6:Example:28",
+          "8227:TB:YM:C6:Example:29",
+          "8227:TB:YM:C6:Example:3",
+          "8227:TB:YM:C6:Example:30",
+          "8227:TB:YM:C6:Example:31",
+          "8227:TB:YM:C6:Example:32",
+          "8227:TB:YM:C6:Example:33",
+          "8227:TB:YM:C6:Example:34",
+          "8227:TB:YM:C6:Example:35",
+          "8227:TB:YM:C6:Example:39",
+          "8227:TB:YM:C6:Example:4",
+          "8227:TB:YM:C6:Example:5",
+          "8227:TB:YM:C6:Example:6",
+          "8227:TB:YM:C6:Example:7",
+          "8227:TB:YM:C6:Example:8",
+          "8227:TB:YM:C6:Example:9",
+          "8227:TB:YM:C6:Exercise-6:1",
+          "8227:TB:YM:C6:Exercise-6:2",
+          "8227:TB:YM:C6:Exercise-6:3",
+          "8227:TB:YM:C6:Exercise-6:4",
+          "8227:TB:YM:C6:Exercise-6:5",
+          "8227:TB:YM:C6:Exercise-6:6",
+          "8227:TB:YM:C6:Exercise-6:7",
+          "8227:TB:YM:C6:Exercise-6:8",
+          "8227:TB:YM:C6:Exercise-6:9",
+          "8227:TB:YM:C6:Revision-Exercise-6:3",
+          "8227:TB:YM:C6:Revision-Exercise-6:4",
+          "8227:TB:YM:C6:Revision-Exercise-6:5",
+          "8227:TB:YM:C6:Try-Now-10:1",
+          "8227:TB:YM:C6:Try-Now-11:1",
+          "8227:TB:YM:C6:Try-Now-11:2",
+          "8227:TB:YM:C6:Try-Now-11:3",
+          "8227:TB:YM:C6:Try-Now-11:4",
+          "8227:TB:YM:C6:Try-Now-12:1",
+          "8227:TB:YM:C6:Try-Now-12:2",
+          "8227:TB:YM:C6:Try-Now-12:3",
+          "8227:TB:YM:C6:Try-Now-12:4",
+          "8227:TB:YM:C6:Try-Now-15:3",
+          "8227:TB:YM:C6:Try-Now-16:1",
+          "8227:TB:YM:C6:Try-Now-16:2",
+          "8227:TB:YM:C6:Try-Now-17:1",
+          "8227:TB:YM:C6:Try-Now-17:2",
+          "8227:TB:YM:C6:Try-Now-18:1",
+          "8227:TB:YM:C6:Try-Now-18:2",
+          "8227:TB:YM:C6:Try-Now-19:1",
+          "8227:TB:YM:C6:Try-Now-22:1",
+          "8227:TB:YM:C6:Try-Now-22:2",
+          "8227:TB:YM:C6:Try-Now-23:4",
+          "8227:TB:YM:C6:Try-Now-24:2",
+          "8227:TB:YM:C6:Try-Now-25:1",
+          "8227:TB:YM:C6:Try-Now-25:2",
+          "8227:TB:YM:C6:Try-Now-28:1",
+          "8227:TB:YM:C6:Try-Now-28:2",
+          "8227:TB:YM:C6:Try-Now-29:1",
+          "8227:TB:YM:C6:Try-Now-29:2",
+          "8227:TB:YM:C6:Try-Now-30:1",
+          "8227:TB:YM:C6:Try-Now-30:2",
+          "8227:TB:YM:C6:Try-Now-30:3",
+          "8227:TB:YM:C6:Try-Now-31:1",
+          "8227:TB:YM:C6:Try-Now-31:2",
+          "8227:TB:YM:C6:Try-Now-31:3",
+          "8227:TB:YM:C6:Try-Now-31:4",
+          "8227:TB:YM:C6:Try-Now-32:1",
+          "8227:TB:YM:C6:Try-Now-32:2",
+          "8227:TB:YM:C6:Try-Now-32:3",
+          "8227:TB:YM:C6:Try-Now-34:1",
+          "8227:TB:YM:C6:Try-Now-34:2",
+          "8227:TB:YM:C6:Try-Now-35:1",
+          "8227:TB:YM:C6:Try-Now-35:2",
+          "8227:TB:YM:C6:Try-Now-35:3",
+          "8227:TB:YM:C6:Try-Now-36:1",
+          "8227:TB:YM:C6:Try-Now-36:2",
+          "8227:TB:YM:C6:Try-Now-38:1",
+          "8227:TB:YM:C6:Try-Now-38:2",
+          "8227:TB:YM:C6:Try-Now-3:1",
+          "8227:TB:YM:C6:Try-Now-3:2",
+          "8227:TB:YM:C6:Try-Now-4:1",
+          "8227:TB:YM:C6:Try-Now-4:2",
+          "8227:TB:YM:C6:Try-Now-4:3",
+          "8227:TB:YM:C6:Try-Now-5:1",
+          "8227:TB:YM:C6:Try-Now-5:2",
+          "8227:TB:YM:C6:Try-Now-7:1",
+          "8227:TB:YM:C6:Try-Now-7:2",
+          "8227:TB:YM:C6:Try-Now-9:1",
+          "8227:TB:YM:C6:Try-Now-9:2",
+          "8227:TB:YM:C6:Try-Now:1",
+          "8227:TB:YM:C6:Try-Now:2",
+          "8227:TB:YM:C6:Try-Now:26",
+          "8227:TB:YM:C6:Try-Now:27",
+          "8227:TB:YM:C6:Try-Now:33",
+          "8227:TB:YM:C6:Try-Now:37",
+          "8227:TB:YM:C6:Try-Now:39",
+          "8227:TB:YM:C6:Try-Now:6",
+          "8227:TB:YM:C6:Try-Now:8",
+          "8227:TB:YM:C7:Example:11",
+          "8227:TB:YM:C7:Example:38",
+          "8227:TB:YM:C7:Exercise-7:11",
+          "8227:TB:YM:C7:Revision-Exercise-7:4",
+          "8227:TB:YM:C7:Try-Now-38:1",
+          "8227:TB:YM:C7:Try-Now-39:2",
+          "8227:TB:YM:C7:Try-Now-39:3",
+          "8227:TB:YM:C7:Worked-illustration:2"
+        ],
+        "adopted_families": [
+          "8227:TEXTBOOK-FAMILY:stationary-classify-sketch"
+        ],
+        "limits": "Discovery is complete for these exact union predicates; native re-reading is complete for every member of the adopted families, not every other union hit. Unselected union hits remain later-design leads, not proven rejections or absence."
+      },
+      "accepted_selection_ids": [
+        "8227:FAMILY:stationary-points"
+      ],
+      "branch_renames": [
+        {
+          "from_branch_id": "WB8227-stationary-inflexion:stationary-inflexion",
+          "to_branch_id": "WB8227-stationary-inflexion:flat-classification",
+          "old_version": "0.1.0",
+          "new_version": "0.1.1",
+          "reason": "Named D1 redesign mixes cubic inflexion with quartic maxima/minima and removes test cue",
+          "compatibility": "Historical locator alias only; never auto-retarget a saved choice or old attempts"
+        }
+      ],
+      "selection_id_migration": {
+        "8227:SEL-D:stationary-two-extrema": "8227:D:SEL:stationary-inflexion:two-extrema",
+        "8227:SEL-D:stationary-inflexion": "8227:D:SEL:stationary-inflexion:flat-classification"
+      },
+      "proposed_version": "0.1.2"
+    },
+    {
+      "recipe_id": "WB8227-motion-integration",
+      "title": "Recover motion from acceleration or velocity and distinguish distance from displacement",
+      "version": "0.1.2",
+      "selection_ids": [
+        "8227:D:SEL:motion-integration:polynomial-chain",
+        "8227:D:SEL:motion-integration:exponential-positive",
+        "8227:D:SEL:motion-integration:interior-reversal"
+      ],
+      "source_part_ids": [
+        "8227:EXAM:2021:P1:Q4:a",
+        "8227:EXAM:2021:P1:Q4:b",
+        "8227:EXAM:2023:P2:Q9:a",
+        "8227:EXAM:2023:P2:Q9:b"
+      ],
+      "branches": [
+        {
+          "branch_id": "WB8227-motion-integration:polynomial-chain",
+          "selection_id": "8227:D:SEL:motion-integration:polynomial-chain",
+          "basis": "examination-observed (NSSCAS 8227)",
+          "capacity": 137,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "velocity",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D01",
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O02:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O02",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "V1",
+                "V2",
+                "V3"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.2:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:polynomial-chain:velocity:V1",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:velocity:V2",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:velocity:V3"
+              ],
+              "primary_assessed_objective_id": "8227:2020:M1:T9:O02",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O04"
+              ],
+              "bloom_rationale": "Integrate the supplied acceleration and impose the initial velocity; V1/V2/V3 credit this familiar operation and constant recovery. Evidence: WB8227-motion-integration@0.1.1:polynomial-chain:velocity:V1, WB8227-motion-integration@0.1.1:polynomial-chain:velocity:V2, WB8227-motion-integration@0.1.1:polynomial-chain:velocity:V3",
+              "answer_only_marks": 0,
+              "bloom_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:polynomial-chain:velocity:V1",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:velocity:V2",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:velocity:V3"
+              ],
+              "classification_version": "8227-pilot-design-0.1.1"
+            },
+            {
+              "part_id": "distance",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "S1",
+                "S2",
+                "S3"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.2:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:polynomial-chain:distance:S1",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:distance:S2",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:distance:S3"
+              ],
+              "primary_assessed_objective_id": "8227:2020:M1:T9:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O04"
+              ],
+              "bloom_rationale": "Integrate the already recovered positive velocity and evaluate the stated interval; S1/S2/S3 credit prescribed integration and evaluation. Evidence: WB8227-motion-integration@0.1.1:polynomial-chain:distance:S1, WB8227-motion-integration@0.1.1:polynomial-chain:distance:S2, WB8227-motion-integration@0.1.1:polynomial-chain:distance:S3",
+              "answer_only_marks": 0,
+              "bloom_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:polynomial-chain:distance:S1",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:distance:S2",
+                "WB8227-motion-integration@0.1.2:polynomial-chain:distance:S3"
+              ],
+              "classification_version": "8227-pilot-design-0.1.1"
+            }
+          ],
+          "same_type_source_part_ids": [
+            "8227:EXAM:2021:P1:Q4:a",
+            "8227:EXAM:2021:P1:Q4:b"
+          ],
+          "marks": 6,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "1",
+              "question": "4",
+              "part": "a",
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+              "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2021 Paper 1, Question 4(a), page 5",
+              "applies_to_branch": "WB8227-motion-integration:polynomial-chain",
+              "source_part_id": "8227:EXAM:2021:P1:Q4:a",
+              "applies_to_part_ids": [
+                "velocity"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2021,
+              "session": null,
+              "paper": "1",
+              "question": "4",
+              "part": "b",
+              "printed_page": 5,
+              "pdf_page": 5,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2021/AS - Mathematics Paper 1 8227-1 First Proof 26.05.2021.pdf",
+              "source_sha256": "68fbea94169b862efb5d7f067a7dbfa114cc5393c7d81d78c8e27c974d6e6e4b",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2021 Paper 1, Question 4(b), page 5",
+              "applies_to_branch": "WB8227-motion-integration:polynomial-chain",
+              "source_part_id": "8227:EXAM:2021:P1:Q4:b",
+              "applies_to_part_ids": [
+                "distance"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            }
+          ],
+          "same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2021:P1:Q4:a",
+              "recipe_part_ids": [
+                "velocity"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "symbolic",
+              "recipe_response_format": "symbolic",
+              "source_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D01",
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O02:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D01",
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O02:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            },
+            {
+              "source_part_id": "8227:EXAM:2021:P1:Q4:b",
+              "recipe_part_ids": [
+                "distance"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "numeric",
+              "recipe_response_format": "numeric",
+              "source_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O04:D03",
+                "8227:2020:M1:T9:O03:D01"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            }
+          ],
+          "accepted_tuple_keys": [
+            [
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "2"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "3"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "4"
+            ],
+            [
+              "1",
+              "0",
+              "2",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "2",
+              "2"
+            ],
+            [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            [
+              "1",
+              "0",
+              "2",
+              "4"
+            ],
+            [
+              "1",
+              "0",
+              "3",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            [
+              "1",
+              "0",
+              "3",
+              "3"
+            ],
+            [
+              "1",
+              "0",
+              "3",
+              "4"
+            ],
+            [
+              "1",
+              "0",
+              "4",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "4",
+              "2"
+            ],
+            [
+              "1",
+              "0",
+              "4",
+              "3"
+            ],
+            [
+              "1",
+              "0",
+              "4",
+              "4"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "2"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "1",
+              "1",
+              "2",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "2",
+              "2"
+            ],
+            [
+              "1",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "2"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "1",
+              "1",
+              "4",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "4",
+              "2"
+            ],
+            [
+              "1",
+              "1",
+              "4",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "4",
+              "4"
+            ],
+            [
+              "1",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "2",
+              "1",
+              "2"
+            ],
+            [
+              "1",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "1",
+              "4"
+            ],
+            [
+              "1",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "1",
+              "2",
+              "2",
+              "2"
+            ],
+            [
+              "1",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "2",
+              "4"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "1"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "2"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            [
+              "1",
+              "2",
+              "4",
+              "1"
+            ],
+            [
+              "1",
+              "2",
+              "4",
+              "2"
+            ],
+            [
+              "1",
+              "2",
+              "4",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "4",
+              "4"
+            ],
+            [
+              "2",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "0",
+              "1",
+              "2"
+            ],
+            [
+              "2",
+              "0",
+              "1",
+              "3"
+            ],
+            [
+              "2",
+              "0",
+              "1",
+              "4"
+            ],
+            [
+              "2",
+              "0",
+              "2",
+              "1"
+            ],
+            [
+              "2",
+              "0",
+              "2",
+              "2"
+            ],
+            [
+              "2",
+              "0",
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "0",
+              "2",
+              "4"
+            ],
+            [
+              "2",
+              "0",
+              "3",
+              "1"
+            ],
+            [
+              "2",
+              "0",
+              "3",
+              "2"
+            ],
+            [
+              "2",
+              "0",
+              "3",
+              "3"
+            ],
+            [
+              "2",
+              "0",
+              "3",
+              "4"
+            ],
+            [
+              "2",
+              "0",
+              "4",
+              "1"
+            ],
+            [
+              "2",
+              "0",
+              "4",
+              "2"
+            ],
+            [
+              "2",
+              "0",
+              "4",
+              "3"
+            ],
+            [
+              "2",
+              "0",
+              "4",
+              "4"
+            ],
+            [
+              "2",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "1",
+              "2"
+            ],
+            [
+              "2",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "2",
+              "1",
+              "2",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "2",
+              "2"
+            ],
+            [
+              "2",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "2",
+              "1",
+              "3",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "3",
+              "2"
+            ],
+            [
+              "2",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "2",
+              "1",
+              "4",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "4",
+              "2"
+            ],
+            [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "4",
+              "4"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "2"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "4"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "2"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "4"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "1"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "2"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "4"
+            ],
+            [
+              "2",
+              "2",
+              "4",
+              "1"
+            ],
+            [
+              "2",
+              "2",
+              "4",
+              "2"
+            ],
+            [
+              "2",
+              "2",
+              "4",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "4",
+              "4"
+            ],
+            [
+              "3",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "0",
+              "1",
+              "3"
+            ],
+            [
+              "3",
+              "0",
+              "1",
+              "4"
+            ],
+            [
+              "3",
+              "0",
+              "2",
+              "1"
+            ],
+            [
+              "3",
+              "0",
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "0",
+              "2",
+              "4"
+            ],
+            [
+              "3",
+              "0",
+              "3",
+              "1"
+            ],
+            [
+              "3",
+              "0",
+              "3",
+              "2"
+            ],
+            [
+              "3",
+              "0",
+              "3",
+              "3"
+            ],
+            [
+              "3",
+              "0",
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "0",
+              "4",
+              "1"
+            ],
+            [
+              "3",
+              "0",
+              "4",
+              "2"
+            ],
+            [
+              "3",
+              "0",
+              "4",
+              "3"
+            ],
+            [
+              "3",
+              "0",
+              "4",
+              "4"
+            ],
+            [
+              "3",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "3",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "3",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "3",
+              "1",
+              "3",
+              "1"
+            ],
+            [
+              "3",
+              "1",
+              "3",
+              "2"
+            ],
+            [
+              "3",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "3",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "1",
+              "4",
+              "1"
+            ],
+            [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            [
+              "3",
+              "1",
+              "4",
+              "3"
+            ],
+            [
+              "3",
+              "1",
+              "4",
+              "4"
+            ],
+            [
+              "3",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "3",
+              "2",
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            [
+              "3",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "3",
+              "2",
+              "2",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "2",
+              "4"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "1"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "2",
+              "4",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "4",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "4",
+              "4"
+            ]
+          ],
+          "answer_only_policy": "D1-MR01: zero for every part; recognise correct value and request working in practice. No official answer-only exception for these types.",
+          "domain_spec": {
+            "A": [
+              1,
+              2,
+              3
+            ],
+            "B": [
+              0,
+              1,
+              2
+            ],
+            "u": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "T": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "excluded_original": [
+              3,
+              1,
+              2,
+              3
+            ],
+            "excluded_original_part_context": [
+              3,
+              1,
+              2,
+              "any T"
+            ],
+            "excluded_differentiate_instead_tuples": [
+              [
+                3,
+                0,
+                2,
+                2
+              ],
+              [
+                3,
+                1,
+                1,
+                2
+              ],
+              [
+                3,
+                2,
+                4,
+                1
+              ]
+            ]
+          },
+          "semantic_capacity": {
+            "whole_parameter_tasks": 137,
+            "velocity_part_contexts": 35,
+            "distance_part_contexts": 137,
+            "amplitude_normalised_model_shapes": 30,
+            "fresh_whole_upper_bound": 35,
+            "no_repeat_keys": {
+              "velocity": [
+                "A",
+                "B",
+                "u"
+              ],
+              "distance": [
+                "A",
+                "B",
+                "u",
+                "T"
+              ]
+            },
+            "rescaling_note": "Different positive common scales are different values, not new reasoning types; changing T repeats the velocity part."
+          },
+          "official_qualifiers": {
+            "V1": "M1 visible integration attempt with at least one correct term",
+            "V2": "A1 correct primitive",
+            "V3": "A1 substitute initial condition; source v=3 typo rejected in favour of actual v(0)=2",
+            "S1": "M1 visible integration of their (a), at least one correct term",
+            "S2": "A1 correct integration of their credible velocity",
+            "S3": "A1 canonical distance, exact or 3sf, dependent on S1 and S2; no calculator/answer-only shortcut."
+          }
+        },
+        {
+          "branch_id": "WB8227-motion-integration:exponential-positive",
+          "selection_id": "8227:D:SEL:motion-integration:exponential-positive",
+          "basis": "examination-observed (NSSCAS 8227)",
+          "capacity": 56,
+          "whole_bloom": 3,
+          "part_specs": [
+            {
+              "part_id": "acceleration",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T4:O01:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O03",
+                "8227:2020:M2:T4:O01"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 2,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "E1",
+                "E2"
+              ],
+              "response_format": "symbolic",
+              "criterion_id_rule": "recipe_id@0.1.2:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:exponential-positive:acceleration:E1",
+                "WB8227-motion-integration@0.1.2:exponential-positive:acceleration:E2"
+              ],
+              "primary_assessed_objective_id": "8227:2020:M2:T4:O01",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T8:O03"
+              ],
+              "bloom_rationale": "Differentiate the supplied exponential velocity with its chain factor; E1/E2 credit this prescribed operation. Evidence: WB8227-motion-integration@0.1.1:exponential-positive:acceleration:E1, WB8227-motion-integration@0.1.1:exponential-positive:acceleration:E2",
+              "answer_only_marks": 0,
+              "bloom_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:exponential-positive:acceleration:E1",
+                "WB8227-motion-integration@0.1.2:exponential-positive:acceleration:E2"
+              ],
+              "classification_version": "8227-pilot-design-0.1.1"
+            },
+            {
+              "part_id": "distance",
+              "directly_assessed_demand_ids": [
+                "8227:2020:M2:T5:O01:D01",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04",
+                "8227:2020:M2:T5:O01"
+              ],
+              "prerequisite_demand_ids": [],
+              "marks": 3,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "criterion_ids": [
+                "E3",
+                "E4",
+                "E5"
+              ],
+              "response_format": "numeric",
+              "criterion_id_rule": "recipe_id@0.1.2:branch_slug:part_id:criterion_suffix",
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:exponential-positive:distance:E3",
+                "WB8227-motion-integration@0.1.2:exponential-positive:distance:E4",
+                "WB8227-motion-integration@0.1.2:exponential-positive:distance:E5"
+              ],
+              "primary_assessed_objective_id": "8227:2020:M2:T5:O01",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "bloom_rationale": "Integrate the supplied positive exponential and use both boundaries (or initial displacement); E3/E4/E5 credit the familiar primitive and evaluation. Evidence: WB8227-motion-integration@0.1.1:exponential-positive:distance:E3, WB8227-motion-integration@0.1.1:exponential-positive:distance:E4, WB8227-motion-integration@0.1.1:exponential-positive:distance:E5",
+              "answer_only_marks": 0,
+              "bloom_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:exponential-positive:distance:E3",
+                "WB8227-motion-integration@0.1.2:exponential-positive:distance:E4",
+                "WB8227-motion-integration@0.1.2:exponential-positive:distance:E5"
+              ],
+              "classification_version": "8227-pilot-design-0.1.1"
+            }
+          ],
+          "same_type_source_part_ids": [
+            "8227:EXAM:2023:P2:Q9:a",
+            "8227:EXAM:2023:P2:Q9:b"
+          ],
+          "marks": 5,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "examination_references": [
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "9",
+              "part": "a",
+              "printed_page": 15,
+              "pdf_page": 15,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 9(a), page 15",
+              "applies_to_branch": "WB8227-motion-integration:exponential-positive",
+              "source_part_id": "8227:EXAM:2023:P2:Q9:a",
+              "applies_to_part_ids": [
+                "acceleration"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            },
+            {
+              "board": "NSSCAS",
+              "syllabus_code": "8227",
+              "year": 2023,
+              "session": null,
+              "paper": "2",
+              "question": "9",
+              "part": "b",
+              "printed_page": 15,
+              "pdf_page": 15,
+              "source_path": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2023/AS - Mathematics Paper 2 8227-2 - First Proof 13.03.2023.pdf",
+              "source_sha256": "6e6fa13da22e198cdd0686db38550144705e67b05078d2ca0b9cc8d27026fd5e",
+              "relation": "same-type",
+              "verified_by": "Codex PLANNER calculus, 2026-11-23; native page; proposed branch match pending review",
+              "learner_display": true,
+              "learner_display_reason": "Owner-authorised attributed examination original; source disposition still controls use.",
+              "learner_label": "Same type as NSSCAS Mathematics 8227, 2023 Paper 2, Question 9(b), page 15",
+              "applies_to_branch": "WB8227-motion-integration:exponential-positive",
+              "source_part_id": "8227:EXAM:2023:P2:Q9:b",
+              "applies_to_part_ids": [
+                "distance"
+              ],
+              "scope": "part",
+              "comparison_reason": "Direct demand sets and response formats are equal for the named recipe part(s); the native question stem and required method are preserved. This reference does not claim a source part matches the whole multipart branch."
+            }
+          ],
+          "same_type_checks": [
+            {
+              "source_part_id": "8227:EXAM:2023:P2:Q9:a",
+              "recipe_part_ids": [
+                "acceleration"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "symbolic",
+              "recipe_response_format": "symbolic",
+              "source_direct_demand_ids": [
+                "8227:2020:M2:T4:O01:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M2:T4:O01:D01",
+                "8227:2020:M2:T4:O01:D02",
+                "8227:2020:M1:T8:O03:D04"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            },
+            {
+              "source_part_id": "8227:EXAM:2023:P2:Q9:b",
+              "recipe_part_ids": [
+                "distance"
+              ],
+              "demand_sets_equal": true,
+              "response_formats_equal": true,
+              "source_response_format": "numeric",
+              "recipe_response_format": "numeric",
+              "source_direct_demand_ids": [
+                "8227:2020:M2:T5:O01:D01",
+                "8227:2020:M1:T9:O04:D03",
+                "8227:2020:M1:T9:O03:D01"
+              ],
+              "recipe_direct_demand_ids": [
+                "8227:2020:M2:T5:O01:D01",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "structure_check": "Native source stem and part sequence inspected; same givens/method decisions/response, parameter variation only. No held source used.",
+              "status": "proposed branch match; independent review pending"
+            }
+          ],
+          "accepted_tuple_keys": [
+            [
+              "6",
+              "1/4",
+              "1"
+            ],
+            [
+              "6",
+              "1/4",
+              "2"
+            ],
+            [
+              "6",
+              "1/4",
+              "3"
+            ],
+            [
+              "6",
+              "1/4",
+              "4"
+            ],
+            [
+              "6",
+              "1/2",
+              "1"
+            ],
+            [
+              "6",
+              "1/2",
+              "2"
+            ],
+            [
+              "6",
+              "1/2",
+              "3"
+            ],
+            [
+              "6",
+              "1/2",
+              "4"
+            ],
+            [
+              "6",
+              "1/3",
+              "1"
+            ],
+            [
+              "6",
+              "1/3",
+              "2"
+            ],
+            [
+              "6",
+              "1/3",
+              "3"
+            ],
+            [
+              "6",
+              "1/3",
+              "4"
+            ],
+            [
+              "12",
+              "1/4",
+              "1"
+            ],
+            [
+              "12",
+              "1/4",
+              "2"
+            ],
+            [
+              "12",
+              "1/4",
+              "3"
+            ],
+            [
+              "12",
+              "1/4",
+              "4"
+            ],
+            [
+              "12",
+              "1/2",
+              "1"
+            ],
+            [
+              "12",
+              "1/2",
+              "2"
+            ],
+            [
+              "12",
+              "1/2",
+              "3"
+            ],
+            [
+              "12",
+              "1/2",
+              "4"
+            ],
+            [
+              "12",
+              "1/3",
+              "1"
+            ],
+            [
+              "12",
+              "1/3",
+              "2"
+            ],
+            [
+              "12",
+              "1/3",
+              "3"
+            ],
+            [
+              "12",
+              "1/3",
+              "4"
+            ],
+            [
+              "18",
+              "1/4",
+              "1"
+            ],
+            [
+              "18",
+              "1/4",
+              "2"
+            ],
+            [
+              "18",
+              "1/4",
+              "3"
+            ],
+            [
+              "18",
+              "1/4",
+              "4"
+            ],
+            [
+              "18",
+              "1/2",
+              "1"
+            ],
+            [
+              "18",
+              "1/2",
+              "2"
+            ],
+            [
+              "18",
+              "1/2",
+              "3"
+            ],
+            [
+              "18",
+              "1/2",
+              "4"
+            ],
+            [
+              "18",
+              "1/3",
+              "1"
+            ],
+            [
+              "18",
+              "1/3",
+              "2"
+            ],
+            [
+              "18",
+              "1/3",
+              "3"
+            ],
+            [
+              "18",
+              "1/3",
+              "4"
+            ],
+            [
+              "24",
+              "1/4",
+              "1"
+            ],
+            [
+              "24",
+              "1/4",
+              "2"
+            ],
+            [
+              "24",
+              "1/4",
+              "3"
+            ],
+            [
+              "24",
+              "1/4",
+              "4"
+            ],
+            [
+              "24",
+              "1/2",
+              "1"
+            ],
+            [
+              "24",
+              "1/2",
+              "2"
+            ],
+            [
+              "24",
+              "1/2",
+              "3"
+            ],
+            [
+              "24",
+              "1/2",
+              "4"
+            ],
+            [
+              "24",
+              "1/3",
+              "1"
+            ],
+            [
+              "24",
+              "1/3",
+              "2"
+            ],
+            [
+              "24",
+              "1/3",
+              "3"
+            ],
+            [
+              "24",
+              "1/3",
+              "4"
+            ],
+            [
+              "30",
+              "1/4",
+              "1"
+            ],
+            [
+              "30",
+              "1/4",
+              "2"
+            ],
+            [
+              "30",
+              "1/4",
+              "3"
+            ],
+            [
+              "30",
+              "1/4",
+              "4"
+            ],
+            [
+              "30",
+              "1/3",
+              "1"
+            ],
+            [
+              "30",
+              "1/3",
+              "2"
+            ],
+            [
+              "30",
+              "1/3",
+              "3"
+            ],
+            [
+              "30",
+              "1/3",
+              "4"
+            ]
+          ],
+          "answer_only_policy": "D1-MR01: zero for every part; recognise correct value and request working in practice. No official answer-only exception for these types.",
+          "domain_spec": {
+            "V": [
+              6,
+              12,
+              18,
+              24,
+              30
+            ],
+            "k": [
+              "1/4",
+              "1/2",
+              "1/3"
+            ],
+            "T": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "excluded_original": [
+              30,
+              "1/2",
+              2
+            ],
+            "excluded_original_part_context": [
+              30,
+              "1/2",
+              "any T"
+            ]
+          },
+          "semantic_capacity": {
+            "whole_parameter_tasks": 56,
+            "acceleration_part_contexts": 14,
+            "distance_part_contexts": 56,
+            "amplitude_normalised_model_shapes": 3,
+            "amplitude_normalised_interval_tasks": 12,
+            "fresh_whole_upper_bound": 14,
+            "no_repeat_keys": {
+              "acceleration": [
+                "V",
+                "k"
+              ],
+              "distance": [
+                "V",
+                "k",
+                "T"
+              ]
+            },
+            "rescaling_note": "Five candidate amplitudes across three exponential shapes, with the original V30,k1/2 context removed. The56parameter tasks are not56different reasoning decisions."
+          },
+          "official_qualifiers": {
+            "E1": "B1 correct derivative coefficient -kV, with differentiation working",
+            "E2": "B1 retained exp(-kt) with an attempted derivative coefficient C, C not +/-V/k (primitive coefficient exclusion)",
+            "E3": "B1 correct primitive -(V/k)exp(-kt)",
+            "E4": "M1 both bounds in an attempted primitive with coefficient C not -kV; alternatively impose d(0)=0 on that primitive. No credit for substituting bounds in the original v or derivative. The two paths are exclusive; correct constant may imply the zero-time substitution, per official row.",
+            "E5": "A1 correct exact or 3 sf distance; depends on credible working under MR01"
+          }
+        },
+        {
+          "branch_id": "WB8227-motion-integration:interior-reversal",
+          "selection_id": "8227:D:SEL:motion-integration:interior-reversal",
+          "basis": "textbook-derived structural branch; not observed exponential same-type",
+          "capacity": 132,
+          "whole_bloom": 4,
+          "part_specs": [
+            {
+              "part_id": "distance",
+              "marks": 4,
+              "bloom": 4,
+              "bloom_status": "proposed; independent branch review pending",
+              "bloom_rationale": "Analyse4: R1 resolves whether roots lie inside the interval; R3 selects one or two primitive-based travel legs from that decision. Outcomes vary108/24; R2/R4 execute/check the chosen decomposition. No root/rest cue appears.",
+              "criterion_ids": [
+                "R1",
+                "R2",
+                "R3",
+                "R4"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R1",
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R2",
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R3",
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R4"
+              ],
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "primary_assessed_objective_id": "8227:2020:M1:T9:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "response_format": "numeric",
+              "answer_only_marks": 0,
+              "criterion_id_rule": "recipe_id@0.1.2:branch_slug:part_id:criterion_suffix",
+              "bloom_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R1",
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R2",
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R3",
+                "WB8227-motion-integration@0.1.2:interior-reversal:distance:R4"
+              ],
+              "classification_version": "8227-pilot-design-0.1.1"
+            },
+            {
+              "part_id": "displacement",
+              "marks": 2,
+              "bloom": 3,
+              "bloom_status": "proposed; independent branch review pending",
+              "bloom_rationale": "Apply3: R5/R6 obtain signed change by prescribed integration or signed-leg addition. This part does not inherit the distance decision label.",
+              "criterion_ids": [
+                "R5",
+                "R6"
+              ],
+              "fully_qualified_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:interior-reversal:displacement:R5",
+                "WB8227-motion-integration@0.1.2:interior-reversal:displacement:R6"
+              ],
+              "directly_assessed_demand_ids": [
+                "8227:2020:M1:T9:O01:D02",
+                "8227:2020:M1:T9:O03:D01",
+                "8227:2020:M1:T9:O04:D03"
+              ],
+              "directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O03",
+                "8227:2020:M1:T9:O04"
+              ],
+              "primary_assessed_objective_id": "8227:2020:M1:T9:O03",
+              "other_directly_assessed_objective_ids": [
+                "8227:2020:M1:T9:O01",
+                "8227:2020:M1:T9:O04"
+              ],
+              "prerequisite_demand_ids": [],
+              "response_format": "numeric",
+              "answer_only_marks": 0,
+              "criterion_id_rule": "recipe_id@0.1.2:branch_slug:part_id:criterion_suffix",
+              "bloom_criterion_ids": [
+                "WB8227-motion-integration@0.1.2:interior-reversal:displacement:R5",
+                "WB8227-motion-integration@0.1.2:interior-reversal:displacement:R6"
+              ],
+              "classification_version": "8227-pilot-design-0.1.1"
+            }
+          ],
+          "same_type_source_part_ids": [],
+          "related_source_part_ids": [
+            "8227:EXAM:2023:P2:Q9:b"
+          ],
+          "marks": 6,
+          "classification_version": "8227-pilot-design-0.1.1",
+          "examination_references": [],
+          "same_type_checks": [],
+          "accepted_tuple_keys": [
+            [
+              "-3",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "-3",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "-3",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "-3",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "-3",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "-3",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "-3",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "-3",
+              "2",
+              "1",
+              "5"
+            ],
+            [
+              "-3",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "-3",
+              "2",
+              "2",
+              "5"
+            ],
+            [
+              "-3",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "-3",
+              "2",
+              "3",
+              "5"
+            ],
+            [
+              "-3",
+              "3",
+              "1",
+              "4"
+            ],
+            [
+              "-3",
+              "3",
+              "1",
+              "5"
+            ],
+            [
+              "-3",
+              "3",
+              "2",
+              "4"
+            ],
+            [
+              "-3",
+              "3",
+              "2",
+              "5"
+            ],
+            [
+              "-3",
+              "3",
+              "3",
+              "4"
+            ],
+            [
+              "-3",
+              "3",
+              "3",
+              "5"
+            ],
+            [
+              "-2",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "-2",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "-2",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "-2",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "-2",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "-2",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "-2",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "-2",
+              "2",
+              "1",
+              "5"
+            ],
+            [
+              "-2",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "-2",
+              "2",
+              "2",
+              "5"
+            ],
+            [
+              "-2",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "-2",
+              "2",
+              "3",
+              "5"
+            ],
+            [
+              "-2",
+              "3",
+              "1",
+              "4"
+            ],
+            [
+              "-2",
+              "3",
+              "1",
+              "5"
+            ],
+            [
+              "-2",
+              "3",
+              "2",
+              "4"
+            ],
+            [
+              "-2",
+              "3",
+              "2",
+              "5"
+            ],
+            [
+              "-2",
+              "3",
+              "3",
+              "4"
+            ],
+            [
+              "-2",
+              "3",
+              "3",
+              "5"
+            ],
+            [
+              "-1",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "-1",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "-1",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "-1",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "-1",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "-1",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "-1",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "-1",
+              "2",
+              "1",
+              "5"
+            ],
+            [
+              "-1",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "-1",
+              "2",
+              "2",
+              "5"
+            ],
+            [
+              "-1",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "-1",
+              "2",
+              "3",
+              "5"
+            ],
+            [
+              "-1",
+              "3",
+              "1",
+              "4"
+            ],
+            [
+              "-1",
+              "3",
+              "1",
+              "5"
+            ],
+            [
+              "-1",
+              "3",
+              "2",
+              "4"
+            ],
+            [
+              "-1",
+              "3",
+              "2",
+              "5"
+            ],
+            [
+              "-1",
+              "3",
+              "3",
+              "4"
+            ],
+            [
+              "-1",
+              "3",
+              "3",
+              "5"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "1",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "1",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "1",
+              "5"
+            ],
+            [
+              "1",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "2",
+              "5"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "5"
+            ],
+            [
+              "1",
+              "3",
+              "1",
+              "4"
+            ],
+            [
+              "1",
+              "3",
+              "1",
+              "5"
+            ],
+            [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            [
+              "1",
+              "3",
+              "2",
+              "5"
+            ],
+            [
+              "1",
+              "3",
+              "3",
+              "4"
+            ],
+            [
+              "1",
+              "3",
+              "3",
+              "5"
+            ],
+            [
+              "2",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "2",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "2",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "5"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "5"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "5"
+            ],
+            [
+              "2",
+              "3",
+              "1",
+              "4"
+            ],
+            [
+              "2",
+              "3",
+              "1",
+              "5"
+            ],
+            [
+              "2",
+              "3",
+              "2",
+              "4"
+            ],
+            [
+              "2",
+              "3",
+              "2",
+              "5"
+            ],
+            [
+              "2",
+              "3",
+              "3",
+              "4"
+            ],
+            [
+              "2",
+              "3",
+              "3",
+              "5"
+            ],
+            [
+              "3",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "3",
+              "1",
+              "1",
+              "4"
+            ],
+            [
+              "3",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            [
+              "3",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "3",
+              "1",
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "2",
+              "1",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "1",
+              "5"
+            ],
+            [
+              "3",
+              "2",
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "2",
+              "5"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "3"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "5"
+            ],
+            [
+              "3",
+              "3",
+              "1",
+              "4"
+            ],
+            [
+              "3",
+              "3",
+              "1",
+              "5"
+            ],
+            [
+              "3",
+              "3",
+              "2",
+              "4"
+            ],
+            [
+              "3",
+              "3",
+              "2",
+              "5"
+            ],
+            [
+              "3",
+              "3",
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "3",
+              "3",
+              "5"
+            ],
+            [
+              "-2",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "-2",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "-2",
+              "2",
+              "3",
+              "1"
+            ],
+            [
+              "-2",
+              "3",
+              "1",
+              "1"
+            ],
+            [
+              "-2",
+              "3",
+              "2",
+              "1"
+            ],
+            [
+              "-2",
+              "3",
+              "3",
+              "1"
+            ],
+            [
+              "-2",
+              "3",
+              "1",
+              "2"
+            ],
+            [
+              "-2",
+              "3",
+              "2",
+              "2"
+            ],
+            [
+              "-2",
+              "3",
+              "3",
+              "2"
+            ],
+            [
+              "-2",
+              "4",
+              "1",
+              "2"
+            ],
+            [
+              "-2",
+              "4",
+              "2",
+              "2"
+            ],
+            [
+              "-2",
+              "4",
+              "3",
+              "2"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "2",
+              "2",
+              "3",
+              "1"
+            ],
+            [
+              "2",
+              "3",
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "3",
+              "2",
+              "1"
+            ],
+            [
+              "2",
+              "3",
+              "3",
+              "1"
+            ],
+            [
+              "2",
+              "3",
+              "1",
+              "2"
+            ],
+            [
+              "2",
+              "3",
+              "2",
+              "2"
+            ],
+            [
+              "2",
+              "3",
+              "3",
+              "2"
+            ],
+            [
+              "2",
+              "4",
+              "1",
+              "2"
+            ],
+            [
+              "2",
+              "4",
+              "2",
+              "2"
+            ],
+            [
+              "2",
+              "4",
+              "3",
+              "2"
+            ]
+          ],
+          "answer_only_policy": "D1-MR01: zero for every part; recognise correct value and request working in practice. No official answer-only exception for these types.",
+          "domain_spec": {
+            "velocity": "k*(t-r)*(t+c), rendered expanded",
+            "tuple_order": [
+              "k",
+              "r",
+              "c",
+              "T"
+            ],
+            "reversal": {
+              "k": [
+                -3,
+                -2,
+                -1,
+                1,
+                2,
+                3
+              ],
+              "r": [
+                1,
+                2,
+                3
+              ],
+              "c": [
+                1,
+                2,
+                3
+              ],
+              "tail": [
+                1,
+                2,
+                3
+              ],
+              "T": "r+tail",
+              "exclude": "r=tail (54 triangle coincidences)"
+            },
+            "no_reversal": {
+              "k": [
+                -2,
+                2
+              ],
+              "T": [
+                1,
+                2
+              ],
+              "gap": [
+                1,
+                2
+              ],
+              "c": [
+                1,
+                2,
+                3
+              ],
+              "r": "T+gap"
+            },
+            "constraints": [
+              "r,c,T positive; k nonzero; negative root -c outside interval",
+              "positive root never at either endpoint; outside root has margin1or2",
+              "no answer cue in title/stem/metadata before submission"
+            ],
+            "outcome_proportion": {
+              "sign_change": 108,
+              "no_sign_change": 24,
+              "no_sign_change_fraction": "2/11",
+              "reason": "A bounded18.18%minority prevents an always-split habit while retaining most practice on the harder split and primitive. This is planner-chosen, not an examination prevalence estimate."
+            }
+          },
+          "semantic_capacity": {
+            "whole_parameter_tasks": 132,
+            "distance_part_contexts": 132,
+            "displacement_part_contexts": 132,
+            "amplitude_and_direction_normalised_shapes": 30,
+            "decision_outcome_classes": {
+              "sign_change": 108,
+              "no_sign_change": 24
+            },
+            "initial_direction_classes": {
+              "negative": 66,
+              "positive": 66
+            },
+            "fresh_whole_upper_bound": 132,
+            "no_repeat_keys": {
+              "distance": [
+                "k",
+                "r",
+                "c",
+                "T"
+              ],
+              "displacement": [
+                "k",
+                "r",
+                "c",
+                "T"
+              ]
+            },
+            "rescaling_note": "18reversal shapes+12outside-root shapes after sign/amplitude normalisation; six/two amplitude-direction choices respectively. Outcome classes are not initial directions."
+          },
+          "official_qualifiers": {
+            "R1": "M1 solve v=0 (one algebra/arithmetic slip allowed) then compare both roots with (0,T) or test signs relative to their roots. Decide whether a split is needed. No credit for a guessed root/decision.",
+            "R2": "B1 correct cubic primitive from the supplied quadratic velocity.",
+            "R3": "DM1 dependent on R1: from an attempted primitive, apply both bounds to every leg and sum nonnegative lengths; one leg if no sign change, two if it changes. Limited FT from their credible solved root/interval decision. Quadrature values alone are not an attempted primitive.",
+            "R4": "A1 canonical distance exact or3sf, dependent on R2 and R3; no FT.",
+            "R5": "M1 signed whole-interval integration with attempted primitive and both bounds, or sum the signed evaluated legs from(a). Reuse of their earlier primitive is allowed.",
+            "R6": "A1 canonical signed displacement; no FT."
+          },
+          "dependencies": [],
+          "named_deviation": "D2-MOTION-LIVE-CHECK: owner OD4 permits mixed outcomes and one fixed4+2 rubric. R1 root/sign decision, R3 primitive-based own-root FT, R4 depends R2/R3. 2021/2023 motion rows anchor calculus requirements; this combined rubric is newly authored.",
+          "display_title": "Check direction change and find travelled distance",
+          "legacy_id_note": "interior-reversal is an internal historical ID; D2 learner/teacher title is outcome-neutral. Reviewed meaning is version0.1.2; never reinterpret saved0.1.1 work."
+        }
+      ],
+      "explicit_deferred_facets": [
+        "Multiple positive reversal times, vertical greatest-height event solving, reciprocal-linear velocity, nonzero displacement origin, inverse time recovery. No model construction is claimed."
+      ],
+      "owner": "Vitalis",
+      "status": "D2 proposal; focused confirmation then Vitalis approval pending",
+      "work_order_path": "work-orders/WB8227-motion-integration.md",
+      "exemplar_path": "exemplars/WB8227-motion-integration.md",
+      "total_capacity": 325,
+      "union_discovery": {
+        "basis": "accepted item-level assessed/component union (R5-03), read from objective-problem-map.json; not relations-only",
+        "demand_ids": [
+          "8227:2020:M1:T8:O03:D04",
+          "8227:2020:M1:T9:O01:D01",
+          "8227:2020:M1:T9:O01:D02",
+          "8227:2020:M1:T9:O02:D01",
+          "8227:2020:M1:T9:O03:D01",
+          "8227:2020:M1:T9:O04:D03",
+          "8227:2020:M2:T4:O01:D01",
+          "8227:2020:M2:T4:O01:D02",
+          "8227:2020:M2:T5:O01:D01"
+        ],
+        "candidate_item_count": 427,
+        "candidate_item_ids": [
+          "8227:TB:Goldie:C4:Activity:2",
+          "8227:TB:Goldie:C4:Activity:3",
+          "8227:TB:Goldie:C4:Example:10",
+          "8227:TB:Goldie:C4:Example:11",
+          "8227:TB:Goldie:C4:Example:12",
+          "8227:TB:Goldie:C4:Example:13",
+          "8227:TB:Goldie:C4:Example:14",
+          "8227:TB:Goldie:C4:Example:15",
+          "8227:TB:Goldie:C4:Example:18",
+          "8227:TB:Goldie:C4:Example:23",
+          "8227:TB:Goldie:C4:Example:5",
+          "8227:TB:Goldie:C4:Example:6",
+          "8227:TB:Goldie:C4:Example:7",
+          "8227:TB:Goldie:C4:Example:8",
+          "8227:TB:Goldie:C4:Example:9",
+          "8227:TB:Goldie:C4:Exercise-4B:1",
+          "8227:TB:Goldie:C4:Exercise-4B:10",
+          "8227:TB:Goldie:C4:Exercise-4B:11",
+          "8227:TB:Goldie:C4:Exercise-4B:12",
+          "8227:TB:Goldie:C4:Exercise-4B:2",
+          "8227:TB:Goldie:C4:Exercise-4B:3",
+          "8227:TB:Goldie:C4:Exercise-4B:4",
+          "8227:TB:Goldie:C4:Exercise-4B:5",
+          "8227:TB:Goldie:C4:Exercise-4B:6",
+          "8227:TB:Goldie:C4:Exercise-4B:7",
+          "8227:TB:Goldie:C4:Exercise-4B:8",
+          "8227:TB:Goldie:C4:Exercise-4B:9",
+          "8227:TB:Goldie:C4:Exercise-4C:1",
+          "8227:TB:Goldie:C4:Exercise-4C:10",
+          "8227:TB:Goldie:C4:Exercise-4C:11",
+          "8227:TB:Goldie:C4:Exercise-4C:12",
+          "8227:TB:Goldie:C4:Exercise-4C:13",
+          "8227:TB:Goldie:C4:Exercise-4C:2",
+          "8227:TB:Goldie:C4:Exercise-4C:3",
+          "8227:TB:Goldie:C4:Exercise-4C:4",
+          "8227:TB:Goldie:C4:Exercise-4C:5",
+          "8227:TB:Goldie:C4:Exercise-4C:6",
+          "8227:TB:Goldie:C4:Exercise-4C:7",
+          "8227:TB:Goldie:C4:Exercise-4C:8",
+          "8227:TB:Goldie:C4:Exercise-4C:9",
+          "8227:TB:Goldie:C4:Exercise-4D:1",
+          "8227:TB:Goldie:C4:Exercise-4D:2",
+          "8227:TB:Goldie:C4:Exercise-4D:3",
+          "8227:TB:Goldie:C4:Exercise-4D:7",
+          "8227:TB:Goldie:C4:Exercise-4D:9",
+          "8227:TB:Goldie:C4:Exercise-4E:1",
+          "8227:TB:Goldie:C4:Exercise-4E:10",
+          "8227:TB:Goldie:C4:Exercise-4E:11",
+          "8227:TB:Goldie:C4:Exercise-4E:12",
+          "8227:TB:Goldie:C4:Exercise-4E:13",
+          "8227:TB:Goldie:C4:Exercise-4E:14",
+          "8227:TB:Goldie:C4:Exercise-4E:15",
+          "8227:TB:Goldie:C4:Exercise-4E:2",
+          "8227:TB:Goldie:C4:Exercise-4E:8",
+          "8227:TB:Goldie:C4:Exercise-4E:9",
+          "8227:TB:Goldie:C4:Prompt:1",
+          "8227:TB:Goldie:C4:Prompt:5",
+          "8227:TB:Goldie:C4:Prompt:6",
+          "8227:TB:Goldie:C4:Worked-derivation:3",
+          "8227:TB:Goldie:C5:Activity:1",
+          "8227:TB:Goldie:C5:Example:1",
+          "8227:TB:Goldie:C5:Example:2",
+          "8227:TB:Goldie:C5:Example:3",
+          "8227:TB:Goldie:C5:Example:4",
+          "8227:TB:Goldie:C5:Example:6",
+          "8227:TB:Goldie:C5:Exercise-5A:1",
+          "8227:TB:Goldie:C5:Exercise-5A:2",
+          "8227:TB:Goldie:C5:Exercise-5A:3",
+          "8227:TB:Goldie:C5:Exercise-5A:4",
+          "8227:TB:Goldie:C5:Exercise-5A:5",
+          "8227:TB:Goldie:C5:Exercise-5A:6",
+          "8227:TB:Goldie:C5:Exercise-5A:7",
+          "8227:TB:Goldie:C5:Exercise-5A:8",
+          "8227:TB:Goldie:C5:Exercise-5A:9",
+          "8227:TB:Goldie:C5:Exercise-5B:10",
+          "8227:TB:Goldie:C5:Exercise-5B:11",
+          "8227:TB:Goldie:C5:Exercise-5B:12",
+          "8227:TB:Goldie:C5:Exercise-5B:13",
+          "8227:TB:Goldie:C5:Exercise-5B:2",
+          "8227:TB:Goldie:C5:Exercise-5B:3",
+          "8227:TB:Goldie:C5:Exercise-5B:4",
+          "8227:TB:Goldie:C5:Exercise-5B:5",
+          "8227:TB:Goldie:C5:Exercise-5B:6",
+          "8227:TB:Goldie:C5:Exercise-5B:7",
+          "8227:TB:Goldie:C5:Exercise-5B:8",
+          "8227:TB:Goldie:C5:Exercise-5B:9",
+          "8227:TB:Goldie:C5:Exercise-5C:1",
+          "8227:TB:Goldie:C5:Exercise-5C:10",
+          "8227:TB:Goldie:C5:Exercise-5C:11",
+          "8227:TB:Goldie:C5:Exercise-5C:6",
+          "8227:TB:Goldie:C5:Exercise-5C:8",
+          "8227:TB:Goldie:C5:Exercise-5C:9",
+          "8227:TB:Goldie:C6:Exercise-6A:2",
+          "8227:TB:Goldie:C6:Exercise-6B:11",
+          "8227:TB:Goldie:C6:Exercise-6B:12",
+          "8227:TB:Goldie:C6:Exercise-6B:8",
+          "8227:TB:Goldie:C8:Example:11",
+          "8227:TB:Goldie:C8:Exercise-8B:3",
+          "8227:TB:Goldie:C8:Exercise-8B:4",
+          "8227:TB:Goldie:C8:Exercise-8B:5",
+          "8227:TB:Goldie:C8:Exercise-8B:7",
+          "8227:TB:Goldie:C8:Exercise-8C:2",
+          "8227:TB:Goldie:C8:Exercise-8C:5",
+          "8227:TB:Goldie:C8:Exercise-8D:6",
+          "8227:TB:Goldie:C8:Exercise-8D:7",
+          "8227:TB:Goldie:C8:Exercise-8E:3",
+          "8227:TB:Goldie:C8:Exercise-8E:4",
+          "8227:TB:Goldie:C8:Exercise-8G:10",
+          "8227:TB:Goldie:C8:Exercise-8H:1",
+          "8227:TB:Goldie:C8:Exercise-8H:2",
+          "8227:TB:Goldie:C8:Exercise-8H:3",
+          "8227:TB:Goldie:C8:Prompt:2",
+          "8227:TB:Goldie:C9:Example:4",
+          "8227:TB:Goldie:C9:Exercise-9B:1",
+          "8227:TB:Goldie:C9:Exercise-9C:1",
+          "8227:TB:Goldie:C9:Worked-illustration:2",
+          "8227:TB:YM:C11:Example:10",
+          "8227:TB:YM:C11:Example:11",
+          "8227:TB:YM:C11:Example:12",
+          "8227:TB:YM:C11:Example:13",
+          "8227:TB:YM:C11:Example:14",
+          "8227:TB:YM:C11:Example:15",
+          "8227:TB:YM:C11:Example:16",
+          "8227:TB:YM:C11:Example:17",
+          "8227:TB:YM:C11:Example:18",
+          "8227:TB:YM:C11:Example:19",
+          "8227:TB:YM:C11:Example:2",
+          "8227:TB:YM:C11:Example:20",
+          "8227:TB:YM:C11:Example:21",
+          "8227:TB:YM:C11:Example:22",
+          "8227:TB:YM:C11:Example:23",
+          "8227:TB:YM:C11:Example:26",
+          "8227:TB:YM:C11:Example:27",
+          "8227:TB:YM:C11:Example:28",
+          "8227:TB:YM:C11:Example:3",
+          "8227:TB:YM:C11:Example:32",
+          "8227:TB:YM:C11:Example:33",
+          "8227:TB:YM:C11:Example:34",
+          "8227:TB:YM:C11:Example:35",
+          "8227:TB:YM:C11:Example:36",
+          "8227:TB:YM:C11:Example:37",
+          "8227:TB:YM:C11:Example:38",
+          "8227:TB:YM:C11:Example:39",
+          "8227:TB:YM:C11:Example:4",
+          "8227:TB:YM:C11:Example:40",
+          "8227:TB:YM:C11:Example:41",
+          "8227:TB:YM:C11:Example:5",
+          "8227:TB:YM:C11:Example:8",
+          "8227:TB:YM:C11:Exercise-11:1",
+          "8227:TB:YM:C11:Exercise-11:10",
+          "8227:TB:YM:C11:Exercise-11:2",
+          "8227:TB:YM:C11:Exercise-11:3",
+          "8227:TB:YM:C11:Exercise-11:4",
+          "8227:TB:YM:C11:Exercise-11:5",
+          "8227:TB:YM:C11:Exercise-11:8",
+          "8227:TB:YM:C11:Exercise-11:9",
+          "8227:TB:YM:C11:Revision-Exercise-11:1",
+          "8227:TB:YM:C11:Revision-Exercise-11:2",
+          "8227:TB:YM:C11:Revision-Exercise-11:3",
+          "8227:TB:YM:C11:Revision-Exercise-11:5",
+          "8227:TB:YM:C11:Try-Now-12:1",
+          "8227:TB:YM:C11:Try-Now-12:2",
+          "8227:TB:YM:C11:Try-Now-12:3",
+          "8227:TB:YM:C11:Try-Now-13:1",
+          "8227:TB:YM:C11:Try-Now-13:2",
+          "8227:TB:YM:C11:Try-Now-13:3",
+          "8227:TB:YM:C11:Try-Now-13:4",
+          "8227:TB:YM:C11:Try-Now-17:1",
+          "8227:TB:YM:C11:Try-Now-17:2",
+          "8227:TB:YM:C11:Try-Now-18:1",
+          "8227:TB:YM:C11:Try-Now-18:2",
+          "8227:TB:YM:C11:Try-Now-18:3",
+          "8227:TB:YM:C11:Try-Now-20:1",
+          "8227:TB:YM:C11:Try-Now-20:2",
+          "8227:TB:YM:C11:Try-Now-21:1",
+          "8227:TB:YM:C11:Try-Now-21:2",
+          "8227:TB:YM:C11:Try-Now-21:3",
+          "8227:TB:YM:C11:Try-Now-22:1",
+          "8227:TB:YM:C11:Try-Now-22:2",
+          "8227:TB:YM:C11:Try-Now-22:3",
+          "8227:TB:YM:C11:Try-Now-36:1",
+          "8227:TB:YM:C11:Try-Now-36:2",
+          "8227:TB:YM:C11:Try-Now-37:2",
+          "8227:TB:YM:C11:Try-Now-38:1",
+          "8227:TB:YM:C11:Try-Now-38:2",
+          "8227:TB:YM:C11:Try-Now-39:1",
+          "8227:TB:YM:C11:Try-Now-39:2",
+          "8227:TB:YM:C11:Try-Now-39:3",
+          "8227:TB:YM:C11:Try-Now-39:4",
+          "8227:TB:YM:C11:Try-Now-40:1",
+          "8227:TB:YM:C11:Try-Now-40:2",
+          "8227:TB:YM:C11:Try-Now-42:2",
+          "8227:TB:YM:C11:Try-Now-4:1",
+          "8227:TB:YM:C11:Try-Now-4:2",
+          "8227:TB:YM:C11:Try-Now-4:3",
+          "8227:TB:YM:C11:Try-Now-4:4",
+          "8227:TB:YM:C11:Try-Now-4:5",
+          "8227:TB:YM:C11:Try-Now-5:1",
+          "8227:TB:YM:C11:Try-Now-5:2",
+          "8227:TB:YM:C11:Try-Now-5:3",
+          "8227:TB:YM:C11:Try-Now:10",
+          "8227:TB:YM:C11:Try-Now:11",
+          "8227:TB:YM:C11:Try-Now:14",
+          "8227:TB:YM:C11:Try-Now:15",
+          "8227:TB:YM:C11:Try-Now:16",
+          "8227:TB:YM:C11:Try-Now:19",
+          "8227:TB:YM:C11:Try-Now:2",
+          "8227:TB:YM:C11:Try-Now:23",
+          "8227:TB:YM:C11:Try-Now:26",
+          "8227:TB:YM:C11:Try-Now:27",
+          "8227:TB:YM:C11:Try-Now:28",
+          "8227:TB:YM:C11:Try-Now:3",
+          "8227:TB:YM:C11:Try-Now:32",
+          "8227:TB:YM:C11:Try-Now:33",
+          "8227:TB:YM:C11:Try-Now:34",
+          "8227:TB:YM:C11:Try-Now:35",
+          "8227:TB:YM:C11:Try-Now:41",
+          "8227:TB:YM:C11:Try-Now:8",
+          "8227:TB:YM:C12:Example:1",
+          "8227:TB:YM:C12:Example:10",
+          "8227:TB:YM:C12:Example:13",
+          "8227:TB:YM:C12:Example:15",
+          "8227:TB:YM:C12:Example:16",
+          "8227:TB:YM:C12:Example:17",
+          "8227:TB:YM:C12:Example:18",
+          "8227:TB:YM:C12:Example:2",
+          "8227:TB:YM:C12:Example:23",
+          "8227:TB:YM:C12:Example:3",
+          "8227:TB:YM:C12:Example:4",
+          "8227:TB:YM:C12:Example:5",
+          "8227:TB:YM:C12:Example:6",
+          "8227:TB:YM:C12:Example:7",
+          "8227:TB:YM:C12:Example:8",
+          "8227:TB:YM:C12:Example:9",
+          "8227:TB:YM:C12:Exercise-12:1",
+          "8227:TB:YM:C12:Exercise-12:10",
+          "8227:TB:YM:C12:Exercise-12:11",
+          "8227:TB:YM:C12:Exercise-12:2",
+          "8227:TB:YM:C12:Exercise-12:3",
+          "8227:TB:YM:C12:Exercise-12:4",
+          "8227:TB:YM:C12:Exercise-12:5",
+          "8227:TB:YM:C12:Exercise-12:6",
+          "8227:TB:YM:C12:Exercise-12:7",
+          "8227:TB:YM:C12:Exercise-12:8",
+          "8227:TB:YM:C12:Exercise-12:9",
+          "8227:TB:YM:C12:Revision-Exercise-12:1",
+          "8227:TB:YM:C12:Revision-Exercise-12:2",
+          "8227:TB:YM:C12:Revision-Exercise-12:3",
+          "8227:TB:YM:C12:Revision-Exercise-12:4",
+          "8227:TB:YM:C12:Try-Now-10:1",
+          "8227:TB:YM:C12:Try-Now-10:2",
+          "8227:TB:YM:C12:Try-Now-15:1",
+          "8227:TB:YM:C12:Try-Now-15:2",
+          "8227:TB:YM:C12:Try-Now-15:3",
+          "8227:TB:YM:C12:Try-Now-15:4",
+          "8227:TB:YM:C12:Try-Now-16:1",
+          "8227:TB:YM:C12:Try-Now-16:2",
+          "8227:TB:YM:C12:Try-Now-16:3",
+          "8227:TB:YM:C12:Try-Now-17:1",
+          "8227:TB:YM:C12:Try-Now-17:2",
+          "8227:TB:YM:C12:Try-Now-17:3",
+          "8227:TB:YM:C12:Try-Now-18:1",
+          "8227:TB:YM:C12:Try-Now-18:2",
+          "8227:TB:YM:C12:Try-Now-18:3",
+          "8227:TB:YM:C12:Try-Now-23:1",
+          "8227:TB:YM:C12:Try-Now-23:2",
+          "8227:TB:YM:C12:Try-Now-2:1",
+          "8227:TB:YM:C12:Try-Now-2:2",
+          "8227:TB:YM:C12:Try-Now-2:3",
+          "8227:TB:YM:C12:Try-Now-2:4",
+          "8227:TB:YM:C12:Try-Now-3:1",
+          "8227:TB:YM:C12:Try-Now-3:2",
+          "8227:TB:YM:C12:Try-Now-3:3",
+          "8227:TB:YM:C12:Try-Now-4:1",
+          "8227:TB:YM:C12:Try-Now-4:2",
+          "8227:TB:YM:C12:Try-Now-4:3",
+          "8227:TB:YM:C12:Try-Now-5:1",
+          "8227:TB:YM:C12:Try-Now-5:2",
+          "8227:TB:YM:C12:Try-Now:1",
+          "8227:TB:YM:C12:Try-Now:12",
+          "8227:TB:YM:C12:Try-Now:13",
+          "8227:TB:YM:C12:Try-Now:6",
+          "8227:TB:YM:C12:Try-Now:7",
+          "8227:TB:YM:C12:Try-Now:8",
+          "8227:TB:YM:C12:Try-Now:9",
+          "8227:TB:YM:C12:Worked-illustration:1",
+          "8227:TB:YM:C13:Example:7",
+          "8227:TB:YM:C13:Exercise-13:2",
+          "8227:TB:YM:C13:Exercise-13:3",
+          "8227:TB:YM:C13:Exercise-13:4",
+          "8227:TB:YM:C13:Exercise-13:5",
+          "8227:TB:YM:C13:Revision-Exercise-13:3",
+          "8227:TB:YM:C13:Revision-Exercise-13:4",
+          "8227:TB:YM:C13:Try-Now-7:1",
+          "8227:TB:YM:C13:Try-Now-7:2",
+          "8227:TB:YM:C13:Try-Now-9:2",
+          "8227:TB:YM:C6:Example:21",
+          "8227:TB:YM:C6:Try-Now:21",
+          "8227:TB:YM:C7:Example:1",
+          "8227:TB:YM:C7:Example:10",
+          "8227:TB:YM:C7:Example:11",
+          "8227:TB:YM:C7:Example:13",
+          "8227:TB:YM:C7:Example:14",
+          "8227:TB:YM:C7:Example:15",
+          "8227:TB:YM:C7:Example:16",
+          "8227:TB:YM:C7:Example:17",
+          "8227:TB:YM:C7:Example:18",
+          "8227:TB:YM:C7:Example:19",
+          "8227:TB:YM:C7:Example:2",
+          "8227:TB:YM:C7:Example:20",
+          "8227:TB:YM:C7:Example:21",
+          "8227:TB:YM:C7:Example:22",
+          "8227:TB:YM:C7:Example:23",
+          "8227:TB:YM:C7:Example:24",
+          "8227:TB:YM:C7:Example:25",
+          "8227:TB:YM:C7:Example:26",
+          "8227:TB:YM:C7:Example:27",
+          "8227:TB:YM:C7:Example:28",
+          "8227:TB:YM:C7:Example:29",
+          "8227:TB:YM:C7:Example:3",
+          "8227:TB:YM:C7:Example:30",
+          "8227:TB:YM:C7:Example:31",
+          "8227:TB:YM:C7:Example:32",
+          "8227:TB:YM:C7:Example:33",
+          "8227:TB:YM:C7:Example:34",
+          "8227:TB:YM:C7:Example:35",
+          "8227:TB:YM:C7:Example:36",
+          "8227:TB:YM:C7:Example:37",
+          "8227:TB:YM:C7:Example:38",
+          "8227:TB:YM:C7:Example:39",
+          "8227:TB:YM:C7:Example:4",
+          "8227:TB:YM:C7:Example:40",
+          "8227:TB:YM:C7:Example:41",
+          "8227:TB:YM:C7:Example:5",
+          "8227:TB:YM:C7:Example:6",
+          "8227:TB:YM:C7:Example:7",
+          "8227:TB:YM:C7:Example:8",
+          "8227:TB:YM:C7:Example:9",
+          "8227:TB:YM:C7:Exercise-7:1",
+          "8227:TB:YM:C7:Exercise-7:10",
+          "8227:TB:YM:C7:Exercise-7:11",
+          "8227:TB:YM:C7:Exercise-7:2",
+          "8227:TB:YM:C7:Exercise-7:3",
+          "8227:TB:YM:C7:Exercise-7:4",
+          "8227:TB:YM:C7:Exercise-7:5",
+          "8227:TB:YM:C7:Exercise-7:6",
+          "8227:TB:YM:C7:Exercise-7:7",
+          "8227:TB:YM:C7:Exercise-7:8",
+          "8227:TB:YM:C7:Exercise-7:9",
+          "8227:TB:YM:C7:Revision-Exercise-7:1",
+          "8227:TB:YM:C7:Revision-Exercise-7:2",
+          "8227:TB:YM:C7:Revision-Exercise-7:3",
+          "8227:TB:YM:C7:Revision-Exercise-7:4",
+          "8227:TB:YM:C7:Try-Now-10:1",
+          "8227:TB:YM:C7:Try-Now-10:2",
+          "8227:TB:YM:C7:Try-Now-11:1",
+          "8227:TB:YM:C7:Try-Now-11:2",
+          "8227:TB:YM:C7:Try-Now-18:1",
+          "8227:TB:YM:C7:Try-Now-18:2",
+          "8227:TB:YM:C7:Try-Now-18:3",
+          "8227:TB:YM:C7:Try-Now-18:4",
+          "8227:TB:YM:C7:Try-Now-18:5",
+          "8227:TB:YM:C7:Try-Now-19:1",
+          "8227:TB:YM:C7:Try-Now-19:2",
+          "8227:TB:YM:C7:Try-Now-19:3",
+          "8227:TB:YM:C7:Try-Now-20:1",
+          "8227:TB:YM:C7:Try-Now-21:1",
+          "8227:TB:YM:C7:Try-Now-21:2",
+          "8227:TB:YM:C7:Try-Now-22:1",
+          "8227:TB:YM:C7:Try-Now-22:2",
+          "8227:TB:YM:C7:Try-Now-23:1",
+          "8227:TB:YM:C7:Try-Now-23:2",
+          "8227:TB:YM:C7:Try-Now-24:1",
+          "8227:TB:YM:C7:Try-Now-24:2",
+          "8227:TB:YM:C7:Try-Now-25:1",
+          "8227:TB:YM:C7:Try-Now-25:2",
+          "8227:TB:YM:C7:Try-Now-30:1",
+          "8227:TB:YM:C7:Try-Now-30:2",
+          "8227:TB:YM:C7:Try-Now-31:1",
+          "8227:TB:YM:C7:Try-Now-31:2",
+          "8227:TB:YM:C7:Try-Now-32:1",
+          "8227:TB:YM:C7:Try-Now-32:2",
+          "8227:TB:YM:C7:Try-Now-32:3",
+          "8227:TB:YM:C7:Try-Now-33:1",
+          "8227:TB:YM:C7:Try-Now-33:2",
+          "8227:TB:YM:C7:Try-Now-34:1",
+          "8227:TB:YM:C7:Try-Now-34:2",
+          "8227:TB:YM:C7:Try-Now-34:3",
+          "8227:TB:YM:C7:Try-Now-34:4",
+          "8227:TB:YM:C7:Try-Now-35:1",
+          "8227:TB:YM:C7:Try-Now-35:2",
+          "8227:TB:YM:C7:Try-Now-38:1",
+          "8227:TB:YM:C7:Try-Now-38:2",
+          "8227:TB:YM:C7:Try-Now-39:1",
+          "8227:TB:YM:C7:Try-Now-39:2",
+          "8227:TB:YM:C7:Try-Now-39:3",
+          "8227:TB:YM:C7:Try-Now-41:1",
+          "8227:TB:YM:C7:Try-Now-41:2",
+          "8227:TB:YM:C7:Try-Now-5:1",
+          "8227:TB:YM:C7:Try-Now-5:2",
+          "8227:TB:YM:C7:Try-Now-7:1",
+          "8227:TB:YM:C7:Try-Now-7:2",
+          "8227:TB:YM:C7:Try-Now-7:3",
+          "8227:TB:YM:C7:Try-Now-8:1",
+          "8227:TB:YM:C7:Try-Now-8:2",
+          "8227:TB:YM:C7:Try-Now-9:1",
+          "8227:TB:YM:C7:Try-Now-9:2",
+          "8227:TB:YM:C7:Try-Now-9:3",
+          "8227:TB:YM:C7:Try-Now-9:4",
+          "8227:TB:YM:C7:Try-Now:1",
+          "8227:TB:YM:C7:Try-Now:13",
+          "8227:TB:YM:C7:Try-Now:14",
+          "8227:TB:YM:C7:Try-Now:15",
+          "8227:TB:YM:C7:Try-Now:16",
+          "8227:TB:YM:C7:Try-Now:17",
+          "8227:TB:YM:C7:Try-Now:2",
+          "8227:TB:YM:C7:Try-Now:26",
+          "8227:TB:YM:C7:Try-Now:27",
+          "8227:TB:YM:C7:Try-Now:28",
+          "8227:TB:YM:C7:Try-Now:29",
+          "8227:TB:YM:C7:Try-Now:3",
+          "8227:TB:YM:C7:Try-Now:36",
+          "8227:TB:YM:C7:Try-Now:37",
+          "8227:TB:YM:C7:Try-Now:4",
+          "8227:TB:YM:C7:Try-Now:40",
+          "8227:TB:YM:C7:Try-Now:6",
+          "8227:TB:YM:C7:Worked-illustration:1"
+        ],
+        "adopted_families": [
+          "8227:TEXTBOOK-FAMILY:motion-two-integration-conditions",
+          "8227:TEXTBOOK-FAMILY:motion-vertical-events",
+          "8227:TEXTBOOK-FAMILY:motion-rest-and-bounded-speed",
+          "8227:TEXTBOOK-FAMILY:motion-distance-with-reversal",
+          "8227:TEXTBOOK-FAMILY:motion-positive-velocity-interval"
+        ],
+        "limits": "Discovery is complete for these exact union predicates; native re-reading is complete for every member of the adopted families, not every other union hit. Unselected union hits remain later-design leads, not proven rejections or absence."
+      },
+      "accepted_selection_ids": [
+        "8227:FAMILY:motion-integration",
+        "8227:FAMILY:motion-differentiation"
+      ],
+      "classification_version": "8227-pilot-design-0.1.1"
+    }
+  ],
+  "counts": {
+    "recipes": 3,
+    "branches": 7,
+    "branch_qualified_capacity": 387
+  },
+  "rights": "Textbook originals internal learner_display:false. Exemplars are newly authored paper design, not runtime items.",
+  "exemplar_cases": [
+    {
+      "case_id": "WB8227-implicit-normal:gradient:normal",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:gradient",
+      "case_role": "normal",
+      "parameters": {
+        "a": 3,
+        "k": 2,
+        "q": -4
+      },
+      "expected_answers": {
+        "curve_constant": 4,
+        "gradient": "-24/5",
+        "normal_slope": "5/24",
+        "normal_equation": "y-(-4)=(5/24)*x",
+        "shown_derivative": "-6*exp(2*x)*y/(3*exp(2*x)+2*y)"
+      },
+      "mark_total": 5,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:gradient:changed",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:gradient",
+      "case_role": "changed",
+      "parameters": {
+        "a": 3,
+        "k": 3,
+        "q": -1
+      },
+      "expected_answers": {
+        "curve_constant": -2,
+        "gradient": "9",
+        "normal_slope": "-1/9",
+        "normal_equation": "y-(-1)=(-1/9)*x",
+        "shown_derivative": "-9*exp(3*x)*y/(3*exp(3*x)+2*y)"
+      },
+      "mark_total": 5,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:gradient:boundary",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:gradient",
+      "case_role": "boundary",
+      "parameters": {
+        "a": 4,
+        "k": 3,
+        "q": -5
+      },
+      "expected_answers": {
+        "curve_constant": 5,
+        "gradient": "-10",
+        "normal_slope": "1/10",
+        "normal_equation": "y-(-5)=(1/10)*x",
+        "shown_derivative": "-12*exp(3*x)*y/(4*exp(3*x)+2*y)"
+      },
+      "mark_total": 5,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:normal",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:normal",
+      "case_role": "normal",
+      "parameters": {
+        "a": 3,
+        "k": 2,
+        "q": -4
+      },
+      "expected_answers": {
+        "curve_constant": 4,
+        "gradient": "-24/5",
+        "normal_slope": "5/24",
+        "normal_equation": "y-(-4)=(5/24)*x",
+        "shown_derivative": "-6*exp(2*x)*y/(3*exp(2*x)+2*y)"
+      },
+      "mark_total": 9,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:changed",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:normal",
+      "case_role": "changed",
+      "parameters": {
+        "a": 3,
+        "k": 3,
+        "q": -1
+      },
+      "expected_answers": {
+        "curve_constant": -2,
+        "gradient": "9",
+        "normal_slope": "-1/9",
+        "normal_equation": "y-(-1)=(-1/9)*x",
+        "shown_derivative": "-9*exp(3*x)*y/(3*exp(3*x)+2*y)"
+      },
+      "mark_total": 9,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-implicit-normal:normal:boundary",
+      "recipe_id": "WB8227-implicit-normal",
+      "branch_id": "WB8227-implicit-normal:normal",
+      "case_role": "boundary",
+      "parameters": {
+        "a": 4,
+        "k": 3,
+        "q": -5
+      },
+      "expected_answers": {
+        "curve_constant": 5,
+        "gradient": "-10",
+        "normal_slope": "1/10",
+        "normal_equation": "y-(-5)=(1/10)*x",
+        "shown_derivative": "-12*exp(3*x)*y/(4*exp(3*x)+2*y)"
+      },
+      "mark_total": 9,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:normal",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:two-extrema",
+      "case_role": "normal",
+      "parameters": {
+        "a": 1,
+        "h": 0,
+        "r": 1,
+        "c": 2
+      },
+      "expected_answers": {
+        "points": [
+          [
+            -1,
+            4
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "classifications": [
+          "maximum",
+          "minimum"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:changed",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:two-extrema",
+      "case_role": "changed",
+      "parameters": {
+        "a": -1,
+        "h": 1,
+        "r": 2,
+        "c": 0
+      },
+      "expected_answers": {
+        "points": [
+          [
+            -1,
+            -16
+          ],
+          [
+            3,
+            16
+          ]
+        ],
+        "classifications": [
+          "minimum",
+          "maximum"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:two-extrema:boundary",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:two-extrema",
+      "case_role": "boundary",
+      "parameters": {
+        "a": -2,
+        "h": -2,
+        "r": 3,
+        "c": 4
+      },
+      "expected_answers": {
+        "points": [
+          [
+            -5,
+            -104
+          ],
+          [
+            1,
+            112
+          ]
+        ],
+        "classifications": [
+          "minimum",
+          "maximum"
+        ]
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:flat-classification:normal",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:flat-classification",
+      "case_role": "normal",
+      "parameters": {
+        "power": 3,
+        "a": 1,
+        "h": 1,
+        "c": -2
+      },
+      "expected_answers": {
+        "point": [
+          1,
+          -2
+        ],
+        "classification": "stationary inflexion",
+        "first_derivative_signs": [
+          "positive",
+          "positive"
+        ],
+        "second_derivative_at_point": 0
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:flat-classification:changed",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:flat-classification",
+      "case_role": "changed",
+      "parameters": {
+        "power": 4,
+        "a": 1,
+        "h": -1,
+        "c": 2
+      },
+      "expected_answers": {
+        "point": [
+          -1,
+          2
+        ],
+        "classification": "minimum",
+        "first_derivative_signs": [
+          "negative",
+          "positive"
+        ],
+        "second_derivative_at_point": 0
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-stationary-inflexion:flat-classification:boundary",
+      "recipe_id": "WB8227-stationary-inflexion",
+      "branch_id": "WB8227-stationary-inflexion:flat-classification",
+      "case_role": "boundary",
+      "parameters": {
+        "power": 4,
+        "a": -2,
+        "h": 2,
+        "c": -4
+      },
+      "expected_answers": {
+        "point": [
+          2,
+          -4
+        ],
+        "classification": "maximum",
+        "first_derivative_signs": [
+          "positive",
+          "negative"
+        ],
+        "second_derivative_at_point": 0
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:normal",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:polynomial-chain",
+      "case_role": "normal",
+      "parameters": {
+        "A": 2,
+        "B": 1,
+        "u": 3,
+        "T": 2
+      },
+      "expected_answers": {
+        "velocity": "2*t**2+1*t+3",
+        "distance": "40/3"
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:changed",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:polynomial-chain",
+      "case_role": "changed",
+      "parameters": {
+        "A": 1,
+        "B": 0,
+        "u": 1,
+        "T": 3
+      },
+      "expected_answers": {
+        "velocity": "1*t**2+0*t+1",
+        "distance": "12"
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:polynomial-chain:boundary",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:polynomial-chain",
+      "case_role": "boundary",
+      "parameters": {
+        "A": 3,
+        "B": 2,
+        "u": 4,
+        "T": 4
+      },
+      "expected_answers": {
+        "velocity": "3*t**2+2*t+4",
+        "distance": "96"
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:normal",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:exponential-positive",
+      "case_role": "normal",
+      "parameters": {
+        "V": 12,
+        "k": "1/2",
+        "T": 2
+      },
+      "expected_answers": {
+        "acceleration": "-(1/2)*12*exp(-(1/2)*t)",
+        "distance_exact": "(24)*(1-exp(-(1)))",
+        "distance_3sf": "15.2"
+      },
+      "mark_total": 5,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:changed",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:exponential-positive",
+      "case_role": "changed",
+      "parameters": {
+        "V": 18,
+        "k": "1/3",
+        "T": 3
+      },
+      "expected_answers": {
+        "acceleration": "-(1/3)*18*exp(-(1/3)*t)",
+        "distance_exact": "(54)*(1-exp(-(1)))",
+        "distance_3sf": "34.1"
+      },
+      "mark_total": 5,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:exponential-positive:boundary",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:exponential-positive",
+      "case_role": "boundary",
+      "parameters": {
+        "V": 30,
+        "k": "1/4",
+        "T": 4
+      },
+      "expected_answers": {
+        "acceleration": "-(1/4)*30*exp(-(1/4)*t)",
+        "distance_exact": "(120)*(1-exp(-(1)))",
+        "distance_3sf": "75.9"
+      },
+      "mark_total": 5,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:normal",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:interior-reversal",
+      "case_role": "normal",
+      "parameters": {
+        "k": 2,
+        "r": 1,
+        "c": 1,
+        "T": 3
+      },
+      "expected_answers": {
+        "roots": [
+          -1,
+          1
+        ],
+        "interior_roots": [
+          1
+        ],
+        "sign_change": true,
+        "signed_legs": [
+          "-4/3",
+          "40/3"
+        ],
+        "displacement": "12",
+        "distance": "44/3",
+        "primitive": "2*t**3/3 - 2*t",
+        "expanded_velocity": "2*t**2 - 2"
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:changed",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:interior-reversal",
+      "case_role": "changed",
+      "parameters": {
+        "k": -2,
+        "r": 3,
+        "c": 2,
+        "T": 1
+      },
+      "expected_answers": {
+        "roots": [
+          -2,
+          3
+        ],
+        "interior_roots": [],
+        "sign_change": false,
+        "signed_legs": [
+          "37/3"
+        ],
+        "displacement": "37/3",
+        "distance": "37/3",
+        "primitive": "-2*t**3/3 + t**2 + 12*t",
+        "expanded_velocity": "-2*t**2 + 2*t + 12"
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    },
+    {
+      "case_id": "WB8227-motion-integration:interior-reversal:boundary",
+      "recipe_id": "WB8227-motion-integration",
+      "branch_id": "WB8227-motion-integration:interior-reversal",
+      "case_role": "boundary",
+      "parameters": {
+        "k": 3,
+        "r": 3,
+        "c": 3,
+        "T": 4
+      },
+      "expected_answers": {
+        "roots": [
+          -3,
+          3
+        ],
+        "interior_roots": [
+          3
+        ],
+        "sign_change": true,
+        "signed_legs": [
+          "-54",
+          "10"
+        ],
+        "displacement": "-44",
+        "distance": "64",
+        "primitive": "t**3 - 27*t",
+        "expanded_velocity": "3*t**2 - 27"
+      },
+      "mark_total": 6,
+      "origin": "newly authored D1 paper-design exemplar, not a runtime item",
+      "recipe_version": "0.1.2"
+    }
+  ],
+  "d1_calculus_scope": [
+    "WB8227-implicit-normal",
+    "WB8227-stationary-inflexion"
+  ],
+  "d1_calculus_classification_version": "8227-pilot-design-0.1.1",
+  "d2_calculus_scope": [
+    "WB8227-implicit-normal",
+    "WB8227-stationary-inflexion"
+  ],
+  "d2_calculus_classification_version": "8227-pilot-design-0.1.1"
+}

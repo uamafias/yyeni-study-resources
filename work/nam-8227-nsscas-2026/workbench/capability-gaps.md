@@ -15,3 +15,36 @@ is recorded separately from source inspection and runtime acceptance. Final loca
 website testing with the reviewed real pilot resources must follow authoring and
 independent review, before merge or deployment. Detailed field examples and shared
 framework proposals are in `analysis/framework-extension-handoff.md`.
+
+
+## Stage-D planning recheck — 23 November 2026
+
+CAP-8227-01/02/03 flagged directly to Vitalis in this planning session before the
+plan checkpoint; recipient Vitalis, date 23 November 2026. Details and concrete
+field/acceptance examples: `app-change-handoff.md`. The current app inspected
+HEAD remains `0f0832ddedf40010e467f60184ccf56d63384c09`; exact four inspected
+file hashes and uncommitted-state limits are in `planning/stage-d-baseline.json`.
+
+Read-only code confirms provider methods and whole-question contract presence;
+the catalogue allowlists lack new Bloom/branch metadata and the learner projection
+derives part letters by position. No app runtime or UI test was run. No YYeni
+Workbench operation is exposed by name in the current connected-tool inventory;
+MCP delivery support remains unverified, not declared absent. No target was selected.
+
+16 November owner decision 6 (visual demands) still includes every visual demand with no capability hold.
+Correct/partial/alternative/wrong/ambiguous visual grading, diagram consistency,
+metadata round-trip, authored part IDs, branch progress/no-repeat and school-scoped
+MCP delivery remain named later acceptance tests. Design approval/disposition of
+this proposed handoff is pending Vitalis. No capability work, import, assignment,
+app edit or production activation was performed. CAP-8227-04 interaction is not
+selected for this bounded pilot; its earlier analysis candidate remains visible.
+
+
+## D1 repair addition — 23 November 2026
+
+The Stage-D candidate now includes answer-given proof marking (4+2+3 implicit branch), conditional principal-range/exact-value metadata, working-required qualification rules and part-instance semantic exposure/exhaustion. APP8227-01/05/06 in `app-change-handoff.md` give concrete payloads/acceptance fixtures; vector notation input/history is explicit. These are flagged requirements for Vitalis/application team, not delivered capabilities or new capability holds. Claude D4 changed-scope confirmation precedes Vitalis approval under OD-3.
+
+
+## D2 changed-scope record — 23 November 2026
+
+CAP-8227-01/02/03 remain flagged to Vitalis; no capability hold is introduced. D2 adds official modulus named-value credit, mapped alternative proofs, own-root/own-graph/own-equation follow-through, one live mixed-motion decision, decimal/notation fixtures and original-subtask freshness guard. APP8227-01–08 in `app-change-handoff.md` give the acceptance checks and semantic-key migration. Given geometric diagrams remain a later untested representation (G09:28 exam parts), separate from the pilot’s supplied graphs. Runtime/local website/MCP checks are unrun; Claude confirms only the changed design before Vitalis approves.

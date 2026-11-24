@@ -1,0 +1,536 @@
+[
+  {
+    "fixture_id": "PI-correct",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 4,
+      "theta": "-pi/6"
+    },
+    "response_kind": "correct",
+    "submission": "-pi/2 < -pi/6 < pi/2; 4x=sin(-pi/6)=-1/2; x=-1/8.",
+    "expected_gross_earned_local_criterion_ids": [
+      "P-B1",
+      "P-M1",
+      "P-A1"
+    ],
+    "expected_net_marks": 3,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "PI-no-applied-range",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 4,
+      "theta": "-pi/6"
+    },
+    "response_kind": "partially-correct",
+    "submission": "Range is [-pi/2,pi/2]. 4x=-1/2; x=-1/8.",
+    "expected_gross_earned_local_criterion_ids": [
+      "P-M1",
+      "P-A1"
+    ],
+    "expected_net_marks": 2,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "PI-bare-correct",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 4,
+      "theta": "-pi/6"
+    },
+    "response_kind": "answer-only",
+    "submission": "x=-1/8",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": 0,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "feedback": "Your value is correct; show how it satisfies the principal inverse relation."
+  },
+  {
+    "fixture_id": "PI-wrong-accepts-forward-candidate",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 3,
+      "theta": "2*pi/3"
+    },
+    "response_kind": "wrong",
+    "submission": "3x=sin(2pi/3)=sqrt(3)/2, so x=sqrt(3)/6.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": 0,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "PI-forced-contradiction",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 3,
+      "theta": "2*pi/3"
+    },
+    "response_kind": "alternative",
+    "submission": "Sine forces x=sqrt(3)/6; asin(3x)=pi/3, not 2pi/3. The only forward candidate fails, so no real solution.",
+    "expected_gross_earned_local_criterion_ids": [
+      "P-B1",
+      "P-M1",
+      "P-A1"
+    ],
+    "expected_net_marks": 3,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "PI-ambiguous-sign",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 4,
+      "theta": "-pi/6"
+    },
+    "response_kind": "ambiguous",
+    "submission": "Handwritten target copied with an unreadable sign.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": null,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "pending_clarification": true
+  },
+  {
+    "fixture_id": "RF-correct",
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "response_kind": "correct",
+    "submission": "R=sqrt(13), tan alpha=3/2, alpha=56.31deg. sin(theta+alpha)=1/sqrt(13); complete shifted root search; theta=107.6deg or 319.8deg.",
+    "expected_gross_earned_local_criterion_ids": [
+      "a-B1",
+      "a-M1",
+      "a-A1",
+      "b-M1",
+      "b-M2",
+      "b-A1",
+      "b-A2"
+    ],
+    "expected_net_marks": 7,
+    "out_of": 7,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "RF-only-one-original-root",
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "response_kind": "partially-correct",
+    "submission": "Correct conversion and hence sine-subject line; only the first valid original root, without a complete transformed-root search.",
+    "expected_gross_earned_local_criterion_ids": [
+      "a-B1",
+      "a-M1",
+      "a-A1",
+      "b-M1",
+      "b-A1"
+    ],
+    "expected_net_marks": 5,
+    "out_of": 7,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "RF-extra-final-angle",
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "response_kind": "partially-correct",
+    "submission": "Correct conversion and complete working, then both canonical final roots plus an uncancelled coterminal final angle.",
+    "expected_gross_earned_local_criterion_ids": [
+      "a-B1",
+      "a-M1",
+      "a-A1",
+      "b-M1",
+      "b-M2",
+      "b-A1"
+    ],
+    "expected_net_marks": 6,
+    "out_of": 7,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "RF-non-hence",
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "response_kind": "alternative-excluded",
+    "submission": "Correct part (a). In (b), solves the original equation by an independent tangent-half-angle method without using part (a).",
+    "expected_gross_earned_local_criterion_ids": [
+      "a-B1",
+      "a-M1",
+      "a-A1"
+    ],
+    "expected_net_marks": 3,
+    "out_of": 7,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "RF-bare-correct",
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "response_kind": "answer-only",
+    "submission": "Correct converted expression and root pair, with no working.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": 0,
+    "out_of": 7,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "RF-ambiguous-root",
+    "recipe_id": "WB8227-trig-rform-equation",
+    "branch_id": "degree-cycle",
+    "parameters": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "response_kind": "ambiguous",
+    "submission": "Second handwritten final root is not legible.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": null,
+    "out_of": 7,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "pending_clarification": true
+  },
+  {
+    "fixture_id": "GRAPH-correct",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "1/2",
+      "p": "1/2",
+      "x1": 1,
+      "delta_x": 2
+    },
+    "response_kind": "correct",
+    "submission": "ln y=px+p+ln A; p=(2.5-1.5)/(3-1)=1/2; 1.5=1/2+1/2+ln A; A=exp(1/2).",
+    "expected_gross_earned_local_criterion_ids": [
+      "G-B1",
+      "G-M1",
+      "G-A1",
+      "G-M2",
+      "G-A2"
+    ],
+    "expected_net_marks": 5,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "GRAPH-omits-offset",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "1/2",
+      "p": "1/2",
+      "x1": 1,
+      "delta_x": 2
+    },
+    "response_kind": "partially-correct",
+    "submission": "ln y=px+ln A; p=(2.5-1.5)/2=1/2; ln A=1.5-0.5=1; A=e.",
+    "expected_gross_earned_local_criterion_ids": [
+      "G-M1",
+      "G-A1",
+      "G-M2"
+    ],
+    "expected_net_marks": 3,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "GRAPH-simultaneous",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "1/2",
+      "p": "1/2",
+      "x1": 1,
+      "delta_x": 2
+    },
+    "response_kind": "alternative",
+    "submission": "1.5=2p+ln A; 2.5=4p+ln A. Subtraction gives p=1/2, then ln A=1/2, A=e^(1/2).",
+    "expected_gross_earned_local_criterion_ids": [
+      "G-B1",
+      "G-M1",
+      "G-A1",
+      "G-M2",
+      "G-A2"
+    ],
+    "expected_net_marks": 5,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "GRAPH-wrong-parameter-reading",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "1/2",
+      "p": "1/2",
+      "x1": 1,
+      "delta_x": 2
+    },
+    "response_kind": "wrong",
+    "submission": "Reads x-coordinates as p and A and submits those values, without log-line working.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": 0,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "GRAPH-ambiguous-coordinate",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "graph-intercept",
+    "parameters": {
+      "L": "1/2",
+      "p": "1/2",
+      "x1": 1,
+      "delta_x": 2
+    },
+    "response_kind": "ambiguous",
+    "submission": "A copied ordinate is illegible; clarify before deciding which value was used.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": null,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "pending_clarification": true
+  },
+  {
+    "fixture_id": "TARGET-correct",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "correct",
+    "submission": "log2 y=a+x log2 a; log2 a=3; a=8. Hence 10=8+3x; x=2/3.",
+    "expected_gross_earned_local_criterion_ids": [
+      "T-B1",
+      "T-M1",
+      "T-A1",
+      "U-M1",
+      "U-A1"
+    ],
+    "expected_net_marks": 5,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "TARGET-consistent-earlier-omission",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "partially-correct",
+    "submission": "log2 y=x log2 a; log2 a=3; a=8. Hence 10=3x; x=10/3.",
+    "expected_gross_earned_local_criterion_ids": [
+      "T-M1",
+      "T-A1",
+      "U-M1"
+    ],
+    "expected_net_marks": 3,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "TARGET-new-prefactor-omission",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "wrong-step",
+    "submission": "Correct line log2 y=a+x log2 a and a=8. Newly writes 10=3x in (b), getting x=10/3.",
+    "expected_gross_earned_local_criterion_ids": [
+      "T-B1",
+      "T-M1",
+      "T-A1"
+    ],
+    "expected_net_marks": 3,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "TARGET-ln-alternative",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "alternative",
+    "submission": "ln y=a ln2+x ln a; plotted gradient ln a/ln2=3; a=8. Hence 10 ln2=8 ln2+x ln8; x=2/3.",
+    "expected_gross_earned_local_criterion_ids": [
+      "T-B1",
+      "T-M1",
+      "T-A1",
+      "U-M1",
+      "U-A1"
+    ],
+    "expected_net_marks": 5,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "TARGET-bare-correct",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "answer-only",
+    "submission": "a=8, x=2/3",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": 0,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test"
+  },
+  {
+    "fixture_id": "TARGET-ambiguous-prefactor",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "ambiguous",
+    "submission": "It is unclear whether the prefactor was retained in earlier working.",
+    "expected_gross_earned_local_criterion_ids": [],
+    "expected_net_marks": null,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "pending_clarification": true
+  },
+  {
+    "fixture_id": "PI-eligible-scaling-misread",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 4,
+      "theta": "-pi/6"
+    },
+    "response_kind": "misread",
+    "submission": "Copies coefficient 4 as 5; applies actual target range, 5x=-1/2, x=-1/10.",
+    "expected_gross_earned_local_criterion_ids": [
+      "P-B1",
+      "P-M1",
+      "P-A1"
+    ],
+    "expected_net_marks": 2,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "misread": {
+      "datum_id": "k",
+      "canonical": 4,
+      "misread": 5,
+      "eligible": true,
+      "deduction_criterion": "P-B1",
+      "gross_marks": 3,
+      "authority": "owner-approved MR03-OPS-D4"
+    }
+  },
+  {
+    "fixture_id": "PI-designed-no-real-sign-misread",
+    "recipe_id": "WB8227-principal-inverse",
+    "branch_id": "solve-or-explain",
+    "parameters": {
+      "k": 3,
+      "theta": "-3*pi/4"
+    },
+    "response_kind": "misread",
+    "submission": "Reads -3pi/4 as +3pi/4; shows 3pi/4>pi/2, so no real solution.",
+    "expected_gross_earned_local_criterion_ids": [
+      "P-B1",
+      "P-M1",
+      "P-A1"
+    ],
+    "expected_net_marks": 2,
+    "out_of": 3,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "misread": {
+      "datum_id": "theta",
+      "eligible": true,
+      "deduction_criterion": "P-B1",
+      "gross_marks": 3,
+      "authority": "owner-approved MR03-OPS-D4"
+    }
+  },
+  {
+    "fixture_id": "TARGET-prefactor-misread",
+    "recipe_id": "WB8227-log-linear-model",
+    "branch_id": "gradient-target",
+    "parameters": {
+      "b": 2,
+      "c": 1,
+      "m": 3,
+      "q": 10
+    },
+    "response_kind": "misread",
+    "submission": "Copies c=1 as 3; log2 y=3a+x log2 a; a=8; 10=24+3x; x=-14/3.",
+    "expected_gross_earned_local_criterion_ids": [
+      "T-B1",
+      "T-M1",
+      "T-A1",
+      "U-M1",
+      "U-A1"
+    ],
+    "expected_net_marks": 4,
+    "out_of": 5,
+    "assessment_status": "authored rubric expectation; not an unstructured-response marker test",
+    "misread": {
+      "datum_id": "c",
+      "eligible": true,
+      "deduction_criterion": "T-B1",
+      "gross_marks": 5,
+      "authority": "owner-approved MR03-OPS-D4"
+    }
+  }
+]

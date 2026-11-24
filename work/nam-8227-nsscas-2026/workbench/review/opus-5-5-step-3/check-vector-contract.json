@@ -1,0 +1,343 @@
+{
+ "label": "vector-contract",
+ "scope": [
+  "WB8227-vector-geometry / scalar-combination-and-origin-angle (all eight recipe checks)",
+  "W/recipe-contract.md",
+  "W/subject-rules.md",
+  "W/app-change-handoff.md",
+  "W/capability-gaps.md",
+  "presence scan of all nine W/work-orders/*.md against contract/template fields",
+  "W/PLAN.md sequence and stop conditions"
+ ],
+ "pages_viewed": [
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 4,
+   "what": "Q3 stem and (a): OA=(-3,4,2), OB=(3,-1,2), OC=(5,-3,6); pOA-OB perpendicular to OC [3]; printed page 4; SHA256 9b8c39c4... matches"
+  },
+  {
+   "pdf": "Question Banks/Namibian Curricula/NSSCAS/Mathematics (8227)/2025/8227-1.pdf",
+   "page": 5,
+   "what": "Q3(b) 'Use a scalar product to find angle AOB.' [4]; printed page 5 (label page correct)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 347,
+   "what": "printed 345: Q3(a) end, Q3(b) comments (AO.OB gives 63.5, round degrees 1 dp) and full Q3 award table B1/M1/A1 + B1/M1/M1FT/A1, accept AO.OB=9, accept 2.03 rad"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 346,
+   "what": "printed 344: Q3(a) 'Poorly answered'; most stopped at p(-3,4,2)-(3,-1,2); common error p(OA-OB)"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 345,
+   "what": "printed 343: P1 general comments: first answer marked, mark what is written not implied, misread numbers do not score maximum marks"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2025/NSSCASExaminersReport2025.pdf",
+   "page": 355,
+   "what": "printed 353: P2 general comments: method emphasis, exact where possible, premature rounding, s.f. vs d.p., hence, degrees/radians"
+  },
+  {
+   "pdf": "Question Banks/Namibian Examiner Reports/NSSCAS/2021/NSSCAS_2021_Examiners.pdf",
+   "page": 236,
+   "what": "printed 234: P2 general comments: complete methods at all times; exact where possible; round only final; 'No marks are awarded if only answers are given'; HENCE rule"
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 12,
+   "what": "printed 9: Topic 7 bullets; 'perform addition and subtraction of vectors and multiplication of a vector by a scalar, and interpret these operations in geometrical terms'"
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 18,
+   "what": "printed 15: notes 2-3: 3 s.f. unless stated / if not exact; degrees 1 d.p.; pi calculator or 3.142"
+  },
+  {
+   "pdf": "Syllabi/Namibian Curricula/NSSCAS/8227_NSSCAS_Mathematics_final_updated_20_November_2020.pdf",
+   "page": 20,
+   "what": "printed 17: grade a descriptor: scalar product for angle and perpendicularity problems (GRADE:A:07)"
+  }
+ ],
+ "recomputations": [
+  {
+   "case": "Normal (r,s,t)=(1,2,2) part (a)",
+   "claimed": "pOA-OB=(p-2,p-1,p+1); 4p-3=0; p=3/4; residual (-5/4,-1/4,7/4).OC=0",
+   "computed": "same (sympy/fractions)",
+   "ok": true
+  },
+  {
+   "case": "Normal part (b)",
+   "claimed": "OA.OB=2, |OA|=sqrt3, |OB|=sqrt6, theta=61.87449 -> 61.9 deg; |A-B|^2=5 cosine-law check; reversed ray 118.1",
+   "computed": "61.874494 -> 61.9; |A-B|^2=5; 180-theta=118.13 -> 118.1",
+   "ok": true
+  },
+  {
+   "case": "Changed (2,-3,1) part (a)",
+   "claimed": "(p+3,2p-1,p+1); 4p+3=0; p=-3/4; residual (9/4,-5/2,1/4) sum 0",
+   "computed": "same",
+   "ok": true
+  },
+  {
+   "case": "Changed part (b)",
+   "claimed": "OA.OB=-2, norms sqrt6,sqrt11, theta=104.25175 -> 104.3; |A-B|^2=21; supplement 75.7",
+   "computed": "104.251755 -> 104.3 (0.0018 deg from rounding boundary); 21; 75.748 -> 75.7",
+   "ok": true
+  },
+  {
+   "case": "Boundary (3,-2,3)",
+   "claimed": "(p+2,3p-1,p+1); 11p=0; p=0; -OB=(2,-1,1) nonzero and perpendicular; OA.OB=0, 90.0 deg; |A-B|^2=17",
+   "computed": "same; note OA=OC in this tuple",
+   "ok": true
+  },
+  {
+   "case": "Closed forms for all 54 tuples",
+   "claimed": "p=(s+t-1)/(2+rt); theta=acos((s+r-1)/sqrt((r^2+2)(s^2+2)))",
+   "computed": "agree with direct vector computation and independent cosine-law oracle for all 54",
+   "ok": true
+  },
+  {
+   "case": "Domain safety claims",
+   "claimed": "54 distinct triples; 2+rt>=3; resultant never zero; OA, OB never parallel",
+   "computed": "54 distinct; min 2+rt=3; no zero resultant; cross product never zero",
+   "ok": true
+  },
+  {
+   "case": "Sample credits",
+   "claimed": "7/7, 5/7 (dot not equated to 0), 7/7 (bilinearity), 6/7 (reversed ray 118.1)",
+   "computed": "consistent with stated criteria; criteria sum 3+4=7",
+   "ok": true
+  },
+  {
+   "case": "Source 2025 P1 Q3 (native page)",
+   "claimed": "p=-2; angle 116.5 deg (2.03 rad); reversed 63.5",
+   "computed": "p=-2; 116.5298 deg; 2.0338 rad; 63.47",
+   "ok": true
+  },
+  {
+   "case": "Examiner-reported wrong method p(OA-OB).OC=0 over domain",
+   "claimed": "not addressed in design",
+   "computed": "gives the correct p=0 in all 6 admitted p=0 tuples (incl. boundary exemplar); identity 0=0 for (1,3,1),(1,3,2),(1,3,3); p=0 (wrong) in other 45",
+   "ok": false
+  },
+  {
+   "case": "Intermediate 3 s.f. rounding of |OA|,|OB| or cos over 18 (r,s) pairs",
+   "claimed": "no intermediate-rounding rule stated",
+   "computed": "1-dp answer changes for (1,-2),(1,2),(2,-3),(2,1),(3,3) = 15/54 tuples, incl. Normal (61.8) and Changed (104.2) exemplars",
+   "ok": false
+  }
+ ],
+ "capacity_checks": [
+  {
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "claimed": 54,
+   "computed": 54,
+   "notes": "54 distinct given triples confirmed. But part (b) depends only on (r,s): 18 distinct (OA,OB) pairs and 14 distinct 1-dp angles; each (b) sub-question recurs verbatim in 3 instances. Part (a) has 30 distinct p values; 49 distinct (p,theta) pairs. A=C (r=t) in 18/54. p=0 in 6, right angle in 6, both (and A=C) in 2. Acute/right/obtuse = 30/6/18. Exact angles 60.0 (3 tuples) and 90.0 (6 tuples)."
+  }
+ ],
+ "findings": [
+  {
+   "id": "vector-contract-01",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:60 (a:A1); exemplars/WB8227-vector-geometry.md:3 (prompt)",
+   "severity": "design-blocking",
+   "expected": "Accuracy rule for p matches the prompt and the NSSCAS default (syllabus PDF18/printed15 note 3: if accuracy not specified and answer not exact, 3 s.f.). Either the prompt asks for p exactly (and says terminating decimals such as 0.375 are accepted), or a:A1 accepts a correct 3 s.f. decimal.",
+   "actual": "a:A1 requires 'Correct exact p' but the prompt only asks for 'the scalar p'. 44/54 tuples have non-integer p; 13 are recurring (denominators 3, 6, 11, e.g. 5/11). A learner writing 0.455 per the syllabus default would lose A1. Also b:A1 '1 dp' must accept exact 60 deg (3 tuples) and 90 deg (6 tuples) without a trailing .0.",
+   "evidence": "Syllabus PDF18 notes 2-3 (rendered); enumeration: p denominators {1:10,2:7,3:7,4:8,5:10,6:1,8:6,11:5}.",
+   "repair": "Add 'Give p as an exact value' to the question (and accept exact terminating decimals), or accept 3 s.f.; state that exact angle values (60, 90) earn b:A1."
+  },
+  {
+   "id": "vector-contract-02",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:13,16,32; planning/visual-design.json recipes[2] part a; planning/coverage-plan.md:71,73; PLAN.md:60",
+   "severity": "should-fix",
+   "expected": "Part (a) direct demands include 8227:2020:M1:T7:O02:D01 'Add and subtract vectors' (syllabus PDF12 bullet 'perform addition and subtraction of vectors...'), because a:B1 is exactly the subtraction pOA-OB. D03 'Interpret geometric vector relation' is listed only if a criterion assesses a geometric interpretation of the operation.",
+   "actual": "Part (a) omits D01 and claims D03, which no a-criterion assesses (B1 components, M1 dot=0, A1 p; perpendicularity is O05:D02). The WO and PLAN describe D01 as 'addition' and use that as the reason to withhold the (a) same-type label; the accepted source part 2025 P1 Q3(a) maps {O02:D01, O02:D02, O04:D02, O05:D02}. coverage-plan lists D01 as later-syllabus-scope and D03 as a pilot-direct facet, so the 38/138 facet count rests on this error.",
+   "evidence": "demand-registry.json D01 learner_action 'Add and subtract vectors'; question-analysis.json 8227:EXAM:2025:P1:Q3:a; rendered syllabus PDF12.",
+   "repair": "Put D01 in part (a), drop D03 (or add a criterion that really assesses it), recompute coverage counts, and redo the part (a) equality check. With D01 in and D03 out the direct-demand set equals the source part's, so decide the (a) label on the response/givens/scaffold comparison rather than the mislabel."
+  },
+  {
+   "id": "vector-contract-03",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:36-40; exemplars/WB8227-vector-geometry.md:33-44",
+   "severity": "should-fix",
+   "expected": "Admitted instances name three distinct points A, B, C, and the boundary exemplar shows the p=0 and right-angle boundaries without collapsing parts (a) and (b) into one fact.",
+   "actual": "OA=(1,r,1) and OC=(1,t,1) coincide whenever r=t: 18/54 instances (33%) say 'position vectors of A, B and C' with A=C. In these, (a)'s OB.OC is (b)'s OA.OB, so part (a) hands part (b) its B1 value. In (2,-1,2) and (3,-2,3), p=0 and the right angle are the same fact (OB perpendicular to OA=OC). The 'admitted boundary' exemplar (3,-2,3) is one of these doubly collapsed cases.",
+   "evidence": "Enumeration: A==C 18; p=0 and theta=90 together only at (2,-1,2),(3,-2,3), both with A=C.",
+   "repair": "Exclude r=t (capacity 36) or change the OC template so OC is never equal to OA. Show the boundaries separately, e.g. p=0 at (1,-1,2) and a right angle at (2,-1,1)."
+  },
+  {
+   "id": "vector-contract-04",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:36,44",
+   "severity": "should-fix",
+   "expected": "Capacity and no-repeat keys reflect what the learner actually sees in each assessed part; per contract (recipe-contract.md:199-202) report finite capacity and repeated collisions honestly.",
+   "actual": "t does not enter part (b). Part (b), the only part with a learner same-type label, has 18 distinct (OA,OB) problems and 14 distinct 1-dp answers; each recurs verbatim across 3 of the '54 distinct' instances. The full-triple fingerprint treats these as fresh. The template is also rigid: 5 entries are fixed in every instance, |OA| and |OB| take only sqrt3, sqrt6 or sqrt11, and every angle lies in 58.5-121.5 deg. Numbers are easier than the source (components up to 6 with mixed signs), even though perpendicularity is a grade-a descriptor (PDF20).",
+   "evidence": "Enumeration of all 54 tuples; rendered syllabus PDF20.",
+   "repair": "Report part (b) capacity 18 alongside 54 and add part-level semantic keys, or make (b) depend on all parameters (for example by varying more slots or signs). Record calibration against the source magnitude."
+  },
+  {
+   "id": "vector-contract-05",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:58-60,72-82; exemplars/WB8227-vector-geometry.md:46-50",
+   "severity": "should-fix",
+   "expected": "Samples and feedback cover the examiner-evidenced (a) errors: 2025 report PDF346/printed344 marks Q3(a) 'Poorly answered', says most candidates stopped at p(OA)-(OB), and names the common wrong resultant p(OA-OB).",
+   "actual": "No sample covers p(OA-OB). Across the domain, p(OA-OB).OC = p(3-s+rt-t) = 0 gives the correct p=0 in all 6 admitted p=0 tuples (including the boundary exemplar) and an identity 0=0 for (1,3,t). The p=0 instances therefore cannot tell the main evidenced error apart from correct work by final answer.",
+   "evidence": "Rendered report PDF346; wrongmethod enumeration.",
+   "repair": "Add a sample row with credit and feedback for p(OA-OB). Make a:A1 explicitly depend on a correct resultant ('www'). Tag the 6 p=0 and 3 identity tuples as marking fixtures, or exclude p=0."
+  },
+  {
+   "id": "vector-contract-06",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:58",
+   "severity": "should-fix",
+   "expected": "a:B1 follows the source B1, which accepts the correctly scaled vector minus OB, '(-3p,4p,2p) - (3,-1,2)', or the combined resultant.",
+   "actual": "a:B1 requires the combined (p-s, rp-1, p+1) or a scalar-product expansion. The report says most candidates reached only the set-up stage, so the narrower wording could withhold the B1 the source gives.",
+   "evidence": "Rendered award table PDF347 (B1 '(-3p,4p,2p)-(3,-1,2) or (-3p-3,4p+1,2p-2)').",
+   "repair": "Accept (p, rp, p) - (s, 1, -1) (correct scaling shown with OB subtracted) for a:B1."
+  },
+  {
+   "id": "vector-contract-07",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:64-66,88",
+   "severity": "should-fix",
+   "expected": "Under the template's marking field, the memo states its intermediate-rounding rule and lists rounding-sensitive instances, consistent with NSSCAS 'round only the final answer' (2021 report PDF236; 2025 PDF355).",
+   "actual": "No intermediate-rounding rule is stated for b:A1. Rounding |OA|, |OB| or cos theta to 3 s.f. (the syllabus default for non-exact answers) changes the 1-dp angle in 5/18 (r,s) pairs, i.e. 15/54 tuples, including both the Normal (61.9 becomes 61.8) and Changed (104.3 becomes 104.2) exemplars. theta(2,-3)=104.25176 is 0.0018 deg from a boundary, so a memo that rounds to 2 dp first and then half-even gives 104.2.",
+   "evidence": "round.py enumeration.",
+   "repair": "State that b:A1 needs the correctly rounded value and that M marks survive premature rounding. Add a premature-rounding feedback sample. Freeze these 15 tuples as stage E/F fixtures and compute the memo with exact or decimal rounding."
+  },
+  {
+   "id": "vector-contract-08",
+   "recipe": "WB8227-vector-geometry",
+   "branch": "scalar-combination-and-origin-angle",
+   "locator": "work/nam-8227-nsscas-2026/workbench/planning/visual-design.json recipes[2].branches[0].examination_references[0]",
+   "severity": "note",
+   "expected": "An internal related reference carries a reason that matches learner_display:false.",
+   "actual": "The part (a) reference has learner_display:false but learner_display_reason 'Owner-authorised attributed examination original; source disposition still controls use.', which was copied from the displayable (b) reference.",
+   "evidence": "JSON read.",
+   "repair": "Give the (a) reference its own reason (related/internal pending the demand-set fix)."
+  },
+  {
+   "id": "vector-contract-09",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:34-50",
+   "severity": "should-fix",
+   "expected": "The subject binding records the native NSSCAS general method/answer-only convention and requires each memo to justify any departure. The playbook forbids a universal penalty but asks for evidence or a stated proposal.",
+   "actual": "subject-rules.md never mentions it, although marking-conventions.json classes CONVENTION:002 and :076 as 'explicit general rule'. The 2021 report PDF236/printed234 says 'Complete methods should be shown at all times ... No marks are awarded if only answers are given'; 2025 PDF355/printed353 says 'the emphasis in AS is more on the method'. The work orders diverge without reference to it: principal-inverse gives a bare exact x 2/2 'by implied method', citing Cambridge; modulus gives a bare formula 3/3 (consistent with its B1 table); vector gives a bare p 0/3.",
+   "evidence": "Rendered 2021 PDF236, 2025 PDF355; marking-conventions.json rules.",
+   "repair": "Add the general convention with locators to subject-rules. Require each work order's answer-only rule to say whether it follows or departs from it and why. Re-examine the principal-inverse full answer-only credit against the NSSCAS rule."
+  },
+  {
+   "id": "vector-contract-10",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:34-55; recipe-contract.md:167-187",
+   "severity": "should-fix",
+   "expected": "A misread rule bound for runtime marking (2025 report PDF345/printed343 item 4: 'Learners who misread numbers do not score maximum marks even if their method is correct'; CONVENTION:108).",
+   "actual": "There is no misread rule in subject-rules, the contract or the vector work order, although the vector design names 'reliable signed-component reading' as its main risk.",
+   "evidence": "Rendered 2025 PDF345.",
+   "repair": "Add a proposed misread rule (for example, method marks kept on misread data, accuracy marks lost, never full marks), with a vector sample for a mis-copied sign."
+  },
+  {
+   "id": "vector-contract-11",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md:36-40",
+   "severity": "should-fix",
+   "expected": "An exactness rule that says what happens when exactness is not requested but the value is exact. Syllabus note 3: 3 s.f. 'if the answer is not exact'; the 2021 and 2025 reports advise exact 'where possible'.",
+   "actual": "subject-rules says exact forms 'remain exact where requested' and does not say whether a 3 s.f. decimal of an exact rational or surd is accepted when exactness is not requested. This gap produces vector-contract-01.",
+   "evidence": "Rendered syllabus PDF18; 2021 PDF236; 2025 PDF355.",
+   "repair": "State the rule explicitly (for example, the exact value or a correct 3 s.f. decimal earns A unless the task says 'exact'), and apply it across work orders."
+  },
+  {
+   "id": "vector-contract-12",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/subject-rules.md; recipe-contract.md:182-186",
+   "severity": "note",
+   "expected": "A runtime policy for multiple or uncancelled answers. 2025 PDF345 item 1 says the first answer seen is marked; CONVENTION:017 defers app response selection to the PLAN.",
+   "actual": "Neither the PLAN, the contract nor subject-rules decides it; only 'ambiguous' clarification is covered.",
+   "evidence": "Rendered 2025 PDF345.",
+   "repair": "Decide (for example, request clarification, or mark the first) and record it as proposed."
+  },
+  {
+   "id": "vector-contract-13",
+   "recipe": "shared (work-order fields)",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/*.md headers; recipe-contract.md:39-41,69-70",
+   "severity": "should-fix",
+   "expected": "Stable, consistent selection IDs. The contract wants 'selection IDs from the accepted analysis' and per-part direct and prerequisite IDs, with classification version, in each work order.",
+   "actual": "Design selection IDs use three schemes: 8227:SELECT:D:* (visual), 8227:SEL-D:* (calculus), 8227:D:SEL:* (trig/model). The three calculus WOs (implicit-normal, stationary-inflexion, motion-integration) do not name their accepted 8227:FAMILY:* selections, and they defer per-part demand IDs to planning/calculus-design.json. Stationary-inflexion has no prerequisite statement in the WO; the JSON has M1:T8:O01:D02. Six WOs omit the classification version string 8227-pilot-design-0.1.0. Every other required field (purpose, sources/award locators, domains, difficulty bounds, capacity, assets, solution, criteria, answer-only, alternatives, no double credit, samples/feedback, practice/test reveal, checks, seeds, uncertainty) is present in all nine.",
+   "evidence": "Regex scan plus manual confirmation of every miss.",
+   "repair": "Normalise the ID scheme. In each WO, list the accepted selection IDs and per-part direct and prerequisite IDs, or a per-part pointer, plus the classification version."
+  },
+  {
+   "id": "vector-contract-14",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/app-change-handoff.md:30-39",
+   "severity": "later-test",
+   "expected": "Acceptance tests cover learner input and rendering of column vectors, signed components and degree marks, which the vector design lists as a capability requirement.",
+   "actual": "APP8227-01 to 08 have no notation input/render item. It is covered only generically by Q10 and the 'response formats' line in local acceptance.",
+   "evidence": "visual-design.json capability_requirements; handoff table.",
+   "repair": "Add a vector/LaTeX input-render acceptance check (entering the resultant for a:B1, minus signs, degree sign, saved history)."
+  },
+  {
+   "id": "vector-contract-15",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/work-orders/WB8227-vector-geometry.md:68; PLAN.md:105-106; planning/OWNER-CHECKPOINT.md:22",
+   "severity": "note",
+   "expected": "One consistent statement of what gates stage E.",
+   "actual": "The vector WO says its method-dependency proposals need independent review 'before authoring'. PLAN and OWNER-CHECKPOINT gate stage E on owner approval only. This is consistent with playbook D, which needs only owner approval, but unclear about whether these step-3 design-review findings must be dispositioned first.",
+   "evidence": "Text comparison.",
+   "repair": "State in OWNER-CHECKPOINT that the step-3 design-review findings are dispositioned before stage E authoring of affected recipes."
+  },
+  {
+   "id": "vector-contract-16",
+   "recipe": "shared",
+   "branch": "n/a",
+   "locator": "work/nam-8227-nsscas-2026/workbench/recipe-contract.md:18-21",
+   "severity": "note",
+   "expected": "The Q15 copied-wording override cites its authority.",
+   "actual": "It says 'The user authorises ...' without the decision locator (owner-decisions-2026-11-16.md N2.5, which permits verbatim NSSCAS/Cambridge with attribution). Generated variants still fall under Q15; the vector (b) prompt reuses the whole 7-word source sentence, which is acceptable as command terminology.",
+   "evidence": "owner-decisions-2026-11-16.md read.",
+   "repair": "Cite N2.5 and keep Q15 for generated variants."
+  }
+ ],
+ "verified_ok": [
+  "All three vector exemplars (normal, changed, boundary) recomputed exactly; independent cosine-law oracle agrees; all stated residuals and supplements correct.",
+  "All 54 tuples enumerated: distinct, 2+rt>=3, resultant never zero, OA and OB never parallel, so no angle is 0 or 180 and none undefined; claimed formulas correct.",
+  "Criteria sum 3+4=7. Sample credits 7/7, 5/7, 7/7, 6/7 are consistent with the criteria and with the native award table (B1 accepts AO.OB, 'not equated to zero' gets no M1, reversed ray loses only A1, report says such candidates 'could not obtain full marks').",
+  "Source locators correct: 2025 P1 Q3 PDF/printed 4-5, SHA256 matches; report PDF347/printed345 award table as summarised; source answers p=-2, 116.5 deg, 2.03 rad, 63.5 deg recomputed.",
+  "Part (b) same-type label is correct and part-scoped. Direct demand set {O04:D01, O04:D02, O05:D01} equals accepted 2025 P1 Q3(b); numeric angle response; same givens type; no dependency on (a); label 'Same type as NSSCAS Mathematics 8227, 2025 Paper 1, Question 3(b), page 5' matches printed page 5. Part (a) label withheld as PLAN says. Adding 'degrees to 1 dp' is consistent with syllabus note 3 and the report advice.",
+  "No held original used; textbook members learner_display:false in visual-source-reads.json.",
+  "Bloom Apply(3)/Apply(3), branch maximum 3 from its own parts; part-evidence-register consistent with the work order.",
+  "Part (b) demand links and prerequisite O01:D02 (notation) correctly kept out of direct assessment; angle direction 'angle AOB' is unambiguous (vertex O, rays OA, OB).",
+  "No input diagram is needed. The optional schematic spec lists must-read givens and admits ray coincidence when r=t.",
+  "recipe-contract.md maps every playbook template field (templates.md 'Recipe work order and exemplar') into its minimum contract or later sections, with no contradiction of README sections 2 and 5 D-G or quality.md gates; the verbatim-original override is an owner decision.",
+  "All nine work orders contain the substantive required fields; all nine exemplars have normal, changed and admitted-boundary cases per branch, plus excluded cases.",
+  "subject-rules accuracy rules match syllabus PDF18/printed15 (3 s.f. default, degrees 1 dp, pi calculator or 3.142). The guard-digit rule matches the 2021 and 2025 reports. Radian-mode rule matches owner decision 2. F.T. is limited to specified earlier work (contract), matching mark_type_normalisation.",
+  "Capability documents are honest. They state no app test, server, sign-in or UI run; the announced 17 November capability is treated as owner selection, not runtime proof. Owner decision 6 is respected: no capability holds. All 13 sketch-response/sketch-reading parts (11+2) are 'include', and those outside the pilot are 'later-syllabus-scope-not-excluded', not dropped. CAP-8227-04 is kept visible. The STATUS line records the 23 Nov notification.",
+  "PLAN sequence respects the playbook: stop at the owner checkpoint, no authoring before explicit approval, stage F checks, then stage G cross-vendor review and owner release-scope acceptance before local acceptance and publication/delivery."
+ ],
+ "not_checked": [
+  "Textbook pages for the 19 vector family members (YM C5, Goldie C10); only learner_display flags were checked.",
+  "Union-search counts (89 magnitude/dot, 49 angle/perpendicular) and visual-source-reads render hashes.",
+  "App checkout claims (HEAD 0f0832dd, allowlist, part-letter projection, stage-d-baseline hashes).",
+  "Mathematics, domains and marking of the other eight recipes (presence scan only).",
+  "Syllabus PDF17 'any ability on either paper' claim and grade descriptor PDF21/23 rendering (used the JSON text for C:07/E:07).",
+  "Whether the 23 November capability notification actually reached Vitalis (only the STATUS record was seen)."
+ ]
+}
