@@ -114,7 +114,7 @@ def repair(A):
   for v in A.data.values():
    for field in ['core','detail','teach']:
     v[field]=re.sub(r'[^.!?]*\b(?:inverter|controller|absorption refrigeration)\b[^.!?]*[.!?]', '',v[field],flags=re.I)
-  teach('2.10.1-03','Radioactive isotopes such as uranium-235 provide suitable nuclear fuel. Radioactive waste needs shielded secure storage, radiation can damage cells, and loss of cooling or containment can cause a serious accident; construction and decommissioning are costly.')
+  teach('2.10.1-03','Uranium-235 is an example of a radioactive isotope used as reactor fuel. The heating in this account comes from controlled nuclear fission, rather than simply from its natural radioactive decay. Radioactive waste needs shielded secure storage, radiation can damage cells, and loss of cooling or containment can cause a serious accident; construction and decommissioning are costly.')
   teach('2.10.2-01-M02','Sunlight passes through a greenhouse cover and warms the ground and plants. The cover limits escape of warm air and can reduce outgoing infrared transfer, depending on its material. Ventilation releases warm air when cooling is needed.')
   teach('2.10.2-01-M04','An air-conditioner similarly uses electrical input to move energy from the room to the warmer outdoor surroundings; PV can supply its electrical input.')
   d('2.10.2-02-M01',answer='Radiant energy from sunlight becomes electrical energy in the cells; the lamp then transfers electrical energy to light and internal energy.')

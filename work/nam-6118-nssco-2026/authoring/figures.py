@@ -6,7 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-def graph(folder,name,x,ys,xlabel,ylabel,title='',line=True,fit=False,triangle=False,origin=False,xlim=None,ylim=None,annotations=None):
+def graph(folder,name,x,ys,xlabel,ylabel,title='',line=True,fit=False,triangle=False,origin=False,xlim=None,ylim=None,annotations=None,legend_outside=False,readings_marker=None):
  import numpy as np,textwrap
  folder.mkdir(parents=True,exist_ok=True)
  fig,ax=plt.subplots(figsize=(7,4.8),layout='constrained')
@@ -14,7 +14,7 @@ def graph(folder,name,x,ys,xlabel,ylabel,title='',line=True,fit=False,triangle=F
  for n,(label,y) in enumerate(ys.items()):
   assert len(x)==len(y)
   if fit:
-   slope,intercept=np.polyfit(x,y,1);xx=np.array([min(0,min(x)) if origin else min(x),max(x)]);ax.plot(x,y,marker=marks[n%4],linestyle='None',markersize=6,label=label if 'readings' in label.lower() else label+' readings');ax.plot(xx,slope*xx+intercept,styles[n%4],lw=1.3,label='Fitted '+label.lower())
+   slope,intercept=np.polyfit(x,y,1);xx=np.array([min(0,min(x)) if origin else min(x),max(x)]);ax.plot(x,y,marker=readings_marker or marks[n%4],markerfacecolor='white',markeredgewidth=1.4,zorder=4,linestyle='None',markersize=6,label=label if 'readings' in label.lower() else label+' readings');ax.plot(xx,slope*xx+intercept,styles[n%4],lw=1.3,label='Fitted '+label.lower())
    if triangle and n==0:
     x0,x1=x[0],x[-1];y0,y1=slope*x0+intercept,slope*x1+intercept;ax.plot([x0,x1,x1],[y0,y0,y1],':',color='tab:red');ax.annotate('Δx = '+f'{x1-x0:g}',((x0+x1)/2,y0),xytext=(0,-15 if y1<y0 else 6),textcoords='offset points',fontsize=8,bbox=dict(facecolor='white',alpha=.85,edgecolor='none'));ax.annotate('Δy = '+f'{y1-y0:g}',(x1,(y0+y1)/2),xytext=(-5,0),ha='right',textcoords='offset points',fontsize=8)
   else:ax.plot(x,y,marker=marks[n%4] if len(x)<=25 else None,linestyle=styles[n%4] if line else 'None',linewidth=1.4,markersize=5,label=label)
@@ -28,8 +28,10 @@ def graph(folder,name,x,ys,xlabel,ylabel,title='',line=True,fit=False,triangle=F
   else:
    xx,yy,t=ann;ax.annotate(t,(xx,yy),xytext=(0,10),textcoords='offset points',ha='center',fontsize=8,bbox=dict(facecolor='white',alpha=.9,edgecolor='none'))
  ax.margins(y=.12)
- if ys:ax.legend(fontsize=8)
- path=folder/(name+'.png');fig.savefig(path,dpi=160);plt.close(fig)
+ if ys:
+  if legend_outside:ax.legend(fontsize=8,loc='upper center',bbox_to_anchor=(.5,-.18),ncol=2)
+  else:ax.legend(fontsize=8)
+ path=folder/(name+'.png');fig.savefig(path,dpi=160,bbox_inches='tight' if legend_outside else None);plt.close(fig)
  return path
 
 def vectors(folder,name,components,unit='N',title='Vector addition'):

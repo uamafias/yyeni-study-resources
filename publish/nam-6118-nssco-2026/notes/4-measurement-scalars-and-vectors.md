@@ -1,6 +1,6 @@
 # 4 Measurement, scalars and vectors
 
-*nam-6118-nssco-2026. Offline study notes, rendered from the approved content units on 2026-10-31. Everything here is also what the flashcards are built from.*
+*nam-6118-nssco-2026. Offline study notes, rendered from the approved content units on 2026-11-01. Everything here is also what the flashcards are built from.*
 
 ---
 
@@ -188,7 +188,9 @@ Worked feedback
 
 ### Practice task with worked feedback
 
-Investigation aim: measure pendulum period and compare it at different string lengths. These are invented, idealised practice readings; real readings have scatter. 
+Investigation aim: measure pendulum period and compare it at different string lengths. These are invented, idealised practice readings; real readings have scatter. For this invented practice table, the specified pivot-to-bob-centre pendulum length is 0.49 m. Record the measured length alongside each timing series when repeating the investigation at other lengths.
+
+Specified pendulum length for the supplied readings: 0.49 m (pivot to bob centre).
 
 | Oscillation count | Elapsed time / s |
 |---:|---:|
@@ -213,7 +215,7 @@ Arrangement: A clamp stand, thread, bob, metre rule, stopwatch and a fixed refer
 
 Plan: 1. Measure length from pivot to bob centre and record it. 2. Release the bob from a small measured angle without pushing. 3. Start and stop the stopwatch at the same mark and direction after a counted set of full oscillations. 4. For each selected oscillation count, repeat the timing at least three times, retain all raw values and calculate the mean elapsed time. 5. Use several counts at each length, then compare period estimates at new lengths; keep bob mass and small release angle matched.
 Control and accuracy: Keep pivot-to-centre length and small release angle fixed; avoid pushing the bob and keep its swing clear of people.
-Table: Oscillation count; Elapsed time / s; repeat readings in separate columns. 
+Table: For each pendulum length, record pivot-to-bob-centre length / m, oscillation count, three elapsed-time readings / s and mean elapsed time / s. Use a separate labelled section or length column for each length.
 Graph and conclusion: The slope is period, 1.4 s; use the same timing procedure at other lengths to test length dependence. Compare repeated readings and report the tested range rather than claiming an exact law from scattered observations.
 
 ![Original fitted practice graph](assets/practical-6118-4.png)

@@ -107,13 +107,14 @@ class Author:
     if comparison:
      assert [r[0] for r in comparison['rows']]==[r[0] for r in data['rows']]
      table='| '+data['x_heading']+' | '+data['y_heading']+' | '+comparison['y_heading']+' |\n|---:|---:|---:|\n'+'\n'.join(f'| {x:g} | {y:g} | {other[1]:g} |' for (x,y),other in zip(data['rows'],comparison['rows']))
+    if pr.get('table_caption'):table=pr['table_caption']+'\n\n'+table
     lo=data['rows'][0];hi=data['rows'][-1];dy=hi[1]-lo[1];dx=hi[0]-lo[0];slope=dy/dx;assert abs(slope-data['expected_gradient'])<1e-7
     response='Graph: '+pr['graph']+'\n\nGradient construction: choose the separated fitted-line points '+f'({lo[0]:g}, {lo[1]:g}) and ({hi[0]:g}, {hi[1]:g}). '+'Gradient = '+f'({hi[1]:g} − {lo[1]:g}) / ({hi[0]:g} − {lo[0]:g}) = {slope:g} '+pr['unit']+'. '+pr['meaning']+'\n\nArrangement: '+pr['arrangement']+'\n\nPlan: '+' '.join(f'{k+1}. {v}' for k,v in enumerate(pr['method']))+'\nControl and accuracy: '+pr['control']+'\nTable: '+pr['table']+'\nGraph and conclusion: '+pr['conclusion']
     from figures import graph
     pname=f'practical-6118-{self.t}'
     series={pr.get('plot_label','Idealised readings'):[p[1] for p in data['rows']]}
     if comparison:series[comparison['label']]=[p[1] for p in comparison['rows']]
-    graph(td/'assets',pname,[p[0] for p in data['rows']],series,data['x_heading'],axis_y,('Black and shiny can temperatures' if comparison else axis_y.split(' / ')[0])+' against '+data['x_heading'].split(' / ')[0].lower(),fit=True,triangle=True,origin=not bool(comparison))
+    graph(td/'assets',pname,[p[0] for p in data['rows']],series,data['x_heading'],axis_y,('Black and shiny can temperatures' if comparison else axis_y.split(' / ')[0])+' against '+data['x_heading'].split(' / ')[0].lower(),fit=True,triangle=True,origin=not bool(comparison),legend_outside=pr.get('legend_outside',False),readings_marker=pr.get('readings_marker'))
     put(td/'assets/practical-parameters.json',dict(origin='Original practice stimulus; reviewed axis/unit derivation',data=data,gradient=slope,gradient_unit=pr['unit'],gradient_meaning=pr['meaning'],construction=[lo,hi],aim=pr['aim'],arrangement=pr['arrangement'],plot_y_heading=axis_y,comparison_data=comparison))
     response+='\n\n![Original fitted practice graph](assets/'+pname+'.png)'
     dimless=self.t in ('17','18')
